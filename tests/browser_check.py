@@ -52,6 +52,7 @@ with sync_playwright() as p:
     page=browser.new_page(viewport={'width':1280,'height':720})
     errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
     page.goto(URL)
+    page.locator('#sandbox-open').click()
     for width,height in [(640,360),(800,450),(960,540),(1280,720),(915,412),(740,360)]:
         page.set_viewport_size({'width':width,'height':height})
         for size,count in [('7,5',35),('9,6',54),('11,7',77)]:
@@ -156,7 +157,7 @@ with sync_playwright() as p:
     print('Mouse selection, edit, rotation, return, drag, invalid drop, cancel, undo, clear, resize, path: PASS')
     # Real browser touch events, including the target lifted above the finger.
     context=browser.new_context(viewport={'width':640,'height':360},has_touch=True,is_mobile=True)
-    touch=context.new_page();touch.goto(URL)
+    touch=context.new_page();touch.goto(URL);touch.locator('#sandbox-open').tap()
     touch.locator('[data-piece="one-a"]').tap();touch.locator(cell(2,2)).tap();touch.locator('#place').tap()
     assert touch.locator('.piece.placed').count()==1
     setting(touch,'#mode','drag')
@@ -168,12 +169,14 @@ with sync_playwright() as p:
     session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':a,'y':b+lift}]})
     assert touch.locator('[data-preview="valid"]').count()==1
     session.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
+    touch.evaluate('()=>new Promise(requestAnimationFrame)')
     assert touch.locator('[data-piece="line"].placed').count()==1
     assert 'Три в ряд' in touch.locator(cell(1,1)).get_attribute('aria-label')
     x,y=center(touch,cell(1,1))
     session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y}]})
     session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':a+50,'y':b+lift}]})
     session.send('Input.dispatchTouchEvent',{'type':'touchCancel','touchPoints':[]})
+    touch.evaluate('()=>new Promise(requestAnimationFrame)')
     assert touch.locator('[data-piece="line"].placed').count()==1
     assert 'Три в ряд' in touch.locator(cell(1,1)).get_attribute('aria-label')
     assert touch.evaluate('scrollX===0 && scrollY===0')
