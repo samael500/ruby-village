@@ -70,3 +70,9 @@ python tests/browser_check.py https://maks.live/ruby-village/
 `.github/workflows/pages.yml` запускает тесты и сборку; push в `main` публикует `dist` через GitHub Actions / GitHub Pages. Pull request проходит проверки без публикации. В Settings → Pages выбран источник GitHub Actions, HTTPS включён. Домен `maks.live` унаследован от GitHub Pages аккаунта; адрес `https://samael500.github.io/ruby-village/` перенаправляет на него. Базовый путь Vite — `/ruby-village/`.
 
 Настройка публикации соответствует [инструкции Vite для GitHub Pages](https://vite.dev/guide/static-deploy.html#github-pages).
+
+## Порядок работы
+
+Каждое новое задание сначала оформляем GitHub Issue. Работаем в отдельной ветке, создаём PR со ссылкой на тикет и результатами проверок. Каждый PR проходит ревью, замечания исправляются до слияния. Прямых push в `main` нет; публикация происходит после слияния PR.
+
+Правила для работы ассистента закреплены в [AGENTS.md](AGENTS.md).
