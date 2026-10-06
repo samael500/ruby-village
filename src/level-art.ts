@@ -26,10 +26,36 @@ export function scenery(svg:SVGSVGElement,width:number,height:number,radius:numb
   const rh=radius*3.4,rw=rh*1209/1300;
   node('image',{id:'ruta-idle',href:artUrl('ruta-idle'),x:x-rw*.55,y:y-rh*.965,width:rw,height:rh,'aria-label':'Рута стоит у дома'},layer);
 }
-/** Stable, purely decorative cracks. Their orientation never defines road connectivity. */
-export function stoneDetail(parent:Element,h:Hex,r:number,x:number,y:number){
+// Only the material varies. Fragment edges and veins never define connectivity.
+let materialId=0;
+export function stoneDetail(parent:Element,h:Hex,r:number,x:number,y:number,variant=0){
   const turn=((h.q*17+h.r*31)%6+6)%6*60;
-  const g=node('g',{'pointer-events':'none',transform:`translate(${x} ${y}) rotate(${turn})`,opacity:.42},parent);
-  node('path',{d:`M ${-.78*r} ${-.35*r} L ${-.18*r} ${-.13*r} L ${.05*r} ${.22*r} L ${.76*r} ${.4*r} M ${.05*r} ${.22*r} L ${-.12*r} ${.85*r}`,fill:'none',stroke:'#665072','stroke-width':Math.max(.8,r*.025),'stroke-linejoin':'round'},g);
-  node('path',{d:`M ${-.7*r} ${.47*r} L 0 ${.88*r} L ${.7*r} ${.47*r}`,fill:'none',stroke:'#eee0ef','stroke-width':Math.max(1,r*.04)},g);
+  const g=node('g',{'pointer-events':'none',transform:`translate(${x} ${y}) scale(${r})`},parent);
+  // The shallow bevel stays inside the exact playable hex footprint.
+  node('path',{d:'M 0 -1 L .866 -.5 L .866 .5 L 0 1 L -.866 .5 L -.866 -.5 Z',fill:'#432054'},g);
+  const top=node('g',{transform:`scale(.965 .94) rotate(${turn})`},g);
+  const fragments=[
+    'M -.48 -.5 L .35 -.62 L .72 .05 L .22 .63 L -.63 .36 Z',
+    'M 0 -1 L .866 -.5 L .35 -.62 L -.48 -.5 L -.866 -.5 Z',
+    'M .866 -.5 L .866 .5 L .22 .63 L .72 .05 L .35 -.62 Z',
+    'M .866 .5 L 0 1 L -.866 .5 L -.63 .36 L .22 .63 Z',
+    'M -.866 -.5 L -.48 -.5 L -.63 .36 L -.866 .5 Z',
+  ];
+  const palette=variant%2?['#9846cc','#ad69ce','#8646b6','#a363c5','#7a38ae']:['#8539bd','#a35dca','#7333a9','#9854c4','#8a43b8'];
+  for(const [i,d] of fragments.entries()){
+    const id=`charoite-${materialId++}`;
+    const defs=node('defs',{},top),clip=node('clipPath',{id},defs);node('path',{d},clip);
+    node('path',{d,fill:palette[i],stroke:'#48205f','stroke-width':.024,'stroke-linejoin':'bevel'},top);
+    const veins=node('g',{'clip-path':`url(#${id})`,fill:'none','stroke-linecap':'round'},top);
+    // Broad wisps beneath fine, irregular mineral veins; fixed by cell coordinates.
+    for(let j=0;j<4;j++){
+      const y0=-.8+j*.49+(i%2)*.12;
+      const wave=`M -1 ${y0} C -.62 ${y0-.22} -.52 ${y0+.25} -.18 ${y0+.12} S .12 ${y0-.15} .4 ${y0+.03} S .75 ${y0+.24} 1 ${y0-.04}`;
+      node('path',{d:wave,stroke:j%2?'#e5b5ef':'#b27de2','stroke-width':.09,opacity:.2},veins);
+      node('path',{d:wave,stroke:'#efd1f5','stroke-width':.013,opacity:.65},veins);
+      node('path',{d:wave,transform:'translate(.02 .04)',stroke:'#d599ed','stroke-width':.023,opacity:.45},veins);
+    }
+    // Straight bevel highlights keep the fragments angular, despite the flowing veins.
+    node('path',{d,fill:'none',stroke:'#e5b5dd','stroke-width':.01,opacity:.6},top);
+  }
 }

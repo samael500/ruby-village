@@ -117,7 +117,10 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
   const minX=Math.min(...centers.map(c=>c.x))-17, maxX=Math.max(...centers.map(c=>c.x))+17;
   const minY=Math.min(...centers.map(c=>c.y))-17, maxY=Math.max(...centers.map(c=>c.y))+17;
   const icon=el('svg',{viewBox:`${minX} ${minY} ${maxX-minX} ${maxY-minY}`,'aria-hidden':'true'},button);
-  for (const h of shape) el('polygon',{points:polygon(h,15),fill:p.color,stroke:'#543b70','stroke-width':1.5},icon);
+  for (const h of shape) {
+    el('polygon',{points:polygon(h,15),fill:p.color,stroke:'#543b70','stroke-width':1.5},icon);
+    if(level.id==='gate'){const c=hexCenter(h,15);stoneDetail(icon,h,15,c.x,c.y,pieces.indexOf(p));}
+  }
   if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
   el('circle',{cx:0,cy:0,r:2.8,fill:'#fff6dc'},icon);
 }
@@ -164,7 +167,7 @@ function renderBoard() {
     const k=key(h), owner=owners.get(k), c=hexCenter(h,radius), terrain=terrainAt(level,h);
     const g=el('g',{'data-cell':k,'data-terrain':terrain,role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода'}[terrain])}`},svg);
     el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:`cell ${illustrated?(owner?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner===selected?0.45:1},g);
-    if(illustrated && owner)stoneDetail(g,h,radius,c.x+origin.x,c.y+origin.y);
+    if(illustrated && owner){const material=el('g',{opacity:owner===selected ? 0.45 : 1},g);stoneDetail(material,h,radius,c.x+origin.x,c.y+origin.y,pieces.indexOf(pieceById(owner)));}
     if(!owner && terrain!=='ground') el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},g,({water:'≈',tree:'♠',rock:'⬟'}[terrain]));
     if(owner && pieceById(owner).kind==='bridge') {
       const deck=el('g',{transform:`translate(${c.x+origin.x} ${c.y+origin.y}) rotate(${layout[owner].turns*60})`,'pointer-events':'none'},g);
