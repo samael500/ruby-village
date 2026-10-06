@@ -1,4 +1,4 @@
-import {hexCenter,type Hex} from './hex.ts';
+import {type Hex} from './hex.ts';
 const ns='http://www.w3.org/2000/svg';
 export const artUrl=(name:string)=>`${import.meta.env.BASE_URL}assets/level-1/${name}.png`;
 function node(tag:string,attrs:Record<string,string|number>,parent:Element){
@@ -9,7 +9,7 @@ function node(tag:string,attrs:Record<string,string|number>,parent:Element){
 export function backdrop(svg:SVGSVGElement,width:number,height:number){
   node('image',{href:artUrl('meadow'),width,height,preserveAspectRatio:'xMidYMid slice','pointer-events':'none'},svg);
 }
-export function scenery(svg:SVGSVGElement,width:number,height:number,radius:number,origin:{x:number;y:number},start:Hex,boardWidth:number,boardHeight:number){
+export function scenery(svg:SVGSVGElement,width:number,height:number,radius:number,origin:{x:number;y:number},boardWidth:number,boardHeight:number){
   const layer=node('g',{'pointer-events':'none','data-scenery':''},svg);
   const left=origin.x-Math.sqrt(3)*radius/2,top=origin.y-radius;
   const landscape=width>height;
@@ -21,10 +21,14 @@ export function scenery(svg:SVGSVGElement,width:number,height:number,radius:numb
   const gateWidth=Math.max(0,Math.min(landscape?width-left-boardWidth-10:width*.65,(landscape?height*.8:height-top-boardHeight-10)*1.5));
   const gateHeight=gateWidth/1.5;
   node('image',{href:artUrl('garden-gate'),x:landscape?left+boardWidth+6:width-gateWidth-12,y:landscape?(height-gateHeight)/2:top+boardHeight+6,width:gateWidth,height:gateHeight,'data-decoration':'gate'},layer);
-  const c=hexCenter(start,radius),x=origin.x+c.x,y=origin.y+c.y;
-  node('ellipse',{cx:x,cy:y,rx:radius*.5,ry:radius*.15,fill:'#3b402c',opacity:.22},layer);
-  const rh=radius*3.4,rw=rh*1209/1300;
-  node('image',{id:'ruta-idle',href:artUrl('ruta-idle'),x:x-rw*.55,y:y-rh*.965,width:rw,height:rh,'aria-label':'Рута стоит у дома'},layer);
+  // Ruta waits beside the house, entirely outside the playable rectangle.
+  // A future walking animation can enter via the logical start cell.
+  const rh=Math.max(0,Math.min(radius*3.4,landscape?(left-16)*1300/1209:top-16));
+  const rw=rh*1209/1300;
+  const rx=landscape?(left-rw)/2:width-rw-12;
+  const ry=landscape?Math.min(height-rh-8,(height+houseHeight)/2-rh*.55):top-rh-8;
+  node('ellipse',{cx:rx+rw*.55,cy:ry+rh*.965,rx:rw*.25,ry:rh*.045,fill:'#3b402c',opacity:.22},layer);
+  node('image',{id:'ruta-idle',href:artUrl('ruta-idle'),x:rx,y:ry,width:rw,height:rh,'data-decoration':'ruta','aria-label':'Рута ждёт у дома'},layer);
 }
 // Only the material varies. Fragment edges and veins never define connectivity.
 let materialId=0;

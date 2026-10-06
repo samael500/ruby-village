@@ -181,7 +181,7 @@ function renderBoard() {
     if(path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
   svg.append(landmarks);
-  if(illustrated)scenery(svg,rect.width,rect.height,radius,origin,level.start,w,h);
+  if(illustrated)scenery(svg,rect.width,rect.height,radius,origin,w,h);
   renderPreview();
   if(level.id==='mill') {
     const c=hexCenter(level.goal,radius);

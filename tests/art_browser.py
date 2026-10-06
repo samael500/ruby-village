@@ -15,7 +15,7 @@ with sync_playwright() as p:
         page.on('pageerror',lambda e:errors.append(str(e)))
         page.goto(URL);page.locator('[data-level="gate"]').tap();page.locator('#story-action').tap()
         assert page.evaluate('document.documentElement.scrollWidth===innerWidth && document.documentElement.scrollHeight===innerHeight')
-        # Every cell centre still hits its cell, including cells behind the character.
+        # Every cell centre still hits its cell, with all decorations outside the grid.
         assert page.locator('[data-cell]').evaluate_all('els=>els.every(el=>{const b=el.getBoundingClientRect();return document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)?.closest("[data-cell]")===el;})')
         for asset in ['meadow','ruta-house','garden-gate','ruta-idle']:
             assert page.request.get(URL+'assets/level-1/'+asset+'.png').ok
@@ -24,6 +24,13 @@ with sync_playwright() as p:
         for box in page.locator('[data-decoration]').evaluate_all('els=>els.map(e=>{const b=e.getBoundingClientRect();return {l:b.left,r:b.right,t:b.top,b:b.bottom};})'):
             assert box['r']<=grid['l'] or box['l']>=grid['r'] or box['b']<=grid['t'] or box['t']>=grid['b']
         page.screenshot(path=str(SHOTS/f'gate-{width}x{height}.png'))
+        # Regression: the formerly obscured cell remains readable and editable.
+        page.locator('[data-piece="single"]').tap()
+        page.touchscreen.tap(*center(page,'[data-cell="0,1"]'));page.locator('#place').tap()
+        assert page.locator('[data-piece="single"].placed').count()==1
+        page.screenshot(path=str(SHOTS/f'visible-stone-{width}x{height}.png'))
+        page.touchscreen.tap(*center(page,'[data-cell="0,1"]'));page.locator('#return').tap()
+        assert page.locator('.piece.placed').count()==0
         # Drag on the decorated board uses the same finger offset and hit geometry.
         page.locator('#settings-open').tap();page.locator('#mode').select_option('drag');page.locator('#settings-close').tap()
         session=page.context.new_cdp_session(page)
