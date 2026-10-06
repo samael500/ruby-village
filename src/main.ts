@@ -1,4 +1,5 @@
 import './style.css';
+import {artUrl,backdrop,scenery,stoneDetail} from './level-art.ts';
 import {type Hex, boardCells, key, hexCenter, pixelHex, rotate} from './hex.ts';
 import {pieceById as lookupPiece, placedCells as cellsForPiece, validPlacement, terrainAt, winningPath, type Layout} from './game.ts';
 import {levels,sandbox} from './levels.ts';
@@ -147,11 +148,14 @@ function renderPreview() {
 function renderBoard() {
   if(screen!=='game') return;
   if(drag){renderPreview();return;}
-  const rect=$('field').getBoundingClientRect(), padding=8;
-  radius=Math.max(1,Math.min((rect.width-2*padding)/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(1.5*(rows-1)+2)));
+  const rect=svg.getBoundingClientRect(), padding=8;
+  const illustrated=level.id==='gate';
+  const availableWidth=illustrated && rect.width>rect.height?rect.width*.56:rect.width-2*padding;
+  radius=Math.max(1,Math.min(availableWidth/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(1.5*(rows-1)+2)));
   const w=Math.sqrt(3)*radius*(cols+0.5), h=radius*(1.5*(rows-1)+2);
   origin={x:(rect.width-w)/2+Math.sqrt(3)*radius/2,y:(rect.height-h)/2+radius};
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`); svg.replaceChildren();
+  if(illustrated)backdrop(svg,rect.width,rect.height);
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
@@ -159,7 +163,8 @@ function renderBoard() {
   for(const h of boardCells(cols,rows)) {
     const k=key(h), owner=owners.get(k), c=hexCenter(h,radius), terrain=terrainAt(level,h);
     const g=el('g',{'data-cell':k,'data-terrain':terrain,role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода'}[terrain])}`},svg);
-    el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:`cell ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner===selected?0.45:1},g);
+    el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:`cell ${illustrated?(owner?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner===selected?0.45:1},g);
+    if(illustrated && owner)stoneDetail(g,h,radius,c.x+origin.x,c.y+origin.y);
     if(!owner && terrain!=='ground') el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},g,({water:'≈',tree:'♠',rock:'⬟'}[terrain]));
     if(owner && pieceById(owner).kind==='bridge') {
       const deck=el('g',{transform:`translate(${c.x+origin.x} ${c.y+origin.y}) rotate(${layout[owner].turns*60})`,'pointer-events':'none'},g);
@@ -173,6 +178,7 @@ function renderBoard() {
     if(path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
   svg.append(landmarks);
+  if(illustrated)scenery(svg,rect.width,rect.height,radius,origin,level.start,w,h);
   renderPreview();
   if(level.id==='mill') {
     const c=hexCenter(level.goal,radius);
@@ -280,6 +286,7 @@ $('check').onclick=()=>{
   if(level.id==='sandbox'){message('Дорога готова! Из деревни можно дойти до мельницы.');renderBoard();return;}
   phase='walking';route=result;journey=0;resetSelection();
   completed=completeLevel(level.id,completed);storageAvailable=saveProgress(completed,storage);
+  if(level.id==='gate'){phase='won';route=[];message('Дорога готова!');render();showStory(true);return;}
   message('Получилось! Рута проверяет дорожку.');render();
   const began=performance.now(),duration=Math.min(3500,result.length*230);
   const animate=(now:number)=>{
@@ -323,7 +330,11 @@ function updateRutaMarker() {
 }
 const story=$('story') as HTMLDialogElement;
 function showStory(outro=false) {
-  $('story-title').textContent=outro?'Дорога вернулась!':level.name;
+  $('story-title').textContent=outro?(level.id==='gate'?'Дорога готова!':'Дорога вернулась!'):level.name;
+  document.querySelector('svg.ruta-portrait')!.toggleAttribute('hidden',level.id==='gate');
+  let portrait=document.getElementById('story-ruta') as HTMLImageElement|null;
+  if(!portrait){portrait=document.createElement('img');portrait.id='story-ruta';portrait.className='ruta-portrait';portrait.alt='Рута';portrait.src=artUrl('ruta-idle');document.querySelector('.story-layout')!.prepend(portrait);}
+  portrait.hidden=level.id!=='gate';
   $('story-text').textContent=outro?level.outro:level.intro;
   $('story-action').textContent=outro?'На карту →':'В путь →';
   $('story-action').onclick=()=>{story.close();if(outro)showMap();else {phase='playing';render();}};
@@ -334,15 +345,18 @@ function enterLevel(next:Level) {
   if(next.id!=='sandbox'&&!available(next.id,completed))return;
   cancelAnimationFrame(frame);screen='game';phase=next.id==='sandbox'?'playing':'intro';
   level=next;pieces=level.pieces;cols=level.cols;rows=level.rows;layout={};history=[];route=[];journey=0;path.clear();resetSelection();
+  app.classList.toggle('illustrated-level',level.id==='gate');
+  document.querySelector('h1')!.textContent=level.id==='gate'?'До калитки':'Рубиновая деревня';
   $('chapter-map').hidden=true;$('field').hidden=false;$('game-controls').hidden=false;
   $('size-setting').hidden=level.id!=='sandbox';
   $('clear').textContent=level.id==='sandbox'?'Очистить поле':'Начать уровень заново';
   document.querySelector('.settings-note')!.textContent=level.id==='sandbox'?'Смена размера очищает поле. Поворот телефона сохраняет плиты.':'Перезапуск очищает плиты этого уровня. Дороги на карте сохраняются.';
   svg.setAttribute('aria-label',`${level.name}: ${level.startName} → ${level.goalName}`);
-  message(level.id==='sandbox'?level.intro:level.name);render();
+  message(level.id==='gate'?'Проложи дорогу от дома до калитки':level.id==='sandbox'?level.intro:level.name);render();
   if(level.id!=='sandbox')showStory();
 }
 function showMap() {
+  app.classList.remove('illustrated-level');document.querySelector('h1')!.textContent='Рубиновая деревня';
   cancelAnimationFrame(frame);screen='map';phase='playing';route=[];resetSelection();
   if(settings.open)settings.close();if(story.open)story.close();
   $('field').hidden=true;$('game-controls').hidden=true;$('chapter-map').hidden=false;
