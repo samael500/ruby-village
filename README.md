@@ -2,7 +2,7 @@
 
 Первый браузерный прототип: проверяем размер гексагонального поля и управление мышью и пальцами. Основной игрок — ребёнок 6–7 лет. Это свободная площадка, а не сбалансированный уровень.
 
-**Играть:** https://samael500.github.io/ruby-village/
+**Играть:** https://maks.live/ruby-village/
 
 ## Запуск
 
@@ -56,7 +56,7 @@ playwright install chromium
 # В отдельном терминале: npm run dev
 python tests/browser_check.py
 # Или проверить опубликованную сборку:
-python tests/browser_check.py https://samael500.github.io/ruby-village/
+python tests/browser_check.py https://maks.live/ruby-village/
 ```
 
 Сценарий проверяет оба режима, повороты, возврат, отмену, очистку, недопустимый перенос, pointercancel, поиск дороги, смену размера и ориентации. Проверяет все три размера поля на экранах 1280×720, 915×412, 740×360; кнопки ≥48 px, отсутствие прокрутки и обрезания поля. Использует браузерные touch-события для проверки смещения и отмены касания. Скриншоты сохраняются в `/tmp/ruby-village-*.png`.
@@ -65,6 +65,6 @@ python tests/browser_check.py https://samael500.github.io/ruby-village/
 
 ## Публикация
 
-`.github/workflows/pages.yml` запускает тесты и сборку; push в `main` публикует `dist` через GitHub Actions / GitHub Pages. Pull request проходит проверки без публикации. В Settings → Pages выбран источник GitHub Actions. Базовый путь Vite — `/ruby-village/`.
+`.github/workflows/pages.yml` запускает тесты и сборку; push в `main` публикует `dist` через GitHub Actions / GitHub Pages. Pull request проходит проверки без публикации. В Settings → Pages выбран источник GitHub Actions, HTTPS включён. Домен `maks.live` унаследован от GitHub Pages аккаунта; адрес `https://samael500.github.io/ruby-village/` перенаправляет на него. Базовый путь Vite — `/ruby-village/`.
 
 Настройка публикации соответствует [инструкции Vite для GitHub Pages](https://vite.dev/guide/static-deploy.html#github-pages).
