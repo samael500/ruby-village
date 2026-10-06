@@ -93,3 +93,6 @@ python tests/chapter_browser.py
 Каждое задание ведём через GitHub Issue, отдельную ветку и PR. Каждый PR проходит ревью, замечания исправляются до слияния. Прямых push в `main` нет.
 
 Текущий `.github/workflows/pages.yml` запускает тесты и сборку. PR проверяется без публикации; после слияния в `main` публикуется `dist` через GitHub Pages. HTTPS включён. Домен `maks.live` унаследован от аккаунта, базовый путь Vite — `/ruby-village/`.
+
+
+Правила для работы ассистента закреплены в [AGENTS.md](AGENTS.md).
