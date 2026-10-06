@@ -1,5 +1,5 @@
 import './style.css';
-import {type Hex, boardCells, key, hexCenter, pixelHex} from './hex.ts';
+import {type Hex, boardCells, key, hexCenter, pixelHex, rotate} from './hex.ts';
 import {pieceById as lookupPiece, placedCells as cellsForPiece, validPlacement, terrainAt, winningPath, type Layout} from './game.ts';
 import {levels,sandbox} from './levels.ts';
 import type {Level} from './model.ts';
@@ -18,7 +18,7 @@ app.innerHTML = `
 <footer id="game-controls">
 <div id="tray" aria-label="Набор фигур"></div>
 <div id="selection-actions" hidden>
-<button id="other"><b>‹</b><span>Другие плиты</span></button>
+<button id="other"><b>‹</b><span>Другие плиты</span></button><button id="selected-drag" aria-label="Перетащить выбранную фигуру" hidden></button>
 <button id="left" aria-label="Повернуть влево"><b>↶</b><span>Влево</span></button>
 <button id="right" aria-label="Повернуть вправо"><b>↷</b><span>Вправо</span></button>
 <button id="place" class="primary"><b>＋</b><span>Поставить</span></button>
@@ -63,7 +63,15 @@ let anchorPinned = false;
 let mode = 'select', path = new Set<string>();
 let radius = 20, origin = {x:0,y:0};
 let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number} | null = null;
-let suppressClick = false;
+let suppressClick = false, deferDock = false, dockFrame = 0;
+// The dock changes under a released pointer. Consume its synthetic click so it
+// cannot activate a different button; the next real gesture starts afresh.
+app.addEventListener('pointerdown',()=>{suppressClick=false;},true);
+app.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' ')suppressClick=false;},true);
+app.addEventListener('click',e=>{
+  if(drag||suppressClick){suppressClick=false;e.preventDefault();e.stopImmediatePropagation();}
+  else suppressClick=false;
+},true);
 const ns = 'http://www.w3.org/2000/svg';
 function el(tag: string, attrs: Record<string,string|number>, parent: Element, text?: string) {
   const node = document.createElementNS(ns,tag);
@@ -90,6 +98,8 @@ function commit() {
 }
 function updateControls() {
   for(const button of document.querySelectorAll<HTMLButtonElement>('footer button')) button.disabled=false;
+  app.classList.toggle('drag-mode',mode==='drag');
+  $('selected-drag').hidden=mode!=='drag'||!selected;
   $('tray').hidden=!!selected;
   $('selection-actions').hidden=!selected;
   $('check').hidden=!!selected;
@@ -100,27 +110,43 @@ function updateControls() {
   $('clear').toggleAttribute('disabled',phase==='walking');
   for(const button of document.querySelectorAll<HTMLButtonElement>('footer button')) if(phase!=='playing') button.disabled=true;
 }
+function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=0) {
+  const shape=p.shape.map(h=>rotate(h,orientation));
+  const centers=shape.map(h=>hexCenter(h,15));
+  const minX=Math.min(...centers.map(c=>c.x))-17, maxX=Math.max(...centers.map(c=>c.x))+17;
+  const minY=Math.min(...centers.map(c=>c.y))-17, maxY=Math.max(...centers.map(c=>c.y))+17;
+  const icon=el('svg',{viewBox:`${minX} ${minY} ${maxX-minX} ${maxY-minY}`,'aria-hidden':'true'},button);
+  for (const h of shape) el('polygon',{points:polygon(h,15),fill:p.color,stroke:'#543b70','stroke-width':1.5},icon);
+  if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
+  el('circle',{cx:0,cy:0,r:2.8,fill:'#fff6dc'},icon);
+}
 function renderTray() {
   const tray=$('tray'); tray.replaceChildren();
+  const handle=$('selected-drag');handle.replaceChildren();
+  if(selected){drawPieceIcon(handle,pieceById(selected),turns);const label=document.createElement('span');label.textContent='Тяни отсюда';handle.append(label);}
   for (const p of pieces) {
     const button=document.createElement('button'); button.className='piece'; button.dataset.piece=p.id;
     button.setAttribute('aria-label',`${p.name}${layout[p.id] ? ', на поле' : ', в наборе'}`);
     button.setAttribute('aria-pressed',String(selected===p.id));
     if (layout[p.id]) button.classList.add('placed');
-    const centers=p.shape.map(h=>hexCenter(h,15));
-    const minX=Math.min(...centers.map(c=>c.x))-17, maxX=Math.max(...centers.map(c=>c.x))+17;
-    const minY=Math.min(...centers.map(c=>c.y))-17, maxY=Math.max(...centers.map(c=>c.y))+17;
-    const icon=el('svg',{viewBox:`${minX} ${minY} ${maxX-minX} ${maxY-minY}`,'aria-hidden':'true'},button);
-    for (const h of p.shape) el('polygon',{points:polygon(h,15),fill:p.color,stroke:'#543b70','stroke-width':1.5},icon);
-    if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
-    el('circle',{cx:0,cy:0,r:2.8,fill:'#fff6dc'},icon);
+    drawPieceIcon(button,p);
     const label=document.createElement('span'); label.textContent=p.name; button.append(label);
     if(layout[p.id]) {const mark=document.createElement('em'); mark.textContent='✓'; button.append(mark);}
     tray.append(button);
   }
 }
+function renderPreview() {
+  document.getElementById('placement-preview')?.remove();
+  if(selected && anchor) {
+    const ok=previewValid(), preview=el('g',{id:'placement-preview','pointer-events':'none','data-preview':ok?'valid':'invalid'},svg);
+    for(const h of placedCells(selected,{anchor,turns})) el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:ok?'preview valid':'preview invalid'},preview);
+    const c=hexCenter(anchor,radius);
+    el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.23,'text-anchor':'middle','font-size':radius*.8,fill:ok?'#47285f':'#7a1c26','font-weight':900},preview,ok?'•':'⊘');
+  }
+}
 function renderBoard() {
   if(screen!=='game') return;
+  if(drag){renderPreview();return;}
   const rect=$('field').getBoundingClientRect(), padding=8;
   radius=Math.max(1,Math.min((rect.width-2*padding)/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(1.5*(rows-1)+2)));
   const w=Math.sqrt(3)*radius*(cols+0.5), h=radius*(1.5*(rows-1)+2);
@@ -147,12 +173,7 @@ function renderBoard() {
     if(path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
   svg.append(landmarks);
-  if(selected && anchor) {
-    const ok=previewValid(), preview=el('g',{'pointer-events':'none','data-preview':ok?'valid':'invalid'},svg);
-    for(const h of placedCells(selected,{anchor,turns})) el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:ok?'preview valid':'preview invalid'},preview);
-    const c=hexCenter(anchor,radius);
-    el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.23,'text-anchor':'middle','font-size':radius*.8,fill:ok?'#47285f':'#7a1c26','font-weight':900},preview,ok?'•':'⊘');
-  }
+  renderPreview();
   if(level.id==='mill') {
     const c=hexCenter(level.goal,radius);
     const wheel=el('g',{transform:`translate(${origin.x+c.x} ${origin.y+c.y-radius*.35})`,'pointer-events':'none'},svg);
@@ -163,7 +184,13 @@ function renderBoard() {
   if(route.length) {el('g',{id:'ruta-marker','pointer-events':'none','aria-label':'Рута идёт по дороге'},svg);updateRutaMarker();}
   $('metric').textContent=`Гекс ${Math.round(Math.sqrt(3)*radius)} × ${Math.round(2*radius)} px`;
 }
-function render() { renderTray(); renderBoard(); updateControls(); }
+function render() {
+  if(deferDock){
+    if(!dockFrame)dockFrame=requestAnimationFrame(()=>{dockFrame=0;deferDock=false;render();});
+    return;
+  }
+  renderBoard();renderTray();updateControls();
+}
 function eventHex(e: PointerEvent, lift=false): Hex | null {
   const rect=svg.getBoundingClientRect(), x=e.clientX-rect.left, y=e.clientY-rect.top-(lift && e.pointerType==='touch'?Math.max(42,radius*1.6):0);
   if(x<0||y<0||x>rect.width||y>rect.height) return null;
@@ -195,11 +222,12 @@ svg.addEventListener('pointermove',e=>{
 });
 function startDrag(e: PointerEvent,id: string) {
   if(phase!=='playing'||mode!=='drag'||!e.isPrimary||e.button!==0||drag) return;
-  e.preventDefault();
+  // touch-action:none handles scrolling; keep native tap/click synthesis intact.
   if(selected!==id) select(id);
   drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns};
-  app.setPointerCapture(e.pointerId); render();
+  app.setPointerCapture(e.pointerId); renderBoard();
 }
+$('selected-drag').addEventListener('pointerdown',e=>{if(selected)startDrag(e,selected);});
 $('tray').addEventListener('pointerdown',e=>{
   const id=(e.target as Element).closest<HTMLElement>('[data-piece]')?.dataset.piece;
   if(id) startDrag(e,id);
@@ -210,13 +238,15 @@ svg.addEventListener('pointerdown',e=>{
 app.addEventListener('pointermove',e=>{
   if(!drag||e.pointerId!==drag.pointer) return;
   if(Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>5) drag.moved=true;
-  if(drag.moved) {anchor=eventHex(e,true); renderBoard(); updateControls();}
+  if(drag.moved) {anchor=eventHex(e,true); renderBoard();}
 });
 function finishDrag(e: PointerEvent,cancel: boolean) {
   if(!drag||e.pointerId!==drag.pointer) return;
   const previous=drag; drag=null;
+  // Keep the original touch target alive through touchend and native click.
+  deferDock=e.pointerType==='touch';
   if(app.hasPointerCapture(e.pointerId)) app.releasePointerCapture(e.pointerId);
-  suppressClick=true; setTimeout(()=>suppressClick=false,0);
+  suppressClick=true;
   if(!cancel && previous.moved) {
     anchor=eventHex(e,true);
     if(commit()) return;
@@ -254,7 +284,7 @@ $('check').onclick=()=>{
   const began=performance.now(),duration=Math.min(3500,result.length*230);
   const animate=(now:number)=>{
     if(phase!=='walking'||screen!=='game')return;
-    journey=matchMedia('(prefers-reduced-motion: reduce)').matches?result.length-1:Math.min(1,(now-began)/duration)*(result.length-1);
+    journey=matchMedia('(prefers-reduced-motion: reduce)').matches?result.length-1:Math.max(0,Math.min(1,(now-began)/duration))*(result.length-1);
     updateRutaMarker();
     if(journey>=result.length-1){phase='won';renderBoard();showStory(true);}
     else frame=requestAnimationFrame(animate);
@@ -279,7 +309,7 @@ if(document.fullscreenEnabled) {
     catch {message('Полный экран недоступен. Можно играть так.');}
   };
 }
-window.addEventListener('keydown',e=>{if(e.key==='Escape' && screen==='game' && phase==='playing' && !settings.open){resetSelection();render();}});
+window.addEventListener('keydown',e=>{if(e.key==='Escape' && !drag && screen==='game' && phase==='playing' && !settings.open){resetSelection();render();}});
 new ResizeObserver(()=>renderBoard()).observe($('field'));
 
 function updateRutaMarker() {
@@ -317,7 +347,7 @@ function showMap() {
   if(settings.open)settings.close();if(story.open)story.close();
   $('field').hidden=true;$('game-controls').hidden=true;$('chapter-map').hidden=false;
   message(completed.length===3?'Первая глава пройдена. Можно снова отправиться в путь!':'Первая глава · исчезнувшие дороги');
-  $('save-status').textContent=storageAvailable?'': 'Прогресс хранится только до закрытия страницы.';
+  $('save-status').textContent=storageAvailable?'': 'Прогресс хранится только до обновления или закрытия страницы.';
   const roads=$('map-roads');roads.replaceChildren();
   for(let i=0;i<3;i++)el('path',{d:`M ${125+i*250} 80 Q ${250+i*250} ${i%2?140:20} ${375+i*250} 80`,fill:'none',stroke:completed.includes(levels[i].id)?'#9272af':'#a2ab8c','stroke-width':12,'stroke-dasharray':completed.includes(levels[i].id)?'none':'10 12','data-road':levels[i].id,'data-complete':String(completed.includes(levels[i].id))},roads);
   const places=$('map-places');places.replaceChildren();

@@ -169,12 +169,14 @@ with sync_playwright() as p:
     session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':a,'y':b+lift}]})
     assert touch.locator('[data-preview="valid"]').count()==1
     session.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]})
+    touch.evaluate('()=>new Promise(requestAnimationFrame)')
     assert touch.locator('[data-piece="line"].placed').count()==1
     assert 'Три в ряд' in touch.locator(cell(1,1)).get_attribute('aria-label')
     x,y=center(touch,cell(1,1))
     session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y}]})
     session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':a+50,'y':b+lift}]})
     session.send('Input.dispatchTouchEvent',{'type':'touchCancel','touchPoints':[]})
+    touch.evaluate('()=>new Promise(requestAnimationFrame)')
     assert touch.locator('[data-piece="line"].placed').count()==1
     assert 'Три в ряд' in touch.locator(cell(1,1)).get_attribute('aria-label')
     assert touch.evaluate('scrollX===0 && scrollY===0')

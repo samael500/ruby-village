@@ -48,3 +48,5 @@ dialog::backdrop{background:#28312366}.dialog-heading{display:flex;align-items:c
 @media(prefers-reduced-motion:reduce){.mill-wheel.turning{animation:none}}
 @media(max-height:420px){.map-intro{font-size:12px}.level-card{min-height:104px;padding:6px 2px}.place-symbol{font-size:36px}.map-landscape{padding:8px}.story-layout{gap:12px}.story-layout h2{font-size:21px}.story-layout p{font-size:14px}.map-actions button{font-size:12px}}
 @media(orientation:portrait){#map-places{gap:5px}.level-card strong,.map-home strong{font-size:11px}.map-state{font-size:10px}.place-symbol{font-size:30px}.map-home .place-symbol{font-size:40px}.map-intro{font-size:12px}.map-actions{flex-wrap:wrap}#save-status{order:3;max-width:none;width:100%}.story-layout{gap:10px}.ruta-portrait{width:72px;height:90px}.story-layout h2{font-size:21px}}
+
+.drag-mode #selection-actions{grid-template-columns:repeat(4,minmax(0,1fr)) 1.3fr 1fr}#selected-drag svg{width:100%;max-width:66px;height:35px}#selected-drag{background:#eee2f4;border-color:#ab90bf;cursor:grab}#selected-drag:active{cursor:grabbing}

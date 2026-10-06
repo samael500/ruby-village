@@ -17,11 +17,11 @@ def enter(page,id,touch=False):
     expect(page.locator('#story')).to_be_visible()
     page.locator('#story-action').tap() if touch else page.locator('#story-action').click()
 
-def settings(page,selector,value=None):
-    page.locator('#settings-open').click()
-    if value is None:page.locator(selector).click()
+def settings(page,selector,value=None,touch=False):
+    page.touchscreen.tap(*center(page,'#settings-open')) if touch else page.locator('#settings-open').click()
+    if value is None:page.touchscreen.tap(*center(page,selector)) if touch else page.locator(selector).click()
     else:page.locator(selector).select_option(value)
-    if page.locator('#settings-panel').is_visible():page.locator('#settings-close').click()
+    if page.locator('#settings-panel').is_visible():page.touchscreen.tap(*center(page,'#settings-close')) if touch else page.locator('#settings-close').click()
 
 def solve(page,level,touch=False):
     for id,p in level['solution'].items():
@@ -94,22 +94,37 @@ with sync_playwright() as p:
     context=browser.new_context(viewport={'width':640,'height':360},has_touch=True,is_mobile=True,reduced_motion='reduce')
     touch=context.new_page();touch.on('pageerror',lambda error:(errors.append(str(error)),print('Browser error:',error,flush=True)));touch.goto(URL)
     for level in LEVELS:enter(touch,level['id'],True);solve(touch,level,True)
-    enter(touch,'mill',True);settings(touch,'#mode','drag')
+    enter(touch,'mill',True);settings(touch,'#mode','drag',touch=True)
     session=context.new_cdp_session(touch)
-    def touch_drag(id,q,r,cancel=False):
-        x,y=center(touch,f'[data-piece="{id}"]');a,b=center(touch,f'[data-cell="{q},{r}"]')
+    def touch_drag(id,q,r,cancel=False,selected=False,source=None):
+        x,y=center(touch,source or ('#selected-drag' if selected else f'[data-piece="{id}"]'));a,b=center(touch,f'[data-cell="{q},{r}"]')
         radius=touch.locator(f'[data-cell="{q},{r}"]').bounding_box()['height']/2
         session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y}]})
-        session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':a,'y':b+max(42,radius*1.6)}]})
+        # Model a finger travelling across the screen, not a zero-time fling.
+        for step in range(1,11):
+            session.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':x+(a-x)*step/10,'y':y+(b+max(42,radius*1.6)-y)*step/10}]})
+            touch.wait_for_timeout(20)
+        touch.wait_for_timeout(100)
         session.send('Input.dispatchTouchEvent',{'type':'touchCancel' if cancel else 'touchEnd','touchPoints':[]})
+        touch.evaluate('()=>new Promise(requestAnimationFrame)')
     touch_drag('bridge',5,1,True)
     assert touch.locator('.piece.placed').count()==0
     touch.locator('#other').tap()
-    touch_drag('bridge',5,1)
+    touch.locator('[data-piece="bridge"]').tap();touch.locator('#left').tap();touch.locator('#right').tap()
+    fit(touch)
+    touch_drag('bridge',5,1,selected=True)
     assert touch.locator('[data-piece="bridge"].placed').count()==1
     touch_drag('mill-a',2,0)
     assert touch.locator('[data-piece="mill-a"].placed').count()==1
-    settings(touch,'#map-return');enter(touch,'mill',True)
+    touch.locator('[data-piece="mill-b"]').tap()
+    for _ in range(3):touch.locator('#right').tap()
+    touch_drag('mill-b',8,2,selected=True)
+    assert touch.locator('[data-piece="mill-b"].placed').count()==1
+    touch_drag('bridge',5,3,source='[data-cell="5,1"]')
+    assert 'Мост' in touch.locator('[data-cell="5,1"]').get_attribute('aria-label')
+    touch_drag('bridge',5,3,cancel=True,source='[data-cell="5,1"]')
+    assert 'Мост' in touch.locator('[data-cell="5,1"]').get_attribute('aria-label')
+    settings(touch,'#map-return',touch=True);enter(touch,'mill',True)
     touch_drag('mill-extra',5,1) # Ordinary stones cannot cover water.
     assert touch.locator('.piece.placed').count()==0
     print('Touch large figures/rotations, bridge drag/cancel, water rejection, reduced motion: PASS')
@@ -119,6 +134,11 @@ with sync_playwright() as p:
     assert offline.locator('[data-level="garden"]').is_enabled()
     assert 'только' in offline.locator('#save-status').inner_text()
     offline.reload();assert offline.locator('[data-level="garden"]').is_disabled()
+    delayed=browser.new_context(viewport={'width':740,'height':360})
+    delayed.add_init_script('const raf=window.requestAnimationFrame.bind(window);window.requestAnimationFrame=(cb)=>raf(ts=>cb(ts-50));')
+    animation=delayed.new_page();animation.on('pageerror',lambda error:errors.append(str(error)));animation.goto(URL)
+    enter(animation,'gate');solve(animation,LEVELS[0])
+    print('Animation tolerates an initial frame timestamp before the click handler: PASS')
     assert not errors,errors
     print('Storage denied: play and session unlock work. No browser errors.')
     browser.close()
