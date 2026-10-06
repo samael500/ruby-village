@@ -2,7 +2,6 @@
 Start npm run dev, then python tests/browser_check.py [base URL].
 """
 import sys
-from pathlib import Path
 from playwright.sync_api import sync_playwright
 URL = sys.argv[1] if len(sys.argv)>1 else 'http://127.0.0.1:5173/ruby-village/'
 
@@ -18,8 +17,17 @@ def place(page,piece,q,r):
     page.locator(f'[data-piece="{piece}"]').click()
     click_cell(page,q,r)
     assert page.locator('[data-preview="valid"]').count()==1
+    preview=page.locator('[data-preview]').inner_html()
+    # A person moves across the board to reach the confirmation button.
+    page.mouse.move(*center(page,'#place'),steps=30)
+    assert page.locator('[data-preview]').inner_html()==preview, 'Clicked destination moved while reaching for Place'
+    assert page.locator('#place').is_enabled()
     page.locator('#place').click()
     assert page.locator(f'[data-piece="{piece}"].placed').count()==1
+    assert piece_name(piece) in page.locator(cell(q,r)).get_attribute('aria-label')
+
+def piece_name(piece):
+    return {'line':'Три в ряд','bend':'Уголок','cluster':'Четвёрка','one-a':'Камешек 1','one-b':'Камешек 2'}[piece]
 
 def drag_to(page,source,target):
     x,y=center(page,source); a,b=center(page,target)
@@ -46,17 +54,41 @@ with sync_playwright() as p:
             print(f'Layout {width}x{height}, {size}: {page.locator("#metric").inner_text()}')
         page.locator('#size').select_option('9,6')
         page.screenshot(path=f'/tmp/ruby-village-{width}.png')
+    # Hover previews before the first click; a subsequent click changes the pinned cell.
+    for width,height in [(1280,720),(915,412),(740,360)]:
+        page.set_viewport_size({'width':width,'height':height})
+        page.locator('[data-piece="one-a"]').click()
+        page.mouse.move(*center(page,cell(1,1)),steps=10)
+        hover_preview=page.locator('[data-preview]').inner_html()
+        page.mouse.move(*center(page,cell(2,1)),steps=10)
+        assert page.locator('[data-preview]').inner_html()!=hover_preview
+        click_cell(page,2,1)
+        pinned_preview=page.locator('[data-preview]').inner_html()
+        page.mouse.move(*center(page,cell(3,1)),steps=10)
+        assert page.locator('[data-preview]').inner_html()==pinned_preview
+        click_cell(page,3,1)
+        assert page.locator('[data-preview]').inner_html()!=pinned_preview
+        page.mouse.move(*center(page,'#place'),steps=30)
+        assert page.locator('#place').is_enabled()
+        page.locator('#place').click()
+        assert 'Камешек 1' in page.locator(cell(3,1)).get_attribute('aria-label')
+        page.locator('#clear').click()
+        place(page,'line',0,1)
+        page.locator('#clear').click()
     page.set_viewport_size({'width':915,'height':412})
     place(page,'line',0,1)
     # Own cells can be selected and edited, then undo restores the position.
     click_cell(page,0,1)
+    original_preview=page.locator('[data-preview]').inner_html()
+    page.mouse.move(*center(page,'#right'),steps=30)
+    assert page.locator('[data-preview]').inner_html()==original_preview
     page.locator('#right').click();page.locator('#place').click()
     page.locator('#undo').click()
     assert 'Три в ряд' in page.locator(cell(2,1)).get_attribute('aria-label')
     # Overlap and outside bounds are visibly invalid.
     page.locator('[data-piece="bend"]').click();click_cell(page,1,2)
     page.locator('#left').click()
-    page.mouse.move(*center(page,cell(8,0)))
+    click_cell(page,8,0)
     assert page.locator('[data-preview="invalid"]').count()==1
     assert page.locator('#place').is_disabled()
     page.keyboard.press('Escape')

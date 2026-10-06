@@ -17,6 +17,8 @@ const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as 
 const svg = document.getElementById('board') as unknown as SVGSVGElement;
 let cols = 9, rows = 6, layout: Layout = {}, history: Layout[] = [];
 let selected: string | null = null, anchor: Hex | null = null, turns = 0;
+// Once clicked, keep the destination while the pointer travels to the controls.
+let anchorPinned = false;
 let mode = 'select', path = new Set<string>();
 let radius = 20, origin = {x:0,y:0};
 let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number} | null = null;
@@ -36,9 +38,9 @@ function message(text: string) { $('status').textContent = text; }
 function endpoints() { const row = Math.floor(rows/2); return [offsetHex(0,row),offsetHex(cols-1,row)]; }
 function previewValid() { return !!(selected && anchor && valid(selected,{anchor,turns},layout,cols,rows)); }
 function snapshot() { history.push(structuredClone(layout)); path.clear(); }
-function resetSelection() { selected=null; anchor=null; turns=0; }
+function resetSelection() { selected=null; anchor=null; turns=0; anchorPinned=false; }
 function select(id: string) {
-  selected=id; anchor=layout[id]?.anchor ?? null; turns=layout[id]?.turns ?? 0; path.clear();
+  selected=id; anchor=layout[id]?.anchor ?? null; turns=layout[id]?.turns ?? 0; anchorPinned=!!layout[id]; path.clear();
   message(`${pieceById(id).name}: ${mode === 'select' ? 'выбери клетку и нажми «Поставить».' : 'перетащи на поле. Можно повернуть кнопками.'}`);
 }
 function commit() {
@@ -116,14 +118,17 @@ svg.addEventListener('click',e=>{
   if(!cell) return;
   const [q,r]=cell.split(',').map(Number), h={q,r}, owner=ownerAt(h);
   if(owner && owner!==selected) select(owner);
-  else if(selected) anchor=h;
+  else if(selected) {
+    anchor=h; anchorPinned=true;
+    message(previewValid() ? 'Место выбрано. Нажми «Поставить» или выбери другую клетку.' : 'Здесь плита не помещается. Выбери другую клетку или поверни её.');
+  }
   render();
 });
 svg.addEventListener('keydown',e=>{
   if(e.key==='Enter'||e.key===' ') {e.preventDefault(); (e.target as Element).dispatchEvent(new MouseEvent('click',{bubbles:true}));}
 });
 svg.addEventListener('pointermove',e=>{
-  if(mode==='select' && selected && e.pointerType==='mouse' && !e.buttons) {anchor=eventHex(e); renderBoard(); updateControls();}
+  if(mode==='select' && selected && !anchorPinned && e.pointerType==='mouse' && !e.buttons) {anchor=eventHex(e); renderBoard(); updateControls();}
 });
 function startDrag(e: PointerEvent,id: string) {
   if(mode!=='drag'||!e.isPrimary||e.button!==0||drag) return;
