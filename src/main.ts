@@ -4,15 +4,29 @@ import {pieces, pieceById, placedCells, occupied, valid, type Layout} from './ga
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
-<header><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<small>проверка управления</small></h1></div>
-<div class="settings"><label>Поле<select id="size" aria-label="Размер поля"><option value="7,5">7 × 5</option><option value="9,6" selected>9 × 6</option><option value="11,7">11 × 7</option></select></label>
-<label>Управление<select id="mode" aria-label="Режим управления"><option value="select">Выбрать и поставить</option><option value="drag">Перетаскивать</option></select></label>
-<button id="fullscreen" aria-label="Полный экран" title="Полный экран" hidden>⛶</button></div></header>
-<div class="portrait">↻ Удобнее играть, повернув телефон горизонтально</div>
-<main id="field"><svg id="board" role="group" aria-label="Гексагональное поле. Деревня слева, мельница справа"></svg><span id="metric"></span></main>
-<footer><div class="tray-row"><div id="tray" aria-label="Набор фигур"></div><p class="hint" id="hint">Выбери плиту → клетку → «Поставить»</p></div>
-<div class="actions"><button id="left"><b>↶</b><span>Повернуть влево</span></button><button id="right"><b>↷</b><span>Повернуть вправо</span></button><button id="place" class="primary"><b>＋</b><span>Поставить</span></button><button id="return"><b>↥</b><span>Вернуть в набор</span></button><button id="undo"><b>↩</b><span>Отменить действие</span></button><button id="clear"><b>⌫</b><span>Очистить поле</span></button><button id="check" class="check"><b>⚑</b><span>Проверить дорогу</span></button></div>
-<div id="status" role="status" aria-live="polite">Соедини деревню и мельницу фиолетовыми плитами.</div></footer>`;
+<header><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · проверка управления</span></h1></div><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div></header>
+<div class="portrait">↻ Поверни телефон — поле станет крупнее</div>
+<main id="field"><svg id="board" role="group" aria-label="Гексагональное поле. Деревня слева, мельница справа"></svg></main>
+<footer>
+<div id="tray" aria-label="Набор фигур"></div>
+<div id="selection-actions" hidden>
+<button id="other"><b>‹</b><span>Другие плиты</span></button>
+<button id="left" aria-label="Повернуть влево"><b>↶</b><span>Влево</span></button>
+<button id="right" aria-label="Повернуть вправо"><b>↷</b><span>Вправо</span></button>
+<button id="place" class="primary"><b>＋</b><span>Поставить</span></button>
+<button id="return"><b>↥</b><span>В набор</span></button></div>
+<button id="check" class="check"><b>⚑</b><span>Проверить дорогу</span></button>
+<button id="undo" aria-label="Отменить последнее действие"><b>↩</b><span>Отменить</span></button>
+<button id="settings-open" aria-haspopup="dialog"><b>⚙</b><span>Настройки</span></button>
+</footer>
+<dialog id="settings-panel" aria-labelledby="settings-title">
+<div class="dialog-heading"><h2 id="settings-title">Настройки площадки</h2><button id="settings-close" aria-label="Закрыть настройки">✕</button></div>
+<div class="settings"><label>Размер поля<select id="size" aria-label="Размер поля"><option value="7,5">7 × 5 — крупнее</option><option value="9,6" selected>9 × 6</option><option value="11,7">11 × 7 — мельче</option></select></label>
+<label>Управление<select id="mode" aria-label="Режим управления"><option value="select">Выбрать и поставить</option><option value="drag">Перетаскивать</option></select></label></div>
+<p id="metric"></p><p id="hint">Выбери плиту → клетку → «Поставить»</p>
+<p class="settings-note">Смена размера очищает поле. Поворот телефона сохраняет плиты.</p>
+<div class="settings-actions"><button id="clear">Очистить поле</button><button id="fullscreen" hidden>Полный экран</button></div>
+</dialog>`;
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const svg = document.getElementById('board') as unknown as SVGSVGElement;
 let cols = 9, rows = 6, layout: Layout = {}, history: Layout[] = [];
@@ -48,6 +62,9 @@ function commit() {
   snapshot(); layout[selected]={anchor:{...anchor},turns}; resetSelection(); message('Плита на месте. Выбери следующую!'); render(); return true;
 }
 function updateControls() {
+  $('tray').hidden=!!selected;
+  $('selection-actions').hidden=!selected;
+  $('check').hidden=!!selected;
   for (const id of ['left','right']) $(id).toggleAttribute('disabled',!selected);
   $('place').toggleAttribute('disabled',!previewValid());
   $('return').toggleAttribute('disabled',!selected);
@@ -168,6 +185,10 @@ app.addEventListener('pointercancel',e=>finishDrag(e,true));
 app.addEventListener('lostpointercapture',e=>{if(drag) finishDrag(e,true);});
 for(const [id,delta] of [['left',-1],['right',1]] as const) $(id).onclick=()=>{if(selected){turns=(turns+delta+6)%6;render();}};
 $('place').onclick=commit;
+$('other').onclick=()=>{resetSelection();message('Выбери другую плиту.');render();};
+const settings=$('settings-panel') as HTMLDialogElement;
+$('settings-open').onclick=()=>settings.showModal();
+$('settings-close').onclick=()=>settings.close();
 $('return').onclick=()=>{
   if(!selected) return;
   if(layout[selected]) {snapshot();delete layout[selected];}
@@ -197,6 +218,6 @@ if(document.fullscreenEnabled) {
     catch {message('Полный экран недоступен. Можно играть так.');}
   };
 }
-window.addEventListener('keydown',e=>{if(e.key==='Escape'){resetSelection();render();}});
+window.addEventListener('keydown',e=>{if(e.key==='Escape' && !settings.open){resetSelection();render();}});
 new ResizeObserver(()=>renderBoard()).observe($('field'));
 render();

@@ -33,31 +33,54 @@ def drag_to(page,source,target):
     x,y=center(page,source); a,b=center(page,target)
     page.mouse.move(x,y);page.mouse.down();page.mouse.move(a,b,steps=12);page.mouse.up()
 
+def setting(page, selector, value=None):
+    page.locator('#settings-open').click()
+    if value is None:
+        page.locator(selector).click()
+    else:
+        page.locator(selector).select_option(value)
+    page.locator('#settings-close').click()
+
 def check_layout(page):
     assert page.evaluate('document.documentElement.scrollWidth <= innerWidth && document.documentElement.scrollHeight <= innerHeight')
-    assert page.locator('button:visible, select').evaluate_all('(els)=>els.every(e=>e.getBoundingClientRect().height>=48)')
+    assert page.locator('button:visible, select:visible').evaluate_all('(els)=>els.every(e=>e.getBoundingClientRect().height>=48 && e.getBoundingClientRect().width>=48)')
     assert page.locator('#board [data-cell] polygon').evaluate_all('''els=>els.every(e=>{const b=e.getBoundingClientRect(); const p=document.querySelector('#field').getBoundingClientRect();return b.x>=p.x&&b.y>=p.y&&b.right<=p.right&&b.bottom<=p.bottom})''')
-    assert page.locator('button:visible, select, #status').evaluate_all('''els=>els.every(e=>{const r=e.getBoundingClientRect();return r.x>=0&&r.y>=0&&r.right<=innerWidth&&r.bottom<=innerHeight})''')
+    assert page.locator('button:visible, select:visible, #status').evaluate_all('''els=>els.every(e=>{const r=e.getBoundingClientRect();return r.x>=0&&r.y>=0&&r.right<=innerWidth&&r.bottom<=innerHeight})''')
 
 with sync_playwright() as p:
     browser=p.chromium.launch()
     page=browser.new_page(viewport={'width':1280,'height':720})
     errors=[];page.on('pageerror',lambda e:errors.append(str(e)))
     page.goto(URL)
-    for width,height in [(1280,720),(915,412),(740,360)]:
+    for width,height in [(640,360),(800,450),(960,540),(1280,720),(915,412),(740,360)]:
         page.set_viewport_size({'width':width,'height':height})
         for size,count in [('7,5',35),('9,6',54),('11,7',77)]:
-            page.locator('#size').select_option(size)
+            setting(page,'#size',size)
             page.wait_for_timeout(100)
             assert page.locator('[data-cell]').count()==count
             check_layout(page)
-            print(f'Layout {width}x{height}, {size}: {page.locator("#metric").inner_text()}')
-        page.locator('#size').select_option('9,6')
+            print(f'Layout {width}x{height}, {size}: {page.locator("#metric").text_content()}')
+        setting(page,'#size','9,6')
         page.screenshot(path=f'/tmp/ruby-village-{width}.png')
+    # Settings must close without losing a pending placement, including Escape.
+    page.set_viewport_size({'width':640,'height':360})
+    page.locator('[data-piece="line"]').click();click_cell(page,1,1)
+    pending=page.locator('[data-preview]').inner_html()
+    page.locator('#settings-open').click()
+    page.keyboard.press('Escape')
+    assert not page.locator('#settings-panel').is_visible()
+    assert page.locator('[data-preview]').inner_html()==pending
+    page.locator('#other').click()
+    assert page.locator('#tray').is_visible()
     # Hover previews before the first click; a subsequent click changes the pinned cell.
-    for width,height in [(1280,720),(915,412),(740,360)]:
+    for width,height in [(640,360),(800,450),(960,540),(1280,720),(915,412),(740,360)]:
         page.set_viewport_size({'width':width,'height':height})
+        field_before=page.locator('#field').bounding_box()
         page.locator('[data-piece="one-a"]').click()
+        check_layout(page)
+        assert page.locator('#field').bounding_box()==field_before, 'Choosing a piece must not resize the field'
+        assert page.locator('#tray').is_hidden()
+        assert page.locator('#selection-actions').is_visible()
         page.mouse.move(*center(page,cell(1,1)),steps=10)
         hover_preview=page.locator('[data-preview]').inner_html()
         page.mouse.move(*center(page,cell(2,1)),steps=10)
@@ -72,9 +95,9 @@ with sync_playwright() as p:
         assert page.locator('#place').is_enabled()
         page.locator('#place').click()
         assert 'Камешек 1' in page.locator(cell(3,1)).get_attribute('aria-label')
-        page.locator('#clear').click()
+        setting(page,'#clear')
         place(page,'line',0,1)
-        page.locator('#clear').click()
+        setting(page,'#clear')
     page.set_viewport_size({'width':915,'height':412})
     place(page,'line',0,1)
     # Own cells can be selected and edited, then undo restores the position.
@@ -95,9 +118,9 @@ with sync_playwright() as p:
     click_cell(page,0,1);page.locator('#return').click()
     assert page.locator('.piece.placed').count()==0
     page.locator('#undo').click();assert page.locator('.piece.placed').count()==1
-    page.locator('#clear').click();assert page.locator('.piece.placed').count()==0
+    setting(page,'#clear');assert page.locator('.piece.placed').count()==0
     page.locator('#undo').click();assert page.locator('.piece.placed').count()==1
-    page.locator('#mode').select_option('drag')
+    setting(page,'#mode','drag')
     drag_to(page,'[data-piece="one-a"]',cell(3,2))
     assert page.locator('[data-piece="one-a"].placed').count()==1
     drag_to(page,cell(3,2),cell(4,2))
@@ -119,10 +142,10 @@ with sync_playwright() as p:
     assert page.locator('.piece.placed').count()==before
     page.set_viewport_size({'width':915,'height':412});page.wait_for_timeout(100)
     assert page.locator('.piece.placed').count()==before
-    page.locator('#size').select_option('7,5')
+    setting(page,'#size','7,5')
     assert page.locator('.piece.placed').count()==0
     assert page.locator('#undo').is_disabled()
-    page.locator('#mode').select_option('select')
+    setting(page,'#mode','select')
     page.locator('#check').click();assert 'Пока дорога не соединена' in page.locator('#status').inner_text()
     # Middle row r=2 has q=-1..5. Endpoints alone plus 5 paved cells suffice.
     place(page,'line',0,2);place(page,'one-a',3,2);place(page,'one-b',4,2)
@@ -132,11 +155,11 @@ with sync_playwright() as p:
     assert not errors, errors
     print('Mouse selection, edit, rotation, return, drag, invalid drop, cancel, undo, clear, resize, path: PASS')
     # Real browser touch events, including the target lifted above the finger.
-    context=browser.new_context(viewport={'width':915,'height':412},has_touch=True,is_mobile=True)
+    context=browser.new_context(viewport={'width':640,'height':360},has_touch=True,is_mobile=True)
     touch=context.new_page();touch.goto(URL)
     touch.locator('[data-piece="one-a"]').tap();touch.locator(cell(2,2)).tap();touch.locator('#place').tap()
     assert touch.locator('.piece.placed').count()==1
-    touch.locator('#mode').select_option('drag')
+    setting(touch,'#mode','drag')
     session=context.new_cdp_session(touch)
     x,y=center(touch,'[data-piece="line"]');a,b=center(touch,cell(1,1))
     radius=touch.locator(cell(1,1)).bounding_box()['height']/2
