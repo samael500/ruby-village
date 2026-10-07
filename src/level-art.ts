@@ -11,13 +11,7 @@ export function backdrop(svg:SVGSVGElement,width:number,height:number,scene:Retu
   node('rect',{width,height,fill:'#7b8748','pointer-events':'none'},svg);
   const world=node('g',{'pointer-events':'none',transform:`translate(${scene.offset.x} ${scene.offset.y}) scale(${scene.fit})`},svg);
   node('image',{id:'court-background',href:artUrl(scene.art.file),width:scene.art.width,height:scene.art.height},world);
-  // Artwork entrances and puzzle endpoints are independent. No gameplay cells are added.
-  {
-    for(const points of scene.approaches){
-      const d=points.map((p,i)=>`${i?'L':'M'} ${p.x} ${p.y}`).join(' ');
-      node('path',{d,fill:'none',stroke:'#dab96d','stroke-width':22,'stroke-linecap':'round','stroke-linejoin':'round',opacity:.8,'data-approach':''},world);
-    }
-  }
+
 }
 export function scenery(svg:SVGSVGElement,scene:ReturnType<typeof sceneLayout>){
   const layer=node('g',{'pointer-events':'none',transform:`translate(${scene.offset.x} ${scene.offset.y}) scale(${scene.fit})`},svg);
