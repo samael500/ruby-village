@@ -29,6 +29,8 @@ def fit(page):
       return Math.abs(r.width/r.height-artRatio)<1e-6 && r.left>=board.left-.1&&r.right<=board.right+.1&&r.top>=board.top-.1&&r.bottom<=board.bottom+.1 && !document.querySelector('#scene-house,#scene-gate,[data-environment]');
     }''')
     assert page.locator('[data-grid] path').count()==2
+    assert page.locator('[data-approach]').count()==2
+    assert page.locator('[data-approach]').evaluate_all("els=>els.every(e=>getComputedStyle(e).pointerEvents==='none')")
 
 def settings(page,value):
     page.get_by_role('button',name='Настройки',exact=True).tap();page.locator('#mode').select_option(value);page.locator('#settings-close').tap()

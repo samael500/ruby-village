@@ -36,9 +36,12 @@ test('v4: Рута не закрывает обычные клетки вне с
   }
  }
 });
-test('v4: подходы landscape вместе с шириной дорожки не пересекают обычные клетки',()=>{
- const s=sceneLayout(1280,720,7,5,level.start,level.goal);
- const ordinary=new Set(boardCells(7,5).map(key).filter(k=>!['0,0','1,0',key(level.start),key(level.goal)].includes(k)));
+for(const portrait of [false,true])test(`v4: подходы ${portrait?'portrait':'landscape'} вместе с шириной дорожки не пересекают обычные клетки`,()=>{
+ const s=sceneLayout(1280,720,7,5,level.start,level.goal,portrait);
+ assert.equal(s.approaches.length,2);
+ assert.deepEqual(s.approaches[0][0],s.art.door);
+ assert.deepEqual(s.approaches[1].at(-1),s.art.gate);
+ const ordinary=new Set(boardCells(7,5).map(key).filter(k=>![key(level.start),key(level.goal)].includes(k)));
  for(const points of s.approaches)for(let i=1;i<points.length;i++){
   const a=points[i-1],b=points[i];
   for(let t=0;t<=100;t++)for(let angle=0;angle<12;angle++){
