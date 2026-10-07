@@ -121,3 +121,8 @@ body:has(.illustrated-level){background:#283f2a}
 @media(max-width:360px){.map-node{width:46%}.map-book{display:none}}
 #bridge-guide{display:block;width:220px;max-width:100%;height:72px;margin:4px auto}
 @media(max-height:420px){#bridge-guide{height:54px;width:190px}}
+/* Scene events live in the existing header, never over playable polygons. */
+#scene-event{width:34px;height:34px;flex:0 0 34px;pointer-events:none}
+.illustrated-level header .brand{min-width:0;flex-shrink:1}
+.illustrated-level h1{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.illustrated-level h1 small{display:block;font:9px system-ui;line-height:10px;opacity:.85}

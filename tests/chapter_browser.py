@@ -37,7 +37,7 @@ def place(page,id,p,touch=False):
  click(page,'#place',touch)
  assert page.locator(f'[data-piece="{id}"].placed').count()==1
 
-def solve(page,level,touch=False,first=True):
+def solve(page,level,touch=False,first=True,resize_walk=False):
  click(page,'#check',touch);assert not page.locator('#story').is_visible()
  assert 'Пока дорога' in page.locator('#status').inner_text()
  for id,p in level['solution'].items():place(page,id,p,touch)
@@ -45,10 +45,20 @@ def solve(page,level,touch=False,first=True):
  if first:
   size=page.viewport_size;page.screenshot(path=str(SHOTS/f'road-{level["id"]}-{size["width"]}x{size["height"]}.png'))
  click(page,'#check',touch)
+ if resize_walk:
+  expect(page.locator('#ruta-marker')).to_be_visible()
+  assert page.locator('#board #ruta-idle').count()==0
+  owners=page.locator('[data-owner]:not([data-owner=""])').count()
+  for w,h in [(390,844),(915,412)]:
+   page.set_viewport_size({'width':w,'height':h});page.wait_for_timeout(80)
+   assert page.locator('#board #ruta-idle,#board #ruta-marker').count()==1
+   assert page.locator('[data-owner]:not([data-owner=""])').count()==owners
+   fit(page)
  page.locator('#check').evaluate('el=>{el.dispatchEvent(new MouseEvent("click"));el.dispatchEvent(new MouseEvent("click"));}')
  expect(page.locator('#story')).to_be_visible(timeout=15000)
  assert page.locator('.cell.path').count()>1
  assert page.locator('[data-victory-event]').count()==1;fit(page)
+ assert page.locator('#board #ruta-idle,#board #ruta-marker').count()==1
  if first:assert page.locator('#story-text').inner_text()==level['outro'].split('\n')[0].split(': ',1)[1]
  if level['id']=='mill':
   assert page.locator('[data-wheel="running"]').count()==1
@@ -68,6 +78,8 @@ def fit(page):
  bad=page.locator(selector).evaluate_all('''els=>els.filter(e=>{const r=e.getBoundingClientRect();return r.width<47.9||r.height<47.9||r.left<-.1||r.top<-.1||r.right>innerWidth+.1||r.bottom>innerHeight+.1}).map(e=>({id:e.id,text:e.innerText,rect:e.getBoundingClientRect().toJSON()}))''')
  assert not bad,bad
  if page.locator('#field').is_visible():
+  panels=page.locator('#scene-event:visible,[data-prototype]:visible').evaluate_all('els=>els.map(e=>e.getBoundingClientRect().toJSON())')
+  assert page.locator('[data-cell] > polygon').evaluate_all('''(els,panels)=>els.every(e=>{const r=e.getBoundingClientRect();return panels.every(a=>a.right<=r.left||a.left>=r.right||a.bottom<=r.top||a.top>=r.bottom)})''',panels)
   assert page.locator('[data-cell] > polygon').evaluate_all('''els=>els.every(e=>{const r=e.getBoundingClientRect(),p=document.querySelector('#field').getBoundingClientRect();return r.left>=p.left-.1&&r.right<=p.right+.1&&r.top>=p.top-.1&&r.bottom<=p.bottom+.1})''')
 
 with sync_playwright() as p:
@@ -147,7 +159,7 @@ with sync_playwright() as p:
  normal.add_init_script('const raf=requestAnimationFrame.bind(window);window.requestAnimationFrame=cb=>raf(ts=>cb(ts-50));')
  walking=normal.new_page();walking.on('pageerror',lambda e:errors.append(str(e)));walking.goto(URL)
  walking.evaluate('(k)=>localStorage.setItem(k,JSON.stringify({version:2,completed:["gate"]}))',KEY);walking.reload()
- enter(walking,'garden');solve(walking,LEVELS[1])
+ enter(walking,'garden');solve(walking,LEVELS[1],resize_walk=True)
  print('Normal walking animation, duplicate-check guard and early frame timestamp: PASS',flush=True)
  assert not errors,errors
  print('Denied storage session play: PASS; no browser errors.',flush=True);b.close()

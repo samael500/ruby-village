@@ -10,7 +10,7 @@ import {loadState,saveProgress,completeLevel,available,type StorageLike} from '.
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
-<header><button id="scene-back" hidden aria-label="Вернуться на карту"></button><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · первая глава</span></h1></div><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div><button id="scene-help" hidden aria-label="Как играть">?</button></header>
+<header><button id="scene-back" hidden aria-label="Вернуться на карту"></button><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · первая глава</span></h1></div><span id="scene-event" hidden></span><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div><button id="scene-help" hidden aria-label="Как играть">?</button></header>
 <div class="portrait">↻ Поверни телефон — поле станет крупнее</div>
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
@@ -197,6 +197,7 @@ function renderBoard() {
   svg.append(landmarks);
   if(sceneTransform)scenery(svg,sceneTransform);
   else if(chapterLevel)prototypeRuta();
+  $('scene-event').replaceChildren();$('scene-event').hidden=true;
   if(chapterLevel&&(completed.includes(level.id)||phase==='won'))victoryDecoration();
 
   renderPreview();
@@ -213,16 +214,18 @@ function renderBoard() {
 function prototypeRuta(){
  const c=hexCenter(level.start,radius),visible=radius*2*1.1,height=visible*1300/1232,width=height*1209/1300;
  const layer=el('g',{'pointer-events':'none'},svg);
+ if(!route.length){
  el('ellipse',{cx:c.x+origin.x,cy:c.y+origin.y,rx:radius*.23,ry:radius*.08,fill:'#3f3b32',opacity:.25},layer);
  el('image',{id:'ruta-idle',href:artUrl('ruta-idle'),x:c.x+origin.x-width*.55,y:c.y+origin.y-height*1277/1300,width,height,'aria-label':'Рута у начала дороги'},layer);
- el('text',{x:8,y:18,fill:'#40583e','font-size':11,'data-prototype':''},layer,'Условная сцена · '+storyFor(level.id)!.scene);
+ }
+
 }
 function victoryDecoration(){
  const labels:Record<string,[string,string]>={gate:['⚑','Калитка открыта'],garden:['◉','Яблоки на столе'],well:['✿','Цветы политы'],bakery:['♨','Хлеб готов'],stream:['➜','Переход готов'],mill:['▣','Мука на тележке'],post:['✉','Почта в пути'],forest:['♠','Яблоневый сад →']};
- const [symbol,text]=labels[level.id],event=el('g',{'pointer-events':'none','data-victory-event':storyFor(level.id)!.mapEvent},svg);
- el('rect',{x:8,y:25,width:Math.min(240,svg.getBoundingClientRect().width-16),height:38,rx:8,fill:'#fff0c9',opacity:.95},event);
- el('text',{x:55,y:49,'font-size':12,fill:'#4f6536'},event,`${symbol} ${text}`);
- const sketch=el('g',{transform:'translate(17 32)',fill:'none',stroke:'#795737','stroke-width':2,'stroke-linecap':'round'},event);
+ const [,text]=labels[level.id],host=$('scene-event');host.hidden=false;host.setAttribute('role','img');host.setAttribute('aria-label',text);
+ const badge=el('svg',{width:34,height:34,viewBox:'0 0 36 36','aria-hidden':'true'},host);
+ const event=el('g',{'pointer-events':'none','data-victory-event':storyFor(level.id)!.mapEvent},badge);
+ const sketch=el('g',{transform:'translate(2 4)',fill:'none',stroke:'#f2d49b','stroke-width':2,'stroke-linecap':'round'},event);
  const drawings:Record<string,string>={
   gate:'M 0 25 V 0 M 25 25 V 0 M 0 5 L 16 0 V 21 L 0 25 M 5 4 V 23',
   garden:'M 0 13 H 28 M 5 13 V 25 M 23 13 V 25 M 6 2 L 8 11 H 20 L 22 2 Z',
@@ -236,7 +239,7 @@ function victoryDecoration(){
  if(level.id==='garden')for(const [x,y] of [[10,6],[16,6],[14,2]])el('circle',{cx:x,cy:y,r:3,fill:'#ac4950',stroke:'none'},sketch);
  if(level.id==='well')el('path',{d:'M 25 13 L 25 15 M 29 11 L 29 13',stroke:'#559eae'},sketch);
  if(level.id==='mill')for(const x of [6,20])el('circle',{cx:x,cy:23,r:3,fill:'#88603b'},sketch);
- if(level.id==='forest')el('circle',{cx:34,cy:8,r:5,fill:'#ab70cc',stroke:'none',class:phase==='won'&&firstVictory&&performance.now()-victoryAt<1200?'forest-glimmer':'',style:`animation-delay:-${Math.max(0,performance.now()-victoryAt)}ms`},sketch);
+ if(level.id==='forest')el('circle',{cx:30,cy:8,r:3,fill:'#ab70cc',stroke:'none',class:phase==='won'&&firstVictory&&performance.now()-victoryAt<1200?'forest-glimmer':'',style:`animation-delay:-${Math.max(0,performance.now()-victoryAt)}ms`},sketch);
 }
 function render() {
   if(deferDock){
@@ -435,6 +438,7 @@ function enterLevel(next:Level) {
   app.classList.toggle('prototype-level',level.id!=='sandbox'&&level.id!=='gate');
   sceneChrome(level.id!=='sandbox');
   document.querySelector('h1')!.textContent=level.id==='sandbox'?'Рубиновая деревня':level.name;
+  if(level.id!=='sandbox'&&level.id!=='gate'){const note=document.createElement('small');note.textContent='Условная сцена';note.dataset.prototype='';document.querySelector('h1')!.append(note);}
   $('chapter-map').hidden=true;$('field').hidden=false;$('game-controls').hidden=false;
   $('size-setting').hidden=level.id!=='sandbox';
   $('clear').textContent=level.id==='sandbox'?'Очистить поле':'Начать уровень заново';
@@ -458,6 +462,7 @@ function mapGeometry(){
  });
 }
 function showMap(){
+ $('scene-event').hidden=true;
  app.classList.remove('illustrated-level','prototype-level');sceneChrome(false);document.querySelector('h1')!.textContent='Рубиновая деревня';
  cancelAnimationFrame(frame);screen='map';phase='playing';route=[];resetSelection();
  if(settings.open)settings.close();if(story.open)story.close();
