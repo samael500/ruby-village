@@ -12,7 +12,7 @@ import {loadState,saveProgress,completeLevel,available,type StorageLike} from '.
 const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
 <header><button id="scene-back" hidden aria-label="Вернуться на карту"></button><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · первая глава</span></h1></div><span id="scene-event" hidden></span><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div><button id="scene-help" hidden aria-label="Как играть">?</button></header>
-<div class="portrait">↻ Поверни телефон — поле станет крупнее</div>
+
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
 <div class="map-landscape"><svg id="map-background" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"><path d="M 15 170 Q 300 230 480 190 T 980 200" fill="none" stroke="#a4c4bd" stroke-width="25"/><path d="M 90 360 L 120 325 L 150 360 M 760 20 L 790 55 L 820 20" fill="none" stroke="#789065" stroke-width="12"/></svg><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div>
@@ -64,6 +64,9 @@ const loaded=loadState(storage);
 let completed=loaded.completed,introSeen=loaded.introSeen,storageAvailable=!!storage;
 function persist(){storageAvailable=saveProgress(completed,storage,introSeen);}
 let firstVictory=false, victoryAt=0;
+let orientationBlocked=false, pauseStarted=0, pausedMilliseconds=0;
+let resumeJourney:(()=>void)|null=null;
+const portraitWindow=()=>{const v=window.visualViewport;return (v?.height??innerHeight)>(v?.width??innerWidth);};
 let route:Hex[]=[], journey=0, frame=0;
 let cols = 9, rows = 6, layout: Layout = {}, history: Layout[] = [];
 let selected: string | null = null, anchor: Hex | null = null, turns = 0;
@@ -106,7 +109,7 @@ function select(id: string) {
   message(`${pieceById(id).name}: ${mode === 'select' ? 'выбери клетку и нажми «Поставить».' : 'перетащи на поле. Можно повернуть кнопками.'}`);
 }
 function commit() {
-  if (phase!=='playing' || !selected || !anchor || !previewValid()) return false;
+  if (orientationBlocked || phase!=='playing' || !selected || !anchor || !previewValid()) return false;
   snapshot(); layout[selected]={anchor:{...anchor},turns}; resetSelection(); message('Плита на месте. Выбери следующую!'); render(); return true;
 }
 function updateControls() {
@@ -163,11 +166,11 @@ function renderPreview() {
   }
 }
 function renderBoard() {
-  if(screen!=='game') return;
+  if(screen!=='game'||orientationBlocked||portraitWindow()) return;
   if(drag){renderPreview();return;}
   const rect=svg.getBoundingClientRect(), padding=8;
   const illustrated=level.id==='gate',chapterLevel=level.id!=='sandbox';
-  const sceneTransform=illustrated?sceneLayout(rect.width,rect.height,cols,rows,level.start,level.goal,matchMedia('(orientation:portrait)').matches):null;
+  const sceneTransform=illustrated?sceneLayout(rect.width,rect.height,cols,rows,level.start,level.goal):null;
   const availableWidth=rect.width-2*padding;
   radius=Math.max(1,Math.min(availableWidth/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(GROUND_SCALE*(1.5*(rows-1)+2))));
   const w=Math.sqrt(3)*radius*(cols+0.5), h=radius*(1.5*(rows-1)+2);
@@ -341,7 +344,7 @@ $('return').onclick=()=>{
 $('undo').onclick=()=>{const prior=history.pop();if(prior){layout=prior;path.clear();resetSelection();message('Последнее действие отменено.');render();}};
 $('clear').onclick=()=>{if(phase!=='playing')return;if(Object.keys(layout).length)snapshot();layout={};path.clear();route=[];resetSelection();message('Начнём снова. Все плиты в наборе.');render();};
 $('check').onclick=()=>{
-  if(phase!=='playing')return;
+  if(orientationBlocked||phase!=='playing')return;
   const result=winningPath(level,layout);
   path=new Set(result?.map(key));
   if(!result){message('Пока дорога не соединена. Попробуй переложить плиты');renderBoard();return;}
@@ -351,15 +354,16 @@ $('check').onclick=()=>{
   completed=completeLevel(level.id,completed);persist();
   if(level.id==='gate'){phase='won';route=[];message('Дорога готова!');render();finishVictory();return;}
   message('Получилось! Рута проверяет дорожку.');render();
-  const began=performance.now(),duration=Math.min(3500,result.length*230);
+  const began=performance.now(),pauseAtStart=pausedMilliseconds,duration=Math.min(3500,result.length*230);
   const animate=(now:number)=>{
-    if(phase!=='walking'||screen!=='game')return;
-    journey=matchMedia('(prefers-reduced-motion: reduce)').matches?result.length-1:Math.max(0,Math.min(1,(now-began)/duration))*(result.length-1);
+    if(phase!=='walking'||screen!=='game'||orientationBlocked)return;
+    journey=matchMedia('(prefers-reduced-motion: reduce)').matches?result.length-1:Math.max(0,Math.min(1,(now-began-(pausedMilliseconds-pauseAtStart))/duration))*(result.length-1);
     updateRutaMarker();
-    if(journey>=result.length-1){phase='won';victoryAt=performance.now();renderBoard();finishVictory();}
+    if(journey>=result.length-1){phase='won';resumeJourney=null;victoryAt=performance.now();renderBoard();finishVictory();}
     else frame=requestAnimationFrame(animate);
   };
-  frame=requestAnimationFrame(animate);
+  resumeJourney=()=>{if(phase==='walking'&&!orientationBlocked)frame=requestAnimationFrame(animate);};
+  resumeJourney();
 };
 $('size').onchange=()=>{
   [cols,rows]=($('size') as HTMLSelectElement).value.split(',').map(Number);
@@ -444,7 +448,7 @@ function finishVictory(){if(firstVictory)showStory(true);else{message('Доро�
 story.addEventListener('cancel',e=>{e.preventDefault();$('story-skip').click();});
 function enterLevel(next:Level) {
   if(next.id!=='sandbox'&&!available(next.id,completed))return;
-  cancelAnimationFrame(frame);screen='game';phase=next.id==='sandbox'||introSeen.includes(next.id)?'playing':'intro';
+  cancelAnimationFrame(frame);resumeJourney=null;screen='game';phase=next.id==='sandbox'||introSeen.includes(next.id)?'playing':'intro';
   level=next;pieces=level.pieces;cols=level.cols;rows=level.rows;layout={};history=[];route=[];journey=0;path.clear();resetSelection();
   app.classList.toggle('illustrated-level',level.id!=='sandbox');
   app.classList.toggle('prototype-level',level.id!=='sandbox'&&level.id!=='gate');
@@ -461,10 +465,9 @@ function enterLevel(next:Level) {
   if(phase==='intro')showStory();
 }
 function mapGeometry(){
- const portrait=matchMedia('(orientation:portrait)').matches;
- const points=portrait?[[250,50],[750,50],[750,150],[250,150],[250,250],[750,250],[750,350],[250,350]]:[[120,95],[365,95],[610,95],[855,95],[855,300],[610,300],[365,300],[120,300]];
+ const points=[[120,95],[365,95],[610,95],[855,95],[855,300],[610,300],[365,300],[120,300]];
  const roads=$('map-roads');roads.replaceChildren();
- let previous=portrait?[25,50]:[20,95];
+ let previous=[20,95];
  levels.forEach((l,i)=>{
   const [x,y]=points[i],done=completed.includes(l.id);
   el('path',{d:`M ${previous[0]} ${previous[1]} L ${x} ${y}`,fill:'none',stroke:done?'#9062b0':'#a2ab8c','stroke-width':10,'stroke-dasharray':done?'none':'10 12','data-road':l.id,'data-complete':String(done)},roads);
@@ -476,7 +479,7 @@ function mapGeometry(){
 function showMap(){
  $('scene-event').hidden=true;
  app.classList.remove('illustrated-level','prototype-level');sceneChrome(false);document.querySelector('h1')!.textContent='Рубиновая деревня';
- cancelAnimationFrame(frame);screen='map';phase='playing';route=[];resetSelection();
+ cancelAnimationFrame(frame);resumeJourney=null;screen='map';phase='playing';route=[];resetSelection();
  if(settings.open)settings.close();if(story.open)story.close();
  $('field').hidden=true;$('game-controls').hidden=true;$('chapter-map').hidden=false;
  message(completed.length===levels.length?`Глава «${chapter.title}» пройдена`:`Первая глава · ${chapter.title}`);
@@ -530,7 +533,33 @@ icon($('other'),'M 15 5 L 7 12 L 15 19');
 $('scene-back').onclick=showMap;
 $('scene-help').onclick=()=>{document.querySelector('#help-panel #bridge-guide')?.remove();if(pieces.some(p=>p.kind==='bridge'))bridgeGuide($('help-panel'));$('help-title').textContent=`${level.startName} → ${level.goalName}`;($('help-panel') as HTMLDialogElement).showModal();};
 $('help-close').onclick=()=>($('help-panel') as HTMLDialogElement).close();
-showMap();
+const orientationScreen=document.createElement('section');
+orientationScreen.id='orientation-screen';orientationScreen.hidden=true;orientationScreen.tabIndex=-1;
+orientationScreen.setAttribute('role','region');orientationScreen.setAttribute('aria-label','Альбомный режим');
+orientationScreen.innerHTML=`<svg viewBox="0 0 160 150" width="160" height="150" aria-hidden="true"><g transform="rotate(-25 80 75)"><rect x="53" y="28" width="54" height="94" rx="10" fill="#edcf94" stroke="#765438" stroke-width="5"/><rect x="60" y="42" width="40" height="63" rx="3" fill="#9bb279"/><circle cx="80" cy="113" r="3" fill="#765438"/></g><path d="M 22 79 A 58 58 0 0 1 121 30 M 109 28 L 124 29 L 123 44" fill="none" stroke="#8659a5" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/></svg><h2>Поверни устройство — приключение продолжается в альбомном режиме</h2><p>Расширь окно, чтобы продолжить приключение</p>`;
+document.body.append(orientationScreen);
+let suspendedDialogs:HTMLDialogElement[]=[],previousFocus:HTMLElement|null=null,orientationGeneration=0;
+function updateOrientation(){
+ const blocked=portraitWindow();if(blocked===orientationBlocked)return;
+ orientationBlocked=blocked;const generation=++orientationGeneration;
+ if(blocked){
+  pauseStarted=performance.now();cancelAnimationFrame(frame);
+  if(drag)finishDrag(new PointerEvent('pointercancel',{pointerId:drag.pointer}),true);
+  previousFocus=document.activeElement as HTMLElement;
+  suspendedDialogs=[...app.querySelectorAll<HTMLDialogElement>('dialog[open]')];
+  suspendedDialogs.forEach(d=>d.close());
+  app.inert=true;app.hidden=true;orientationScreen.hidden=false;orientationScreen.focus({preventScroll:true});
+ }else{
+  pausedMilliseconds+=performance.now()-pauseStarted;
+  orientationScreen.hidden=true;app.hidden=false;app.inert=false;
+  suspendedDialogs.forEach(d=>d.showModal());suspendedDialogs=[];
+  previousFocus?.focus({preventScroll:true});
+  requestAnimationFrame(()=>{if(orientationBlocked||generation!==orientationGeneration)return;if(screen==='map')mapGeometry();else render();resumeJourney?.();});
+ }
+}
+window.addEventListener('resize',updateOrientation);
+window.visualViewport?.addEventListener('resize',updateOrientation);
+showMap();updateOrientation();
 
 // Development-only visual fixture; storage is disconnected for its whole session.
 if(artCheck){enterLevel(levels[0]);story.close();phase='playing';layout=Object.fromEntries(Object.entries(levels[0].solution).slice(0,3).map(([id,p])=>[id,structuredClone(p)]));render();}

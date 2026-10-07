@@ -35,7 +35,7 @@ def settings(page,value):
     page.get_by_role('button',name='Настройки',exact=True).tap();page.locator('#mode').select_option(value);page.locator('#settings-close').tap()
 with sync_playwright() as p:
     browser=p.chromium.launch();errors=[]
-    for width,height in [(1280,720),(844,390),(390,844),(915,412),(740,360)]:
+    for width,height in [(1280,720),(844,390),(915,412),(740,360)]:
         page=browser.new_page(viewport={'width':width,'height':height},has_touch=True)
         page.on('pageerror',lambda e:errors.append(str(e)))
         page.goto(URL)
@@ -45,7 +45,7 @@ with sync_playwright() as p:
         page.locator('[data-level="gate"]').tap()
         fit(page)
         assert page.locator('[data-cell][data-terrain="ground"]').evaluate_all('els=>els.every(el=>{const b=el.querySelector("polygon").getBoundingClientRect();return document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)?.closest("[data-cell]")===el;})')
-        for asset in ['courtyard-landscape','courtyard-portrait','ruta-idle']:assert page.request.get(URL+'assets/level-1/v4/'+asset+'.png').ok
+        for asset in ['courtyard-landscape','ruta-idle']:assert page.request.get(URL+'assets/level-1/v4/'+asset+'.png').ok
         for n in range(1,7):assert page.request.get(URL+f'assets/level-1/v5/tile-{n:02}.png').ok
         page.evaluate('()=>Promise.all([...document.querySelectorAll("#board image")].map(el=>new Promise((resolve,reject)=>{const img=new Image();img.onload=resolve;img.onerror=reject;img.src=el.getAttribute("href");})))')
         page.screenshot(path=str(SHOTS/f'gate-{width}x{height}.png'))
@@ -81,7 +81,7 @@ with sync_playwright() as p:
         page.touchscreen.tap(*center(page,'[data-cell="0,1"] > polygon'));page.locator('#place').tap()
         assert page.locator('#tray .piece:visible').count()==5
         page.set_viewport_size({'width':height,'height':width});page.wait_for_timeout(100)
-        assert anchors(page);assert page.locator('[data-cell="0,1"]').get_attribute('data-owner')=='gate-2'
+        assert page.locator('#orientation-screen').is_visible();assert page.locator('[data-cell="0,1"]').get_attribute('data-owner')=='gate-2'
         page.set_viewport_size({'width':width,'height':height});page.wait_for_timeout(100)
         page.touchscreen.tap(*center(page,'[data-cell="0,1"] > polygon'));page.locator('#return').tap()
         assert page.locator('#tray .piece:visible').count()==6

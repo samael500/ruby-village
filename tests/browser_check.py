@@ -139,7 +139,7 @@ with sync_playwright() as p:
     assert 'Камешек 1' in page.locator(cell(3,2)).get_attribute('aria-label')
     before=page.locator('.piece.placed').count()
     page.set_viewport_size({'width':412,'height':915});page.wait_for_timeout(100)
-    check_layout(page);assert page.locator('.portrait').is_visible()
+    assert page.locator('#orientation-screen').is_visible()
     assert page.locator('.piece.placed').count()==before
     page.set_viewport_size({'width':915,'height':412});page.wait_for_timeout(100)
     assert page.locator('.piece.placed').count()==before

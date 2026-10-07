@@ -49,7 +49,7 @@ def solve(page,level,touch=False,first=True,resize_walk=False):
   expect(page.locator('#ruta-marker')).to_be_visible()
   assert page.locator('#board #ruta-idle').count()==0
   owners=page.locator('[data-owner]:not([data-owner=""])').count()
-  for w,h in [(390,844),(915,412)]:
+  for w,h in [(915,412)]:
    page.set_viewport_size({'width':w,'height':h});page.wait_for_timeout(80)
    assert page.locator('#board #ruta-idle,#board #ruta-marker').count()==1
    assert page.locator('[data-owner]:not([data-owner=""])').count()==owners
@@ -95,7 +95,7 @@ with sync_playwright() as p:
  print('Eight levels, first outcomes, sequential unlock and reload: PASS',flush=True)
  assert page.locator('#chapter-ending').is_visible();assert page.locator('#letter-open').is_visible()
  page.locator('#letter-open').click();assert 'Чашек хватит всем' in page.locator('#story-text').inner_text();skip(page)
- for w,h in [(1280,720),(915,412),(740,360),(844,390),(390,844)]:
+ for w,h in [(1280,720),(915,412),(740,360),(844,390)]:
   page.set_viewport_size({'width':w,'height':h});page.wait_for_timeout(100);fit(page)
   page.screenshot(path=str(SHOTS/f'map-{w}x{h}.png'))
   for level in LEVELS:
@@ -106,7 +106,7 @@ with sync_playwright() as p:
     place(page,'bridge',level['solution']['bridge']);fit(page)
     page.screenshot(path=str(SHOTS/f'bridge-{w}x{h}.png'))
    page.locator('#scene-back').click()
- print('Map/all puzzles and bridge on five viewport sizes: PASS',flush=True)
+ print('Map/all puzzles and bridge on four landscape viewport sizes: PASS',flush=True)
  # Replay does not duplicate progress or play after-dialogue again.
  before=json.loads(page.evaluate('(k)=>localStorage.getItem(k)',KEY))
  enter(page,'gate');solve(page,LEVELS[0],first=False)
