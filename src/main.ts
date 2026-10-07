@@ -27,7 +27,7 @@ app.innerHTML = `
 <button id="return"><b>↥</b><span>В набор</span></button></div>
 <button id="check" class="check"><b>⚑</b><span>Проверить дорогу</span></button>
 <button id="undo" aria-label="Отменить последнее действие"><b>↩</b><span>Отменить</span></button>
-<button id="settings-open" aria-haspopup="dialog"><b>⚙</b><span>Настройки</span></button>
+<button id="settings-open" aria-label="Настройки" aria-haspopup="dialog"><b>⚙</b><span>Настройки</span></button>
 </footer>
 <dialog id="settings-panel" aria-labelledby="settings-title">
 <div class="dialog-heading"><h2 id="settings-title">Настройки площадки</h2><button id="settings-close" aria-label="Закрыть настройки">✕</button></div>

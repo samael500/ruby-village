@@ -30,7 +30,7 @@ def fit(page):
       return [...document.querySelectorAll('[data-decoration]')].every(e=>{const r=e.getBoundingClientRect();return r.left>=scene.left-.1&&r.top>=scene.top-.1&&r.right<=scene.right+.1&&r.bottom<=scene.bottom+.1&&cells.every(c=>r.right<=c.left||r.left>=c.right||r.bottom<=c.top||r.top>=c.bottom);});
     }''')
 def settings(page,value):
-    page.locator('#settings-open').tap();page.locator('#mode').select_option(value);page.locator('#settings-close').tap()
+    page.get_by_role('button',name='Настройки',exact=True).tap();page.locator('#mode').select_option(value);page.locator('#settings-close').tap()
 with sync_playwright() as p:
     browser=p.chromium.launch();errors=[]
     for width,height in [(1280,720),(844,390),(390,844),(915,412),(740,360)]:
@@ -50,7 +50,29 @@ with sync_playwright() as p:
         page.locator('#check').tap();expect(page.locator('#status')).to_have_class('feedback')
         assert page.locator('#status').bounding_box()['height']>20
         page.locator('#scene-help').tap();page.locator('#help-close').tap()
-        # The formerly obscured start stays clickable; stones render above the idle sprite.
+        # Hidden visual labels must not turn the header settings into an unnamed button.
+        settings_button=page.get_by_role('button',name='Настройки',exact=True)
+        expect(settings_button).to_be_visible()
+        settings_button.focus();page.keyboard.press('Enter')
+        expect(page.locator('#settings-panel')).to_be_visible()
+        page.keyboard.press('Escape');expect(page.locator('#settings-panel')).not_to_be_visible()
+        # Recover from an invalid drop by clicking/tapping a valid cell under the toast.
+        for touch in [False,True]:
+            page.locator('[data-piece="gate-a"]').tap() if touch else page.locator('[data-piece="gate-a"]').click()
+            action=page.touchscreen.tap if touch else page.mouse.click
+            action(*center(page,'[data-cell="4,4"] > polygon'))
+            expect(page.locator('[data-preview]')).to_have_attribute('data-preview','invalid')
+            expect(page.locator('#place')).to_be_disabled()
+            expect(page.locator('#status')).to_have_class('feedback')
+            action(*center(page,'[data-cell="3,0"] > polygon'))
+            expect(page.locator('[data-preview]')).to_have_attribute('data-preview','valid')
+            expect(page.locator('#place')).to_be_enabled()
+            page.locator('#place').tap() if touch else page.locator('#place').click()
+            assert page.locator('[data-cell="3,0"]').get_attribute('data-owner')=='gate-a'
+            page.locator('#undo').tap() if touch else page.locator('#undo').click()
+            assert page.locator('[data-owner="gate-a"]').count()==0
+        # The start remains clickable while Ruta is anchored to it.
+
         page.locator('[data-piece="single"]').tap();fit(page)
         page.touchscreen.tap(*center(page,'[data-cell="0,1"] > polygon'));page.locator('#place').tap()
         assert page.locator('#tray .piece:visible').count()==2
