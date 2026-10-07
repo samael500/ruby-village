@@ -1,4 +1,4 @@
-"""Screen-v2 regression; pass a Vite/production base URL and optional screenshot directory."""
+"""Courtyard regression; pass a Vite/production base URL and optional screenshot directory."""
 import json,subprocess,sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
@@ -23,6 +23,21 @@ def fit(page):
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth && document.documentElement.scrollHeight<=innerHeight')
     assert page.locator('button:visible').evaluate_all('els=>els.every(e=>{const b=e.getBoundingClientRect();return b.width>=48&&b.height>=48&&b.left>=0&&b.right<=innerWidth&&b.top>=0&&b.bottom<=innerHeight;})')
     assert anchors(page)
+    assert page.evaluate('''()=>{
+      const fence=document.querySelector('[data-environment="fence"]').getBoundingClientRect();
+      const board=document.querySelector('#board').getBoundingClientRect();
+      return fence.left>=board.left && fence.right<=board.right && fence.top>=board.top && fence.bottom<=board.bottom;
+    }''')
+    if page.viewport_size['height']>page.viewport_size['width']:
+        assert page.evaluate('''()=>{
+          const field=document.querySelector('#field').getBoundingClientRect(),tray=document.querySelector('#game-controls').getBoundingClientRect();
+          return field.height<=field.width*.81 && Math.abs(tray.top-field.bottom)<1;
+        }''')
+    assert page.evaluate('''()=>{
+      const scale=document.querySelector('#ruta-idle').getScreenCTM().a;
+      const ground=document.querySelector('#court-grass').patternTransform.baseVal.consolidate().matrix;
+      return Math.abs(ground.a-scale)<1e-7 && document.querySelector('[data-ground-period]').dataset.groundPeriod==='20';
+    }''')
     # Occupancy is explicit in level data. Start/goal contain the associated objects.
     assert page.evaluate('''()=>{
       const scene=document.querySelector('#board').getBoundingClientRect();
@@ -43,7 +58,7 @@ with sync_playwright() as p:
         page.locator('[data-level="gate"]').tap();page.locator('#story-action').tap()
         fit(page)
         assert page.locator('[data-cell][data-terrain="ground"]').evaluate_all('els=>els.every(el=>{const b=el.querySelector("polygon").getBoundingClientRect();return document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)?.closest("[data-cell]")===el;})')
-        for asset in ['meadow','ruta-house','garden-gate','ruta-idle']:assert page.request.get(URL+'assets/level-1/'+asset+'.png').ok
+        for asset in ['grass-ground','ruta-house','garden-gate','ruta-idle']:assert page.request.get(URL+'assets/level-1/'+asset+'.png').ok
         page.evaluate('()=>Promise.all([...document.querySelectorAll("#board image")].map(el=>new Promise((resolve,reject)=>{const img=new Image();img.onload=resolve;img.onerror=reject;img.src=el.getAttribute("href");})))')
         page.screenshot(path=str(SHOTS/f'gate-{width}x{height}.png'))
         assert page.locator('#board .landmark').count()==0
@@ -118,4 +133,4 @@ with sync_playwright() as p:
     page.screenshot(path=str(SHOTS/'sandbox-11x7-844x390.png'))
     assert not errors,errors
     browser.close()
-    print('Screen v2: anchors, visible ground cells, original progress, touch/drag/cancel/rotate/undo, resize, victory and sandbox: PASS')
+    print('Courtyard v3: anchors, visible ground cells, original progress, touch/drag/cancel/rotate/undo, resize, victory and sandbox: PASS')
