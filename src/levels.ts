@@ -23,11 +23,11 @@ for(let row=0;row<7;row++) for(let col=4;col<=6;col++) {
 }
 for(const [col,row] of [[0,0],[1,6],[9,5],[10,6]]) riverTerrain[key(offsetHex(col,row))]='tree';
 export const levels:readonly Level[]=[
-  {id:'gate',name:'До калитки',cols:7,rows:5,terrain:{[key(offsetHex(0,0))]:'tree',[key(offsetHex(6,4))]:'rock'},
-    start:offsetHex(1,2),goal:offsetHex(5,2),startName:'Дом Руты',goalName:'Калитка',
-    pieces:[stone('pair','Два камня',pair),stone('single','Камешек',one,'#b080c6')],
+  {id:'gate',name:'До калитки',cols:7,rows:5,terrain:{'0,0':'house','1,0':'house'},
+    start:offsetHex(0,1),goal:offsetHex(6,4),startName:'Дом Руты',goalName:'Калитка',
+    pieces:[stone('gate-a','Уголок 1',bend),stone('gate-b','Два камня',pair,'#ac79ad'),stone('single','Камешек',one,'#b080c6')],
     intro:'Вчера здесь была дорожка. Давай вернём её!',outro:'Получилось! Теперь можно выйти к саду.',
-    solution:{pair:{anchor:{q:1,r:2},turns:0},single:{anchor:{q:3,r:2},turns:0}}},
+    solution:{'gate-a':{anchor:{q:1,r:1},turns:0},'gate-b':{anchor:{q:2,r:3},turns:0},single:{anchor:{q:3,r:4},turns:0}}},
   {id:'garden',name:'В обход сада',cols:9,rows:6,terrain:gardenTerrain,
     start:offsetHex(1,2),goal:offsetHex(7,2),startName:'Калитка',goalName:'Сад',
     pieces:[stone('garden-a','Длинная 1',line,'#8465b2'),stone('garden-b','Длинная 2',line,'#ac79ad'),stone('garden-c','Четвёрка',cluster,'#7965a3'),stone('garden-extra','Треугольник',[{q:0,r:0},{q:1,r:0},{q:0,r:1}])],
