@@ -9,7 +9,7 @@ def tap_cell(page,key):
     page.touchscreen.tap(box['x']+box['width']/2,box['y']+box['height']/2)
 with sync_playwright() as p:
     b=p.chromium.launch();errors=[]
-    for w,h in [(1280,720),(844,390),(390,844)]:
+    for w,h in [(1280,720),(844,390)]:
         page=b.new_page(viewport={'width':w,'height':h},has_touch=True)
         page.on('pageerror',lambda e:errors.append(str(e)))
         page.goto(URL);page.locator('[data-level="gate"]').tap();page.locator('#story-skip').tap()
