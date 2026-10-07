@@ -125,7 +125,7 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
     if(level.id==='gate'){const c=hexCenter(h,15);stoneDetail(icon,h,15,c.x,c.y,pieces.indexOf(p),new Set(shape.map(key)));}
   }
   if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
-  el('circle',{cx:0,cy:0,r:2.8,fill:'#fff6dc'},icon);
+  el('circle',{cx:0,cy:0,r:level.id==='gate'?1.6:2.8,fill:'#fff6dc'},icon);
 }
 function renderTray() {
   const tray=$('tray'); tray.replaceChildren();
@@ -163,7 +163,7 @@ function renderBoard() {
   origin={x:(rect.width-w)/2+Math.sqrt(3)*radius/2,y:(rect.height-h)/2+radius};
   if(sceneTransform){radius=sceneTransform.scale;origin=sceneTransform.origin;}
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`); svg.replaceChildren();
-  if(illustrated)backdrop(svg,rect.width,rect.height);
+  if(sceneTransform)backdrop(svg,rect.width,rect.height,sceneTransform);
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
