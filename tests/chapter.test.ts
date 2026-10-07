@@ -17,13 +17,18 @@ for(const level of levels) {
     assert.equal(winningPath(level,{}),null);
   });
 }
-test('До калитки: ни один собственный поднабор фигур не может победить (полный перебор)',()=>{
-  const l=levels[0];
-  for(const piece of l.pieces) for(const anchor of boardCells(l.cols,l.rows)) for(let turns=0;turns<6;turns++){
-    const candidate={[piece.id]:{anchor,turns}};
-    if(validateLayout(l,candidate))assert.equal(winningPath(l,candidate),null);
+test('До калитки: кратчайший путь требует весь набор, дом непроходим',()=>{
+  const l=levels[0],shortest=findPath(l.start,l.goal,allDry(l))!;
+  const capacity=l.pieces.reduce((n,p)=>n+p.shape.length,0);
+  assert.equal(shortest.length-2,capacity);
+  // Even arbitrary independent stones from any proper subset cannot span the gap.
+  for(let mask=0;mask<(1<<l.pieces.length)-1;mask++){
+    const cells=l.pieces.reduce((n,p,i)=>n+((mask&(1<<i))?p.shape.length:0),0);
+    assert.ok(cells<shortest.length-2);
   }
   assert.equal(Object.keys(l.solution).length,l.pieces.length);
+  for(const h of [{q:0,r:0},{q:1,r:0}])assert.equal(validPlacement(l,'single',{anchor:h,turns:0},{}),false);
+  assert.ok(l.goal.r>l.start.r && l.goal.q>l.start.q);
 });
 test('Сад: прямая дорога закрыта; даже при замощении всей земли нужно обойти преграду снизу',()=>{
   const l=levels[1];

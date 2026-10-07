@@ -1,0 +1,63 @@
+{
+  "version": 2,
+  "reference": "references/approved-screen.png",
+  "geometry": "existing exact point-up hex grid; no independent rotation",
+  "anchors": {
+    "house": {
+      "source": [
+        0.66,
+        0.93
+      ],
+      "bind": "start doorstep",
+      "growth": "up-left"
+    },
+    "ruta": {
+      "source": [
+        0.55,
+        0.965
+      ],
+      "bind": "start cell feet"
+    },
+    "gate": {
+      "source": [
+        0.5,
+        0.8
+      ],
+      "bind": "goal cell edge opening"
+    }
+  },
+  "anchors_are": "initial visual estimates; calibrate in browser",
+  "desktop": {
+    "title": "top-left",
+    "settings": "top-right",
+    "inventory": "bottom shared wooden tray",
+    "scene_ui_ratio_hint": [
+      0.08,
+      0.72,
+      0.2
+    ]
+  },
+  "mobile_landscape": {
+    "header_css_px": [
+      40,
+      44
+    ],
+    "tray_css_px": [
+      64,
+      76
+    ],
+    "minimum_target_css_px": 44
+  },
+  "portrait": {
+    "preserve_scene_anchors": true,
+    "inventory_rows": 2
+  },
+  "material": {
+    "base": "#8445BE",
+    "dark": "#49226D",
+    "light": "#BB85E4",
+    "vein": "#D8B9F4",
+    "palette_note": "starting values; match reference visually"
+  },
+  "animation": "idle only; no approved walk sprite"
+}

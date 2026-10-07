@@ -1,4 +1,5 @@
 import './style.css';
+import {sceneLayout} from './scene-layout.ts';
 import {artUrl,backdrop,scenery,stoneDetail} from './level-art.ts';
 import {type Hex, boardCells, key, hexCenter, pixelHex, rotate} from './hex.ts';
 import {pieceById as lookupPiece, placedCells as cellsForPiece, validPlacement, terrainAt, winningPath, type Layout} from './game.ts';
@@ -8,7 +9,7 @@ import {loadProgress,saveProgress,completeLevel,available,type StorageLike} from
 
 const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
-<header><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · первая глава</span></h1></div><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div></header>
+<header><button id="scene-back" hidden aria-label="Вернуться на карту"></button><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · первая глава</span></h1></div><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div><button id="scene-help" hidden aria-label="Как играть">?</button></header>
 <div class="portrait">↻ Поверни телефон — поле станет крупнее</div>
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
@@ -26,7 +27,7 @@ app.innerHTML = `
 <button id="return"><b>↥</b><span>В набор</span></button></div>
 <button id="check" class="check"><b>⚑</b><span>Проверить дорогу</span></button>
 <button id="undo" aria-label="Отменить последнее действие"><b>↩</b><span>Отменить</span></button>
-<button id="settings-open" aria-haspopup="dialog"><b>⚙</b><span>Настройки</span></button>
+<button id="settings-open" aria-label="Настройки" aria-haspopup="dialog"><b>⚙</b><span>Настройки</span></button>
 </footer>
 <dialog id="settings-panel" aria-labelledby="settings-title">
 <div class="dialog-heading"><h2 id="settings-title">Настройки площадки</h2><button id="settings-close" aria-label="Закрыть настройки">✕</button></div>
@@ -44,6 +45,7 @@ app.innerHTML = `
 <path d="M44 54Q51 60 58 53" fill="none" stroke="#8c5b43" stroke-width="2"/><path d="M26 71L69 68L56 90L43 77L29 99" fill="#b34f56"/>
 <path d="M67 82L84 100" stroke="#725440" stroke-width="6"/><rect x="69" y="94" width="23" height="15" rx="3" fill="#a27a4c"/>
 </svg><div><p class="eyebrow">Рута · первая глава</p><h2 id="story-title"></h2><p id="story-text"></p></div></div><button id="story-action" class="primary">В путь →</button></dialog>
+<dialog id="help-panel" aria-labelledby="help-title"><h2 id="help-title">Проложи дорогу от дома до калитки</h2><p>Выбери плиту → клетку → «Поставить». Поворачивай плиты, чтобы они поместились. Когда дорога готова, нажми «Проверить».</p><button id="help-close">Понятно</button></dialog>
 <dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">Начать главу заново?</h2><p>Все три дороги на карте снова исчезнут.</p><div class="settings-actions"><button id="reset-cancel">Оставить дороги</button><button id="reset-confirm">Да, начать заново</button></div></dialog>`;
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
 const svg = document.getElementById('board') as unknown as SVGSVGElement;
@@ -84,7 +86,7 @@ function polygon(h: Hex, r: number, ox=0, oy=0) {
   const c = hexCenter(h,r);
   return Array.from({length:6},(_,i) => { const a=(60*i-90)*Math.PI/180; return `${c.x+ox+r*Math.cos(a)},${c.y+oy+r*Math.sin(a)}`; }).join(' ');
 }
-function message(text: string) { $('status').textContent = text; }
+function message(text: string) { $('status').textContent = text; $('status').classList.toggle('feedback',/Пока дорога|не помещается|недоступен/.test(text)); }
 function endpoints() { return [level.start,level.goal]; }
 function previewValid() { return !!(selected && anchor && validPlacement(level,selected,{anchor,turns},layout)); }
 function snapshot() { history.push(structuredClone(layout)); path.clear(); }
@@ -100,7 +102,8 @@ function commit() {
 function updateControls() {
   for(const button of document.querySelectorAll<HTMLButtonElement>('footer button')) button.disabled=false;
   app.classList.toggle('drag-mode',mode==='drag');
-  $('selected-drag').hidden=mode!=='drag'||!selected;
+  $('selected-drag').setAttribute('aria-label',mode==='drag'?'Перетащить выбранную фигуру':'Выбранная фигура');
+  $('selected-drag').hidden=!selected||(mode!=='drag'&&level.id!=='gate');
   $('tray').hidden=!!selected;
   $('selection-actions').hidden=!selected;
   $('check').hidden=!!selected;
@@ -119,7 +122,7 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
   const icon=el('svg',{viewBox:`${minX} ${minY} ${maxX-minX} ${maxY-minY}`,'aria-hidden':'true'},button);
   for (const h of shape) {
     el('polygon',{points:polygon(h,15),fill:p.color,stroke:'#543b70','stroke-width':1.5},icon);
-    if(level.id==='gate'){const c=hexCenter(h,15);stoneDetail(icon,h,15,c.x,c.y,pieces.indexOf(p));}
+    if(level.id==='gate'){const c=hexCenter(h,15);stoneDetail(icon,h,15,c.x,c.y,pieces.indexOf(p),new Set(shape.map(key)));}
   }
   if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
   el('circle',{cx:0,cy:0,r:2.8,fill:'#fff6dc'},icon);
@@ -127,7 +130,7 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
 function renderTray() {
   const tray=$('tray'); tray.replaceChildren();
   const handle=$('selected-drag');handle.replaceChildren();
-  if(selected){drawPieceIcon(handle,pieceById(selected),turns);const label=document.createElement('span');label.textContent='Тяни отсюда';handle.append(label);}
+  if(selected){drawPieceIcon(handle,pieceById(selected),turns);const label=document.createElement('span');label.textContent=mode==='drag'?'Тяни отсюда':'Выбрано';handle.append(label);}
   for (const p of pieces) {
     const button=document.createElement('button'); button.className='piece'; button.dataset.piece=p.id;
     button.setAttribute('aria-label',`${p.name}${layout[p.id] ? ', на поле' : ', в наборе'}`);
@@ -153,35 +156,40 @@ function renderBoard() {
   if(drag){renderPreview();return;}
   const rect=svg.getBoundingClientRect(), padding=8;
   const illustrated=level.id==='gate';
-  const availableWidth=illustrated && rect.width>rect.height?rect.width*.56:rect.width-2*padding;
+  const sceneTransform=illustrated?sceneLayout(rect.width,rect.height,cols,rows,level.start,level.goal):null;
+  const availableWidth=rect.width-2*padding;
   radius=Math.max(1,Math.min(availableWidth/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(1.5*(rows-1)+2)));
   const w=Math.sqrt(3)*radius*(cols+0.5), h=radius*(1.5*(rows-1)+2);
   origin={x:(rect.width-w)/2+Math.sqrt(3)*radius/2,y:(rect.height-h)/2+radius};
+  if(sceneTransform){radius=sceneTransform.scale;origin=sceneTransform.origin;}
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`); svg.replaceChildren();
   if(illustrated)backdrop(svg,rect.width,rect.height);
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
+  const paved=new Set(owners.keys());
+  if(illustrated){paved.add(key(start));paved.add(key(end));}
   const landmarks=document.createElementNS(ns,'g');landmarks.setAttribute('pointer-events','none');
   for(const h of boardCells(cols,rows)) {
-    const k=key(h), owner=owners.get(k), c=hexCenter(h,radius), terrain=terrainAt(level,h);
-    const g=el('g',{'data-cell':k,'data-terrain':terrain,role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода'}[terrain])}`},svg);
-    el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:`cell ${illustrated?(owner?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner===selected?0.45:1},g);
-    if(illustrated && owner){const material=el('g',{opacity:owner===selected ? 0.45 : 1},g);stoneDetail(material,h,radius,c.x+origin.x,c.y+origin.y,pieces.indexOf(pieceById(owner)));}
-    if(!owner && terrain!=='ground') el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},g,({water:'≈',tree:'♠',rock:'⬟'}[terrain]));
+    const k=key(h), owner=owners.get(k), c=hexCenter(h,radius), terrain=terrainAt(level,h),terminal=illustrated&&(k===key(start)||k===key(end));
+    const g=el('g',{'data-cell':k,'data-terrain':terrain,'data-owner':owner??'',role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${k===key(start)?', '+level.startName:k===key(end)?', '+level.goalName:''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода',house:'дом'}[terrain])}`},svg);
+    el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:`cell ${illustrated?(owner||terminal?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner===selected?0.45:1},g);
+    if(illustrated && (owner||terminal)){const material=el('g',{opacity:owner===selected ? 0.45 : 1},g);stoneDetail(material,h,radius,c.x+origin.x,c.y+origin.y,owner?pieces.indexOf(pieceById(owner)):0,paved);}
+    if(!owner && terrain!=='ground' && terrain!=='house') el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},g,({water:'≈',tree:'♠',rock:'⬟'}[terrain]));
     if(owner && pieceById(owner).kind==='bridge') {
       const deck=el('g',{transform:`translate(${c.x+origin.x} ${c.y+origin.y}) rotate(${layout[owner].turns*60})`,'pointer-events':'none'},g);
       for(const dx of [-.35,0,.35]) el('line',{x1:radius*dx,x2:radius*dx,y1:-radius*.65,y2:radius*.65,stroke:'#775032','stroke-width':2},deck);
     }
     if(owner && key(layout[owner].anchor)===k) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y,r:Math.max(2,radius*.09),fill:'#fff5d6','pointer-events':'none'},g);
-    if(k===key(start)||k===key(end)) {
+    if(!illustrated && (k===key(start)||k===key(end))) {
       el('text',{x:c.x+origin.x,y:c.y+origin.y-radius*.1,class:'landmark','font-size':radius*.62},landmarks,k===key(start)?'⌂':'⚑');
       el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.45,class:'landmark label','font-size':Math.max(10,Math.min(12,radius*.35))},landmarks,k===key(start)?level.startName:level.goalName);
     }
     if(path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
   svg.append(landmarks);
-  if(illustrated)scenery(svg,rect.width,rect.height,radius,origin,w,h);
+  if(sceneTransform)scenery(svg,sceneTransform);
+
   renderPreview();
   if(level.id==='mill') {
     const c=hexCenter(level.goal,radius);
@@ -349,6 +357,7 @@ function enterLevel(next:Level) {
   cancelAnimationFrame(frame);screen='game';phase=next.id==='sandbox'?'playing':'intro';
   level=next;pieces=level.pieces;cols=level.cols;rows=level.rows;layout={};history=[];route=[];journey=0;path.clear();resetSelection();
   app.classList.toggle('illustrated-level',level.id==='gate');
+  sceneChrome(level.id==='gate');
   document.querySelector('h1')!.textContent=level.id==='gate'?'До калитки':'Рубиновая деревня';
   $('chapter-map').hidden=true;$('field').hidden=false;$('game-controls').hidden=false;
   $('size-setting').hidden=level.id!=='sandbox';
@@ -359,7 +368,7 @@ function enterLevel(next:Level) {
   if(level.id!=='sandbox')showStory();
 }
 function showMap() {
-  app.classList.remove('illustrated-level');document.querySelector('h1')!.textContent='Рубиновая деревня';
+  app.classList.remove('illustrated-level');sceneChrome(false);document.querySelector('h1')!.textContent='Рубиновая деревня';
   cancelAnimationFrame(frame);screen='map';phase='playing';route=[];resetSelection();
   if(settings.open)settings.close();if(story.open)story.close();
   $('field').hidden=true;$('game-controls').hidden=true;$('chapter-map').hidden=false;
@@ -384,4 +393,26 @@ const resetDialog=$('reset-dialog') as HTMLDialogElement;
 $('reset-open').onclick=()=>resetDialog.showModal();
 $('reset-cancel').onclick=()=>resetDialog.close();
 $('reset-confirm').onclick=()=>{completed=[];storageAvailable=saveProgress(completed,storage);resetDialog.close();showMap();};
+function icon(button:HTMLElement,path:string){
+  const target=button.querySelector('b')??button;
+  target.innerHTML=`<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="${path}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
+}
+function sceneChrome(illustrated:boolean){
+  $('scene-back').hidden=!illustrated;$('scene-help').hidden=!illustrated;
+  const settingsButton=$('settings-open');
+  (illustrated?document.querySelector('header')!:$('game-controls')).append(settingsButton);
+  $('check').querySelector('span')!.textContent=illustrated?'Проверить':'Проверить дорогу';
+}
+icon($('scene-back'),'M 15 5 L 7 12 L 15 19');
+icon($('settings-open'),'M 9 3 H 15 L 16 6 L 19 7 L 22 11 L 20 14 L 19 17 L 15 18 L 14 21 H 10 L 9 18 L 5 17 L 4 14 L 2 11 L 5 7 L 8 6 Z M 15 12 A 3 3 0 1 1 9 12 A 3 3 0 1 1 15 12');
+icon($('undo'),'M 8 5 L 3 10 L 8 15 M 3 10 H 15 A 5 5 0 0 1 15 20');
+icon($('left'),'M 6 4 L 2 9 L 8 10 M 3 9 A 8 8 0 1 1 5 19');
+icon($('right'),'M 18 4 L 22 9 L 16 10 M 21 9 A 8 8 0 1 0 19 19');
+icon($('check'),'M 4 12 L 9 17 L 20 6');
+icon($('place'),'M 5 12 H 19 M 12 5 V 19');
+icon($('return'),'M 4 14 V 20 H 20 V 14 M 12 16 V 3 M 7 8 L 12 3 L 17 8');
+icon($('other'),'M 15 5 L 7 12 L 15 19');
+$('scene-back').onclick=showMap;
+$('scene-help').onclick=()=>($('help-panel') as HTMLDialogElement).showModal();
+$('help-close').onclick=()=>($('help-panel') as HTMLDialogElement).close();
 showMap();
