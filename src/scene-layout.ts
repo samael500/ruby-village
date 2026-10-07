@@ -1,28 +1,24 @@
-import {courtyard} from './environment.ts';
-import {boardCells,hexCenter,type Hex} from './hex.ts';
+import {hexCenter,type Hex} from './hex.ts';
 export type Point={x:number;y:number};
 export type SpriteLayout={x:number;y:number;width:number;height:number;source:Point;anchor:Point};
-export const sourceAnchors={house:{x:.66,y:.93},ruta:{x:.55,y:.965},gate:{x:.5,y:.8}} as const;
-function sprite(anchor:Point,width:number,aspect:number,source:Point):SpriteLayout{
-  const height=width/aspect;
-  return {x:anchor.x-width*source.x,y:anchor.y-height*source.y,width,height,source,anchor};
-}
-/** Unit-radius world: one uniform fit, with the same anchors in every orientation. */
-export function sceneLayout(width:number,height:number,cols:number,rows:number,start:Hex,goal:Hex){
-  const a=hexCenter(start,1),b=hexCenter(goal,1);
-  const house=sprite({x:a.x-.55,y:a.y},3.45,1312/1199,sourceAnchors.house);
-  const ruta=sprite(a,1.25*1209/1300,1209/1300,sourceAnchors.ruta);
-  // The opening meets the lower-right edge; the fence extends out of the court.
-  const gate=sprite({x:b.x+.9,y:b.y+.8},2.4,1536/1024,sourceAnchors.gate);
-  const centers=boardCells(cols,rows).map(h=>hexCenter(h,1));
-  const left=Math.min(...centers.map(c=>c.x-Math.sqrt(3)/2),house.x,ruta.x,gate.x);
-  const top=Math.min(...centers.map(c=>c.y-1),house.y,ruta.y,gate.y);
-  const right=Math.max(...centers.map(c=>c.x+Math.sqrt(3)/2),house.x+house.width,ruta.x+ruta.width,gate.x+gate.width);
-  const bottom=Math.max(...centers.map(c=>c.y+1),house.y+house.height,ruta.y+ruta.height,gate.y+gate.height);
-  // Reserve the whole fence silhouette, not just the ground-level post bases.
-  const m=courtyard.fitMargin;
-  const fitBounds={left:left-m.side,top:top-m.top,right:right+m.side,bottom:bottom+m.bottom};
-  const scale=Math.max(.01,Math.min((width-16)/(fitBounds.right-fitBounds.left),(height-16)/(fitBounds.bottom-fitBounds.top)));
-  const origin={x:(width-(fitBounds.right-fitBounds.left)*scale)/2-fitBounds.left*scale,y:(height-(fitBounds.bottom-fitBounds.top)*scale)/2-fitBounds.top*scale};
-  return {scale,origin,house,ruta,gate,bounds:{left,top,right,bottom}};
+export const sourceAnchors={ruta:{x:.55,y:.965}} as const;
+/** Calibrated in original image pixels. The puzzle is never transposed. */
+export const compositions={
+  landscape:{file:'courtyard-landscape',width:1672,height:941,radius:68,grid:{x:475,y:265},door:{x:401,y:433},gate:{x:1335,y:625},doorHeight:145},
+  portrait:{file:'courtyard-portrait',width:941,height:1672,radius:52,grid:{x:160,y:650},door:{x:367,y:468},gate:{x:668,y:1260},doorHeight:136},
+} as const;
+export function sceneLayout(width:number,height:number,_cols:number,_rows:number,start:Hex,goal:Hex,portrait=false){
+  const art=compositions[portrait?'portrait':'landscape'];
+  const fit=Math.min(width/art.width,height/art.height);
+  const offset={x:(width-art.width*fit)/2,y:(height-art.height*fit)/2};
+  const scale=art.radius*fit,origin={x:offset.x+art.grid.x*fit,y:offset.y+art.grid.y*fit};
+  const a=hexCenter(start,art.radius),b=hexCenter(goal,art.radius);
+  const startArt={x:a.x+art.grid.x,y:a.y+art.grid.y},goalArt={x:b.x+art.grid.x,y:b.y+art.grid.y};
+  const heightRuta=art.doorHeight*.65,widthRuta=heightRuta*1209/1300;
+  const ruta:SpriteLayout={x:startArt.x-widthRuta*.55,y:startArt.y-heightRuta*.965,width:widthRuta,height:heightRuta,source:sourceAnchors.ruta,anchor:startArt};
+  const approaches:Point[][]=portrait?[]:[
+    [art.door,{x:440,y:400},{x:startArt.x-Math.sqrt(3)*art.radius/2,y:startArt.y}],
+    [{x:goalArt.x+Math.sqrt(3)*art.radius/2,y:goalArt.y+art.radius/2},art.gate],
+  ];
+  return {scale,origin,art,fit,offset,ruta,startArt,goalArt,portrait,approaches};
 }

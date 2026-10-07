@@ -50,7 +50,7 @@ def fit(page):
     assert page.evaluate('document.documentElement.scrollWidth<=innerWidth && document.documentElement.scrollHeight<=innerHeight')
     assert page.locator('button:visible, select:visible').evaluate_all('''els=>els.every(e=>{let r=e.getBoundingClientRect();return r.width>=48&&r.height>=48&&r.x>=0&&r.y>=0&&r.right<=innerWidth&&r.bottom<=innerHeight})''')
     if page.locator('#field').is_visible():
-        assert page.locator('[data-cell] polygon').evaluate_all('''els=>els.every(e=>{let r=e.getBoundingClientRect(),p=document.querySelector('#field').getBoundingClientRect();return r.left>=p.left&&r.right<=p.right&&r.top>=p.top&&r.bottom<=p.bottom})''')
+        assert page.locator('[data-cell] > polygon').evaluate_all('''els=>els.every(e=>{let r=e.getBoundingClientRect(),p=document.querySelector('#field').getBoundingClientRect();return r.left>=p.left&&r.right<=p.right&&r.top>=p.top&&r.bottom<=p.bottom})''')
 
 with sync_playwright() as p:
     browser=p.chromium.launch()

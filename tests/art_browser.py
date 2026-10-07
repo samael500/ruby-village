@@ -24,26 +24,12 @@ def fit(page):
     assert page.locator('button:visible').evaluate_all('els=>els.every(e=>{const b=e.getBoundingClientRect();return b.width>=48&&b.height>=48&&b.left>=0&&b.right<=innerWidth&&b.top>=0&&b.bottom<=innerHeight;})')
     assert anchors(page)
     assert page.evaluate('''()=>{
-      const fence=document.querySelector('[data-environment="fence"]').getBoundingClientRect();
-      const board=document.querySelector('#board').getBoundingClientRect();
-      return fence.left>=board.left && fence.right<=board.right && fence.top>=board.top && fence.bottom<=board.bottom;
+      const bg=document.querySelector('#court-background'),r=bg.getBoundingClientRect(),board=document.querySelector('#board').getBoundingClientRect();
+      const artRatio=bg.width.baseVal.value/bg.height.baseVal.value;
+      return Math.abs(r.width/r.height-artRatio)<1e-6 && r.left>=board.left-.1&&r.right<=board.right+.1&&r.top>=board.top-.1&&r.bottom<=board.bottom+.1 && !document.querySelector('#scene-house,#scene-gate,[data-environment]');
     }''')
-    if page.viewport_size['height']>page.viewport_size['width']:
-        assert page.evaluate('''()=>{
-          const field=document.querySelector('#field').getBoundingClientRect(),tray=document.querySelector('#game-controls').getBoundingClientRect();
-          return field.height<=field.width*.81 && Math.abs(tray.top-field.bottom)<1;
-        }''')
-    assert page.evaluate('''()=>{
-      const scale=document.querySelector('#ruta-idle').getScreenCTM().a;
-      const ground=document.querySelector('#court-grass').patternTransform.baseVal.consolidate().matrix;
-      return Math.abs(ground.a-scale)<1e-7 && document.querySelector('[data-ground-period]').dataset.groundPeriod==='20';
-    }''')
-    # Occupancy is explicit in level data. Start/goal contain the associated objects.
-    assert page.evaluate('''()=>{
-      const scene=document.querySelector('#board').getBoundingClientRect();
-      const cells=[...document.querySelectorAll('[data-cell][data-terrain="ground"]')].filter(e=>!['0,1','4,4'].includes(e.dataset.cell)).map(e=>e.querySelector('polygon').getBoundingClientRect());
-      return [...document.querySelectorAll('[data-decoration]')].every(e=>{const r=e.getBoundingClientRect();return r.left>=scene.left-.1&&r.top>=scene.top-.1&&r.right<=scene.right+.1&&r.bottom<=scene.bottom+.1&&cells.every(c=>r.right<=c.left||r.left>=c.right||r.bottom<=c.top||r.top>=c.bottom);});
-    }''')
+    assert page.locator('[data-grid] path').count()==2
+
 def settings(page,value):
     page.get_by_role('button',name='Настройки',exact=True).tap();page.locator('#mode').select_option(value);page.locator('#settings-close').tap()
 with sync_playwright() as p:
@@ -58,7 +44,7 @@ with sync_playwright() as p:
         page.locator('[data-level="gate"]').tap();page.locator('#story-action').tap()
         fit(page)
         assert page.locator('[data-cell][data-terrain="ground"]').evaluate_all('els=>els.every(el=>{const b=el.querySelector("polygon").getBoundingClientRect();return document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)?.closest("[data-cell]")===el;})')
-        for asset in ['grass-ground','ruta-house','garden-gate','ruta-idle']:assert page.request.get(URL+'assets/level-1/'+asset+'.png').ok
+        for asset in ['courtyard-landscape','courtyard-portrait','charoite-texture','ruta-idle']:assert page.request.get(URL+'assets/level-1/v4/'+asset+'.png').ok
         page.evaluate('()=>Promise.all([...document.querySelectorAll("#board image")].map(el=>new Promise((resolve,reject)=>{const img=new Image();img.onload=resolve;img.onerror=reject;img.src=el.getAttribute("href");})))')
         page.screenshot(path=str(SHOTS/f'gate-{width}x{height}.png'))
         assert page.locator('#board .landmark').count()==0
@@ -133,4 +119,4 @@ with sync_playwright() as p:
     page.screenshot(path=str(SHOTS/'sandbox-11x7-844x390.png'))
     assert not errors,errors
     browser.close()
-    print('Courtyard v3: anchors, visible ground cells, original progress, touch/drag/cancel/rotate/undo, resize, victory and sandbox: PASS')
+    print('Design v4: anchors, visible ground cells, original progress, touch/drag/cancel/rotate/undo, resize, victory and sandbox: PASS')

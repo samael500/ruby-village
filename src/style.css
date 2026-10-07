@@ -92,3 +92,7 @@ body:has(.illustrated-level){background:#283f2a}
 }
 .illustrated-level header{position:relative}
 .illustrated-level header #status.feedback{top:100%}
+
+/* v4: full painted composition, mathematical grid drawn once above cell fills. */
+.illustrated-level .meadow-cell{fill:#f1e7bc;fill-opacity:.15;stroke:none}
+@media(orientation:portrait){.illustrated-level #field{flex:1;height:auto}}
