@@ -1,4 +1,5 @@
 import './style.css';
+import {GROUND_SCALE,project,unproject,groundTransform,sceneProjection,type Projection} from './projection.ts';
 import {sceneLayout} from './scene-layout.ts';
 import {artUrl,backdrop,scenery,stoneDetail,drawGrid,drawInstanceEdges} from './level-art.ts';
 import {type Hex, boardCells, key, hexCenter, pixelHex, rotate} from './hex.ts';
@@ -69,6 +70,10 @@ let selected: string | null = null, anchor: Hex | null = null, turns = 0;
 // Once clicked, keep the destination while the pointer travels to the controls.
 let anchorPinned = false;
 let mode = 'select', path = new Set<string>();
+let projection:Projection={scale:GROUND_SCALE,pivotY:0};
+let ground:Element=svg;
+const groundPoint=(x:number,y:number)=>project({x,y},projection);
+let verticalRadius=13,horizontalRadius=17;
 let radius = 20, origin = {x:0,y:0};
 let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number} | null = null;
 let suppressClick = false, deferDock = false, dockFrame = 0;
@@ -124,7 +129,8 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
   const centers=shape.map(h=>hexCenter(h,15));
   const minX=Math.min(...centers.map(c=>c.x))-17, maxX=Math.max(...centers.map(c=>c.x))+17;
   const minY=Math.min(...centers.map(c=>c.y))-17, maxY=Math.max(...centers.map(c=>c.y))+17;
-  const icon=el('svg',{viewBox:`${minX} ${minY} ${maxX-minX} ${maxY-minY}`,'aria-hidden':'true'},button);
+  const viewport=el('svg',{viewBox:`${minX} ${minY*GROUND_SCALE} ${maxX-minX} ${(maxY-minY)*GROUND_SCALE}`,'aria-hidden':'true'},button);
+  const icon=el('g',{transform:groundTransform({scale:GROUND_SCALE,pivotY:0})},viewport);
   for (const h of shape) {
     el('polygon',{points:polygon(h,15),fill:p.color,stroke:'#543b70','stroke-width':1.5},icon);
     if(level.id!=='sandbox'&&p.kind!=='bridge'){const c=hexCenter(h,15);stoneDetail(icon,h,15,c.x,c.y,pieces.indexOf(p),new Set(shape.map(key)),{pieceId:p.id,local:rotate(h,-orientation),turns:orientation});}
@@ -150,7 +156,7 @@ function renderTray() {
 function renderPreview() {
   document.getElementById('placement-preview')?.remove();
   if(selected && anchor) {
-    const ok=previewValid(), preview=el('g',{id:'placement-preview','pointer-events':'none','data-preview':ok?'valid':'invalid'},svg);
+    const ok=previewValid(), preview=el('g',{id:'placement-preview','pointer-events':'none','data-preview':ok?'valid':'invalid'},ground);
     for(const h of placedCells(selected,{anchor,turns})) el('polygon',{points:polygon(h,radius,origin.x,origin.y),class:ok?'preview valid':'preview invalid'},preview);
     const c=hexCenter(anchor,radius);
     el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.23,'text-anchor':'middle','font-size':radius*.8,fill:ok?'#47285f':'#7a1c26','font-weight':900},preview,ok?'•':'⊘');
@@ -163,12 +169,16 @@ function renderBoard() {
   const illustrated=level.id==='gate',chapterLevel=level.id!=='sandbox';
   const sceneTransform=illustrated?sceneLayout(rect.width,rect.height,cols,rows,level.start,level.goal,matchMedia('(orientation:portrait)').matches):null;
   const availableWidth=rect.width-2*padding;
-  radius=Math.max(1,Math.min(availableWidth/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(1.5*(rows-1)+2)));
+  radius=Math.max(1,Math.min(availableWidth/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(GROUND_SCALE*(1.5*(rows-1)+2))));
   const w=Math.sqrt(3)*radius*(cols+0.5), h=radius*(1.5*(rows-1)+2);
-  origin={x:(rect.width-w)/2+Math.sqrt(3)*radius/2,y:(rect.height-h)/2+radius};
+  origin={x:(rect.width-w)/2+Math.sqrt(3)*radius/2,y:(rect.height-h*GROUND_SCALE)/(2*GROUND_SCALE)+radius};
   if(sceneTransform){radius=sceneTransform.scale;origin=sceneTransform.origin;}
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`); svg.replaceChildren();
   if(sceneTransform)backdrop(svg,rect.width,rect.height,sceneTransform);
+  projection=sceneTransform?sceneProjection({x:sceneTransform.offset.x+sceneTransform.startArt.x*sceneTransform.fit,y:sceneTransform.offset.y+sceneTransform.startArt.y*sceneTransform.fit},{x:sceneTransform.offset.x+sceneTransform.goalArt.x*sceneTransform.fit,y:sceneTransform.offset.y+sceneTransform.goalArt.y*sceneTransform.fit}):{scale:GROUND_SCALE,pivotY:0};
+  const vertices=Array.from({length:6},(_,i)=>groundPoint(radius*Math.cos((i*60-90)*Math.PI/180),radius*Math.sin((i*60-90)*Math.PI/180)));
+  const xs=vertices.map(p=>p.x),ys=vertices.map(p=>p.y);horizontalRadius=(Math.max(...xs)-Math.min(...xs))/2;verticalRadius=(Math.max(...ys)-Math.min(...ys))/2;
+  ground=el('g',{id:'ground-plane',transform:groundTransform(projection)},svg);
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
@@ -177,23 +187,23 @@ function renderBoard() {
   const landmarks=document.createElementNS(ns,'g');landmarks.setAttribute('pointer-events','none');
   for(const h of boardCells(cols,rows)) {
     const k=key(h), owner=owners.get(k), c=hexCenter(h,radius), terrain=terrainAt(level,h),terminal=chapterLevel&&(k===key(start)||k===key(end));
-    const g=el('g',{'data-cell':k,'data-terrain':terrain,'data-owner':owner??'',role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${k===key(start)?', '+level.startName:k===key(end)?', '+level.goalName:''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода',house:'дом',flower:'клумба'}[terrain])}`},svg);
+    const g=el('g',{'data-cell':k,'data-terrain':terrain,'data-owner':owner??'',role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${k===key(start)?', '+level.startName:k===key(end)?', '+level.goalName:''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода',house:'дом',flower:'клумба'}[terrain])}`},ground);
     el('polygon',{points:polygon(h,radius,origin.x,origin.y),'pointer-events':'all',class:`cell ${illustrated?(owner||terminal?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner===selected?0.45:1},g);
     if(chapterLevel && (owner||terminal) && (!owner||pieceById(owner).kind!=='bridge')){const material=el('g',{opacity:owner===selected ? 0.45 : 1},g);stoneDetail(material,h,radius,c.x+origin.x,c.y+origin.y,owner?pieces.indexOf(pieceById(owner)):0,paved,owner?{pieceId:owner,local:rotate({q:h.q-layout[owner].anchor.q,r:h.r-layout[owner].anchor.r},-layout[owner].turns),turns:layout[owner].turns}:{pieceId:'endpoint',local:h,turns:0});}
-    if(!owner && terrain!=='ground' && terrain!=='house') el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},g,({water:'≈',tree:'♠',rock:'⬟',flower:'✿'}[terrain]));
+    if(!owner && terrain!=='ground' && terrain!=='house') el('text',{x:groundPoint(c.x+origin.x,c.y+origin.y).x,y:groundPoint(c.x+origin.x,c.y+origin.y).y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},landmarks,({water:'≈',tree:'♠',rock:'⬟',flower:'✿'}[terrain]));
     if(owner && pieceById(owner).kind==='bridge') {
       const deck=el('g',{transform:`translate(${c.x+origin.x} ${c.y+origin.y}) rotate(${layout[owner].turns*60})`,'pointer-events':'none'},g);
       for(const dx of [-.35,0,.35]) el('line',{x1:radius*dx,x2:radius*dx,y1:-radius*.65,y2:radius*.65,stroke:'#775032','stroke-width':2},deck);
     }
     if(owner && (!illustrated||owner===selected) && key(layout[owner].anchor)===k) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y,r:Math.max(2,radius*.09),fill:'#fff5d6','pointer-events':'none'},g);
     if(!illustrated && (k===key(start)||k===key(end))) {
-      el('text',{x:c.x+origin.x,y:c.y+origin.y-radius*.1,class:'landmark','font-size':radius*.62},landmarks,k===key(start)?'⌂':'⚑');
-      el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.45,class:'landmark label','font-size':Math.max(10,Math.min(12,radius*.35))},landmarks,k===key(start)?level.startName:level.goalName);
+      el('text',{x:groundPoint(c.x+origin.x,c.y+origin.y).x,y:groundPoint(c.x+origin.x,c.y+origin.y).y-radius*.1,class:'landmark','font-size':radius*.62},landmarks,k===key(start)?'⌂':'⚑');
+      el('text',{x:groundPoint(c.x+origin.x,c.y+origin.y).x,y:groundPoint(c.x+origin.x,c.y+origin.y).y+radius*.45,class:'landmark label','font-size':Math.max(10,Math.min(12,radius*.35))},landmarks,k===key(start)?level.startName:level.goalName);
     }
     if(path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
-  if(illustrated)drawGrid(svg,cols,rows,radius,origin,new Set(boardCells(cols,rows).filter(h=>terrainAt(level,h)==='house').map(key)));
-  if(chapterLevel)drawInstanceEdges(svg,owners,radius,origin);
+  if(illustrated)drawGrid(ground,cols,rows,radius,origin,new Set(boardCells(cols,rows).filter(h=>terrainAt(level,h)==='house').map(key)));
+  if(chapterLevel)drawInstanceEdges(ground,owners,radius,origin);
   svg.append(landmarks);
   if(sceneTransform)scenery(svg,sceneTransform);
   else if(chapterLevel)prototypeRuta();
@@ -203,16 +213,16 @@ function renderBoard() {
   renderPreview();
   if(level.id==='mill') {
     const c=hexCenter(level.goal,radius);
-    const wheel=el('g',{transform:`translate(${origin.x+c.x} ${origin.y+c.y-radius*.35})`,'pointer-events':'none'},svg);
+    const wheel=el('g',{transform:`translate(${groundPoint(origin.x+c.x,origin.y+c.y).x} ${groundPoint(origin.x+c.x,origin.y+c.y).y-radius*.35})`,'pointer-events':'none'},svg);
     const spokes=el('g',{class:phase==='won'||completed.includes(level.id)?'mill-wheel turning':'mill-wheel','data-wheel':phase==='won'||completed.includes(level.id)?'running':'still'},wheel);
     el('circle',{r:radius*.28,fill:'#dbbd87',stroke:'#765239','stroke-width':2},spokes);
     for(let i=0;i<4;i++){const a=i*Math.PI/4;el('line',{x1:-Math.cos(a)*radius*.28,y1:-Math.sin(a)*radius*.28,x2:Math.cos(a)*radius*.28,y2:Math.sin(a)*radius*.28,stroke:'#765239','stroke-width':2},spokes);}
   }
   if(route.length) {el('g',{id:'ruta-marker','pointer-events':'none','aria-label':'Рута идёт по дороге'},svg);updateRutaMarker();}
-  $('metric').textContent=`Гекс ${Math.round(Math.sqrt(3)*radius)} × ${Math.round(2*radius)} px`;
+  $('metric').textContent=`Гекс ${Math.round(2*horizontalRadius)} × ${Math.round(2*verticalRadius)} px · проекция ${GROUND_SCALE}`;
 }
 function prototypeRuta(){
- const c=hexCenter(level.start,radius),visible=radius*2*1.1,height=visible*1300/1232,width=height*1209/1300;
+ const regular=hexCenter(level.start,radius),c={x:regular.x,y:groundPoint(0,regular.y+origin.y).y-origin.y},visible=radius*2*1.1,height=visible*1300/1232,width=height*1209/1300;
  const layer=el('g',{'pointer-events':'none'},svg);
  if(!route.length){
  el('ellipse',{cx:c.x+origin.x,cy:c.y+origin.y,rx:radius*.23,ry:radius*.08,fill:'#3f3b32',opacity:.25},layer);
@@ -249,9 +259,10 @@ function render() {
   renderBoard();renderTray();updateControls();
 }
 function eventHex(e: PointerEvent, lift=false): Hex | null {
-  const rect=svg.getBoundingClientRect(), x=e.clientX-rect.left, y=e.clientY-rect.top-(lift && e.pointerType==='touch'?Math.max(42,radius*1.6):0);
+  const rect=svg.getBoundingClientRect(), x=e.clientX-rect.left, y=e.clientY-rect.top-(lift && e.pointerType==='touch'?Math.max(42,verticalRadius*1.6):0);
   if(x<0||y<0||x>rect.width||y>rect.height) return null;
-  return pixelHex(x-origin.x,y-origin.y,radius);
+  const local=unproject({x,y},projection);
+  return pixelHex(local.x-origin.x,local.y-origin.y,radius);
 }
 function ownerAt(h: Hex) { return Object.entries(layout).find(([id,p])=>placedCells(id,p).some(c=>key(c)===key(h)))?.[0]; }
 $('tray').addEventListener('click',e=>{
@@ -375,7 +386,8 @@ function updateRutaMarker() {
   const marker=document.getElementById('ruta-marker');if(!marker||!route.length)return;
   const index=Math.min(Math.floor(journey),route.length-1),next=Math.min(index+1,route.length-1),t=journey-index;
   const a=hexCenter(route[index],radius),b=hexCenter(route[next],radius);
-  marker.setAttribute('transform',`translate(${origin.x+a.x+(b.x-a.x)*t} ${origin.y+a.y+(b.y-a.y)*t})`);
+  const foot=groundPoint(origin.x+a.x+(b.x-a.x)*t,origin.y+a.y+(b.y-a.y)*t);
+  marker.setAttribute('transform',`translate(${foot.x} ${foot.y})`);
   marker.replaceChildren();
   el('circle',{r:radius*.29,fill:'#f5ddb1',stroke:'#7c4d42','stroke-width':2},marker);
   el('path',{d:`M ${-radius*.26} ${radius*.18} L ${radius*.27} ${radius*.18} L 0 ${radius*.55} Z`,fill:'#b94455'},marker);

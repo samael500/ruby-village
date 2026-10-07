@@ -17,7 +17,7 @@ with sync_playwright() as p:
           const img=document.querySelector('#ruta-idle'),height=img.height.baseVal.value*img.getScreenCTM().a*(1277-45)/1300;
           return height/document.querySelector('[data-cell="0,1"] > polygon').getBoundingClientRect().height;
         }''')
-        assert 1<=ratio<=1.25001
+        assert 1.3<=ratio<=2.1
         page.locator('#scene-back').tap()
         page.evaluate("()=>localStorage.setItem('ruby-village:chapter-1:v1',JSON.stringify({version:2,completed:['gate','garden','well']}))")
         page.reload();page.locator('[data-level="bakery"]').tap();page.locator('#story-skip').tap()

@@ -47,7 +47,7 @@ export function stoneDetail(parent:Element,h:Hex,r:number,x:number,y:number,vari
     node('path',{d:`M ${a.x} ${a.y} L ${b.x} ${b.y}`,fill:'none',stroke:i===2||i===3?'#552765':'#dba8ed','stroke-width':Math.min(2,r*.035),'clip-path':`url(#${id})`},g);
   }
 }
-export function drawGrid(svg:SVGSVGElement,cols:number,rows:number,r:number,origin:{x:number;y:number},blocked:ReadonlySet<string>){
+export function drawGrid(svg:Element,cols:number,rows:number,r:number,origin:{x:number;y:number},blocked:ReadonlySet<string>){
   const d=gridEdges(cols,rows,r,origin,blocked).join(' ');
   const g=node('g',{'pointer-events':'none','data-grid':''},svg);
   node('path',{d,fill:'none',stroke:'#f1e7bc','stroke-width':2.2,opacity:.3},g);
@@ -55,7 +55,7 @@ export function drawGrid(svg:SVGSVGElement,cols:number,rows:number,r:number,orig
 }
 
 /** Flat ink line, not an extruded side face. Draw above the ordinary hex grid. */
-export function drawInstanceEdges(svg:SVGSVGElement,owners:ReadonlyMap<string,string>,r:number,origin:{x:number;y:number}){
+export function drawInstanceEdges(svg:Element,owners:ReadonlyMap<string,string>,r:number,origin:{x:number;y:number}){
   const d=instanceEdges(owners).map(({cell,side})=>{
     const c=hexCenter(cell,r);
     const vertex=(i:number)=>`${origin.x+c.x+r*Math.cos((i*60-90)*Math.PI/180)} ${origin.y+c.y+r*Math.sin((i*60-90)*Math.PI/180)}`;
