@@ -96,3 +96,33 @@ body:has(.illustrated-level){background:#283f2a}
 /* v4: full painted composition, mathematical grid drawn once above cell fills. */
 .illustrated-level .meadow-cell{fill:#f1e7bc;fill-opacity:.15;stroke:none}
 @media(orientation:portrait){.illustrated-level #field{flex:1;height:auto}}
+
+/* Chapter one: eight places on a separate schematic map, not puzzle geometry. */
+#map-background,#map-roads{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+#map-places{display:block;position:absolute;inset:0;width:100%;height:100%}
+.map-landscape{overflow:hidden;background:linear-gradient(#d6dfb9,#bdcfab)}
+.map-node{position:absolute;transform:translate(-50%,-50%);width:21%;display:flex;align-items:stretch;gap:3px}
+.map-node .level-card{flex:1;min-height:96px;padding:5px 3px;gap:3px;font-size:13px;box-shadow:0 2px 0 #899371}
+.map-node .place-symbol{font-size:26px}.map-node .map-state{font-size:11px}
+.map-book{width:48px;flex:0 0 48px;padding:2px;font-size:24px;background:#ecd9ab}
+.map-actions{flex-wrap:wrap;gap:5px}.map-actions button{padding:3px 8px}.map-intro{flex:0 0 24px}
+.story-buttons{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:10px}
+#story-action{margin:0;min-width:120px}#story-skip{padding:8px 12px;font-size:13px}
+#story-text{white-space:pre-line}.story-layout p{margin:7px 0}#story .eyebrow{margin:0}
+.prototype-level #field{background:#b9c99e}.prototype-level .cell{stroke:#637653}
+.prototype-level h1{font-size:17px}.prototype-level .piece span{display:block;font-size:10px}
+.prototype-level .piece svg{height:48px}.illustrated-level #tray{gap:4px}
+.illustrated-level .piece{min-width:48px}
+.forest-glimmer{animation:forest-glimmer 1.2s ease-out 1 forwards}
+@keyframes forest-glimmer{from{opacity:1}to{opacity:0}}
+@media(prefers-reduced-motion:reduce){.forest-glimmer{animation:none;opacity:.5}}
+@media(max-height:420px){.map-node .level-card{min-height:80px;font-size:11px}.map-node .place-symbol{font-size:22px}.map-node .map-state{font-size:10px}.map-intro{display:none}.story-layout p{line-height:1.35}.story-layout h2{font-size:19px}.story-buttons{margin-top:8px}.map-actions button{font-size:11px}.map-actions{flex-wrap:nowrap}.map-book{width:48px;flex-basis:48px}}
+@media(orientation:portrait){.map-node{width:44%}.map-node .level-card{min-height:86px;font-size:11px}.map-book{width:48px}.map-intro{font-size:11px}.map-actions button{flex:1}.illustrated-level #tray{gap:2px}.illustrated-level .piece{padding:1px}.prototype-level .piece span{font-size:9px}.illustrated-level h1{font-size:15px;padding:6px}}
+@media(max-width:360px){.map-node{width:46%}.map-book{display:none}}
+#bridge-guide{display:block;width:220px;max-width:100%;height:72px;margin:4px auto}
+@media(max-height:420px){#bridge-guide{height:54px;width:190px}}
+/* Scene events live in the existing header, never over playable polygons. */
+#scene-event{width:34px;height:34px;flex:0 0 34px;pointer-events:none}
+.illustrated-level header .brand{min-width:0;flex-shrink:1}
+.illustrated-level h1{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.illustrated-level h1 small{display:block;font:9px system-ui;line-height:10px;opacity:.85}
