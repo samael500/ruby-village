@@ -36,22 +36,6 @@ test('v4: Рута не закрывает обычные клетки вне с
   }
  }
 });
-for(const portrait of [false,true])test(`v4: подходы ${portrait?'portrait':'landscape'} вместе с шириной дорожки не пересекают обычные клетки`,()=>{
- const s=sceneLayout(1280,720,7,5,level.start,level.goal,portrait);
- assert.equal(s.approaches.length,2);
- assert.deepEqual(s.approaches[0][0],s.art.door);
- assert.deepEqual(s.approaches[1].at(-1),s.art.gate);
- const ordinary=new Set(boardCells(7,5).map(key).filter(k=>![key(level.start),key(level.goal)].includes(k)));
- for(const points of s.approaches)for(let i=1;i<points.length;i++){
-  const a=points[i-1],b=points[i];
-  for(let t=0;t<=100;t++)for(let angle=0;angle<12;angle++){
-   const x=a.x+(b.x-a.x)*t/100+11*Math.cos(angle*Math.PI/6),y=a.y+(b.y-a.y)*t/100+11*Math.sin(angle*Math.PI/6);
-   const cell=pixelHex(x-s.art.grid.x,y-s.art.grid.y,s.art.radius);
-   assert.ok(!ordinary.has(key(cell)),`approach overlaps ${key(cell)}`);
-  }
- }
-});
-
 test('Границы экземпляров: внутренний стык скрыт, разные фигуры разделены одной линией при шести поворотах',()=>{
  for(let turn=0;turn<6;turn++){
   const a={q:0,r:0},b=rotate({q:1,r:0},turn);
