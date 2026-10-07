@@ -15,7 +15,7 @@ def center(page,selector):
 def anchors(page):
     # Use actual image source anchors and SVG screen transform, not a DOM data claim.
     return page.evaluate('''()=>{
-      const feet=document.querySelector('#ruta-idle'),point=new DOMPoint(+feet.getAttribute('x')+.55*feet.width.baseVal.value,+feet.getAttribute('y')+.965*feet.height.baseVal.value).matrixTransform(feet.getScreenCTM());
+      const feet=document.querySelector('#ruta-idle'),point=new DOMPoint(+feet.getAttribute('x')+.55*feet.width.baseVal.value,+feet.getAttribute('y')+(1277/1300)*feet.height.baseVal.value).matrixTransform(feet.getScreenCTM());
       const cell=document.querySelector('[data-cell="0,1"] > polygon').getBoundingClientRect();
       return Math.hypot(point.x-cell.x-cell.width/2,point.y-cell.y-cell.height/2)<.1;
     }''')
@@ -45,7 +45,8 @@ with sync_playwright() as p:
         page.locator('[data-level="gate"]').tap();page.locator('#story-action').tap()
         fit(page)
         assert page.locator('[data-cell][data-terrain="ground"]').evaluate_all('els=>els.every(el=>{const b=el.querySelector("polygon").getBoundingClientRect();return document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)?.closest("[data-cell]")===el;})')
-        for asset in ['courtyard-landscape','courtyard-portrait','charoite-texture','ruta-idle']:assert page.request.get(URL+'assets/level-1/v4/'+asset+'.png').ok
+        for asset in ['courtyard-landscape','courtyard-portrait','ruta-idle']:assert page.request.get(URL+'assets/level-1/v4/'+asset+'.png').ok
+        for n in range(1,7):assert page.request.get(URL+f'assets/level-1/v5/tile-{n:02}.png').ok
         page.evaluate('()=>Promise.all([...document.querySelectorAll("#board image")].map(el=>new Promise((resolve,reject)=>{const img=new Image();img.onload=resolve;img.onerror=reject;img.src=el.getAttribute("href");})))')
         page.screenshot(path=str(SHOTS/f'gate-{width}x{height}.png'))
         assert page.locator('#board .landmark').count()==0
@@ -61,6 +62,7 @@ with sync_playwright() as p:
         # Recover from an invalid drop by clicking/tapping a valid cell under the toast.
         for touch in [False,True]:
             page.locator('[data-piece="gate-a"]').tap() if touch else page.locator('[data-piece="gate-a"]').click()
+            if touch:page.screenshot(path=str(SHOTS/f'selected-{width}x{height}.png'))
             action=page.touchscreen.tap if touch else page.mouse.click
             action(*center(page,'[data-cell="4,4"] > polygon'))
             expect(page.locator('[data-preview]')).to_have_attribute('data-preview','invalid')

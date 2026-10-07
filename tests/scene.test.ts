@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {sceneLayout} from '../src/scene-layout.ts';
+import {sceneLayout,rutaSilhouette,sourceAnchors} from '../src/scene-layout.ts';
 import {levels} from '../src/levels.ts';
 import {boardCells,hexCenter,pixelHex,key,gridEdges,neighbors,instanceEdges,rotate} from '../src/hex.ts';
 const level=levels[0],close=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
@@ -8,8 +8,8 @@ test('v4: единый fit изображения, клеток и ног Рут
  for(const [w,h,portrait] of [[1268,550,false],[832,260,false],[378,652,true],[728,238,false]] as const){
   const s=sceneLayout(w,h,7,5,level.start,level.goal,portrait);
   close(s.scale,s.art.radius*s.fit);
-  close(s.ruta.x+s.ruta.width*.55,s.startArt.x);close(s.ruta.y+s.ruta.height*.965,s.startArt.y);
-  assert.ok(s.ruta.height/s.art.doorHeight>=.55 && s.ruta.height/s.art.doorHeight<=.7);
+  close(s.ruta.x+s.ruta.width*sourceAnchors.ruta.x,s.startArt.x);close(s.ruta.y+s.ruta.height*sourceAnchors.ruta.y,s.startArt.y);
+  assert.ok(s.visibleHeight/(s.art.radius*2)>=1 && s.visibleHeight/(s.art.radius*2)<=1.25);
   assert.ok(s.offset.x>=-1e-7&&s.offset.y>=-1e-7);
   assert.ok(s.offset.x+s.art.width*s.fit<=w+1e-7 && s.offset.y+s.art.height*s.fit<=h+1e-7);
   for(const cell of boardCells(7,5)){
@@ -28,7 +28,8 @@ test('v4: сетка не удваивает общие стороны и сох
 });
 test('v4: Рута не закрывает обычные клетки вне старта',()=>{
  for(const portrait of [false,true]){
-  const s=sceneLayout(1280,720,7,5,level.start,level.goal,portrait),p=s.ruta;
+  const s=sceneLayout(1280,720,7,5,level.start,level.goal,portrait),sprite=s.ruta;
+  const p={x:sprite.x+sprite.width*rutaSilhouette.left/rutaSilhouette.width,y:sprite.y+sprite.height*rutaSilhouette.top/rutaSilhouette.height,width:sprite.width*(rutaSilhouette.right-rutaSilhouette.left)/rutaSilhouette.width,height:s.visibleHeight};
   for(const h of boardCells(7,5)){
    if(['0,0','1,0',key(level.start)].includes(key(h)))continue;
    const c=hexCenter(h,s.art.radius),x=c.x+s.art.grid.x,y=c.y+s.art.grid.y,half=s.art.radius*Math.sqrt(3)/2;
