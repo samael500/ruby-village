@@ -1,3 +1,4 @@
+import {courtyard} from './environment.ts';
 import {boardCells,hexCenter,type Hex} from './hex.ts';
 export type Point={x:number;y:number};
 export type SpriteLayout={x:number;y:number;width:number;height:number;source:Point;anchor:Point};
@@ -18,7 +19,10 @@ export function sceneLayout(width:number,height:number,cols:number,rows:number,s
   const top=Math.min(...centers.map(c=>c.y-1),house.y,ruta.y,gate.y);
   const right=Math.max(...centers.map(c=>c.x+Math.sqrt(3)/2),house.x+house.width,ruta.x+ruta.width,gate.x+gate.width);
   const bottom=Math.max(...centers.map(c=>c.y+1),house.y+house.height,ruta.y+ruta.height,gate.y+gate.height);
-  const scale=Math.max(.01,Math.min((width-16)/(right-left),(height-16)/(bottom-top)));
-  const origin={x:(width-(right-left)*scale)/2-left*scale,y:(height-(bottom-top)*scale)/2-top*scale};
+  // Reserve the whole fence silhouette, not just the ground-level post bases.
+  const m=courtyard.fitMargin;
+  const fitBounds={left:left-m.side,top:top-m.top,right:right+m.side,bottom:bottom+m.bottom};
+  const scale=Math.max(.01,Math.min((width-16)/(fitBounds.right-fitBounds.left),(height-16)/(fitBounds.bottom-fitBounds.top)));
+  const origin={x:(width-(fitBounds.right-fitBounds.left)*scale)/2-fitBounds.left*scale,y:(height-(fitBounds.bottom-fitBounds.top)*scale)/2-fitBounds.top*scale};
   return {scale,origin,house,ruta,gate,bounds:{left,top,right,bottom}};
 }

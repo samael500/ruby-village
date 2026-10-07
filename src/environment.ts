@@ -1,6 +1,7 @@
 import type {Point,SpriteLayout} from './scene-layout.ts';
 /** All lengths are unit hex radii, independent of CSS viewport size. */
 export const courtyard={
+  fitMargin:{side:.5,top:1.05,bottom:1.05},
   ground:{asset:'grass-ground',period:20,opacity:.72},
   boundaries:{postSpacing:1.55,height:.62},
   decorations:{shrubHeight:.38,flowerRadius:.035},

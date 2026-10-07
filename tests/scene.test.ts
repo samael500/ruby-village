@@ -44,6 +44,12 @@ test('Ограда: непрерывные секции, единственны�
     }
     assert.equal(new Set(posts.map(p=>`${p.x},${p.y}`)).size,posts.length);
     for(let i=1;i<posts.length;i++)assert.ok(Math.hypot(posts[i].x-posts[i-1].x,posts[i].y-posts[i-1].y)<=courtyard.boundaries.postSpacing+1e-7);
+    // Both full horizontal fence sections must remain visible, including post tops.
+    for(const point of [route[2],route[3],route[4],route[1]]){
+      const x=point.x*s.scale+s.origin.x,y=point.y*s.scale+s.origin.y;
+      assert.ok(x-.09*s.scale>=0 && x+.09*s.scale<=width);
+      assert.ok(y-(courtyard.boundaries.height+.05)*s.scale>=0 && y+.02*s.scale<=height);
+    }
     // All intermediate perimeter posts lie outside the logical field envelope.
     for(const p of posts.slice(1,-1))assert.ok(p.x<s.bounds.left||p.x>s.bounds.right||p.y<s.bounds.top||p.y>s.bounds.bottom);
     if(height>width)assert.ok(Math.max(...route.map(p=>p.y))-Math.min(...route.map(p=>p.y))<=s.bounds.bottom-s.bounds.top+2.4+1e-7);

@@ -8,7 +8,7 @@ function node(tag:string,attrs:Record<string,string|number>,parent:Element){
   for(const [k,v] of Object.entries(attrs))el.setAttribute(k,String(v));
   parent.append(el);return el;
 }
-export function backdrop(svg:SVGSVGElement,width:number,height:number,scene:ReturnType<typeof sceneLayout>){
+export function backdrop(svg:SVGSVGElement,width:number,height:number,scene:ReturnType<typeof sceneLayout>,portrait:boolean){
   const {scale,origin}=scene,period=courtyard.ground.period;
   const defs=node('defs',{},svg);
   // Mirrored neighbours meet at exactly the same source pixels on every seam.
@@ -20,7 +20,7 @@ export function backdrop(svg:SVGSVGElement,width:number,height:number,scene:Retu
   node('feGaussianBlur',{stdDeviation:.055},soft);
   const world=node('g',{'pointer-events':'none',transform:`translate(${origin.x} ${origin.y}) scale(${scale})`},svg);
   const viewport={left:-origin.x/scale,top:-origin.y/scale,right:(width-origin.x)/scale,bottom:(height-origin.y)/scale};
-  const posts=fencePosts(fenceRoute(scene.gate,scene.bounds,viewport,height>width));
+  const posts=fencePosts(fenceRoute(scene.gate,scene.bounds,viewport,portrait));
   const fence=node('g',{'data-environment':'fence'},world);
   // Rails share endpoints; one post per junction, no extra posts over the PNG gate.
   for(let i=1;i<posts.length;i++)for(const lift of [.19,.44]){

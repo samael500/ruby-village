@@ -24,6 +24,16 @@ def fit(page):
     assert page.locator('button:visible').evaluate_all('els=>els.every(e=>{const b=e.getBoundingClientRect();return b.width>=48&&b.height>=48&&b.left>=0&&b.right<=innerWidth&&b.top>=0&&b.bottom<=innerHeight;})')
     assert anchors(page)
     assert page.evaluate('''()=>{
+      const fence=document.querySelector('[data-environment="fence"]').getBoundingClientRect();
+      const board=document.querySelector('#board').getBoundingClientRect();
+      return fence.left>=board.left && fence.right<=board.right && fence.top>=board.top && fence.bottom<=board.bottom;
+    }''')
+    if page.viewport_size['height']>page.viewport_size['width']:
+        assert page.evaluate('''()=>{
+          const field=document.querySelector('#field').getBoundingClientRect(),tray=document.querySelector('#game-controls').getBoundingClientRect();
+          return field.height<=field.width*.81 && Math.abs(tray.top-field.bottom)<1;
+        }''')
+    assert page.evaluate('''()=>{
       const scale=document.querySelector('#ruta-idle').getScreenCTM().a;
       const ground=document.querySelector('#court-grass').patternTransform.baseVal.consolidate().matrix;
       return Math.abs(ground.a-scale)<1e-7 && document.querySelector('[data-ground-period]').dataset.groundPeriod==='20';

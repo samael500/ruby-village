@@ -163,7 +163,7 @@ function renderBoard() {
   origin={x:(rect.width-w)/2+Math.sqrt(3)*radius/2,y:(rect.height-h)/2+radius};
   if(sceneTransform){radius=sceneTransform.scale;origin=sceneTransform.origin;}
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`); svg.replaceChildren();
-  if(sceneTransform)backdrop(svg,rect.width,rect.height,sceneTransform);
+  if(sceneTransform)backdrop(svg,rect.width,rect.height,sceneTransform,matchMedia('(orientation:portrait)').matches);
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
