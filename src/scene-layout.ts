@@ -9,10 +9,10 @@ function sprite(anchor:Point,width:number,aspect:number,source:Point):SpriteLayo
 /** Unit-radius world: one uniform fit, with the same anchors in every orientation. */
 export function sceneLayout(width:number,height:number,cols:number,rows:number,start:Hex,goal:Hex){
   const a=hexCenter(start,1),b=hexCenter(goal,1);
-  const house=sprite({x:a.x-.55,y:a.y},3.5,1312/1199,sourceAnchors.house);
-  const ruta=sprite(a,1.27*1209/1300,1209/1300,sourceAnchors.ruta);
+  const house=sprite({x:a.x-.55,y:a.y},3.45,1312/1199,sourceAnchors.house);
+  const ruta=sprite(a,1.25*1209/1300,1209/1300,sourceAnchors.ruta);
   // The opening meets the lower-right edge; the fence extends out of the court.
-  const gate=sprite({x:b.x+.95,y:b.y+1.15},2.6,1536/1024,sourceAnchors.gate);
+  const gate=sprite({x:b.x+.9,y:b.y+.8},2.4,1536/1024,sourceAnchors.gate);
   const centers=boardCells(cols,rows).map(h=>hexCenter(h,1));
   const left=Math.min(...centers.map(c=>c.x-Math.sqrt(3)/2),house.x,ruta.x,gate.x);
   const top=Math.min(...centers.map(c=>c.y-1),house.y,ruta.y,gate.y);

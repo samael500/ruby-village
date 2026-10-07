@@ -21,7 +21,7 @@ test('Единая сцена: ноги на старте, source anchors и hit
     }
     assert.ok(scene.house.width/(scene.bounds.right-scene.bounds.left)<=.24);
     assert.ok(scene.house.height/scene.ruta.height>=2.5);
-    assert.ok(Math.hypot(scene.gate.anchor.x-hexCenter(level.goal,1).x,scene.gate.anchor.y-hexCenter(level.goal,1).y)<1.6);
+    assert.ok(Math.hypot(scene.gate.anchor.x-hexCenter(level.goal,1).x,scene.gate.anchor.y-hexCenter(level.goal,1).y)<1.25);
   }
 });
 test('Декор не перекрывает обычные проходимые клетки; дом занимает данные blocked-клетки',()=>{
