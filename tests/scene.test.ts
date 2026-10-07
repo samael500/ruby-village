@@ -2,7 +2,7 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {sceneLayout} from '../src/scene-layout.ts';
 import {levels} from '../src/levels.ts';
-import {boardCells,hexCenter,pixelHex,key,gridEdges,neighbors} from '../src/hex.ts';
+import {boardCells,hexCenter,pixelHex,key,gridEdges,neighbors,instanceEdges,rotate} from '../src/hex.ts';
 const level=levels[0],close=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
 test('v4: единый fit изображения, клеток и ног Руты в обеих ориентациях',()=>{
  for(const [w,h,portrait] of [[1268,550,false],[832,260,false],[378,652,true],[728,238,false]] as const){
@@ -49,5 +49,17 @@ for(const portrait of [false,true])test(`v4: подходы ${portrait?'portrait
    const cell=pixelHex(x-s.art.grid.x,y-s.art.grid.y,s.art.radius);
    assert.ok(!ordinary.has(key(cell)),`approach overlaps ${key(cell)}`);
   }
+ }
+});
+
+test('Границы экземпляров: внутренний стык скрыт, разные фигуры разделены одной линией при шести поворотах',()=>{
+ for(let turn=0;turn<6;turn++){
+  const a={q:0,r:0},b=rotate({q:1,r:0},turn);
+  const same=new Map([[key(a),'a'],[key(b),'a']]);
+  const separate=new Map([[key(a),'a'],[key(b),'b']]);
+  assert.equal(instanceEdges(same).length,10);
+  assert.equal(instanceEdges(separate).length,11);
+  assert.equal(instanceEdges(new Map([[key(a),'a']])).length,6);
+  assert.equal(instanceEdges(new Map()).length,0);
  }
 });

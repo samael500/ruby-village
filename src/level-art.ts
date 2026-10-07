@@ -1,4 +1,4 @@
-import {directions,key,add,hexCenter,gridEdges,type Hex} from './hex.ts';
+import {directions,key,add,hexCenter,gridEdges,instanceEdges,type Hex} from './hex.ts';
 import {sceneLayout} from './scene-layout.ts';
 const ns='http://www.w3.org/2000/svg';
 export const artUrl=(name:string)=>`${import.meta.env.BASE_URL}assets/level-1/v4/${name}.png`;
@@ -27,7 +27,7 @@ export function scenery(svg:SVGSVGElement,scene:ReturnType<typeof sceneLayout>){
 }
 let materialId=0;
 /** Same image origin and texel/hex ratio for the whole board and each tray figure. */
-export function stoneDetail(parent:Element,h:Hex,r:number,x:number,y:number,_variant=0,paved:ReadonlySet<string>=new Set()){
+export function stoneDetail(parent:Element,h:Hex,r:number,x:number,y:number,variant=0,paved:ReadonlySet<string>=new Set()){
   const g=node('g',{'pointer-events':'none'},parent),id=`charoite-${materialId++}`;
   const vertices=Array.from({length:6},(_,i)=>({x:x+r*Math.cos((i*60-90)*Math.PI/180),y:y+r*Math.sin((i*60-90)*Math.PI/180)}));
   const points=vertices.map(p=>`${p.x},${p.y}`).join(' ');
@@ -37,6 +37,8 @@ export function stoneDetail(parent:Element,h:Hex,r:number,x:number,y:number,_var
   const pattern=node('pattern',{id:`${id}-material`,patternUnits:'userSpaceOnUse',x:ox-2*r,y:oy-2*r,width:12*r,height:12*r},node('defs',{},g));
   for(let row=0;row<2;row++)for(let col=0;col<2;col++)node('image',{href:artUrl('charoite-texture'),width:6*r,height:6*r,transform:`translate(${col?12*r:0} ${row?12*r:0}) scale(${col?-1:1} ${row?-1:1})`},pattern);
   node('polygon',{points,fill:`url(#${id}-material)`,'data-material':''},g);
+  const tint=['#351267','#f4b6ce','#b9b9ff'][((variant%3)+3)%3];
+  node('polygon',{points,fill:tint,opacity:.16,'data-instance-tint':variant},g);
   const across=[directions[1],directions[0],directions[5],directions[4],directions[3],directions[2]];
   for(let i=0;i<6;i++)if(!paved.has(key(add(h,across[i])))){
     const a=vertices[i],b=vertices[(i+1)%6];
@@ -48,4 +50,14 @@ export function drawGrid(svg:SVGSVGElement,cols:number,rows:number,r:number,orig
   const g=node('g',{'pointer-events':'none','data-grid':''},svg);
   node('path',{d,fill:'none',stroke:'#f1e7bc','stroke-width':2.2,opacity:.3},g);
   node('path',{d,fill:'none',stroke:'#526343','stroke-width':1.4,opacity:.65},g);
+}
+
+/** Flat ink line, not an extruded side face. Draw above the ordinary hex grid. */
+export function drawInstanceEdges(svg:SVGSVGElement,owners:ReadonlyMap<string,string>,r:number,origin:{x:number;y:number}){
+  const d=instanceEdges(owners).map(({cell,side})=>{
+    const c=hexCenter(cell,r);
+    const vertex=(i:number)=>`${origin.x+c.x+r*Math.cos((i*60-90)*Math.PI/180)} ${origin.y+c.y+r*Math.sin((i*60-90)*Math.PI/180)}`;
+    return `M ${vertex(side)} L ${vertex((side+1)%6)}`;
+  }).join(' ');
+  node('path',{d,fill:'none',stroke:'#482155','stroke-width':1.8,'stroke-linejoin':'round','stroke-linecap':'round','pointer-events':'none','data-instance-outlines':''},svg);
 }

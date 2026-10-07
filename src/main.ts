@@ -1,6 +1,6 @@
 import './style.css';
 import {sceneLayout} from './scene-layout.ts';
-import {artUrl,backdrop,scenery,stoneDetail,drawGrid} from './level-art.ts';
+import {artUrl,backdrop,scenery,stoneDetail,drawGrid,drawInstanceEdges} from './level-art.ts';
 import {type Hex, boardCells, key, hexCenter, pixelHex, rotate} from './hex.ts';
 import {pieceById as lookupPiece, placedCells as cellsForPiece, validPlacement, terrainAt, winningPath, type Layout} from './game.ts';
 import {levels,sandbox} from './levels.ts';
@@ -189,6 +189,7 @@ function renderBoard() {
     if(path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
   if(illustrated)drawGrid(svg,cols,rows,radius,origin,new Set(boardCells(cols,rows).filter(h=>terrainAt(level,h)==='house').map(key)));
+  if(illustrated)drawInstanceEdges(svg,owners,radius,origin);
   svg.append(landmarks);
   if(sceneTransform)scenery(svg,sceneTransform);
 

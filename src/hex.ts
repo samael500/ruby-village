@@ -57,3 +57,17 @@ export function gridEdges(cols:number,rows:number,r:number,origin:{x:number;y:nu
   }
   return [...edges.values()];
 }
+
+/** Boundaries of movable instances, including their shared seam exactly once. */
+export function instanceEdges(owners:ReadonlyMap<string,string>):{cell:Hex;side:number}[]{
+  const across=[directions[1],directions[0],directions[5],directions[4],directions[3],directions[2]];
+  const edges:{cell:Hex;side:number}[]=[];
+  for(const [k,owner] of owners){
+    const [q,r]=k.split(',').map(Number),cell={q,r};
+    across.forEach((direction,side)=>{
+      const neighbor=key(add(cell,direction)),other=owners.get(neighbor);
+      if(other!==owner && (other===undefined || k<neighbor))edges.push({cell,side});
+    });
+  }
+  return edges;
+}
