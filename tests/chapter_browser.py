@@ -138,6 +138,7 @@ with sync_playwright() as p:
     delayed.add_init_script('const raf=window.requestAnimationFrame.bind(window);window.requestAnimationFrame=(cb)=>raf(ts=>cb(ts-50));')
     animation=delayed.new_page();animation.on('pageerror',lambda error:errors.append(str(error)));animation.goto(URL)
     enter(animation,'gate');solve(animation,LEVELS[0])
+    enter(animation,'garden');solve(animation,LEVELS[1])
     print('Animation tolerates an initial frame timestamp before the click handler: PASS')
     assert not errors,errors
     print('Storage denied: play and session unlock work. No browser errors.')

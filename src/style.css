@@ -50,3 +50,11 @@ dialog::backdrop{background:#28312366}.dialog-heading{display:flex;align-items:c
 @media(orientation:portrait){#map-places{gap:5px}.level-card strong,.map-home strong{font-size:11px}.map-state{font-size:10px}.place-symbol{font-size:30px}.map-home .place-symbol{font-size:40px}.map-intro{font-size:12px}.map-actions{flex-wrap:wrap}#save-status{order:3;max-width:none;width:100%}.story-layout{gap:10px}.ruta-portrait{width:72px;height:90px}.story-layout h2{font-size:21px}}
 
 .drag-mode #selection-actions{grid-template-columns:repeat(4,minmax(0,1fr)) 1.3fr 1fr}#selected-drag svg{width:100%;max-width:66px;height:35px}#selected-drag{background:#eee2f4;border-color:#ab90bf;cursor:grab}#selected-drag:active{cursor:grabbing}
+
+/* Illustrated scene shares the board's SVG coordinates and never takes pointer input. */
+.illustrated-level #field{border-color:#9a9462;background:#b6bd71}
+.illustrated-level .meadow-cell{fill:#fff2b7;fill-opacity:.12;stroke:#726537;stroke-opacity:.52;stroke-width:1.2}
+.illustrated-level .flagstone{stroke:#675170;stroke-width:2.5;paint-order:stroke fill}
+.illustrated-level .cell.path{fill:#b5a1c9;fill-opacity:.9;stroke:#fff3b4;stroke-opacity:1;stroke-width:3}
+.illustrated-level footer{background:#f5e9cf;border-radius:12px;padding:3px;box-shadow:0 -2px 0 #bba379}
+#story-ruta{object-fit:contain}
