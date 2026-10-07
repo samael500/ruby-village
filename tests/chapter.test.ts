@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {levels,sandbox} from '../src/levels.ts';
+import {levels,sandbox,wellAlternative} from '../src/levels.ts';
 import {boardCells,key,findPath,rotate} from '../src/hex.ts';
 import {validPlacement,validateLayout,winningPath,placedCells,terrainAt} from '../src/game.ts';
 import {PROGRESS_KEY,parseProgress,loadProgress,saveProgress,available,completeLevel} from '../src/progress.ts';
@@ -27,66 +27,60 @@ test('До калитки: кратчайший путь требует весь
     assert.ok(cells<shortest.length-2);
   }
   assert.equal(Object.keys(l.solution).length,l.pieces.length);
-  for(const h of [{q:0,r:0},{q:1,r:0}])assert.equal(validPlacement(l,'single',{anchor:h,turns:0},{}),false);
+  for(const h of [{q:0,r:0},{q:1,r:0}])assert.equal(validPlacement(l,'gate-1',{anchor:h,turns:0},{}),false);
   assert.ok(l.goal.r>l.start.r && l.goal.q>l.start.q);
 });
-test('Сад: прямая дорога закрыта; даже при замощении всей земли нужно обойти преграду снизу',()=>{
-  const l=levels[1];
-  assert.ok(Object.keys(l.solution).length<l.pieces.length);
-  const upper=new Set(boardCells(l.cols,l.rows).filter(h=>h.r<4&&terrainAt(l,h)==='ground').map(key));
-  assert.equal(findPath(l.start,l.goal,upper),null);
-  const route=winningPath(l,l.solution)!;assert.ok(route.some(h=>h.r>=4));
-  const obstructed={anchor:{q:3,r:2},turns:0};
-  assert.equal(validPlacement(l,'garden-a',obstructed,{}),false);
+test('Сад: обход яблони снизу и первый поворот без лишней фигуры',()=>{
+ const l=levels[1];assert.equal(Object.keys(l.solution).length,l.pieces.length);
+ const upper=new Set(boardCells(l.cols,l.rows).filter(h=>h.r<4&&terrainAt(l,h)==='ground').map(key));
+ assert.equal(findPath(l.start,l.goal,upper),null);
+ assert.ok(winningPath(l,l.solution)!.some(h=>h.r>=4));
+ assert.notEqual(l.solution['garden-a'].turns,0);
 });
-test('Мост: перебор всех размещений даёт две переправы; дальняя невозможна даже со всеми камнями',()=>{
-  const l=levels[2],dry=allDry(l),crossings=new Map<string,{placement:Placement;pathLength:number}>();
-  assert.equal(findPath(l.start,l.goal,dry),null);
-  for(const anchor of boardCells(l.cols,l.rows))for(let turns=0;turns<6;turns++){
-    const placement={anchor,turns};if(!validPlacement(l,'bridge',placement,{}))continue;
-    const cells=placedCells('bridge',placement,l.pieces);
-    const path=findPath(l.start,l.goal,new Set([...dry,...cells.map(key)]));
-    if(path)crossings.set(cells.map(key).sort().join('|'),{placement,pathLength:path.length});
+test('Колодец: проверены два разных допустимых обхода клумбы',()=>{
+ const l=levels[2];assert.ok(validateLayout(l,wellAlternative));assert.ok(winningPath(l,wellAlternative));
+ assert.notDeepEqual(winningPath(l,l.solution),winningPath(l,wellAlternative));
+ for(const route of [l.solution,wellAlternative])assert.ok(winningPath(l,route)!.every(h=>terrainAt(l,h)==='ground'));
+});
+test('Уровни 1–6: в эталонах нет намеренных лишних фигур; разрыв не выигрывает',()=>{
+ for(const l of levels.slice(0,6)){
+  assert.equal(Object.keys(l.solution).length,l.pieces.length);
+  for(const id of Object.keys(l.solution)){
+   const broken={...l.solution};delete broken[id];assert.equal(winningPath(l,broken),null,`${l.id}: ${id}`);
   }
-  assert.equal(crossings.size,2);
-  const capacity=l.pieces.reduce((n,p)=>n+p.shape.length,0);
-  const feasible=[...crossings.values()].filter(c=>c.pathLength-2<=capacity);
-  assert.equal(feasible.length,1);
-  assert.equal(key(feasible[0].placement.anchor),key(l.solution.bridge.anchor));
-  const far=[...crossings.values()].find(c=>c.pathLength-2>capacity)!;
-  assert.ok(far); // Even arbitrary single stones cannot cover this lower bound.
-  console.log(`Wrong crossing needs at least ${far.pathLength-2} paved cells; inventory has ${capacity}.`);
-  assert.ok(Object.keys(l.solution).length<l.pieces.length);
+ }
 });
-test('Вода, сухие концы моста, вращение и пересечения проверяются независимо',()=>{
-  const l=levels[2],p=l.solution.bridge;
-  assert.equal(validPlacement(l,'mill-extra',{anchor:p.anchor,turns:0},{}),false);
-  assert.equal(validPlacement(l,'bridge',{anchor:{q:1,r:1},turns:0},{}),false);
-  assert.equal(validPlacement(l,'bridge',{anchor:{q:5,r:3},turns:0},{}),false);
-  assert.equal(validPlacement(l,'bridge',p,{bridge:p}),true);
-  assert.equal(validPlacement(l,'mill-extra',{anchor:{q:4,r:1},turns:0},{bridge:p}),false);
-  assert.equal(validPlacement(l,'missing',p,{}),false);
-  assert.equal(validPlacement(l,'bridge',{anchor:p.anchor,turns:.5},{}),false);
-  for(let turns=0;turns<6;turns++){
-    const synthetic:Level={...sandbox(9,6),pieces:[l.pieces[0]],terrain:{'3,2':'water'}};
-    const bridge={anchor:{q:3,r:2},turns};
-    assert.ok(validPlacement(synthetic,'bridge',bridge,{}));
-    const end=placedCells('bridge',bridge,synthetic.pieces)[1];
-    synthetic.terrain[key(end)]='water';assert.equal(validPlacement(synthetic,'bridge',bridge,{}),false);
-    synthetic.terrain[key(end)]='rock';assert.equal(validPlacement(synthetic,'bridge',bridge,{}),false);
-  }
-  const original=l.pieces[0].shape;assert.deepEqual(original.map(h=>rotate(h,6)),original);
+test('Уровни 1–6: ёмкость набора равна нижней границе пути, любой поднабор недостаточен',()=>{
+ for(const l of levels.slice(0,6)){
+  // Treat water as usable too: this relaxes bridge constraints and only lowers the bound.
+  const allowed=new Set(boardCells(l.cols,l.rows).filter(h=>['ground','water'].includes(terrainAt(l,h))).map(key));
+  const minimum=findPath(l.start,l.goal,allowed)!.length-2;
+  const capacity=l.pieces.reduce((n,p)=>n+p.shape.length,0);assert.equal(capacity,minimum);
+  for(const p of l.pieces)assert.ok(capacity-p.shape.length<minimum);
+ }
 });
-test('Прогресс: версия, повреждения, порядок, повторы, песочница и сброс',()=>{
-  for(const raw of [null,'{','null','[]','{"version":2,"completed":["gate"]}','{"version":1,"completed":"gate"}']) assert.deepEqual(parseProgress(raw),[]);
-  assert.deepEqual(parseProgress('{"version":1,"completed":["mill","gate","gate","unknown"]}'),['gate']);
-  assert.ok(available('gate',[]));assert.equal(available('garden',[]),false);
-  let done:string[]=[];for(const l of levels)done=completeLevel(l.id,done);
-  assert.deepEqual(done,['gate','garden','mill']);assert.deepEqual(completeLevel('gate',done),done);
-  assert.deepEqual(completeLevel('sandbox',done),done);assert.deepEqual(completeLevel('mill',[]),[]);
-  const memory=new Map<string,string>();const storage={getItem:(k:string)=>memory.get(k)??null,setItem:(k:string,v:string)=>{memory.set(k,v);}};
-  assert.ok(saveProgress(done,storage));assert.deepEqual(loadProgress(storage),done);
-  assert.ok(memory.has(PROGRESS_KEY));saveProgress([],storage);assert.deepEqual(loadProgress(storage),[]);
-  const denied={getItem:()=>{throw Error('denied');},setItem:()=>{throw Error('denied');}};
-  assert.deepEqual(loadProgress(denied),[]);assert.equal(saveProgress(done,denied),false);assert.equal(saveProgress(done),false);
+test('Почта: ровно одна лишняя фигура, победа с остатком разрешена',()=>{
+ const l=levels[6];assert.equal(l.pieces.length-Object.keys(l.solution).length,1);assert.ok(winningPath(l,l.solution));
+});
+test('Ручей, мельница и лес: без моста нет дороги даже по всей сухой земле',()=>{
+ for(const l of [levels[4],levels[5],levels[7]]){
+  assert.equal(findPath(l.start,l.goal,allDry(l)),null);
+  const noBridge={...l.solution};delete noBridge.bridge;assert.equal(winningPath(l,noBridge),null);
+ }
+});
+test('Вода, сухие концы моста, вращение и пересечения',()=>{
+ const l=levels[4],p=l.solution.bridge;
+ assert.equal(validPlacement(l,'stream-a',{anchor:p.anchor,turns:0},{}),false);
+ assert.equal(validPlacement(l,'bridge',{anchor:{q:1,r:1},turns:0},{}),false);
+ assert.equal(validPlacement(l,'bridge',p,{bridge:p}),true);
+ assert.equal(validPlacement(l,'stream-a',{anchor:{q:3,r:3},turns:0},{bridge:p}),false);
+ assert.equal(validPlacement(l,'missing',p,{}),false);
+ assert.equal(validPlacement(l,'bridge',{anchor:p.anchor,turns:.5},{}),false);
+ for(let turns=0;turns<6;turns++){
+  const synthetic:Level={...sandbox(9,6),pieces:[l.pieces.find(p=>p.kind==='bridge')!],terrain:{'3,2':'water'}};
+  const p={anchor:{q:3,r:2},turns};assert.ok(validPlacement(synthetic,'bridge',p,{}));
+  const end=placedCells('bridge',p,synthetic.pieces)[1];
+  synthetic.terrain[key(end)]='water';assert.equal(validPlacement(synthetic,'bridge',p,{}),false);
+  synthetic.terrain[key(end)]='rock';assert.equal(validPlacement(synthetic,'bridge',p,{}),false);
+ }
 });

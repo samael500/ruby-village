@@ -12,21 +12,24 @@ with sync_playwright() as p:
     for w,h in [(1280,720),(844,390),(390,844)]:
         page=b.new_page(viewport={'width':w,'height':h},has_touch=True)
         page.on('pageerror',lambda e:errors.append(str(e)))
-        page.goto(URL);page.locator('[data-level="gate"]').tap();page.locator('#story-action').tap()
+        page.goto(URL);page.locator('[data-level="gate"]').tap();page.locator('#story-skip').tap()
         ratio=page.evaluate('''()=>{
           const img=document.querySelector('#ruta-idle'),height=img.height.baseVal.value*img.getScreenCTM().a*(1277-45)/1300;
           return height/document.querySelector('[data-cell="0,1"] > polygon').getBoundingClientRect().height;
         }''')
         assert 1<=ratio<=1.25001
-        initial=materials(page,'[data-piece="gate-a"]');assert len(initial)==3
-        page.locator('[data-piece="gate-a"]').tap();tap_cell(page,'1,1');page.locator('#place').tap()
-        assert materials(page,'[data-owner="gate-a"]')==initial
+        page.locator('#scene-back').tap()
+        page.evaluate("()=>localStorage.setItem('ruby-village:chapter-1:v1',JSON.stringify({version:2,completed:['gate','garden','well']}))")
+        page.reload();page.locator('[data-level="bakery"]').tap();page.locator('#story-skip').tap()
+        initial=materials(page,'[data-piece="bakery-a"]');assert len(initial)==3
+        page.locator('[data-piece="bakery-a"]').tap();tap_cell(page,'1,1');page.locator('#place').tap()
+        assert materials(page,'[data-owner="bakery-a"]')==initial
         tap_cell(page,'1,1');page.locator('#right').tap()
         assert materials(page,'#selected-drag')==initial
-        page.locator('#place').tap();assert materials(page,'[data-owner="gate-a"]')==initial
-        tap_cell(page,'1,1');tap_cell(page,'3,1');page.locator('#place').tap()
-        assert materials(page,'[data-owner="gate-a"]')==initial
-        page.locator('#undo').tap();assert materials(page,'[data-owner="gate-a"]')==initial
+        page.locator('#place').tap();assert materials(page,'[data-owner="bakery-a"]')==initial
+        tap_cell(page,'1,1');tap_cell(page,'5,3');page.locator('#place').tap()
+        assert materials(page,'[data-owner="bakery-a"]')==initial
+        page.locator('#undo').tap();assert materials(page,'[data-owner="bakery-a"]')==initial
         # Render uses actual nested SVG masks, with only positive viewports and rotations.
         assert page.locator('[data-material]').evaluate_all("els=>els.every(e=>getComputedStyle(e).clipPath!=='none'&&!e.innerHTML.includes('scale(-')&&!e.innerHTML.includes('scaleX(-')&&!e.innerHTML.includes('scaleY(-'))")
         page.close();print(f'{w}x{h}: visible Ruta/hex={ratio:.3f}, tray/board seeds, rotate/move/undo, exact clip/no reflection: PASS')

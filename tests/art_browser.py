@@ -42,7 +42,7 @@ with sync_playwright() as p:
         # Legacy completion data has no coordinates and must survive this redesign.
         old=json.dumps({'version':1,'completed':['gate','garden','mill']})
         page.evaluate('([key,value])=>localStorage.setItem(key,value)',[KEY,old]);page.reload()
-        page.locator('[data-level="gate"]').tap();page.locator('#story-action').tap()
+        page.locator('[data-level="gate"]').tap()
         fit(page)
         assert page.locator('[data-cell][data-terrain="ground"]').evaluate_all('els=>els.every(el=>{const b=el.querySelector("polygon").getBoundingClientRect();return document.elementFromPoint(b.x+b.width/2,b.y+b.height/2)?.closest("[data-cell]")===el;})')
         for asset in ['courtyard-landscape','courtyard-portrait','ruta-idle']:assert page.request.get(URL+'assets/level-1/v4/'+asset+'.png').ok
@@ -61,10 +61,10 @@ with sync_playwright() as p:
         page.keyboard.press('Escape');expect(page.locator('#settings-panel')).not_to_be_visible()
         # Recover from an invalid drop by clicking/tapping a valid cell under the toast.
         for touch in [False,True]:
-            page.locator('[data-piece="gate-a"]').tap() if touch else page.locator('[data-piece="gate-a"]').click()
+            page.locator('[data-piece="gate-1"]').tap() if touch else page.locator('[data-piece="gate-1"]').click()
             if touch:page.screenshot(path=str(SHOTS/f'selected-{width}x{height}.png'))
             action=page.touchscreen.tap if touch else page.mouse.click
-            action(*center(page,'[data-cell="4,4"] > polygon'))
+            action(*center(page,'[data-cell="0,0"] > polygon'))
             expect(page.locator('[data-preview]')).to_have_attribute('data-preview','invalid')
             expect(page.locator('#place')).to_be_disabled()
             expect(page.locator('#status')).to_have_class('feedback')
@@ -72,23 +72,23 @@ with sync_playwright() as p:
             expect(page.locator('[data-preview]')).to_have_attribute('data-preview','valid')
             expect(page.locator('#place')).to_be_enabled()
             page.locator('#place').tap() if touch else page.locator('#place').click()
-            assert page.locator('[data-cell="3,0"]').get_attribute('data-owner')=='gate-a'
+            assert page.locator('[data-cell="3,0"]').get_attribute('data-owner')=='gate-1'
             page.locator('#undo').tap() if touch else page.locator('#undo').click()
-            assert page.locator('[data-owner="gate-a"]').count()==0
+            assert page.locator('[data-owner="gate-1"]').count()==0
         # The start remains clickable while Ruta is anchored to it.
 
-        page.locator('[data-piece="single"]').tap();fit(page)
+        page.locator('[data-piece="gate-2"]').tap();fit(page)
         page.touchscreen.tap(*center(page,'[data-cell="0,1"] > polygon'));page.locator('#place').tap()
-        assert page.locator('#tray .piece:visible').count()==2
+        assert page.locator('#tray .piece:visible').count()==5
         page.set_viewport_size({'width':height,'height':width});page.wait_for_timeout(100)
-        assert anchors(page);assert page.locator('[data-cell="0,1"]').get_attribute('data-owner')=='single'
+        assert anchors(page);assert page.locator('[data-cell="0,1"]').get_attribute('data-owner')=='gate-2'
         page.set_viewport_size({'width':width,'height':height});page.wait_for_timeout(100)
         page.touchscreen.tap(*center(page,'[data-cell="0,1"] > polygon'));page.locator('#return').tap()
-        assert page.locator('#tray .piece:visible').count()==3
+        assert page.locator('#tray .piece:visible').count()==6
         settings(page,'drag')
         session=page.context.new_cdp_session(page)
         def drag(cancel=False):
-            x,y=center(page,'[data-piece="gate-a"]');a,b=center(page,'[data-cell="1,1"] > polygon')
+            x,y=center(page,'[data-piece="gate-1"]');a,b=center(page,'[data-cell="1,1"] > polygon')
             radius=page.locator('[data-cell="1,1"] > polygon').bounding_box()['height']/2
             session.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y}]})
             for step in range(1,11):
@@ -96,10 +96,10 @@ with sync_playwright() as p:
             page.wait_for_timeout(100)
             session.send('Input.dispatchTouchEvent',{'type':'touchCancel' if cancel else 'touchEnd','touchPoints':[]})
             page.evaluate('()=>new Promise(requestAnimationFrame)')
-        drag(True);assert page.locator('[data-owner="gate-a"]').count()==0
+        drag(True);assert page.locator('[data-owner="gate-1"]').count()==0
         page.locator('#other').tap();drag()
-        assert page.locator('[data-owner="gate-a"]').count()==3
-        page.locator('#undo').tap();assert page.locator('[data-owner="gate-a"]').count()==0
+        assert page.locator('[data-owner="gate-1"]').count()==1
+        page.locator('#undo').tap();assert page.locator('[data-owner="gate-1"]').count()==0
         settings(page,'select')
         idle=page.locator('#ruta-idle').get_attribute('x'),page.locator('#ruta-idle').get_attribute('y')
         for id,placement in LEVEL['solution'].items():
@@ -109,12 +109,12 @@ with sync_playwright() as p:
             page.touchscreen.tap(*center(page,f'[data-cell="{q},{r}"] > polygon'));page.locator('#place').tap()
         page.screenshot(path=str(SHOTS/f'road-{width}x{height}.png'))
         page.locator('#check').tap();expect(page.locator('#story')).to_be_visible()
-        assert page.locator('#story-title').inner_text()=='Дорога готова!'
+        assert page.locator('#story-title').inner_text()==LEVEL['name']
         assert page.locator('#ruta-marker').count()==0
         assert idle==(page.locator('#ruta-idle').get_attribute('x'),page.locator('#ruta-idle').get_attribute('y'))
         page.locator('#story-action').tap();page.reload()
-        assert json.loads(page.evaluate('(key)=>localStorage.getItem(key)',KEY))==json.loads(old)
-        page.locator('[data-level="garden"]').tap();assert page.locator('svg.ruta-portrait').is_visible()
+        assert json.loads(page.evaluate('(key)=>localStorage.getItem(key)',KEY))['completed']==json.loads(old)['completed']
+        page.locator('[data-level="garden"]').tap();assert page.locator('#ruta-idle').is_visible()
         page.close()
     page=browser.new_page(viewport={'width':844,'height':390});page.goto(URL);page.locator('#sandbox-open').click()
     page.locator('#settings-open').click();page.locator('#size').select_option('11,7');page.locator('#settings-close').click()

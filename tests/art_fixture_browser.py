@@ -13,17 +13,17 @@ with sync_playwright() as p:
     page.evaluate('([k,v])=>localStorage.setItem(k,v)',[KEY,saved])
     page.goto(dev+'?art-check')
     expect(page.locator('#story')).not_to_be_visible()
-    assert page.locator('[data-owner="gate-a"]').count()==3
+    assert page.locator('[data-owner]:not([data-owner=""])').count()==3
     for id,placement in solution.items():
-        if id=='gate-a':continue
+        if id in list(solution)[:3]:continue
         page.locator(f'[data-piece="{id}"]').click()
         q,r=placement['anchor']['q'],placement['anchor']['r']
         box=page.locator(f'[data-cell="{q},{r}"] > polygon').bounding_box()
         page.mouse.click(box['x']+box['width']/2,box['y']+box['height']/2);page.locator('#place').click()
-    page.locator('#check').click();expect(page.locator('#story-title')).to_have_text('Дорога готова!')
+    page.locator('#check').click();expect(page.locator('#story-title')).to_have_text('До калитки')
     assert page.evaluate('(k)=>localStorage.getItem(k)',KEY)==saved
-    page.locator('#story-action').click();page.locator('#reset-open').click();page.locator('#reset-confirm').click()
+    page.locator('#story-skip').click();page.locator('#reset-open').click();page.locator('#reset-confirm').click()
     assert page.evaluate('(k)=>localStorage.getItem(k)',KEY)==saved
     page.goto(prod+'?art-check');expect(page.locator('#chapter-map')).to_be_visible()
-    assert page.locator('[data-owner="gate-a"]').count()==0
+    assert page.locator('[data-owner]:not([data-owner=""])').count()==0
     b.close();print('Dev-only fixture, victory/reset storage isolation, production ignores art-check: PASS')
