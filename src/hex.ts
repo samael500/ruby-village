@@ -43,3 +43,31 @@ export function pixelHex(x: number, y: number, radius: number): Hex {
   else if (dz > dy) rz = -rx-ry;
   return {q:rx || 0,r:rz || 0};
 }
+
+/** Each shared side is emitted once; CSS widths are independent of scene zoom. */
+export function gridEdges(cols:number,rows:number,r:number,origin:{x:number;y:number},blocked:ReadonlySet<string>){
+  const edges=new Map<string,string>();
+  for(const h of boardCells(cols,rows)){
+    if(blocked.has(key(h)))continue;
+    const c=hexCenter(h,r),v=Array.from({length:6},(_,i)=>({x:c.x+origin.x+r*Math.cos((i*60-90)*Math.PI/180),y:c.y+origin.y+r*Math.sin((i*60-90)*Math.PI/180)}));
+    for(let i=0;i<6;i++){
+      const a=v[i],b=v[(i+1)%6],k=[`${a.x.toFixed(4)},${a.y.toFixed(4)}`,`${b.x.toFixed(4)},${b.y.toFixed(4)}`].sort().join('|');
+      edges.set(k,`M ${a.x} ${a.y} L ${b.x} ${b.y}`);
+    }
+  }
+  return [...edges.values()];
+}
+
+/** Boundaries of movable instances, including their shared seam exactly once. */
+export function instanceEdges(owners:ReadonlyMap<string,string>):{cell:Hex;side:number}[]{
+  const across=[directions[1],directions[0],directions[5],directions[4],directions[3],directions[2]];
+  const edges:{cell:Hex;side:number}[]=[];
+  for(const [k,owner] of owners){
+    const [q,r]=k.split(',').map(Number),cell={q,r};
+    across.forEach((direction,side)=>{
+      const neighbor=key(add(cell,direction)),other=owners.get(neighbor);
+      if(other!==owner && (other===undefined || k<neighbor))edges.push({cell,side});
+    });
+  }
+  return edges;
+}

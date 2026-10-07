@@ -1,0 +1,65 @@
+{
+  "note": "Visual estimates from generated backgrounds. Exact grid placement must be verified before integration. Preserve actual level coordinates.",
+  "landscape": {
+    "file": "assets/courtyard-landscape.png",
+    "quiet_region": [
+      0.28,
+      0.2,
+      0.82,
+      0.77
+    ],
+    "doorstep": [
+      0.24,
+      0.46
+    ],
+    "gate_inside": [
+      0.77,
+      0.76
+    ]
+  },
+  "portrait": {
+    "file": "assets/courtyard-portrait.png",
+    "quiet_region": [
+      0.1,
+      0.32,
+      0.88,
+      0.73
+    ],
+    "doorstep": [
+      0.39,
+      0.28
+    ],
+    "gate_inside": [
+      0.71,
+      0.78
+    ]
+  },
+  "grid": {
+    "orientation": "point-up",
+    "scale": "uniform only",
+    "default": "existing7x5",
+    "endpoint_policy": "preserve existing; short external approach path allowed"
+  },
+  "files": {
+    "ruta-idle.png": {
+      "width": 1209,
+      "height": 1300,
+      "mode": "RGBA"
+    },
+    "courtyard-portrait.png": {
+      "width": 941,
+      "height": 1672,
+      "mode": "RGB"
+    },
+    "charoite-texture.png": {
+      "width": 1254,
+      "height": 1254,
+      "mode": "RGB"
+    },
+    "courtyard-landscape.png": {
+      "width": 1672,
+      "height": 941,
+      "mode": "RGB"
+    }
+  }
+}

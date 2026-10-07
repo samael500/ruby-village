@@ -1,6 +1,6 @@
 import './style.css';
 import {sceneLayout} from './scene-layout.ts';
-import {artUrl,backdrop,scenery,stoneDetail} from './level-art.ts';
+import {artUrl,backdrop,scenery,stoneDetail,drawGrid,drawInstanceEdges} from './level-art.ts';
 import {type Hex, boardCells, key, hexCenter, pixelHex, rotate} from './hex.ts';
 import {pieceById as lookupPiece, placedCells as cellsForPiece, validPlacement, terrainAt, winningPath, type Layout} from './game.ts';
 import {levels,sandbox} from './levels.ts';
@@ -56,7 +56,8 @@ const placedCells=(id:string,p:Layout[string])=>cellsForPiece(id,p,pieces);
 let screen:'map'|'game'='map';
 let phase:'intro'|'playing'|'walking'|'won'='playing';
 let storage:StorageLike|undefined;
-try {storage=window.localStorage;} catch { /* Private browsing may deny storage access. */ }
+const artCheck=import.meta.env.DEV && new URLSearchParams(location.search).has('art-check');
+try {if(!artCheck)storage=window.localStorage;} catch { /* Private browsing may deny storage access. */ }
 let completed=loadProgress(storage), storageAvailable=!!storage;
 let route:Hex[]=[], journey=0, frame=0;
 let cols = 9, rows = 6, layout: Layout = {}, history: Layout[] = [];
@@ -125,7 +126,7 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
     if(level.id==='gate'){const c=hexCenter(h,15);stoneDetail(icon,h,15,c.x,c.y,pieces.indexOf(p),new Set(shape.map(key)));}
   }
   if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
-  el('circle',{cx:0,cy:0,r:level.id==='gate'?1.6:2.8,fill:'#fff6dc'},icon);
+  if(level.id!=='gate'||selected===p.id)el('circle',{cx:0,cy:0,r:level.id==='gate'?1.6:2.8,fill:'#fff6dc'},icon);
 }
 function renderTray() {
   const tray=$('tray'); tray.replaceChildren();
@@ -156,14 +157,14 @@ function renderBoard() {
   if(drag){renderPreview();return;}
   const rect=svg.getBoundingClientRect(), padding=8;
   const illustrated=level.id==='gate';
-  const sceneTransform=illustrated?sceneLayout(rect.width,rect.height,cols,rows,level.start,level.goal):null;
+  const sceneTransform=illustrated?sceneLayout(rect.width,rect.height,cols,rows,level.start,level.goal,matchMedia('(orientation:portrait)').matches):null;
   const availableWidth=rect.width-2*padding;
   radius=Math.max(1,Math.min(availableWidth/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(1.5*(rows-1)+2)));
   const w=Math.sqrt(3)*radius*(cols+0.5), h=radius*(1.5*(rows-1)+2);
   origin={x:(rect.width-w)/2+Math.sqrt(3)*radius/2,y:(rect.height-h)/2+radius};
   if(sceneTransform){radius=sceneTransform.scale;origin=sceneTransform.origin;}
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`); svg.replaceChildren();
-  if(sceneTransform)backdrop(svg,rect.width,rect.height,sceneTransform,matchMedia('(orientation:portrait)').matches);
+  if(sceneTransform)backdrop(svg,rect.width,rect.height,sceneTransform);
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
@@ -180,13 +181,15 @@ function renderBoard() {
       const deck=el('g',{transform:`translate(${c.x+origin.x} ${c.y+origin.y}) rotate(${layout[owner].turns*60})`,'pointer-events':'none'},g);
       for(const dx of [-.35,0,.35]) el('line',{x1:radius*dx,x2:radius*dx,y1:-radius*.65,y2:radius*.65,stroke:'#775032','stroke-width':2},deck);
     }
-    if(owner && key(layout[owner].anchor)===k) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y,r:Math.max(2,radius*.09),fill:'#fff5d6','pointer-events':'none'},g);
+    if(owner && (!illustrated||owner===selected) && key(layout[owner].anchor)===k) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y,r:Math.max(2,radius*.09),fill:'#fff5d6','pointer-events':'none'},g);
     if(!illustrated && (k===key(start)||k===key(end))) {
       el('text',{x:c.x+origin.x,y:c.y+origin.y-radius*.1,class:'landmark','font-size':radius*.62},landmarks,k===key(start)?'⌂':'⚑');
       el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.45,class:'landmark label','font-size':Math.max(10,Math.min(12,radius*.35))},landmarks,k===key(start)?level.startName:level.goalName);
     }
     if(path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
+  if(illustrated)drawGrid(svg,cols,rows,radius,origin,new Set(boardCells(cols,rows).filter(h=>terrainAt(level,h)==='house').map(key)));
+  if(illustrated)drawInstanceEdges(svg,owners,radius,origin);
   svg.append(landmarks);
   if(sceneTransform)scenery(svg,sceneTransform);
 
@@ -416,3 +419,6 @@ $('scene-back').onclick=showMap;
 $('scene-help').onclick=()=>($('help-panel') as HTMLDialogElement).showModal();
 $('help-close').onclick=()=>($('help-panel') as HTMLDialogElement).close();
 showMap();
+
+// Development-only visual fixture; storage is disconnected for its whole session.
+if(artCheck){enterLevel(levels[0]);story.close();phase='playing';layout={'gate-a':structuredClone(levels[0].solution['gate-a'])};render();}

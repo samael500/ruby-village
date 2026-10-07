@@ -2,56 +2,64 @@ import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {sceneLayout} from '../src/scene-layout.ts';
 import {levels} from '../src/levels.ts';
-import {boardCells,hexCenter,pixelHex,key} from '../src/hex.ts';
-import {terrainAt} from '../src/game.ts';
+import {boardCells,hexCenter,pixelHex,key,gridEdges,neighbors,instanceEdges,rotate} from '../src/hex.ts';
 const level=levels[0],close=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
-test('Единая сцена: ноги на старте, source anchors и hit-test сохраняются при resize',()=>{
-  for(const [w,h] of [[1268,550],[832,260],[378,650],[724,240]]){
-    const scene=sceneLayout(w,h,level.cols,level.rows,level.start,level.goal);
-    const start=hexCenter(level.start,1);
-    close(scene.ruta.anchor.x,start.x);close(scene.ruta.anchor.y,start.y);
-    for(const p of [scene.house,scene.ruta,scene.gate]){
-      close(p.x+p.width*p.source.x,p.anchor.x);close(p.y+p.height*p.source.y,p.anchor.y);
-      const x=p.x*scene.scale+scene.origin.x,y=p.y*scene.scale+scene.origin.y;
-      assert.ok(x>=0&&y>=0&&x+p.width*scene.scale<=w&&y+p.height*scene.scale<=h);
-    }
-    for(const cell of boardCells(level.cols,level.rows)){
-      const c=hexCenter(cell,scene.scale),screen={x:c.x+scene.origin.x,y:c.y+scene.origin.y};
-      assert.deepEqual(pixelHex(screen.x-scene.origin.x,screen.y-scene.origin.y,scene.scale),cell);
-    }
-    assert.ok(scene.house.width/(scene.bounds.right-scene.bounds.left)<=.24);
-    assert.ok(scene.house.height/scene.ruta.height>=2.5);
-    assert.ok(Math.hypot(scene.gate.anchor.x-hexCenter(level.goal,1).x,scene.gate.anchor.y-hexCenter(level.goal,1).y)<1.25);
+test('v4: единый fit изображения, клеток и ног Руты в обеих ориентациях',()=>{
+ for(const [w,h,portrait] of [[1268,550,false],[832,260,false],[378,652,true],[728,238,false]] as const){
+  const s=sceneLayout(w,h,7,5,level.start,level.goal,portrait);
+  close(s.scale,s.art.radius*s.fit);
+  close(s.ruta.x+s.ruta.width*.55,s.startArt.x);close(s.ruta.y+s.ruta.height*.965,s.startArt.y);
+  assert.ok(s.ruta.height/s.art.doorHeight>=.55 && s.ruta.height/s.art.doorHeight<=.7);
+  assert.ok(s.offset.x>=-1e-7&&s.offset.y>=-1e-7);
+  assert.ok(s.offset.x+s.art.width*s.fit<=w+1e-7 && s.offset.y+s.art.height*s.fit<=h+1e-7);
+  for(const cell of boardCells(7,5)){
+   const c=hexCenter(cell,s.scale),screen={x:c.x+s.origin.x,y:c.y+s.origin.y};
+   assert.deepEqual(pixelHex(screen.x-s.origin.x,screen.y-s.origin.y,s.scale),cell);
+   assert.ok(screen.x-s.scale*Math.sqrt(3)/2>=0&&screen.x+s.scale*Math.sqrt(3)/2<=w);
+   assert.ok(screen.y-s.scale>=0&&screen.y+s.scale<=h);
   }
+ }
 });
-test('Декор не перекрывает обычные проходимые клетки; дом занимает данные blocked-клетки',()=>{
-  const scene=sceneLayout(844,280,level.cols,level.rows,level.start,level.goal);
-  for(const cell of boardCells(level.cols,level.rows)){
-    if(terrainAt(level,cell)!=='ground'||[key(level.start),key(level.goal)].includes(key(cell)))continue;
-    const c=hexCenter(cell,1),left=c.x-Math.sqrt(3)/2,right=c.x+Math.sqrt(3)/2,top=c.y-1,bottom=c.y+1;
-    for(const p of [scene.house,scene.ruta,scene.gate])assert.ok(p.x+p.width<=left||p.x>=right||p.y+p.height<=top||p.y>=bottom,`decor over ${key(cell)}`);
+test('v4: сетка не удваивает общие стороны и сохраняет края у blocked-клеток',()=>{
+ const blocked=new Set(['0,0','1,0']),cells=boardCells(7,5).filter(h=>!blocked.has(key(h))),keys=new Set(cells.map(key));
+ const shared=cells.reduce((n,h)=>n+neighbors(h).filter(x=>keys.has(key(x))).length,0)/2;
+ assert.equal(gridEdges(7,5,31,{x:24,y:60},blocked).length,cells.length*6-shared);
+ assert.equal(gridEdges(7,5,13.123,{x:81.42,y:11.1},blocked).length,cells.length*6-shared);
+});
+test('v4: Рута не закрывает обычные клетки вне старта',()=>{
+ for(const portrait of [false,true]){
+  const s=sceneLayout(1280,720,7,5,level.start,level.goal,portrait),p=s.ruta;
+  for(const h of boardCells(7,5)){
+   if(['0,0','1,0',key(level.start)].includes(key(h)))continue;
+   const c=hexCenter(h,s.art.radius),x=c.x+s.art.grid.x,y=c.y+s.art.grid.y,half=s.art.radius*Math.sqrt(3)/2;
+   assert.ok(p.x+p.width<=x-half||p.x>=x+half||p.y+p.height<=y-s.art.radius||p.y>=y+s.art.radius,`${portrait}: ${key(h)}`);
   }
+ }
+});
+for(const portrait of [false,true])test(`v4: подходы ${portrait?'portrait':'landscape'} вместе с шириной дорожки не пересекают обычные клетки`,()=>{
+ const s=sceneLayout(1280,720,7,5,level.start,level.goal,portrait);
+ assert.equal(s.approaches.length,2);
+ assert.deepEqual(s.approaches[0][0],s.art.door);
+ assert.deepEqual(s.approaches[1].at(-1),s.art.gate);
+ const ordinary=new Set(boardCells(7,5).map(key).filter(k=>![key(level.start),key(level.goal)].includes(k)));
+ for(const points of s.approaches)for(let i=1;i<points.length;i++){
+  const a=points[i-1],b=points[i];
+  for(let t=0;t<=100;t++)for(let angle=0;angle<12;angle++){
+   const x=a.x+(b.x-a.x)*t/100+11*Math.cos(angle*Math.PI/6),y=a.y+(b.y-a.y)*t/100+11*Math.sin(angle*Math.PI/6);
+   const cell=pixelHex(x-s.art.grid.x,y-s.art.grid.y,s.art.radius);
+   assert.ok(!ordinary.has(key(cell)),`approach overlaps ${key(cell)}`);
+  }
+ }
 });
 
-test('Ограда: непрерывные секции, единственные стойки и привязка к краям калитки',async()=>{
-  const {fenceRoute,fencePosts,courtyard}=await import('../src/environment.ts');
-  for(const [width,height] of [[1280,550],[844,260],[390,650]]){
-    const s=sceneLayout(width,height,level.cols,level.rows,level.start,level.goal);
-    const v={left:-s.origin.x/s.scale,top:-s.origin.y/s.scale,right:(width-s.origin.x)/s.scale,bottom:(height-s.origin.y)/s.scale};
-    const route=fenceRoute(s.gate,s.bounds,v,height>width),posts=fencePosts(route);
-    for(const [actual,anchor] of [[posts[0],courtyard.attachments.gateLeft],[posts.at(-1)!,courtyard.attachments.gateRight]] as const){
-      close(actual.x,s.gate.x+s.gate.width*anchor.x);close(actual.y,s.gate.y+s.gate.height*anchor.y);
-    }
-    assert.equal(new Set(posts.map(p=>`${p.x},${p.y}`)).size,posts.length);
-    for(let i=1;i<posts.length;i++)assert.ok(Math.hypot(posts[i].x-posts[i-1].x,posts[i].y-posts[i-1].y)<=courtyard.boundaries.postSpacing+1e-7);
-    // Both full horizontal fence sections must remain visible, including post tops.
-    for(const point of [route[2],route[3],route[4],route[1]]){
-      const x=point.x*s.scale+s.origin.x,y=point.y*s.scale+s.origin.y;
-      assert.ok(x-.09*s.scale>=0 && x+.09*s.scale<=width);
-      assert.ok(y-(courtyard.boundaries.height+.05)*s.scale>=0 && y+.02*s.scale<=height);
-    }
-    // All intermediate perimeter posts lie outside the logical field envelope.
-    for(const p of posts.slice(1,-1))assert.ok(p.x<s.bounds.left||p.x>s.bounds.right||p.y<s.bounds.top||p.y>s.bounds.bottom);
-    if(height>width)assert.ok(Math.max(...route.map(p=>p.y))-Math.min(...route.map(p=>p.y))<=s.bounds.bottom-s.bounds.top+2.4+1e-7);
-  }
+test('Границы экземпляров: внутренний стык скрыт, разные фигуры разделены одной линией при шести поворотах',()=>{
+ for(let turn=0;turn<6;turn++){
+  const a={q:0,r:0},b=rotate({q:1,r:0},turn);
+  const same=new Map([[key(a),'a'],[key(b),'a']]);
+  const separate=new Map([[key(a),'a'],[key(b),'b']]);
+  assert.equal(instanceEdges(same).length,10);
+  assert.equal(instanceEdges(separate).length,11);
+  assert.equal(instanceEdges(new Map([[key(a),'a']])).length,6);
+  assert.equal(instanceEdges(new Map()).length,0);
+ }
 });
