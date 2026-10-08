@@ -10,6 +10,7 @@ def seed(page,completed=None,intro=None):
  page.evaluate('(v)=>localStorage.setItem(v.k,JSON.stringify(v.data))',{'k':KEY,'data':{'version':2,'completed':IDS if completed is None else completed,'introSeen':IDS if intro is None else intro}});page.reload();page.locator('#choose-level').click()
 def enter(page,id):page.locator('[data-level="'+id+'"]').click()
 def skip(page):
+ if page.locator("#prologue-panel").is_visible():page.locator("#prologue-skip").click()
  if page.locator('#story').is_visible():page.locator('#story-skip').click()
 def place(page,id,v):
  page.locator(f'[data-piece="{id}"]').click()
@@ -24,7 +25,7 @@ with sync_playwright() as p:
  for w,h in [(1280,720),(844,390)]:
   page=b.new_page(viewport={'width':w,'height':h},has_touch=True,reduced_motion='reduce');page.on('pageerror',lambda e:errors.append(str(e)));page.goto(URL)
   def shot(name):screenshot(page,OUT/f'{name}-{w}x{h}.png')
-  shot('menu-new');page.locator('#continue-game').click();shot('dialogue-ruta');expect(page.locator('#story-ruta')).to_be_visible();skip(page);shot('gate-tray')
+  shot('menu-new');page.locator('#continue-game').click();page.locator('#prologue-skip').click();shot('dialogue-ruta');expect(page.locator('#story-ruta')).to_be_visible();skip(page);shot('gate-tray')
   assert page.locator('[data-piece]').count()==len(LEVELS[0]['pieces'])
   place(page,'gate-1',LEVELS[0]['solution']['gate-1']);page.reload();shot('menu-saved')
   seed(page);shot('map');enter(page,'garden');page.locator('[data-piece="garden-a"]').click();shot('garden-selected')
@@ -37,7 +38,7 @@ with sync_playwright() as p:
   for _ in range(20):
    if 'Бельчонок' in page.locator('#story .eyebrow').inner_text():break
    page.locator('#story-action').click()
-  assert page.locator('#story .eyebrow').inner_text()=='Бельчонок';expect(page.locator('#story-ruta')).to_be_hidden();shot('dialogue-belchonok');skip(page)
+  assert page.locator('#story .eyebrow').inner_text()=='Бельчонок';expect(page.locator('#story-ruta')).to_be_visible();assert page.locator('#story-ruta').get_attribute('alt')=='Бельчонок';shot('dialogue-belchonok');skip(page)
   scene(page,'stream');skip(page);page.locator('[data-piece="bridge"]').click();shot('stream-bridge')
   page.locator('#scene-back').click();seed(page);enter(page,'forest');skip(page);page.locator('#settings-open').click();page.locator('#pause-settings').click();page.locator('#mode').select_option('drag');page.locator('#settings-close').click()
   source=page.locator('[data-piece="forest-a"]').bounding_box();v=LEVELS[7]['solution']['forest-a'];target=page.locator('[data-cell="%s,%s"] > polygon'%(v['anchor']['q'],v['anchor']['r'])).bounding_box()

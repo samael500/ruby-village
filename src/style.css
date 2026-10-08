@@ -188,3 +188,33 @@ dialog h2{font-size:21px}
 .settings select{min-height:48px}
 .settings-actions button{font-size:12px}
 }
+
+/* Narrative-only screen: no puzzle HUD or stock, same paper as v7. */
+#prologue-panel{position:fixed;inset:0;width:100vw;max-width:none;height:100dvh;max-height:none;margin:0;padding:0;border:0;border-radius:0;background:#344c31;overflow:hidden;display:grid;grid-template-rows:minmax(0,1fr) auto}
+#prologue-panel:not([open]){display:none}
+#prologue-panel:before{display:none}
+.prologue-stage{position:relative;min-height:0;overflow:hidden;display:grid;place-items:center}
+#prologue-background{position:absolute;inset:0;width:100%;height:100%;object-fit:contain}
+#prologue-actors{position:absolute;inset:0;pointer-events:none}
+#prologue-ruta{position:absolute;left:27%;bottom:49%;height:30%;width:auto;object-fit:contain;filter:drop-shadow(3px 5px 3px #24311c60)}
+#prologue-basket{position:absolute;left:35%;bottom:49%;width:8%}
+#prologue-rabbit{position:absolute;height:26%;left:73%;bottom:62%;filter:drop-shadow(3px 5px 3px #24311c60)}
+#prologue-stones{position:absolute;width:17%;left:48%;bottom:10%}
+#prologue-panel[data-frame="1"] #prologue-ruta{height:65%;left:35%;bottom:10%}
+#prologue-panel[data-frame="1"] #prologue-basket{left:46%;bottom:9%;width:15%}
+#prologue-panel[data-frame="3"] #prologue-ruta,#prologue-panel[data-frame="4"] #prologue-ruta{left:38%;bottom:10%;height:45%}
+#prologue-panel[data-frame="3"] #prologue-basket,#prologue-panel[data-frame="4"] #prologue-basket{left:34%;bottom:10%}
+#prologue-panel[data-frame="5"] #prologue-ruta{left:22%;height:38%;bottom:27%}
+#prologue-panel[data-frame="5"] #prologue-basket{left:28%;bottom:26%;width:4vw}
+.prologue-paper{position:relative;margin:0 max(12px,env(safe-area-inset-right)) max(8px,env(safe-area-inset-bottom)) max(12px,env(safe-area-inset-left));padding:18px 24px;display:flex;align-items:center;gap:24px;border:3px solid #ba975e;border-radius:14px;background:#faedcd var(--paper);background-size:cover;box-shadow:0 4px 20px #182d2240}
+.prologue-copy{flex:1;min-width:0;max-height:45dvh;overflow:auto;user-select:text}
+#prologue-title{font-size:16px;margin:0 0 6px}
+#prologue-speaker{margin:0 0 5px}
+#prologue-text{font:22px/1.4 Georgia,serif;margin:0}
+.prologue-actions{flex:0 0 260px;display:grid;grid-template-columns:1fr 1fr;gap:5px}
+#prologue-next{grid-column:1/-1}
+#prologue-skip{background:transparent;border-color:transparent;box-shadow:none;font-size:14px}
+@media(max-height:500px){.prologue-paper{padding:10px 16px;gap:16px}.prologue-actions{flex-basis:240px;gap:4px}#prologue-title{font-size:12px;margin-bottom:2px}#prologue-text{font-size:18px;line-height:1.3}#prologue-speaker{font-size:13px;margin-bottom:3px}.prologue-actions button{min-height:48px;padding:5px 8px}}
+.prologue-world{position:relative;flex-shrink:0}
+#prologue-portrait{margin-top:0;margin-bottom:-18px;height:150px;width:120px}
+@media(max-height:500px){#prologue-portrait{height:125px;width:90px;margin-bottom:-10px}.prologue-paper{gap:12px}}

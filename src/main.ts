@@ -1,4 +1,6 @@
 import './style.css';
+import {artPoint} from './art-geometry.ts';
+import {loadPrologue,savePrologue,newPrologue,PROLOGUE_ID,prologueFrames,shouldStartPrologue,speakerPortrait} from './prologue.ts';
 import {loadPreferences,loadSession,saveSession,type Session} from './session.ts';
 import {chapterScene} from './chapter-art.ts';
 import {GROUND_SCALE,project,unproject,groundTransform,sceneProjection,type Projection} from './projection.ts';
@@ -15,7 +17,7 @@ const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
 <header><button id="scene-back" hidden aria-label="Вернуться на карту"></button><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · первая глава</span></h1></div><span id="scene-event" hidden></span><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div><button id="scene-help" hidden aria-label="Как играть">?</button></header>
 
-<section id="main-menu"><div class="menu-paper"><h2>Рубиновая деревня</h2><p>За калитку · первая глава</p><button id="continue-game" class="primary">Начать приключение</button><button id="choose-level">Выбрать уровень</button><button id="main-settings">Настройки</button><p id="menu-progress"></p><p id="menu-save-status" role="status"></p></div></section>
+<section id="main-menu"><div class="menu-paper"><h2>Рубиновая деревня</h2><p>За калитку · первая глава</p><button id="continue-game" class="primary">Начать приключение</button><button id="prologue-replay">Посмотреть начало</button><button id="choose-level">Выбрать уровень</button><button id="main-settings">Настройки</button><p id="menu-progress"></p><p id="menu-save-status" role="status"></p></div></section>
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
 <div class="map-landscape"><svg id="map-background" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"><path d="M 15 170 Q 300 230 480 190 T 980 200" fill="none" stroke="#a4c4bd" stroke-width="25"/><path d="M 90 360 L 120 325 L 150 360 M 760 20 L 790 55 L 820 20" fill="none" stroke="#789065" stroke-width="12"/></svg><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div>
@@ -34,7 +36,8 @@ app.innerHTML = `
 <button id="undo" aria-label="Отменить последнее действие"><b>↩</b><span>Отменить</span></button>
 <button id="settings-open" aria-label="Настройки" aria-haspopup="dialog"><b>⚙</b><span>Настройки</span></button>
 </footer>
-<dialog id="pause-panel"><div class="dialog-heading"><h2>Небольшой привал</h2><button id="pause-close" aria-label="Вернуться в игру">✕</button></div><div class="pause-actions"><button id="pause-continue" class="primary">Продолжить</button><button id="pause-map">Карта деревни</button><button id="pause-restart">Начать заново</button><button id="pause-settings">Настройки</button></div></dialog>
+<dialog id="prologue-panel" aria-labelledby="prologue-title"><div class="prologue-stage"><div class="prologue-world"><img id="prologue-background" src="${import.meta.env.BASE_URL}assets/chapter-1/v6/01-courtyard.png" alt=""><div id="prologue-actors"><img id="prologue-ruta" src="${import.meta.env.BASE_URL}assets/level-1/v4/ruta-idle.png" alt="Рута"><img id="prologue-rabbit" src="${import.meta.env.BASE_URL}assets/prologue/rabbit.svg" alt="Кролик"><img id="prologue-basket" src="${import.meta.env.BASE_URL}assets/prologue/basket.svg" alt="Корзина яблок"><svg id="prologue-stones" viewBox="0 0 160 60" aria-label="Фиолетовые камни лежат в стороне"><path d="M5 38L25 19L54 25L63 46L30 56Z M70 25L90 8L113 15L117 35L90 42Z M121 48L134 30L151 34L158 49L139 58Z" fill="#8252a4" stroke="#4b315f" stroke-width="3"/><path d="M13 39L33 30L47 35M80 27L96 19L106 24M133 45L147 41" fill="none" stroke="#d3bfe8" stroke-width="3"/></svg></div></div></div><div class="prologue-paper"><img id="prologue-portrait" class="ruta-portrait" src="${import.meta.env.BASE_URL}assets/ui/v7/ruta-bust.png" alt="Рута"><div class="prologue-copy"><h2 id="prologue-title">Утро перед дорогой</h2><p id="prologue-speaker" class="eyebrow"></p><p id="prologue-text" aria-live="polite"></p></div><div class="prologue-actions"><button id="prologue-next" class="primary">Дальше →</button><button id="prologue-back">← Назад</button><button id="prologue-skip">Пропустить</button></div></div></dialog>
+<dialog id="pause-panel"><div class="dialog-heading"><h2>Небольшой привал</h2><button id="pause-close" aria-label="Вернуться в игру">✕</button></div><div class="pause-actions"><button id="pause-continue" class="primary">Продолжить</button><button id="pause-map">Карта деревни</button><button id="pause-restart">Начать заново</button><button id="pause-prologue">Посмотреть начало</button><button id="pause-settings">Настройки</button></div></dialog>
 <dialog id="restart-dialog"><h2>Начать уровень заново?</h2><p>Плиты вернутся в набор. Пройденные дороги сохранятся.</p><button id="restart-cancel">Продолжить</button><button id="restart-confirm">Начать заново</button></dialog>
 <dialog id="completion-panel"><h2>Дорожка готова!</h2><img class="completion-art" src="${import.meta.env.BASE_URL}assets/ui/v7/completion-gate.png" alt="Восстановленная дорожка к калитке"><p id="completion-text"></p><button id="next-level" class="primary">Следующее место →</button><button id="completion-map">На карту</button></dialog>
 <dialog id="settings-panel" aria-labelledby="settings-title">
@@ -63,6 +66,7 @@ try {if(!artCheck)storage=window.localStorage;} catch { /* Private browsing may 
 const loaded=loadState(storage);
 let completed=loaded.completed,introSeen=loaded.introSeen,storageAvailable=!!storage;
 let savedSession=loadSession(storage,completed);
+let prologueState=loadPrologue(storage);
 const preferences=loadPreferences(storage);
 let reducedMotion=preferences.reducedMotion||savedSession?.reducedMotion===true;
 function persist(){storageAvailable=saveProgress(completed,storage,introSeen);storageAvailable=saveSession(storage,savedSession,{mode:mode==='drag'?'drag':'select',reducedMotion})&&storageAvailable;}
@@ -456,7 +460,8 @@ function dialogPages(title:string,pages:Dialogue[],finish:()=>void,lastLabel:str
   if(pages[index].speaker==='Мост')bridgeGuide($('story-text').parentElement!);
   $('story-title').textContent=title;
   document.querySelector('#story .eyebrow')!.textContent=pages[index].speaker;
-  portrait.hidden=pages[index].speaker!=='Рута';story.classList.toggle('has-portrait',!portrait.hidden);
+  const portraitFile=speakerPortrait(pages[index].speaker);
+  portrait.hidden=!portraitFile;if(portraitFile){portrait.src=`${import.meta.env.BASE_URL}assets/prologue/${portraitFile}`;portrait.alt=pages[index].speaker;}story.classList.toggle('has-portrait',!portrait.hidden);
   story.classList.toggle('letter',/приглашение|Хранитель/.test(pages[index].speaker));
   $('story-text').textContent=pages[index].text;
   $('story-action').textContent=index===pages.length-1?lastLabel:'Дальше →';
@@ -468,6 +473,7 @@ function dialogPages(title:string,pages:Dialogue[],finish:()=>void,lastLabel:str
 function showStory(outro=false){
  const data=storyFor(level.id)!;
  const pages:Dialogue[]=[...(outro?data.after:data.before)];
+ if(!outro&&level.id==='gate')pages.push({speaker:'Как играть',text:'Выбери фиолетовую плиту внизу, нажми на клетку и нажми «Поставить». Когда дорожка готова, нажми «Проверить». Плиты можно спокойно переложить.'});
  if(!outro&&level.id==='stream')pages.push({speaker:'Мост',text:'Две опоры — на сухих берегах. Середина мостика — над водой. Обычные плиты на воду не ставим.'});
  if(outro){pages.push({speaker:'После победы',text:data.victoryScene});if(level.id==='post')pages.push({speaker:'Старое приглашение',text:invitation.text});}
  dialogPages(level.name,pages,()=>{
@@ -488,6 +494,7 @@ function showEnding(){
 function finishVictory(){if(firstVictory)showStory(true);else{message('Дорога снова готова!');dialogPages(level.name,[{speaker:'Рута',text:'Получилось! Дорога снова соединена.'}],showCompletion,'Дальше →');}}
 story.addEventListener('cancel',e=>{e.preventDefault();$('story-skip').click();});
 function enterLevel(next:Level,resume:Session|null=null) {
+  if(!artCheck&&next.id==='gate'&&shouldStartPrologue(prologueState,!!savedSession,completed.length>0||introSeen.length>0)){showPrologue(false,()=>enterLevel(next,resume));return;}
   if(!resume&&savedSession?.levelId===next.id&&savedSession.cols===next.cols&&savedSession.rows===next.rows)resume=savedSession;
   app.classList.remove('menu-screen');($('map-extra') as HTMLDialogElement).close();
   $('main-menu').hidden=true;
@@ -561,7 +568,7 @@ $('map-more').onclick=()=>($('map-extra') as HTMLDialogElement).showModal();
 $('map-extra-close').onclick=()=>($('map-extra') as HTMLDialogElement).close();
 $('reset-open').onclick=()=>{($('map-extra') as HTMLDialogElement).close();resetDialog.showModal();};
 $('reset-cancel').onclick=()=>resetDialog.close();
-$('reset-confirm').onclick=()=>{completed=[];introSeen=[];savedSession=null;persist();resetDialog.close();showMap();};
+$('reset-confirm').onclick=()=>{completed=[];introSeen=[];savedSession=null;prologueState=newPrologue();savePrologue(prologueState,storage);persist();resetDialog.close();showMap();};
 function icon(button:HTMLElement,path:string){
   const target=button.querySelector('b')??button;
   target.innerHTML=`<svg viewBox="0 0 24 24" width="26" height="26" aria-hidden="true"><path d="${path}" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>`;
@@ -594,15 +601,53 @@ function showCompletion(){
 $('completion-map').onclick=()=>{($('completion-panel') as HTMLDialogElement).close();if(level.id==='forest')showEnding();else showMap();};
 $('next-level').onclick=()=>{($('completion-panel') as HTMLDialogElement).close();const next=levels[levels.indexOf(level)+1];if(next)enterLevel(next);};
 ($('completion-panel') as HTMLDialogElement).addEventListener('cancel',e=>{e.preventDefault();$('completion-map').click();});
+const prologue=$('prologue-panel') as HTMLDialogElement;
+prologue.dataset.storyId=PROLOGUE_ID;
+new ResizeObserver(()=>{
+ const stage=prologue.querySelector<HTMLElement>('.prologue-stage')!,world=prologue.querySelector<HTMLElement>('.prologue-world')!;
+ const fit=Math.min(stage.clientWidth/1672,stage.clientHeight/941);
+ world.style.width=`${1672*fit}px`;world.style.height=`${941*fit}px`;
+}).observe(prologue.querySelector('.prologue-stage')!);
+function showPrologue(replay:boolean,finish:()=>void){
+ let index=replay?0:prologueState.frame;
+ const write=()=>{if(!replay){prologueState={...prologueState,active:true,frame:index};storageAvailable=savePrologue(prologueState,storage)&&storageAvailable;}};
+ const draw=()=>{
+  const item=prologueFrames[index];prologue.dataset.frame=String(index);prologue.dataset.scene=item.scene;
+  ($('prologue-background') as HTMLImageElement).src=`${import.meta.env.BASE_URL}assets/chapter-1/v6/${item.scene==='orchard'?'02-orchard':'01-courtyard'}.png`;
+  $('prologue-portrait').hidden=item.speaker!=='Рута';$('prologue-speaker').textContent=item.speaker;$('prologue-text').textContent=item.text;
+  $('prologue-ruta').removeAttribute('style');$('prologue-basket').removeAttribute('style');
+  if(index===5){
+   const foot=artPoint(levels[0].start),height=70*2*1.1*1300/1232,width=height*1209/1300;
+   $('prologue-ruta').style.cssText=`left:${(foot.x-width*.55/1672)*100}%;top:${(foot.y-height*1277/1300/941)*100}%;height:${height/941*100}%;bottom:auto`;
+   $('prologue-basket').style.cssText=`left:${(foot.x+.018)*100}%;bottom:${(1-foot.y-.01)*100}%;width:4%`;
+  }
+  $('prologue-ruta').hidden=item.scene==='orchard';$('prologue-rabbit').hidden=item.scene!=='orchard';
+  $('prologue-basket').hidden=item.scene==='orchard';$('prologue-stones').toggleAttribute('hidden',index<3||index===5);
+  ($('prologue-back') as HTMLButtonElement).disabled=index===0;
+  $('prologue-next').textContent=index===prologueFrames.length-1?(replay?(screen==='game'?'Вернуться в игру':'Вернуться в меню'):'К калитке →'):'Дальше →';
+  write();
+ };
+ const close=()=>{
+  if(!replay){prologueState={seen:true,frame:0,active:false};storageAvailable=savePrologue(prologueState,storage)&&storageAvailable;}
+  prologue.close();finish();
+ };
+ $('prologue-next').onclick=()=>{if(index===prologueFrames.length-1)close();else{index++;draw();}};
+ $('prologue-back').onclick=()=>{if(index>0){index--;draw();}};
+ $('prologue-skip').onclick=close;
+ prologue.oncancel=e=>{e.preventDefault();close();};
+ draw();prologue.showModal();
+}
+$('prologue-replay').onclick=()=>showPrologue(true,()=>{});
+$('pause-prologue').onclick=()=>{pause.close();showPrologue(true,()=>{});};
 function showMenu(){
  app.classList.add('menu-screen');
  app.classList.toggle('reduced-motion',reducedMotion);
  screen='menu';$('chapter-map').hidden=true;$('field').hidden=true;$('game-controls').hidden=true;$('main-menu').hidden=false;
- $('continue-game').textContent=savedSession||completed.length?'Продолжить':'Начать приключение';
+ $('continue-game').textContent=savedSession||completed.length||prologueState.active?'Продолжить':'Начать приключение';
  $('menu-progress').textContent=`Восстановлено дорог: ${completed.length} из 8`;
  $('menu-save-status').textContent=storageAvailable?'':'Не удалось сохранить. Можно играть до закрытия страницы.';
 }
-$('continue-game').onclick=()=>{const next=savedSession?.levelId==='sandbox'?sandbox(savedSession.cols,savedSession.rows):levels.find(l=>l.id===savedSession?.levelId&&available(l.id,completed))??levels.find(l=>available(l.id,completed)&&!completed.includes(l.id))??levels[0];enterLevel(next,savedSession?.levelId===next.id?savedSession:null);};
+$('continue-game').onclick=()=>{if(shouldStartPrologue(prologueState,!!savedSession,completed.length>0||introSeen.length>0)){showPrologue(false,()=>enterLevel(levels[0]));return;}const next=savedSession?.levelId==='sandbox'?sandbox(savedSession.cols,savedSession.rows):levels.find(l=>l.id===savedSession?.levelId&&available(l.id,completed))??levels.find(l=>available(l.id,completed)&&!completed.includes(l.id))??levels[0];enterLevel(next,savedSession?.levelId===next.id?savedSession:null);};
 $('choose-level').onclick=showMap;
 $('home-menu').onclick=showMenu;
 $('main-settings').onclick=()=>{for(const id of ['clear','map-return','story-replay','metric','hint','size-setting'])$(id).hidden=true;settings.showModal();};
