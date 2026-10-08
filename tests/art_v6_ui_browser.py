@@ -56,6 +56,8 @@ with sync_playwright() as p:
   box=t.locator(source or f'[data-piece="{id}"]').bounding_box();x,y=box['x']+box['width']/2,box['y']+box['height']/2
   h=placement['anchor'];cell=t.locator('[data-cell="%s,%s"] > polygon'%(h['q'],h['r'])).bounding_box();tx,ty=cell['x']+cell['width']/2,cell['y']+cell['height']/2+max(42,cell['height']*.8)
   cdp.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y}]})
+  # Lift vertically out of the stock before travelling across the field.
+  if source is None:cdp.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':x,'y':y-25}]})
   for step in range(1,11):cdp.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':x+(tx-x)*step/10,'y':y+(ty-y)*step/10}]})
   cdp.send('Input.dispatchTouchEvent',{'type':'touchCancel' if cancel else 'touchEnd','touchPoints':[]});t.wait_for_timeout(100)
  bridge=LEVELS[4]['solution']['bridge'];drag('bridge',bridge,True);assert t.locator('[data-owner="bridge"]').count()==0;drag('bridge',bridge);assert t.locator('[data-owner="bridge"]').count()==3

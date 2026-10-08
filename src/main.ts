@@ -85,7 +85,7 @@ const v6Preview=true;
 const groundPoint=(x:number,y:number)=>{const p=project({x,y},projection);return {x:p.x+groundOffset.x,y:p.y+groundOffset.y};};
 let verticalRadius=13,horizontalRadius=17;
 let radius = 20, origin = {x:0,y:0};
-let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number} | null = null;
+let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number; toggleOnTap: boolean} | null = null;
 let suppressClick = false, deferDock = false, dockFrame = 0;
 // The dock changes under a released pointer. Consume its synthetic click so it
 // cannot activate a different button; the next real gesture starts afresh.
@@ -151,6 +151,9 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
   if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
   if(selected===p.id)el('circle',{cx:0,cy:0,r:level.id==='gate'?1.6:2.8,fill:'#fff6dc'},icon);
 }
+function updateTraySelection(){
+  for(const button of $('tray').querySelectorAll<HTMLElement>('[data-piece]'))button.setAttribute('aria-pressed',String(selected===button.dataset.piece));
+}
 function renderTray() {
   const tray=$('tray');
   for(const button of tray.querySelectorAll<HTMLElement>('[data-piece]')) if(!pieces.some(p=>p.id===button.dataset.piece))button.remove();
@@ -158,12 +161,13 @@ function renderTray() {
     let button=Array.from(tray.querySelectorAll<HTMLButtonElement>('[data-piece]')).find(b=>b.dataset.piece===p.id);
     if(!button){button=document.createElement('button');button.className='piece';button.dataset.piece=p.id;tray.append(button);}
     button.setAttribute('aria-label',`${p.name}${layout[p.id]?', на поле':', в наборе'}`);
-    button.setAttribute('aria-pressed',String(selected===p.id));button.classList.toggle('placed',!!layout[p.id]);
+    button.classList.toggle('placed',!!layout[p.id]);
     button.style.setProperty('--piece-width',p.shape.length===1?'88px':'130px');
     const orientation=selected===p.id?turns:layout[p.id]?.turns??0;
     const signature=`${level.id}:${orientation}:${selected===p.id}:${!!layout[p.id]}`;
     if(button.dataset.icon!==signature){button.replaceChildren();drawPieceIcon(button,p,orientation);if(layout[p.id]){const mark=document.createElement('em');mark.textContent='✓';button.append(mark);}button.dataset.icon=signature;}
   }
+  updateTraySelection();
   let note=tray.querySelector<HTMLElement>('.tray-note');
   if(!note){note=document.createElement('span');note.className='tray-note';note.textContent='Все плиты на поле';tray.append(note);}
   note.hidden=!pieces.every(p=>layout[p.id]);
@@ -289,7 +293,7 @@ function ownerAt(h: Hex) { return Object.entries(layout).find(([id,p])=>placedCe
 $('tray').addEventListener('click',e=>{
   if(suppressClick || phase!=='playing') return;
   const id=(e.target as Element).closest<HTMLElement>('[data-piece]')?.dataset.piece;
-  if(id) { select(id); render(); }
+  if(id) {if(selected===id){resetSelection();message('Выбор снят. Дорога сохранена.');}else select(id);render();}
 });
 svg.addEventListener('click',e=>{
   if(mode!=='select'||suppressClick||phase!=='playing') return;
@@ -311,10 +315,11 @@ svg.addEventListener('pointermove',e=>{
 });
 function startDrag(e: PointerEvent,id: string) {
   if(phase!=='playing'||mode!=='drag'||!e.isPrimary||e.button!==0||drag) return;
-  // touch-action:none handles scrolling; keep native tap/click synthesis intact.
+  // Tray permits horizontal pans; lifting a piece starts a drag on the board.
+  const toggleOnTap=selected===id&&!!(e.target as Element).closest('#tray');
   if(selected!==id) select(id);
-  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns};
-  app.setPointerCapture(e.pointerId); renderBoard();
+  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns,toggleOnTap};
+  app.setPointerCapture(e.pointerId);updateTraySelection();updateControls();renderBoard();
 }
 $('selected-drag').addEventListener('pointerdown',e=>{if(selected)startDrag(e,selected);});
 $('tray').addEventListener('pointerdown',e=>{
@@ -342,6 +347,7 @@ function finishDrag(e: PointerEvent,cancel: boolean) {
     message('Здесь не помещается. Плита вернулась на прежнее место.');
   }
   anchor=previous.beforeAnchor; turns=previous.beforeTurns;
+  if(!cancel&&!previous.moved&&previous.toggleOnTap){resetSelection();message('Выбор снят. Дорога сохранена.');}
   if(cancel) message('Перетаскивание отменено. Плита сохранена.');
   render();
 }
@@ -399,7 +405,7 @@ $('size').onchange=()=>{
 };
 $('mode').onchange=()=>{
   mode=($('mode') as HTMLSelectElement).value;if(savedSession)savedSession.mode=mode==='drag'?'drag':'select';resetSelection();
-  $('hint').textContent=mode==='select'?'Выбери плиту → клетку → «Поставить»':'Тяни за плиту · на телефоне цель выше пальца';
+  $('hint').textContent=mode==='select'?'Выбери плиту → клетку → «Поставить»':'Листай набор вбок · тяни плиту вверх на поле';
   message(mode==='select'?'Выбери плиту в наборе или на поле.':'Перетащи плиту на поле. Отпусти, чтобы поставить.');render();
 };
 if(document.fullscreenEnabled) {

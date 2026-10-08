@@ -56,7 +56,6 @@ footer button{display:flex;align-items:center;flex-direction:column;justify-cont
 footer b{font-size:25px;font-weight:400;line-height:26px}
 #tray{display:flex;align-items:center;gap:8px;flex:1;min-width:0;height:100%;overflow-x:auto;overflow-y:hidden;touch-action:pan-x;scrollbar-width:thin;padding:3px}
 .piece{touch-action:pan-x;flex:0 0 var(--piece-width);height:100%;position:relative;border:2px solid transparent;background:#f2e4cd var(--linen);padding:5px;border-radius:9px}
-.drag-mode .piece{touch-action:none}
 .piece svg{width:100%;height:58px;overflow:visible;filter:drop-shadow(0 2px 1px #49234b70)}
 .piece[aria-pressed=true]{border-color:#fff4cf;outline:2px solid #805698;outline-offset:-4px;transform:translateY(-2px)}
 .piece.placed svg{opacity:.45}
@@ -152,7 +151,6 @@ to{opacity:0}
 @media(max-height:500px){footer{flex-basis:72px;padding:4px 8px;border-width:3px;gap:6px}
 #tray{gap:6px}
 .piece{flex-basis:calc(var(--piece-width)*.7);padding:3px}
-.drag-mode .piece{touch-action:none}
 .piece svg{height:40px}
 #selection-actions{gap:4px}
 #selection-actions button{width:48px;padding:3px;font-size:10px}
