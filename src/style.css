@@ -127,3 +127,33 @@ body:has(.illustrated-level){background:#283f2a}
 #orientation-screen{position:fixed;inset:0;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));background:#f1e4c7;color:#4a5938;text-align:center;overflow:auto;outline:none}
 #orientation-screen h2{font:600 clamp(20px,5vw,28px) Georgia,serif;max-width:24ch;margin:0;line-height:1.3}
 #orientation-screen p{max-width:28ch;margin:0;font-size:16px;color:#705c44}
+/* v6 paper and light-wood controls are live DOM, never a baked UI screenshot. */
+body{background:#243b2a}
+.illustrated-level header{background:transparent;box-shadow:none}
+.illustrated-level h1{background:#f8e8bb;color:#573a26;box-shadow:0 2px 5px #241a1b55}
+.illustrated-level footer{background:repeating-linear-gradient(2deg,#dab982 0,#ead1a3 8px,#ddbd8d 11px);border-color:#bb945f;box-shadow:0 -3px 8px #30201955}
+.illustrated-level .piece{background:#f2e4cd88;border:2px solid transparent;border-radius:10px}
+.illustrated-level .piece.selected{border-color:#fff4cf}
+.illustrated-level footer .check{background:#648644;border-color:#3c632b}
+.illustrated-level .meadow-cell{fill-opacity:.1}
+.illustrated-level [data-terrain=water] .meadow-cell{fill:#80bdcf;fill-opacity:.65}
+#field{background:radial-gradient(ellipse,#344d30,#213925)}
+dialog{background:#faedcd;color:#573d28;border:3px solid #ba975e;box-shadow:0 8px 32px #17231777}
+#main-menu{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:radial-gradient(ellipse at center,#f2dfb2 0,#e8d0a0 40%,#526f45 100%);border-radius:18px;padding:12px}
+#main-menu h2{font:700 clamp(24px,5vw,44px) Georgia,serif;margin:0;color:#543727}
+#main-menu p{margin:0;color:#543727}
+#main-menu button{min-width:240px;min-height:48px;padding:8px 20px}
+.pause-actions{display:flex;flex-direction:column;gap:8px}.pause-actions button{padding:10px}
+#story{position:fixed;top:auto;bottom:10px;width:min(900px,calc(100vw - 24px));max-width:none;margin:auto;padding:14px}
+.story-layout{gap:16px}.story-layout p{margin:6px 0}.story-layout .ruta-portrait{width:85px;height:110px;object-fit:contain}.story-buttons{margin-top:8px}
+#completion-panel{text-align:center}#completion-panel button{padding:10px 16px;margin:4px}
+@media(max-height:420px){#main-menu{gap:5px}#main-menu button{min-height:48px;padding:5px}#main-menu h2{font-size:26px}.story-layout .ruta-portrait{height:76px;width:65px}#story{padding:10px}.story-layout p{font-size:14px}.story-layout h2{font-size:18px}}
+#app.illustrated-level{background:#243b2a}
+.illustrated-level #field{background:radial-gradient(ellipse,#344d30,#213925)}
+.illustrated-level [data-terrain=tree] .cell,.illustrated-level [data-terrain=flower] .cell{fill:none;stroke:none}
+.illustrated-level [data-terrain=house],.illustrated-level [data-terrain=tree],.illustrated-level [data-terrain=flower]{outline:none}
+.illustrated-level footer .piece{background:#f4e7cc99}
+.reduced-motion *{animation:none!important;transition:none!important}
+#chapter-background{filter:drop-shadow(0 2px 6px #14231988)}
+header{color:#f4dfb5}
+#main-menu .primary,#pause-panel .primary,#completion-panel .primary,#story .primary{background:#648644;color:#fffbea;border-color:#3c632b}

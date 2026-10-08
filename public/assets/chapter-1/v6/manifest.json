@@ -1,0 +1,255 @@
+{
+  "version": 6,
+  "chapter": "За калитку",
+  "orientation": "landscape_only",
+  "status": "complete_background_art; integration_not_verified",
+  "coordinate_system": "normalized image space; top-left origin; estimates only",
+  "scene_fit": "contain; never distort image or hexes",
+  "projection": {
+    "target_y_scale": 0.65,
+    "note": "starting value; match actual artwork through screenshot comparison"
+  },
+  "scenes": [
+    {
+      "level": 1,
+      "title": "До калитки",
+      "file": "scenes/01-courtyard.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.215,
+        0.46
+      ],
+      "destination_estimate": [
+        0.81,
+        0.81
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Verify threshold and endpoint against existing level.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "level": 2,
+      "title": "В обход яблони",
+      "file": "scenes/02-orchard.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.225,
+        0.83
+      ],
+      "destination_estimate": [
+        0.81,
+        0.35
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Apple canopy and trunk baked into background. Avoid rendering active cells over tree; depth-mask required for walking behind canopy.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "level": 3,
+      "title": "К колодцу",
+      "file": "scenes/03-well.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.205,
+        0.83
+      ],
+      "destination_estimate": [
+        0.75,
+        0.455
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Central flowerbed baked into background. Verify blocked cells cover actual footprint.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "level": 4,
+      "title": "Тёплая пекарня",
+      "file": "scenes/04-bakery.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.22,
+        0.83
+      ],
+      "destination_estimate": [
+        0.75,
+        0.405
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Verify threshold and endpoint against existing level.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "level": 5,
+      "title": "Через ручей",
+      "file": "scenes/05-stream.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.25,
+        0.56
+      ],
+      "destination_estimate": [
+        0.78,
+        0.42
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Water boundaries are illustrative curves. Existing water cells must match before production use; do not infer valid bridge cells from pixels.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "level": 6,
+      "title": "К мельнице",
+      "file": "scenes/06-mill.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.21,
+        0.71
+      ],
+      "destination_estimate": [
+        0.89,
+        0.35
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Water boundaries are illustrative curves. Existing water cells must match before production use; do not infer valid bridge cells from pixels.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "level": 7,
+      "title": "Почтовый двор",
+      "file": "scenes/07-post.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.23,
+        0.84
+      ],
+      "destination_estimate": [
+        0.78,
+        0.405
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Verify threshold and endpoint against existing level.",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "level": 8,
+      "title": "Тропинка за деревню",
+      "file": "scenes/08-edge.png",
+      "kind": "background",
+      "entry_estimate": [
+        0.23,
+        0.83
+      ],
+      "destination_estimate": [
+        0.745,
+        0.335
+      ],
+      "anchor_status": "visual estimates, not collision geometry",
+      "runtime_layers": [
+        "projected_grid",
+        "charoite_pieces",
+        "preview",
+        "ruta",
+        "npc",
+        "hud"
+      ],
+      "notes": "Verify threshold and endpoint against existing level.",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "ui": [
+    {
+      "file": "ui/01-main-menu.png",
+      "kind": "visual_reference_only",
+      "width": 1672,
+      "height": 940
+    },
+    {
+      "file": "ui/02-pause-menu.png",
+      "kind": "visual_reference_only",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "ui/03-dialogue.png",
+      "kind": "visual_reference_only",
+      "width": 1672,
+      "height": 941
+    },
+    {
+      "file": "ui/04-completion.png",
+      "kind": "visual_reference_only",
+      "width": 1672,
+      "height": 941
+    }
+  ],
+  "constraints": [
+    "preserve solved level data and save identity",
+    "no baked interactive text/buttons",
+    "no portrait game layout",
+    "no extra duplicate houses/gates/trees over baked artwork",
+    "no claim of production geometry validation"
+  ]
+}

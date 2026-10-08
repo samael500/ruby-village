@@ -1,0 +1,221 @@
+{
+  "gate": {
+    "gate-1": {
+      "anchor": {
+        "q": 3,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "gate-2": {
+      "anchor": {
+        "q": 4,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "gate-3": {
+      "anchor": {
+        "q": 5,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "gate-4": {
+      "anchor": {
+        "q": 6,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "gate-5": {
+      "anchor": {
+        "q": 7,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "gate-6": {
+      "anchor": {
+        "q": 7,
+        "r": 3
+      },
+      "turns": 0
+    },
+    "gate-7": {
+      "anchor": {
+        "q": 7,
+        "r": 4
+      },
+      "turns": 0
+    }
+  },
+  "garden": {
+    "garden-a": {
+      "anchor": {
+        "q": 1,
+        "r": 5
+      },
+      "turns": 5
+    },
+    "garden-b": {
+      "anchor": {
+        "q": 4,
+        "r": 5
+      },
+      "turns": 0
+    },
+    "garden-v6-a": {
+      "anchor": {
+        "q": 8,
+        "r": 3
+      },
+      "turns": 2
+    },
+    "garden-v6-b": {
+      "anchor": {
+        "q": 9,
+        "r": 0
+      },
+      "turns": 1
+    }
+  },
+  "well": {
+    "well-v6-a": {
+      "anchor": {
+        "q": 1,
+        "r": 5
+      },
+      "turns": 0
+    },
+    "well-a": {
+      "anchor": {
+        "q": 6,
+        "r": 4
+      },
+      "turns": 2
+    },
+    "well-b": {
+      "anchor": {
+        "q": 8,
+        "r": 2
+      },
+      "turns": 2
+    }
+  },
+  "bakery": {
+    "bakery-a": {
+      "anchor": {
+        "q": 3,
+        "r": 3
+      },
+      "turns": 2
+    },
+    "bakery-b": {
+      "anchor": {
+        "q": 4,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "bakery-v6-a": {
+      "anchor": {
+        "q": 7,
+        "r": 2
+      },
+      "turns": 0
+    }
+  },
+  "stream": {
+    "stream-v6-a": {
+      "anchor": {
+        "q": 4,
+        "r": 1
+      },
+      "turns": 2
+    },
+    "bridge": {
+      "anchor": {
+        "q": 6,
+        "r": 1
+      },
+      "turns": 0
+    },
+    "stream-a": {
+      "anchor": {
+        "q": 8,
+        "r": 1
+      },
+      "turns": 0
+    }
+  },
+  "mill": {
+    "bridge": {
+      "anchor": {
+        "q": 2,
+        "r": 3
+      },
+      "turns": 0
+    },
+    "mill-a": {
+      "anchor": {
+        "q": 6,
+        "r": 2
+      },
+      "turns": 2
+    },
+    "mill-v6-a": {
+      "anchor": {
+        "q": 7,
+        "r": 2
+      },
+      "turns": 0
+    }
+  },
+  "post": {
+    "post-a": {
+      "anchor": {
+        "q": 3,
+        "r": 3
+      },
+      "turns": 2
+    },
+    "post-b": {
+      "anchor": {
+        "q": 4,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "post-extra": {
+      "anchor": {
+        "q": 7,
+        "r": 2
+      },
+      "turns": 0
+    }
+  },
+  "forest": {
+    "forest-a": {
+      "anchor": {
+        "q": 2,
+        "r": 2
+      },
+      "turns": 0
+    },
+    "forest-b": {
+      "anchor": {
+        "q": 4,
+        "r": 1
+      },
+      "turns": 0
+    },
+    "forest-c": {
+      "anchor": {
+        "q": 7,
+        "r": 1
+      },
+      "turns": 0
+    }
+  }
+}
