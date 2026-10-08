@@ -16,6 +16,11 @@ def crop(page,l,w,h):
  return {'x':x,'y':y,'width':min(w-x,box['width']+90),'height':min(h-y,box['height']+90)}
 with sync_playwright() as p:
  b=p.chromium.launch();errors=[]
+ # A fresh first-level gate is closed until victory, then both aligned layers open.
+ first=b.new_page(viewport={'width':844,'height':390},reduced_motion='reduce');first.goto(URL)
+ first.evaluate('(v)=>localStorage.setItem(v.key,JSON.stringify({version:2,completed:[],introSeen:["gate"],session:{levelId:"gate",cols:11,rows:7,layout:v.layout,mode:"select",reducedMotion:true}}))',{'key':KEY,'layout':LEVELS[0]['solution']})
+ first.reload();first.locator('#continue-game').click();assert first.locator('[data-open-gate]').count()==0
+ first.locator('#check').click();expect(first.locator('#story')).to_be_visible();assert first.locator('[data-open-gate]').count()==2;first.close()
  for w,h in [(1280,720),(844,390),(740,360),(915,412),(1024,768),(1920,1080)]:
   ctx=b.new_context(viewport={'width':w,'height':h},has_touch=True,reduced_motion='reduce')
   for l in LEVELS:
