@@ -1,5 +1,5 @@
 import './style.css';
-import {scenePoint} from './scene-camera.ts';
+import {scenePoint,goalSignLayout} from './scene-camera.ts';
 import {loadPrologue,savePrologue,newPrologue,PROLOGUE_ID,prologueFrames,shouldStartPrologue,speakerPortrait} from './prologue.ts';
 import {loadPreferences,loadSession,saveSession,type Session} from './session.ts';
 import {chapterScene} from './chapter-art.ts';
@@ -251,13 +251,12 @@ function renderBoard() {
   $('metric').textContent=`Гекс ${Math.round(2*horizontalRadius)} × ${Math.round(2*verticalRadius)} px · проекция ${GROUND_SCALE}`;
 }
 function goalMarker(){
- const c=hexCenter(level.goal,radius),point=groundPoint(origin.x+c.x,origin.y+c.y);
- const size=Math.max(14,Math.min(24,radius*.65));
- const g=el('g',{'data-goal-marker':'',transform:`translate(${point.x+horizontalRadius+size*.08} ${point.y+verticalRadius*.3})`,'pointer-events':'none',role:'img','aria-label':level.goalName},svg);
+ const rect=svg.getBoundingClientRect(),{x,y,size,angle}=goalSignLayout(level.id,rect.width,rect.height);
+ const g=el('g',{'data-goal-marker':'',transform:`translate(${x} ${y})`,'pointer-events':'none',role:'img','aria-label':level.goalName},svg);
  el('ellipse',{cx:size*.18,cy:0,rx:size*.28,ry:size*.10,fill:'#493d28',opacity:.25},g);
  el('path',{d:`M 0 0 L 0 ${-size}`,fill:'none',stroke:'#684426','stroke-width':Math.max(2,size*.13),'stroke-linecap':'round'},g);
- el('path',{d:`M ${-size*.12} ${-size*.96} L ${size*.65} ${-size*.93} L ${size*.86} ${-size*.70} L ${size*.65} ${-size*.47} L ${-size*.12} ${-size*.49} Z`,fill:'#d2a361',stroke:'#724b2b','stroke-width':1.3},g);
- el('path',{d:`M ${size*.17} ${-size*.72} H ${size*.52} M ${size*.4} ${-size*.83} L ${size*.53} ${-size*.72} L ${size*.4} ${-size*.6}`,fill:'none',stroke:'#784995','stroke-width':2,'stroke-linecap':'round'},g);
+ el('path',{d:`M ${-size*.12} ${-size*.96} L ${size*.65} ${-size*.93} L ${size*.78} ${-size*.70} L ${size*.65} ${-size*.47} L ${-size*.12} ${-size*.49} Z`,fill:'#d2a361',stroke:'#724b2b','stroke-width':1.3},g);
+ el('path',{d:`M ${size*.17} ${-size*.72} H ${size*.52} M ${size*.4} ${-size*.83} L ${size*.53} ${-size*.72} L ${size*.4} ${-size*.6}`,fill:'none',stroke:'#784995','stroke-width':2,'stroke-linecap':'round',transform:`rotate(${angle} ${size*.35} ${-size*.72})`},g);
 }
 function prototypeRuta(){
  const regular=hexCenter(level.start,radius),foot=groundPoint(regular.x+origin.x,regular.y+origin.y),c={x:foot.x-origin.x,y:foot.y-origin.y},visible=radius*2*1.1,height=visible*1300/1232,width=height*1209/1300;

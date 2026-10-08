@@ -29,6 +29,8 @@ with sync_playwright() as p:
    field=page.locator('#board').bounding_box();art=page.locator('[data-surroundings]').bounding_box();assert art['x']<=field['x']+1 and art['y']<=field['y']+1 and art['x']+art['width']>=field['x']+field['width']-1 and art['y']+art['height']>=field['y']+field['height']-1
    assert page.locator('#board .landmark, #ground-plane circle').count()==0
    assert page.locator('[data-goal-marker]').count()==1
+   # Sample the actual rendered bounds, including a 2px stroke margin: no available cell underneath.
+   assert page.locator('[data-goal-marker]').evaluate("""e=>{const r=e.getBoundingClientRect();for(let x=r.x-2;x<=r.right+2;x+=.75)for(let y=r.y-2;y<=r.bottom+2;y+=.75){const c=document.elementFromPoint(x,y)?.closest('[data-cell]');if(c&&['ground','water'].includes(c.dataset.terrain))return false;}return true;}""")
    assert page.locator('[data-foreground]').get_attribute('pointer-events')=='none'
    assert page.locator('[data-foreground]').evaluate('(e)=>e===e.parentElement.lastElementChild')
    # Start/end labels remain accessible even though the painted world contains none.

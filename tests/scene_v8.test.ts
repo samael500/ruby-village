@@ -4,7 +4,7 @@ import {createHash} from 'node:crypto';
 import {levels} from '../src/levels.ts';
 import {boardCells,hexCenter,pixelHex} from '../src/hex.ts';
 import {project,unproject} from '../src/projection.ts';
-import {fitScene,scenePoint,sceneMetadata} from '../src/scene-camera.ts';
+import {fitScene,scenePoint,sceneMetadata,goalSignLayout} from '../src/scene-camera.ts';
 const sizes=[[1280,720],[844,390],[740,360],[915,412],[1024,768],[1920,1080]];
 test('Геометрия, препятствия, наборы и эталоны побайтно соответствуют main d1493cd',()=>{
  const logical=levels.map(({id,cols,rows,start,goal,terrain,pieces,solution})=>({id,cols,rows,start,goal,terrain,pieces,solution}));
@@ -68,6 +68,30 @@ test('Передние контуры не закрывают большую ч�
    }
    assert.ok(covered/total<.5,`${l.id}: ${h.q},${h.r} foreground ${covered}/${total}`);
    assert.ok(m.foreground.every(poly=>scenePoint(l.id,h).y<Math.max(...poly.map(p=>p[1]))));
+  }
+ }
+});
+
+const overlaps=(a:number[][],b:number[][])=>{
+ for(const poly of [a,b])for(let i=0;i<poly.length;i++){
+  const p=poly[i],q=poly[(i+1)%poly.length],nx=q[1]-p[1],ny=p[0]-q[0];
+  const aa=a.map(([x,y])=>x*nx+y*ny),bb=b.map(([x,y])=>x*nx+y*ny);
+  if(Math.max(...aa)<=Math.min(...bb)||Math.max(...bb)<=Math.min(...aa))return false;
+ }
+ return true;
+};
+test('Полный указатель с обводкой и тенью не перекрывает ни один доступный гекс',()=>{
+ for(const l of levels)for(const [w,h] of sizes){
+  const height=h-80,s=fitScene(l.id,w,height),m=goalSignLayout(l.id,w,height);
+  const left=m.x-m.size*.3-2,right=m.x+m.size*.9+2,top=m.y-m.size-2,bottom=m.y+m.size*.12+2;
+  const bounds=[[left,top],[right,top],[right,bottom],[left,bottom]];
+  assert.ok(left>=0&&top>=0&&right<=w&&bottom<=height);
+  for(const hex of boardCells(l.cols,l.rows))if(!l.terrain[`${hex.q},${hex.r}`]||l.terrain[`${hex.q},${hex.r}`]==='water'){
+   const c=hexCenter(hex,s.radius),poly=Array.from({length:6},(_,i)=>{
+    const a=(i*60-90)*Math.PI/180,p=project({x:c.x+s.radius*Math.cos(a),y:c.y+s.radius*Math.sin(a)},s.projection);
+    return [p.x+s.translation.x,p.y+s.translation.y];
+   });
+   assert.ok(!overlaps(bounds,poly),`${l.id} ${w}x${h}: ${hex.q},${hex.r}`);
   }
  }
 });
