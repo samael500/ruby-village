@@ -15,11 +15,11 @@ const app = document.querySelector<HTMLDivElement>('#app')!;
 app.innerHTML = `
 <header><button id="scene-back" hidden aria-label="Вернуться на карту"></button><div class="brand"><span class="ruby" aria-hidden="true">◆</span><h1>Рубиновая деревня<span class="sr-only"> · первая глава</span></h1></div><span id="scene-event" hidden></span><div id="status" role="status" aria-live="polite">Выбери плиту, затем клетку.</div><button id="scene-help" hidden aria-label="Как играть">?</button></header>
 
-<section id="main-menu"><h2>Рубиновая деревня</h2><p>За калитку · первая глава</p><button id="continue-game" class="primary">Начать приключение</button><button id="choose-level">Выбрать уровень</button><button id="main-settings">Настройки</button><p id="menu-progress"></p><p id="menu-save-status" role="status"></p></section>
+<section id="main-menu"><div class="menu-paper"><h2>Рубиновая деревня</h2><p>За калитку · первая глава</p><button id="continue-game" class="primary">Начать приключение</button><button id="choose-level">Выбрать уровень</button><button id="main-settings">Настройки</button><p id="menu-progress"></p><p id="menu-save-status" role="status"></p></div></section>
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
 <div class="map-landscape"><svg id="map-background" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"><path d="M 15 170 Q 300 230 480 190 T 980 200" fill="none" stroke="#a4c4bd" stroke-width="25"/><path d="M 90 360 L 120 325 L 150 360 M 760 20 L 790 55 L 820 20" fill="none" stroke="#789065" stroke-width="12"/></svg><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div>
-<div class="map-actions"><button id="home-menu">⌂ Меню</button><button id="sandbox-open">⬡ Песочница</button><span id="save-status" role="status"></span><button id="chapter-ending" hidden>✦ Письма через лес</button><button id="letter-open" hidden>✉ Приглашение</button><button id="reset-open">Начать главу заново</button></div>
+<div class="map-actions"><button id="home-menu">⌂ Меню</button><button id="map-more">Ещё…</button><span id="save-status" role="status"></span></div><dialog id="map-extra"><div class="dialog-heading"><h2>Приключение</h2><button id="map-extra-close" aria-label="Закрыть">✕</button></div><div class="pause-actions"><button id="sandbox-open">Песочница</button><button id="chapter-ending" hidden>✦ Письма через лес</button><button id="letter-open" hidden>✉ Приглашение</button><button id="reset-open">Начать главу заново</button></div></dialog>
 </section>
 <main id="field"><svg id="board" role="group" aria-label="Гексагональное поле. Деревня слева, мельница справа"></svg></main>
 <footer id="game-controls">
@@ -36,7 +36,7 @@ app.innerHTML = `
 </footer>
 <dialog id="pause-panel"><div class="dialog-heading"><h2>Небольшой привал</h2><button id="pause-close" aria-label="Вернуться в игру">✕</button></div><div class="pause-actions"><button id="pause-continue" class="primary">Продолжить</button><button id="pause-map">Карта деревни</button><button id="pause-restart">Начать заново</button><button id="pause-settings">Настройки</button></div></dialog>
 <dialog id="restart-dialog"><h2>Начать уровень заново?</h2><p>Плиты вернутся в набор. Пройденные дороги сохранятся.</p><button id="restart-cancel">Продолжить</button><button id="restart-confirm">Начать заново</button></dialog>
-<dialog id="completion-panel"><h2>Дорожка готова!</h2><p id="completion-text"></p><button id="next-level" class="primary">Следующее место →</button><button id="completion-map">На карту</button></dialog>
+<dialog id="completion-panel"><h2>Дорожка готова!</h2><img class="completion-art" src="${import.meta.env.BASE_URL}assets/ui/v7/completion-gate.png" alt="Восстановленная дорожка к калитке"><p id="completion-text"></p><button id="next-level" class="primary">Следующее место →</button><button id="completion-map">На карту</button></dialog>
 <dialog id="settings-panel" aria-labelledby="settings-title">
 <div class="dialog-heading"><h2 id="settings-title">Настройки площадки</h2><button id="settings-close" aria-label="Закрыть настройки">✕</button></div>
 <div class="settings"><label id="size-setting">Размер поля<select id="size" aria-label="Размер поля"><option value="7,5">7 × 5 — крупнее</option><option value="9,6" selected>9 × 6</option><option value="11,7">11 × 7 — мельче</option></select></label>
@@ -46,13 +46,7 @@ app.innerHTML = `
 <div class="settings-actions"><button id="map-return">На карту</button><button id="clear">Начать уровень заново</button><button id="story-replay">Реплики</button><button id="fullscreen" hidden>Полный экран</button></div>
 </dialog>
 <dialog id="story" aria-labelledby="story-title"><div class="story-layout">
-<svg class="ruta-portrait" viewBox="0 0 100 110" role="img" aria-label="Условный портрет Руты: русые волосы и красный платок">
-<path d="M20 68V32C20 0 80 0 80 32V75" fill="#b39058"/><path d="M21 110V82Q50 59 79 82V110" fill="#6c8853"/>
-<ellipse cx="50" cy="40" rx="24" ry="29" fill="#f1d2a6"/><path d="M24 33Q30 2 62 14L76 37Q59 27 52 17Q43 32 24 33" fill="#b39058"/>
-<circle cx="41" cy="40" r="3" fill="#5688ab"/><circle cx="60" cy="40" r="3" fill="#5688ab"/>
-<path d="M44 54Q51 60 58 53" fill="none" stroke="#8c5b43" stroke-width="2"/><path d="M26 71L69 68L56 90L43 77L29 99" fill="#b34f56"/>
-<path d="M67 82L84 100" stroke="#725440" stroke-width="6"/><rect x="69" y="94" width="23" height="15" rx="3" fill="#a27a4c"/>
-</svg><div><p class="eyebrow">Рута · первая глава</p><h2 id="story-title"></h2><p id="story-text"></p></div></div><div class="story-buttons"><button id="story-skip">Пропустить</button><button id="story-action" class="primary">В путь →</button></div></dialog>
+<img id="story-ruta" class="ruta-portrait" src="${import.meta.env.BASE_URL}assets/ui/v7/ruta-bust.png" alt="Рута" hidden><div class="story-copy"><p class="eyebrow"></p><h2 id="story-title" class="sr-only"></h2><p id="story-text"></p></div><div class="story-buttons"><button id="story-action" class="primary">В путь →</button><button id="story-skip">Пропустить</button></div></div></dialog>
 <dialog id="help-panel" aria-labelledby="help-title"><h2 id="help-title">Проложи дорогу от дома до калитки</h2><p>Выбери плиту → клетку → «Поставить». Поворачивай плиты, чтобы они поместились. Когда дорога готова, нажми «Проверить».</p><button id="help-close">Понятно</button></dialog>
 <dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">Начать главу заново?</h2><p>Все восемь дорог на карте снова исчезнут.</p><div class="settings-actions"><button id="reset-cancel">Оставить дороги</button><button id="reset-confirm">Да, начать заново</button></div></dialog>`;
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -91,7 +85,7 @@ const v6Preview=true;
 const groundPoint=(x:number,y:number)=>{const p=project({x,y},projection);return {x:p.x+groundOffset.x,y:p.y+groundOffset.y};};
 let verticalRadius=13,horizontalRadius=17;
 let radius = 20, origin = {x:0,y:0};
-let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number} | null = null;
+let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number; toggleOnTap: boolean} | null = null;
 let suppressClick = false, deferDock = false, dockFrame = 0;
 // The dock changes under a released pointer. Consume its synthetic click so it
 // cannot activate a different button; the next real gesture starts afresh.
@@ -129,13 +123,16 @@ function updateControls() {
   for(const button of document.querySelectorAll<HTMLButtonElement>('footer button')) button.disabled=false;
   app.classList.toggle('drag-mode',mode==='drag');
   $('selected-drag').setAttribute('aria-label',mode==='drag'?'Перетащить выбранную фигуру':'Выбранная фигура');
-  $('selected-drag').hidden=!selected||(mode!=='drag'&&level.id==='sandbox');
-  $('tray').hidden=!!selected;
-  $('selection-actions').hidden=!selected;
-  $('check').hidden=!!selected;
+  $('selected-drag').hidden=true;$('other').hidden=true;$('left').hidden=true;
+  $('tray').hidden=false;
+  $('selection-actions').hidden=false;
+  $('selection-actions').style.visibility=selected?'visible':'hidden';
+  $('check').hidden=false;$('check').toggleAttribute('disabled',!!selected);
   for (const id of ['left','right']) $(id).toggleAttribute('disabled',!selected);
   $('place').toggleAttribute('disabled',!previewValid());
-  $('return').toggleAttribute('disabled',!selected);
+  $('return').toggleAttribute('disabled',!selected||!layout[selected]);
+  $('return').style.visibility=selected&&layout[selected]?'visible':'hidden';
+  $('place').style.visibility=mode==='select'?'visible':'hidden';
   $('undo').toggleAttribute('disabled',history.length===0);
   $('clear').toggleAttribute('disabled',phase==='walking');
   for(const button of document.querySelectorAll<HTMLButtonElement>('footer button')) if(phase!=='playing') button.disabled=true;
@@ -152,22 +149,28 @@ function drawPieceIcon(button:HTMLElement,p:Level['pieces'][number],orientation=
     if(level.id!=='sandbox'&&p.kind!=='bridge'){const c=hexCenter(h,15);stoneDetail(icon,h,15,c.x,c.y,pieces.indexOf(p),new Set(shape.map(key)),{pieceId:p.id,local:rotate(h,-orientation),turns:orientation});}
   }
   if(p.kind==='bridge') el('text',{x:0,y:-6,'text-anchor':'middle','font-size':15,fill:'#493620'},icon,'≋');
-  if(level.id!=='gate'||selected===p.id)el('circle',{cx:0,cy:0,r:level.id==='gate'?1.6:2.8,fill:'#fff6dc'},icon);
+  if(selected===p.id)el('circle',{cx:0,cy:0,r:level.id==='gate'?1.6:2.8,fill:'#fff6dc'},icon);
+}
+function updateTraySelection(){
+  for(const button of $('tray').querySelectorAll<HTMLElement>('[data-piece]'))button.setAttribute('aria-pressed',String(selected===button.dataset.piece));
 }
 function renderTray() {
-  const tray=$('tray'); tray.replaceChildren();
-  const handle=$('selected-drag');handle.replaceChildren();
-  if(selected){drawPieceIcon(handle,pieceById(selected),turns);const label=document.createElement('span');label.textContent=mode==='drag'?'Тяни отсюда':'Выбрано';handle.append(label);}
-  for (const p of pieces) {
-    const button=document.createElement('button'); button.className='piece'; button.dataset.piece=p.id;
-    button.setAttribute('aria-label',`${p.name}${layout[p.id] ? ', на поле' : ', в наборе'}`);
-    button.setAttribute('aria-pressed',String(selected===p.id));
-    if (layout[p.id]) button.classList.add('placed');
-    drawPieceIcon(button,p);
-    const label=document.createElement('span'); label.textContent=p.name; button.append(label);
-    if(layout[p.id]) {const mark=document.createElement('em'); mark.textContent='✓'; button.append(mark);}
-    tray.append(button);
+  const tray=$('tray');
+  for(const button of tray.querySelectorAll<HTMLElement>('[data-piece]')) if(!pieces.some(p=>p.id===button.dataset.piece))button.remove();
+  for(const p of pieces){
+    let button=Array.from(tray.querySelectorAll<HTMLButtonElement>('[data-piece]')).find(b=>b.dataset.piece===p.id);
+    if(!button){button=document.createElement('button');button.className='piece';button.dataset.piece=p.id;tray.append(button);}
+    button.setAttribute('aria-label',`${p.name}${layout[p.id]?', на поле':', в наборе'}`);
+    button.classList.toggle('placed',!!layout[p.id]);
+    button.style.setProperty('--piece-width',p.shape.length===1?'88px':'130px');
+    const orientation=selected===p.id?turns:layout[p.id]?.turns??0;
+    const signature=`${level.id}:${orientation}:${selected===p.id}:${!!layout[p.id]}`;
+    if(button.dataset.icon!==signature){button.replaceChildren();drawPieceIcon(button,p,orientation);if(layout[p.id]){const mark=document.createElement('em');mark.textContent='✓';button.append(mark);}button.dataset.icon=signature;}
   }
+  updateTraySelection();
+  let note=tray.querySelector<HTMLElement>('.tray-note');
+  if(!note){note=document.createElement('span');note.className='tray-note';note.textContent='Все плиты на поле';tray.append(note);}
+  note.hidden=!pieces.every(p=>layout[p.id]);
 }
 function renderPreview() {
   document.getElementById('placement-preview')?.remove();
@@ -290,7 +293,7 @@ function ownerAt(h: Hex) { return Object.entries(layout).find(([id,p])=>placedCe
 $('tray').addEventListener('click',e=>{
   if(suppressClick || phase!=='playing') return;
   const id=(e.target as Element).closest<HTMLElement>('[data-piece]')?.dataset.piece;
-  if(id) { select(id); render(); }
+  if(id) {if(selected===id){resetSelection();message('Выбор снят. Дорога сохранена.');}else select(id);render();}
 });
 svg.addEventListener('click',e=>{
   if(mode!=='select'||suppressClick||phase!=='playing') return;
@@ -312,10 +315,11 @@ svg.addEventListener('pointermove',e=>{
 });
 function startDrag(e: PointerEvent,id: string) {
   if(phase!=='playing'||mode!=='drag'||!e.isPrimary||e.button!==0||drag) return;
-  // touch-action:none handles scrolling; keep native tap/click synthesis intact.
+  // Tray permits horizontal pans; lifting a piece starts a drag on the board.
+  const toggleOnTap=selected===id&&!!(e.target as Element).closest('#tray');
   if(selected!==id) select(id);
-  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns};
-  app.setPointerCapture(e.pointerId); renderBoard();
+  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns,toggleOnTap};
+  app.setPointerCapture(e.pointerId);updateTraySelection();updateControls();renderBoard();
 }
 $('selected-drag').addEventListener('pointerdown',e=>{if(selected)startDrag(e,selected);});
 $('tray').addEventListener('pointerdown',e=>{
@@ -343,6 +347,7 @@ function finishDrag(e: PointerEvent,cancel: boolean) {
     message('Здесь не помещается. Плита вернулась на прежнее место.');
   }
   anchor=previous.beforeAnchor; turns=previous.beforeTurns;
+  if(!cancel&&!previous.moved&&previous.toggleOnTap){resetSelection();message('Выбор снят. Дорога сохранена.');}
   if(cancel) message('Перетаскивание отменено. Плита сохранена.');
   render();
 }
@@ -400,7 +405,7 @@ $('size').onchange=()=>{
 };
 $('mode').onchange=()=>{
   mode=($('mode') as HTMLSelectElement).value;if(savedSession)savedSession.mode=mode==='drag'?'drag':'select';resetSelection();
-  $('hint').textContent=mode==='select'?'Выбери плиту → клетку → «Поставить»':'Тяни за плиту · на телефоне цель выше пальца';
+  $('hint').textContent=mode==='select'?'Выбери плиту → клетку → «Поставить»':'Листай набор вбок · тяни плиту вверх на поле';
   message(mode==='select'?'Выбери плиту в наборе или на поле.':'Перетащи плиту на поле. Отпусти, чтобы поставить.');render();
 };
 if(document.fullscreenEnabled) {
@@ -435,16 +440,24 @@ function bridgeGuide(parent:Element){
  for(let i=0;i<7;i++)el('line',{x1:54+i*16,x2:54+i*16,y1:27,y2:45,stroke:'#795332'},diagram);
 }
 function dialogPages(title:string,pages:Dialogue[],finish:()=>void,lastLabel:string){
+ pages=pages.flatMap(page=>{
+  if(page.text.length<=170||/приглашение|Хранитель/.test(page.speaker))return [page];
+  const chunks:string[]=[];let chunk='';
+  for(const sentence of page.text.match(/[^.!?…]+[.!?…]*\s*/g)??[page.text]){
+   if(chunk&&chunk.length+sentence.length>170){chunks.push(chunk.trim());chunk='';}chunk+=sentence;
+  }
+  if(chunk)chunks.push(chunk.trim());return chunks.map(text=>({speaker:page.speaker,text}));
+ });
  let index=0;
- document.querySelector('svg.ruta-portrait')!.setAttribute('hidden','');
- let portrait=document.getElementById('story-ruta') as HTMLImageElement|null;
- if(!portrait){portrait=document.createElement('img');portrait.id='story-ruta';portrait.className='ruta-portrait';portrait.alt='Рута';portrait.src=artUrl('ruta-idle');document.querySelector('.story-layout')!.prepend(portrait);}
- portrait.hidden=false;
+ const portrait=$('story-ruta') as HTMLImageElement;
+ story.classList.toggle('reading',screen!=='game');
  const draw=()=>{
   document.getElementById('bridge-guide')?.remove();
   if(pages[index].speaker==='Мост')bridgeGuide($('story-text').parentElement!);
   $('story-title').textContent=title;
-  document.querySelector('#story .eyebrow')!.textContent=`${pages[index].speaker} · ${index+1}/${pages.length}`;
+  document.querySelector('#story .eyebrow')!.textContent=pages[index].speaker;
+  portrait.hidden=pages[index].speaker!=='Рута';story.classList.toggle('has-portrait',!portrait.hidden);
+  story.classList.toggle('letter',/приглашение|Хранитель/.test(pages[index].speaker));
   $('story-text').textContent=pages[index].text;
   $('story-action').textContent=index===pages.length-1?lastLabel:'Дальше →';
  };
@@ -476,6 +489,7 @@ function finishVictory(){if(firstVictory)showStory(true);else{message('Доро�
 story.addEventListener('cancel',e=>{e.preventDefault();$('story-skip').click();});
 function enterLevel(next:Level,resume:Session|null=null) {
   if(!resume&&savedSession?.levelId===next.id&&savedSession.cols===next.cols&&savedSession.rows===next.rows)resume=savedSession;
+  app.classList.remove('menu-screen');($('map-extra') as HTMLDialogElement).close();
   $('main-menu').hidden=true;
   if(next.id!=='sandbox'&&!available(next.id,completed))return;
   cancelAnimationFrame(frame);resumeJourney=null;screen='game';phase=next.id==='sandbox'||introSeen.includes(next.id)?'playing':'intro';
@@ -509,6 +523,7 @@ function mapGeometry(){
  });
 }
 function showMap(){
+ app.classList.remove('menu-screen');($('map-extra') as HTMLDialogElement).close();
  $('main-menu').hidden=true;
  if(screen==='game'){if(phase==='won'){savedSession=null;persist();}else remember();}
  $('scene-event').hidden=true;
@@ -524,11 +539,11 @@ function showMap(){
   const node=document.createElement('div');node.className='map-node';node.dataset.mapNode=l.id;
   const button=document.createElement('button');button.dataset.level=l.id;button.className='level-card';button.disabled=!unlocked;
   button.setAttribute('aria-label',`${l.name}${done?', пройдено, можно переиграть':unlocked?', открыто':', пока закрыто'}`);
-  const symbol=document.createElement('span');symbol.className='place-symbol';symbol.textContent=['⌂','♧','♜','♨','≋','✣','✉','♠'][index];
+  const symbol=document.createElement('span');symbol.className='place-symbol';const image=document.createElement('img');image.src=`${import.meta.env.BASE_URL}assets/chapter-1/v6/${['01-courtyard','02-orchard','03-well','04-bakery','05-stream','06-mill','07-post','08-edge'][index]}.png`;image.alt='';symbol.append(image);
   const title=document.createElement('strong');title.textContent=`${index+1}. ${l.name}`;
   const state=document.createElement('span');state.className='map-state';state.textContent=done?'✓ Пройден':unlocked?'▶ В путь':'🔒 Закрыто';
   button.append(symbol,title,state);button.onclick=()=>enterLevel(l);node.append(button);
-  if(unlocked){const book=document.createElement('button');book.className='map-book';book.textContent='▤';book.setAttribute('aria-label',`Реплики: ${data.title}`);book.onclick=()=>readStory(l.id);node.append(book);}
+  if(unlocked){const book=document.createElement('button');book.className='map-book';book.innerHTML='<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5Q6 2 2 5V20Q7 17 12 20Q17 17 22 20V5Q18 2 12 5V20" fill="none" stroke="currentColor" stroke-width="2"/></svg>';book.setAttribute('aria-label',`Реплики: ${data.title}`);book.onclick=()=>readStory(l.id);node.append(book);}
   places.append(node);
  }
  mapGeometry();
@@ -536,13 +551,15 @@ function showMap(){
  $('reset-open').toggleAttribute('disabled',completed.length===0);
 }
 new ResizeObserver(()=>{if(screen==='map')mapGeometry();}).observe($('chapter-map'));
-$('chapter-ending').onclick=showEnding;
-$('letter-open').onclick=()=>dialogPages('Старое приглашение',[{speaker:'Хранитель сада',text:invitation.text}],()=>{},'Закрыть');
+$('chapter-ending').onclick=()=>{($('map-extra') as HTMLDialogElement).close();showEnding();};
+$('letter-open').onclick=()=>{($('map-extra') as HTMLDialogElement).close();dialogPages('Старое приглашение',[{speaker:'Хранитель сада',text:invitation.text}],()=>{},'Закрыть');};
 $('story-replay').onclick=()=>{settings.close();readStory(level.id);};
 $('sandbox-open').onclick=()=>enterLevel(savedSession?.levelId==='sandbox'?sandbox(savedSession.cols,savedSession.rows):sandbox(...(($('size') as HTMLSelectElement).value.split(',').map(Number) as [number,number])));
 $('map-return').onclick=showMap;
 const resetDialog=$('reset-dialog') as HTMLDialogElement;
-$('reset-open').onclick=()=>resetDialog.showModal();
+$('map-more').onclick=()=>($('map-extra') as HTMLDialogElement).showModal();
+$('map-extra-close').onclick=()=>($('map-extra') as HTMLDialogElement).close();
+$('reset-open').onclick=()=>{($('map-extra') as HTMLDialogElement).close();resetDialog.showModal();};
 $('reset-cancel').onclick=()=>resetDialog.close();
 $('reset-confirm').onclick=()=>{completed=[];introSeen=[];savedSession=null;persist();resetDialog.close();showMap();};
 function icon(button:HTMLElement,path:string){
@@ -555,8 +572,8 @@ function sceneChrome(illustrated:boolean){
   (illustrated?document.querySelector('header')!:$('game-controls')).append(settingsButton);
   $('check').querySelector('span')!.textContent=illustrated?'Проверить':'Проверить дорогу';
 }
-icon($('scene-back'),'M 15 5 L 7 12 L 15 19');
-icon($('settings-open'),'M 9 3 H 15 L 16 6 L 19 7 L 22 11 L 20 14 L 19 17 L 15 18 L 14 21 H 10 L 9 18 L 5 17 L 4 14 L 2 11 L 5 7 L 8 6 Z M 15 12 A 3 3 0 1 1 9 12 A 3 3 0 1 1 15 12');
+icon($('scene-back'),'M 3 5 L 9 3 L 15 5 L 21 3 V 19 L 15 21 L 9 19 L 3 21 Z M 9 3 V 19 M 15 5 V 21');
+icon($('settings-open'),'M 4 5 H 20 M 4 12 H 20 M 4 19 H 20');
 icon($('undo'),'M 8 5 L 3 10 L 8 15 M 3 10 H 15 A 5 5 0 0 1 15 20');
 icon($('left'),'M 6 4 L 2 9 L 8 10 M 3 9 A 8 8 0 1 1 5 19');
 icon($('right'),'M 18 4 L 22 9 L 16 10 M 21 9 A 8 8 0 1 0 19 19');
@@ -571,12 +588,14 @@ $('help-close').onclick=()=>($('help-panel') as HTMLDialogElement).close();
 function showCompletion(){
  $('completion-text').textContent=level.id==='forest'?'Глава «За калитку» пройдена! Следующее приключение готовится.':level.outro;
  $('next-level').hidden=level.id==='forest';
+ const next=levels[levels.indexOf(level)+1];$('next-level').textContent=level.id==='gate'?'К саду Кролика →':next?`Дальше: ${next.name} →`:'На карту';
  ($('completion-panel') as HTMLDialogElement).showModal();
 }
 $('completion-map').onclick=()=>{($('completion-panel') as HTMLDialogElement).close();if(level.id==='forest')showEnding();else showMap();};
 $('next-level').onclick=()=>{($('completion-panel') as HTMLDialogElement).close();const next=levels[levels.indexOf(level)+1];if(next)enterLevel(next);};
 ($('completion-panel') as HTMLDialogElement).addEventListener('cancel',e=>{e.preventDefault();$('completion-map').click();});
 function showMenu(){
+ app.classList.add('menu-screen');
  app.classList.toggle('reduced-motion',reducedMotion);
  screen='menu';$('chapter-map').hidden=true;$('field').hidden=true;$('game-controls').hidden=true;$('main-menu').hidden=false;
  $('continue-game').textContent=savedSession||completed.length?'Продолжить':'Начать приключение';
