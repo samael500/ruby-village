@@ -8,6 +8,7 @@ URL=sys.argv[1] if len(sys.argv)>1 else 'http://127.0.0.1:5173/ruby-village/'
 LEVELS=json.loads(subprocess.check_output(['node','--experimental-strip-types','--input-type=module','-e',"import {levels} from './src/levels.ts';console.log(JSON.stringify(levels))"],cwd=ROOT,text=True))
 KEY='ruby-village:chapter-1:v1';SHOTS=ROOT/'docs/screenshots/ui-v7';SHOTS.mkdir(parents=True,exist_ok=True)
 def skip(page):
+ if page.locator("#prologue-panel").is_visible():page.locator("#prologue-skip").click()
  if page.locator('#story').is_visible():page.locator('#story-skip').click()
 def place(page,id,v,touch=False):
  page.locator(f'[data-piece="{id}"]').click()
