@@ -35,3 +35,7 @@ Historical `road_v5_browser.py`, `art_fixture_browser.py`, `orientation_browser.
 ## Author review
 
 Manual review under code-review-core criteria; independent runner/reviewer not used. Fixed: mouse hover no longer replaces the board DOM before a click; modal/orientation pause uses a shared clock; completed level sessions clear when returning to the map so Continue selects the next unfinished place; standalone preferences persist even before the first level. Reviewed save identity, placement validation, affine/inverse transforms and unchanged puzzle rules. Publication still follows user merge into main.
+
+## Review fixes
+
+Both P2 findings from the repeated review are fixed: map entry resumes the matching unfinished session, and sandbox entry synchronizes the size control with the restored board. The browser regression now checks placed owner and persisted placement after map→same level, restored select value11,7, sandbox reentry77 cells, and an actual switch to9×6. Explicit confirmed restart still clears the layout.

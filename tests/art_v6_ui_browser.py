@@ -20,6 +20,8 @@ with sync_playwright() as p:
  expect(page.locator('#continue-game')).to_have_text('Начать приключение');page.screenshot(path=str(SHOTS/'menu-844x390.png'))
  page.locator('#continue-game').click();skip(page)
  place(page,'gate-1',LEVELS[0]['solution']['gate-1'],True)
+ page.locator('#scene-back').click();page.locator('[data-level="gate"]').click();assert page.locator('[data-owner="gate-1"]').count()==1
+ assert 'gate-1' in json.loads(page.evaluate('(k)=>localStorage.getItem(k)',KEY))['session']['layout']
  page.locator('#settings-open').click();page.screenshot(path=str(SHOTS/'pause-844x390.png'));page.keyboard.press('Escape');assert page.locator('[data-owner="gate-1"]').count()==1
  page.reload();expect(page.locator('#continue-game')).to_have_text('Продолжить');page.locator('#continue-game').click();assert page.locator('[data-owner="gate-1"]').count()==1
  page.set_viewport_size({'width':390,'height':844});expect(page.locator('#orientation-screen')).to_be_visible();page.set_viewport_size({'width':844,'height':390});assert page.locator('[data-owner="gate-1"]').count()==1
@@ -37,6 +39,9 @@ with sync_playwright() as p:
  # Real mouse drag, undo and persisted control mode.
  poly=page.locator('[data-cell="2,2"] > polygon').bounding_box();tray=page.locator('[data-piece="one-a"]').bounding_box();page.mouse.move(tray['x']+tray['width']/2,tray['y']+tray['height']/2);page.mouse.down();page.mouse.move(poly['x']+poly['width']/2,poly['y']+poly['height']/2,steps=8);page.mouse.up();assert page.locator('[data-owner="one-a"]').count()==1
  page.locator('#undo').click();assert page.locator('[data-owner="one-a"]').count()==0;page.reload();page.locator('#continue-game').click();assert page.locator('#mode').input_value()=='drag';assert page.locator('[data-cell]').count()==77
+ assert page.locator('#size').input_value()=='11,7'
+ page.locator('#settings-open').click();page.locator('#pause-map').click();page.locator('#sandbox-open').click();assert page.locator('[data-cell]').count()==77;assert page.locator('#size').input_value()=='11,7'
+ page.locator('#settings-open').click();page.locator('#pause-settings').click();page.locator('#size').select_option('9,6');page.locator('#settings-close').click();assert page.locator('[data-cell]').count()==54
  # Modal walking pause with overlapping portrait blocker.
  page.evaluate('(k)=>localStorage.setItem(k,JSON.stringify({version:2,completed:["gate"],introSeen:["garden"]}))',KEY);page.reload();page.locator('#choose-level').click();page.locator('[data-level="garden"]').click();page.locator('#settings-open').click();page.locator('#pause-settings').click();page.locator('#mode').select_option('select');page.locator('#settings-close').click();page.emulate_media(reduced_motion='no-preference')
  for id,v in LEVELS[1]['solution'].items():place(page,id,v)

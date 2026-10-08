@@ -475,6 +475,7 @@ function showEnding(){
 function finishVictory(){if(firstVictory)showStory(true);else{message('Дорога снова готова!');dialogPages(level.name,[{speaker:'Рута',text:'Получилось! Дорога снова соединена.'}],showCompletion,'Дальше →');}}
 story.addEventListener('cancel',e=>{e.preventDefault();$('story-skip').click();});
 function enterLevel(next:Level,resume:Session|null=null) {
+  if(!resume&&savedSession?.levelId===next.id&&savedSession.cols===next.cols&&savedSession.rows===next.rows)resume=savedSession;
   $('main-menu').hidden=true;
   if(next.id!=='sandbox'&&!available(next.id,completed))return;
   cancelAnimationFrame(frame);resumeJourney=null;screen='game';phase=next.id==='sandbox'||introSeen.includes(next.id)?'playing':'intro';
@@ -486,6 +487,7 @@ function enterLevel(next:Level,resume:Session|null=null) {
   if(level.id!=='sandbox'){const note=document.createElement('small');note.textContent=`За калитку · ${levels.indexOf(level)+1}/8`;note.dataset.prototype='';document.querySelector('h1')!.append(note);}
   $('chapter-map').hidden=true;$('field').hidden=false;$('game-controls').hidden=false;
   $('size-setting').hidden=level.id!=='sandbox';
+  if(level.id==='sandbox')($('size') as HTMLSelectElement).value=`${cols},${rows}`;
   $('clear').textContent=level.id==='sandbox'?'Очистить поле':'Начать уровень заново';
   document.querySelector('.settings-note')!.textContent=level.id==='sandbox'?'Смена размера очищает поле. Поворот телефона сохраняет плиты.':'Перезапуск очищает плиты этого уровня. Дороги на карте сохраняются.';
   svg.setAttribute('aria-label',`${level.name}: ${level.startName} → ${level.goalName}`);
@@ -537,7 +539,7 @@ new ResizeObserver(()=>{if(screen==='map')mapGeometry();}).observe($('chapter-ma
 $('chapter-ending').onclick=showEnding;
 $('letter-open').onclick=()=>dialogPages('Старое приглашение',[{speaker:'Хранитель сада',text:invitation.text}],()=>{},'Закрыть');
 $('story-replay').onclick=()=>{settings.close();readStory(level.id);};
-$('sandbox-open').onclick=()=>enterLevel(sandbox(...(($('size') as HTMLSelectElement).value.split(',').map(Number) as [number,number])));
+$('sandbox-open').onclick=()=>enterLevel(savedSession?.levelId==='sandbox'?sandbox(savedSession.cols,savedSession.rows):sandbox(...(($('size') as HTMLSelectElement).value.split(',').map(Number) as [number,number])));
 $('map-return').onclick=showMap;
 const resetDialog=$('reset-dialog') as HTMLDialogElement;
 $('reset-open').onclick=()=>resetDialog.showModal();
