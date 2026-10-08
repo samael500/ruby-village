@@ -1,9 +1,9 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {sceneLayout,rutaSilhouette,sourceAnchors} from '../src/scene-layout.ts';
-import {levels} from '../src/levels.ts';
+
 import {boardCells,hexCenter,pixelHex,key,gridEdges,neighbors,instanceEdges,rotate} from '../src/hex.ts';
-const level=levels[0],close=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
+const level={start:{q:0,r:1},goal:{q:4,r:4}},close=(a:number,b:number)=>assert.ok(Math.abs(a-b)<1e-7,`${a} != ${b}`);
 test('v4: единый fit изображения, клеток и ног Руты в обеих ориентациях',()=>{
  for(const [w,h,portrait] of [[1268,550,false],[832,260,false],[378,652,true],[728,238,false]] as const){
   const s=sceneLayout(w,h,7,5,level.start,level.goal,portrait);
