@@ -1,159 +1,192 @@
-:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#354331;background:#eae6d7;font-synthesis:none}
-*{box-sizing:border-box}[hidden]{display:none!important}
+:root{font-family:system-ui,-apple-system,"Segoe UI",sans-serif;color:#553d28;background:#243b2a;font-synthesis:none;--paper:url('/assets/ui/v7/paper.png');--wood:url('/assets/ui/v7/wood.png');--linen:url('/assets/ui/v7/linen.png')}
+
+*{box-sizing:border-box}
+[hidden]{display:none!important}
 html,body{margin:0;width:100%;height:100%;overflow:hidden;overscroll-behavior:none}
 body{user-select:none;-webkit-user-select:none;-webkit-touch-callout:none}
-button,select{font:inherit;color:inherit;min-height:48px;min-width:48px;border:1px solid #c8c4b2;border-radius:10px;background:#fffaf0}
-button{cursor:pointer;touch-action:none}button:disabled{opacity:.42;cursor:default}
-button:focus-visible,select:focus-visible,[data-cell]:focus-visible{outline:3px solid #634b91;outline-offset:-3px}
-button:active:not(:disabled){background:#e8dcef}
-#app{height:100vh;height:100dvh;display:flex;flex-direction:column;padding:max(6px,env(safe-area-inset-top)) max(8px,env(safe-area-inset-right)) max(6px,env(safe-area-inset-bottom)) max(8px,env(safe-area-inset-left));gap:6px}
-header{display:flex;align-items:center;justify-content:space-between;gap:16px;flex:0 0 28px;min-height:0}
-.brand{display:flex;align-items:center;gap:7px;flex-shrink:0}.ruby{color:#a74460;font-size:22px}
-h1{font-family:Georgia,serif;font-size:19px;font-weight:600;margin:0;line-height:1.1}
+
+button,select{font:inherit;color:inherit;min-height:48px;min-width:48px;border:2px solid #b89763;border-radius:9px;background:#f5e5c4 var(--paper);background-size:cover;box-shadow:0 2px 3px #35271630}
+button{cursor:pointer;touch-action:none}
+button:disabled{opacity:.45;cursor:default}
+button:focus-visible,select:focus-visible,[data-cell]:focus-visible{outline:3px solid #785291;outline-offset:-3px}
+button:active:not(:disabled){filter:brightness(.94)}
+
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
-#status{font-size:12px;line-height:14px;text-align:right;color:#515e45;max-width:650px}
-.portrait{display:none;font-size:12px;text-align:center;padding:3px;background:#fff2cd;border-radius:8px}
-#field{flex:1;min-height:0;position:relative;border:1px solid #b1bea0;border-radius:16px;background:#d0d9bb;overflow:hidden}
-#board{display:block;width:100%;height:100%;touch-action:none}
-.cell{stroke:#738869;stroke-width:1.2;stroke-linejoin:round}.cell.path{stroke:#fff9b2;stroke-width:4;fill:#8979ad}
-.landmark{text-anchor:middle;pointer-events:none;fill:#263723;paint-order:stroke;stroke:#efeccd;stroke-width:2.5px;font-family:system-ui;font-weight:800}.landmark.label{stroke-width:2px}
-.preview{stroke-width:2.5;stroke-linejoin:round}.preview.valid{fill:#dec5f8;fill-opacity:.76;stroke:#593579}.preview.invalid{fill:#f2a2a2;fill-opacity:.7;stroke:#9b293b;stroke-dasharray:5 3}
-footer{flex:0 0 64px;display:flex;align-items:stretch;justify-content:center;gap:6px;min-height:0}
-#tray{display:flex;gap:5px;flex:1;max-width:620px;min-width:0}
-footer button{display:flex;align-items:center;flex-direction:column;justify-content:center;gap:2px;padding:3px 8px;font-size:11px;line-height:1.15}
-footer b{font-size:25px;font-weight:400;line-height:26px}
-.piece{flex:1;min-width:48px;position:relative}.piece svg{width:100%;max-width:72px;height:40px;overflow:visible}.piece span{font-size:10px;white-space:nowrap}
-.piece[aria-pressed=true]{outline:3px solid #79529c;outline-offset:-3px;background:#efe1fa}.piece.placed{background:#e3e5d7}.piece.placed svg{opacity:.5}.piece em{position:absolute;top:3px;right:4px;font-size:12px;font-style:normal}
-#selection-actions{display:grid;grid-template-columns:repeat(3,minmax(0,1fr)) 1.3fr 1fr;gap:6px;flex:1;max-width:740px;min-width:0}
-.primary{background:#775292;color:#fff8fc;border-color:#674681}.check{background:#dce6ca;border-color:#a8b98e;max-width:110px}
-#undo,#settings-open{width:72px;flex-shrink:0}
-dialog{width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:16px;border:1px solid #b5b49f;border-radius:18px;background:#fffaf0;color:#354331;box-shadow:0 12px 70px #26372340;overscroll-behavior:contain}
-dialog::backdrop{background:#28312366}.dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}.dialog-heading h2{font:600 21px Georgia,serif;margin:0}.dialog-heading button{font-size:22px}
-.settings{display:grid;grid-template-columns:1fr 1.3fr;gap:12px}.settings label{display:flex;flex-direction:column;gap:6px;font-size:13px}.settings select{padding:0 8px;width:100%;min-width:0;font-size:13px}
-#metric,#hint,.settings-note{font-size:12px;line-height:1.4;margin:10px 0}.settings-note{color:#6a715e}.settings-actions{display:flex;gap:10px}.settings-actions button{flex:1;padding:6px 12px}
-@media(min-width:1100px) and (min-height:600px){#app{padding:10px 16px;gap:8px}header{flex-basis:32px}h1{font-size:22px}footer{flex-basis:72px}.piece svg{height:46px}.piece span{font-size:11px}footer button{font-size:12px}#undo,#settings-open{width:88px}}
-@media(max-width:800px){footer{gap:4px}#tray,#selection-actions{gap:4px}footer button{padding:3px 5px}#undo,#settings-open{width:62px}.check{max-width:84px}}
 
-/* Chapter map occupies the same fixed viewport as a puzzle. */
-#chapter-map{flex:1;min-height:0;display:flex;flex-direction:column;gap:8px}
-.map-intro{display:flex;align-items:center;justify-content:center;gap:8px;font-size:14px}.map-intro p{margin:0}.ruta-small{color:#b34f56;font-size:23px}
-.map-landscape{position:relative;flex:1;min-height:0;background:#d0d9bb;border:1px solid #b1bea0;border-radius:20px;display:flex;align-items:center;padding:12px}
-#map-roads{position:absolute;left:0;top:30%;width:100%;height:40%;pointer-events:none}
-#map-places{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));align-items:center;gap:12px;width:100%;position:relative}
-.level-card,.map-home{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:6px;text-align:center;min-width:0;padding:12px 4px}
-.level-card{background:#fff5df;border:2px solid #aaab88;box-shadow:0 4px 0 #899371;min-height:122px}.level-card:disabled{opacity:1;background:#dce0cf;color:#747c67;border-style:dashed;box-shadow:none}.map-home{color:#604e40}
-.place-symbol{font-size:44px;line-height:1;color:#96606b}.map-home .place-symbol{font-size:58px}.map-state{font-size:12px}.map-actions{display:flex;align-items:center;gap:8px;justify-content:space-between}.map-actions button{padding:6px 14px;font-size:13px}#save-status{font-size:11px;text-align:center;max-width:240px}
-.story-layout{display:flex;align-items:center;gap:20px}.ruta-portrait{width:100px;height:110px;flex-shrink:0}.eyebrow{font-size:11px;color:#7d715b}.story-layout h2{font:600 24px Georgia,serif;margin:8px 0}.story-layout p{line-height:1.5}#story-action{display:block;min-width:160px;padding:8px 24px;margin:12px auto 0;font-weight:600}#reset-dialog h2{font:600 22px Georgia,serif}
-.mill-wheel.turning{animation:wheel-turn 3s linear infinite;transform-box:fill-box;transform-origin:center}@keyframes wheel-turn{to{transform:rotate(360deg)}}
-@media(prefers-reduced-motion:reduce){.mill-wheel.turning{animation:none}}
-@media(max-height:420px){.map-intro{font-size:12px}.level-card{min-height:104px;padding:6px 2px}.place-symbol{font-size:36px}.map-landscape{padding:8px}.story-layout{gap:12px}.story-layout h2{font-size:21px}.story-layout p{font-size:14px}.map-actions button{font-size:12px}}
+#app{position:relative;height:100vh;height:100dvh;display:flex;flex-direction:column;padding:max(4px,env(safe-area-inset-top)) max(6px,env(safe-area-inset-right)) max(4px,env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left));background:#243b2a var(--linen);background-blend-mode:multiply}
 
-
-.drag-mode #selection-actions{grid-template-columns:repeat(4,minmax(0,1fr)) 1.3fr 1fr}#selected-drag svg{width:100%;max-width:66px;height:35px}#selected-drag{background:#eee2f4;border-color:#ab90bf;cursor:grab}#selected-drag:active{cursor:grabbing}
-
-#story-ruta{object-fit:contain}
-
-/* Screen v2: one illustrated court above a shared shallow wooden tray. */
-body:has(.illustrated-level){background:#283f2a}
-.illustrated-level{padding:max(4px,env(safe-area-inset-top)) max(6px,env(safe-area-inset-right)) max(4px,env(safe-area-inset-bottom)) max(6px,env(safe-area-inset-left))!important;gap:0!important}
-.illustrated-level header{flex:0 0 52px;flex-direction:row;align-items:center;justify-content:flex-start;gap:8px;color:#f5e1b7;padding:2px 6px;background:#314b2e}
-.illustrated-level header .ruby,.illustrated-level .portrait{display:none}
-.illustrated-level h1{background:#ebd3a1;color:#58391f;padding:7px 15px;border-radius:5px;box-shadow:0 2px 0 #8f653c;font-size:21px}
-.illustrated-level header #status{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
-.illustrated-level header button{border-radius:50%;background:linear-gradient(#c89250,#9a632f);color:#fff1d1;border:2px solid #674323;box-shadow:inset 0 0 0 2px #d9a55f;flex-shrink:0;width:48px;height:48px;padding:0}
+header{display:flex;align-items:center;gap:8px;color:#f4dfb5;min-height:48px;flex:0 0 48px;padding:0 4px}
+.brand{min-width:0;max-width:42%}
+.ruby{display:none}
+h1{font:600 20px Georgia,serif;margin:0;line-height:1.1}
+h1 small{display:block;font:11px system-ui;margin-top:3px}
+.illustrated-level header{position:absolute;z-index:5;top:max(8px,env(safe-area-inset-top));left:max(10px,env(safe-area-inset-left));right:max(10px,env(safe-area-inset-right));pointer-events:none}
+.illustrated-level header>*{pointer-events:auto}
+.illustrated-level h1{background:#f5e5c4 var(--paper);color:#553d28;padding:8px 14px;border:1px solid #bb975e;border-radius:6px;box-shadow:0 2px 5px #241a1b55}
+.illustrated-level header button{border-radius:50%;width:48px;height:48px;flex:0 0 48px;padding:0;display:grid;place-items:center;color:#553d28}
 .illustrated-level #scene-help{margin-left:auto;font:bold 23px Georgia,serif}
-.illustrated-level header #settings-open span{display:none}.illustrated-level header #settings-open{display:grid;place-items:center}
-.illustrated-level #field{border:0;border-radius:0;background:#869650}
-.illustrated-level .meadow-cell{fill:#fae8b0;fill-opacity:.08;stroke:#75683e;stroke-opacity:.4;stroke-width:1}
+header #settings-open span{display:none}
+#scene-event{position:absolute;top:60px;left:8px;width:34px;height:34px;pointer-events:none}
+#status{font-size:12px;margin-left:auto;max-width:45%}
+.illustrated-level #status{position:absolute;clip-path:inset(50%);width:1px;height:1px;overflow:hidden}
+.illustrated-level #status.feedback{clip-path:none;left:50%;top:60px;transform:translateX(-50%);width:min(85%,440px);max-width:none;height:auto;background:#fff0c9 var(--paper);padding:8px 12px;border:1px solid #96733d;border-radius:8px;text-align:center;color:#503a29;pointer-events:none}
+
+#field{flex:1;min-height:0;position:relative;overflow:hidden;background:#344d30}
+#field:before,#field:after{content:'';position:absolute;z-index:1;bottom:0;width:70px;height:70px;background:url('/assets/ui/v7/leaves.png') bottom left/contain no-repeat;pointer-events:none;opacity:.65}
+#field:before{left:0}
+#field:after{right:0;transform:scaleX(-1)}
+#board{display:block;width:100%;height:100%;touch-action:none}
+#chapter-background{filter:drop-shadow(0 2px 6px #14231988)}
+.cell{stroke:#738869;stroke-width:1.2;stroke-linejoin:round}
+.cell.path{stroke:#fff9b2;stroke-width:4;fill:#8979ad}
+.landmark{text-anchor:middle;pointer-events:none;fill:#263723;paint-order:stroke;stroke:#efeccd;stroke-width:2.5px;font-family:system-ui;font-weight:800}
+.landmark.label{stroke-width:2px}
+.preview{stroke-width:2.5;stroke-linejoin:round}
+.preview.valid{fill:#dec5f8;fill-opacity:.76;stroke:#593579}
+.preview.invalid{fill:#f2a2a2;fill-opacity:.7;stroke:#9b293b;stroke-dasharray:5 3}
+.illustrated-level .meadow-cell{fill:#f1e7bc;fill-opacity:.1;stroke:none}
 .illustrated-level .flagstone{stroke:none}
 .illustrated-level .cell.path{stroke:#fff0a3;stroke-width:3;stroke-opacity:1}
-.illustrated-level footer{flex:0 0 110px;padding:10px 18px;gap:10px;border:5px solid #744522;border-top-color:#dca664;border-bottom-color:#57391f;border-radius:0;background:repeating-linear-gradient(3deg,transparent 0 17px,#5b301417 18px 19px,transparent 20px 37px),linear-gradient(#ba803f,#9b642f);box-shadow:inset 0 3px 9px #512e2266}
-.illustrated-level #tray{max-width:none;justify-content:flex-start;gap:14px}
-.illustrated-level .piece{flex:0 1 140px;background:transparent;border:0;border-radius:6px;box-shadow:none;padding:4px;min-width:48px}
-.illustrated-level .piece span,.illustrated-level .piece.placed{display:none}
-.illustrated-level .piece svg{max-width:125px;height:70px;filter:drop-shadow(0 1px 1px #49234b99)}
-.illustrated-level footer button{background:#edcf94;border-color:#835b32;color:#53351e;font-size:12px}
-.illustrated-level footer .piece{background:transparent}
-.illustrated-level footer .check,.illustrated-level footer .primary{background:linear-gradient(#729e35,#466f25);border:2px solid #315821;color:#fff9dc;max-width:160px;font-size:18px;font-weight:700}
-.illustrated-level footer .check b{display:none}
-.illustrated-level #selection-actions{max-width:none;grid-template-columns:repeat(4,minmax(0,1fr)) 1.3fr 1fr}
-.illustrated-level #selected-drag{background:#825235;border:2px solid #f2da98;color:#fff0cd}
-.illustrated-level #undo{width:64px}
-@media(max-height:500px){.illustrated-level header{flex-basis:48px}.illustrated-level h1{font-size:18px;padding:5px 12px}.illustrated-level footer{flex-basis:70px;padding:3px 8px;border-width:3px;gap:6px}.illustrated-level .piece svg{height:48px;max-width:94px}.illustrated-level .piece{flex-basis:100px}.illustrated-level footer .check{font-size:16px}.illustrated-level #tray{gap:6px}}
+.illustrated-level [data-terrain=water] .meadow-cell{fill:#80bdcf;fill-opacity:.65}
+.illustrated-level [data-terrain=house] .cell,.illustrated-level [data-terrain=tree] .cell,.illustrated-level [data-terrain=flower] .cell{fill:none;stroke:none}
+.illustrated-level [data-terrain=house],.illustrated-level [data-terrain=tree],.illustrated-level [data-terrain=flower]{outline:none}
 
-.illustrated-level header #settings-open{width:48px;height:48px;min-width:48px}
-.illustrated-level [data-terrain=house] .cell{fill:none;stroke:none}
-.illustrated-level header #status.feedback{pointer-events:none;position:absolute;z-index:3;clip-path:none;left:50%;top:60px;transform:translateX(-50%);width:min(85%,440px);height:auto;background:#fff0c9;color:#503a29;padding:8px 12px;border:1px solid #96733d;border-radius:8px;text-align:center;font-size:13px;line-height:1.4}
+footer{flex:0 0 96px;display:flex;align-items:center;gap:8px;min-height:0;padding:8px 12px;border:4px solid #af8550;background:#dab982 var(--wood);box-shadow:0 -3px 8px #30201955}
+footer button{display:flex;align-items:center;flex-direction:column;justify-content:center;gap:2px;padding:3px 7px;font-size:12px;line-height:1.15}
+footer b{font-size:25px;font-weight:400;line-height:26px}
+#tray{display:flex;align-items:center;gap:8px;flex:1;min-width:0;height:100%;overflow-x:auto;overflow-y:hidden;touch-action:pan-x;scrollbar-width:thin;padding:3px}
+.piece{touch-action:pan-x;flex:0 0 var(--piece-width);height:100%;position:relative;border:2px solid transparent;background:#f2e4cd var(--linen);padding:5px;border-radius:9px}
+.drag-mode .piece{touch-action:none}
+.piece svg{width:100%;height:58px;overflow:visible;filter:drop-shadow(0 2px 1px #49234b70)}
+.piece[aria-pressed=true]{border-color:#fff4cf;outline:2px solid #805698;outline-offset:-4px;transform:translateY(-2px)}
+.piece.placed svg{opacity:.45}
+.piece em{position:absolute;top:3px;right:5px;font-size:13px;font-style:normal}
+.tray-note{font-size:12px;white-space:nowrap}
+#selection-actions{display:flex;gap:6px;flex:0 0 auto;height:100%;align-items:center}
+#selection-actions button{width:64px;min-height:48px}
+.primary,.check{background:#648644 var(--linen);background-blend-mode:multiply;border-color:#3c632b;color:#fffbea;font-weight:600}
+.check{width:120px;flex:0 0 120px;min-height:56px;font-size:16px}
+#undo,#settings-open{width:56px;flex-shrink:0}
+#undo span{font-size:11px}
 
-/* Keep the portrait court and its controls together instead of stretching grass. */
+dialog{position:fixed;width:min(560px,calc(100vw - 24px));max-height:calc(100dvh - 24px);padding:24px;border:3px solid #ba975e;border-radius:16px;background:#faedcd var(--paper);background-size:cover;color:#573d28;box-shadow:0 8px 32px #17231777;overscroll-behavior:contain;overflow:auto}
+dialog::backdrop{background:#20302570}
+dialog:before,.menu-paper:before{content:'';position:absolute;top:0;left:0;width:60px;height:60px;background:url('/assets/ui/v7/leaves.png') top left/contain no-repeat;pointer-events:none;opacity:.9}
+.dialog-heading{display:flex;align-items:center;justify-content:space-between;gap:12px;margin-bottom:12px}
+.dialog-heading h2,dialog h2{font:600 24px Georgia,serif;margin:0 0 12px}
+.dialog-heading h2{margin:0}
+.dialog-heading button{font-size:22px}
+.settings{display:grid;grid-template-columns:1fr 1.3fr;gap:12px}
+.settings label{display:flex;flex-direction:column;gap:6px;font-size:14px}
+.settings select{padding:0 8px;width:100%;min-width:0;font-size:14px}
+#metric,#hint,.settings-note{font-size:12px;line-height:1.4;margin:10px 0}
+.settings-note{color:#6a715e}
+.settings-actions{display:flex;gap:8px;flex-wrap:wrap}
+.settings-actions button{flex:1;padding:6px 12px}
+.pause-actions{display:flex;flex-direction:column;gap:8px}
+.pause-actions button{padding:8px}
+#completion-panel{text-align:center}
+#completion-panel button{padding:10px 16px;margin:4px}
+.completion-art{display:block;width:100%;max-height:175px;object-fit:contain;margin:0 auto 6px}
 
-.illustrated-level header{position:relative}
-.illustrated-level header #status.feedback{top:100%}
+.menu-screen header{display:none}
+#main-menu{position:relative;flex:1;min-height:0;display:flex;align-items:center;padding:24px 5%;background:#48653a url('/assets/chapter-1/v6/01-courtyard.png') center/cover no-repeat}
+.menu-paper{position:relative;width:42%;max-width:500px;padding:26px;display:flex;flex-direction:column;align-items:stretch;gap:12px;border:3px solid #ba975e;border-radius:16px;background:#faedcd var(--paper);background-size:cover;box-shadow:0 5px 20px #26372266;text-align:center}
+#main-menu h2{font:700 clamp(25px,3.2vw,44px) Georgia,serif;margin:0}
+#main-menu p{margin:0;font-size:14px}
+#main-menu button{min-height:48px;padding:8px 12px}
 
-/* v4: full painted composition, mathematical grid drawn once above cell fills. */
-.illustrated-level .meadow-cell{fill:#f1e7bc;fill-opacity:.15;stroke:none}
+#story{top:auto;bottom:max(8px,env(safe-area-inset-bottom));width:calc(100vw - 24px);max-width:1200px;margin:auto;padding:16px 24px;overflow:visible;min-height:160px}
+#story::backdrop{background:#20302514}
+.story-layout{display:flex;align-items:center;gap:24px;min-height:120px}
+.ruta-portrait{width:170px;height:190px;object-fit:contain;align-self:flex-end;margin-top:-70px;margin-bottom:-16px;flex-shrink:0}
+.story-copy{flex:1;min-width:0}
+.eyebrow{font-weight:700;font-size:15px;margin:0 0 6px}
+#story-text{white-space:pre-line;font:20px/1.4 Georgia,serif;margin:0}
+.story-buttons{display:flex;flex-direction:column;gap:8px;flex:0 0 150px}
+.story-buttons button{padding:8px 12px}
+#story-skip{font-size:12px;background:transparent;border-color:transparent;box-shadow:none}
+#story.reading{top:0;bottom:0;width:min(820px,calc(100vw - 24px));height:max-content;max-height:calc(100dvh - 24px);overflow:auto;margin:auto}
+#story.letter{top:0;bottom:0;margin:auto;height:max-content;overflow:auto;max-height:calc(100dvh - 24px)}
+#story.letter #story-text{max-height:calc(100dvh - 140px);overflow:auto;padding-right:8px;user-select:text}
+#story.reading::backdrop{background:#20302570}
+#story.reading .ruta-portrait{margin-top:0}
+#bridge-guide{display:block;width:220px;max-width:100%;height:72px;margin:4px 0}
 
-
-/* Chapter one: eight places on a separate schematic map, not puzzle geometry. */
+#chapter-map{flex:1;min-height:0;display:flex;flex-direction:column;gap:8px}
+.map-intro{display:flex;align-items:center;justify-content:center;gap:8px;color:#f5e5c4;font-size:14px;min-height:24px}
+.map-intro p{margin:0}
+.ruta-small{color:#db8c8c}
+.map-landscape{position:relative;flex:1;min-height:0;overflow:hidden;background:#c9d6b3 var(--linen);background-blend-mode:multiply;border:2px solid #b1bea0;border-radius:16px}
 #map-background,#map-roads{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
-#map-places{display:block;position:absolute;inset:0;width:100%;height:100%}
-.map-landscape{overflow:hidden;background:linear-gradient(#d6dfb9,#bdcfab)}
-.map-node{position:absolute;transform:translate(-50%,-50%);width:21%;display:flex;align-items:stretch;gap:3px}
-.map-node .level-card{flex:1;min-height:96px;padding:5px 3px;gap:3px;font-size:13px;box-shadow:0 2px 0 #899371}
-.map-node .place-symbol{font-size:26px}.map-node .map-state{font-size:11px}
-.map-book{width:48px;flex:0 0 48px;padding:2px;font-size:24px;background:#ecd9ab}
-.map-actions{flex-wrap:wrap;gap:5px}.map-actions button{padding:3px 8px}.map-intro{flex:0 0 24px}
-.story-buttons{display:flex;gap:8px;align-items:center;justify-content:center;margin-top:10px}
-#story-action{margin:0;min-width:120px}#story-skip{padding:8px 12px;font-size:13px}
-#story-text{white-space:pre-line}.story-layout p{margin:7px 0}#story .eyebrow{margin:0}
-.prototype-level #field{background:#b9c99e}.prototype-level .cell{stroke:#637653}
-.prototype-level h1{font-size:17px}.prototype-level .piece span{display:block;font-size:10px}
-.prototype-level .piece svg{height:48px}.illustrated-level #tray{gap:4px}
-.illustrated-level .piece{min-width:48px}
-.forest-glimmer{animation:forest-glimmer 1.2s ease-out 1 forwards}
-@keyframes forest-glimmer{from{opacity:1}to{opacity:0}}
-@media(prefers-reduced-motion:reduce){.forest-glimmer{animation:none;opacity:.5}}
-@media(max-height:420px){.map-node .level-card{min-height:80px;font-size:11px}.map-node .place-symbol{font-size:22px}.map-node .map-state{font-size:10px}.map-intro{display:none}.story-layout p{line-height:1.35}.story-layout h2{font-size:19px}.story-buttons{margin-top:8px}.map-actions button{font-size:11px}.map-actions{flex-wrap:nowrap}.map-book{width:48px;flex-basis:48px}}
+#map-places{position:absolute;inset:0}
+.map-node{position:absolute;transform:translate(-50%,-50%);width:21%;display:flex}
+.level-card{width:100%;display:flex;flex-direction:column;align-items:center;gap:4px;padding:6px 8px;background:#fff5df var(--paper);border:2px solid #aaab88;min-height:120px;font-size:13px}
+.level-card:disabled{opacity:.7;border-style:dashed}
+.place-symbol{display:block;width:100%;height:60px}
+.place-symbol img{width:100%;height:100%;object-fit:contain;background:#48653a;border-radius:4px}
+.map-state{align-self:flex-start;font-size:11px}
+.map-book{position:absolute;top:0;right:0;width:48px;height:48px;padding:6px;background:#f5e5c4cc;border-color:transparent;box-shadow:none}
+.map-actions{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.map-actions button{padding:6px 14px}
+#save-status{font-size:12px;color:#f5e5c4}
 
-@media(max-width:360px){.map-node{width:46%}.map-book{display:none}}
-#bridge-guide{display:block;width:220px;max-width:100%;height:72px;margin:4px auto}
-@media(max-height:420px){#bridge-guide{height:54px;width:190px}}
-/* Scene events live in the existing header, never over playable polygons. */
-#scene-event{width:34px;height:34px;flex:0 0 34px;pointer-events:none}
-.illustrated-level header .brand{min-width:0;flex-shrink:1}
-.illustrated-level h1{max-width:100%;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.illustrated-level h1 small{display:block;font:9px system-ui;line-height:10px;opacity:.85}
-
-#orientation-screen{position:fixed;inset:0;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));background:#f1e4c7;color:#4a5938;text-align:center;overflow:auto;outline:none}
+#orientation-screen{position:fixed;inset:0;z-index:1000;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;padding:max(20px,env(safe-area-inset-top)) max(20px,env(safe-area-inset-right)) max(20px,env(safe-area-inset-bottom)) max(20px,env(safe-area-inset-left));background:#f1e4c7 var(--paper);color:#4a5938;text-align:center;overflow:auto;outline:none}
 #orientation-screen h2{font:600 clamp(20px,5vw,28px) Georgia,serif;max-width:24ch;margin:0;line-height:1.3}
 #orientation-screen p{max-width:28ch;margin:0;font-size:16px;color:#705c44}
-/* v6 paper and light-wood controls are live DOM, never a baked UI screenshot. */
-body{background:#243b2a}
-.illustrated-level header{background:transparent;box-shadow:none}
-.illustrated-level h1{background:#f8e8bb;color:#573a26;box-shadow:0 2px 5px #241a1b55}
-.illustrated-level footer{background:repeating-linear-gradient(2deg,#dab982 0,#ead1a3 8px,#ddbd8d 11px);border-color:#bb945f;box-shadow:0 -3px 8px #30201955}
-.illustrated-level .piece{background:#f2e4cd88;border:2px solid transparent;border-radius:10px}
-.illustrated-level .piece.selected{border-color:#fff4cf}
-.illustrated-level footer .check{background:#648644;border-color:#3c632b}
-.illustrated-level .meadow-cell{fill-opacity:.1}
-.illustrated-level [data-terrain=water] .meadow-cell{fill:#80bdcf;fill-opacity:.65}
-#field{background:radial-gradient(ellipse,#344d30,#213925)}
-dialog{background:#faedcd;color:#573d28;border:3px solid #ba975e;box-shadow:0 8px 32px #17231777}
-#main-menu{flex:1;min-height:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;background:radial-gradient(ellipse at center,#f2dfb2 0,#e8d0a0 40%,#526f45 100%);border-radius:18px;padding:12px}
-#main-menu h2{font:700 clamp(24px,5vw,44px) Georgia,serif;margin:0;color:#543727}
-#main-menu p{margin:0;color:#543727}
-#main-menu button{min-width:240px;min-height:48px;padding:8px 20px}
-.pause-actions{display:flex;flex-direction:column;gap:8px}.pause-actions button{padding:10px}
-#story{position:fixed;top:auto;bottom:10px;width:min(900px,calc(100vw - 24px));max-width:none;margin:auto;padding:14px}
-.story-layout{gap:16px}.story-layout p{margin:6px 0}.story-layout .ruta-portrait{width:85px;height:110px;object-fit:contain}.story-buttons{margin-top:8px}
-#completion-panel{text-align:center}#completion-panel button{padding:10px 16px;margin:4px}
-@media(max-height:420px){#main-menu{gap:5px}#main-menu button{min-height:48px;padding:5px}#main-menu h2{font-size:26px}.story-layout .ruta-portrait{height:76px;width:65px}#story{padding:10px}.story-layout p{font-size:14px}.story-layout h2{font-size:18px}}
-#app.illustrated-level{background:#243b2a}
-.illustrated-level #field{background:radial-gradient(ellipse,#344d30,#213925)}
-.illustrated-level [data-terrain=tree] .cell,.illustrated-level [data-terrain=flower] .cell{fill:none;stroke:none}
-.illustrated-level [data-terrain=house],.illustrated-level [data-terrain=tree],.illustrated-level [data-terrain=flower]{outline:none}
-.illustrated-level footer .piece{background:#f4e7cc99}
+
+.mill-wheel.turning{animation:wheel-turn 3s linear infinite;transform-box:fill-box;transform-origin:center}
+@keyframes wheel-turn{to{transform:rotate(360deg)}
+}
+.forest-glimmer{animation:forest-glimmer 1.2s ease-out 1 forwards}
+@keyframes forest-glimmer{from{opacity:1}
+to{opacity:0}
+}
 .reduced-motion *{animation:none!important;transition:none!important}
-#chapter-background{filter:drop-shadow(0 2px 6px #14231988)}
-header{color:#f4dfb5}
-#main-menu .primary,#pause-panel .primary,#completion-panel .primary,#story .primary{background:#648644;color:#fffbea;border-color:#3c632b}
+@media(prefers-reduced-motion:reduce){.mill-wheel.turning,.forest-glimmer{animation:none}
+}
+
+@media(min-width:1100px) and (min-height:600px){.brand{max-width:32%}
+}
+
+@media(max-height:500px){footer{flex-basis:72px;padding:4px 8px;border-width:3px;gap:6px}
+#tray{gap:6px}
+.piece{flex-basis:calc(var(--piece-width)*.7);padding:3px}
+.drag-mode .piece{touch-action:none}
+.piece svg{height:40px}
+#selection-actions{gap:4px}
+#selection-actions button{width:48px;padding:3px;font-size:10px}
+.check{width:94px;flex-basis:94px;min-height:48px;font-size:14px}
+#undo{width:48px}
+#undo span{display:none}
+h1{font-size:16px}
+h1 small{display:none}
+.illustrated-level h1{padding:8px 10px}
+#scene-event{top:54px}
+#main-menu{padding:8px 4%}
+.menu-paper{width:44%;padding:12px 18px;gap:6px}
+#main-menu p{font-size:12px}
+#main-menu h2{font-size:26px}
+#story{min-height:126px;padding:12px 18px}
+.story-layout{min-height:100px;gap:16px}
+.ruta-portrait{width:110px;height:130px;margin-top:-40px;margin-bottom:-12px}
+#story-text{font-size:16px;line-height:1.3}
+.story-buttons{flex-basis:120px;gap:4px}
+.eyebrow{font-size:13px}
+.story-buttons button{padding:5px 8px}
+.story-buttons #story-skip{font-size:11px}
+#bridge-guide{height:48px;width:170px}
+.map-intro{display:none}
+.level-card{min-height:108px;font-size:11px;gap:2px;padding:4px}
+.place-symbol{height:48px}
+.map-state{font-size:10px}
+.map-actions button{font-size:12px}
+dialog{padding:14px 20px}
+dialog h2{font-size:21px}
+.completion-art{max-height:100px}
+.pause-actions{gap:5px}
+#completion-panel p{margin:7px 0}
+.settings-note,#metric,#hint{margin:5px 0}
+.settings select{min-height:48px}
+.settings-actions button{font-size:12px}
+}

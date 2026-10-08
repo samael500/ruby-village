@@ -2,10 +2,11 @@
 import json,subprocess,sys
 from pathlib import Path
 from playwright.sync_api import sync_playwright,expect
+from browser_images import screenshot
 URL=sys.argv[1] if len(sys.argv)>1 else 'http://127.0.0.1:5173/ruby-village/?art-v6=1'
 ROOT=Path(__file__).resolve().parents[1]
 LEVELS=json.loads(subprocess.check_output(['node','--experimental-strip-types','--input-type=module','-e',"import {levels} from './src/levels.ts';console.log(JSON.stringify(levels))"],cwd=ROOT,text=True))
-SHOTS=ROOT/'docs/screenshots/art-v6';SHOTS.mkdir(parents=True,exist_ok=True)
+SHOTS=ROOT/'docs/screenshots/ui-v7';SHOTS.mkdir(parents=True,exist_ok=True)
 with sync_playwright() as p:
  b=p.chromium.launch();errors=[]
  for w,h in [(1280,720),(844,390),(1920,1080),(1024,768)]:
@@ -20,7 +21,7 @@ with sync_playwright() as p:
     page.touchscreen.tap(*xy);expect(page.locator('#place')).to_be_enabled();page.locator('#place').tap()
    assert page.evaluate('document.documentElement.scrollWidth<=innerWidth && document.documentElement.scrollHeight<=innerHeight')
    assert page.locator('#chapter-background').evaluate('el=>el.getBoundingClientRect().width/el.getBoundingClientRect().height')>1.7
-   if w in [1280,844]:page.screenshot(path=str(SHOTS/f'{l["id"]}-{w}x{h}.png'))
+   if w in [1280,844]:screenshot(page,SHOTS/f'{l["id"]}-{w}x{h}.png')
    page.locator('#check').tap();expect(page.locator('#story')).to_be_visible();page.close()
   print(f'{w}x{h}: eight reference solutions, projected touch placement, victory, fit: PASS',flush=True)
  assert not errors,errors

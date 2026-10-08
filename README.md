@@ -37,6 +37,10 @@ npm run preview
 
 Интерфейс — живые DOM/CSS/SVG элементы по художественным референсам. Звука и музыки пока нет. Рута перемещается статичным PNG; мельничное колесо в цельном фоне статично. Дискретные клетки воды не повторяют каждый изгиб нарисованного берега. Полный отчёт и расхождения: [docs/art-v6/report.md](docs/art-v6/report.md).
 
+## Интерфейс v7
+
+Плавающий HUD, постоянный деревянный лоток, бумажные окна и крупный портрет Руты в её репликах. Выбрать другую плиту можно сразу из набора. Поворот — кнопкой вправо на 60°. Песочница, приглашение и сброс главы находятся в «Ещё…» на карте. [Реальные экраны, проверки и ограничения](docs/ui-v7/report.md).
+
 ## Сохранение
 
 Ключ `ruby-village:chapter-1:v1`, схемаversion2. Прежние completed/introSeen и миграция version1 сохраняются: старые gate/garden/mill остаются пройденными на местах1/2/6, но мельница не пропускает новые3–5.
@@ -53,6 +57,7 @@ npm run build
 # Python + Playwright + Chromium, запущенный Vite/preview:
 python tests/art_browser.py http://127.0.0.1:5173/ruby-village/
 python tests/chapter_browser.py http://127.0.0.1:5173/ruby-village/
+python tests/ui_v7_browser.py http://127.0.0.1:5173/ruby-village/
 # Воспроизведение поиска допустимых эталонов:
 node --experimental-strip-types scripts/solve-art-v6.ts
 ```
