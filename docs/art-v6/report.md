@@ -18,7 +18,7 @@ One pause clock covers all modal/orientation blockers, including overlapping por
 
 ## Art differences and remaining limits
 
-The full background is contained, with dark green free edges. Gates and buildings are baked in; no separate duplicate sprites. Short walks to actual thresholds are not invented: endpoints remain on nearby valid ground, approximately one cell away from some painted entrances. Long permanent approach paths have not returned.
+The full background is contained, with dark green free edges. Gates and buildings are baked in; no separate duplicate sprites. Short walks to actual thresholds are not invented: endpoints remain on nearby valid ground, approximately one to two cells away from some painted entrances. Long permanent approach paths have not returned.
 
 Water banks are curved illustrations versus discrete water hexes; a translucent blue tint and ≈ explicitly identify game water. The outline can extend slightly onto bank plants. Exact bank-to-hex artwork, separate foreground masks and a mill wheel layer remain future art work. No route travels through the blocked apple crown or flowerbed. The projection is an affine approximation of the painted camera.
 
@@ -31,3 +31,7 @@ UI is implemented in CSS/SVG; it does not reproduce every leaf/corner from the b
 Eight reference solutions placed using actual projected cell screen coordinates on1280×720,1920×1080,844×390,1024×768. Screenshots of all eight solved boards on1280×720 and844×390 are in `docs/screenshots/art-v6/`. Separate UI suite covers sequential unlock/next/finale, reload/session, restart confirmation, reset, sandbox drag/undo, modal + orientation pause, touch bridge cancellation/invalid drop and four-cell piece dragging.
 
 Historical `road_v5_browser.py`, `art_fixture_browser.py`, `orientation_browser.py` and `browser_check.py` still describe pre-v6 scene IDs/UI and should be run against their historical commits, not as current-v6 visual assertions. The current suites cover the changed flows.
+
+## Author review
+
+Manual review under code-review-core criteria; independent runner/reviewer not used. Fixed: mouse hover no longer replaces the board DOM before a click; modal/orientation pause uses a shared clock; completed level sessions clear when returning to the map so Continue selects the next unfinished place; standalone preferences persist even before the first level. Reviewed save identity, placement validation, affine/inverse transforms and unchanged puzzle rules. Publication still follows user merge into main.

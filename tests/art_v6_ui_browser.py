@@ -56,6 +56,9 @@ with sync_playwright() as p:
  h=bridge['anchor'];source='[data-cell="%s,%s"] > polygon'%(h['q'],h['r']);drag('bridge',{'anchor':{'q':1,'r':1}},source=source);assert t.locator('[data-owner="bridge"]').count()==3;t.locator('#undo').tap();assert t.locator('[data-owner="bridge"]').count()==0
  t.locator('#scene-back').tap();t.locator('[data-level="forest"]').tap();drag('forest-a',LEVELS[7]['solution']['forest-a']);assert t.locator('[data-owner="forest-a"]').count()==4
  ctx.close()
+ denied=b.new_context(viewport={'width':740,'height':360},reduced_motion='reduce');denied.add_init_script("Object.defineProperty(window,'localStorage',{get(){throw Error('denied')}})");d=denied.new_page();d.goto(URL);assert 'Не удалось сохранить' in d.locator('#menu-save-status').inner_text();d.locator('#continue-game').click();skip(d)
+ for id,v in LEVELS[0]['solution'].items():place(d,id,v)
+ d.locator('#check').click();expect(d.locator('#story')).to_be_visible();skip(d);d.locator('#next-level').click();skip(d);assert d.locator('[data-cell]').count()==77;d.reload();expect(d.locator('#continue-game')).to_have_text('Начать приключение');denied.close()
  assert not errors,errors
  print('Menu, session reload, restart confirmation, eight sequential victories, next/map/finale, reset, sandbox drag/undo, modal + orientation pause: PASS')
  b.close()

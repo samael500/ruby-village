@@ -83,6 +83,7 @@ let selected: string | null = null, anchor: Hex | null = null, turns = 0;
 // Once clicked, keep the destination while the pointer travels to the controls.
 let anchorPinned = false;
 let mode = preferences.mode as string, path = new Set<string>();
+($('mode') as HTMLSelectElement).value=mode;
 let projection:Projection={scale:GROUND_SCALE,pivotY:0};
 let ground:Element=svg;
 let groundOffset={x:0,y:0};
@@ -507,7 +508,7 @@ function mapGeometry(){
 }
 function showMap(){
  $('main-menu').hidden=true;
- if(screen==='game')remember();
+ if(screen==='game'){if(phase==='won'){savedSession=null;persist();}else remember();}
  $('scene-event').hidden=true;
  app.classList.remove('illustrated-level','prototype-level');sceneChrome(false);document.querySelector('h1')!.textContent='Рубиновая деревня';
  cancelAnimationFrame(frame);resumeJourney=null;screen='map';phase='playing';route=[];resetSelection();
