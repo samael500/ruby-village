@@ -1,7 +1,7 @@
 import artSolutions from './art-solutions.json' with {type:'json'};
 import {storyFor} from './story.ts';
-import {artTerrain,artPoint,artAnchors} from './art-geometry.ts';
-import {boardCells,key,offsetHex} from './hex.ts';
+import logicalScenes from './chapter-1.logical.json' with {type:'json'};
+import {key,offsetHex} from './hex.ts';
 import type {Level,Piece,Terrain} from './model.ts';
 const one=[{q:0,r:0}];
 const pair=[{q:0,r:0},{q:1,r:0}];
@@ -53,17 +53,15 @@ const originalLevels:readonly Level[]=[
 // v6 placements below replace historical coordinates under the new artwork.
 
 
-// Reprojected under explicit user approval; stable level IDs preserve completed roads.
+// Freeze v6 logical cells independently from visual camera calibration (v8).
 export const levels:readonly Level[]=originalLevels.map(l=>{
- const cells=boardCells(11,7),anchors=artAnchors[l.id];
- const ground=cells.filter(h=>artTerrain(l.id,h)==='ground');
- const nearest=(xy:number[])=>ground.reduce((a,b)=>{const p=artPoint(a),q=artPoint(b);return Math.hypot(p.x-xy[0],p.y-xy[1])<Math.hypot(q.x-xy[0],q.y-xy[1])?a:b;});
- const terrain=Object.fromEntries(cells.map(h=>[key(h),artTerrain(l.id,h)]).filter(([,t])=>t!=='ground')) as Record<string,Terrain>;
+ const stable=logicalScenes[l.id as keyof typeof logicalScenes];
+ const terrain=stable.terrain as Record<string,Terrain>;
  const pieces=l.id==='gate'?Array.from({length:7},(_,i)=>stone(`gate-${i+1}`,`Камень ${i+1}`,one)):l.id==='forest'?[stone('forest-a','Четвёрка',cluster),stone('forest-b','Три в ряд',line),stone('forest-c','Уголок',bend),stone('forest-d','Два камня',pair)]:[...l.pieces,stone(`${l.id}-v6-a`,'Три в ряд',line),stone(`${l.id}-v6-b`,'Уголок',bend)];
  const solution=artSolutions[l.id as keyof typeof artSolutions];
  const extra=pieces.find(p=>!Object.hasOwn(solution,p.id));
  const finalPieces=pieces.filter(p=>Object.hasOwn(solution,p.id)||p.id===extra?.id);
- return {...l,cols:11,rows:7,terrain,start:nearest(anchors.entry),goal:nearest(anchors.goal),pieces:finalPieces,solution};
+ return {...l,cols:11,rows:7,terrain,start:stable.start,goal:stable.goal,pieces:finalPieces,solution};
 });
 
 

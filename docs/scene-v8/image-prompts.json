@@ -1,0 +1,158 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "encoding": "Native generated PNG exported as JPEG (quality 94) in browser, no content edits; originals remain at built-in output destination",
+  "outpaint": [
+    {
+      "source": "public/assets/chapter-1/v6/01-courtyard.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/01-courtyard-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/02-orchard.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/02-orchard-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta.\nScene-specific constraints: Keep the exact supplied time of day and countryside props in the invariant center."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/03-well.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/03-well-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta.\nScene-specific constraints: Keep the exact supplied time of day and countryside props in the invariant center."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/04-bakery.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/04-bakery-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta.\nScene-specific constraints: Keep the exact supplied time of day and countryside props in the invariant center."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/05-stream.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/05-stream-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta.\nScene-specific constraints: Continue actual willow/river landscape at the edges, no new mills or bridges."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/06-mill.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/06-mill-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta.\nScene-specific constraints: Continue actual willow/river landscape at the edges, no new mills or bridges."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/07-post.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/07-post-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta.\nScene-specific constraints: Keep the exact supplied time of day and countryside props in the invariant center."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/08-edge.png",
+      "editCanvas": {
+        "width": 3272,
+        "height": 1200,
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "output": "public/assets/chapter-1/v8/08-edge-surroundings.jpg",
+      "prompt": "Use case: precise-object-edit, OUTPAINT ONLY. Input is an exact 3272 by 1200 game canvas. Fill ONLY the magenta (#f700ff) border with a natural artistic continuation of the existing countryside: plants, meadow, fence, trees, correct light and perspective. Absolutely preserve the existing center illustration without any movement, resizing or redraw. The original rectangle is x=800,y=129,width=1672,height=941 (normalized x=.2445,y=.1075,w=.511,h=.7842). Output same aspect ratio 2.7267:1. No magenta or blank areas remain. No text, hexes, people, extra houses or extra gates. Do not mirror/repeat recognizable objects. Draw coherent surroundings continuous at all four borders. This is a warm painterly 2D children's fairy tale game. Do not zoom, crop, expand the original itself, or change its location: ONLY replace magenta.\nScene-specific constraints: Preserve warm sunset yellow/orange light and dark mysterious forest, no new gates."
+    }
+  ],
+  "gates": [
+    {
+      "source": "public/assets/chapter-1/v6/01-courtyard.png",
+      "output": "public/assets/chapter-1/v8/01-courtyard-open.jpg",
+      "prompt": "Use case: precise-object-edit. Keep the input illustration at the identical framing, proportions and 1672x941 canvas. Change ONLY the specified wooden gate and its immediate ground threshold. bottom-right gate around x=1210..1510,y=610..840. Open its wooden leaf outward to the RIGHT along the front fence; create a clear walkable earthen threshold at x=1250..1390,y=630..800, including the inside edge at y=630. Leave the gateposts where they are. Match the exact original warm painted game style, perspective, fence height, wood colors, light and shadows. No new props. The open leaf stays in front outside the playable courtyard, and must not block the opening. All other original pixels, including houses, trees, water, sky, flowers and fences, are invariants. Do not reposition or rescale the composition. No characters, hexes, purple stones, text, UI, or labels. This is a precision localized edit, not a new scene."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/02-orchard.png",
+      "output": "public/assets/chapter-1/v8/02-orchard-open.jpg",
+      "prompt": "Use case: precise-object-edit. Keep the input illustration at the identical framing, proportions and 1672x941 canvas. Change ONLY the specified wooden gate and its immediate ground threshold. bottom-left gate around x=180..620,y=590..870. Open its wooden leaf outward to the LEFT along the front fence; create a wide unobstructed earthen opening at x=390..610,y=620..850. Inside floor behind the gate must be clear where a character can stand at x=500,y=660. Keep the apple tree, house and table exactly unchanged. Match the exact original warm painted game style, perspective, fence height, wood colors, light and shadows. No new props. The open leaf stays in front outside the playable courtyard, and must not block the opening. All other original pixels, including houses, trees, water, sky, flowers and fences, are invariants. Do not reposition or rescale the composition. No characters, hexes, purple stones, text, UI, or labels. This is a precision localized edit, not a new scene."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/03-well.png",
+      "output": "public/assets/chapter-1/v8/03-well-open.jpg",
+      "prompt": "Use case: precise-object-edit. Keep the input illustration at the identical framing, proportions and 1672x941 canvas. Change ONLY the specified wooden gate and its immediate ground threshold. bottom-left foreground gate around x=245..490,y=635..830. Open its leaf outward to the LEFT, exposing a clear earthy threshold extending slightly north into the courtyard. Match the exact original warm painted game style, perspective, fence height, wood colors, light and shadows. No new props. The open leaf stays in front outside the playable courtyard, and must not block the opening. All other original pixels, including houses, trees, water, sky, flowers and fences, are invariants. Do not reposition or rescale the composition. No characters, hexes, purple stones, text, UI, or labels. This is a precision localized edit, not a new scene."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/04-bakery.png",
+      "output": "public/assets/chapter-1/v8/04-bakery-open.jpg",
+      "prompt": "Use case: precise-object-edit. Keep the input illustration at the identical framing, proportions and 1672x941 canvas. Change ONLY the specified wooden gate and its immediate ground threshold. bottom-left gate around x=185..470,y=600..830. Open leaf outward to the LEFT, exposing a clear earthy threshold extending slightly north into the courtyard. Keep bakery entirely unchanged. Match the exact original warm painted game style, perspective, fence height, wood colors, light and shadows. No new props. The open leaf stays in front outside the playable courtyard, and must not block the opening. All other original pixels, including houses, trees, water, sky, flowers and fences, are invariants. Do not reposition or rescale the composition. No characters, hexes, purple stones, text, UI, or labels. This is a precision localized edit, not a new scene."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/07-post.png",
+      "output": "public/assets/chapter-1/v8/07-post-open.jpg",
+      "prompt": "Use case: precise-object-edit. Keep the input illustration at the identical framing, proportions and 1672x941 canvas. Change ONLY the specified wooden gate and its immediate ground threshold. bottom-left gate around x=235..475,y=585..805. Open leaf outward to the LEFT, exposing a clear earthy threshold extending slightly north into the courtyard. Keep post office entirely unchanged. Match the exact original warm painted game style, perspective, fence height, wood colors, light and shadows. No new props. The open leaf stays in front outside the playable courtyard, and must not block the opening. All other original pixels, including houses, trees, water, sky, flowers and fences, are invariants. Do not reposition or rescale the composition. No characters, hexes, purple stones, text, UI, or labels. This is a precision localized edit, not a new scene."
+    },
+    {
+      "source": "public/assets/chapter-1/v6/08-edge.png",
+      "output": "public/assets/chapter-1/v8/08-edge-open.jpg",
+      "prompt": "Use case: precise-object-edit. Keep the input illustration at the identical framing, proportions and 1672x941 canvas. Change ONLY the specified wooden gate and its immediate ground threshold. bottom-left gate around x=185..460,y=580..810. Open its wooden leaf outward to the LEFT along the front fence; create a wide unobstructed earthen opening at x=330..570,y=590..800. Clear inside floor where a character can stand around x=450,y=640. Keep sunset/forest/signpost entirely unchanged. Match the exact original warm painted game style, perspective, fence height, wood colors, light and shadows. No new props. The open leaf stays in front outside the playable courtyard, and must not block the opening. All other original pixels, including houses, trees, water, sky, flowers and fences, are invariants. Do not reposition or rescale the composition. No characters, hexes, purple stones, text, UI, or labels. This is a precision localized edit, not a new scene."
+    }
+  ]
+}
