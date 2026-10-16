@@ -22,3 +22,7 @@ Node v24.15.0: 55/55 tests проходят, включая 4 новых сод�
 - Воспроизводимая модель/риг .blend, шесть направлений, цикл ходьбы и постановочные позы ещё **не созданы**. Растровый лист не подменяет этот критерий.
 - Шесть жителей ещё не производились: стиль не тиражируется до принятия пилота.
 - Нет видео походки/пролога, нет проверки телефона или семейного теста. Эти пункты не выполнены.
+
+## Review decision 2026-10-17
+
+Maksim explicitly accepted the pilot appearance in chat: «Принять внешность пилотной Руты». This approves appearance for subsequent poses and walking. Frame stability, foot anchors, six directions, rig/cycle and in-game motion remain separate pending checks. No production walking is implied.

@@ -117,7 +117,7 @@ function polygon(h: Hex, r: number, ox=0, oy=0) {
   const c = hexCenter(h,r);
   return Array.from({length:6},(_,i) => { const a=(60*i-90)*Math.PI/180; return `${c.x+ox+r*Math.cos(a)},${c.y+oy+r*Math.sin(a)}`; }).join(' ');
 }
-function message(text: string) { $('status').textContent = text; $('status').classList.toggle('feedback',/Пока дорога|не помещается|недоступен/.test(text)); }
+function message(text: string) { if(/не помещается/.test(text))void gameAudio.play('tile-reject');$('status').textContent = text; $('status').classList.toggle('feedback',/Пока дорога|не помещается|недоступен/.test(text)); }
 function endpoints() { return [level.start,level.goal]; }
 function previewValid() { return !!(selected && anchor && validPlacement(level,selected,{anchor,turns},layout)); }
 function snapshot() { history.push(structuredClone(layout)); path.clear(); }
