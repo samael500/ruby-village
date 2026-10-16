@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {levels,sandbox} from '../src/levels.ts';
-import {boardCells,key,findPath,rotate} from '../src/hex.ts';
+import {boardCells,key,findPath,rotate,neighbors} from '../src/hex.ts';
 import {validPlacement,validateLayout,winningPath,placedCells,terrainAt} from '../src/game.ts';
 import {PROGRESS_KEY,parseProgress,loadProgress,saveProgress,available,completeLevel} from '../src/progress.ts';
 import type {Level,Placement} from '../src/model.ts';
@@ -33,6 +33,14 @@ test('Ручей и мельница: сухие клетки не соедин�
  for(const l of [levels[4],levels[5]]){
   assert.equal(findPath(l.start,l.goal,allDry(l)),null);
   const broken={...l.solution};delete broken.bridge;assert.equal(winningPath(l,broken),null);
+ }
+});
+test('Оба русла пересекают середину второй секции моста, без изгиба у стыка',()=>{
+ for(const l of [levels[4],levels[5]]){
+  const center=l.solution.bridge.anchor,water=neighbors(center).filter(h=>terrainAt(l,h)==='water');
+  assert.equal(water.length,2);
+  assert.equal(water[0].q+water[1].q,2*center.q);
+  assert.equal(water[0].r+water[1].r,2*center.r);
  }
 });
 test('Лесной указатель: фон без реки, маршрут из камня без моста',()=>{
