@@ -90,11 +90,80 @@
     "verification"
   ],
   "productionChanged": false,
+  "gateLayout": {
+    "goal": [
+      11.518137870333032,
+      -5.25
+    ],
+    "incomingDirection": [
+      0.499999999999998,
+      -0.8660254037844397
+    ],
+    "normal": [
+      0.8660254037844397,
+      0.499999999999998
+    ],
+    "openingCenter": [
+      12.414420087683919,
+      -8.20240633837224
+    ],
+    "leftPost": [
+      11.591695954088701,
+      -8.677406338372238
+    ],
+    "rightPost": [
+      13.237144221279136,
+      -7.7274063383722424
+    ],
+    "hinge": [
+      13.237144221279136,
+      -7.7274063383722424
+    ],
+    "latchPost": [
+      11.591695954088701,
+      -8.677406338372238
+    ],
+    "width": 1.9,
+    "height": 1.0,
+    "postHeight": 1.1,
+    "closedAngle": -4.188790204786393,
+    "openAngle": -2.5307274153917803,
+    "court": [
+      [
+        10.911920087683924,
+        -5.6
+      ],
+      [
+        11.716695954088701,
+        -8.893912689318348
+      ],
+      [
+        13.362144221279136,
+        -7.943912689318353
+      ],
+      [
+        12.124355652982139,
+        -4.9
+      ],
+      [
+        11.518137870333032,
+        -4.55
+      ],
+      [
+        10.911920087683924,
+        -4.9
+      ]
+    ],
+    "approachLengthWorld": 3.0854537753789155,
+    "searchCandidateCount": 429
+  },
   "inputSha256": {
     "src/scene-v8.json": "a32f8e4d1bbe56d0c6b6d29a72aa5a8d646675db68489adcaacb8fd4052d8cbc",
     "src/chapter-1.logical.json": "6d310ccc6a055a47f00acaa1fa862877aaa451ce9f00456830efc0907cdd28cd",
     "src/art-solutions.json": "ed36d0132a9ba50c0ff2d212a820588dee8d045f45fd53f6384697d1921c14d4",
-    "scripts/blender/courtyard.py": "8e01a66f74669954fe4af3596c8e9f3d57c848c13e6a79bdeedd8106daa7c486"
+    "scripts/blender/gate_layout.py": "d63ea4bfd9da5e126b2c70e1fa5e54710b4ce20def7dfd2b63ed9c6cac49c06c",
+    "docs/blender-chapter-1/geometry/gate-engine.json": "6b66cbad46087c00b568c038dbb936e30bad4689b2bf20b77616cfded18f610e",
+    "scripts/blender/courtyard.py": "712cae4edc53992cb5576cdee9d3a88ccc2b05474d3f87f722e8b950b0202ea7"
   },
   "extendedCanvas": {
     "file": "candidates/gate-wide.png",

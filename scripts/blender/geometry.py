@@ -18,8 +18,10 @@ def check(state):
     deps=bpy.context.evaluated_depsgraph_get()
     # One world-space BVH avoids testing thousands of separate objects per ray.
     vertices=[]; polygons=[]; owners=[]
+    ground_names={'continuous ground'}
     for obj in deps.objects:
         if obj.type not in ['MESH','CURVE'] or obj.hide_get():continue
+        if obj.get('surfaceRole')=='walkable_ground':ground_names.add(obj.name)
         evaluated=obj.evaluated_get(deps)
         data=evaluated.to_mesh()
         offset=len(vertices)
@@ -52,7 +54,7 @@ def check(state):
             for px,py in points:
                 floor=Vector(((px-140)/100,(290-py)/65,0))
                 loc,normal,face,distance=bvh.ray_cast(floor-direction*40,direction,80)
-                if face is not None and owners[face]!='continuous ground':
+                if face is not None and owners[face] not in ground_names:
                     name=owners[face]; hits[name]=hits.get(name,0)+1
             if hits: report.append({'cell':{'q':q,'r':row},'samples':len(points),'occludedSamples':sum(hits.values()),'objects':hits})
     return {'cellsWithOcclusion':report,'samples':total,'checkedCells':cells}

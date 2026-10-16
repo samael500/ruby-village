@@ -114,10 +114,10 @@ assert spill>8000,spill
 step=scene.objects['threshold.001'].matrix_world.translation
 step_px=pixel((step.x,step.y,0))
 hinge=scene.objects['hinge gate_closed']
-gate_mid=hinge.matrix_world @ Vector((0,math.sqrt(5)/2,0))
+gate_mid=hinge.matrix_world @ Vector((0,hinge.get('openingWidth',math.sqrt(5))/2,0))
 gate_px=pixel(gate_mid)
 def distance(p,anchor):return math.dist(p,(anchor['pixel']['x'],anchor['pixel']['y']))
-report={'sceneId':'gate','status':'geometry contract passes; decorative model registration pending','source':'art/blender/gate-geometry.blend','engineSha256':hashlib.sha256(engine_path.read_bytes()).hexdigest(),'method':'convex polygon intersection between actual Blender top faces and engine polygons, including full areas and boundaries','counts':{'board':len(cells),'blocked':len(blockers),'playable':len(cells)-len(blockers)},'maxCornerErrorPx':maximum_corner_error,'maxAreaErrorPx2':maximum_area_error,'areaTolerancePx2':.25,'mutationChecks':{'removedBlockerMissingAreaPx2':missing_error,'movedBlockerSpillAreaPx2':spill},'decorativeRegistration':{'status':'not aligned; contract anchors are not doorway claims','houseEntranceToStartPx':distance(step_px,engine['start']),'gateOpeningToGoalPx':distance(gate_px,engine['goal'])},'cells':cells}
+report={'sceneId':'gate','status':'geometry contract passes; decorative model registration pending','source':'art/blender/gate-geometry.blend','engineSha256':hashlib.sha256(engine_path.read_bytes()).hexdigest(),'method':'convex polygon intersection between actual Blender top faces and engine polygons, including full areas and boundaries','counts':{'board':len(cells),'blocked':len(blockers),'playable':len(cells)-len(blockers)},'maxCornerErrorPx':maximum_corner_error,'maxAreaErrorPx2':maximum_area_error,'areaTolerancePx2':.25,'mutationChecks':{'removedBlockerMissingAreaPx2':missing_error,'movedBlockerSpillAreaPx2':spill},'decorativeRegistration':{'status':'gate has verified walkable approach to goal; house entrance pending','houseEntranceToStartPx':distance(step_px,engine['start']),'gateOpeningToGoalPx':distance(gate_px,engine['goal'])},'cells':cells}
 (OUT/'gate-report.json').write_text(json.dumps(report,indent=2)+'\n')
 # Vector diagnostic uses projected vertices from the .blend, NOT re-drawn engine fills.
 parts=[f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {width} {height}">','<rect width="100%" height="100%" fill="#faf4e6"/>','<g font-family="sans-serif" fill="#302b27">','<text x="60" y="75" font-size="34">Двор · геометрический контракт</text>','<text x="60" y="120" font-size="22">Заливка — грани из Blender. Синий контур — движок. Арт не проверяется этим листом.</text>']
@@ -134,7 +134,7 @@ for cell in engine['cells']:
     x=cell['center']['x']; y=cell['center']['y']
     label=html.escape(ident+(' · '+cell['terrain'] if cell['terrain'] else ''))
     parts.append(f'<text x="{x}" y="{y+5}" text-anchor="middle" font-size="16" fill="{chr(35)}fff9eb"' + f'>{label}</text>' if cell['terrain'] else f'<text x="{x}" y="{y+5}" text-anchor="middle" font-size="16">{label}</text>')
-parts+=['<text x="60" y="825" font-size="24">16 препятствий · 61 доступная клетка · 7 плит эталона</text>','<text x="60" y="870" font-size="22">Дом и калитка из первого арт-пилота пока не совмещены с этим контрактом.</text>','</g></svg>']
+parts+=['<text x="60" y="825" font-size="24">16 препятствий · 61 доступная клетка · 7 плит эталона</text>','<text x="60" y="870" font-size="22">Калитка соединена площадкой с финишем; вход дома ещё требует совмещения.</text>','</g></svg>']
 (OUT/'gate-contract.svg').write_text('\n'.join(parts)+'\n')
 scene.render.engine='BLENDER_WORKBENCH'
 scene.display.shading.color_type='OBJECT'; scene.display.shading.light='FLAT'

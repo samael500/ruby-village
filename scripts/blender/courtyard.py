@@ -4,6 +4,7 @@ import hashlib
 import json
 import math
 import random
+import runpy
 import sys
 from pathlib import Path
 
@@ -173,41 +174,57 @@ for obj in collections['background'].objects:
     if obj.name != 'continuous ground':
         obj.matrix_world = house_transform @ obj.matrix_world
 
-# Fences stay beyond the full playable cell footprints. Gate is east of goal.
-def fence_post(x,y):
-    box('fence post',(x,y,.61),(.19,.21,1.22),wood)
-    ball('post cap',(x,y,1.26),(.14,.15,.10),gold)
+# Place the real gate against the immutable game geometry, not hand-picked pixels.
+gate_layout=runpy.run_path(str(ROOT/'scripts/blender/gate_layout.py'))['make_layout'](ROOT)
+scene['gate_layout_json']=json.dumps(gate_layout)
 
+def fence_post(x,y):
+    box('fence post',(x,y,.55),(.16,.18,1.10),wood)
+    box('post cap',(x,y,1.10),(.20,.22,.06),wood,.025)
+
+fence_posts=set()
 def fence(a,b):
     dist=(Vector(b)-Vector(a)).length
+    if dist<.001:return
     count=max(1,round(dist/1.3))
     for i in range(count+1):
-        p=Vector(a).lerp(Vector(b),i/count); fence_post(p.x,p.y)
-    for z in [.4,.86]: beam('fence rail',(*a,z),(*b,z),.12,wood)
+        p=Vector(a).lerp(Vector(b),i/count); ident=(round(p.x,6),round(p.y,6))
+        if ident not in fence_posts:
+            fence_post(p.x,p.y); fence_posts.add(ident)
+    for z in [.32,.75]: beam('fence rail',(*a,z),(*b,z),.12,wood)
 
-fence((-2,3.7),(17,3.7))
-fence((14.0,3.7),(14.0,-4.25))
-fence((14.0,-6.25),(14.0,-10.0))
+left=gate_layout['leftPost']; right=gate_layout['rightPost']
+fence((-2,3.7),(14,3.7))
+fence((14,3.7),(14,right[1]))
+fence((14,right[1]),right)
 current='foreground'
-fence((-3,-9.5),(10.5,-9.5))
-# A diagonal gate reveals its boards while leaving the whole goal cell clear.
-for state,angle in [('gate_closed',-math.atan2(1.0,2.0)),('gate_open',math.radians(-150))]:
+fence((-3,-9.5),(left[0]-1.4,-9.5))
+fence((left[0]-1.4,-9.5),left)
+# Hinges stay on the fixed posts. The leaf swings OUT of the playable courtyard.
+for state,angle in [('gate_closed',gate_layout['closedAngle']),('gate_open',gate_layout['openAngle'])]:
     current=state
     hinge=bpy.data.objects.new('hinge '+state,None); collections[current].objects.link(hinge)
-    hinge.location=(13.5,-6.25,0)
+    hinge.location=(*gate_layout['hinge'],0); hinge['openingWidth']=gate_layout['width']
+    hinge['closedAngle']=gate_layout['closedAngle']; hinge['openAngle']=gate_layout['openAngle']
     for i in range(10):
-        t=(i+.5)/10; height=.96+.20*math.sin(t*math.pi)
-        o=box('gate vertical plank',(0,t*math.sqrt(5),height/2),(.12,.215,height),wood,.035)
+        t=(i+.5)/10; height=.80+.18*math.sin(t*math.pi)
+        o=box('gate vertical plank',(0,t*gate_layout['width'],height/2),(.10,gate_layout['width']/10-.009,height),wood,.025)
         o.parent=hinge
-    for z in [.22,.76]:
-        o=beam('gate cross rail',(.08,0,z),(.08,math.sqrt(5),z),.10,trim); o.parent=hinge
-    o=ball('gate brass latch',(-.10,1.95,.65),(.07,.07,.07),gold); o.parent=hinge
+    for z in [.20,.66]:
+        o=beam('gate cross rail',(.075,.02,z),(.075,gate_layout['width']-.02,z),.08,trim); o.parent=hinge
+    o=beam('gate diagonal brace',(.075,.08,.23),(.075,gate_layout['width']-.08,.65),.06,wood); o.parent=hinge
+    o=ball('gate brass latch',(-.075,gate_layout['width']-.10,.61),(.045,.045,.045),gold); o.parent=hinge
     hinge.rotation_euler[2]=angle
-current='background'
-fence((14,-6.25),(13.5,-6.25))
-fence((14,-4.25),(14.5,-4.25))
 collections['gate_open'].hide_render=True
 current='background'
+# The goal is the arrival point of a flat forecourt. No puzzle slabs are baked in.
+# Its full goal hex is walkable; the actual doorway remains beyond the board.
+earth=material('gate forecourt compacted earth',(.63,.49,.27),.14,5)
+court=gate_layout['court']; goal=gate_layout['goal']
+arrival=mesh('gate arrival court',[(goal[0],goal[1],0)]+[(x,y,-.004) for x,y in court],[(0,i+1,(i+1)%len(court)+1) for i in range(len(court))],earth)
+arrival['surfaceRole']='walkable_ground'; arrival['goalArrivalVertex']=0
+arrival['openingCenter']=list(gate_layout['openingCenter'])+[0]
+
 # Clustered leaves and flowers at the perimeter, with sparse garden floor.
 def plant(x,y,size=.5,flowers=False):
     for k in range(7):
@@ -354,6 +371,6 @@ def render(name):
 if opt.only in ['all','clean']: render('gate-clean')
 if opt.only in ['all','check']:
     collections['verification'].hide_render=False; render('gate-check'); collections['verification'].hide_render=True
-manifest={'status':'candidate — awaiting Maksim art review; not production', 'scene':'gate','blender':bpy.app.version_string,'seed':40,'source':'art/blender/gate-pilot.blend','command':'blender --background --factory-startup --threads 8 --python-exit-code 1 --python scripts/blender/courtyard.py -- --samples 16', 'samples':opt.samples,'resolution':[1672,941],'sourceRect':[0,0,1672,941],'camera':{'type':'orthographic','elevationDegrees':math.degrees(math.asin(.65)),'worldToPixel':[[100,0,0,140],[0,-65,-100*math.sqrt(1-.65**2),290]],'groundPixelToWorld':[[.01,0,-1.4],[0,-1/65,290/65]],'anchors':anchors},'collections':list(collections),'productionChanged':False}
-manifest['inputSha256']={str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in [ROOT/'src/scene-v8.json',ROOT/'src/chapter-1.logical.json',ROOT/'src/art-solutions.json',Path(__file__).resolve()]}
+manifest={'status':'candidate — awaiting Maksim art review; not production', 'scene':'gate','blender':bpy.app.version_string,'seed':40,'source':'art/blender/gate-pilot.blend','command':'blender --background --factory-startup --threads 8 --python-exit-code 1 --python scripts/blender/courtyard.py -- --samples 16', 'samples':opt.samples,'resolution':[1672,941],'sourceRect':[0,0,1672,941],'camera':{'type':'orthographic','elevationDegrees':math.degrees(math.asin(.65)),'worldToPixel':[[100,0,0,140],[0,-65,-100*math.sqrt(1-.65**2),290]],'groundPixelToWorld':[[.01,0,-1.4],[0,-1/65,290/65]],'anchors':anchors},'collections':list(collections),'productionChanged':False,'gateLayout':gate_layout}
+manifest['inputSha256']={str(path.relative_to(ROOT)):hashlib.sha256(path.read_bytes()).hexdigest() for path in [ROOT/'src/scene-v8.json',ROOT/'src/chapter-1.logical.json',ROOT/'src/art-solutions.json',ROOT/'scripts/blender/gate_layout.py',ROOT/'docs/blender-chapter-1/geometry/gate-engine.json',Path(__file__).resolve()]}
 (opt.output.parent/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

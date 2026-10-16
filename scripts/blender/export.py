@@ -11,6 +11,7 @@ from bpy_extras.object_utils import world_to_camera_view
 ROOT=Path(__file__).resolve().parents[2]
 p=argparse.ArgumentParser(); p.add_argument('--samples',type=int,default=12)
 p.add_argument('--resume',action='store_true')
+p.add_argument('--gate-update',action='store_true',help='Refresh only gate/environment assets; preserve unchanged Ruta/stone exports')
 args=p.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
 scene=bpy.context.scene; scene.cycles.samples=args.samples
 camera=scene.camera
@@ -20,6 +21,7 @@ manifest=json.loads((OUT.parent/'manifest.json').read_text())
 logical=json.loads((ROOT/'src/chapter-1.logical.json').read_text())['gate']
 def render(name):
     target=OUT/(name+'.png')
+    if args.gate_update and name not in {'layer-background','layer-foreground','layer-gate_closed','layer-gate_open','gate-detail','gate-wide'}:return
     if args.resume and target.exists(): return
     scene.cycles.use_denoising=name in ['layer-background','gate-detail','gate-wide']
     scene.render.filepath=str(target); bpy.ops.render.render(write_still=True)
@@ -56,7 +58,10 @@ for name,col in collections.items(): col.hide_render=name in ['verification','ga
 scene.render.film_transparent=False
 scene.render.resolution_x=800; scene.render.resolution_y=600
 camera.data.ortho_scale=3.8
-for name,point in [('gate-detail',(14,-5.25,.5)),('stone-detail',(6,-8.7,0))]:
+gate_hinge=bpy.data.objects['hinge gate_closed']
+bpy.context.view_layer.update()
+gate_mid=gate_hinge.matrix_world @ Vector((0,gate_hinge['openingWidth']/2,0))
+for name,point in [('gate-detail',(gate_mid.x,gate_mid.y,.5)),('stone-detail',(6,-8.7,0))]:
     if name=='stone-detail':
         for key,col in collections.items(): col.hide_render=key!='stones'
         scene.render.film_transparent=True
