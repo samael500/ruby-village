@@ -1,0 +1,282 @@
+{
+  "schemaVersion": 1,
+  "version": "prologue-painted-poses-v1-2026-10-17",
+  "status": "ruta-identity-approved-pose-review-pending",
+  "sceneSize": [
+    1672,
+    941
+  ],
+  "origin": "new coherent static source sheet; not animation frames",
+  "frames": {
+    "ruta-basket": {
+      "image": "poses/ruta-basket.png",
+      "sourceRect": [
+        0,
+        0,
+        350,
+        768
+      ],
+      "frameSize": [
+        350,
+        768
+      ],
+      "footAnchor": [
+        199,
+        764
+      ],
+      "character": "ruta",
+      "scale": 0.17708333333333334,
+      "nativeHeightPx": 768,
+      "nativeStandingHeightPx": 768,
+      "sceneStandingHeightPx": 136,
+      "sceneHeightPx": 136.0,
+      "props": {
+        "basket": "baked-in-held-both-hands"
+      },
+      "direction": "three-quarter-right",
+      "asymmetricMirroring": false
+    },
+    "ruta-adjust-satchel": {
+      "image": "poses/ruta-adjust-satchel.png",
+      "sourceRect": [
+        0,
+        0,
+        457,
+        776
+      ],
+      "frameSize": [
+        457,
+        776
+      ],
+      "footAnchor": [
+        241,
+        772
+      ],
+      "character": "ruta",
+      "scale": 0.17708333333333334,
+      "nativeHeightPx": 776,
+      "nativeStandingHeightPx": 768,
+      "sceneStandingHeightPx": 136,
+      "sceneHeightPx": 137.41666666666669,
+      "props": {
+        "basket": "baked-in-held",
+        "satchel": "baked-in-adjusted-one-strap"
+      },
+      "direction": "three-quarter-right",
+      "asymmetricMirroring": false
+    },
+    "ruta-surprised": {
+      "image": "poses/ruta-surprised.png",
+      "sourceRect": [
+        0,
+        0,
+        441,
+        717
+      ],
+      "frameSize": [
+        441,
+        717
+      ],
+      "footAnchor": [
+        276,
+        713
+      ],
+      "character": "ruta",
+      "scale": 0.17708333333333334,
+      "nativeHeightPx": 717,
+      "nativeStandingHeightPx": 768,
+      "sceneStandingHeightPx": 136,
+      "sceneHeightPx": 126.96875,
+      "props": {
+        "basket": "baked-in-held"
+      },
+      "direction": "three-quarter-right",
+      "asymmetricMirroring": false
+    },
+    "ruta-crouch-basket": {
+      "image": "poses/ruta-crouch-basket.png",
+      "sourceRect": [
+        0,
+        0,
+        490,
+        526
+      ],
+      "frameSize": [
+        490,
+        526
+      ],
+      "footAnchor": [
+        155,
+        516
+      ],
+      "character": "ruta",
+      "scale": 0.17708333333333334,
+      "nativeHeightPx": 526,
+      "nativeStandingHeightPx": 768,
+      "sceneStandingHeightPx": 136,
+      "sceneHeightPx": 93.14583333333334,
+      "props": {
+        "basket": "baked-in-on-ground",
+        "basketGroundAnchor": [
+          420,
+          461
+        ],
+        "reachingHandAnchor": [
+          355,
+          485
+        ]
+      },
+      "direction": "three-quarter-right",
+      "asymmetricMirroring": false
+    },
+    "basket-ground": {
+      "image": "poses/basket-ground.png",
+      "sourceRect": [
+        0,
+        0,
+        1148,
+        1076
+      ],
+      "frameSize": [
+        1148,
+        1076
+      ],
+      "footAnchor": [
+        564,
+        1072
+      ],
+      "character": null,
+      "nativeHeightPx": 1076,
+      "sceneHeightPx": 27,
+      "scale": 0.02509293680297398,
+      "props": {
+        "basket": "standalone-ground-prop"
+      },
+      "asymmetricMirroring": false
+    },
+    "rabbit-baking": {
+      "image": "poses/rabbit-baking.png",
+      "sourceRect": [
+        0,
+        0,
+        927,
+        1283
+      ],
+      "frameSize": [
+        927,
+        1283
+      ],
+      "footAnchor": [
+        464,
+        1279
+      ],
+      "character": "rabbit",
+      "nativeHeightPx": 1283,
+      "sceneHeightPx": 133,
+      "scale": 0.10366328916601715,
+      "props": {
+        "table": "baked-in",
+        "bowl": "baked-in",
+        "spoon": "baked-in-held"
+      },
+      "asymmetricMirroring": false
+    }
+  },
+  "staging": [
+    {
+      "frameIndex": 0,
+      "scene": "courtyard",
+      "pose": "ruta-basket",
+      "foot": [
+        560,
+        480
+      ],
+      "cameraReviewCrop": null
+    },
+    {
+      "frameIndex": 1,
+      "scene": "courtyard",
+      "pose": "ruta-adjust-satchel",
+      "foot": [
+        560,
+        480
+      ],
+      "cameraReviewCrop": [
+        250,
+        230,
+        836,
+        470
+      ]
+    },
+    {
+      "frameIndex": 2,
+      "scene": "orchard",
+      "pose": "rabbit-baking",
+      "foot": [
+        850,
+        570
+      ],
+      "cameraReviewCrop": null
+    },
+    {
+      "frameIndex": 3,
+      "scene": "courtyard",
+      "pose": "ruta-surprised",
+      "foot": [
+        670,
+        520
+      ],
+      "stones": [
+        [
+          705,
+          518
+        ],
+        [
+          725,
+          524
+        ],
+        [
+          695,
+          537
+        ]
+      ],
+      "cameraReviewCrop": [
+        350,
+        250,
+        836,
+        470
+      ]
+    },
+    {
+      "frameIndex": 4,
+      "scene": "courtyard",
+      "pose": "ruta-crouch-basket",
+      "foot": [
+        670,
+        520
+      ],
+      "stones": [
+        [
+          706,
+          514
+        ]
+      ],
+      "cameraReviewCrop": [
+        350,
+        250,
+        836,
+        470
+      ]
+    },
+    {
+      "frameIndex": 5,
+      "scene": "courtyard",
+      "pose": "idle-pilot",
+      "foot": [
+        560,
+        480
+      ],
+      "cameraReviewCrop": null
+    }
+  ]
+}
