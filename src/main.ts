@@ -1,4 +1,5 @@
 import './style.css';
+import {positionAlongPath} from './character-animation.ts';
 import rutaManifest from '../public/assets/characters-v1/manifest.json' with {type:'json'};
 import {createGameAudio,type SoundEvent} from './audio.ts';
 import {chapterMap,continueTarget,learningHint,chapterCompletion} from './chapter-ui.ts';
@@ -452,9 +453,10 @@ new ResizeObserver(()=>renderBoard()).observe($('field'));
 
 function updateRutaMarker() {
   const marker=document.getElementById('ruta-marker');if(!marker||!route.length)return;
-  const index=Math.min(Math.floor(journey),route.length-1),next=Math.min(index+1,route.length-1),t=journey-index;
-  const a=hexCenter(route[index],radius),b=hexCenter(route[next],radius);
-  const foot=groundPoint(origin.x+a.x+(b.x-a.x)*t,origin.y+a.y+(b.y-a.y)*t);
+  const points=route.map(h=>project(hexCenter(h,1),{...projection,pivotY:0}));
+  const length=points.slice(1).reduce((sum,point,index)=>sum+Math.hypot(point.x-points[index].x,point.y-points[index].y),0);
+  const position=positionAlongPath(points,length*journey/Math.max(1,route.length-1)),base=groundPoint(origin.x,origin.y);
+  const foot={x:base.x+position.x*radius,y:base.y+position.y*radius};
   marker.setAttribute('transform',`translate(${foot.x} ${foot.y})`);
   marker.replaceChildren();
   
