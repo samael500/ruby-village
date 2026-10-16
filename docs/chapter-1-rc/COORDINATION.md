@@ -35,3 +35,15 @@ Four slots total including coordinator. Each executor has its own worktree.
 Courtyard and Ruta artistic acceptance pending. Do not mass-produce unaccepted style. Continue independent work while awaiting review.
 Physical phone, iOS/Safari and family playtest: NOT RUN; browser emulation does not satisfy them.
 No RC claim until integrated browser playthrough, audiovisual evidence, independent QA and release checks.
+
+## Live checkpoint 2026-10-17 (after first integration)
+
+- Integration PR55 is draft; #52 data, #53 UI, #54 Ruta, #56 scenery, #57 audio, #58 music remain separate review records. Nothing merged/published by this session.
+- Ruta appearance explicitly accepted by Maksim; courtyard style explicitly accepted by Maksim. Acceptance is recorded in their reports/manifests; technical motion/game integration still require checks.
+- #50 effects and #51 score are integrated: 29 processed effects/ambiences, four ~107s sampled-instrument loops and ending, shared graph with persisted music/sfx/mute, pause offset retained. Rights/source projects/masters committed.
+- Active slots: characters → #36 rig/motion; data_ui → #48 painted map; independent_qa → initial #37 runtime audit. art_scenes queued for seven accepted-style scenes as next slot releases.
+- Production retains matching layout1/legacy backgrounds behind explicit atomic gate. All accepted layout2 data/migration code are retained and independently tested. No new endpoints are painted over old scenery.
+- Initial static production traversal: six prologue frames, all eight solutions through actual tray/rotation/cell/place/check clicks; no page errors. Evidence precedes final music/Ruta refresh; final audiovisual capture running.
+- 71 tests pass before latest purely visual hookups; tsc/build pass. Independent review is in progress, not an approval of unfinished artwork.
+- First independent finding: stale three-puzzle description in index.html, fixed to eight.
+- Family/physical phone/iOS listening remain NOT RUN. Final art, villagers/poses, rig-polished walking, map/choreography and final QA/release remain incomplete.
