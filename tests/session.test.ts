@@ -1,6 +1,6 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {loadSession,saveSession,type Session} from '../src/session.ts';
+import {loadSession,recoverSession,saveSession,CHAPTER_LAYOUT_VERSION,type Session} from '../src/session.ts';
 import {saveProgress,PROGRESS_KEY,type StorageLike} from '../src/progress.ts';
 import {levels} from '../src/levels.ts';
 import legacy from './fixtures/chapter-1-before-layouts.json' with {type:'json'};
@@ -43,4 +43,37 @@ test('Из старого сохранения удаляется только �
   assert.deepEqual(loaded.layout,old.solution);assert.equal(loaded.layout[piece],undefined);
   assert.deepEqual(JSON.parse(storage.getItem(PROGRESS_KEY)!).completed,completed);
  }
+});
+
+test('Legacy migration is repeatable, persisted once, preserves unknown chapter state',()=>{
+ const storage=store(),old=legacy.levels.find(l=>l.id==='stream')!;
+ const raw={version:2,completed:['gate','garden','well','bakery'],introSeen:['gate'],letter:{read:true},prologue:{frame:4},preferences:{mode:'drag',reducedMotion:true},session:{levelId:'stream',cols:11,rows:7,layout:{...old.solution,'stream-b':{anchor:{q:6,r:2},turns:0}},mode:'drag',reducedMotion:true}};
+ storage.setItem(PROGRESS_KEY,JSON.stringify(raw));
+ const first=recoverSession(storage,raw.completed);
+ assert.equal(first.migrated,true);assert.deepEqual(first.discarded,['stream-b']);assert.ok(first.notice);
+ assert.deepEqual(recoverSession(storage,raw.completed),first);
+ assert.equal(saveSession(storage,first.session!),true);
+ const next=recoverSession(storage,raw.completed);assert.equal(next.migrated,false);assert.deepEqual(next.discarded,[]);assert.deepEqual(next.session,first.session);
+ saveProgress([...raw.completed,'stream'],storage);
+ const saved=JSON.parse(storage.getItem(PROGRESS_KEY)!);
+ assert.equal(saved.layoutVersion,CHAPTER_LAYOUT_VERSION);assert.deepEqual(saved.letter,raw.letter);assert.deepEqual(saved.prologue,raw.prologue);assert.deepEqual(saved.preferences,raw.preferences);assert.deepEqual(saved.session,next.session);
+});
+test('Unrecoverable session reports reset without erasing progress, and storage failure is explicit',()=>{
+ const storage=store(),raw={version:2,completed:levels.map(l=>l.id),session:{levelId:'gate',layout:[]}};
+ storage.setItem(PROGRESS_KEY,JSON.stringify(raw));
+ const recovery=recoverSession(storage,raw.completed);assert.equal(recovery.session,null);assert.ok(recovery.notice);assert.deepEqual(JSON.parse(storage.getItem(PROGRESS_KEY)!).completed,raw.completed);
+ assert.ok(recoverSession({getItem:()=>{throw Error('denied');},setItem:()=>{}},[]).notice);
+ assert.equal(saveSession({getItem:()=>JSON.stringify(raw),setItem:()=>{throw Error('quota');}},null),false);
+});
+
+test('Old completed courtyard stays complete and replay has exactly one eighth stone',()=>{
+ const storage=store(),old=legacy.levels.find(l=>l.id==='gate')!;
+ storage.setItem(PROGRESS_KEY,JSON.stringify({version:2,completed:['gate'],introSeen:['gate'],session:{levelId:'gate',cols:11,rows:7,layout:old.solution}}));
+ const first=recoverSession(storage,['gate']);assert.equal(Object.keys(first.session!.layout).length,7);
+ assert.equal(levels[0].pieces.filter(p=>p.id==='gate-8').length,1);
+ assert.equal(first.session!.layout['gate-8'],undefined);
+ saveSession(storage,first.session);assert.deepEqual(JSON.parse(storage.getItem(PROGRESS_KEY)!).completed,['gate']);
+ assert.deepEqual(recoverSession(storage,['gate']).session,first.session);
+ storage.setItem(PROGRESS_KEY,JSON.stringify({version:2,layoutVersion:999,completed:['gate'],session:first.session}));
+ const future=recoverSession(storage,['gate']);assert.equal(future.session,null);assert.ok(future.notice);
 });
