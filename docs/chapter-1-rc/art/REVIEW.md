@@ -36,3 +36,13 @@ Existing v1/v2 candidates were recovered from the shared workspace. Their origin
 - Reproduce geometry packages with `python3 scripts/art-v9-packages.py`; review SVG/hashes with `python3 scripts/art-v9-review.py`. Screenshots were captured in headless Chromium via Playwright, not from gameplay.
 
 The independent gate-leaf extraction `gate-v3-gate-leaf.png` **failed positional fidelity** (enlarged/repositioned by the image tool) and is retained as a rejected candidate with its exact prompt/hash. Do not composite or animate this leaf. The review HTML deliberately uses the coherent closed foreground and the open aperture without pretending it is an approved opening animation.
+
+## Follow-up: registered clean layers (supersedes extraction blockers above)
+
+`art/chapter-1-v9/layers/manifest.json` now supplies clean fixed foreground, closed leaf and open leaf as full-canvas RGBA PNG plus editable SVG masks. The source painting remains unchanged: SVG paths isolate its existing pixels, and a documented affine projection opens the leaf around the exact fixed hinge. This authorized deterministic vector masking replaces failed imagegen extraction; it does not draw a replacement illustration. Failed candidates are retained for provenance, never referenced as current layers.
+
+The gate was inspected on white, dark and magenta backgrounds (`gate-v4-alpha-three-backgrounds.png`): no generated colored fringe. Actual browser states with Ruta and precise full-grid overlay are `gate-v4-with-ruta-{closed,open,geometry}.png`. Their preview is `review/index.html`.
+
+Raster polygon intersection check: fixed foreground and open leaf each overlap **0 pixels** of the full playable polygons. The closed vertical leaf overlaps 439 pixels at the goal edge (x1348–1413, y719–745), inherent to the retained gate position. #46 must open the gate before Ruta enters the goal; the open state clears its full footprint. This is an explicit runtime contract, not a geometry change.
+
+Artistic review is pending. Current blockers are acceptance, production depth/traversal checks, and seven remaining final scenes. Earlier extraction fringe and positional-fidelity defects are superseded by the registered source-mask layers.

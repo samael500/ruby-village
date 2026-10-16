@@ -116,17 +116,17 @@
       "freeMask": "art/chapter-1-v9/review/gate-free-mask.svg",
       "layers": {
         "background": "art/chapter-1-v9/candidates/gate-v3-base.png",
-        "foregroundClosedReview": "art/chapter-1-v9/candidates/gate-v3-foreground-closed.png",
-        "foregroundFixedCandidate": "art/chapter-1-v9/candidates/gate-v3-fixed-fence.png",
-        "gateLeafCandidate": "rejected: art/chapter-1-v9/candidates/gate-v3-gate-leaf.png"
+        "foreground": "art/chapter-1-v9/layers/foreground-fixed.png",
+        "gateClosed": "art/chapter-1-v9/layers/gate-closed.png",
+        "gateOpen": "art/chapter-1-v9/layers/gate-open.png"
       },
       "productionReady": false,
       "blockers": [
         "Maksim artistic acceptance pending",
-        "RGBA fringe cleanup and exact registration QA pending",
-        "Separate opened gate leaf pending",
-        "Independent leaf extraction changed size/placement; rejected for compositing"
-      ]
+        "Production walk/depth/open-before-goal QA pending"
+      ],
+      "layerManifest": "art/chapter-1-v9/layers/manifest.json",
+      "registration": "all layers 1672x941, full crop and origin 0,0"
     },
     "mill": {
       "status": "awaiting-pilot-acceptance",
