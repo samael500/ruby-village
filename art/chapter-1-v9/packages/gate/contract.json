@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "gate",
+  "status": "pilot-awaiting-art-review",
+  "canvas": {
+    "width": 1672,
+    "height": 941,
+    "origin": [
+      0,
+      0
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  "source": "docs/blender-chapter-1/layouts/engine/gate.json",
+  "sourceSha256": "ad438768d77c2a6f0dcd8ca1941533178291d8aefc4183c842962ac6a4a06092",
+  "camera": {
+    "radius": 70,
+    "origin": {
+      "x": 140,
+      "y": 290
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "start": {
+    "q": 2,
+    "r": 2,
+    "name": "Дом Руты",
+    "pixel": {
+      "x": 503.73066958946424,
+      "y": 426.5
+    }
+  },
+  "goal": {
+    "q": 7,
+    "r": 6,
+    "name": "Калитка",
+    "pixel": {
+      "x": 1352.435565298214,
+      "y": 699.5
+    }
+  },
+  "layers": {
+    "background": "opaque canvas; no characters/UI/grid/solution",
+    "foreground": "RGBA same canvas/crop; no free-hex occlusion",
+    "gateClosed": "RGBA same canvas/crop",
+    "gateOpen": "RGBA same canvas/crop",
+    "water": null,
+    "wheel": null
+  },
+  "rules": [
+    "Preserve every full free polygon, not only cell center",
+    "Blockers require meaningful decoration across their whole footprints",
+    "Shared transform for every image, geometry and character feet",
+    "No production activation until art acceptance and matching game data integration"
+  ]
+}
