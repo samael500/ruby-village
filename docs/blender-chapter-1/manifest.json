@@ -1,0 +1,218 @@
+{
+  "status": "candidate \u2014 awaiting Maksim art review; not production",
+  "scene": "gate",
+  "blender": "4.5.3 LTS",
+  "seed": 40,
+  "source": "art/blender/gate-pilot.blend",
+  "command": "blender --background --factory-startup --threads 8 --python-exit-code 1 --python scripts/blender/courtyard.py -- --samples 16",
+  "samples": 12,
+  "resolution": [
+    1672,
+    941
+  ],
+  "sourceRect": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "camera": {
+    "type": "orthographic",
+    "elevationDegrees": 40.541601873504526,
+    "worldToPixel": [
+      [
+        100,
+        0,
+        0,
+        140
+      ],
+      [
+        0,
+        -65,
+        -75.99342076785331,
+        290
+      ]
+    ],
+    "groundPixelToWorld": [
+      [
+        0.01,
+        0,
+        -1.4
+      ],
+      [
+        0,
+        -0.015384615384615385,
+        4.461538461538462
+      ]
+    ],
+    "anchors": {
+      "start": {
+        "pixel": [
+          503.73062896728516,
+          426.49994045495987
+        ],
+        "world": [
+          3.637306695894642,
+          -2.0999999999999996,
+          0
+        ],
+        "expected": {
+          "x": 503.73066958946424,
+          "y": 426.5
+        },
+        "errorPx": 7.208171222857541e-05
+      },
+      "goal": {
+        "pixel": [
+          1291.8138008117676,
+          631.2499750256538
+        ],
+        "world": [
+          11.518137870333032,
+          -5.249999999999999,
+          0
+        ],
+        "expected": {
+          "x": 1291.8137870333032,
+          "y": 631.25
+        },
+        "errorPx": 2.8523044115488004e-05
+      }
+    }
+  },
+  "collections": [
+    "background",
+    "foreground",
+    "gate_closed",
+    "gate_open",
+    "ruta",
+    "stones",
+    "verification"
+  ],
+  "productionChanged": false,
+  "inputSha256": {
+    "src/scene-v8.json": "a32f8e4d1bbe56d0c6b6d29a72aa5a8d646675db68489adcaacb8fd4052d8cbc",
+    "src/chapter-1.logical.json": "6d310ccc6a055a47f00acaa1fa862877aaa451ce9f00456830efc0907cdd28cd",
+    "src/art-solutions.json": "ed36d0132a9ba50c0ff2d212a820588dee8d045f45fd53f6384697d1921c14d4",
+    "scripts/blender/courtyard.py": "8e01a66f74669954fe4af3596c8e9f3d57c848c13e6a79bdeedd8106daa7c486"
+  },
+  "extendedCanvas": {
+    "file": "candidates/gate-wide.png",
+    "resolution": [
+      3272,
+      1200
+    ],
+    "originalRect": [
+      800,
+      129.5,
+      1672,
+      941
+    ],
+    "method": "same camera center; wider orthographic frustum; real geometry"
+  },
+  "layers": {
+    "background": {
+      "file": "candidates/layer-background.png",
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight",
+      "state": null,
+      "shadowContract": "self-shadow only; cross-layer shadow pass pending"
+    },
+    "foreground": {
+      "file": "candidates/layer-foreground.png",
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight",
+      "state": null,
+      "shadowContract": "self-shadow only; cross-layer shadow pass pending"
+    },
+    "gate_closed": {
+      "file": "candidates/layer-gate_closed.png",
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight",
+      "state": "closed",
+      "shadowContract": "self-shadow only; cross-layer shadow pass pending"
+    },
+    "gate_open": {
+      "file": "candidates/layer-gate_open.png",
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight",
+      "state": "open",
+      "shadowContract": "self-shadow only; cross-layer shadow pass pending"
+    },
+    "ruta": {
+      "file": "candidates/layer-ruta.png",
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight",
+      "state": null,
+      "shadowContract": "self-shadow only; cross-layer shadow pass pending"
+    },
+    "stones": {
+      "file": "candidates/layer-stones.png",
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight",
+      "state": null,
+      "shadowContract": "self-shadow only; cross-layer shadow pass pending"
+    }
+  },
+  "projectionCheck": {
+    "points": 539,
+    "maxErrorPx": 8.187731829837933e-05,
+    "includes": "77 centers + 462 corners"
+  },
+  "exportSamples": 12,
+  "exportCommand": "blender --background --threads 8 art/blender/gate-pilot.blend --python-exit-code 1 --python scripts/blender/export.py -- --samples 12"
+}
