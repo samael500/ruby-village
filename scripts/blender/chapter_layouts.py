@@ -174,7 +174,12 @@ def build(id):
                 cols[state].objects.link(o);o.color=COLORS['wood'];o['clearanceRole']='solid';o['acceptedGateTransform']=True
             old_layout=json.loads((ROOT/'docs/blender-chapter-1/manifest.json').read_text())['gateLayout']
             layout={**old_layout,'point':old_layout['openingCenter'],'kind':'accepted gate'}
-            scene['gate_layout_json']=json.dumps(old_layout);court(role,anchor,layout);landmarks.append({'role':role,**layout})
+            if any(c['kind']=='goal' for c in engine.get('layoutChanges',[])):
+                direction=old_layout['incomingDirection'];posts=[old_layout['leftPost'],old_layout['rightPost']]
+                layout['goal']=list(c[:2])
+                layout['court']=hull(poly+[(p[0]+.25*direction[0],p[1]+.25*direction[1]) for p in posts])
+                layout['approachLengthWorld']=math.dist(c[:2],layout['point'])
+            scene['gate_layout_json']=json.dumps(layout);court(role,anchor,layout);landmarks.append({'role':role,**layout})
         elif (id=='gate' and role=='start') or (role=='goal' and id in ['bakery','post','mill']):landmark(role,anchor,'house')
         elif role=='goal' and id in ['garden','well','forest']:landmark(role,anchor,{'garden':'table','well':'well','forest':'sign'}[id])
         elif id=='stream' or id=='mill':

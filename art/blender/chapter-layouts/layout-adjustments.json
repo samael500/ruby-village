@@ -64,6 +64,16 @@
         "q": -1,
         "r": 6
       }
+    },
+    "garden": {
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
     }
   },
   "solutions": {
@@ -158,6 +168,130 @@
         },
         "turns": 0
       }
+    },
+    "garden": {
+      "garden-a": {
+        "anchor": {
+          "q": 0,
+          "r": 6
+        },
+        "turns": 5
+      },
+      "garden-b": {
+        "anchor": {
+          "q": 3,
+          "r": 5
+        },
+        "turns": 1
+      },
+      "garden-v6-a": {
+        "anchor": {
+          "q": 7,
+          "r": 4
+        },
+        "turns": 5
+      },
+      "garden-v6-b": {
+        "anchor": {
+          "q": 6,
+          "r": 5
+        },
+        "turns": 2
+      }
+    },
+    "gate": {
+      "gate-1": {
+        "anchor": {
+          "q": 3,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "gate-2": {
+        "anchor": {
+          "q": 4,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "gate-3": {
+        "anchor": {
+          "q": 5,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "gate-4": {
+        "anchor": {
+          "q": 6,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "gate-5": {
+        "anchor": {
+          "q": 7,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "gate-6": {
+        "anchor": {
+          "q": 7,
+          "r": 3
+        },
+        "turns": 0
+      },
+      "gate-7": {
+        "anchor": {
+          "q": 7,
+          "r": 4
+        },
+        "turns": 0
+      },
+      "gate-8": {
+        "anchor": {
+          "q": 7,
+          "r": 5
+        },
+        "turns": 0
+      }
     }
+  },
+  "followupSources": [
+    {
+      "pr": 42,
+      "headSha": "041269f2edbe5f4349a43c62bbfb67eb6ea411be",
+      "image": "docs/blender-chapter-1/layouts/contact-sheet.png",
+      "annotationVersion": 6,
+      "request": "Move courtyard goal to 7,6 and garden start to -1,6, as drawn"
+    }
+  ],
+  "goalMoves": {
+    "gate": {
+      "from": {
+        "q": 7,
+        "r": 5
+      },
+      "to": {
+        "q": 7,
+        "r": 6
+      }
+    }
+  },
+  "extraPieces": {
+    "gate": [
+      {
+        "id": "gate-8",
+        "name": "Камень 8",
+        "shape": [
+          {
+            "q": 0,
+            "r": 0
+          }
+        ],
+        "color": "#9873bf"
+      }
+    ]
   }
 }

@@ -15,12 +15,12 @@
     "groundScale": 0.65
   },
   "start": {
-    "q": 0,
-    "r": 5,
+    "q": -1,
+    "r": 6,
     "name": "Калитка",
     "pixel": {
-      "x": 465.7883832488647,
-      "y": 636.75
+      "x": 408.6307065990918,
+      "y": 701.1
     }
   },
   "goal": {
@@ -2828,15 +2828,15 @@
       "kind": "stone",
       "placement": {
         "anchor": {
-          "q": 1,
-          "r": 5
+          "q": 0,
+          "r": 6
         },
         "turns": 5
       },
       "cells": [
-        "1,5",
-        "2,5",
-        "3,5"
+        "0,6",
+        "1,6",
+        "2,6"
       ]
     },
     {
@@ -2856,14 +2856,14 @@
       "kind": "stone",
       "placement": {
         "anchor": {
-          "q": 4,
+          "q": 3,
           "r": 5
         },
-        "turns": 0
+        "turns": 1
       },
       "cells": [
-        "4,5",
-        "5,5"
+        "3,5",
+        "3,6"
       ]
     },
     {
@@ -2901,15 +2901,15 @@
       "kind": "stone",
       "placement": {
         "anchor": {
-          "q": 8,
-          "r": 3
+          "q": 7,
+          "r": 4
         },
-        "turns": 2
+        "turns": 5
       },
       "cells": [
-        "8,3",
         "7,4",
-        "6,5"
+        "8,3",
+        "9,2"
       ]
     },
     {
@@ -2933,29 +2933,30 @@
       "kind": "stone",
       "placement": {
         "anchor": {
-          "q": 9,
-          "r": 0
+          "q": 6,
+          "r": 5
         },
-        "turns": 1
+        "turns": 2
       },
       "cells": [
-        "9,0",
-        "9,1",
-        "8,2"
+        "6,5",
+        "5,6",
+        "4,6"
       ]
     }
   ],
   "path": [
-    "0,5",
-    "1,5",
-    "2,5",
-    "3,5",
-    "4,5",
-    "5,5",
+    "-1,6",
+    "0,6",
+    "1,6",
+    "2,6",
+    "3,6",
+    "4,6",
+    "5,6",
     "6,5",
     "7,4",
     "8,3",
-    "8,2",
+    "9,2",
     "9,1"
   ],
   "engineChecks": {
@@ -2972,6 +2973,84 @@
     "src/chapter-1.logical.json": "6d310ccc6a055a47f00acaa1fa862877aaa451ce9f00456830efc0907cdd28cd",
     "src/art-solutions.json": "ed36d0132a9ba50c0ff2d212a820588dee8d045f45fd53f6384697d1921c14d4",
     "src/scene-v8.json": "a32f8e4d1bbe56d0c6b6d29a72aa5a8d646675db68489adcaacb8fd4052d8cbc",
-    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4"
-  }
+    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4",
+    "art/blender/chapter-layouts/layout-adjustments.json": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e"
+  },
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "garden-a": {
+          "anchor": {
+            "q": 1,
+            "r": 5
+          },
+          "turns": 5
+        },
+        "garden-b": {
+          "anchor": {
+            "q": 4,
+            "r": 5
+          },
+          "turns": 0
+        },
+        "garden-v6-a": {
+          "anchor": {
+            "q": 8,
+            "r": 3
+          },
+          "turns": 2
+        },
+        "garden-v6-b": {
+          "anchor": {
+            "q": 9,
+            "r": 0
+          },
+          "turns": 1
+        }
+      },
+      "to": {
+        "garden-a": {
+          "anchor": {
+            "q": 0,
+            "r": 6
+          },
+          "turns": 5
+        },
+        "garden-b": {
+          "anchor": {
+            "q": 3,
+            "r": 5
+          },
+          "turns": 1
+        },
+        "garden-v6-a": {
+          "anchor": {
+            "q": 7,
+            "r": 4
+          },
+          "turns": 5
+        },
+        "garden-v6-b": {
+          "anchor": {
+            "q": 6,
+            "r": 5
+          },
+          "turns": 2
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
 }

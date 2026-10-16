@@ -25,11 +25,11 @@
   },
   "goal": {
     "q": 7,
-    "r": 5,
+    "r": 6,
     "name": "Калитка",
     "pixel": {
-      "x": 1291.8137870333032,
-      "y": 631.25
+      "x": 1352.435565298214,
+      "y": 699.5
     }
   },
   "cells": [
@@ -2960,6 +2960,28 @@
       "cells": [
         "7,4"
       ]
+    },
+    {
+      "id": "gate-8",
+      "name": "Камень 8",
+      "shape": [
+        {
+          "q": 0,
+          "r": 0
+        }
+      ],
+      "color": "#9873bf",
+      "kind": "stone",
+      "placement": {
+        "anchor": {
+          "q": 7,
+          "r": 5
+        },
+        "turns": 0
+      },
+      "cells": [
+        "7,5"
+      ]
     }
   ],
   "path": [
@@ -2971,7 +2993,8 @@
     "7,2",
     "7,3",
     "7,4",
-    "7,5"
+    "7,5",
+    "7,6"
   ],
   "engineChecks": {
     "validSolution": true,
@@ -2987,6 +3010,149 @@
     "src/chapter-1.logical.json": "6d310ccc6a055a47f00acaa1fa862877aaa451ce9f00456830efc0907cdd28cd",
     "src/art-solutions.json": "ed36d0132a9ba50c0ff2d212a820588dee8d045f45fd53f6384697d1921c14d4",
     "src/scene-v8.json": "a32f8e4d1bbe56d0c6b6d29a72aa5a8d646675db68489adcaacb8fd4052d8cbc",
-    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4"
-  }
+    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4",
+    "art/blender/chapter-layouts/layout-adjustments.json": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e"
+  },
+  "layoutChanges": [
+    {
+      "kind": "goal",
+      "from": {
+        "q": 7,
+        "r": 5
+      },
+      "to": {
+        "q": 7,
+        "r": 6
+      }
+    },
+    {
+      "kind": "pieces",
+      "added": [
+        {
+          "id": "gate-8",
+          "name": "Камень 8",
+          "shape": [
+            {
+              "q": 0,
+              "r": 0
+            }
+          ],
+          "color": "#9873bf"
+        }
+      ]
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "gate-1": {
+          "anchor": {
+            "q": 3,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-2": {
+          "anchor": {
+            "q": 4,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-3": {
+          "anchor": {
+            "q": 5,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-4": {
+          "anchor": {
+            "q": 6,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-5": {
+          "anchor": {
+            "q": 7,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-6": {
+          "anchor": {
+            "q": 7,
+            "r": 3
+          },
+          "turns": 0
+        },
+        "gate-7": {
+          "anchor": {
+            "q": 7,
+            "r": 4
+          },
+          "turns": 0
+        }
+      },
+      "to": {
+        "gate-1": {
+          "anchor": {
+            "q": 3,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-2": {
+          "anchor": {
+            "q": 4,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-3": {
+          "anchor": {
+            "q": 5,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-4": {
+          "anchor": {
+            "q": 6,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-5": {
+          "anchor": {
+            "q": 7,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-6": {
+          "anchor": {
+            "q": 7,
+            "r": 3
+          },
+          "turns": 0
+        },
+        "gate-7": {
+          "anchor": {
+            "q": 7,
+            "r": 4
+          },
+          "turns": 0
+        },
+        "gate-8": {
+          "anchor": {
+            "q": 7,
+            "r": 5
+          },
+          "turns": 0
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
 }

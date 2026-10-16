@@ -154,9 +154,9 @@
     },
     {
       "role": "goal",
-      "anchorErrorPx": 2.8523044115488004e-05,
+      "anchorErrorPx": 5.240521078994843e-05,
       "blockedAreaPx2": 0,
-      "landmarkDistancePx": 211.8047533180964,
+      "landmarkDistancePx": 127.01283407399326,
       "coversFullAnchor": true
     }
   ],
@@ -172,7 +172,147 @@
     "movedBlockerSpillAreaPx2": 8274.866140442056
   },
   "waterObjects": 0,
-  "sourceSha256": "9ebe66735d87ba68854ff0dc7a78b071aaefb4666302a26041a67be01579b93a",
-  "layoutChanges": [],
-  "requiresGameIntegration": false
+  "sourceSha256": "de9b0a23d76e3f91ba9f51d53cedbf5c82b9da5ae4afc80561e6a38fb12135c8",
+  "layoutChanges": [
+    {
+      "kind": "goal",
+      "from": {
+        "q": 7,
+        "r": 5
+      },
+      "to": {
+        "q": 7,
+        "r": 6
+      }
+    },
+    {
+      "kind": "pieces",
+      "added": [
+        {
+          "id": "gate-8",
+          "name": "\u041a\u0430\u043c\u0435\u043d\u044c 8",
+          "shape": [
+            {
+              "q": 0,
+              "r": 0
+            }
+          ],
+          "color": "#9873bf"
+        }
+      ]
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "gate-1": {
+          "anchor": {
+            "q": 3,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-2": {
+          "anchor": {
+            "q": 4,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-3": {
+          "anchor": {
+            "q": 5,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-4": {
+          "anchor": {
+            "q": 6,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-5": {
+          "anchor": {
+            "q": 7,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-6": {
+          "anchor": {
+            "q": 7,
+            "r": 3
+          },
+          "turns": 0
+        },
+        "gate-7": {
+          "anchor": {
+            "q": 7,
+            "r": 4
+          },
+          "turns": 0
+        }
+      },
+      "to": {
+        "gate-1": {
+          "anchor": {
+            "q": 3,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-2": {
+          "anchor": {
+            "q": 4,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-3": {
+          "anchor": {
+            "q": 5,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-4": {
+          "anchor": {
+            "q": 6,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-5": {
+          "anchor": {
+            "q": 7,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "gate-6": {
+          "anchor": {
+            "q": 7,
+            "r": 3
+          },
+          "turns": 0
+        },
+        "gate-7": {
+          "anchor": {
+            "q": 7,
+            "r": 4
+          },
+          "turns": 0
+        },
+        "gate-8": {
+          "anchor": {
+            "q": 7,
+            "r": 5
+          },
+          "turns": 0
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
 }

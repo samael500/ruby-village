@@ -7,13 +7,14 @@ import {project} from '../../src/projection.ts';
 import {sceneMetadata,scenePoint} from '../../src/scene-camera.ts';
 import {validateLayout,winningPath,terrainAt} from '../../src/game.ts';
 import type {Hex} from '../../src/hex.ts';
-import type {Layout} from '../../src/model.ts';
+import type {Layout,Piece} from '../../src/model.ts';
 const folder=new URL('../../docs/blender-chapter-1/layouts/engine/',import.meta.url);
 const adjustmentPath='art/blender/chapter-layouts/layout-adjustments.json';
 const adjustmentBytes=readFileSync(new URL('../../'+adjustmentPath,import.meta.url));
 const adjustments=JSON.parse(adjustmentBytes.toString()) as {
  terrainMoves:Record<string,{from:string;to:string;terrain:'water'}[]>;
- startMoves:Record<string,{from:Hex;to:Hex}>;solutions:Record<string,Layout>;
+ startMoves:Record<string,{from:Hex;to:Hex}>;goalMoves:Record<string,{from:Hex;to:Hex}>;
+ extraPieces:Record<string,Piece[]>;solutions:Record<string,Layout>;
 };
 mkdirSync(folder,{recursive:true});
 const inputs=Object.fromEntries(['levels.ts','hex.ts','projection.ts','scene-camera.ts','game.ts','chapter-1.logical.json','art-solutions.json','scene-v8.json','chapter-1.story.json'].map(file=>[
@@ -22,18 +23,29 @@ const inputs=Object.fromEntries(['levels.ts','hex.ts','projection.ts','scene-cam
 for(const original of levels){
  const terrainChanges=adjustments.terrainMoves[original.id]??[];
  const startMove=adjustments.startMoves[original.id],solution=adjustments.solutions[original.id]??original.solution;
- const changes=[...terrainChanges.map(move=>({kind:'terrain',...move})),...(startMove?[{kind:'start',...startMove},{kind:'solution',from:original.solution,to:solution}]:[])];
+ const goalMove=adjustments.goalMoves[original.id],additionalPieces=adjustments.extraPieces[original.id]??[];
+ const changes=[...terrainChanges.map(move=>({kind:'terrain',...move})),...(startMove?[{kind:'start',...startMove}]:[]),
+  ...(goalMove?[{kind:'goal',...goalMove}]:[]),...(additionalPieces.length?[{kind:'pieces',added:additionalPieces}]:[]),
+  ...(adjustments.solutions[original.id]?[{kind:'solution',from:original.solution,to:solution}]:[])];
  const terrain={...original.terrain},board=new Set(boardCells(original.cols,original.rows).map(key));
  for(const move of terrainChanges){
   if(terrain[move.from]!==move.terrain||terrain[move.to]||!board.has(move.to))throw Error(`${original.id}: invalid approved terrain move`);
   delete terrain[move.from];terrain[move.to]=move.terrain;
  }
  if(startMove&&key(startMove.from)!==key(original.start))throw Error(`${original.id}: stale start correction`);
- const level={...original,terrain,start:startMove?.to??original.start,solution};
+ if(goalMove&&key(goalMove.from)!==key(original.goal))throw Error(`${original.id}: stale goal correction`);
+ const level={...original,terrain,start:startMove?.to??original.start,goal:goalMove?.to??original.goal,pieces:[...original.pieces,...additionalPieces],solution};
+ if(new Set(level.pieces.map(p=>p.id)).size!==level.pieces.length||!board.has(key(level.start))||!board.has(key(level.goal))||terrainAt(level,level.goal)!=='ground')throw Error(`${original.id}: invalid endpoints or duplicate pieces`);
  if(startMove&&(terrainAt(level,level.start)!=='ground'||Object.keys(solution).length>=level.pieces.length))throw Error(`${original.id}: new start must be dry and retain a spare piece`);
  if(startMove&&winningPath(level,original.solution))throw Error(`${original.id}: old solution unexpectedly connects the moved start`);
+ if(goalMove&&winningPath(level,original.solution))throw Error(`${original.id}: old solution unexpectedly connects the moved goal`);
  const metadata=sceneMetadata(level.id),camera=metadata.camera,path=winningPath(level,level.solution);
  if(!validateLayout(level,level.solution)||!path)throw new Error(`${level.id}: invalid engine solution`);
+ if(level.id==='gate'){
+  const dry=new Set(boardCells(level.cols,level.rows).filter(h=>terrainAt(level,h)==='ground').map(key));
+  const minimum=findPath(level.start,level.goal,dry)!.length-2;
+  if(level.pieces.reduce((n,p)=>n+p.shape.length,0)!==minimum||Object.keys(solution).length!==level.pieces.length)throw Error('gate: every single stone must be necessary and sufficient');
+ }
  const pieces=level.pieces.map(p=>{
   const placement=level.solution[p.id];
   return {...p,kind:p.kind??'stone',placement:placement??null,cells:placement?footprint(p.shape,placement.anchor,placement.turns).map(key):[]};
