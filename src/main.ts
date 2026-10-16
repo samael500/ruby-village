@@ -1,7 +1,8 @@
 import './style.css';
-import {scenePoint,goalSignLayout} from './scene-camera.ts';
+import {chapterMap,continueTarget,learningHint,chapterCompletion} from './chapter-ui.ts';
+import {scenePoint,goalSignLayout} from './production-camera.ts';
 import {loadPrologue,savePrologue,newPrologue,PROLOGUE_ID,prologueFrames,shouldStartPrologue,speakerPortrait} from './prologue.ts';
-import {loadPreferences,loadSession,saveSession,type Session} from './session.ts';
+import {loadPreferences,recoverSession,saveSession,type Session} from './session.ts';
 import {chapterScene} from './chapter-art.ts';
 import {sceneBackdrop,sceneForeground} from './scene-art.ts';
 import {GROUND_SCALE,project,unproject,groundTransform,sceneProjection,type Projection} from './projection.ts';
@@ -9,7 +10,8 @@ import {sceneLayout} from './scene-layout.ts';
 import {artUrl,backdrop,scenery,stoneDetail,drawGrid,drawInstanceEdges} from './level-art.ts';
 import {type Hex, boardCells, key, hexCenter, pixelHex, rotate} from './hex.ts';
 import {pieceById as lookupPiece, placedCells as cellsForPiece, validPlacement, terrainAt, winningPath, type Layout} from './game.ts';
-import {levels,sandbox} from './levels.ts';
+import {sandbox} from './levels.ts';
+import {productionLevels as levels,PRODUCTION_LAYOUT_VERSION} from './production-chapter.ts';
 import {chapter,storyFor,invitation,ending,type Dialogue} from './story.ts';
 import type {Level} from './model.ts';
 import {loadState,saveProgress,completeLevel,available,type StorageLike} from './progress.ts';
@@ -66,11 +68,12 @@ const artCheck=import.meta.env.DEV && new URLSearchParams(location.search).has('
 try {if(!artCheck)storage=window.localStorage;} catch { /* Private browsing may deny storage access. */ }
 const loaded=loadState(storage);
 let completed=loaded.completed,introSeen=loaded.introSeen,storageAvailable=!!storage;
-let savedSession=loadSession(storage,completed);
+const sessionRecovery=recoverSession(storage,completed,levels,PRODUCTION_LAYOUT_VERSION);
+let savedSession=sessionRecovery.session;
 let prologueState=loadPrologue(storage);
 const preferences=loadPreferences(storage);
 let reducedMotion=preferences.reducedMotion||savedSession?.reducedMotion===true;
-function persist(){storageAvailable=saveProgress(completed,storage,introSeen);storageAvailable=saveSession(storage,savedSession,{mode:mode==='drag'?'drag':'select',reducedMotion})&&storageAvailable;}
+function persist(){storageAvailable=saveProgress(completed,storage,introSeen);storageAvailable=saveSession(storage,savedSession,{mode:mode==='drag'?'drag':'select',reducedMotion},PRODUCTION_LAYOUT_VERSION)&&storageAvailable;}
 function remember(){if(screen!=='game')return;savedSession={levelId:level.id,cols,rows,layout:structuredClone(layout),mode:mode==='drag'?'drag':'select',reducedMotion};persist();}
 let firstVictory=false, victoryAt=0;
 let orientationBlocked=false, pausedMilliseconds=0;
@@ -78,6 +81,7 @@ let resumeJourney:(()=>void)|null=null;
 const portraitWindow=()=>{const v=window.visualViewport;return (v?.height??innerHeight)>(v?.width??innerWidth);};
 let route:Hex[]=[], journey=0, frame=0;
 let cols = 9, rows = 6, layout: Layout = {}, history: Layout[] = [];
+let learningRotated=false;
 let selected: string | null = null, anchor: Hex | null = null, turns = 0;
 // Once clicked, keep the destination while the pointer travels to the controls.
 let anchorPinned = false;
@@ -296,6 +300,12 @@ function render() {
     return;
   }
   renderBoard();renderTray();updateControls();
+  if(screen==='game'&&phase==='playing'){
+    const bridge=pieces.find(p=>p.kind==='bridge');
+    const tip=learningHint({levelId:level.id,mode:mode==='drag'?'drag':'select',selected:!!selected,placed:Object.keys(layout).length,rotated:learningRotated,hasBridge:!!bridge,bridgePlaced:!!bridge&&!!layout[bridge.id]});
+    $('hint').textContent=tip?.text??'Соедини начало и цель. Лишняя плита может остаться в наборе.';
+    $('hint').dataset.hint=tip?.id??'';
+  }
 }
 function eventHex(e: PointerEvent, lift=false): Hex | null {
   const rect=svg.getBoundingClientRect(), x=e.clientX-rect.left, y=e.clientY-rect.top-(lift && e.pointerType==='touch'?Math.max(42,verticalRadius*1.6):0);
@@ -368,7 +378,7 @@ function finishDrag(e: PointerEvent,cancel: boolean) {
 app.addEventListener('pointerup',e=>finishDrag(e,false));
 app.addEventListener('pointercancel',e=>finishDrag(e,true));
 app.addEventListener('lostpointercapture',e=>{if(drag) finishDrag(e,true);});
-for(const [id,delta] of [['left',-1],['right',1]] as const) $(id).onclick=()=>{if(selected){turns=(turns+delta+6)%6;render();}};
+for(const [id,delta] of [['left',-1],['right',1]] as const) $(id).onclick=()=>{if(selected){turns=(turns+delta+6)%6;learningRotated=true;render();}};
 $('place').onclick=commit;
 $('other').onclick=()=>{resetSelection();message('Выбери другую плиту.');render();};
 const settings=$('settings-panel') as HTMLDialogElement;
@@ -499,7 +509,7 @@ function readStory(id:string){
  dialogPages(data.title,pages,()=>{},'Закрыть');
 }
 function showEnding(){
- dialogPages(`Глава «${chapter.title}» пройдена`,[{speaker:'Рута',text:'Мы помогли деревне и нашли путь к старому саду.'},{speaker:'Следующая глава',text:`«${ending.title}». Рута отправится за письмами через лес. Продолжение готовится.`}],showMap,'На карту →');
+ dialogPages(chapterCompletion.title,[{speaker:'Рута',text:chapterCompletion.text}],showMap,'На карту →');
 }
 function finishVictory(){if(firstVictory)showStory(true);else{message('Дорога снова готова!');dialogPages(level.name,[{speaker:'Рута',text:'Получилось! Дорога снова соединена.'}],showCompletion,'Дальше →');}}
 story.addEventListener('cancel',e=>{e.preventDefault();$('story-skip').click();});
@@ -510,7 +520,7 @@ function enterLevel(next:Level,resume:Session|null=null) {
   $('main-menu').hidden=true;
   if(next.id!=='sandbox'&&!available(next.id,completed))return;
   cancelAnimationFrame(frame);resumeJourney=null;screen='game';phase=next.id==='sandbox'||introSeen.includes(next.id)?'playing':'intro';
-  level=next;pieces=level.pieces;cols=level.cols;rows=level.rows;layout=resume?structuredClone(resume.layout):{};if(resume)mode=resume.mode;($('mode') as HTMLSelectElement).value=mode;history=[];route=[];journey=0;path.clear();resetSelection();
+  learningRotated=false;level=next;pieces=level.pieces;cols=level.cols;rows=level.rows;layout=resume?structuredClone(resume.layout):{};if(resume)mode=resume.mode;($('mode') as HTMLSelectElement).value=mode;history=[];route=[];journey=0;path.clear();resetSelection();
   app.classList.toggle('illustrated-level',level.id!=='sandbox');
   app.classList.toggle('prototype-level',false);
   sceneChrome(level.id!=='sandbox');
@@ -552,10 +562,10 @@ function showMap(){
  $('save-status').textContent=storageAvailable?'':'Прогресс хранится только до обновления или закрытия страницы.';
  const places=$('map-places');places.replaceChildren();
  for(const [index,l] of levels.entries()){
-  const data=storyFor(l.id)!,unlocked=available(l.id,completed),done=completed.includes(l.id);
+  const data=storyFor(l.id)!,mapItem=chapterMap(completed)[index],unlocked=!mapItem.disabled,done=mapItem.state==='restored';
   const node=document.createElement('div');node.className='map-node';node.dataset.mapNode=l.id;
   const button=document.createElement('button');button.dataset.level=l.id;button.className='level-card';button.disabled=!unlocked;
-  button.setAttribute('aria-label',`${l.name}${done?', пройдено, можно переиграть':unlocked?', открыто':', пока закрыто'}`);
+  button.setAttribute('aria-label',mapItem.label);
   const symbol=document.createElement('span');symbol.className='place-symbol';const image=document.createElement('img');image.src=`${import.meta.env.BASE_URL}assets/chapter-1/v6/${['01-courtyard','02-orchard','03-well','04-bakery','05-stream','06-mill','07-post','08-edge'][index]}.png`;image.alt='';symbol.append(image);
   const title=document.createElement('strong');title.textContent=`${index+1}. ${l.name}`;
   const state=document.createElement('span');state.className='map-state';state.textContent=done?'✓ Пройден':unlocked?'▶ В путь':'🔒 Закрыто';
@@ -655,22 +665,23 @@ function showMenu(){
  screen='menu';$('chapter-map').hidden=true;$('field').hidden=true;$('game-controls').hidden=true;$('main-menu').hidden=false;
  $('continue-game').textContent=savedSession||completed.length||prologueState.active?'Продолжить':'Начать приключение';
  $('menu-progress').textContent=`Восстановлено дорог: ${completed.length} из 8`;
- $('menu-save-status').textContent=storageAvailable?'':'Не удалось сохранить. Можно играть до закрытия страницы.';
+ $('menu-save-status').textContent=sessionRecovery.notice??(storageAvailable?'':'Не удалось сохранить. Можно играть до закрытия страницы.');
 }
-$('continue-game').onclick=()=>{if(shouldStartPrologue(prologueState,!!savedSession,completed.length>0||introSeen.length>0)){showPrologue(false,()=>enterLevel(levels[0]));return;}const next=savedSession?.levelId==='sandbox'?sandbox(savedSession.cols,savedSession.rows):levels.find(l=>l.id===savedSession?.levelId&&available(l.id,completed))??levels.find(l=>available(l.id,completed)&&!completed.includes(l.id))??levels[0];enterLevel(next,savedSession?.levelId===next.id?savedSession:null);};
+$('continue-game').onclick=()=>{if(shouldStartPrologue(prologueState,!!savedSession,completed.length>0||introSeen.length>0)){showPrologue(false,()=>enterLevel(levels[0]));return;}const target=continueTarget(completed,savedSession?.levelId);const next=target==='sandbox'&&savedSession?sandbox(savedSession.cols,savedSession.rows):levels.find(l=>l.id===target)??levels[0];enterLevel(next,savedSession?.levelId===next.id?savedSession:null);};
 $('choose-level').onclick=showMap;
 $('home-menu').onclick=showMenu;
 $('main-settings').onclick=()=>{for(const id of ['clear','map-return','story-replay','metric','hint','size-setting'])$(id).hidden=true;settings.showModal();};
 // A single pause clock covers overlapping modal/orientation blockers.
 let modalPaused=false,clockPaused=false,clockPauseStart=0;
 function syncPause(){
- const blocked=orientationBlocked||[...app.querySelectorAll<HTMLDialogElement>('dialog')].some(d=>d.open);
+ const blocked=document.hidden||orientationBlocked||[...app.querySelectorAll<HTMLDialogElement>('dialog')].some(d=>d.open);
  modalPaused=[...app.querySelectorAll<HTMLDialogElement>('dialog')].some(d=>d.open);
  if(blocked===clockPaused)return;
  clockPaused=blocked;
  if(blocked){clockPauseStart=performance.now();cancelAnimationFrame(frame);}
  else{pausedMilliseconds+=performance.now()-clockPauseStart;resumeJourney?.();}
 }
+document.addEventListener('visibilitychange',syncPause);
 new MutationObserver(syncPause).observe(app,{subtree:true,attributes:true,attributeFilter:['open']});
 
 const orientationScreen=document.createElement('section');
