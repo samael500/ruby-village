@@ -39,3 +39,15 @@ test('in-flight loaded effects are discarded on pause instead of deferred',async
  try{const audio=createGameAudio('/');await audio.unlock();const pending=audio.play('foot-earth');audio.setPaused(true);resolve();await pending;assert.equal(audio.metrics.played,0);audio.dispose();}
  finally{globalThis.AudioContext=original;globalThis.fetch=fetchOriginal;}
 });
+test('pause during a cue/scene switch never transfers old playback offset to the new file',async()=>{
+ const original=globalThis.AudioContext,fetchOriginal=globalThis.fetch;const releases:Array<()=>void>=[];
+ Object.assign(globalThis,{AudioContext:Context,fetch:async(url:string)=>{
+  if(url.endsWith('manifest.json'))return {ok:true,json:async()=>({cues:{village:{file:'village.ogg',gain:.5,loop:true},water:{file:'water.ogg',gain:.5,loop:true}}})};
+  if(url.endsWith('water.ogg'))await new Promise<void>(resolve=>releases.push(resolve));
+  return {ok:true,arrayBuffer:async()=>new ArrayBuffer(4)};
+ }});
+ try{const audio=createGameAudio('/');audio.setScene('gate');audio.setMusic('village');await audio.unlock();await flush();
+  Context.latest.currentTime=.6;audio.setMusic('water');audio.setScene('stream');await flush();audio.setPaused(true);audio.setPaused(false);
+  for(const resolve of releases)resolve();await flush();assert.ok(Source.offsets.slice(-2).every(offset=>offset===0));assert.equal(audio.metrics.activeVoices,2);audio.dispose();
+ }finally{globalThis.AudioContext=original;globalThis.fetch=fetchOriginal;}
+});
