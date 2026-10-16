@@ -548,7 +548,7 @@ function enterLevel(next:Level,resume:Session|null=null) {
 }
 function mapGeometry(){
  const points=[[120,95],[365,95],[610,95],[855,95],[855,300],[610,300],[365,300],[120,300]];
- const bounds=document.querySelector('.map-landscape')!.getBoundingClientRect(),fit=Math.min(bounds.width/1000,bounds.height/400);
+ const area=document.querySelector<HTMLElement>('.map-landscape')!,bounds={width:area.clientWidth,height:area.clientHeight},fit=Math.min(bounds.width/1000,bounds.height/400);
  $('map-world').style.cssText=`width:${1000*fit}px;height:${400*fit}px;left:${(bounds.width-1000*fit)/2}px;top:${(bounds.height-400*fit)/2}px`;
  const roads=$('map-roads');roads.replaceChildren();
  const entries=chapterMap(completed);
