@@ -1,0 +1,198 @@
+{
+  "sceneId": "post",
+  "status": "pass",
+  "source": "art/blender/chapter-layouts/post.blend",
+  "layoutFile": "post-layout.json",
+  "exports": {
+    "clean": {
+      "file": "renders/post-clean.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": false,
+      "bridgeBuilt": false
+    },
+    "check": {
+      "file": "renders/post-check.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    },
+    "solved": {
+      "file": "renders/post-solved.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    }
+  },
+  "layers": {
+    "background": {
+      "file": "renders/post-background.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    },
+    "solution": {
+      "file": "renders/post-solution.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    }
+  },
+  "cells": 77,
+  "blocked": 17,
+  "free": 60,
+  "maxCornerErrorPx": 0.0001465768834496188,
+  "maxAreaErrorPx2": 0.011541509738890454,
+  "solidObjectsChecked": 19,
+  "solidFreeIntersections": 0,
+  "groundFootprintsChecked": true,
+  "approaches": [
+    {
+      "role": "start",
+      "anchorErrorPx": 5.192984451561659e-05,
+      "blockedAreaPx2": 0.0,
+      "landmarkDistancePx": 107.25006367692625,
+      "coversFullAnchor": true
+    },
+    {
+      "role": "goal",
+      "anchorErrorPx": 0.00011336600560800566,
+      "blockedAreaPx2": 0.0,
+      "landmarkDistancePx": 45.78465209232826,
+      "coversFullAnchor": true
+    }
+  ],
+  "bridge": [],
+  "gate": null,
+  "mutationChecks": {
+    "removedBlockerMissingAreaPx2": 8001.32469321037,
+    "movedBlockerSpillAreaPx2": 8001.313442717299
+  },
+  "waterObjects": 0,
+  "sourceSha256": "9d7a5dfd0c450fe4d4a1e818fbb46225fd7c6fb6396c72526e7c9a85076ff88e",
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "post-a": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 2
+        },
+        "post-b": {
+          "anchor": {
+            "q": 4,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "post-extra": {
+          "anchor": {
+            "q": 7,
+            "r": 2
+          },
+          "turns": 0
+        }
+      },
+      "to": {
+        "post-extra": {
+          "anchor": {
+            "q": 6,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "post-b": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 0
+        },
+        "post-a": {
+          "anchor": {
+            "q": 2,
+            "r": 4
+          },
+          "turns": 2
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
+}

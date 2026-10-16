@@ -1,0 +1,191 @@
+{
+  "sceneId": "mill",
+  "name": "К мельнице",
+  "resolution": [
+    1672,
+    941
+  ],
+  "source": "art/blender/chapter-layouts/mill.blend",
+  "engine": "engine/mill.json",
+  "engineSha256": "7cd199e695fd57a3536b7ca7efeee600c24d16f9d0eaa1274cba314b0bcf23e1",
+  "camera": {
+    "engine": {
+      "radius": 70,
+      "origin": {
+        "x": 140,
+        "y": 330
+      },
+      "angle": 0,
+      "groundScale": 0.65
+    },
+    "worldToPixel": [
+      [
+        100,
+        0,
+        0,
+        140
+      ],
+      [
+        0,
+        -65.0,
+        -75.99342076785331,
+        330
+      ]
+    ],
+    "pixelToGround": [
+      [
+        0.01,
+        0,
+        -1.4
+      ],
+      [
+        0,
+        -0.015384615384615385,
+        5.076923076923077
+      ]
+    ],
+    "note": "Mesh ground already includes engine angle; camera elevation asin(groundScale)."
+  },
+  "anchors": {
+    "start": {
+      "q": 0,
+      "r": 4,
+      "name": "Ручей",
+      "pixel": {
+        "x": 382.4871130596428,
+        "y": 603
+      }
+    },
+    "goal": {
+      "q": 9,
+      "r": 2,
+      "name": "Мельница",
+      "pixel": {
+        "x": 1352.435565298214,
+        "y": 466.5
+      }
+    }
+  },
+  "landmarks": [
+    {
+      "role": "start",
+      "point": [
+        2.424871130596428,
+        -4.2
+      ],
+      "court": [
+        [
+          3.0310889132455348,
+          -4.55
+        ],
+        [
+          2.424871130596428,
+          -4.9
+        ],
+        [
+          1.8186533479473213,
+          -4.55
+        ],
+        [
+          1.8186533479473213,
+          -3.85
+        ],
+        [
+          2.424871130596428,
+          -3.5
+        ],
+        [
+          3.0310889132455348,
+          -3.85
+        ]
+      ],
+      "kind": "bank landing",
+      "distance": 0
+    },
+    {
+      "role": "goal",
+      "kind": "house",
+      "point": [
+        12.427464544306694,
+        -1.575
+      ],
+      "across": [
+        -0.8660254037844393,
+        0.49999999999999883
+      ],
+      "outward": [
+        -0.49999999999999883,
+        -0.8660254037844393
+      ],
+      "width": 1.8,
+      "depth": 1.2,
+      "height": 1.35,
+      "court": [
+        [
+          11.518137870333032,
+          -2.45
+        ],
+        [
+          12.124355652982139,
+          -2.8
+        ],
+        [
+          12.730573435631248,
+          -2.45
+        ],
+        [
+          12.730573435631248,
+          -1.75
+        ],
+        [
+          12.617990133139271,
+          -1.6849999999999996
+        ],
+        [
+          12.236938955474118,
+          -1.4650000000000003
+        ],
+        [
+          12.124355652982139,
+          -1.4
+        ],
+        [
+          11.518137870333032,
+          -1.75
+        ]
+      ],
+      "distance": 0.6062177826491081,
+      "boundaryCell": "10,1",
+      "mainVolume": {
+        "width": 2.4,
+        "depth": 1.4,
+        "height": 1.7,
+        "front": 0.6
+      }
+    }
+  ],
+  "collections": [
+    "ground",
+    "terrain",
+    "playable_contract",
+    "scenery",
+    "gate_closed",
+    "gate_open",
+    "verification",
+    "solution",
+    "bridge"
+  ],
+  "states": {
+    "clean": "no grid, path or bridge",
+    "check": "grid/start/goal; no placed pieces",
+    "solved": "exact engine solution and built bridge; accepted gate open"
+  },
+  "exportRect": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "technicalLayout": true,
+  "productionChanged": false
+}

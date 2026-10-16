@@ -1,0 +1,1701 @@
+{
+  "purpose": "all eight chapter-1 technical layouts for later 2D artwork",
+  "blender": "4.5.3 LTS",
+  "sourceCommand": "blender --background --factory-startup --threads 8 --python-exit-code 1 --python scripts/blender/chapter_layouts.py",
+  "auditCommand": "blender --background --threads 8 --python-exit-code 1 --python scripts/blender/audit_chapter.py",
+  "scenes": [
+    {
+      "sceneId": "gate",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/gate.blend",
+      "layoutFile": "gate-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/gate-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/gate-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/gate-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/gate-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/gate-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "gate_closed": {
+          "file": "renders/gate-gate_closed.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "gate_open": {
+          "file": "renders/gate-gate_open.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 16,
+      "free": 61,
+      "maxCornerErrorPx": 8.187731829837933e-05,
+      "maxAreaErrorPx2": 0.010111537194461562,
+      "solidObjectsChecked": 126,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 7.208171222857541e-05,
+          "blockedAreaPx2": 0.0013843472406733781,
+          "landmarkDistancePx": 45.64285777818642,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 5.240521078994843e-05,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 127.01283407399326,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": {
+        "acceptedTransformsPreserved": true,
+        "sweepPoses": 20,
+        "freeCellIntersections": 0,
+        "openingWidthWorld": 1.9
+      },
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8274.868263510341,
+        "movedBlockerSpillAreaPx2": 8274.866140442056
+      },
+      "waterObjects": 0,
+      "sourceSha256": "de9b0a23d76e3f91ba9f51d53cedbf5c82b9da5ae4afc80561e6a38fb12135c8",
+      "layoutChanges": [
+        {
+          "kind": "goal",
+          "from": {
+            "q": 7,
+            "r": 5
+          },
+          "to": {
+            "q": 7,
+            "r": 6
+          }
+        },
+        {
+          "kind": "pieces",
+          "added": [
+            {
+              "id": "gate-8",
+              "name": "\u041a\u0430\u043c\u0435\u043d\u044c 8",
+              "shape": [
+                {
+                  "q": 0,
+                  "r": 0
+                }
+              ],
+              "color": "#9873bf"
+            }
+          ]
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "gate-1": {
+              "anchor": {
+                "q": 3,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-2": {
+              "anchor": {
+                "q": 4,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-3": {
+              "anchor": {
+                "q": 5,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-4": {
+              "anchor": {
+                "q": 6,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-5": {
+              "anchor": {
+                "q": 7,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-6": {
+              "anchor": {
+                "q": 7,
+                "r": 3
+              },
+              "turns": 0
+            },
+            "gate-7": {
+              "anchor": {
+                "q": 7,
+                "r": 4
+              },
+              "turns": 0
+            }
+          },
+          "to": {
+            "gate-1": {
+              "anchor": {
+                "q": 3,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-2": {
+              "anchor": {
+                "q": 4,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-3": {
+              "anchor": {
+                "q": 5,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-4": {
+              "anchor": {
+                "q": 6,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-5": {
+              "anchor": {
+                "q": 7,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "gate-6": {
+              "anchor": {
+                "q": 7,
+                "r": 3
+              },
+              "turns": 0
+            },
+            "gate-7": {
+              "anchor": {
+                "q": 7,
+                "r": 4
+              },
+              "turns": 0
+            },
+            "gate-8": {
+              "anchor": {
+                "q": 7,
+                "r": 5
+              },
+              "turns": 0
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
+    },
+    {
+      "sceneId": "garden",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/garden.blend",
+      "layoutFile": "garden-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/garden-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/garden-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/garden-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/garden-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/garden-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 41,
+      "free": 36,
+      "maxCornerErrorPx": 0.00018868834657654186,
+      "maxAreaErrorPx2": 0.017947015818208456,
+      "solidObjectsChecked": 64,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 0.0001459546723865828,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 130.00530513565124,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00014886908429578228,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 103.99984923601171,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 7356.191595816941,
+        "movedBlockerSpillAreaPx2": 7356.1758708134
+      },
+      "waterObjects": 0,
+      "sourceSha256": "738e0425e83d154a9f298c48ba2b7e9b33abed7ec45c3391950762b6ea92e3ab",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "garden-a": {
+              "anchor": {
+                "q": 1,
+                "r": 5
+              },
+              "turns": 5
+            },
+            "garden-b": {
+              "anchor": {
+                "q": 4,
+                "r": 5
+              },
+              "turns": 0
+            },
+            "garden-v6-a": {
+              "anchor": {
+                "q": 8,
+                "r": 3
+              },
+              "turns": 2
+            },
+            "garden-v6-b": {
+              "anchor": {
+                "q": 9,
+                "r": 0
+              },
+              "turns": 1
+            }
+          },
+          "to": {
+            "garden-a": {
+              "anchor": {
+                "q": 0,
+                "r": 6
+              },
+              "turns": 5
+            },
+            "garden-b": {
+              "anchor": {
+                "q": 3,
+                "r": 5
+              },
+              "turns": 1
+            },
+            "garden-v6-a": {
+              "anchor": {
+                "q": 7,
+                "r": 4
+              },
+              "turns": 5
+            },
+            "garden-v6-b": {
+              "anchor": {
+                "q": 6,
+                "r": 5
+              },
+              "turns": 2
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
+    },
+    {
+      "sceneId": "well",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/well.blend",
+      "layoutFile": "well-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/well-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/well-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/well-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/well-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/well-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 30,
+      "free": 47,
+      "maxCornerErrorPx": 0.0001465768834496188,
+      "maxAreaErrorPx2": 0.011409171886043623,
+      "solidObjectsChecked": 59,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 5.192984451561659e-05,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 107.25006367692625,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011336600560800566,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 45.78465209232826,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8001.32469321037,
+        "movedBlockerSpillAreaPx2": 8001.313442717299
+      },
+      "waterObjects": 0,
+      "sourceSha256": "e7266dad0ea39f7302b6be56991162080534b085167983b188fd0eb2fe1b07e6",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "well-v6-a": {
+              "anchor": {
+                "q": 1,
+                "r": 5
+              },
+              "turns": 0
+            },
+            "well-a": {
+              "anchor": {
+                "q": 6,
+                "r": 4
+              },
+              "turns": 2
+            },
+            "well-b": {
+              "anchor": {
+                "q": 8,
+                "r": 2
+              },
+              "turns": 2
+            }
+          },
+          "to": {
+            "well-b": {
+              "anchor": {
+                "q": 6,
+                "r": 4
+              },
+              "turns": 5
+            },
+            "well-a": {
+              "anchor": {
+                "q": 5,
+                "r": 5
+              },
+              "turns": 2
+            },
+            "well-v6-a": {
+              "anchor": {
+                "q": 0,
+                "r": 6
+              },
+              "turns": 0
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
+    },
+    {
+      "sceneId": "bakery",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/bakery.blend",
+      "layoutFile": "bakery-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/bakery-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/bakery-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/bakery-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/bakery-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/bakery-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 17,
+      "free": 60,
+      "maxCornerErrorPx": 0.0001465768834496188,
+      "maxAreaErrorPx2": 0.011541509738890454,
+      "solidObjectsChecked": 19,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 5.192984451561659e-05,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 107.25006367692625,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011336600560800566,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 45.78465209232826,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8001.32469321037,
+        "movedBlockerSpillAreaPx2": 8001.313442717299
+      },
+      "waterObjects": 0,
+      "sourceSha256": "74151e8dc2027b2cc8bccb6b0aef0908239fde24d2b9c32e8ed146cdd1cff69f",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "bakery-a": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 2
+            },
+            "bakery-b": {
+              "anchor": {
+                "q": 4,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "bakery-v6-a": {
+              "anchor": {
+                "q": 7,
+                "r": 2
+              },
+              "turns": 0
+            }
+          },
+          "to": {
+            "bakery-b": {
+              "anchor": {
+                "q": 5,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "bakery-v6-a": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 0
+            },
+            "bakery-a": {
+              "anchor": {
+                "q": 2,
+                "r": 4
+              },
+              "turns": 2
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
+    },
+    {
+      "sceneId": "stream",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/stream.blend",
+      "layoutFile": "stream-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/stream-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/stream-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/stream-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": true
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/stream-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/stream-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "bridge": {
+          "file": "renders/stream-bridge.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 18,
+      "free": 59,
+      "maxCornerErrorPx": 0.00014569403157480617,
+      "maxAreaErrorPx2": 0.018141276868846035,
+      "solidObjectsChecked": 10,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 0.00011744133338595226,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 0.00011744133338595226,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011307813179621712,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 0.00011307813179621712,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [
+        {
+          "pieceId": "bridge",
+          "cells": [
+            "6,1",
+            "5,1",
+            "7,1"
+          ],
+          "waterCenter": "6,1",
+          "dryEnds": 2,
+          "hiddenBeforeBuild": true,
+          "exactCaps": true,
+          "adjoiningWaterCells": [
+            "6,0",
+            "6,2"
+          ],
+          "riverCenterErrorPx": 9.529839838371336e-06,
+          "negativeOriginalBendErrorPx": 60.62180161476153
+        }
+      ],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8274.871807676656,
+        "movedBlockerSpillAreaPx2": 8274.857143228073
+      },
+      "waterObjects": 7,
+      "sourceSha256": "9be1522e5bcfb0f26af64e6c75cd833ab841bca637a2703568290566c53e10dd",
+      "layoutChanges": [
+        {
+          "kind": "terrain",
+          "from": "5,2",
+          "to": "6,2",
+          "terrain": "water"
+        }
+      ],
+      "requiresGameIntegration": true
+    },
+    {
+      "sceneId": "mill",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/mill.blend",
+      "layoutFile": "mill-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/mill-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/mill-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/mill-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": true
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/mill-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/mill-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "bridge": {
+          "file": "renders/mill-bridge.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 24,
+      "free": 53,
+      "maxCornerErrorPx": 0.00014569403157480617,
+      "maxAreaErrorPx2": 0.018141276868846035,
+      "solidObjectsChecked": 25,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 9.155330729831406e-05,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 9.155330729831406e-05,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 8.72960529665791e-05,
+          "blockedAreaPx2": 0.000279333908110857,
+          "landmarkDistancePx": 45.6427132750191,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [
+        {
+          "pieceId": "bridge",
+          "cells": [
+            "2,3",
+            "1,3",
+            "3,3"
+          ],
+          "waterCenter": "2,3",
+          "dryEnds": 2,
+          "hiddenBeforeBuild": true,
+          "exactCaps": true,
+          "adjoiningWaterCells": [
+            "2,2",
+            "2,4"
+          ],
+          "riverCenterErrorPx": 1.4335643647162948e-05,
+          "negativeOriginalBendErrorPx": 60.62178500493478
+        }
+      ],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8274.871807676656,
+        "movedBlockerSpillAreaPx2": 8274.857143228073
+      },
+      "waterObjects": 9,
+      "sourceSha256": "424881f469edcc463f253f989cdc4c4a26f456bb1455b2b2205eed029dfa3440",
+      "layoutChanges": [
+        {
+          "kind": "terrain",
+          "from": "1,4",
+          "to": "2,4",
+          "terrain": "water"
+        }
+      ],
+      "requiresGameIntegration": true
+    },
+    {
+      "sceneId": "post",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/post.blend",
+      "layoutFile": "post-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/post-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/post-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/post-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/post-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/post-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 17,
+      "free": 60,
+      "maxCornerErrorPx": 0.0001465768834496188,
+      "maxAreaErrorPx2": 0.011541509738890454,
+      "solidObjectsChecked": 19,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 5.192984451561659e-05,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 107.25006367692625,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011336600560800566,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 45.78465209232826,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8001.32469321037,
+        "movedBlockerSpillAreaPx2": 8001.313442717299
+      },
+      "waterObjects": 0,
+      "sourceSha256": "9d7a5dfd0c450fe4d4a1e818fbb46225fd7c6fb6396c72526e7c9a85076ff88e",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "post-a": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 2
+            },
+            "post-b": {
+              "anchor": {
+                "q": 4,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "post-extra": {
+              "anchor": {
+                "q": 7,
+                "r": 2
+              },
+              "turns": 0
+            }
+          },
+          "to": {
+            "post-extra": {
+              "anchor": {
+                "q": 6,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "post-b": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 0
+            },
+            "post-a": {
+              "anchor": {
+                "q": 2,
+                "r": 4
+              },
+              "turns": 2
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
+    },
+    {
+      "sceneId": "forest",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/forest.blend",
+      "layoutFile": "forest-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/forest-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/forest-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/forest-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/forest-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/forest-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 20,
+      "free": 57,
+      "maxCornerErrorPx": 0.00022857038242262519,
+      "maxAreaErrorPx2": 0.021871040706173517,
+      "solidObjectsChecked": 38,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 0.00018767968711804007,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 130.00533986735303,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.0001921719769303201,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 43.03452197614973,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 7356.19159581834,
+        "movedBlockerSpillAreaPx2": 7356.170917235984
+      },
+      "waterObjects": 0,
+      "sourceSha256": "7090381444104c4d8f3fd4f6f6863a5aacf60aff927c22bfaa4d265b1cc3844b",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "forest-a": {
+              "anchor": {
+                "q": 2,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "forest-b": {
+              "anchor": {
+                "q": 4,
+                "r": 1
+              },
+              "turns": 0
+            },
+            "forest-c": {
+              "anchor": {
+                "q": 7,
+                "r": 1
+              },
+              "turns": 0
+            }
+          },
+          "to": {
+            "forest-c": {
+              "anchor": {
+                "q": 8,
+                "r": 1
+              },
+              "turns": 2
+            },
+            "forest-a": {
+              "anchor": {
+                "q": 1,
+                "r": 4
+              },
+              "turns": 0
+            },
+            "forest-b": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 0
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
+    }
+  ],
+  "productionChanged": false,
+  "inputs": {
+    "scripts/blender/audit_chapter.py": "7379afa4477cff17654d879c762601e20740fd48891ae681d91cc46101b49b38",
+    "scripts/blender/chapter_layouts.py": "c40b096b17a454492e228eac497aa9edcd341e4aedbf36781ef4086f68e171ae",
+    "scripts/blender/layout_math.py": "08eebd36199f6614b0cd107571ed3e9bfa1c21ff7f21c6f597555d5a378e2d37",
+    "scripts/blender/export-chapter.ts": "9f228a0c77cb96a3c3abddda072471b949bdad8b6f1285c2a5188fdab23be118",
+    "art/blender/gate-pilot.blend": "2cd02afa4c6f0a5bc8ce266db3f5b124e69d2b5ca2b4dd7237ced17bc6557967",
+    "docs/blender-chapter-1/manifest.json": "1b0c97a7cf3dfb101ccc23d106e659cffd2c52719e1a2772c76836ef2f9252b7"
+  }
+}

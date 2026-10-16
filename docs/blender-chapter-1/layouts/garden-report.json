@@ -1,0 +1,212 @@
+{
+  "sceneId": "garden",
+  "status": "pass",
+  "source": "art/blender/chapter-layouts/garden.blend",
+  "layoutFile": "garden-layout.json",
+  "exports": {
+    "clean": {
+      "file": "renders/garden-clean.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": false,
+      "bridgeBuilt": false
+    },
+    "check": {
+      "file": "renders/garden-check.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    },
+    "solved": {
+      "file": "renders/garden-solved.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    }
+  },
+  "layers": {
+    "background": {
+      "file": "renders/garden-background.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    },
+    "solution": {
+      "file": "renders/garden-solution.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    }
+  },
+  "cells": 77,
+  "blocked": 41,
+  "free": 36,
+  "maxCornerErrorPx": 0.00018868834657654186,
+  "maxAreaErrorPx2": 0.017947015818208456,
+  "solidObjectsChecked": 64,
+  "solidFreeIntersections": 0,
+  "groundFootprintsChecked": true,
+  "approaches": [
+    {
+      "role": "start",
+      "anchorErrorPx": 0.0001459546723865828,
+      "blockedAreaPx2": 0,
+      "landmarkDistancePx": 130.00530513565124,
+      "coversFullAnchor": true
+    },
+    {
+      "role": "goal",
+      "anchorErrorPx": 0.00014886908429578228,
+      "blockedAreaPx2": 0,
+      "landmarkDistancePx": 103.99984923601171,
+      "coversFullAnchor": true
+    }
+  ],
+  "bridge": [],
+  "gate": null,
+  "mutationChecks": {
+    "removedBlockerMissingAreaPx2": 7356.191595816941,
+    "movedBlockerSpillAreaPx2": 7356.1758708134
+  },
+  "waterObjects": 0,
+  "sourceSha256": "738e0425e83d154a9f298c48ba2b7e9b33abed7ec45c3391950762b6ea92e3ab",
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "garden-a": {
+          "anchor": {
+            "q": 1,
+            "r": 5
+          },
+          "turns": 5
+        },
+        "garden-b": {
+          "anchor": {
+            "q": 4,
+            "r": 5
+          },
+          "turns": 0
+        },
+        "garden-v6-a": {
+          "anchor": {
+            "q": 8,
+            "r": 3
+          },
+          "turns": 2
+        },
+        "garden-v6-b": {
+          "anchor": {
+            "q": 9,
+            "r": 0
+          },
+          "turns": 1
+        }
+      },
+      "to": {
+        "garden-a": {
+          "anchor": {
+            "q": 0,
+            "r": 6
+          },
+          "turns": 5
+        },
+        "garden-b": {
+          "anchor": {
+            "q": 3,
+            "r": 5
+          },
+          "turns": 1
+        },
+        "garden-v6-a": {
+          "anchor": {
+            "q": 7,
+            "r": 4
+          },
+          "turns": 5
+        },
+        "garden-v6-b": {
+          "anchor": {
+            "q": 6,
+            "r": 5
+          },
+          "turns": 2
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
+}

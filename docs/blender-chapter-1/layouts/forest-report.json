@@ -1,0 +1,198 @@
+{
+  "sceneId": "forest",
+  "status": "pass",
+  "source": "art/blender/chapter-layouts/forest.blend",
+  "layoutFile": "forest-layout.json",
+  "exports": {
+    "clean": {
+      "file": "renders/forest-clean.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": false,
+      "bridgeBuilt": false
+    },
+    "check": {
+      "file": "renders/forest-check.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    },
+    "solved": {
+      "file": "renders/forest-solved.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    }
+  },
+  "layers": {
+    "background": {
+      "file": "renders/forest-background.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    },
+    "solution": {
+      "file": "renders/forest-solution.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    }
+  },
+  "cells": 77,
+  "blocked": 20,
+  "free": 57,
+  "maxCornerErrorPx": 0.00022857038242262519,
+  "maxAreaErrorPx2": 0.021871040706173517,
+  "solidObjectsChecked": 38,
+  "solidFreeIntersections": 0,
+  "groundFootprintsChecked": true,
+  "approaches": [
+    {
+      "role": "start",
+      "anchorErrorPx": 0.00018767968711804007,
+      "blockedAreaPx2": 0,
+      "landmarkDistancePx": 130.00533986735303,
+      "coversFullAnchor": true
+    },
+    {
+      "role": "goal",
+      "anchorErrorPx": 0.0001921719769303201,
+      "blockedAreaPx2": 0.0,
+      "landmarkDistancePx": 43.03452197614973,
+      "coversFullAnchor": true
+    }
+  ],
+  "bridge": [],
+  "gate": null,
+  "mutationChecks": {
+    "removedBlockerMissingAreaPx2": 7356.19159581834,
+    "movedBlockerSpillAreaPx2": 7356.170917235984
+  },
+  "waterObjects": 0,
+  "sourceSha256": "7090381444104c4d8f3fd4f6f6863a5aacf60aff927c22bfaa4d265b1cc3844b",
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "forest-a": {
+          "anchor": {
+            "q": 2,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "forest-b": {
+          "anchor": {
+            "q": 4,
+            "r": 1
+          },
+          "turns": 0
+        },
+        "forest-c": {
+          "anchor": {
+            "q": 7,
+            "r": 1
+          },
+          "turns": 0
+        }
+      },
+      "to": {
+        "forest-c": {
+          "anchor": {
+            "q": 8,
+            "r": 1
+          },
+          "turns": 2
+        },
+        "forest-a": {
+          "anchor": {
+            "q": 1,
+            "r": 4
+          },
+          "turns": 0
+        },
+        "forest-b": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 0
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
+}
