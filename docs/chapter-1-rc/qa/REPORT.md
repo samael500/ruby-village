@@ -1,5 +1,7 @@
 # Independent runtime audit, #37 — 2026-10-17
 
+**Follow-up:** successful native touch drag/pan, keyboard, restart/replay/reset, reduced-motion completion and additional recovery checks are recorded in `runtime-extra/REPORT.md`; this earlier baseline remains preserved.
+
 **Status: partial QA passed; chapter release acceptance BLOCKED.** Reviewer is independent of runtime, data, art and audio authors. This report does not complete #37.
 
 ## Builds and provenance

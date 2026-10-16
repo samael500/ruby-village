@@ -13,11 +13,13 @@ with sync_playwright() as p:
  sol=json.loads((ROOT/'docs/chapter-1-rc/production-solutions.json').read_text())[0]['solution'][ident]
  for _ in range(sol['turns']):q.locator('#right').tap()
  box=q.locator(f'#tray [data-piece="{ident}"]').bounding_box();target=q.locator(f'[data-cell="{sol["anchor"]["q"]},{sol["anchor"]["r"]}"] polygon').first.bounding_box();assert box and target
- x,y=box['x']+box['width']/2,box['y']+box['height']/2;tx,ty=target['x']+target['width']/2,target['y']+target['height']/2+42
+ x,y=box['x']+box['width']/2,box['y']+box['height']/2;tx,ty=target['x']+target['width']/2,target['y']+target['height']/2+max(42,target['height']*.8)
  client=c.new_cdp_session(q)
  client.send('Input.dispatchTouchEvent',{'type':'touchStart','touchPoints':[{'x':x,'y':y}]})
- for i in range(1,11):client.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':x+(tx-x)*i/10,'y':y+(ty-y)*i/10}]})
+ client.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':x,'y':y-50}]})
+ for i in range(1,11):client.send('Input.dispatchTouchEvent',{'type':'touchMove','touchPoints':[{'x':x+(tx-x)*i/10,'y':y-50+(ty-y+50)*i/10}]})
  client.send('Input.dispatchTouchEvent',{'type':'touchEnd','touchPoints':[]});q.wait_for_timeout(100)
+ print('touch debug',q.locator('#status').inner_text(),q.locator('#metric').inner_text(),ident,sol,box,target,flush=True)
  placed=q.locator(f'[data-owner="{ident}"]').count()>0
  q.screenshot(path=str(OUT/'drag.png'))
  # Cancel a subsequent drag; owner count must survive cancellation.
