@@ -646,7 +646,7 @@ function showPrologue(replay:boolean,finish:()=>void){
   $('prologue-portrait').hidden=item.speaker!=='Рута';$('prologue-speaker').textContent=item.speaker;$('prologue-text').textContent=item.text;
   $('prologue-ruta').removeAttribute('style');$('prologue-basket').removeAttribute('style');
   if(index===5){
-   const sourceFoot=scenePoint('gate',levels[0].start),foot={x:sourceFoot.x/1672,y:sourceFoot.y/941},height=70*2*1.1*1300/1232,width=height*1209/1300;
+   const sourceFoot=scenePoint('gate',levels[0].start),foot={x:sourceFoot.x/1672,y:sourceFoot.y/941},height=136,width=height*463/970;
    $('prologue-ruta').style.cssText=`left:${(foot.x-width*245/463/1672)*100}%;top:${(foot.y-height*958/970/941)*100}%;height:${height/941*100}%;bottom:auto`;
    $('prologue-basket').style.cssText=`left:${(foot.x+.018)*100}%;bottom:${(1-foot.y-.01)*100}%;width:4%`;
   }
