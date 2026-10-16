@@ -23,4 +23,4 @@ export function savePrologue(state:PrologueState,storage?:StorageLike):boolean{
 }
 /** A real puzzle session or existing progress always takes precedence over an unfinished intro. */
 export function shouldStartPrologue(state:PrologueState,hasSession:boolean,hasProgress:boolean){return !hasSession&&!hasProgress&&!state.seen;}
-export const speakerPortrait=(speaker:string):string|undefined=>({'Рута':'../ui/v7/ruta-bust.png','Кролик':'rabbit.svg','Бельчонок':'squirrel.svg','Ёж':'hedgehog.svg','Учительница':'teacher.svg','Пекарь':'baker.svg','Мельник':'miller.svg'} as Record<string,string>)[speaker];
+export const speakerPortrait=(speaker:string):string|undefined=>({'Рута':'../characters-v1/ruta-portrait-pilot.png','Кролик':'rabbit.svg','Бельчонок':'squirrel.svg','Ёж':'hedgehog.svg','Учительница':'teacher.svg','Пекарь':'baker.svg','Мельник':'miller.svg'} as Record<string,string>)[speaker];
