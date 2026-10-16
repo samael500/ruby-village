@@ -1,0 +1,192 @@
+{
+  "sceneId": "garden",
+  "name": "В обход яблони",
+  "resolution": [
+    1672,
+    941
+  ],
+  "source": "art/blender/chapter-layouts/garden.blend",
+  "engine": "engine/garden.json",
+  "engineSha256": "66ffa3876d30ac263623d7676a9b7a21a3d512de7000d54bba1e4e0e35d8a4cd",
+  "camera": {
+    "engine": {
+      "radius": 66,
+      "origin": {
+        "x": 180,
+        "y": 315
+      },
+      "angle": 0,
+      "groundScale": 0.65
+    },
+    "worldToPixel": [
+      [
+        100,
+        0,
+        0,
+        180
+      ],
+      [
+        0,
+        -65.0,
+        -75.99342076785331,
+        315
+      ]
+    ],
+    "pixelToGround": [
+      [
+        0.01,
+        0,
+        -1.8
+      ],
+      [
+        0,
+        -0.015384615384615385,
+        4.846153846153846
+      ]
+    ],
+    "note": "Mesh ground already includes engine angle; camera elevation asin(groundScale)."
+  },
+  "anchors": {
+    "start": {
+      "q": 0,
+      "r": 5,
+      "name": "Калитка",
+      "pixel": {
+        "x": 465.7883832488647,
+        "y": 636.75
+      }
+    },
+    "goal": {
+      "q": 9,
+      "r": 1,
+      "name": "Стол",
+      "pixel": {
+        "x": 1265.995856345686,
+        "y": 379.35
+      }
+    }
+  },
+  "landmarks": [
+    {
+      "role": "start",
+      "point": [
+        2.360403511347519,
+        -7.451002465028237
+      ],
+      "across": [
+        0.9807852804032303,
+        -0.19509032201612866
+      ],
+      "outward": [
+        -0.19509032201612866,
+        -0.9807852804032303
+      ],
+      "width": 1.65,
+      "depth": 0.13,
+      "height": 0.85,
+      "court": [
+        [
+          1.6799732082418708,
+          -7.539966517406464
+        ],
+        [
+          2.95499407276607,
+          -7.7935839360274315
+        ],
+        [
+          3.429460598986377,
+          -5.280000000000001
+        ],
+        [
+          3.429460598986377,
+          -4.619999999999999
+        ],
+        [
+          2.857883832488647,
+          -4.29
+        ],
+        [
+          2.2863070659909175,
+          -4.619999999999999
+        ]
+      ],
+      "distance": 2.5500000000000003,
+      "kind": "portal"
+    },
+    {
+      "role": "goal",
+      "kind": "table",
+      "point": [
+        10.85995856345686,
+        0.6099999999999998
+      ],
+      "across": [
+        -1.0,
+        6.123233995736766e-17
+      ],
+      "outward": [
+        -6.123233995736766e-17,
+        -1.0
+      ],
+      "width": 0.9,
+      "depth": 0.65,
+      "height": 0.6,
+      "court": [
+        [
+          10.28838179695913,
+          -1.3200000000000003
+        ],
+        [
+          10.85995856345686,
+          -1.65
+        ],
+        [
+          11.43153532995459,
+          -1.3200000000000003
+        ],
+        [
+          11.431535329954588,
+          -0.6599999999999997
+        ],
+        [
+          11.20995856345686,
+          0.6099999999999998
+        ],
+        [
+          10.50995856345686,
+          0.6099999999999998
+        ],
+        [
+          10.288381796959131,
+          -0.6599999999999997
+        ]
+      ],
+      "distance": 1.6,
+      "boundaryCell": null
+    }
+  ],
+  "collections": [
+    "ground",
+    "terrain",
+    "playable_contract",
+    "scenery",
+    "gate_closed",
+    "gate_open",
+    "verification",
+    "solution",
+    "bridge"
+  ],
+  "states": {
+    "clean": "no grid, path or bridge",
+    "check": "grid/start/goal; no placed pieces",
+    "solved": "exact engine solution and built bridge; accepted gate open"
+  },
+  "exportRect": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "technicalLayout": true,
+  "productionChanged": false
+}

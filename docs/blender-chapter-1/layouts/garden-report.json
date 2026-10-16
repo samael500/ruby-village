@@ -1,0 +1,135 @@
+{
+  "sceneId": "garden",
+  "status": "pass",
+  "source": "art/blender/chapter-layouts/garden.blend",
+  "layoutFile": "garden-layout.json",
+  "exports": {
+    "clean": {
+      "file": "renders/garden-clean.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": false,
+      "bridgeBuilt": false
+    },
+    "check": {
+      "file": "renders/garden-check.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    },
+    "solved": {
+      "file": "renders/garden-solved.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    }
+  },
+  "layers": {
+    "background": {
+      "file": "renders/garden-background.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    },
+    "solution": {
+      "file": "renders/garden-solution.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    }
+  },
+  "cells": 77,
+  "blocked": 41,
+  "free": 36,
+  "maxCornerErrorPx": 0.00018868834657654186,
+  "maxAreaErrorPx2": 0.017947015818208456,
+  "solidObjectsChecked": 64,
+  "solidFreeIntersections": 0,
+  "groundFootprintsChecked": true,
+  "approaches": [
+    {
+      "role": "start",
+      "anchorErrorPx": 0.00013062267312666595,
+      "blockedAreaPx2": 0,
+      "landmarkDistancePx": 170.0069191240526,
+      "coversFullAnchor": true
+    },
+    {
+      "role": "goal",
+      "anchorErrorPx": 0.00014886908429578228,
+      "blockedAreaPx2": 0,
+      "landmarkDistancePx": 103.99984923601171,
+      "coversFullAnchor": true
+    }
+  ],
+  "bridge": [],
+  "gate": null,
+  "mutationChecks": {
+    "removedBlockerMissingAreaPx2": 7356.191595816941,
+    "movedBlockerSpillAreaPx2": 7356.1758708134
+  },
+  "waterObjects": 0,
+  "sourceSha256": "22869435635f2b2028578a4492eee6309ac30b0b6060a2a93b20e6d024118b84"
+}

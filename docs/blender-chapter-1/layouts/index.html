@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="ru">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Первая глава — разметка восьми уровней</title>
+<style>
+*{box-sizing:border-box}body{margin:0;background:#eee9db;color:#34392d;font:15px system-ui,sans-serif}header{padding:14px 24px;background:#faf6e9;border-bottom:1px solid #c9c7b5}h1{font-size:20px;margin:0 0 6px}p{margin:4px 0}.toolbar{display:flex;gap:8px;align-items:center;flex-wrap:wrap;margin-top:10px}select,button,a.button{font:inherit;border:1px solid #8b977b;background:#fffdf5;color:#35452e;border-radius:6px;padding:7px 12px}button{cursor:pointer}button[aria-pressed=true]{background:#465e43;color:white}.toolbar a{color:#425f43}main{height:calc(100dvh - 183px);min-height:200px;display:flex;justify-content:center;align-items:center;padding:8px 14px}#image{display:block;width:100%;height:100%;object-fit:contain}#stage{width:100%;height:100%;position:relative}footer{padding:8px 24px;display:flex;gap:12px;flex-wrap:wrap;font-size:13px;background:#faf6e9}.dot{display:inline-block;width:12px;height:12px;border-radius:3px;vertical-align:middle;margin-right:4px}#contact{display:none;padding:16px;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}#contact figure{margin:0;background:#faf6e9;border-radius:8px;padding:10px}#contact img{display:block;width:100%;height:auto}#contact figcaption{padding:5px}body.contact main,body.contact footer{display:none}body.contact #contact{display:grid}a{color:#3c603b}@media(max-height:500px){header{padding:6px 12px}h1{font-size:16px;margin:0}#intro{display:none}.toolbar{margin-top:5px}select,button{padding:4px 8px;font-size:13px}main{height:calc(100dvh - 130px);padding:4px 8px}footer{padding:4px 12px;font-size:11px;gap:8px}#stats{font-size:12px}}@media(max-width:600px){#contact{grid-template-columns:1fr}}
+</style>
+<header>
+<h1>За калитку · разметка первой главы</h1>
+<p id="intro">Технические макеты для будущей перерисовки в 2D. Геометрия взята из игры; внешний вид условный.</p>
+<div class="toolbar">
+<label>Уровень <select id="scene" aria-label="Уровень"></select></label>
+<button data-mode="clean" aria-pressed="false">Макет</button>
+<button data-mode="check" aria-pressed="true">Поле</button>
+<button data-mode="solved" aria-pressed="false">Решение</button>
+<button data-mode="plan" aria-pressed="false">Схема 2D</button>
+<button data-mode="contact" aria-pressed="false">Все восемь</button>
+<a id="source" href="">.blend</a><a id="report" href="">Проверка</a>
+</div><p id="stats" aria-live="polite">Загрузка…</p>
+</header>
+<main><div id="stage"><img id="image" alt="Разметка выбранного уровня"></div></main>
+<footer><span><i class="dot" style="background:#75b99d"></i>Старт</span><span><i class="dot" style="background:#e6ac69"></i>Цель</span><span><i class="dot" style="background:#bea2d4"></i>Эталон</span><span><i class="dot" style="background:#7ebacb"></i>Вода</span><span>Мост появляется только в решении. Все свободные клетки сохранены.</span></footer>
+<div id="contact"></div>
+<script type="module">
+const ids=['gate','garden','well','bakery','stream','mill','post','forest'];
+const data=await Promise.all(ids.map(id=>fetch(`engine/${id}.json`).then(r=>{if(!r.ok)throw Error(id);return r.json()})));
+const select=document.querySelector('#scene'),image=document.querySelector('#image'),contact=document.querySelector('#contact');
+let mode='check';
+for(const [i,d] of data.entries()){
+ const option=document.createElement('option');option.value=d.sceneId;option.textContent=`${i+1}. ${d.name}`;select.append(option);
+ const figure=document.createElement('figure'),img=document.createElement('img'),caption=document.createElement('figcaption');
+ img.src=`renders/${d.sceneId}-solved.png`;img.alt=d.name;caption.textContent=`${i+1}. ${d.name}`;figure.append(img,caption);contact.append(figure);
+}
+const hash=new URLSearchParams(location.hash.slice(1));select.value=ids.includes(hash.get('scene'))?hash.get('scene'):'gate';
+if(['clean','check','solved','plan','contact'].includes(hash.get('mode')))mode=hash.get('mode');
+function show(){
+ const d=data.find(d=>d.sceneId===select.value);document.body.classList.toggle('contact',mode==='contact');
+ image.src=mode==='plan'?`plans/${d.sceneId}.svg`:`renders/${d.sceneId}-${mode==='contact'?'check':mode}.png`;
+ image.alt=`${d.name} — ${mode}`;
+ document.querySelectorAll('[data-mode]').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.mode===mode)));
+ document.querySelector('#source').href=`../../../art/blender/chapter-layouts/${d.sceneId}.blend`;
+ document.querySelector('#report').href=`${d.sceneId}-report.json`;
+ const terrain=d.cells.filter(c=>c.terrain).length;
+ document.querySelector('#stats').textContent=`77 клеток · ${terrain} препятствий · ${77-terrain} свободных · старт ${d.start.q},${d.start.r} → цель ${d.goal.q},${d.goal.r}`;
+ history.replaceState(null,'',`#scene=${d.sceneId}&mode=${mode}`);
+}
+select.addEventListener('change',()=>{if(mode==='contact')mode='check';show()});
+document.querySelectorAll('[data-mode]').forEach(b=>b.addEventListener('click',()=>{mode=b.dataset.mode;show()}));
+show();window.layoutReview={data,get mode(){return mode},get scene(){return select.value}};
+</script>
+</html>

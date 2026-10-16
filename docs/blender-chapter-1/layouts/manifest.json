@@ -1,0 +1,1200 @@
+{
+  "purpose": "all eight chapter-1 technical layouts for later 2D artwork",
+  "blender": "4.5.3 LTS",
+  "sourceCommand": "blender --background --factory-startup --threads 8 --python-exit-code 1 --python scripts/blender/chapter_layouts.py",
+  "auditCommand": "blender --background --threads 8 --python-exit-code 1 --python scripts/blender/audit_chapter.py",
+  "scenes": [
+    {
+      "sceneId": "gate",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/gate.blend",
+      "layoutFile": "gate-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/gate-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/gate-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/gate-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/gate-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/gate-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "gate_closed": {
+          "file": "renders/gate-gate_closed.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "gate_open": {
+          "file": "renders/gate-gate_open.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 16,
+      "free": 61,
+      "maxCornerErrorPx": 8.187731829837933e-05,
+      "maxAreaErrorPx2": 0.010111537194461562,
+      "solidObjectsChecked": 126,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 7.208171222857541e-05,
+          "blockedAreaPx2": 0.0013843472406733781,
+          "landmarkDistancePx": 45.64285777818642,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 2.8523044115488004e-05,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 211.8047533180964,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": {
+        "acceptedTransformsPreserved": true,
+        "sweepPoses": 20,
+        "freeCellIntersections": 0,
+        "openingWidthWorld": 1.9
+      },
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8274.868263510341,
+        "movedBlockerSpillAreaPx2": 8274.866140442056
+      },
+      "waterObjects": 0,
+      "sourceSha256": "46f3b0d3c09a19f2c0cdef81130deb273eac70a78dca5685a27e66206b76f824"
+    },
+    {
+      "sceneId": "garden",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/garden.blend",
+      "layoutFile": "garden-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/garden-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/garden-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/garden-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/garden-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/garden-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 41,
+      "free": 36,
+      "maxCornerErrorPx": 0.00018868834657654186,
+      "maxAreaErrorPx2": 0.017947015818208456,
+      "solidObjectsChecked": 64,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 0.00013062267312666595,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 170.0069191240526,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00014886908429578228,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 103.99984923601171,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 7356.191595816941,
+        "movedBlockerSpillAreaPx2": 7356.1758708134
+      },
+      "waterObjects": 0,
+      "sourceSha256": "22869435635f2b2028578a4492eee6309ac30b0b6060a2a93b20e6d024118b84"
+    },
+    {
+      "sceneId": "well",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/well.blend",
+      "layoutFile": "well-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/well-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/well-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/well-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/well-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/well-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 30,
+      "free": 47,
+      "maxCornerErrorPx": 0.0001465768834496188,
+      "maxAreaErrorPx2": 0.011409171886043623,
+      "solidObjectsChecked": 59,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 7.41971840381361e-05,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 176.67378971986977,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011336600560800566,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 45.78465209232826,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8001.32469321037,
+        "movedBlockerSpillAreaPx2": 8001.313442717299
+      },
+      "waterObjects": 0,
+      "sourceSha256": "b74526d70f1dd79fff9a280f976753942bc6c9e19a7dd0c21d7e700b57de557a"
+    },
+    {
+      "sceneId": "bakery",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/bakery.blend",
+      "layoutFile": "bakery-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/bakery-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/bakery-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/bakery-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/bakery-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/bakery-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 17,
+      "free": 60,
+      "maxCornerErrorPx": 0.0001465768834496188,
+      "maxAreaErrorPx2": 0.011541509738890454,
+      "solidObjectsChecked": 19,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 7.41971840381361e-05,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 176.67378971986977,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011336600560800566,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 45.78465209232826,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8001.32469321037,
+        "movedBlockerSpillAreaPx2": 8001.313442717299
+      },
+      "waterObjects": 0,
+      "sourceSha256": "3c05a24f1c243ff0f7df9ec75ad3ede63c4e0c9627a586af8ef97ad528c2d40a"
+    },
+    {
+      "sceneId": "stream",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/stream.blend",
+      "layoutFile": "stream-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/stream-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/stream-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/stream-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": true
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/stream-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/stream-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "bridge": {
+          "file": "renders/stream-bridge.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 18,
+      "free": 59,
+      "maxCornerErrorPx": 0.00014569403157480617,
+      "maxAreaErrorPx2": 0.018141276868846035,
+      "solidObjectsChecked": 10,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 0.00011744133338595226,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 0.00011744133338595226,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011307813179621712,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 0.00011307813179621712,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [
+        {
+          "pieceId": "bridge",
+          "cells": [
+            "6,1",
+            "5,1",
+            "7,1"
+          ],
+          "waterCenter": "6,1",
+          "dryEnds": 2,
+          "hiddenBeforeBuild": true,
+          "exactCaps": true
+        }
+      ],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8274.871807676656,
+        "movedBlockerSpillAreaPx2": 8274.857143228073
+      },
+      "waterObjects": 7,
+      "sourceSha256": "8515946f57493f0686b8440e31308e532d1e54c0245ab79eac5962bda7943243"
+    },
+    {
+      "sceneId": "mill",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/mill.blend",
+      "layoutFile": "mill-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/mill-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/mill-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/mill-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": true
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/mill-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/mill-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "bridge": {
+          "file": "renders/mill-bridge.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 24,
+      "free": 53,
+      "maxCornerErrorPx": 0.00014569403157480617,
+      "maxAreaErrorPx2": 0.018141276868846035,
+      "solidObjectsChecked": 25,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 9.155330729831406e-05,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 9.155330729831406e-05,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 8.72960529665791e-05,
+          "blockedAreaPx2": 0.000279333908110857,
+          "landmarkDistancePx": 45.6427132750191,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [
+        {
+          "pieceId": "bridge",
+          "cells": [
+            "2,3",
+            "1,3",
+            "3,3"
+          ],
+          "waterCenter": "2,3",
+          "dryEnds": 2,
+          "hiddenBeforeBuild": true,
+          "exactCaps": true
+        }
+      ],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8274.871807676656,
+        "movedBlockerSpillAreaPx2": 8274.857143228073
+      },
+      "waterObjects": 9,
+      "sourceSha256": "e3a698e1b5fb4e76d310c6b7a55b7a6a4c6b4c7df25b603fa991fb0b0f896ac5"
+    },
+    {
+      "sceneId": "post",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/post.blend",
+      "layoutFile": "post-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/post-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/post-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/post-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/post-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/post-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 17,
+      "free": 60,
+      "maxCornerErrorPx": 0.0001465768834496188,
+      "maxAreaErrorPx2": 0.011541509738890454,
+      "solidObjectsChecked": 19,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 7.41971840381361e-05,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 176.67378971986977,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.00011336600560800566,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 45.78465209232826,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 8001.32469321037,
+        "movedBlockerSpillAreaPx2": 8001.313442717299
+      },
+      "waterObjects": 0,
+      "sourceSha256": "0cfc2f255d64133d32da33e2127ed3fe04f39fc99206a3a09b41a2504e4658a4"
+    },
+    {
+      "sceneId": "forest",
+      "status": "pass",
+      "source": "art/blender/chapter-layouts/forest.blend",
+      "layoutFile": "forest-layout.json",
+      "exports": {
+        "clean": {
+          "file": "renders/forest-clean.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": false,
+          "bridgeBuilt": false
+        },
+        "check": {
+          "file": "renders/forest-check.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        },
+        "solved": {
+          "file": "renders/forest-solved.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "diagnostics": true,
+          "bridgeBuilt": false
+        }
+      },
+      "layers": {
+        "background": {
+          "file": "renders/forest-background.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        },
+        "solution": {
+          "file": "renders/forest-solution.png",
+          "resolution": [
+            1672,
+            941
+          ],
+          "origin": [
+            0,
+            0
+          ],
+          "sourceRect": [
+            0,
+            0,
+            1672,
+            941
+          ],
+          "alpha": "straight"
+        }
+      },
+      "cells": 77,
+      "blocked": 20,
+      "free": 57,
+      "maxCornerErrorPx": 0.00022857038242262519,
+      "maxAreaErrorPx2": 0.021871040706173517,
+      "solidObjectsChecked": 38,
+      "solidFreeIntersections": 0,
+      "groundFootprintsChecked": true,
+      "approaches": [
+        {
+          "role": "start",
+          "anchorErrorPx": 0.0001737251851687319,
+          "blockedAreaPx2": 0,
+          "landmarkDistancePx": 170.00696055986236,
+          "coversFullAnchor": true
+        },
+        {
+          "role": "goal",
+          "anchorErrorPx": 0.0001921719769303201,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 43.03452197614973,
+          "coversFullAnchor": true
+        }
+      ],
+      "bridge": [],
+      "gate": null,
+      "mutationChecks": {
+        "removedBlockerMissingAreaPx2": 7356.19159581834,
+        "movedBlockerSpillAreaPx2": 7356.170917235984
+      },
+      "waterObjects": 0,
+      "sourceSha256": "abd3a4b6d4be8c037583580b458d22806c1ab61cc252cbf6d39ae7d511a129df"
+    }
+  ],
+  "productionChanged": false,
+  "inputs": {
+    "scripts/blender/audit_chapter.py": "6d21eb0a8115baa49894b5d8eee02cb4164d3428d2469df5c235dfa82898000e",
+    "scripts/blender/chapter_layouts.py": "1090cf8ef5c7ee33ef90c6cb847b3f670075015c31cad14a8d89781c0b412651",
+    "scripts/blender/layout_math.py": "08eebd36199f6614b0cd107571ed3e9bfa1c21ff7f21c6f597555d5a378e2d37",
+    "scripts/blender/export-chapter.ts": "52755ab9256ad507af14a8d52fa4b9c7e57ff2f99668eb72edb0b090219cae9a",
+    "art/blender/gate-pilot.blend": "2cd02afa4c6f0a5bc8ce266db3f5b124e69d2b5ca2b4dd7237ced17bc6557967",
+    "docs/blender-chapter-1/manifest.json": "1b0c97a7cf3dfb101ccc23d106e659cffd2c52719e1a2772c76836ef2f9252b7"
+  }
+}

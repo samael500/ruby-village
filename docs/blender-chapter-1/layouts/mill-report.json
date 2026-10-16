@@ -1,0 +1,166 @@
+{
+  "sceneId": "mill",
+  "status": "pass",
+  "source": "art/blender/chapter-layouts/mill.blend",
+  "layoutFile": "mill-layout.json",
+  "exports": {
+    "clean": {
+      "file": "renders/mill-clean.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": false,
+      "bridgeBuilt": false
+    },
+    "check": {
+      "file": "renders/mill-check.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    },
+    "solved": {
+      "file": "renders/mill-solved.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": true
+    }
+  },
+  "layers": {
+    "background": {
+      "file": "renders/mill-background.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    },
+    "solution": {
+      "file": "renders/mill-solution.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    },
+    "bridge": {
+      "file": "renders/mill-bridge.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    }
+  },
+  "cells": 77,
+  "blocked": 24,
+  "free": 53,
+  "maxCornerErrorPx": 0.00014569403157480617,
+  "maxAreaErrorPx2": 0.018141276868846035,
+  "solidObjectsChecked": 25,
+  "solidFreeIntersections": 0,
+  "groundFootprintsChecked": true,
+  "approaches": [
+    {
+      "role": "start",
+      "anchorErrorPx": 9.155330729831406e-05,
+      "blockedAreaPx2": 0,
+      "landmarkDistancePx": 9.155330729831406e-05,
+      "coversFullAnchor": true
+    },
+    {
+      "role": "goal",
+      "anchorErrorPx": 8.72960529665791e-05,
+      "blockedAreaPx2": 0.000279333908110857,
+      "landmarkDistancePx": 45.6427132750191,
+      "coversFullAnchor": true
+    }
+  ],
+  "bridge": [
+    {
+      "pieceId": "bridge",
+      "cells": [
+        "2,3",
+        "1,3",
+        "3,3"
+      ],
+      "waterCenter": "2,3",
+      "dryEnds": 2,
+      "hiddenBeforeBuild": true,
+      "exactCaps": true
+    }
+  ],
+  "gate": null,
+  "mutationChecks": {
+    "removedBlockerMissingAreaPx2": 8274.871807676656,
+    "movedBlockerSpillAreaPx2": 8274.857143228073
+  },
+  "waterObjects": 9,
+  "sourceSha256": "e3a698e1b5fb4e76d310c6b7a55b7a6a4c6b4c7df25b603fa991fb0b0f896ac5"
+}

@@ -1,0 +1,229 @@
+{
+  "sceneId": "gate",
+  "name": "До калитки",
+  "resolution": [
+    1672,
+    941
+  ],
+  "source": "art/blender/chapter-layouts/gate.blend",
+  "engine": "engine/gate.json",
+  "engineSha256": "21bf54c1689f83bfb6df4bf93b0b659428dd50a29b9b2e1cc3b6fafb2c61d97c",
+  "camera": {
+    "engine": {
+      "radius": 70,
+      "origin": {
+        "x": 140,
+        "y": 290
+      },
+      "angle": 0,
+      "groundScale": 0.65
+    },
+    "worldToPixel": [
+      [
+        100,
+        0,
+        0,
+        140
+      ],
+      [
+        0,
+        -65.0,
+        -75.99342076785331,
+        290
+      ]
+    ],
+    "pixelToGround": [
+      [
+        0.01,
+        0,
+        -1.4
+      ],
+      [
+        0,
+        -0.015384615384615385,
+        4.461538461538462
+      ]
+    ],
+    "note": "Mesh ground already includes engine angle; camera elevation asin(groundScale)."
+  },
+  "anchors": {
+    "start": {
+      "q": 2,
+      "r": 2,
+      "name": "Дом Руты",
+      "pixel": {
+        "x": 503.73066958946424,
+        "y": 426.5
+      }
+    },
+    "goal": {
+      "q": 7,
+      "r": 5,
+      "name": "Калитка",
+      "pixel": {
+        "x": 1291.8137870333032,
+        "y": 631.25
+      }
+    }
+  },
+  "landmarks": [
+    {
+      "role": "start",
+      "kind": "house",
+      "point": [
+        3.3341978045700884,
+        -1.575
+      ],
+      "across": [
+        -0.8660254037844386,
+        -0.49999999999999994
+      ],
+      "outward": [
+        0.49999999999999994,
+        -0.8660254037844386
+      ],
+      "width": 0.65,
+      "depth": 0.6,
+      "height": 0.8,
+      "court": [
+        [
+          3.0310889132455356,
+          -2.45
+        ],
+        [
+          3.6373066958946425,
+          -2.8
+        ],
+        [
+          4.24352447854375,
+          -2.45
+        ],
+        [
+          4.24352447854375,
+          -1.75
+        ],
+        [
+          3.6373066958946425,
+          -1.4
+        ],
+        [
+          3.524723393402665,
+          -1.4649999999999999
+        ],
+        [
+          3.143672215737512,
+          -1.685
+        ],
+        [
+          3.0310889132455356,
+          -1.75
+        ]
+      ],
+      "distance": 0.6062177826491074,
+      "boundaryCell": "2,1",
+      "mainVolume": {
+        "width": 2.4,
+        "depth": 1.4,
+        "height": 1.7,
+        "front": 0.8
+      }
+    },
+    {
+      "role": "goal",
+      "goal": [
+        11.518137870333032,
+        -5.25
+      ],
+      "incomingDirection": [
+        0.499999999999998,
+        -0.8660254037844397
+      ],
+      "normal": [
+        0.8660254037844397,
+        0.499999999999998
+      ],
+      "openingCenter": [
+        12.414420087683919,
+        -8.20240633837224
+      ],
+      "leftPost": [
+        11.591695954088701,
+        -8.677406338372238
+      ],
+      "rightPost": [
+        13.237144221279136,
+        -7.7274063383722424
+      ],
+      "hinge": [
+        13.237144221279136,
+        -7.7274063383722424
+      ],
+      "latchPost": [
+        11.591695954088701,
+        -8.677406338372238
+      ],
+      "width": 1.9,
+      "height": 1.0,
+      "postHeight": 1.1,
+      "closedAngle": -4.188790204786393,
+      "openAngle": -2.5307274153917803,
+      "court": [
+        [
+          10.911920087683924,
+          -5.6
+        ],
+        [
+          11.716695954088701,
+          -8.893912689318348
+        ],
+        [
+          13.362144221279136,
+          -7.943912689318353
+        ],
+        [
+          12.124355652982139,
+          -4.9
+        ],
+        [
+          11.518137870333032,
+          -4.55
+        ],
+        [
+          10.911920087683924,
+          -4.9
+        ]
+      ],
+      "approachLengthWorld": 3.0854537753789155,
+      "searchCandidateCount": 429,
+      "point": [
+        12.414420087683919,
+        -8.20240633837224
+      ],
+      "kind": "accepted gate"
+    }
+  ],
+  "collections": [
+    "ground",
+    "terrain",
+    "playable_contract",
+    "scenery",
+    "gate_closed",
+    "gate_open",
+    "verification",
+    "solution",
+    "bridge"
+  ],
+  "states": {
+    "clean": "no grid, path or bridge",
+    "check": "grid/start/goal; no placed pieces",
+    "solved": "exact engine solution and built bridge; accepted gate open"
+  },
+  "exportRect": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "technicalLayout": true,
+  "productionChanged": false
+}

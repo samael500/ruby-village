@@ -1,0 +1,188 @@
+{
+  "sceneId": "forest",
+  "name": "Тропинка за деревню",
+  "resolution": [
+    1672,
+    941
+  ],
+  "source": "art/blender/chapter-layouts/forest.blend",
+  "engine": "engine/forest.json",
+  "engineSha256": "8f64515791e91c2c321f6fdff96ae350b0cb86def0a35d596a491c93843d223a",
+  "camera": {
+    "engine": {
+      "radius": 66,
+      "origin": {
+        "x": 180,
+        "y": 250
+      },
+      "angle": 0,
+      "groundScale": 0.65
+    },
+    "worldToPixel": [
+      [
+        100,
+        0,
+        0,
+        180
+      ],
+      [
+        0,
+        -65.0,
+        -75.99342076785331,
+        250
+      ]
+    ],
+    "pixelToGround": [
+      [
+        0.01,
+        0,
+        -1.8
+      ],
+      [
+        0,
+        -0.015384615384615385,
+        3.8461538461538463
+      ]
+    ],
+    "note": "Mesh ground already includes engine angle; camera elevation asin(groundScale)."
+  },
+  "anchors": {
+    "start": {
+      "q": 0,
+      "r": 5,
+      "name": "Деревня",
+      "pixel": {
+        "x": 465.7883832488647,
+        "y": 571.75
+      }
+    },
+    "goal": {
+      "q": 9,
+      "r": 1,
+      "name": "Указатель",
+      "pixel": {
+        "x": 1265.995856345686,
+        "y": 314.35
+      }
+    }
+  },
+  "landmarks": [
+    {
+      "role": "start",
+      "point": [
+        2.360403511347519,
+        -7.451002465028237
+      ],
+      "across": [
+        0.9807852804032303,
+        -0.19509032201612866
+      ],
+      "outward": [
+        -0.19509032201612866,
+        -0.9807852804032303
+      ],
+      "width": 1.65,
+      "depth": 0.13,
+      "height": 0.85,
+      "court": [
+        [
+          1.6799732082418708,
+          -7.539966517406464
+        ],
+        [
+          2.95499407276607,
+          -7.7935839360274315
+        ],
+        [
+          3.429460598986377,
+          -5.280000000000001
+        ],
+        [
+          3.429460598986377,
+          -4.619999999999999
+        ],
+        [
+          2.857883832488647,
+          -4.29
+        ],
+        [
+          2.2863070659909175,
+          -4.619999999999999
+        ]
+      ],
+      "distance": 2.5500000000000003,
+      "kind": "portal"
+    },
+    {
+      "role": "goal",
+      "kind": "sign",
+      "point": [
+        11.145746946705723,
+        -0.4949999999999998
+      ],
+      "across": [
+        -0.8660254037844394,
+        0.49999999999999856
+      ],
+      "outward": [
+        -0.49999999999999856,
+        -0.8660254037844394
+      ],
+      "width": 0.48,
+      "depth": 0.4,
+      "height": 0.4,
+      "court": [
+        [
+          10.28838179695913,
+          -1.3200000000000003
+        ],
+        [
+          10.85995856345686,
+          -1.65
+        ],
+        [
+          11.43153532995459,
+          -1.3200000000000003
+        ],
+        [
+          11.431535329954588,
+          -0.6599999999999997
+        ],
+        [
+          10.85995856345686,
+          -0.32999999999999985
+        ],
+        [
+          10.288381796959131,
+          -0.6599999999999997
+        ]
+      ],
+      "distance": 0.5715767664977287,
+      "boundaryCell": "10,0"
+    }
+  ],
+  "collections": [
+    "ground",
+    "terrain",
+    "playable_contract",
+    "scenery",
+    "gate_closed",
+    "gate_open",
+    "verification",
+    "solution",
+    "bridge"
+  ],
+  "states": {
+    "clean": "no grid, path or bridge",
+    "check": "grid/start/goal; no placed pieces",
+    "solved": "exact engine solution and built bridge; accepted gate open"
+  },
+  "exportRect": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "technicalLayout": true,
+  "productionChanged": false
+}

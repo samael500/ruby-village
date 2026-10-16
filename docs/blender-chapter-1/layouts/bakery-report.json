@@ -1,0 +1,135 @@
+{
+  "sceneId": "bakery",
+  "status": "pass",
+  "source": "art/blender/chapter-layouts/bakery.blend",
+  "layoutFile": "bakery-layout.json",
+  "exports": {
+    "clean": {
+      "file": "renders/bakery-clean.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": false,
+      "bridgeBuilt": false
+    },
+    "check": {
+      "file": "renders/bakery-check.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    },
+    "solved": {
+      "file": "renders/bakery-solved.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "diagnostics": true,
+      "bridgeBuilt": false
+    }
+  },
+  "layers": {
+    "background": {
+      "file": "renders/bakery-background.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    },
+    "solution": {
+      "file": "renders/bakery-solution.png",
+      "resolution": [
+        1672,
+        941
+      ],
+      "origin": [
+        0,
+        0
+      ],
+      "sourceRect": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "alpha": "straight"
+    }
+  },
+  "cells": 77,
+  "blocked": 17,
+  "free": 60,
+  "maxCornerErrorPx": 0.0001465768834496188,
+  "maxAreaErrorPx2": 0.011541509738890454,
+  "solidObjectsChecked": 19,
+  "solidFreeIntersections": 0,
+  "groundFootprintsChecked": true,
+  "approaches": [
+    {
+      "role": "start",
+      "anchorErrorPx": 7.41971840381361e-05,
+      "blockedAreaPx2": 0,
+      "landmarkDistancePx": 176.67378971986977,
+      "coversFullAnchor": true
+    },
+    {
+      "role": "goal",
+      "anchorErrorPx": 0.00011336600560800566,
+      "blockedAreaPx2": 0.0,
+      "landmarkDistancePx": 45.78465209232826,
+      "coversFullAnchor": true
+    }
+  ],
+  "bridge": [],
+  "gate": null,
+  "mutationChecks": {
+    "removedBlockerMissingAreaPx2": 8001.32469321037,
+    "movedBlockerSpillAreaPx2": 8001.313442717299
+  },
+  "waterObjects": 0,
+  "sourceSha256": "3c05a24f1c243ff0f7df9ec75ad3ede63c4e0c9627a586af8ef97ad528c2d40a"
+}
