@@ -113,7 +113,11 @@ def check(id):
             center_error=math.dist(((entry[0]+exit[0])/2,(entry[1]+exit[1])/2),center)
             assert center_error<.001,(id,'Water bypasses bridge center',center_error)
             # Regression: reversing the approved move recreates the old off-center bend.
-            old=json.loads((ROOT/'src/chapter-1.logical.json').read_text())[id]['terrain']
+            old={c['id']:c['terrain'] for c in engine['cells'] if c['terrain']}
+            corrections=json.loads((ROOT/'art/blender/chapter-layouts/layout-adjustments.json').read_text())
+            for move in corrections['terrainMoves'].get(id,[]):
+                old.pop(move['to'],None)
+                old[move['from']]=move['terrain']
             old_adjoining=[c for c in engine['cells'] if old.get(c['id'])=='water' and (c['q']-anchor['q'],c['r']-anchor['r']) in directions]
             old_points=[centroid(polygons[c['id']]) for c in old_adjoining]
             old_error=math.dist(tuple(sum(p[i] for p in old_points)/len(old_points) for i in [0,1]),center)

@@ -53,11 +53,11 @@ const originalLevels:readonly Level[]=[
 // v6 placements below replace historical coordinates under the new artwork.
 
 
-// Freeze v6 logical cells independently from visual camera calibration (v8).
+// Approved chapter layouts (#42); logical coordinates remain independent of camera calibration.
 export const levels:readonly Level[]=originalLevels.map(l=>{
  const stable=logicalScenes[l.id as keyof typeof logicalScenes];
  const terrain=stable.terrain as Record<string,Terrain>;
- const pieces=l.id==='gate'?Array.from({length:7},(_,i)=>stone(`gate-${i+1}`,`Камень ${i+1}`,one)):l.id==='forest'?[stone('forest-a','Четвёрка',cluster),stone('forest-b','Три в ряд',line),stone('forest-c','Уголок',bend),stone('forest-d','Два камня',pair)]:[...l.pieces,stone(`${l.id}-v6-a`,'Три в ряд',line),stone(`${l.id}-v6-b`,'Уголок',bend)];
+ const pieces=l.id==='gate'?Array.from({length:8},(_,i)=>stone(`gate-${i+1}`,`Камень ${i+1}`,one)):l.id==='forest'?[stone('forest-a','Четвёрка',cluster),stone('forest-b','Три в ряд',line),stone('forest-c','Уголок',bend),stone('forest-d','Два камня',pair)]:[...l.pieces,stone(`${l.id}-v6-a`,'Три в ряд',line),stone(`${l.id}-v6-b`,'Уголок',bend)];
  const solution=artSolutions[l.id as keyof typeof artSolutions];
  const extra=pieces.find(p=>!Object.hasOwn(solution,p.id));
  const finalPieces=pieces.filter(p=>Object.hasOwn(solution,p.id)||p.id===extra?.id);
