@@ -153,7 +153,13 @@
       "waterCenter": "6,1",
       "dryEnds": 2,
       "hiddenBeforeBuild": true,
-      "exactCaps": true
+      "exactCaps": true,
+      "adjoiningWaterCells": [
+        "6,0",
+        "6,2"
+      ],
+      "riverCenterErrorPx": 9.529839838371336e-06,
+      "negativeOriginalBendErrorPx": 60.62180161476153
     }
   ],
   "gate": null,
@@ -162,5 +168,14 @@
     "movedBlockerSpillAreaPx2": 8274.857143228073
   },
   "waterObjects": 7,
-  "sourceSha256": "8515946f57493f0686b8440e31308e532d1e54c0245ab79eac5962bda7943243"
+  "sourceSha256": "845ecf0a8c94842f7ae47f78d972832dda8cd9fedb7eafc87dcef5b3c834636d",
+  "layoutChanges": [
+    {
+      "kind": "terrain",
+      "from": "5,2",
+      "to": "6,2",
+      "terrain": "water"
+    }
+  ],
+  "requiresGameIntegration": true
 }

@@ -2,16 +2,36 @@
 import {mkdirSync,writeFileSync,readFileSync} from 'node:fs';
 import {createHash} from 'node:crypto';
 import {levels} from '../../src/levels.ts';
-import {boardCells,hexCenter,key,footprint} from '../../src/hex.ts';
+import {boardCells,hexCenter,key,footprint,neighbors,findPath} from '../../src/hex.ts';
 import {project} from '../../src/projection.ts';
 import {sceneMetadata,scenePoint} from '../../src/scene-camera.ts';
 import {validateLayout,winningPath,terrainAt} from '../../src/game.ts';
+import type {Hex} from '../../src/hex.ts';
+import type {Layout} from '../../src/model.ts';
 const folder=new URL('../../docs/blender-chapter-1/layouts/engine/',import.meta.url);
+const adjustmentPath='art/blender/chapter-layouts/layout-adjustments.json';
+const adjustmentBytes=readFileSync(new URL('../../'+adjustmentPath,import.meta.url));
+const adjustments=JSON.parse(adjustmentBytes.toString()) as {
+ terrainMoves:Record<string,{from:string;to:string;terrain:'water'}[]>;
+ startMoves:Record<string,{from:Hex;to:Hex}>;solutions:Record<string,Layout>;
+};
 mkdirSync(folder,{recursive:true});
 const inputs=Object.fromEntries(['levels.ts','hex.ts','projection.ts','scene-camera.ts','game.ts','chapter-1.logical.json','art-solutions.json','scene-v8.json','chapter-1.story.json'].map(file=>[
  `src/${file}`,createHash('sha256').update(readFileSync(new URL(`../../src/${file}`,import.meta.url))).digest('hex'),
 ]));
-for(const level of levels){
+for(const original of levels){
+ const terrainChanges=adjustments.terrainMoves[original.id]??[];
+ const startMove=adjustments.startMoves[original.id],solution=adjustments.solutions[original.id]??original.solution;
+ const changes=[...terrainChanges.map(move=>({kind:'terrain',...move})),...(startMove?[{kind:'start',...startMove},{kind:'solution',from:original.solution,to:solution}]:[])];
+ const terrain={...original.terrain},board=new Set(boardCells(original.cols,original.rows).map(key));
+ for(const move of terrainChanges){
+  if(terrain[move.from]!==move.terrain||terrain[move.to]||!board.has(move.to))throw Error(`${original.id}: invalid approved terrain move`);
+  delete terrain[move.from];terrain[move.to]=move.terrain;
+ }
+ if(startMove&&key(startMove.from)!==key(original.start))throw Error(`${original.id}: stale start correction`);
+ const level={...original,terrain,start:startMove?.to??original.start,solution};
+ if(startMove&&(terrainAt(level,level.start)!=='ground'||Object.keys(solution).length>=level.pieces.length))throw Error(`${original.id}: new start must be dry and retain a spare piece`);
+ if(startMove&&winningPath(level,original.solution))throw Error(`${original.id}: old solution unexpectedly connects the moved start`);
  const metadata=sceneMetadata(level.id),camera=metadata.camera,path=winningPath(level,level.solution);
  if(!validateLayout(level,level.solution)||!path)throw new Error(`${level.id}: invalid engine solution`);
  const pieces=level.pieces.map(p=>{
@@ -23,6 +43,10 @@ for(const level of levels){
   if(!bridge.placement||terrainAt(level,bridge.placement.anchor)!=='water'||bridge.cells.filter(id=>level.terrain[id]==='water').length!==1)throw new Error(`${level.id}: bad bridge`);
   const without={...level.solution};delete without[bridge.id];
   if(winningPath(level,without))throw new Error(`${level.id}: bridge not required`);
+  const dry=new Set(boardCells(level.cols,level.rows).filter(h=>terrainAt(level,h)==='ground').map(key));
+  if(findPath(level.start,level.goal,dry))throw Error(`${level.id}: dry ground bypasses the stream`);
+  const water=neighbors(bridge.placement.anchor).filter(h=>terrainAt(level,h)==='water');
+  if(water.length!==2||water[0].q+water[1].q!==2*bridge.placement.anchor.q||water[0].r+water[1].r!==2*bridge.placement.anchor.r)throw Error(`${level.id}: river bends around the bridge corner instead of crossing its middle`);
  }
  const cells=boardCells(level.cols,level.rows).map(h=>{
   const center=hexCenter(h,camera.radius);
@@ -35,7 +59,9 @@ for(const level of levels){
  });
  const data={sceneId:level.id,name:level.name,resolution:[metadata.originalRect.width,metadata.originalRect.height],camera,
   start:{...level.start,name:level.startName,pixel:scenePoint(level.id,level.start)},goal:{...level.goal,name:level.goalName,pixel:scenePoint(level.id,level.goal)},
-  cells,pieces,path:path.map(key),engineChecks:{validSolution:true,connected:true,bridgeRequired:!!bridge},inputs};
+  cells,pieces,path:path.map(key),engineChecks:{validSolution:true,connected:true,bridgeRequired:!!bridge},
+  inputs:changes.length?{...inputs,[adjustmentPath]:createHash('sha256').update(adjustmentBytes).digest('hex')}:inputs,
+  ...(changes.length?{layoutChanges:changes,requiresGameIntegration:true}:{})};
  writeFileSync(new URL(`${level.id}.json`,folder),JSON.stringify(data,null,2)+'\n');
  console.log(`${level.id}: ${cells.length} cells, ${cells.filter(c=>c.terrain).length} terrain, ${path.length} path cells`);
 }

@@ -23,6 +23,7 @@ def check(id):
     bpy.ops.wm.open_mainfile(filepath=str(source))
     engine_path=OUT/'engine'/f'{id}.json';engine=json.loads(engine_path.read_text());scene=bpy.context.scene;camera=scene.camera
     assert scene['engineSha256']==hashlib.sha256(engine_path.read_bytes()).hexdigest(),'Stale source'
+    if engine.get('layoutChanges'):assert json.loads(scene['layoutChanges'])==engine['layoutChanges'] and scene['requiresGameIntegration']
     for path,digest in engine['inputs'].items():assert hashlib.sha256((ROOT/path).read_bytes()).hexdigest()==digest,('Stale engine export',path)
     w,h=engine['resolution'];assert [scene.render.resolution_x,scene.render.resolution_y]==[w,h]
     assert camera.data.type=='ORTHO'
@@ -103,7 +104,22 @@ def check(id):
         if piece['kind']=='bridge':
             assert len(meshes)==3 and sum(actual[o['cellId']]['engineTerrain']=='water' for o in meshes)==1
             assert bpy.data.collections['bridge'].hide_render
-            bridge_reports.append({'pieceId':piece['id'],'cells':piece['cells'],'waterCenter':f"{piece['placement']['anchor']['q']},{piece['placement']['anchor']['r']}",'dryEnds':2,'hiddenBeforeBuild':True,'exactCaps':True})
+            anchor=piece['placement']['anchor'];middle=f"{anchor['q']},{anchor['r']}"
+            directions={(1,0),(1,-1),(0,-1),(-1,0),(-1,1),(0,1)}
+            adjoining=[c for c in engine['cells'] if c['terrain']=='water' and (c['q']-anchor['q'],c['r']-anchor['r']) in directions]
+            assert len(adjoining)==2
+            def centroid(poly):return tuple(sum(p[i] for p in poly)/len(poly) for i in [0,1])
+            entry,exit=[centroid(polygons[c['id']]) for c in adjoining];center=centroid(polygons[middle])
+            center_error=math.dist(((entry[0]+exit[0])/2,(entry[1]+exit[1])/2),center)
+            assert center_error<.001,(id,'Water bypasses bridge center',center_error)
+            # Regression: reversing the approved move recreates the old off-center bend.
+            old=json.loads((ROOT/'src/chapter-1.logical.json').read_text())[id]['terrain']
+            old_adjoining=[c for c in engine['cells'] if old.get(c['id'])=='water' and (c['q']-anchor['q'],c['r']-anchor['r']) in directions]
+            old_points=[centroid(polygons[c['id']]) for c in old_adjoining]
+            old_error=math.dist(tuple(sum(p[i] for p in old_points)/len(old_points) for i in [0,1]),center)
+            assert old_error>50,(id,'Negative crossing check is ineffective')
+            bridge_reports.append({'pieceId':piece['id'],'cells':piece['cells'],'waterCenter':middle,'dryEnds':2,'hiddenBeforeBuild':True,'exactCaps':True,
+                                   'adjoiningWaterCells':[c['id'] for c in adjoining],'riverCenterErrorPx':center_error,'negativeOriginalBendErrorPx':old_error})
     assert bool(bridge)==(id in ['stream','mill'])
     assert all(bpy.data.collections[n].hide_render for n in ['verification','solution','bridge','gate_open','playable_contract'])
     # The gate uses the accepted transforms and remains clear over its entire sampled swing.
@@ -134,7 +150,7 @@ def check(id):
     colors={None:'#dce3c7','house':'#b99574','tree':'#8fb786','flower':'#d69bac','water':'#7ebacb'}
     parts=[f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {w} {h}">','<rect width="100%" height="100%" fill="#f7f3e8"/>',
            '<g font-family="DejaVu Sans,sans-serif" fill="#302f27">',f'<text x="55" y="65" font-size="32">{IDS.index(id)+1}. {html.escape(engine["name"])}</text>',
-           '<text x="55" y="106" font-size="20">Полные грани Blender · синий пунктир: движок · фиолетовый: эталон</text>']
+           '<text x="55" y="106" font-size="20">Грани Blender · пунктир: расчёт движка для макета · фиолетовый: эталон</text>']
     path=set(engine['path']);start=f"{engine['start']['q']},{engine['start']['r']}";goal=f"{engine['goal']['q']},{engine['goal']['r']}"
     for c in engine['cells']:
         ident=c['id'];color=colors[c['terrain']]
@@ -148,13 +164,14 @@ def check(id):
         parts.append(f'<text x="{x}" y="{y+5}" text-anchor="middle" font-size="15">{label}</text>')
     parts.extend([f'<text x="55" y="835" font-size="23">77 клеток · {len(blockers)} препятствий · {len(free)} доступных · {len(engine["path"])} клеток пути</text>',
                   '<text x="55" y="875" font-size="19">Дом / граница — коричневый; деревья — зелёный; клумба — розовый; вода — голубой.</text>',
-                  '<text x="55" y="910" font-size="18">Техническая схема для перерисовки в 2D. Игровые данные неизменны.</text></g></svg>'])
+                  '<text x="55" y="910" font-size="18">'+('Макет исправлен по рисунку Максима; изменения указаны в manifest.' if engine.get('layoutChanges') else 'Техническая схема для перерисовки в 2D. Игровые данные неизменны.')+'</text></g></svg>'])
     (OUT/'plans'/f'{id}.svg').write_text('\n'.join(parts)+'\n')
     exports={mode:{'file':f'renders/{id}-{mode}.png','resolution':[w,h],'origin':[0,0],'sourceRect':[0,0,w,h],'diagnostics':mode!='clean','bridgeBuilt':mode=='solved' and bool(bridge)} for mode in ['clean','check','solved']}
     layers={name:{'file':f'renders/{id}-{name}.png','resolution':[w,h],'origin':[0,0],'sourceRect':[0,0,w,h],'alpha':'straight'} for name in ['background','solution']+(['bridge'] if bridge else [])+(['gate_closed','gate_open'] if id=='gate' else [])}
     result={'sceneId':id,'status':'pass','source':str(source.relative_to(ROOT)),'layoutFile':f'{id}-layout.json','exports':exports,'layers':layers,'cells':77,'blocked':len(blockers),'free':len(free),'maxCornerErrorPx':maximum_corner,'maxAreaErrorPx2':maximum_area,
             'solidObjectsChecked':len(solids),'solidFreeIntersections':0,'groundFootprintsChecked':True,'approaches':approach_reports,'bridge':bridge_reports,'gate':gate_report,
-            'mutationChecks':{'removedBlockerMissingAreaPx2':negative_missing,'movedBlockerSpillAreaPx2':negative_spill},'waterObjects':len(water),'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest()}
+            'mutationChecks':{'removedBlockerMissingAreaPx2':negative_missing,'movedBlockerSpillAreaPx2':negative_spill},'waterObjects':len(water),'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),
+            'layoutChanges':engine.get('layoutChanges',[]),'requiresGameIntegration':engine.get('requiresGameIntegration',False)}
     print('AUDIT',json.dumps(result),flush=True)
     (OUT/f'{id}-report.json').write_text(json.dumps(result,indent=2)+'\n')
     return result

@@ -28,6 +28,9 @@ def build(id):
     bpy.ops.wm.read_factory_settings(use_empty=True)
     engine=json.loads((OUT/'engine'/f'{id}.json').read_text());g=Geometry(engine)
     scene=bpy.context.scene; scene['sceneId']=id;scene['layoutPurpose']='technical geometry for later 2D redraw; not final art'
+    if engine.get('layoutChanges'):
+        scene['layoutChanges']=json.dumps(engine['layoutChanges'])
+        scene['requiresGameIntegration']=True
     cols={}
     for name in ['ground','terrain','playable_contract','scenery','gate_closed','gate_open','verification','solution','bridge']:
         c=bpy.data.collections.new(name);scene.collection.children.link(c);cols[name]=c

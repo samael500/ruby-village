@@ -1,0 +1,163 @@
+{
+  "purpose": "Approved technical-layout changes for the later 2D/game integration; production src is unchanged",
+  "source": {
+    "pr": 42,
+    "headSha": "2a238c7bddfca8c3f007c337eaab44ab5873b26f",
+    "image": "docs/blender-chapter-1/layouts/contact-sheet.png",
+    "imageBlobSha": "5a16b4efbe9d6bfdfc1c4c5467e45bf6bed95901",
+    "annotationVersion": 10,
+    "request": "Maksim: center both streams under the middle bridge section; move four start hexes to the cells indicated by arrows"
+  },
+  "terrainMoves": {
+    "stream": [
+      {
+        "from": "5,2",
+        "to": "6,2",
+        "terrain": "water"
+      }
+    ],
+    "mill": [
+      {
+        "from": "1,4",
+        "to": "2,4",
+        "terrain": "water"
+      }
+    ]
+  },
+  "startMoves": {
+    "well": {
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    "bakery": {
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    "post": {
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    "forest": {
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    }
+  },
+  "solutions": {
+    "well": {
+      "well-b": {
+        "anchor": {
+          "q": 6,
+          "r": 4
+        },
+        "turns": 5
+      },
+      "well-a": {
+        "anchor": {
+          "q": 5,
+          "r": 5
+        },
+        "turns": 2
+      },
+      "well-v6-a": {
+        "anchor": {
+          "q": 0,
+          "r": 6
+        },
+        "turns": 0
+      }
+    },
+    "bakery": {
+      "bakery-b": {
+        "anchor": {
+          "q": 5,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "bakery-v6-a": {
+        "anchor": {
+          "q": 3,
+          "r": 3
+        },
+        "turns": 0
+      },
+      "bakery-a": {
+        "anchor": {
+          "q": 2,
+          "r": 4
+        },
+        "turns": 2
+      }
+    },
+    "post": {
+      "post-extra": {
+        "anchor": {
+          "q": 6,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "post-b": {
+        "anchor": {
+          "q": 3,
+          "r": 3
+        },
+        "turns": 0
+      },
+      "post-a": {
+        "anchor": {
+          "q": 2,
+          "r": 4
+        },
+        "turns": 2
+      }
+    },
+    "forest": {
+      "forest-c": {
+        "anchor": {
+          "q": 8,
+          "r": 1
+        },
+        "turns": 2
+      },
+      "forest-a": {
+        "anchor": {
+          "q": 1,
+          "r": 4
+        },
+        "turns": 0
+      },
+      "forest-b": {
+        "anchor": {
+          "q": 3,
+          "r": 3
+        },
+        "turns": 0
+      }
+    }
+  }
+}

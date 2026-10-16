@@ -178,7 +178,9 @@
         "movedBlockerSpillAreaPx2": 8274.866140442056
       },
       "waterObjects": 0,
-      "sourceSha256": "46f3b0d3c09a19f2c0cdef81130deb273eac70a78dca5685a27e66206b76f824"
+      "sourceSha256": "9ebe66735d87ba68854ff0dc7a78b071aaefb4666302a26041a67be01579b93a",
+      "layoutChanges": [],
+      "requiresGameIntegration": false
     },
     {
       "sceneId": "garden",
@@ -313,7 +315,9 @@
         "movedBlockerSpillAreaPx2": 7356.1758708134
       },
       "waterObjects": 0,
-      "sourceSha256": "22869435635f2b2028578a4492eee6309ac30b0b6060a2a93b20e6d024118b84"
+      "sourceSha256": "651ae29f06543d7238d1659eedb62a74dbc8aeb8c05f2b6672246a3dc8366740",
+      "layoutChanges": [],
+      "requiresGameIntegration": false
     },
     {
       "sceneId": "well",
@@ -428,9 +432,9 @@
       "approaches": [
         {
           "role": "start",
-          "anchorErrorPx": 7.41971840381361e-05,
-          "blockedAreaPx2": 0,
-          "landmarkDistancePx": 176.67378971986977,
+          "anchorErrorPx": 5.192984451561659e-05,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 107.25006367692625,
           "coversFullAnchor": true
         },
         {
@@ -448,7 +452,70 @@
         "movedBlockerSpillAreaPx2": 8001.313442717299
       },
       "waterObjects": 0,
-      "sourceSha256": "b74526d70f1dd79fff9a280f976753942bc6c9e19a7dd0c21d7e700b57de557a"
+      "sourceSha256": "15b97757b51c9420db9d0075d41dc4d519549691bea103167ae37650178ce2b4",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "well-v6-a": {
+              "anchor": {
+                "q": 1,
+                "r": 5
+              },
+              "turns": 0
+            },
+            "well-a": {
+              "anchor": {
+                "q": 6,
+                "r": 4
+              },
+              "turns": 2
+            },
+            "well-b": {
+              "anchor": {
+                "q": 8,
+                "r": 2
+              },
+              "turns": 2
+            }
+          },
+          "to": {
+            "well-b": {
+              "anchor": {
+                "q": 6,
+                "r": 4
+              },
+              "turns": 5
+            },
+            "well-a": {
+              "anchor": {
+                "q": 5,
+                "r": 5
+              },
+              "turns": 2
+            },
+            "well-v6-a": {
+              "anchor": {
+                "q": 0,
+                "r": 6
+              },
+              "turns": 0
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
     },
     {
       "sceneId": "bakery",
@@ -563,9 +630,9 @@
       "approaches": [
         {
           "role": "start",
-          "anchorErrorPx": 7.41971840381361e-05,
-          "blockedAreaPx2": 0,
-          "landmarkDistancePx": 176.67378971986977,
+          "anchorErrorPx": 5.192984451561659e-05,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 107.25006367692625,
           "coversFullAnchor": true
         },
         {
@@ -583,7 +650,70 @@
         "movedBlockerSpillAreaPx2": 8001.313442717299
       },
       "waterObjects": 0,
-      "sourceSha256": "3c05a24f1c243ff0f7df9ec75ad3ede63c4e0c9627a586af8ef97ad528c2d40a"
+      "sourceSha256": "ac2c26506fdbddb0ceeab22d15854a8c8b619bc8a79a8608b365cbc2aa689205",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "bakery-a": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 2
+            },
+            "bakery-b": {
+              "anchor": {
+                "q": 4,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "bakery-v6-a": {
+              "anchor": {
+                "q": 7,
+                "r": 2
+              },
+              "turns": 0
+            }
+          },
+          "to": {
+            "bakery-b": {
+              "anchor": {
+                "q": 5,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "bakery-v6-a": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 0
+            },
+            "bakery-a": {
+              "anchor": {
+                "q": 2,
+                "r": 4
+              },
+              "turns": 2
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
     },
     {
       "sceneId": "stream",
@@ -740,7 +870,13 @@
           "waterCenter": "6,1",
           "dryEnds": 2,
           "hiddenBeforeBuild": true,
-          "exactCaps": true
+          "exactCaps": true,
+          "adjoiningWaterCells": [
+            "6,0",
+            "6,2"
+          ],
+          "riverCenterErrorPx": 9.529839838371336e-06,
+          "negativeOriginalBendErrorPx": 60.62180161476153
         }
       ],
       "gate": null,
@@ -749,7 +885,16 @@
         "movedBlockerSpillAreaPx2": 8274.857143228073
       },
       "waterObjects": 7,
-      "sourceSha256": "8515946f57493f0686b8440e31308e532d1e54c0245ab79eac5962bda7943243"
+      "sourceSha256": "845ecf0a8c94842f7ae47f78d972832dda8cd9fedb7eafc87dcef5b3c834636d",
+      "layoutChanges": [
+        {
+          "kind": "terrain",
+          "from": "5,2",
+          "to": "6,2",
+          "terrain": "water"
+        }
+      ],
+      "requiresGameIntegration": true
     },
     {
       "sceneId": "mill",
@@ -906,7 +1051,13 @@
           "waterCenter": "2,3",
           "dryEnds": 2,
           "hiddenBeforeBuild": true,
-          "exactCaps": true
+          "exactCaps": true,
+          "adjoiningWaterCells": [
+            "2,2",
+            "2,4"
+          ],
+          "riverCenterErrorPx": 1.4335643647162948e-05,
+          "negativeOriginalBendErrorPx": 60.62178500493478
         }
       ],
       "gate": null,
@@ -915,7 +1066,16 @@
         "movedBlockerSpillAreaPx2": 8274.857143228073
       },
       "waterObjects": 9,
-      "sourceSha256": "e3a698e1b5fb4e76d310c6b7a55b7a6a4c6b4c7df25b603fa991fb0b0f896ac5"
+      "sourceSha256": "da321e50e69acd3ba8f1807aaa3fb59bc9fe48966ccdf78e4c9edccd702593c0",
+      "layoutChanges": [
+        {
+          "kind": "terrain",
+          "from": "1,4",
+          "to": "2,4",
+          "terrain": "water"
+        }
+      ],
+      "requiresGameIntegration": true
     },
     {
       "sceneId": "post",
@@ -1030,9 +1190,9 @@
       "approaches": [
         {
           "role": "start",
-          "anchorErrorPx": 7.41971840381361e-05,
-          "blockedAreaPx2": 0,
-          "landmarkDistancePx": 176.67378971986977,
+          "anchorErrorPx": 5.192984451561659e-05,
+          "blockedAreaPx2": 0.0,
+          "landmarkDistancePx": 107.25006367692625,
           "coversFullAnchor": true
         },
         {
@@ -1050,7 +1210,70 @@
         "movedBlockerSpillAreaPx2": 8001.313442717299
       },
       "waterObjects": 0,
-      "sourceSha256": "0cfc2f255d64133d32da33e2127ed3fe04f39fc99206a3a09b41a2504e4658a4"
+      "sourceSha256": "aada2a7f0d7a8f69e3a736a0ddb6b19e31a8bcf8b9ea6d8302b603d4b2c68efd",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "post-a": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 2
+            },
+            "post-b": {
+              "anchor": {
+                "q": 4,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "post-extra": {
+              "anchor": {
+                "q": 7,
+                "r": 2
+              },
+              "turns": 0
+            }
+          },
+          "to": {
+            "post-extra": {
+              "anchor": {
+                "q": 6,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "post-b": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 0
+            },
+            "post-a": {
+              "anchor": {
+                "q": 2,
+                "r": 4
+              },
+              "turns": 2
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
     },
     {
       "sceneId": "forest",
@@ -1165,9 +1388,9 @@
       "approaches": [
         {
           "role": "start",
-          "anchorErrorPx": 0.0001737251851687319,
+          "anchorErrorPx": 0.00018767968711804007,
           "blockedAreaPx2": 0,
-          "landmarkDistancePx": 170.00696055986236,
+          "landmarkDistancePx": 130.00533986735303,
           "coversFullAnchor": true
         },
         {
@@ -1185,15 +1408,78 @@
         "movedBlockerSpillAreaPx2": 7356.170917235984
       },
       "waterObjects": 0,
-      "sourceSha256": "abd3a4b6d4be8c037583580b458d22806c1ab61cc252cbf6d39ae7d511a129df"
+      "sourceSha256": "8b8de37269c7376062b4ddfd36528ab3a3a3b87cc2cbf90f8728abc1abdb2047",
+      "layoutChanges": [
+        {
+          "kind": "start",
+          "from": {
+            "q": 0,
+            "r": 5
+          },
+          "to": {
+            "q": -1,
+            "r": 6
+          }
+        },
+        {
+          "kind": "solution",
+          "from": {
+            "forest-a": {
+              "anchor": {
+                "q": 2,
+                "r": 2
+              },
+              "turns": 0
+            },
+            "forest-b": {
+              "anchor": {
+                "q": 4,
+                "r": 1
+              },
+              "turns": 0
+            },
+            "forest-c": {
+              "anchor": {
+                "q": 7,
+                "r": 1
+              },
+              "turns": 0
+            }
+          },
+          "to": {
+            "forest-c": {
+              "anchor": {
+                "q": 8,
+                "r": 1
+              },
+              "turns": 2
+            },
+            "forest-a": {
+              "anchor": {
+                "q": 1,
+                "r": 4
+              },
+              "turns": 0
+            },
+            "forest-b": {
+              "anchor": {
+                "q": 3,
+                "r": 3
+              },
+              "turns": 0
+            }
+          }
+        }
+      ],
+      "requiresGameIntegration": true
     }
   ],
   "productionChanged": false,
   "inputs": {
-    "scripts/blender/audit_chapter.py": "6d21eb0a8115baa49894b5d8eee02cb4164d3428d2469df5c235dfa82898000e",
-    "scripts/blender/chapter_layouts.py": "1090cf8ef5c7ee33ef90c6cb847b3f670075015c31cad14a8d89781c0b412651",
+    "scripts/blender/audit_chapter.py": "7379afa4477cff17654d879c762601e20740fd48891ae681d91cc46101b49b38",
+    "scripts/blender/chapter_layouts.py": "88e2265416eeb1b80184b89b3aff3e4b5f9a8c64c805392e1e51bb59e800e76b",
     "scripts/blender/layout_math.py": "08eebd36199f6614b0cd107571ed3e9bfa1c21ff7f21c6f597555d5a378e2d37",
-    "scripts/blender/export-chapter.ts": "52755ab9256ad507af14a8d52fa4b9c7e57ff2f99668eb72edb0b090219cae9a",
+    "scripts/blender/export-chapter.ts": "2ac0f084f557fb926ad70ab54ab933027dc48cf5677b1ac5e3336575f0625e5a",
     "art/blender/gate-pilot.blend": "2cd02afa4c6f0a5bc8ce266db3f5b124e69d2b5ca2b4dd7237ced17bc6557967",
     "docs/blender-chapter-1/manifest.json": "1b0c97a7cf3dfb101ccc23d106e659cffd2c52719e1a2772c76836ef2f9252b7"
   }

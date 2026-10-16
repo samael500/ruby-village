@@ -7,7 +7,7 @@
 </style>
 <header>
 <h1>За калитку · разметка первой главы</h1>
-<p id="intro">Технические макеты для будущей перерисовки в 2D. Геометрия взята из игры; внешний вид условный.</p>
+<p id="intro">Технические макеты для перерисовки в 2D. Основа — данные игры; правки русла и стартов отмечены отдельно.</p>
 <div class="toolbar">
 <label>Уровень <select id="scene" aria-label="Уровень"></select></label>
 <button data-mode="clean" aria-pressed="false">Макет</button>
@@ -41,7 +41,8 @@ function show(){
  document.querySelector('#source').href=`../../../art/blender/chapter-layouts/${d.sceneId}.blend`;
  document.querySelector('#report').href=`${d.sceneId}-report.json`;
  const terrain=d.cells.filter(c=>c.terrain).length;
- document.querySelector('#stats').textContent=`77 клеток · ${terrain} препятствий · ${77-terrain} свободных · старт ${d.start.q},${d.start.r} → цель ${d.goal.q},${d.goal.r}`;
+ const changed=d.layoutChanges?.length?(d.layoutChanges.some(c=>c.kind==='start')?' · старт перенесён по ревью':' · русло исправлено по ревью'):'';
+ document.querySelector('#stats').textContent=`77 клеток · ${terrain} препятствий · ${77-terrain} свободных · старт ${d.start.q},${d.start.r} → цель ${d.goal.q},${d.goal.r}${changed}`;
  history.replaceState(null,'',`#scene=${d.sceneId}&mode=${mode}`);
 }
 select.addEventListener('change',()=>{if(mode==='contact')mode='check';show()});

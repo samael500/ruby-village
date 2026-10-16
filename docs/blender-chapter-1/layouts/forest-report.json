@@ -111,9 +111,9 @@
   "approaches": [
     {
       "role": "start",
-      "anchorErrorPx": 0.0001737251851687319,
+      "anchorErrorPx": 0.00018767968711804007,
       "blockedAreaPx2": 0,
-      "landmarkDistancePx": 170.00696055986236,
+      "landmarkDistancePx": 130.00533986735303,
       "coversFullAnchor": true
     },
     {
@@ -131,5 +131,68 @@
     "movedBlockerSpillAreaPx2": 7356.170917235984
   },
   "waterObjects": 0,
-  "sourceSha256": "abd3a4b6d4be8c037583580b458d22806c1ab61cc252cbf6d39ae7d511a129df"
+  "sourceSha256": "8b8de37269c7376062b4ddfd36528ab3a3a3b87cc2cbf90f8728abc1abdb2047",
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "forest-a": {
+          "anchor": {
+            "q": 2,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "forest-b": {
+          "anchor": {
+            "q": 4,
+            "r": 1
+          },
+          "turns": 0
+        },
+        "forest-c": {
+          "anchor": {
+            "q": 7,
+            "r": 1
+          },
+          "turns": 0
+        }
+      },
+      "to": {
+        "forest-c": {
+          "anchor": {
+            "q": 8,
+            "r": 1
+          },
+          "turns": 2
+        },
+        "forest-a": {
+          "anchor": {
+            "q": 1,
+            "r": 4
+          },
+          "turns": 0
+        },
+        "forest-b": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 0
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
 }

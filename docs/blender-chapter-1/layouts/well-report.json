@@ -111,9 +111,9 @@
   "approaches": [
     {
       "role": "start",
-      "anchorErrorPx": 7.41971840381361e-05,
-      "blockedAreaPx2": 0,
-      "landmarkDistancePx": 176.67378971986977,
+      "anchorErrorPx": 5.192984451561659e-05,
+      "blockedAreaPx2": 0.0,
+      "landmarkDistancePx": 107.25006367692625,
       "coversFullAnchor": true
     },
     {
@@ -131,5 +131,68 @@
     "movedBlockerSpillAreaPx2": 8001.313442717299
   },
   "waterObjects": 0,
-  "sourceSha256": "b74526d70f1dd79fff9a280f976753942bc6c9e19a7dd0c21d7e700b57de557a"
+  "sourceSha256": "15b97757b51c9420db9d0075d41dc4d519549691bea103167ae37650178ce2b4",
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "well-v6-a": {
+          "anchor": {
+            "q": 1,
+            "r": 5
+          },
+          "turns": 0
+        },
+        "well-a": {
+          "anchor": {
+            "q": 6,
+            "r": 4
+          },
+          "turns": 2
+        },
+        "well-b": {
+          "anchor": {
+            "q": 8,
+            "r": 2
+          },
+          "turns": 2
+        }
+      },
+      "to": {
+        "well-b": {
+          "anchor": {
+            "q": 6,
+            "r": 4
+          },
+          "turns": 5
+        },
+        "well-a": {
+          "anchor": {
+            "q": 5,
+            "r": 5
+          },
+          "turns": 2
+        },
+        "well-v6-a": {
+          "anchor": {
+            "q": 0,
+            "r": 6
+          },
+          "turns": 0
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
 }

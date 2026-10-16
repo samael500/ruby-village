@@ -1045,7 +1045,7 @@
       "q": 5,
       "r": 2,
       "id": "5,2",
-      "terrain": "water",
+      "terrain": null,
       "center": {
         "x": 867.4613391789285,
         "y": 466.5
@@ -1081,7 +1081,7 @@
       "q": 6,
       "r": 2,
       "id": "6,2",
-      "terrain": null,
+      "terrain": "water",
       "center": {
         "x": 988.7048957087499,
         "y": 466.5
@@ -2942,6 +2942,16 @@
     "src/chapter-1.logical.json": "6d310ccc6a055a47f00acaa1fa862877aaa451ce9f00456830efc0907cdd28cd",
     "src/art-solutions.json": "ed36d0132a9ba50c0ff2d212a820588dee8d045f45fd53f6384697d1921c14d4",
     "src/scene-v8.json": "a32f8e4d1bbe56d0c6b6d29a72aa5a8d646675db68489adcaacb8fd4052d8cbc",
-    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4"
-  }
+    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4",
+    "art/blender/chapter-layouts/layout-adjustments.json": "cb4a8703767ed5a3c7ed9cf98fd2486b5756f38109f2673ba70646bc4649f06b"
+  },
+  "layoutChanges": [
+    {
+      "kind": "terrain",
+      "from": "5,2",
+      "to": "6,2",
+      "terrain": "water"
+    }
+  ],
+  "requiresGameIntegration": true
 }

@@ -15,12 +15,12 @@
     "groundScale": 0.65
   },
   "start": {
-    "q": 0,
-    "r": 5,
+    "q": -1,
+    "r": 6,
     "name": "Двор",
     "pixel": {
-      "x": 443.1088913245535,
-      "y": 635
+      "x": 378.91832705503657,
+      "y": 700.3035714285716
     }
   },
   "goal": {
@@ -2828,15 +2828,15 @@
       "kind": "stone",
       "placement": {
         "anchor": {
-          "q": 3,
-          "r": 3
+          "q": 2,
+          "r": 4
         },
         "turns": 2
       },
       "cells": [
-        "3,3",
         "2,4",
-        "1,4"
+        "1,5",
+        "0,5"
       ]
     },
     {
@@ -2860,15 +2860,15 @@
       "kind": "stone",
       "placement": {
         "anchor": {
-          "q": 4,
-          "r": 2
+          "q": 3,
+          "r": 3
         },
         "turns": 0
       },
       "cells": [
-        "4,2",
-        "5,2",
-        "6,2"
+        "3,3",
+        "4,3",
+        "5,3"
       ]
     },
     {
@@ -2902,24 +2902,25 @@
       "kind": "stone",
       "placement": {
         "anchor": {
-          "q": 7,
+          "q": 6,
           "r": 2
         },
         "turns": 0
       },
       "cells": [
-        "7,2",
-        "8,2"
+        "6,2",
+        "7,2"
       ]
     }
   ],
   "path": [
+    "-1,6",
     "0,5",
-    "1,4",
+    "1,5",
     "2,4",
     "3,3",
-    "4,2",
-    "5,2",
+    "4,3",
+    "5,3",
     "6,2",
     "7,2",
     "8,2"
@@ -2938,6 +2939,70 @@
     "src/chapter-1.logical.json": "6d310ccc6a055a47f00acaa1fa862877aaa451ce9f00456830efc0907cdd28cd",
     "src/art-solutions.json": "ed36d0132a9ba50c0ff2d212a820588dee8d045f45fd53f6384697d1921c14d4",
     "src/scene-v8.json": "a32f8e4d1bbe56d0c6b6d29a72aa5a8d646675db68489adcaacb8fd4052d8cbc",
-    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4"
-  }
+    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4",
+    "art/blender/chapter-layouts/layout-adjustments.json": "cb4a8703767ed5a3c7ed9cf98fd2486b5756f38109f2673ba70646bc4649f06b"
+  },
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "post-a": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 2
+        },
+        "post-b": {
+          "anchor": {
+            "q": 4,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "post-extra": {
+          "anchor": {
+            "q": 7,
+            "r": 2
+          },
+          "turns": 0
+        }
+      },
+      "to": {
+        "post-extra": {
+          "anchor": {
+            "q": 6,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "post-b": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 0
+        },
+        "post-a": {
+          "anchor": {
+            "q": 2,
+            "r": 4
+          },
+          "turns": 2
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
 }

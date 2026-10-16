@@ -111,9 +111,9 @@
   "approaches": [
     {
       "role": "start",
-      "anchorErrorPx": 7.41971840381361e-05,
-      "blockedAreaPx2": 0,
-      "landmarkDistancePx": 176.67378971986977,
+      "anchorErrorPx": 5.192984451561659e-05,
+      "blockedAreaPx2": 0.0,
+      "landmarkDistancePx": 107.25006367692625,
       "coversFullAnchor": true
     },
     {
@@ -131,5 +131,68 @@
     "movedBlockerSpillAreaPx2": 8001.313442717299
   },
   "waterObjects": 0,
-  "sourceSha256": "3c05a24f1c243ff0f7df9ec75ad3ede63c4e0c9627a586af8ef97ad528c2d40a"
+  "sourceSha256": "ac2c26506fdbddb0ceeab22d15854a8c8b619bc8a79a8608b365cbc2aa689205",
+  "layoutChanges": [
+    {
+      "kind": "start",
+      "from": {
+        "q": 0,
+        "r": 5
+      },
+      "to": {
+        "q": -1,
+        "r": 6
+      }
+    },
+    {
+      "kind": "solution",
+      "from": {
+        "bakery-a": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 2
+        },
+        "bakery-b": {
+          "anchor": {
+            "q": 4,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "bakery-v6-a": {
+          "anchor": {
+            "q": 7,
+            "r": 2
+          },
+          "turns": 0
+        }
+      },
+      "to": {
+        "bakery-b": {
+          "anchor": {
+            "q": 5,
+            "r": 2
+          },
+          "turns": 0
+        },
+        "bakery-v6-a": {
+          "anchor": {
+            "q": 3,
+            "r": 3
+          },
+          "turns": 0
+        },
+        "bakery-a": {
+          "anchor": {
+            "q": 2,
+            "r": 4
+          },
+          "turns": 2
+        }
+      }
+    }
+  ],
+  "requiresGameIntegration": true
 }
