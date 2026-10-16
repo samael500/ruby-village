@@ -24,7 +24,7 @@ export const parseProgress=(raw:string|null)=>parseState(raw).completed;
 export function loadState(storage?:StorageLike):Progress {try{return parseState(storage?.getItem(PROGRESS_KEY)??null);}catch{return empty();}}
 export const loadProgress=(storage?:StorageLike)=>loadState(storage).completed;
 export function saveProgress(completed:readonly string[],storage?:StorageLike,introSeen:readonly string[]=completed):boolean {
- try {if(!storage)return false;storage.setItem(PROGRESS_KEY,JSON.stringify({version:2,completed,introSeen}));return true;}catch{return false;}
+ try {if(!storage)return false;let previous:Record<string,unknown>={};try{const parsed=JSON.parse(storage.getItem(PROGRESS_KEY)??'null');if(parsed?.version===2)previous=parsed;}catch{/* Recover only this record; never clear storage. */}storage.setItem(PROGRESS_KEY,JSON.stringify({...previous,version:2,completed,introSeen}));return true;}catch{return false;}
 }
 export function available(id:string,completed:readonly string[]):boolean {
  const index=levels.findIndex(l=>l.id===id);

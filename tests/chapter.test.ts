@@ -63,3 +63,11 @@ test('Вода, сухие концы моста, вращение и перес
   synthetic.terrain[key(end)]='rock';assert.equal(validPlacement(synthetic,'bridge',p,{}),false);
  }
 });
+
+test('Перенесённые старты с отрицательным q входят в реальное offset-поле',()=>{
+ for(const id of ['garden','well','bakery','post','forest']){
+  const level=levels.find(l=>l.id===id)!;
+  assert.deepEqual(level.start,{q:-1,r:6});
+  assert.ok(boardCells(level.cols,level.rows).some(h=>key(h)===key(level.start)));
+ }
+});
