@@ -3,8 +3,8 @@ import assert from 'node:assert/strict';
 import {createGameAudio,AUDIO_PREFERENCES_KEY} from '../src/audio.ts';
 class Param {value=0;cancelScheduledValues(){}setTargetAtTime(value:number){this.value=value;}}
 class Gain {gain=new Param();connect(){}disconnect(){}}
-class Source {buffer:unknown;loop=false;onended:(()=>void)|null=null;connect(){}disconnect(){}start(){}stop(){this.onended?.();}}
-class Context {static count=0;currentTime=0;state='suspended';destination={};constructor(){Context.count++;}createGain(){return new Gain();}createBufferSource(){return new Source();}async resume(){this.state='running';}async close(){this.state='closed';}async decodeAudioData(){return {duration:1};}}
+class Source {static offsets:number[]=[];buffer:unknown;loop=false;onended:(()=>void)|null=null;connect(){}disconnect(){}start(_when=0,offset=0){Source.offsets.push(offset);}stop(){this.onended?.();}}
+class Context {static count=0;static latest:Context;currentTime=0;state='suspended';destination={};constructor(){Context.count++;Context.latest=this;}createGain(){return new Gain();}createBufferSource(){return new Source();}async resume(){this.state='running';}async close(){this.state='closed';}async decodeAudioData(){return {duration:1};}}
 const flush=async()=>{for(let i=0;i<12;i++)await Promise.resolve();};
 test('gesture gate, persisted levels, one context, throttling, pause and disposal',async()=>{
  const original=globalThis.AudioContext,fetchOriginal=globalThis.fetch;
@@ -17,8 +17,8 @@ test('gesture gate, persisted levels, one context, throttling, pause and disposa
   assert.equal(await audio.unlock(),true);await flush();assert.equal(Context.count,1);assert.equal(audio.metrics.activeVoices,2);
   await audio.unlock();await flush();assert.equal(audio.metrics.activeVoices,2);
   await audio.play('tile-place');const played=audio.metrics.played;await audio.play('tile-place');assert.equal(audio.metrics.played,played);
-  audio.setPaused(true);assert.equal(audio.metrics.activeVoices,0);await audio.play('foot-stone');assert.equal(audio.metrics.played,played);
-  audio.setPaused(false);await flush();assert.equal(audio.metrics.activeVoices,2);
+  Context.latest.currentTime=.45;audio.setPaused(true);assert.equal(await audio.unlock(),false);assert.equal(audio.metrics.activeVoices,0);await audio.play('foot-stone');assert.equal(audio.metrics.played,played);
+  audio.setPaused(false);await flush();assert.equal(audio.metrics.activeVoices,2);assert.ok(Source.offsets.slice(-2).every(offset=>offset===.45));
   audio.setPreferences({muted:true,music:2});assert.equal(audio.preferences.music,1);await audio.play('ui-click');assert.equal(audio.metrics.played,played+2);
   audio.dispose();assert.equal(audio.metrics.activeVoices,0);assert.equal(await audio.unlock(),false);
  }finally{globalThis.AudioContext=original;globalThis.fetch=fetchOriginal;}
