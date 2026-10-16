@@ -25,7 +25,7 @@ app.innerHTML = `
 <section id="main-menu"><div class="menu-paper"><h2>Рубиновая деревня</h2><p>За калитку · первая глава</p><button id="continue-game" class="primary">Начать приключение</button><button id="prologue-replay">Посмотреть начало</button><button id="choose-level">Выбрать уровень</button><button id="main-settings">Настройки</button><p id="menu-progress"></p><p id="menu-save-status" role="status"></p></div></section>
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
-<div class="map-landscape"><svg id="map-background" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"><path d="M 15 170 Q 300 230 480 190 T 980 200" fill="none" stroke="#a4c4bd" stroke-width="25"/><path d="M 90 360 L 120 325 L 150 360 M 760 20 L 790 55 L 820 20" fill="none" stroke="#789065" stroke-width="12"/></svg><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div>
+<div class="map-landscape"><div id="map-world"><img id="map-background" src="${import.meta.env.BASE_URL}assets/chapter-map-v1/chapter-map-candidate.webp" alt=""><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div></div>
 <div class="map-actions"><button id="home-menu">⌂ Меню</button><button id="map-more">Ещё…</button><span id="save-status" role="status"></span></div><dialog id="map-extra"><div class="dialog-heading"><h2>Приключение</h2><button id="map-extra-close" aria-label="Закрыть">✕</button></div><div class="pause-actions"><button id="sandbox-open">Песочница</button><button id="chapter-ending" hidden>✦ Письма через лес</button><button id="letter-open" hidden>✉ Приглашение</button><button id="reset-open">Начать главу заново</button></div></dialog>
 </section>
 <main id="field"><svg id="board" role="group" aria-label="Гексагональное поле. Деревня слева, мельница справа"></svg></main>
@@ -548,14 +548,19 @@ function enterLevel(next:Level,resume:Session|null=null) {
 }
 function mapGeometry(){
  const points=[[120,95],[365,95],[610,95],[855,95],[855,300],[610,300],[365,300],[120,300]];
+ const bounds=document.querySelector('.map-landscape')!.getBoundingClientRect(),fit=Math.min(bounds.width/1000,bounds.height/400);
+ $('map-world').style.cssText=`width:${1000*fit}px;height:${400*fit}px;left:${(bounds.width-1000*fit)/2}px;top:${(bounds.height-400*fit)/2}px`;
  const roads=$('map-roads');roads.replaceChildren();
- let previous=[20,95];
- levels.forEach((l,i)=>{
-  const [x,y]=points[i],done=completed.includes(l.id);
-  el('path',{d:`M ${previous[0]} ${previous[1]} L ${x} ${y}`,fill:'none',stroke:done?'#9062b0':'#a2ab8c','stroke-width':10,'stroke-dasharray':done?'none':'10 12','data-road':l.id,'data-complete':String(done)},roads);
-  const node=document.querySelector<HTMLElement>(`[data-map-node="${l.id}"]`);
+ const entries=chapterMap(completed);
+ entries.forEach((item,i)=>{
+  const [x,y]=points[i];
+  if(i>0&&item.connectionRestored){
+   const previous=points[i-1];
+   const d=previous[1]===y?(y<200?`M${previous[0]+82} 138 C${previous[0]+105} 175,${x-105} 175,${x-82} 138`:`M${previous[0]-82} 310 C${previous[0]-105} 332,${x+105} 332,${x+82} 310`):'M940 120 C985 170,985 260,940 310';
+   el('path',{d,fill:'none',stroke:'#8560a1','stroke-width':5,'stroke-linecap':'round','data-road':item.id,'data-complete':'true'},roads);
+  }
+  const node=document.querySelector<HTMLElement>(`[data-map-node="${item.id}"]`);
   if(node){node.style.left=`${x/10}%`;node.style.top=`${y/4}%`;}
-  previous=[x,y];
  });
 }
 function showMap(){
@@ -575,10 +580,10 @@ function showMap(){
   const node=document.createElement('div');node.className='map-node';node.dataset.mapNode=l.id;
   const button=document.createElement('button');button.dataset.level=l.id;button.className='level-card';button.disabled=!unlocked;
   button.setAttribute('aria-label',mapItem.label);
-  const symbol=document.createElement('span');symbol.className='place-symbol';const image=document.createElement('img');image.src=`${import.meta.env.BASE_URL}assets/chapter-1/v6/${['01-courtyard','02-orchard','03-well','04-bakery','05-stream','06-mill','07-post','08-edge'][index]}.png`;image.alt='';symbol.append(image);
+  const label=document.createElement('span');label.className='map-label';
   const title=document.createElement('strong');title.textContent=`${index+1}. ${l.name}`;
   const state=document.createElement('span');state.className='map-state';state.textContent=done?'✓ Пройден':unlocked?'▶ В путь':'🔒 Закрыто';
-  button.append(symbol,title,state);button.onclick=()=>enterLevel(l);node.append(button);
+  label.append(title,state);button.append(label);button.onclick=()=>enterLevel(l);node.append(button);
   if(unlocked){const book=document.createElement('button');book.className='map-book';book.innerHTML='<svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M12 5Q6 2 2 5V20Q7 17 12 20Q17 17 22 20V5Q18 2 12 5V20" fill="none" stroke="currentColor" stroke-width="2"/></svg>';book.setAttribute('aria-label',`Реплики: ${data.title}`);book.onclick=()=>readStory(l.id);node.append(book);}
   places.append(node);
  }

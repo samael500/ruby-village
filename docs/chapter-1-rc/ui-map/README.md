@@ -11,3 +11,7 @@ Real Chromium screenshots: map-{new,partial,complete}-{1440x900,844x390,740x360}
 Self-review: warm painterly materials and red roofs fit the courtyard direction; all eight landmarks are present, differentiated, and align to requested row order. No lettering/characters/roads baked into generated image. DOM labels remain legible in review screens; production integration should maintain >=44px interaction targets and retain accessible feedback. Final acceptance and full six target viewport/gameplay checks remain #46/#37.
 
 #47 resource audit and actual six-frame blocking board are in prologue/. The board uses the approved courtyard style and Ruta appearance; missing crouch/basket-hold/Rabbit-baking poses are explicitly absent, not faked. Only native start-foot placement is demonstrated; not finished prologue. Phone/family/iOS: not-run.
+
+## Decision 2026-10-17
+
+Maksim explicitly accepted the map drawing: «Принять рисунок карты». It is now authorized for runtime integration; all labels, access states, replay and restored paths remain DOM/SVG runtime layers.
