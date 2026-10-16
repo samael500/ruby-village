@@ -1,0 +1,64 @@
+{
+  "commit": "cf3ce616ad470df08b884915f0875af3b5410e47",
+  "results": [
+    {
+      "check": "real placement",
+      "status": "pass"
+    },
+    {
+      "check": "partial save reload",
+      "status": "pass"
+    },
+    {
+      "check": "return and undo",
+      "status": "pass"
+    },
+    {
+      "check": "audio preferences persisted",
+      "status": "pass"
+    },
+    {
+      "check": "viewport 1280x720",
+      "status": "pass"
+    },
+    {
+      "check": "viewport 844x390",
+      "status": "pass"
+    },
+    {
+      "check": "viewport 740x360",
+      "status": "pass"
+    },
+    {
+      "check": "viewport 915x412",
+      "status": "pass"
+    },
+    {
+      "check": "viewport 1024x768",
+      "status": "pass"
+    },
+    {
+      "check": "viewport 1920x1080",
+      "status": "pass"
+    },
+    {
+      "check": "viewport 390x844",
+      "status": "pass"
+    },
+    {
+      "check": "denied-storage",
+      "status": "pass"
+    },
+    {
+      "check": "corrupt-storage",
+      "status": "pass"
+    },
+    {
+      "check": "v1-migration",
+      "status": "pass"
+    }
+  ],
+  "pageErrors": [],
+  "physicalPhone": "not-run",
+  "familyPlaytest": "not-run"
+}
