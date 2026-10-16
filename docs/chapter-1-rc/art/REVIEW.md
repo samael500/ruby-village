@@ -46,3 +46,7 @@ The gate was inspected on white, dark and magenta backgrounds (`gate-v4-alpha-th
 Raster polygon intersection check: fixed foreground and open leaf each overlap **0 pixels** of the full playable polygons. The closed vertical leaf overlaps 439 pixels at the goal edge (x1348–1413, y719–745), inherent to the retained gate position. #46 must open the gate before Ruta enters the goal; the open state clears its full footprint. This is an explicit runtime contract, not a geometry change.
 
 Artistic review is pending. Current blockers are acceptance, production depth/traversal checks, and seven remaining final scenes. Earlier extraction fringe and positional-fidelity defects are superseded by the registered source-mask layers.
+
+## Artistic decision 2026-10-17
+
+Maksim explicitly accepted the courtyard style: «Принять стиль двора». Seven final scenes may now proceed. This approves artistic direction; production compositing, gate timing, exact alpha and viewport/input verification remain integration checks.

@@ -66,5 +66,5 @@ with sync_playwright() as p:
  video=page.video.path()
  context.close();browser.close()
  if (OUT/'game-audio.webm').exists():
-  subprocess.run(['ffmpeg','-y','-i',str(video),'-i',str(OUT/'game-audio.webm'),'-c:v','libx264','-preset','fast','-crf','28','-c:a','aac','-shortest',str(OUT/'chapter-playthrough-with-audio.mp4')],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
+  subprocess.run(['ffmpeg','-y','-i',str(video),'-i',str(OUT/'game-audio.webm'),'-c:v','libx264','-preset','veryfast','-threads','2','-crf','28','-c:a','aac','-shortest',str(OUT/'chapter-playthrough-with-audio.mp4')],check=True,stdout=subprocess.DEVNULL,stderr=subprocess.DEVNULL)
  print(json.dumps(report,ensure_ascii=False))
