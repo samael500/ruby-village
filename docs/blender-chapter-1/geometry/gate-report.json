@@ -1,0 +1,565 @@
+{
+  "sceneId": "gate",
+  "status": "geometry contract passes; decorative model registration pending",
+  "source": "art/blender/gate-geometry.blend",
+  "engineSha256": "6b66cbad46087c00b568c038dbb936e30bad4689b2bf20b77616cfded18f610e",
+  "method": "convex polygon intersection between actual Blender top faces and engine polygons, including full areas and boundaries",
+  "counts": {
+    "board": 77,
+    "blocked": 16,
+    "playable": 61
+  },
+  "maxCornerErrorPx": 8.187731829837933e-05,
+  "maxAreaErrorPx2": 0.010111537194461562,
+  "areaTolerancePx2": 0.25,
+  "mutationChecks": {
+    "removedBlockerMissingAreaPx2": 8274.868263510341,
+    "movedBlockerSpillAreaPx2": 8274.866140442056
+  },
+  "decorativeRegistration": {
+    "status": "not aligned; contract anchors are not doorway claims",
+    "houseEntranceToStartPx": 200.94661275027426,
+    "gateOpeningToGoalPx": 248.18621821190675
+  },
+  "cells": [
+    {
+      "id": "0,0",
+      "terrain": "house",
+      "areaPx2": 8274.872733160313,
+      "blockedAreaPx2": 8274.87061009203,
+      "areaErrorPx2": 0.002123068283253815
+    },
+    {
+      "id": "1,0",
+      "terrain": "house",
+      "areaPx2": 8274.872733160319,
+      "blockedAreaPx2": 8274.872707850813,
+      "areaErrorPx2": 2.5309505872428417e-05
+    },
+    {
+      "id": "2,0",
+      "terrain": "house",
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 8274.8727331603,
+      "areaErrorPx2": 0.0
+    },
+    {
+      "id": "3,0",
+      "terrain": "house",
+      "areaPx2": 8274.872733160308,
+      "blockedAreaPx2": 8274.871947270185,
+      "areaErrorPx2": 0.0007858901226427406
+    },
+    {
+      "id": "4,0",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0.0028301777638262138,
+      "areaErrorPx2": 0.0028301777638262138
+    },
+    {
+      "id": "5,0",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "6,0",
+      "terrain": null,
+      "areaPx2": 8274.872733160315,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "7,0",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "8,0",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "9,0",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "10,0",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "0,1",
+      "terrain": "house",
+      "areaPx2": 8274.872733160308,
+      "blockedAreaPx2": 8274.872733160322,
+      "areaErrorPx2": 1.4551915228366852e-11
+    },
+    {
+      "id": "1,1",
+      "terrain": "house",
+      "areaPx2": 8274.872733160322,
+      "blockedAreaPx2": 8274.871055858363,
+      "areaErrorPx2": 0.001677301959716715
+    },
+    {
+      "id": "2,1",
+      "terrain": "house",
+      "areaPx2": 8274.872733160308,
+      "blockedAreaPx2": 8274.869879638216,
+      "areaErrorPx2": 0.002853522091754712
+    },
+    {
+      "id": "3,1",
+      "terrain": "house",
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 8274.871013258802,
+      "areaErrorPx2": 0.0017199015273945406
+    },
+    {
+      "id": "4,1",
+      "terrain": null,
+      "areaPx2": 8274.872733160286,
+      "blockedAreaPx2": 0.0002765271347016096,
+      "areaErrorPx2": 0.0002765271347016096
+    },
+    {
+      "id": "5,1",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "6,1",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "7,1",
+      "terrain": null,
+      "areaPx2": 8274.872733160359,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "8,1",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "9,1",
+      "terrain": null,
+      "areaPx2": 8274.872733160388,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "10,1",
+      "terrain": null,
+      "areaPx2": 8274.872733160242,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "-1,2",
+      "terrain": "house",
+      "areaPx2": 8274.872733160311,
+      "blockedAreaPx2": 8274.87087386569,
+      "areaErrorPx2": 0.0018592946216813289
+    },
+    {
+      "id": "0,2",
+      "terrain": "house",
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 8274.86647154492,
+      "areaErrorPx2": 0.006261615380935837
+    },
+    {
+      "id": "1,2",
+      "terrain": null,
+      "areaPx2": 8274.872733160322,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "2,2",
+      "terrain": null,
+      "areaPx2": 8274.872733160286,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "3,2",
+      "terrain": null,
+      "areaPx2": 8274.872733160315,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "4,2",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "5,2",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "6,2",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "7,2",
+      "terrain": null,
+      "areaPx2": 8274.872733160359,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "8,2",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "9,2",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "-1,3",
+      "terrain": "house",
+      "areaPx2": 8274.872733160308,
+      "blockedAreaPx2": 8274.872303282464,
+      "areaErrorPx2": 0.0004298778439988382
+    },
+    {
+      "id": "0,3",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0.0017623056919546798,
+      "areaErrorPx2": 0.0017623056919546798
+    },
+    {
+      "id": "1,3",
+      "terrain": null,
+      "areaPx2": 8274.872733160344,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "2,3",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "3,3",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "4,3",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "5,3",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "6,3",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "7,3",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "8,3",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "9,3",
+      "terrain": null,
+      "areaPx2": 8274.872733160388,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "-2,4",
+      "terrain": "house",
+      "areaPx2": 8274.872733160315,
+      "blockedAreaPx2": 8274.871987676437,
+      "areaErrorPx2": 0.0007454838778357953
+    },
+    {
+      "id": "-1,4",
+      "terrain": "house",
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 8274.867585355838,
+      "areaErrorPx2": 0.005147804491571151
+    },
+    {
+      "id": "0,4",
+      "terrain": null,
+      "areaPx2": 8274.872733160286,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "1,4",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "2,4",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "3,4",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "4,4",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "5,4",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "6,4",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "7,4",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "8,4",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "-2,5",
+      "terrain": "house",
+      "areaPx2": 8274.872733160315,
+      "blockedAreaPx2": 8274.872303282384,
+      "areaErrorPx2": 0.0004298779313103296
+    },
+    {
+      "id": "-1,5",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0.001498532175901346,
+      "areaErrorPx2": 0.001498532175901346
+    },
+    {
+      "id": "0,5",
+      "terrain": null,
+      "areaPx2": 8274.872733160315,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "1,5",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "2,5",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "3,5",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "4,5",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "5,5",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "6,5",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "7,5",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "8,5",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "-3,6",
+      "terrain": "house",
+      "areaPx2": 8274.872733160322,
+      "blockedAreaPx2": 8274.866098455408,
+      "areaErrorPx2": 0.006634704914176837
+    },
+    {
+      "id": "-2,6",
+      "terrain": "house",
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 8274.862621623106,
+      "areaErrorPx2": 0.010111537194461562
+    },
+    {
+      "id": "-1,6",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "0,6",
+      "terrain": null,
+      "areaPx2": 8274.8727331603,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "1,6",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "2,6",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "3,6",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "4,6",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "5,6",
+      "terrain": null,
+      "areaPx2": 8274.87273316033,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "6,6",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    },
+    {
+      "id": "7,6",
+      "terrain": null,
+      "areaPx2": 8274.872733160271,
+      "blockedAreaPx2": 0,
+      "areaErrorPx2": 0
+    }
+  ]
+}
