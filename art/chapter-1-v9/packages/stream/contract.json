@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "stream",
+  "status": "awaiting-pilot-acceptance",
+  "canvas": {
+    "width": 1672,
+    "height": 941,
+    "origin": [
+      0,
+      0
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  "source": "docs/blender-chapter-1/layouts/engine/stream.json",
+  "sourceSha256": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
+  "camera": {
+    "radius": 70,
+    "origin": {
+      "x": 140,
+      "y": 330
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "start": {
+    "q": 1,
+    "r": 3,
+    "name": "Берег",
+    "pixel": {
+      "x": 443.1088913245535,
+      "y": 534.75
+    }
+  },
+  "goal": {
+    "q": 9,
+    "r": 1,
+    "name": "За ручьём",
+    "pixel": {
+      "x": 1291.8137870333032,
+      "y": 398.25
+    }
+  },
+  "layers": {
+    "background": "opaque canvas; no characters/UI/grid/solution",
+    "foreground": "RGBA same canvas/crop; no free-hex occlusion",
+    "gateClosed": null,
+    "gateOpen": null,
+    "water": "separate shores/water; no constructed bridge",
+    "wheel": null
+  },
+  "rules": [
+    "Preserve every full free polygon, not only cell center",
+    "Blockers require meaningful decoration across their whole footprints",
+    "Shared transform for every image, geometry and character feet",
+    "No production activation until art acceptance and matching game data integration"
+  ]
+}
