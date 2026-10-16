@@ -4,7 +4,7 @@ export type AudioPreferences={muted:boolean;music:number;sfx:number};
 export const AUDIO_PREFERENCES_KEY='ruby-village:audio:v1';
 type StorageLike={getItem(key:string):string|null;setItem(key:string,value:string):void};
 type Cue={file:string;gain:number;loop:boolean};
-type Voice={source:AudioBufferSourceNode;gain:GainNode;kind:'sfx'|'ambience'|'music';startedAt:number;offset:number;duration:number};
+type Voice={source:AudioBufferSourceNode;gain:GainNode;kind:'sfx'|'ambience'|'music';startedAt:number;offset:number;duration:number;key:string|null};
 /** Creates no audio device until unlock is called by a user gesture. No queued one-shots. */
 export function createGameAudio(baseUrl:string,storage?:StorageLike) {
  const clamp=(n:unknown,fallback:number)=>typeof n==='number'&&Number.isFinite(n)?Math.min(1,Math.max(0,n)):fallback;
@@ -31,7 +31,7 @@ export function createGameAudio(baseUrl:string,storage?:StorageLike) {
   const source=context.createBufferSource(),node=context.createGain();source.buffer=data;source.loop=loop;source.connect(node);node.connect(buses[kind]);node.gain.value=fade?0:gain;
   const offset=kind==='music'?musicOffset:kind==='ambience'?ambienceOffset:0;
   if(!loop&&offset>=data.duration)return;
-  const voice={source,gain:node,kind,startedAt:context.currentTime,offset,duration:data.duration};voices.add(voice);
+  const voice={source,gain:node,kind,startedAt:context.currentTime,offset,duration:data.duration,key:kind==='music'?music:kind==='ambience'?scene:null};voices.add(voice);
   source.onended=()=>{source.disconnect();node.disconnect();voices.delete(voice);};
   if(fade)ramp(node,gain,.25);source.start(0,loop?offset%data.duration:offset);counters.played++;
  }
@@ -69,7 +69,7 @@ export function createGameAudio(baseUrl:string,storage?:StorageLike) {
   if([...voices].filter(v=>v.kind==='sfx').length>=8){counters.dropped++;return;}
   start(data,'sfx',item.gain);
  }
- function applyPause(){const value=manualPaused||hidden;if(paused===value)return;paused=value;epoch++;sceneGeneration++;musicGeneration++;if(value){for(const voice of voices){if(voice.kind==='music')musicOffset=voice.offset+Math.max(0,(context?.currentTime??0)-voice.startedAt);if(voice.kind==='ambience')ambienceOffset=voice.offset+Math.max(0,(context?.currentTime??0)-voice.startedAt);stop(voice);}}else{void ambience();void musicLoop();}}
+ function applyPause(){const value=manualPaused||hidden;if(paused===value)return;paused=value;epoch++;sceneGeneration++;musicGeneration++;if(value){for(const voice of voices){if(voice.kind==='music'&&voice.key===music)musicOffset=voice.offset+Math.max(0,(context?.currentTime??0)-voice.startedAt);if(voice.kind==='ambience'&&voice.key===scene)ambienceOffset=voice.offset+Math.max(0,(context?.currentTime??0)-voice.startedAt);stop(voice);}}else{void ambience();void musicLoop();}}
  function setScene(value:string|null){if(scene===value)return;scene=value;ambienceOffset=0;epoch++;stopKind('sfx');if(!value){sceneGeneration++;stopKind('ambience',.4);}else void ambience();}
  function setMusic(value:string|null){if(music===value)return;music=value;musicOffset=0;if(!value){musicGeneration++;stopKind('music',.4);}else void musicLoop();}
  function setPreferences(patch:Partial<AudioPreferences>){preferences={muted:typeof patch.muted==='boolean'?patch.muted:preferences.muted,music:clamp(patch.music,preferences.music),sfx:clamp(patch.sfx,preferences.sfx)};try{storage?.setItem(AUDIO_PREFERENCES_KEY,JSON.stringify(preferences));}catch{}mix();}
