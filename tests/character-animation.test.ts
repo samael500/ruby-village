@@ -23,3 +23,17 @@ test('route follows segment lengths, handles duplicate points and clamps end',()
  const route=[{x:0,y:0},{x:0,y:0},{x:3,y:0},{x:3,y:4}];
  assert.deepEqual(positionAlongPath(route,5),{x:3,y:2}); assert.deepEqual(positionAlongPath(route,100),{x:3,y:4});
 });
+
+import { CharacterRoute } from '../src/character-animation.ts';
+test('route completion is frame-rate independent and fires once',()=>{
+ let wins=0; const a=new CharacterRoute([{x:0,y:0},{x:30,y:0},{x:30,y:40}],70,()=>wins++);
+ const b=new CharacterRoute([{x:0,y:0},{x:30,y:0},{x:30,y:40}],70);
+ for(let i=0;i<30;i++)a.advance(1000/30);for(let i=0;i<144;i++)b.advance(1000/144);
+ // Rounding can leave sub-pixel residue; one harmless tick completes both.
+ a.advance(1);b.advance(1);assert.deepEqual(a.position,b.position);assert.equal(wins,1);a.advance(5000);assert.equal(wins,1);
+});
+test('route pause discards resumed time and reduced motion completes without lost result',()=>{
+ let wins=0;const p=new CharacterRoute([{x:0,y:0},{x:100,y:0}],10,()=>wins++);
+ p.advance(1000);p.advance(100000,{paused:true});assert.deepEqual(p.advance(100000),{x:10,y:0});
+ p.advance(0,{reducedMotion:true});assert.equal(p.done,true);assert.equal(wins,1);assert.deepEqual(p.position,{x:100,y:0});
+});
