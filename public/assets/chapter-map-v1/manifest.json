@@ -1,0 +1,152 @@
+{
+  "version": 1,
+  "status": "candidate-awaiting-Maksim-review",
+  "generatedAt": "2026-10-17",
+  "source": "art/chapter-map-v1/source/chapter-map-generated.png",
+  "sourceSha256": "93723aa3ea4caa1b65f50da3eab8e0ee3f5a5430cf710dcba6a965e265513621",
+  "file": "chapter-map-candidate.webp",
+  "fileSha256": "32845a9e74697a05c391fe475e945461a482f229f16fd8a76c926eabb4b68cbd",
+  "nativeSize": [
+    1983,
+    793
+  ],
+  "viewBox": [
+    0,
+    0,
+    1000,
+    400
+  ],
+  "projection": "entire-image maps to viewBox; contain, never cover crop",
+  "nodes": [
+    {
+      "id": "gate",
+      "anchor": [
+        120,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "garden",
+      "anchor": [
+        365,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "well",
+      "anchor": [
+        610,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "bakery",
+      "anchor": [
+        855,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "stream",
+      "anchor": [
+        855,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "mill",
+      "anchor": [
+        610,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "post",
+      "anchor": [
+        365,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "forest",
+      "anchor": [
+        120,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    }
+  ],
+  "layers": {
+    "background": "chapter-map-candidate.webp",
+    "restoredConnections": "external SVG runtime; not baked",
+    "buttons": "external accessible DOM; not baked"
+  },
+  "chapterCount": 1,
+  "characters": false,
+  "textBaked": false,
+  "roadsBaked": false,
+  "provenance": "Built-in image_gen; new original generated candidate. Repository world-map concept and v6 courtyard inspected as visual reference only, not pasted into output."
+}

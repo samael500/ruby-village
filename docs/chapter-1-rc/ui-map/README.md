@@ -1,0 +1,13 @@
+# First chapter illustrated map candidate #48
+
+A newly generated coherent village background, not the world-map-concept reused as production. Eight distinct places arranged to match the existing exact `1000×400` node contract: gate (120,95), garden (365,95), well (610,95), bakery (855,95), stream (855,300), mill (610,300), post (365,300), forest (120,300). No chapter 2/3, characters, baked labels or connecting roads. One stream connects the lower water locations as environment, not as a restored path.
+
+Candidate: public/assets/chapter-map-v1/chapter-map-candidate.webp (751724 bytes); untouched PNG and exact prompt in art/chapter-map-v1/source. Built-in imagegen mode; source/provenance in SOURCE.md, hashes and node anchors in delivery manifest. Native 1983×793; map whole image to the 1000×400 viewBox without cover crop. Native ratio differs from 5:2 by less than .03%; no semantic crop required. This is an artistic candidate awaiting Maksim's review, not yet production/accepted art.
+
+The review harness `scripts/map-review.html` uses actual image decoding, eight accessible DOM hit areas, and a separate SVG restored-connection layer. The drawn image contains none of these overlays. Connection curves in the harness are illustrative programmable review paths; coordinator owns production connection rendering. Landmark hotspots retain the existing coordinates; labels sit below each place and closed buttons are truly disabled. Dynamic character markers are not part of the background.
+
+Real Chromium screenshots: map-{new,partial,complete}-{1440x900,844x390,740x360}.jpg. Three state transitions, node counts/enabled states, label bounds/no page overflow, keyboard activation and no page errors verified in browser-review.json. These prove the isolated candidate review works, not integrated production UI acceptance or final touch target sizing. Reproduce with Vite serving this worktree and `scripts/map-review.py <url-to-scripts/map-review.html>` using Playwright.
+
+Self-review: warm painterly materials and red roofs fit the courtyard direction; all eight landmarks are present, differentiated, and align to requested row order. No lettering/characters/roads baked into generated image. DOM labels remain legible in review screens; production integration should maintain >=44px interaction targets and retain accessible feedback. Final acceptance and full six target viewport/gameplay checks remain #46/#37.
+
+#47 resource audit and actual six-frame blocking board are in prologue/. The board uses the approved courtyard style and Ruta appearance; missing crouch/basket-hold/Rabbit-baking poses are explicitly absent, not faked. Only native start-foot placement is demonstrated; not finished prologue. Phone/family/iOS: not-run.
