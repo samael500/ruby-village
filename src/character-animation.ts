@@ -64,3 +64,33 @@ export function positionAlongPath(path: readonly Point[], distance: number): Poi
   }
   return { ...path[path.length - 1] };
 }
+
+/** Route state is independent of sprites. Completion is emitted once, including reduced motion. */
+export class CharacterRoute {
+  private distance = 0;
+  private suspended = false;
+  private completed = false;
+  private heading: Direction = 'e';
+  private readonly total: number;
+  private readonly path: readonly Point[];
+  private readonly speed: number;
+  private readonly onComplete?: () => void;
+  constructor(path: readonly Point[], pixelsPerSecond: number, onComplete?: () => void) {
+    if (!path.length || !Number.isFinite(pixelsPerSecond) || pixelsPerSecond <= 0 || path.some(p => !Number.isFinite(p.x) || !Number.isFinite(p.y))) throw new Error('A route requires finite points and positive speed');
+    this.path = path.map(p => ({ ...p })); this.speed = pixelsPerSecond; this.onComplete = onComplete;
+    this.total = path.reduce((length, p, i) => i ? length + Math.hypot(p.x - path[i-1].x, p.y - path[i-1].y) : length, 0);
+  }
+  get position(): Point { return positionAlongPath(this.path, this.distance); }
+  get direction(): Direction { return this.heading; }
+  get done(): boolean { return this.completed; }
+  advance(deltaMs: number, options: { paused?: boolean; reducedMotion?: boolean } = {}): Point {
+    if (options.paused) { this.suspended = true; return this.position; }
+    if (this.suspended) { this.suspended = false; return this.position; }
+    if (this.completed || !Number.isFinite(deltaMs) || deltaMs < 0) return this.position;
+    const from = this.position;
+    this.distance = options.reducedMotion ? this.total : Math.min(this.total, this.distance + deltaMs * this.speed / 1000);
+    const to = this.position; this.heading = projectedDirection(from, to, this.heading);
+    if (this.distance >= this.total) { this.completed = true; this.onComplete?.(); }
+    return to;
+  }
+}
