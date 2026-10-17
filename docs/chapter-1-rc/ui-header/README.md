@@ -1,0 +1,5 @@
+# Level header emblem (#48/#62)
+
+Maksim clarified that the primitive element is the top-panel icon/title. The replacement is an authored painted ruby/wood/leaves emblem flowing into an empty parchment plaque; this changes only in-game level titles. Actual names and chapter progress remain accessible live text. CSS nine-slice preserves the emblem geometry while extending the paper for8 names. Lossless WebP preserves generated pixels/alpha; source PNG, exact builtin prompt and manifest are in art/ui-v8. No sharpening or enlargement masquerades as art improvement.
+
+24 real application checks PASS:8 scenes × desktop1280×720/DPR1 and landscape844×390/DPR2,740×360/DPR2. Text bounds, viewport containment, neighboring buttons and resource/page errors checked. Before desktop/landscape captured from the preceding application; after full scenes and native title crops retained here. before-after-phone.png composes the actual native captures. This is browser landscape emulation; physical phone NOT RUN. Source/raster ownership is coordinator. Final chapter independent art acceptance remains pending.
