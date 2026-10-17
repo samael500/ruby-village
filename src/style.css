@@ -36,6 +36,15 @@ header #settings-open span{display:none}
 #field:before{left:0}
 #field:after{right:0;transform:scaleX(-1)}
 #board{display:block;width:100%;height:100%;touch-action:none}
+.narrative-scene #board [data-grid],
+.narrative-scene #board [data-instance-outlines],
+.narrative-scene #board #placement-preview,
+.narrative-scene #board [data-goal-marker],
+.narrative-scene #board [data-puzzle-landmarks],
+.narrative-scene #game-controls{display:none!important}
+.narrative-scene:not(.narrative-restored) #board #ground-plane{display:none!important}
+.narrative-restored #board [data-cell][data-owner=""]>.cell{display:none!important}
+.completion-scene{display:block;width:100%;height:auto;max-height:42dvh;aspect-ratio:16/9;border-radius:10px;background:#344d30;pointer-events:none}
 #chapter-background{filter:drop-shadow(0 2px 6px #14231988)}
 .cell{stroke:#738869;stroke-width:1.2;stroke-linejoin:round}
 .cell.path{stroke:#fff9b2;stroke-width:4;fill:#8979ad}
