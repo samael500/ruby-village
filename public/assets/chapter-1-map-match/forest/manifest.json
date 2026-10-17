@@ -1,0 +1,58 @@
+{
+  "status": "map-match-candidate-requires-art-and-game-review",
+  "background": "assets/chapter-1-map-match/forest/background.webp",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "camera": {
+    "radius": 66,
+    "origin": {
+      "x": 180,
+      "y": 250
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "anchors": {
+    "start": {
+      "x": 408.6307065990918,
+      "y": 636.1
+    },
+    "goal": {
+      "x": 1265.995856345686,
+      "y": 314.35
+    }
+  },
+  "geometrySha256": "2e1f30594e7283f3468436cbec2a0328e18cee5a0ef0965aae458520a3fef161",
+  "layoutAdjustmentsSha256": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e",
+  "source": "art/chapter-1-map-match/forest/generated-core-01.png",
+  "sourceSha256": "d715d90f3722ec7737fe213e2dc3da6e51d1dfd16b8e0365f67e0a6e0b70a870",
+  "beforeSha256": "65aa72b90a0d68c28bbb918ed1fb13f503682d93b8bb3d0062b56dbc871ab5f6",
+  "mapReferenceSha256": "32845a9e74697a05c391fe475e945461a482f229f16fd8a76c926eabb4b68cbd",
+  "registration": {
+    "editableRectangle": [
+      0,
+      0,
+      1672,
+      941
+    ],
+    "protectedFullFreePolygonsGuardPixels": 3,
+    "featherRadius": 0
+  },
+  "checks": {
+    "fullFreePolygonPixelsChanged": 0,
+    "opaque": true,
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sourceGenerationNativeSize": [
+      1672,
+      941
+    ],
+    "gameQa": "not-run",
+    "artAcceptance": "pending"
+  },
+  "wide": null
+}
