@@ -38,3 +38,7 @@ Approved original reference used directly in builtin imagegen. Preserved cream b
 ## Hedgehog conversation-left
 
 New whole fullbody left-facing view from original reference. Preserves one postal strap, satchel on left-of-image hip, envelopes/red seals, raised letter in right-of-image paw, olive vest and postal cap. Cap tilt/button visibility differs with pose; not an automatic rejection. Dense spine silhouette and feet complete. Source preserved, sceneHeight74 and nativeHeight844 retained. Pixel frame/anchor in manifest control stable caller world feet. Activity post/postal-work, original idle unchanged; meeting policy as above. Actual-scene review pending.
+
+## Squirrel conversation-left
+
+New fullbody view with left face/gaze/torso. First generator output changed accessory side, rejected. Targeted edit restored brown satchel at original left-of-image hip, one strap from right shoulder and olive fringe on original side. Two paws keep one acorn. Tail naturally moves behind the right side of the new pose rather than swapping bag with it. Whole source preserved. Packed893×904 (includes transparent area needed to retain old pixel foot anchor438,900), native904/scene92 unchanged. Activity metadata includes both stream and mill. Actual-scene review pending; coordinator identified a separate near-front arrival view needed for the second mill placement.
