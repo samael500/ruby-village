@@ -227,7 +227,7 @@
   "sourceSha256": "105890b4dd0da1c2ded3f950707f030324bc7a05497bd10b3c51bc614ba1e699",
   "acceptedMapSha256": "32845a9e74697a05c391fe475e945461a482f229f16fd8a76c926eabb4b68cbd",
   "checks": {
-    "outsideAllowedCorridorPixelsChanged": 0,
+    "outsideAllowedCorridorPixelsChanged": 66076,
     "protectedLandmarkPixelsChanged": 0,
     "endpointsChanged": 0,
     "nativeSize": [
@@ -239,7 +239,13 @@
     "progressPatchCount": 7,
     "progressPatchAlphaExact": true,
     "progressPatchOverlaps": 0,
-    "protectedLandmarkProgressPixelsChanged": 0
+    "protectedLandmarkProgressPixelsChanged": 0,
+    "wideCorePixelExact": true,
+    "protectedLandmarkRingPixelsChanged": 0,
+    "pavingRingPixelsChanged": 0,
+    "corePavingPhaseOutsideAllowedCorridorPixelsChanged": 0,
+    "outsideAllowedCorridorReason": "recorded decorative32px ring/core foliage join; paving and accepted landmark pixels excluded",
+    "artBench15Cases": "PASS source-runtime art injection bench; not production integration"
   },
   "requirements": [
     "https://github.com/samael500/ruby-village/issues/48",
@@ -370,7 +376,28 @@
     },
     "buttons": "external accessible DOM; unchanged"
   },
-  "wide": null,
+  "wide": {
+    "file": "assets/chapter-map-v2/map-wide.webp",
+    "canvas": {
+      "width": 1400,
+      "height": 800
+    },
+    "originalRect": {
+      "x": 200,
+      "y": 200,
+      "width": 1000,
+      "height": 400
+    },
+    "source": "art/chapter-map-v2/generated-ring-04.png",
+    "sourceSize": [
+      1659,
+      948
+    ],
+    "sourceSha256": "c6b70621ce88a93e0b4e438def6df2f3e3c0f32392d36bed1fa002ff5df7c0f1",
+    "corePixelExact": true,
+    "opaque": true,
+    "registration": "same contain fit as native map; decorative32px foliage perimeter join, accepted landmarks and all painted paving excluded"
+  },
   "charoiteSourceSha256": "e809779fee8b8cac3e4219afca5cccf8fc4c224bd341cc0543ee8d0a7575088e",
   "completedState": "single painted source, spatially partitioned; no SVG paving shapes",
   "gardenApproachRepair": {
@@ -384,5 +411,43 @@
     ],
     "protectedLandmarkPixelsChanged": 0,
     "endpointsChanged": 0
+  },
+  "files": {
+    "completed-bakery.webp": {
+      "sha256": "6df286dd9cfa82c558c672ed92ff41b20beebe8d79e6762156fed8545888fb93",
+      "bytes": 12316
+    },
+    "completed-post.webp": {
+      "sha256": "9e0ba483242fb1e5a365646d721c2cbe9a902454fbed9ba603d5fc1d5c5b0d5e",
+      "bytes": 16602
+    },
+    "completed-forest.webp": {
+      "sha256": "9b81f75bcab422717a018de62301f7cb172381611749a8a68092f17b33925313",
+      "bytes": 14272
+    },
+    "completed-mill.webp": {
+      "sha256": "f96f5570a15bd56df5631c4b7b77faf3a39baefb9a8c16c8ce120e7854b2786b",
+      "bytes": 38444
+    },
+    "map-wide.webp": {
+      "sha256": "5e80213c4303d5cc3a6467e5e96cf7e6b5eaa6f4b3bf5fae1305500d99ea1422",
+      "bytes": 2193246
+    },
+    "completed-stream.webp": {
+      "sha256": "ad9b888d47ca0d80ac87e77000c48be123a1893523a239dee7c047fa02a9fbfe",
+      "bytes": 13846
+    },
+    "completed-well.webp": {
+      "sha256": "a7564b6fee1f0c84e4892912c27c091fec4565ba180d364b7765c29185677db7",
+      "bytes": 11148
+    },
+    "map-base.webp": {
+      "sha256": "3368d372d229e5c1b82f83752cf0187bb7c0df19921ee259963931cd162c299c",
+      "bytes": 773840
+    },
+    "completed-garden.webp": {
+      "sha256": "96f08f5bc2abcf8756ba1c01e6afb1e808c5dbb14a19993dcb9dbb3c1a59f6b8",
+      "bytes": 16364
+    }
   }
 }
