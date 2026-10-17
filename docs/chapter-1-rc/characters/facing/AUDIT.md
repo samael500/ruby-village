@@ -34,3 +34,7 @@ Packed output604×981, unchanged foot anchor302,977, sceneHeight108. Measured so
 ## Teacher conversation-left
 
 Approved original reference used directly in builtin imagegen. Preserved cream blouse/rust knit cardigan, olive botanical skirt, glasses, green botanical book in left-of-image arm, brass watering can in right-of-image hand. New face/gaze/body/feet view toward left; no horizontal flip. Native frame532×1008, foot239,1004 and sceneHeight174 unchanged. Source whole PNG retained. Activity metadata: well+flowerbed, idle original right-facing; encounter/dialogue entry selects authored facing once, no continuous tracking; caller world feet retained. Asset-only review complete; actual-scene review pending coordinator.
+
+## Hedgehog conversation-left
+
+New whole fullbody left-facing view from original reference. Preserves one postal strap, satchel on left-of-image hip, envelopes/red seals, raised letter in right-of-image paw, olive vest and postal cap. Cap tilt/button visibility differs with pose; not an automatic rejection. Dense spine silhouette and feet complete. Source preserved, sceneHeight74 and nativeHeight844 retained. Pixel frame/anchor in manifest control stable caller world feet. Activity post/postal-work, original idle unchanged; meeting policy as above. Actual-scene review pending.
