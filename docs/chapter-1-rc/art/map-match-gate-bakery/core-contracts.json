@@ -97,7 +97,20 @@
       ],
       "gameQa": "not-run"
     },
-    "wideStatus": "generated-wide-candidate-visual-review-pending"
+    "wideStatus": "seam72-candidate-actual-review",
+    "decorativeSeam": {
+      "method": "builtin imagegen local painted cleanup, constrained source-pixel composite",
+      "coreBandPixels": 72,
+      "outerAdjacencyPixels": 192,
+      "freePolygonGuardPixels": 6,
+      "fullFreePolygonPixelsChanged": 0,
+      "geometryChanges": 0,
+      "coreInteriorPixelsChanged": 0,
+      "wideOriginalRectBitExact": true,
+      "originalCorePreserved": "core-candidate.png",
+      "source": "seam-painted-01.png",
+      "status": "candidate-pending-art-review"
+    }
   },
   "bakery": {
     "status": "map-match-candidate-requires-art-and-game-review",
@@ -194,6 +207,19 @@
       ],
       "gameQa": "not-run"
     },
-    "wideStatus": "generated-wide-candidate-visual-review-pending"
+    "wideStatus": "seam72-candidate-actual-review",
+    "decorativeSeam": {
+      "method": "builtin imagegen local painted cleanup, constrained source-pixel composite",
+      "coreBandPixels": 72,
+      "outerAdjacencyPixels": 192,
+      "freePolygonGuardPixels": 6,
+      "fullFreePolygonPixelsChanged": 0,
+      "geometryChanges": 0,
+      "coreInteriorPixelsChanged": 0,
+      "wideOriginalRectBitExact": true,
+      "originalCorePreserved": "core-candidate.png",
+      "source": "seam-painted-01.png",
+      "status": "candidate-pending-art-review"
+    }
   }
 }
