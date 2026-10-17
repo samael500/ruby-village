@@ -43,16 +43,24 @@ This supplements earlier checkpoints; historical pending statuses below describe
 | Task | Actual readiness | Executor / exclusive files | Dependency | PR |
 | --- | --- | --- | --- | --- |
 | #44 | accepted layout2/migration tested; production still coherent layout1+legacy art | completed data_ui, coordinator production gate | matching audited #45 | #52 |
-| #61 | defect located, implementation queued after cleanup | characters next, separate worktree; main.ts temporarily reserved | cleanup handoff | pending new task PR, integration #55 |
+| #61 | core f7aac88 integrated; independent mouse/native-touch single/compound/bridge/cancel/save PASS | characters author evidence; main.ts returned to coordinator | final integrated rerun after art switch | separate PR pending remote permission; #55 |
 | #45 | all8 painted candidates staged; stream/mill geometry fail, wide and map architecture matching pending | art_scenes, ruby-village-45, chapter-1-v9 assets/scripts | accepted layout/hash; map is artistic reference | #56 |
 | #35 | accepted portraits/poses active; full scene residents pending | source assets delivered; coordinator scene composition | safe scene anchors and one garden table | #54/#55 |
-| #36 | full6 browser trial exists; final source normalization/knee caps rendering; production disabled | data_ui ruby-village-36-paint exporter/controller; characters ruby-village-36-parts masks only | cap handoff, final render/runtime QA | #59/#60 |
-| #47/#48 | map/prologue/UI active; #62 scene hiding, stone scale, painted roads and per-scene results pending | coordinator modules/style, main wiring after #61 handoff | compatible scene assets and residents | #53/#55 |
+| #36 | corrected six-view set and measured native planner integrated; actual walking on all8 legacy routes independently passes, 19.2–24s | coordinator runtime; source data_ui completed | final art runtime replay; actual w/sw puzzle-route coverage open | #59/#60/#55 |
+| #47/#48 | story field hidden completely, larger narrative stones, trail layers and eight actual-scene results active; independent scene/result checks pass | coordinator | final art, table/residents and artistic map review | #53/#55 |
 | #50/#51 | recommended effects+music integrated, rights/sources retained | completed audio/music branches | final motion foot contacts and final mix QA | #57/#58 |
-| #37 | earlier independent legacy-runtime pass; final pass queued | independent_qa, separate ruby-village-37 | all final production resources integrated | report in #55 |
+| #37 | new independent grounded-runtime pass and touch/portrait evidence integrated; final art pass still queued | qa_runtime, separate ruby-village-37-runtime | all final production resources integrated | report in #55 |
 | #49 | preliminary load audit only | coordinator then free executor | final #37/fixes | #55 |
 
 Four real slots: coordinator + art_scenes + data_ui + characters. No additional executor is claimed. Prior worktrees are preserved; no author is relabeled independent. Exclusive main.ts ownership is temporarily handed to #61; coordinator works in separate modules/docs until its commit is integrated.
+
+Latest slot rotation: `qa_runtime` independently delivered add4122 +60fe35d, then freed its slot. `data_ui` is now assigned only map-matched gate/bakery cores+wide in `ruby-village-45-map`, branch art/45-map-match, files art/public chapter-1-map-match and scoped scripts/docs. Its core fce4e7a is integrated inactive. `art_scenes` owns the other six scenes, stream/mill water, common v9 manifest and its original failed wide/source history. `characters` finishes #61 author harness/docs; main.ts ownership has returned to coordinator. No concurrent author edits to one tree/file.
+
+Current evidence: `qa/GROUNDED-RUNTIME-REPORT.md` certifies actual eight-route walking, semantic stone/wood requests, eight scene results, invalid single/composite/bridge workflows and active-walk portrait freeze. Four actual route directions are covered; all6 source bench directions are separately captured. `evidence/grounded-game/` holds the coordinator's separate 182.464s actual gameplay/browser-audio record; independent capture is185.339s. No source/layout injection in full runs. Latest tests98 PASS. None of this approves unfinished art/resident placement.
+
+Remote exception: auto-review twice rejected data_ui's PR60 branch push as publishing despite main-only deployment proof. Explicit user question is pending for working-branch push/PR updates; do not bypass or repeat pushes until answered. Local commits/integration/tests continue. Last pushed #55 was2c50d0a; PR60 remote remainedd87b74c when verified. Main stilladd7670.
+
+Wide contract is dynamic:4096×1600/rect1212,329 was a working choice, not a user requirement. Registered existing painterly v8 surrounds3272×1200/rect800,129 may be reused if actual seam/doubled-object review passes. Failed reframed outpaints remain failed sources. No technical or solid-color filler is accepted as completed wide art.
 
 Integration order: preserve audited source/candidate commits inactive → #61 behavior → #36 final controller/assets → #45 complete geometry/map-reference audits → atomic layout2+matching art switch → scene residents/prologue/map/results wiring → final independent #37 → fixes → #49. Independent modules and source checks proceed in parallel. #62 is mandatory, tracked in ACCEPTANCE-61-62.md. Do not mark atlas presence or isolated rig tests as final game acceptance.
 
