@@ -89,3 +89,20 @@ Integration order: preserve audited source/candidate commits inactive → #61 be
 ## Working-branch authorization and touch checkpoint
 
 User explicitly authorized push and PR updates. Native Chromium rapid touch checks on063bb19: four batches of12 taps at100/150/250/500ms gaps produced48/48 actions; mouse, Enter and Space after touch passed. Separate after-drag reproducer improved from3/6 baseline failures to6/6 passes; independent recheck is assigned to qa_runtime. No physical phone claim. Gate/bakery wide handoff dd8d66d integrated inactive asbe6831f:12/12 viewport coverage; lower gate foreground join remains a review limitation. Other final art and atomic layout2 activation are still pending.
+
+
+## Latest superseding handoff checkpoint
+
+Working pushes are authorized; origin integration reached51e15d5. Latest main remainsadd7670; no merge/deploy. LATEST-REQUIREMENTS.md is authoritative over earlier gait/map/bridge readiness claims.
+
+| Task | Actual readiness | Owner | Dependency | PR |
+| --- | --- | --- | --- | --- |
+| #61 | independent native input PASS; retain regression | coordinator + qa_runtime | repeat only after input changes | #64/#55 |
+| #35/#46 residents | active in current legacy scenes;12 author scene runs and clearances PASS | coordinator | final art grounding + independent review | #55/#54 |
+| #36 | existing mesh gait artistically rejected; holistic pilot in progress | data_ui, worktree36-paint | strip/loop approval before six directions | #60 |
+| #45 | four map-matched native/wide candidates integrated inactive; exactwater36f94a6 source only | art_scenes commonmanifest; other owners delivered | finished banks, table, well and mill details | #56/#65/#55 |
+| #48 map | raster continuous paving and seven charoite patches in progress | characters, isolated map worktree | art delivery then coordinator runtime hook | #53/#55 |
+| #50/#51 noise | source bed removed; matched comparisons and real AV saved; listening open | coordinator; next free independent reviewer | subjective listening and integrated review | #55/#57/#58 |
+| #37/#49 | final acceptance/export package pending | next free independent reviewer, coordinator | final art/gait/map integration | #55 |
+
+Integration order remains compatible runtime fixes first, then all-eight matching art+layout2 atomic activation, final holistic gait and map, independent acceptance/fixes, clean release checks. Sources and rejected attempts remain preserved; none of the new source-only artwork is a final game PASS.
