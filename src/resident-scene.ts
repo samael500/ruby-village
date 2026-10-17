@@ -11,12 +11,12 @@ export const legacyResidentPlacements:Readonly<Record<string,readonly ResidentPl
  well:[{id:'teacher',feet:{x:1225,y:405}}],
  bakery:[{id:'baker',feet:{x:1290,y:405}}],
  stream:[{id:'squirrel',feet:{x:1400,y:225}}],
- mill:[{id:'miller',feet:{x:1430,y:398}},{id:'squirrel',feet:{x:1330,y:405}}],
+ mill:[{id:'miller',feet:{x:1430,y:398}},{id:'squirrel',feet:{x:1530,y:450}}],
  post:[{id:'hedgehog',feet:{x:1370,y:405}}],
 };
 type FacingFrame={image:string;frameSize:readonly number[];footAnchor:readonly number[]};
 type FacingResident={frames:Record<string,FacingFrame>};
-const activityView:Readonly<Record<string,Partial<Record<Resident,string>>>>={garden:{rabbit:'conversation-left'},bakery:{baker:'conversation-left'},stream:{squirrel:'conversation-left'},mill:{miller:'conversation-left',squirrel:'conversation-front'},post:{hedgehog:'conversation-left'}};
+const activityView:Readonly<Record<string,Partial<Record<Resident,string>>>>={garden:{rabbit:'conversation-left'},bakery:{baker:'conversation-left'},stream:{squirrel:'conversation-left'},mill:{miller:'conversation-left',squirrel:'conversation-left'},post:{hedgehog:'conversation-left'}};
 const facings=facingManifest.characters as unknown as Record<string,FacingResident>;
 export type ResidentMeeting={rutaFeet:{x:number;y:number}};
 const readyViews=new Set<string>(),loadingViews=new Map<string,Promise<void>>();

@@ -54,6 +54,7 @@
       ],
       "rutaArrivalDirection": "e",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -111,6 +112,7 @@
       ],
       "rutaArrivalDirection": "nw",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -168,6 +170,7 @@
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -225,6 +228,7 @@
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -247,7 +251,7 @@
           "id": "squirrel",
           "view": "conversation-left",
           "reason": "encounter",
-          "anchor": "translate(1330 405)",
+          "anchor": "translate(1530 450)",
           "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
@@ -261,10 +265,10 @@
         },
         {
           "id": "squirrel",
-          "view": "conversation-front",
+          "view": "conversation-left",
           "reason": "activity",
-          "anchor": "translate(1330 405)",
-          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+          "anchor": "translate(1530 450)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
       "replay": [
@@ -279,7 +283,7 @@
           "id": "squirrel",
           "view": "conversation-left",
           "reason": "encounter",
-          "anchor": "translate(1330 405)",
+          "anchor": "translate(1530 450)",
           "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
@@ -293,10 +297,10 @@
         },
         {
           "id": "squirrel",
-          "view": "conversation-front",
+          "view": "conversation-left",
           "reason": "activity",
-          "anchor": "translate(1330 405)",
-          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+          "anchor": "translate(1530 450)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
       "arrival": [
@@ -309,14 +313,30 @@
         },
         {
           "id": "squirrel",
-          "view": "conversation-front",
+          "view": "conversation-left",
           "reason": "encounter",
-          "anchor": "translate(1330 405)",
-          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+          "anchor": "translate(1530 450)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": {
+        "rutaViewport": {
+          "x": 990.0804935675862,
+          "y": 239.369667526947,
+          "width": 88.20282374373778,
+          "height": 132.3042356156065
+        },
+        "squirrelViewport": {
+          "x": 1131.3819580078125,
+          "y": 275.1857604980469,
+          "width": 68.763916015625,
+          "height": 69.61105346679688
+        },
+        "boundingBoxOverlapPx": 0.0,
+        "scope": "arrival first speaker; strict viewport boxes, not only alpha"
+      },
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -374,6 +394,7 @@
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -431,6 +452,7 @@
       ],
       "rutaArrivalDirection": "e",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -488,6 +510,7 @@
       ],
       "rutaArrivalDirection": "nw",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -545,6 +568,7 @@
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -602,6 +626,7 @@
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -624,7 +649,7 @@
           "id": "squirrel",
           "view": "conversation-left",
           "reason": "encounter",
-          "anchor": "translate(1330 405)",
+          "anchor": "translate(1530 450)",
           "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
@@ -638,10 +663,10 @@
         },
         {
           "id": "squirrel",
-          "view": "conversation-front",
+          "view": "conversation-left",
           "reason": "activity",
-          "anchor": "translate(1330 405)",
-          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+          "anchor": "translate(1530 450)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
       "replay": [
@@ -656,7 +681,7 @@
           "id": "squirrel",
           "view": "conversation-left",
           "reason": "encounter",
-          "anchor": "translate(1330 405)",
+          "anchor": "translate(1530 450)",
           "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
@@ -670,10 +695,10 @@
         },
         {
           "id": "squirrel",
-          "view": "conversation-front",
+          "view": "conversation-left",
           "reason": "activity",
-          "anchor": "translate(1330 405)",
-          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+          "anchor": "translate(1530 450)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
       "arrival": [
@@ -686,14 +711,30 @@
         },
         {
           "id": "squirrel",
-          "view": "conversation-front",
+          "view": "conversation-left",
           "reason": "encounter",
-          "anchor": "translate(1330 405)",
-          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+          "anchor": "translate(1530 450)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
         }
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": {
+        "rutaViewport": {
+          "x": 609.8240850320476,
+          "y": 130.27979353271596,
+          "width": 47.322301502960386,
+          "height": 70.98345225444055
+        },
+        "squirrelViewport": {
+          "x": 685.6347045898438,
+          "y": 149.49574279785156,
+          "width": 36.89306640625,
+          "height": 37.347503662109375
+        },
+        "boundingBoxOverlapPx": 0.0,
+        "scope": "arrival first speaker; strict viewport boxes, not only alpha"
+      },
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"
@@ -751,6 +792,7 @@
       ],
       "rutaArrivalDirection": "ne",
       "anchorsStable": true,
+      "millF1Pairwise": null,
       "resourceErrors": [],
       "pageErrors": [],
       "motion": "reduced via real settings for view/state check; not gait quality acceptance"

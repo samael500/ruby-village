@@ -7,7 +7,7 @@ Integration baseline bbf9828 plus resident runtime checkpoint recorded by this c
 | #61 | released invalid→valid rotation auto-place independently checked; cancel/undo supplement PASS | coordinator | #55/#64; repeat after final art |
 | #48 map | painted paving + registered wide; independent navigation/reload PASS | delivered map author | #55 |
 | #48 header | user clarified top icon/title; painted ruby plaque, live title; 24 real viewport/scene checks PASS | coordinator | b2ac3c8 / #55; independent review next |
-| #35 facing | 6 residents/8 authored views integrated; 12 real state runs and 10 full-alpha clearances PASS | npc_facing sources, coordinator runtime | #67/#55; independent review next; layout2 clearance repeat |
+| #35 facing | 6 residents/8 authored views integrated; 12 real state runs and 10 full-alpha clearances PASS | npc_facing sources, coordinator runtime | #67/#55; independent review found F1 mill overlap; root anchor correction checked, independent repeat pending; layout2 clearance repeat |
 | #45/#46 road/banks | connected road code disabled; source handoff explicitly NOT ART READY | fresh art executor next | #56/#55; finished stream fragment first |
 | #36 | whole-frame E pilot improving; support/held-frame limitations remain, not accepted | data_ui tree36-paint | #60; no six-view activation yet |
 | #50/#51 | hiss fixed and user accepted; final transitions/loops repeat pending | audio/coordinator | #55/#57/#58 |

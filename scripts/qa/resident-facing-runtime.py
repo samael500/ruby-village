@@ -35,13 +35,19 @@ with sync_playwright() as p:
     a=placement['anchor'];q.locator(f'[data-cell="{a["q"]},{a["r"]}"] polygon').first.click(force=True);q.locator('#place').click()
    q.locator('#check').click();q.wait_for_selector('#story[open]');arrival=actors();assert [a['anchor'] for a in arrival]==[a['anchor'] for a in initial]
    for a in arrival:
-    wanted='conversation-front' if sid=='well' or (sid=='mill' and a['id']=='squirrel') else 'conversation-left'
+    wanted='conversation-front' if sid=='well' else 'conversation-left'
     expected=wanted if wanted in manifest.get(a['id'],{}).get('frames',{}) else 'idle'
     assert a['view']==expected,(sid,a,expected)
    rutaDirection=q.locator('#ruta-marker').get_attribute('data-direction');assert rutaDirection in ['e','ne','nw','w','sw','se']
+   pairwise=None
+   if sid=='mill':
+    ruta=q.locator('#ruta-marker [data-motion-frame]').evaluate('''n=>{const x=+n.getAttribute('x'),y=+n.getAttribute('y'),w=+n.getAttribute('width'),h=+n.getAttribute('height'),m=n.parentElement.getScreenCTM(),p=new DOMPoint(x,y).matrixTransform(m),q=new DOMPoint(x+w,y+h).matrixTransform(m);return {x:p.x,y:p.y,width:q.x-p.x,height:q.y-p.y}}''');squirrel=q.locator('#board [data-resident=squirrel] image').bounding_box();assert ruta and squirrel
+    overlap=max(0,min(ruta['x']+ruta['width'],squirrel['x']+squirrel['width'])-max(ruta['x'],squirrel['x']))*max(0,min(ruta['y']+ruta['height'],squirrel['y']+squirrel['height'])-max(ruta['y'],squirrel['y']))
+    assert overlap==0,('F1 mill arrival overlap',ruta,squirrel)
+    pairwise={'rutaViewport':ruta,'squirrelViewport':squirrel,'boundingBoxOverlapPx':overlap,'scope':'arrival first speaker; strict viewport boxes, not only alpha'}
    q.screenshot(path=str(OUT/f'{sid}-arrival-{w}.jpg'),type='jpeg',quality=90)
    while q.locator('#story[open]').count():q.locator('#story-action').click()
    q.wait_for_selector('#completion-panel[open]');assert q.locator('#completion-scene [data-resident]').count()==len(initial)
-   assert not errors and not bad;reports.append({'scene':sid,'viewport':[w,h],'intro':initial,'activity':waiting,'replay':replay,'reload':reloaded,'arrival':arrival,'rutaArrivalDirection':rutaDirection,'anchorsStable':True,'resourceErrors':bad,'pageErrors':errors,'motion':'reduced via real settings for view/state check; not gait quality acceptance'});q.close()
+   assert not errors and not bad;reports.append({'scene':sid,'viewport':[w,h],'intro':initial,'activity':waiting,'replay':replay,'reload':reloaded,'arrival':arrival,'rutaArrivalDirection':rutaDirection,'anchorsStable':True,'millF1Pairwise':pairwise,'resourceErrors':bad,'pageErrors':errors,'motion':'reduced via real settings for view/state check; not gait quality acceptance'});q.close()
  b.close()
 (OUT/'report.json').write_text(json.dumps({'scope':'actual UI; known authored views are asserted, missing unfinished resident views remain explicit fallbackidle; physical phone NOT RUN','checks':reports},ensure_ascii=False,indent=2)+'\n');print('PASS12 actual resident facing/state runs')
