@@ -252,11 +252,23 @@
       }
     },
     "stream": {
-      "status": "exact-water-mask-passed-bank-art-review-pending",
-      "background": "stream/background-exact-water.webp",
+      "status": "stream-native-wide-and-joined-road-actual-review-pending",
+      "background": "stream/background-pilot.webp",
       "foreground": null,
-      "wide": null,
-      "wideStatus": "pending-outpaint",
+      "wide": {
+        "file": "stream/wide-pilot.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-registered-native-guard-passed-game-review-pending",
       "source": "art/chapter-1-v9/candidates/stream-v4.png",
       "sourceSha256": "66d15defd5ca0b0b3ff6f1ee5887f15205d4deaf0bdf640bb0f6985a0d677ce7",
       "geometrySha256": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
@@ -287,11 +299,14 @@
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "native-water-mask-passed-shore-finish-pending",
-        "waterReport": "art/chapter-1-v9/layers/water/checks.json"
+        "fullPolygonVisualAudit": "pending-actual-stream-road-review",
+        "waterReport": "art/chapter-1-v9/layers/water/stream-pilot/checks.json"
       },
-      "dryBackground": "stream/dry-background.webp",
-      "water": "stream/water.webp"
+      "dryBackground": "stream/dry-background-pilot.webp",
+      "water": "stream/water-pilot.png",
+      "waterMask": "stream/water-mask-pilot.png",
+      "joinBand": 48,
+      "sourceManifest": "art/chapter-1-v9/layers/water/stream-pilot/manifest.json"
     },
     "mill": {
       "status": "exact-water-mask-passed-bank-art-review-pending",
