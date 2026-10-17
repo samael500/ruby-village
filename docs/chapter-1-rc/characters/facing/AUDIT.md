@@ -42,3 +42,9 @@ New whole fullbody left-facing view from original reference. Preserves one posta
 ## Squirrel conversation-left
 
 New fullbody view with left face/gaze/torso. First generator output changed accessory side, rejected. Targeted edit restored brown satchel at original left-of-image hip, one strap from right shoulder and olive fringe on original side. Two paws keep one acorn. Tail naturally moves behind the right side of the new pose rather than swapping bag with it. Whole source preserved. Packed893×904 (includes transparent area needed to retain old pixel foot anchor438,900), native904/scene92 unchanged. Activity metadata includes both stream and mill. Actual-scene review pending; coordinator identified a separate near-front arrival view needed for the second mill placement.
+
+## Near-front arrival views: Teacher + Squirrel
+
+Coordinator's actual runtime geometry audit: well Teacher feet1225,405 (final1195,405) vs Ruta goal1231,456; mill second Squirrel1330,405 vs goal1352,466. A left-only conversation view points away after arrival. New authored near-front/slight-right fullbody poses address nearby partner with fresh front torso/feet perspective; book/can and bag/scarf/acorn ownership retained. Original approved refs used, not horizontal flips or eye-only edits.
+
+Teacher front532×1008, anchor272,1004, scene174; Squirrel front893×904, anchor448,900, scene92. These frame-pixel anchors differ to accommodate new silhouette, while runtime's caller world feet and canonical scale stay fixed. Manifest marks `arrivalFrame: conversation-front` with scene rationale; intro still uses left. Whole source PNGs/prompts preserved, source alpha retained in technical uniform packing. Actual scene acceptance remains coordinator's check.
