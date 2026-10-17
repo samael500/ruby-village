@@ -1,14 +1,14 @@
 {
-  "scope": "Local Chromium production server, cold cache, no network throttling; preliminary before final art/motion",
-  "commit": "a29a6dc559209cebfb57cee126e71ebb1fbd8697",
+  "scope": "Local Chromium production server, cold cache, no network throttling; motion active, layout1; final scene activation and export pruning pending",
+  "commit": "880ab09aeba691f66ecb2e22d71ba3afbf4310bd",
   "physicalDevice": "not-run",
   "menu": {
     "navigation": {
       "name": "http://127.0.0.1:5180/ruby-village/",
       "entryType": "navigation",
       "startTime": 0,
-      "duration": 155.09999999962747,
-      "navigationId": 268,
+      "duration": 178.89999999850988,
+      "navigationId": 2465,
       "initiatorType": "navigation",
       "deliveryType": "",
       "nextHopProtocol": "http/1.0",
@@ -22,17 +22,17 @@
       "workerFinalSourceType": "",
       "redirectStart": 0,
       "redirectEnd": 0,
-      "fetchStart": 0.20000000018626451,
-      "domainLookupStart": 1.3999999994412065,
-      "domainLookupEnd": 1.599999999627471,
-      "connectStart": 1.599999999627471,
+      "fetchStart": 0,
+      "domainLookupStart": 0.8999999985098839,
+      "domainLookupEnd": 0.8999999985098839,
+      "connectStart": 0.8999999985098839,
       "secureConnectionStart": 0,
-      "connectEnd": 1.7000000001862645,
-      "requestStart": 1.7999999998137355,
-      "responseStart": 3,
+      "connectEnd": 1.1000000014901161,
+      "requestStart": 1.300000000745058,
+      "responseStart": 1.800000000745058,
       "firstInterimResponseStart": 0,
-      "finalResponseHeadersStart": 3,
-      "responseEnd": 4.2000000001862645,
+      "finalResponseHeadersStart": 1.800000000745058,
+      "responseEnd": 2.399999998509884,
       "transferSize": 1025,
       "encodedBodySize": 725,
       "decodedBodySize": 725,
@@ -40,12 +40,12 @@
       "serverTiming": [],
       "unloadEventStart": 0,
       "unloadEventEnd": 0,
-      "domInteractive": 19.799999999813735,
-      "domContentLoadedEventStart": 122.79999999981374,
-      "domContentLoadedEventEnd": 123,
-      "domComplete": 155.09999999962747,
-      "loadEventStart": 155.09999999962747,
-      "loadEventEnd": 155.09999999962747,
+      "domInteractive": 9.800000000745058,
+      "domContentLoadedEventStart": 160.5,
+      "domContentLoadedEventEnd": 160.60000000149012,
+      "domComplete": 178.80000000074506,
+      "loadEventStart": 178.89999999850988,
+      "loadEventEnd": 178.89999999850988,
       "type": "navigate",
       "redirectCount": 0,
       "activationStart": 0,
@@ -60,156 +60,218 @@
       {
         "name": "first-paint",
         "entryType": "paint",
-        "startTime": 36,
+        "startTime": 24,
         "duration": 0,
-        "navigationId": 268,
-        "paintTime": 30.09999999962747,
-        "presentationTime": 36
+        "navigationId": 2465,
+        "paintTime": 13.100000001490116,
+        "presentationTime": 24
       },
       {
         "name": "first-contentful-paint",
         "entryType": "paint",
-        "startTime": 44,
+        "startTime": 24,
         "duration": 0,
-        "navigationId": 268,
-        "paintTime": 36.700000000186265,
-        "presentationTime": 44
+        "navigationId": 2465,
+        "paintTime": 15.699999999254942,
+        "presentationTime": 24
       }
     ]
   },
   "resources": [
     {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/index-Cid4ASzr.js",
-      "duration": 14.899999999441206,
-      "transferSize": 103895,
-      "decodedBodySize": 103595
+      "name": "http://127.0.0.1:5180/ruby-village/assets/index-kyUnCSea.js",
+      "duration": 4.699999999254942,
+      "transferSize": 141372,
+      "decodedBodySize": 141072
     },
     {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/index-sKxHADuq.css",
-      "duration": 13.700000000186265,
-      "transferSize": 17523,
-      "decodedBodySize": 17223
+      "name": "http://127.0.0.1:5180/ruby-village/assets/index-B2MeI5iI.css",
+      "duration": 4.899999998509884,
+      "transferSize": 18603,
+      "decodedBodySize": 18303
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/ui/v7/linen.png",
-      "duration": 3.099999999627471,
+      "duration": 1.3999999985098839,
       "transferSize": 9683,
       "decodedBodySize": 9383
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/ui/v7/paper.png",
-      "duration": 3.2000000001862645,
+      "duration": 1.7000000029802322,
       "transferSize": 24711,
       "decodedBodySize": 24411
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/chapter-1/v6/01-courtyard.png",
-      "duration": 29.799999999813735,
+      "duration": 13.699999999254942,
       "transferSize": 2989445,
       "decodedBodySize": 2989145
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/ui/v7/leaves.png",
-      "duration": 10.299999999813735,
+      "duration": 15.399999998509884,
       "transferSize": 857043,
       "decodedBodySize": 856743
     },
     {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-v1/ruta-idle-pilot.png",
-      "duration": 29.300000000745058,
-      "transferSize": 676643,
-      "decodedBodySize": 676343
-    },
-    {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/prologue/rabbit.svg",
-      "duration": 23.299999999813735,
-      "transferSize": 838,
-      "decodedBodySize": 538
-    },
-    {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/prologue/basket.svg",
-      "duration": 30.5,
-      "transferSize": 876,
-      "decodedBodySize": 576
+      "name": "http://127.0.0.1:5180/ruby-village/assets/bridge-v1/deck-v1.png",
+      "duration": 17.100000001490116,
+      "transferSize": 1442623,
+      "decodedBodySize": 1442323
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/audio/music/manifest.json",
-      "duration": 5.2999999998137355,
+      "duration": 1.5999999977648258,
       "transferSize": 782,
       "decodedBodySize": 482
     },
     {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/sfx/click.ogg",
-      "duration": 5.300000000745058,
-      "transferSize": 4115,
-      "decodedBodySize": 3815
-    },
-    {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/music/village.ogg",
-      "duration": 20.200000000186265,
-      "transferSize": 1192627,
-      "decodedBodySize": 1192327
-    },
-    {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/sfx/leaves.ogg",
-      "duration": 6.599999999627471,
-      "transferSize": 70441,
-      "decodedBodySize": 70141
-    },
-    {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/ui/v7/wood.png",
-      "duration": 6.1000000005587935,
-      "transferSize": 18444,
-      "decodedBodySize": 18144
-    },
-    {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/music/day.ogg",
-      "duration": 23.90000000037253,
-      "transferSize": 1206936,
-      "decodedBodySize": 1206636
+      "name": "http://127.0.0.1:5180/ruby-village/assets/level-1/v5/tile-04.png",
+      "duration": 7.199999999254942,
+      "transferSize": 455843,
+      "decodedBodySize": 455543
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/chapter-1/v8/01-courtyard-surroundings.jpg",
-      "duration": 12.899999999441206,
+      "duration": 9.799999997019768,
       "transferSize": 840456,
       "decodedBodySize": 840156
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/level-1/v5/tile-01.png",
-      "duration": 20.600000000558794,
+      "duration": 12,
       "transferSize": 457293,
       "decodedBodySize": 456993
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/level-1/v5/tile-05.png",
-      "duration": 20.799999999813735,
+      "duration": 14.100000001490116,
       "transferSize": 453274,
       "decodedBodySize": 452974
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/level-1/v5/tile-02.png",
-      "duration": 20.09999999962747,
+      "duration": 14.800000000745058,
       "transferSize": 452822,
       "decodedBodySize": 452522
     },
     {
-      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-v1/ruta-portrait-pilot.png",
-      "duration": 5.7999999998137355,
-      "transferSize": 827313,
-      "decodedBodySize": 827013
+      "name": "http://127.0.0.1:5180/ruby-village/assets/level-1/v5/tile-03.png",
+      "duration": 18.900000002235174,
+      "transferSize": 457877,
+      "decodedBodySize": 457577
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-v1/optimized/ruta-basket.webp",
+      "duration": 23.399999998509884,
+      "transferSize": 50818,
+      "decodedBodySize": 50518
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/sfx/click.ogg",
+      "duration": 11.300000000745058,
+      "transferSize": 4115,
+      "decodedBodySize": 3815
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/music/village.ogg",
+      "duration": 17.5,
+      "transferSize": 1192627,
+      "decodedBodySize": 1192327
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-walk-v1/animated-v3/manifest.json",
+      "duration": 3.899999998509884,
+      "transferSize": 739224,
+      "decodedBodySize": 738924
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/sfx/leaves.ogg",
+      "duration": 4.5,
+      "transferSize": 70441,
+      "decodedBodySize": 70141
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/ui/v7/wood.png",
+      "duration": 3.600000001490116,
+      "transferSize": 18444,
+      "decodedBodySize": 18144
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/audio/music/day.ogg",
+      "duration": 6,
+      "transferSize": 1206936,
+      "decodedBodySize": 1206636
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-v1/optimized/ruta-idle-pilot.webp",
+      "duration": 7.199999999254942,
+      "transferSize": 47852,
+      "decodedBodySize": 47552
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-v1/optimized/ruta-portrait-pilot.webp",
+      "duration": 1.9000000022351742,
+      "transferSize": 44814,
+      "decodedBodySize": 44514
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-walk-v1/animated-v3/base-e.webp",
+      "duration": 7.899999998509884,
+      "transferSize": 450252,
+      "decodedBodySize": 449952
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-walk-v1/animated-v3/base-se.webp",
+      "duration": 16,
+      "transferSize": 482342,
+      "decodedBodySize": 482042
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-walk-v1/animated-v3/base-sw.webp",
+      "duration": 16,
+      "transferSize": 478068,
+      "decodedBodySize": 477768
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-walk-v1/animated-v3/base-w.webp",
+      "duration": 8.5,
+      "transferSize": 448154,
+      "decodedBodySize": 447854
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-walk-v1/animated-v3/base-nw.webp",
+      "duration": 15,
+      "transferSize": 431822,
+      "decodedBodySize": 431522
+    },
+    {
+      "name": "http://127.0.0.1:5180/ruby-village/assets/characters-walk-v1/animated-v3/base-ne.webp",
+      "duration": 15.300000000745058,
+      "transferSize": 427830,
+      "decodedBodySize": 427530
     },
     {
       "name": "http://127.0.0.1:5180/ruby-village/assets/audio/sfx/dialog.ogg",
-      "duration": 3.6000000005587935,
+      "duration": 1.699999999254942,
       "transferSize": 4525,
       "decodedBodySize": 4225
     }
   ],
-  "throughFirstPuzzleTransferBytes": 10209685,
+  "throughFirstPuzzleTransferBytes": 14700091,
   "requestFailures": [],
-  "distBytes": 67343521,
-  "distFileCount": 97,
+  "distBytes": 129721870,
+  "distFileCount": 214,
   "largestExports": [
+    {
+      "file": "assets/chapter-1-map-match/bakery/wide.webp",
+      "bytes": 4680838
+    },
+    {
+      "file": "assets/chapter-1-map-match/gate/wide.webp",
+      "bytes": 4651290
+    },
     {
       "file": "assets/chapter-1/v6/06-mill.png",
       "bytes": 3233527
@@ -249,14 +311,6 @@
     {
       "file": "assets/level-1/grass-ground.png",
       "bytes": 2910974
-    },
-    {
-      "file": "assets/level-1/v4/courtyard-landscape.png",
-      "bytes": 2729471
-    },
-    {
-      "file": "assets/level-1/v4/courtyard-portrait.png",
-      "bytes": 2683502
     }
   ],
   "mastersServed": false
