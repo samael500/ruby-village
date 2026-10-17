@@ -1,0 +1,95 @@
+{
+  "status": "exact-mask-checks-passed-native-art-review-pending",
+  "canvas": [
+    1672,
+    941
+  ],
+  "camera": {
+    "radius": 70,
+    "origin": {
+      "x": 140,
+      "y": 330
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "boardCells": 77,
+  "waterCells": [
+    "6,0",
+    "6,1",
+    "6,2",
+    "5,3",
+    "5,4",
+    "5,5",
+    "4,6"
+  ],
+  "fullFreePolygonInteriorOpaqueLeakPixels": 0,
+  "rasterBoundaryTolerancePx": 1,
+  "fullFreePolygonInteriorChangedRgbPixels": 0,
+  "bridgeCenterAndEndsAlpha": {
+    "6,1": 255,
+    "5,1": 0,
+    "7,1": 0
+  },
+  "rejectedOldBendAlpha": 0,
+  "acceptedNewBendAlpha": 255,
+  "logicalMaskErosionPx": 0,
+  "bankArtInwardFeatherPx": 3,
+  "entryExitFeather": "disabled within 6px of complete board perimeter",
+  "decorativeWater": "outside complete 77-cell union only; separate from logical layer",
+  "sourceSha256": {
+    "art/chapter-1-v9/packages/stream/geometry.json": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
+    "art/chapter-1-v9/candidates/stream-dry-v1.png": "bb565fdacecb05beb40b466e7e0167d2133433533f593e5520ff2717268f00dc",
+    "art/chapter-1-v9/candidates/stream-continuation-v1.png": "cafece9e25a9270cd0d28c6413b68099ffcfbf1015df23f00c4dcdbe72f3cc52",
+    "art/chapter-1-v9/candidates/stream-bankstrip-generated-v2.png": "3da29db2e76ba7603a64ceaab318431710f0558c8096de62a99a340ec4adf68d"
+  },
+  "outputSha256": {
+    "bank-art-alpha.png": "040c974d3d565473c5768b9362a7bb91ea955792bc11d48132d33c4dbfbeac39",
+    "bank-strip-edit-guide.png": "66711a1c5102f9895de62df3bb852f5e1d9cfbaf866e6958c531acf7ef1b7dc6",
+    "board-mask.png": "836a32cbe55275ce74532097da6ee8546bc8b26e9eb88134d1123c0b6799923c",
+    "bridge-review.png": "6a42bd08b451f553ab9b4d81e75c6d500ceea30dd0730244198d07c40d555096",
+    "decorative-outside-board.png": "dc0305f3380a64a0f4c408d93b051bb9c60ff61c719401f5bd4fb38d3df5b49e",
+    "entry-review.png": "a4156e7287b73c61dd690196410e24c48ec1c4a908a76a3f09166e0b84f3890c",
+    "exit-review.png": "29a3b43675e0f91238705dfa4162474814bf2bdd66087d0c3cded2329c8ca3cc",
+    "free-mask.png": "c77ee0cb9a27dd06967d1fa51a0fa74598ed001d6b4c2ef5c60f7ac773c2df6e",
+    "geometry-overlay.png": "ab70322066de8ce1e1bc59e022bf13966286cb6888f881f77f960bb799c17347",
+    "logical-water-mask.png": "1c37082ce71f5f99864c39abcbbb297866a6bbebfe339d42252301199534c857",
+    "logical-water.png": "49bc0c26ebdd9812c1519969e97124fe0870151fc5f548d3d165c1092afacdb7",
+    "native-background.png": "205494e18ab3fecc17644547eb94e662f9476966b8c23e5675b4e090e6a6d43d",
+    "registered-wide-INCOMPLETE.png": "a45bfdf64fc85f149b44acaa8db5ec631ade6f868d3676552fbc0b5f55c31706",
+    "wide-opaque-edit-target.png": "cf33fd522c1afdb4f8109c52108bd57376cf13863b333a6eb09908d7e66b5c7a",
+    "wide-registered.png": "08522133a003d2046264b8d4a615fd19a9880abf21a763afc1e29d6351ffbc78"
+  },
+  "wide": {
+    "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
+    "canvas": [
+      3272,
+      1200
+    ],
+    "originalRect": [
+      800,
+      129,
+      1672,
+      941
+    ],
+    "joinBandPx": 48,
+    "sourceAffine": {
+      "method": "single uniform source-level affine fit from native source comparison at1/4 scale; native core restored unchanged; visual join audit required",
+      "rgbMeanAbsoluteError": 38.72458855068037,
+      "scale": 0.975,
+      "sourceCoreXAtQuarter": 273,
+      "sourceCoreYAtQuarter": 80,
+      "translation": [
+        120,
+        9
+      ]
+    },
+    "source": "art/chapter-1-v9/candidates/stream-wide-generated-v2.png",
+    "fullBoardInteriorChangedRgbPixels": 0
+  },
+  "checks": {
+    "nativeBankVisualAudit": "pending",
+    "entryExitContinuityVisualAudit": "pending",
+    "actualGameplay": "not-run"
+  }
+}
