@@ -9,11 +9,13 @@ Integration baseline bbf9828 plus resident runtime checkpoint recorded by this c
 | #48 header | user clarified top icon/title; painted ruby plaque, live title; 24 real viewport/scene checks PASS | coordinator | b2ac3c8 / #55; independent review next |
 | #35 facing | 6 residents/8 authored views integrated; 12 real state runs and 10 full-alpha clearances PASS | npc_facing sources, coordinator runtime | #67/#55; independent review found F1 mill overlap; root anchor correction checked, independent repeat pending; layout2 clearance repeat |
 | #45/#46 road/banks | connected road code disabled; source handoff explicitly NOT ART READY | fresh art executor next | #56/#55; finished stream fragment first |
-| #36 | whole-frame E pilot improving; support/held-frame limitations remain, not accepted | data_ui tree36-paint | #60; no six-view activation yet |
+| #36 | user explicitly switches character/body/motion generation to MPFB/Blender; painted sources archived010de59, not active | data_ui NEW tree36-mpfb | #60; first approved-appearance 3D Ruta pilot before six views |
 | #50/#51 | hiss fixed and user accepted; final transitions/loops repeat pending | audio/coordinator | #55/#57/#58 |
 | #37/#49 | scoped map/input independent QA done; full chapter not certified | independent reviewer queued | final art/layout2/gait; physical phone/family NOT RUN |
 
 NPC meetings use decoded authored left/front views with original idle retained during loading; anchors and native heights stay fixed. Activity/encounter/arrival are event-driven, not continuous following. Twelve desktop/landscape runs cover intro, waiting, replay, reload, actual UI solutions, arrival dialogue and result resident presence. Reduced motion was explicitly enabled for arrival state checks: these do NOT certify gait. Typecheck, build and 100 tests PASS. Evidence: characters/facing/runtime and runtime-clearance.json. Final accepted-layout2 clearance remains mandatory.
+
+MPFB owner uses a separate Blender config/data folder; shared _tools/mpfb2-v2.0.18 is read-only. A separate live Codex session was already downloading assets there: its processes/configuration are not changed. No duplicate downloads while existing archives are incomplete.
 
 Sources and rejected art are preserved in art/SOURCE-HANDOFF-NOT-READY.md. Accepted layout2 remains staged: no new data over incompatible old background. Latest requirements: LATEST-REQUIREMENTS.md; road contract: road/CONTRACT.md.
 
