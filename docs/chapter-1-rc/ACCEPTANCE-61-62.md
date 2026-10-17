@@ -34,3 +34,5 @@
 | Чистый звук | #55 |51e15d5|Удалён непрерывный шумовой слой из атмосфер; music/SFX/master не менялись.29-file audit, matched-RMS stems и43.677s actual browser AV. audio-noise. Субъективное прослушивание и итоговая независимая проверка открыты. |
 
 Финальный RC не подтверждён. Неактивные новые сцены должны пройти совместную художественную/геометрическую проверку и включаться сlayout2 атомарно. Реальный телефон/семейный тест/прослушивание не подменяются Chromium и измерениями.
+
+User audio review: Maksim explicitly confirmed «Шипение исчезло» in the recommended comparison (51e15d5). Steady-hiss complaint resolved by user listening; final integrated loop/transitions and physical device remain separate checks.

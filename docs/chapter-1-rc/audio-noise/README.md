@@ -9,3 +9,7 @@ Compare village-before-equal-rms.flac / village-after-equal-rms.flac and water-b
 The game subfolder captures real browser master output with actual input through stream and mill, including movement, bridge and scene transition. It is an author demonstration on legacy layout1; current gait remains artistically unaccepted. Raw video is local; curated MP4 and source audio are retained. Final layout2 and new gait must receive another integrated check.
 
 **Subjective listening NOT RUN.** This environment has no verified audio-listening tool; numerical source identification does not prove the user's perceived hiss was exclusively this bed. Music sample breath/reverb and the recommended discrete water sound still need listening review. Physical phone, family play and final independent audio acceptance are also not run.
+
+## User listening confirmation
+
+Maksim explicitly answered «Шипение исчезло» after opening the recommended matched comparison. The reported steady-hiss defect is accepted as resolved by the user for this comparison. This is user listening feedback, not an invented agent listening test. Complete in-game loop/scene-transition listening on final resources and physical-device audio remain separate final checks.
