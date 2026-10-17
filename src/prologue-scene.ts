@@ -33,8 +33,8 @@ export async function renderPrologueScene(target:SVGSVGElement,scene:Scene,level
  }
  const world=node('g',{transform:`translate(${scene.offset.x} ${scene.offset.y}) scale(${scene.fit})`,'pointer-events':'none'},svg);
  for(const [index,stone] of looseStones.entries()){
-  const shape=node('g',{transform:`translate(${stone.x} ${stone.y}) scale(1 .65)`},world);
-  stoneDetail(shape,{q:0,r:0},18,0,0,index);
+  const shape=node('g',{'data-story-loose-stone':index,transform:`translate(${stone.x} ${stone.y}) scale(1 .65)`},world);
+  stoneDetail(shape,{q:0,r:0},32,0,0,index);
  }
  for(const sprite of [...sprites].sort((a,b)=>a.position.y-b.position.y)){
   const frame=characterFrame({image:sprite.file,frameSize:sprite.frameSize,footAnchor:sprite.footAnchor}),scale=sprite.height/frame.frameSize[1];
