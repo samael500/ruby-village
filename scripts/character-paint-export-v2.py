@@ -1,12 +1,12 @@
 """Six-view painted cutout export driven by ONE original IK action, not phase generation.
 blender -b art/blender/characters/ruta-motion-prototype.blend -t 2 --python scripts/character-paint-export-v2.py -- --directions e,se,sw,w,nw,ne
 """
-import bpy,math,json,sys,argparse
+import bpy,math,json,sys,argparse,hashlib
 from pathlib import Path
 from mathutils import Vector
 from bpy_extras.object_utils import world_to_camera_view
 root=Path(__file__).resolve().parents[1]
-parser=argparse.ArgumentParser();parser.add_argument('--directions',default='e,se,sw,w,nw,ne');parser.add_argument('--camera-variant',default='all');parser.add_argument('--parts-root',default='art/characters-walk-v1/clean-parts-v2');parser.add_argument('--output',default='art/characters-walk-v1/export-v2');parser.add_argument('--no-render',action='store_true');parser.add_argument('--samples',type=int,default=24);args=parser.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
+parser=argparse.ArgumentParser();parser.add_argument('--directions',default='e,se,sw,w,nw,ne');parser.add_argument('--camera-variant',default='all');parser.add_argument('--parts-root',default='art/characters-walk-v1/clean-parts-v2');parser.add_argument('--output',default='art/characters-walk-v1/export-v2');parser.add_argument('--no-render',action='store_true');parser.add_argument('--samples',type=int,default=24);parser.add_argument('--render-directions',default='all');parser.add_argument('--render-states',default='all');args=parser.parse_args(sys.argv[sys.argv.index('--')+1:] if '--' in sys.argv else [])
 directions=args.directions.split(',');out=root/args.output;out.mkdir(parents=True,exist_ok=True)
 scene=bpy.context.scene;projection_camera=scene.camera;rig=next(o for o in scene.objects if o.type=='ARMATURE');source_manifest=json.loads((root/'art/blender/characters/manifest.json').read_text());source_anchor=Vector(source_manifest['footAnchor']);scale=224/210;offset=Vector((160,256))-source_anchor*scale
 # Derive view variants from EACH actual scene camera; source paint stays the same six views.
@@ -70,9 +70,10 @@ scene.render.resolution_x=320;scene.render.resolution_y=320;scene.render.resolut
 scene.view_settings.view_transform='Standard';scene.view_settings.look='None';scene.view_settings.exposure=0;scene.view_settings.gamma=1
 for attr in ['taa_render_samples','taa_samples']:
  if hasattr(scene.eevee,attr):setattr(scene.eevee,attr,args.samples)
-objects={};blink_nodes={};source_contracts={}
+objects={};blink_nodes={};source_contracts={};paint_registration={}
 for direction in directions:
  folder=root/args.parts_root/view_direction[direction];spec=json.loads((folder/'parts.json').read_text());source_contracts[direction]=spec
+ body_image=bpy.data.images.load(str(folder/'body.png'),check_existing=True);alphas=list(body_image.pixels)[3::4];top=min(319-index//320 for index,a in enumerate(alphas) if a>16/255);paint_scale=138/(170-top);paint_registration[direction]={'sourceBodyTop':top,'fixedHip':[160,170],'targetBodyTop':32,'uniformSourceScale':paint_scale,'note':'uniform body/width/boot source registration; original IK endpoints and world stride unchanged'}
  collection=bpy.data.collections.new('Painted_'+direction);scene.collection.children.link(collection);objects[direction]=[];items=dict(spec['parts'])
  if 'body' not in items:items={'body':{'file':'body.png','bone':'root','a':[160,170],'b':[160,120],'z':.2},**items}
  for index,(name,item) in enumerate(items.items()):
@@ -94,10 +95,11 @@ for direction in directions:
    if bone=='root':A=a+(Vector(current[0])-Vector(rest[0]))*scale;B=b+(Vector(current[1])-Vector(rest[1]))*scale
    else:A=Vector(current[0])*scale+offset;B=Vector(current[1])*scale+offset
    v=B-A;
-   if bone.startswith('foot.'):v=v.normalized()*length
+   if bone.startswith('foot.'):v=v.normalized()*length*paint_scale
+   if bone=='root':v*=paint_scale
    newperp=Vector((-v.y,v.x))/max(v.length,1)
    for vertex,original in zip(key.data,verts):
-    P=Vector((original[0],320-original[1]));rel=P-a;target=A+rel.dot(u)/(length*length)*v+rel.dot(perp)*newperp
+    P=Vector((original[0],320-original[1]));rel=P-a;target=A+rel.dot(u)/(length*length)*v+rel.dot(perp)*newperp*paint_scale
     if bone=='root':
      # Localized sleeve/forearm skin movement; face and satchel are not regenerated.
      for side in ['L','R']:
@@ -109,17 +111,18 @@ for direction in directions:
 # Portable .blend stores every source texture and original/evaluated action for all directions.
 for direction,parts in objects.items():
  for obj in parts:obj.hide_render=direction!=directions[0]
-scene.frame_set(1);bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'ruta-painted-six-view.blend'))
-manifest={'schemaVersion':2,'status':'candidate-needs-visual-validation','productionEnabled':False,'frameSize':[320,320],'footAnchor':[160,256],'nativeHeightPx':224,'targetDisplayHeightPx':136,'cycleDurationMs':800,'strideWorldUnits':.72,'sourceRig':'art/blender/characters/ruta-motion-prototype.blend','screenDirectionAnglesRadians':screen_angles,'sourceYawRadians':projection_yaws,'projectionReference':{'file':'src/scene-v8.json','note':'all distinct scene calibrations export their own six retargeted limb directions; body identity and original camera are preserved'},'sourceActionRefinement':{'walkRootLocalY':'-.02-.012*cos(4*pi*phase)','reason':'soft contact knees, body rises in passing; foot controls and stride unchanged','idleRootLocalY':'-.008+.004*sin(2*pi*phase)'},'sourceContracts':source_contracts,'directions':{}}
+scene.frame_set(1);bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(out/'ruta-painted-six-view.blend'),compress=True)
+manifest={'schemaVersion':2,'renderSamples':args.samples,'status':'candidate-needs-visual-validation','productionEnabled':False,'frameSize':[320,320],'footAnchor':[160,256],'nativeHeightPx':224,'targetDisplayHeightPx':136,'cycleDurationMs':800,'strideWorldUnits':.72,'sourceRig':'art/blender/characters/ruta-motion-prototype.blend','screenDirectionAnglesRadians':screen_angles,'sourceYawRadians':projection_yaws,'projectionReference':{'file':'src/scene-v8.json','note':'all distinct scene calibrations export their own six retargeted limb directions; body identity and original camera are preserved'},'sourceActionRefinement':{'walkRootLocalY':'-.02-.012*cos(4*pi*phase)','reason':'soft contact knees, body rises in passing; foot controls and stride unchanged','idleRootLocalY':'-.008+.004*sin(2*pi*phase)'},'sourceContracts':source_contracts,'paintRegistration':paint_registration,'directions':{}}
 for direction in directions:
  for d,parts in objects.items():
   for obj in parts:obj.hide_render=d!=direction
  manifest['directions'][direction]={'screenAngleRadians':screen_angles[direction],'sourceYawRadians':projection_yaws[direction],'projectedStridePixels':.72*256/2.65*(136/210)*math.hypot(math.sin(projection_yaws[direction]),math.cos(projection_yaws[direction])*math.sin(math.atan2(3.8,8))),'clips':{}}
  for state,clip in clips.items():
+  render_requested=(args.render_directions=='all' or view_direction[direction] in args.render_directions.split(',')) and (args.render_states=='all' or state in args.render_states.split(','))
   folder=out/'renders'/direction/state;folder.mkdir(parents=True,exist_ok=True);outputframes=[]
   for index,frame in enumerate(clip['frames']):
    scene.frame_set(frame);scene.render.filepath=str(folder/f'{index:02}.png');
-   if not args.no_render:bpy.ops.render.render(write_still=True)
+   if not args.no_render and render_requested:bpy.ops.render.render(write_still=True)
    entry={'file':str(Path(scene.render.filepath).relative_to(root)),'sourceRect':[0,0,320,320],'frameSize':[320,320],'footAnchor':[160,256],'durationMs':clip['durationMs']}
    if state=='walk' and index in [0,8]:entry['contact']='left' if index==0 else 'right'
    if state in ['start','stop-L','stop-R'] and index==8:
@@ -127,9 +130,13 @@ for direction in directions:
    if state in ['start','stop-L','stop-R']:entry['motionFraction']=((index/8)**2 if state=='start' else 2*(index/8)-(index/8)**2)
    if state=='idle' and index==8 and direction in blink_nodes:
     entry['durationMs']=60;outputframes.append(entry);node,open_image,closed_image=blink_nodes[direction];node.image=closed_image;blinkfile=folder/'08-blink.png';scene.render.filepath=str(blinkfile);
-    if not args.no_render:bpy.ops.render.render(write_still=True)
+    if not args.no_render and render_requested:bpy.ops.render.render(write_still=True)
     node.image=open_image;outputframes.append({**entry,'file':str(blinkfile.relative_to(root)),'durationMs':80,'blink':True});entry={**entry,'durationMs':60}
    outputframes.append(entry)
   manifest['directions'][direction]['clips'][state]={'loop':clip['loop'],'frames':outputframes,'actorWorldDistance':.18 if state in ['start','stop-L','stop-R'] else None}
 raw_directions=manifest['directions'];manifest['cameraVariants']={variant:{**group,'directions':{view_direction[view]:raw_directions[view] for view in directions if view_variant[view]==variant}} for variant,group in variant_specs.items()};manifest['sceneCameraVariant']={scene_id:variant for variant,group in variant_specs.items() for scene_id in group['scenes']};manifest['directions']=manifest['cameraVariants'][next(iter(variant_specs))]['directions'];manifest['rigidBootTextures']=True
+inputs=[Path(__file__).resolve(),root/'art/blender/characters/ruta-motion-prototype.blend',root/'src/scene-v8.json']
+for d in requested:
+ folder=root/args.parts_root/d;inputs.extend([folder/'parts.json',*folder.glob('*.png')])
+manifest['sourceSha256']={str(path.relative_to(root)):hashlib.sha256(path.read_bytes()).hexdigest() for path in inputs};manifest['packedImages']=sum(bool(image.packed_file) for image in bpy.data.images);manifest['retainedSourceRGBAFrames']=sum(len(clip['frames']) for spec in raw_directions.values() for clip in spec['clips'].values())
 (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');print('Painted rig export complete; artistic/runtime validation still required')

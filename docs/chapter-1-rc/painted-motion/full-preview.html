@@ -17,5 +17,6 @@ function tick(now){let dt=last?Math.min(now-last,250):0;last=now;const blocked=p
   ctx.clearRect(0,0,1672,941);ctx.drawImage(background,0,0,1672,941);road();const point=route.position;ctx.fillStyle='#463629';ctx.globalAlpha=.18;ctx.beginPath();ctx.ellipse(point.x,point.y+3,18,6,0,0,Math.PI*2);ctx.fill();ctx.globalAlpha=1;const frame=clock.frame;const scale=136/set.nativeHeightPx;sprite(ctx,frame,point,scale);z.clearRect(0,0,360,360);z.fillStyle='#fff5de';z.fillRect(0,0,360,360);sprite(z,frame,{x:180,y:326},1.35*scale);z.fillStyle='#473323';z.font='13px system-ui';z.fillText('Детали · без изменения исходной анатомии',10,17);info.textContent=`${scene} · ${clock.direction} · ${clock.state} · phase ${Math.round(clock.phaseMs)} · contacts ${contacts} · done ${completions}`;window.motionFullState={ready:true,playing,paused:blocked,state:clock.state,direction:clock.direction,phaseMs:clock.phaseMs,position:point,contacts,lastFoot,completions,programIndex:stepIndex,frameFile:frame.file,sourceRect:frame.sourceRect};}
  requestAnimationFrame(tick);
 }
+document.addEventListener('visibilitychange',()=>{if(document.hidden)clock?.advance(0,{paused:true});last=0;});
 await selectScene();requestAnimationFrame(tick);
 </script></html>
