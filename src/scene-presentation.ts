@@ -14,7 +14,7 @@ export function restoredScene(board: SVGSVGElement, levelName: string): SVGSVGEl
   cell.removeAttribute('tabindex');cell.removeAttribute('role');
   cell.removeAttribute('aria-label');
   for(const polygon of cell.querySelectorAll('.cell')){
-   polygon.classList.remove('path');polygon.setAttribute('opacity','1');
+   polygon.classList.remove('path');polygon.setAttribute('opacity',polygon.classList.contains('bridge-cell')?'0':'1');
   }
  }
  // SVG fragment references are document-global. Give cloned clip/mask IDs their
