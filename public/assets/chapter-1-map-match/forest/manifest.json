@@ -38,7 +38,8 @@
       941
     ],
     "protectedFullFreePolygonsGuardPixels": 3,
-    "featherRadius": 0
+    "featherRadius": 0,
+    "wideCorePerimeterJoinPixels": 72
   },
   "checks": {
     "fullFreePolygonPixelsChanged": 0,
@@ -52,7 +53,82 @@
       941
     ],
     "gameQa": "not-run",
-    "artAcceptance": "pending"
+    "artAcceptance": "pending",
+    "wideNativeCoreExact": true,
+    "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+    "physicalPhone": "not-tested"
   },
-  "wide": null
+  "wide": {
+    "file": "assets/chapter-1-map-match/forest/wide.webp",
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    },
+    "source": "art/chapter-1-map-match/forest/generated-wide-01.png",
+    "sourceSize": [
+      2070,
+      760
+    ],
+    "sourceSha256": "39bab112dade069b9b208c82da47d88aed4247f976eb8aa96e64fc993e5c2ef0",
+    "registration": "painted v8 ring reference at logical canvas, builtin seam repaint, protected72px foliage join inside core perimeter",
+    "corePixelExact": true,
+    "opaque": true,
+    "referenceRing": {
+      "file": "public/assets/chapter-1/v8/08-edge-surroundings.jpg",
+      "nativeSize": [
+        2070,
+        760
+      ],
+      "logicalCanvas": [
+        3272,
+        1200
+      ],
+      "sha256": "d0f86260461d0e96ca8f71785c0fcf71519523d43ad052abe423df8720488465"
+    }
+  },
+  "recommendedWholeSceneGrade": {
+    "status": "candidate-requires-artistic-review",
+    "scope": "background,wide,characters,road,scene-props together; excludes HUD",
+    "type": "svg-feColorMatrix",
+    "values": [
+      0.76,
+      0,
+      0,
+      0,
+      0.018,
+      0,
+      0.78,
+      0,
+      0,
+      0.026,
+      0,
+      0,
+      0.86,
+      0,
+      0.065,
+      0,
+      0,
+      0,
+      1,
+      0
+    ],
+    "note": "Apply once to scene group. Deliveries remain ungraded to avoid grading actors differently.",
+    "colorInterpolationFilters": "sRGB"
+  },
+  "deliveryFiles": {
+    "background.webp": {
+      "sha256": "960ff16ec428f7f5e0df0feb38493de6f31b7c2d48089664054b3fc9ce18459d",
+      "bytes": 2308860
+    },
+    "wide.webp": {
+      "sha256": "a6a3e61c09b7c6eed7b062f491c8018a6e0c5392106d751e4b4114000db66ce4",
+      "bytes": 4930930
+    }
+  }
 }

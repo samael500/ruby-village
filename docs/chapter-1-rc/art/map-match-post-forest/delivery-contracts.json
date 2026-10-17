@@ -1,0 +1,241 @@
+{
+  "post": {
+    "status": "map-match-candidate-requires-art-and-game-review",
+    "background": "assets/chapter-1-map-match/post/background.webp",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "camera": {
+      "radius": 68.83326050303945,
+      "origin": {
+        "x": 168.55028803684962,
+        "y": 291.0714285714285
+      },
+      "angle": 0.04494904935533156,
+      "groundScale": 0.65
+    },
+    "anchors": {
+      "start": {
+        "x": 378.91832705503657,
+        "y": 700.3035714285716
+      },
+      "goal": {
+        "x": 1231.192008768393,
+        "y": 456.5
+      }
+    },
+    "geometrySha256": "af90131fe51c742c4b2a67c396b27efb3e488cc3b3838de8dd3f8464213c543a",
+    "layoutAdjustmentsSha256": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e",
+    "source": "art/chapter-1-map-match/post/generated-core-01.png",
+    "sourceSha256": "68445e69dda61fe53cbab12e46b75156e6864120ccac1a540012689a7facb7f2",
+    "beforeSha256": "fffae497189a037e948e179fbf5090642e669f5144c7eba1a05934947cc1e6a8",
+    "mapReferenceSha256": "32845a9e74697a05c391fe475e945461a482f229f16fd8a76c926eabb4b68cbd",
+    "registration": {
+      "editableRectangle": [
+        1160,
+        55,
+        1585,
+        418
+      ],
+      "protectedFullFreePolygonsGuardPixels": 3,
+      "featherRadius": 8,
+      "wideCorePerimeterJoinPixels": 72
+    },
+    "checks": {
+      "fullFreePolygonPixelsChanged": 0,
+      "opaque": true,
+      "nativeSize": [
+        1672,
+        941
+      ],
+      "sourceGenerationNativeSize": [
+        1672,
+        941
+      ],
+      "gameQa": "not-run",
+      "artAcceptance": "pending",
+      "wideNativeCoreExact": true,
+      "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+      "physicalPhone": "not-tested"
+    },
+    "wide": {
+      "file": "assets/chapter-1-map-match/post/wide.webp",
+      "canvas": {
+        "width": 3272,
+        "height": 1200
+      },
+      "originalRect": {
+        "x": 800,
+        "y": 129,
+        "width": 1672,
+        "height": 941
+      },
+      "source": "art/chapter-1-map-match/post/generated-wide-01.png",
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "sourceSha256": "199d752ad04ccc2239c021f4d2f29471ddab9f217d91b5add3b702e174e4c816",
+      "registration": "painted v8 ring reference at logical canvas, builtin seam repaint, protected72px foliage join inside core perimeter",
+      "corePixelExact": true,
+      "opaque": true,
+      "referenceRing": {
+        "file": "public/assets/chapter-1/v8/07-post-surroundings.jpg",
+        "nativeSize": [
+          2070,
+          760
+        ],
+        "logicalCanvas": [
+          3272,
+          1200
+        ],
+        "sha256": "f74e647da6dd9b183add1debd42faec231be4dfef796d137ee6c277877f02dd3"
+      }
+    },
+    "deliveryFiles": {
+      "background.webp": {
+        "sha256": "e99805904799c09d607dd548eae91c434eb91e9b95b427560d7a12a483f97bdb",
+        "bytes": 2651118
+      },
+      "wide.webp": {
+        "sha256": "06a976e393276884aa609a3001d96500069d27e75d3d3b086ef73feb2f0c0d0f",
+        "bytes": 5487362
+      }
+    }
+  },
+  "forest": {
+    "status": "map-match-candidate-requires-art-and-game-review",
+    "background": "assets/chapter-1-map-match/forest/background.webp",
+    "canvas": {
+      "width": 1672,
+      "height": 941
+    },
+    "camera": {
+      "radius": 66,
+      "origin": {
+        "x": 180,
+        "y": 250
+      },
+      "angle": 0,
+      "groundScale": 0.65
+    },
+    "anchors": {
+      "start": {
+        "x": 408.6307065990918,
+        "y": 636.1
+      },
+      "goal": {
+        "x": 1265.995856345686,
+        "y": 314.35
+      }
+    },
+    "geometrySha256": "2e1f30594e7283f3468436cbec2a0328e18cee5a0ef0965aae458520a3fef161",
+    "layoutAdjustmentsSha256": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e",
+    "source": "art/chapter-1-map-match/forest/generated-core-01.png",
+    "sourceSha256": "d715d90f3722ec7737fe213e2dc3da6e51d1dfd16b8e0365f67e0a6e0b70a870",
+    "beforeSha256": "65aa72b90a0d68c28bbb918ed1fb13f503682d93b8bb3d0062b56dbc871ab5f6",
+    "mapReferenceSha256": "32845a9e74697a05c391fe475e945461a482f229f16fd8a76c926eabb4b68cbd",
+    "registration": {
+      "editableRectangle": [
+        0,
+        0,
+        1672,
+        941
+      ],
+      "protectedFullFreePolygonsGuardPixels": 3,
+      "featherRadius": 0,
+      "wideCorePerimeterJoinPixels": 72
+    },
+    "checks": {
+      "fullFreePolygonPixelsChanged": 0,
+      "opaque": true,
+      "nativeSize": [
+        1672,
+        941
+      ],
+      "sourceGenerationNativeSize": [
+        1672,
+        941
+      ],
+      "gameQa": "not-run",
+      "artAcceptance": "pending",
+      "wideNativeCoreExact": true,
+      "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+      "physicalPhone": "not-tested"
+    },
+    "wide": {
+      "file": "assets/chapter-1-map-match/forest/wide.webp",
+      "canvas": {
+        "width": 3272,
+        "height": 1200
+      },
+      "originalRect": {
+        "x": 800,
+        "y": 129,
+        "width": 1672,
+        "height": 941
+      },
+      "source": "art/chapter-1-map-match/forest/generated-wide-01.png",
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "sourceSha256": "39bab112dade069b9b208c82da47d88aed4247f976eb8aa96e64fc993e5c2ef0",
+      "registration": "painted v8 ring reference at logical canvas, builtin seam repaint, protected72px foliage join inside core perimeter",
+      "corePixelExact": true,
+      "opaque": true,
+      "referenceRing": {
+        "file": "public/assets/chapter-1/v8/08-edge-surroundings.jpg",
+        "nativeSize": [
+          2070,
+          760
+        ],
+        "logicalCanvas": [
+          3272,
+          1200
+        ],
+        "sha256": "d0f86260461d0e96ca8f71785c0fcf71519523d43ad052abe423df8720488465"
+      }
+    },
+    "recommendedWholeSceneGrade": {
+      "status": "candidate-requires-artistic-review",
+      "scope": "background,wide,characters,road,scene-props together; excludes HUD",
+      "type": "svg-feColorMatrix",
+      "values": [
+        0.76,
+        0,
+        0,
+        0,
+        0.018,
+        0,
+        0.78,
+        0,
+        0,
+        0.026,
+        0,
+        0,
+        0.86,
+        0,
+        0.065,
+        0,
+        0,
+        0,
+        1,
+        0
+      ],
+      "note": "Apply once to scene group. Deliveries remain ungraded to avoid grading actors differently.",
+      "colorInterpolationFilters": "sRGB"
+    },
+    "deliveryFiles": {
+      "background.webp": {
+        "sha256": "960ff16ec428f7f5e0df0feb38493de6f31b7c2d48089664054b3fc9ce18459d",
+        "bytes": 2308860
+      },
+      "wide.webp": {
+        "sha256": "a6a3e61c09b7c6eed7b062f491c8018a6e0c5392106d751e4b4114000db66ce4",
+        "bytes": 4930930
+      }
+    }
+  }
+}
