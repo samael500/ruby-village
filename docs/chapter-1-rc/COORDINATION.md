@@ -58,7 +58,7 @@ Latest slot rotation: `qa_runtime` independently delivered add4122 +60fe35d, the
 
 Current evidence: `qa/GROUNDED-RUNTIME-REPORT.md` certifies actual eight-route walking, semantic stone/wood requests, eight scene results, invalid single/composite/bridge workflows and active-walk portrait freeze. Four actual route directions are covered; all6 source bench directions are separately captured. `evidence/grounded-game/` holds the coordinator's separate 182.464s actual gameplay/browser-audio record; independent capture is185.339s. No source/layout injection in full runs. Latest tests98 PASS. None of this approves unfinished art/resident placement.
 
-Remote exception: auto-review twice rejected data_ui's PR60 branch push as publishing despite main-only deployment proof. Explicit user question is pending for working-branch push/PR updates; do not bypass or repeat pushes until answered. Local commits/integration/tests continue. Last pushed #55 was2c50d0a; PR60 remote remainedd87b74c when verified. Main stilladd7670.
+Remote authorization resolved: Maksim explicitly approved working-branch pushes and PR updates. Main merge and publication remain forbidden. PR60 is updated at1d7d857; integration PR55 receives accumulated commits. Earlier auto-review refusals are historical, no longer a pending permission blocker. Main baseline remainsadd7670.
 
 Wide contract is dynamic:4096×1600/rect1212,329 was a working choice, not a user requirement. Registered existing painterly v8 surrounds3272×1200/rect800,129 may be reused if actual seam/doubled-object review passes. Failed reframed outpaints remain failed sources. No technical or solid-color filler is accepted as completed wide art.
 
@@ -85,3 +85,7 @@ Integration order: preserve audited source/candidate commits inactive → #61 be
 - #36: independent generative phase paint-over failed gait/registration; automatic repacking fixes position but cannot prove stance. Owner is testing rig-driven painted cutout mesh using the saved IK cycle, beginning with east. Technical or failed art remains separate from active sprites.
 - Current executor slots: art_scenes final geometry/art; data_ui painted motion; characters optimized WebP delivery variants. Independent QA is queued for integrated final resources.
 - #49 preliminary local build: ~64MiB exported, ~10MiB through first puzzle after deferring hidden illustrations; local FCP ~216ms is not a network/device benchmark. Original masters and SF2 are outside browser exports. Repeat after final resources and optimize delivery; not RC ready.
+
+## Working-branch authorization and touch checkpoint
+
+User explicitly authorized push and PR updates. Native Chromium rapid touch checks on063bb19: four batches of12 taps at100/150/250/500ms gaps produced48/48 actions; mouse, Enter and Space after touch passed. Separate after-drag reproducer improved from3/6 baseline failures to6/6 passes; independent recheck is assigned to qa_runtime. No physical phone claim. Gate/bakery wide handoff dd8d66d integrated inactive asbe6831f:12/12 viewport coverage; lower gate foreground join remains a review limitation. Other final art and atomic layout2 activation are still pending.
