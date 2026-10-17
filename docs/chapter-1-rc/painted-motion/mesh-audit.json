@@ -1,0 +1,196 @@
+{
+  "status": "technical-pilot-checks-pass-not-artistic-acceptance",
+  "renderedFrames": [
+    {
+      "frame": 1,
+      "bounds": [
+        95,
+        33,
+        212,
+        268
+      ],
+      "sha256": "b3d884aa8ad645e5748639dcd7cb9a17d11075ccd7135f3c19963f2de36849ac"
+    },
+    {
+      "frame": 2,
+      "bounds": [
+        95,
+        33,
+        208,
+        265
+      ],
+      "sha256": "a8aa3e1cc5f33bea5cb5f66a0d004b9b065e6ab85dbc812baaab5b542c78139d"
+    },
+    {
+      "frame": 3,
+      "bounds": [
+        94,
+        33,
+        203,
+        263
+      ],
+      "sha256": "cba23e4cd03811f0e801bcedec13e27242051bede9db14de9067c75189510b73"
+    },
+    {
+      "frame": 4,
+      "bounds": [
+        93,
+        33,
+        198,
+        261
+      ],
+      "sha256": "376e7e5b9a7aff549f9176709b256d4bf238406eb803ffab794bedb200475fd7"
+    },
+    {
+      "frame": 5,
+      "bounds": [
+        93,
+        33,
+        196,
+        260
+      ],
+      "sha256": "1d4c9e0e14c0d5f44b2b0f0f75b0216d3e5add19d5d430abac50bd179d252eae"
+    },
+    {
+      "frame": 6,
+      "bounds": [
+        93,
+        33,
+        198,
+        261
+      ],
+      "sha256": "e0b15c2c06beac6f9f8047403f13c49435292bdc523981b66cee585678c36f30"
+    },
+    {
+      "frame": 7,
+      "bounds": [
+        94,
+        33,
+        203,
+        262
+      ],
+      "sha256": "bf5a12881df6dbd763bd882b3f0c80f38daaa942d7168b489c523511ab63e2fe"
+    },
+    {
+      "frame": 8,
+      "bounds": [
+        95,
+        33,
+        208,
+        265
+      ],
+      "sha256": "ea5c3706af87742360197d9aef290bfbe25a0ec765011f9139cc011004fce028"
+    },
+    {
+      "frame": 9,
+      "bounds": [
+        95,
+        33,
+        212,
+        268
+      ],
+      "sha256": "392469dba30334f9bbbda2de3b5dd691f379829a3e6770f58d7534c26b8c2f67"
+    },
+    {
+      "frame": 10,
+      "bounds": [
+        95,
+        33,
+        208,
+        268
+      ],
+      "sha256": "14002cfb1cc61e945c1ec6f84ef3fe6b46aba6704f3384cb64de694c3e4c1259"
+    },
+    {
+      "frame": 11,
+      "bounds": [
+        94,
+        33,
+        203,
+        268
+      ],
+      "sha256": "920a663e3739b68da75a031e0c32abaf94919f4c3d819494f31fe0d45d19f4b5"
+    },
+    {
+      "frame": 12,
+      "bounds": [
+        93,
+        33,
+        199,
+        268
+      ],
+      "sha256": "1adfa16b2cfa0eb173f69d2083e7bbb54be8a5e4cf2c3be15cce6e2d68d9e895"
+    },
+    {
+      "frame": 13,
+      "bounds": [
+        93,
+        33,
+        196,
+        268
+      ],
+      "sha256": "ee692a80ab2867a163b0419349d49d786a30f342f33702ef9e0485390c8cdc8a"
+    },
+    {
+      "frame": 14,
+      "bounds": [
+        93,
+        33,
+        198,
+        268
+      ],
+      "sha256": "6b0d02f4cd8d3e8516779de5b63fad894d660d9cead56f049c97d97afbfd6d5f"
+    },
+    {
+      "frame": 15,
+      "bounds": [
+        94,
+        33,
+        203,
+        268
+      ],
+      "sha256": "ee610bc0a7b7cb8a40c9de92d22a6e7849f38a5efb798f3cee1701f06475b590"
+    },
+    {
+      "frame": 16,
+      "bounds": [
+        95,
+        33,
+        208,
+        268
+      ],
+      "sha256": "232b181d5417983caaaa6323499121cb63e1d5caec641071501431776ae12121"
+    }
+  ],
+  "actualRigStanceExchange": true,
+  "stanceVelocityPixelsPerSecond": [
+    -56.306175595238095,
+    -56.306175595238095,
+    -56.306175595238095,
+    -56.306175595238095,
+    -56.306175595238095,
+    -56.30627441406251,
+    -56.306175595238095
+  ],
+  "expectedEastVelocityPixelsPerSecond": 56.30619946091644,
+  "maxStanceVelocityError": 7.495314606842385e-05,
+  "sourceStrideWorldUnits": 0.72,
+  "durationMs": 800,
+  "targetDisplayHeightPx": 136,
+  "projectedStrideAtDisplay136": {
+    "e": 45.044959568733155,
+    "w": 45.044959568733155,
+    "se": 21.662,
+    "sw": 21.662,
+    "nw": 21.662,
+    "ne": 21.662
+  },
+  "notCertified": [
+    "painted knee/cuff seams",
+    "hidden-side boot anatomy",
+    "all six final directions",
+    "production occlusion",
+    "idle/turn/start-stop",
+    "human artistic acceptance"
+  ]
+}
