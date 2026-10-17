@@ -2,20 +2,32 @@
   "schemaVersion": 1,
   "version": "chapter-1-v9-painted-2026-10-17",
   "styleStatus": "accepted-by-Maksim-2026-10-17",
-  "activationStatus": "inactive-until-all-eight-geometry-audited",
+  "activationStatus": "inactive-until-all-eight-art-and-geometry-reviewed",
   "canvas": {
     "width": 1672,
     "height": 941
   },
   "scenes": {
     "gate": {
-      "status": "style-approved-layer-checks-passed-runtime-review-pending",
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
       "background": "gate/background.webp",
       "foreground": "gate/foreground-fixed.webp",
-      "wide": null,
-      "wideStatus": "pending-outpaint",
+      "wide": {
+        "file": "gate/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "seam72-candidate-actual-review",
       "source": "art/chapter-1-v9/candidates/gate-v3-base.png",
-      "sourceSha256": "549a5611ba8a56941a85ce90b6b9400115fa3152a0634a7d3a39f9bd13604f1e",
+      "sourceSha256": "5646466d119a15f6d822a882a573cb9217359b454a8bee6f212daef5e24f38a4",
       "geometrySha256": "ad438768d77c2a6f0dcd8ca1941533178291d8aefc4183c842962ac6a4a06092",
       "camera": {
         "radius": 70,
@@ -48,11 +60,35 @@
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "pending"
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending"
       },
       "residentPresentation": "portrait-only",
       "gateClosed": "gate/gate-closed.webp",
-      "gateOpen": "gate/gate-open.webp"
+      "gateOpen": "gate/gate-open.webp",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/gate/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/gate/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2273252,
+          "sha256": "f4741a9415bb6be155256a59de03ced3128080ef13bca4ef3826af44613fd6b3"
+        },
+        "wide.webp": {
+          "bytes": 5234246,
+          "sha256": "bd99f58d54e2d55dcf82dab72f7b0d6b460dd57a508f0c9e1e311e44c2af8fb7"
+        }
+      }
     },
     "garden": {
       "status": "style-approved-geometry-pending",
@@ -139,13 +175,25 @@
       "residentPresentation": "portrait-only"
     },
     "bakery": {
-      "status": "style-approved-geometry-pending",
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
       "background": "bakery/background.webp",
       "foreground": null,
-      "wide": null,
-      "wideStatus": "pending-outpaint",
+      "wide": {
+        "file": "bakery/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "seam72-candidate-actual-review",
       "source": "art/chapter-1-v9/candidates/bakery-v4.png",
-      "sourceSha256": "eccc47b183a016621c1c3c503800672aaad72e48eb13fd3ea7d1def3e33aa2a7",
+      "sourceSha256": "90e8c7a335d72c2ab3ad672b58dfe8166b1cce48ffce93085344d12a372ade45",
       "geometrySha256": "1638f6dcf280934026a5f426791e5b17c1ae49741155f592e42585b765c3d09c",
       "camera": {
         "radius": 68.83326050303945,
@@ -174,7 +222,31 @@
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "pending"
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending"
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/bakery/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/bakery/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2473912,
+          "sha256": "b14a06ea1fd8dcd59c093d34da2fd9663b815a37b34338535a66d768a42e6290"
+        },
+        "wide.webp": {
+          "bytes": 5439354,
+          "sha256": "a500f9f4e443524e4e9db4e2467be57afb8c6d5cb8c560d1604e8a56b207ef3a"
+        }
       }
     },
     "stream": {
@@ -267,13 +339,25 @@
       "water": "mill/water.webp"
     },
     "post": {
-      "status": "style-approved-geometry-pending",
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
       "background": "post/background.webp",
       "foreground": null,
-      "wide": null,
-      "wideStatus": "pending-outpaint",
+      "wide": {
+        "file": "post/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-join-candidate-review-pending",
       "source": "art/chapter-1-v9/candidates/post-v4.png",
-      "sourceSha256": "83233707f34b22d78cf70e9e9cec6abaf45085687db33e7093d2f760b9a804da",
+      "sourceSha256": "68445e69dda61fe53cbab12e46b75156e6864120ccac1a540012689a7facb7f2",
       "geometrySha256": "af90131fe51c742c4b2a67c396b27efb3e488cc3b3838de8dd3f8464213c543a",
       "camera": {
         "radius": 68.83326050303945,
@@ -302,17 +386,56 @@
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "pending"
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending",
+        "wideNativeCoreExact": true,
+        "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+        "physicalPhone": "not-tested"
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/post/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/post/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2651118,
+          "sha256": "e99805904799c09d607dd548eae91c434eb91e9b95b427560d7a12a483f97bdb"
+        },
+        "wide.webp": {
+          "bytes": 5487362,
+          "sha256": "06a976e393276884aa609a3001d96500069d27e75d3d3b086ef73feb2f0c0d0f"
+        }
       }
     },
     "forest": {
-      "status": "style-approved-geometry-pending",
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
       "background": "forest/background.webp",
       "foreground": null,
-      "wide": null,
-      "wideStatus": "pending-outpaint",
+      "wide": {
+        "file": "forest/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-join-candidate-review-pending",
       "source": "art/chapter-1-v9/candidates/forest-v4.png",
-      "sourceSha256": "2c0d35fb412e85130608ae9cd638cf5ff052bf90f8bacc9aa1c7385453f1773d",
+      "sourceSha256": "d715d90f3722ec7737fe213e2dc3da6e51d1dfd16b8e0365f67e0a6e0b70a870",
       "geometrySha256": "2e1f30594e7283f3468436cbec2a0328e18cee5a0ef0965aae458520a3fef161",
       "camera": {
         "radius": 66,
@@ -335,9 +458,65 @@
       },
       "semanticAnchors": {},
       "checks": {
-        "fullPolygonVisualAudit": "pending"
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending",
+        "wideNativeCoreExact": true,
+        "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+        "physicalPhone": "not-tested"
       },
-      "residentPresentation": "portrait-only"
+      "residentPresentation": "portrait-only",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/forest/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/forest/generated-core-01.png",
+      "recommendedWholeSceneGrade": {
+        "status": "candidate-requires-artistic-review",
+        "scope": "background,wide,characters,road,scene-props together; excludes HUD",
+        "type": "svg-feColorMatrix",
+        "values": [
+          0.76,
+          0,
+          0,
+          0,
+          0.018,
+          0,
+          0.78,
+          0,
+          0,
+          0.026,
+          0,
+          0,
+          0.86,
+          0,
+          0.065,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "note": "Apply once to scene group. Deliveries remain ungraded to avoid grading actors differently.",
+        "colorInterpolationFilters": "sRGB"
+      },
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2308860,
+          "sha256": "960ff16ec428f7f5e0df0feb38493de6f31b7c2d48089664054b3fc9ce18459d"
+        },
+        "wide.webp": {
+          "bytes": 4930930,
+          "sha256": "a6a3e61c09b7c6eed7b062f491c8018a6e0c5392106d751e4b4114000db66ce4"
+        }
+      }
     }
   }
 }
