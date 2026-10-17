@@ -1,4 +1,8 @@
 import './style.css';
+import {characterFrame,characterUrl} from './character-assets.ts';
+import poses from '../public/assets/characters-v1/poses-manifest.json' with {type:'json'};
+import {renderPrologueScene,type StorySprite} from './prologue-scene.ts';
+import {fitScene as fitProductionScene} from './production-camera.ts';
 import {positionAlongPath} from './character-animation.ts';
 import rutaManifest from '../public/assets/characters-v1/manifest.json' with {type:'json'};
 import {createGameAudio,type SoundEvent} from './audio.ts';
@@ -42,7 +46,7 @@ app.innerHTML = `
 <button id="undo" aria-label="Отменить последнее действие"><b>↩</b><span>Отменить</span></button>
 <button id="settings-open" aria-label="Настройки" aria-haspopup="dialog"><b>⚙</b><span>Настройки</span></button>
 </footer>
-<dialog id="prologue-panel" aria-labelledby="prologue-title"><div class="prologue-stage"><div class="prologue-world"><img id="prologue-background" src="${import.meta.env.BASE_URL}assets/chapter-1/v6/01-courtyard.png" alt=""><div id="prologue-actors"><img id="prologue-ruta" src="${import.meta.env.BASE_URL}assets/characters-v1/ruta-idle-pilot.png" alt="Рута"><img id="prologue-rabbit" src="${import.meta.env.BASE_URL}assets/prologue/rabbit.svg" alt="Кролик"><img id="prologue-basket" src="${import.meta.env.BASE_URL}assets/prologue/basket.svg" alt="Корзина яблок"><svg id="prologue-stones" viewBox="0 0 160 60" aria-label="Фиолетовые камни лежат в стороне"><path d="M5 38L25 19L54 25L63 46L30 56Z M70 25L90 8L113 15L117 35L90 42Z M121 48L134 30L151 34L158 49L139 58Z" fill="#8252a4" stroke="#4b315f" stroke-width="3"/><path d="M13 39L33 30L47 35M80 27L96 19L106 24M133 45L147 41" fill="none" stroke="#d3bfe8" stroke-width="3"/></svg></div></div></div><div class="prologue-paper"><img loading="lazy" id="prologue-portrait" class="ruta-portrait" src="${import.meta.env.BASE_URL}assets/characters-v1/ruta-portrait-pilot.png" alt="Рута"><div class="prologue-copy"><h2 id="prologue-title">Утро перед дорогой</h2><p id="prologue-speaker" class="eyebrow"></p><p id="prologue-text" aria-live="polite"></p></div><div class="prologue-actions"><button id="prologue-next" class="primary">Дальше →</button><button id="prologue-back">← Назад</button><button id="prologue-skip">Пропустить</button></div></div></dialog>
+<dialog id="prologue-panel" aria-labelledby="prologue-title"><div class="prologue-stage"><svg id="prologue-canvas" role="img" aria-label="Утро Руты перед дорогой"></svg></div><div class="prologue-paper"><img loading="lazy" id="prologue-portrait" class="ruta-portrait" src="${characterUrl('ruta-portrait-pilot.png')}" alt="Рута"><div class="prologue-copy"><h2 id="prologue-title">Утро перед дорогой</h2><p id="prologue-speaker" class="eyebrow"></p><p id="prologue-text" aria-live="polite"></p></div><div class="prologue-actions"><button id="prologue-next" class="primary">Дальше →</button><button id="prologue-back">← Назад</button><button id="prologue-skip">Пропустить</button></div></div></dialog>
 <dialog id="pause-panel"><div class="dialog-heading"><h2>Небольшой привал</h2><button id="pause-close" aria-label="Вернуться в игру">✕</button></div><div class="pause-actions"><button id="pause-continue" class="primary">Продолжить</button><button id="pause-map">Карта деревни</button><button id="pause-restart">Начать заново</button><button id="pause-prologue">Посмотреть начало</button><button id="pause-settings">Настройки</button></div></dialog>
 <dialog id="restart-dialog"><h2>Начать уровень заново?</h2><p>Плиты вернутся в набор. Пройденные дороги сохранятся.</p><button id="restart-cancel">Продолжить</button><button id="restart-confirm">Начать заново</button></dialog>
 <dialog id="completion-panel"><h2>Дорожка готова!</h2><img loading="lazy" class="completion-art" src="${import.meta.env.BASE_URL}assets/ui/v7/completion-gate.png" alt="Восстановленная дорожка к калитке"><p id="completion-text"></p><button id="next-level" class="primary">Следующее место →</button><button id="completion-map">На карту</button></dialog>
@@ -55,7 +59,7 @@ app.innerHTML = `
 <div class="settings-actions"><button id="map-return">На карту</button><button id="clear">Начать уровень заново</button><button id="story-replay">Реплики</button><button id="fullscreen" hidden>Полный экран</button></div>
 </dialog>
 <dialog id="story" aria-labelledby="story-title"><div class="story-layout">
-<img loading="lazy" id="story-ruta" class="ruta-portrait" src="${import.meta.env.BASE_URL}assets/characters-v1/ruta-portrait-pilot.png" alt="Рута" hidden><div class="story-copy"><p class="eyebrow"></p><h2 id="story-title" class="sr-only"></h2><p id="story-text"></p></div><div class="story-buttons"><button id="story-action" class="primary">В путь →</button><button id="story-skip">Пропустить</button></div></div></dialog>
+<img loading="lazy" id="story-ruta" class="ruta-portrait" src="${characterUrl('ruta-portrait-pilot.png')}" alt="Рута" hidden><div class="story-copy"><p class="eyebrow"></p><h2 id="story-title" class="sr-only"></h2><p id="story-text"></p></div><div class="story-buttons"><button id="story-action" class="primary">В путь →</button><button id="story-skip">Пропустить</button></div></div></dialog>
 <dialog id="help-panel" aria-labelledby="help-title"><h2 id="help-title">Проложи дорогу от дома до калитки</h2><p>Выбери плиту → клетку → «Поставить». Поворачивай плиты, чтобы они поместились. Когда дорога готова, нажми «Проверить».</p><button id="help-close">Понятно</button></dialog>
 <dialog id="reset-dialog" aria-labelledby="reset-title"><h2 id="reset-title">Начать главу заново?</h2><p>Все восемь дорог на карте снова исчезнут.</p><div class="settings-actions"><button id="reset-cancel">Оставить дороги</button><button id="reset-confirm">Да, начать заново</button></div></dialog>`;
 const $ = <T extends HTMLElement>(id: string) => document.getElementById(id) as T;
@@ -268,7 +272,7 @@ function goalMarker(){
  el('path',{d:`M ${size*.17} ${-size*.72} H ${size*.52} M ${size*.4} ${-size*.83} L ${size*.53} ${-size*.72} L ${size*.4} ${-size*.6}`,fill:'none',stroke:'#784995','stroke-width':2,'stroke-linecap':'round',transform:`rotate(${angle} ${size*.35} ${-size*.72})`},g);
 }
 function rutaImage(parent:Element,foot:{x:number;y:number},height:number,id?:string){
- const f=rutaManifest.characters.ruta.frames['idle-pilot'],scale=height/f.frameSize[1];
+ const f=characterFrame(rutaManifest.characters.ruta.frames['idle-pilot']),scale=height/f.frameSize[1];
  return el('image',{...(id?{id}:{}),href:`${import.meta.env.BASE_URL}assets/characters-v1/${f.image}`,x:foot.x-f.footAnchor[0]*scale,y:foot.y-f.footAnchor[1]*scale,width:f.frameSize[0]*scale,height,'aria-label':'Рута'},parent);
 }
 function prototypeRuta(){
@@ -639,39 +643,41 @@ $('next-level').onclick=()=>{($('completion-panel') as HTMLDialogElement).close(
 ($('completion-panel') as HTMLDialogElement).addEventListener('cancel',e=>{e.preventDefault();$('completion-map').click();});
 const prologue=$('prologue-panel') as HTMLDialogElement;
 prologue.dataset.storyId=PROLOGUE_ID;
-new ResizeObserver(()=>{
- const stage=prologue.querySelector<HTMLElement>('.prologue-stage')!,world=prologue.querySelector<HTMLElement>('.prologue-world')!;
- const fit=Math.min(stage.clientWidth/1672,stage.clientHeight/941);
- world.style.width=`${1672*fit}px`;world.style.height=`${941*fit}px`;
-}).observe(prologue.querySelector('.prologue-stage')!);
+let redrawPrologue:(()=>void)|null=null;
+new ResizeObserver(()=>{if(prologue.open)redrawPrologue?.();}).observe(prologue.querySelector('.prologue-stage')!);
 function showPrologue(replay:boolean,finish:()=>void){
  let index=replay?0:prologueState.frame;
  const write=()=>{if(!replay){prologueState={...prologueState,active:true,frame:index};storageAvailable=savePrologue(prologueState,storage)&&storageAvailable;}};
  const draw=()=>{
   const item=prologueFrames[index];prologue.dataset.frame=String(index);prologue.dataset.scene=item.scene;
-  ($('prologue-background') as HTMLImageElement).src=`${import.meta.env.BASE_URL}assets/chapter-1/v6/${item.scene==='orchard'?'02-orchard':'01-courtyard'}.png`;
   $('prologue-portrait').hidden=item.speaker!=='Рута';$('prologue-speaker').textContent=item.speaker;$('prologue-text').textContent=item.text;
-  $('prologue-ruta').removeAttribute('style');$('prologue-basket').removeAttribute('style');
-  if(index===5){
-   const sourceFoot=scenePoint('gate',levels[0].start),foot={x:sourceFoot.x/1672,y:sourceFoot.y/941},height=136,width=height*463/970;
-   $('prologue-ruta').style.cssText=`left:${(foot.x-width*245/463/1672)*100}%;top:${(foot.y-height*958/970/941)*100}%;height:${height/941*100}%;bottom:auto`;
-   $('prologue-basket').style.cssText=`left:${(foot.x+.018)*100}%;bottom:${(1-foot.y-.01)*100}%;width:4%`;
-  }
-  $('prologue-ruta').hidden=item.scene==='orchard';$('prologue-rabbit').hidden=item.scene!=='orchard';
-  $('prologue-basket').hidden=item.scene==='orchard';$('prologue-stones').toggleAttribute('hidden',index<3||index===5);
+  const sceneId=item.scene==='orchard'?'garden':'gate',storyLevel=levels.find(l=>l.id===sceneId)!;
+  const canvas=$('prologue-canvas') as unknown as SVGSVGElement,stage=prologue.querySelector<HTMLElement>('.prologue-stage')!;
+  canvas.setAttribute('viewBox',`0 0 ${stage.clientWidth} ${stage.clientHeight}`);
+  let scene=fitProductionScene(sceneId,stage.clientWidth,stage.clientHeight);
+  const crop=index===1?[250,230,836,470]:index===2?[900,120,700,480]:index===3||index===4?[350,250,836,470]:null;
+  if(crop){const fit=Math.min(stage.clientWidth/crop[2],stage.clientHeight/crop[3]),offset={x:(stage.clientWidth-crop[2]*fit)/2-crop[0]*fit,y:(stage.clientHeight-crop[3]*fit)/2-crop[1]*fit},camera=scene.metadata.camera;scene={...scene,fit,offset,radius:camera.radius*fit,translation:{x:offset.x+camera.origin.x*fit,y:offset.y+camera.origin.y*fit}};}
+  const startFoot=scenePoint('gate',levels[0].start),looseFoot=scenePoint('gate',{q:3,r:3});
+  const poseId=(['ruta-basket','ruta-adjust-satchel','rabbit-baking','ruta-surprised','ruta-crouch-basket'] as const)[index];
+  const sprites:StorySprite[]=[];
+  if(index<5){const pose=poses.frames[poseId];sprites.push({file:pose.image,frameSize:pose.frameSize,footAnchor:pose.footAnchor,height:pose.sceneHeightPx,position:index===2?scenePoint('garden',storyLevel.goal):index===4?looseFoot:startFoot,label:index===2?'Кролик готовит пирог':'Рута'});}
+  else{const idle=rutaManifest.characters.ruta.frames['idle-pilot'];sprites.push({file:idle.image,frameSize:idle.frameSize,footAnchor:idle.footAnchor,height:136,position:startFoot,label:'Рута'});const basket=poses.frames['basket-ground'];sprites.push({file:basket.image,frameSize:basket.frameSize,footAnchor:basket.footAnchor,height:basket.sceneHeightPx,position:{x:startFoot.x+42,y:startFoot.y+12},label:'Корзина яблок',shadow:false});}
+  const hand=poses.frames['ruta-crouch-basket'].props.reachingHandAnchor,crouch=poses.frames['ruta-crouch-basket'];
+  const stone={x:looseFoot.x+(hand[0]-crouch.footAnchor[0])*crouch.scale,y:looseFoot.y+(hand[1]-crouch.footAnchor[1])*crouch.scale};
+  void renderPrologueScene(canvas,scene,storyLevel,sprites,index<2,index===3?[stone,{x:stone.x+30,y:stone.y+14},{x:stone.x-16,y:stone.y+27}]:index===4?[stone]:[]);
   ($('prologue-back') as HTMLButtonElement).disabled=index===0;
   $('prologue-next').textContent=index===prologueFrames.length-1?(replay?(screen==='game'?'Вернуться в игру':'Вернуться в меню'):'К калитке →'):'Дальше →';
   write();
  };
  const close=()=>{
   if(!replay){prologueState={seen:true,frame:0,active:false};storageAvailable=savePrologue(prologueState,storage)&&storageAvailable;}
-  prologue.close();finish();syncAudioScene();
+  redrawPrologue=null;prologue.close();finish();syncAudioScene();
  };
  $('prologue-next').onclick=()=>{if(index===prologueFrames.length-1)close();else{index++;draw();}};
  $('prologue-back').onclick=()=>{if(index>0){index--;draw();}};
  $('prologue-skip').onclick=close;
  prologue.oncancel=e=>{e.preventDefault();close();};
- draw();prologue.showModal();syncAudioScene();
+ redrawPrologue=draw;draw();prologue.showModal();syncAudioScene();
 }
 $('prologue-replay').onclick=()=>showPrologue(true,()=>{});
 $('pause-prologue').onclick=()=>{pause.close();showPrologue(true,()=>{});};

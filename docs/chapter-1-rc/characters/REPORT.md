@@ -26,3 +26,5 @@ Node v24.15.0: 55/55 tests проходят, включая 4 новых сод�
 ## Review decision 2026-10-17
 
 Maksim explicitly accepted the pilot appearance in chat: «Принять внешность пилотной Руты». This approves appearance for subsequent poses and walking. Frame stability, foot anchors, six directions, rig/cycle and in-game motion remain separate pending checks. No production walking is implied.
+
+Maksim explicitly authorized all six residents/portraits and acting poses for the integration review build: «Включить комплект в игровое ревью». No main merge or publication is authorized.
