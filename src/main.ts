@@ -43,7 +43,7 @@ app.innerHTML = `
 <section id="main-menu"><div class="menu-paper"><h2>Рубиновая деревня</h2><p>За калитку · первая глава</p><button id="continue-game" class="primary">Начать приключение</button><button id="prologue-replay">Посмотреть начало</button><button id="choose-level">Выбрать уровень</button><button id="main-settings">Настройки</button><p id="menu-progress"></p><p id="menu-save-status" role="status"></p></div></section>
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
-<div class="map-landscape"><div id="map-world"><img loading="lazy" id="map-background" src="${import.meta.env.BASE_URL}assets/chapter-map-v2/${mapPaint.layers.base}" alt=""><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div></div>
+<div class="map-landscape"><img id="map-wide" loading="lazy" src="${import.meta.env.BASE_URL}${mapPaint.wide.file}" alt=""><div id="map-world"><img loading="lazy" id="map-background" src="${import.meta.env.BASE_URL}assets/chapter-map-v2/${mapPaint.layers.base}" alt=""><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div></div>
 <div class="map-actions"><button id="home-menu">⌂ Меню</button><button id="map-more">Ещё…</button><span id="save-status" role="status"></span></div><dialog id="map-extra"><div class="dialog-heading"><h2>Приключение</h2><button id="map-extra-close" aria-label="Закрыть">✕</button></div><div class="pause-actions"><button id="sandbox-open">Песочница</button><button id="chapter-ending" hidden>✦ Письма через лес</button><button id="letter-open" hidden>✉ Приглашение</button><button id="reset-open">Начать главу заново</button></div></dialog>
 </section>
 <main id="field"><svg id="board" role="group" aria-label="Гексагональное поле. Деревня слева, мельница справа"></svg></main>
@@ -112,6 +112,8 @@ let learningRotated=false;
 let selected: string | null = null, anchor: Hex | null = null, turns = 0;
 // Once clicked, keep the destination while the pointer travels to the controls.
 let anchorPinned = false;
+// Only an invalid, released board drop may auto-confirm after rotation.
+let releasedInvalidDrop = false;
 let mode = preferences.mode as string, path = new Set<string>();
 ($('mode') as HTMLSelectElement).value=mode;
 let projection:Projection={scale:GROUND_SCALE,pivotY:0};
@@ -121,7 +123,7 @@ const v6Preview=true;
 const groundPoint=(x:number,y:number)=>{const p=project({x,y},projection);return {x:p.x+groundOffset.x,y:p.y+groundOffset.y};};
 let verticalRadius=13,horizontalRadius=17;
 let radius = 20, origin = {x:0,y:0};
-let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number; beforePinned: boolean; toggleOnTap: boolean} | null = null;
+let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number; beforePinned: boolean; beforeReleasedInvalid: boolean; toggleOnTap: boolean} | null = null;
 let suppressClick = false, deferDock = false, dockFrame = 0;
 // The dock changes under a released pointer. Consume its synthetic click so it
 // cannot activate a different button; the next real gesture starts afresh.
@@ -146,9 +148,10 @@ function message(text: string) { if(/не помещается/.test(text))void 
 function endpoints() { return [level.start,level.goal]; }
 function previewValid() { return !!(selected && anchor && validPlacement(level,selected,{anchor,turns},layout)); }
 function snapshot() { history.push(structuredClone(layout)); path.clear(); }
-function resetSelection() { selected=null; anchor=null; turns=0; anchorPinned=false; }
+function resetSelection() { selected=null; anchor=null; turns=0; anchorPinned=false; releasedInvalidDrop=false; }
 function select(id: string) {
   void gameAudio.play('tile-select');
+  releasedInvalidDrop=false;
   selected=id; anchor=layout[id]?.anchor ?? null; turns=layout[id]?.turns ?? 0; anchorPinned=!!layout[id]; path.clear();
   message(`${pieceById(id).name}: ${mode === 'select' ? 'выбери клетку и нажми «Поставить».' : 'перетащи на поле. Можно повернуть кнопками.'}`);
 }
@@ -379,7 +382,8 @@ function startDrag(e: PointerEvent,id: string) {
   // Tray permits horizontal pans; lifting a piece starts a drag on the board.
   const toggleOnTap=selected===id&&!!(e.target as Element).closest('#tray');
   if(selected!==id) select(id);
-  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns,beforePinned:anchorPinned,toggleOnTap};
+  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns,beforePinned:anchorPinned,beforeReleasedInvalid:releasedInvalidDrop,toggleOnTap};
+  releasedInvalidDrop=false;
   app.setPointerCapture(e.pointerId);updateTraySelection();updateControls();renderBoard();
 }
 $('selected-drag').addEventListener('pointerdown',e=>{if(selected)startDrag(e,selected);});
@@ -407,6 +411,7 @@ function finishDrag(e: PointerEvent,cancel: boolean) {
   const destination=eventHex(e,true);
   const next=releasePreview({selected,anchor,turns,pinned:anchorPinned},{selected,anchor:previous.beforeAnchor,turns:previous.beforeTurns,pinned:previous.beforePinned},destination,cancel,previous.moved);
   selected=next.selected;anchor=next.anchor;turns=next.turns;anchorPinned=next.pinned;
+  releasedInvalidDrop=cancel||!previous.moved?previous.beforeReleasedInvalid:!!destination&&!previewValid();
   if(!cancel && previous.moved) {
     // Releasing outside the board keeps the last preview, but never commits it.
     if(destination&&commit())return;
@@ -419,7 +424,9 @@ function finishDrag(e: PointerEvent,cancel: boolean) {
 app.addEventListener('pointerup',e=>finishDrag(e,false));
 app.addEventListener('pointercancel',e=>finishDrag(e,true));
 app.addEventListener('lostpointercapture',e=>{if(drag) finishDrag(e,true);});
-for(const [id,delta] of [['left',-1],['right',1]] as const) $(id).onclick=()=>{if(selected){turns=(turns+delta+6)%6;learningRotated=true;void gameAudio.play('tile-rotate');render();}};
+for(const [id,delta] of [['left',-1],['right',1]] as const) $(id).onclick=()=>{if(selected){turns=(turns+delta+6)%6;learningRotated=true;void gameAudio.play('tile-rotate');
+  if(mode==='drag'&&!drag&&releasedInvalidDrop&&commit())return;
+  render();}};
 $('place').onclick=commit;
 $('other').onclick=()=>{const placed=!!(selected&&layout[selected]);resetSelection();message(placed?'Перенос отменён. Плита на прежнем месте.':'Размещение отменено. Плита в наборе.');render();};
 const settings=$('settings-panel') as HTMLDialogElement;
@@ -604,6 +611,9 @@ function mapGeometry(){
  const points=new Map(mapPaint.nodes.map(node=>[node.id,node.anchor]));
  const area=document.querySelector<HTMLElement>('.map-landscape')!,bounds={width:area.clientWidth,height:area.clientHeight},fit=Math.min(bounds.width/1000,bounds.height/400);
  $('map-world').style.cssText=`width:${1000*fit}px;height:${400*fit}px;left:${(bounds.width-1000*fit)/2}px;top:${(bounds.height-400*fit)/2}px`;
+ const wide=mapPaint.wide;
+ $('map-wide').style.cssText=`position:absolute;pointer-events:none;max-width:none;width:${wide.canvas.width*fit}px;height:${wide.canvas.height*fit}px;left:${(bounds.width-1000*fit)/2-wide.originalRect.x*fit}px;top:${(bounds.height-400*fit)/2-wide.originalRect.y*fit}px`;
+
  const roads=$('map-roads');
  const entries=chapterMap(completed);
  renderMapTrails(roads as unknown as SVGElement,new Set(entries.filter(item=>item.connectionRestored).map(item=>item.id)));
