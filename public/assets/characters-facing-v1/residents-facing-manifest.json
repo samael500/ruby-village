@@ -131,6 +131,79 @@
         "mirrorAllowed": false,
         "worldFeet": "retain-caller-placement"
       }
+    },
+    "hedgehog": {
+      "speaker": "Ёж",
+      "nativeHeightPx": 844,
+      "sceneHeightPx": 74,
+      "scale": 0.08767772511848342,
+      "frames": {
+        "conversation-left": {
+          "image": "residents/hedgehog-conversation-left.png",
+          "source": "art/characters-facing-v1/hedgehog-left-source-v1.png",
+          "sourceRect": [
+            0,
+            0,
+            647,
+            844
+          ],
+          "frameSize": [
+            647,
+            844
+          ],
+          "footAnchor": [
+            319,
+            840
+          ],
+          "facing": "left",
+          "mirrored": false
+        }
+      },
+      "policy": {
+        "idle": "retain-approved-characters-v1-idle",
+        "conversation": "choose-on-encounter-not-per-frame",
+        "productionApproved": false
+      },
+      "packing": {
+        "sourceSize": [
+          1091,
+          1442
+        ],
+        "measuredAlphaBBox": [
+          30,
+          6,
+          1079,
+          1403
+        ],
+        "uniformResizeHeight": 832,
+        "packedOffset": [
+          18,
+          8
+        ],
+        "alphaPreserved": true
+      },
+      "activity": [
+        {
+          "scene": "post",
+          "focus": "postal-work",
+          "idleFacing": "right",
+          "idleAsset": "characters-v1/residents/hedgehog-idle.png"
+        }
+      ],
+      "meeting": {
+        "availableAuthoredFacings": [
+          "right",
+          "left"
+        ],
+        "conversationFrame": "conversation-left",
+        "selectOn": [
+          "encounter",
+          "dialogue-entry"
+        ],
+        "continuousTracking": false,
+        "mirrorAllowed": false,
+        "worldFeet": "retain-caller-placement"
+      }
     }
   },
   "packing": {

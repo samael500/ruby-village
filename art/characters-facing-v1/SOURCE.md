@@ -15,3 +15,5 @@ Pilot status is deliberately pending coordinator's actual-scene comparison. Do n
 - `rabbit-ear-correction-prompt.txt`: targeted ears-only correction of second returned output.
 
 Teacher: `teacher-left-prompt.txt`, original approved idle reference, returned whole `teacher-left-source-v1.png`; new physical left-facing view, book/can ownership preserved. Packed by `export-residents.py`. This generalized exporter may extend frame and pixel footAnchor together when a new silhouette needs more room; this preserves caller's world foot position and scale and never crops an arm/prop to force old pixel width. Height and foot baseline remain canonical.
+
+Hedgehog: builtin imagegen from approved idle, prompt/source `hedgehog-left-*`; no flip, preserved satchel/letter ownership and one strap. Cap tilt varies naturally. Source whole RGBA retained, technical packing only.
