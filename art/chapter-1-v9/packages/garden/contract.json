@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "garden",
+  "status": "awaiting-pilot-acceptance",
+  "canvas": {
+    "width": 1672,
+    "height": 941,
+    "origin": [
+      0,
+      0
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  "source": "docs/blender-chapter-1/layouts/engine/garden.json",
+  "sourceSha256": "1343f2bca0299693d5ffc8ceb1a242a812532c30117bdbba4d000cbfa12ff79a",
+  "camera": {
+    "radius": 66,
+    "origin": {
+      "x": 180,
+      "y": 315
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "start": {
+    "q": -1,
+    "r": 6,
+    "name": "Калитка",
+    "pixel": {
+      "x": 408.6307065990918,
+      "y": 701.1
+    }
+  },
+  "goal": {
+    "q": 9,
+    "r": 1,
+    "name": "Стол",
+    "pixel": {
+      "x": 1265.995856345686,
+      "y": 379.35
+    }
+  },
+  "layers": {
+    "background": "opaque canvas; no characters/UI/grid/solution",
+    "foreground": "RGBA same canvas/crop; no free-hex occlusion",
+    "gateClosed": null,
+    "gateOpen": null,
+    "water": null,
+    "wheel": null
+  },
+  "rules": [
+    "Preserve every full free polygon, not only cell center",
+    "Blockers require meaningful decoration across their whole footprints",
+    "Shared transform for every image, geometry and character feet",
+    "No production activation until art acceptance and matching game data integration"
+  ]
+}

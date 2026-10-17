@@ -1,0 +1,23 @@
+{
+  "schemaVersion": 1,
+  "version": "ruta-pilot-2026-10-17",
+  "status": "pilot-awaiting-art-review",
+  "sceneSize": [1672, 941],
+  "camera": "scene-projection-v8; direction from projected path vectors",
+  "origin": "New built-in imagegen identity-preserving pilot, not recovered archive",
+  "characters": {
+    "ruta": {
+      "reference": "../level-1/v4/ruta-idle.png",
+      "nativeHeightPx": 970,
+      "sceneHeightPx": 136,
+      "scale": 0.1402061856,
+      "frames": {
+        "idle-pilot": {"image": "ruta-idle-pilot.png", "sourceRect": [0,0,463,970], "frameSize": [463,970], "footAnchor": [245,958], "anchorStatus": "manual-pilot-needs-scene-review"},
+        "portrait-pilot": {"image": "ruta-portrait-pilot.png", "sourceRect": [0,0,687,840], "frameSize": [687,840], "footAnchor": null},
+        "back-study": {"image": "ruta-back-study.png", "sourceRect": [0,0,326,890], "frameSize": [326,890], "footAnchor": [163,880], "status": "design-study-not-production-pose"}
+      },
+      "clips": {},
+      "animationContract": {"directions": ["e","se","sw","w","nw","ne"], "directionSpace": "screen", "durationUnit": "ms", "loop": "per-clip boolean", "contactEvent": "foot-contact", "surfaces": ["earth","stone","wood"], "asymmetricMirroring": false}
+    }
+  }
+}
