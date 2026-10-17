@@ -13,3 +13,5 @@ Prompt history:
 Pilot status is deliberately pending coordinator's actual-scene comparison. Do not generate the remaining five residents before reviewing this in the garden alongside Ruta. The intended runtime policy is choose an authored facing on encounter/dialogue entry and preserve it during the conversation; idle returns toward activity, without per-frame tracking. Runtime code and existing resident presence belong to coordinator.
 
 - `rabbit-ear-correction-prompt.txt`: targeted ears-only correction of second returned output.
+
+Teacher: `teacher-left-prompt.txt`, original approved idle reference, returned whole `teacher-left-source-v1.png`; new physical left-facing view, book/can ownership preserved. Packed by `export-residents.py`. This generalized exporter may extend frame and pixel footAnchor together when a new silhouette needs more room; this preserves caller's world foot position and scale and never crops an arm/prop to force old pixel width. Height and foot baseline remain canonical.

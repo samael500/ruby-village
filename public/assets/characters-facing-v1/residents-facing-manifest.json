@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "version": "residents-facing-pilot-v1",
-  "status": "pilot-awaiting-actual-scene-review",
+  "status": "authored-views-awaiting-actual-scene-review",
   "baseManifest": "characters-v1/residents-manifest.json",
   "characters": {
     "rabbit": {
@@ -35,6 +35,101 @@
         "idle": "retain-approved-characters-v1-idle",
         "conversation": "choose-on-encounter-not-per-frame",
         "productionApproved": false
+      },
+      "activity": [
+        {
+          "scene": "garden",
+          "focus": "garden-table",
+          "idleFacing": "right",
+          "idleAsset": "characters-v1/residents/rabbit-idle.png"
+        }
+      ],
+      "meeting": {
+        "availableAuthoredFacings": [
+          "right",
+          "left"
+        ],
+        "conversationFrame": "conversation-left",
+        "selectOn": [
+          "encounter",
+          "dialogue-entry"
+        ],
+        "continuousTracking": false,
+        "mirrorAllowed": false,
+        "worldFeet": "retain-caller-placement"
+      }
+    },
+    "teacher": {
+      "speaker": "Учительница",
+      "nativeHeightPx": 1008,
+      "sceneHeightPx": 174,
+      "scale": 0.17261904761904762,
+      "frames": {
+        "conversation-left": {
+          "image": "residents/teacher-conversation-left.png",
+          "source": "art/characters-facing-v1/teacher-left-source-v1.png",
+          "sourceRect": [
+            0,
+            0,
+            532,
+            1008
+          ],
+          "frameSize": [
+            532,
+            1008
+          ],
+          "footAnchor": [
+            239,
+            1004
+          ],
+          "facing": "left",
+          "mirrored": false
+        }
+      },
+      "policy": {
+        "idle": "retain-approved-characters-v1-idle",
+        "conversation": "choose-on-encounter-not-per-frame",
+        "productionApproved": false
+      },
+      "packing": {
+        "sourceSize": [
+          902,
+          1743
+        ],
+        "measuredAlphaBBox": [
+          8,
+          12,
+          901,
+          1737
+        ],
+        "uniformResizeHeight": 996,
+        "packedOffset": [
+          12,
+          8
+        ],
+        "alphaPreserved": true
+      },
+      "activity": [
+        {
+          "scene": "well",
+          "focus": "well-and-flowerbed",
+          "idleFacing": "right",
+          "idleAsset": "characters-v1/residents/teacher-idle.png"
+        }
+      ],
+      "meeting": {
+        "availableAuthoredFacings": [
+          "right",
+          "left"
+        ],
+        "conversationFrame": "conversation-left",
+        "selectOn": [
+          "encounter",
+          "dialogue-entry"
+        ],
+        "continuousTracking": false,
+        "mirrorAllowed": false,
+        "worldFeet": "retain-caller-placement"
       }
     }
   },
