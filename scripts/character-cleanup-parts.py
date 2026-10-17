@@ -67,6 +67,11 @@ for di,parts in TRIMS.items():
 CAPS={'e':{'thigh.L':([180,202],[13,12],197),'thigh.R':([142,203],[14,13],199)},'w':{'thigh.L':([146,201],[14,12],194),'thigh.R':([185,197],[14,11],191)}}
 for di,parts in CAPS.items():
  for name,(center,radii,fromY) in parts.items():CONFIG[di]['parts'][name]['roundKneeCap']={'center':center,'radii':radii,'fromY':fromY}
+# Proximal shin caps take the existing knee paint above the joint into a round
+# overlap instead of retaining a rigid flat/pointed cut at the top of the calf.
+TOPCAPS={'e':{'shin.L':([180,209],[14,12]),'shin.R':([140,211],[15,13])},'w':{'shin.L':([146,203],[14,12]),'shin.R':([185,200],[14,12])}}
+for di,parts in TOPCAPS.items():
+ for name,(center,radii) in parts.items():CONFIG[di]['parts'][name]['roundShinTop']={'center':center,'radii':radii}
 font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',15)
 for direction in sys.argv[1:] or list(CONFIG):
  c=CONFIG[direction];p=SOURCE/f'{direction}-01.png';original=p.read_bytes();im=Image.open(p).convert('RGBA');assert im.size==(320,320);dest=OUT/direction;dest.mkdir(exist_ok=True)
@@ -80,6 +85,8 @@ for direction in sys.argv[1:] or list(CONFIG):
    band=Image.new('L',im.size);ImageDraw.Draw(band).rectangle((0,part['clipY'][0],319,part['clipY'][1]),fill=255);mask=ImageChops.multiply(mask,band)
   if 'roundKneeCap' in part:
    cap=part['roundKneeCap'];cx,cy=cap['center'];rx,ry=cap['radii'];shape=Image.new('L',im.size);draw=ImageDraw.Draw(shape);draw.rectangle((0,0,319,cap['fromY']-1),fill=255);draw.ellipse((cx-rx,cy-ry,cx+rx,cy+ry),fill=255);mask=ImageChops.multiply(mask,shape)
+  if 'roundShinTop' in part:
+   cap=part['roundShinTop'];cx,cy=cap['center'];rx,ry=cap['radii'];lower=mask.copy();ImageDraw.Draw(lower).rectangle((0,0,319,cy),fill=0);upper=Image.new('L',im.size);draw=ImageDraw.Draw(upper);draw.ellipse((cx-rx,cy-ry,cx+rx,cy+ry),fill=255);draw.rectangle((0,cy+1,319,319),fill=0);mask=ImageChops.lighter(lower,upper)
   partSource=SOURCE/f"{direction}-{part.get('sourceFrame','01')}.png";paint=Image.open(partSource).convert('RGBA')
   piece=paint.copy();piece.putalpha(ImageChops.multiply(paint.getchannel('A'),mask))
   if 'sourceA' in part:
@@ -87,7 +94,7 @@ for direction in sys.argv[1:] or list(CONFIG):
    inv=(cs/det,sn/det,(-cs*dx-sn*dy)/det,-sn/det,cs/det,(sn*dx-cs*dy)/det)
    piece=piece.convert('RGBa').transform((320,320),Image.Transform.AFFINE,inv,resample=Image.Resampling.BICUBIC).convert('RGBA')
   piece.save(dest/f'{name}.png');pieces.append((name,piece,part))
-  manifest['parts'][name]={'file':name+'.png','bone':name,'a':part['a'],'b':part['b'],'z':part['z'],'textureSource':str(partSource.relative_to(R)),'sourceA':part.get('sourceA',part['a']),'sourceB':part.get('sourceB',part['b']),'sourceClipY':part.get('clipY',[0,319]),'textureSha256':hashlib.sha256(partSource.read_bytes()).hexdigest(),'roundKneeCap':part.get('roundKneeCap')}
+  manifest['parts'][name]={'file':name+'.png','bone':name,'a':part['a'],'b':part['b'],'z':part['z'],'textureSource':str(partSource.relative_to(R)),'sourceA':part.get('sourceA',part['a']),'sourceB':part.get('sourceB',part['b']),'sourceClipY':part.get('clipY',[0,319]),'textureSha256':hashlib.sha256(partSource.read_bytes()).hexdigest(),'roundKneeCap':part.get('roundKneeCap'),'roundShinTop':part.get('roundShinTop')}
  (dest/'parts.json').write_text(json.dumps(manifest,indent=2)+'\n')
  composite=Image.new('RGBA',im.size)
  for _,piece,_ in sorted(pieces,key=lambda x:x[2]['z']):composite.alpha_composite(piece)

@@ -61,7 +61,8 @@
           12
         ],
         "fromY": 194
-      }
+      },
+      "roundShinTop": null
     },
     "shin.L": {
       "file": "shin.L.png",
@@ -89,7 +90,17 @@
         319
       ],
       "textureSha256": "7fd7fa1921a48893b3ebd098031e286915200222ffb03bab537f8374c1d10db0",
-      "roundKneeCap": null
+      "roundKneeCap": null,
+      "roundShinTop": {
+        "center": [
+          146,
+          203
+        ],
+        "radii": [
+          14,
+          12
+        ]
+      }
     },
     "foot.L": {
       "file": "foot.L.png",
@@ -117,7 +128,8 @@
         319
       ],
       "textureSha256": "7fd7fa1921a48893b3ebd098031e286915200222ffb03bab537f8374c1d10db0",
-      "roundKneeCap": null
+      "roundKneeCap": null,
+      "roundShinTop": null
     },
     "thigh.R": {
       "file": "thigh.R.png",
@@ -155,7 +167,8 @@
           11
         ],
         "fromY": 191
-      }
+      },
+      "roundShinTop": null
     },
     "shin.R": {
       "file": "shin.R.png",
@@ -183,7 +196,17 @@
         319
       ],
       "textureSha256": "7fd7fa1921a48893b3ebd098031e286915200222ffb03bab537f8374c1d10db0",
-      "roundKneeCap": null
+      "roundKneeCap": null,
+      "roundShinTop": {
+        "center": [
+          185,
+          200
+        ],
+        "radii": [
+          14,
+          12
+        ]
+      }
     },
     "foot.R": {
       "file": "foot.R.png",
@@ -211,7 +234,8 @@
         319
       ],
       "textureSha256": "7fd7fa1921a48893b3ebd098031e286915200222ffb03bab537f8374c1d10db0",
-      "roundKneeCap": null
+      "roundKneeCap": null,
+      "roundShinTop": null
     }
   }
 }
