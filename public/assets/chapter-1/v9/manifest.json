@@ -126,7 +126,13 @@
           "y": 456.5
         }
       },
-      "semanticAnchors": {},
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1195,
+          "y": 405,
+          "status": "coordinator-native-alpha-clearance-passed-visual-candidate"
+        }
+      },
       "checks": {
         "fullPolygonVisualAudit": "pending"
       },
@@ -172,8 +178,8 @@
       }
     },
     "stream": {
-      "status": "geometry-failed-correction-in-progress",
-      "background": "stream/background.webp",
+      "status": "exact-water-mask-passed-bank-art-review-pending",
+      "background": "stream/background-exact-water.webp",
       "foreground": null,
       "wide": null,
       "wideStatus": "pending-outpaint",
@@ -207,12 +213,15 @@
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "failed-water-location"
-      }
+        "fullPolygonVisualAudit": "native-water-mask-passed-shore-finish-pending",
+        "waterReport": "art/chapter-1-v9/layers/water/checks.json"
+      },
+      "dryBackground": "stream/dry-background.webp",
+      "water": "stream/water.webp"
     },
     "mill": {
-      "status": "geometry-failed-correction-in-progress",
-      "background": "mill/background.webp",
+      "status": "exact-water-mask-passed-bank-art-review-pending",
+      "background": "mill/background-exact-water.webp",
       "foreground": null,
       "wide": null,
       "wideStatus": "pending-outpaint",
@@ -243,11 +252,19 @@
           "x": 1430,
           "y": 398,
           "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        },
+        "secondResidentFeet": {
+          "x": 1330,
+          "y": 405,
+          "status": "coordinator-native-alpha-clearance-passed-visual-candidate"
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "failed-water-location"
-      }
+        "fullPolygonVisualAudit": "native-water-mask-passed-shore-finish-pending",
+        "waterReport": "art/chapter-1-v9/layers/water/checks.json"
+      },
+      "dryBackground": "mill/dry-background.webp",
+      "water": "mill/water.webp"
     },
     "post": {
       "status": "style-approved-geometry-pending",
