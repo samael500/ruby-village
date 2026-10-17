@@ -1,0 +1,5 @@
+# Residents restored in current runtime
+
+The inactive final-art gate had also hidden the resident layer in production layout1. Current residents now use explicit legacy anchors, separately from future v9 semantic anchors. Teacher moved to1225,405 after original candidate overlapped544 playable pixels. Seven optimized resident alphas now overlap zero ground/water full playable polygons; source audit retained.
+
+Twelve real Chromium scene/viewport runs cover garden/well/bakery/stream/mill/post at1280×720 and844×390, including dialog, puzzle, story replay, reload and result. Only progress was seeded to open each scene; every solution was placed with real tray/rotate/cell/place/check input. Reduced motion is enabled for these focused visibility checks. Mill includes both Miller and Squirrel. Screenshots are actual current layout1 scenes, not final art approval. Final v9 activation must repeat grounding and visible-layer checks. Physical phone/family/listening not run. These are author checks; independent acceptance follows final integration.

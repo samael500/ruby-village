@@ -4,6 +4,15 @@ import type {fitScene} from './scene-camera.ts';
 type Resident=keyof typeof residents.characters;
 export type ResidentPlacement={id:Resident;feet:{x:number;y:number}};
 export const sceneResidents:Readonly<Record<string,readonly Resident[]>>={garden:['rabbit'],well:['teacher'],bakery:['baker'],stream:['squirrel'],mill:['miller','squirrel'],post:['hedgehog']};
+/** Audited legacy anchors keep residents visible while matching final art is staged. */
+export const legacyResidentPlacements:Readonly<Record<string,readonly ResidentPlacement[]>>={
+ garden:[{id:'rabbit',feet:{x:1280,y:245}}],
+ well:[{id:'teacher',feet:{x:1225,y:405}}],
+ bakery:[{id:'baker',feet:{x:1290,y:405}}],
+ stream:[{id:'squirrel',feet:{x:1400,y:225}}],
+ mill:[{id:'miller',feet:{x:1430,y:398}},{id:'squirrel',feet:{x:1330,y:405}}],
+ post:[{id:'hedgehog',feet:{x:1370,y:405}}],
+};
 const ns='http://www.w3.org/2000/svg';
 function node(tag:string,attrs:Record<string,string|number>,parent:Element){const element=document.createElementNS(ns,tag);for(const [k,v]of Object.entries(attrs))element.setAttribute(k,String(v));parent.append(element);return element;}
 
