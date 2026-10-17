@@ -2,6 +2,7 @@ import './style.css';
 import {activateTouchRelease} from './touch-button.ts';
 import {restoredScene,narrativePresentation} from './scene-presentation.ts';
 import {renderMapTrails} from './map-trails.ts';
+import mapPaint from '../public/assets/chapter-map-v2/manifest.json' with {type:'json'};
 import {drawBridge} from './bridge-art.ts';
 import {renderResidents,sceneResidents,legacyResidentPlacements,type ResidentPlacement} from './resident-scene.ts';
 import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
@@ -42,7 +43,7 @@ app.innerHTML = `
 <section id="main-menu"><div class="menu-paper"><h2>Рубиновая деревня</h2><p>За калитку · первая глава</p><button id="continue-game" class="primary">Начать приключение</button><button id="prologue-replay">Посмотреть начало</button><button id="choose-level">Выбрать уровень</button><button id="main-settings">Настройки</button><p id="menu-progress"></p><p id="menu-save-status" role="status"></p></div></section>
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
-<div class="map-landscape"><div id="map-world"><img loading="lazy" id="map-background" src="${import.meta.env.BASE_URL}assets/chapter-map-v1/chapter-map-candidate.webp" alt=""><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div></div>
+<div class="map-landscape"><div id="map-world"><img loading="lazy" id="map-background" src="${import.meta.env.BASE_URL}assets/chapter-map-v2/${mapPaint.layers.base}" alt=""><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div></div>
 <div class="map-actions"><button id="home-menu">⌂ Меню</button><button id="map-more">Ещё…</button><span id="save-status" role="status"></span></div><dialog id="map-extra"><div class="dialog-heading"><h2>Приключение</h2><button id="map-extra-close" aria-label="Закрыть">✕</button></div><div class="pause-actions"><button id="sandbox-open">Песочница</button><button id="chapter-ending" hidden>✦ Письма через лес</button><button id="letter-open" hidden>✉ Приглашение</button><button id="reset-open">Начать главу заново</button></div></dialog>
 </section>
 <main id="field"><svg id="board" role="group" aria-label="Гексагональное поле. Деревня слева, мельница справа"></svg></main>
@@ -600,14 +601,14 @@ function enterLevel(next:Level,resume:Session|null=null) {
   $('clear').hidden=false;$('map-return').hidden=false;$('story-replay').hidden=level.id==='sandbox';$('metric').hidden=false;$('hint').hidden=false;
 }
 function mapGeometry(){
- const points=[[120,95],[365,95],[610,95],[855,95],[855,300],[610,300],[365,300],[120,300]];
+ const points=new Map(mapPaint.nodes.map(node=>[node.id,node.anchor]));
  const area=document.querySelector<HTMLElement>('.map-landscape')!,bounds={width:area.clientWidth,height:area.clientHeight},fit=Math.min(bounds.width/1000,bounds.height/400);
  $('map-world').style.cssText=`width:${1000*fit}px;height:${400*fit}px;left:${(bounds.width-1000*fit)/2}px;top:${(bounds.height-400*fit)/2}px`;
  const roads=$('map-roads');
  const entries=chapterMap(completed);
  renderMapTrails(roads as unknown as SVGElement,new Set(entries.filter(item=>item.connectionRestored).map(item=>item.id)));
  entries.forEach((item,i)=>{
-  const [x,y]=points[i];
+  const [x,y]=points.get(item.id)!;
   const node=document.querySelector<HTMLElement>(`[data-map-node="${item.id}"]`);
   if(node){node.style.left=`${x/10}%`;node.style.top=`${y/4}%`;}
  });
