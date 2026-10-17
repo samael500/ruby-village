@@ -1,0 +1,112 @@
+{
+  "status": "alpha-verified-by-compositing",
+  "visualFindings": [
+    "Native PNG viewer exposed RGB under alpha=0 and initially suggested an opaque background/fringe. That was a false alarm.",
+    "Actual white-background JPEG alpha composites were inspected and are clean; sampled brown/red underlying pixels have alpha=0.",
+    "Three-background source evidence is being committed by character owner."
+  ],
+  "files": [
+    {
+      "file": "public/assets/characters-v1/poses/ruta-crouch-basket.png",
+      "size": [
+        490,
+        526
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "public/assets/characters-v1/poses/ruta-adjust-satchel.png",
+      "size": [
+        457,
+        776
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "public/assets/characters-v1/poses/basket-ground.png",
+      "size": [
+        1148,
+        1076
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "public/assets/characters-v1/poses/ruta-basket.png",
+      "size": [
+        350,
+        768
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    },
+    {
+      "file": "public/assets/characters-v1/poses/rabbit-baking.png",
+      "size": [
+        927,
+        1283
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaExtrema": [
+        0,
+        255
+      ]
+    },
+    {
+      "file": "public/assets/characters-v1/poses/ruta-surprised.png",
+      "size": [
+        441,
+        717
+      ],
+      "cornerAlpha": [
+        0,
+        0,
+        0,
+        0
+      ],
+      "alphaExtrema": [
+        0,
+        254
+      ]
+    }
+  ]
+}
