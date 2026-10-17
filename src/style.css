@@ -45,6 +45,12 @@ header #settings-open span{display:none}
 .narrative-scene:not(.narrative-restored) #board #ground-plane{display:none!important}
 .narrative-restored #board [data-cell][data-owner=""]>.cell{display:none!important}
 .completion-scene{display:block;width:100%;height:auto;max-height:42dvh;aspect-ratio:16/9;border-radius:10px;background:#344d30;pointer-events:none}
+.resident-breath{animation:resident-breathe 3.8s ease-in-out infinite;transform-origin:0 0}
+[data-resident="squirrel"] .resident-breath{animation-delay:-1.3s}
+[data-resident="rabbit"] .resident-breath{animation-delay:-2.1s}
+@keyframes resident-breathe{0%,100%{transform:scaleY(1)}50%{transform:scaleY(1.004)}}
+.reduced-motion .resident-breath{animation:none}
+@media(prefers-reduced-motion:reduce){.resident-breath{animation:none}}
 #chapter-background{filter:drop-shadow(0 2px 6px #14231988)}
 .cell{stroke:#738869;stroke-width:1.2;stroke-linejoin:round}
 .cell.path{stroke:#fff9b2;stroke-width:4;fill:#8979ad}
