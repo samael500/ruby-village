@@ -1,0 +1,82 @@
+{
+  "status": "head-only anatomy study not approved likeness",
+  "productionEnabled": false,
+  "macro": {
+    "gender": 0.0,
+    "age": 0.1875,
+    "muscle": 0.25,
+    "weight": 0.5,
+    "proportions": 0.4,
+    "height": 0.5,
+    "cupsize": 0.5,
+    "firmness": 0.5,
+    "race": {
+      "asian": 0.15,
+      "caucasian": 0.85,
+      "african": 0.0
+    }
+  },
+  "targets": {
+    "eyes/l-eye-scale-incr": 1.15,
+    "eyes/r-eye-scale-incr": 1.15,
+    "eyes/l-eye-height1-incr": 0.65,
+    "eyes/r-eye-height1-incr": 0.65,
+    "cheek/l-cheek-volume-incr": 0.45,
+    "cheek/r-cheek-volume-incr": 0.45,
+    "chin/chin-width-decr": 0.2,
+    "nose/nose-scale-vert-decr": 0.55,
+    "nose/nose-scale-depth-decr": 0.6,
+    "mouth/mouth-angles-up": 0.85,
+    "mouth/mouth-scale-horiz-incr": 0.2,
+    "nose/nose-scale-horiz-decr": 0.3,
+    "mouth/mouth-upperlip-middle-up": 0.2,
+    "mouth/mouth-lowerlip-middle-down": 0.22
+  },
+  "macroBakedBeforeSculpt": true,
+  "nativeVertexCount": 19158,
+  "authorShapeKey": "Ruta coherent child head sculpt",
+  "rig": "default",
+  "nativeEyesFittedAfterSculpt": true,
+  "headBone": [
+    [
+      0.0,
+      -0.029820557683706284,
+      1.1783428192138672
+    ],
+    [
+      0.0,
+      -0.021458638831973076,
+      1.358260154724121
+    ]
+  ],
+  "views": [
+    {
+      "name": "front",
+      "camera": [
+        0.0,
+        -3.025639533996582,
+        1.4333014488220215
+      ],
+      "orthoScale": 0.5600000023841858
+    },
+    {
+      "name": "three-quarter",
+      "camera": [
+        -1.49064040184021,
+        -2.6290969848632812,
+        1.4333014488220215
+      ],
+      "orthoScale": 0.5600000023841858
+    },
+    {
+      "name": "profile",
+      "camera": [
+        -3.0,
+        -0.025639597326517105,
+        1.4333014488220215
+      ],
+      "orthoScale": 0.5600000023841858
+    }
+  ],
+  "hair": "originalstraightreferenceonly-not-final"
+}
