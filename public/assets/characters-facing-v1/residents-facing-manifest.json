@@ -84,6 +84,44 @@
           ],
           "facing": "left",
           "mirrored": false
+        },
+        "conversation-front": {
+          "image": "residents/teacher-conversation-front.png",
+          "source": "art/characters-facing-v1/teacher-front-source-v1.png",
+          "sourceRect": [
+            0,
+            0,
+            532,
+            1008
+          ],
+          "frameSize": [
+            532,
+            1008
+          ],
+          "footAnchor": [
+            272,
+            1004
+          ],
+          "facing": "front-slight-right",
+          "mirrored": false,
+          "packing": {
+            "sourceSize": [
+              902,
+              1743
+            ],
+            "measuredAlphaBBox": [
+              37,
+              6,
+              878,
+              1727
+            ],
+            "uniformResizeHeight": 996,
+            "packedOffset": [
+              4,
+              8
+            ],
+            "alphaPreserved": true
+          }
         }
       },
       "policy": {
@@ -120,7 +158,8 @@
       "meeting": {
         "availableAuthoredFacings": [
           "right",
-          "left"
+          "left",
+          "front-slight-right"
         ],
         "conversationFrame": "conversation-left",
         "selectOn": [
@@ -129,7 +168,12 @@
         ],
         "continuousTracking": false,
         "mirrorAllowed": false,
-        "worldFeet": "retain-caller-placement"
+        "worldFeet": "retain-caller-placement",
+        "arrivalFrame": "conversation-front",
+        "arrivalUse": {
+          "scene": "well",
+          "reason": "Ruta goal lies in front and slightly right of this placement"
+        }
       }
     },
     "hedgehog": {
@@ -230,6 +274,44 @@
           ],
           "facing": "left",
           "mirrored": false
+        },
+        "conversation-front": {
+          "image": "residents/squirrel-conversation-front.png",
+          "source": "art/characters-facing-v1/squirrel-front-source-v1.png",
+          "sourceRect": [
+            0,
+            0,
+            893,
+            904
+          ],
+          "frameSize": [
+            893,
+            904
+          ],
+          "footAnchor": [
+            448,
+            900
+          ],
+          "facing": "front-slight-right",
+          "mirrored": false,
+          "packing": {
+            "sourceSize": [
+              1097,
+              1434
+            ],
+            "measuredAlphaBBox": [
+              25,
+              7,
+              1078,
+              1416
+            ],
+            "uniformResizeHeight": 892,
+            "packedOffset": [
+              4,
+              8
+            ],
+            "alphaPreserved": true
+          }
         }
       },
       "policy": {
@@ -272,7 +354,8 @@
       "meeting": {
         "availableAuthoredFacings": [
           "right",
-          "left"
+          "left",
+          "front-slight-right"
         ],
         "conversationFrame": "conversation-left",
         "selectOn": [
@@ -281,7 +364,12 @@
         ],
         "continuousTracking": false,
         "mirrorAllowed": false,
-        "worldFeet": "retain-caller-placement"
+        "worldFeet": "retain-caller-placement",
+        "arrivalFrame": "conversation-front",
+        "arrivalUse": {
+          "scene": "mill",
+          "reason": "Ruta goal lies in front and slightly right of this placement"
+        }
       }
     }
   },

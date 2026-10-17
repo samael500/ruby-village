@@ -19,3 +19,5 @@ Teacher: `teacher-left-prompt.txt`, original approved idle reference, returned w
 Hedgehog: builtin imagegen from approved idle, prompt/source `hedgehog-left-*`; no flip, preserved satchel/letter ownership and one strap. Cap tilt varies naturally. Source whole RGBA retained, technical packing only.
 
 Squirrel: builtin original-reference left view followed by accessories-only correction. Prompt/source `squirrel-left-*`, targeted prompt `squirrel-correction-prompt.txt`; rejected wrong-side-bag source retained. Final bag/strap/scarf ownership preserved; one acorn in both paws. Original idle unchanged.
+
+Teacher/Squirrel front: independent builtin imagegen calls from approved original idle refs; prompts `*-front-prompt.txt`, whole sources `*-front-source-v1.png`. `export-front.py` performs only uniform crop/resize/packing and writes authoritative frame anchors. More frontal authored conversation stance for well/mill arrival; no flips or per-part transform.
