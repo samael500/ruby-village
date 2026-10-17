@@ -1,0 +1,273 @@
+{
+  "status": "NOT-FOOTPLANT-PASS",
+  "sourceStridePixels": 530,
+  "nativeStridePixels": 99.64,
+  "sceneStridePixelsAtHeight136": 60.49571428571429,
+  "uniformRawToNativeScale": 0.188,
+  "nativeHeight": 224,
+  "sceneHeight": 136,
+  "cycleDurationMs": 720,
+  "halfCycleNearSourcePixels": 280,
+  "halfCycleFarSourcePixels": 250,
+  "units": "source1254canvas \u2192 packed320canvas via.188 \u2192 native scene pixels via136/224",
+  "landmarks": [
+    {
+      "frame": 0,
+      "source": "key-0-tight.png",
+      "rawWaistRoot": [
+        796,
+        630
+      ],
+      "points": {
+        "near": {
+          "source": [
+            950,
+            1204
+          ],
+          "native": [
+            188.6,
+            257.352
+          ]
+        },
+        "far": {
+          "source": [
+            740,
+            1195
+          ],
+          "native": [
+            149.12,
+            255.66
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    },
+    {
+      "frame": 1,
+      "source": "between-1-raw.png",
+      "rawWaistRoot": [
+        796,
+        627
+      ],
+      "points": {
+        "near": {
+          "source": [
+            900,
+            1209
+          ],
+          "native": [
+            179.2,
+            258.29200000000003
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    },
+    {
+      "frame": 2,
+      "source": "key-1-passing.png",
+      "rawWaistRoot": [
+        817,
+        630
+      ],
+      "points": {
+        "near": {
+          "source": [
+            850,
+            1219
+          ],
+          "native": [
+            165.8,
+            260.172
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    },
+    {
+      "frame": 3,
+      "source": "between-3-fixed.png",
+      "rawWaistRoot": [
+        797,
+        628
+      ],
+      "points": {
+        "near": {
+          "source": [
+            730,
+            1198
+          ],
+          "native": [
+            147.24,
+            256.224
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    },
+    {
+      "frame": 4,
+      "source": "key-2-raw.png",
+      "rawWaistRoot": [
+        806,
+        630
+      ],
+      "points": {
+        "near": {
+          "source": [
+            680,
+            1202
+          ],
+          "native": [
+            135.84,
+            256.976
+          ]
+        },
+        "far": {
+          "source": [
+            1000,
+            1206
+          ],
+          "native": [
+            196.0,
+            257.728
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    },
+    {
+      "frame": 5,
+      "source": "between-5-contact-cleanup.png",
+      "rawWaistRoot": [
+        803,
+        631
+      ],
+      "points": {
+        "far": {
+          "source": [
+            950,
+            1217
+          ],
+          "native": [
+            187.6,
+            258.796
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    },
+    {
+      "frame": 6,
+      "source": "key-3-passing.png",
+      "rawWaistRoot": [
+        787,
+        630
+      ],
+      "points": {
+        "far": {
+          "source": [
+            800,
+            1210
+          ],
+          "native": [
+            162.4,
+            258.48
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    },
+    {
+      "frame": 7,
+      "source": "between-7-contact-cleanup.png",
+      "rawWaistRoot": [
+        805,
+        629
+      ],
+      "points": {
+        "far": {
+          "source": [
+            720,
+            1194
+          ],
+          "native": [
+            144.36,
+            255.472
+          ]
+        }
+      },
+      "uncertaintySourcePixels": 8,
+      "note": "manual visible forefoot-pad correspondence, not exact3Dground truth"
+    }
+  ],
+  "stanceAuditAtConstantSpeed": {
+    "near": {
+      "samples": [
+        {
+          "frame": 0,
+          "worldNativeX": 188.6,
+          "worldNativeY": 257.352
+        },
+        {
+          "frame": 1,
+          "worldNativeX": 191.655,
+          "worldNativeY": 258.29200000000003
+        },
+        {
+          "frame": 2,
+          "worldNativeX": 190.71,
+          "worldNativeY": 260.172
+        },
+        {
+          "frame": 3,
+          "worldNativeX": 184.60500000000002,
+          "worldNativeY": 256.224
+        }
+      ],
+      "horizontalSpreadNativePixels": 7.049999999999983,
+      "verticalSpreadNativePixels": 3.948000000000036,
+      "horizontalSpreadScenePixels": 4.280357142857133
+    },
+    "far": {
+      "samples": [
+        {
+          "frame": 4,
+          "worldNativeX": 245.82,
+          "worldNativeY": 257.728
+        },
+        {
+          "frame": 5,
+          "worldNativeX": 249.875,
+          "worldNativeY": 258.796
+        },
+        {
+          "frame": 6,
+          "worldNativeX": 237.13,
+          "worldNativeY": 258.48
+        },
+        {
+          "frame": 7,
+          "worldNativeX": 231.54500000000002,
+          "worldNativeY": 255.472
+        }
+      ],
+      "horizontalSpreadNativePixels": 18.329999999999984,
+      "verticalSpreadNativePixels": 3.323999999999984,
+      "horizontalSpreadScenePixels": 11.128928571428562
+    }
+  },
+  "limitations": [
+    "Manual correspondence uncertainty\u00b18sourcepx",
+    "Painted boot rotation/shape changes and partial occlusion limit exact sole correspondence",
+    "Constant-speed support points drift beyond1scene pixel; this is not ready for production",
+    "Do not fix with unexplained movement multiplier or per-frame character scale"
+  ]
+}
