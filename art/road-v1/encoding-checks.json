@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "file": "assets/road-v1/charoite.webp",
+  "size": [
+    1024,
+    1024
+  ],
+  "source": "art/road-v1/charoite-seam-repaired-v2.png",
+  "sourceSha256": "8793622ed3635e0173cb3d28e41ed89d215be9eb0b4d307181ce3177162bfd25",
+  "sha256": "5493fb04f05169f42edaecd3e4273b0e6e24ee1eaec94aade8487fb3ed3d7939",
+  "encoding": "builtin central-cross seam repair composited only over offset source cross; 64px original-edge guard; inverse offset; uniform Lanczos resize; lossless WebP; no mirroring",
+  "repeatWorldHexRadii": 3.2,
+  "registration": "fixed world origin; runtime ground camera",
+  "checks": {
+    "repeatPreview": "art/road-v1/charoite-repeat-2x2.webp",
+    "edgeMeanAbsoluteRgbJump": {
+      "x": 9.019205729166666,
+      "y": 11.123372395833334
+    },
+    "seamVisualAudit": "pending",
+    "actualGameplay": "not-run"
+  },
+  "status": "encoded-candidate-seam-and-game-review-pending",
+  "rights": "Generated with built-in image_gen using existing repository map as style reference; no external stock downloaded; no claim of exclusive copyright"
+}
