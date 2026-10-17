@@ -11,3 +11,9 @@ All produced images remain candidates until full-mask visual audits; manifest re
 Water corrections v5/v6 copied the old river and failed exact target geometry, despite contrasting cyan stencil input. They are rejected and not activated. Dry base plates successfully remove old rivers and are usable compositing ingredients.
 
 Gate/garden wide-v1 was requested at4096×1600, but the tool returned2006×784 and reframed interior content. Native exact-core rejoining reveals a rectangular seam and doubled outer fence. These files are **failed wide attempts**, not final ready surroundings. Current runtime must not reference them. Gate/bakery map-match work is delegated to a separate owner; common scene manifest stays owned by this branch.
+
+## Exact water checkpoint
+
+The native source-derived water material masks now follow accepted full water polygons, with separate dry background/water and review composite. `scripts/art-v9-check-water.py` checks all free polygon interiors with a documented1px raster boundary allowance, actual bridge middle/ends alpha (255,0,0), and rejected old bends (0) against corrected new bends (255). The geography is fixed. The hard-edged native shoreline still requires artistic finishing; this checkpoint is **not final bank art**. It is safe for inactive renderer/bridge alignment review only.
+
+Teacher feet well(1195,405) and second squirrel feet mill(1330,405) use the coordinator's actual native-alpha clearance audit. Visual grounding/depth remain candidates until final scene props are composed. Rabbit uses rabbit-idle with no table; background owns the sole garden table.
