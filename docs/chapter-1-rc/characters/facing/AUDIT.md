@@ -30,3 +30,7 @@ Builtin imagegen with approved idle as identity reference. No external service, 
 Packed output604×981, unchanged foot anchor302,977, sceneHeight108. Measured source alpha≥8 bbox176,25,841,1499; uniform resized subject height969, transparent packed offset82,8. Alpha range0..255. No feature drawing, mirroring, separate limb transforms or anisotropic resize. Original idle SHA2564378b6eddaf758ea2a19aa6fc821c442c35159a7686583fde68f756f11fbd1fd unchanged.
 
 `rabbit-comparison.png` shows shared ground/scale and108px thumbnail. This is an asset comparison, not actual gameplay evidence. Technical output size/alpha/bottom margin assertions PASS. Actual garden, dialogue orientation alongside Ruta, transitions and clearance review pending coordinator; all five other residents remain unchanged. No production approval claimed.
+
+## Teacher conversation-left
+
+Approved original reference used directly in builtin imagegen. Preserved cream blouse/rust knit cardigan, olive botanical skirt, glasses, green botanical book in left-of-image arm, brass watering can in right-of-image hand. New face/gaze/body/feet view toward left; no horizontal flip. Native frame532×1008, foot239,1004 and sceneHeight174 unchanged. Source whole PNG retained. Activity metadata: well+flowerbed, idle original right-facing; encounter/dialogue entry selects authored facing once, no continuous tracking; caller world feet retained. Asset-only review complete; actual-scene review pending coordinator.
