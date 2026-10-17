@@ -1,0 +1,191 @@
+{
+  "canvas": [
+    320,
+    320
+  ],
+  "footAnchor": [
+    160,
+    256
+  ],
+  "direction": "se",
+  "source": "art/characters-walk-v1/registered/se-01.png",
+  "sourceSha256": "17f3aa0590686e6d5b578b41e446cd937422741ed0a81a24c74b5e72caeeb022",
+  "method": "overlapping registered cutouts from immutable painted source, no mirroring",
+  "parts": {
+    "body": {
+      "file": "body.png",
+      "bone": "root",
+      "a": [
+        160,
+        170
+      ],
+      "b": [
+        160,
+        140
+      ],
+      "z": 0.2
+    },
+    "thigh.L": {
+      "file": "thigh.L.png",
+      "bone": "thigh.L",
+      "a": [
+        174,
+        174
+      ],
+      "b": [
+        178,
+        201
+      ],
+      "z": 0.06,
+      "textureSource": "art/characters-walk-v1/registered/se-01.png",
+      "sourceA": [
+        174,
+        174
+      ],
+      "sourceB": [
+        178,
+        201
+      ],
+      "sourceClipY": [
+        0,
+        208
+      ],
+      "textureSha256": "17f3aa0590686e6d5b578b41e446cd937422741ed0a81a24c74b5e72caeeb022"
+    },
+    "shin.L": {
+      "file": "shin.L.png",
+      "bone": "shin.L",
+      "a": [
+        178,
+        201
+      ],
+      "b": [
+        178,
+        230
+      ],
+      "z": 0.07,
+      "textureSource": "art/characters-walk-v1/registered/se-01.png",
+      "sourceA": [
+        178,
+        201
+      ],
+      "sourceB": [
+        178,
+        230
+      ],
+      "sourceClipY": [
+        0,
+        319
+      ],
+      "textureSha256": "17f3aa0590686e6d5b578b41e446cd937422741ed0a81a24c74b5e72caeeb022"
+    },
+    "foot.L": {
+      "file": "foot.L.png",
+      "bone": "foot.L",
+      "a": [
+        178,
+        230
+      ],
+      "b": [
+        188,
+        243
+      ],
+      "z": 0.08,
+      "textureSource": "art/characters-walk-v1/registered/se-01.png",
+      "sourceA": [
+        178,
+        230
+      ],
+      "sourceB": [
+        188,
+        243
+      ],
+      "sourceClipY": [
+        221,
+        319
+      ],
+      "textureSha256": "17f3aa0590686e6d5b578b41e446cd937422741ed0a81a24c74b5e72caeeb022"
+    },
+    "thigh.R": {
+      "file": "thigh.R.png",
+      "bone": "thigh.R",
+      "a": [
+        148,
+        174
+      ],
+      "b": [
+        139,
+        198
+      ],
+      "z": 0.12,
+      "textureSource": "art/characters-walk-v1/registered/se-01.png",
+      "sourceA": [
+        148,
+        174
+      ],
+      "sourceB": [
+        139,
+        198
+      ],
+      "sourceClipY": [
+        0,
+        204
+      ],
+      "textureSha256": "17f3aa0590686e6d5b578b41e446cd937422741ed0a81a24c74b5e72caeeb022"
+    },
+    "shin.R": {
+      "file": "shin.R.png",
+      "bone": "shin.R",
+      "a": [
+        139,
+        198
+      ],
+      "b": [
+        137,
+        218
+      ],
+      "z": 0.13,
+      "textureSource": "art/characters-walk-v1/registered/se-01.png",
+      "sourceA": [
+        139,
+        198
+      ],
+      "sourceB": [
+        137,
+        218
+      ],
+      "sourceClipY": [
+        0,
+        319
+      ],
+      "textureSha256": "17f3aa0590686e6d5b578b41e446cd937422741ed0a81a24c74b5e72caeeb022"
+    },
+    "foot.R": {
+      "file": "foot.R.png",
+      "bone": "foot.R",
+      "a": [
+        137,
+        218
+      ],
+      "b": [
+        143,
+        229
+      ],
+      "z": 0.14,
+      "textureSource": "art/characters-walk-v1/registered/se-01.png",
+      "sourceA": [
+        137,
+        218
+      ],
+      "sourceB": [
+        143,
+        229
+      ],
+      "sourceClipY": [
+        210,
+        319
+      ],
+      "textureSha256": "17f3aa0590686e6d5b578b41e446cd937422741ed0a81a24c74b5e72caeeb022"
+    }
+  }
+}
