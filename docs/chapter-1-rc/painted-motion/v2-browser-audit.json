@@ -1,0 +1,256 @@
+{
+  "result": "passed",
+  "actualInput": [
+    "replay button",
+    "pause/resume button",
+    "scene selector post",
+    "portrait viewport",
+    "reduced-motion checkbox"
+  ],
+  "directions": {
+    "e": {
+      "ready": true,
+      "playing": true,
+      "paused": false,
+      "state": "walk",
+      "direction": "e",
+      "phaseMs": 233.09999999999945,
+      "position": {
+        "x": 824.3862149865229,
+        "y": 450
+      },
+      "contacts": 1,
+      "lastFoot": "left",
+      "completions": 0,
+      "programIndex": 2,
+      "frameFile": "assets/characters-walk-v1/animated-v2/base-e.webp",
+      "sourceRect": [
+        576,
+        0,
+        144,
+        216
+      ],
+      "goal": null
+    },
+    "se": {
+      "ready": true,
+      "playing": true,
+      "paused": false,
+      "state": "walk",
+      "direction": "se",
+      "phaseMs": 99.69999999999982,
+      "position": {
+        "x": 903.350303732012,
+        "y": 452.25070312751296
+      },
+      "contacts": 5,
+      "lastFoot": "left",
+      "completions": 0,
+      "programIndex": 3,
+      "frameFile": "assets/characters-walk-v1/animated-v2/base-se.webp",
+      "sourceRect": [
+        144,
+        0,
+        144,
+        216
+      ],
+      "goal": null
+    },
+    "sw": {
+      "ready": true,
+      "playing": true,
+      "paused": false,
+      "state": "walk",
+      "direction": "sw",
+      "phaseMs": 199.59999999999945,
+      "position": {
+        "x": 929.4314222311341,
+        "y": 490.6255300729391
+      },
+      "contacts": 9,
+      "lastFoot": "left",
+      "completions": 0,
+      "programIndex": 4,
+      "frameFile": "assets/characters-walk-v1/animated-v2/base-sw.webp",
+      "sourceRect": [
+        432,
+        0,
+        144,
+        216
+      ],
+      "goal": null
+    },
+    "w": {
+      "ready": true,
+      "playing": true,
+      "paused": false,
+      "state": "walk",
+      "direction": "w",
+      "phaseMs": 16.19999999999891,
+      "position": {
+        "x": 900.4389985983814,
+        "y": 522.2392177336096
+      },
+      "contacts": 13,
+      "lastFoot": "left",
+      "completions": 0,
+      "programIndex": 5,
+      "frameFile": "assets/characters-walk-v1/animated-v2/base-w.webp",
+      "sourceRect": [
+        0,
+        0,
+        144,
+        216
+      ],
+      "goal": null
+    },
+    "nw": {
+      "ready": true,
+      "playing": true,
+      "paused": false,
+      "state": "walk",
+      "direction": "nw",
+      "phaseMs": 116.19999999999891,
+      "position": {
+        "x": 808.93124375964,
+        "y": 519.616031139657
+      },
+      "contacts": 17,
+      "lastFoot": "left",
+      "completions": 0,
+      "programIndex": 6,
+      "frameFile": "assets/characters-walk-v1/animated-v2/base-nw.webp",
+      "sourceRect": [
+        288,
+        0,
+        144,
+        216
+      ],
+      "goal": null
+    },
+    "ne": {
+      "ready": true,
+      "playing": true,
+      "paused": false,
+      "state": "walk",
+      "direction": "ne",
+      "phaseMs": 216.1999999999989,
+      "position": {
+        "x": 783.5138332810612,
+        "y": 481.2389467186784
+      },
+      "contacts": 21,
+      "lastFoot": "left",
+      "completions": 0,
+      "programIndex": 7,
+      "frameFile": "assets/characters-walk-v1/animated-v2/base-ne.webp",
+      "sourceRect": [
+        576,
+        0,
+        144,
+        216
+      ],
+      "goal": null
+    }
+  },
+  "completeRoute": {
+    "ready": true,
+    "playing": false,
+    "paused": false,
+    "state": "idle",
+    "direction": "ne",
+    "phaseMs": 0,
+    "position": {
+      "x": 815.2715602580051,
+      "y": 445.4850488916494
+    },
+    "contacts": 26,
+    "lastFoot": "right",
+    "completions": 1,
+    "programIndex": 10,
+    "frameFile": "assets/characters-walk-v1/animated-v2/base-ne.webp",
+    "sourceRect": [
+      432,
+      648,
+      144,
+      216
+    ],
+    "goal": null
+  },
+  "paused": {
+    "ready": true,
+    "playing": true,
+    "paused": true,
+    "state": "walk",
+    "direction": "e",
+    "phaseMs": 549.7999999999993,
+    "position": {
+      "x": 842.2183883557951,
+      "y": 450
+    },
+    "contacts": 2,
+    "lastFoot": "right",
+    "completions": 0,
+    "programIndex": 2,
+    "frameFile": "assets/characters-walk-v1/animated-v2/base-e.webp",
+    "sourceRect": [
+      288,
+      216,
+      144,
+      216
+    ],
+    "goal": null
+  },
+  "calibratedPost": {
+    "ready": true,
+    "playing": true,
+    "paused": false,
+    "state": "walk",
+    "direction": "e",
+    "phaseMs": 599.7999999999997,
+    "position": {
+      "x": 844.929509347089,
+      "y": 451.3135849588756
+    },
+    "contacts": 2,
+    "lastFoot": "right",
+    "completions": 0,
+    "programIndex": 2,
+    "frameFile": "assets/characters-walk-v1/animated-v2/calibrated-1-e.webp",
+    "sourceRect": [
+      432,
+      216,
+      144,
+      216
+    ],
+    "goal": null
+  },
+  "reducedMotion": {
+    "ready": true,
+    "playing": false,
+    "paused": false,
+    "state": "idle",
+    "direction": "e",
+    "phaseMs": 0,
+    "position": {
+      "x": 815.6112831294271,
+      "y": 445.87650374253025
+    },
+    "contacts": 2,
+    "lastFoot": "right",
+    "completions": 1,
+    "programIndex": 2,
+    "frameFile": "assets/characters-walk-v1/animated-v2/calibrated-1-e.webp",
+    "sourceRect": [
+      0,
+      432,
+      144,
+      216
+    ],
+    "goal": null
+  },
+  "browserErrors": [],
+  "physicalPhone": "not-run",
+  "familyTest": "not-run",
+  "scope": "isolated actual CharacterPlayer/CharacterRoute review bench; game integration separate"
+}

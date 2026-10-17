@@ -1,0 +1,245 @@
+{
+  "source": "art/characters-walk-v1/registered/e-01.png",
+  "status": "experimental-manual-cutout-not-final",
+  "canvas": [
+    320,
+    320
+  ],
+  "footAnchor": [
+    160,
+    256
+  ],
+  "parts": {
+    "back-thigh": {
+      "poly": [
+        [
+          158,
+          171
+        ],
+        [
+          174,
+          181
+        ],
+        [
+          157,
+          214
+        ],
+        [
+          139,
+          224
+        ],
+        [
+          121,
+          215
+        ],
+        [
+          138,
+          189
+        ]
+      ],
+      "bone": "thigh.R",
+      "a": [
+        165,
+        178
+      ],
+      "b": [
+        140,
+        211
+      ]
+    },
+    "back-shin": {
+      "poly": [
+        [
+          126,
+          204
+        ],
+        [
+          150,
+          213
+        ],
+        [
+          141,
+          239
+        ],
+        [
+          117,
+          244
+        ],
+        [
+          105,
+          233
+        ]
+      ],
+      "bone": "shin.R",
+      "a": [
+        140,
+        211
+      ],
+      "b": [
+        126,
+        235
+      ]
+    },
+    "back-boot": {
+      "poly": [
+        [
+          172,
+          224
+        ],
+        [
+          197,
+          223
+        ],
+        [
+          203,
+          230
+        ],
+        [
+          217,
+          230
+        ],
+        [
+          222,
+          244
+        ],
+        [
+          215,
+          251
+        ],
+        [
+          184,
+          257
+        ],
+        [
+          174,
+          250
+        ]
+      ],
+      "bone": "foot.R",
+      "a": [
+        185,
+        234
+      ],
+      "b": [
+        208,
+        234
+      ]
+    },
+    "front-thigh": {
+      "poly": [
+        [
+          161,
+          171
+        ],
+        [
+          183,
+          174
+        ],
+        [
+          191,
+          194
+        ],
+        [
+          194,
+          214
+        ],
+        [
+          167,
+          221
+        ],
+        [
+          155,
+          192
+        ]
+      ],
+      "bone": "thigh.L",
+      "a": [
+        168,
+        177
+      ],
+      "b": [
+        180,
+        209
+      ]
+    },
+    "front-shin": {
+      "poly": [
+        [
+          166,
+          202
+        ],
+        [
+          194,
+          204
+        ],
+        [
+          197,
+          234
+        ],
+        [
+          178,
+          243
+        ],
+        [
+          166,
+          233
+        ]
+      ],
+      "bone": "shin.L",
+      "a": [
+        180,
+        209
+      ],
+      "b": [
+        185,
+        234
+      ]
+    },
+    "front-boot": {
+      "poly": [
+        [
+          172,
+          224
+        ],
+        [
+          197,
+          223
+        ],
+        [
+          203,
+          230
+        ],
+        [
+          217,
+          230
+        ],
+        [
+          222,
+          244
+        ],
+        [
+          215,
+          251
+        ],
+        [
+          184,
+          257
+        ],
+        [
+          174,
+          250
+        ]
+      ],
+      "bone": "foot.L",
+      "a": [
+        185,
+        234
+      ],
+      "b": [
+        208,
+        234
+      ]
+    }
+  },
+  "note": "small overlaps retain source cloth pixels; no independent phase generation; torso/face/hair/satchel remain ONE source image; east boot texture reused unmirrored for both sides in experimental pilot (hidden-side boot art not authored)"
+}

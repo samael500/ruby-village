@@ -1,0 +1,85 @@
+{
+  "result": "passed",
+  "scope": "actual arbitrary-length motion bench with goal polygon, not production bridge gameplay",
+  "scenes": {
+    "gate": {
+      "ready": true,
+      "playing": false,
+      "paused": false,
+      "state": "idle",
+      "direction": "e",
+      "phaseMs": 0,
+      "position": {
+        "x": 908.85209051611,
+        "y": 594.1447916905843
+      },
+      "contacts": 20,
+      "lastFoot": "right",
+      "completions": 1,
+      "programIndex": 0,
+      "frameFile": "assets/characters-walk-v1/animated-v2/base-e.webp",
+      "sourceRect": [
+        0,
+        432,
+        144,
+        216
+      ],
+      "goal": {
+        "center": {
+          "x": 909.5977160639501,
+          "y": 594.1447916905843
+        },
+        "endpoint": {
+          "x": 908.85209051611,
+          "y": 594.1447916905843
+        },
+        "residualPixels": 0.7456255478400635,
+        "inside": true,
+        "durationMs": 8000,
+        "elapsedMs": 8000,
+        "worldLength": 6.84
+      }
+    },
+    "post": {
+      "ready": true,
+      "playing": false,
+      "paused": false,
+      "state": "idle",
+      "direction": "e",
+      "phaseMs": 0,
+      "position": {
+        "x": 898.3118076022687,
+        "y": 604.4156705439534
+      },
+      "contacts": 20,
+      "lastFoot": "right",
+      "completions": 1,
+      "programIndex": 0,
+      "frameFile": "assets/characters-walk-v1/animated-v2/calibrated-1-e.webp",
+      "sourceRect": [
+        0,
+        432,
+        144,
+        216
+      ],
+      "goal": {
+        "center": {
+          "x": 905.5065895437621,
+          "y": 604.6260213240548
+        },
+        "endpoint": {
+          "x": 898.3118076022687,
+          "y": 604.4156705439534
+        },
+        "residualPixels": 7.1978562528247565,
+        "inside": true,
+        "durationMs": 8000,
+        "elapsedMs": 8000,
+        "worldLength": 6.84
+      }
+    }
+  },
+  "errors": [],
+  "physicalPhone": "not-run",
+  "familyTest": "not-run"
+}

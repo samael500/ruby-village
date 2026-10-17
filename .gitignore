@@ -10,3 +10,8 @@ __pycache__/
 # Blender backup files; the actual compressed source is versioned.
 /art/blender/*.blend1
 /art/blender/chapter-layouts/*.blend1
+
+# Disposable painted exporter diagnostics
+/art/characters-walk-v1/exporter-test*/
+/art/characters-walk-v1/exporter-*math-test/
+/art/characters-walk-v1/**/*.blend1

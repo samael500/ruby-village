@@ -1,0 +1,594 @@
+{
+  "status": "partial-inbetween-experiment-anatomy-review-required",
+  "productionEnabled": false,
+  "cycleDurationMs": 720,
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "frameSize": [
+    320,
+    320
+  ],
+  "uniformRawToNativeScale": 0.188,
+  "nativeHeight": 224,
+  "sceneHeight": 136,
+  "footAnchor": [
+    160,
+    256
+  ],
+  "sourceStridePixels": 591.0,
+  "nativeStridePixels": 111.108,
+  "sceneStridePixels": 67.45842857142857,
+  "frameDurationsMs": [
+    77.36040609137066,
+    113.29949238578686,
+    52.38578680203031,
+    37.15736040609144,
+    43.24873096446703,
+    60.30456852791866,
+    77.96954314720819,
+    74.31472081218271,
+    92.58883248730967,
+    91.37055837563446
+  ],
+  "contactTimesMs": {
+    "near": 0,
+    "far": 383.75634517766497
+  },
+  "calibration": "positive measured support displacement sets each duration; Y registered by actual support outsole; no Xoffset beyond visible waist registration, no perframe scaling",
+  "landmarkDefinition": "toe-front alpha silhouette minus70source pixels, visible forefoot pad; partly occluded far pads0/7 manually inspected",
+  "landmarkUncertaintySourcePixels": 8,
+  "sourceBoundaryWorldSupport": {
+    "near": [
+      {
+        "frame": 0,
+        "worldX": 196.848,
+        "worldY": 256.0
+      },
+      {
+        "frame": 1,
+        "worldX": 196.848,
+        "worldY": 256.0
+      },
+      {
+        "frame": 2,
+        "worldX": 196.848,
+        "worldY": 256.0
+      },
+      {
+        "frame": 3,
+        "worldX": 196.848,
+        "worldY": 256.0
+      }
+    ],
+    "far": [
+      {
+        "frame": 4,
+        "worldX": 260.58000000000004,
+        "worldY": 256.0
+      },
+      {
+        "frame": 5,
+        "worldX": 260.58000000000004,
+        "worldY": 256.0
+      },
+      {
+        "frame": 6,
+        "worldX": 260.58000000000004,
+        "worldY": 256.0
+      },
+      {
+        "frame": 7,
+        "worldX": 260.58000000000004,
+        "worldY": 256.0
+      }
+    ]
+  },
+  "importantLimits": [
+    "Zero boundary residual follows the measured calibration and is not independent proof",
+    "Held whole PNGs with continuous root movement can drift between source boundaries; recording must be reviewed",
+    "Far pads0/7 are manually corresponded, uncertainty and boot rolling remain",
+    "This is E loop only; no new idle/start/stop/turn or other directions"
+  ],
+  "maximumHeldFrameTravelScenePixels": 10.61528571428572,
+  "nativeWaistYRange": [
+    144.798,
+    149.216
+  ],
+  "frames": [
+    {
+      "index": 0,
+      "source": "key-0-tight.png",
+      "file": "00.png",
+      "rawWaistRoot": [
+        796.0,
+        624.5
+      ],
+      "rawBuckleBounds": [
+        786,
+        610,
+        806,
+        639
+      ],
+      "wholeFrameTranslation": [
+        10.352000000000004,
+        30.587999999999994
+      ],
+      "nativeWaistRoot": [
+        160,
+        147.994
+      ],
+      "planted": "near",
+      "points": {
+        "near": {
+          "raw": [
+            992,
+            1199
+          ],
+          "toeFrontX": 1062,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            196.848,
+            256.0
+          ]
+        },
+        "far": {
+          "raw": [
+            740,
+            1195
+          ],
+          "toeFrontX": null,
+          "method": "manual visible forefoot pad; toe partially occluded",
+          "manualUncertaintySourcePixels": 8,
+          "native": [
+            149.472,
+            255.248
+          ]
+        }
+      },
+      "durationMs": 77.36040609137066,
+      "startMs": 0,
+      "rootAdvanceNative": 0,
+      "rootAdvanceScene": 0.0,
+      "intervalSourceRootDistancePixels": 63.500000000000085,
+      "intervalNativeRootDistancePixels": 11.938000000000017,
+      "contact": "near",
+      "sourceFile": "stance-corrected/00.png"
+    },
+    {
+      "index": 1,
+      "source": "between-1-raw.png",
+      "file": "01.png",
+      "rawWaistRoot": [
+        795.5,
+        624.0
+      ],
+      "rawBuckleBounds": [
+        786,
+        610,
+        805,
+        638
+      ],
+      "wholeFrameTranslation": [
+        10.445999999999998,
+        29.27199999999999
+      ],
+      "nativeWaistRoot": [
+        160,
+        146.584
+      ],
+      "planted": "near",
+      "points": {
+        "near": {
+          "raw": [
+            928,
+            1206
+          ],
+          "toeFrontX": 998,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            184.91,
+            256.0
+          ]
+        }
+      },
+      "durationMs": 113.29949238578686,
+      "startMs": 77.36040609137066,
+      "rootAdvanceNative": 11.938000000000017,
+      "rootAdvanceScene": 7.248071428571438,
+      "intervalSourceRootDistancePixels": 93.00000000000004,
+      "intervalNativeRootDistancePixels": 17.48400000000001,
+      "contact": null,
+      "sourceFile": "stance-corrected/01.png"
+    },
+    {
+      "index": 2,
+      "source": "phase-2-guide-only-painted.png",
+      "file": "02.png",
+      "rawWaistRoot": [
+        797.5,
+        625.5
+      ],
+      "rawBuckleBounds": [
+        787,
+        611,
+        808,
+        640
+      ],
+      "wholeFrameTranslation": [
+        10.069999999999993,
+        27.204000000000008
+      ],
+      "nativeWaistRoot": [
+        160,
+        144.798
+      ],
+      "planted": "near",
+      "points": {
+        "near": {
+          "raw": [
+            837,
+            1217
+          ],
+          "toeFrontX": 907,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            167.426,
+            256.0
+          ]
+        }
+      },
+      "durationMs": 52.38578680203031,
+      "startMs": 190.65989847715753,
+      "rootAdvanceNative": 29.422000000000025,
+      "rootAdvanceScene": 17.863357142857158,
+      "intervalSourceRootDistancePixels": 108.99999999999994,
+      "intervalNativeRootDistancePixels": 20.49199999999999,
+      "contact": null,
+      "sourceFile": "stance-corrected/02.png"
+    },
+    {
+      "sourceFile": "inbetweens-v6/packed/new-1.png",
+      "source": "near23-1-whole.png",
+      "rawWaistRoot": [
+        798.5,
+        626.0
+      ],
+      "rawSupport": [
+        795,
+        1217
+      ],
+      "rawBuckleBounds": [
+        787,
+        612,
+        810,
+        640
+      ],
+      "wholeFrameTranslation": [
+        9.882000000000005,
+        27.204000000000008
+      ],
+      "planted": "near",
+      "points": {
+        "near": {
+          "raw": [
+            795,
+            1217
+          ],
+          "native": [
+            159.342,
+            256
+          ]
+        }
+      },
+      "startMs": 243.04568527918784,
+      "rootAdvanceNative": 37.506,
+      "rootAdvanceScene": 22.7715,
+      "contact": null,
+      "index": 3,
+      "durationMs": 37.15736040609144
+    },
+    {
+      "sourceFile": "inbetweens-v6/packed/new-2.png",
+      "source": "near23-2-whole.png",
+      "rawWaistRoot": [
+        798.0,
+        626.0
+      ],
+      "rawSupport": [
+        764,
+        1215
+      ],
+      "rawBuckleBounds": [
+        787,
+        612,
+        809,
+        640
+      ],
+      "wholeFrameTranslation": [
+        9.975999999999999,
+        27.580000000000013
+      ],
+      "planted": "near",
+      "points": {
+        "near": {
+          "raw": [
+            764,
+            1215
+          ],
+          "native": [
+            153.608,
+            256
+          ]
+        }
+      },
+      "startMs": 280.2030456852793,
+      "rootAdvanceNative": 43.24000000000001,
+      "rootAdvanceScene": 26.25285714285715,
+      "contact": null,
+      "index": 4,
+      "durationMs": 43.24873096446703
+    },
+    {
+      "index": 5,
+      "source": "between-3-fixed.png",
+      "file": "03.png",
+      "rawWaistRoot": [
+        797.5,
+        626.0
+      ],
+      "rawBuckleBounds": [
+        787,
+        612,
+        808,
+        640
+      ],
+      "wholeFrameTranslation": [
+        10.069999999999993,
+        30.77600000000001
+      ],
+      "nativeWaistRoot": [
+        160,
+        148.464
+      ],
+      "planted": "near",
+      "points": {
+        "near": {
+          "raw": [
+            728,
+            1198
+          ],
+          "toeFrontX": 798,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            146.934,
+            256.0
+          ]
+        }
+      },
+      "durationMs": 60.30456852791866,
+      "startMs": 323.4517766497463,
+      "rootAdvanceNative": 49.914000000000016,
+      "rootAdvanceScene": 30.30492857142858,
+      "intervalSourceRootDistancePixels": 49.49999999999991,
+      "intervalNativeRootDistancePixels": 9.305999999999983,
+      "contact": null,
+      "sourceFile": "stance-corrected/03.png"
+    },
+    {
+      "index": 6,
+      "source": "key-2-raw.png",
+      "file": "04.png",
+      "rawWaistRoot": [
+        808.0,
+        631.0
+      ],
+      "rawBuckleBounds": [
+        799,
+        616,
+        817,
+        646
+      ],
+      "wholeFrameTranslation": [
+        8.096000000000004,
+        30.21199999999999
+      ],
+      "nativeWaistRoot": [
+        160,
+        148.83999999999997
+      ],
+      "planted": "far",
+      "points": {
+        "near": {
+          "raw": [
+            689,
+            1201
+          ],
+          "toeFrontX": 759,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            137.62800000000001,
+            256.0
+          ]
+        },
+        "far": {
+          "raw": [
+            1028,
+            1201
+          ],
+          "toeFrontX": 1098,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            201.36,
+            256.0
+          ]
+        }
+      },
+      "durationMs": 77.96954314720819,
+      "startMs": 383.75634517766497,
+      "rootAdvanceNative": 59.22,
+      "rootAdvanceScene": 35.955,
+      "intervalSourceRootDistancePixels": 64.00000000000006,
+      "intervalNativeRootDistancePixels": 12.03200000000001,
+      "contact": "far",
+      "sourceFile": "stance-corrected/04.png"
+    },
+    {
+      "index": 7,
+      "source": "between-5-contact-cleanup.png",
+      "file": "05.png",
+      "rawWaistRoot": [
+        802.0,
+        631.0
+      ],
+      "rawBuckleBounds": [
+        792,
+        616,
+        812,
+        646
+      ],
+      "wholeFrameTranslation": [
+        9.22399999999999,
+        27.391999999999996
+      ],
+      "nativeWaistRoot": [
+        160,
+        146.01999999999998
+      ],
+      "planted": "far",
+      "points": {
+        "far": {
+          "raw": [
+            958,
+            1216
+          ],
+          "toeFrontX": 1028,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            189.328,
+            256.0
+          ]
+        }
+      },
+      "durationMs": 74.31472081218271,
+      "startMs": 461.72588832487315,
+      "rootAdvanceNative": 71.25200000000001,
+      "rootAdvanceScene": 43.26014285714286,
+      "intervalSourceRootDistancePixels": 60.99999999999994,
+      "intervalNativeRootDistancePixels": 11.46799999999999,
+      "contact": null,
+      "sourceFile": "stance-corrected/05.png"
+    },
+    {
+      "index": 8,
+      "source": "phase-6-guide-only-painted.png",
+      "file": "06.png",
+      "rawWaistRoot": [
+        796.0,
+        627.5
+      ],
+      "rawBuckleBounds": [
+        786,
+        613,
+        806,
+        642
+      ],
+      "wholeFrameTranslation": [
+        10.352000000000004,
+        30.21199999999999
+      ],
+      "nativeWaistRoot": [
+        160,
+        148.182
+      ],
+      "planted": "far",
+      "points": {
+        "far": {
+          "raw": [
+            891,
+            1201
+          ],
+          "toeFrontX": 961,
+          "method": "observed toe-front silhouette minus70source px, outsole alpha boundary",
+          "manualUncertaintySourcePixels": 4,
+          "native": [
+            177.86,
+            256.0
+          ]
+        }
+      },
+      "durationMs": 92.58883248730967,
+      "startMs": 536.0406091370559,
+      "rootAdvanceNative": 82.72,
+      "rootAdvanceScene": 50.222857142857144,
+      "intervalSourceRootDistancePixels": 76.00000000000006,
+      "intervalNativeRootDistancePixels": 14.288000000000011,
+      "contact": null,
+      "sourceFile": "stance-corrected/06.png"
+    },
+    {
+      "index": 9,
+      "source": "phase-7-guide-only-painted.png",
+      "file": "07.png",
+      "rawWaistRoot": [
+        801.0,
+        627.0
+      ],
+      "rawBuckleBounds": [
+        792,
+        613,
+        810,
+        641
+      ],
+      "wholeFrameTranslation": [
+        9.412000000000006,
+        31.340000000000003
+      ],
+      "nativeWaistRoot": [
+        160,
+        149.216
+      ],
+      "planted": "far",
+      "points": {
+        "far": {
+          "raw": [
+            820,
+            1195
+          ],
+          "toeFrontX": null,
+          "method": "manual visible forefoot pad; toe partially occluded",
+          "manualUncertaintySourcePixels": 8,
+          "native": [
+            163.572,
+            256.0
+          ]
+        }
+      },
+      "durationMs": 91.37055837563446,
+      "startMs": 628.6294416243655,
+      "rootAdvanceNative": 97.00800000000001,
+      "rootAdvanceScene": 58.897714285714294,
+      "intervalSourceRootDistancePixels": 74.99999999999997,
+      "intervalNativeRootDistancePixels": 14.099999999999994,
+      "contact": null,
+      "sourceFile": "stance-corrected/07.png"
+    }
+  ],
+  "wholeFrameCount": 10,
+  "targetIntervalMsBefore": 132.79187817258875,
+  "targetIntervalsMsAfter": [
+    52.38578680203031,
+    37.15736040609144,
+    43.24873096446703
+  ],
+  "targetHeldTravelSceneBefore": 12.44157142857142,
+  "targetHeldTravelSceneAfter": 4.908142857142843
+}

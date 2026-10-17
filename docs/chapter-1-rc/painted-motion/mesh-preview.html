@@ -1,0 +1,20 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Ruby Village — painted motion attempt review</title><style>body{margin:0;background:#ede4ce;font:16px system-ui;color:#302c24}header{display:flex;gap:12px;padding:10px;align-items:center;flex-wrap:wrap}button{padding:8px 18px}canvas{width:100%;height:calc(100vh - 90px);object-fit:contain;display:block}small{display:block;padding:0 12px}</style><header><strong>Rig-driven painted cutout · east pilot · не production · не production</strong><button id="pause">Пауза</button><label><input type="checkbox" id="reduced"> Reduced motion</label><output id="info"></output></header><small>Настоящий runtime clocks / arc-length route. Принятый стиль двора и настоящий CharacterPlayer/CharacterRoute. Отдельный разбор дефектного paint-over, не игровое прохождение.</small><canvas width="1672" height="941"></canvas><script type="module">
+import {CharacterPlayer,CharacterRoute} from '/ruby-village/src/character-animation.ts';
+const base='/ruby-village/';const manifest=await fetch(base+'assets/characters-walk-v1/east-mesh-pilot/manifest.json').then(r=>r.json());
+const load=src=>new Promise(resolve=>{const im=new Image();im.onload=()=>resolve(im);im.src=src});
+const bg=await load(base+'art/chapter-1-v9/candidates/gate-v3-base.png');const images={};
+await Promise.all(Object.entries(manifest.clips).map(async([d,c])=>{images[d]=await Promise.all(c.frames.map(f=>load(base+f.file)))}));
+const canvas=document.querySelector('canvas'),ctx=canvas.getContext('2d'),info=document.querySelector('#info');let paused=false,reduced=false,last=0;
+document.querySelector('#pause').onclick=()=>{paused=!paused;document.querySelector('#pause').textContent=paused?'Продолжить':'Пауза';};
+document.querySelector('#reduced').onchange=e=>reduced=e.target.checked;
+let wins=0;const path=[{x:650,y:500},{x:1300,y:500}];
+let route=new CharacterRoute(path,1,()=>wins++);const clip={loop:true,frames:manifest.clips.e.frames};let player=new CharacterPlayer(clip);const scale=140/manifest.nativeHeightPx;
+function tick(now){const dt=last?Math.min(now-last,100):0;last=now;const isPaused=paused||document.hidden;
+ const speed=manifest.projectedStridePixels[route.direction]/.8;const pos=route.advance(dt*speed,{paused:isPaused,reducedMotion:reduced});const d=route.direction;
+ player.advance(dt,{paused:isPaused||route.done,reducedMotion:reduced});let i=clip.frames.indexOf(player.frame);if(route.done)i=0;
+ ctx.clearRect(0,0,1672,941);ctx.drawImage(bg,0,0,1672,941);ctx.strokeStyle='#415c43';ctx.setLineDash([8,10]);ctx.beginPath();path.forEach((p,i)=>i?ctx.lineTo(p.x,p.y):ctx.moveTo(p.x,p.y));ctx.stroke();ctx.setLineDash([]);
+ const [ax,ay]=manifest.footAnchor;ctx.drawImage(images[d][i],pos.x-ax*scale,pos.y-ay*scale,manifest.frameSize[0]*scale,manifest.frameSize[1]*scale);
+ ctx.fillStyle='#cf3429';ctx.beginPath();ctx.arc(pos.x,pos.y,3,0,Math.PI*2);ctx.fill();info.textContent=`${d} · frame ${i+1} · completion ${wins}`;
+ window.motionState={paused,direction:d,frame:i,position:pos,completion:wins,done:route.done};requestAnimationFrame(tick);
+}requestAnimationFrame(tick);
+</script></html>

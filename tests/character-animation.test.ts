@@ -14,6 +14,14 @@ test('pause and first resume discard hidden time; reduced motion has no footstep
  p.advance(50); p.advance(10000,{paused:true}); assert.deepEqual(p.advance(10000),[]);
  assert.equal(p.advance(50).length,1); assert.deepEqual(p.advance(1000,{reducedMotion:true}),[]);
 });
+test('semantic foot contacts are preserved at exact duration across render rates',()=>{
+ const frames=Array.from({length:16},(_,i)=>({...frame(i===0?'left':i===8?'right':undefined),durationMs:50}));
+ for(const fps of [30,60,144]){
+  const player=new CharacterPlayer({frames,loop:true});let contacts=0;
+  for(let i=0;i<fps*4;i++)contacts+=player.advance(1000/fps).length;
+  assert.equal(contacts,10,`${fps}fps: five complete 800ms cycles`);
+ }
+});
 test('projected directions and boundary hysteresis',()=>{
  assert.equal(projectedDirection({x:0,y:0},{x:1,y:1}),'se');
  assert.equal(projectedDirection({x:0,y:0},{x:1,y:0.6},'e'),'e');
@@ -29,8 +37,10 @@ test('route completion is frame-rate independent and fires once',()=>{
  let wins=0; const a=new CharacterRoute([{x:0,y:0},{x:30,y:0},{x:30,y:40}],70,()=>wins++);
  const b=new CharacterRoute([{x:0,y:0},{x:30,y:0},{x:30,y:40}],70);
  for(let i=0;i<30;i++)a.advance(1000/30);for(let i=0;i<144;i++)b.advance(1000/144);
- // Rounding can leave sub-pixel residue; one harmless tick completes both.
- a.advance(1);b.advance(1);assert.deepEqual(a.position,b.position);assert.equal(wins,1);a.advance(5000);assert.equal(wins,1);
+ // The exact duration must finish even when floating-point accumulation leaves
+ // a tiny remainder; an external player must not need another movement tick.
+ assert.equal(a.done,true);assert.equal(b.done,true);
+ assert.deepEqual(a.position,b.position);assert.equal(wins,1);a.advance(5000);assert.equal(wins,1);
 });
 test('route pause discards resumed time and reduced motion completes without lost result',()=>{
  let wins=0;const p=new CharacterRoute([{x:0,y:0},{x:100,y:0}],10,()=>wins++);
