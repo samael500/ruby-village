@@ -93,5 +93,16 @@
     ],
     "gameQa": "not-run"
   },
-  "wideStatus": "generated-wide-candidate-visual-review-pending"
+  "wideStatus": "seam72-candidate-actual-review",
+  "decorativeSeam": {
+    "bandPixels": 72,
+    "fullFreePolygonGuardPixels": 6,
+    "originalCorePreserved": "art/chapter-1-map-match/bakery/core-candidate.png",
+    "deliveredCore": "art/chapter-1-map-match/bakery/core-seam72.png",
+    "wideOriginalRectBitExact": true,
+    "geometryChanges": 0,
+    "freePolygonPixelsChanged": 0,
+    "method": "external72px reflected peripheral texture feather; original core untouched",
+    "corePixelsChanged": 0
+  }
 }
