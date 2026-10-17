@@ -603,6 +603,7 @@ function mapGeometry(){
  });
 }
 function showMap(){
+ narrativePresentation(app,false,false);
  app.classList.remove('menu-screen');($('map-extra') as HTMLDialogElement).close();
  $('main-menu').hidden=true;
  if(screen==='game'){if(phase==='won'){savedSession=null;persist();}else remember();}
@@ -666,6 +667,7 @@ $('scene-help').onclick=()=>{document.querySelector('#help-panel #bridge-guide')
 $('help-close').onclick=()=>($('help-panel') as HTMLDialogElement).close();
 
 function showCompletion(){
+ narrativePresentation(app,true,true);
  $('completion-scene').replaceChildren(restoredScene(svg,level.name));
  $('completion-text').textContent=level.id==='forest'?'Глава «За калитку» пройдена! Следующее приключение готовится.':level.outro;
  $('next-level').hidden=level.id==='forest';
