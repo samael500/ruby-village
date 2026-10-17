@@ -3,6 +3,7 @@ from pathlib import Path
 from PIL import Image,ImageDraw,ImageChops
 root=Path(__file__).resolve().parents[2]; j=json.loads((root/'src/chapter-1.legacy.json').read_text()); actors=json.loads((root/'docs/chapter-1-rc/art/coordinator-review/resident-composites/anchors.json').read_text())['actors']; residents=json.loads((root/'public/assets/characters-v1/residents-manifest.json').read_text())['characters']; delivery=json.loads((root/'public/assets/characters-v1/delivery-manifest.json').read_text())['deliveries']
 actors['well']=[['teacher',1225,405]]
+actors['garden']=[['rabbit',1450,350]]
 checks=[]
 for scene,people in actors.items():
  camera=j['scene-v8.json'][scene]['camera'];R=camera['radius'];a=camera['angle'];c=math.cos(a);s=math.sin(a);terrain=j['chapter-1.logical.json'][scene]['terrain'];mask=Image.new('L',(1672,941));d=ImageDraw.Draw(mask)

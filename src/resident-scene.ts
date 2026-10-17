@@ -6,7 +6,7 @@ export type ResidentPlacement={id:Resident;feet:{x:number;y:number}};
 export const sceneResidents:Readonly<Record<string,readonly Resident[]>>={garden:['rabbit'],well:['teacher'],bakery:['baker'],stream:['squirrel'],mill:['miller','squirrel'],post:['hedgehog']};
 /** Audited legacy anchors keep residents visible while matching final art is staged. */
 export const legacyResidentPlacements:Readonly<Record<string,readonly ResidentPlacement[]>>={
- garden:[{id:'rabbit',feet:{x:1280,y:245}}],
+ garden:[{id:'rabbit',feet:{x:1450,y:350}}],
  well:[{id:'teacher',feet:{x:1225,y:405}}],
  bakery:[{id:'baker',feet:{x:1290,y:405}}],
  stream:[{id:'squirrel',feet:{x:1400,y:225}}],
