@@ -1,0 +1,63 @@
+{
+  "status": "four-key coarse pilot, no production",
+  "cycleDurationMs": 720,
+  "frameSize": [
+    320,
+    320
+  ],
+  "frames": [
+    {
+      "phase": 0.0,
+      "source": "four-key-whole-01.png",
+      "cell": 0,
+      "sourceCellSize": 627,
+      "uniformSourceScale": 0.37,
+      "translation": [
+        29,
+        33
+      ],
+      "groundSoleRegistration": "visible alpha sole baseline256; not physical footplant verification",
+      "durationMs": 180
+    },
+    {
+      "phase": 0.25,
+      "source": "four-key-whole-01.png",
+      "cell": 1,
+      "sourceCellSize": 627,
+      "uniformSourceScale": 0.37,
+      "translation": [
+        47,
+        30
+      ],
+      "groundSoleRegistration": "visible alpha sole baseline256; not physical footplant verification",
+      "durationMs": 180
+    },
+    {
+      "phase": 0.5,
+      "source": "opposite-contact-01.png",
+      "cell": 2,
+      "sourceCellSize": 627,
+      "uniformSourceScale": 0.37,
+      "translation": [
+        29,
+        32
+      ],
+      "groundSoleRegistration": "visible alpha sole baseline256; not physical footplant verification",
+      "durationMs": 180
+    },
+    {
+      "phase": 0.75,
+      "source": "four-key-whole-01.png",
+      "cell": 3,
+      "sourceCellSize": 627,
+      "uniformSourceScale": 0.37,
+      "translation": [
+        46,
+        34
+      ],
+      "groundSoleRegistration": "visible alpha sole baseline256; not physical footplant verification",
+      "durationMs": 180
+    }
+  ],
+  "warning": "Only4keys; no start/stop/turn, no six-direction set; phase/anatomy/identity need actual loop review"
+}
