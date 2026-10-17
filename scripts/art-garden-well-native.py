@@ -13,7 +13,7 @@ def polygon_mask(scene,kind=None,free=False):
     for c in geometry(scene)['cells']:
         if (free and c['terrain'] is None) or (not free and c['terrain']==kind):d.polygon([(p['x'],p['y']) for p in c['polygon']],fill=255)
     return mask
-def intersects(alpha,mask):return sum(v>8 for v in ImageChops.multiply(alpha,mask).getdata())
+def intersects(alpha,mask):return sum(ImageChops.multiply(alpha,mask).histogram()[1:])
 def overlay(scene,base,name):
     canvas=base.convert('RGBA');marks=Image.new('RGBA',SIZE);d=ImageDraw.Draw(marks)
     for c in geometry(scene)['cells']:
@@ -26,6 +26,7 @@ def garden():
     # Native alpha-only erosion removes generated colored fringe; whole source preserved.
     tree.putalpha(tree.getchannel('A').filter(ImageFilter.MinFilter(5)))
     tree=tree.resize((588,490),Image.Resampling.LANCZOS)
+    tree.putalpha(tree.getchannel('A').point(lambda a:0 if a<=2 else a))
     tree_layer=Image.new('RGBA',SIZE);tree_layer.alpha_composite(tree,(580,100))
     tree_layer.save(OUT/'layers/garden-tree-v1.png')
     # Segment the original tiny prop crop: green backdrop becomes alpha,
@@ -66,6 +67,6 @@ def garden():
     Image.alpha_composite(base,rabbit).save(OUT/'review/garden-native-v1-rabbit.png')
     free=polygon_mask('garden',free=True).filter(ImageFilter.MinFilter(3))
     ground=Image.new('L',SIZE);ImageDraw.Draw(ground).rectangle((0,520,1671,940),fill=255)
-    checks={'candidate':'garden-native-v1','status':'review-pending','treeUniformTransform':{'source':[1374,1145],'target':[588,490],'offset':[580,100],'crownClipping':False,'nativeAlphaErosionRadius':2},'table':{'sourceRect':[1030,375,280,155],'targetRect':[1215,170,168,93],'scale':.6,'count':1,'backdropGreenRemoved':True},'rabbitFeet':[1295,265],'fullFreeInteriorTolerancePx':1,'treeFullAlphaFreeOverlap':intersects(tree_layer.getchannel('A'),free),'treeGroundAlphaFreeOverlap':intersects(tree_layer.getchannel('A'),ImageChops.multiply(free,ground)),'tableAlphaFreeOverlap':intersects(table_layer.getchannel('A'),free),'rabbitFullAlphaFreeOverlap':intersects(rabbit.getchannel('A'),free)}
+    checks={'candidate':'garden-native-v1','status':'review-pending','treeUniformTransform':{'source':[1374,1145],'target':[588,490],'offset':[580,100],'crownClipping':False,'nativeAlphaErosionRadius':2,'postResampleDropAlphaAtMost':2},'table':{'sourceRect':[1030,375,280,155],'targetRect':[1215,170,168,93],'scale':.6,'count':1,'backdropGreenRemoved':True},'rabbitFeet':[1295,265],'fullFreeInteriorTolerancePx':1,'treeFullAlphaFreeOverlap':intersects(tree_layer.getchannel('A'),free),'treeGroundAlphaFreeOverlap':intersects(tree_layer.getchannel('A'),ImageChops.multiply(free,ground)),'tableAlphaFreeOverlap':intersects(table_layer.getchannel('A'),free),'rabbitFullAlphaFreeOverlap':intersects(rabbit.getchannel('A'),free)}
     (OUT/'review/garden-native-v1-checks.json').write_text(json.dumps(checks,indent=2)+'\n');print(json.dumps(checks))
 if __name__=='__main__':garden()
