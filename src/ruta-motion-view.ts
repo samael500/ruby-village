@@ -5,7 +5,7 @@ export type RuntimeMotionSet=PaintedSet&{directions:Record<Direction,PaintedSet[
 type Manifest=RuntimeMotionSet&{sceneCameraVariant:Record<string,string>;cameraVariants:Record<string,{directions:RuntimeMotionSet['directions']}>};
 let manifestPromise:Promise<Manifest>|null=null;
 export async function loadMotionSet(sceneId:string):Promise<RuntimeMotionSet>{
- if(!manifestPromise)manifestPromise=fetch(`${import.meta.env.BASE_URL}assets/characters-walk-v1/animated-v2/manifest.json`).then(response=>{if(!response.ok)throw new Error('Character manifest unavailable');return response.json();});
+ if(!manifestPromise)manifestPromise=fetch(`${import.meta.env.BASE_URL}assets/characters-walk-v1/animated-v3/manifest.json`).then(response=>{if(!response.ok)throw new Error('Character manifest unavailable');return response.json();});
  try{return selectPaintedScene(await manifestPromise,sceneId) as RuntimeMotionSet;}catch(error){manifestPromise=null;throw error;}
 }
 const ns='http://www.w3.org/2000/svg';

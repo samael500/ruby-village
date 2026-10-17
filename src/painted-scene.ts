@@ -1,7 +1,9 @@
 import type {fitScene} from './scene-camera.ts';
+import {sceneJoinMask} from './scene-mask.ts';
 type Scene=ReturnType<typeof fitScene>;
 export type PaintedSceneAssets={
  background:string;foreground?:string|null;gateClosed?:string;gateOpen?:string;
+ joinBand?:number;
  wide?:{file:string;canvas:{width:number;height:number};originalRect:{x:number;y:number;width:number;height:number}}|null;
 };
 const ns='http://www.w3.org/2000/svg';
@@ -14,10 +16,10 @@ export function paintedBackdrop(svg:SVGSVGElement,scene:Scene,assets:PaintedScen
  if(!assets.wide)throw new Error('Painted scene requires its audited wide surroundings');
  const group=world(svg,scene,'data-painted-world'),{canvas,originalRect}=assets.wide;
  node('image',{'data-surroundings':'',href:url(assets.wide.file),x:-originalRect.x,y:-originalRect.y,width:canvas.width,height:canvas.height},group);
- node('image',{'data-painted-background':'',href:url(assets.background),width:originalRect.width,height:originalRect.height},group);
+ node('image',{'data-painted-background':'',href:url(assets.background),width:originalRect.width,height:originalRect.height,mask:sceneJoinMask(group,originalRect.width,originalRect.height,assets.joinBand??48)},group);
 }
 export function paintedForeground(svg:SVGSVGElement,scene:Scene,assets:PaintedSceneAssets,open:boolean){
- const group=world(svg,scene,'data-painted-foreground');
+ const worldGroup=world(svg,scene,'data-painted-foreground'),group=node('g',{mask:sceneJoinMask(worldGroup,1672,941,assets.joinBand??48)},worldGroup);
  if(assets.foreground)node('image',{href:url(assets.foreground),width:1672,height:941},group);
  const gate=open?assets.gateOpen:assets.gateClosed;
  if(gate)node('image',{'data-painted-gate':open?'open':'closed',href:url(gate),width:1672,height:941},group);
