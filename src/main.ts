@@ -1,4 +1,5 @@
 import './style.css';
+import {releasePreview,confirmedPreview} from './placement-preview.ts';
 import {characterFrame,characterUrl} from './character-assets.ts';
 import poses from '../public/assets/characters-v1/poses-manifest.json' with {type:'json'};
 import {renderPrologueScene,type StorySprite} from './prologue-scene.ts';
@@ -37,7 +38,7 @@ app.innerHTML = `
 <footer id="game-controls">
 <div id="tray" aria-label="Набор фигур"></div>
 <div id="selection-actions" hidden>
-<button id="other"><b>‹</b><span>Другие плиты</span></button><button id="selected-drag" aria-label="Перетащить выбранную фигуру" hidden></button>
+<button id="other" aria-label="Отменить размещение"><b>‹</b><span>Отмена</span></button><button id="selected-drag" aria-label="Перетащить выбранную фигуру" hidden></button>
 <button id="left" aria-label="Повернуть влево"><b>↶</b><span>Влево</span></button>
 <button id="right" aria-label="Повернуть вправо"><b>↷</b><span>Вправо</span></button>
 <button id="place" class="primary"><b>＋</b><span>Поставить</span></button>
@@ -102,7 +103,7 @@ const v6Preview=true;
 const groundPoint=(x:number,y:number)=>{const p=project({x,y},projection);return {x:p.x+groundOffset.x,y:p.y+groundOffset.y};};
 let verticalRadius=13,horizontalRadius=17;
 let radius = 20, origin = {x:0,y:0};
-let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number; toggleOnTap: boolean} | null = null;
+let drag: {pointer: number; startX: number; startY: number; moved: boolean; beforeAnchor: Hex | null; beforeTurns: number; beforePinned: boolean; toggleOnTap: boolean} | null = null;
 let suppressClick = false, deferDock = false, dockFrame = 0;
 // The dock changes under a released pointer. Consume its synthetic click so it
 // cannot activate a different button; the next real gesture starts afresh.
@@ -135,13 +136,14 @@ function select(id: string) {
 }
 function commit() {
   if (orientationBlocked || phase!=='playing' || !selected || !anchor || !previewValid()) return false;
-  void gameAudio.play('tile-place');snapshot(); layout[selected]={anchor:{...anchor},turns}; resetSelection(); message('Плита на месте. Выбери следующую!'); render(); return true;
+  const next=confirmedPreview(level,layout,{selected,anchor,turns,pinned:anchorPinned});if(!next)return false;
+  void gameAudio.play('tile-place');snapshot(); layout=next; resetSelection(); message('Плита на месте. Выбери следующую!'); render(); return true;
 }
 function updateControls() {
   for(const button of document.querySelectorAll<HTMLButtonElement>('footer button')) button.disabled=false;
   app.classList.toggle('drag-mode',mode==='drag');
   $('selected-drag').setAttribute('aria-label',mode==='drag'?'Перетащить выбранную фигуру':'Выбранная фигура');
-  $('selected-drag').hidden=true;$('other').hidden=true;$('left').hidden=true;
+  $('selected-drag').hidden=true;$('other').hidden=!selected;$('left').hidden=true;
   $('tray').hidden=false;
   $('selection-actions').hidden=false;
   $('selection-actions').style.visibility=selected?'visible':'hidden';
@@ -151,7 +153,7 @@ function updateControls() {
   $('return').toggleAttribute('disabled',!selected||!layout[selected]);
   $('return').style.visibility=selected&&layout[selected]?'visible':'hidden';
   $('place').style.visibility=mode==='select'?'visible':'hidden';
-  $('undo').toggleAttribute('disabled',history.length===0);
+  $('undo').toggleAttribute('disabled',history.length===0&&!(selected&&anchor));
   $('clear').toggleAttribute('disabled',phase==='walking');
   for(const button of document.querySelectorAll<HTMLButtonElement>('footer button')) if(phase!=='playing') button.disabled=true;
 }
@@ -355,7 +357,7 @@ function startDrag(e: PointerEvent,id: string) {
   // Tray permits horizontal pans; lifting a piece starts a drag on the board.
   const toggleOnTap=selected===id&&!!(e.target as Element).closest('#tray');
   if(selected!==id) select(id);
-  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns,toggleOnTap};
+  drag={pointer:e.pointerId,startX:e.clientX,startY:e.clientY,moved:false,beforeAnchor:anchor?{...anchor}:null,beforeTurns:turns,beforePinned:anchorPinned,toggleOnTap};
   app.setPointerCapture(e.pointerId);updateTraySelection();updateControls();renderBoard();
 }
 $('selected-drag').addEventListener('pointerdown',e=>{if(selected)startDrag(e,selected);});
@@ -364,12 +366,14 @@ $('tray').addEventListener('pointerdown',e=>{
   if(id) startDrag(e,id);
 });
 svg.addEventListener('pointerdown',e=>{
-  const h=eventHex(e), id=h && ownerAt(h); if(id) startDrag(e,id);
+  const h=eventHex(e);
+  const onPreview=!!(h&&selected&&anchor&&placedCells(selected,{anchor,turns}).some(cell=>key(cell)===key(h)));
+  const id=onPreview?selected:h&&ownerAt(h);if(id)startDrag(e,id);
 });
 app.addEventListener('pointermove',e=>{
   if(!drag||e.pointerId!==drag.pointer) return;
   if(Math.hypot(e.clientX-drag.startX,e.clientY-drag.startY)>5) drag.moved=true;
-  if(drag.moved) {anchor=eventHex(e,true); renderBoard();}
+  if(drag.moved) {anchor=eventHex(e,true)??anchor;renderBoard();}
 });
 function finishDrag(e: PointerEvent,cancel: boolean) {
   if(!drag||e.pointerId!==drag.pointer) return;
@@ -378,12 +382,14 @@ function finishDrag(e: PointerEvent,cancel: boolean) {
   deferDock=e.pointerType==='touch';
   if(app.hasPointerCapture(e.pointerId)) app.releasePointerCapture(e.pointerId);
   suppressClick=true;
+  const destination=eventHex(e,true);
+  const next=releasePreview({selected,anchor,turns,pinned:anchorPinned},{selected,anchor:previous.beforeAnchor,turns:previous.beforeTurns,pinned:previous.beforePinned},destination,cancel,previous.moved);
+  selected=next.selected;anchor=next.anchor;turns=next.turns;anchorPinned=next.pinned;
   if(!cancel && previous.moved) {
-    anchor=eventHex(e,true);
-    if(commit()) return;
-    message('Здесь не помещается. Плита вернулась на прежнее место.');
+    // Releasing outside the board keeps the last preview, but never commits it.
+    if(destination&&commit())return;
+    message(previewValid()?'Плита осталась на поле. Передвинь её или нажми «Отмена».':'Здесь не помещается. Плита осталась на поле: поверни или передвинь её.');
   }
-  anchor=previous.beforeAnchor; turns=previous.beforeTurns;
   if(!cancel&&!previous.moved&&previous.toggleOnTap){resetSelection();message('Выбор снят. Дорога сохранена.');}
   if(cancel) message('Перетаскивание отменено. Плита сохранена.');
   render();
@@ -393,7 +399,7 @@ app.addEventListener('pointercancel',e=>finishDrag(e,true));
 app.addEventListener('lostpointercapture',e=>{if(drag) finishDrag(e,true);});
 for(const [id,delta] of [['left',-1],['right',1]] as const) $(id).onclick=()=>{if(selected){turns=(turns+delta+6)%6;learningRotated=true;void gameAudio.play('tile-rotate');render();}};
 $('place').onclick=commit;
-$('other').onclick=()=>{resetSelection();message('Выбери другую плиту.');render();};
+$('other').onclick=()=>{const placed=!!(selected&&layout[selected]);resetSelection();message(placed?'Перенос отменён. Плита на прежнем месте.':'Размещение отменено. Плита в наборе.');render();};
 const settings=$('settings-panel') as HTMLDialogElement;
 const pause=$('pause-panel') as HTMLDialogElement;
 $('settings-open').onclick=()=>pause.showModal();
@@ -411,7 +417,7 @@ $('return').onclick=()=>{
   if(layout[selected]) {snapshot();delete layout[selected];}
   void gameAudio.play('tile-return');resetSelection(); message('Плита в наборе.'); render();
 };
-$('undo').onclick=()=>{const prior=history.pop();if(prior){layout=prior;void gameAudio.play('tile-return');path.clear();resetSelection();message('Последнее действие отменено.');render();}};
+$('undo').onclick=()=>{if(selected&&anchor){resetSelection();message('Предпросмотр отменён. Дорога сохранена.');render();return;}const prior=history.pop();if(prior){layout=prior;void gameAudio.play('tile-return');path.clear();resetSelection();message('Последнее действие отменено.');render();}};
 $('clear').onclick=()=>{if(phase!=='playing')return;settings.close();($('restart-dialog') as HTMLDialogElement).showModal();};
 $('check').onclick=()=>{
   if(orientationBlocked||phase!=='playing')return;
@@ -709,6 +715,7 @@ function syncPause(){
  gameAudio.setDucked(!!app.querySelector('#story[open],#prologue-panel[open],#completion-panel[open],#help-panel[open]'));
 
  const blocked=document.hidden||orientationBlocked||[...app.querySelectorAll<HTMLDialogElement>('dialog')].some(d=>d.open);
+ if(blocked&&drag)finishDrag(new PointerEvent('pointercancel',{pointerId:drag.pointer}),true);
  modalPaused=[...app.querySelectorAll<HTMLDialogElement>('dialog')].some(d=>d.open);
  if(blocked===clockPaused)return;
  clockPaused=blocked;
