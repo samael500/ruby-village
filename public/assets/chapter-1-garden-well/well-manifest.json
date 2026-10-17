@@ -1,0 +1,45 @@
+{
+  "candidate": "well-native-v1",
+  "status": "native-pilot-awaiting-actual-game",
+  "source": "art/chapter-1-v9/garden-well/well-native-v1.png",
+  "sourceWholeSize": [
+    1608,
+    978
+  ],
+  "sourceAlphaCrop": [
+    20,
+    18,
+    1590,
+    941
+  ],
+  "uniformTargetSize": [
+    380,
+    223
+  ],
+  "offset": [
+    615,
+    380
+  ],
+  "nativeAlphaErosionRadius": 2,
+  "postResampleDropAlphaAtMost": 2,
+  "perimeterHardClip": false,
+  "strictAnyNonzeroAlpha": true,
+  "flowerFullAlphaFreeOverlap": 0,
+  "flowerOutsideInsetAcceptedUnion": 0,
+  "teacherProposedFeet": [
+    1195,
+    405
+  ],
+  "teacherFullAlphaFreeOverlap": 972,
+  "rasterTolerancePx": 1,
+  "schemaVersion": 1,
+  "canvas": [
+    1672,
+    941
+  ],
+  "background": "well/background.webp",
+  "sourceSha256": "3838df6e65cfbafdc8220c384b9ed045bb05c533b3d894dbcf3b437dc17a5675",
+  "activation": "coordinator-only",
+  "npcStatus": "proposed teacher anchor overlap972 in this art geometry, coordinator actual runtime review required",
+  "mapMatched": "original tile-roof stone well and warm cottages retained; natural daisies/roses/lavender bed from original reference"
+}
