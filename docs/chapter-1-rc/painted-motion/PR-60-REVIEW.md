@@ -14,4 +14,5 @@ Validation:71 tests, TypeScript noEmit and Vite build; actual evaluated source f
 
 Limits: these are silent, labelled motion benches on the approved courtyard, not production chapter or bridge gameplay. Six painted turn views are discrete with continuous step phase. Production route/bridge/audio verification and independent #37 remain integration work. Physical phone/iOS/family checks are not run. Headless tabs never became hidden, so real background-tab verification is not claimed.
 
-Remote update is currently blocked: automatic approval review twice rejected pushing this feature branch, even after checking draft PR/base and main-only deployment. It requires explicit user authorization for `git push origin art/36-painted-walk` and editing draft PR #60. Do not bypass by publishing through another mechanism.
+
+Remote update authorized explicitly by Maksim on 2026-10-17: «Да, разрешаю push рабочих веток и обновление PR». This updates only the working branch and draft PR; main, merging and deployment remain excluded.
