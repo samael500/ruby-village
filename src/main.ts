@@ -646,7 +646,7 @@ prologue.dataset.storyId=PROLOGUE_ID;
 let redrawPrologue:(()=>void)|null=null;
 new ResizeObserver(()=>{if(prologue.open)redrawPrologue?.();}).observe(prologue.querySelector('.prologue-stage')!);
 function showPrologue(replay:boolean,finish:()=>void){
- let index=replay?0:prologueState.frame;
+ let index=replay?0:prologueState.frame,lastSoundFrame=-1;
  const write=()=>{if(!replay){prologueState={...prologueState,active:true,frame:index};storageAvailable=savePrologue(prologueState,storage)&&storageAvailable;}};
  const draw=()=>{
   const item=prologueFrames[index];prologue.dataset.frame=String(index);prologue.dataset.scene=item.scene;
@@ -664,7 +664,11 @@ function showPrologue(replay:boolean,finish:()=>void){
   else{const idle=rutaManifest.characters.ruta.frames['idle-pilot'];sprites.push({file:idle.image,frameSize:idle.frameSize,footAnchor:idle.footAnchor,height:136,position:startFoot,label:'Рута'});const basket=poses.frames['basket-ground'];sprites.push({file:basket.image,frameSize:basket.frameSize,footAnchor:basket.footAnchor,height:basket.sceneHeightPx,position:{x:startFoot.x+42,y:startFoot.y+12},label:'Корзина яблок',shadow:false});}
   const hand=poses.frames['ruta-crouch-basket'].props.reachingHandAnchor,crouch=poses.frames['ruta-crouch-basket'];
   const stone={x:looseFoot.x+(hand[0]-crouch.footAnchor[0])*crouch.scale,y:looseFoot.y+(hand[1]-crouch.footAnchor[1])*crouch.scale};
-  void renderPrologueScene(canvas,scene,storyLevel,sprites,index<2,index===3?[stone,{x:stone.x+30,y:stone.y+14},{x:stone.x-16,y:stone.y+27}]:index===4?[stone]:[]);
+  const drawnIndex=index;
+  void renderPrologueScene(canvas,scene,storyLevel,sprites,index<2,index===3?[stone,{x:stone.x+30,y:stone.y+14},{x:stone.x-16,y:stone.y+27}]:index===4?[stone]:[]).then(()=>{
+   if(!prologue.open||index!==drawnIndex||canvas.dataset.ready!=='true'||lastSoundFrame===drawnIndex)return;
+   lastSoundFrame=drawnIndex;if(drawnIndex===1)void gameAudio.play('basket');if(drawnIndex===4)void gameAudio.play('stone');
+  });
   ($('prologue-back') as HTMLButtonElement).disabled=index===0;
   $('prologue-next').textContent=index===prologueFrames.length-1?(replay?(screen==='game'?'Вернуться в игру':'Вернуться в меню'):'К калитке →'):'Дальше →';
   write();
