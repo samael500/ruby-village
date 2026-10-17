@@ -14,9 +14,9 @@
       "paused": false,
       "state": "walk",
       "direction": "e",
-      "phaseMs": 216.40000000000055,
+      "phaseMs": 233.09999999999945,
       "position": {
-        "x": 823.4459014555256,
+        "x": 824.3862149865229,
         "y": 450
       },
       "contacts": 1,
@@ -29,7 +29,8 @@
         0,
         144,
         216
-      ]
+      ],
+      "goal": null
     },
     "se": {
       "ready": true,
@@ -37,10 +38,10 @@
       "paused": false,
       "state": "walk",
       "direction": "se",
-      "phaseMs": 49.80000000000018,
+      "phaseMs": 99.69999999999982,
       "position": {
-        "x": 902.3497288007394,
-        "y": 451.1242228259795
+        "x": 903.350303732012,
+        "y": 452.25070312751296
       },
       "contacts": 5,
       "lastFoot": "left",
@@ -48,11 +49,12 @@
       "programIndex": 3,
       "frameFile": "assets/characters-walk-v1/animated-v2/base-se.webp",
       "sourceRect": [
-        0,
+        144,
         0,
         144,
         216
-      ]
+      ],
+      "goal": null
     },
     "sw": {
       "ready": true,
@@ -60,10 +62,10 @@
       "paused": false,
       "state": "walk",
       "direction": "sw",
-      "phaseMs": 133,
+      "phaseMs": 199.59999999999945,
       "position": {
-        "x": 930.7668589129528,
-        "y": 489.1220513538583
+        "x": 929.4314222311341,
+        "y": 490.6255300729391
       },
       "contacts": 9,
       "lastFoot": "left",
@@ -71,11 +73,12 @@
       "programIndex": 4,
       "frameFile": "assets/characters-walk-v1/animated-v2/base-sw.webp",
       "sourceRect": [
-        288,
+        432,
         0,
         144,
         216
-      ]
+      ],
+      "goal": null
     },
     "w": {
       "ready": true,
@@ -83,9 +86,9 @@
       "paused": false,
       "state": "walk",
       "direction": "w",
-      "phaseMs": 233,
+      "phaseMs": 16.19999999999891,
       "position": {
-        "x": 888.2318145552548,
+        "x": 900.4389985983814,
         "y": 522.2392177336096
       },
       "contacts": 13,
@@ -94,11 +97,12 @@
       "programIndex": 5,
       "frameFile": "assets/characters-walk-v1/animated-v2/base-w.webp",
       "sourceRect": [
-        576,
+        0,
         0,
         144,
         216
-      ]
+      ],
+      "goal": null
     },
     "nw": {
       "ready": true,
@@ -106,10 +110,10 @@
       "paused": false,
       "state": "walk",
       "direction": "nw",
-      "phaseMs": 49.600000000000364,
+      "phaseMs": 116.19999999999891,
       "position": {
-        "x": 810.2666804414587,
-        "y": 521.1195098587377
+        "x": 808.93124375964,
+        "y": 519.616031139657
       },
       "contacts": 17,
       "lastFoot": "left",
@@ -117,11 +121,12 @@
       "programIndex": 6,
       "frameFile": "assets/characters-walk-v1/animated-v2/base-nw.webp",
       "sourceRect": [
-        0,
+        288,
         0,
         144,
         216
-      ]
+      ],
+      "goal": null
     },
     "ne": {
       "ready": true,
@@ -129,10 +134,10 @@
       "paused": false,
       "state": "walk",
       "direction": "ne",
-      "phaseMs": 132.8000000000011,
+      "phaseMs": 216.1999999999989,
       "position": {
-        "x": 781.8415296885136,
-        "y": 483.1216813308605
+        "x": 783.5138332810612,
+        "y": 481.2389467186784
       },
       "contacts": 21,
       "lastFoot": "left",
@@ -140,11 +145,12 @@
       "programIndex": 7,
       "frameFile": "assets/characters-walk-v1/animated-v2/base-ne.webp",
       "sourceRect": [
-        288,
+        576,
         0,
         144,
         216
-      ]
+      ],
+      "goal": null
     }
   },
   "completeRoute": {
@@ -168,7 +174,8 @@
       648,
       144,
       216
-    ]
+    ],
+    "goal": null
   },
   "paused": {
     "ready": true,
@@ -191,7 +198,8 @@
       216,
       144,
       216
-    ]
+    ],
+    "goal": null
   },
   "calibratedPost": {
     "ready": true,
@@ -214,7 +222,8 @@
       216,
       144,
       216
-    ]
+    ],
+    "goal": null
   },
   "reducedMotion": {
     "ready": true,
@@ -237,7 +246,8 @@
       432,
       144,
       216
-    ]
+    ],
+    "goal": null
   },
   "browserErrors": [],
   "physicalPhone": "not-run",

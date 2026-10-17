@@ -12,7 +12,7 @@ async def run():
    if s['state']=='walk' and s['direction'] not in seen:
     seen[s['direction']]=s;await page.screenshot(path=str(out/f'v2-route-{s["direction"]}.png'))
   assert set(seen)=={'e','se','sw','w','nw','ne'},seen
-  final=states[-1];assert final['completions']==1 and not final['playing'] and final['state']=='idle',final
+  final=states[-1];assert final['contacts']==26,final;assert final['completions']==1 and not final['playing'] and final['state']=='idle',final
   await page.click('#play');await page.wait_for_timeout(4100);await page.click('#pause');await page.wait_for_timeout(50);a=await page.evaluate('window.motionFullState');await page.wait_for_timeout(500);b=await page.evaluate('window.motionFullState');assert a['phaseMs']==b['phaseMs'] and a['position']==b['position'];await page.click('#pause')
   await context.close();await page.video.save_as(str(out/'v2-full-route.webm'))
   mobile=await browser.new_context(viewport={'width':844,'height':390});small=await mobile.new_page();await small.goto(args.url);await small.wait_for_function('window.motionReady');await small.select_option('#scene','post');await small.wait_for_timeout(800);await small.click('#play');await small.wait_for_timeout(4200);post=await small.evaluate('window.motionFullState');assert 'calibrated-1-' in post['frameFile'];await small.screenshot(path=str(out/'v2-post-landscape.png'))
