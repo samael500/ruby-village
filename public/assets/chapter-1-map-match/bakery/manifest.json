@@ -1,0 +1,62 @@
+{
+  "status": "map-match-candidate-requires-art-and-game-review",
+  "background": "assets/chapter-1-map-match/bakery/background.webp",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "camera": {
+    "radius": 68.83326050303945,
+    "origin": {
+      "x": 168.55028803684962,
+      "y": 291.0714285714285
+    },
+    "angle": 0.04494904935533156,
+    "groundScale": 0.65
+  },
+  "anchors": {
+    "start": {
+      "x": 378.91832705503657,
+      "y": 700.3035714285716
+    },
+    "goal": {
+      "x": 1231.192008768393,
+      "y": 456.5
+    }
+  },
+  "geometrySha256": "1638f6dcf280934026a5f426791e5b17c1ae49741155f592e42585b765c3d09c",
+  "layoutAdjustmentsSha256": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e",
+  "source": "art/chapter-1-map-match/bakery/generated-core-01.png",
+  "sourceSha256": "90e8c7a335d72c2ab3ad672b58dfe8166b1cce48ffce93085344d12a372ade45",
+  "registration": {
+    "facadeUniformScale": 1,
+    "pivot": [
+      0,
+      0
+    ],
+    "editableRectangle": [
+      1030,
+      15,
+      1620,
+      420
+    ],
+    "featherRadius": 9,
+    "protectedFullFreePolygonsGuardPixels": 3
+  },
+  "checks": {
+    "fullFreePolygonPixelsChanged": 0,
+    "opaque": true,
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sourceGenerationNativeSize": [
+      1672,
+      941
+    ],
+    "gameQa": "not-run",
+    "artAcceptance": "pending"
+  },
+  "foreground": null,
+  "wide": null
+}
