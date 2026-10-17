@@ -1,0 +1,395 @@
+{
+  "version": 1,
+  "events": {
+    "ui-click": {
+      "variants": [
+        "click.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/interface-sounds"
+    },
+    "modal": {
+      "variants": [
+        "modal.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/interface-sounds"
+    },
+    "dialog": {
+      "variants": [
+        "dialog.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/interface-sounds"
+    },
+    "tile-select": {
+      "variants": [
+        "select.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "tile-place": {
+      "variants": [
+        "place.ogg",
+        "place-1.ogg",
+        "place-2.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "tile-rotate": {
+      "variants": [
+        "rotate.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/interface-sounds"
+    },
+    "tile-return": {
+      "variants": [
+        "return.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "tile-reject": {
+      "variants": [
+        "reject.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "check-incomplete": {
+      "variants": [
+        "reject.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "path-connected": {
+      "variants": [
+        "chime.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "victory": {
+      "variants": [
+        "victory.ogg"
+      ],
+      "gain": 0.55,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "gate-open": {
+      "variants": [
+        "gate.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "paper": {
+      "variants": [
+        "paper.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/interface-sounds"
+    },
+    "basket": {
+      "variants": [
+        "basket.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "stone": {
+      "variants": [
+        "chime.ogg"
+      ],
+      "gain": 0.4,
+      "minIntervalMs": 70,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "foot-earth": {
+      "variants": [
+        "foot-earth-0.ogg",
+        "foot-earth-1.ogg",
+        "foot-earth-2.ogg"
+      ],
+      "gain": 0.28,
+      "minIntervalMs": 160,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "foot-stone": {
+      "variants": [
+        "foot-stone-0.ogg",
+        "foot-stone-1.ogg",
+        "foot-stone-2.ogg"
+      ],
+      "gain": 0.28,
+      "minIntervalMs": 160,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    },
+    "foot-wood": {
+      "variants": [
+        "foot-wood-0.ogg",
+        "foot-wood-1.ogg",
+        "foot-wood-2.ogg"
+      ],
+      "gain": 0.28,
+      "minIntervalMs": 160,
+      "loop": false,
+      "license": "CC0-1.0",
+      "author": "Kenney",
+      "sourceUrl": "https://kenney.nl/assets/impact-sounds"
+    }
+  },
+  "ambiences": {
+    "gate": {
+      "file": "leaves.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "garden": {
+      "file": "leaves.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "well": {
+      "file": "village.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "bakery": {
+      "file": "bakery.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "stream": {
+      "file": "water.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "mill": {
+      "file": "water.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "post": {
+      "file": "village.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    },
+    "forest": {
+      "file": "forest.ogg",
+      "gain": 0.65,
+      "loop": true,
+      "license": "CC0-1.0",
+      "author": "Ruby Village contributors",
+      "sourceUrl": "scripts/audio-effects-build.py"
+    }
+  },
+  "files": {
+    "bakery.ogg": {
+      "bytes": 5406,
+      "sha256": "ff55aca10ec30d4b8a352d3237e0bdeab1af048a0bfb7ad59bbfaa91dfd0a825"
+    },
+    "basket.ogg": {
+      "bytes": 3911,
+      "sha256": "82c74cac6a74b04c45b3bd4c7c3a27d3c6521c73d35270f2ed5a0a99fe5b8f5d"
+    },
+    "chime.ogg": {
+      "bytes": 5343,
+      "sha256": "db7b1488f298903d43ee0c1a8629316447bf32728e2eb076080c2d64a1b3e60c"
+    },
+    "click.ogg": {
+      "bytes": 3815,
+      "sha256": "90df243e2826f85e036963b621599b974ab1edca9df0a1b6819f9de09fd8c88e"
+    },
+    "dialog.ogg": {
+      "bytes": 4225,
+      "sha256": "34353d08dcd96e44e0f977e74cfff9672294dfa21ba8cf1aed26be285e5a4276"
+    },
+    "foot-earth-0.ogg": {
+      "bytes": 4667,
+      "sha256": "7f5e652bbd46ae04cc48c0bffcd67c8f430ec466764215f2200005f1a8c84845"
+    },
+    "foot-earth-1.ogg": {
+      "bytes": 4646,
+      "sha256": "8d00a09eae7fbc34b4922865b79e7c2231e82069d2fca1b65ef3a844d5bf0aca"
+    },
+    "foot-earth-2.ogg": {
+      "bytes": 4675,
+      "sha256": "69ca24a95b92c626aea1bcb246cc3824aaa7ef6deab9491196623c66226ef166"
+    },
+    "foot-stone-0.ogg": {
+      "bytes": 4055,
+      "sha256": "d6f5a157b3ed606bd83b4e5d014d110b6013b03166f4335d97195a69d85199b0"
+    },
+    "foot-stone-1.ogg": {
+      "bytes": 4109,
+      "sha256": "25fe0ce953f59efa7468503be02da99472eb579fd7f591b122d018324f4edb1f"
+    },
+    "foot-stone-2.ogg": {
+      "bytes": 4124,
+      "sha256": "c1c824ed0bac4f3d9b76c5e2b9bf22bff0909427dde56827f8acdb08202f760f"
+    },
+    "foot-wood-0.ogg": {
+      "bytes": 4025,
+      "sha256": "eb6d6cdc03d44e24d8f512f9a1b3ae4f145da9f075a99634d7276811b0a92915"
+    },
+    "foot-wood-1.ogg": {
+      "bytes": 3957,
+      "sha256": "da53928c630c1d145e271453836a7c238510d3c276b4f7867c3234b80144b374"
+    },
+    "foot-wood-2.ogg": {
+      "bytes": 3937,
+      "sha256": "5f42dbe717652ca665a3c3f275e8aa3d184152cb76f9eb346b8826d82cb56b98"
+    },
+    "forest.ogg": {
+      "bytes": 6384,
+      "sha256": "5d7bffce4a3b37c6313f378b7074b34c76f54f02c1f4d9f2378412e1164a1077"
+    },
+    "gate.ogg": {
+      "bytes": 4121,
+      "sha256": "539ffad793a55a020562c9f4486163911a77d18cd192cd0469d65c4ffceedc08"
+    },
+    "leaves.ogg": {
+      "bytes": 6384,
+      "sha256": "ce20e7a231d0093f02ad6b3f192dfdb363573a2be3233ea40fe763da38380be9"
+    },
+    "modal.ogg": {
+      "bytes": 4568,
+      "sha256": "93d1d935a63adf51097badfc4ece11ea0e304ac243305d22d656226c5f8ab678"
+    },
+    "paper.ogg": {
+      "bytes": 5871,
+      "sha256": "3b755471bae2a457b7b33cd5b4087d658bed3461438c0ebc9597861a0ee113ea"
+    },
+    "place-1.ogg": {
+      "bytes": 3984,
+      "sha256": "8d3001bd3dc6b51cdb39d5c08d974424421456e198b31842637d9d7c408be4ce"
+    },
+    "place-2.ogg": {
+      "bytes": 4032,
+      "sha256": "2781231dd53672144cea9c091e27200644650834bb481584a3082e3f9409bceb"
+    },
+    "place.ogg": {
+      "bytes": 4054,
+      "sha256": "138f7f4ff6c954676b753cbf0d5f323e06467c696f25849e9f29479d9dd902e1"
+    },
+    "reject.ogg": {
+      "bytes": 3860,
+      "sha256": "bd8d6ad4e9d12ecd5c188e0b9c00f8fb013e17e725f6c37ee0f2d94be6a6c7dc"
+    },
+    "return.ogg": {
+      "bytes": 4066,
+      "sha256": "096797974e8ab7891936e4dfa6ab8ed3000cf22eb676e0748f152dc8bc6d0b13"
+    },
+    "rotate.ogg": {
+      "bytes": 4253,
+      "sha256": "1176fd50694bd7dd57d6d5e09e1883edf793d60b22d28e9e97746c341d9f361d"
+    },
+    "select.ogg": {
+      "bytes": 3862,
+      "sha256": "1c9feb2863bfdb75772bbc98bdc0a35b7548f99616250f368579356b6b644e6f"
+    },
+    "victory.ogg": {
+      "bytes": 8328,
+      "sha256": "688d17c29fd9c12ecf9d68b4266426e2e701f1db0b01e36f46f7cda97e8694f3"
+    },
+    "village.ogg": {
+      "bytes": 6384,
+      "sha256": "b01a95441435abb8e629918f0301ee476a18e97ed46bf6930c030e0b5e06174f"
+    },
+    "water.ogg": {
+      "bytes": 10246,
+      "sha256": "c945fcd4f99c881f06377d3c9383571a2dbb39e73cc122974139f3adea48cc38"
+    }
+  }
+}

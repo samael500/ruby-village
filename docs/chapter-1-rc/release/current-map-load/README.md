@@ -1,0 +1,3 @@
+# Intermediate native-map load
+
+Application build f2a3600; git snapshot d9e34ec additionally prepares inactive road code. Local desktop Chromium with844×390 viewport, cold cache, no throttling; not physical phone or real network. First puzzle transfer13,210,916bytes; after opening the new wide map16,178,602bytes; generated dist67,169,086bytes/131files. No request failures or source masters served. Prior full export retained in current-export history. Final art/gait activation must repeat final #49 checks. Initial attempt found stopped QA server5286 (ERR_CONNECTION_REFUSED); it was restarted separately, user preview5180 stayedHTTP200 throughout.

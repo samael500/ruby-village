@@ -1,0 +1,160 @@
+{
+  "baseline": "6637b8c",
+  "pauseResumeGate": "PASS, 800ms pause stable after modal settle; then finished",
+  "results": [
+    {
+      "id": "gate",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-R",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "se"
+      ],
+      "elapsedAtLastSample": 20400,
+      "monotoneClock": true,
+      "currentResult": "До калитки",
+      "storyGridDisplay": "none"
+    },
+    {
+      "id": "garden",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-L",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "ne",
+        "nw"
+      ],
+      "elapsedAtLastSample": 24000,
+      "monotoneClock": true,
+      "currentResult": "В обход яблони",
+      "storyGridDisplay": "none"
+    },
+    {
+      "id": "well",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-L",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "ne"
+      ],
+      "elapsedAtLastSample": 20000,
+      "monotoneClock": true,
+      "currentResult": "К колодцу",
+      "storyGridDisplay": "none"
+    },
+    {
+      "id": "bakery",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-L",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "ne"
+      ],
+      "elapsedAtLastSample": 20000,
+      "monotoneClock": true,
+      "currentResult": "Тёплая пекарня",
+      "storyGridDisplay": "none"
+    },
+    {
+      "id": "stream",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-L",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "ne"
+      ],
+      "elapsedAtLastSample": 19200,
+      "monotoneClock": true,
+      "currentResult": "Через ручей",
+      "storyGridDisplay": "none"
+    },
+    {
+      "id": "mill",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-L",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "ne"
+      ],
+      "elapsedAtLastSample": 21600,
+      "monotoneClock": true,
+      "currentResult": "К мельнице",
+      "storyGridDisplay": "none"
+    },
+    {
+      "id": "post",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-L",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "ne"
+      ],
+      "elapsedAtLastSample": 20000,
+      "monotoneClock": true,
+      "currentResult": "Почтовый двор",
+      "storyGridDisplay": "none"
+    },
+    {
+      "id": "forest",
+      "motion": "walking",
+      "states": [
+        "idle",
+        "start",
+        "stop-R",
+        "walk"
+      ],
+      "directions": [
+        "e",
+        "ne"
+      ],
+      "elapsedAtLastSample": 22000,
+      "monotoneClock": true,
+      "currentResult": "Тропинка за деревню",
+      "storyGridDisplay": "none"
+    }
+  ],
+  "footFilesRequested": [
+    "foot-stone-0.ogg",
+    "foot-stone-1.ogg",
+    "foot-stone-2.ogg",
+    "foot-wood-0.ogg",
+    "foot-wood-1.ogg",
+    "foot-wood-2.ogg"
+  ],
+  "pageErrors": []
+}

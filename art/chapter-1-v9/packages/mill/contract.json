@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "mill",
+  "status": "awaiting-pilot-acceptance",
+  "canvas": {
+    "width": 1672,
+    "height": 941,
+    "origin": [
+      0,
+      0
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  "source": "docs/blender-chapter-1/layouts/engine/mill.json",
+  "sourceSha256": "7cd199e695fd57a3536b7ca7efeee600c24d16f9d0eaa1274cba314b0bcf23e1",
+  "camera": {
+    "radius": 70,
+    "origin": {
+      "x": 140,
+      "y": 330
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "start": {
+    "q": 0,
+    "r": 4,
+    "name": "Ручей",
+    "pixel": {
+      "x": 382.4871130596428,
+      "y": 603
+    }
+  },
+  "goal": {
+    "q": 9,
+    "r": 2,
+    "name": "Мельница",
+    "pixel": {
+      "x": 1352.435565298214,
+      "y": 466.5
+    }
+  },
+  "layers": {
+    "background": "opaque canvas; no characters/UI/grid/solution",
+    "foreground": "RGBA same canvas/crop; no free-hex occlusion",
+    "gateClosed": null,
+    "gateOpen": null,
+    "water": "separate shores/water; no constructed bridge",
+    "wheel": "RGBA independent wheel, fixed pivot"
+  },
+  "rules": [
+    "Preserve every full free polygon, not only cell center",
+    "Blockers require meaningful decoration across their whole footprints",
+    "Shared transform for every image, geometry and character feet",
+    "No production activation until art acceptance and matching game data integration"
+  ]
+}

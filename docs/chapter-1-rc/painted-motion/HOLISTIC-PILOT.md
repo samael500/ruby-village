@@ -1,0 +1,17 @@
+# Whole-pose pilot after user rejection of cutout gait
+
+2026-10-17: user reports split/stretched gait and explicitly rejects deformation of one painted image as finished walking. Current v3 delivery shares the v2 cutout geometry; previous technical stance/contact tests do not certify artistic anatomy. The old candidate is not final accepted animation.
+
+Inspected repository evidence, not the user's unavailable attachment: v2-se-walk-all16.jpg and east-v2-contact.jpg. Visible problems include trouser segments separating at the knee, exaggerated directional scaling and cuff/boot intersections. A nominally connected IK foot contact cannot repair a disconnected painted silhouette.
+
+Next practical pilot: eight **whole painted frames** of east walk, guided by the existing eight distinct source poses. Imagegen cleanup must redraw continuous legs and boots while preserving identity and phase. These are played as complete PNGs, without mesh stretching. No mass six-direction export before this pilot's anatomy, order and actual loop pass review. The original technical rig remains a pose/projection guide; rejected outputs are retained.
+
+A full 3D character model with continuous skinned body/clothing is the structurally stronger alternative, but the existing capsule motion prototype is not an appearance-approved character model. Do not relabel it final or conceal the modeling/texture/identity work required.
+
+Practical results: whole-eight atlas fixes torn anatomy but repeats the same near-leg contact in both halves: rejected. Four-key atlas also missed the opposite contact; a targeted single whole-figure edit successfully moved the visible cargo-pocket leg to the rear without mirroring face/bag. The four-key comparison substitutes that actual new pose. Exact prompts, source sheets, phase guide, extraction registration and raw outputs are preserved under art/characters-walk-v1/holistic-pilot-v4.
+
+Actual Chromium bench/video: holistic-pilot-actual.webm, holistic-pilot-actual.png and browser JSON; real pause, no page errors. This pilot is **not ready**: four keyframes are coarse, strides too broad for calm walking, raised clenched arms suggest running, strict profile drifts toward three-quarter, source registration/identity still varies. It does not meet calibrated45px stride/physical contact requirements. Do not connect it to production or declare six-direction completion. Next painted iteration must shorten steps, relax hands, preserve a single camera and use targeted whole-pose edits; then add inbetweens only after that passes.
+
+Independent volume proof: one4896-vertex connected trouser skin follows the original IK with solid boots across16frames at720ms, packed .blend plus reproducible character-paint-volume-pilot.py. It eliminates disconnected topology structurally. Its capsule head/body style is plainly NOT accepted Ruta artwork, so this is only modeling/export proof. A final continuous3D character would require actual sculpt/model, appearance-matched face/hair/costume, textures, weights and render review; it cannot be obtained by relabelling the old capsule rig.
+
+Kling upload was rejected by automatic approval review because external transfer of the approved local Ruta asset and paid generation had not been specifically authorized. No upload workaround or raw-URL substitution was attempted; coordinator chose builtin/3D alternatives. Family/physical phone and full chapter QA remain not run in this experiment.

@@ -1,0 +1,412 @@
+{
+  "scope": "Generated export pruning only; source repository unchanged",
+  "layoutVersion": 1,
+  "motion": "characters-walk-v1/animated-v3",
+  "mapFolders": [
+    "chapter-map-v1"
+  ],
+  "keptBytes": 64806028,
+  "removedBytes": 79318116,
+  "removed": [
+    {
+      "file": "assets/chapter-1/v9/bakery/background.webp",
+      "bytes": 674244
+    },
+    {
+      "file": "assets/chapter-1/v9/forest/background.webp",
+      "bytes": 620288
+    },
+    {
+      "file": "assets/chapter-1/v9/garden/background.webp",
+      "bytes": 855734
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/background.webp",
+      "bytes": 582542
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/foreground-fixed.webp",
+      "bytes": 386108
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/gate-closed.webp",
+      "bytes": 19478
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/gate-open.webp",
+      "bytes": 7222
+    },
+    {
+      "file": "assets/chapter-1/v9/manifest.json",
+      "bytes": 10036
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/background-exact-water.webp",
+      "bytes": 716520
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/background.webp",
+      "bytes": 804732
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/dry-background.webp",
+      "bytes": 716840
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/water.webp",
+      "bytes": 109348
+    },
+    {
+      "file": "assets/chapter-1/v9/post/background.webp",
+      "bytes": 799884
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/background-exact-water.webp",
+      "bytes": 646596
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/background.webp",
+      "bytes": 752168
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/dry-background.webp",
+      "bytes": 659846
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/water.webp",
+      "bytes": 109228
+    },
+    {
+      "file": "assets/chapter-1/v9/well/background.webp",
+      "bytes": 789930
+    },
+    {
+      "file": "assets/chapter-1-map-match/bakery/background.webp",
+      "bytes": 2473912
+    },
+    {
+      "file": "assets/chapter-1-map-match/bakery/manifest.json",
+      "bytes": 2803
+    },
+    {
+      "file": "assets/chapter-1-map-match/bakery/wide.webp",
+      "bytes": 5439354
+    },
+    {
+      "file": "assets/chapter-1-map-match/forest/background.webp",
+      "bytes": 2308860
+    },
+    {
+      "file": "assets/chapter-1-map-match/forest/manifest.json",
+      "bytes": 3400
+    },
+    {
+      "file": "assets/chapter-1-map-match/forest/wide.webp",
+      "bytes": 4930930
+    },
+    {
+      "file": "assets/chapter-1-map-match/gate/background.webp",
+      "bytes": 2273252
+    },
+    {
+      "file": "assets/chapter-1-map-match/gate/manifest.json",
+      "bytes": 2871
+    },
+    {
+      "file": "assets/chapter-1-map-match/gate/wide.webp",
+      "bytes": 5234246
+    },
+    {
+      "file": "assets/chapter-1-map-match/post/background.webp",
+      "bytes": 2651118
+    },
+    {
+      "file": "assets/chapter-1-map-match/post/manifest.json",
+      "bytes": 2894
+    },
+    {
+      "file": "assets/chapter-1-map-match/post/wide.webp",
+      "bytes": 5487362
+    },
+    {
+      "file": "assets/characters-v1/delivery-manifest.json",
+      "bytes": 20294
+    },
+    {
+      "file": "assets/characters-v1/manifest.json",
+      "bytes": 1278
+    },
+    {
+      "file": "assets/characters-v1/poses/basket-ground-source-v1-extraction.json",
+      "bytes": 202
+    },
+    {
+      "file": "assets/characters-v1/poses/basket-ground.png",
+      "bytes": 1431589
+    },
+    {
+      "file": "assets/characters-v1/poses/rabbit-baking-source-v1-extraction.json",
+      "bytes": 202
+    },
+    {
+      "file": "assets/characters-v1/poses/rabbit-baking.png",
+      "bytes": 1441584
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-adjust-satchel.png",
+      "bytes": 551152
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-basket.png",
+      "bytes": 451882
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-crouch-basket.png",
+      "bytes": 419840
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-poses-source-v1-extraction.json",
+      "bytes": 800
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-surprised.png",
+      "bytes": 497282
+    },
+    {
+      "file": "assets/characters-v1/poses-manifest.json",
+      "bytes": 5412
+    },
+    {
+      "file": "assets/characters-v1/residents/baker-idle.png",
+      "bytes": 843329
+    },
+    {
+      "file": "assets/characters-v1/residents/baker-portrait.png",
+      "bytes": 1253215
+    },
+    {
+      "file": "assets/characters-v1/residents/baker-source-v1-extraction.json",
+      "bytes": 394
+    },
+    {
+      "file": "assets/characters-v1/residents/hedgehog-idle.png",
+      "bytes": 978288
+    },
+    {
+      "file": "assets/characters-v1/residents/hedgehog-portrait.png",
+      "bytes": 1351579
+    },
+    {
+      "file": "assets/characters-v1/residents/hedgehog-source-v1-extraction.json",
+      "bytes": 399
+    },
+    {
+      "file": "assets/characters-v1/residents/miller-idle.png",
+      "bytes": 659886
+    },
+    {
+      "file": "assets/characters-v1/residents/miller-portrait.png",
+      "bytes": 1016492
+    },
+    {
+      "file": "assets/characters-v1/residents/miller-source-v1-extraction.json",
+      "bytes": 398
+    },
+    {
+      "file": "assets/characters-v1/residents/rabbit-idle.png",
+      "bytes": 868830
+    },
+    {
+      "file": "assets/characters-v1/residents/rabbit-portrait.png",
+      "bytes": 1139464
+    },
+    {
+      "file": "assets/characters-v1/residents/rabbit-source-v1-extraction.json",
+      "bytes": 397
+    },
+    {
+      "file": "assets/characters-v1/residents/squirrel-idle.png",
+      "bytes": 1038973
+    },
+    {
+      "file": "assets/characters-v1/residents/squirrel-portrait.png",
+      "bytes": 1097196
+    },
+    {
+      "file": "assets/characters-v1/residents/squirrel-source-v1-extraction.json",
+      "bytes": 399
+    },
+    {
+      "file": "assets/characters-v1/residents/teacher-idle.png",
+      "bytes": 749385
+    },
+    {
+      "file": "assets/characters-v1/residents/teacher-portrait.png",
+      "bytes": 1136599
+    },
+    {
+      "file": "assets/characters-v1/residents/teacher-source-v1-extraction.json",
+      "bytes": 400
+    },
+    {
+      "file": "assets/characters-v1/residents-manifest.json",
+      "bytes": 7101
+    },
+    {
+      "file": "assets/characters-v1/ruta-idle-pilot.png",
+      "bytes": 676343
+    },
+    {
+      "file": "assets/characters-v1/ruta-portrait-pilot.png",
+      "bytes": 827013
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+      "bytes": 751850
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-ne.webp",
+      "bytes": 735438
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-nw.webp",
+      "bytes": 783874
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-se.webp",
+      "bytes": 851504
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-sw.webp",
+      "bytes": 821588
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-w.webp",
+      "bytes": 728310
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-e.webp",
+      "bytes": 751512
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-ne.webp",
+      "bytes": 744892
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-nw.webp",
+      "bytes": 781802
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-se.webp",
+      "bytes": 844118
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-sw.webp",
+      "bytes": 816520
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-w.webp",
+      "bytes": 728060
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/manifest.json",
+      "bytes": 738669
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-01.png",
+      "bytes": 80208
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-02.png",
+      "bytes": 77936
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-03.png",
+      "bytes": 76547
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-04.png",
+      "bytes": 75588
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-05.png",
+      "bytes": 75574
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-06.png",
+      "bytes": 76517
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-07.png",
+      "bytes": 77781
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-08.png",
+      "bytes": 78563
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-09.png",
+      "bytes": 79338
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-10.png",
+      "bytes": 77604
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-11.png",
+      "bytes": 76965
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-12.png",
+      "bytes": 76767
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-13.png",
+      "bytes": 77383
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-14.png",
+      "bytes": 78056
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-15.png",
+      "bytes": 79435
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-16.png",
+      "bytes": 80039
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/manifest.json",
+      "bytes": 7215
+    },
+    {
+      "file": "assets/characters-walk-v1/manifest.json",
+      "bytes": 19011
+    },
+    {
+      "file": "assets/level-1/garden-gate.png",
+      "bytes": 1628319
+    },
+    {
+      "file": "assets/level-1/grass-ground.png",
+      "bytes": 2910974
+    },
+    {
+      "file": "assets/level-1/manifest.json",
+      "bytes": 771
+    },
+    {
+      "file": "assets/level-1/meadow.png",
+      "bytes": 2435361
+    },
+    {
+      "file": "assets/level-1/ruta-house.png",
+      "bytes": 1612283
+    },
+    {
+      "file": "assets/level-1/ruta-idle.png",
+      "bytes": 842401
+    }
+  ]
+}

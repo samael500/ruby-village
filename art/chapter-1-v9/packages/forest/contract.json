@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "forest",
+  "status": "awaiting-pilot-acceptance",
+  "canvas": {
+    "width": 1672,
+    "height": 941,
+    "origin": [
+      0,
+      0
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  "source": "docs/blender-chapter-1/layouts/engine/forest.json",
+  "sourceSha256": "2e1f30594e7283f3468436cbec2a0328e18cee5a0ef0965aae458520a3fef161",
+  "camera": {
+    "radius": 66,
+    "origin": {
+      "x": 180,
+      "y": 250
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "start": {
+    "q": -1,
+    "r": 6,
+    "name": "Деревня",
+    "pixel": {
+      "x": 408.6307065990918,
+      "y": 636.1
+    }
+  },
+  "goal": {
+    "q": 9,
+    "r": 1,
+    "name": "Указатель",
+    "pixel": {
+      "x": 1265.995856345686,
+      "y": 314.35
+    }
+  },
+  "layers": {
+    "background": "opaque canvas; no characters/UI/grid/solution",
+    "foreground": "RGBA same canvas/crop; no free-hex occlusion",
+    "gateClosed": null,
+    "gateOpen": null,
+    "water": null,
+    "wheel": null
+  },
+  "rules": [
+    "Preserve every full free polygon, not only cell center",
+    "Blockers require meaningful decoration across their whole footprints",
+    "Shared transform for every image, geometry and character feet",
+    "No production activation until art acceptance and matching game data integration"
+  ]
+}

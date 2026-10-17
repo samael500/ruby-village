@@ -1,7 +1,7 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
 import {levels,sandbox} from '../src/levels.ts';
-import {boardCells,key,findPath,rotate} from '../src/hex.ts';
+import {boardCells,key,findPath,rotate,neighbors} from '../src/hex.ts';
 import {validPlacement,validateLayout,winningPath,placedCells,terrainAt} from '../src/game.ts';
 import {PROGRESS_KEY,parseProgress,loadProgress,saveProgress,available,completeLevel} from '../src/progress.ts';
 import type {Level,Placement} from '../src/model.ts';
@@ -35,6 +35,14 @@ test('Ручей и мельница: сухие клетки не соедин�
   const broken={...l.solution};delete broken.bridge;assert.equal(winningPath(l,broken),null);
  }
 });
+test('Оба русла пересекают середину второй секции моста, без изгиба у стыка',()=>{
+ for(const l of [levels[4],levels[5]]){
+  const center=l.solution.bridge.anchor,water=neighbors(center).filter(h=>terrainAt(l,h)==='water');
+  assert.equal(water.length,2);
+  assert.equal(water[0].q+water[1].q,2*center.q);
+  assert.equal(water[0].r+water[1].r,2*center.r);
+ }
+});
 test('Лесной указатель: фон без реки, маршрут из камня без моста',()=>{
  const l=levels[7];assert.ok(l.pieces.every(p=>p.kind!=='bridge'));
  assert.ok(Object.values(l.terrain).every(t=>t!=='water'));assert.ok(winningPath(l,l.solution));
@@ -53,5 +61,13 @@ test('Вода, сухие концы моста, вращение и перес
   const end=placedCells('bridge',p,synthetic.pieces)[1];
   synthetic.terrain[key(end)]='water';assert.equal(validPlacement(synthetic,'bridge',p,{}),false);
   synthetic.terrain[key(end)]='rock';assert.equal(validPlacement(synthetic,'bridge',p,{}),false);
+ }
+});
+
+test('Перенесённые старты с отрицательным q входят в реальное offset-поле',()=>{
+ for(const id of ['garden','well','bakery','post','forest']){
+  const level=levels.find(l=>l.id===id)!;
+  assert.deepEqual(level.start,{q:-1,r:6});
+  assert.ok(boardCells(level.cols,level.rows).some(h=>key(h)===key(level.start)));
  }
 });

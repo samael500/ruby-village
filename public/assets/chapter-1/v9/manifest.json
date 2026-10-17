@@ -1,0 +1,526 @@
+{
+  "schemaVersion": 1,
+  "version": "chapter-1-v9-painted-2026-10-17",
+  "styleStatus": "accepted-by-Maksim-2026-10-17",
+  "activationStatus": "inactive-until-all-eight-art-and-geometry-reviewed",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "scenes": {
+    "gate": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "gate/background.webp",
+      "foreground": "gate/foreground-fixed.webp",
+      "wide": {
+        "file": "gate/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "seam72-candidate-actual-review",
+      "source": "art/chapter-1-v9/candidates/gate-v3-base.png",
+      "sourceSha256": "5646466d119a15f6d822a882a573cb9217359b454a8bee6f212daef5e24f38a4",
+      "geometrySha256": "ad438768d77c2a6f0dcd8ca1941533178291d8aefc4183c842962ac6a4a06092",
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 503.73066958946424,
+          "y": 426.5
+        },
+        "goal": {
+          "x": 1352.435565298214,
+          "y": 699.5
+        }
+      },
+      "semanticAnchors": {
+        "looseStoneFeet": {
+          "x": 685.5960043841964,
+          "y": 494.75,
+          "sourceCell": "3,3"
+        },
+        "basketGround": {
+          "x": 721.5960043841964,
+          "y": 506.75
+        }
+      },
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAudit": "pending"
+      },
+      "residentPresentation": "portrait-only",
+      "gateClosed": "gate/gate-closed.webp",
+      "gateOpen": "gate/gate-open.webp",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/gate/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/gate/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2273252,
+          "sha256": "f4741a9415bb6be155256a59de03ced3128080ef13bca4ef3826af44613fd6b3"
+        },
+        "wide.webp": {
+          "bytes": 5234246,
+          "sha256": "bd99f58d54e2d55dcf82dab72f7b0d6b460dd57a508f0c9e1e311e44c2af8fb7"
+        }
+      }
+    },
+    "garden": {
+      "status": "style-approved-geometry-pending",
+      "background": "garden/background.webp",
+      "foreground": null,
+      "wide": null,
+      "wideStatus": "pending-outpaint",
+      "source": "art/chapter-1-v9/candidates/garden-v4.png",
+      "sourceSha256": "d370c6c97261ed5bd1a21ec35361ae5714f08793a851407badb7c3da77d8bd1f",
+      "geometrySha256": "1343f2bca0299693d5ffc8ceb1a242a812532c30117bdbba4d000cbfa12ff79a",
+      "camera": {
+        "radius": 66,
+        "origin": {
+          "x": 180,
+          "y": 315
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 408.6307065990918,
+          "y": 701.1
+        },
+        "goal": {
+          "x": 1265.995856345686,
+          "y": 379.35
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1280,
+          "y": 245,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        },
+        "tableFrontFeet": {
+          "x": 1280,
+          "y": 245,
+          "explanation": "below the actual painted apple table, outside top playable row; goal remains clear"
+        }
+      },
+      "checks": {
+        "fullPolygonVisualAudit": "pending"
+      }
+    },
+    "well": {
+      "status": "style-approved-geometry-pending",
+      "background": "well/background.webp",
+      "foreground": null,
+      "wide": null,
+      "wideStatus": "pending-outpaint",
+      "source": "art/chapter-1-v9/candidates/well-v4.png",
+      "sourceSha256": "a462cb02f6bd172b57abd93c9b97fc4f54ab48e1536c3771ac96e39059ec15fc",
+      "geometrySha256": "89132596e3b2921118dc893577f2f323c96906cf23eea8e19da2f4b1cf6d0c01",
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 378.91832705503657,
+          "y": 700.3035714285716
+        },
+        "goal": {
+          "x": 1231.192008768393,
+          "y": 456.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1195,
+          "y": 405,
+          "status": "coordinator-native-alpha-clearance-passed-visual-candidate"
+        }
+      },
+      "checks": {
+        "fullPolygonVisualAudit": "pending"
+      },
+      "residentPresentation": "portrait-only"
+    },
+    "bakery": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "bakery/background.webp",
+      "foreground": null,
+      "wide": {
+        "file": "bakery/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "seam72-candidate-actual-review",
+      "source": "art/chapter-1-v9/candidates/bakery-v4.png",
+      "sourceSha256": "90e8c7a335d72c2ab3ad672b58dfe8166b1cce48ffce93085344d12a372ade45",
+      "geometrySha256": "1638f6dcf280934026a5f426791e5b17c1ae49741155f592e42585b765c3d09c",
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 378.91832705503657,
+          "y": 700.3035714285716
+        },
+        "goal": {
+          "x": 1231.192008768393,
+          "y": 456.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1290,
+          "y": 405,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        }
+      },
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAudit": "pending"
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/bakery/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/bakery/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2473912,
+          "sha256": "b14a06ea1fd8dcd59c093d34da2fd9663b815a37b34338535a66d768a42e6290"
+        },
+        "wide.webp": {
+          "bytes": 5439354,
+          "sha256": "a500f9f4e443524e4e9db4e2467be57afb8c6d5cb8c560d1604e8a56b207ef3a"
+        }
+      }
+    },
+    "stream": {
+      "status": "exact-water-mask-passed-bank-art-review-pending",
+      "background": "stream/background-exact-water.webp",
+      "foreground": null,
+      "wide": null,
+      "wideStatus": "pending-outpaint",
+      "source": "art/chapter-1-v9/candidates/stream-v4.png",
+      "sourceSha256": "66d15defd5ca0b0b3ff6f1ee5887f15205d4deaf0bdf640bb0f6985a0d677ce7",
+      "geometrySha256": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 330
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 443.1088913245535,
+          "y": 534.75
+        },
+        "goal": {
+          "x": 1291.8137870333032,
+          "y": 398.25
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1400,
+          "y": 225,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        }
+      },
+      "checks": {
+        "fullPolygonVisualAudit": "native-water-mask-passed-shore-finish-pending",
+        "waterReport": "art/chapter-1-v9/layers/water/checks.json"
+      },
+      "dryBackground": "stream/dry-background.webp",
+      "water": "stream/water.webp"
+    },
+    "mill": {
+      "status": "exact-water-mask-passed-bank-art-review-pending",
+      "background": "mill/background-exact-water.webp",
+      "foreground": null,
+      "wide": null,
+      "wideStatus": "pending-outpaint",
+      "source": "art/chapter-1-v9/candidates/mill-v4.png",
+      "sourceSha256": "24062e298aa52fc9c35546d477a588e9c393126bd6b77327447dc042c3764c2a",
+      "geometrySha256": "7cd199e695fd57a3536b7ca7efeee600c24d16f9d0eaa1274cba314b0bcf23e1",
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 330
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 382.4871130596428,
+          "y": 603
+        },
+        "goal": {
+          "x": 1352.435565298214,
+          "y": 466.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1430,
+          "y": 398,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        },
+        "secondResidentFeet": {
+          "x": 1330,
+          "y": 405,
+          "status": "coordinator-native-alpha-clearance-passed-visual-candidate"
+        }
+      },
+      "checks": {
+        "fullPolygonVisualAudit": "native-water-mask-passed-shore-finish-pending",
+        "waterReport": "art/chapter-1-v9/layers/water/checks.json"
+      },
+      "dryBackground": "mill/dry-background.webp",
+      "water": "mill/water.webp"
+    },
+    "post": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "post/background.webp",
+      "foreground": null,
+      "wide": {
+        "file": "post/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-join-candidate-review-pending",
+      "source": "art/chapter-1-v9/candidates/post-v4.png",
+      "sourceSha256": "68445e69dda61fe53cbab12e46b75156e6864120ccac1a540012689a7facb7f2",
+      "geometrySha256": "af90131fe51c742c4b2a67c396b27efb3e488cc3b3838de8dd3f8464213c543a",
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 378.91832705503657,
+          "y": 700.3035714285716
+        },
+        "goal": {
+          "x": 1231.192008768393,
+          "y": 456.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1370,
+          "y": 405,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        }
+      },
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending",
+        "wideNativeCoreExact": true,
+        "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+        "physicalPhone": "not-tested",
+        "fullPolygonVisualAudit": "pending"
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/post/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/post/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2651118,
+          "sha256": "e99805904799c09d607dd548eae91c434eb91e9b95b427560d7a12a483f97bdb"
+        },
+        "wide.webp": {
+          "bytes": 5487362,
+          "sha256": "06a976e393276884aa609a3001d96500069d27e75d3d3b086ef73feb2f0c0d0f"
+        }
+      }
+    },
+    "forest": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "forest/background.webp",
+      "foreground": null,
+      "wide": {
+        "file": "forest/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-join-candidate-review-pending",
+      "source": "art/chapter-1-v9/candidates/forest-v4.png",
+      "sourceSha256": "d715d90f3722ec7737fe213e2dc3da6e51d1dfd16b8e0365f67e0a6e0b70a870",
+      "geometrySha256": "2e1f30594e7283f3468436cbec2a0328e18cee5a0ef0965aae458520a3fef161",
+      "camera": {
+        "radius": 66,
+        "origin": {
+          "x": 180,
+          "y": 250
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 408.6307065990918,
+          "y": 636.1
+        },
+        "goal": {
+          "x": 1265.995856345686,
+          "y": 314.35
+        }
+      },
+      "semanticAnchors": {},
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "not-run",
+        "artAcceptance": "pending",
+        "wideNativeCoreExact": true,
+        "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+        "physicalPhone": "not-tested",
+        "fullPolygonVisualAudit": "pending"
+      },
+      "residentPresentation": "portrait-only",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/forest/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/forest/generated-core-01.png",
+      "recommendedWholeSceneGrade": {
+        "status": "candidate-requires-artistic-review",
+        "scope": "background,wide,characters,road,scene-props together; excludes HUD",
+        "type": "svg-feColorMatrix",
+        "values": [
+          0.76,
+          0,
+          0,
+          0,
+          0.018,
+          0,
+          0.78,
+          0,
+          0,
+          0.026,
+          0,
+          0,
+          0.86,
+          0,
+          0.065,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "note": "Apply once to scene group. Deliveries remain ungraded to avoid grading actors differently.",
+        "colorInterpolationFilters": "sRGB"
+      },
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2308860,
+          "sha256": "960ff16ec428f7f5e0df0feb38493de6f31b7c2d48089664054b3fc9ce18459d"
+        },
+        "wide.webp": {
+          "bytes": 4930930,
+          "sha256": "a6a3e61c09b7c6eed7b062f491c8018a6e0c5392106d751e4b4114000db66ce4"
+        }
+      }
+    }
+  }
+}

@@ -1,14 +1,21 @@
 import {test} from 'node:test';
 import assert from 'node:assert/strict';
-import {createHash} from 'node:crypto';
+import {readFileSync} from 'node:fs';
 import {levels} from '../src/levels.ts';
 import {boardCells,hexCenter,pixelHex} from '../src/hex.ts';
 import {project,unproject} from '../src/projection.ts';
 import {fitScene,scenePoint,sceneMetadata,goalSignLayout} from '../src/scene-camera.ts';
 const sizes=[[1280,720],[844,390],[740,360],[915,412],[1024,768],[1920,1080]];
-test('Геометрия, препятствия, наборы и эталоны побайтно соответствуют main d1493cd',()=>{
- const logical=levels.map(({id,cols,rows,start,goal,terrain,pieces,solution})=>({id,cols,rows,start,goal,terrain,pieces,solution}));
- assert.equal(createHash('sha256').update(JSON.stringify(logical)).digest('hex'),'ac3ba99f2f65c1f5491a425f37be379a7f481ed626fe91c074b1ef6e42ed4917');
+test('Все игровые раскладки соответствуют принятым макетам PR #42',()=>{
+ for(const l of levels){
+  const approved=JSON.parse(readFileSync(new URL(`../docs/blender-chapter-1/layouts/engine/${l.id}.json`,import.meta.url),'utf8'));
+  assert.equal(l.cols*l.rows,approved.cells.length);
+  assert.deepEqual(l.start,{q:approved.start.q,r:approved.start.r});
+  assert.deepEqual(l.goal,{q:approved.goal.q,r:approved.goal.r});
+  assert.deepEqual(l.terrain,Object.fromEntries(approved.cells.filter((c:{terrain:string|null})=>c.terrain).map((c:{id:string;terrain:string})=>[c.id,c.terrain])));
+  assert.deepEqual(l.solution,Object.fromEntries(approved.pieces.filter((p:{placement:unknown})=>p.placement).map((p:{id:string;placement:unknown})=>[p.id,p.placement])));
+  assert.deepEqual(l.pieces.map(p=>({id:p.id,shape:p.shape,kind:p.kind??'stone'})),approved.pieces.map((p:{id:string;shape:unknown;kind:string})=>({id:p.id,shape:p.shape,kind:p.kind})));
+ }
 });
 test('Камера и обратная проекция определяют ту же клетку после изменения размера',()=>{
  for(const l of levels)for(const [w,h] of sizes){

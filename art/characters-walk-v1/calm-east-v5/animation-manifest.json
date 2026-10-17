@@ -1,0 +1,208 @@
+{
+  "status": "whole-pose-pilot-needs-motion-audit-and-art-review",
+  "productionEnabled": false,
+  "cycleDurationMs": 720,
+  "frameSize": [
+    320,
+    320
+  ],
+  "footAnchor": [
+    160,
+    256
+  ],
+  "nativeHeight": 224,
+  "sceneDisplayHeight": 136,
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "uniformRawToNativeScale": 0.188,
+  "nativeToSceneScale": 0.6071428571428571,
+  "registration": "translation only by visible waist-buckle center; no bbox/headmass normalization, no per-frame size scaling",
+  "frames": [
+    {
+      "index": 0,
+      "phase": 0.0,
+      "file": "frames/00.png",
+      "source": "key-0-tight.png",
+      "sourceSha256": "bfd8b43cacc56ef6831af28d7840f7bcddd3268c841e9183db8eb434edb3c529",
+      "rawWaistRoot": [
+        796,
+        630
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        10,
+        31
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "planted",
+      "farPlainLeg": "swing"
+    },
+    {
+      "index": 1,
+      "phase": 0.125,
+      "file": "frames/01.png",
+      "source": "between-1-raw.png",
+      "sourceSha256": "280ce1c177a7071650cee8e89b4ae5abd6f53350e2e4f42a90a534572ccb3f3f",
+      "rawWaistRoot": [
+        796,
+        627
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        10,
+        31
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "planted",
+      "farPlainLeg": "swing"
+    },
+    {
+      "index": 2,
+      "phase": 0.25,
+      "file": "frames/02.png",
+      "source": "key-1-passing.png",
+      "sourceSha256": "00d85b399629450d56f4da3694f12c8e20cfccda714d773672ea77ec921356f7",
+      "rawWaistRoot": [
+        817,
+        630
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        6,
+        31
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "planted",
+      "farPlainLeg": "swing"
+    },
+    {
+      "index": 3,
+      "phase": 0.375,
+      "file": "frames/03.png",
+      "source": "between-3-fixed.png",
+      "sourceSha256": "bd69f3e350b2950522b106165528b37aa2bf3c0407e3885e8852553139a76446",
+      "rawWaistRoot": [
+        797,
+        628
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        10,
+        31
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "planted",
+      "farPlainLeg": "swing"
+    },
+    {
+      "index": 4,
+      "phase": 0.5,
+      "file": "frames/04.png",
+      "source": "key-2-raw.png",
+      "sourceSha256": "42c6e9c8c9a45a48126f8e7e733d673c095197057deb71af00bab407d33cc066",
+      "rawWaistRoot": [
+        806,
+        630
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        8,
+        31
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "swing",
+      "farPlainLeg": "planted"
+    },
+    {
+      "index": 5,
+      "phase": 0.625,
+      "file": "frames/05.png",
+      "source": "between-5-contact-cleanup.png",
+      "sourceSha256": "34db3a5cbed746b560c085e16206068104e48c08fe4527ff385e0cdc099d048f",
+      "rawWaistRoot": [
+        803,
+        631
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        9,
+        30
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "swing",
+      "farPlainLeg": "planted"
+    },
+    {
+      "index": 6,
+      "phase": 0.75,
+      "file": "frames/06.png",
+      "source": "key-3-passing.png",
+      "sourceSha256": "0580d12401a8114e56d18d4c95f92c5ef550096961fd752339f435f4d6ff2b29",
+      "rawWaistRoot": [
+        787,
+        630
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        12,
+        31
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "swing",
+      "farPlainLeg": "planted"
+    },
+    {
+      "index": 7,
+      "phase": 0.875,
+      "file": "frames/07.png",
+      "source": "between-7-contact-cleanup.png",
+      "sourceSha256": "73bb705efa895b2fbb273ba093169d08b2ce5f8c910702341b351c2fbb905a4e",
+      "rawWaistRoot": [
+        805,
+        629
+      ],
+      "nativeWaistRoot": [
+        160,
+        149
+      ],
+      "wholeFrameTranslation": [
+        9,
+        31
+      ],
+      "durationMs": 90,
+      "nearCargoPocketLeg": "swing",
+      "farPlainLeg": "planted"
+    }
+  ],
+  "strideCalibration": {
+    "status": "NOT-FOOTPLANT-PASS",
+    "sourceStridePixels": 530,
+    "nativeStridePixels": 99.64,
+    "sceneStridePixelsAtHeight136": 60.49571428571429,
+    "units": "source1254canvas \u2192 packed320canvas via.188 \u2192 native scene pixels via136/224"
+  },
+  "paintedSoleAudit": "painted-sole-audit.json"
+}

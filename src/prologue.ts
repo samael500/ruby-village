@@ -1,3 +1,4 @@
+import {characterFile} from './character-assets.ts';
 import type {StorageLike} from './progress.ts';
 export const PROLOGUE_ID='c1-00-prologue';
 export const PROLOGUE_KEY='ruby-village:prologue:v1';
@@ -23,4 +24,7 @@ export function savePrologue(state:PrologueState,storage?:StorageLike):boolean{
 }
 /** A real puzzle session or existing progress always takes precedence over an unfinished intro. */
 export function shouldStartPrologue(state:PrologueState,hasSession:boolean,hasProgress:boolean){return !hasSession&&!hasProgress&&!state.seen;}
-export const speakerPortrait=(speaker:string):string|undefined=>({'Рута':'../ui/v7/ruta-bust.png','Кролик':'rabbit.svg','Бельчонок':'squirrel.svg','Ёж':'hedgehog.svg','Учительница':'teacher.svg','Пекарь':'baker.svg','Мельник':'miller.svg'} as Record<string,string>)[speaker];
+export function speakerPortrait(speaker:string):string|undefined{
+ const file=({'Рута':'ruta-portrait-pilot.png','Кролик':'residents/rabbit-portrait.png','Бельчонок':'residents/squirrel-portrait.png','Ёж':'residents/hedgehog-portrait.png','Учительница':'residents/teacher-portrait.png','Пекарь':'residents/baker-portrait.png','Мельник':'residents/miller-portrait.png'} as Record<string,string>)[speaker];
+ return file?`../characters-v1/${characterFile(file)}`:undefined;
+}

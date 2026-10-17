@@ -1,0 +1,27 @@
+{
+  "scope": "isolated real WebAudio module, not gameplay",
+  "browser": "156.0.8078.4",
+  "metrics": {
+    "played": 14,
+    "dropped": 0,
+    "loadErrors": 0,
+    "activeVoices": 0,
+    "cachedFiles": 8,
+    "unlocked": true,
+    "paused": false,
+    "contextState": "running"
+  },
+  "pageErrors": [],
+  "checks": [
+    "gesture gate",
+    "real Ogg decode",
+    "all eight scene changes",
+    "bounded loops",
+    "pause/resume",
+    "preference persistence",
+    "null scene stop",
+    "recording MediaStreamDestination",
+    "music/ambience resume offsets (water fixture cue)",
+    "unlock does not bypass pause"
+  ]
+}

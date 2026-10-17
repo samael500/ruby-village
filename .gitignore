@@ -10,3 +10,16 @@ __pycache__/
 # Blender backup files; the actual compressed source is versioned.
 /art/blender/*.blend1
 /art/blender/chapter-layouts/*.blend1
+
+# Coordinator raw captures remain local; curated audiovisual evidence is committed.
+/docs/chapter-1-rc/evidence/video/
+/docs/chapter-1-rc/evidence/grounded-game/video/
+/docs/chapter-1-rc/evidence/**/raw-video/
+# Disposable painted exporter diagnostics
+/art/characters-walk-v1/exporter-test*/
+/art/characters-walk-v1/exporter-*math-test/
+/art/characters-walk-v1/**/*.blend1
+
+/docs/chapter-1-rc/audio-noise/game/raw-video/
+
+/docs/chapter-1-rc/evidence/rotate-place/raw-video/
