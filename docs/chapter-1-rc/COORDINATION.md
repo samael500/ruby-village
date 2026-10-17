@@ -47,3 +47,13 @@ No RC claim until integrated browser playthrough, audiovisual evidence, independ
 - 71 tests pass before latest purely visual hookups; tsc/build pass. Independent review is in progress, not an approval of unfinished artwork.
 - First independent finding: stale three-puzzle description in index.html, fixed to eight.
 - Family/physical phone/iOS listening remain NOT RUN. Final art, villagers/poses, rig-polished walking, map/choreography and final QA/release remain incomplete.
+
+## Subsequent production checkpoint
+
+- Map artwork accepted explicitly and active in review runtime; six viewport labels/hit targets verified. Native touch drag/swipe, keyboard/restart/replay/reset/letter/reduced-motion checks independently passed. 74 unit tests pass.
+- Mixed author walkthrough is 123.6 seconds of all eight legacy-scene puzzles with accepted Ruta and the recommended complete music/SFX. It is genuine browser video plus captured WebAudio, not an added soundtrack. Source and scope are in evidence/browser-report.json.
+- Six residents, portraits and Ruta acting poses are delivered (d82566b; evidence745b077). Real composited JPGs verify alpha; native PNG viewer exposed hidden RGB and produced a false alarm, documented and corrected. Runtime activation is currently held: automatic approval review rejected it because these new resources remain review-pending, despite draft branch and explicit integration request. One bundled user approval question is pending. No bypass or publication.
+- #45: six of seven new base paintings produced; forest and wide surrounds/layers pending. Coordinator overlay found stream water shifted into free cells; owner independently confirmed. Geometry corrections are required before activation; accepted style is not a geometry pass.
+- #36: independent generative phase paint-over failed gait/registration; automatic repacking fixes position but cannot prove stance. Owner is testing rig-driven painted cutout mesh using the saved IK cycle, beginning with east. Technical or failed art remains separate from active sprites.
+- Current executor slots: art_scenes final geometry/art; data_ui painted motion; characters optimized WebP delivery variants. Independent QA is queued for integrated final resources.
+- #49 preliminary local build: ~64MiB exported, ~10MiB through first puzzle after deferring hidden illustrations; local FCP ~216ms is not a network/device benchmark. Original masters and SF2 are outside browser exports. Repeat after final resources and optimize delivery; not RC ready.
