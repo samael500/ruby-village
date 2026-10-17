@@ -26,15 +26,23 @@ for name,seconds in [('chime',1.1),('victory',2.0),('leaves',12),('village',12),
    x=sum(math.sin(2*math.pi*f*t)*math.exp(-3*max(0,t-j*.16))*(t>=j*.16) for j,f in enumerate(notes))*.15
    x*=min(1,t/.01,(seconds-t)/.08)
   else:
-   # Periodic oscillators and enveloped deterministic noise; endpoints are faded to zero.
-   bed=(rng.random()*2-1)*(.025 if name=='water' else .008)
-   flow=sum(math.sin(2*math.pi*k*t/seconds+p)*a for k,p,a in [(1101,0,.008),(1607,1,.004),(2303,2,.003)])
+   # No continuous noise bed or sustained hum. Keep discrete native scene cues.
+   bed=0.0;flow=0.0
+   if name=='water':
+    for at,freq in [(0.7,680),(1.9,920),(3.05,740),(4.1,1100),(5.6,810),(6.4,620),(7.9,980),(9.2,750),(10.6,890)]:
+     dt=t-at
+     if 0<dt<.28:
+      envelope=math.sin(math.pi*dt/.28)**2*math.exp(-7*dt)
+      flow+=.022*envelope*(math.sin(2*math.pi*(freq*dt-180*dt*dt))+.25*math.sin(2*math.pi*freq*1.7*dt))
    bird=0
    if name in ['leaves','forest','village']:
     for at in [1.5,5.8,9.4]:
      dt=t-at
      if 0<dt<.35:bird+=math.sin(2*math.pi*(1600*dt+600*dt*dt))*math.sin(math.pi*dt/.35)**2*.035
-   if name=='bakery':flow=math.sin(2*math.pi*61*t)*.004
+   if name=='bakery':
+    for at in [2.3,7.7]:
+     dt=t-at
+     if 0<dt<.12:flow+=.012*math.sin(2*math.pi*420*dt)*math.sin(math.pi*dt/.12)**2*math.exp(-30*dt)
    x=(bed+flow+bird)*min(1,t/.3,(seconds-t)/.3)
   values.append(struct.pack('<h',int(max(-.8,min(.8,x))*32767)))
  path=originals/f'original-{name}.wav'
