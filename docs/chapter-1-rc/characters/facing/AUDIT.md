@@ -48,3 +48,11 @@ New fullbody view with left face/gaze/torso. First generator output changed acce
 Coordinator's actual runtime geometry audit: well Teacher feet1225,405 (final1195,405) vs Ruta goal1231,456; mill second Squirrel1330,405 vs goal1352,466. A left-only conversation view points away after arrival. New authored near-front/slight-right fullbody poses address nearby partner with fresh front torso/feet perspective; book/can and bag/scarf/acorn ownership retained. Original approved refs used, not horizontal flips or eye-only edits.
 
 Teacher front532×1008, anchor272,1004, scene174; Squirrel front893×904, anchor448,900, scene92. These frame-pixel anchors differ to accommodate new silhouette, while runtime's caller world feet and canonical scale stay fixed. Manifest marks `arrivalFrame: conversation-front` with scene rationale; intro still uses left. Whole source PNGs/prompts preserved, source alpha retained in technical uniform packing. Actual scene acceptance remains coordinator's check.
+
+## Baker + Miller final handoff
+
+Baker: new physical left conversation pose; original cream apron knot restored on left-of-image waist using two localized remove/insert edits. Both hands hold original wooden tray with two round loaves. Full source retained, packed537×999, foot314,995, scene165. Pixel anchor differs with new silhouette; caller world feet unchanged. Activity bakery-work.
+
+Miller: full torso-generation/arm-swap attempts repeatedly changed sack arm, correctly rejected. Coordinator supplied successful builtin original-reference localized head/neck turn; original torso already nearly frontal. New painted left head view has continuous neck, same right-of-image sack/forearm, right-of-image vest pocket, empty left arm and original planted stance. Selected whole source `miller-left-source-v2-head-turn.png`; exact coordinator prompt saved. Packed433×1000, foot242,996, scene181. Activity mill-work. No CSS mirror, no Python painting. Root reviewed the whole source before packing.
+
+Final asset package contains six authored left conversation views and two near-front Teacher/Squirrel arrival views. Original idle/portrait assets and all runtime placements remain untouched by this branch. Activity/meeting metadata includes all six residents and both Squirrel scenes. Final actual-scene/alpha/clearance/state checks remain coordinator's responsibility.
