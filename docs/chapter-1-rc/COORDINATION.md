@@ -1,3 +1,21 @@
+# Current checkpoint — latest handoff takes priority
+
+Active application verified at f2a3600; independent QA integrated c385b22 (source6b48d8b). Subsequent connected-road changes are **inactive**, not finished art. main/origin/main remains add76709; no merge/deploy. Working pushes authorized. User preview5180 is frozen467eab2; fresh build5286 separate (server restarted, session21134). Independent5297 is now stopped/free.
+
+| Task | Actual status | Owner / tree | Dependency / PR |
+|---|---|---|---|
+| #61 | released-invalid→valid rotation auto-place PASS,16 independent cases; pending-cancel/save author supplement underway | coordinator runtime | #55/#64; final art/game repeat |
+| #48 map | native painted paving + registered wide,15 independent states/navigation/reload PASS | delivered characters412e705; runtime coordinator | #55; final chapter repeat |
+| #45/#46 road/banks | optional connected-surface code prepared, not active; stream continuation/material next | art_scenes tree45; runtime coordinator | #56/#55; first finished stream pilot |
+| #35 facing | all6 existing idles east; new true left Rabbit pilot, first reject saved for wrong ears/crop | npc_facing tree35-facing | resources only; root integration after pilot |
+| #36 | whole8 E pilot anatomy improved, support FAIL; far6/7 correction in progress | data_ui tree36-paint | #60, sourcef438a36; no mass6views yet |
+| #50/#51 | hiss fixed51e15d5 and user accepted; final full loops/transitions pending | coordinator/audio integration | #55/#57/#58 |
+| #37/#49 | scoped map/input independent QA complete; final chapter not certified | final reviewer next free slot | final8scenes+layout2+gait; phone/family NOT RUN |
+
+Characters/map owner paused after completed map handoff; fresh NPC owner is separate. No concurrent root/runtime writers. Sources/rejected attempts retained. Concrete road contract: road/CONTRACT.md. Latest authoritative requirements: LATEST-REQUIREMENTS.md. Pending text clarification identifies the exact primitive emblem because source screenshot is unavailable; do not redraw another logo by guessing.
+
+---
+
 # Chapter 1 coordination — 2026-10-17
 
 User authorized parallel implementation, draft PRs and local integration. No main merge or publication.

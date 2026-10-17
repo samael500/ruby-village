@@ -26,17 +26,19 @@ with sync_playwright() as p:
      if touch:touch_event('touchStart',center(loc));touch_event('touchEnd')
      else:loc.click()
     piece=q.locator(f'#tray [data-piece="{case["piece"]}"]');anchor=case['anchor'];cell=q.locator(f'[data-cell="{anchor["q"]},{anchor["r"]}"] > polygon.cell')
-    tap(piece)
-    for _ in range(case['turns']):tap(q.locator('#right'))
-    assert q.locator(f'[data-owner="{case["piece"]}"]').count()==0
-    if mode=='drag':
-     a=center(piece);z=center(cell)
-     if touch:
-      z['y']+=max(42,cell.bounding_box()['height']*.8);touch_event('touchStart',a);touch_event('touchMove',{'x':a['x'],'y':a['y']-40})
-      for i in range(1,13):touch_event('touchMove',{'x':a['x']+(z['x']-a['x'])*i/12,'y':a['y']+(z['y']-a['y'])*i/12})
-      touch_event('touchEnd')
-     else:q.mouse.move(**a);q.mouse.down();q.mouse.move(**z,steps=15);q.mouse.up()
-    else:tap(cell)
+    def drop_invalid():
+     tap(piece)
+     for _ in range(case['turns']):tap(q.locator('#right'))
+     assert q.locator(f'[data-owner="{case["piece"]}"]').count()==0
+     if mode=='drag':
+      a=center(piece);z=center(cell)
+      if touch:
+       z['y']+=max(42,cell.bounding_box()['height']*.8);touch_event('touchStart',a);touch_event('touchMove',{'x':a['x'],'y':a['y']-40})
+       for i in range(1,13):touch_event('touchMove',{'x':a['x']+(z['x']-a['x'])*i/12,'y':a['y']+(z['y']-a['y'])*i/12})
+       touch_event('touchEnd')
+      else:q.mouse.move(**a);q.mouse.down();q.mouse.move(**z,steps=15);q.mouse.up()
+     else:tap(cell)
+    drop_invalid()
     assert q.locator('#placement-preview[data-preview="invalid"]').count(),case
     assert q.locator(f'[data-owner="{case["piece"]}"]').count()==0
     if mode=='drag' and touch:
@@ -62,8 +64,16 @@ with sync_playwright() as p:
     saved=q.evaluate("JSON.parse(localStorage.getItem('ruby-village:chapter-1:v1')).session.layout")
     assert saved[case['piece']]=={'anchor':anchor,'turns':(case['turns']+1)%6},saved
     tap(q.locator('#undo'));assert q.locator(f'[data-owner="{case["piece"]}"]').count()==0
+    drop_invalid()
+    assert q.locator('#placement-preview[data-preview="invalid"]').count()
+    assert q.evaluate("JSON.parse(localStorage.getItem('ruby-village:chapter-1:v1')).session.layout")=={}
+    tap(q.locator('#other'));assert not q.locator('#placement-preview').count()
+    assert q.evaluate("JSON.parse(localStorage.getItem('ruby-village:chapter-1:v1')).session.layout")=={}
+    drop_invalid();tap(q.locator('#undo'));assert not q.locator('#placement-preview').count()
+    assert q.locator(f'[data-owner="{case["piece"]}"]').count()==0
+    assert q.evaluate("JSON.parse(localStorage.getItem('ruby-village:chapter-1:v1')).session.layout")=={}
     assert not errors
-    results.append({'case':case,'input':'native CDP touch' if touch else 'mouse','mode':mode,'invalidReleased':True,'rotationConfirmedOnlyInDrag':True,'anchorUnchanged':True,'singleUndoRemovesWholeInstance':True,'activeTouchGestureAndCancel':'PASS' if touch and mode=='drag' else 'separate touch coverage','pageErrors':errors})
+    results.append({'case':case,'input':'native CDP touch' if touch else 'mouse','mode':mode,'invalidReleased':True,'rotationConfirmedOnlyInDrag':True,'anchorUnchanged':True,'singleUndoRemovesWholeInstance':True,'cancelAndPendingUndoLeaveSaveEmpty':True,'activeTouchGestureAndCancel':'PASS' if touch and mode=='drag' else 'separate touch coverage','pageErrors':errors})
     video=q.video
     ctx.close()
     video.save_as(str(OUT/f'{case["level"]}-{mode}-{touch}.webm'))
