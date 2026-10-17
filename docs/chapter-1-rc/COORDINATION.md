@@ -32,9 +32,29 @@ Four slots total including coordinator. Each executor has its own worktree.
 - Coordinator alone wires app events/settings/pause. Modules do not replace main.ts in parallel.
 
 ## Acceptance gates
-Courtyard and Ruta artistic acceptance pending. Do not mass-produce unaccepted style. Continue independent work while awaiting review.
+Courtyard style, Ruta appearance, map drawing and residents/poses inclusion in integration review are explicitly accepted by Maksim. This does not waive geometry, motion or integrated runtime checks.
 Physical phone, iOS/Safari and family playtest: NOT RUN; browser emulation does not satisfy them.
 No RC claim until integrated browser playthrough, audiovisual evidence, independent QA and release checks.
+
+## Handoff refresh — 2026-10-17
+
+This supplements earlier checkpoints; historical pending statuses below describe their original commit, not current approvals. Live GitHub main remains `add76709d66ab6a138014886642f045e658f53bf`; PR41/42 verified MERGED again. Integration baseline before this refresh is `09bd4667dc00f872ea0c03975df99ce5fb429ef6`. PR38 remains open. No main merge/publication.
+
+| Task | Actual readiness | Executor / exclusive files | Dependency | PR |
+| --- | --- | --- | --- | --- |
+| #44 | accepted layout2/migration tested; production still coherent layout1+legacy art | completed data_ui, coordinator production gate | matching audited #45 | #52 |
+| #61 | defect located, implementation queued after cleanup | characters next, separate worktree; main.ts temporarily reserved | cleanup handoff | pending new task PR, integration #55 |
+| #45 | all8 painted candidates staged; stream/mill geometry fail, wide and map architecture matching pending | art_scenes, ruby-village-45, chapter-1-v9 assets/scripts | accepted layout/hash; map is artistic reference | #56 |
+| #35 | accepted portraits/poses active; full scene residents pending | source assets delivered; coordinator scene composition | safe scene anchors and one garden table | #54/#55 |
+| #36 | full6 browser trial exists; final source normalization/knee caps rendering; production disabled | data_ui ruby-village-36-paint exporter/controller; characters ruby-village-36-parts masks only | cap handoff, final render/runtime QA | #59/#60 |
+| #47/#48 | map/prologue/UI active; #62 scene hiding, stone scale, painted roads and per-scene results pending | coordinator modules/style, main wiring after #61 handoff | compatible scene assets and residents | #53/#55 |
+| #50/#51 | recommended effects+music integrated, rights/sources retained | completed audio/music branches | final motion foot contacts and final mix QA | #57/#58 |
+| #37 | earlier independent legacy-runtime pass; final pass queued | independent_qa, separate ruby-village-37 | all final production resources integrated | report in #55 |
+| #49 | preliminary load audit only | coordinator then free executor | final #37/fixes | #55 |
+
+Four real slots: coordinator + art_scenes + data_ui + characters. No additional executor is claimed. Prior worktrees are preserved; no author is relabeled independent. Exclusive main.ts ownership is temporarily handed to #61; coordinator works in separate modules/docs until its commit is integrated.
+
+Integration order: preserve audited source/candidate commits inactive → #61 behavior → #36 final controller/assets → #45 complete geometry/map-reference audits → atomic layout2+matching art switch → scene residents/prologue/map/results wiring → final independent #37 → fixes → #49. Independent modules and source checks proceed in parallel. #62 is mandatory, tracked in ACCEPTANCE-61-62.md. Do not mark atlas presence or isolated rig tests as final game acceptance.
 
 ## Live checkpoint 2026-10-17 (after first integration)
 
