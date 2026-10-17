@@ -1,0 +1,166 @@
+{
+  "results": [
+    {
+      "case": {
+        "level": "garden",
+        "piece": "garden-a",
+        "anchor": {
+          "q": 9,
+          "r": 0
+        },
+        "turns": 5,
+        "size": 3
+      },
+      "input": "mouse",
+      "mode": "drag",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "separate touch coverage",
+      "pageErrors": []
+    },
+    {
+      "case": {
+        "level": "garden",
+        "piece": "garden-a",
+        "anchor": {
+          "q": 9,
+          "r": 0
+        },
+        "turns": 5,
+        "size": 3
+      },
+      "input": "mouse",
+      "mode": "select",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "separate touch coverage",
+      "pageErrors": []
+    },
+    {
+      "case": {
+        "level": "stream",
+        "piece": "bridge",
+        "anchor": {
+          "q": 6,
+          "r": 0
+        },
+        "turns": 2,
+        "size": 3
+      },
+      "input": "mouse",
+      "mode": "drag",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "separate touch coverage",
+      "pageErrors": []
+    },
+    {
+      "case": {
+        "level": "stream",
+        "piece": "bridge",
+        "anchor": {
+          "q": 6,
+          "r": 0
+        },
+        "turns": 2,
+        "size": 3
+      },
+      "input": "mouse",
+      "mode": "select",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "separate touch coverage",
+      "pageErrors": []
+    },
+    {
+      "case": {
+        "level": "garden",
+        "piece": "garden-a",
+        "anchor": {
+          "q": 9,
+          "r": 0
+        },
+        "turns": 5,
+        "size": 3
+      },
+      "input": "native CDP touch",
+      "mode": "drag",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "PASS",
+      "pageErrors": []
+    },
+    {
+      "case": {
+        "level": "garden",
+        "piece": "garden-a",
+        "anchor": {
+          "q": 9,
+          "r": 0
+        },
+        "turns": 5,
+        "size": 3
+      },
+      "input": "native CDP touch",
+      "mode": "select",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "separate touch coverage",
+      "pageErrors": []
+    },
+    {
+      "case": {
+        "level": "stream",
+        "piece": "bridge",
+        "anchor": {
+          "q": 6,
+          "r": 0
+        },
+        "turns": 2,
+        "size": 3
+      },
+      "input": "native CDP touch",
+      "mode": "drag",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "PASS",
+      "pageErrors": []
+    },
+    {
+      "case": {
+        "level": "stream",
+        "piece": "bridge",
+        "anchor": {
+          "q": 6,
+          "r": 0
+        },
+        "turns": 2,
+        "size": 3
+      },
+      "input": "native CDP touch",
+      "mode": "select",
+      "invalidReleased": true,
+      "rotationConfirmedOnlyInDrag": true,
+      "anchorUnchanged": true,
+      "singleUndoRemovesWholeInstance": true,
+      "activeTouchGestureAndCancel": "separate touch coverage",
+      "pageErrors": []
+    }
+  ],
+  "physicalPhone": "NOT RUN",
+  "scope": "8 cases; progress fixtures only; actual UI drop/rotation/place/save/undo, active-drag cancellation separate regression"
+}
