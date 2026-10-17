@@ -18,9 +18,9 @@ CONFIG={
 }
 CONFIG.update({
 'se':{'bodyBottom':190,'parts':{
- 'thigh.L':{'poly':[(162,183),(185,180),(193,198),(191,212),(167,216),(158,203)],'a':[174,174],'b':[178,201],'z':.06},
- 'shin.L':{'poly':[(164,200),(190,200),(193,221),(170,226),(160,214)],'a':[178,201],'b':[178,230],'z':.07},
- 'foot.L':{'poly':[(164,215),(191,214),(193,228),(205,236),(209,251),(199,258),(175,258),(163,248)],'a':[178,230],'b':[188,243],'z':.08},
+ 'thigh.L':{'poly':[(154,183),(185,180),(193,198),(191,212),(156,216),(151,203)],'a':[174,174],'b':[178,201],'z':.06},
+ 'shin.L':{'poly':[(154,200),(190,200),(193,221),(159,226),(152,214)],'a':[178,201],'b':[178,230],'z':.07},
+ 'foot.L':{'poly':[(154,215),(191,214),(193,228),(205,236),(209,251),(199,258),(154,258),(151,248)],'a':[178,230],'b':[188,243],'z':.08},
  'thigh.R':{'poly':[(129,183),(156,178),(158,194),(150,207),(128,207),(122,195)],'a':[148,174],'b':[139,198],'z':.12},
  'shin.R':{'poly':[(127,193),(156,194),(153,211),(149,219),(122,218),(120,205)],'a':[139,198],'b':[137,218],'z':.13},
  'foot.R':{'poly':[(121,204),(153,204),(154,225),(150,239),(129,240),(119,228)],'a':[137,218],'b':[143,229],'z':.14}}},
@@ -58,11 +58,15 @@ TRIMS={
  'e':{'thigh.L':[0,214],'thigh.R':[0,216],'foot.L':[222,319],'foot.R':[223,319]},
  'se':{'thigh.L':[0,208],'thigh.R':[0,204],'foot.L':[221,319],'foot.R':[210,319]},
  'sw':{'thigh.L':[0,211],'thigh.R':[0,205],'foot.L':[222,319],'foot.R':[199,319]},
- 'w':{'thigh.L':[0,209],'thigh.R':[0,208],'foot.L':[224,319],'foot.R':[216,319]},
+ 'w':{'thigh.L':[0,213],'thigh.R':[0,208],'foot.L':[224,319],'foot.R':[216,319]},
  'nw':{'thigh.L':[0,207],'thigh.R':[0,212],'foot.L':[213,319],'foot.R':[224,319]},
  'ne':{'thigh.L':[0,205],'thigh.R':[0,210],'foot.L':[215,319],'foot.R':[224,319]}}
 for di,parts in TRIMS.items():
  for name,limits in parts.items():CONFIG[di]['parts'][name]['clipY']=limits
+# Round the distal knee silhouette; only existing painted pixels survive this mask.
+CAPS={'e':{'thigh.L':([180,202],[13,12],197),'thigh.R':([142,203],[14,13],199)},'w':{'thigh.L':([146,201],[14,12],194),'thigh.R':([185,197],[14,11],191)}}
+for di,parts in CAPS.items():
+ for name,(center,radii,fromY) in parts.items():CONFIG[di]['parts'][name]['roundKneeCap']={'center':center,'radii':radii,'fromY':fromY}
 font=ImageFont.truetype('/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf',15)
 for direction in sys.argv[1:] or list(CONFIG):
  c=CONFIG[direction];p=SOURCE/f'{direction}-01.png';original=p.read_bytes();im=Image.open(p).convert('RGBA');assert im.size==(320,320);dest=OUT/direction;dest.mkdir(exist_ok=True)
@@ -74,6 +78,8 @@ for direction in sys.argv[1:] or list(CONFIG):
   mask=Image.new('L',im.size);ImageDraw.Draw(mask).polygon(part['poly'],fill=255)
   if 'clipY' in part:
    band=Image.new('L',im.size);ImageDraw.Draw(band).rectangle((0,part['clipY'][0],319,part['clipY'][1]),fill=255);mask=ImageChops.multiply(mask,band)
+  if 'roundKneeCap' in part:
+   cap=part['roundKneeCap'];cx,cy=cap['center'];rx,ry=cap['radii'];shape=Image.new('L',im.size);draw=ImageDraw.Draw(shape);draw.rectangle((0,0,319,cap['fromY']-1),fill=255);draw.ellipse((cx-rx,cy-ry,cx+rx,cy+ry),fill=255);mask=ImageChops.multiply(mask,shape)
   partSource=SOURCE/f"{direction}-{part.get('sourceFrame','01')}.png";paint=Image.open(partSource).convert('RGBA')
   piece=paint.copy();piece.putalpha(ImageChops.multiply(paint.getchannel('A'),mask))
   if 'sourceA' in part:
@@ -81,7 +87,7 @@ for direction in sys.argv[1:] or list(CONFIG):
    inv=(cs/det,sn/det,(-cs*dx-sn*dy)/det,-sn/det,cs/det,(sn*dx-cs*dy)/det)
    piece=piece.convert('RGBa').transform((320,320),Image.Transform.AFFINE,inv,resample=Image.Resampling.BICUBIC).convert('RGBA')
   piece.save(dest/f'{name}.png');pieces.append((name,piece,part))
-  manifest['parts'][name]={'file':name+'.png','bone':name,'a':part['a'],'b':part['b'],'z':part['z'],'textureSource':str(partSource.relative_to(R)),'sourceA':part.get('sourceA',part['a']),'sourceB':part.get('sourceB',part['b']),'sourceClipY':part.get('clipY',[0,319]),'textureSha256':hashlib.sha256(partSource.read_bytes()).hexdigest()}
+  manifest['parts'][name]={'file':name+'.png','bone':name,'a':part['a'],'b':part['b'],'z':part['z'],'textureSource':str(partSource.relative_to(R)),'sourceA':part.get('sourceA',part['a']),'sourceB':part.get('sourceB',part['b']),'sourceClipY':part.get('clipY',[0,319]),'textureSha256':hashlib.sha256(partSource.read_bytes()).hexdigest(),'roundKneeCap':part.get('roundKneeCap')}
  (dest/'parts.json').write_text(json.dumps(manifest,indent=2)+'\n')
  composite=Image.new('RGBA',im.size)
  for _,piece,_ in sorted(pieces,key=lambda x:x[2]['z']):composite.alpha_composite(piece)
