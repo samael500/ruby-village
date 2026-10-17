@@ -1,4 +1,5 @@
 import './style.css';
+import {activateTouchRelease} from './touch-button.ts';
 import {restoredScene,narrativePresentation} from './scene-presentation.ts';
 import {renderMapTrails} from './map-trails.ts';
 import {drawBridge} from './bridge-art.ts';
@@ -808,4 +809,5 @@ app.addEventListener('click',event=>{
  const sounds:Record<string,SoundEvent>={'story-action':'dialog','story-skip':'dialog','prologue-next':'dialog','prologue-back':'dialog','letter-open':'paper','settings-open':'modal','pause-settings':'modal','main-settings':'modal','settings-close':'modal'};
  void gameAudio.play(sounds[target.id]??'ui-click');
 });
+for(const id of ['left','right','other','place','return','undo','check','settings-open','scene-back'])activateTouchRelease($(id) as HTMLButtonElement);
 syncAudioScene();
