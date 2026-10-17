@@ -2,7 +2,7 @@
 from pathlib import Path
 from PIL import Image,ImageChops
 import json,math,hashlib
-R=Path(__file__).resolve().parents[1];A=R/'art/chapter-map-v2';D=R/'public/assets/chapter-map-v2';E=R/'docs/chapter-1-rc/art/map-paving';base=Image.open(A/'map-base-candidate.png').convert('RGBA');paint=Image.open(A/'generated-charoite-03.png').convert('RGBA').resize((1000,400),Image.Resampling.LANCZOS);mask=Image.open(A/'painted-paving-and-grass-mask.png');protect=Image.open(A/'protected-landmarks.png');routes=json.loads((A/'routes.json').read_text())['routes'];samples=[r['samples'][::5]+[r['end']]for r in routes]
+R=Path(__file__).resolve().parents[1];A=R/'art/chapter-map-v2';D=R/'public/assets/chapter-map-v2';E=R/'docs/chapter-1-rc/art/map-paving';base=Image.open(A/'map-base-candidate.png').convert('RGBA');paint=Image.open(A/'generated-charoite-03.png').convert('RGBA').resize((1000,400),Image.Resampling.LANCZOS);mask=Image.open(A/'painted-paving-and-grass-mask.png');protect=Image.open(A/'protected-landmarks.png');gap=Image.open(A/'garden-fix-paint-mask.png');paired=Image.open(A/'generated-garden-two-states-05.png').convert('RGBA').resize((1000,800),Image.Resampling.LANCZOS).crop((0,400,1000,800));paint=Image.composite(paired,paint,gap);routes=json.loads((A/'routes.json').read_text())['routes'];samples=[r['samples'][::5]+[r['end']]for r in routes]
 # Actual bank/causeway painting, while immutable original endpoints stay fixed.
 line=[(932,292),(910,277),(886,274),(835,270),(786,273),(750,283),(728,299),(696,308),(663,319),(626,324)];samples[4]=[]
 for a,b in zip(line,line[1:]):
