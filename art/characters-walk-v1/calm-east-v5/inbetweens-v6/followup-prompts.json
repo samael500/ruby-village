@@ -1,0 +1,26 @@
+{
+  "tool": "builtin imagegen",
+  "transparent_background": true,
+  "near12": {
+    "prompt": "Use case: identity-preserve. Repair/repaint flat polygon lower shin and gap into a whole anatomically continuous painted walking figure. Exact guide pose and1254canvas scale unchanged. Keep planted large foreground RIGHT boot at its exact guide location, flatsole. CARGO POCKET is on this SAME planted foreground leg; continuous thigh/knee/shin to that boot. Behind left boot is the OTHER swinging leg, low off ground, keep its location. Gentle short step, no high knee/march/run. Preserve all face/hair/head, clothing identity, torso/hands/bag/single strap, exact positions, no new shapes. Whole seamless painted knees/boots with natural folds, no cutout strips or gaps. Transparent background, no shadow/text. Only repair/repaint lower leg anatomy following positional guide, do not restore boot to an earlier location.",
+    "inputs": [
+      "near12-1-guide.png",
+      "near12-2-guide.png"
+    ],
+    "outputs": [
+      "exec-b91cf041-7ad5-42ad-8d2f-e698a4f71117.png",
+      "exec-46dadc7a-8eb7-46cc-a2b8-6d9aef60a495.png"
+    ],
+    "status": "source-only-unregistered-not-loop-reviewed"
+  },
+  "far67": {
+    "secondPrompt": "Use case: identity-preserve. Repaint the flat brown polygon lower legs and clipped boot edges into ONE continuous complete anatomically correct painted walking figure. Keep exact guide1254canvas framing, head/face/hair/torso/hands/bag/single strap and scale. Plain FAR leg behind is supporting weight, its boot planted flat at groundy1195, toe ends aroundx915 for this guide. Foreground NEAR leg WITH CARGO POCKET is swinging low forward, boot sole above supporting sole, preserve guide location. Keep cargo pocket attached to foreground swinging leg, back supporting leg plain. Both boots fully painted natural forms, two continuous knees and shins, quiet short-step walking not high knee/running/marching. Keep positions and short reach, no extra stride. Transparent background no shadow/text. Never transfer pocket to the supporting far leg.",
+    "firstPrompt": "Use case: identity-preserve. Repaint the flat brown polygon lower legs and clipped boot edges into ONE continuous complete anatomically correct painted walking figure. Keep exact guide1254canvas framing, head/face/hair/torso/hands/bag/single strap and scale. Plain FAR leg behind is supporting weight, its boot planted flat at groundy1195, toe ends aroundx940 for this guide. Foreground NEAR leg WITH CARGO POCKET is swinging low forward, boot sole above supporting sole, preserve guide location. Keep cargo pocket attached to foreground swinging leg, back supporting leg plain. Both boots fully painted natural forms, two continuous knees and shins, quiet short-step walking not high knee/running/marching. Keep positions and short reach, no extra stride. Transparent background no shadow/text. Never transfer pocket to the supporting far leg.",
+    "outputs": [
+      "exec-40172f34-35c1-4cdf-bc95-3f54646fab37.png",
+      "exec-bd68d9d0-e3ec-4553-b5f8-b9783f11ad89.png"
+    ],
+    "status": "reject-support-boot-falls-behind-next-source-endpoint"
+  },
+  "supersededBy": "User requires genuine MPFB2 Blender model/rig; further imagegen pose work stopped"
+}
