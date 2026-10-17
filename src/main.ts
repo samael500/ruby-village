@@ -23,7 +23,7 @@ import {scenePoint,goalSignLayout} from './production-camera.ts';
 import {loadPrologue,savePrologue,newPrologue,PROLOGUE_ID,prologueFrames,shouldStartPrologue,speakerPortrait} from './prologue.ts';
 import {loadPreferences,recoverSession,saveSession,type Session} from './session.ts';
 import {chapterScene} from './chapter-art.ts';
-import {sceneBackdrop,sceneForeground} from './scene-art.ts';
+import {sceneBackdrop,sceneForeground,sceneLighting} from './scene-art.ts';
 import {GROUND_SCALE,project,unproject,groundTransform,sceneProjection,type Projection} from './projection.ts';
 import {sceneLayout} from './scene-layout.ts';
 import {artUrl,backdrop,scenery,stoneDetail,drawGrid,drawInstanceEdges} from './level-art.ts';
@@ -283,6 +283,7 @@ function renderBoard() {
   }
   if(route.length) {el('g',{id:'ruta-marker','pointer-events':'none','aria-label':'Рута идёт по дороге'},svg);updateRutaMarker();}
   if(v6)sceneForeground(svg,v6,level.id!=='gate'||completed.includes('gate')||phase==='won');
+  if(v6)sceneLighting(svg,v6);
   $('metric').textContent=`Гекс ${Math.round(2*horizontalRadius)} × ${Math.round(2*verticalRadius)} px · проекция ${GROUND_SCALE}`;
 }
 function goalMarker(){

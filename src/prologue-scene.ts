@@ -1,5 +1,5 @@
 import {characterFrame} from './character-assets.ts';
-import {sceneBackdrop,sceneForeground} from './scene-art.ts';
+import {sceneBackdrop,sceneForeground,sceneLighting} from './scene-art.ts';
 import {placedCells} from './game.ts';
 import {hexCenter,key} from './hex.ts';
 import {groundTransform} from './projection.ts';
@@ -43,6 +43,7 @@ export async function renderPrologueScene(target:SVGSVGElement,scene:Scene,level
   node('image',{href:`${import.meta.env.BASE_URL}assets/characters-v1/${frame.image}`,x:-frame.footAnchor[0]*scale,y:-frame.footAnchor[1]*scale,width:frame.frameSize[0]*scale,height:sprite.height},actor);
  }
  sceneForeground(svg,scene,false);
+ sceneLighting(svg,scene);
  await Promise.all([...svg.querySelectorAll('image')].map(image=>decodeImage(image.getAttribute('href')!)));
  if(target.dataset.generation!==generation)return;
  target.replaceChildren(...svg.childNodes);target.dataset.ready='true';

@@ -1,3 +1,4 @@
+import {applyWholeSceneGrade,type WholeSceneGrade} from './scene-grade.ts';
 import type {fitScene} from './scene-camera.ts';
 import {PRODUCTION_LAYOUT_VERSION} from './production-chapter.ts';
 import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
@@ -44,4 +45,11 @@ export function sceneForeground(svg:SVGSVGElement,scene:Scene,open:boolean){
  const paint=node('g',{'clip-path':`url(#${id})`,mask:joinMask(g,scene)},g);
  node('image',{href:art(scene.metadata.source,'v6'),width:1672,height:941},paint);
  openGate(paint,scene,open);
+}
+
+/** Apply only after all scene layers and actors have been appended. */
+export function sceneLighting(svg:SVGSVGElement,scene:Scene){
+ if(PRODUCTION_LAYOUT_VERSION<2)return;
+ const assets=(paintedManifest.scenes as unknown as Record<string,{recommendedWholeSceneGrade?:WholeSceneGrade}>)[scene.sceneId];
+ applyWholeSceneGrade(svg,assets.recommendedWholeSceneGrade);
 }
