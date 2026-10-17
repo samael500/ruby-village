@@ -1,0 +1,22 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. OUTPAINT ONLY GRAY AREA of Image1. The original colorful rectangular inset is LOCKED and must remain exactly in its current location and scale. This is NOT a reference for a recomposed full scene: it is an exact registration target. Extend the painting into gray without moving/cropping/scaling the inset. Canvas4096x1600. Original colorful core rectangle x1212,y329,width1672,height941. The house must stay near worldx1450,y580, never move towardleft; stream core stays near worldx2100..2300. Paint all gray as warm hand-painted woodland meadow, same brush/stroke/object size and top-down-oblique camera. Continue trees/grass/boulders naturally across all four edges without any rectangular seam or border. Stream must flow beyond top core edge world(2022,329) up to outer TOP edge, and beyond bottom core edge world(2282,1270) down to outer BOTTOM, remaining narrow, no ponds or grass plugs. Left and right broad gray expanses become woodland margins at same objectscale. No additional house/building, no people, no bridge, no road, no tiles, no grids, no text. Critical invariant: the inset size/position stays unchanged; only gray pixels are replaced. Fully opaque complete painted wide scene. Do not zoom original to fill the frame.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-97575288-31e1-4679-8bb3-058e609be2d9.png",
+  "nativeSize": [
+    2007,
+    784
+  ],
+  "editTarget": "art/chapter-1-v9/layers/water/stream-pilot/wide-opaque-edit-target.png",
+  "registration": "single source uniform scale to3994x1560,translation120,9 on4096x1600; restore exact native full77board at1212,329;48px decorative edge blend; crop412,200..3684,1400",
+  "deliverySize": [
+    3272,
+    1200
+  ],
+  "deliveryOriginalRect": [
+    800,
+    129,
+    1672,
+    941
+  ],
+  "status": "native-guard-passed-join-art-and-game-review-pending"
+}
