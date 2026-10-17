@@ -1,0 +1,330 @@
+{
+  "schemaVersion": 1,
+  "version": "residents-painted-v1-2026-10-17",
+  "status": "new-painted-assets-ready-for-review",
+  "sceneSize": [
+    1672,
+    941
+  ],
+  "origin": "new built-in imagegen sheets, not recovered archives",
+  "characters": {
+    "rabbit": {
+      "speaker": "Кролик",
+      "source": "art/characters-v1/rabbit-source-v1.png",
+      "nativeHeightPx": 981,
+      "sceneHeightPx": 108,
+      "scale": 0.11009174311926606,
+      "frames": {
+        "idle": {
+          "image": "residents/rabbit-idle.png",
+          "sourceRect": [
+            0,
+            0,
+            508,
+            981
+          ],
+          "frameSize": [
+            508,
+            981
+          ],
+          "footAnchor": [
+            302,
+            977
+          ]
+        },
+        "portrait": {
+          "image": "residents/rabbit-portrait.png",
+          "sourceRect": [
+            0,
+            0,
+            766,
+            976
+          ],
+          "frameSize": [
+            766,
+            976
+          ],
+          "footAnchor": null
+        }
+      },
+      "clips": {
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "frame": "idle",
+              "durationMs": 1000
+            }
+          ]
+        }
+      },
+      "anatomyChecked": true,
+      "appearanceApproval": "new-design-review-pending"
+    },
+    "squirrel": {
+      "speaker": "Бельчонок",
+      "source": "art/characters-v1/squirrel-source-v1.png",
+      "nativeHeightPx": 904,
+      "sceneHeightPx": 92,
+      "scale": 0.10176991150442478,
+      "frames": {
+        "idle": {
+          "image": "residents/squirrel-idle.png",
+          "sourceRect": [
+            0,
+            0,
+            692,
+            904
+          ],
+          "frameSize": [
+            692,
+            904
+          ],
+          "footAnchor": [
+            438,
+            900
+          ]
+        },
+        "portrait": {
+          "image": "residents/squirrel-portrait.png",
+          "sourceRect": [
+            0,
+            0,
+            788,
+            901
+          ],
+          "frameSize": [
+            788,
+            901
+          ],
+          "footAnchor": null
+        }
+      },
+      "clips": {
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "frame": "idle",
+              "durationMs": 1000
+            }
+          ]
+        }
+      },
+      "anatomyChecked": true,
+      "appearanceApproval": "new-design-review-pending"
+    },
+    "hedgehog": {
+      "speaker": "Ёж",
+      "source": "art/characters-v1/hedgehog-source-v1.png",
+      "nativeHeightPx": 844,
+      "sceneHeightPx": 74,
+      "scale": 0.08767772511848342,
+      "frames": {
+        "idle": {
+          "image": "residents/hedgehog-idle.png",
+          "sourceRect": [
+            0,
+            0,
+            639,
+            844
+          ],
+          "frameSize": [
+            639,
+            844
+          ],
+          "footAnchor": [
+            319,
+            840
+          ]
+        },
+        "portrait": {
+          "image": "residents/hedgehog-portrait.png",
+          "sourceRect": [
+            0,
+            0,
+            823,
+            929
+          ],
+          "frameSize": [
+            823,
+            929
+          ],
+          "footAnchor": null
+        }
+      },
+      "clips": {
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "frame": "idle",
+              "durationMs": 1000
+            }
+          ]
+        }
+      },
+      "anatomyChecked": true,
+      "appearanceApproval": "new-design-review-pending"
+    },
+    "teacher": {
+      "speaker": "Учительница",
+      "source": "art/characters-v1/teacher-source-v1.png",
+      "nativeHeightPx": 1008,
+      "sceneHeightPx": 174,
+      "scale": 0.17261904761904762,
+      "frames": {
+        "idle": {
+          "image": "residents/teacher-idle.png",
+          "sourceRect": [
+            0,
+            0,
+            522,
+            1008
+          ],
+          "frameSize": [
+            522,
+            1008
+          ],
+          "footAnchor": [
+            239,
+            1004
+          ]
+        },
+        "portrait": {
+          "image": "residents/teacher-portrait.png",
+          "sourceRect": [
+            0,
+            0,
+            794,
+            971
+          ],
+          "frameSize": [
+            794,
+            971
+          ],
+          "footAnchor": null
+        }
+      },
+      "clips": {
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "frame": "idle",
+              "durationMs": 1000
+            }
+          ]
+        }
+      },
+      "anatomyChecked": true,
+      "appearanceApproval": "new-design-review-pending"
+    },
+    "baker": {
+      "speaker": "Пекарь",
+      "source": "art/characters-v1/baker-source-v1.png",
+      "nativeHeightPx": 999,
+      "sceneHeightPx": 165,
+      "scale": 0.16516516516516516,
+      "frames": {
+        "idle": {
+          "image": "residents/baker-idle.png",
+          "sourceRect": [
+            0,
+            0,
+            537,
+            999
+          ],
+          "frameSize": [
+            537,
+            999
+          ],
+          "footAnchor": [
+            258,
+            995
+          ]
+        },
+        "portrait": {
+          "image": "residents/baker-portrait.png",
+          "sourceRect": [
+            0,
+            0,
+            891,
+            949
+          ],
+          "frameSize": [
+            891,
+            949
+          ],
+          "footAnchor": null
+        }
+      },
+      "clips": {
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "frame": "idle",
+              "durationMs": 1000
+            }
+          ]
+        }
+      },
+      "anatomyChecked": true,
+      "appearanceApproval": "new-design-review-pending"
+    },
+    "miller": {
+      "speaker": "Мельник",
+      "source": "art/characters-v1/miller-source-v1.png",
+      "nativeHeightPx": 1000,
+      "sceneHeightPx": 181,
+      "scale": 0.181,
+      "frames": {
+        "idle": {
+          "image": "residents/miller-idle.png",
+          "sourceRect": [
+            0,
+            0,
+            431,
+            1000
+          ],
+          "frameSize": [
+            431,
+            1000
+          ],
+          "footAnchor": [
+            231,
+            996
+          ]
+        },
+        "portrait": {
+          "image": "residents/miller-portrait.png",
+          "sourceRect": [
+            0,
+            0,
+            794,
+            909
+          ],
+          "frameSize": [
+            794,
+            909
+          ],
+          "footAnchor": null
+        }
+      },
+      "clips": {
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "frame": "idle",
+              "durationMs": 1000
+            }
+          ]
+        }
+      },
+      "anatomyChecked": true,
+      "appearanceApproval": "new-design-review-pending"
+    }
+  }
+}
