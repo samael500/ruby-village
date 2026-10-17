@@ -1,0 +1,2669 @@
+{
+  "schemaVersion": 2,
+  "status": "full-set-candidate-requires-artistic-runtime-review",
+  "productionEnabled": false,
+  "frameSize": [
+    144,
+    204
+  ],
+  "footAnchor": [
+    72.0,
+    180.0
+  ],
+  "nativeHeightPx": 168.0,
+  "targetDisplayHeightPx": 136,
+  "cycleDurationMs": 800,
+  "strideWorldUnits": 0.72,
+  "sourceRig": "art/blender/characters/ruta-motion-prototype.blend",
+  "screenDirectionAnglesRadians": {
+    "e": 0.0
+  },
+  "sourceYawRadians": {
+    "e": 1.5707963267948966
+  },
+  "projectionReference": {
+    "file": "src/scene-v8.json",
+    "note": "all distinct scene calibrations export their own six retargeted limb directions; body identity and original camera are preserved"
+  },
+  "sourceActionRefinement": {
+    "walkRootLocalY": "-.02-.012*cos(4*pi*phase)",
+    "reason": "soft contact knees, body rises in passing; foot controls and stride unchanged",
+    "idleRootLocalY": "-.008+.004*sin(2*pi*phase)"
+  },
+  "sourceContracts": {
+    "e": {
+      "canvas": [
+        320,
+        320
+      ],
+      "footAnchor": [
+        160,
+        256
+      ],
+      "direction": "e",
+      "source": "art/characters-walk-v1/registered/e-01.png",
+      "sourceSha256": "170847573e3fa7b339fd2b08353ce61c267ca7ae25fa824a597c508d59ccd7ae",
+      "method": "overlapping registered cutouts from immutable painted source, no mirroring",
+      "parts": {
+        "body": {
+          "file": "body.png",
+          "bone": "root",
+          "a": [
+            160,
+            170
+          ],
+          "b": [
+            160,
+            140
+          ],
+          "z": 0.2
+        },
+        "thigh.L": {
+          "file": "thigh.L.png",
+          "bone": "thigh.L",
+          "a": [
+            168,
+            177
+          ],
+          "b": [
+            180,
+            209
+          ],
+          "z": 0.06,
+          "textureSource": "art/characters-walk-v1/registered/e-01.png",
+          "sourceA": [
+            168,
+            177
+          ],
+          "sourceB": [
+            180,
+            209
+          ],
+          "sourceClipY": [
+            0,
+            214
+          ],
+          "textureSha256": "170847573e3fa7b339fd2b08353ce61c267ca7ae25fa824a597c508d59ccd7ae"
+        },
+        "shin.L": {
+          "file": "shin.L.png",
+          "bone": "shin.L",
+          "a": [
+            180,
+            209
+          ],
+          "b": [
+            185,
+            234
+          ],
+          "z": 0.07,
+          "textureSource": "art/characters-walk-v1/registered/e-01.png",
+          "sourceA": [
+            180,
+            209
+          ],
+          "sourceB": [
+            185,
+            234
+          ],
+          "sourceClipY": [
+            0,
+            319
+          ],
+          "textureSha256": "170847573e3fa7b339fd2b08353ce61c267ca7ae25fa824a597c508d59ccd7ae"
+        },
+        "foot.L": {
+          "file": "foot.L.png",
+          "bone": "foot.L",
+          "a": [
+            185,
+            234
+          ],
+          "b": [
+            208,
+            234
+          ],
+          "z": 0.08,
+          "textureSource": "art/characters-walk-v1/registered/e-01.png",
+          "sourceA": [
+            185,
+            234
+          ],
+          "sourceB": [
+            208,
+            234
+          ],
+          "sourceClipY": [
+            222,
+            319
+          ],
+          "textureSha256": "170847573e3fa7b339fd2b08353ce61c267ca7ae25fa824a597c508d59ccd7ae"
+        },
+        "thigh.R": {
+          "file": "thigh.R.png",
+          "bone": "thigh.R",
+          "a": [
+            165,
+            178
+          ],
+          "b": [
+            140,
+            211
+          ],
+          "z": 0.12,
+          "textureSource": "art/characters-walk-v1/registered/e-01.png",
+          "sourceA": [
+            165,
+            178
+          ],
+          "sourceB": [
+            140,
+            211
+          ],
+          "sourceClipY": [
+            0,
+            216
+          ],
+          "textureSha256": "170847573e3fa7b339fd2b08353ce61c267ca7ae25fa824a597c508d59ccd7ae"
+        },
+        "shin.R": {
+          "file": "shin.R.png",
+          "bone": "shin.R",
+          "a": [
+            140,
+            211
+          ],
+          "b": [
+            126,
+            235
+          ],
+          "z": 0.13,
+          "textureSource": "art/characters-walk-v1/registered/e-01.png",
+          "sourceA": [
+            140,
+            211
+          ],
+          "sourceB": [
+            126,
+            235
+          ],
+          "sourceClipY": [
+            0,
+            319
+          ],
+          "textureSha256": "170847573e3fa7b339fd2b08353ce61c267ca7ae25fa824a597c508d59ccd7ae"
+        },
+        "foot.R": {
+          "file": "foot.R.png",
+          "bone": "foot.R",
+          "a": [
+            126,
+            235
+          ],
+          "b": [
+            139,
+            242
+          ],
+          "z": 0.14,
+          "textureSource": "art/characters-walk-v1/registered/e-01.png",
+          "sourceA": [
+            126,
+            235
+          ],
+          "sourceB": [
+            139,
+            242
+          ],
+          "sourceClipY": [
+            223,
+            319
+          ],
+          "textureSha256": "170847573e3fa7b339fd2b08353ce61c267ca7ae25fa824a597c508d59ccd7ae"
+        }
+      }
+    }
+  },
+  "directions": {
+    "e": {
+      "screenAngleRadians": 0.0,
+      "sourceYawRadians": 1.5707963267948966,
+      "projectedStridePixels": 45.044959568733155,
+      "clips": {
+        "walk": {
+          "loop": true,
+          "frames": [
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "contact": "left",
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/00.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/01.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/02.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                432,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/03.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                576,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/04.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                720,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/05.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                864,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/06.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                1008,
+                0,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/07.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "contact": "right",
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/08.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/09.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/10.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                432,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/11.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                576,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/12.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                720,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/13.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                864,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/14.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                1008,
+                204,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/15.png"
+            }
+          ],
+          "actorWorldDistance": null
+        },
+        "idle": {
+          "loop": true,
+          "frames": [
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/00.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/01.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/02.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                432,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/03.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                576,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/04.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                720,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/05.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                864,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/06.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                1008,
+                408,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/07.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/08.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/09.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/10.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                432,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/11.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                576,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/12.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                720,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/13.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                864,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/14.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                1008,
+                612,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 200,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/15.png"
+            }
+          ],
+          "actorWorldDistance": null
+        },
+        "start": {
+          "loop": false,
+          "frames": [
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.0,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/00.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.015625,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/01.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.0625,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/02.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                432,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.140625,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/03.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                576,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.25,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/04.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                720,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.390625,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/05.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                864,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.5625,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/06.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                1008,
+                816,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.765625,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/07.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 1,
+              "contact": "left",
+              "motionFraction": 1.0,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/08.png"
+            }
+          ],
+          "actorWorldDistance": 0.18
+        },
+        "stop-L": {
+          "loop": false,
+          "frames": [
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.0,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/00.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.234375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/01.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                432,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.4375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/02.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                576,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.609375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/03.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                720,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.75,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/04.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                864,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.859375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/05.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                1008,
+                1020,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.9375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/06.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.984375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/07.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 1,
+              "contact": "right",
+              "motionFraction": 1.0,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/08.png"
+            }
+          ],
+          "actorWorldDistance": 0.18
+        },
+        "stop-R": {
+          "loop": false,
+          "frames": [
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.0,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/00.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                432,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.234375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/01.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                576,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.4375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/02.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                720,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.609375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/03.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                864,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.75,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/04.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                1008,
+                1224,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.859375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/05.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                0,
+                1428,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.9375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/06.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                144,
+                1428,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 50,
+              "motionFraction": 0.984375,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/07.png"
+            },
+            {
+              "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+              "sourceRect": [
+                288,
+                1428,
+                144,
+                204
+              ],
+              "frameSize": [
+                144,
+                204
+              ],
+              "footAnchor": [
+                72.0,
+                180.0
+              ],
+              "durationMs": 1,
+              "contact": "left",
+              "motionFraction": 1.0,
+              "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/08.png"
+            }
+          ],
+          "actorWorldDistance": 0.18
+        }
+      }
+    }
+  },
+  "cameraVariants": {
+    "base": {
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "gate",
+        "garden",
+        "stream",
+        "mill",
+        "forest"
+      ],
+      "directions": {
+        "e": {
+          "screenAngleRadians": 0.0,
+          "sourceYawRadians": 1.5707963267948966,
+          "projectedStridePixels": 45.044959568733155,
+          "clips": {
+            "walk": {
+              "loop": true,
+              "frames": [
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "contact": "left",
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/00.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/01.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/02.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    432,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/03.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    576,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/04.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    720,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/05.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    864,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/06.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    1008,
+                    0,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/07.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "contact": "right",
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/08.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/09.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/10.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    432,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/11.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    576,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/12.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    720,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/13.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    864,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/14.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    1008,
+                    204,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/walk/15.png"
+                }
+              ],
+              "actorWorldDistance": null
+            },
+            "idle": {
+              "loop": true,
+              "frames": [
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/00.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/01.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/02.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    432,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/03.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    576,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/04.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    720,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/05.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    864,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/06.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    1008,
+                    408,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/07.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/08.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/09.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/10.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    432,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/11.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    576,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/12.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    720,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/13.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    864,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/14.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    1008,
+                    612,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 200,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/idle/15.png"
+                }
+              ],
+              "actorWorldDistance": null
+            },
+            "start": {
+              "loop": false,
+              "frames": [
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.0,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/00.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.015625,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/01.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.0625,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/02.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    432,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.140625,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/03.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    576,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.25,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/04.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    720,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.390625,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/05.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    864,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.5625,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/06.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    1008,
+                    816,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.765625,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/07.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 1,
+                  "contact": "left",
+                  "motionFraction": 1.0,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/start/08.png"
+                }
+              ],
+              "actorWorldDistance": 0.18
+            },
+            "stop-L": {
+              "loop": false,
+              "frames": [
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.0,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/00.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.234375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/01.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    432,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.4375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/02.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    576,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.609375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/03.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    720,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.75,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/04.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    864,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.859375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/05.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    1008,
+                    1020,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.9375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/06.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.984375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/07.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 1,
+                  "contact": "right",
+                  "motionFraction": 1.0,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-L/08.png"
+                }
+              ],
+              "actorWorldDistance": 0.18
+            },
+            "stop-R": {
+              "loop": false,
+              "frames": [
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.0,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/00.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    432,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.234375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/01.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    576,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.4375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/02.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    720,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.609375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/03.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    864,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.75,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/04.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    1008,
+                    1224,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.859375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/05.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    0,
+                    1428,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.9375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/06.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    144,
+                    1428,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 50,
+                  "motionFraction": 0.984375,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/07.png"
+                },
+                {
+                  "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+                  "sourceRect": [
+                    288,
+                    1428,
+                    144,
+                    204
+                  ],
+                  "frameSize": [
+                    144,
+                    204
+                  ],
+                  "footAnchor": [
+                    72.0,
+                    180.0
+                  ],
+                  "durationMs": 1,
+                  "contact": "left",
+                  "motionFraction": 1.0,
+                  "sourceFile": "art/characters-walk-v1/export-v2/renders/e/stop-R/08.png"
+                }
+              ],
+              "actorWorldDistance": 0.18
+            }
+          }
+        }
+      }
+    }
+  },
+  "sceneCameraVariant": {
+    "gate": "base",
+    "garden": "base",
+    "stream": "base",
+    "mill": "base",
+    "forest": "base"
+  },
+  "rigidBootTextures": true,
+  "sourceFrameSize": [
+    320,
+    320
+  ],
+  "sourceFootAnchor": [
+    160,
+    256
+  ],
+  "deliveryTransform": {
+    "crop": [
+      64,
+      16,
+      256,
+      288
+    ],
+    "uniformScale": 0.75,
+    "method": "one common crop and scale for ALL directions/states; lossless WebP atlas; originals retained"
+  },
+  "files": {
+    "base-e.webp": {
+      "sha256": "2fa66692b32001db53ccf61d1cc8f36f9d7ad69a2791e485babfded3d034bf44",
+      "bytes": 812848,
+      "atlasSize": [
+        1152,
+        1632
+      ],
+      "decodedRGBABytes": 7520256
+    }
+  },
+  "decodedRGBABytes": 7520256,
+  "compressedBytes": 812848
+}
