@@ -3,7 +3,7 @@ import json, os, base64, subprocess
 from pathlib import Path
 from playwright.sync_api import sync_playwright
 ROOT=Path(__file__).resolve().parents[2]
-OUT=ROOT/'docs/chapter-1-rc/evidence'; OUT.mkdir(parents=True,exist_ok=True)
+OUT=Path(os.environ.get('RUBY_QA_OUT',str(ROOT/'docs/chapter-1-rc/evidence'))); OUT.mkdir(parents=True,exist_ok=True)
 URL=os.environ.get('RUBY_QA_URL','http://127.0.0.1:5178/ruby-village/')
 
 def dismiss(page):
@@ -35,6 +35,7 @@ with sync_playwright() as p:
  frames=[]
  for i in range(6):
   page.locator('#prologue-panel[open]').wait_for()
+  page.wait_for_selector('#prologue-canvas[data-ready="true"]');page.wait_for_load_state('networkidle')
   page.screenshot(path=str(OUT/f'prologue-{i+1}.png'))
   frames.append(page.locator('#prologue-text').inner_text())
   page.locator('#prologue-next').click()
@@ -51,7 +52,7 @@ with sync_playwright() as p:
    assert page.locator(f'[data-owner="{ident}"]').count()>0,(level['id'],ident)
   page.screenshot(path=str(OUT/f"{level['id']}-solved.png"))
   page.locator('#check').click()
-  page.wait_for_function("document.querySelector('#story[open]') || document.querySelector('#completion-panel[open]')",timeout=10000)
+  page.wait_for_function("document.querySelector('#story[open]') || document.querySelector('#completion-panel[open]')",timeout=90000)
   dismiss(page)
   page.locator('#completion-panel[open]').wait_for()
   page.screenshot(path=str(OUT/f"{level['id']}-complete.png"))

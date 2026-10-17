@@ -1,7 +1,15 @@
 import './style.css';
+import {restoredScene,narrativePresentation} from './scene-presentation.ts';
+import {renderMapTrails} from './map-trails.ts';
+import {drawBridge} from './bridge-art.ts';
+import {RutaJourney} from './ruta-journey.ts';
+import {routeSurface} from './route-surface.ts';
+import {loadMotionSet,prepareMotionAtlases,drawMotionFrame,type RuntimeMotionSet} from './ruta-motion-view.ts';
+import {planGroundRoute} from '../scripts/character-paint-route-planner.ts';
 import {releasePreview,confirmedPreview} from './placement-preview.ts';
 import {characterFrame,characterUrl} from './character-assets.ts';
 import poses from '../public/assets/characters-v1/poses-manifest.json' with {type:'json'};
+import residents from '../public/assets/characters-v1/residents-manifest.json' with {type:'json'};
 import {renderPrologueScene,type StorySprite} from './prologue-scene.ts';
 import {fitScene as fitProductionScene} from './production-camera.ts';
 import {positionAlongPath} from './character-animation.ts';
@@ -50,7 +58,7 @@ app.innerHTML = `
 <dialog id="prologue-panel" aria-labelledby="prologue-title"><div class="prologue-stage"><svg id="prologue-canvas" role="img" aria-label="Утро Руты перед дорогой"></svg></div><div class="prologue-paper"><img loading="lazy" id="prologue-portrait" class="ruta-portrait" src="${characterUrl('ruta-portrait-pilot.png')}" alt="Рута"><div class="prologue-copy"><h2 id="prologue-title">Утро перед дорогой</h2><p id="prologue-speaker" class="eyebrow"></p><p id="prologue-text" aria-live="polite"></p></div><div class="prologue-actions"><button id="prologue-next" class="primary">Дальше →</button><button id="prologue-back">← Назад</button><button id="prologue-skip">Пропустить</button></div></div></dialog>
 <dialog id="pause-panel"><div class="dialog-heading"><h2>Небольшой привал</h2><button id="pause-close" aria-label="Вернуться в игру">✕</button></div><div class="pause-actions"><button id="pause-continue" class="primary">Продолжить</button><button id="pause-map">Карта деревни</button><button id="pause-restart">Начать заново</button><button id="pause-prologue">Посмотреть начало</button><button id="pause-settings">Настройки</button></div></dialog>
 <dialog id="restart-dialog"><h2>Начать уровень заново?</h2><p>Плиты вернутся в набор. Пройденные дороги сохранятся.</p><button id="restart-cancel">Продолжить</button><button id="restart-confirm">Начать заново</button></dialog>
-<dialog id="completion-panel"><h2>Дорожка готова!</h2><img loading="lazy" class="completion-art" src="${import.meta.env.BASE_URL}assets/ui/v7/completion-gate.png" alt="Восстановленная дорожка к калитке"><p id="completion-text"></p><button id="next-level" class="primary">Следующее место →</button><button id="completion-map">На карту</button></dialog>
+<dialog id="completion-panel"><h2>Дорожка готова!</h2><div id="completion-scene"></div><p id="completion-text"></p><button id="next-level" class="primary">Следующее место →</button><button id="completion-map">На карту</button></dialog>
 <dialog id="settings-panel" aria-labelledby="settings-title">
 <div class="dialog-heading"><h2 id="settings-title">Настройки площадки</h2><button id="settings-close" aria-label="Закрыть настройки">✕</button></div>
 <div class="settings"><label id="size-setting">Размер поля<select id="size" aria-label="Размер поля"><option value="7,5">7 × 5 — крупнее</option><option value="9,6" selected>9 × 6</option><option value="11,7">11 × 7 — мельче</option></select></label>
@@ -89,6 +97,12 @@ let orientationBlocked=false, pausedMilliseconds=0;
 let resumeJourney:(()=>void)|null=null;
 const portraitWindow=()=>{const v=window.visualViewport;return (v?.height??innerHeight)>(v?.width??innerWidth);};
 let route:Hex[]=[], journey=0, frame=0;
+let rutaJourney:RutaJourney|null=null,motionSet:RuntimeMotionSet|null=null;
+let motionAtlases:Awaited<ReturnType<typeof prepareMotionAtlases>>|null=null,motionLoading:Promise<void>|null=null,motionGeneration=0;
+function prepareRutaMotion(id:string){
+ const generation=++motionGeneration;motionSet=null;motionAtlases=null;rutaJourney=null;
+ motionLoading=(async()=>{try{const set=await loadMotionSet(id),atlases=await prepareMotionAtlases(set);if(generation!==motionGeneration)return;motionSet=set;motionAtlases=atlases;app.dataset.motion='ready';}catch{if(generation===motionGeneration)app.dataset.motion='load-failed';}})();
+}
 let cols = 9, rows = 6, layout: Layout = {}, history: Layout[] = [];
 let learningRotated=false;
 let selected: string | null = null, anchor: Hex | null = null, turns = 0;
@@ -226,17 +240,13 @@ function renderBoard() {
   const [start,end]=endpoints();
   const paved=new Set(owners.keys());
   if(chapterLevel){paved.add(key(start));paved.add(key(end));}
-  const landmarks=document.createElementNS(ns,'g');landmarks.setAttribute('pointer-events','none');
+  const landmarks=document.createElementNS(ns,'g');landmarks.setAttribute('pointer-events','none');landmarks.setAttribute('data-puzzle-landmarks','');
   for(const h of boardCells(cols,rows)) {
     const k=key(h), owner=owners.get(k), c=hexCenter(h,radius), terrain=terrainAt(level,h),terminal=chapterLevel&&(k===key(start)||k===key(end));
     const g=el('g',{'data-cell':k,'data-terrain':terrain,'data-owner':owner??'',role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${k===key(start)?', '+level.startName:k===key(end)?', '+level.goalName:''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода',house:'дом',flower:'клумба'}[terrain])}`},ground);
     el('polygon',{points:polygon(h,radius,origin.x,origin.y),'pointer-events':'all',class:`cell ${illustrated||v6?(owner||terminal?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner===selected?0.45:1},g);
     if(chapterLevel && (owner||terminal) && (!owner||pieceById(owner).kind!=='bridge')){const material=el('g',{opacity:owner===selected ? 0.45 : 1},g);stoneDetail(material,h,radius,c.x+origin.x,c.y+origin.y,owner?pieces.indexOf(pieceById(owner)):0,paved,owner?{pieceId:owner,local:rotate({q:h.q-layout[owner].anchor.q,r:h.r-layout[owner].anchor.r},-layout[owner].turns),turns:layout[owner].turns}:{pieceId:'endpoint',local:h,turns:0});}
     if(!owner && terrain!=='ground' && terrain!=='house'&&(!v6||terrain==='water')) el('text',{x:groundPoint(c.x+origin.x,c.y+origin.y).x,y:groundPoint(c.x+origin.x,c.y+origin.y).y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},landmarks,(v6&&terrain!=='water'?'⊘':{water:'≈',tree:'♠',rock:'⬟',flower:'✿'}[terrain]));
-    if(owner && pieceById(owner).kind==='bridge') {
-      const deck=el('g',{transform:`translate(${c.x+origin.x} ${c.y+origin.y}) rotate(${layout[owner].turns*60})`,'pointer-events':'none'},g);
-      for(const dx of [-.35,0,.35]) el('line',{x1:radius*dx,x2:radius*dx,y1:-radius*.65,y2:radius*.65,stroke:'#775032','stroke-width':2},deck);
-    }
     if(!chapterLevel && owner && key(layout[owner].anchor)===k) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y,r:Math.max(2,radius*.09),fill:'#fff5d6','pointer-events':'none'},g);
     if(!chapterLevel && (k===key(start)||k===key(end))) {
       el('text',{x:groundPoint(c.x+origin.x,c.y+origin.y).x,y:groundPoint(c.x+origin.x,c.y+origin.y).y-radius*.1,class:'landmark','font-size':radius*.62},landmarks,k===key(start)?'⌂':'⚑');
@@ -246,6 +256,7 @@ function renderBoard() {
   }
   if(illustrated||v6)drawGrid(ground,cols,rows,radius,origin,new Set(boardCells(cols,rows).filter(h=>!['ground','water'].includes(terrainAt(level,h))).map(key)));
   if(chapterLevel)drawInstanceEdges(ground,owners,radius,origin);
+  for(const [id,placement]of Object.entries(layout))if(pieceById(id).kind==='bridge')drawBridge(ground,placement.anchor,placement.turns,radius,origin);
   svg.append(landmarks);
   if(chapterLevel)goalMarker();
   if(sceneTransform&&!v6)scenery(svg,sceneTransform);
@@ -419,25 +430,37 @@ $('return').onclick=()=>{
 };
 $('undo').onclick=()=>{if(selected&&anchor){resetSelection();message('Предпросмотр отменён. Дорога сохранена.');render();return;}const prior=history.pop();if(prior){layout=prior;void gameAudio.play('tile-return');path.clear();resetSelection();message('Последнее действие отменено.');render();}};
 $('clear').onclick=()=>{if(phase!=='playing')return;settings.close();($('restart-dialog') as HTMLDialogElement).showModal();};
-$('check').onclick=()=>{
+$('check').onclick=async()=>{
   if(orientationBlocked||phase!=='playing')return;
   const result=winningPath(level,layout);
   path=new Set(result?.map(key));
   if(!result){void gameAudio.play('check-incomplete');message('Пока дорога не соединена. Попробуй переложить плиты');renderBoard();return;}
   if(level.id==='sandbox'){message('Дорога готова! Из деревни можно дойти до мельницы.');renderBoard();return;}
   void gameAudio.play('path-connected');phase='walking';route=result;journey=0;resetSelection();
+  const checkedLevel=level;render();await motionLoading;
+  if(screen!=='game'||level!==checkedLevel||phase!=='walking')return;
+  const metadata=fitProductionScene(level.id,100,100).metadata,camera=metadata.camera,goal=scenePoint(level.id,level.goal);
+  const goalPolygon=Array.from({length:6},(_,i)=>{const angle=(i*60-90)*Math.PI/180,point=project({x:camera.radius*Math.cos(angle),y:camera.radius*Math.sin(angle)},{scale:camera.groundScale,pivotY:0,angle:camera.angle});return {x:goal.x+point.x,y:goal.y+point.y};});
+  const plan=motionSet?planGroundRoute(result.map(h=>scenePoint(level.id,h)),{directions:motionSet.directions,goalPolygon}):null;
+  rutaJourney=plan?.status==='ready'&&motionSet?new RutaJourney(plan,motionSet):null;
+  app.dataset.motion=rutaJourney?'walking':plan?.status==='requires-retarget'?'retarget-required':'unavailable';
   firstVictory=!completed.includes(level.id);
   completed=completeLevel(level.id,completed);persist();
     message('Получилось! Рута проверяет дорожку.');render();
-  const began=performance.now(),pauseAtStart=pausedMilliseconds,duration=Math.min(3500,result.length*230);
+  let last=0;
   const animate=(now:number)=>{
     if(phase!=='walking'||screen!=='game'||clockPaused)return;
-    journey=(reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches)?result.length-1:Math.max(0,Math.min(1,(now-began-(pausedMilliseconds-pauseAtStart))/duration))*(result.length-1);
+    const delta=last?Math.max(0,now-last):0;last=now;
+    if(rutaJourney){
+     const surface=routeSurface(level,layout,rutaJourney.position,camera);
+     for(const contact of rutaJourney.advance(delta,{surface,reducedMotion:reducedMotion||matchMedia('(prefers-reduced-motion: reduce)').matches}))void gameAudio.play(`foot-${contact.surface}`);
+     journey=rutaJourney.done?result.length-1:0;
+    }else journey=result.length-1; // Failed visual load never fabricates a sliding walk or loses a valid victory.
     updateRutaMarker();
     if(journey>=result.length-1){phase='won';resumeJourney=null;victoryAt=performance.now();renderBoard();finishVictory();}
     else frame=requestAnimationFrame(animate);
   };
-  resumeJourney=()=>{if(phase==='walking'&&!clockPaused)frame=requestAnimationFrame(animate);};
+  resumeJourney=()=>{last=0;if(phase==='walking'&&!clockPaused)frame=requestAnimationFrame(animate);};
   resumeJourney();
 };
 $('size').onchange=()=>{
@@ -463,6 +486,13 @@ new ResizeObserver(()=>renderBoard()).observe($('field'));
 
 function updateRutaMarker() {
   const marker=document.getElementById('ruta-marker');if(!marker||!route.length)return;
+  if(rutaJourney&&motionSet&&motionAtlases){
+   const scene=fitProductionScene(level.id,svg.clientWidth,svg.clientHeight),position=rutaJourney.position;
+   marker.removeAttribute('transform');
+   drawMotionFrame(marker as unknown as SVGElement,motionSet,rutaJourney.frame,{x:scene.offset.x+position.x*scene.fit,y:scene.offset.y+position.y*scene.fit},136*scene.fit,motionAtlases);
+   marker.setAttribute('data-gait-state',rutaJourney.clock.state);marker.setAttribute('data-direction',rutaJourney.direction);
+   marker.setAttribute('data-route-ms',String(Math.round(rutaJourney.elapsedMs)));return;
+  }
   const points=route.map(h=>project(hexCenter(h,1),{...projection,pivotY:0}));
   const length=points.slice(1).reduce((sum,point,index)=>sum+Math.hypot(point.x-points[index].x,point.y-points[index].y),0);
   const position=positionAlongPath(points,length*journey/Math.max(1,route.length-1)),base=groundPoint(origin.x,origin.y);
@@ -506,9 +536,9 @@ function dialogPages(title:string,pages:Dialogue[],finish:()=>void,lastLabel:str
   $('story-text').textContent=pages[index].text;
   $('story-action').textContent=index===pages.length-1?lastLabel:'Дальше →';
  };
- const close=()=>{story.close();finish();};
+ const close=()=>{story.close();narrativePresentation(app,false,false);finish();};
  $('story-action').onclick=()=>{if(index===pages.length-1)close();else{index++;draw();}};
- $('story-skip').onclick=close;draw();if(!story.open)story.showModal();
+ $('story-skip').onclick=close;draw();narrativePresentation(app,screen==='game',phase==='won');if(!story.open)story.showModal();
 }
 function showStory(outro=false){
  const data=storyFor(level.id)!;
@@ -541,6 +571,7 @@ function enterLevel(next:Level,resume:Session|null=null) {
   $('main-menu').hidden=true;
   if(next.id!=='sandbox'&&!available(next.id,completed))return;
   cancelAnimationFrame(frame);resumeJourney=null;screen='game';phase=next.id==='sandbox'||introSeen.includes(next.id)?'playing':'intro';
+  narrativePresentation(app,false,false);if(next.id!=='sandbox')prepareRutaMotion(next.id);else{motionGeneration++;rutaJourney=null;motionSet=null;motionAtlases=null;}
   learningRotated=false;level=next;pieces=level.pieces;cols=level.cols;rows=level.rows;layout=resume?structuredClone(resume.layout):{};if(resume)mode=resume.mode;($('mode') as HTMLSelectElement).value=mode;history=[];route=[];journey=0;path.clear();resetSelection();
   app.classList.toggle('illustrated-level',level.id!=='sandbox');
   app.classList.toggle('prototype-level',false);
@@ -562,15 +593,11 @@ function mapGeometry(){
  const points=[[120,95],[365,95],[610,95],[855,95],[855,300],[610,300],[365,300],[120,300]];
  const area=document.querySelector<HTMLElement>('.map-landscape')!,bounds={width:area.clientWidth,height:area.clientHeight},fit=Math.min(bounds.width/1000,bounds.height/400);
  $('map-world').style.cssText=`width:${1000*fit}px;height:${400*fit}px;left:${(bounds.width-1000*fit)/2}px;top:${(bounds.height-400*fit)/2}px`;
- const roads=$('map-roads');roads.replaceChildren();
+ const roads=$('map-roads');
  const entries=chapterMap(completed);
+ renderMapTrails(roads as unknown as SVGElement,new Set(entries.filter(item=>item.connectionRestored).map(item=>item.id)));
  entries.forEach((item,i)=>{
   const [x,y]=points[i];
-  if(i>0&&item.connectionRestored){
-   const previous=points[i-1];
-   const d=previous[1]===y?(y<200?`M${previous[0]+82} 138 C${previous[0]+105} 175,${x-105} 175,${x-82} 138`:`M${previous[0]-82} 310 C${previous[0]-105} 332,${x+105} 332,${x+82} 310`):'M940 120 C985 170,985 260,940 310';
-   el('path',{d,fill:'none',stroke:'#8560a1','stroke-width':5,'stroke-linecap':'round','data-road':item.id,'data-complete':'true'},roads);
-  }
   const node=document.querySelector<HTMLElement>(`[data-map-node="${item.id}"]`);
   if(node){node.style.left=`${x/10}%`;node.style.top=`${y/4}%`;}
  });
@@ -639,6 +666,7 @@ $('scene-help').onclick=()=>{document.querySelector('#help-panel #bridge-guide')
 $('help-close').onclick=()=>($('help-panel') as HTMLDialogElement).close();
 
 function showCompletion(){
+ $('completion-scene').replaceChildren(restoredScene(svg,level.name));
  $('completion-text').textContent=level.id==='forest'?'Глава «За калитку» пройдена! Следующее приключение готовится.':level.outro;
  $('next-level').hidden=level.id==='forest';
  const next=levels[levels.indexOf(level)+1];$('next-level').textContent=level.id==='gate'?'К саду Кролика →':next?`Дальше: ${next.name} →`:'На карту';
@@ -666,7 +694,7 @@ function showPrologue(replay:boolean,finish:()=>void){
   const startFoot=scenePoint('gate',levels[0].start),looseFoot=scenePoint('gate',{q:3,r:3});
   const poseId=(['ruta-basket','ruta-adjust-satchel','rabbit-baking','ruta-surprised','ruta-crouch-basket'] as const)[index];
   const sprites:StorySprite[]=[];
-  if(index<5){const pose=poses.frames[poseId];sprites.push({file:pose.image,frameSize:pose.frameSize,footAnchor:pose.footAnchor,height:pose.sceneHeightPx,position:index===2?scenePoint('garden',storyLevel.goal):index===4?looseFoot:startFoot,label:index===2?'Кролик готовит пирог':'Рута'});}
+  if(index<5){const pose=index===2?{...residents.characters.rabbit.frames.idle,sceneHeightPx:residents.characters.rabbit.sceneHeightPx}:poses.frames[poseId];sprites.push({file:pose.image,frameSize:pose.frameSize,footAnchor:pose.footAnchor,height:pose.sceneHeightPx,position:index===2?scenePoint('garden',storyLevel.goal):index===4?looseFoot:startFoot,label:index===2?'Кролик ждёт у стола':'Рута'});}
   else{const idle=rutaManifest.characters.ruta.frames['idle-pilot'];sprites.push({file:idle.image,frameSize:idle.frameSize,footAnchor:idle.footAnchor,height:136,position:startFoot,label:'Рута'});const basket=poses.frames['basket-ground'];sprites.push({file:basket.image,frameSize:basket.frameSize,footAnchor:basket.footAnchor,height:basket.sceneHeightPx,position:{x:startFoot.x+42,y:startFoot.y+12},label:'Корзина яблок',shadow:false});}
   const hand=poses.frames['ruta-crouch-basket'].props.reachingHandAnchor,crouch=poses.frames['ruta-crouch-basket'];
   const stone={x:looseFoot.x+(hand[0]-crouch.footAnchor[0])*crouch.scale,y:looseFoot.y+(hand[1]-crouch.footAnchor[1])*crouch.scale};
@@ -719,7 +747,7 @@ function syncPause(){
  modalPaused=[...app.querySelectorAll<HTMLDialogElement>('dialog')].some(d=>d.open);
  if(blocked===clockPaused)return;
  clockPaused=blocked;
- if(blocked){clockPauseStart=performance.now();cancelAnimationFrame(frame);}
+ if(blocked){clockPauseStart=performance.now();cancelAnimationFrame(frame);rutaJourney?.advance(0,{paused:true});}
  else{pausedMilliseconds+=performance.now()-clockPauseStart;resumeJourney?.();}
 }
 document.addEventListener('visibilitychange',syncPause);
