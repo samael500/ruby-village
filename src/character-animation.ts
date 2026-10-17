@@ -42,8 +42,8 @@ export class CharacterPlayer {
     if (options.reducedMotion || !Number.isFinite(deltaMs) || deltaMs <= 0) return [];
     this.elapsed += deltaMs;
     const events: FootContact[] = [];
-    while (this.elapsed >= this.frame.durationMs) {
-      this.elapsed -= this.frame.durationMs;
+    while (this.elapsed + 1e-7 >= this.frame.durationMs) {
+      this.elapsed = Math.max(0,this.elapsed-this.frame.durationMs);
       if (this.frameIndex === this.clip.frames.length - 1 && !this.clip.loop) { this.elapsed = 0; break; }
       this.frameIndex = (this.frameIndex + 1) % this.clip.frames.length;
       const foot = this.frame.contact;

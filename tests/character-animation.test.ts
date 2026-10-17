@@ -14,6 +14,14 @@ test('pause and first resume discard hidden time; reduced motion has no footstep
  p.advance(50); p.advance(10000,{paused:true}); assert.deepEqual(p.advance(10000),[]);
  assert.equal(p.advance(50).length,1); assert.deepEqual(p.advance(1000,{reducedMotion:true}),[]);
 });
+test('semantic foot contacts are preserved at exact duration across render rates',()=>{
+ const frames=Array.from({length:16},(_,i)=>({...frame(i===0?'left':i===8?'right':undefined),durationMs:50}));
+ for(const fps of [30,60,144]){
+  const player=new CharacterPlayer({frames,loop:true});let contacts=0;
+  for(let i=0;i<fps*4;i++)contacts+=player.advance(1000/fps).length;
+  assert.equal(contacts,10,`${fps}fps: five complete 800ms cycles`);
+ }
+});
 test('projected directions and boundary hysteresis',()=>{
  assert.equal(projectedDirection({x:0,y:0},{x:1,y:1}),'se');
  assert.equal(projectedDirection({x:0,y:0},{x:1,y:0.6},'e'),'e');
