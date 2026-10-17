@@ -1,0 +1,43 @@
+{
+  "status": "appearance-authoring-pilot-not-approved",
+  "productionEnabled": false,
+  "macro": {
+    "gender": 0.0,
+    "age": 0.1875,
+    "muscle": 0.25,
+    "weight": 0.45,
+    "proportions": 0.35,
+    "height": 0.5,
+    "cupsize": 0.5,
+    "firmness": 0.5,
+    "race": {
+      "asian": 0.15,
+      "caucasian": 0.85,
+      "african": 0.0
+    }
+  },
+  "targets": {
+    "eyes/l-eye-scale-incr": 2.2,
+    "eyes/r-eye-scale-incr": 2.2,
+    "eyes/l-eye-height1-incr": 1.2,
+    "eyes/r-eye-height1-incr": 1.2,
+    "mouth/mouth-angles-up": 0.6,
+    "mouth/mouth-scale-horiz-incr": 0.25,
+    "nose/nose-scale-vert-decr": 0.35,
+    "chin/chin-width-decr": 0.35,
+    "cheek/l-cheek-volume-incr": 0.25,
+    "cheek/r-cheek-volume-incr": 0.25
+  },
+  "head3DScale": 1.55,
+  "rig": "default",
+  "camera": {
+    "location": [
+      -2.799999952316284,
+      -5.0,
+      2.200000047683716
+    ],
+    "orthoScale": 1.8300000429153442
+  },
+  "strapCount": 1,
+  "animation": "not-authored"
+}
