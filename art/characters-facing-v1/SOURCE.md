@@ -21,3 +21,7 @@ Hedgehog: builtin imagegen from approved idle, prompt/source `hedgehog-left-*`; 
 Squirrel: builtin original-reference left view followed by accessories-only correction. Prompt/source `squirrel-left-*`, targeted prompt `squirrel-correction-prompt.txt`; rejected wrong-side-bag source retained. Final bag/strap/scarf ownership preserved; one acorn in both paws. Original idle unchanged.
 
 Teacher/Squirrel front: independent builtin imagegen calls from approved original idle refs; prompts `*-front-prompt.txt`, whole sources `*-front-source-v1.png`. `export-front.py` performs only uniform crop/resize/packing and writes authoritative frame anchors. More frontal authored conversation stance for well/mill arrival; no flips or per-part transform.
+
+Baker final: whole selected `baker-left-source-v1.png` is the successful two-step knot remove/left-insert edit. Intermediate and prior wrong-side outputs retained in rejects. Exact step prompts saved.
+
+Miller final: coordinator generated successful builtin original-reference localized head turn preserving nearly frontal original body/sack arm, provided source/explicit exact prompt. Saved whole as `miller-left-source-v2-head-turn.png`; exporter selects it explicitly. Earlier arm-swap failures and two-step intermediate retained in rejects; none are runtime referenced.

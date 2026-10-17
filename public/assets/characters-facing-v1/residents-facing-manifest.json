@@ -371,6 +371,152 @@
           "reason": "Ruta goal lies in front and slightly right of this placement"
         }
       }
+    },
+    "baker": {
+      "speaker": "Пекарь",
+      "nativeHeightPx": 999,
+      "sceneHeightPx": 165,
+      "scale": 0.16516516516516516,
+      "frames": {
+        "conversation-left": {
+          "image": "residents/baker-conversation-left.png",
+          "source": "art/characters-facing-v1/baker-left-source-v1.png",
+          "sourceRect": [
+            0,
+            0,
+            537,
+            999
+          ],
+          "frameSize": [
+            537,
+            999
+          ],
+          "footAnchor": [
+            314,
+            995
+          ],
+          "facing": "left",
+          "mirrored": false
+        }
+      },
+      "policy": {
+        "idle": "retain-approved-characters-v1-idle",
+        "conversation": "choose-on-encounter-not-per-frame",
+        "productionApproved": false
+      },
+      "packing": {
+        "sourceSize": [
+          919,
+          1711
+        ],
+        "measuredAlphaBBox": [
+          24,
+          9,
+          903,
+          1670
+        ],
+        "uniformResizeHeight": 987,
+        "packedOffset": [
+          4,
+          8
+        ],
+        "alphaPreserved": true
+      },
+      "activity": [
+        {
+          "scene": "bakery",
+          "focus": "bakery-work",
+          "idleFacing": "right",
+          "idleAsset": "characters-v1/residents/baker-idle.png"
+        }
+      ],
+      "meeting": {
+        "availableAuthoredFacings": [
+          "right",
+          "left"
+        ],
+        "conversationFrame": "conversation-left",
+        "selectOn": [
+          "encounter",
+          "dialogue-entry"
+        ],
+        "continuousTracking": false,
+        "mirrorAllowed": false,
+        "worldFeet": "retain-caller-placement"
+      }
+    },
+    "miller": {
+      "speaker": "Мельник",
+      "nativeHeightPx": 1000,
+      "sceneHeightPx": 181,
+      "scale": 0.181,
+      "frames": {
+        "conversation-left": {
+          "image": "residents/miller-conversation-left.png",
+          "source": "art/characters-facing-v1/miller-left-source-v2-head-turn.png",
+          "sourceRect": [
+            0,
+            0,
+            433,
+            1000
+          ],
+          "frameSize": [
+            433,
+            1000
+          ],
+          "footAnchor": [
+            242,
+            996
+          ],
+          "facing": "left",
+          "mirrored": false
+        }
+      },
+      "policy": {
+        "idle": "retain-approved-characters-v1-idle",
+        "conversation": "choose-on-encounter-not-per-frame",
+        "productionApproved": false
+      },
+      "packing": {
+        "sourceSize": [
+          823,
+          1911
+        ],
+        "measuredAlphaBBox": [
+          1,
+          0,
+          822,
+          1908
+        ],
+        "uniformResizeHeight": 988,
+        "packedOffset": [
+          4,
+          8
+        ],
+        "alphaPreserved": true
+      },
+      "activity": [
+        {
+          "scene": "mill",
+          "focus": "mill-work",
+          "idleFacing": "right",
+          "idleAsset": "characters-v1/residents/miller-idle.png"
+        }
+      ],
+      "meeting": {
+        "availableAuthoredFacings": [
+          "right",
+          "left"
+        ],
+        "conversationFrame": "conversation-left",
+        "selectOn": [
+          "encounter",
+          "dialogue-entry"
+        ],
+        "continuousTracking": false,
+        "mirrorAllowed": false,
+        "worldFeet": "retain-caller-placement"
+      }
     }
   },
   "packing": {

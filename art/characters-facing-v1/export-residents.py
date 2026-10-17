@@ -19,7 +19,7 @@ activities={
 }
 for name in sys.argv[1:]:
     original=BASE['characters'][name]
-    source=ROOT/f'art/characters-facing-v1/{name}-left-source-v1.png'
+    source=ROOT/('art/characters-facing-v1/miller-left-source-v2-head-turn.png' if name=='miller' else f'art/characters-facing-v1/{name}-left-source-v1.png')
     im=Image.open(source).convert('RGBA')
     bbox=im.getchannel('A').point(lambda v:255 if v>=8 else 0).getbbox()
     assert bbox
@@ -50,6 +50,6 @@ for name in sys.argv[1:]:
     print(name,frame.size,'anchor',(anchor_x,native-4),'sceneHeight',original['sceneHeightPx'])
 for name,resident in data['characters'].items():
     resident['activity']=[{'scene':scene,'focus':focus,'idleFacing':'right','idleAsset':f'characters-v1/residents/{name}-idle.png'} for scene,focus in activities[name]]
-    resident['meeting']={'availableAuthoredFacings':['right','left'],'conversationFrame':'conversation-left','selectOn':['encounter','dialogue-entry'],'continuousTracking':False,'mirrorAllowed':False,'worldFeet':'retain-caller-placement'}
+    resident['meeting']={'availableAuthoredFacings':['right','left'],'conversationFrame':'conversation-left','selectOn':['encounter','dialogue-entry'],'continuousTracking':False,'mirrorAllowed':False,'worldFeet':'retain-caller-placement',**resident.get('meeting',{})}
 data['status']='authored-views-awaiting-actual-scene-review'
 MANIFEST.write_text(json.dumps(data,ensure_ascii=False,indent=2)+'\n')
