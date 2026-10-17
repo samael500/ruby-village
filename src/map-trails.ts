@@ -5,7 +5,7 @@ const routes=[
  ['well','M403 128 C445 165 514 172 550 156 S583 146 601 128'],
  ['bakery','M601 128 C650 167 721 169 767 160 S831 160 864 133'],
  ['stream','M864 133 C935 147 977 173 975 217 S958 267 932 292'],
- ['mill','M932 292 C908 351 843 368 784 360 S677 346 626 324'],
+ ['mill','M932 292 C927 266 912 255 886 249 L776 245 C738 259 691 303 626 324'],
  ['post','M626 324 C570 352 510 363 459 349 S392 348 359 321'],
  ['forest','M359 321 C308 354 252 367 206 349 S147 340 112 315'],
 ] as const;
@@ -38,5 +38,11 @@ export function renderMapTrails(target:SVGElement,restored:ReadonlySet<string>){
    node('path',{d:'M-2 -2.4 L0 -2.7 1.8 -1.8 M-.8 .8 L1.4 1.7',fill:'none',stroke:'#d4b6df','stroke-width':.55,opacity:.65},stone);
   }
   guide.remove();
+  if(id==='mill'){
+   // Cross the narrow upper reach, instead of drawing a lane across the wide
+   // lower pool. The same painted timber is used by the actual puzzle bridge.
+   const bridge=node('svg',{x:776,y:239,width:110,height:14,viewBox:'68 167 2033 359',preserveAspectRatio:'none',overflow:'hidden','data-map-bridge':'',transform:'rotate(2 831 246)'},group);
+   node('image',{href:`${import.meta.env.BASE_URL}assets/bridge-v1/deck-v1.png`,width:2170,height:725},bridge);
+  }
  });
 }

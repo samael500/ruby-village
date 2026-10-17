@@ -11,6 +11,7 @@ with sync_playwright() as p:
   q.goto('http://127.0.0.1:5181/ruby-village/');q.locator('#choose-level').click();q.locator('#map-background').evaluate('(i)=>i.decode()')
   for state,ids in [('new',[]),('partial',['garden','well']),('complete',['garden','well','bakery','stream','mill','post','forest'])]:
    q.evaluate('''async ids=>{const {renderMapTrails}=await import('/ruby-village/src/map-trails.ts');renderMapTrails(document.querySelector('#map-roads'),new Set(ids));}''',ids)
+   q.wait_for_load_state('networkidle')
    assert q.locator('[data-map-trail]').count()==7
    assert q.locator('[data-map-trail][data-complete="true"]').count()==len(ids)
    assert q.locator('#map-roads path[stroke-width="5"]').count()==0
