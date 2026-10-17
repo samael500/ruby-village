@@ -204,6 +204,85 @@
         "mirrorAllowed": false,
         "worldFeet": "retain-caller-placement"
       }
+    },
+    "squirrel": {
+      "speaker": "Бельчонок",
+      "nativeHeightPx": 904,
+      "sceneHeightPx": 92,
+      "scale": 0.10176991150442478,
+      "frames": {
+        "conversation-left": {
+          "image": "residents/squirrel-conversation-left.png",
+          "source": "art/characters-facing-v1/squirrel-left-source-v1.png",
+          "sourceRect": [
+            0,
+            0,
+            893,
+            904
+          ],
+          "frameSize": [
+            893,
+            904
+          ],
+          "footAnchor": [
+            438,
+            900
+          ],
+          "facing": "left",
+          "mirrored": false
+        }
+      },
+      "policy": {
+        "idle": "retain-approved-characters-v1-idle",
+        "conversation": "choose-on-encounter-not-per-frame",
+        "productionApproved": false
+      },
+      "packing": {
+        "sourceSize": [
+          1097,
+          1434
+        ],
+        "measuredAlphaBBox": [
+          9,
+          5,
+          1097,
+          1410
+        ],
+        "uniformResizeHeight": 892,
+        "packedOffset": [
+          198,
+          8
+        ],
+        "alphaPreserved": true
+      },
+      "activity": [
+        {
+          "scene": "stream",
+          "focus": "stream-bank",
+          "idleFacing": "right",
+          "idleAsset": "characters-v1/residents/squirrel-idle.png"
+        },
+        {
+          "scene": "mill",
+          "focus": "miller-meeting",
+          "idleFacing": "right",
+          "idleAsset": "characters-v1/residents/squirrel-idle.png"
+        }
+      ],
+      "meeting": {
+        "availableAuthoredFacings": [
+          "right",
+          "left"
+        ],
+        "conversationFrame": "conversation-left",
+        "selectOn": [
+          "encounter",
+          "dialogue-entry"
+        ],
+        "continuousTracking": false,
+        "mirrorAllowed": false,
+        "worldFeet": "retain-caller-placement"
+      }
     }
   },
   "packing": {
