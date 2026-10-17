@@ -29,8 +29,10 @@ test('route completion is frame-rate independent and fires once',()=>{
  let wins=0; const a=new CharacterRoute([{x:0,y:0},{x:30,y:0},{x:30,y:40}],70,()=>wins++);
  const b=new CharacterRoute([{x:0,y:0},{x:30,y:0},{x:30,y:40}],70);
  for(let i=0;i<30;i++)a.advance(1000/30);for(let i=0;i<144;i++)b.advance(1000/144);
- // Rounding can leave sub-pixel residue; one harmless tick completes both.
- a.advance(1);b.advance(1);assert.deepEqual(a.position,b.position);assert.equal(wins,1);a.advance(5000);assert.equal(wins,1);
+ // The exact duration must finish even when floating-point accumulation leaves
+ // a tiny remainder; an external player must not need another movement tick.
+ assert.equal(a.done,true);assert.equal(b.done,true);
+ assert.deepEqual(a.position,b.position);assert.equal(wins,1);a.advance(5000);assert.equal(wins,1);
 });
 test('route pause discards resumed time and reduced motion completes without lost result',()=>{
  let wins=0;const p=new CharacterRoute([{x:0,y:0},{x:100,y:0}],10,()=>wins++);
