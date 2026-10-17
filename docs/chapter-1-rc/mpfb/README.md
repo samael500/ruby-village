@@ -25,3 +25,5 @@ MPFB source code is GPL3; its bundled basemesh, targets, rigs, weights and graph
 ## Next work and current limits
 
 Before animation, make a dressed full-body E appearance pilot against accepted Ruta, with her proportions/face, long brown hair, white shirt/green vest/red scarf, brown trousers/boots and one satchel strap. Base mannequin is not final art. Then real IK contacts and root stride,720ms author cycle only if physically natural, fixed orthographic framing, whole-frame renders around24fps; six views come after pilot review. Current smoke does not verify any of those artistic/physical criteria. Common runtime/manifests unchanged. Family and actual phone checks not run.
+
+Fresh-process reopen verification also passed via scripts/mpfb-validate-smoke.py: lowerleg01.L rotation.2rad actually deforms1427 evaluated visible mesh vertices, maximum displacement.07003m. Probe restored in memory; original blend not overwritten. This verifies a working weighted mesh, not contact accuracy, garment deformation or appearance.
