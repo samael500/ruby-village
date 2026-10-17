@@ -7,7 +7,7 @@ import {drawBridge} from './bridge-art.ts';
 import {drawConnectedRoad} from './connected-road.ts';
 // Enable only after the finished stream material/bank pilot is reviewed.
 const CONNECTED_ROAD_PILOT=false;
-import {renderResidents,sceneResidents,legacyResidentPlacements,type ResidentPlacement} from './resident-scene.ts';
+import {prepareResidentViews,renderResidents,sceneResidents,legacyResidentPlacements,type ResidentPlacement} from './resident-scene.ts';
 import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
 import {RutaJourney} from './ruta-journey.ts';
 import {routeSurface} from './route-surface.ts';
@@ -19,7 +19,7 @@ import poses from '../public/assets/characters-v1/poses-manifest.json' with {typ
 import residents from '../public/assets/characters-v1/residents-manifest.json' with {type:'json'};
 import {renderPrologueScene,type StorySprite} from './prologue-scene.ts';
 import {fitScene as fitProductionScene} from './production-camera.ts';
-import {positionAlongPath} from './character-animation.ts';
+import {positionAlongPath,type Direction} from './character-animation.ts';
 import rutaManifest from '../public/assets/characters-v1/manifest.json' with {type:'json'};
 import {createGameAudio,type SoundEvent} from './audio.ts';
 import {chapterMap,continueTarget,learningHint,chapterCompletion} from './chapter-ui.ts';
@@ -107,11 +107,13 @@ let route:Hex[]=[], journey=0, frame=0;
 let rutaJourney:RutaJourney|null=null,motionSet:RuntimeMotionSet|null=null;
 let motionAtlases:Awaited<ReturnType<typeof prepareMotionAtlases>>|null=null,motionLoading:Promise<void>|null=null,motionGeneration=0;
 function prepareRutaMotion(id:string){
+ void prepareResidentViews(sceneResidents[id]??[]).then(()=>{if(screen==='game'&&level.id===id)renderBoard();});
  const generation=++motionGeneration;motionSet=null;motionAtlases=null;rutaJourney=null;
- motionLoading=(async()=>{try{const set=await loadMotionSet(id),atlases=await prepareMotionAtlases(set);if(generation!==motionGeneration)return;motionSet=set;motionAtlases=atlases;app.dataset.motion='ready';}catch{if(generation===motionGeneration)app.dataset.motion='load-failed';}})();
+ motionLoading=(async()=>{try{const set=await loadMotionSet(id),atlases=await prepareMotionAtlases(set);if(generation!==motionGeneration)return;motionSet=set;motionAtlases=atlases;app.dataset.motion='ready';if(screen==='game'&&level.id===id&&phase!=='walking')renderBoard();}catch{if(generation===motionGeneration)app.dataset.motion='load-failed';}})();
 }
 let cols = 9, rows = 6, layout: Layout = {}, history: Layout[] = [];
 let learningRotated=false;
+let residentMeeting=false,interlocutorResident:string|null=null;
 let selected: string | null = null, anchor: Hex | null = null, turns = 0;
 // Once clicked, keep the destination while the pointer travels to the controls.
 let anchorPinned = false;
@@ -224,6 +226,16 @@ function renderPreview() {
     if(!ok)el('text',{x:c.x+origin.x,y:c.y+origin.y+radius*.23,'text-anchor':'middle','font-size':radius*.8,fill:'#7a1c26','font-weight':900},preview,'⊘');
   }
 }
+function residentPlacements():readonly ResidentPlacement[]{
+ const assets=(paintedManifest.scenes as unknown as Record<string,{semanticAnchors?:Record<string,{x:number;y:number}>}>)[level.id];
+ return PRODUCTION_LAYOUT_VERSION<2?legacyResidentPlacements[level.id]??[]:(sceneResidents[level.id]??[]).map((id,index)=>({id,feet:assets.semanticAnchors?.[index?'secondResidentFeet':'residentFeet']})).filter((actor):actor is ResidentPlacement=>!!actor.feet);
+}
+function meetingDirection(position:{x:number;y:number}){
+ if(!motionSet)return null;
+ const people=residentPlacements(),person=people.find(actor=>actor.id===interlocutorResident)??people[0];if(!person)return null;
+ const angle=Math.atan2(person.feet.y-position.y,person.feet.x-position.x);
+ return Object.entries(motionSet.directions).map(([name,spec])=>({name:name as Direction,error:Math.abs(Math.atan2(Math.sin(angle-spec.screenAngleRadians),Math.cos(angle-spec.screenAngleRadians)))})).sort((a,b)=>a.error-b.error)[0].name;
+}
 function renderBoard() {
   if(screen!=='game'||orientationBlocked||portraitWindow()) return;
   if(drag){renderPreview();return;}
@@ -273,9 +285,8 @@ function renderBoard() {
   if(connectedRoad&&selected)drawInstanceEdges(ground,new Map([...owners].filter(([,id])=>id===selected)),radius,origin);
   svg.append(landmarks);
   if(v6){
-   const assets=(paintedManifest.scenes as unknown as Record<string,{semanticAnchors?:Record<string,{x:number;y:number}>}>)[level.id];
-   const placements=PRODUCTION_LAYOUT_VERSION<2?legacyResidentPlacements[level.id]??[]:(sceneResidents[level.id]??[]).map((id,index)=>({id,feet:assets.semanticAnchors?.[index?'secondResidentFeet':'residentFeet']})).filter((actor):actor is ResidentPlacement=>!!actor.feet);
-   renderResidents(svg,v6,placements,completed.includes(level.id)||phase==='won');
+   const placements=residentPlacements();
+   renderResidents(svg,v6,placements,completed.includes(level.id)||phase==='won',(residentMeeting||phase==='intro'||phase==='won')?{rutaFeet:rutaJourney?.position??v6.metadata.groundAnchors.start}:undefined);
   }
   if(chapterLevel)goalMarker();
   if(sceneTransform&&!v6)scenery(svg,sceneTransform);
@@ -313,7 +324,10 @@ function prototypeRuta(){
  const layer=el('g',{'pointer-events':'none'},svg);
  if(!route.length){
  el('ellipse',{cx:c.x+origin.x,cy:c.y+origin.y,rx:radius*.23,ry:radius*.08,fill:'#3f3b32',opacity:.25},layer);
- rutaImage(layer,{x:foot.x,y:foot.y},radius/70*rutaManifest.characters.ruta.sceneHeightPx,'ruta-idle');
+ const camera=fitProductionScene(level.id,svg.clientWidth,svg.clientHeight),facing=(residentMeeting||phase==='intro')?meetingDirection(camera.metadata.groundAnchors.start):null;
+ if(facing&&motionSet&&motionAtlases){
+  const pose=drawMotionFrame(layer as SVGElement,motionSet,motionSet.directions[facing].clips.idle.frames[0],foot,136*camera.fit,motionAtlases);pose.id='ruta-idle';pose.setAttribute('data-direction',facing);pose.setAttribute('data-facing-reason','encounter');
+ }else rutaImage(layer,{x:foot.x,y:foot.y},radius/70*rutaManifest.characters.ruta.sceneHeightPx,'ruta-idle');
  }
 
 }
@@ -513,8 +527,9 @@ function updateRutaMarker() {
   if(rutaJourney&&motionSet&&motionAtlases){
    const scene=fitProductionScene(level.id,svg.clientWidth,svg.clientHeight),position=rutaJourney.position;
    marker.removeAttribute('transform');
-   drawMotionFrame(marker as unknown as SVGElement,motionSet,rutaJourney.frame,{x:scene.offset.x+position.x*scene.fit,y:scene.offset.y+position.y*scene.fit},136*scene.fit,motionAtlases);
-   marker.setAttribute('data-gait-state',rutaJourney.clock.state);marker.setAttribute('data-direction',rutaJourney.direction);
+   const facing=(phase==='won'||residentMeeting)?meetingDirection(position):null;
+   drawMotionFrame(marker as unknown as SVGElement,motionSet,facing?motionSet.directions[facing].clips.idle.frames[0]:rutaJourney.frame,{x:scene.offset.x+position.x*scene.fit,y:scene.offset.y+position.y*scene.fit},136*scene.fit,motionAtlases);
+   marker.setAttribute('data-gait-state',rutaJourney.clock.state);marker.setAttribute('data-direction',facing??rutaJourney.direction);
    marker.setAttribute('data-route-ms',String(Math.round(rutaJourney.elapsedMs)));return;
   }
   const points=route.map(h=>project(hexCenter(h,1),{...projection,pivotY:0}));
@@ -550,6 +565,7 @@ function dialogPages(title:string,pages:Dialogue[],finish:()=>void,lastLabel:str
  const portrait=$('story-ruta') as HTMLImageElement;
  story.classList.toggle('reading',screen!=='game');
  const draw=()=>{
+  if(screen==='game'){residentMeeting=true;const person=sceneResidents[level.id]?.find(id=>residents.characters[id].speaker===pages[index].speaker);if(person)interlocutorResident=person;renderBoard();}
   document.getElementById('bridge-guide')?.remove();
   if(pages[index].speaker==='Мост')bridgeGuide($('story-text').parentElement!);
   $('story-title').textContent=title;
@@ -560,7 +576,7 @@ function dialogPages(title:string,pages:Dialogue[],finish:()=>void,lastLabel:str
   $('story-text').textContent=pages[index].text;
   $('story-action').textContent=index===pages.length-1?lastLabel:'Дальше →';
  };
- const close=()=>{story.close();narrativePresentation(app,false,false);finish();};
+ const close=()=>{story.close();residentMeeting=false;interlocutorResident=null;narrativePresentation(app,false,false);if(screen==='game')renderBoard();finish();};
  $('story-action').onclick=()=>{if(index===pages.length-1)close();else{index++;draw();}};
  $('story-skip').onclick=close;draw();narrativePresentation(app,screen==='game',phase==='won');if(!story.open)story.showModal();
 }

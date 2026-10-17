@@ -1,0 +1,759 @@
+{
+  "scope": "actual UI; known authored views are asserted, missing unfinished resident views remain explicit fallbackidle; physical phone NOT RUN",
+  "checks": [
+    {
+      "scene": "garden",
+      "viewport": [
+        1280,
+        720
+      ],
+      "intro": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "e",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "well",
+      "viewport": [
+        1280,
+        720
+      ],
+      "intro": [
+        {
+          "id": "teacher",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "teacher",
+          "view": "idle",
+          "reason": "activity",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+        }
+      ],
+      "replay": [
+        {
+          "id": "teacher",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "teacher",
+          "view": "idle",
+          "reason": "activity",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "teacher",
+          "view": "conversation-front",
+          "reason": "encounter",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-front.png"
+        }
+      ],
+      "rutaArrivalDirection": "nw",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "bakery",
+      "viewport": [
+        1280,
+        720
+      ],
+      "intro": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "stream",
+      "viewport": [
+        1280,
+        720
+      ],
+      "intro": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "mill",
+      "viewport": [
+        1280,
+        720
+      ],
+      "intro": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-front",
+          "reason": "activity",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-front",
+          "reason": "activity",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-front",
+          "reason": "encounter",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "post",
+      "viewport": [
+        1280,
+        720
+      ],
+      "intro": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "garden",
+      "viewport": [
+        844,
+        390
+      ],
+      "intro": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "rabbit",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1450 350)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "e",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "well",
+      "viewport": [
+        844,
+        390
+      ],
+      "intro": [
+        {
+          "id": "teacher",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "teacher",
+          "view": "idle",
+          "reason": "activity",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+        }
+      ],
+      "replay": [
+        {
+          "id": "teacher",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "teacher",
+          "view": "idle",
+          "reason": "activity",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "teacher",
+          "view": "conversation-front",
+          "reason": "encounter",
+          "anchor": "translate(1225 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-front.png"
+        }
+      ],
+      "rutaArrivalDirection": "nw",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "bakery",
+      "viewport": [
+        844,
+        390
+      ],
+      "intro": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "baker",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1290 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/baker-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "stream",
+      "viewport": [
+        844,
+        390
+      ],
+      "intro": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1400 225)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "mill",
+      "viewport": [
+        844,
+        390
+      ],
+      "intro": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-front",
+          "reason": "activity",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-front",
+          "reason": "activity",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "miller",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1430 398)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png"
+        },
+        {
+          "id": "squirrel",
+          "view": "conversation-front",
+          "reason": "encounter",
+          "anchor": "translate(1330 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    },
+    {
+      "scene": "post",
+      "viewport": [
+        844,
+        390
+      ],
+      "intro": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "activity": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "replay": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "reload": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "activity",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "arrival": [
+        {
+          "id": "hedgehog",
+          "view": "conversation-left",
+          "reason": "encounter",
+          "anchor": "translate(1370 405)",
+          "href": "/ruby-village/assets/characters-facing-v1/residents/hedgehog-conversation-left.png"
+        }
+      ],
+      "rutaArrivalDirection": "ne",
+      "anchorsStable": true,
+      "resourceErrors": [],
+      "pageErrors": [],
+      "motion": "reduced via real settings for view/state check; not gait quality acceptance"
+    }
+  ]
+}

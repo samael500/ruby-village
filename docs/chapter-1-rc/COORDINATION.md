@@ -1,18 +1,21 @@
 # Current checkpoint — latest handoff takes priority
 
-Active application verified at f2a3600; independent QA integrated c385b22 (source6b48d8b). Subsequent connected-road changes are **inactive**, not finished art. main/origin/main remains add76709; no merge/deploy. Working pushes authorized. User preview5180 is frozen467eab2; fresh build5286 separate (server restarted, session21134). Independent5297 is now stopped/free.
+Integration baseline bbf9828 plus resident runtime checkpoint recorded by this commit. main stays add76709; no merge/deploy. User preview5180 remains frozen467eab2; current checks use5286.
 
-| Task | Actual status | Owner / tree | Dependency / PR |
+| Task | Actual status | Owner | Dependency / PR |
 |---|---|---|---|
-| #61 | released-invalid→valid rotation auto-place PASS,16 independent cases; pending-cancel/save author supplement underway | coordinator runtime | #55/#64; final art/game repeat |
-| #48 map | native painted paving + registered wide,15 independent states/navigation/reload PASS | delivered characters412e705; runtime coordinator | #55; final chapter repeat |
-| #45/#46 road/banks | optional connected-surface code prepared, not active; stream continuation/material next | art_scenes tree45; runtime coordinator | #56/#55; first finished stream pilot |
-| #35 facing | all6 existing idles east; new true left Rabbit pilot, first reject saved for wrong ears/crop | npc_facing tree35-facing | resources only; root integration after pilot |
-| #36 | whole8 E pilot anatomy improved, support FAIL; far6/7 correction in progress | data_ui tree36-paint | #60, sourcef438a36; no mass6views yet |
-| #50/#51 | hiss fixed51e15d5 and user accepted; final full loops/transitions pending | coordinator/audio integration | #55/#57/#58 |
-| #37/#49 | scoped map/input independent QA complete; final chapter not certified | final reviewer next free slot | final8scenes+layout2+gait; phone/family NOT RUN |
+| #61 | released invalid→valid rotation auto-place independently checked; cancel/undo supplement PASS | coordinator | #55/#64; repeat after final art |
+| #48 map | painted paving + registered wide; independent navigation/reload PASS | delivered map author | #55 |
+| #48 header | user clarified top icon/title; painted ruby plaque, live title; 24 real viewport/scene checks PASS | coordinator | b2ac3c8 / #55; independent review next |
+| #35 facing | 6 residents/8 authored views integrated; 12 real state runs and 10 full-alpha clearances PASS | npc_facing sources, coordinator runtime | #67/#55; independent review next; layout2 clearance repeat |
+| #45/#46 road/banks | connected road code disabled; source handoff explicitly NOT ART READY | fresh art executor next | #56/#55; finished stream fragment first |
+| #36 | whole-frame E pilot improving; support/held-frame limitations remain, not accepted | data_ui tree36-paint | #60; no six-view activation yet |
+| #50/#51 | hiss fixed and user accepted; final transitions/loops repeat pending | audio/coordinator | #55/#57/#58 |
+| #37/#49 | scoped map/input independent QA done; full chapter not certified | independent reviewer queued | final art/layout2/gait; physical phone/family NOT RUN |
 
-Characters/map owner paused after completed map handoff; fresh NPC owner is separate. No concurrent root/runtime writers. Sources/rejected attempts retained. Concrete road contract: road/CONTRACT.md. Latest authoritative requirements: LATEST-REQUIREMENTS.md. Pending text clarification identifies the exact primitive emblem because source screenshot is unavailable; do not redraw another logo by guessing.
+NPC meetings use decoded authored left/front views with original idle retained during loading; anchors and native heights stay fixed. Activity/encounter/arrival are event-driven, not continuous following. Twelve desktop/landscape runs cover intro, waiting, replay, reload, actual UI solutions, arrival dialogue and result resident presence. Reduced motion was explicitly enabled for arrival state checks: these do NOT certify gait. Typecheck, build and 100 tests PASS. Evidence: characters/facing/runtime and runtime-clearance.json. Final accepted-layout2 clearance remains mandatory.
+
+Sources and rejected art are preserved in art/SOURCE-HANDOFF-NOT-READY.md. Accepted layout2 remains staged: no new data over incompatible old background. Latest requirements: LATEST-REQUIREMENTS.md; road contract: road/CONTRACT.md.
 
 ---
 
