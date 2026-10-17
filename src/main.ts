@@ -2,6 +2,8 @@ import './style.css';
 import {restoredScene,narrativePresentation} from './scene-presentation.ts';
 import {renderMapTrails} from './map-trails.ts';
 import {drawBridge} from './bridge-art.ts';
+import {renderResidents,sceneResidents,type ResidentPlacement} from './resident-scene.ts';
+import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
 import {RutaJourney} from './ruta-journey.ts';
 import {routeSurface} from './route-surface.ts';
 import {loadMotionSet,prepareMotionAtlases,drawMotionFrame,type RuntimeMotionSet} from './ruta-motion-view.ts';
@@ -259,6 +261,11 @@ function renderBoard() {
   if(chapterLevel)drawInstanceEdges(ground,new Map([...owners].filter(([,id])=>pieceById(id).kind!=='bridge')),radius,origin);
   for(const [id,placement]of Object.entries(layout))if(pieceById(id).kind==='bridge')drawBridge(ground,placement.anchor,placement.turns,radius,origin).setAttribute('opacity',id===selected?'.45':'1');
   svg.append(landmarks);
+  if(v6&&PRODUCTION_LAYOUT_VERSION>=2){
+   const assets=(paintedManifest.scenes as unknown as Record<string,{semanticAnchors?:Record<string,{x:number;y:number}>}>)[level.id];
+   const placements=(sceneResidents[level.id]??[]).map((id,index)=>({id,feet:assets.semanticAnchors?.[index?'secondResidentFeet':'residentFeet']})).filter((actor):actor is ResidentPlacement=>!!actor.feet);
+   renderResidents(svg,v6,placements,completed.includes(level.id)||phase==='won');
+  }
   if(chapterLevel)goalMarker();
   if(sceneTransform&&!v6)scenery(svg,sceneTransform);
   else if(chapterLevel)prototypeRuta();

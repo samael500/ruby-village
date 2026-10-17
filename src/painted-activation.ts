@@ -1,7 +1,7 @@
 type Camera={radius:number;origin:{x:number;y:number};angle:number;groundScale:number};
 type Anchor={x:number;y:number};
 type Accepted=Record<string,{camera:Camera;groundAnchors:{start:Anchor;goal:Anchor}}>;
-type Candidate={background?:string;camera?:Camera;anchors?:{start:Anchor;goal:Anchor};checks?:{fullPolygonVisualAudit?:string};wide?:unknown};
+type Candidate={background?:string;camera?:Camera;anchors?:{start:Anchor;goal:Anchor};semanticAnchors?:Record<string,unknown>;checks?:{fullPolygonVisualAudit?:string};wide?:unknown};
 /** Explain the atomic gate instead of silently mixing new data with old art. */
 export function paintedActivationBlockers(manifest:{scenes:Record<string,Candidate>},accepted:Accepted):string[]{
  const blockers:string[]=[];
@@ -16,6 +16,11 @@ export function paintedActivationBlockers(manifest:{scenes:Record<string,Candida
    const anchor=key as 'start'|'goal',a=candidate.anchors![anchor],b=expected.groundAnchors[anchor];
    return Math.hypot(a.x-b.x,a.y-b.y)>1e-6;
   }))blockers.push(`${id}: endpoints differ from accepted geometry`);
+  const residentCount=({garden:1,well:1,bakery:1,stream:1,mill:2,post:1} as Record<string,number>)[id]??0;
+  for(let i=0;i<residentCount;i++){
+   const key=i?'secondResidentFeet':'residentFeet',anchor=candidate.semanticAnchors?.[key] as Anchor|undefined;
+   if(!anchor||!Number.isFinite(anchor.x)||!Number.isFinite(anchor.y))blockers.push(`${id}: missing ${key}`);
+  }
   const wide=candidate.wide as {file?:string;canvas?:{width:number;height:number};originalRect?:{x:number;y:number;width:number;height:number}}|undefined;
   if(!wide?.file||!wide.canvas||!wide.originalRect)blockers.push(`${id}: audited native wide asset not delivered`);
   else {const r=wide.originalRect,c=wide.canvas;if(r.width!==1672||r.height!==941||r.x<0||r.y<0||r.x+r.width>c.width||r.y+r.height>c.height)blockers.push(`${id}: invalid wide original rectangle`);}

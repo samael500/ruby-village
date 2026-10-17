@@ -13,7 +13,7 @@ export function fitScene(id:string,width:number,height:number,contract:SceneCont
  const metadata=sceneMetadata(id,contract),art=metadata.originalRect,camera=metadata.camera;
  const fit=Math.min(width/art.width,height/art.height),offset={x:(width-art.width*fit)/2,y:(height-art.height*fit)/2};
  const projection:Projection={scale:camera.groundScale,pivotY:0,angle:camera.angle};
- return {metadata,fit,offset,radius:camera.radius*fit,origin:{x:0,y:0},projection,translation:{x:offset.x+camera.origin.x*fit,y:offset.y+camera.origin.y*fit}};
+ return {sceneId:id,metadata,fit,offset,radius:camera.radius*fit,origin:{x:0,y:0},projection,translation:{x:offset.x+camera.origin.x*fit,y:offset.y+camera.origin.y*fit}};
 }
 
 /** Decorative sign anchors are separate from immutable puzzle endpoints. */

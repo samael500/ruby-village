@@ -1,4 +1,7 @@
 import type {fitScene} from './scene-camera.ts';
+import {PRODUCTION_LAYOUT_VERSION} from './production-chapter.ts';
+import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
+import {paintedBackdrop,paintedForeground,type PaintedSceneAssets} from './painted-scene.ts';
 type Scene=ReturnType<typeof fitScene>;
 const ns='http://www.w3.org/2000/svg';
 const node=(tag:string,attrs:Record<string,string|number>,parent:Element)=>{const e=document.createElementNS(ns,tag);for(const [k,v] of Object.entries(attrs))e.setAttribute(k,String(v));parent.append(e);return e;};
@@ -25,6 +28,7 @@ function openGate(parent:Element,scene:Scene,open:boolean){
  node('image',{href:art(patch.file),width:1672,height:941},g);
 }
 export function sceneBackdrop(svg:SVGSVGElement,scene:Scene,open:boolean){
+ if(PRODUCTION_LAYOUT_VERSION>=2){paintedBackdrop(svg,scene,(paintedManifest.scenes as unknown as Record<string,PaintedSceneAssets>)[scene.sceneId]);return;}
  const m=scene.metadata,rect=m.originalRect,g=world(svg,scene,{'data-scene-world':''});
  node('image',{'data-surroundings':'',href:art(m.extension),x:-rect.x,y:-rect.y,width:m.canvas.width,height:m.canvas.height},g);
  // The approved center stays a separate PNG. Only its 48px decorative perimeter joins the outpaint.
@@ -33,6 +37,7 @@ export function sceneBackdrop(svg:SVGSVGElement,scene:Scene,open:boolean){
 }
 /** Pixel-aligned copies of actual foreground artwork; the opening remains unobstructed. */
 export function sceneForeground(svg:SVGSVGElement,scene:Scene,open:boolean){
+ if(PRODUCTION_LAYOUT_VERSION>=2){paintedForeground(svg,scene,(paintedManifest.scenes as unknown as Record<string,PaintedSceneAssets>)[scene.sceneId],open);return;}
  const g=world(svg,scene,{'data-foreground':'','aria-hidden':'true'}),id=`front-${serial++}`;
  const clip=node('clipPath',{id},node('defs',{},g));
  for(const polygon of scene.metadata.foreground)node('polygon',{points:polygon.map(p=>p.join(',')).join(' ')},clip);
