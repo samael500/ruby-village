@@ -42,7 +42,7 @@ with sync_playwright() as p:
     if mode=='drag' and touch:
      # An active gesture consumes button activation; keyboard cannot prematurely place it.
      q.evaluate('window.gestureEvents=[];for(const t of ["pointerdown","pointerup","pointercancel","lostpointercapture"])document.addEventListener(t,e=>window.gestureEvents.push({type:t,target:e.target.id||e.target.tagName,pointer:e.pointerId}),true)')
-     a=center(cell);touch_event('touchStart',a)
+     a=center(piece);touch_event('touchStart',a)
      for _ in range(180):
       q.keyboard.press('Tab')
       if q.locator('#right').evaluate('(n)=>n===document.activeElement'):break
