@@ -1,3 +1,4 @@
+import os
 """Actual runtime resident checks. Seed progress only; solve by real UI input."""
 import json
 from pathlib import Path
@@ -12,7 +13,7 @@ with sync_playwright() as p:
    if sid not in expected:continue
    q=b.new_page(viewport={'width':w,'height':h});errors=[];q.on('pageerror',lambda e:errors.append(str(e)));prior=[l['id'] for l in levels[:index]]
    q.add_init_script(f"localStorage.setItem('ruby-village:chapter-1:v1',JSON.stringify({json.dumps({'version':2,'completed':prior,'introSeen':prior})}));localStorage.setItem('ruby-village:settings:v1',JSON.stringify({{reducedMotion:true}}))")
-   q.goto('http://127.0.0.1:5180/ruby-village/');q.locator('#continue-game').click()
+   q.goto(os.environ.get('RUBY_QA_URL','http://127.0.0.1:5180/ruby-village/'));q.locator('#continue-game').click()
    for stage in ['dialog','puzzle']:
     if stage=='puzzle':
      while q.locator('#story[open]').count():q.locator('#story-action').click()

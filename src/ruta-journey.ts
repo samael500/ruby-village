@@ -12,7 +12,7 @@ export class RutaJourney {
  readonly plan:GroundPlan;
  constructor(plan:GroundPlan,set:PaintedSet){
   this.plan=plan;
-  this.clock=new PaintedMotionClock(set);this.clock.setDirection(sampleGroundRoute(plan,0).direction);
+  this.clock=new PaintedMotionClock(set);if(Math.abs(plan.halfStepDurationMs-this.clock.halfStepDurationMs)>1e-6)throw new RangeError('Route and frames must share authored timing');this.clock.setDirection(sampleGroundRoute(plan,0).direction);
   if(plan.durationMs)this.clock.start();
  }
  get position(){return sampleGroundRoute(this.plan,this.elapsed).position;}
@@ -28,10 +28,10 @@ export class RutaJourney {
   if(this.completed){this.clock.advance(deltaMs,{surface:options.surface});return [];}
   const events:FootContact[]=[];
   let remaining=Math.min(deltaMs,this.plan.durationMs-this.elapsed);
-  const stopAt=this.plan.durationMs-400;
+  const half=this.clock.halfStepDurationMs,stopAt=this.plan.durationMs-half;
   while(remaining>1e-8){
    if(this.elapsed>=stopAt-1e-7)this.clock.requestStop();
-   const boundary=this.elapsed<400-1e-7?400:this.elapsed<stopAt-1e-7?stopAt:this.plan.durationMs;
+   const boundary=this.elapsed<half-1e-7?half:this.elapsed<stopAt-1e-7?stopAt:this.plan.durationMs;
    const step=Math.min(remaining,boundary-this.elapsed);
    events.push(...this.clock.advance(step,{surface:options.surface}).contacts);
    this.elapsed+=step;remaining-=step;

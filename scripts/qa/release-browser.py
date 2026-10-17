@@ -1,3 +1,4 @@
+import os
 """All routes via real UI against pruned production export; not physical-device QA."""
 import json,subprocess
 from pathlib import Path
@@ -6,7 +7,7 @@ root=Path(__file__).resolve().parents[2];out=root/'docs/chapter-1-rc/release/cur
 with sync_playwright() as p:
  b=p.chromium.launch()
  for w,h in [(1280,720),(844,390)]:
-  q=b.new_page(viewport={'width':w,'height':h});errors=[];bad=[];failed=[];q.on('pageerror',lambda e:errors.append(str(e)));q.on('response',lambda r:bad.append({'url':r.url,'status':r.status}) if r.status>=400 else None);q.on('requestfailed',lambda r:failed.append({'url':r.url,'failure':r.failure}));q.goto('http://127.0.0.1:5180/ruby-village/');q.locator('#main-settings').click();q.locator('#reduced-motion').check();q.locator('#settings-close').click();q.locator('#continue-game').click()
+  q=b.new_page(viewport={'width':w,'height':h});errors=[];bad=[];failed=[];q.on('pageerror',lambda e:errors.append(str(e)));q.on('response',lambda r:bad.append({'url':r.url,'status':r.status}) if r.status>=400 else None);q.on('requestfailed',lambda r:failed.append({'url':r.url,'failure':r.failure}));q.goto(os.environ.get('RUBY_QA_URL','http://127.0.0.1:5180/ruby-village/'));q.locator('#main-settings').click();q.locator('#reduced-motion').check();q.locator('#settings-close').click();q.locator('#continue-game').click()
   for _ in range(6):q.wait_for_selector('#prologue-canvas[data-ready=true]');q.locator('#prologue-next').click()
   def dismiss():
    while q.locator('#story[open]').count():q.locator('#story-action').click()

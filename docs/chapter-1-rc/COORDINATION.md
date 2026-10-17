@@ -106,3 +106,8 @@ Working pushes are authorized; origin integration reached51e15d5. Latest main re
 | #37/#49 | final acceptance/export package pending | next free independent reviewer, coordinator | final art/gait/map integration | #55 |
 
 Integration order remains compatible runtime fixes first, then all-eight matching art+layout2 atomic activation, final holistic gait and map, independent acceptance/fixes, clean release checks. Sources and rejected attempts remain preserved; none of the new source-only artwork is a final game PASS.
+
+
+Preview freeze while Maksim plays: localhost5180/ruby-village now serves /tmp/ruby-preview-review-467eab2, an immutable copy of the independently checked layout1 package. /tmp/ruby-static/review points to live docs for evidence/audio comparison. Do not certify new code against5180. Fresh integration checks must set RUBY_QA_URL to a separate build server, or use independent QA5297. The user requested opening the game; xdg-open succeeded and HTTP200 was verified. Do not replace the frozen preview during play without announcing a ready new build.
+
+Controller preparation: source clips and route planning now share optional cycleDurationMs; active manifest800ms remains unchanged.720ms retimed mathematical fixture proves identical endpoints/contacts across30/60/144fps and rejects mismatched source/route timing. This is timing API preparation, not accepted new gait artwork or an active speed change.100 tests pass. The next whole-pose pilot is still in authoring.

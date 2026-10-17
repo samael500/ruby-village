@@ -451,7 +451,7 @@ $('check').onclick=async()=>{
   if(screen!=='game'||level!==checkedLevel||phase!=='walking')return;
   const metadata=fitProductionScene(level.id,100,100).metadata,camera=metadata.camera,goal=scenePoint(level.id,level.goal);
   const goalPolygon=Array.from({length:6},(_,i)=>{const angle=(i*60-90)*Math.PI/180,point=project({x:camera.radius*Math.cos(angle),y:camera.radius*Math.sin(angle)},{scale:camera.groundScale,pivotY:0,angle:camera.angle});return {x:goal.x+point.x,y:goal.y+point.y};});
-  const plan=motionSet?planGroundRoute(result.map(h=>scenePoint(level.id,h)),{directions:motionSet.directions,goalPolygon}):null;
+  const plan=motionSet?planGroundRoute(result.map(h=>scenePoint(level.id,h)),{directions:motionSet.directions,cycleDurationMs:motionSet.cycleDurationMs,goalPolygon}):null;
   rutaJourney=plan?.status==='ready'&&motionSet?new RutaJourney(plan,motionSet):null;
   app.dataset.motion=rutaJourney?'walking':plan?.status==='requires-retarget'?'retarget-required':'unavailable';
   firstVictory=!completed.includes(level.id);

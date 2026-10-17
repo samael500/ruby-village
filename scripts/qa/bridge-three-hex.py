@@ -1,3 +1,4 @@
+import os
 """Focused real-input bridge/render check. Only progress is seeded to open stream."""
 from pathlib import Path
 import json
@@ -12,7 +13,7 @@ with sync_playwright() as p:
   for w,h in [(1280,720),(844,390)]:
    q=b.new_page(viewport={'width':w,'height':h});errors=[];q.on('pageerror',lambda e:errors.append(str(e)))
    prior=[l['id'] for l in levels[:index]];q.add_init_script(f"localStorage.setItem('ruby-village:chapter-1:v1',JSON.stringify({json.dumps({'version':2,'completed':prior,'introSeen':prior})}))")
-   q.goto('http://127.0.0.1:5180/ruby-village/');q.locator('#continue-game').click()
+   q.goto(os.environ.get('RUBY_QA_URL','http://127.0.0.1:5180/ruby-village/'));q.locator('#continue-game').click()
    while q.locator('#story[open]').count():q.locator('#story-action').click()
    for ident,placement in level['solution'].items():
     q.locator(f'[data-piece="{ident}"]').click()
