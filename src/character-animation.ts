@@ -89,6 +89,7 @@ export class CharacterRoute {
     if (this.completed || !Number.isFinite(deltaMs) || deltaMs < 0) return this.position;
     const from = this.position;
     this.distance = options.reducedMotion ? this.total : Math.min(this.total, this.distance + deltaMs * this.speed / 1000);
+    if(this.total-this.distance<=1e-7)this.distance=this.total;
     const to = this.position; this.heading = projectedDirection(from, to, this.heading);
     if (this.distance >= this.total) { this.completed = true; this.onComplete?.(); }
     return to;
