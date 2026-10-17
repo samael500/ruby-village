@@ -4,7 +4,7 @@ Sources remain full320px with packed .blend. No per-frame realignment or asymmet
 from pathlib import Path
 from PIL import Image
 import argparse,json,math,hashlib
-root=Path(__file__).resolve().parents[1];parser=argparse.ArgumentParser();parser.add_argument('--input',default='art/characters-walk-v1/export-v2');parser.add_argument('--output',default='public/assets/characters-walk-v1/animated-v2');parser.add_argument('--scale',type=float,default=.75);args=parser.parse_args();source=root/args.input;out=root/args.output;out.mkdir(parents=True,exist_ok=True);manifest=json.loads((source/'manifest.json').read_text());crop=(64,16,256,288);width=round((crop[2]-crop[0])*args.scale);height=round((crop[3]-crop[1])*args.scale);anchor=[(160-crop[0])*args.scale,(256-crop[1])*args.scale];files={}
+root=Path(__file__).resolve().parents[1];parser=argparse.ArgumentParser();parser.add_argument('--input',default='art/characters-walk-v1/export-v2');parser.add_argument('--output',default='public/assets/characters-walk-v1/animated-v2');parser.add_argument('--scale',type=float,default=.75);args=parser.parse_args();source=root/args.input;out=root/args.output;out.mkdir(parents=True,exist_ok=True);manifest=json.loads((source/'manifest.json').read_text());crop=(64,0,256,288);width=round((crop[2]-crop[0])*args.scale);height=round((crop[3]-crop[1])*args.scale);anchor=[(160-crop[0])*args.scale,(256-crop[1])*args.scale];files={}
 variants=manifest.get('cameraVariants',{'base':{'directions':manifest['directions']}})
 for variant,variant_spec in variants.items():
  for direction,spec in variant_spec['directions'].items():
