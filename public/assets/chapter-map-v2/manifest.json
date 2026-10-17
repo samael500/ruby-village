@@ -260,8 +260,8 @@
           404,
           180
         ],
-        "bytes": 16402,
-        "sha256": "9d9f172232f384ee34de66d5c4983538f7b3f3406bcaafb2e9db024c99ef7ffc",
+        "bytes": 16364,
+        "sha256": "96f08f5bc2abcf8756ba1c01e6afb1e808c5dbb14a19993dcb9dbb3c1a59f6b8",
         "source": "art/chapter-map-v2/generated-charoite-03.png",
         "overlapWithOtherRoutePixels": 0
       },
@@ -277,8 +277,8 @@
           603,
           177
         ],
-        "bytes": 11174,
-        "sha256": "e52fc6283bb5ecd97423bf6ed9d012b7b1079163d78c6f8d5f181242aaa96d65",
+        "bytes": 11148,
+        "sha256": "a7564b6fee1f0c84e4892912c27c091fec4565ba180d364b7765c29185677db7",
         "source": "art/chapter-map-v2/generated-charoite-03.png",
         "overlapWithOtherRoutePixels": 0
       },
@@ -372,5 +372,17 @@
   },
   "wide": null,
   "charoiteSourceSha256": "e809779fee8b8cac3e4219afca5cccf8fc4c224bd341cc0543ee8d0a7575088e",
-  "completedState": "single painted source, spatially partitioned; no SVG paving shapes"
+  "completedState": "single painted source, spatially partitioned; no SVG paving shapes",
+  "gardenApproachRepair": {
+    "source": "art/chapter-map-v2/generated-garden-two-states-05.png",
+    "sourceSha256": "6936061cbc58825c28ca56528346d9c755e5f964c08698b462c6705447ce9c26",
+    "editBounds": [
+      368,
+      142,
+      411,
+      174
+    ],
+    "protectedLandmarkPixelsChanged": 0,
+    "endpointsChanged": 0
+  }
 }
