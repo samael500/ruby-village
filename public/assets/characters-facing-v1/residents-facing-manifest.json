@@ -1,0 +1,59 @@
+{
+  "schemaVersion": 1,
+  "version": "residents-facing-pilot-v1",
+  "status": "pilot-awaiting-actual-scene-review",
+  "baseManifest": "characters-v1/residents-manifest.json",
+  "characters": {
+    "rabbit": {
+      "speaker": "Кролик",
+      "nativeHeightPx": 981,
+      "sceneHeightPx": 108,
+      "scale": 0.11009174311926606,
+      "frames": {
+        "conversation-left": {
+          "image": "residents/rabbit-conversation-left.png",
+          "source": "art/characters-facing-v1/rabbit-left-source-v3.png",
+          "sourceRect": [
+            0,
+            0,
+            604,
+            981
+          ],
+          "frameSize": [
+            604,
+            981
+          ],
+          "footAnchor": [
+            302,
+            977
+          ],
+          "facing": "left",
+          "mirrored": false
+        }
+      },
+      "policy": {
+        "idle": "retain-approved-characters-v1-idle",
+        "conversation": "choose-on-encounter-not-per-frame",
+        "productionApproved": false
+      }
+    }
+  },
+  "packing": {
+    "sourceSize": [
+      1024,
+      1536
+    ],
+    "measuredAlphaBBox": [
+      176,
+      25,
+      841,
+      1499
+    ],
+    "uniformResizeHeight": 969,
+    "packedOffset": [
+      82,
+      8
+    ],
+    "alphaPreserved": true
+  }
+}
