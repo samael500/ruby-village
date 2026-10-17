@@ -38,7 +38,8 @@
       418
     ],
     "protectedFullFreePolygonsGuardPixels": 3,
-    "featherRadius": 8
+    "featherRadius": 8,
+    "wideCorePerimeterJoinPixels": 72
   },
   "checks": {
     "fullFreePolygonPixelsChanged": 0,
@@ -52,7 +53,53 @@
       941
     ],
     "gameQa": "not-run",
-    "artAcceptance": "pending"
+    "artAcceptance": "pending",
+    "wideNativeCoreExact": true,
+    "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+    "physicalPhone": "not-tested"
   },
-  "wide": null
+  "wide": {
+    "file": "assets/chapter-1-map-match/post/wide.webp",
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    },
+    "source": "art/chapter-1-map-match/post/generated-wide-01.png",
+    "sourceSize": [
+      2070,
+      760
+    ],
+    "sourceSha256": "199d752ad04ccc2239c021f4d2f29471ddab9f217d91b5add3b702e174e4c816",
+    "registration": "painted v8 ring reference at logical canvas, builtin seam repaint, protected72px foliage join inside core perimeter",
+    "corePixelExact": true,
+    "opaque": true,
+    "referenceRing": {
+      "file": "public/assets/chapter-1/v8/07-post-surroundings.jpg",
+      "nativeSize": [
+        2070,
+        760
+      ],
+      "logicalCanvas": [
+        3272,
+        1200
+      ],
+      "sha256": "f74e647da6dd9b183add1debd42faec231be4dfef796d137ee6c277877f02dd3"
+    }
+  },
+  "deliveryFiles": {
+    "background.webp": {
+      "sha256": "e99805904799c09d607dd548eae91c434eb91e9b95b427560d7a12a483f97bdb",
+      "bytes": 2651118
+    },
+    "wide.webp": {
+      "sha256": "06a976e393276884aa609a3001d96500069d27e75d3d3b086ef73feb2f0c0d0f",
+      "bytes": 5487362
+    }
+  }
 }
