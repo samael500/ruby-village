@@ -4,6 +4,9 @@ import {restoredScene,narrativePresentation} from './scene-presentation.ts';
 import {renderMapTrails} from './map-trails.ts';
 import mapPaint from '../public/assets/chapter-map-v2/manifest.json' with {type:'json'};
 import {drawBridge} from './bridge-art.ts';
+import {drawConnectedRoad} from './connected-road.ts';
+// Enable only after the finished stream material/bank pilot is reviewed.
+const CONNECTED_ROAD_PILOT=false;
 import {renderResidents,sceneResidents,legacyResidentPlacements,type ResidentPlacement} from './resident-scene.ts';
 import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
 import {RutaJourney} from './ruta-journey.ts';
@@ -245,15 +248,16 @@ function renderBoard() {
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
+  const connectedRoad=CONNECTED_ROAD_PILOT&&level.id==='stream';
   const paved=new Set(owners.keys());
   if(chapterLevel){paved.add(key(start));paved.add(key(end));}
   const landmarks=document.createElementNS(ns,'g');landmarks.setAttribute('pointer-events','none');landmarks.setAttribute('data-puzzle-landmarks','');
   for(const h of boardCells(cols,rows)) {
     const k=key(h), owner=owners.get(k), c=hexCenter(h,radius), terrain=terrainAt(level,h),terminal=chapterLevel&&(k===key(start)||k===key(end));
     const g=el('g',{'data-cell':k,'data-terrain':terrain,'data-owner':owner??'',role:'button',tabindex:0,'aria-label':`Клетка ${h.q+Math.floor(h.r/2)+1}, ряд ${h.r+1}${owner ? ', '+pieceById(owner).name : ''}${k===key(start)?', '+level.startName:k===key(end)?', '+level.goalName:''}${terrain==='ground'?'':', '+({tree:'дерево',rock:'камень',water:'вода',house:'дом',flower:'клумба'}[terrain])}`},ground);
-    el('polygon',{points:polygon(h,radius,origin.x,origin.y),'pointer-events':'all',class:`cell ${illustrated||v6?(owner||terminal?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:owner&&pieceById(owner).kind==='bridge'?0:owner===selected?0.45:1},g);
+    el('polygon',{points:polygon(h,radius,origin.x,origin.y),'pointer-events':'all',class:`cell ${illustrated||v6?(owner||terminal?'flagstone':'meadow-cell'):''} ${path.has(k)?'path':''}`,fill:owner?pieceById(owner).color:terrain==='water'?'#83b9c5':terrain==='rock'?'#a4aa91':((h.r+Math.floor(h.q/2))%2===0?'#b1c59b':'#a9be93'),opacity:(owner&&pieceById(owner).kind==='bridge')||(connectedRoad&&(owner||terminal))?0:owner===selected?0.45:1},g);
     if(owner&&pieceById(owner).kind==='bridge')g.querySelector('.cell')!.classList.add('bridge-cell');
-    if(chapterLevel && (owner||terminal) && (!owner||pieceById(owner).kind!=='bridge')){const material=el('g',{opacity:owner===selected ? 0.45 : 1},g);stoneDetail(material,h,radius,c.x+origin.x,c.y+origin.y,owner?pieces.indexOf(pieceById(owner)):0,paved,owner?{pieceId:owner,local:rotate({q:h.q-layout[owner].anchor.q,r:h.r-layout[owner].anchor.r},-layout[owner].turns),turns:layout[owner].turns}:{pieceId:'endpoint',local:h,turns:0});}
+    if(chapterLevel && !connectedRoad && (owner||terminal) && (!owner||pieceById(owner).kind!=='bridge')){const material=el('g',{opacity:owner===selected ? 0.45 : 1},g);stoneDetail(material,h,radius,c.x+origin.x,c.y+origin.y,owner?pieces.indexOf(pieceById(owner)):0,paved,owner?{pieceId:owner,local:rotate({q:h.q-layout[owner].anchor.q,r:h.r-layout[owner].anchor.r},-layout[owner].turns),turns:layout[owner].turns}:{pieceId:'endpoint',local:h,turns:0});}
     if(!owner && terrain!=='ground' && terrain!=='house'&&(!v6||terrain==='water')) el('text',{x:groundPoint(c.x+origin.x,c.y+origin.y).x,y:groundPoint(c.x+origin.x,c.y+origin.y).y+radius*.28,'text-anchor':'middle','font-size':radius*.95,fill:terrain==='water'?'#d8eef0':'#526446','pointer-events':'none'},landmarks,(v6&&terrain!=='water'?'⊘':{water:'≈',tree:'♠',rock:'⬟',flower:'✿'}[terrain]));
     if(!chapterLevel && owner && key(layout[owner].anchor)===k) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y,r:Math.max(2,radius*.09),fill:'#fff5d6','pointer-events':'none'},g);
     if(!chapterLevel && (k===key(start)||k===key(end))) {
@@ -262,9 +266,11 @@ function renderBoard() {
     }
     if(!chapterLevel&&path.has(k)) el('circle',{cx:c.x+origin.x,cy:c.y+origin.y-radius*.6,r:Math.max(2,radius*.08),fill:'#fffbd3','pointer-events':'none'},g);
   }
-  if(illustrated||v6)drawGrid(ground,cols,rows,radius,origin,new Set(boardCells(cols,rows).filter(h=>!['ground','water'].includes(terrainAt(level,h))).map(key)));
-  if(chapterLevel)drawInstanceEdges(ground,new Map([...owners].filter(([,id])=>pieceById(id).kind!=='bridge')),radius,origin);
-  for(const [id,placement]of Object.entries(layout))if(pieceById(id).kind==='bridge')drawBridge(ground,placement.anchor,placement.turns,radius,origin).setAttribute('opacity',id===selected?'.45':'1');
+  if(illustrated||v6)drawGrid(ground,cols,rows,radius,origin,new Set(boardCells(cols,rows).filter(h=>!['ground','water'].includes(terrainAt(level,h))||(connectedRoad&&paved.has(key(h)))).map(key)));
+  if(connectedRoad)drawConnectedRoad(ground,boardCells(cols,rows).filter(h=>paved.has(key(h))&&(!owners.get(key(h))||pieceById(owners.get(key(h))!).kind!=='bridge')),paved,radius,origin);
+  if(chapterLevel&&!connectedRoad)drawInstanceEdges(ground,new Map([...owners].filter(([,id])=>pieceById(id).kind!=='bridge')),radius,origin);
+  for(const [id,placement]of Object.entries(layout))if(pieceById(id).kind==='bridge')drawBridge(ground,placement.anchor,placement.turns,radius,origin,connectedRoad?{connectedPaving:paved}:{}).setAttribute('opacity',id===selected?'.45':'1');
+  if(connectedRoad&&selected)drawInstanceEdges(ground,new Map([...owners].filter(([,id])=>id===selected)),radius,origin);
   svg.append(landmarks);
   if(v6){
    const assets=(paintedManifest.scenes as unknown as Record<string,{semanticAnchors?:Record<string,{x:number;y:number}>}>)[level.id];

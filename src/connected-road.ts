@@ -4,7 +4,7 @@ function node(tag:string,attrs:Record<string,string|number>,parent:Element){cons
 /** One registered painted surface across confirmed cells. Piece ownership stays in
  * the input layer; adjacent instances share material coordinates, never extra cells. */
 export function drawConnectedRoad(parent:Element,cells:readonly Hex[],allPaved:ReadonlySet<string>,radius:number,origin:{x:number;y:number}){
- const group=node('g',{'data-connected-road':'','pointer-events':'none'},parent);if(!cells.length)return group;
+ const group=node('g',{'data-connected-road':'','data-confirmed-road-cells':cells.map(key).join(';'),'pointer-events':'none'},parent);if(!cells.length)return group;
  const id=`road-${serial++}`,defs=node('defs',{},group),clip=node('clipPath',{id:`${id}-clip`},defs),size=radius*3.2;
  const pattern=node('pattern',{id:`${id}-paint`,patternUnits:'userSpaceOnUse',x:origin.x,y:origin.y,width:size,height:size},defs);
  node('image',{href:`${import.meta.env.BASE_URL}assets/road-v1/charoite.webp`,width:size,height:size,preserveAspectRatio:'none'},pattern);
