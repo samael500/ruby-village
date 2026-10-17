@@ -13,3 +13,6 @@ Gate foreground/closed/open resources keep the existing geometry. Their native m
 Wide surroundings are being generated independently. Required contract: wide.file, canvas 4096×1600, originalRect{x:1212,y:329,width:1672,height:941}. The approved candidate center remains a separate exact asset. No SVG embedding external images will substitute for the opaque wide raster.
 
 Checks so far: both native core dimensions/opacity, complete free-polygon pixel preservation, geometry/layout-adjustments hash pinning and visual full-polygon overlays. Actual game/phone screenshots, wide seam/coverage and artistic acceptance remain pending. Family test and physical phone are not run. Remote push/PR update is deliberately not attempted while explicit authorization remains pending after automatic-review rejection; local commits are handed to the coordinator.
+
+
+Wide handoff: see WIDE-REVIEW.md for current3272×1200 candidates, exact core originalRect800,129,1672,941 and required joinBand48. Earlier4096×1600 was a working generation canvas only. Candidate status remains pending artistic/full-game review.

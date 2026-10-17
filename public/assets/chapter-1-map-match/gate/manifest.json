@@ -61,5 +61,40 @@
     "reuseExisting": true,
     "note": "Existing gate/fence layers are below y692; facade edit is above y435 and leaves their pixels unchanged"
   },
-  "wide": null
+  "wide": {
+    "file": "assets/chapter-1-map-match/gate/wide.webp",
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    }
+  },
+  "joinBand": 48,
+  "wideProvenance": {
+    "method": "generated outer forest normalized to4096x1600 then cropped412,200..3684,1400; core registered at800,129; runtime-only48px decorative perimeter mask, exact separate core asset",
+    "source": "art/chapter-1-map-match/gate/generated-wide-01.png",
+    "sourceSha256": "80d85dabf0d4ae815b30645bd89feae61d749e3e869949881d01fbbbe615c1cf",
+    "sourceNativeSize": [
+      2007,
+      784
+    ],
+    "deliverySize": [
+      3272,
+      1200
+    ],
+    "opaque": true,
+    "registrationCrop": [
+      412,
+      200,
+      3684,
+      1400
+    ],
+    "gameQa": "not-run"
+  },
+  "wideStatus": "generated-wide-candidate-visual-review-pending"
 }

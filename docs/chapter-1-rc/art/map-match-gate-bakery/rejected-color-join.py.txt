@@ -1,0 +1,21 @@
+"""Opaque painted-wide registration; core exact, short outside-only color continuity join."""
+from pathlib import Path
+from PIL import Image,ImageChops
+import math,json
+root=Path(__file__).resolve().parents[1]
+def join(source,core,rect,radius=64):
+ result=source.copy();sp=source.load();cp=core.load();rp=result.load();x,y,w,h=rect
+ for py in range(max(0,y-radius),min(source.height,y+h+radius)):
+  for px in range(max(0,x-radius),min(source.width,x+w+radius)):
+   if x<=px<x+w and y<=py<y+h:continue
+   cx=min(x+w-1,max(x,px));cy=min(y+h-1,max(y,py));dist=math.hypot(px-cx,py-cy)
+   if dist>=radius:continue
+   t=dist/radius;weight=1-t*t*(3-2*t);a=sp[px,py];b=sp[cx,cy];c=cp[cx-x,cy-y];rp[px,py]=tuple(max(0,min(255,round(a[i]+(c[i]-b[i])*weight)))for i in range(3))
+ result.paste(core,(x,y));assert ImageChops.difference(result.crop((x,y,x+w,y+h)),core).getbbox() is None
+ return result
+if __name__=='__main__':
+ for name,prefix in [('gate','01-courtyard'),('bakery','04-bakery')]:
+  folder=root/'art/chapter-1-map-match'/name;core=Image.open(folder/'core-candidate.png').convert('RGB')
+  for variant,source,rect in [('generated',Image.open(folder/'generated-wide-01.png').convert('RGB').resize((4096,1600),Image.Resampling.LANCZOS),(1212,329,1672,941)),('registered-v8',Image.open(root/f'public/assets/chapter-1/v8/{prefix}-surroundings.jpg').convert('RGB'),(800,129,1672,941))]:
+   result=join(source,core,rect);result.save(folder/f'wide-{variant}-joined.png');result.resize((2048,round(result.height*2048/result.width))).save(folder/f'wide-{variant}-joined-review.jpg',quality=95)
+ print('Wide candidates registered; center exact; outside-only64px color join, no cloned/mirrored artwork')

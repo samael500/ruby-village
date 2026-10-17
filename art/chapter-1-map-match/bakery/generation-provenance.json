@@ -1,0 +1,13 @@
+{
+  "tool": "builtin image_gen.imagegen",
+  "mode": "edit with local reference images",
+  "referenceImages": [
+    "before.png",
+    "map-reference.png",
+    "geometry-reference.png"
+  ],
+  "corePromptBrief": "Replace only existing house inside blocker facade area with approved map architecture: cream stucco, red tiled gables, chimney; gate wood door/flowers; bakery red cream striped awning and bread baskets. Preserve camera, all free polygon pixels, start/goal, fences, no UI/text/characters/solution.",
+  "widePromptBrief": "Outpaint forest and meadow outside exact registered core, no repeated buildings, no reframing, no grid/text/UI/people. Bakery correction explicitly removes sky/horizon/river and keeps overhead forest.",
+  "promptsNote": "These are normalized reconstruction briefs, not claimed verbatim tool input. Raw generated PNGs are preserved.",
+  "status": "candidate pending artistic and game review"
+}

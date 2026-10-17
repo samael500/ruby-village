@@ -58,5 +58,40 @@
     "artAcceptance": "pending"
   },
   "foreground": null,
-  "wide": null
+  "wide": {
+    "file": "assets/chapter-1-map-match/bakery/wide.webp",
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    }
+  },
+  "joinBand": 48,
+  "wideProvenance": {
+    "method": "generated outer forest normalized to4096x1600 then cropped412,200..3684,1400; core registered at800,129; runtime-only48px decorative perimeter mask, exact separate core asset",
+    "source": "art/chapter-1-map-match/bakery/generated-wide-02.png",
+    "sourceSha256": "14c08c521977140ca6f7b3d45a2be1a916ec460c2e962f0fc54cddf1192b9f00",
+    "sourceNativeSize": [
+      2007,
+      784
+    ],
+    "deliverySize": [
+      3272,
+      1200
+    ],
+    "opaque": true,
+    "registrationCrop": [
+      412,
+      200,
+      3684,
+      1400
+    ],
+    "gameQa": "not-run"
+  },
+  "wideStatus": "generated-wide-candidate-visual-review-pending"
 }
