@@ -98,14 +98,16 @@
   },
   "wideStatus": "seam72-candidate-actual-review",
   "decorativeSeam": {
-    "bandPixels": 72,
-    "fullFreePolygonGuardPixels": 6,
-    "originalCorePreserved": "art/chapter-1-map-match/gate/core-candidate.png",
-    "deliveredCore": "art/chapter-1-map-match/gate/core-seam72.png",
-    "wideOriginalRectBitExact": true,
+    "method": "builtin imagegen local painted cleanup, constrained source-pixel composite",
+    "coreBandPixels": 72,
+    "outerAdjacencyPixels": 192,
+    "freePolygonGuardPixels": 6,
+    "fullFreePolygonPixelsChanged": 0,
     "geometryChanges": 0,
-    "freePolygonPixelsChanged": 0,
-    "method": "external72px reflected peripheral texture feather; original core untouched",
-    "corePixelsChanged": 0
+    "coreInteriorPixelsChanged": 0,
+    "wideOriginalRectBitExact": true,
+    "originalCorePreserved": "core-candidate.png",
+    "source": "seam-painted-01.png",
+    "status": "candidate-pending-art-review"
   }
 }

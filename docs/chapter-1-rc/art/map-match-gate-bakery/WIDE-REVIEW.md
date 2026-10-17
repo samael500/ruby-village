@@ -16,3 +16,9 @@ Evidence: twelve actual Chromium screenshots across1440×900,1280×720,1920×108
 ## Seam72 correction
 
 Original core remains entirely unchanged, including free polygons, buildings and endpoints. Wide.originalRect contains this core bit-exactly. Only the external72px wide decorative perimeter is registered by reflected edge texture with smoothstep feather into original surrounding painting. This preserves actual painted detail instead of blurring a rectangular strip. No house or character is reflected; this strip contains decorative peripheral foliage/ground. A blur-ring experiment was visually rejected and is not delivered. Existing foreground is separate with48px mask. Six viewport screenshots have been refreshed using the actual renderer. seam72-validation.json records zero protected pixel and geometry changes.
+
+## Painted cleanup replaces reflected ring
+
+The mirrored candidate3e6e869 is rejected artistically and preserved in history. Builtin imagegen localized edits replace repeated foliage/rocks with irregular painted plants. Raw seam-painted-01.png and exact prompts are preserved for both scenes. Final composite takes these pixels only within the72px decorative core perimeter (all free polygons+6px protected) and192px external adjacency, feathered at the outside. Buildings and core interior remain original; wide originalRect equals the delivered core exactly. No blur or mirrored ring is the final selected algorithm.
+
+Actual renderer12screens refreshed after this edit: geometric coverage12/12. Full polygon and gate-open views retained. Actual2560×1080 inspection shows the prominent vertical repeated foliage removed. Still an artistic candidate pending coordinator/user review; no physical phone/family/full game claim. Reproduction: core.py → wide.py → seams.py (preserved reject intermediate) → painted-seams.py.
