@@ -1,0 +1,150 @@
+{
+  "schema": "mpfb-technical-walk-export/v1",
+  "status": "AUTHOR CHECKPOINT A COMPLETE; INDEPENDENT FULL LOOP/ADAPTER REVIEW PENDING; APPEARANCE REJECTED",
+  "independentCompactGo": "1d564c1",
+  "sourceBlend": "art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend",
+  "sourceManifest": "art/characters-mpfb-v1/motion/transitions/manifest.json",
+  "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+  "sourceActionBundle": {
+    "Ruta.MPFB.StandardRig": "Ruta.MPFB.StandardRigAction",
+    "Motion ONE strap thumb pinch control": "Motion ONE strap thumb pinch controlAction",
+    "Motion ONE strap anatomical thumb pole": "Motion ONE strap anatomical thumb poleAction"
+  },
+  "sourceCycleCommit": "5ca361b",
+  "sourcePackedCommit": "35cddba",
+  "blender": "4.5.3 LTS",
+  "mpfbVersion": "2.0.18",
+  "licenseAndProvenance": "Inherited motion/README and appearance source rights records; no new third-party assets",
+  "budget": {
+    "totalWalkPng": 288,
+    "reusedIdenticalProofPng": 24,
+    "newRenderBudget": 264,
+    "transitionPng": 0,
+    "status": "Only checkpoint A authorized; no full transition raster batch"
+  },
+  "frameSize": [
+    384,
+    384
+  ],
+  "frameMs": 30,
+  "cycleMs": 720,
+  "frameCountPerView": 24,
+  "actualNativeRootDeltaMeters": [
+    0.0,
+    -0.5687545537948608,
+    0.0
+  ],
+  "orthoScaleMeters": 1.7,
+  "nativeHeightReferencePixels": 251,
+  "displayHeightReferencePixels": 136,
+  "metersToScenePixels": 122.39043824701194,
+  "rootPolicy": "Continuous native root applied once; PNG camera follows rig-object translation only; no per-frame anchor correction or direction fit",
+  "appearanceReplacement": "Reuse native action/phase contract, not old raster cache; changed source hash requires new namespace and renewed height/containment/contact review",
+  "transitionRasterStatus": "NOT EXPORTED; adapter metadata only; both start/stop variants remain in packed source",
+  "cameraVariants": {
+    "base": {
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "acceptedScenes": [
+        "gate",
+        "garden",
+        "stream",
+        "mill",
+        "forest"
+      ],
+      "directions": {
+        "e": {
+          "receipt": "base/e/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "se": {
+          "receipt": "base/se/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "sw": {
+          "receipt": "base/sw/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "w": {
+          "receipt": "base/w/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "nw": {
+          "receipt": "base/nw/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "ne": {
+          "receipt": "base/ne/receipt.json",
+          "frames": 24,
+          "complete": true
+        }
+      }
+    },
+    "calibrated-1": {
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "acceptedScenes": [
+        "well",
+        "bakery",
+        "post"
+      ],
+      "directions": {
+        "e": {
+          "receipt": "calibrated-1/e/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "se": {
+          "receipt": "calibrated-1/se/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "sw": {
+          "receipt": "calibrated-1/sw/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "w": {
+          "receipt": "calibrated-1/w/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "nw": {
+          "receipt": "calibrated-1/nw/receipt.json",
+          "frames": 24,
+          "complete": true
+        },
+        "ne": {
+          "receipt": "calibrated-1/ne/receipt.json",
+          "frames": 24,
+          "complete": true
+        }
+      }
+    }
+  },
+  "sourceSha256After": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+  "turnStatus": "NOT AUTHORED; six orientations of a walk are not turn transitions",
+  "authorChecks": [
+    "author-loop-check.json",
+    "fresh-source-check.json"
+  ]
+}

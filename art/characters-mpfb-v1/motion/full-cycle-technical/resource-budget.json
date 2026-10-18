@@ -1,0 +1,30 @@
+{
+  "status": "CHECKPOINT A ACTUAL RESOURCE ACCOUNTING; NO TRANSITION BATCH",
+  "cameraCombinations": 12,
+  "posesPerCombination": 24,
+  "nativePngCount": 288,
+  "byteIdenticalReviewedPngReused": 24,
+  "newActualPoseRenderCount": 264,
+  "newTransitionRasterCount": 0,
+  "newPackedBlendCopies": 0,
+  "sourcePackedBlend": "../transitions/mpfb-start-stop-technical.blend (existing immutable source)",
+  "nativePngResolution": [
+    384,
+    384
+  ],
+  "cyclesSamples": 8,
+  "denoising": true,
+  "blenderInvocationThreads": 2,
+  "firstCheckpointImageUtc": "2026-10-18T12:04:31.429193+00:00",
+  "lastCheckpointImageUtc": "2026-10-18T16:41:05.608072+00:00",
+  "checkpointImageWallSpanSeconds": 16594.178879261017,
+  "cyclesReportedRenderWallSecondsTotal": 16575.82,
+  "cyclesReportedLongestRenderWallSeconds": 15486.43,
+  "cyclesReportedOther263RenderWallSeconds": 1089.3899999999994,
+  "cpuUtilizationMeasured": false,
+  "wallTimeNote": "One native frame reports a4h18m wall-clock interval; cause is not inferred. Other263 render intervals total approximately18m09s. Wall-clock observations do not establish CPU occupancy.",
+  "nativePngBytes": 22462435,
+  "artifactBytesAtAccounting": 31798470,
+  "reviewGifCount": 13,
+  "note": "Wall span includes reuse/setup/evaluation and actual native renders, not a CPU-time estimate. Review artifacts assemble actual PNGs only. Complete transition rasters deliberately deferred until appearance is ready."
+}

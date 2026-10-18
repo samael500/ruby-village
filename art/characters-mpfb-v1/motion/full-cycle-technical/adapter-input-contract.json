@@ -1,0 +1,5142 @@
+{
+  "schema": "mpfb-adapter-input-contract/v1",
+  "status": "INPUT METADATA ONLY; ROUTE ADAPTER NOT IMPLEMENTED; APPEARANCE REJECTED",
+  "productionEnabled": false,
+  "sourceReferenceBase": "repository root",
+  "sourcePackedBlend": "art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend",
+  "sourceManifestSha256": "b677dea0467e14e8b2845af370b31ee263303a16a26461ea52d35e48da2e9c30",
+  "actualReadbackSource": "art/characters-mpfb-v1/motion/transitions/fresh-source-check.json",
+  "actualPackedSourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+  "phaseApiSha256": "17be0e83db94ad87eeaaafe6f863cca5f4fbcd00faa36f97956c3a71a79e1eb9",
+  "phaseContract": {
+    "schema": "mpfb-isolated-motion-phase-api/v1",
+    "status": "TECHNICAL PROTOTYPE NOT FINAL ART",
+    "productionEnabled": false,
+    "integration": "none; do not load from src/main",
+    "modelForward": [
+      0,
+      -1,
+      0
+    ],
+    "cycleMs": 720.0,
+    "physicalStrideMeters": 0.5687545572916666,
+    "walkSpeedMetersPerSecond": 0.7899368851273147,
+    "states": {
+      "idle": {
+        "rootVelocity": 0,
+        "feet": "both flat"
+      },
+      "start": {
+        "durationMs": 360.0,
+        "rootAdvanceMeters": 0.11375091145833333,
+        "firstLeadStepMeters": 0.2843772786458333,
+        "variants": [
+          "L",
+          "R"
+        ],
+        "entry": "idle",
+        "exit": "walk at phase0(L) or.5(R)"
+      },
+      "walk": {
+        "loopMs": 720.0,
+        "rootAdvanceMeters": 0.5687545572916666,
+        "heelStrikes": {
+          "0": "L",
+          ".5": "R"
+        }
+      },
+      "stop": {
+        "durationMs": 360.0,
+        "rootAdvanceMeters": 0.17062636718749996,
+        "variants": [
+          "L-support",
+          "R-support"
+        ],
+        "entry": "request queued to next heel strike; never freeze an active swing",
+        "lastSwingLandsMs": 300,
+        "feet": "trailing foot completes a shortened step to support foot; support stays planted"
+      },
+      "settle": {
+        "durationMs": 180.0,
+        "rootAdvanceMeters": 0,
+        "body": "4mm gentle pelvis rise, both feet flat"
+      }
+    },
+    "placement": {
+      "rootMotionAppliedExactlyOnce": true,
+      "footAnchor": "actual camera projection of rig object origin on Z0; same framing/scale across directions",
+      "contacts": "planned foot bases are not measured skin contact; verification records actual evaluated soles/bones",
+      "heading": "locked throughout start/stop; turns require separate planning/source, not authored here"
+    },
+    "stopRequestExamples": [
+      {
+        "phase": 0,
+        "queueUntilHeelStrike": true,
+        "waitMs": 0.0,
+        "entryPhase": 0.0,
+        "supportSide": "L",
+        "stopDurationMs": 360.0,
+        "settleDurationMs": 180.0,
+        "stopRootAdvanceMeters": 0.17062636718749996,
+        "headingLockedDuringStop": true
+      },
+      {
+        "phase": 0.125,
+        "queueUntilHeelStrike": true,
+        "waitMs": 270.0,
+        "entryPhase": 0.5,
+        "supportSide": "R",
+        "stopDurationMs": 360.0,
+        "settleDurationMs": 180.0,
+        "stopRootAdvanceMeters": 0.17062636718749996,
+        "headingLockedDuringStop": true
+      },
+      {
+        "phase": 0.4,
+        "queueUntilHeelStrike": true,
+        "waitMs": 71.99999999999999,
+        "entryPhase": 0.5,
+        "supportSide": "R",
+        "stopDurationMs": 360.0,
+        "settleDurationMs": 180.0,
+        "stopRootAdvanceMeters": 0.17062636718749996,
+        "headingLockedDuringStop": true
+      },
+      {
+        "phase": 0.5,
+        "queueUntilHeelStrike": true,
+        "waitMs": 0.0,
+        "entryPhase": 0.5,
+        "supportSide": "R",
+        "stopDurationMs": 360.0,
+        "settleDurationMs": 180.0,
+        "stopRootAdvanceMeters": 0.17062636718749996,
+        "headingLockedDuringStop": true
+      },
+      {
+        "phase": 0.75,
+        "queueUntilHeelStrike": true,
+        "waitMs": 180.0,
+        "entryPhase": 0.0,
+        "supportSide": "L",
+        "stopDurationMs": 360.0,
+        "settleDurationMs": 180.0,
+        "stopRootAdvanceMeters": 0.17062636718749996,
+        "headingLockedDuringStop": true
+      },
+      {
+        "phase": 0.99,
+        "queueUntilHeelStrike": true,
+        "waitMs": 7.200000000000006,
+        "entryPhase": 0.0,
+        "supportSide": "L",
+        "stopDurationMs": 360.0,
+        "settleDurationMs": 180.0,
+        "stopRootAdvanceMeters": 0.17062636718749996,
+        "headingLockedDuringStop": true
+      }
+    ],
+    "nativeRootDeltasMeters": {
+      "idle": [
+        0,
+        0,
+        0
+      ],
+      "start": [
+        0,
+        -0.11375091145833333,
+        0
+      ],
+      "walk": [
+        0,
+        -0.5687545572916666,
+        0
+      ],
+      "stop": [
+        0,
+        -0.17062636718749996,
+        0
+      ],
+      "settle": [
+        0,
+        0,
+        0
+      ]
+    },
+    "phaseJoins": {
+      "startExitByLead": {
+        "L": 0,
+        "R": 0.5
+      },
+      "stopEntryBySupport": {
+        "L": 0,
+        "R": 0.5
+      },
+      "stopExit": "both feet flat, zero gait amplitude; no active walk phase",
+      "supportSemantics": {
+        "start": "opposite lead stays planted; lead lands at360ms",
+        "stop": "entry heel-strike foot stays planted; trailing foot lands at300ms and rolls flat by360ms",
+        "settle": "both feet planted"
+      }
+    },
+    "bodyHeightCalibration": {
+      "nativeReferencePixels": 251,
+      "framePixels": 384,
+      "orthoMeters": 1.7,
+      "displayReferencePixels": 136,
+      "metersToScenePixels": 122.39043824701194,
+      "policy": "one constant scale for all states and directions; no silhouette-height normalization"
+    },
+    "arbitraryRouteAdapter": {
+      "status": "PENDING",
+      "fixedClipsDoNotSolveArbitraryRouteLengths": true,
+      "forbiddenShortcut": "no root retiming, stride scaling or endpoint sliding to fit residual path length",
+      "candidateOnly": "rendered actor endpoint adjustment inside fixed goal-cell safe area, along final tangent at most quarter stride; logical goal/path/solutions unchanged; not implemented or validated"
+    },
+    "savedActionInterpolation": "LINEAR sampled at30ms; tiny chord-velocity jumps, no exact C1 continuity claim"
+  },
+  "rootCoordinateSpace": "native meters, forward -Y, ground Z0; consume once with synchronized pose sampling",
+  "rasterPolicy": "Walking checkpointA only. Transition rasters deliberately deferred until appearance is ready. A manifest/action is not a rendered transition asset.",
+  "sourceWalkActionBundle": {
+    "Ruta.MPFB.StandardRig": "Ruta.MPFB.StandardRigAction",
+    "Motion ONE strap thumb pinch control": "Motion ONE strap thumb pinch controlAction",
+    "Motion ONE strap anatomical thumb pole": "Motion ONE strap anatomical thumb poleAction"
+  },
+  "nativeTransitionClips": {
+    "idle": {
+      "durationMs": 180,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition idle / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition idle / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition idle / Motion ONE strap anatomical thumb pole"
+      },
+      "rasterExportedInCheckpointA": false,
+      "exactRootDeltaNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plannedRootAdvanceMeters": 0.0,
+      "samples": [
+        {
+          "frame": 1,
+          "timeMs": 0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "timeMs": 30,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "timeMs": 60,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "timeMs": 90,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "timeMs": 120,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "timeMs": 150,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "timeMs": 180.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        }
+      ]
+    },
+    "start-L": {
+      "durationMs": 360,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition start-L / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition start-L / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition start-L / Motion ONE strap anatomical thumb pol"
+      },
+      "rasterExportedInCheckpointA": false,
+      "exactRootDeltaNativeMeters": [
+        0.0,
+        -0.11375091224908829,
+        0.0
+      ],
+      "plannedRootAdvanceMeters": 0.11375091145833333,
+      "samples": [
+        {
+          "frame": 1,
+          "timeMs": 0,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "timeMs": 30,
+          "sourcePhase": 0.5416666666666667,
+          "poseAmplitude": 0.005087770061728394,
+          "rootNativeMeters": [
+            0.0,
+            -1.302847249462502e-05,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -1.3028472931787307e-05,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999977678060532,
+                -0.01094523910433054,
+                0.06074051558971405
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776417791843414,
+                  -0.13401547074317932,
+                  0.003953321371227503
+                ],
+                "heel": [
+                  0.076108917593956,
+                  -0.07253362238407135,
+                  0.008719045668840408
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999979168176651,
+                -0.008508271537721157,
+                0.05461890995502472
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776418536901474,
+                  -0.13410043716430664,
+                  0.003651651553809643
+                ],
+                "heel": [
+                  -0.07610893994569778,
+                  -0.07246298342943192,
+                  0.005535774398595095
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "timeMs": 60,
+          "sourcePhase": 0.5833333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootNativeMeters": [
+            0.0,
+            -0.00019748421618714929,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.00019748422128182866,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700002983212471,
+                -0.020024064928293228,
+                0.07847180962562561
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776469945907593,
+                  -0.13384494185447693,
+                  0.004879382438957691
+                ],
+                "heel": [
+                  0.07610944658517838,
+                  -0.07365166395902634,
+                  0.018276844173669815
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998065829277,
+                -0.008508377708494663,
+                0.054618820548057556
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.1341005563735962,
+                  0.0036515770480036736
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246308028697968,
+                  0.005535706412047148
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "timeMs": 90,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.103515625,
+          "rootNativeMeters": [
+            0.0,
+            -0.0009442214504815638,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0009442214330037434,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000061124563217,
+                -0.02549411915242672,
+                0.08683048188686371
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776503473520279,
+                  -0.13380944728851318,
+                  0.005351458676159382
+                ],
+                "heel": [
+                  0.07610975205898285,
+                  -0.07471782714128494,
+                  0.022983940318226814
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999973207712173,
+                -0.008508281782269478,
+                0.054618656635284424
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776411086320877,
+                  -0.13410040736198425,
+                  0.003651424078270793
+                ],
+                "heel": [
+                  -0.07610888034105301,
+                  -0.07246298342943192,
+                  0.005535542964935303
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "timeMs": 120,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootNativeMeters": [
+            0.0,
+            -0.002808664459735155,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0028086644804526744,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700019970536232,
+                -0.02465691789984703,
+                0.09210136532783508
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776640564203262,
+                  -0.13567693531513214,
+                  0.01434795930981636
+                ],
+                "heel": [
+                  0.07611114531755447,
+                  -0.07602061331272125,
+                  0.029963398352265358
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999985128641129,
+                -0.00850825384259224,
+                0.05461888015270233
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776425987482071,
+                  -0.13410034775733948,
+                  0.0036516617983579636
+                ],
+                "heel": [
+                  -0.07610899955034256,
+                  -0.07246293127536774,
+                  0.005535781383514404
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "timeMs": 150,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootNativeMeters": [
+            0.0,
+            -0.006428522989153862,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.006428522828184529,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000137120485306,
+                -0.03705678880214691,
+                0.10144776105880737
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776575744152069,
+                  -0.15132972598075867,
+                  0.02855941466987133
+                ],
+                "heel": [
+                  0.07611051946878433,
+                  -0.09105494618415833,
+                  0.04158501699566841
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999975442886353,
+                -0.008508482947945595,
+                0.054618820548057556
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776414066553116,
+                  -0.13410064578056335,
+                  0.0036515695974230766
+                ],
+                "heel": [
+                  -0.0761088952422142,
+                  -0.07246319949626923,
+                  0.005535696167498827
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "timeMs": 180,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootNativeMeters": [
+            0.0,
+            -0.012441505677998066,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.012441505940755208,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000324875116348,
+                -0.07002481818199158,
+                0.10867273807525635
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776764988899231,
+                  -0.1873377412557602,
+                  0.04078531637787819
+                ],
+                "heel": [
+                  0.07611240446567535,
+                  -0.12655682861804962,
+                  0.05119680240750313
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999969482421875,
+                -0.008508344180881977,
+                0.054618775844573975
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776408106088638,
+                  -0.13410057127475739,
+                  0.003651509527117014
+                ],
+                "heel": [
+                  -0.07610884308815002,
+                  -0.07246308773756027,
+                  0.005535630043596029
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "timeMs": 210,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootNativeMeters": [
+            0.0,
+            -0.021403038874268532,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.02140303819051986,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700032040476799,
+                -0.12009035795927048,
+                0.11072342097759247
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776760518550873,
+                  -0.24022455513477325,
+                  0.0479634627699852
+                ],
+                "heel": [
+                  0.07611235231161118,
+                  -0.17905084788799286,
+                  0.05574144050478935
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999972462654114,
+                -0.008508263155817986,
+                0.05461874604225159
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776410341262817,
+                  -0.13410042226314545,
+                  0.0036514936946332455
+                ],
+                "heel": [
+                  -0.07610887289047241,
+                  -0.07246296852827072,
+                  0.005535618402063847
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "timeMs": 240,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootNativeMeters": [
+            0.0,
+            -0.03370397537946701,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0337039737654321,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000111043453217,
+                -0.1775679886341095,
+                0.10592304170131683
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776551157236099,
+                  -0.3002994954586029,
+                  0.04840761423110962
+                ],
+                "heel": [
+                  0.07611024379730225,
+                  -0.23884698748588562,
+                  0.05353756621479988
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999977678060532,
+                -0.008508328348398209,
+                0.05461880564689636
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776418536901474,
+                  -0.13410048186779022,
+                  0.003651553299278021
+                ],
+                "heel": [
+                  -0.076108917593956,
+                  -0.07246305048465729,
+                  0.005535678006708622
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "timeMs": 270,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.896484375,
+          "rootNativeMeters": [
+            0.0,
+            -0.049488309770822525,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.04948831157684326,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000075280666351,
+                -0.2304496318101883,
+                0.09409523010253906
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776515394449234,
+                  -0.3555494546890259,
+                  0.041931528598070145
+                ],
+                "heel": [
+                  0.0761098861694336,
+                  -0.29393285512924194,
+                  0.04440389946103096
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999974697828293,
+                -0.00850827619433403,
+                0.05461806058883667
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776413321495056,
+                  -0.13410040736198425,
+                  0.0036508289631456137
+                ],
+                "heel": [
+                  -0.0761088877916336,
+                  -0.07246298342943192,
+                  0.005534951109439135
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "timeMs": 300,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootNativeMeters": [
+            0.0,
+            -0.06857091188430786,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.06857091016730164,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000038772821426,
+                -0.26815998554229736,
+                0.0815965086221695
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776479631662369,
+                  -0.3953951597213745,
+                  0.034881770610809326
+                ],
+                "heel": [
+                  0.07610952109098434,
+                  -0.33372917771339417,
+                  0.0346919484436512
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000033557415009,
+                -0.008957993239164352,
+                0.05581030249595642
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776474416255951,
+                  -0.1340814083814621,
+                  0.003702973248437047
+                ],
+                "heel": [
+                  -0.07610949128866196,
+                  -0.07246364653110504,
+                  0.006147581618279219
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "timeMs": 330,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootNativeMeters": [
+            0.0,
+            -0.09035520255565643,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.09035520261835168,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000045478343964,
+                -0.28551220893859863,
+                0.06770551204681396
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776484847068787,
+                  -0.4146454632282257,
+                  0.026526855304837227
+                ],
+                "heel": [
+                  0.07610959559679031,
+                  -0.35304510593414307,
+                  0.023675188422203064
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000028342008591,
+                -0.010261043906211853,
+                0.05910060554742813
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776469945907593,
+                  -0.13403484225273132,
+                  0.003863976802676916
+                ],
+                "heel": [
+                  -0.07610943913459778,
+                  -0.07249806076288223,
+                  0.00785696879029274
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "timeMs": 360.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootNativeMeters": [
+            0.0,
+            -0.11375091224908829,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.11375091145833333,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700000748038292,
+                -0.28679317235946655,
+                0.05605030059814453
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776448339223862,
+                  -0.41758349537849426,
+                  0.020484507083892822
+                ],
+                "heel": [
+                  0.07610921561717987,
+                  -0.3561638295650482,
+                  0.014976320788264275
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000028342008591,
+                -0.010752879083156586,
+                0.06028398871421814
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776469945907593,
+                  -0.13401919603347778,
+                  0.003923999611288309
+                ],
+                "heel": [
+                  -0.07610943913459778,
+                  -0.07252123951911926,
+                  0.00847646500915289
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 5.797304051425744e-22,
+              "anchorId": "L-start-land"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        }
+      ]
+    },
+    "start-R": {
+      "durationMs": 360,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition start-R / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition start-R / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition start-R / Motion ONE strap anatomical thumb pol"
+      },
+      "rasterExportedInCheckpointA": false,
+      "exactRootDeltaNativeMeters": [
+        0.0,
+        -0.11375091224908829,
+        0.0
+      ],
+      "plannedRootAdvanceMeters": 0.11375091145833333,
+      "samples": [
+        {
+          "frame": 1,
+          "timeMs": 0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "timeMs": 30,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.005087770061728394,
+          "rootNativeMeters": [
+            0.0,
+            -1.302847249462502e-05,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -1.3028472931787307e-05,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998140335083,
+                -0.008508273400366306,
+                0.05461890995502472
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776422262191772,
+                  -0.13410045206546783,
+                  0.0036516471300274134
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.005535774864256382
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999979168176651,
+                -0.010945250280201435,
+                0.06074054539203644
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776419281959534,
+                  -0.13401545584201813,
+                  0.00395337026566267
+                ],
+                "heel": [
+                  -0.07610893249511719,
+                  -0.07253362238407135,
+                  0.00871909037232399
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "timeMs": 60,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootNativeMeters": [
+            0.0,
+            -0.00019748421618714929,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.00019748422128182866,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999983638525009,
+                -0.008508366532623768,
+                0.05461874604225159
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776424497365952,
+                  -0.134100541472435,
+                  0.0036515011452138424
+                ],
+                "heel": [
+                  0.07610900700092316,
+                  -0.07246307283639908,
+                  0.005535629112273455
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0700002983212471,
+                -0.020024053752422333,
+                0.07847180962562561
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776469945907593,
+                  -0.13384492695331573,
+                  0.004879393614828587
+                ],
+                "heel": [
+                  -0.07610944658517838,
+                  -0.07365163415670395,
+                  0.018276847898960114
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "timeMs": 90,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.103515625,
+          "rootNativeMeters": [
+            0.0,
+            -0.0009442214504815638,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0009442214330037434,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999973207712173,
+                -0.008508287370204926,
+                0.05461867153644562
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776411831378937,
+                  -0.13410040736198425,
+                  0.003651438979431987
+                ],
+                "heel": [
+                  0.07610888034105301,
+                  -0.07246298342943192,
+                  0.005535557866096497
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000061869621277,
+                -0.025494156405329704,
+                0.08683048188686371
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776503473520279,
+                  -0.13380947709083557,
+                  0.0053514414466917515
+                ],
+                "heel": [
+                  -0.07610975950956345,
+                  -0.07471785694360733,
+                  0.02298392914235592
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "timeMs": 120,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootNativeMeters": [
+            0.0,
+            -0.002808664459735155,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0028086644804526744,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999985128641129,
+                -0.00850825197994709,
+                0.05461888015270233
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776425987482071,
+                  -0.13410034775733948,
+                  0.0036516617983579636
+                ],
+                "heel": [
+                  0.07610899955034256,
+                  -0.07246293127536774,
+                  0.005535781383514404
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.070001982152462,
+                -0.02465691789984703,
+                0.09210136532783508
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776639074087143,
+                  -0.13567693531513214,
+                  0.014347954653203487
+                ],
+                "heel": [
+                  -0.07611113041639328,
+                  -0.07602059841156006,
+                  0.02996339462697506
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "timeMs": 150,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootNativeMeters": [
+            0.0,
+            -0.006428522989153862,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.006428522828184529,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999973207712173,
+                -0.008508482947945595,
+                0.054618820548057556
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776411086320877,
+                  -0.13410061597824097,
+                  0.003651578677818179
+                ],
+                "heel": [
+                  0.07610888034105301,
+                  -0.07246318459510803,
+                  0.005535701289772987
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000136375427246,
+                -0.0370568111538887,
+                0.10144776105880737
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.0677657499909401,
+                  -0.15132977068424225,
+                  0.02855941839516163
+                ],
+                "heel": [
+                  -0.07611051201820374,
+                  -0.09105496108531952,
+                  0.04158501699566841
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "timeMs": 180,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootNativeMeters": [
+            0.0,
+            -0.012441505677998066,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.012441505940755208,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999969482421875,
+                -0.008508340455591679,
+                0.054618775844573975
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776408106088638,
+                  -0.13410057127475739,
+                  0.0036515099927783012
+                ],
+                "heel": [
+                  0.07610883563756943,
+                  -0.07246308028697968,
+                  0.005535630509257317
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000325620174408,
+                -0.07002481818199158,
+                0.10867273807525635
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.0677676573395729,
+                  -0.18733777105808258,
+                  0.0407852828502655
+                ],
+                "heel": [
+                  -0.07611241191625595,
+                  -0.12655682861804962,
+                  0.05119679868221283
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "timeMs": 210,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootNativeMeters": [
+            0.0,
+            -0.021403038874268532,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.02140303819051986,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999973207712173,
+                -0.008508270606398582,
+                0.05461874604225159
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776414066553116,
+                  -0.13410043716430664,
+                  0.0036514929961413145
+                ],
+                "heel": [
+                  0.0761088952422142,
+                  -0.07246298342943192,
+                  0.005535618402063847
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000318169593811,
+                -0.12009035795927048,
+                0.11072342097759247
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776758283376694,
+                  -0.24022455513477325,
+                  0.0479634627699852
+                ],
+                "heel": [
+                  -0.07611232995986938,
+                  -0.17905084788799286,
+                  0.05574144050478935
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "timeMs": 240,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootNativeMeters": [
+            0.0,
+            -0.03370397537946701,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0337039737654321,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999976187944412,
+                -0.008508332073688507,
+                0.05461883544921875
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776415556669235,
+                  -0.1341005116701126,
+                  0.003651574719697237
+                ],
+                "heel": [
+                  0.0761089101433754,
+                  -0.07246305793523788,
+                  0.0055357045494019985
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000111043453217,
+                -0.17756804823875427,
+                0.10592304170131683
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776551157236099,
+                  -0.3002995550632477,
+                  0.048407599329948425
+                ],
+                "heel": [
+                  -0.07611024379730225,
+                  -0.2388470470905304,
+                  0.05353755131363869
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "timeMs": 270,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.896484375,
+          "rootNativeMeters": [
+            0.0,
+            -0.049488309770822525,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.04948831157684326,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999973207712173,
+                -0.008508268743753433,
+                0.05461806058883667
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776411086320877,
+                  -0.13410040736198425,
+                  0.0036508184857666492
+                ],
+                "heel": [
+                  0.07610888034105301,
+                  -0.07246296107769012,
+                  0.0055349417962133884
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000076025724411,
+                -0.2304496318101883,
+                0.09409523010253906
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776516884565353,
+                  -0.35554948449134827,
+                  0.041931528598070145
+                ],
+                "heel": [
+                  -0.07610990107059479,
+                  -0.29393285512924194,
+                  0.04440389946103096
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "timeMs": 300,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootNativeMeters": [
+            0.0,
+            -0.06857091188430786,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.06857091016730164,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000032067298889,
+                -0.008958011865615845,
+                0.05581030249595642
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776472926139832,
+                  -0.13408143818378448,
+                  0.003702976042404771
+                ],
+                "heel": [
+                  0.07610947638750076,
+                  -0.07246367633342743,
+                  0.006147582549601793
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000038772821426,
+                -0.26815998554229736,
+                0.0815965086221695
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776479631662369,
+                  -0.3953951597213745,
+                  0.03488176316022873
+                ],
+                "heel": [
+                  -0.07610952109098434,
+                  -0.3337291479110718,
+                  0.0346919447183609
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "timeMs": 330,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootNativeMeters": [
+            0.0,
+            -0.09035520255565643,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.09035520261835168,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000026851892471,
+                -0.01026102900505066,
+                0.05910060554742813
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776466220617294,
+                  -0.13403482735157013,
+                  0.0038639812264591455
+                ],
+                "heel": [
+                  0.0761094018816948,
+                  -0.07249803096055984,
+                  0.00785696879029274
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000044733285904,
+                -0.28551220893859863,
+                0.06770551204681396
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776484847068787,
+                  -0.4146454632282257,
+                  0.02652684412896633
+                ],
+                "heel": [
+                  -0.07610960304737091,
+                  -0.35304510593414307,
+                  0.023675184696912766
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "timeMs": 360.0,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootNativeMeters": [
+            0.0,
+            -0.11375091224908829,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.11375091145833333,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700002908706665,
+                -0.010752879083156586,
+                0.06028398871421814
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776469945907593,
+                  -0.13401919603347778,
+                  0.003923999611288309
+                ],
+                "heel": [
+                  0.07610943913459778,
+                  -0.07252123951911926,
+                  0.00847646500915289
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0700000673532486,
+                -0.28679320216178894,
+                0.05605030059814453
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776448339223862,
+                  -0.41758352518081665,
+                  0.020484507083892822
+                ],
+                "heel": [
+                  -0.07610921561717987,
+                  -0.3561638593673706,
+                  0.014976320788264275
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 5.797304051425744e-22,
+              "anchorId": "R-start-land"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        }
+      ]
+    },
+    "stop-L": {
+      "durationMs": 360,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition stop-L / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition stop-L / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition stop-L / Motion ONE strap anatomical thumb pole"
+      },
+      "rasterExportedInCheckpointA": false,
+      "exactRootDeltaNativeMeters": [
+        0.0,
+        -0.17062637209892273,
+        0.0
+      ],
+      "plannedRootAdvanceMeters": 0.17062636718749996,
+      "samples": [
+        {
+          "frame": 1,
+          "timeMs": 0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700000524520874,
+                -0.17304223775863647,
+                0.05605028569698334
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776446849107742,
+                  -0.3038325607776642,
+                  0.020484503358602524
+                ],
+                "heel": [
+                  0.07610920071601868,
+                  -0.24241288006305695,
+                  0.01497630774974823
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0700002908706665,
+                0.10299806296825409,
+                0.06028398871421814
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776469945907593,
+                  -0.02026822417974472,
+                  0.0039240033365786076
+                ],
+                "heel": [
+                  -0.07610943913459778,
+                  0.04122970625758171,
+                  0.008476467803120613
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "timeMs": 30,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.9949122299382716,
+          "rootNativeMeters": [
+            0.0,
+            -0.02368507720530033,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.023685078080887653,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000014930963516,
+                -0.17560192942619324,
+                0.05553892254829407
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776455789804459,
+                  -0.30445125699043274,
+                  0.013480773195624352
+                ],
+                "heel": [
+                  0.07610928267240524,
+                  -0.2428329735994339,
+                  0.01104918122291565
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000092417001724,
+                0.09754490107297897,
+                0.07174742966890335
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776531040668488,
+                  -0.02013838104903698,
+                  0.00450379541143775
+                ],
+                "heel": [
+                  -0.07611006498336792,
+                  0.04069873318076134,
+                  0.014582100324332714
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "timeMs": 60,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.9645061728395061,
+          "rootNativeMeters": [
+            0.0,
+            -0.04719872772693634,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.04719872888635705,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999990344047546,
+                -0.17813214659690857,
+                0.054905280470848083
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.0677642971277237,
+                  -0.3047184944152832,
+                  0.006459894590079784
+                ],
+                "heel": [
+                  0.07610905170440674,
+                  -0.24305564165115356,
+                  0.007110977545380592
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000094652175903,
+                0.09107416868209839,
+                0.08268845081329346
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776533275842667,
+                  -0.0200674906373024,
+                  0.005108917597681284
+                ],
+                "heel": [
+                  -0.07611008733510971,
+                  0.039613254368305206,
+                  0.020630959421396255
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "timeMs": 90,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.896484375,
+          "rootNativeMeters": [
+            0.0,
+            -0.07015009969472885,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.07015009822845458,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999970972537994,
+                -0.1791348159313202,
+                0.05461829900741577
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776410341262817,
+                  -0.3047269880771637,
+                  0.0036510587669909
+                ],
+                "heel": [
+                  0.07610885798931122,
+                  -0.24308951199054718,
+                  0.0055351764895021915
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000140845775604,
+                0.08936349302530289,
+                0.09118064492940903
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776580214500427,
+                  -0.02130187302827835,
+                  0.012923446483910084
+                ],
+                "heel": [
+                  -0.07611056417226791,
+                  0.0382828451693058,
+                  0.02880987897515297
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11251209365819154,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "timeMs": 120,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootNativeMeters": [
+            0.0,
+            -0.09198376536369324,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.09198376173482509,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999973952770233,
+                -0.17913465201854706,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776412576436996,
+                  -0.30472680926322937,
+                  0.0036514759995043278
+                ],
+                "heel": [
+                  0.0761088877916336,
+                  -0.24308936297893524,
+                  0.005535592790693045
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0700015053153038,
+                0.07548291981220245,
+                0.10191246122121811
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776590645313263,
+                  -0.038955461233854294,
+                  0.029283981770277023
+                ],
+                "heel": [
+                  -0.07611065357923508,
+                  0.021348820999264717,
+                  0.04217257723212242
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.09488996356879688,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "timeMs": 150,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootNativeMeters": [
+            0.0,
+            -0.112062007188797,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.11206200994091269,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999973207712173,
+                -0.17913466691970825,
+                0.05461861193180084
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776412576436996,
+                  -0.30472680926322937,
+                  0.0036513677332550287
+                ],
+                "heel": [
+                  0.07610888034105301,
+                  -0.24308936297893524,
+                  0.005535488482564688
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000043988227844,
+                0.034351229667663574,
+                0.10963737219572067
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776484102010727,
+                  -0.083574078977108,
+                  0.04281921312212944
+                ],
+                "heel": [
+                  -0.07610959559679031,
+                  -0.022700989618897438,
+                  0.052677735686302185
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.0503232017795793,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "timeMs": 180,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootNativeMeters": [
+            0.0,
+            -0.12974713742733002,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.12974713338216143,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999974697828293,
+                -0.17913463711738586,
+                0.05461864173412323
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776414066553116,
+                  -0.30472689867019653,
+                  0.003651353297755122
+                ],
+                "heel": [
+                  0.0761088877916336,
+                  -0.24308940768241882,
+                  0.005535484757274389
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000069320201874,
+                -0.027275845408439636,
+                0.10981177538633347
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776509433984756,
+                  -0.14839325845241547,
+                  0.04897092655301094
+                ],
+                "heel": [
+                  -0.07610984146595001,
+                  -0.08710354566574097,
+                  0.0557747483253479
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.01443184549901605,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "timeMs": 210,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootNativeMeters": [
+            0.0,
+            -0.14448370039463043,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.14448370768621627,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999975442886353,
+                -0.1791347861289978,
+                0.05461890995502472
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776414066553116,
+                  -0.3047269880771637,
+                  0.0036516503896564245
+                ],
+                "heel": [
+                  0.0761089101433754,
+                  -0.24308951199054718,
+                  0.005535782314836979
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0700007900595665,
+                -0.0929638147354126,
+                0.10051999986171722
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776520609855652,
+                  -0.21697060763835907,
+                  0.04580854997038841
+                ],
+                "heel": [
+                  -0.07610993832349777,
+                  -0.15541744232177734,
+                  0.04954065382480621
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.08292845502164278,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "timeMs": 240,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootNativeMeters": [
+            0.0,
+            -0.1558808833360672,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.1558808786651234,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.17913463711738586,
+                0.05461890995502472
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776422262191772,
+                  -0.304726779460907,
+                  0.0036516867112368345
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.24308933317661285,
+                  0.005535809323191643
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000083476305008,
+                -0.14460904896259308,
+                0.08556127548217773
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776522845029831,
+                  -0.27119526267051697,
+                  0.0371159128844738
+                ],
+                "heel": [
+                  -0.07610998302698135,
+                  -0.20953251421451569,
+                  0.037766993045806885
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.1371048407038042,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "timeMs": 270,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.103515625,
+          "rootNativeMeters": [
+            0.0,
+            -0.1637946516275406,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.1637946474075317,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999972462654114,
+                -0.17913472652435303,
+                0.05461868643760681
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776410341262817,
+                  -0.30472686886787415,
+                  0.0036514534149318933
+                ],
+                "heel": [
+                  0.07610887289047241,
+                  -0.24308940768241882,
+                  0.0055355713702738285
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000083476305008,
+                -0.17033284902572632,
+                0.06992384791374207
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.0677652433514595,
+                  -0.2991822063922882,
+                  0.0278656966984272
+                ],
+                "heel": [
+                  -0.07610998302698135,
+                  -0.23756392300128937,
+                  0.025434106588363647
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.16535946781760447,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "timeMs": 300,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootNativeMeters": [
+            0.0,
+            -0.16841015219688416,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.1684101553708928,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998140335083,
+                -0.17913466691970825,
+                0.05461873114109039
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776422262191772,
+                  -0.304726779460907,
+                  0.0036514962557703257
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.24308936297893524,
+                  0.005535621661692858
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999971717596054,
+                -0.17304114997386932,
+                0.05605483055114746
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776410341262817,
+                  -0.3038315176963806,
+                  0.020489037036895752
+                ],
+                "heel": [
+                  -0.07610885798931122,
+                  -0.2424117475748062,
+                  0.014980850741267204
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "timeMs": 330,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootNativeMeters": [
+            0.0,
+            -0.17032396793365479,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.17032396947366218,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999977678060532,
+                -0.17913465201854706,
+                0.054618895053863525
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776418536901474,
+                  -0.30472680926322937,
+                  0.003651642007753253
+                ],
+                "heel": [
+                  0.07610893249511719,
+                  -0.24308936297893524,
+                  0.005535766016691923
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999976187944412,
+                -0.1761094331741333,
+                0.055428147315979004
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776414811611176,
+                  -0.3045317530632019,
+                  0.012083607725799084
+                ],
+                "heel": [
+                  -0.0761089101433754,
+                  -0.24289225041866302,
+                  0.01026831567287445
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "timeMs": 360.0,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            -0.17062637209892273,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.17062636718749996,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999978423118591,
+                -0.17913471162319183,
+                0.054618820548057556
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776417791843414,
+                  -0.30472686886787415,
+                  0.0036515889223665
+                ],
+                "heel": [
+                  0.07610892504453659,
+                  -0.24308940768241882,
+                  0.005535709671676159
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999979168176651,
+                -0.17913469672203064,
+                0.054618820548057556
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776418536901474,
+                  -0.30472686886787415,
+                  0.0036515889223665
+                ],
+                "heel": [
+                  -0.07610892504453659,
+                  -0.24308940768241882,
+                  0.005535709671676159
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        }
+      ]
+    },
+    "stop-R": {
+      "durationMs": 360,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition stop-R / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition stop-R / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition stop-R / Motion ONE strap anatomical thumb pole"
+      },
+      "rasterExportedInCheckpointA": false,
+      "exactRootDeltaNativeMeters": [
+        0.0,
+        -0.17062637209892273,
+        0.0
+      ],
+      "plannedRootAdvanceMeters": 0.17062636718749996,
+      "samples": [
+        {
+          "frame": 1,
+          "timeMs": 0,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700003057718277,
+                0.10299806296825409,
+                0.06028398871421814
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776469945907593,
+                  -0.020268242806196213,
+                  0.003923999611288309
+                ],
+                "heel": [
+                  0.07610945403575897,
+                  0.04122970253229141,
+                  0.00847646500915289
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0700000524520874,
+                -0.17304228246212006,
+                0.05605028569698334
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776446104049683,
+                  -0.3038325905799866,
+                  0.020484501495957375
+                ],
+                "heel": [
+                  -0.07610920071601868,
+                  -0.24241292476654053,
+                  0.01497630774974823
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "timeMs": 30,
+          "sourcePhase": 0.5416666666666666,
+          "poseAmplitude": 0.9949122299382716,
+          "rootNativeMeters": [
+            0.0,
+            -0.02368507720530033,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.023685078080887653,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000091671943665,
+                0.09754490107297897,
+                0.07174742966890335
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776531040668488,
+                  -0.02013838104903698,
+                  0.00450379541143775
+                ],
+                "heel": [
+                  0.07611006498336792,
+                  0.04069873318076134,
+                  0.014582100324332714
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.07000013440847397,
+                -0.17560188472270966,
+                0.05553892254829407
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.0677645280957222,
+                  -0.30445122718811035,
+                  0.013480775989592075
+                ],
+                "heel": [
+                  -0.07610927522182465,
+                  -0.2428329586982727,
+                  0.011049184016883373
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "timeMs": 60,
+          "sourcePhase": 0.5833333333333334,
+          "poseAmplitude": 0.9645061728395061,
+          "rootNativeMeters": [
+            0.0,
+            -0.04719872772693634,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.04719872888635705,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000096142292023,
+                0.09107418358325958,
+                0.08268846571445465
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776535511016846,
+                  -0.020067453384399414,
+                  0.005108935292810202
+                ],
+                "heel": [
+                  0.0761101022362709,
+                  0.039613284170627594,
+                  0.0206309761852026
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999991089105606,
+                -0.17813214659690857,
+                0.05490526556968689
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.0677642971277237,
+                  -0.3047184944152832,
+                  0.0064598796889185905
+                ],
+                "heel": [
+                  -0.07610905170440674,
+                  -0.24305564165115356,
+                  0.0071109626442193985
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "timeMs": 90,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.896484375,
+          "rootNativeMeters": [
+            0.0,
+            -0.07015009969472885,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.07015009822845458,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000140845775604,
+                0.0893634632229805,
+                0.09118064492940903
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776580959558487,
+                  -0.021301932632923126,
+                  0.012923434376716614
+                ],
+                "heel": [
+                  0.07611056417226791,
+                  0.03828279674053192,
+                  0.02880987711250782
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999972462654114,
+                -0.179134801030159,
+                0.05461829900741577
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776412576436996,
+                  -0.3047269582748413,
+                  0.0036510587669909
+                ],
+                "heel": [
+                  -0.07610887289047241,
+                  -0.24308951199054718,
+                  0.0055351764895021915
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11251209365819154,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "timeMs": 120,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootNativeMeters": [
+            0.0,
+            -0.09198376536369324,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.09198376173482509,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700014978647232,
+                0.07548291981220245,
+                0.10191245377063751
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776589155197144,
+                  -0.038955461233854294,
+                  0.029283976182341576
+                ],
+                "heel": [
+                  0.07611064612865448,
+                  0.021348820999264717,
+                  0.042172569781541824
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999973207712173,
+                -0.17913466691970825,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776410341262817,
+                  -0.30472680926322937,
+                  0.0036514759995043278
+                ],
+                "heel": [
+                  -0.07610887289047241,
+                  -0.24308936297893524,
+                  0.005535592790693045
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.09488996356879688,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "timeMs": 150,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootNativeMeters": [
+            0.0,
+            -0.112062007188797,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.11206200994091269,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000044733285904,
+                0.034351229667663574,
+                0.10963737219572067
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776484847068787,
+                  -0.083574078977108,
+                  0.04281921312212944
+                ],
+                "heel": [
+                  0.07610959559679031,
+                  -0.02270098589360714,
+                  0.05267773196101189
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999973207712173,
+                -0.17913468182086945,
+                0.05461861193180084
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776412576436996,
+                  -0.30472680926322937,
+                  0.0036513677332550287
+                ],
+                "heel": [
+                  -0.07610888034105301,
+                  -0.24308939278125763,
+                  0.005535488482564688
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.0503232017795793,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "timeMs": 180,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootNativeMeters": [
+            0.0,
+            -0.12974713742733002,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.12974713338216143,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000068575143814,
+                -0.02727581560611725,
+                0.10981177538633347
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776507943868637,
+                  -0.1483931690454483,
+                  0.04897096008062363
+                ],
+                "heel": [
+                  0.07610983401536942,
+                  -0.08710348606109619,
+                  0.05577476695179939
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999975442886353,
+                -0.17913466691970825,
+                0.05461864173412323
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776414066553116,
+                  -0.30472689867019653,
+                  0.0036513572558760643
+                ],
+                "heel": [
+                  -0.0761088952422142,
+                  -0.24308940768241882,
+                  0.005535484757274389
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.01443184549901605,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "timeMs": 210,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootNativeMeters": [
+            0.0,
+            -0.14448370039463043,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.14448370768621627,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0700007826089859,
+                -0.09296378493309021,
+                0.10051999986171722
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776518374681473,
+                  -0.21697057783603668,
+                  0.04580854997038841
+                ],
+                "heel": [
+                  0.07610993087291718,
+                  -0.15541742742061615,
+                  0.04954065382480621
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999975442886353,
+                -0.1791347861289978,
+                0.05461890995502472
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776414066553116,
+                  -0.3047269880771637,
+                  0.0036516503896564245
+                ],
+                "heel": [
+                  -0.0761088952422142,
+                  -0.24308951199054718,
+                  0.005535782314836979
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.08292845502164278,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "timeMs": 240,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootNativeMeters": [
+            0.0,
+            -0.1558808833360672,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.1558808786651234,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000083476305008,
+                -0.14460903406143188,
+                0.08556127548217773
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776522845029831,
+                  -0.2711952030658722,
+                  0.0371159128844738
+                ],
+                "heel": [
+                  0.07610998302698135,
+                  -0.20953251421451569,
+                  0.037766993045806885
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699997991323471,
+                -0.17913462221622467,
+                0.05461888015270233
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776420027017593,
+                  -0.304726779460907,
+                  0.0036516485270112753
+                ],
+                "heel": [
+                  -0.07610893994569778,
+                  -0.24308933317661285,
+                  0.005535769276320934
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.1371048407038042,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "timeMs": 270,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.103515625,
+          "rootNativeMeters": [
+            0.0,
+            -0.1637946516275406,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.1637946474075317,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.07000082731246948,
+                -0.17033284902572632,
+                0.06992384791374207
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776522845029831,
+                  -0.2991822063922882,
+                  0.0278656966984272
+                ],
+                "heel": [
+                  0.07610997557640076,
+                  -0.23756392300128937,
+                  0.025434106588363647
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999972462654114,
+                -0.17913472652435303,
+                0.05461868643760681
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776410341262817,
+                  -0.30472683906555176,
+                  0.003651463193818927
+                ],
+                "heel": [
+                  -0.07610887289047241,
+                  -0.24308940768241882,
+                  0.005535579286515713
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.16535946781760447,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "timeMs": 300,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootNativeMeters": [
+            0.0,
+            -0.16841015219688416,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.1684101553708928,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999971717596054,
+                -0.17304116487503052,
+                0.05605483055114746
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776410341262817,
+                  -0.303831547498703,
+                  0.020489033311605453
+                ],
+                "heel": [
+                  0.07610885798931122,
+                  -0.2424117475748062,
+                  0.014980842359364033
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998289346695,
+                -0.17913465201854706,
+                0.05461873114109039
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776423752307892,
+                  -0.304726779460907,
+                  0.003651501378044486
+                ],
+                "heel": [
+                  -0.07610899209976196,
+                  -0.24308934807777405,
+                  0.005535623989999294
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "timeMs": 330,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootNativeMeters": [
+            0.0,
+            -0.17032396793365479,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.17032396947366218,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999976933002472,
+                -0.1761094480752945,
+                0.055428147315979004
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776417046785355,
+                  -0.3045317530632019,
+                  0.012083600275218487
+                ],
+                "heel": [
+                  0.076108917593956,
+                  -0.24289225041866302,
+                  0.010268310084939003
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999976933002472,
+                -0.17913466691970825,
+                0.054618895053863525
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776417046785355,
+                  -0.30472680926322937,
+                  0.003651642007753253
+                ],
+                "heel": [
+                  -0.07610892504453659,
+                  -0.24308936297893524,
+                  0.005535766016691923
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "timeMs": 360.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            -0.17062637209892273,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.17062636718749996,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999978423118591,
+                -0.17913471162319183,
+                0.054618820548057556
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776417791843414,
+                  -0.30472686886787415,
+                  0.0036515889223665
+                ],
+                "heel": [
+                  0.07610892504453659,
+                  -0.24308940768241882,
+                  0.005535709671676159
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999979168176651,
+                -0.17913469672203064,
+                0.054618820548057556
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776418536901474,
+                  -0.30472686886787415,
+                  0.0036515889223665
+                ],
+                "heel": [
+                  -0.07610892504453659,
+                  -0.24308940768241882,
+                  0.005535709671676159
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        }
+      ]
+    },
+    "settle": {
+      "durationMs": 180,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition settle / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition settle / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition settle / Motion ONE strap anatomical thumb pole"
+      },
+      "rasterExportedInCheckpointA": false,
+      "exactRootDeltaNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "plannedRootAdvanceMeters": 0.0,
+      "samples": [
+        {
+          "frame": 1,
+          "timeMs": 0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999979168176651,
+                -0.008508287370204926,
+                0.05461879074573517
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776418536901474,
+                  -0.13410040736198425,
+                  0.003651559120044112
+                ],
+                "heel": [
+                  0.07610892504453659,
+                  -0.07246299088001251,
+                  0.005535679869353771
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999978423118591,
+                -0.008508304134011269,
+                0.05461879074573517
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776417791843414,
+                  -0.13410045206546783,
+                  0.0036515493411570787
+                ],
+                "heel": [
+                  -0.07610892504453659,
+                  -0.07246299088001251,
+                  0.005535673815757036
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "timeMs": 30,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999977678060532,
+                -0.008508292958140373,
+                0.054618701338768005
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776417791843414,
+                  -0.13410043716430664,
+                  0.0036514680832624435
+                ],
+                "heel": [
+                  0.076108917593956,
+                  -0.07246299088001251,
+                  0.005535586271435022
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999977678060532,
+                -0.008508291095495224,
+                0.054618701338768005
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776417791843414,
+                  -0.13410040736198425,
+                  0.0036514680832624435
+                ],
+                "heel": [
+                  -0.076108917593956,
+                  -0.07246298342943192,
+                  0.005535586271435022
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "timeMs": 60,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999976933002472,
+                -0.008508266881108284,
+                0.054618775844573975
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776416301727295,
+                  -0.13410039246082306,
+                  0.0036515425890684128
+                ],
+                "heel": [
+                  0.0761089101433754,
+                  -0.07246296107769012,
+                  0.005535660777240992
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999976933002472,
+                -0.008508261293172836,
+                0.054618775844573975
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776416301727295,
+                  -0.13410039246082306,
+                  0.0036515425890684128
+                ],
+                "heel": [
+                  -0.076108917593956,
+                  -0.07246296107769012,
+                  0.005535660777240992
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "timeMs": 90,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999977678060532,
+                -0.008508307859301567,
+                0.05461886525154114
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776417791843414,
+                  -0.13410040736198425,
+                  0.0036516375839710236
+                ],
+                "heel": [
+                  0.076108917593956,
+                  -0.07246299833059311,
+                  0.0055357543751597404
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999976933002472,
+                -0.008508294820785522,
+                0.05461886525154114
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776416301727295,
+                  -0.13410043716430664,
+                  0.003651632694527507
+                ],
+                "heel": [
+                  -0.0761089101433754,
+                  -0.07246299088001251,
+                  0.005535751581192017
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "timeMs": 120,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998214840889,
+                -0.008508304134011269,
+                0.05461876094341278
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776422262191772,
+                  -0.13410040736198425,
+                  0.003651533741503954
+                ],
+                "heel": [
+                  0.07610896974802017,
+                  -0.07246299088001251,
+                  0.005535650532692671
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508304134011269,
+                0.05461876094341278
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036515332758426666
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055356500670313835
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "timeMs": 150,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.06999975442886353,
+                -0.008508279919624329,
+                0.05461868643760681
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776414066553116,
+                  -0.13410040736198425,
+                  0.0036514531821012497
+                ],
+                "heel": [
+                  0.0761088952422142,
+                  -0.07246296852827072,
+                  0.0055355713702738285
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.06999976933002472,
+                -0.00850827619433403,
+                0.05461868643760681
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776416301727295,
+                  -0.13410037755966187,
+                  0.0036514592356979847
+                ],
+                "heel": [
+                  -0.0761089101433754,
+                  -0.07246296107769012,
+                  0.005535576026886702
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "timeMs": 180.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootNativeMeters": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "analyticRootPlanNativeMeters": [
+            0,
+            -0.0,
+            0
+          ],
+          "actualNativeFeet": {
+            "L": {
+              "ankleWorldMeters": [
+                0.0699998065829277,
+                -0.008508289232850075,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  0.06776421517133713,
+                  -0.13410043716430664,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  0.07610896229743958,
+                  -0.07246299088001251,
+                  0.0055355955846607685
+                ]
+              }
+            },
+            "R": {
+              "ankleWorldMeters": [
+                -0.0699998140335083,
+                -0.008508281782269478,
+                0.0546187162399292
+              ],
+              "sourceSoleWorldMeters": {
+                "toe": [
+                  -0.06776422262191772,
+                  -0.13410040736198425,
+                  0.0036514727398753166
+                ],
+                "heel": [
+                  -0.07610896229743958,
+                  -0.07246298342943192,
+                  0.0055355955846607685
+                ]
+              }
+            }
+          },
+          "rootVelocityMetersPerSecond": 0.0,
+          "footPlans": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        }
+      ]
+    }
+  },
+  "rootPlacementAnchor": "Projection of rig object origin on Z0, fixed physical calibration, no bbox/active-foot adjustment",
+  "routeGoalCandidateOnly": {
+    "status": "NOT IMPLEMENTED OR VALIDATED",
+    "logicalGoalPathSolutionsUnchanged": true,
+    "possibleRenderedEndpointAdjustment": "inside unchanged goal-cell safe area, along final tangent, at most quarter stride to fit half-stride cadence",
+    "maximumNativeAdjustmentMeters": 0.14218863932291664,
+    "maximumEastSceneAdjustmentPixels": 17.402529880478085,
+    "forbidden": "Do not scale root distance/stride or slide endpoint to conceal residual mismatch"
+  },
+  "appearanceReplacement": [
+    "Retarget/reuse accepted native actions with the corrected weighted source; preserve anatomical asymmetry.",
+    "Re-evaluate source height calibration and actual foot/clothing contacts.",
+    "Render into a new source-hash namespace; never reuse generic-mannequin raster caches for changed appearance.",
+    "Complete transition rasters and adapter/route review before activation."
+  ]
+}
