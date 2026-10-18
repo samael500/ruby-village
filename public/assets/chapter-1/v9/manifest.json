@@ -272,9 +272,9 @@
       },
       "semanticAnchors": {
         "residentFeet": {
-          "x": 1290,
+          "x": 1360,
           "y": 405,
-          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+          "status": "full-alpha-idle-and-left0; arrival-B1-recheck-pending"
         }
       },
       "checks": {
@@ -304,6 +304,14 @@
           "bytes": 5439354,
           "sha256": "a500f9f4e443524e4e9db4e2467be57afb8c6d5cb8c560d1604e8a56b207ef3a"
         }
+      },
+      "residentAnchorCorrection": {
+        "sourceProposal": [
+          1290,
+          405
+        ],
+        "reason": "B1 actual accepted-layout arrival overlap277desktop/120native-touch pixels",
+        "verification": "full nonzero alpha of legacy idle and authored conversation-left outside playable ground/water; independent arrival repeat pending"
       }
     },
     "stream": {
