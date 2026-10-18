@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET exact1672x941 warm painted watermill puzzle scene. Image2 GUIDE ONLY: magenta thin15px band marks allowed WATER-SIDE bank repair, do NOT copy magenta. Two local repairs only. A) In that narrow water-side shoreline strip paint a continuous natural low brown earth bank, small irregular mossy gray pebbles, fine roots/grass tufts to replace abruptly cut-out straight grass edges. Keep river exact currentwidth/zigzag/location and free lawn fullydry unchanged. Crucially REMOVE the brown/grass cap across upper river near(625,300): stream must continuously flow from millrace through(625,285) into first watercell, no dam or pond-end. Bottom join near(625,780) similarly continuous, no cap; ignore magenta end-cap guide artifacts. No widening river or smoothing away accepted bends. B) Upper-right at center(1270,163), REMOVE the old round dark wooden wheel/bearing DISK and its old spokes/rim completely, keeping only a tiny dark axle tip 8pxwide centered1270,163. Behind the removed disk paint believable shadowed mill support, stone/wood and falling blue millrace water, matching adjacent source. Keep chute water flowing toward wheelaxle area. A separate110px transparent wheel will be placed later, so do NOT paint any fullwheel/rounddisk or spokes. Everything else pixel-identical: millfacade, roof, doorstep, trees, entire free meadow, decorative lowerstream, light/camera/crop. Same brushscale and style. No road, bridge, people, UI/grid/text/magenta. Native1672x941 composition.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-30219c52-3a81-4812-94e6-c6da99ed6dfe.png",
+  "nativeSize": [
+    1672,
+    941
+  ],
+  "editTarget": "art/chapter-1-v9/candidates/mill-bank-edit-target-v1.png",
+  "guide": "art/chapter-1-v9/layers/water/mill-pilot/bank-strip-edit-guide.png",
+  "composition": "logical-water footprint only plus local90x90 old-bearing clearance above complete77-board; dryfree ground remains original; separate wheel exactsourcepivot627,627→world1270,163 uniform110/1254",
+  "status": "bank-wheel-art-and-game-review-pending"
+}
