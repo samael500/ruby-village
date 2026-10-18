@@ -118,10 +118,18 @@
   "logicalWaterOverlay": "logical-water.png",
   "logicalWaterMask": "logical-water-mask.png",
   "logicalWaterMaskRole": "immutable full accepted77-board water polygons for rules/diagnostic truth, not visible shoreline",
-  "visualWaterBodyMask": "visual-water-body-mask.png",
-  "visualWaterBankMask": "visual-water-and-bank-mask.png",
+  "visualWaterBodyMask": "adaptive-water-body-mask.png",
+  "visualWaterBankMask": "adaptive-water-bank-mask.png",
+  "intrinsicWholeBankProfile": "adaptive-channel-profile.json",
   "waterArtOverlay": "logical-water.png",
   "waterArtOverlayRole": "separate painted curved water and banks; legacy filename is not the full logical mask",
+  "dryShoreGroundContract": {
+    "allowedFreeBoundaryDepthPx": 12,
+    "protectedCoreInsetPx": 18,
+    "content": "flat earth/tiny low pebbles only; never water, tall rocks or bushes",
+    "roadBridgeOrdering": "ground texture below road and bridge; no foreground cover of deck",
+    "freeCoreMask": "free-core-mask18.png"
+  },
   "wide": {
     "file": "wide.webp",
     "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
