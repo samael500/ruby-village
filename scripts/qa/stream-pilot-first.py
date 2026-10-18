@@ -1,7 +1,7 @@
 from pathlib import Path
-import json
+import json,os
 from playwright.sync_api import sync_playwright
-r=Path(__file__).resolve().parents[2];o=r/'docs/chapter-1-rc/road/stream-pilot';o.mkdir(parents=True,exist_ok=True)
+r=Path(__file__).resolve().parents[2];o=r/'docs/chapter-1-rc/road/stream-pilot'/os.environ.get('RUBY_STREAM_EVIDENCE_SUBDIR','.');o.mkdir(parents=True,exist_ok=True)
 sol=json.loads((r/'art/chapter-1-v9/layers/water/stream-pilot/manifest.json').read_text())['solution']
 with sync_playwright() as p:
  b=p.chromium.launch()

@@ -1,0 +1,5 @@
+Actual isolated stream review afcb676. Accepted logical water/solutions unchanged; adaptive source7299e89→integrationd7b96e7, installedeb36558. Runtime6408e67 stops painting the obsolete translucent water hexes/wave glyphs over the native art in layout2. Water hit polygons and bridge rules remain intact; layout1/default production unaffected.
+
+Real mouse tray/rotate/cell/place inputs at1280×720 and844×390 produce the accepted solution; no page errors. These are ordinary screenshots with clean painted water, not DOM-hiding of the water fill. Full logical overlay, native touch/reselect/move/undo/audio and independent P1 shore review still require the next scoped pass. The separate adaptive-3922fd7 directory records the previous tinted state as genuine before evidence.
+
+New dry-shore contract: visible water leakage over any free cell0; free core18px RGB changes0; dry boundary1819pixels/maxdepth7.08312px≤12. Flat dry ground decoration is allowed at that narrow boundary; older whole-free-RGB0 claims do not apply. Numeric source checks do not replace semantic/art inspection.
