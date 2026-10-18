@@ -1,0 +1,3754 @@
+{
+  "sourceSha256": "97dc4462f6cc5d793b1d982955b3d417baeba8e9e3433f27039a602af73b685f",
+  "actualStrapMeshCount": 1,
+  "bagGeometryObjectTransformVisibilityModifierSignaturesUnchanged": true,
+  "currentSignatures": {
+    "Ruta ONE satchel": "3773b29fd7d981661b88f15a4316b7046037a4456fd9a342fa5b07bc40cc547a",
+    "Satchel flap": "14a26a07fb8b7102b91937c7b686c12077efede8d104f64aaf50b26f7983e3b5",
+    "Satchel buckle": "5cd2976addc29ff10dd4dad2b5a6bd5d7ae4f6e894bc7fa0d396b9b4013486a9",
+    "ONE diagonal satchel strap": "405193fb30e96ab69d7ac9013dea83c5c363ccb8f3ae542b01558ad0789fd2d7"
+  },
+  "baselineSignatures": {
+    "Ruta ONE satchel": "3773b29fd7d981661b88f15a4316b7046037a4456fd9a342fa5b07bc40cc547a",
+    "Satchel flap": "14a26a07fb8b7102b91937c7b686c12077efede8d104f64aaf50b26f7983e3b5",
+    "Satchel buckle": "5cd2976addc29ff10dd4dad2b5a6bd5d7ae4f6e894bc7fa0d396b9b4013486a9",
+    "ONE diagonal satchel strap": "405193fb30e96ab69d7ac9013dea83c5c363ccb8f3ae542b01558ad0789fd2d7"
+  },
+  "samples": 97,
+  "grip": {
+    "palm": {
+      "vertices": 289,
+      "polygons": 222,
+      "maxTriangleIntersections": 0,
+      "skinVertexToStrapSurfaceRangeM": [
+        0.0013072785222902894,
+        0.0014102784916758537
+      ],
+      "strapVertexToSkinSurfaceRangeM": [
+        0.005130197387188673,
+        0.0051368288695812225
+      ]
+    },
+    "fingers": {
+      "vertices": 1265,
+      "polygons": 1216,
+      "maxTriangleIntersections": 0,
+      "skinVertexToStrapSurfaceRangeM": [
+        0.0022082850337028503,
+        0.002314518438652158
+      ],
+      "strapVertexToSkinSurfaceRangeM": [
+        0.006848644930869341,
+        0.006871068850159645
+      ]
+    },
+    "thumb": {
+      "vertices": 224,
+      "polygons": 207,
+      "maxTriangleIntersections": 0,
+      "skinVertexToStrapSurfaceRangeM": [
+        0.0011184198083356023,
+        0.0017197704873979092
+      ],
+      "strapVertexToSkinSurfaceRangeM": [
+        0.006720248144119978,
+        0.006720610428601503
+      ]
+    }
+  },
+  "torsoVsPelvisRotationExcursionDegrees": 5.0419158717091825,
+  "worldHeadRotationExcursionDegrees": 0.34034837970258824,
+  "wristForeAftRangeM": {
+    "L": 0.11029545543715358,
+    "R": 0.0004945993423461914
+  },
+  "records": [
+    {
+      "frame": 1.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013553970493376255,
+          "strapVertexToSkinSurfaceMinM": 0.0051326141692698
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022566248662769794,
+          "strapVertexToSkinSurfaceMinM": 0.006858819164335728
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001551782712340355,
+          "strapVertexToSkinSurfaceMinM": 0.00672043627128005
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13173601031303406,
+          -0.006516185123473406,
+          0.5973867177963257
+        ],
+        "R": [
+          0.019024629145860672,
+          -0.1458357274532318,
+          0.8563111424446106
+        ]
+      }
+    },
+    {
+      "frame": 1.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013589244335889816,
+          "strapVertexToSkinSurfaceMinM": 0.005132951308041811
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002260166686028242,
+          "strapVertexToSkinSurfaceMinM": 0.006859635468572378
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015613180585205555,
+          "strapVertexToSkinSurfaceMinM": 0.006720419507473707
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13232742249965668,
+          -0.007112343795597553,
+          0.5978805422782898
+        ],
+        "R": [
+          0.019508659839630127,
+          -0.1458512246608734,
+          0.85684734582901
+        ]
+      }
+    },
+    {
+      "frame": 1.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013625225983560085,
+          "strapVertexToSkinSurfaceMinM": 0.00513321440666914
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002263739239424467,
+          "strapVertexToSkinSurfaceMinM": 0.006860462017357349
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001571162138134241,
+          "strapVertexToSkinSurfaceMinM": 0.006720419507473707
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13291771709918976,
+          -0.007708423770964146,
+          0.5983748435974121
+        ],
+        "R": [
+          0.019992690533399582,
+          -0.14586684107780457,
+          0.8573833107948303
+        ]
+      }
+    },
+    {
+      "frame": 1.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013661104021593928,
+          "strapVertexToSkinSurfaceMinM": 0.0051334323361516
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002267309930175543,
+          "strapVertexToSkinSurfaceMinM": 0.0068612126633524895
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015810106415301561,
+          "strapVertexToSkinSurfaceMinM": 0.00672042416408658
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13350705802440643,
+          -0.008304420858621597,
+          0.5988698601722717
+        ],
+        "R": [
+          0.020476652309298515,
+          -0.14588244259357452,
+          0.8579192757606506
+        ]
+      }
+    },
+    {
+      "frame": 2.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013697069371119142,
+          "strapVertexToSkinSurfaceMinM": 0.005133566912263632
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002270867582410574,
+          "strapVertexToSkinSurfaceMinM": 0.006861958187073469
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015910506481304765,
+          "strapVertexToSkinSurfaceMinM": 0.006720481440424919
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13409529626369476,
+          -0.008900392800569534,
+          0.5993654131889343
+        ],
+        "R": [
+          0.02096058614552021,
+          -0.1458979696035385,
+          0.8584550023078918
+        ]
+      }
+    },
+    {
+      "frame": 2.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013730808859691024,
+          "strapVertexToSkinSurfaceMinM": 0.0051338402554392815
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022741963621228933,
+          "strapVertexToSkinSurfaceMinM": 0.00686265341937542
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001600542920641601,
+          "strapVertexToSkinSurfaceMinM": 0.006720299832522869
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13465574383735657,
+          -0.010390356183052063,
+          0.6007143259048462
+        ],
+        "R": [
+          0.021411582827568054,
+          -0.14591161906719208,
+          0.8599193096160889
+        ]
+      }
+    },
+    {
+      "frame": 2.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013765101321041584,
+          "strapVertexToSkinSurfaceMinM": 0.0051340158097445965
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002277577295899391,
+          "strapVertexToSkinSurfaceMinM": 0.006863357499241829
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016102626686915755,
+          "strapVertexToSkinSurfaceMinM": 0.006720411591231823
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1352144032716751,
+          -0.011881018057465553,
+          0.602069079875946
+        ],
+        "R": [
+          0.021862562745809555,
+          -0.14592522382736206,
+          0.8613835573196411
+        ]
+      }
+    },
+    {
+      "frame": 2.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013798748841509223,
+          "strapVertexToSkinSurfaceMinM": 0.005134246777743101
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002280952874571085,
+          "strapVertexToSkinSurfaceMinM": 0.006864047609269619
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016201044199988246,
+          "strapVertexToSkinSurfaceMinM": 0.00672037061303854
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13577121496200562,
+          -0.013372523710131645,
+          0.603429913520813
+        ],
+        "R": [
+          0.02231348305940628,
+          -0.14593887329101562,
+          0.862847626209259
+        ]
+      }
+    },
+    {
+      "frame": 3.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013834270648658276,
+          "strapVertexToSkinSurfaceMinM": 0.005134415812790394
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002284399000927806,
+          "strapVertexToSkinSurfaceMinM": 0.006864710710942745
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001630020560696721,
+          "strapVertexToSkinSurfaceMinM": 0.006720439530909061
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13632622361183167,
+          -0.014864715747535229,
+          0.6047964096069336
+        ],
+        "R": [
+          0.022764375433325768,
+          -0.14595256745815277,
+          0.8643115162849426
+        ]
+      }
+    },
+    {
+      "frame": 3.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013865442015230656,
+          "strapVertexToSkinSurfaceMinM": 0.005134701728820801
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022875280119478703,
+          "strapVertexToSkinSurfaceMinM": 0.006865452975034714
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016389340162277222,
+          "strapVertexToSkinSurfaceMinM": 0.0067203836515545845
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13681261241436005,
+          -0.01716255210340023,
+          0.6066504120826721
+        ],
+        "R": [
+          0.023151565343141556,
+          -0.14596369862556458,
+          0.8663116693496704
+        ]
+      }
+    },
+    {
+      "frame": 3.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013896327000111341,
+          "strapVertexToSkinSurfaceMinM": 0.005134914070367813
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002290555275976658,
+          "strapVertexToSkinSurfaceMinM": 0.006866074167191982
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016477893805131316,
+          "strapVertexToSkinSurfaceMinM": 0.00672041205689311
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13729797303676605,
+          -0.01946241222321987,
+          0.6085200309753418
+        ],
+        "R": [
+          0.023538755252957344,
+          -0.14597481489181519,
+          0.8683117628097534
+        ]
+      }
+    },
+    {
+      "frame": 3.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013923845253884792,
+          "strapVertexToSkinSurfaceMinM": 0.005135237704962492
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022936381865292788,
+          "strapVertexToSkinSurfaceMinM": 0.006866748444736004
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016567776910960674,
+          "strapVertexToSkinSurfaceMinM": 0.006720488891005516
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13778239488601685,
+          -0.02176414243876934,
+          0.6104050874710083
+        ],
+        "R": [
+          0.023925937712192535,
+          -0.14598597586154938,
+          0.8703116774559021
+        ]
+      }
+    },
+    {
+      "frame": 4.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001395100960507989,
+          "strapVertexToSkinSurfaceMinM": 0.0051354942843317986
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002296745078638196,
+          "strapVertexToSkinSurfaceMinM": 0.006867450196295977
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016659465618431568,
+          "strapVertexToSkinSurfaceMinM": 0.006720371078699827
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13826587796211243,
+          -0.024067692458629608,
+          0.6123056411743164
+        ],
+        "R": [
+          0.02431306056678295,
+          -0.14599713683128357,
+          0.8723114132881165
+        ]
+      }
+    },
+    {
+      "frame": 4.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00139707385096699,
+          "strapVertexToSkinSurfaceMinM": 0.005135659594088793
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022990559227764606,
+          "strapVertexToSkinSurfaceMinM": 0.00686787161976099
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016729723429307342,
+          "strapVertexToSkinSurfaceMinM": 0.006720428820699453
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13863864541053772,
+          -0.02703225053846836,
+          0.6141939759254456
+        ],
+        "R": [
+          0.024610206484794617,
+          -0.14600516855716705,
+          0.8743115067481995
+        ]
+      }
+    },
+    {
+      "frame": 4.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013991016894578934,
+          "strapVertexToSkinSurfaceMinM": 0.005135760176926851
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023014009930193424,
+          "strapVertexToSkinSurfaceMinM": 0.006868322845548391
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001680163899436593,
+          "strapVertexToSkinSurfaceMinM": 0.006720307748764753
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13901282846927643,
+          -0.029999596998095512,
+          0.6161093711853027
+        ],
+        "R": [
+          0.024907277897000313,
+          -0.14601323008537292,
+          0.8763115406036377
+        ]
+      }
+    },
+    {
+      "frame": 4.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014010565355420113,
+          "strapVertexToSkinSurfaceMinM": 0.005135987885296345
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002303732093423605,
+          "strapVertexToSkinSurfaceMinM": 0.00686880387365818
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001687253243289888,
+          "strapVertexToSkinSurfaceMinM": 0.006720426492393017
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13938839733600616,
+          -0.03296941518783569,
+          0.6180518865585327
+        ],
+        "R": [
+          0.0252043716609478,
+          -0.1460212767124176,
+          0.8783113360404968
+        ]
+      }
+    },
+    {
+      "frame": 5.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014031290775164962,
+          "strapVertexToSkinSurfaceMinM": 0.0051360949873924255
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023061034735292196,
+          "strapVertexToSkinSurfaceMinM": 0.006869236007332802
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016945044044405222,
+          "strapVertexToSkinSurfaceMinM": 0.0067205424420535564
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13976536691188812,
+          -0.0359414704144001,
+          0.6200217008590698
+        ],
+        "R": [
+          0.025501444935798645,
+          -0.14602939784526825,
+          0.8803111910820007
+        ]
+      }
+    },
+    {
+      "frame": 5.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014044864801689982,
+          "strapVertexToSkinSurfaceMinM": 0.005136210937052965
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023076566867530346,
+          "strapVertexToSkinSurfaceMinM": 0.0068695759400725365
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001699110260233283,
+          "strapVertexToSkinSurfaceMinM": 0.006720459554344416
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13999325037002563,
+          -0.039374832063913345,
+          0.6214784383773804
+        ],
+        "R": [
+          0.025688137859106064,
+          -0.1460343301296234,
+          0.8817753791809082
+        ]
+      }
+    },
+    {
+      "frame": 5.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001405848073773086,
+          "strapVertexToSkinSurfaceMinM": 0.005136383697390556
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023092434275895357,
+          "strapVertexToSkinSurfaceMinM": 0.006869979668408632
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017039028462022543,
+          "strapVertexToSkinSurfaceMinM": 0.006720531266182661
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14022588729858398,
+          -0.04281046986579895,
+          0.6229729056358337
+        ],
+        "R": [
+          0.02587486244738102,
+          -0.14603933691978455,
+          0.8832395076751709
+        ]
+      }
+    },
+    {
+      "frame": 5.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014072350459173322,
+          "strapVertexToSkinSurfaceMinM": 0.005136582069098949
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023108518216758966,
+          "strapVertexToSkinSurfaceMinM": 0.006870370823889971
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017085970612242818,
+          "strapVertexToSkinSurfaceMinM": 0.006720512639731169
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14046317338943481,
+          -0.04624799266457558,
+          0.6245048642158508
+        ],
+        "R": [
+          0.026061616837978363,
+          -0.1460443139076233,
+          0.884703516960144
+        ]
+      }
+    },
+    {
+      "frame": 6.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001408548909239471,
+          "strapVertexToSkinSurfaceMinM": 0.0051368288695812225
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023124204017221928,
+          "strapVertexToSkinSurfaceMinM": 0.006870690267533064
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017133606597781181,
+          "strapVertexToSkinSurfaceMinM": 0.0067204320803284645
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14070498943328857,
+          -0.04968688264489174,
+          0.6260748505592346
+        ],
+        "R": [
+          0.02624831162393093,
+          -0.14604929089546204,
+          0.8861675262451172
+        ]
+      }
+    },
+    {
+      "frame": 6.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001408989541232586,
+          "strapVertexToSkinSurfaceMinM": 0.005136767402291298
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023129202891141176,
+          "strapVertexToSkinSurfaceMinM": 0.006870767567306757
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017147865146398544,
+          "strapVertexToSkinSurfaceMinM": 0.006720456760376692
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1407686173915863,
+          -0.05334211885929108,
+          0.62675940990448
+        ],
+        "R": [
+          0.026312032714486122,
+          -0.14605087041854858,
+          0.8867034912109375
+        ]
+      }
+    },
+    {
+      "frame": 6.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014094010693952441,
+          "strapVertexToSkinSurfaceMinM": 0.00513675669208169
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023134201765060425,
+          "strapVertexToSkinSurfaceMinM": 0.006870847661048174
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017165561439469457,
+          "strapVertexToSkinSurfaceMinM": 0.006720456760376692
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1408400982618332,
+          -0.05699791759252548,
+          0.6274879574775696
+        ],
+        "R": [
+          0.02637573890388012,
+          -0.1460525244474411,
+          0.8872394561767578
+        ]
+      }
+    },
+    {
+      "frame": 6.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014098817482590675,
+          "strapVertexToSkinSurfaceMinM": 0.005136807914823294
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023139494005590677,
+          "strapVertexToSkinSurfaceMinM": 0.00687100924551487
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017181432340294123,
+          "strapVertexToSkinSurfaceMinM": 0.006720444653183222
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1409195512533188,
+          -0.060653578490018845,
+          0.6282604932785034
+        ],
+        "R": [
+          0.026439497247338295,
+          -0.14605417847633362,
+          0.8877754807472229
+        ]
+      }
+    },
+    {
+      "frame": 7.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014102784916758537,
+          "strapVertexToSkinSurfaceMinM": 0.005136803723871708
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002314518438652158,
+          "strapVertexToSkinSurfaceMinM": 0.006871068850159645
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017197704873979092,
+          "strapVertexToSkinSurfaceMinM": 0.00672041904181242
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14100676774978638,
+          -0.06430865079164505,
+          0.6290768980979919
+        ],
+        "R": [
+          0.026503225788474083,
+          -0.14605575799942017,
+          0.8883113861083984
+        ]
+      }
+    },
+    {
+      "frame": 7.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014098669635131955,
+          "strapVertexToSkinSurfaceMinM": 0.005136782303452492
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023139494005590677,
+          "strapVertexToSkinSurfaceMinM": 0.006870956625789404
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017180846771225333,
+          "strapVertexToSkinSurfaceMinM": 0.006720610428601503
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14090101420879364,
+          -0.06791211664676666,
+          0.6288578510284424
+        ],
+        "R": [
+          0.02643948793411255,
+          -0.14605411887168884,
+          0.8877755403518677
+        ]
+      }
+    },
+    {
+      "frame": 7.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014094449579715729,
+          "strapVertexToSkinSurfaceMinM": 0.00513667706400156
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023134599905461073,
+          "strapVertexToSkinSurfaceMinM": 0.006870870478451252
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001716369530186057,
+          "strapVertexToSkinSurfaceMinM": 0.006720505654811859
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14080551266670227,
+          -0.07151377201080322,
+          0.6286829113960266
+        ],
+        "R": [
+          0.026375766843557358,
+          -0.14605247974395752,
+          0.8872396349906921
+        ]
+      }
+    },
+    {
+      "frame": 7.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014089749893173575,
+          "strapVertexToSkinSurfaceMinM": 0.005136678460985422
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023128909524530172,
+          "strapVertexToSkinSurfaceMinM": 0.0068707759492099285
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017148598562926054,
+          "strapVertexToSkinSurfaceMinM": 0.006720477715134621
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14072033762931824,
+          -0.07511294633150101,
+          0.6285515427589417
+        ],
+        "R": [
+          0.02631206624209881,
+          -0.146050825715065,
+          0.886703610420227
+        ]
+      }
+    },
+    {
+      "frame": 8.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014084649737924337,
+          "strapVertexToSkinSurfaceMinM": 0.005136676132678986
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002312303055077791,
+          "strapVertexToSkinSurfaceMinM": 0.006870590150356293
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017132621724158525,
+          "strapVertexToSkinSurfaceMinM": 0.006720413453876972
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1406451165676117,
+          -0.07870906591415405,
+          0.6284642219543457
+        ],
+        "R": [
+          0.026248358190059662,
+          -0.14604918658733368,
+          0.8861677050590515
+        ]
+      }
+    },
+    {
+      "frame": 8.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014071910409256816,
+          "strapVertexToSkinSurfaceMinM": 0.005136515945196152
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023108224850147963,
+          "strapVertexToSkinSurfaceMinM": 0.006870256271213293
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0017085970612242818,
+          "strapVertexToSkinSurfaceMinM": 0.0067205592058598995
+        }
+      },
+      "wrists": {
+        "L": [
+          0.14038002490997314,
+          -0.08199342340230942,
+          0.6274484992027283
+        ],
+        "R": [
+          0.026061657816171646,
+          -0.14604425430297852,
+          0.8847035765647888
+        ]
+      }
+    },
+    {
+      "frame": 8.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014058186206966639,
+          "strapVertexToSkinSurfaceMinM": 0.005136351566761732
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023092729970812798,
+          "strapVertexToSkinSurfaceMinM": 0.006869950331747532
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001703814952634275,
+          "strapVertexToSkinSurfaceMinM": 0.0067204078659415245
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1401258111000061,
+          -0.08527419716119766,
+          0.6264705657958984
+        ],
+        "R": [
+          0.025874948129057884,
+          -0.14603926241397858,
+          0.8832396268844604
+        ]
+      }
+    },
+    {
+      "frame": 8.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014045052230358124,
+          "strapVertexToSkinSurfaceMinM": 0.005136378575116396
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023077153600752354,
+          "strapVertexToSkinSurfaceMinM": 0.0068696532398462296
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016992382006719708,
+          "strapVertexToSkinSurfaceMinM": 0.006720466539263725
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13988251984119415,
+          -0.088550865650177,
+          0.625529944896698
+        ],
+        "R": [
+          0.025688225403428078,
+          -0.1460343301296234,
+          0.8817752003669739
+        ]
+      }
+    },
+    {
+      "frame": 9.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014032024191692472,
+          "strapVertexToSkinSurfaceMinM": 0.0051361676305532455
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023061768151819706,
+          "strapVertexToSkinSurfaceMinM": 0.006869331002235413
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00169463234487921,
+          "strapVertexToSkinSurfaceMinM": 0.006720428355038166
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1396501213312149,
+          -0.09182292968034744,
+          0.6246270537376404
+        ],
+        "R": [
+          0.02550153061747551,
+          -0.14602942764759064,
+          0.880311131477356
+        ]
+      }
+    },
+    {
+      "frame": 9.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014012032188475132,
+          "strapVertexToSkinSurfaceMinM": 0.00513609079644084
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023037760984152555,
+          "strapVertexToSkinSurfaceMinM": 0.006868910510092974
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016872931737452745,
+          "strapVertexToSkinSurfaceMinM": 0.006720446981489658
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13924863934516907,
+          -0.09455947577953339,
+          0.623129665851593
+        ],
+        "R": [
+          0.025204487144947052,
+          -0.14602132141590118,
+          0.878311276435852
+        ]
+      }
+    },
+    {
+      "frame": 9.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013991162413731217,
+          "strapVertexToSkinSurfaceMinM": 0.005135918967425823
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0023014263715595007,
+          "strapVertexToSkinSurfaceMinM": 0.006868442054837942
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016801198944449425,
+          "strapVertexToSkinSurfaceMinM": 0.006720434874296188
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13885708153247833,
+          -0.09729211777448654,
+          0.6216592192649841
+        ],
+        "R": [
+          0.0249074287712574,
+          -0.14601323008537292,
+          0.8763113617897034
+        ]
+      }
+    },
+    {
+      "frame": 9.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013970991130918264,
+          "strapVertexToSkinSurfaceMinM": 0.00513571547344327
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022990854922682047,
+          "strapVertexToSkinSurfaceMinM": 0.0068679689429700375
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001672957674600184,
+          "strapVertexToSkinSurfaceMinM": 0.006720417179167271
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13847528398036957,
+          -0.10002045333385468,
+          0.6202158331871033
+        ],
+        "R": [
+          0.024610353633761406,
+          -0.14600513875484467,
+          0.8743114471435547
+        ]
+      }
+    },
+    {
+      "frame": 10.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013950716238468885,
+          "strapVertexToSkinSurfaceMinM": 0.005135682411491871
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022966861724853516,
+          "strapVertexToSkinSurfaceMinM": 0.0068674953654408455
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001665961230173707,
+          "strapVertexToSkinSurfaceMinM": 0.00672037061303854
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13810333609580994,
+          -0.10274430364370346,
+          0.6187994480133057
+        ],
+        "R": [
+          0.02431330271065235,
+          -0.14599710702896118,
+          0.8723112940788269
+        ]
+      }
+    },
+    {
+      "frame": 10.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013923991937190294,
+          "strapVertexToSkinSurfaceMinM": 0.00513535225763917
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002293652854859829,
+          "strapVertexToSkinSurfaceMinM": 0.006866800133138895
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016567630227655172,
+          "strapVertexToSkinSurfaceMinM": 0.006720430683344603
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13759846985340118,
+          -0.1047627180814743,
+          0.6172580718994141
+        ],
+        "R": [
+          0.023926015943288803,
+          -0.1459859311580658,
+          0.8703114986419678
+        ]
+      }
+    },
+    {
+      "frame": 10.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013896472519263625,
+          "strapVertexToSkinSurfaceMinM": 0.005134953651577234
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002290569944307208,
+          "strapVertexToSkinSurfaceMinM": 0.006866089068353176
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016478480538353324,
+          "strapVertexToSkinSurfaceMinM": 0.006720342673361301
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13710102438926697,
+          -0.10677825659513474,
+          0.6157323122024536
+        ],
+        "R": [
+          0.02353874407708645,
+          -0.145974799990654,
+          0.8683117032051086
+        ]
+      }
+    },
+    {
+      "frame": 10.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013865148648619652,
+          "strapVertexToSkinSurfaceMinM": 0.00513459462672472
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002287487965077162,
+          "strapVertexToSkinSurfaceMinM": 0.006865344475954771
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016389046795666218,
+          "strapVertexToSkinSurfaceMinM": 0.006720378063619137
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13661088049411774,
+          -0.10879074782133102,
+          0.6142217516899109
+        ],
+        "R": [
+          0.023151442408561707,
+          -0.1459636390209198,
+          0.8663116693496704
+        ]
+      }
+    },
+    {
+      "frame": 11.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013834417331963778,
+          "strapVertexToSkinSurfaceMinM": 0.005134404171258211
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002284487010911107,
+          "strapVertexToSkinSurfaceMinM": 0.006864690687507391
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016300792340189219,
+          "strapVertexToSkinSurfaceMinM": 0.006720490287989378
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13612790405750275,
+          -0.1108001098036766,
+          0.6127267479896545
+        ],
+        "R": [
+          0.022764096036553383,
+          -0.14595255255699158,
+          0.8643113970756531
+        ]
+      }
+    },
+    {
+      "frame": 11.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013799589360132813,
+          "strapVertexToSkinSurfaceMinM": 0.005134218838065863
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002280967542901635,
+          "strapVertexToSkinSurfaceMinM": 0.006863971706479788
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001620060415007174,
+          "strapVertexToSkinSurfaceMinM": 0.006720385514199734
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13555839657783508,
+          -0.11199238151311874,
+          0.6115840077400208
+        ],
+        "R": [
+          0.022313253954052925,
+          -0.14593884348869324,
+          0.8628475666046143
+        ]
+      }
+    },
+    {
+      "frame": 11.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013764954637736082,
+          "strapVertexToSkinSurfaceMinM": 0.005133957602083683
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022776066325604916,
+          "strapVertexToSkinSurfaceMinM": 0.006863306742161512
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016103065572679043,
+          "strapVertexToSkinSurfaceMinM": 0.006720373872667551
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13499294221401215,
+          -0.1131833866238594,
+          0.6104471683502197
+        ],
+        "R": [
+          0.021862361580133438,
+          -0.14592522382736206,
+          0.8613835573196411
+        ]
+      }
+    },
+    {
+      "frame": 11.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013729928759858012,
+          "strapVertexToSkinSurfaceMinM": 0.005133834667503834
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002274108584970236,
+          "strapVertexToSkinSurfaceMinM": 0.00686254957690835
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0016005135839805007,
+          "strapVertexToSkinSurfaceMinM": 0.006720354780554771
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1344316601753235,
+          -0.11437308043241501,
+          0.6093164682388306
+        ],
+        "R": [
+          0.021411482244729996,
+          -0.1459115445613861,
+          0.8599192500114441
+        ]
+      }
+    },
+    {
+      "frame": 12.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013696190435439348,
+          "strapVertexToSkinSurfaceMinM": 0.005133579019457102
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002270808909088373,
+          "strapVertexToSkinSurfaceMinM": 0.006861879024654627
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001591036096215248,
+          "strapVertexToSkinSurfaceMinM": 0.006720513105392456
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13387443125247955,
+          -0.1155613586306572,
+          0.6081916093826294
+        ],
+        "R": [
+          0.02096051350235939,
+          -0.14589789509773254,
+          0.8584550619125366
+        ]
+      }
+    },
+    {
+      "frame": 12.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013660810654982924,
+          "strapVertexToSkinSurfaceMinM": 0.005133386235684156
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002267236588522792,
+          "strapVertexToSkinSurfaceMinM": 0.006861143279820681
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015809520846232772,
+          "strapVertexToSkinSurfaceMinM": 0.006720350123941898
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13328112661838531,
+          -0.11587414890527725,
+          0.6077721118927002
+        ],
+        "R": [
+          0.02047654427587986,
+          -0.14588230848312378,
+          0.8579193353652954
+        ]
+      }
+    },
+    {
+      "frame": 12.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013624932616949081,
+          "strapVertexToSkinSurfaceMinM": 0.0051331655122339725
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002263724571093917,
+          "strapVertexToSkinSurfaceMinM": 0.006860420107841492
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015710449079051614,
+          "strapVertexToSkinSurfaceMinM": 0.006720385048538446
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13268877565860748,
+          -0.11618679761886597,
+          0.6073530316352844
+        ],
+        "R": [
+          0.019992560148239136,
+          -0.14586672186851501,
+          0.8573834300041199
+        ]
+      }
+    },
+    {
+      "frame": 12.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013588585425168276,
+          "strapVertexToSkinSurfaceMinM": 0.005132800899446011
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022600858937948942,
+          "strapVertexToSkinSurfaceMinM": 0.006859529763460159
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001561354729346931,
+          "strapVertexToSkinSurfaceMinM": 0.006720470264554024
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13209761679172516,
+          -0.11649921536445618,
+          0.6069347858428955
+        ],
+        "R": [
+          0.019508516415953636,
+          -0.14585112035274506,
+          0.8568475246429443
+        ]
+      }
+    },
+    {
+      "frame": 13.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001355371088720858,
+          "strapVertexToSkinSurfaceMinM": 0.005132485181093216
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022566835395991802,
+          "strapVertexToSkinSurfaceMinM": 0.0068587674759328365
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001551870722323656,
+          "strapVertexToSkinSurfaceMinM": 0.006720450706779957
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1315075159072876,
+          -0.11681164056062698,
+          0.6065171957015991
+        ],
+        "R": [
+          0.01902444288134575,
+          -0.14583563804626465,
+          0.8563113808631897
+        ]
+      }
+    },
+    {
+      "frame": 13.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001351932529360056,
+          "strapVertexToSkinSurfaceMinM": 0.005132325459271669
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022532050497829914,
+          "strapVertexToSkinSurfaceMinM": 0.006858035456389189
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015425634337589145,
+          "strapVertexToSkinSurfaceMinM": 0.006720296107232571
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13093023002147675,
+          -0.11623609066009521,
+          0.6069350838661194
+        ],
+        "R": [
+          0.01854047365486622,
+          -0.1458190679550171,
+          0.8568475246429443
+        ]
+      }
+    },
+    {
+      "frame": 13.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013485936215147376,
+          "strapVertexToSkinSurfaceMinM": 0.0051321289502084255
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022499042097479105,
+          "strapVertexToSkinSurfaceMinM": 0.006857395172119141
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015334838535636663,
+          "strapVertexToSkinSurfaceMinM": 0.006720248144119978
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1303519308567047,
+          -0.11566049605607986,
+          0.6073533892631531
+        ],
+        "R": [
+          0.01805645227432251,
+          -0.14580263197422028,
+          0.8573834300041199
+        ]
+      }
+    },
+    {
+      "frame": 13.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001345167402178049,
+          "strapVertexToSkinSurfaceMinM": 0.005131939891725779
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022464764770120382,
+          "strapVertexToSkinSurfaceMinM": 0.0068565914407372475
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001524540944956243,
+          "strapVertexToSkinSurfaceMinM": 0.006720283068716526
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1297726035118103,
+          -0.1150846928358078,
+          0.6077722907066345
+        ],
+        "R": [
+          0.017572415992617607,
+          -0.14578615128993988,
+          0.8579193949699402
+        ]
+      }
+    },
+    {
+      "frame": 14.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013418486341834068,
+          "strapVertexToSkinSurfaceMinM": 0.005131667014211416
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022431383840739727,
+          "strapVertexToSkinSurfaceMinM": 0.006855892017483711
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001515785581432283,
+          "strapVertexToSkinSurfaceMinM": 0.006720500998198986
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12919224798679352,
+          -0.11450865864753723,
+          0.6081916093826294
+        ],
+        "R": [
+          0.017088336870074272,
+          -0.1457696557044983,
+          0.8584551215171814
+        ]
+      }
+    },
+    {
+      "frame": 14.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001338775036856532,
+          "strapVertexToSkinSurfaceMinM": 0.00513154361397028
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022401041351258755,
+          "strapVertexToSkinSurfaceMinM": 0.006855224259197712
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001507832552306354,
+          "strapVertexToSkinSurfaceMinM": 0.006720390636473894
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12866735458374023,
+          -0.11307533085346222,
+          0.6093170642852783
+        ],
+        "R": [
+          0.01663726195693016,
+          -0.14575351774692535,
+          0.8599193692207336
+        ]
+      }
+    },
+    {
+      "frame": 14.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013359182048588991,
+          "strapVertexToSkinSurfaceMinM": 0.0051314448937773705
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002237188396975398,
+          "strapVertexToSkinSurfaceMinM": 0.00685471948236227
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015001067658886313,
+          "strapVertexToSkinSurfaceMinM": 0.006720288190990686
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12814077734947205,
+          -0.11164047569036484,
+          0.6104481816291809
+        ],
+        "R": [
+          0.016186151653528214,
+          -0.1457374393939972,
+          0.8613836169242859
+        ]
+      }
+    },
+    {
+      "frame": 14.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013329049106687307,
+          "strapVertexToSkinSurfaceMinM": 0.005131277721375227
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022341753356158733,
+          "strapVertexToSkinSurfaceMinM": 0.006854000501334667
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001492557697929442,
+          "strapVertexToSkinSurfaceMinM": 0.006720435805618763
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12761253118515015,
+          -0.11020424216985703,
+          0.6115848422050476
+        ],
+        "R": [
+          0.015735076740384102,
+          -0.14572128653526306,
+          0.8628476858139038
+        ]
+      }
+    },
+    {
+      "frame": 15.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00133007881231606,
+          "strapVertexToSkinSurfaceMinM": 0.005131114739924669
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022313501685857773,
+          "strapVertexToSkinSurfaceMinM": 0.006853459868580103
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014666187344118953,
+          "strapVertexToSkinSurfaceMinM": 0.006720541976392269
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12708260118961334,
+          -0.1087665855884552,
+          0.6127269864082336
+        ],
+        "R": [
+          0.015283935703337193,
+          -0.1457052081823349,
+          0.8643114566802979
+        ]
+      }
+    },
+    {
+      "frame": 15.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013276435201987624,
+          "strapVertexToSkinSurfaceMinM": 0.005131089594215155
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022288744803518057,
+          "strapVertexToSkinSurfaceMinM": 0.0068530128337442875
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001430588774383068,
+          "strapVertexToSkinSurfaceMinM": 0.006720366887748241
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12664085626602173,
+          -0.10654700547456741,
+          0.6142229437828064
+        ],
+        "R": [
+          0.014896577224135399,
+          -0.1456906795501709,
+          0.8663117289543152
+        ]
+      }
+    },
+    {
+      "frame": 15.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013251977507025003,
+          "strapVertexToSkinSurfaceMinM": 0.0051310183480381966
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002226429060101509,
+          "strapVertexToSkinSurfaceMinM": 0.006852521561086178
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013939810451120138,
+          "strapVertexToSkinSurfaceMinM": 0.006720352917909622
+        }
+      },
+      "wrists": {
+        "L": [
+          0.126198410987854,
+          -0.1043240949511528,
+          0.615733802318573
+        ],
+        "R": [
+          0.014509174041450024,
+          -0.14567622542381287,
+          0.8683117628097534
+        ]
+      }
+    },
+    {
+      "frame": 15.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013227123999968171,
+          "strapVertexToSkinSurfaceMinM": 0.005130825098603964
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00222392613068223,
+          "strapVertexToSkinSurfaceMinM": 0.00685197813436389
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013578806538134813,
+          "strapVertexToSkinSurfaceMinM": 0.006720397621393204
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12575526535511017,
+          -0.10209794342517853,
+          0.6172595024108887
+        ],
+        "R": [
+          0.014121770858764648,
+          -0.14566171169281006,
+          0.8703117370605469
+        ]
+      }
+    },
+    {
+      "frame": 16.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013203665148466825,
+          "strapVertexToSkinSurfaceMinM": 0.005130758974701166
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002221559640020132,
+          "strapVertexToSkinSurfaceMinM": 0.006851467303931713
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00132174720056355,
+          "strapVertexToSkinSurfaceMinM": 0.006720479112118483
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1253114491701126,
+          -0.09986866265535355,
+          0.6188002228736877
+        ],
+        "R": [
+          0.013734344393014908,
+          -0.14564722776412964,
+          0.872311532497406
+        ]
+      }
+    },
+    {
+      "frame": 16.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013185162097215652,
+          "strapVertexToSkinSurfaceMinM": 0.005130702164024115
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002219679532572627,
+          "strapVertexToSkinSurfaceMinM": 0.006851051934063435
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0012940968153998256,
+          "strapVertexToSkinSurfaceMinM": 0.006720490753650665
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12497682124376297,
+          -0.09698377549648285,
+          0.6202176213264465
+        ],
+        "R": [
+          0.013437083922326565,
+          -0.1456356644630432,
+          0.8743115663528442
+        ]
+      }
+    },
+    {
+      "frame": 16.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013167941942811012,
+          "strapVertexToSkinSurfaceMinM": 0.005130629520863295
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002217887667939067,
+          "strapVertexToSkinSurfaceMinM": 0.00685073621571064
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0012663583038374782,
+          "strapVertexToSkinSurfaceMinM": 0.006720325909554958
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12464389950037003,
+          -0.09409407526254654,
+          0.621661365032196
+        ],
+        "R": [
+          0.013139777816832066,
+          -0.14562416076660156,
+          0.8763115406036377
+        ]
+      }
+    },
+    {
+      "frame": 16.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013149153674021363,
+          "strapVertexToSkinSurfaceMinM": 0.005130591336637735
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022160562220960855,
+          "strapVertexToSkinSurfaceMinM": 0.006850270088762045
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0012387889437377453,
+          "strapVertexToSkinSurfaceMinM": 0.006720492150634527
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12431272119283676,
+          -0.09119977056980133,
+          0.6231314539909363
+        ],
+        "R": [
+          0.012842487543821335,
+          -0.14561262726783752,
+          0.8783113956451416
+        ]
+      }
+    },
+    {
+      "frame": 17.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013131244340911508,
+          "strapVertexToSkinSurfaceMinM": 0.005130494013428688
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022142359521239996,
+          "strapVertexToSkinSurfaceMinM": 0.006849868223071098
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001211083261296153,
+          "strapVertexToSkinSurfaceMinM": 0.006720368750393391
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12398339062929153,
+          -0.0883011519908905,
+          0.6246281862258911
+        ],
+        "R": [
+          0.012545114383101463,
+          -0.14560116827487946,
+          0.8803111910820007
+        ]
+      }
+    },
+    {
+      "frame": 17.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013119559735059738,
+          "strapVertexToSkinSurfaceMinM": 0.005130420904606581
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022130832076072693,
+          "strapVertexToSkinSurfaceMinM": 0.006849618628621101
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011938909301534295,
+          "strapVertexToSkinSurfaceMinM": 0.006720410194247961
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12377287447452545,
+          -0.08492816239595413,
+          0.625531792640686
+        ],
+        "R": [
+          0.012358225882053375,
+          -0.14559365808963776,
+          0.8817753195762634
+        ]
+      }
+    },
+    {
+      "frame": 17.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001310985186137259,
+          "strapVertexToSkinSurfaceMinM": 0.005130392964929342
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002212058985605836,
+          "strapVertexToSkinSurfaceMinM": 0.006849431898444891
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011763488873839378,
+          "strapVertexToSkinSurfaceMinM": 0.006720449775457382
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12356729060411453,
+          -0.08155011385679245,
+          0.6264724135398865
+        ],
+        "R": [
+          0.012171382084488869,
+          -0.1455862671136856,
+          0.8832395672798157
+        ]
+      }
+    },
+    {
+      "frame": 17.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013099049683660269,
+          "strapVertexToSkinSurfaceMinM": 0.005130435805767775
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022108773700892925,
+          "strapVertexToSkinSurfaceMinM": 0.006849172059446573
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001159254927188158,
+          "strapVertexToSkinSurfaceMinM": 0.00672045536339283
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12336674332618713,
+          -0.07816747575998306,
+          0.6274500489234924
+        ],
+        "R": [
+          0.011984485201537609,
+          -0.14557886123657227,
+          0.8847035765647888
+        ]
+      }
+    },
+    {
+      "frame": 18.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001308659790083766,
+          "strapVertexToSkinSurfaceMinM": 0.005130351055413485
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022097546607255936,
+          "strapVertexToSkinSurfaceMinM": 0.006848874036222696
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011419185902923346,
+          "strapVertexToSkinSurfaceMinM": 0.006720538251101971
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12317121028900146,
+          -0.07478071749210358,
+          0.628464937210083
+        ],
+        "R": [
+          0.011797581799328327,
+          -0.14557141065597534,
+          0.8861676454544067
+        ]
+      }
+    },
+    {
+      "frame": 18.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001308416947722435,
+          "strapVertexToSkinSurfaceMinM": 0.005130413919687271
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022094659507274628,
+          "strapVertexToSkinSurfaceMinM": 0.006848809774965048
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00113606546074152,
+          "strapVertexToSkinSurfaceMinM": 0.006720464210957289
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12309541553258896,
+          -0.07115074247121811,
+          0.6285526156425476
+        ],
+        "R": [
+          0.011733846738934517,
+          -0.14556884765625,
+          0.8867035508155823
+        ]
+      }
+    },
+    {
+      "frame": 18.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013080569915473461,
+          "strapVertexToSkinSurfaceMinM": 0.005130339413881302
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002209048718214035,
+          "strapVertexToSkinSurfaceMinM": 0.006848831661045551
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011301259510219097,
+          "strapVertexToSkinSurfaceMinM": 0.0067205363884568214
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12302763015031815,
+          -0.0675172358751297,
+          0.6286839246749878
+        ],
+        "R": [
+          0.011670148000121117,
+          -0.14556629955768585,
+          0.8872395157814026
+        ]
+      }
+    },
+    {
+      "frame": 18.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013076970353722572,
+          "strapVertexToSkinSurfaceMinM": 0.005130252800881863
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022086319513618946,
+          "strapVertexToSkinSurfaceMinM": 0.006848716642707586
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011242871405556798,
+          "strapVertexToSkinSurfaceMinM": 0.006720398087054491
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12296793609857559,
+          -0.06388068944215775,
+          0.6288589239120483
+        ],
+        "R": [
+          0.011606383137404919,
+          -0.1455637365579605,
+          0.8877755999565125
+        ]
+      }
+    },
+    {
+      "frame": 19.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013072785222902894,
+          "strapVertexToSkinSurfaceMinM": 0.005130221601575613
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022082850337028503,
+          "strapVertexToSkinSurfaceMinM": 0.006848644930869341
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011184198083356023,
+          "strapVertexToSkinSurfaceMinM": 0.006720482837408781
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12291643768548965,
+          -0.06024172157049179,
+          0.629077672958374
+        ],
+        "R": [
+          0.011542685329914093,
+          -0.14556115865707397,
+          0.888311505317688
+        ]
+      }
+    },
+    {
+      "frame": 19.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013076970353722572,
+          "strapVertexToSkinSurfaceMinM": 0.005130230449140072
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022086321841925383,
+          "strapVertexToSkinSurfaceMinM": 0.006848716642707586
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011242413893342018,
+          "strapVertexToSkinSurfaceMinM": 0.006720527540892363
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12297970056533813,
+          -0.056622181087732315,
+          0.6282610893249512
+        ],
+        "R": [
+          0.011606404557824135,
+          -0.14556370675563812,
+          0.8877755999565125
+        ]
+      }
+    },
+    {
+      "frame": 19.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013079397613182664,
+          "strapVertexToSkinSurfaceMinM": 0.005130197387188673
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022089905105531216,
+          "strapVertexToSkinSurfaceMinM": 0.006848722230643034
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001130158081650734,
+          "strapVertexToSkinSurfaceMinM": 0.006720366422086954
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12305321544408798,
+          -0.05300145968794823,
+          0.6274885535240173
+        ],
+        "R": [
+          0.011670169420540333,
+          -0.14556626975536346,
+          0.8872396349906921
+        ]
+      }
+    },
+    {
+      "frame": 19.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001308358390815556,
+          "strapVertexToSkinSurfaceMinM": 0.005130269099026918
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002209407277405262,
+          "strapVertexToSkinSurfaceMinM": 0.006848826073110104
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011361527722328901,
+          "strapVertexToSkinSurfaceMinM": 0.006720475386828184
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12313692271709442,
+          -0.049380119889974594,
+          0.6267601251602173
+        ],
+        "R": [
+          0.011733896099030972,
+          -0.14556878805160522,
+          0.8867036700248718
+        ]
+      }
+    },
+    {
+      "frame": 20.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013086596736684442,
+          "strapVertexToSkinSurfaceMinM": 0.0051303524523973465
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022097546607255936,
+          "strapVertexToSkinSurfaceMinM": 0.006848849821835756
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011418148642405868,
+          "strapVertexToSkinSurfaceMinM": 0.006720437202602625
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12323091179132462,
+          -0.045758821070194244,
+          0.6260758638381958
+        ],
+        "R": [
+          0.011797668412327766,
+          -0.14557132124900818,
+          0.8861676454544067
+        ]
+      }
+    },
+    {
+      "frame": 20.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001309846295043826,
+          "strapVertexToSkinSurfaceMinM": 0.00513041764497757
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002210818463936448,
+          "strapVertexToSkinSurfaceMinM": 0.006849156226962805
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011591424699872732,
+          "strapVertexToSkinSurfaceMinM": 0.006720460951328278
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12343162298202515,
+          -0.04242205247282982,
+          0.624505341053009
+        ],
+        "R": [
+          0.011984570883214474,
+          -0.1455787867307663,
+          0.8847035765647888
+        ]
+      }
+    },
+    {
+      "frame": 20.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00131092662923038,
+          "strapVertexToSkinSurfaceMinM": 0.005130440462380648
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022119306959211826,
+          "strapVertexToSkinSurfaceMinM": 0.006849448196589947
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001176574849523604,
+          "strapVertexToSkinSurfaceMinM": 0.006720408797264099
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12364307790994644,
+          -0.03908625990152359,
+          0.6229730248451233
+        ],
+        "R": [
+          0.012171429581940174,
+          -0.14558616280555725,
+          0.8832395672798157
+        ]
+      }
+    },
+    {
+      "frame": 20.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013119853101670742,
+          "strapVertexToSkinSurfaceMinM": 0.005130514036864042
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022131127770990133,
+          "strapVertexToSkinSurfaceMinM": 0.006849620025604963
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0011936912778764963,
+          "strapVertexToSkinSurfaceMinM": 0.006720435805618763
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12386535853147507,
+          -0.035751961171627045,
+          0.6214786171913147
+        ],
+        "R": [
+          0.01235830970108509,
+          -0.1455935686826706,
+          0.8817752003669739
+        ]
+      }
+    },
+    {
+      "frame": 21.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013130658771842718,
+          "strapVertexToSkinSurfaceMinM": 0.005130500998347998
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022141775116324425,
+          "strapVertexToSkinSurfaceMinM": 0.0068499138578772545
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0012111898977309465,
+          "strapVertexToSkinSurfaceMinM": 0.006720453966408968
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1240985319018364,
+          -0.03241965174674988,
+          0.6200225949287415
+        ],
+        "R": [
+          0.012545168399810791,
+          -0.14560100436210632,
+          0.8803112506866455
+        ]
+      }
+    },
+    {
+      "frame": 21.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013148566940799356,
+          "strapVertexToSkinSurfaceMinM": 0.005130589473992586
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022159975487738848,
+          "strapVertexToSkinSurfaceMinM": 0.006850243546068668
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0012389668263494968,
+          "strapVertexToSkinSurfaceMinM": 0.006720427423715591
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12442778795957565,
+          -0.029609352350234985,
+          0.618052065372467
+        ],
+        "R": [
+          0.012842475436627865,
+          -0.14561253786087036,
+          0.8783113360404968
+        ]
+      }
+    },
+    {
+      "frame": 21.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013166953576728702,
+          "strapVertexToSkinSurfaceMinM": 0.00513056106865406
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022177703212946653,
+          "strapVertexToSkinSurfaceMinM": 0.006850649602711201
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0012662899680435658,
+          "strapVertexToSkinSurfaceMinM": 0.006720340345054865
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12476671487092972,
+          -0.026801126077771187,
+          0.6161091327667236
+        ],
+        "R": [
+          0.013139775022864342,
+          -0.1456240862607956,
+          0.8763114809989929
+        ]
+      }
+    },
+    {
+      "frame": 21.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001318428199738264,
+          "strapVertexToSkinSurfaceMinM": 0.005130622070282698
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022196390200406313,
+          "strapVertexToSkinSurfaceMinM": 0.006850996520370245
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001294087735004723,
+          "strapVertexToSkinSurfaceMinM": 0.00672052102163434
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1251153200864792,
+          -0.023995257914066315,
+          0.6141940355300903
+        ],
+        "R": [
+          0.013437037356197834,
+          -0.14563557505607605,
+          0.8743114471435547
+        ]
+      }
+    },
+    {
+      "frame": 22.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013202786212787032,
+          "strapVertexToSkinSurfaceMinM": 0.005130749195814133
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002221471630036831,
+          "strapVertexToSkinSurfaceMinM": 0.0068513560108840466
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013215240323916078,
+          "strapVertexToSkinSurfaceMinM": 0.006720442324876785
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12547360360622406,
+          -0.021192055195569992,
+          0.6123064756393433
+        ],
+        "R": [
+          0.013734307140111923,
+          -0.14564718306064606,
+          0.8723113536834717
+        ]
+      }
+    },
+    {
+      "frame": 22.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013226538430899382,
+          "strapVertexToSkinSurfaceMinM": 0.005130896810442209
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022238967940211296,
+          "strapVertexToSkinSurfaceMinM": 0.006851958576589823
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013578766956925392,
+          "strapVertexToSkinSurfaceMinM": 0.0067202504724264145
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1259145885705948,
+          -0.01909908466041088,
+          0.6104052066802979
+        ],
+        "R": [
+          0.014121749438345432,
+          -0.14566166698932648,
+          0.8703114986419678
+        ]
+      }
+    },
+    {
+      "frame": 22.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013251684140414,
+          "strapVertexToSkinSurfaceMinM": 0.0051310379058122635
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002226370619609952,
+          "strapVertexToSkinSurfaceMinM": 0.0068524968810379505
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013940694043412805,
+          "strapVertexToSkinSurfaceMinM": 0.0067202989012002945
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12636278569698334,
+          -0.017007945105433464,
+          0.6085202097892761
+        ],
+        "R": [
+          0.014509175904095173,
+          -0.1456761658191681,
+          0.8683116436004639
+        ]
+      }
+    },
+    {
+      "frame": 22.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013276033569127321,
+          "strapVertexToSkinSurfaceMinM": 0.005131068639457226
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022287757601588964,
+          "strapVertexToSkinSurfaceMinM": 0.006852959282696247
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014303243951871991,
+          "strapVertexToSkinSurfaceMinM": 0.006720350589603186
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1268181949853897,
+          -0.01491867657750845,
+          0.6066510081291199
+        ],
+        "R": [
+          0.014896565116941929,
+          -0.1456906795501709,
+          0.8663115501403809
+        ]
+      }
+    },
+    {
+      "frame": 23.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013300495920702815,
+          "strapVertexToSkinSurfaceMinM": 0.005131223239004612
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002231262158602476,
+          "strapVertexToSkinSurfaceMinM": 0.0068534985184669495
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014665423659607768,
+          "strapVertexToSkinSurfaceMinM": 0.006720428820699453
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12728074193000793,
+          -0.01283151376992464,
+          0.6047977805137634
+        ],
+        "R": [
+          0.015283887274563313,
+          -0.1457052230834961,
+          0.8643112182617188
+        ]
+      }
+    },
+    {
+      "frame": 23.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013330329675227404,
+          "strapVertexToSkinSurfaceMinM": 0.005131321493536234
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022342740558087826,
+          "strapVertexToSkinSurfaceMinM": 0.006854078266769648
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0014925176510587335,
+          "strapVertexToSkinSurfaceMinM": 0.0067203897051513195
+        }
+      },
+      "wrists": {
+        "L": [
+          0.1278076022863388,
+          -0.011584405787289143,
+          0.6034306883811951
+        ],
+        "R": [
+          0.01573510840535164,
+          -0.14572131633758545,
+          0.8628475666046143
+        ]
+      }
+    },
+    {
+      "frame": 23.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013360062148422003,
+          "strapVertexToSkinSurfaceMinM": 0.005131484940648079
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022372177336364985,
+          "strapVertexToSkinSurfaceMinM": 0.006854747422039509
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001500176265835762,
+          "strapVertexToSkinSurfaceMinM": 0.006720317527651787
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12833862006664276,
+          -0.010338095016777515,
+          0.6020696759223938
+        ],
+        "R": [
+          0.0161861814558506,
+          -0.14573751389980316,
+          0.8613834977149963
+        ]
+      }
+    },
+    {
+      "frame": 23.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013389324303716421,
+          "strapVertexToSkinSurfaceMinM": 0.005131736397743225
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002240232191979885,
+          "strapVertexToSkinSurfaceMinM": 0.006855347193777561
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015079312724992633,
+          "strapVertexToSkinSurfaceMinM": 0.0067204940132796764
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12887363135814667,
+          -0.009092639200389385,
+          0.6007150411605835
+        ],
+        "R": [
+          0.0166372898966074,
+          -0.1457536667585373,
+          0.8599193096160889
+        ]
+      }
+    },
+    {
+      "frame": 24.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013420352479442954,
+          "strapVertexToSkinSurfaceMinM": 0.005131825804710388
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.00224335421808064,
+          "strapVertexToSkinSurfaceMinM": 0.006856086663901806
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001515932148322463,
+          "strapVertexToSkinSurfaceMinM": 0.006720501463860273
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12941281497478485,
+          -0.007848038338124752,
+          0.5993666648864746
+        ],
+        "R": [
+          0.017088385298848152,
+          -0.14576983451843262,
+          0.8584551215171814
+        ]
+      }
+    },
+    {
+      "frame": 24.25,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013453139690682292,
+          "strapVertexToSkinSurfaceMinM": 0.005132099613547325
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022466524969786406,
+          "strapVertexToSkinSurfaceMinM": 0.006856776773929596
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.001524599501863122,
+          "strapVertexToSkinSurfaceMinM": 0.006720437668263912
+        }
+      },
+      "wrists": {
+        "L": [
+          0.12999184429645538,
+          -0.007515157572925091,
+          0.5988709926605225
+        ],
+        "R": [
+          0.017572470009326935,
+          -0.14578625559806824,
+          0.8579193353652954
+        ]
+      }
+    },
+    {
+      "frame": 24.5,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013486520620062947,
+          "strapVertexToSkinSurfaceMinM": 0.005132375750690699
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002249903976917267,
+          "strapVertexToSkinSurfaceMinM": 0.006857503671199083
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015336412470787764,
+          "strapVertexToSkinSurfaceMinM": 0.0067203757353127
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13057197630405426,
+          -0.0071822768077254295,
+          0.5983758568763733
+        ],
+        "R": [
+          0.018056519329547882,
+          -0.14580275118350983,
+          0.8573833107948303
+        ]
+      }
+    },
+    {
+      "frame": 24.75,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013520020293071866,
+          "strapVertexToSkinSurfaceMinM": 0.005132470279932022
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.002253263723105192,
+          "strapVertexToSkinSurfaceMinM": 0.006858086679130793
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015425927704200149,
+          "strapVertexToSkinSurfaceMinM": 0.00672033429145813
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13115324079990387,
+          -0.006849355064332485,
+          0.5978816747665405
+        ],
+        "R": [
+          0.018540499731898308,
+          -0.14581917226314545,
+          0.85684734582901
+        ]
+      }
+    },
+    {
+      "frame": 25.0,
+      "regions": {
+        "palm": {
+          "vertices": 289,
+          "faces": 222,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0013554483884945512,
+          "strapVertexToSkinSurfaceMinM": 0.005132622551172972
+        },
+        "fingers": {
+          "vertices": 1265,
+          "faces": 1216,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0022567526903003454,
+          "strapVertexToSkinSurfaceMinM": 0.006858872715383768
+        },
+        "thumb": {
+          "vertices": 224,
+          "faces": 207,
+          "triangleIntersections": 0,
+          "skinVertexToStrapSurfaceMinM": 0.0015519293956458569,
+          "strapVertexToSkinSurfaceMinM": 0.0067204926162958145
+        }
+      },
+      "wrists": {
+        "L": [
+          0.13173551857471466,
+          -0.006516409106552601,
+          0.5973882079124451
+        ],
+        "R": [
+          0.019024496898055077,
+          -0.14583569765090942,
+          0.8563112616539001
+        ]
+      }
+    }
+  ],
+  "method": "Own fresh-reopen BVH actual evaluated triangles and two-sided vertex-to-surface gap samples; actual nonempty weighted palm/fingers/thumb;97quarterframes. These sampled distances are not a proof of exact global minimum or force/contact simulation. Source not saved."
+}

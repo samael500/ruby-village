@@ -1,0 +1,73 @@
+{
+  "sourceSha256": "97dc4462f6cc5d793b1d982955b3d417baeba8e9e3433f27039a602af73b685f",
+  "blender": "4.5.3 LTS",
+  "freshReopen": true,
+  "rigBones": 167,
+  "sourceBodyVertices": 19158,
+  "subframeSamples": 97,
+  "physicalCycleRootTranslationM": [
+    0.0,
+    -0.5687545537948608,
+    0.0
+  ],
+  "physicalStrideM": 0.5687545503706781,
+  "rootRelativePoseEndpointMaxMatrixDelta": 5.781650543212891e-06,
+  "uniqueIntegerPoses": 24,
+  "fullSubdivisionShoeMinWorldZ": 0.0003446785267442465,
+  "sourceSubdivisionLevels": [
+    {
+      "viewport": 0,
+      "render": 1
+    }
+  ],
+  "floorProbeUsesRenderSubdivisionLevel": true,
+  "summary": {
+    "L": {
+      "flatStanceToeDriftM": 1.8207978189347882e-05,
+      "flatStanceHeelDriftM": 1.821486243741302e-05,
+      "pushOffToeDriftM": 0.000669011584583158,
+      "kneeFlexRangeDegrees": [
+        15.750194244901378,
+        53.05125407602628
+      ],
+      "swingMinimumSoleZ": 0.01713797263801098,
+      "swingMaximumSoleZ": 0.04653315618634224,
+      "wristRigRelativeRangeM": 0.11067287068689192,
+      "elbowFlexRangeDegrees": [
+        9.891593507907418,
+        23.880235008311963
+      ],
+      "upperArmXRangeRadians": 0.42506784200668335
+    },
+    "R": {
+      "flatStanceToeDriftM": 1.8190349538881492e-05,
+      "flatStanceHeelDriftM": 1.817983841858734e-05,
+      "pushOffToeDriftM": 0.0006690063986749867,
+      "kneeFlexRangeDegrees": [
+        15.750180584523038,
+        53.05127798168837
+      ],
+      "swingMinimumSoleZ": 0.017138002440333366,
+      "swingMaximumSoleZ": 0.04653314873576164,
+      "wristRigRelativeRangeM": 0.03286441817499693,
+      "elbowFlexRangeDegrees": [
+        108.703949621992,
+        109.07166651633797
+      ],
+      "upperArmXRangeRadians": 0.009090006351470947
+    }
+  },
+  "upperBodyVsPelvisMatrixRange": {
+    "head": 0.022971531376242638,
+    "neck01": 0.022982023569056764,
+    "spine03": 0.01981191150844097
+  },
+  "pelvisZRangeM": [
+    0.6156253218650818,
+    0.6476253867149353
+  ]
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-qa-mpfb-5ca361b/art/characters-mpfb-v1/motion/pilot/mpfb-walk-technical.blend"
+
+Blender quit
