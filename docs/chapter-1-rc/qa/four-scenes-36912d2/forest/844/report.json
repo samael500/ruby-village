@@ -1,0 +1,204 @@
+{
+  "scene": "forest",
+  "viewport": [
+    844,
+    390
+  ],
+  "input": "native CDP touch",
+  "states": [
+    {
+      "actors": [],
+      "ruta": null,
+      "story": true,
+      "restored": false,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": true
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "intro"
+    },
+    {
+      "actors": [],
+      "ruta": null,
+      "story": true,
+      "restored": false,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": true
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "intro"
+    },
+    {
+      "actors": [],
+      "ruta": null,
+      "story": false,
+      "restored": false,
+      "technicalHidden": {
+        "grid": false,
+        "tray": false,
+        "field": false
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "activity"
+    },
+    {
+      "actors": [],
+      "ruta": null,
+      "story": true,
+      "restored": false,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": true
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "replay"
+    },
+    {
+      "actors": [],
+      "ruta": null,
+      "story": true,
+      "restored": false,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": true
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "replay"
+    },
+    {
+      "actors": [],
+      "ruta": null,
+      "story": false,
+      "restored": false,
+      "technicalHidden": {
+        "grid": false,
+        "tray": false,
+        "field": false
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "reload"
+    },
+    {
+      "actors": [],
+      "ruta": null,
+      "story": false,
+      "restored": false,
+      "technicalHidden": {
+        "grid": false,
+        "tray": false,
+        "field": false
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "solved"
+    },
+    {
+      "actors": [],
+      "ruta": {
+        "direction": "e",
+        "box": {
+          "x": 572.8077186102087,
+          "y": 68.51433125853956,
+          "w": 47.322301502960386,
+          "h": 70.98345225444055
+        },
+        "markup": "<svg x=\"566.8077186102087\" y=\"64.51433125853956\" width=\"47.32230150296037\" height=\"70.98345225444056\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/base-e.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/base-e.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      "story": true,
+      "restored": true,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": false
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "arrival"
+    },
+    {
+      "actors": [],
+      "ruta": {
+        "direction": "e",
+        "box": {
+          "x": 572.8077186102087,
+          "y": 68.51433125853956,
+          "w": 47.322301502960386,
+          "h": 70.98345225444055
+        },
+        "markup": "<svg x=\"566.8077186102087\" y=\"64.51433125853956\" width=\"47.32230150296037\" height=\"70.98345225444056\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/base-e.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/base-e.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      "story": true,
+      "restored": true,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": false
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "arrival"
+    },
+    {
+      "actors": [],
+      "ruta": {
+        "direction": "e",
+        "box": {
+          "x": 572.8077186102087,
+          "y": 68.51433125853956,
+          "w": 47.322301502960386,
+          "h": 70.98345225444055
+        },
+        "markup": "<svg x=\"566.8077186102087\" y=\"64.51433125853956\" width=\"47.32230150296037\" height=\"70.98345225444056\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/base-e.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/base-e.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      "story": true,
+      "restored": true,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": false
+      },
+      "resultResidents": [],
+      "resultScene": null,
+      "label": "arrival"
+    },
+    {
+      "actors": [],
+      "ruta": {
+        "direction": "e",
+        "box": {
+          "x": 544.3832271444102,
+          "y": 92.3545620160923,
+          "w": 38.4029148322453,
+          "h": 57.60437224836801
+        },
+        "markup": "<svg x=\"538.3832271444102\" y=\"52.3545620160923\" width=\"38.40291483224533\" height=\"57.604372248367994\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/base-e.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/base-e.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      "story": false,
+      "restored": true,
+      "technicalHidden": {
+        "grid": true,
+        "tray": true,
+        "field": false
+      },
+      "resultResidents": [],
+      "resultScene": "Тропинка за деревню",
+      "label": "result"
+    }
+  ],
+  "pageErrors": [],
+  "httpErrors": [],
+  "physicalPhone": "NOT RUN",
+  "runtimeMotion": "normal existing game motion; not MPFB art acceptance"
+}
