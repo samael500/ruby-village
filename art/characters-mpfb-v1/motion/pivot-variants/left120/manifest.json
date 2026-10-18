@@ -1,5 +1,5 @@
 {
-  "status": "AUTHOR ACTUAL NATIVE/BOOT/CARRY/IDLE JOIN PASS; COMPACT RASTER AND INDEPENDENT REVIEW PENDING",
+  "status": "AUTHOR NATIVE/BOOT/CARRY/IDLE JOIN AND COMPACT12POSE PASS; INDEPENDENT REVIEW PENDING",
   "variant": "left120",
   "appearance": "rejected generic technical mannequin",
   "sourceRepositoryPath": "art/characters-mpfb-v1/motion/pivot-study/mpfb-compact-pivot60-technical.blend",
@@ -4992,13 +4992,15 @@
   "worldRootBoundTargetMeters": 0.1,
   "entryExit": "Unchanged flat idle at yaw0/+or-120,root0; internal actual60 idle-to-idle join at1200ms. Requires stop+settle before and native start afterward, not continuous walking.",
   "composition": "Second complete native clip rigidly rotated by actual first endpoint yaw; no mirror, independent foot offsets, stride scale or root distance fit.",
-  "renderStatus": "NOT RENDERED",
+  "renderStatus": "12 genuine one-camera diagnostics complete, no full batch",
   "proofBudget": 12,
   "routeCoverage": "Not certified full body/bag/boot swept clearance or arbitrary legal route coverage.",
   "authorChecks": [
     "native-contact-join-check.json",
     "boot-surface-check.json",
     "carry-check.json",
-    "idle-transition-source-preservation.json"
+    "idle-transition-source-preservation.json",
+    "raster-path-metadata.json",
+    "render-check.json"
   ]
 }

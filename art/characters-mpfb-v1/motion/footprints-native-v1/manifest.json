@@ -1,0 +1,155 @@
+{
+  "schema": "mpfb-evaluated-boot-footprint/v1",
+  "status": "TECHNICAL GENERIC SOURCE INPUT; NOT FINAL APPEARANCE OR ROUTE CLEARANCE CERTIFICATE",
+  "units": "native physical meters",
+  "modelForward": [
+    0,
+    -1,
+    0
+  ],
+  "rootMotionSeparate": true,
+  "referenceSceneCalibration": {
+    "metersToScenePixels": 122.39043824701194,
+    "nativeHeightReferencePixels": 251,
+    "displayHeightReferencePixels": 136,
+    "orthoMeters": 1.7,
+    "scope": "Current generic source only; new styled source requires renewed physical/body-height calibration."
+  },
+  "hullCoordinates": {
+    "fullBootXYHullRootRelativeNativeMeters": "Actual evaluated worldXY minus current rig-origin translation. Clip native yaw is retained. Apply only external actor placement heading, then add physical root trajectory once.",
+    "fullBootXYHullActorOrientationRemovedMeters": "Actual evaluated vertex minus rig origin, then inverse rig quaternion; physical meters retained, including source scale. Apply complete actor/clip orientation once and root trajectory once. Do not apply clip yaw to both representations.",
+    "winding": "Counterclockwise convex hull in native XY; full boot includes swing/upper boot and conservatively fills its own concavity. Separate L/R hulls, no combined convex gap fill."
+  },
+  "nativeToBaseGridXY": [
+    [
+      0,
+      -1
+    ],
+    [
+      -1,
+      0
+    ]
+  ],
+  "coverage": "Discrete evaluated boot XY projections only. No solver/road/path changes; no guarantee that interpolation/sweeps between timestamps or final styled shoes remain inside confirmed hex unions. Root planner must validate route and timing with these source-matched inputs.",
+  "samplingIncludesNativeKeys": false,
+  "sources": {
+    "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e": {
+      "source": "art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend",
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "bootObject": "Ruta.shoes01",
+      "rawBootGeometryWeightSha256": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+      "rigObject": "Ruta.MPFB.StandardRig",
+      "renderSubdivisionLevels": [
+        1
+      ],
+      "evaluatedTopologyVertexCount": 6762,
+      "appearanceValidity": "Only this exact source/shoe geometry and weights. New styled shoes/source require fresh export and independent clearance checks."
+    },
+    "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753": {
+      "source": "art/characters-mpfb-v1/motion/pivot-study/mpfb-compact-pivot60-technical.blend",
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "bootObject": "Ruta.shoes01",
+      "rawBootGeometryWeightSha256": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+      "rigObject": "Ruta.MPFB.StandardRig",
+      "renderSubdivisionLevels": [
+        1
+      ],
+      "evaluatedTopologyVertexCount": 6762,
+      "appearanceValidity": "Only this exact source/shoe geometry and weights. New styled shoes/source require fresh export and independent clearance checks."
+    },
+    "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874": {
+      "source": "art/characters-mpfb-v1/motion/pivot-variants/right60/mpfb-compact-pivot-technical.blend",
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "bootObject": "Ruta.shoes01",
+      "rawBootGeometryWeightSha256": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+      "rigObject": "Ruta.MPFB.StandardRig",
+      "renderSubdivisionLevels": [
+        1
+      ],
+      "evaluatedTopologyVertexCount": 6762,
+      "appearanceValidity": "Only this exact source/shoe geometry and weights. New styled shoes/source require fresh export and independent clearance checks."
+    },
+    "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4": {
+      "source": "art/characters-mpfb-v1/motion/pivot-variants/left120/mpfb-compact-pivot-technical.blend",
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "bootObject": "Ruta.shoes01",
+      "rawBootGeometryWeightSha256": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+      "rigObject": "Ruta.MPFB.StandardRig",
+      "renderSubdivisionLevels": [
+        1
+      ],
+      "evaluatedTopologyVertexCount": 6762,
+      "appearanceValidity": "Only this exact source/shoe geometry and weights. New styled shoes/source require fresh export and independent clearance checks."
+    },
+    "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7": {
+      "source": "art/characters-mpfb-v1/motion/pivot-variants/right120/mpfb-compact-pivot-technical.blend",
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "bootObject": "Ruta.shoes01",
+      "rawBootGeometryWeightSha256": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+      "rigObject": "Ruta.MPFB.StandardRig",
+      "renderSubdivisionLevels": [
+        1
+      ],
+      "evaluatedTopologyVertexCount": 6762,
+      "appearanceValidity": "Only this exact source/shoe geometry and weights. New styled shoes/source require fresh export and independent clearance checks."
+    }
+  },
+  "states": {
+    "idle": {
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "recordCount": 7,
+      "file": "idle.json"
+    },
+    "start-L": {
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "recordCount": 13,
+      "file": "start-L.json"
+    },
+    "start-R": {
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "recordCount": 13,
+      "file": "start-R.json"
+    },
+    "stop-L": {
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "recordCount": 13,
+      "file": "stop-L.json"
+    },
+    "stop-R": {
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "recordCount": 13,
+      "file": "stop-R.json"
+    },
+    "settle": {
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "recordCount": 7,
+      "file": "settle.json"
+    },
+    "walk": {
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "recordCount": 25,
+      "file": "walk.json"
+    },
+    "pivot-left60": {
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "recordCount": 41,
+      "file": "pivot-left60.json"
+    },
+    "pivot-right60": {
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "recordCount": 41,
+      "file": "pivot-right60.json"
+    },
+    "pivot-left120": {
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "recordCount": 81,
+      "file": "pivot-left120.json"
+    },
+    "pivot-right120": {
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "recordCount": 81,
+      "file": "pivot-right120.json"
+    }
+  },
+  "recordCount": 335
+}

@@ -19,14 +19,16 @@ def hull(points):
   while len(upper)>=2 and cross(upper[-2],upper[-1],p)<=0:upper.pop()
   upper.append(p)
  result=lower[:-1]+upper[:-1];assert len(result)>=3;return result
-registry=[]
-transition=MOTION/'transitions';meta=json.loads((transition/'manifest.json').read_text())
-for state in ['idle','start-L','start-R','stop-L','stop-R','settle']:
- clip=meta['clips'][state];registry.append({'state':state,'source':str(transition/'mpfb-start-stop-technical.blend'),'actions':clip['actionBundle'],'frames':[float(r['frame']) for r in clip['frames']],'durationMs':clip['durationMs'],'rasterScope':'Canonical native30ms action poses measured; standalone state raster not claimed.'})
-registry.append({'state':'walk','source':str(transition/'mpfb-start-stop-technical.blend'),'actions':meta['sourceActions'],'frames':list(range(1,26)),'durationMs':720,'rasterScope':'Frames1..24 correspond to existing actual walk rasters;25 is terminal join readback.'})
-for state,folder,filename in [('pivot-left60',MOTION/'pivot-study','mpfb-compact-pivot60-technical.blend')]+[(f'pivot-{v}',MOTION/'pivot-variants'/v,'mpfb-compact-pivot-technical.blend') for v in ['right60','left120','right120']]:
- m=json.loads((folder/'manifest.json').read_text());registry.append({'state':state,'source':str(folder/filename),'actions':m['turnActions'],'frames':list(range(1,round(m['durationMs']/30)+2)),'durationMs':m['durationMs'],'rasterScope':'All native30ms raster-cadence poses measured; only compact diagnostic subset has rendered PNGs.'})
-if os.environ.get('RUBY_MPFB_FOOTPRINT_SOURCE_SET'):registry=json.loads(Path(os.environ['RUBY_MPFB_FOOTPRINT_SOURCE_SET']).read_text())
+def default_registry():
+ registry=[]
+ transition=MOTION/'transitions';meta=json.loads((transition/'manifest.json').read_text())
+ for state in ['idle','start-L','start-R','stop-L','stop-R','settle']:
+  clip=meta['clips'][state];registry.append({'state':state,'source':str(transition/'mpfb-start-stop-technical.blend'),'actions':clip['actionBundle'],'frames':[float(r['frame']) for r in clip['frames']],'durationMs':clip['durationMs'],'rasterScope':'Canonical native30ms action poses measured; standalone state raster not claimed.'})
+ registry.append({'state':'walk','source':str(transition/'mpfb-start-stop-technical.blend'),'actions':meta['sourceActions'],'frames':list(range(1,26)),'durationMs':720,'rasterScope':'Frames1..24 correspond to existing actual walk rasters;25 is terminal join readback.'})
+ for state,folder,filename in [('pivot-left60',MOTION/'pivot-study','mpfb-compact-pivot60-technical.blend')]+[(f'pivot-{v}',MOTION/'pivot-variants'/v,'mpfb-compact-pivot-technical.blend') for v in ['right60','left120','right120']]:
+  m=json.loads((folder/'manifest.json').read_text());registry.append({'state':state,'source':str(folder/filename),'actions':m['turnActions'],'frames':list(range(1,round(m['durationMs']/30)+2)),'durationMs':m['durationMs'],'rasterScope':'All native30ms raster-cadence poses measured; only compact diagnostic subset has rendered PNGs.'})
+ return registry
+registry=json.loads(Path(os.environ['RUBY_MPFB_FOOTPRINT_SOURCE_SET']).read_text()) if os.environ.get('RUBY_MPFB_FOOTPRINT_SOURCE_SET') else default_registry()
 source_receipts={};states={};current=None
 for entry in registry:
  source=Path(entry['source']);source=source if source.is_absolute() else ROOT/source;sha=digest(source)
@@ -39,7 +41,7 @@ for entry in registry:
  if os.environ.get('RUBY_MPFB_FOOTPRINT_INCLUDE_NATIVE_KEYS')=='1':frames|={float(k.co.x) for c in rig.animation_data.action.fcurves for k in c.keyframe_points if 1<=k.co.x<=1+entry['durationMs']/30}
  regions=None;records=[]
  for f in sorted(frames):
-  scene.frame_set(int(f),subframe=f-int(f));bpy.context.view_layer.update();deps=bpy.context.evaluated_depsgraph_get();evaluated=shoe.evaluated_get(deps);er=rig.evaluated_get(deps);origin=er.matrix_world.translation;rotation=er.matrix_world.to_quaternion();inverse_rotation=rotation.inverted();points=[evaluated.matrix_world@v.co for v in evaluated.data.vertices]
+  scene.frame_set(int(f),subframe=f-int(f));bpy.context.view_layer.update();deps=bpy.context.evaluated_depsgraph_get();evaluated=shoe.evaluated_get(deps);er=rig.evaluated_get(deps);origin=er.matrix_world.translation;rotation=er.matrix_world.to_quaternion();inverse_rotation=rotation.inverted();assert abs((rotation@Vector((0,0,1))).z-1)<1e-6,'XY-only actor hull representation requires upright yaw-only root';assert er.matrix_world.to_3x3().determinant()>0,'Native source placement must be a proper transform';points=[evaluated.matrix_world@v.co for v in evaluated.data.vertices]
   if regions is None:
    regions={}
    for side in ['L','R']:

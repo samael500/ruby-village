@@ -1,0 +1,14 @@
+"""Account exactly36 new diagnostic poses and source-only boot footprint inputs."""
+from pathlib import Path
+import json,re,hashlib
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'art/characters-mpfb-v1/motion/pivot-variants';receipts={};times=[];images=[];sources=[]
+for variant in ['right60','left120','right120']:
+ p=OUT/variant;check=json.loads((p/'render-check.json').read_text());assert check['actualRenderedPoseCount']==12 and check['allContained'] and check['uniqueFrameCount']==12 and check['framesWithSecondaryAlphaComponents']==0;source=p/'mpfb-compact-pivot-technical.blend';sha=hashlib.sha256(source.read_bytes()).hexdigest();raster=json.loads((p/'raster-path-metadata.json').read_text());assert sha==raster['sourceSha256Before']==raster['sourceSha256AfterFreshProjection'];sources.append(source);png=list((p/'E').glob('*.png'));assert len(png)==12;images+=png
+ for text in re.findall(r'^Time: ([0-9:.]+)',(p/'render.log').read_text(),re.M):
+  seconds=0.
+  for part in text.split(':'):seconds=seconds*60+float(part)
+  times.append(seconds)
+ meta=json.loads((p/'manifest.json').read_text());meta['status']='AUTHOR NATIVE/BOOT/CARRY/IDLE JOIN AND COMPACT12POSE PASS; INDEPENDENT REVIEW PENDING';meta['renderStatus']='12 genuine one-camera diagnostics complete, no full batch';meta['authorChecks']=list(dict.fromkeys(meta.get('authorChecks',[])+['raster-path-metadata.json','render-check.json']));(p/'manifest.json').write_text(json.dumps(meta,indent=2)+'\n');receipts[variant]={'sourceSha256':sha,'pngCount':12,'pngBytes':sum(f.stat().st_size for f in png),'packedSourceBytes':source.stat().st_size,'nativeDurationMs':meta['durationMs']}
+assert len(times)==len(images)==36
+foot=ROOT/'art/characters-mpfb-v1/motion/footprints-native-v1';footmeta=json.loads((foot/'manifest.json').read_text());assert footmeta['recordCount']==335
+result={'status':'SCOPED36POSE TECHNICAL SOURCE PROOF, NO FULL HEADING/CAMERA OR STYLED BATCH','variants':receipts,'actualNewNativePngCount':36,'nativePngBytes':sum(p.stat().st_size for p in images),'packedSourceCount':3,'packedSourceBytes':sum(p.stat().st_size for p in sources),'cyclesSamples':8,'blenderThreads':2,'cyclesReportedRenderWallSecondsTotal':sum(times),'cyclesReportedLongestRenderWallSeconds':max(times),'cpuUtilizationMeasured':False,'native180Recipes':'Both signed60+120 actual body/sole joins measured, no new180 source or raster','footprintSourceOnlyStateCount':len(footmeta['states']),'footprintSourceOnlyTimestampCount':footmeta['recordCount'],'footprintArtifactBytes':sum(p.stat().st_size for p in foot.rglob('*') if p.is_file()),'newFootprintRasterCount':0,'appearance':'rejected generic mannequin; new styled shoes/source invalidate hull certificates','runtimeOrSolverChanges':False};(OUT/'resource-budget.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
