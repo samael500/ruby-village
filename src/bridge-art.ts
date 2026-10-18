@@ -28,6 +28,7 @@ export function drawBridge(parent:Element,anchor:Hex,turns:number,radius:number,
   const deck=node('svg',{x:-length/2,y:-radius,width:length,height:radius*2,viewBox:'68 167 2033 359',preserveAspectRatio:'none',overflow:'hidden'},paint);
   node('image',{href:`${import.meta.env.BASE_URL}assets/bridge-v1/deck-v1.png`,width:2170,height:725},deck);
  }
+ if(detailed)return group; // painted carpentry supplies its own natural outer edges
  for(const {a,b,count,neighbor}of edges.values()){
   if(options.connectedPaving&&(count>1||options.connectedPaving.has(key(add(anchor,rotate(neighbor,turns))))))continue;
   node('path',{d:`M${a.x} ${a.y}L${b.x} ${b.y}`,fill:'none',stroke:detailed?'#735334':count===1?'#6e503b':'#816146','stroke-width':radius*(count===1?.035:.022),'stroke-linejoin':'round','stroke-linecap':'round',opacity:count===1?1:.65},group);
