@@ -71,13 +71,13 @@ def garden():
     (OUT/'review/garden-native-v1-checks.json').write_text(json.dumps(checks,indent=2)+'\n');print(json.dumps(checks))
 def well():
     base=Image.open(ART/'candidates/well-clear-v1.png').convert('RGBA')
-    source=Image.open(OUT/'well-flowers-cutout-v1.png').convert('RGBA')
-    alpha=source.getchannel('A').filter(ImageFilter.MinFilter(5))
+    source=Image.open(OUT/'well-flowers-guided-v2.png').convert('RGBA')
+    alpha=source.getchannel('A').filter(ImageFilter.MinFilter(25))
     bbox=alpha.point(lambda v:255 if v>2 else 0).getbbox()
     source.putalpha(alpha);flowers=source.crop(bbox)
-    flowers=flowers.resize((380,223),Image.Resampling.LANCZOS)
-    flowers.putalpha(flowers.getchannel('A').point(lambda a:0 if a<=2 else a))
-    layer=Image.new('RGBA',SIZE);layer.alpha_composite(flowers,(615,380))
+    flowers=flowers.resize((432,round(432*flowers.height/flowers.width)),Image.Resampling.LANCZOS)
+    flowers.putalpha(flowers.getchannel('A').point(lambda a:0 if a<=4 else a))
+    layer=Image.new('RGBA',SIZE);layer.alpha_composite(flowers,(580,365))
     layer.save(OUT/'layers/well-flowers-v1.png')
     candidate=Image.alpha_composite(base,layer);candidate.save(OUT/'well-native-v1.png')
     overlay('well',candidate,'well-native-v1')
@@ -85,9 +85,9 @@ def well():
     accepted=polygon_mask('well',kind='flower').filter(ImageFilter.MinFilter(3))
     teacher=Image.open(ROOT/'public/assets/characters-facing-v1/residents/teacher-conversation-front.png').convert('RGBA')
     scale=174/1008;teacher=teacher.resize((round(teacher.width*scale),174),Image.Resampling.LANCZOS)
-    actor=Image.new('RGBA',SIZE);actor.alpha_composite(teacher,(round(1195-272*scale),round(405-1004*scale)))
+    actor=Image.new('RGBA',SIZE);actor.alpha_composite(teacher,(round(1225-272*scale),round(405-1004*scale)))
     Image.alpha_composite(candidate,actor).save(OUT/'review/well-native-v1-teacher.png')
-    checks={'candidate':'well-native-v1','status':'native-pilot-awaiting-actual-game','source':'well-flowers-cutout-v1.png','sourceWholeSize':[1608,978],'sourceAlphaCrop':list(bbox),'uniformTargetSize':[380,223],'offset':[615,380],'nativeAlphaErosionRadius':2,'postResampleDropAlphaAtMost':2,'perimeterHardClip':False,'strictAnyNonzeroAlpha':True,'flowerFullAlphaFreeOverlap':intersects(layer.getchannel('A'),free),'flowerOutsideInsetAcceptedUnion':intersects(layer.getchannel('A'),ImageChops.invert(accepted)),'teacherProposedFeet':[1195,405],'teacherFullAlphaFreeOverlap':intersects(actor.getchannel('A'),free),'rasterTolerancePx':1}
+    checks={'candidate':'well-native-v1','status':'native-pilot-awaiting-actual-game','source':'well-flowers-guided-v2.png','sourceWholeSize':list(source.size),'sourceAlphaCrop':list(bbox),'uniformTargetSize':list(flowers.size),'offset':[580,365],'nativeAlphaErosionRadius':12,'postResampleDropAlphaAtMost':4,'perimeterHardClip':False,'strictAnyNonzeroAlpha':True,'flowerFullAlphaFreeOverlap':intersects(layer.getchannel('A'),free),'flowerOutsideInsetAcceptedUnion':intersects(layer.getchannel('A'),ImageChops.invert(accepted)),'flowerOutsideAcceptedUnion':intersects(layer.getchannel('A'),ImageChops.invert(polygon_mask('well',kind='flower'))),'flowerOutsideAcceptedUnionWith1pxTolerance':intersects(layer.getchannel('A'),ImageChops.invert(polygon_mask('well',kind='flower').filter(ImageFilter.MaxFilter(3)))),'flowerCellCenterAlphas':{c['id']:layer.getchannel('A').getpixel((round(c['center']['x']),round(c['center']['y']))) for c in geometry('well')['cells'] if c['terrain']=='flower'},'teacherProposedFeet':[1225,405],'teacherFullAlphaFreeOverlap':intersects(actor.getchannel('A'),free),'rasterTolerancePx':1}
     (OUT/'review/well-native-v1-checks.json').write_text(json.dumps(checks,indent=2)+'\n');print(json.dumps(checks))
 if __name__=='__main__':
     well() if len(sys.argv)>1 and sys.argv[1]=='well' else garden()
