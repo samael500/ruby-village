@@ -1,0 +1,85 @@
+{
+  "samples": 801,
+  "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+  "flatDriftMeters": {
+    "0R0": {
+      "toe": 3.405792665226403e-07,
+      "heel": 3.434854143752964e-07
+    },
+    "0R1": {
+      "toe": 2.785991681242662e-05,
+      "heel": 2.7715130652450608e-05
+    },
+    "0L0": {
+      "toe": 2.8260312128034214e-05,
+      "heel": 2.8040633838050818e-05
+    },
+    "0L1": {
+      "toe": 1.9800189533707964e-07,
+      "heel": 2.018994789498997e-07
+    },
+    "1R0": {
+      "toe": 3.713002769279055e-07,
+      "heel": 3.72757134041443e-07
+    },
+    "1R1": {
+      "toe": 2.7895372996879473e-05,
+      "heel": 2.7731734509866787e-05
+    },
+    "1L0": {
+      "toe": 2.8286058993868723e-05,
+      "heel": 2.8049072848752518e-05
+    },
+    "1L1": {
+      "toe": 2.3202189879613922e-07,
+      "heel": 2.3868763771513243e-07
+    }
+  },
+  "joins": {
+    "entry": {
+      "soleMax": 9.85013971554352e-08,
+      "bodyMatMax": 4.291534423828125e-06
+    },
+    "exit": {
+      "soleMax": 1.643487507792404e-07,
+      "bodyMatMax": 3.933906555175781e-06
+    }
+  },
+  "maxAnkleError": 2.7396456807156924e-05,
+  "minBootZ": 0.00036161273601464927,
+  "maximumBootTriangleIntersections": 0,
+  "regionPolygonCounts": {
+    "L": 3320,
+    "R": 3320
+  },
+  "rootDelta": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maxRootDistance": 0.030000000469929844,
+  "kneeFlexRange": {
+    "L": [
+      11.325036031193434,
+      47.33106125983264
+    ],
+    "R": [
+      11.324995050058419,
+      48.725949812889326
+    ]
+  },
+  "maxAdjacentLegRotationDegrees": {
+    "L": {
+      "upperQuat": 0.7932709768099747,
+      "lowerQuat": 0.8568309029571151
+    },
+    "R": {
+      "upperQuat": 0.8308601224943465,
+      "lowerQuat": 0.7932709768099747
+    }
+  }
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-qa-pivot-footprints/art/characters-mpfb-v1/motion/pivot-variants/right120/mpfb-compact-pivot-technical.blend"
+
+Blender quit

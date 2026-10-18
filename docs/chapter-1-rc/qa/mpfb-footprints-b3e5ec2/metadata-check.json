@@ -1,0 +1,463 @@
+{
+  "actualRecordCount": 335,
+  "actualStateCount": 11,
+  "allRecipeFootprintSourceLinksCorrect": true,
+  "fresh180Joins": {
+    "left180": {
+      "nativeYawRadiansActual": 3.1415927410125732,
+      "rootDeltaMetersActual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "durationMs": 3600,
+      "clips": [
+        "left60",
+        "left120"
+      ],
+      "sources": [
+        "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+        "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4"
+      ],
+      "actualJoins": {
+        "internal60To120": {
+          "bodyWorldMatrixMaxElementError": 2.980232238769531e-07,
+          "actualSoleVertexWorldMaxErrorMeters": 7.514480524120749e-08
+        },
+        "exit180ToIdle": {
+          "bodyWorldMatrixMaxElementError": 3.039836883544922e-06,
+          "actualSoleVertexWorldMaxErrorMeters": 1.1002227236049145e-07
+        }
+      },
+      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim.",
+      "footprintStates": [
+        "pivot-left60",
+        "pivot-left120"
+      ]
+    },
+    "right180": {
+      "nativeYawRadiansActual": -3.1415927410125732,
+      "rootDeltaMetersActual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "durationMs": 3600,
+      "clips": [
+        "right60",
+        "right120"
+      ],
+      "sources": [
+        "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+        "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7"
+      ],
+      "actualJoins": {
+        "internal60To120": {
+          "bodyWorldMatrixMaxElementError": 1.7881393432617188e-07,
+          "actualSoleVertexWorldMaxErrorMeters": 2.1155582166464156e-08
+        },
+        "exit180ToIdle": {
+          "bodyWorldMatrixMaxElementError": 3.3974647521972656e-06,
+          "actualSoleVertexWorldMaxErrorMeters": 1.0848209096909341e-07
+        }
+      },
+      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim.",
+      "footprintStates": [
+        "pivot-right60",
+        "pivot-right120"
+      ]
+    }
+  },
+  "diagnosticImageCount": 36,
+  "images": [
+    {
+      "variant": "right60",
+      "frame": 1,
+      "bounds": [
+        165,
+        72,
+        234,
+        326
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 5,
+      "bounds": [
+        165,
+        72,
+        233,
+        330
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 9,
+      "bounds": [
+        165,
+        73,
+        234,
+        327
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 13,
+      "bounds": [
+        166,
+        73,
+        235,
+        327
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 17,
+      "bounds": [
+        165,
+        74,
+        232,
+        332
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 21,
+      "bounds": [
+        159,
+        75,
+        232,
+        337
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 25,
+      "bounds": [
+        147,
+        76,
+        231,
+        331
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 29,
+      "bounds": [
+        139,
+        76,
+        238,
+        331
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 33,
+      "bounds": [
+        136,
+        76,
+        240,
+        331
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 35,
+      "bounds": [
+        135,
+        76,
+        236,
+        331
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 39,
+      "bounds": [
+        135,
+        75,
+        231,
+        332
+      ]
+    },
+    {
+      "variant": "right60",
+      "frame": 41,
+      "bounds": [
+        135,
+        75,
+        231,
+        333
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 1,
+      "bounds": [
+        165,
+        72,
+        234,
+        326
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 9,
+      "bounds": [
+        165,
+        72,
+        234,
+        321
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 17,
+      "bounds": [
+        164,
+        71,
+        241,
+        321
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 25,
+      "bounds": [
+        159,
+        67,
+        252,
+        327
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 33,
+      "bounds": [
+        157,
+        66,
+        259,
+        314
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 41,
+      "bounds": [
+        156,
+        65,
+        259,
+        317
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 49,
+      "bounds": [
+        156,
+        66,
+        259,
+        315
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 57,
+      "bounds": [
+        151,
+        66,
+        260,
+        315
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 65,
+      "bounds": [
+        152,
+        66,
+        255,
+        315
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 69,
+      "bounds": [
+        152,
+        66,
+        252,
+        315
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 77,
+      "bounds": [
+        153,
+        66,
+        248,
+        315
+      ]
+    },
+    {
+      "variant": "left120",
+      "frame": 81,
+      "bounds": [
+        153,
+        66,
+        248,
+        316
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 1,
+      "bounds": [
+        165,
+        72,
+        234,
+        326
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 9,
+      "bounds": [
+        165,
+        73,
+        234,
+        327
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 17,
+      "bounds": [
+        165,
+        74,
+        232,
+        332
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 25,
+      "bounds": [
+        147,
+        76,
+        231,
+        331
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 33,
+      "bounds": [
+        136,
+        76,
+        240,
+        331
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 41,
+      "bounds": [
+        135,
+        75,
+        231,
+        333
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 49,
+      "bounds": [
+        135,
+        76,
+        231,
+        333
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 57,
+      "bounds": [
+        129,
+        76,
+        233,
+        326
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 65,
+      "bounds": [
+        124,
+        76,
+        233,
+        326
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 69,
+      "bounds": [
+        124,
+        75,
+        233,
+        326
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 77,
+      "bounds": [
+        125,
+        75,
+        228,
+        332
+      ]
+    },
+    {
+      "variant": "right120",
+      "frame": 81,
+      "bounds": [
+        125,
+        75,
+        228,
+        333
+      ]
+    }
+  ],
+  "nativeCarryPreservation": {
+    "right60": {
+      "carryActualSamples": 41,
+      "carryArmTriangleMax": 0,
+      "carryStrapTriangleMax": 0,
+      "allSetsNonempty": true,
+      "preservedNativeActionsAndAsymmetricGeometry": true
+    },
+    "left120": {
+      "carryActualSamples": 81,
+      "carryArmTriangleMax": 0,
+      "carryStrapTriangleMax": 0,
+      "allSetsNonempty": true,
+      "preservedNativeActionsAndAsymmetricGeometry": true
+    },
+    "right120": {
+      "carryActualSamples": 81,
+      "carryArmTriangleMax": 0,
+      "carryStrapTriangleMax": 0,
+      "allSetsNonempty": true,
+      "preservedNativeActionsAndAsymmetricGeometry": true
+    }
+  },
+  "right120Frame57RepeatRms": [
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ]
+}
