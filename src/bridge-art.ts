@@ -22,8 +22,8 @@ export function drawBridge(parent:Element,anchor:Hex,turns:number,radius:number,
  if(detailed){
   // One native asset registration, then the same ground camera as all tiles.
   // Exact three-cell clipping/hit geometry is independent of painted edges.
-  const scale=radius/328;
-  node('image',{href:`${import.meta.env.BASE_URL}assets/bridge-v2/bridge-painted-v2.webp`,x:-920*scale,y:-432*scale,width:1840*scale,height:854*scale},paint);
+  const scale=radius/330;
+  node('image',{href:`${import.meta.env.BASE_URL}assets/bridge-v2/bridge-floor-v3.webp`,x:-920*scale,y:-428*scale,width:1840*scale,height:854*scale},paint);
  }else{
   const deck=node('svg',{x:-length/2,y:-radius,width:length,height:radius*2,viewBox:'68 167 2033 359',preserveAspectRatio:'none',overflow:'hidden'},paint);
   node('image',{href:`${import.meta.env.BASE_URL}assets/bridge-v1/deck-v1.png`,width:2170,height:725},deck);
