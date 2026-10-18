@@ -1,0 +1,55 @@
+{
+  "sourceSha256Before": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+  "sourceSha256After": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+  "actualPoseSamples": 81,
+  "armBagAndGripPass": true,
+  "armBag": {
+    "maxTrianglePairs": {
+      "Ruta.MPFB.Body/L/hand": 0,
+      "Ruta.MPFB.Body/L/forearmHand": 0,
+      "Ruta.MPFB.Body/R/hand": 0,
+      "Ruta.MPFB.Body/R/forearmHand": 0,
+      "Ruta.male_casualsuit01/L/hand": 0,
+      "Ruta.male_casualsuit01/L/forearmHand": 0,
+      "Ruta.male_casualsuit01/R/hand": 0,
+      "Ruta.male_casualsuit01/R/forearmHand": 0
+    },
+    "elbowRangeDegrees": {
+      "L": [
+        7.524513871323222,
+        7.524513871323222
+      ],
+      "R": [
+        107.60491253406725,
+        110.1718205675631
+      ]
+    }
+  },
+  "grip": {
+    "gripNearestDistanceRangeMeters": {
+      "palm": [
+        0.0013552651507779956,
+        0.0013556176563724875
+      ],
+      "fingers": [
+        0.0022565294057130814,
+        0.0022568507120013237
+      ],
+      "thumb": [
+        0.0015517387073487043,
+        0.0015519944718107581
+      ]
+    },
+    "gripMaxTriangleIntersections": {
+      "palm": 0,
+      "fingers": 0,
+      "thumb": 0
+    },
+    "actualWristForeAftTravelMeters": {
+      "L": 0.009222762659192085,
+      "R": 2.384185791015625e-07
+    },
+    "relativeTorsoRotationExcursionDegrees": 3.999760058619936,
+    "rigLocalHeadRotationExcursionDegrees": 5.999922900450225
+  }
+}

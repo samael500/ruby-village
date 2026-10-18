@@ -1,0 +1,5004 @@
+{
+  "status": "AUTHOR ACTUAL NATIVE/BOOT/CARRY/IDLE JOIN PASS; COMPACT RASTER AND INDEPENDENT REVIEW PENDING",
+  "variant": "left120",
+  "appearance": "rejected generic technical mannequin",
+  "sourceRepositoryPath": "art/characters-mpfb-v1/motion/pivot-study/mpfb-compact-pivot60-technical.blend",
+  "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+  "retained60Actions": {
+    "Ruta.MPFB.StandardRig": "MPFB compact idle pivot60L / Ruta.MPFB.StandardRig",
+    "Motion ONE strap thumb pinch control": "MPFB compact idle pivot60L / Motion ONE strap thumb pinch contr",
+    "Motion ONE strap anatomical thumb pole": "MPFB compact idle pivot60L / Motion ONE strap anatomical thumb "
+  },
+  "sourceActions": {
+    "Ruta.MPFB.StandardRig": "Ruta.MPFB.StandardRigAction",
+    "Motion ONE strap thumb pinch control": "Motion ONE strap thumb pinch controlAction",
+    "Motion ONE strap anatomical thumb pole": "Motion ONE strap anatomical thumb poleAction"
+  },
+  "idleActions": {
+    "Ruta.MPFB.StandardRig": "MPFB transition idle / Ruta.MPFB.StandardRig",
+    "Motion ONE strap thumb pinch control": "MPFB transition idle / Motion ONE strap thumb pinch control",
+    "Motion ONE strap anatomical thumb pole": "MPFB transition idle / Motion ONE strap anatomical thumb pole"
+  },
+  "transitionClips": {
+    "idle": {
+      "durationMs": 180,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition idle / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition idle / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition idle / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "idle",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "idle",
+          "timeMs": 30,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "idle",
+          "timeMs": 60,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "idle",
+          "timeMs": 90,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "idle",
+          "timeMs": 120,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "idle",
+          "timeMs": 150,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "idle",
+          "timeMs": 180.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.0
+    },
+    "start-L": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition start-L / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition start-L / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition start-L / Motion ONE strap anatomical thumb pol"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "start",
+          "timeMs": 0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": -0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "start",
+          "timeMs": 30,
+          "cyclePhase": 0.5416666666666667,
+          "sourcePhase": 0.5416666666666667,
+          "poseAmplitude": 0.005087770061728394,
+          "rootDistanceMeters": 1.3028472931787307e-05,
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "rootZ": -0.002162078071064242,
+          "rootLateralExtraMeters": -0.002143593539448981,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "start",
+          "timeMs": 60,
+          "cyclePhase": 0.5833333333333333,
+          "sourcePhase": 0.5833333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootDistanceMeters": 0.00019748422128182866,
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "rootZ": -0.0029228395061728397,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "start",
+          "timeMs": 90,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.0009442214330037434,
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "rootZ": -0.0038632812499999995,
+          "rootLateralExtraMeters": -0.015999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "start",
+          "timeMs": 120,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootDistanceMeters": 0.0028086644804526744,
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "rootZ": -0.004098765432098766,
+          "rootLateralExtraMeters": -0.023999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "start",
+          "timeMs": 150,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootDistanceMeters": 0.006428522828184529,
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "rootZ": -0.0034362499307865313,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "start",
+          "timeMs": 180,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.012441505940755208,
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "rootZ": -0.003,
+          "rootLateralExtraMeters": -0.032,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "start",
+          "timeMs": 210,
+          "cyclePhase": 0.7916666666666667,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootDistanceMeters": 0.02140303819051986,
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "rootZ": -0.00470734360866245,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "start",
+          "timeMs": 240,
+          "cyclePhase": 0.8333333333333333,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootDistanceMeters": 0.0337039737654321,
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "rootZ": -0.009901234567901233,
+          "rootLateralExtraMeters": -0.024000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "start",
+          "timeMs": 270,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.04948831157684326,
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "rootZ": -0.01813671875,
+          "rootLateralExtraMeters": -0.016000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "start",
+          "timeMs": 300,
+          "cyclePhase": 0.9166666666666667,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootDistanceMeters": 0.06857091016730164,
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "rootZ": -0.02707716049382716,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "start",
+          "timeMs": 330,
+          "cyclePhase": 0.9583333333333333,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootDistanceMeters": 0.09035520261835168,
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "rootZ": -0.0336943283894868,
+          "rootLateralExtraMeters": -0.002143593539448986,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "start",
+          "timeMs": 360.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.11375091145833333,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": -4.799231304517945e-34,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 5.797304051425744e-22,
+              "anchorId": "L-start-land"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.11375091145833333
+    },
+    "start-R": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition start-R / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition start-R / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition start-R / Motion ONE strap anatomical thumb pol"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "start",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "start",
+          "timeMs": 30,
+          "cyclePhase": 0.041666666666666664,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.005087770061728394,
+          "rootDistanceMeters": 1.3028472931787307e-05,
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "rootZ": -0.002162078071064242,
+          "rootLateralExtraMeters": 0.002143593539448981,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "start",
+          "timeMs": 60,
+          "cyclePhase": 0.08333333333333333,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootDistanceMeters": 0.00019748422128182866,
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "rootZ": -0.0029228395061728397,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "start",
+          "timeMs": 90,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.0009442214330037434,
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "rootZ": -0.0038632812500000004,
+          "rootLateralExtraMeters": 0.015999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "start",
+          "timeMs": 120,
+          "cyclePhase": 0.16666666666666666,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootDistanceMeters": 0.0028086644804526744,
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "rootZ": -0.004098765432098766,
+          "rootLateralExtraMeters": 0.023999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "start",
+          "timeMs": 150,
+          "cyclePhase": 0.20833333333333334,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootDistanceMeters": 0.006428522828184529,
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "rootZ": -0.003436249930786533,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "start",
+          "timeMs": 180,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.012441505940755208,
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "rootZ": -0.003,
+          "rootLateralExtraMeters": 0.032,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "start",
+          "timeMs": 210,
+          "cyclePhase": 0.2916666666666667,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootDistanceMeters": 0.02140303819051986,
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "rootZ": -0.0047073436086624496,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "start",
+          "timeMs": 240,
+          "cyclePhase": 0.3333333333333333,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootDistanceMeters": 0.0337039737654321,
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "rootZ": -0.00990123456790123,
+          "rootLateralExtraMeters": 0.024000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "start",
+          "timeMs": 270,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.04948831157684326,
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "rootZ": -0.018136718749999996,
+          "rootLateralExtraMeters": 0.016000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "start",
+          "timeMs": 300,
+          "cyclePhase": 0.4166666666666667,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootDistanceMeters": 0.06857091016730164,
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "rootZ": -0.02707716049382716,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "start",
+          "timeMs": 330,
+          "cyclePhase": 0.4583333333333333,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootDistanceMeters": 0.09035520261835168,
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "rootZ": -0.03369432838948679,
+          "rootLateralExtraMeters": 0.002143593539448986,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "start",
+          "timeMs": 360.0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.11375091145833333,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 4.799231304517945e-34,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 5.797304051425744e-22,
+              "anchorId": "R-start-land"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.11375091145833333
+    },
+    "stop-L": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition stop-L / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition stop-L / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition stop-L / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "stop",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "stop",
+          "timeMs": 30,
+          "cyclePhase": 0.041666666666666664,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.9949122299382716,
+          "rootDistanceMeters": 0.023685078080887653,
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "rootZ": -0.03371467946973369,
+          "rootLateralExtraMeters": 0.002143593539448981,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "stop",
+          "timeMs": 60,
+          "cyclePhase": 0.08333333333333333,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.9645061728395061,
+          "rootDistanceMeters": 0.04719872888635705,
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "rootZ": -0.027219135802469138,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "stop",
+          "timeMs": 90,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.07015009822845458,
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "rootZ": -0.01855078125,
+          "rootLateralExtraMeters": 0.015999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11251209365819154,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "stop",
+          "timeMs": 120,
+          "cyclePhase": 0.16666666666666666,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootDistanceMeters": 0.09198376173482509,
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "rootZ": -0.010740740740740742,
+          "rootLateralExtraMeters": 0.023999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.09488996356879688,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "stop",
+          "timeMs": 150,
+          "cyclePhase": 0.20833333333333334,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootDistanceMeters": 0.11206200994091269,
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "rootZ": -0.006093821232119238,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.0503232017795793,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "stop",
+          "timeMs": 180,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.12974713338216143,
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "rootZ": -0.005,
+          "rootLateralExtraMeters": 0.032,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.01443184549901605,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "stop",
+          "timeMs": 210,
+          "cyclePhase": 0.2916666666666667,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootDistanceMeters": 0.14448370768621627,
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "rootZ": -0.006049772307329743,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.08292845502164278,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "stop",
+          "timeMs": 240,
+          "cyclePhase": 0.3333333333333333,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootDistanceMeters": 0.1558808786651234,
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "rootZ": -0.007259259259259258,
+          "rootLateralExtraMeters": 0.024000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.1371048407038042,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "stop",
+          "timeMs": 270,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.1637946474075317,
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "rootZ": -0.00744921875,
+          "rootLateralExtraMeters": 0.016000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.16535946781760447,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "stop",
+          "timeMs": 300,
+          "cyclePhase": 0.4166666666666667,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootDistanceMeters": 0.1684101553708928,
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "rootZ": -0.006780864197530868,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "stop",
+          "timeMs": 330,
+          "cyclePhase": 0.4583333333333333,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootDistanceMeters": 0.17032396947366218,
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "rootZ": -0.006141726990817305,
+          "rootLateralExtraMeters": 0.002143593539448986,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "stop",
+          "timeMs": 360.0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.17062636718749996,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": 4.799231304517945e-34,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.17062636718749996
+    },
+    "stop-R": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition stop-R / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition stop-R / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition stop-R / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "stop",
+          "timeMs": 0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": -0.0,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "stop",
+          "timeMs": 30,
+          "cyclePhase": 0.5416666666666666,
+          "sourcePhase": 0.5416666666666666,
+          "poseAmplitude": 0.9949122299382716,
+          "rootDistanceMeters": 0.023685078080887653,
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "rootZ": -0.033714679469733694,
+          "rootLateralExtraMeters": -0.002143593539448981,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "stop",
+          "timeMs": 60,
+          "cyclePhase": 0.5833333333333334,
+          "sourcePhase": 0.5833333333333334,
+          "poseAmplitude": 0.9645061728395061,
+          "rootDistanceMeters": 0.04719872888635705,
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "rootZ": -0.02721913580246913,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "stop",
+          "timeMs": 90,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.07015009822845458,
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "rootZ": -0.018550781250000002,
+          "rootLateralExtraMeters": -0.015999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11251209365819154,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "stop",
+          "timeMs": 120,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootDistanceMeters": 0.09198376173482509,
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "rootZ": -0.010740740740740749,
+          "rootLateralExtraMeters": -0.023999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.09488996356879688,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "stop",
+          "timeMs": 150,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootDistanceMeters": 0.11206200994091269,
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "rootZ": -0.006093821232119238,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.0503232017795793,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "stop",
+          "timeMs": 180,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.12974713338216143,
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "rootZ": -0.005,
+          "rootLateralExtraMeters": -0.032,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.01443184549901605,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "stop",
+          "timeMs": 210,
+          "cyclePhase": 0.7916666666666667,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootDistanceMeters": 0.14448370768621627,
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "rootZ": -0.006049772307329745,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.08292845502164278,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "stop",
+          "timeMs": 240,
+          "cyclePhase": 0.8333333333333333,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootDistanceMeters": 0.1558808786651234,
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "rootZ": -0.007259259259259255,
+          "rootLateralExtraMeters": -0.024000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.1371048407038042,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "stop",
+          "timeMs": 270,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.1637946474075317,
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "rootZ": -0.007449218749999999,
+          "rootLateralExtraMeters": -0.016000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.16535946781760447,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "stop",
+          "timeMs": 300,
+          "cyclePhase": 0.9166666666666667,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootDistanceMeters": 0.1684101553708928,
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "rootZ": -0.006780864197530868,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "stop",
+          "timeMs": 330,
+          "cyclePhase": 0.9583333333333333,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootDistanceMeters": 0.17032396947366218,
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "rootZ": -0.006141726990817305,
+          "rootLateralExtraMeters": -0.002143593539448986,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "stop",
+          "timeMs": 360.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.17062636718749996,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": -4.799231304517945e-34,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.17062636718749996
+    },
+    "settle": {
+      "durationMs": 180,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition settle / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition settle / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition settle / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "settle",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "settle",
+          "timeMs": 30,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.0058580246913580245,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "settle",
+          "timeMs": 60,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.005160493827160494,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "settle",
+          "timeMs": 90,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "settle",
+          "timeMs": 120,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002839506172839506,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "settle",
+          "timeMs": 150,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002141975308641976,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "settle",
+          "timeMs": 180.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.0
+    }
+  },
+  "turnActions": {
+    "Ruta.MPFB.StandardRig": "MPFB compact left120 two actual60 / Ruta.MPFB.StandardRig",
+    "Motion ONE strap thumb pinch control": "MPFB compact left120 two actual60 / Motion ONE strap thumb pinc",
+    "Motion ONE strap anatomical thumb pole": "MPFB compact left120 two actual60 / Motion ONE strap anatomical"
+  },
+  "angleRadians": 2.094395160675049,
+  "durationMs": 2400,
+  "segments": 2,
+  "segmentDurationMs": 1200,
+  "frames": [
+    {
+      "frame": 1.0,
+      "timeMs": 0.0,
+      "segment": 0,
+      "phase": 0.0,
+      "rootNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 1.3333333730697632,
+      "timeMs": 10.000001192092896,
+      "segment": 0,
+      "phase": 0.00833333432674408,
+      "rootNativeMeters": [
+        -8.963486470747739e-05,
+        -1.0894726074184291e-05,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 1.6666666269302368,
+      "timeMs": 19.999998807907104,
+      "segment": 0,
+      "phase": 0.01666666567325592,
+      "rootNativeMeters": [
+        -0.0006408921908587217,
+        -7.789764640619978e-05,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 2.0,
+      "timeMs": 30.0,
+      "segment": 0,
+      "phase": 0.025,
+      "rootNativeMeters": [
+        -0.0019214644562453032,
+        -0.00023354562290478498,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 2.3333332538604736,
+      "timeMs": 39.99999761581421,
+      "segment": 0,
+      "phase": 0.03333333134651184,
+      "rootNativeMeters": [
+        -0.0040189665742218494,
+        -0.0004884878289885819,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 2.6666667461395264,
+      "timeMs": 50.00000238418579,
+      "segment": 0,
+      "phase": 0.041666668653488156,
+      "rootNativeMeters": [
+        -0.006875565741211176,
+        -0.0008356949547305703,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 3.0,
+      "timeMs": 60.0,
+      "segment": 0,
+      "phase": 0.05,
+      "rootNativeMeters": [
+        -0.010322612710297108,
+        -0.0012546684592962265,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 3.3333332538604736,
+      "timeMs": 69.99999761581421,
+      "segment": 0,
+      "phase": 0.05833333134651184,
+      "rootNativeMeters": [
+        -0.014115269295871258,
+        -0.0017156493850052357,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 3.6666667461395264,
+      "timeMs": 80.00000238418579,
+      "segment": 0,
+      "phase": 0.06666666865348816,
+      "rootNativeMeters": [
+        -0.017967144027352333,
+        -0.0021838280372321606,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 4.0,
+      "timeMs": 90.0,
+      "segment": 0,
+      "phase": 0.075,
+      "rootNativeMeters": [
+        -0.021584918722510338,
+        -0.0026235526893287897,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 4.333333492279053,
+      "timeMs": 100.00000476837158,
+      "segment": 0,
+      "phase": 0.08333333730697631,
+      "rootNativeMeters": [
+        -0.024702977389097214,
+        -0.0030025390442460775,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 4.666666507720947,
+      "timeMs": 109.99999523162842,
+      "segment": 0,
+      "phase": 0.09166666269302368,
+      "rootNativeMeters": [
+        -0.02711804024875164,
+        -0.003296079346910119,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 5.0,
+      "timeMs": 120.0,
+      "segment": 0,
+      "phase": 0.1,
+      "rootNativeMeters": [
+        -0.028723789379000664,
+        -0.003491251263767481,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 5.333333492279053,
+      "timeMs": 130.00000476837158,
+      "segment": 0,
+      "phase": 0.10833333730697632,
+      "rootNativeMeters": [
+        -0.029545512050390244,
+        -0.0035911279264837503,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 5.666666507720947,
+      "timeMs": 139.99999523162842,
+      "segment": 0,
+      "phase": 0.11666666269302368,
+      "rootNativeMeters": [
+        -0.029774704948067665,
+        -0.003618985414505005,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 5.800000190734863,
+      "timeMs": 144.0000057220459,
+      "segment": 0,
+      "phase": 0.12000000476837158,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.0
+    },
+    {
+      "frame": 6.0,
+      "timeMs": 150.0,
+      "segment": 0,
+      "phase": 0.125,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 2.7319297259964515e-06
+    },
+    {
+      "frame": 6.333333492279053,
+      "timeMs": 160.00000476837158,
+      "segment": 0,
+      "phase": 0.13333333730697633,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 5.097510802443139e-05
+    },
+    {
+      "frame": 6.666666507720947,
+      "timeMs": 169.99999523162842,
+      "segment": 0,
+      "phase": 0.1416666626930237,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.00021520256996154785
+    },
+    {
+      "frame": 7.0,
+      "timeMs": 180.0,
+      "segment": 0,
+      "phase": 0.15,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.0005619662115350366
+    },
+    {
+      "frame": 7.333333492279053,
+      "timeMs": 190.00000476837158,
+      "segment": 0,
+      "phase": 0.15833333730697632,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.0011531789787113667
+    },
+    {
+      "frame": 7.666666507720947,
+      "timeMs": 199.99999523162842,
+      "segment": 0,
+      "phase": 0.1666666626930237,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.002046220237389207
+    },
+    {
+      "frame": 8.0,
+      "timeMs": 210.0,
+      "segment": 0,
+      "phase": 0.175,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.003294040448963642
+    },
+    {
+      "frame": 8.199999809265137,
+      "timeMs": 215.9999942779541,
+      "segment": 0,
+      "phase": 0.1799999952316284,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.004233431536704302
+    },
+    {
+      "frame": 8.333333015441895,
+      "timeMs": 219.99999046325684,
+      "segment": 0,
+      "phase": 0.18333332538604735,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.004945265594869852
+    },
+    {
+      "frame": 8.666666984558105,
+      "timeMs": 230.00000953674316,
+      "segment": 0,
+      "phase": 0.19166667461395265,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.007044303696602583
+    },
+    {
+      "frame": 9.0,
+      "timeMs": 240.0,
+      "segment": 0,
+      "phase": 0.2,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.009631447494029999
+    },
+    {
+      "frame": 9.333333015441895,
+      "timeMs": 249.99999046325684,
+      "segment": 0,
+      "phase": 0.20833332538604737,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.012742982245981693
+    },
+    {
+      "frame": 9.666666984558105,
+      "timeMs": 260.00000953674316,
+      "segment": 0,
+      "phase": 0.21666667461395264,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.01641128771007061
+    },
+    {
+      "frame": 10.0,
+      "timeMs": 270.0,
+      "segment": 0,
+      "phase": 0.225,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.020664943382143974
+    },
+    {
+      "frame": 10.333333015441895,
+      "timeMs": 279.99999046325684,
+      "segment": 0,
+      "phase": 0.23333332538604737,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.025528838858008385
+    },
+    {
+      "frame": 10.666666984558105,
+      "timeMs": 290.00000953674316,
+      "segment": 0,
+      "phase": 0.24166667461395264,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.031024269759655
+    },
+    {
+      "frame": 11.0,
+      "timeMs": 300.0,
+      "segment": 0,
+      "phase": 0.25,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.03716905042529106
+    },
+    {
+      "frame": 11.333333015441895,
+      "timeMs": 309.99999046325684,
+      "segment": 0,
+      "phase": 0.25833332538604736,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.043977610766887665
+    },
+    {
+      "frame": 11.666666984558105,
+      "timeMs": 320.00000953674316,
+      "segment": 0,
+      "phase": 0.26666667461395266,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.0514611154794693
+    },
+    {
+      "frame": 12.0,
+      "timeMs": 330.0,
+      "segment": 0,
+      "phase": 0.275,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.05962755158543587
+    },
+    {
+      "frame": 12.333333015441895,
+      "timeMs": 339.99999046325684,
+      "segment": 0,
+      "phase": 0.2833333253860474,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.06848184764385223
+    },
+    {
+      "frame": 12.666666984558105,
+      "timeMs": 350.00000953674316,
+      "segment": 0,
+      "phase": 0.2916666746139526,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.07802595943212509
+    },
+    {
+      "frame": 13.0,
+      "timeMs": 360.0,
+      "segment": 0,
+      "phase": 0.3,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.0882590115070343
+    },
+    {
+      "frame": 13.333333015441895,
+      "timeMs": 369.99999046325684,
+      "segment": 0,
+      "phase": 0.30833332538604735,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.09917735308408737
+    },
+    {
+      "frame": 13.666666984558105,
+      "timeMs": 380.00000953674316,
+      "segment": 0,
+      "phase": 0.31666667461395265,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.11077471077442169
+    },
+    {
+      "frame": 14.0,
+      "timeMs": 390.0,
+      "segment": 0,
+      "phase": 0.325,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.1230422630906105
+    },
+    {
+      "frame": 14.333333015441895,
+      "timeMs": 399.99999046325684,
+      "segment": 0,
+      "phase": 0.3333333253860474,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.13596872985363007
+    },
+    {
+      "frame": 14.666666984558105,
+      "timeMs": 410.00000953674316,
+      "segment": 0,
+      "phase": 0.3416666746139526,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.14954055845737457
+    },
+    {
+      "frame": 15.0,
+      "timeMs": 420.0,
+      "segment": 0,
+      "phase": 0.35,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.16374190151691437
+    },
+    {
+      "frame": 15.333333015441895,
+      "timeMs": 429.99999046325684,
+      "segment": 0,
+      "phase": 0.35833332538604734,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.17855484783649445
+    },
+    {
+      "frame": 15.666666984558105,
+      "timeMs": 440.00000953674316,
+      "segment": 0,
+      "phase": 0.36666667461395264,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.19395944476127625
+    },
+    {
+      "frame": 16.0,
+      "timeMs": 450.0,
+      "segment": 0,
+      "phase": 0.375,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.20993384718894958
+    },
+    {
+      "frame": 16.33333396911621,
+      "timeMs": 460.0000190734863,
+      "segment": 0,
+      "phase": 0.3833333492279053,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.22645436227321625
+    },
+    {
+      "frame": 16.66666603088379,
+      "timeMs": 469.9999809265137,
+      "segment": 0,
+      "phase": 0.3916666507720947,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.2434956431388855
+    },
+    {
+      "frame": 17.0,
+      "timeMs": 480.0,
+      "segment": 0,
+      "phase": 0.4,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.26103073358535767
+    },
+    {
+      "frame": 17.33333396911621,
+      "timeMs": 490.0000190734863,
+      "segment": 0,
+      "phase": 0.40833334922790526,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.2790311872959137
+    },
+    {
+      "frame": 17.66666603088379,
+      "timeMs": 499.9999809265137,
+      "segment": 0,
+      "phase": 0.41666665077209475,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.2974671423435211
+    },
+    {
+      "frame": 18.0,
+      "timeMs": 510.0,
+      "segment": 0,
+      "phase": 0.425,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.31630754470825195
+    },
+    {
+      "frame": 18.33333396911621,
+      "timeMs": 520.0000190734863,
+      "segment": 0,
+      "phase": 0.4333333492279053,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.33552002906799316
+    },
+    {
+      "frame": 18.600000381469727,
+      "timeMs": 528.0000114440918,
+      "segment": 0,
+      "phase": 0.4400000095367432,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.35113558173179626
+    },
+    {
+      "frame": 18.66666603088379,
+      "timeMs": 529.9999809265137,
+      "segment": 0,
+      "phase": 0.4416666507720947,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.3550713062286377
+    },
+    {
+      "frame": 19.0,
+      "timeMs": 540.0,
+      "segment": 0,
+      "phase": 0.45,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.37492698431015015
+    },
+    {
+      "frame": 19.33333396911621,
+      "timeMs": 550.0000190734863,
+      "segment": 0,
+      "phase": 0.45833334922790525,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.3950519263744354
+    },
+    {
+      "frame": 19.66666603088379,
+      "timeMs": 559.9999809265137,
+      "segment": 0,
+      "phase": 0.46666665077209474,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.4154101610183716
+    },
+    {
+      "frame": 20.0,
+      "timeMs": 570.0,
+      "segment": 0,
+      "phase": 0.475,
+      "rootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "yawRadians": 0.4359651207923889
+    },
+    {
+      "frame": 20.33333396911621,
+      "timeMs": 580.0000190734863,
+      "segment": 0,
+      "phase": 0.4833333492279053,
+      "rootNativeMeters": [
+        -0.029776638373732567,
+        -0.0036173108965158463,
+        0.0
+      ],
+      "yawRadians": 0.45667967200279236
+    },
+    {
+      "frame": 20.66666603088379,
+      "timeMs": 589.9999809265137,
+      "segment": 0,
+      "phase": 0.4916666507720947,
+      "rootNativeMeters": [
+        -0.029615169391036034,
+        -0.0035240878351032734,
+        0.0
+      ],
+      "yawRadians": 0.47751617431640625
+    },
+    {
+      "frame": 21.0,
+      "timeMs": 600.0,
+      "segment": 0,
+      "phase": 0.5,
+      "rootNativeMeters": [
+        -0.029013432562351227,
+        -0.003176674246788025,
+        0.0
+      ],
+      "yawRadians": 0.4984367787837982
+    },
+    {
+      "frame": 21.33333396911621,
+      "timeMs": 610.0000190734863,
+      "segment": 0,
+      "phase": 0.5083333492279053,
+      "rootNativeMeters": [
+        -0.027781331911683083,
+        -0.002465320285409689,
+        0.0
+      ],
+      "yawRadians": 0.519403338432312
+    },
+    {
+      "frame": 21.66666603088379,
+      "timeMs": 619.9999809265137,
+      "segment": 0,
+      "phase": 0.5166666507720947,
+      "rootNativeMeters": [
+        -0.025823751464486122,
+        -0.001335111097432673,
+        0.0
+      ],
+      "yawRadians": 0.5403774976730347
+    },
+    {
+      "frame": 22.0,
+      "timeMs": 630.0,
+      "segment": 0,
+      "phase": 0.525,
+      "rootNativeMeters": [
+        -0.023127371445298195,
+        0.0002216441062046215,
+        0.0
+      ],
+      "yawRadians": 0.5613210797309875
+    },
+    {
+      "frame": 22.33333396911621,
+      "timeMs": 640.0000190734863,
+      "segment": 0,
+      "phase": 0.5333333492279053,
+      "rootNativeMeters": [
+        -0.01974746398627758,
+        0.002173034707084298,
+        0.0
+      ],
+      "yawRadians": 0.5821958184242249
+    },
+    {
+      "frame": 22.66666603088379,
+      "timeMs": 649.9999809265137,
+      "segment": 0,
+      "phase": 0.5416666507720947,
+      "rootNativeMeters": [
+        -0.01579470932483673,
+        0.004455158952623606,
+        0.0
+      ],
+      "yawRadians": 0.6029636859893799
+    },
+    {
+      "frame": 23.0,
+      "timeMs": 660.0,
+      "segment": 0,
+      "phase": 0.55,
+      "rootNativeMeters": [
+        -0.01142200268805027,
+        0.006979743018746376,
+        0.0
+      ],
+      "yawRadians": 0.6235869526863098
+    },
+    {
+      "frame": 23.33333396911621,
+      "timeMs": 670.0000190734863,
+      "segment": 0,
+      "phase": 0.5583333492279052,
+      "rootNativeMeters": [
+        -0.006811258848756552,
+        0.009641757234930992,
+        0.0
+      ],
+      "yawRadians": 0.6440283060073853
+    },
+    {
+      "frame": 23.66666603088379,
+      "timeMs": 679.9999809265137,
+      "segment": 0,
+      "phase": 0.5666666507720948,
+      "rootNativeMeters": [
+        -0.0021602297201752663,
+        0.01232703123241663,
+        0.0
+      ],
+      "yawRadians": 0.664250910282135
+    },
+    {
+      "frame": 24.0,
+      "timeMs": 690.0,
+      "segment": 0,
+      "phase": 0.575,
+      "rootNativeMeters": [
+        0.002330704592168331,
+        0.014919874258339405,
+        0.0
+      ],
+      "yawRadians": 0.6842185854911804
+    },
+    {
+      "frame": 24.33333396911621,
+      "timeMs": 700.0000190734863,
+      "segment": 0,
+      "phase": 0.5833333492279053,
+      "rootNativeMeters": [
+        0.006471708416938782,
+        0.01731068268418312,
+        0.0
+      ],
+      "yawRadians": 0.7038957476615906
+    },
+    {
+      "frame": 24.66666603088379,
+      "timeMs": 709.9999809265137,
+      "segment": 0,
+      "phase": 0.5916666507720947,
+      "rootNativeMeters": [
+        0.010096694342792034,
+        0.019403571262955666,
+        0.0
+      ],
+      "yawRadians": 0.7232478260993958
+    },
+    {
+      "frame": 25.0,
+      "timeMs": 720.0,
+      "segment": 0,
+      "phase": 0.6,
+      "rootNativeMeters": [
+        0.01307651773095131,
+        0.021123971790075302,
+        0.0
+      ],
+      "yawRadians": 0.7422409653663635
+    },
+    {
+      "frame": 25.33333396911621,
+      "timeMs": 730.0000190734863,
+      "segment": 0,
+      "phase": 0.6083333492279053,
+      "rootNativeMeters": [
+        0.015332157723605633,
+        0.022426266223192215,
+        0.0
+      ],
+      "yawRadians": 0.760842502117157
+    },
+    {
+      "frame": 25.66666603088379,
+      "timeMs": 739.9999809265137,
+      "segment": 0,
+      "phase": 0.6166666507720947,
+      "rootNativeMeters": [
+        0.01684790849685669,
+        0.023301387205719948,
+        0.0
+      ],
+      "yawRadians": 0.7790208458900452
+    },
+    {
+      "frame": 25.799999237060547,
+      "timeMs": 743.9999771118164,
+      "segment": 0,
+      "phase": 0.6199999809265136,
+      "rootNativeMeters": [
+        0.017257794737815857,
+        0.023538032546639442,
+        0.0
+      ],
+      "yawRadians": 0.7861668467521667
+    },
+    {
+      "frame": 26.0,
+      "timeMs": 750.0,
+      "segment": 0,
+      "phase": 0.625,
+      "rootNativeMeters": [
+        0.01768459379673004,
+        0.023784447461366653,
+        0.0
+      ],
+      "yawRadians": 0.7967455983161926
+    },
+    {
+      "frame": 26.33333396911621,
+      "timeMs": 760.0000190734863,
+      "segment": 0,
+      "phase": 0.6333333492279053,
+      "rootNativeMeters": [
+        0.01799273118376732,
+        0.02396235056221485,
+        0.0
+      ],
+      "yawRadians": 0.813987672328949
+    },
+    {
+      "frame": 26.66666603088379,
+      "timeMs": 769.9999809265137,
+      "segment": 0,
+      "phase": 0.6416666507720947,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.8307196497917175
+    },
+    {
+      "frame": 27.0,
+      "timeMs": 780.0,
+      "segment": 0,
+      "phase": 0.65,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.8469154238700867
+    },
+    {
+      "frame": 27.33333396911621,
+      "timeMs": 790.0000190734863,
+      "segment": 0,
+      "phase": 0.6583333492279053,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.862550675868988
+    },
+    {
+      "frame": 27.66666603088379,
+      "timeMs": 799.9999809265137,
+      "segment": 0,
+      "phase": 0.6666666507720947,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.877602756023407
+    },
+    {
+      "frame": 28.0,
+      "timeMs": 810.0,
+      "segment": 0,
+      "phase": 0.675,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.8920510411262512
+    },
+    {
+      "frame": 28.200000762939453,
+      "timeMs": 816.0000228881836,
+      "segment": 0,
+      "phase": 0.6800000190734863,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9004222750663757
+    },
+    {
+      "frame": 28.33333396911621,
+      "timeMs": 820.0000190734863,
+      "segment": 0,
+      "phase": 0.6833333492279052,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9058766961097717
+    },
+    {
+      "frame": 28.66666603088379,
+      "timeMs": 829.9999809265137,
+      "segment": 0,
+      "phase": 0.6916666507720948,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9190630912780762
+    },
+    {
+      "frame": 29.0,
+      "timeMs": 840.0,
+      "segment": 0,
+      "phase": 0.7,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9315956830978394
+    },
+    {
+      "frame": 29.33333396911621,
+      "timeMs": 850.0000190734863,
+      "segment": 0,
+      "phase": 0.7083333492279053,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9434623122215271
+    },
+    {
+      "frame": 29.66666603088379,
+      "timeMs": 859.9999809265137,
+      "segment": 0,
+      "phase": 0.7166666507720947,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9546531438827515
+    },
+    {
+      "frame": 30.0,
+      "timeMs": 870.0,
+      "segment": 0,
+      "phase": 0.725,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9651609063148499
+    },
+    {
+      "frame": 30.33333396911621,
+      "timeMs": 880.0000190734863,
+      "segment": 0,
+      "phase": 0.7333333492279053,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9749808311462402
+    },
+    {
+      "frame": 30.66666603088379,
+      "timeMs": 889.9999809265137,
+      "segment": 0,
+      "phase": 0.7416666507720947,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9841110110282898
+    },
+    {
+      "frame": 31.0,
+      "timeMs": 900.0,
+      "segment": 0,
+      "phase": 0.75,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 0.9925521612167358
+    },
+    {
+      "frame": 31.33333396911621,
+      "timeMs": 910.0000190734863,
+      "segment": 0,
+      "phase": 0.7583333492279053,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0003080368041992
+    },
+    {
+      "frame": 31.66666603088379,
+      "timeMs": 919.9999809265137,
+      "segment": 0,
+      "phase": 0.7666666507720947,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0073853731155396
+    },
+    {
+      "frame": 32.0,
+      "timeMs": 930.0,
+      "segment": 0,
+      "phase": 0.775,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.013794183731079
+    },
+    {
+      "frame": 32.33333206176758,
+      "timeMs": 939.9999618530273,
+      "segment": 0,
+      "phase": 0.7833333015441895,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0195473432540894
+    },
+    {
+      "frame": 32.66666793823242,
+      "timeMs": 950.0000381469727,
+      "segment": 0,
+      "phase": 0.7916666984558105,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0246615409851074
+    },
+    {
+      "frame": 33.0,
+      "timeMs": 960.0,
+      "segment": 0,
+      "phase": 0.8,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0291565656661987
+    },
+    {
+      "frame": 33.33333206176758,
+      "timeMs": 969.9999618530273,
+      "segment": 0,
+      "phase": 0.8083333015441895,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0330557823181152
+    },
+    {
+      "frame": 33.66666793823242,
+      "timeMs": 980.0000381469727,
+      "segment": 0,
+      "phase": 0.8166666984558105,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0363863706588745
+    },
+    {
+      "frame": 34.0,
+      "timeMs": 990.0,
+      "segment": 0,
+      "phase": 0.825,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0391790866851807
+    },
+    {
+      "frame": 34.33333206176758,
+      "timeMs": 999.9999618530273,
+      "segment": 0,
+      "phase": 0.8333333015441895,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0414687395095825
+    },
+    {
+      "frame": 34.66666793823242,
+      "timeMs": 1010.0000381469727,
+      "segment": 0,
+      "phase": 0.8416666984558105,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0432939529418945
+    },
+    {
+      "frame": 35.0,
+      "timeMs": 1020.0,
+      "segment": 0,
+      "phase": 0.85,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.044697642326355
+    },
+    {
+      "frame": 35.33333206176758,
+      "timeMs": 1029.9999618530273,
+      "segment": 0,
+      "phase": 0.8583333015441894,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0457264184951782
+    },
+    {
+      "frame": 35.66666793823242,
+      "timeMs": 1040.0000381469727,
+      "segment": 0,
+      "phase": 0.8666666984558106,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.0464317798614502
+    },
+    {
+      "frame": 36.0,
+      "timeMs": 1050.0,
+      "segment": 0,
+      "phase": 0.875,
+      "rootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "yawRadians": 1.046869158744812
+    },
+    {
+      "frame": 36.33333206176758,
+      "timeMs": 1059.9999618530273,
+      "segment": 0,
+      "phase": 0.8833333015441894,
+      "rootNativeMeters": [
+        0.018021482974290848,
+        0.02397616021335125,
+        0.0
+      ],
+      "yawRadians": 1.0470986366271973
+    },
+    {
+      "frame": 36.66666793823242,
+      "timeMs": 1070.0000381469727,
+      "segment": 0,
+      "phase": 0.8916666984558106,
+      "rootNativeMeters": [
+        0.017882760614156723,
+        0.02379160188138485,
+        0.0
+      ],
+      "yawRadians": 1.047184944152832
+    },
+    {
+      "frame": 37.0,
+      "timeMs": 1080.0,
+      "segment": 0,
+      "phase": 0.9,
+      "rootNativeMeters": [
+        0.01738540455698967,
+        0.023129908367991447,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 37.33333206176758,
+      "timeMs": 1089.9999618530273,
+      "segment": 0,
+      "phase": 0.9083333015441895,
+      "rootNativeMeters": [
+        0.016413506120443344,
+        0.02183687314391136,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 37.66666793823242,
+      "timeMs": 1100.0000381469727,
+      "segment": 0,
+      "phase": 0.9166666984558105,
+      "rootNativeMeters": [
+        0.014951761811971664,
+        0.019892137497663498,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 38.0,
+      "timeMs": 1110.0,
+      "segment": 0,
+      "phase": 0.925,
+      "rootNativeMeters": [
+        0.013064521364867687,
+        0.01738131232559681,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 38.33333206176758,
+      "timeMs": 1119.9999618530273,
+      "segment": 0,
+      "phase": 0.9333333015441895,
+      "rootNativeMeters": [
+        0.010874821804463863,
+        0.014468090608716011,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 38.66666793823242,
+      "timeMs": 1130.0000381469727,
+      "segment": 0,
+      "phase": 0.9416666984558105,
+      "rootNativeMeters": [
+        0.008543429896235466,
+        0.011366358026862144,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 39.0,
+      "timeMs": 1140.0,
+      "segment": 0,
+      "phase": 0.95,
+      "rootNativeMeters": [
+        0.006247880402952433,
+        0.00831231102347374,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 39.33333206176758,
+      "timeMs": 1149.9999618530273,
+      "segment": 0,
+      "phase": 0.9583333015441895,
+      "rootNativeMeters": [
+        0.004161515273153782,
+        0.00553656741976738,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 39.400001525878906,
+      "timeMs": 1152.0000457763672,
+      "segment": 0,
+      "phase": 0.9600000381469727,
+      "rootNativeMeters": [
+        0.0037830641958862543,
+        0.0050330678932368755,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 39.66666793823242,
+      "timeMs": 1160.0000381469727,
+      "segment": 0,
+      "phase": 0.9666666984558105,
+      "rootNativeMeters": [
+        0.0024325258564203978,
+        0.0032362835481762886,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 40.0,
+      "timeMs": 1170.0,
+      "segment": 0,
+      "phase": 0.975,
+      "rootNativeMeters": [
+        0.0011629885993897915,
+        0.001547264400869608,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 40.33333206176758,
+      "timeMs": 1179.9999618530273,
+      "segment": 0,
+      "phase": 0.9833333015441894,
+      "rootNativeMeters": [
+        0.00038790737744420767,
+        0.0005160801229067147,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 40.66666793823242,
+      "timeMs": 1190.0000381469727,
+      "segment": 0,
+      "phase": 0.9916666984558106,
+      "rootNativeMeters": [
+        5.425253766588867e-05,
+        7.217871461762115e-05,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 41.0,
+      "timeMs": 1200.0,
+      "segment": 0,
+      "phase": 1.0,
+      "rootNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 41.33333337306976,
+      "timeMs": 1210.000001192093,
+      "segment": 1,
+      "phase": 0.00833333432674408,
+      "rootNativeMeters": [
+        -3.538231976563111e-05,
+        -8.307343523483723e-05,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 41.66666662693024,
+      "timeMs": 1219.999998807907,
+      "segment": 1,
+      "phase": 0.01666666567325592,
+      "rootNativeMeters": [
+        -0.0002529847261030227,
+        -0.0005939778056927025,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 42.0,
+      "timeMs": 1230.0,
+      "segment": 1,
+      "phase": 0.025,
+      "rootNativeMeters": [
+        -0.0007584757404401898,
+        -0.0017808099510148168,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 42.333333253860474,
+      "timeMs": 1239.9999976158142,
+      "segment": 1,
+      "phase": 0.03333333134651184,
+      "rootNativeMeters": [
+        -0.0015864401357248425,
+        -0.003724771086126566,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 42.666666746139526,
+      "timeMs": 1250.0000023841858,
+      "segment": 1,
+      "phase": 0.041666668653488156,
+      "rootNativeMeters": [
+        -0.0027140495367348194,
+        -0.0063722627237439156,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 43.0,
+      "timeMs": 1260.0,
+      "segment": 1,
+      "phase": 0.05,
+      "rootNativeMeters": [
+        -0.004074730910360813,
+        -0.009566979482769966,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 43.333333253860474,
+      "timeMs": 1269.9999976158142,
+      "segment": 1,
+      "phase": 0.05833333134651184,
+      "rootNativeMeters": [
+        -0.00557183800265193,
+        -0.013082006946206093,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 43.666666746139526,
+      "timeMs": 1280.0000023841858,
+      "segment": 1,
+      "phase": 0.06666666865348816,
+      "rootNativeMeters": [
+        -0.0070923203602433205,
+        -0.01665191724896431,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 44.0,
+      "timeMs": 1290.0,
+      "segment": 1,
+      "phase": 0.075,
+      "rootNativeMeters": [
+        -0.008520394563674927,
+        -0.020004864782094955,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 44.33333349227905,
+      "timeMs": 1300.0000047683716,
+      "segment": 1,
+      "phase": 0.08333333730697631,
+      "rootNativeMeters": [
+        -0.009751212783157825,
+        -0.02289467677474022,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 44.66666650772095,
+      "timeMs": 1309.9999952316284,
+      "segment": 1,
+      "phase": 0.09166666269302368,
+      "rootNativeMeters": [
+        -0.010704530403017998,
+        -0.025132954120635986,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 45.0,
+      "timeMs": 1320.0,
+      "segment": 1,
+      "phase": 0.1,
+      "rootNativeMeters": [
+        -0.011338381096720695,
+        -0.02662115916609764,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 45.33333349227905,
+      "timeMs": 1330.0000047683716,
+      "segment": 1,
+      "phase": 0.10833333730697632,
+      "rootNativeMeters": [
+        -0.011662746779620647,
+        -0.027382729575037956,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 45.66666650772095,
+      "timeMs": 1339.9999952316284,
+      "segment": 1,
+      "phase": 0.11666666269302368,
+      "rootNativeMeters": [
+        -0.011753218248486519,
+        -0.027595145627856255,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 45.80000019073486,
+      "timeMs": 1344.000005722046,
+      "segment": 1,
+      "phase": 0.12000000476837158,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0471975803375244
+    },
+    {
+      "frame": 46.0,
+      "timeMs": 1350.0,
+      "segment": 1,
+      "phase": 0.125,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.047200322151184
+    },
+    {
+      "frame": 46.33333349227905,
+      "timeMs": 1360.0000047683716,
+      "segment": 1,
+      "phase": 0.13333333730697633,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0472486019134521
+    },
+    {
+      "frame": 46.66666650772095,
+      "timeMs": 1369.9999952316284,
+      "segment": 1,
+      "phase": 0.1416666626930237,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0474127531051636
+    },
+    {
+      "frame": 47.0,
+      "timeMs": 1380.0,
+      "segment": 1,
+      "phase": 0.15,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0477595329284668
+    },
+    {
+      "frame": 47.33333349227905,
+      "timeMs": 1390.0000047683716,
+      "segment": 1,
+      "phase": 0.15833333730697632,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0483508110046387
+    },
+    {
+      "frame": 47.66666650772095,
+      "timeMs": 1399.9999952316284,
+      "segment": 1,
+      "phase": 0.1666666626930237,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0492438077926636
+    },
+    {
+      "frame": 48.0,
+      "timeMs": 1410.0,
+      "segment": 1,
+      "phase": 0.175,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0504915714263916
+    },
+    {
+      "frame": 48.19999980926514,
+      "timeMs": 1415.999994277954,
+      "segment": 1,
+      "phase": 0.1799999952316284,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0514310598373413
+    },
+    {
+      "frame": 48.333333015441895,
+      "timeMs": 1419.9999904632568,
+      "segment": 1,
+      "phase": 0.18333332538604735,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.052142858505249
+    },
+    {
+      "frame": 48.666666984558105,
+      "timeMs": 1430.0000095367432,
+      "segment": 1,
+      "phase": 0.19166667461395265,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0542418956756592
+    },
+    {
+      "frame": 49.0,
+      "timeMs": 1440.0,
+      "segment": 1,
+      "phase": 0.2,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0568289756774902
+    },
+    {
+      "frame": 49.333333015441895,
+      "timeMs": 1449.9999904632568,
+      "segment": 1,
+      "phase": 0.20833332538604737,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0599405765533447
+    },
+    {
+      "frame": 49.666666984558105,
+      "timeMs": 1460.0000095367432,
+      "segment": 1,
+      "phase": 0.21666667461395264,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0636088848114014
+    },
+    {
+      "frame": 50.0,
+      "timeMs": 1470.0,
+      "segment": 1,
+      "phase": 0.225,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0678625106811523
+    },
+    {
+      "frame": 50.333333015441895,
+      "timeMs": 1479.9999904632568,
+      "segment": 1,
+      "phase": 0.23333332538604737,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0727263689041138
+    },
+    {
+      "frame": 50.666666984558105,
+      "timeMs": 1490.0000095367432,
+      "segment": 1,
+      "phase": 0.24166667461395264,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0782217979431152
+    },
+    {
+      "frame": 51.0,
+      "timeMs": 1500.0,
+      "segment": 1,
+      "phase": 0.25,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0843666791915894
+    },
+    {
+      "frame": 51.333333015441895,
+      "timeMs": 1509.9999904632568,
+      "segment": 1,
+      "phase": 0.25833332538604736,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0911751985549927
+    },
+    {
+      "frame": 51.666666984558105,
+      "timeMs": 1520.0000095367432,
+      "segment": 1,
+      "phase": 0.26666667461395266,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.0986586809158325
+    },
+    {
+      "frame": 52.0,
+      "timeMs": 1530.0,
+      "segment": 1,
+      "phase": 0.275,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.1068251132965088
+    },
+    {
+      "frame": 52.333333015441895,
+      "timeMs": 1539.9999904632568,
+      "segment": 1,
+      "phase": 0.2833333253860474,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.115679383277893
+    },
+    {
+      "frame": 52.666666984558105,
+      "timeMs": 1550.0000095367432,
+      "segment": 1,
+      "phase": 0.2916666746139526,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.1252235174179077
+    },
+    {
+      "frame": 53.0,
+      "timeMs": 1560.0,
+      "segment": 1,
+      "phase": 0.3,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.1354565620422363
+    },
+    {
+      "frame": 53.333333015441895,
+      "timeMs": 1569.9999904632568,
+      "segment": 1,
+      "phase": 0.30833332538604735,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.1463749408721924
+    },
+    {
+      "frame": 53.666666984558105,
+      "timeMs": 1580.0000095367432,
+      "segment": 1,
+      "phase": 0.31666667461395265,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.1579723358154297
+    },
+    {
+      "frame": 54.0,
+      "timeMs": 1590.0,
+      "segment": 1,
+      "phase": 0.325,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.170239806175232
+    },
+    {
+      "frame": 54.333333015441895,
+      "timeMs": 1599.9999904632568,
+      "segment": 1,
+      "phase": 0.3333333253860474,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.183166265487671
+    },
+    {
+      "frame": 54.666666984558105,
+      "timeMs": 1610.0000095367432,
+      "segment": 1,
+      "phase": 0.3416666746139526,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.1967381238937378
+    },
+    {
+      "frame": 55.0,
+      "timeMs": 1620.0,
+      "segment": 1,
+      "phase": 0.35,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.2109395265579224
+    },
+    {
+      "frame": 55.333333015441895,
+      "timeMs": 1629.9999904632568,
+      "segment": 1,
+      "phase": 0.35833332538604734,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.2257524728775024
+    },
+    {
+      "frame": 55.666666984558105,
+      "timeMs": 1640.0000095367432,
+      "segment": 1,
+      "phase": 0.36666667461395264,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.241157054901123
+    },
+    {
+      "frame": 56.0,
+      "timeMs": 1650.0,
+      "segment": 1,
+      "phase": 0.375,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.2571314573287964
+    },
+    {
+      "frame": 56.33333396911621,
+      "timeMs": 1660.0000190734863,
+      "segment": 1,
+      "phase": 0.3833333492279053,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.2736519575119019
+    },
+    {
+      "frame": 56.66666603088379,
+      "timeMs": 1669.9999809265137,
+      "segment": 1,
+      "phase": 0.3916666507720947,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.2906932830810547
+    },
+    {
+      "frame": 57.0,
+      "timeMs": 1680.0,
+      "segment": 1,
+      "phase": 0.4,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.3082282543182373
+    },
+    {
+      "frame": 57.33333396911621,
+      "timeMs": 1690.0000190734863,
+      "segment": 1,
+      "phase": 0.40833334922790526,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.3262287378311157
+    },
+    {
+      "frame": 57.66666603088379,
+      "timeMs": 1699.9999809265137,
+      "segment": 1,
+      "phase": 0.41666665077209475,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.3446646928787231
+    },
+    {
+      "frame": 58.0,
+      "timeMs": 1710.0,
+      "segment": 1,
+      "phase": 0.425,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.3635051250457764
+    },
+    {
+      "frame": 58.33333396911621,
+      "timeMs": 1720.0000190734863,
+      "segment": 1,
+      "phase": 0.4333333492279053,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.3827176094055176
+    },
+    {
+      "frame": 58.60000038146973,
+      "timeMs": 1728.0000114440918,
+      "segment": 1,
+      "phase": 0.4400000095367432,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.398333191871643
+    },
+    {
+      "frame": 58.66666603088379,
+      "timeMs": 1729.9999809265137,
+      "segment": 1,
+      "phase": 0.4416666507720947,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.402268886566162
+    },
+    {
+      "frame": 59.0,
+      "timeMs": 1740.0,
+      "segment": 1,
+      "phase": 0.45,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.4221246242523193
+    },
+    {
+      "frame": 59.33333396911621,
+      "timeMs": 1750.0000190734863,
+      "segment": 1,
+      "phase": 0.45833334922790525,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.4422495365142822
+    },
+    {
+      "frame": 59.66666603088379,
+      "timeMs": 1759.9999809265137,
+      "segment": 1,
+      "phase": 0.46666665077209474,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.462607741355896
+    },
+    {
+      "frame": 60.0,
+      "timeMs": 1770.0,
+      "segment": 1,
+      "phase": 0.475,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.027600817382335663,
+        0.0
+      ],
+      "yawRadians": 1.4831626415252686
+    },
+    {
+      "frame": 60.33333396911621,
+      "timeMs": 1780.0000190734863,
+      "segment": 1,
+      "phase": 0.4833333492279053,
+      "rootNativeMeters": [
+        -0.011755635030567646,
+        -0.02759598195552826,
+        0.0
+      ],
+      "yawRadians": 1.5038772821426392
+    },
+    {
+      "frame": 60.66666603088379,
+      "timeMs": 1789.9999809265137,
+      "segment": 1,
+      "phase": 0.4916666507720947,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.02740953490138054,
+        0.0
+      ],
+      "yawRadians": 1.5247137546539307
+    },
+    {
+      "frame": 61.0,
+      "timeMs": 1800.0,
+      "segment": 1,
+      "phase": 0.5,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.026714708656072617,
+        0.0
+      ],
+      "yawRadians": 1.545634388923645
+    },
+    {
+      "frame": 61.33333396911621,
+      "timeMs": 1810.0000190734863,
+      "segment": 1,
+      "phase": 0.5083333492279053,
+      "rootNativeMeters": [
+        -0.011755635030567646,
+        -0.02529199980199337,
+        0.0
+      ],
+      "yawRadians": 1.5666009187698364
+    },
+    {
+      "frame": 61.66666603088379,
+      "timeMs": 1819.9999809265137,
+      "segment": 1,
+      "phase": 0.5166666507720947,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.023031581193208694,
+        0.0
+      ],
+      "yawRadians": 1.587575078010559
+    },
+    {
+      "frame": 62.0,
+      "timeMs": 1830.0,
+      "segment": 1,
+      "phase": 0.525,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.01991807110607624,
+        0.0
+      ],
+      "yawRadians": 1.6085186004638672
+    },
+    {
+      "frame": 62.33333396911621,
+      "timeMs": 1840.0000190734863,
+      "segment": 1,
+      "phase": 0.5333333492279053,
+      "rootNativeMeters": [
+        -0.011755634099245071,
+        -0.01601528748869896,
+        0.0
+      ],
+      "yawRadians": 1.6293933391571045
+    },
+    {
+      "frame": 62.66666603088379,
+      "timeMs": 1849.9999809265137,
+      "segment": 1,
+      "phase": 0.5416666507720947,
+      "rootNativeMeters": [
+        -0.011755635030567646,
+        -0.01145104132592678,
+        0.0
+      ],
+      "yawRadians": 1.6501612663269043
+    },
+    {
+      "frame": 63.0,
+      "timeMs": 1860.0,
+      "segment": 1,
+      "phase": 0.55,
+      "rootNativeMeters": [
+        -0.01175563596189022,
+        -0.00640187319368124,
+        0.0
+      ],
+      "yawRadians": 1.6707844734191895
+    },
+    {
+      "frame": 63.33333396911621,
+      "timeMs": 1870.0000190734863,
+      "segment": 1,
+      "phase": 0.5583333492279052,
+      "rootNativeMeters": [
+        -0.01175563596189022,
+        -0.0010778452269732952,
+        0.0
+      ],
+      "yawRadians": 1.6912258863449097
+    },
+    {
+      "frame": 63.66666603088379,
+      "timeMs": 1879.9999809265137,
+      "segment": 1,
+      "phase": 0.5666666507720948,
+      "rootNativeMeters": [
+        -0.011755636893212795,
+        0.004292701371014118,
+        0.0
+      ],
+      "yawRadians": 1.7114484310150146
+    },
+    {
+      "frame": 64.0,
+      "timeMs": 1890.0,
+      "segment": 1,
+      "phase": 0.575,
+      "rootNativeMeters": [
+        -0.011755638755857944,
+        0.009478386491537094,
+        0.0
+      ],
+      "yawRadians": 1.7314162254333496
+    },
+    {
+      "frame": 64.33333396911621,
+      "timeMs": 1900.0000190734863,
+      "segment": 1,
+      "phase": 0.5833333492279053,
+      "rootNativeMeters": [
+        -0.01175563782453537,
+        0.014260005205869675,
+        0.0
+      ],
+      "yawRadians": 1.7510933876037598
+    },
+    {
+      "frame": 64.66666603088379,
+      "timeMs": 1909.9999809265137,
+      "segment": 1,
+      "phase": 0.5916666507720947,
+      "rootNativeMeters": [
+        -0.011755640618503094,
+        0.018445778638124466,
+        0.0
+      ],
+      "yawRadians": 1.7704453468322754
+    },
+    {
+      "frame": 65.0,
+      "timeMs": 1920.0,
+      "segment": 1,
+      "phase": 0.6,
+      "rootNativeMeters": [
+        -0.01175563782453537,
+        0.021886583417654037,
+        0.0
+      ],
+      "yawRadians": 1.7894384860992432
+    },
+    {
+      "frame": 65.33333396911621,
+      "timeMs": 1930.0000190734863,
+      "segment": 1,
+      "phase": 0.6083333492279053,
+      "rootNativeMeters": [
+        -0.011755638755857944,
+        0.024491172283887863,
+        0.0
+      ],
+      "yawRadians": 1.8080401420593262
+    },
+    {
+      "frame": 65.66666603088379,
+      "timeMs": 1939.9999809265137,
+      "segment": 1,
+      "phase": 0.6166666507720947,
+      "rootNativeMeters": [
+        -0.011755640618503094,
+        0.02624141052365303,
+        0.0
+      ],
+      "yawRadians": 1.8262183666229248
+    },
+    {
+      "frame": 65.79999923706055,
+      "timeMs": 1943.9999771118164,
+      "segment": 1,
+      "phase": 0.6199999809265136,
+      "rootNativeMeters": [
+        -0.011755638755857944,
+        0.026714704930782318,
+        0.0
+      ],
+      "yawRadians": 1.833364486694336
+    },
+    {
+      "frame": 66.0,
+      "timeMs": 1950.0,
+      "segment": 1,
+      "phase": 0.625,
+      "rootNativeMeters": [
+        -0.011755640618503094,
+        0.02720753103494644,
+        0.0
+      ],
+      "yawRadians": 1.8439431190490723
+    },
+    {
+      "frame": 66.33333396911621,
+      "timeMs": 1960.0000190734863,
+      "segment": 1,
+      "phase": 0.6333333492279053,
+      "rootNativeMeters": [
+        -0.011755640618503094,
+        0.027563337236642838,
+        0.0
+      ],
+      "yawRadians": 1.8611853122711182
+    },
+    {
+      "frame": 66.66666603088379,
+      "timeMs": 1969.9999809265137,
+      "segment": 1,
+      "phase": 0.6416666507720947,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.8779172897338867
+    },
+    {
+      "frame": 67.0,
+      "timeMs": 1980.0,
+      "segment": 1,
+      "phase": 0.65,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.8941130638122559
+    },
+    {
+      "frame": 67.33333396911621,
+      "timeMs": 1990.0000190734863,
+      "segment": 1,
+      "phase": 0.6583333492279053,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.9097483158111572
+    },
+    {
+      "frame": 67.66666603088379,
+      "timeMs": 1999.9999809265137,
+      "segment": 1,
+      "phase": 0.6666666507720947,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.9248003959655762
+    },
+    {
+      "frame": 68.0,
+      "timeMs": 2010.0,
+      "segment": 1,
+      "phase": 0.675,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.9392485618591309
+    },
+    {
+      "frame": 68.20000076293945,
+      "timeMs": 2016.0000228881836,
+      "segment": 1,
+      "phase": 0.6800000190734863,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.947619915008545
+    },
+    {
+      "frame": 68.33333396911621,
+      "timeMs": 2020.0000190734863,
+      "segment": 1,
+      "phase": 0.6833333492279052,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.9530742168426514
+    },
+    {
+      "frame": 68.66666603088379,
+      "timeMs": 2029.9999809265137,
+      "segment": 1,
+      "phase": 0.6916666507720948,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.9662606716156006
+    },
+    {
+      "frame": 69.0,
+      "timeMs": 2040.0,
+      "segment": 1,
+      "phase": 0.7,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.9787932634353638
+    },
+    {
+      "frame": 69.33333396911621,
+      "timeMs": 2050.0000190734863,
+      "segment": 1,
+      "phase": 0.7083333492279053,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 1.9906599521636963
+    },
+    {
+      "frame": 69.66666603088379,
+      "timeMs": 2059.9999809265137,
+      "segment": 1,
+      "phase": 0.7166666507720947,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0018506050109863
+    },
+    {
+      "frame": 70.0,
+      "timeMs": 2070.0,
+      "segment": 1,
+      "phase": 0.725,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0123584270477295
+    },
+    {
+      "frame": 70.33333396911621,
+      "timeMs": 2080.0000190734863,
+      "segment": 1,
+      "phase": 0.7333333492279053,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0221784114837646
+    },
+    {
+      "frame": 70.66666603088379,
+      "timeMs": 2089.9999809265137,
+      "segment": 1,
+      "phase": 0.7416666507720947,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.031308650970459
+    },
+    {
+      "frame": 71.0,
+      "timeMs": 2100.0,
+      "segment": 1,
+      "phase": 0.75,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0397496223449707
+    },
+    {
+      "frame": 71.33333396911621,
+      "timeMs": 2110.0000190734863,
+      "segment": 1,
+      "phase": 0.7583333492279053,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0475056171417236
+    },
+    {
+      "frame": 71.66666603088379,
+      "timeMs": 2119.9999809265137,
+      "segment": 1,
+      "phase": 0.7666666507720947,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0545830726623535
+    },
+    {
+      "frame": 72.0,
+      "timeMs": 2130.0,
+      "segment": 1,
+      "phase": 0.775,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0609917640686035
+    },
+    {
+      "frame": 72.33333206176758,
+      "timeMs": 2139.9999618530273,
+      "segment": 1,
+      "phase": 0.7833333015441895,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.066744804382324
+    },
+    {
+      "frame": 72.66666793823242,
+      "timeMs": 2150.0000381469727,
+      "segment": 1,
+      "phase": 0.7916666984558105,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.071859121322632
+    },
+    {
+      "frame": 73.0,
+      "timeMs": 2160.0,
+      "segment": 1,
+      "phase": 0.8,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0763540267944336
+    },
+    {
+      "frame": 73.33333206176758,
+      "timeMs": 2169.9999618530273,
+      "segment": 1,
+      "phase": 0.8083333015441895,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0802533626556396
+    },
+    {
+      "frame": 73.66666793823242,
+      "timeMs": 2180.0000381469727,
+      "segment": 1,
+      "phase": 0.8166666984558105,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0835838317871094
+    },
+    {
+      "frame": 74.0,
+      "timeMs": 2190.0,
+      "segment": 1,
+      "phase": 0.825,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.086376667022705
+    },
+    {
+      "frame": 74.33333206176758,
+      "timeMs": 2199.9999618530273,
+      "segment": 1,
+      "phase": 0.8333333015441895,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0886664390563965
+    },
+    {
+      "frame": 74.66666793823242,
+      "timeMs": 2210.0000381469727,
+      "segment": 1,
+      "phase": 0.8416666984558105,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.090491533279419
+    },
+    {
+      "frame": 75.0,
+      "timeMs": 2220.0,
+      "segment": 1,
+      "phase": 0.85,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.09189510345459
+    },
+    {
+      "frame": 75.33333206176758,
+      "timeMs": 2229.9999618530273,
+      "segment": 1,
+      "phase": 0.8583333015441894,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.092924118041992
+    },
+    {
+      "frame": 75.66666793823242,
+      "timeMs": 2240.0000381469727,
+      "segment": 1,
+      "phase": 0.8666666984558106,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.0936293601989746
+    },
+    {
+      "frame": 76.0,
+      "timeMs": 2250.0,
+      "segment": 1,
+      "phase": 0.875,
+      "rootNativeMeters": [
+        -0.011755639687180519,
+        0.027600813657045364,
+        0.0
+      ],
+      "yawRadians": 2.094066619873047
+    },
+    {
+      "frame": 76.33333206176758,
+      "timeMs": 2259.9999618530273,
+      "segment": 1,
+      "phase": 0.8833333015441894,
+      "rootNativeMeters": [
+        -0.011753224767744541,
+        0.027595141902565956,
+        0.0
+      ],
+      "yawRadians": 2.0942962169647217
+    },
+    {
+      "frame": 76.66666793823242,
+      "timeMs": 2270.0000381469727,
+      "segment": 1,
+      "phase": 0.8916666984558106,
+      "rootNativeMeters": [
+        -0.011662752367556095,
+        0.027382725849747658,
+        0.0
+      ],
+      "yawRadians": 2.0943825244903564
+    },
+    {
+      "frame": 77.0,
+      "timeMs": 2280.0,
+      "segment": 1,
+      "phase": 0.9,
+      "rootNativeMeters": [
+        -0.011338387615978718,
+        0.026621155440807343,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 77.33333206176758,
+      "timeMs": 2289.9999618530273,
+      "segment": 1,
+      "phase": 0.9083333015441895,
+      "rootNativeMeters": [
+        -0.01070453505963087,
+        0.025132950395345688,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 77.66666793823242,
+      "timeMs": 2300.0000381469727,
+      "segment": 1,
+      "phase": 0.9166666984558105,
+      "rootNativeMeters": [
+        -0.00975121557712555,
+        0.02289467304944992,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 78.0,
+      "timeMs": 2310.0,
+      "segment": 1,
+      "phase": 0.925,
+      "rootNativeMeters": [
+        -0.008520398288965225,
+        0.020004862919449806,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 78.33333206176758,
+      "timeMs": 2319.9999618530273,
+      "segment": 1,
+      "phase": 0.9333333015441895,
+      "rootNativeMeters": [
+        -0.007092324085533619,
+        0.01665191724896431,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 78.66666793823242,
+      "timeMs": 2330.0000381469727,
+      "segment": 1,
+      "phase": 0.9416666984558105,
+      "rootNativeMeters": [
+        -0.005571840796619654,
+        0.013082006946206093,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 79.0,
+      "timeMs": 2340.0,
+      "segment": 1,
+      "phase": 0.95,
+      "rootNativeMeters": [
+        -0.004074732773005962,
+        0.009566978551447392,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 79.33333206176758,
+      "timeMs": 2349.9999618530273,
+      "segment": 1,
+      "phase": 0.9583333015441895,
+      "rootNativeMeters": [
+        -0.0027140507008880377,
+        0.006372261792421341,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 79.4000015258789,
+      "timeMs": 2352.000045776367,
+      "segment": 1,
+      "phase": 0.9600000381469727,
+      "rootNativeMeters": [
+        -0.002467232756316662,
+        0.00579276354983449,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 79.66666793823242,
+      "timeMs": 2360.0000381469727,
+      "segment": 1,
+      "phase": 0.9666666984558105,
+      "rootNativeMeters": [
+        -0.001586441183462739,
+        0.003724771086126566,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 80.0,
+      "timeMs": 2370.0,
+      "segment": 1,
+      "phase": 0.975,
+      "rootNativeMeters": [
+        -0.0007584761478938162,
+        0.001780809834599495,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 80.33333206176758,
+      "timeMs": 2379.9999618530273,
+      "segment": 1,
+      "phase": 0.9833333015441894,
+      "rootNativeMeters": [
+        -0.000252984871622175,
+        0.0005939776892773807,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 80.66666793823242,
+      "timeMs": 2390.0000381469727,
+      "segment": 1,
+      "phase": 0.9916666984558106,
+      "rootNativeMeters": [
+        -3.538233431754634e-05,
+        8.307343523483723e-05,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    },
+    {
+      "frame": 81.0,
+      "timeMs": 2400.0,
+      "segment": 1,
+      "phase": 1.0,
+      "rootNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "yawRadians": 2.094395160675049
+    }
+  ],
+  "rootBalancePlannedMaximumMeters": 0.03,
+  "worldRootBoundTargetMeters": 0.1,
+  "entryExit": "Unchanged flat idle at yaw0/+or-120,root0; internal actual60 idle-to-idle join at1200ms. Requires stop+settle before and native start afterward, not continuous walking.",
+  "composition": "Second complete native clip rigidly rotated by actual first endpoint yaw; no mirror, independent foot offsets, stride scale or root distance fit.",
+  "renderStatus": "NOT RENDERED",
+  "proofBudget": 12,
+  "routeCoverage": "Not certified full body/bag/boot swept clearance or arbitrary legal route coverage.",
+  "authorChecks": [
+    "native-contact-join-check.json",
+    "boot-surface-check.json",
+    "carry-check.json",
+    "idle-transition-source-preservation.json"
+  ]
+}

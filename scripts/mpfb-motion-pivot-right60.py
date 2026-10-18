@@ -1,0 +1,61 @@
+"""Compact native stepping pivot from preserved flat idle; no continuous-walk claim."""
+from pathlib import Path
+import bpy,json,math,hashlib
+from mathutils import Vector,Matrix
+from mathutils.bvhtree import BVHTree
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'art/characters-mpfb-v1/motion/pivot-variants/right60';SOURCE=ROOT/'art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend';meta=json.loads((SOURCE.parent/'manifest.json').read_text());before=hashlib.sha256(SOURCE.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(SOURCE));scene=bpy.context.scene
+rig=bpy.data.objects['Ruta.MPFB.StandardRig'];thumb=bpy.data.objects['Motion ONE strap thumb pinch control'];pole=bpy.data.objects['Motion ONE strap anatomical thumb pole'];controls=[rig,thumb,pole]
+for obj in controls:obj.animation_data.action=bpy.data.actions[meta['clips']['idle']['actionBundle'][obj.name]]
+scene.frame_set(1);bpy.context.view_layer.update();basis={b.name:b.matrix_basis.copy() for b in rig.pose.bones};flat={s:rig.matrix_world@rig.pose.bones[('left' if s=='L' else 'right')+'_foot_ik'].matrix for s in ['L','R']};knees={s:rig.pose.bones[('left' if s=='L' else 'right')+'_knee_ik'].matrix.copy() for s in ['L','R']};idlethumb=thumb.location.copy();idlepole=pole.location.copy();chest=rig.pose.bones['spine01'].matrix.copy();neck=rig.pose.bones['neck01'].matrix.copy()
+# Reference the actual deformed ONE strap and original clean idle hand.
+strap=bpy.data.objects['ONE diagonal satchel strap']
+def strap_contact():
+ bpy.context.view_layer.update();es=strap.evaluated_get(bpy.context.evaluated_depsgraph_get());vertices=[rig.matrix_world.inverted()@es.matrix_world@v.co for v in es.data.vertices];tree=BVHTree.FromPolygons(vertices,[list(p.vertices) for p in es.data.polygons]);c=rig.pose.bones['spine02'].matrix@rig.data.bones['spine02'].matrix_local.inverted();return tree.find_nearest(c@Vector((.080,-.105,.940)))[0],c
+contact0,chest0=strap_contact();offset0=contact0-rig.pose.bones['wrist.R'].head;wrist0=rig.pose.bones['wrist.R'].matrix.to_quaternion();upper_length=(rig.data.bones['lowerarm01.R'].head_local-rig.data.bones['upperarm01.R'].head_local).length;lower_length=(rig.data.bones['wrist.R'].head_local-rig.data.bones['lowerarm01.R'].head_local).length
+
+def aim(name,endname,direction):
+ bpy.context.view_layer.update();bone=rig.pose.bones[name];end=rig.pose.bones[endname];q=(end.head-bone.head).normalized().rotation_difference(direction.normalized());m=bone.matrix.copy();bone.matrix=Matrix.Translation(m.translation)@q.to_matrix().to_4x4()@m.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update()
+def solve_carry(p):
+ if p==0 or p==1:return
+ contact,c=strap_contact();rot=(c@chest0.inverted()).to_quaternion();desired=contact-rot@offset0;shoulder=rig.pose.bones['upperarm01.R'].head.copy();axis=(desired-shoulder).normalized();distance=(desired-shoulder).length;along=(upper_length**2-lower_length**2+distance**2)/(2*distance);height=math.sqrt(max(0,upper_length**2-along**2));bend=Vector((-.7,-.8,-1));bend=(bend-axis*bend.dot(axis)).normalized();elbow=shoulder+axis*along+bend*height
+ aim('upperarm01.R','lowerarm01.R',elbow-shoulder);aim('lowerarm01.R','wrist.R',desired-rig.pose.bones['lowerarm01.R'].head);wrist=rig.pose.bones['wrist.R'];wrist.matrix=Matrix.Translation(wrist.head.copy())@(rot@wrist0).to_matrix().to_4x4();thumb.location=contact+rot@(idlethumb-contact0);pole.location=contact+rot@(idlepole-contact0);bpy.context.view_layer.update()
+angle=-math.pi/3;duration=1200;endrotation=Matrix.Rotation(angle,4,'Z');endflat={s:endrotation@flat[s] for s in ['L','R']};bundle={}
+for obj in controls:
+ action=bpy.data.actions.new('MPFB compact idle pivot60R / '+obj.name);action.use_fake_user=True;obj.animation_data.action=action;bundle[obj.name]=action.name
+rig.rotation_mode='XYZ'
+def smooth(x):x=max(0,min(1,x));return x*x*x*(10+x*(-15+6*x))
+def foot(p,side):
+ a,b,c,d=(.12,.18,.44,.50) if side=='R' else (.62,.68,.90,.96)
+ heading=0.;lift=0.;pitch=0.;center=flat[side].translation.copy();mode='flat-initial'
+ if a<=p<b:pitch=.16*smooth((p-a)/(b-a));mode='toe-off'
+ elif b<=p<c:
+  u=(p-b)/(c-b);w=smooth(u);center=center.lerp(endflat[side].translation,w);heading=angle*w;lift=.040*max(0,math.sin(math.pi*u))**1.2;pitch=.16*(1-w)-.10*w;mode='swing'
+ elif c<=p<d:center=endflat[side].translation.copy();heading=angle;pitch=-.10*(1-smooth((p-c)/(d-c)));mode='heel-roll'
+ elif p>=d:center=endflat[side].translation.copy();heading=angle;mode='flat-final'
+ az=Matrix.Rotation(heading,3,'Z');roll=Matrix.Rotation(pitch,3,'X');pivot=Vector((0,-.132,-.049)) if pitch>0 else Vector((0,.015,-.05));center+=az@(pivot-roll@pivot)+Vector((0,0,lift));target=Matrix.Translation(center)@az.to_4x4()@roll.to_4x4()@flat[side].to_quaternion().to_matrix().to_4x4();return target,heading,mode
+phases=sorted(set([i/120 for i in range(121)]+[.12,.18,.44,.50,.62,.68,.90,.96]));plans=[]
+for p in phases:
+ frame=1+duration/30*p;scene.frame_set(int(frame),subframe=frame-int(frame))
+ for name,m in basis.items():rig.pose.bones[name].matrix_basis=m
+ # Small world-root weight transfer, exact zero at endpoints; no root distance fit.
+ firstsupport=flat['L'].translation.copy();firstsupport.z=0;firstsupport.normalize();secondsupport=endflat['R'].translation.copy();secondsupport.z=0;secondsupport.normalize();transfer=smooth((p-.48)/.16);balance=firstsupport.lerp(secondsupport,transfer)*(.030*smooth(p/.12)*(1-smooth((p-.88)/.12)))
+ yaw=angle*smooth((p-.12)/.78);rig.location=balance;rig.rotation_euler=(0,0,yaw);thumb.location=idlethumb;pole.location=idlepole;bpy.context.view_layer.update()
+ root=rig.pose.bones['root'];m=root.matrix.copy();m.translation.z-=.004*math.sin(math.pi*p)**2;root.matrix=m;bpy.context.view_layer.update();spine=rig.pose.bones['spine01'];m=spine.matrix.copy();spine.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(-math.radians(2)*math.sin(2*math.pi*p),4,'Z')@m.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update()
+ head=rig.pose.bones['neck01'];m=head.matrix.copy();head.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(-math.radians(6)*math.sin(math.pi*p)**2,4,'Z')@neck.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update();delta=rig.pose.bones['spine01'].matrix@chest.inverted();thumb.location=delta@idlethumb;pole.location=delta@idlepole
+ solve_carry(p)
+ feet={}
+ for side in ['L','R']:
+  target,heading,mode=foot(p,side);helper=rig.pose.bones[('left' if side=='L' else 'right')+'_foot_ik'];helper.matrix=rig.matrix_world.inverted()@target;knee=rig.pose.bones[('left' if side=='L' else 'right')+'_knee_ik'];world=balance+Matrix.Rotation((yaw+heading)/2,3,'Z')@knees[side].translation;km=knee.matrix.copy();km.translation=rig.matrix_world.inverted()@world;knee.matrix=km;feet[side]=mode
+ bpy.context.view_layer.update();rig.keyframe_insert('location',frame=frame);rig.keyframe_insert('rotation_euler',frame=frame)
+ for b in rig.pose.bones:b.keyframe_insert('location',frame=frame);b.keyframe_insert('rotation_euler',frame=frame)
+ for obj in [thumb,pole]:obj.keyframe_insert('location',frame=frame)
+ plans.append({'frame':frame,'timeMs':p*duration,'phase':p,'rootNativeMeters':list(balance),'yawRadians':yaw,'plannedFootModes':feet})
+for obj in controls:
+ for curve in obj.animation_data.action.fcurves:
+  for k in curve.keyframe_points:k.interpolation='LINEAR'
+keep=set(meta['sourceActions'].values())|set(bundle.values())|{a for clip in meta['clips'].values() for a in clip['actionBundle'].values()}
+for action in list(bpy.data.actions):
+ if action.name not in keep:bpy.data.actions.remove(action)
+scene.frame_start=1;scene.frame_end=41;scene.frame_set(1);bpy.context.preferences.filepaths.save_version=0;bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'mpfb-compact-pivot-technical.blend'))
+result={'status':'UNREVIEWED COMPACT NATIVE PIVOT SOURCE; NO CONTACT/NATURALNESS/ROUTE CLAIM','appearance':'rejected generic technical mannequin','source':'../../transitions/mpfb-start-stop-technical.blend','sourceSha256':before,'sourceActions':meta['sourceActions'],'idleActions':meta['clips']['idle']['actionBundle'],'transitionClips':meta['clips'],'turnActions':bundle,'variant':'right60','segments':1,'angleRadians':angle,'durationMs':duration,'frames':plans,'worldRootBoundTargetMeters':.10,'rootBalancePlannedMaximumMeters':.030,'entryExit':'Exact preserved flat idle at yaw0/-60, root0; requires stop+settle before pivot and new start afterward. Not a moving-walk join.','contacts':'Loaded support sole fixed in WORLD; Inside R steps first while L supports, then L while R supports; genuine native asymmetric carry re-solved against original strap. Swing reorients foot; heel/toe roll separate.','routeCoverage':'No one-hex/full-body/bag swept-clearance certificate. Root bound alone does not prove actor clearance.','renderStatus':'NOT RENDERED; actual sole/body join measurements first','proofBudget':12}
+assert hashlib.sha256(SOURCE.read_bytes()).hexdigest()==before;(OUT/'manifest.json').write_text(json.dumps(result,indent=2)+'\n');print('PIVOT_SOURCE_BUILT unreviewed; immutable donors unchanged')

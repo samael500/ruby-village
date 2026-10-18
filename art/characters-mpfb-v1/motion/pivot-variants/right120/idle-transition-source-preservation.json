@@ -1,0 +1,63 @@
+{
+  "method": "Fresh turn source, import independent immutable straight source data; compare action keys/handles, rig rest and native constraint settings, raw sole geometry/weights",
+  "sourceOriginalSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+  "sourceTurnSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+  "retainedActionsUnchanged": true,
+  "rigRestConstraintsAndShoeWeightsUnchanged": true,
+  "currentActionHashes": {
+    "Ruta.MPFB.StandardRigAction": "3b7c0130377c70697a560e3032d92a0b2e45ea697322485d5df6b92744889eb6",
+    "Motion ONE strap thumb pinch controlAction": "45cbc7b181ee4e1b274f3515cf7744b66db43ffa8d0c5d8d03cfee28ec7da4cd",
+    "Motion ONE strap anatomical thumb poleAction": "1b0048a99deeaffc557d2ca179b0d72c5cc38f2b901516a09bcb1c47ac2eb56b",
+    "MPFB transition idle / Ruta.MPFB.StandardRig": "a865a6e7c30951777bffb0f2eda6e485ce9a6af425d7ff742c8aa96234374d31",
+    "MPFB transition idle / Motion ONE strap thumb pinch control": "1210cc12bd86113724ed24df8684d9d350216db7fe0340cdca68735735139ffa",
+    "MPFB transition idle / Motion ONE strap anatomical thumb pole": "ad7aacb05777b15e856996e8564bf2fdf841953fb9214f443423d000fb4b9d6b",
+    "MPFB transition start-L / Ruta.MPFB.StandardRig": "efb5aa03e51ee7c3f9eb65f0cfc352fd81c5342455b2ad7113a70cd95c59e24b",
+    "MPFB transition start-L / Motion ONE strap thumb pinch control": "b86f27910e7ff0dc36a010d5647399de7f99953192be4361f588d2e8f883b3eb",
+    "MPFB transition start-L / Motion ONE strap anatomical thumb pol": "8a239d822b4c506c3d52fbefd72ff45322016ab371e91f606638aa4513632fcc",
+    "MPFB transition start-R / Ruta.MPFB.StandardRig": "4d951a3bc5388e56ea5d769850ff8c2a57079375ad28913821bf75dfb590aa44",
+    "MPFB transition start-R / Motion ONE strap thumb pinch control": "80455fbc59376ab3ffbebda1ba04b01d95b318c7dbe882d4b01a718253fd2953",
+    "MPFB transition start-R / Motion ONE strap anatomical thumb pol": "328f010bd9ed8e9ae88045b812900fa1100d1b6790cb566b8fbfecdbda04a422",
+    "MPFB transition stop-L / Ruta.MPFB.StandardRig": "69b6ce282c0ec5ee187d25fe026b79c6857301ac9ad966e266bdd00569c38a11",
+    "MPFB transition stop-L / Motion ONE strap thumb pinch control": "cb43084d3518df19354fd5c1e43c5ef0e8983f93e04fabefe71f7569640d9ff1",
+    "MPFB transition stop-L / Motion ONE strap anatomical thumb pole": "3f4ff6e727c90e3f57eec50a3aa7a75fd49db6748649f1825b81c0458d17918b",
+    "MPFB transition stop-R / Ruta.MPFB.StandardRig": "c69d1484ddf9850a8f479f327d8ca029d21f4705ddd7905bc713ac0fd561736a",
+    "MPFB transition stop-R / Motion ONE strap thumb pinch control": "80750bcabfe94019a6efc83a7e6f9c6bbfbeb89a78b1fe7326290975101fa11b",
+    "MPFB transition stop-R / Motion ONE strap anatomical thumb pole": "8dc9342f7636c27f0111908d9c5f7609d3078797806146a00ab6d5a0aaf92aa3",
+    "MPFB transition settle / Ruta.MPFB.StandardRig": "1f4efc2c143c06378e82e6a7ad4cb7806a22616855eb4a92b0aea8f7ee13fc23",
+    "MPFB transition settle / Motion ONE strap thumb pinch control": "f97516e72abb63fc6dada376b66e06c31daebc97be450747d1b8487c6b469511",
+    "MPFB transition settle / Motion ONE strap anatomical thumb pole": "bd2e4a97c765e53131cfe26e4b78a35c30eaf5b9ef58ed440bd15f0ff51a008c"
+  },
+  "baselineActionHashes": {
+    "Ruta.MPFB.StandardRigAction": "3b7c0130377c70697a560e3032d92a0b2e45ea697322485d5df6b92744889eb6",
+    "Motion ONE strap thumb pinch controlAction": "45cbc7b181ee4e1b274f3515cf7744b66db43ffa8d0c5d8d03cfee28ec7da4cd",
+    "Motion ONE strap anatomical thumb poleAction": "1b0048a99deeaffc557d2ca179b0d72c5cc38f2b901516a09bcb1c47ac2eb56b",
+    "MPFB transition idle / Ruta.MPFB.StandardRig": "a865a6e7c30951777bffb0f2eda6e485ce9a6af425d7ff742c8aa96234374d31",
+    "MPFB transition idle / Motion ONE strap thumb pinch control": "1210cc12bd86113724ed24df8684d9d350216db7fe0340cdca68735735139ffa",
+    "MPFB transition idle / Motion ONE strap anatomical thumb pole": "ad7aacb05777b15e856996e8564bf2fdf841953fb9214f443423d000fb4b9d6b",
+    "MPFB transition start-L / Ruta.MPFB.StandardRig": "efb5aa03e51ee7c3f9eb65f0cfc352fd81c5342455b2ad7113a70cd95c59e24b",
+    "MPFB transition start-L / Motion ONE strap thumb pinch control": "b86f27910e7ff0dc36a010d5647399de7f99953192be4361f588d2e8f883b3eb",
+    "MPFB transition start-L / Motion ONE strap anatomical thumb pol": "8a239d822b4c506c3d52fbefd72ff45322016ab371e91f606638aa4513632fcc",
+    "MPFB transition start-R / Ruta.MPFB.StandardRig": "4d951a3bc5388e56ea5d769850ff8c2a57079375ad28913821bf75dfb590aa44",
+    "MPFB transition start-R / Motion ONE strap thumb pinch control": "80455fbc59376ab3ffbebda1ba04b01d95b318c7dbe882d4b01a718253fd2953",
+    "MPFB transition start-R / Motion ONE strap anatomical thumb pol": "328f010bd9ed8e9ae88045b812900fa1100d1b6790cb566b8fbfecdbda04a422",
+    "MPFB transition stop-L / Ruta.MPFB.StandardRig": "69b6ce282c0ec5ee187d25fe026b79c6857301ac9ad966e266bdd00569c38a11",
+    "MPFB transition stop-L / Motion ONE strap thumb pinch control": "cb43084d3518df19354fd5c1e43c5ef0e8983f93e04fabefe71f7569640d9ff1",
+    "MPFB transition stop-L / Motion ONE strap anatomical thumb pole": "3f4ff6e727c90e3f57eec50a3aa7a75fd49db6748649f1825b81c0458d17918b",
+    "MPFB transition stop-R / Ruta.MPFB.StandardRig": "c69d1484ddf9850a8f479f327d8ca029d21f4705ddd7905bc713ac0fd561736a",
+    "MPFB transition stop-R / Motion ONE strap thumb pinch control": "80750bcabfe94019a6efc83a7e6f9c6bbfbeb89a78b1fe7326290975101fa11b",
+    "MPFB transition stop-R / Motion ONE strap anatomical thumb pole": "8dc9342f7636c27f0111908d9c5f7609d3078797806146a00ab6d5a0aaf92aa3",
+    "MPFB transition settle / Ruta.MPFB.StandardRig": "1f4efc2c143c06378e82e6a7ad4cb7806a22616855eb4a92b0aea8f7ee13fc23",
+    "MPFB transition settle / Motion ONE strap thumb pinch control": "f97516e72abb63fc6dada376b66e06c31daebc97be450747d1b8487c6b469511",
+    "MPFB transition settle / Motion ONE strap anatomical thumb pole": "bd2e4a97c765e53131cfe26e4b78a35c30eaf5b9ef58ed440bd15f0ff51a008c"
+  },
+  "currentObjectHashes": {
+    "Ruta.MPFB.StandardRig": "52ffbd043ef39161ae798aa5522ee38ebd696d4fa697180d2de6f1dd610ec0db",
+    "Ruta.shoes01": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf"
+  },
+  "baselineObjectHashes": {
+    "Ruta.MPFB.StandardRig": "52ffbd043ef39161ae798aa5522ee38ebd696d4fa697180d2de6f1dd610ec0db",
+    "Ruta.shoes01": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf"
+  },
+  "allAsymmetricMeshGeometryWeightsUnchanged": true,
+  "retained60ActionsUnchanged": true
+}

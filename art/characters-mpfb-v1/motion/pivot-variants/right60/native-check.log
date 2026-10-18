@@ -1,0 +1,76 @@
+{
+  "internalActual60Joins": {},
+  "samples": 401,
+  "sampleSpacingMs": 3,
+  "flatWorldSoleDriftMeters": {
+    "0:R:0": {
+      "toe": 3.405792665226403e-07,
+      "heel": 3.434854143752964e-07
+    },
+    "0:R:1": {
+      "toe": 2.7881335416225406e-05,
+      "heel": 2.772983612288838e-05
+    },
+    "0:L:0": {
+      "toe": 2.8257459135672675e-05,
+      "heel": 2.8044616647624108e-05
+    },
+    "0:L:1": {
+      "toe": 1.9800189533707964e-07,
+      "heel": 2.018994789498997e-07
+    }
+  },
+  "maxActualAnkleTargetErrorMeters": 2.7396456807156924e-05,
+  "minActualRenderLevelBootZ": 0.00036161273601464927,
+  "joinsToUnchangedFlatIdle": {
+    "entry": {
+      "bodyWorldMatrixMaxElementError": 3.7848949432373047e-06,
+      "actualSoleWorldMaxErrorMeters": 9.85013971554352e-08
+    },
+    "exit": {
+      "bodyWorldMatrixMaxElementError": 3.427267074584961e-06,
+      "actualSoleWorldMaxErrorMeters": 2.3786143104566613e-07
+    }
+  },
+  "actualRootDeltaMeters": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maxActualRootDistanceFromPivotOriginMeters": 0.03000000022739793,
+  "rootXYBoundsMeters": [
+    [
+      -0.018025187775492668,
+      0.029780825600028038
+    ],
+    [
+      -0.003619729308411479,
+      0.023981088772416115
+    ]
+  ],
+  "kneeFlexRangeDegrees": {
+    "L": [
+      11.325036031193434,
+      47.33106125983264
+    ],
+    "R": [
+      11.324995050058419,
+      48.725949812889326
+    ]
+  },
+  "maxAdjacentLegRotationDegreesAt3ms": {
+    "L": {
+      "upperLegWorldQuaternion": 0.7932709768099747,
+      "lowerLegWorldQuaternion": 0.8568309029571151
+    },
+    "R": {
+      "upperLegWorldQuaternion": 0.8308601224943465,
+      "lowerLegWorldQuaternion": 0.7932709768099747
+    }
+  },
+  "nativeFeasibilityPass": true
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-mpfb-motion/art/characters-mpfb-v1/motion/pivot-variants/right60/mpfb-compact-pivot-technical.blend"
+
+Blender quit
