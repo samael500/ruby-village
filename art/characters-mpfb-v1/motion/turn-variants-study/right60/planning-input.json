@@ -24,7 +24,15 @@
   "routeCoverage": {
     "arbitraryLegalPathCertified": false,
     "constraint": "Moving-arc fillet tangent lengths can overlap at adjacent sharp corners on 1-hex-wide paths. This source does not certify containment.",
-    "fallbackCandidate": "Compact native in-place stepping turn with bounded root and support sole planted may be required; NOT AUTHORED or CERTIFIED here. Do not alter puzzle paths/goals to hide the gap."
+    "fallbackCandidate": "Compact native in-place stepping turn with bounded root and support sole planted may be required; NOT AUTHORED or CERTIFIED here. Do not alter puzzle paths/goals to hide the gap.",
+    "actualEntryExitRayIntersectionTangentSetbacks": {
+      "incomingMeters": 0.30890534859308255,
+      "outgoingMeters": 0.308905288444754,
+      "incomingScenePixels": 37.80706099115337,
+      "outgoingScenePixels": 37.807053629573076,
+      "method": "Solve actual saved endpoint displacement = incoming*(0,-1) + outgoing*(sin(yaw),-cos(yaw)). These are variable-curve endpoint tangent setbacks, NOT minimum-radius circular fillet estimates.",
+      "scope": "Root centerline only. Full body/bag/sole swept envelope and neighboring route clearance remain unvalidated."
+    }
   },
   "samples": [
     {
@@ -13391,5 +13399,2373 @@
         }
       }
     }
-  ]
+  ],
+  "actualSampledRootXYBoundsMeters": [
+    [
+      -0.26751983165740967,
+      0.0
+    ],
+    [
+      -0.46335798501968384,
+      0.0
+    ]
+  ],
+  "actualSavedKeyPolylineLengthMeters": 0.568752056428906,
+  "actualMinimumDiscreteCircumradiusMeters": 0.4499906204838154,
+  "actualRootKeyCurveWithTangentAndProjection": [
+    {
+      "frame": 1.0,
+      "timeMs": 0.0,
+      "rootNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "headingRadians": -0.0,
+      "sampledTangentNative": [
+        -1.5029006590339122e-06,
+        -1.0,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        0.0,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frame": 1.25,
+      "timeMs": 7.5,
+      "rootNativeMeters": [
+        -8.903971782103781e-09,
+        -0.005924524739384651,
+        0.0
+      ],
+      "headingRadians": -7.4027557275258005e-06,
+      "sampledTangentNative": [
+        -2.2495918528875336e-05,
+        -1.0,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        1.3382606506347656,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        0.7251133405829806,
+        0.0
+      ]
+    },
+    {
+      "frame": 1.5,
+      "timeMs": 15.0,
+      "rootNativeMeters": [
+        -2.6655550300347386e-07,
+        -0.011849060654640198,
+        0.0
+      ],
+      "headingRadians": -0.00010945591930067167,
+      "sampledTangentNative": [
+        -0.00015895529941190034,
+        -1.0,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        2.6764869689941406,
+        4.00543212890625e-05
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        1.4502080788175424,
+        2.1702739821962152e-05
+      ]
+    },
+    {
+      "frame": 1.75,
+      "timeMs": 22.5,
+      "rootNativeMeters": [
+        -1.892377781587129e-06,
+        -0.01777360402047634,
+        0.0
+      ],
+      "headingRadians": -0.0005106403259560466,
+      "sampledTangentNative": [
+        -0.0006057761493138969,
+        -0.9999998211860657,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        4.014759063720703,
+        0.0002803802490234375
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        2.1753276201833294,
+        0.00015191917875373505
+      ]
+    },
+    {
+      "frame": 2.0,
+      "timeMs": 30.0,
+      "rootNativeMeters": [
+        -7.444450602633879e-06,
+        -0.023698147386312485,
+        0.0
+      ],
+      "headingRadians": -0.0014828480780124664,
+      "sampledTangentNative": [
+        -0.0016265668673440814,
+        -0.9999986290931702,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        5.353008270263672,
+        0.001087188720703125
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        2.9004347599835034,
+        0.0005890743665961155
+      ]
+    },
+    {
+      "frame": 2.25,
+      "timeMs": 37.5,
+      "rootNativeMeters": [
+        -2.1165702491998672e-05,
+        -0.029622670263051987,
+        0.0
+      ],
+      "headingRadians": -0.0033159477170556784,
+      "sampledTangentNative": [
+        -0.0035043053794652224,
+        -0.9999939203262329,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        6.691234588623047,
+        0.0031070709228515625
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        3.6255294982180652,
+        0.0016835125319036354
+      ]
+    },
+    {
+      "frame": 2.5,
+      "timeMs": 45.0,
+      "rootNativeMeters": [
+        -4.896709288004786e-05,
+        -0.03554711118340492,
+        0.0
+      ],
+      "headingRadians": -0.006277337204664946,
+      "sampledTangentNative": [
+        -0.00650149816647172,
+        -0.9999788403511047,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        8.029460906982422,
+        0.0071868896484375
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        4.350624236452627,
+        0.0038940916023406376
+      ]
+    },
+    {
+      "frame": 2.75,
+      "timeMs": 52.5,
+      "rootNativeMeters": [
+        -9.820201375987381e-05,
+        -0.04147142916917801,
+        0.0
+      ],
+      "headingRadians": -0.010580484755337238,
+      "sampledTangentNative": [
+        -0.010827512480318546,
+        -0.9999414086341858,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        9.367664337158203,
+        0.0144195556640625
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        5.075706573121576,
+        0.007812986335906375
+      ]
+    },
+    {
+      "frame": 3.0,
+      "timeMs": 60.0,
+      "rootNativeMeters": [
+        -0.0001772623509168625,
+        -0.04739542305469513,
+        0.0
+      ],
+      "headingRadians": -0.01636246219277382,
+      "sampledTangentNative": [
+        -0.016616467386484146,
+        -0.9998618960380554,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        10.705799102783203,
+        0.02602386474609375
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        5.800751705093687,
+        0.014100580101469123
+      ]
+    },
+    {
+      "frame": 3.25,
+      "timeMs": 67.5,
+      "rootNativeMeters": [
+        -0.0002950901398435235,
+        -0.05331876873970032,
+        0.0
+      ],
+      "headingRadians": -0.023670455440878868,
+      "sampledTangentNative": [
+        -0.02224608324468136,
+        -0.9997525215148926,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        12.043773651123047,
+        0.04332733154296875
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        6.525710026106512,
+        0.023476163704556772
+      ]
+    },
+    {
+      "frame": 3.4000000953674316,
+      "timeMs": 72.00000286102295,
+      "rootNativeMeters": [
+        -0.0003881371230818331,
+        -0.05687226355075836,
+        0.0
+      ],
+      "headingRadians": -0.028771962970495224,
+      "sampledTangentNative": [
+        -0.02794206514954567,
+        -0.9996095299720764,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        12.846439361572266,
+        0.0569915771484375
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        6.960620530573021,
+        0.030879898375249005
+      ]
+    },
+    {
+      "frame": 3.5,
+      "timeMs": 75.0,
+      "rootNativeMeters": [
+        -0.0004606330185197294,
+        -0.05924095958471298,
+        0.0
+      ],
+      "headingRadians": -0.03245727717876434,
+      "sampledTangentNative": [
+        -0.03546133637428284,
+        -0.9993710517883301,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        13.38149642944336,
+        0.06762886047363281
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        7.250531929897597,
+        0.03664352599368152
+      ]
+    },
+    {
+      "frame": 3.75,
+      "timeMs": 82.5,
+      "rootNativeMeters": [
+        -0.0006822627619840205,
+        -0.0651613101363182,
+        0.0
+      ],
+      "headingRadians": -0.04258585721254349,
+      "sampledTangentNative": [
+        -0.04276099428534508,
+        -0.9990853071212769,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        14.71878433227539,
+        0.10017013549804688
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        7.975118203942045,
+        0.0542754519033242
+      ]
+    },
+    {
+      "frame": 4.0,
+      "timeMs": 90.0,
+      "rootNativeMeters": [
+        -0.0009672996820881963,
+        -0.07107892632484436,
+        0.0
+      ],
+      "headingRadians": -0.05384272709488869,
+      "sampledTangentNative": [
+        -0.05396021157503128,
+        -0.9985430240631104,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        16.055477142333984,
+        0.1420269012451172
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        8.699382037280564,
+        0.07695481501727465
+      ]
+    },
+    {
+      "frame": 4.25,
+      "timeMs": 97.5,
+      "rootNativeMeters": [
+        -0.0013216253137215972,
+        -0.07699282467365265,
+        0.0
+      ],
+      "headingRadians": -0.06596048921346664,
+      "sampledTangentNative": [
+        -0.06600784510374069,
+        -0.997819185256958,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        17.39132308959961,
+        0.19405174255371094
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        9.423187012691422,
+        0.10514357365460035
+      ]
+    },
+    {
+      "frame": 4.5,
+      "timeMs": 105.0,
+      "rootNativeMeters": [
+        -0.0017494111089035869,
+        -0.08290185034275055,
+        0.0
+      ],
+      "headingRadians": -0.07864927500486374,
+      "sampledTangentNative": [
+        -0.07861702144145966,
+        -0.9969049096107483,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        18.726070404052734,
+        0.25685691833496094
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        10.146396712952876,
+        0.139173469695437
+      ]
+    },
+    {
+      "frame": 4.75,
+      "timeMs": 112.5,
+      "rootNativeMeters": [
+        -0.00225313869304955,
+        -0.08880490064620972,
+        0.0
+      ],
+      "headingRadians": -0.09163718670606613,
+      "sampledTangentNative": [
+        -0.09152384847402573,
+        -0.9958028793334961,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        20.059467315673828,
+        0.3308143615722656
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        10.86887472084319,
+        0.17924602858098854
+      ]
+    },
+    {
+      "frame": 5.0,
+      "timeMs": 120.0,
+      "rootNativeMeters": [
+        -0.002833853242918849,
+        -0.09470085799694061,
+        0.0
+      ],
+      "headingRadians": -0.10471975803375244,
+      "sampledTangentNative": [
+        -0.10452957451343536,
+        -0.9945217967033386,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        21.39126205444336,
+        0.4160785675048828
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        11.590484619140625,
+        0.22544496087913968
+      ]
+    },
+    {
+      "frame": 5.25,
+      "timeMs": 127.5,
+      "rootNativeMeters": [
+        -0.0034916801378130913,
+        -0.10058870911598206,
+        0.0
+      ],
+      "headingRadians": -0.1178097277879715,
+      "sampledTangentNative": [
+        -0.11753686517477036,
+        -0.9930684566497803,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        22.72122573852539,
+        0.5126552581787109
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        12.311102392189056,
+        0.27777336698129357
+      ]
+    },
+    {
+      "frame": 5.5,
+      "timeMs": 135.0,
+      "rootNativeMeters": [
+        -0.004226515535265207,
+        -0.10646745562553406,
+        0.0
+      ],
+      "headingRadians": -0.13089969754219055,
+      "sampledTangentNative": [
+        -0.13052606582641602,
+        -0.9914448857307434,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        24.049129486083984,
+        0.6205501556396484
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        13.030604024332359,
+        0.3362343472788533
+      ]
+    },
+    {
+      "frame": 5.75,
+      "timeMs": 142.5,
+      "rootNativeMeters": [
+        -0.005038247909396887,
+        -0.11233606934547424,
+        0.0
+      ],
+      "headingRadians": -0.1439896672964096,
+      "sampledTangentNative": [
+        -0.14349304139614105,
+        -0.9896513223648071,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        25.374744415283203,
+        0.7397346496582031
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        13.748865499914405,
+        0.40081239981480327
+      ]
+    },
+    {
+      "frame": 6.0,
+      "timeMs": 150.0,
+      "rootNativeMeters": [
+        -0.005926723591983318,
+        -0.11819355189800262,
+        0.0
+      ],
+      "headingRadians": -0.15707963705062866,
+      "sampledTangentNative": [
+        -0.15643402934074402,
+        -0.9876883625984192,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        26.69784164428711,
+        0.8701801300048828
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        14.465762803279071,
+        0.47149202263212775
+      ]
+    },
+    {
+      "frame": 6.25,
+      "timeMs": 157.5,
+      "rootNativeMeters": [
+        -0.006891789846122265,
+        -0.12403890490531921,
+        0.0
+      ],
+      "headingRadians": -0.17016960680484772,
+      "sampledTangentNative": [
+        -0.1693493127822876,
+        -0.9855560660362244,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        28.018192291259766,
+        1.0118751525878906
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        15.181171918770232,
+        0.5482670149480204
+      ]
+    },
+    {
+      "frame": 6.5,
+      "timeMs": 165.0,
+      "rootNativeMeters": [
+        -0.007933296263217926,
+        -0.12987112998962402,
+        0.0
+      ],
+      "headingRadians": -0.18325957655906677,
+      "sampledTangentNative": [
+        -0.18223607540130615,
+        -0.9832547903060913,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        29.335590362548828,
+        1.1647911071777344
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        15.894981232297374,
+        0.6311218748054657
+      ]
+    },
+    {
+      "frame": 6.75,
+      "timeMs": 172.5,
+      "rootNativeMeters": [
+        -0.009051050990819931,
+        -0.13568919897079468,
+        0.0
+      ],
+      "headingRadians": -0.19634954631328583,
+      "sampledTangentNative": [
+        -0.19508996605873108,
+        -0.9807853102684021,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        30.64980697631836,
+        1.3288993835449219
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        16.60706672820437,
+        0.7200411002474477
+      ]
+    },
+    {
+      "frame": 7.0,
+      "timeMs": 180.0,
+      "rootNativeMeters": [
+        -0.010244861245155334,
+        -0.14149217307567596,
+        0.0
+      ],
+      "headingRadians": -0.20943951606750488,
+      "sampledTangentNative": [
+        -0.20791134238243103,
+        -0.9781476259231567,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        31.960590362548828,
+        1.5041828155517578
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        17.317291989269485,
+        0.8150153900997572
+      ]
+    },
+    {
+      "frame": 7.25,
+      "timeMs": 187.5,
+      "rootNativeMeters": [
+        -0.011514537036418915,
+        -0.14727900922298431,
+        0.0
+      ],
+      "headingRadians": -0.22252948582172394,
+      "sampledTangentNative": [
+        -0.22069735825061798,
+        -0.975342333316803,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        33.26773452758789,
+        1.6906013488769531
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        18.025545401402205,
+        0.9160230416225722
+      ]
+    },
+    {
+      "frame": 7.5,
+      "timeMs": 195.0,
+      "rootNativeMeters": [
+        -0.012859847396612167,
+        -0.15304875373840332,
+        0.0
+      ],
+      "headingRadians": -0.235619455575943,
+      "sampledTangentNative": [
+        -0.2334447056055069,
+        -0.9723700881004333,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        34.57101058959961,
+        1.8881263732910156
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        18.731702948946403,
+        1.023048552858877
+      ]
+    },
+    {
+      "frame": 7.75,
+      "timeMs": 202.5,
+      "rootNativeMeters": [
+        -0.014280561357736588,
+        -0.15880036354064941,
+        0.0
+      ],
+      "headingRadians": -0.24870942533016205,
+      "sampledTangentNative": [
+        -0.24615322053432465,
+        -0.9692309498786926,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        35.87021255493164,
+        2.0967178344726562
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        19.435653017811568,
+        1.1360702210688496
+      ]
+    },
+    {
+      "frame": 8.0,
+      "timeMs": 210.0,
+      "rootNativeMeters": [
+        -0.01577644795179367,
+        -0.16453289985656738,
+        0.0
+      ],
+      "headingRadians": -0.2617993950843811,
+      "sampledTangentNative": [
+        -0.258819580078125,
+        -0.9659257531166077,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        37.16508865356445,
+        2.3163528442382812
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        20.137259190775957,
+        1.2550756446868776
+      ]
+    },
+    {
+      "frame": 8.25,
+      "timeMs": 217.5,
+      "rootNativeMeters": [
+        -0.017347242683172226,
+        -0.17024534940719604,
+        0.0
+      ],
+      "headingRadians": -0.27488934993743896,
+      "sampledTangentNative": [
+        -0.27144068479537964,
+        -0.962455153465271,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        38.4554328918457,
+        2.546985626220703
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        20.836409853749068,
+        1.3800400205817356
+      ]
+    },
+    {
+      "frame": 8.5,
+      "timeMs": 225.0,
+      "rootNativeMeters": [
+        -0.018992671743035316,
+        -0.175936758518219,
+        0.0
+      ],
+      "headingRadians": -0.2879793345928192,
+      "sampledTangentNative": [
+        -0.284015029668808,
+        -0.9588197469711304,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        39.74101638793945,
+        2.788576126098633
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        21.532980991074762,
+        1.5109416460136018
+      ]
+    },
+    {
+      "frame": 8.75,
+      "timeMs": 232.5,
+      "rootNativeMeters": [
+        -0.020712459459900856,
+        -0.18160614371299744,
+        0.0
+      ],
+      "headingRadians": -0.3010692894458771,
+      "sampledTangentNative": [
+        -0.2965412139892578,
+        -0.955020010471344,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        41.02163314819336,
+        3.0410728454589844
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        22.226860988662537,
+        1.647752617459848
+      ]
+    },
+    {
+      "frame": 9.0,
+      "timeMs": 240.0,
+      "rootNativeMeters": [
+        -0.022506309673190117,
+        -0.18725253641605377,
+        0.0
+      ],
+      "headingRadians": -0.3141592741012573,
+      "sampledTangentNative": [
+        -0.3090165853500366,
+        -0.9510565996170044,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        42.297054290771484,
+        3.3044471740722656
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        22.917925830856262,
+        1.7904574329634586
+      ]
+    },
+    {
+      "frame": 9.25,
+      "timeMs": 247.5,
+      "rootNativeMeters": [
+        -0.02437390759587288,
+        -0.192874938249588,
+        0.0
+      ],
+      "headingRadians": -0.3272492289543152,
+      "sampledTangentNative": [
+        -0.32143929600715637,
+        -0.9469301700592041,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        43.56705093383789,
+        3.5786590576171875
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        23.606051501999815,
+        1.9390343897846116
+      ]
+    },
+    {
+      "frame": 9.5,
+      "timeMs": 255.0,
+      "rootNativeMeters": [
+        -0.026314951479434967,
+        -0.19847244024276733,
+        0.0
+      ],
+      "headingRadians": -0.34033921360969543,
+      "sampledTangentNative": [
+        -0.3338083028793335,
+        -0.942641019821167,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        44.831417083740234,
+        3.863645553588867
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        24.291126388002677,
+        2.0934493836178723
+      ]
+    },
+    {
+      "frame": 9.75,
+      "timeMs": 262.5,
+      "rootNativeMeters": [
+        -0.028329098597168922,
+        -0.20404399931430817,
+        0.0
+      ],
+      "headingRadians": -0.3534291684627533,
+      "sampledTangentNative": [
+        -0.34612369537353516,
+        -0.9381888508796692,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        46.08994674682617,
+        4.159372329711914
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        24.97303887477434,
+        2.253683812114822
+      ]
+    },
+    {
+      "frame": 10.0,
+      "timeMs": 270.0,
+      "rootNativeMeters": [
+        -0.030415993183851242,
+        -0.20958855748176575,
+        0.0
+      ],
+      "headingRadians": -0.36651915311813354,
+      "sampledTangentNative": [
+        -0.35837340354919434,
+        -0.9335783123970032,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        47.34236526489258,
+        4.465782165527344
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        25.65164014352745,
+        2.4197066713614293
+      ]
+    },
+    {
+      "frame": 10.25,
+      "timeMs": 277.5,
+      "rootNativeMeters": [
+        -0.032575298100709915,
+        -0.21510553359985352,
+        0.0
+      ],
+      "headingRadians": -0.3796091079711914,
+      "sampledTangentNative": [
+        -0.3705582618713379,
+        -0.9288091659545898,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        48.58853530883789,
+        4.78282356262207
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        26.32685578486834,
+        2.591490057835066
+      ]
+    },
+    {
+      "frame": 10.5,
+      "timeMs": 285.0,
+      "rootNativeMeters": [
+        -0.03480663150548935,
+        -0.22059375047683716,
+        0.0
+      ],
+      "headingRadians": -0.39269909262657166,
+      "sampledTangentNative": [
+        -0.382683128118515,
+        -0.9238797426223755,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        49.82822799682617,
+        5.110433578491211
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        26.998561783140875,
+        2.7689998672302973
+      ]
+    },
+    {
+      "frame": 10.75,
+      "timeMs": 292.5,
+      "rootNativeMeters": [
+        -0.03710959851741791,
+        -0.22605231404304504,
+        0.0
+      ],
+      "headingRadians": -0.4057890474796295,
+      "sampledTangentNative": [
+        -0.3947422206401825,
+        -0.9187918901443481,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        51.06123733520508,
+        5.44856071472168
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        27.666646524254546,
+        2.952208196024496
+      ]
+    },
+    {
+      "frame": 11.0,
+      "timeMs": 300.0,
+      "rootNativeMeters": [
+        -0.039483826607465744,
+        -0.23148027062416077,
+        0.0
+      ],
+      "headingRadians": -0.41887903213500977,
+      "sampledTangentNative": [
+        -0.40673553943634033,
+        -0.9135459661483765,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        52.28731155395508,
+        5.797159194946289
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        28.33097359098761,
+        3.1410902410864354
+      ]
+    },
+    {
+      "frame": 11.25,
+      "timeMs": 307.5,
+      "rootNativeMeters": [
+        -0.04192889481782913,
+        -0.23687666654586792,
+        0.0
+      ],
+      "headingRadians": -0.4319689869880676,
+      "sampledTangentNative": [
+        -0.418658584356308,
+        -0.9081437587738037,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        53.50626754760742,
+        6.156137466430664
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        28.991443770815177,
+        3.3355963961536665
+      ]
+    },
+    {
+      "frame": 11.5,
+      "timeMs": 315.0,
+      "rootNativeMeters": [
+        -0.04444439336657524,
+        -0.24224060773849487,
+        0.0
+      ],
+      "headingRadians": -0.4450589716434479,
+      "sampledTangentNative": [
+        -0.43051040172576904,
+        -0.9025856256484985,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        54.71787643432617,
+        6.525472640991211
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        29.647933048081114,
+        3.5357142596605766
+      ]
+    },
+    {
+      "frame": 11.75,
+      "timeMs": 322.5,
+      "rootNativeMeters": [
+        -0.047029901295900345,
+        -0.2475711703300476,
+        0.0
+      ],
+      "headingRadians": -0.45814892649650574,
+      "sampledTangentNative": [
+        -0.4422893226146698,
+        -0.8968724608421326,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        55.92195510864258,
+        6.905096054077148
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        30.30034221026052,
+        3.7414066269103277
+      ]
+    },
+    {
+      "frame": 12.0,
+      "timeMs": 330.0,
+      "rootNativeMeters": [
+        -0.049684956669807434,
+        -0.2528674006462097,
+        0.0
+      ],
+      "headingRadians": -0.471238911151886,
+      "sampledTangentNative": [
+        -0.45399007201194763,
+        -0.8910067081451416,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        57.1182975769043,
+        7.294921875
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        30.948559643262886,
+        3.9526269920318726
+      ]
+    },
+    {
+      "frame": 12.25,
+      "timeMs": 337.5,
+      "rootNativeMeters": [
+        -0.052409105002880096,
+        -0.25812846422195435,
+        0.0
+      ],
+      "headingRadians": -0.48432886600494385,
+      "sampledTangentNative": [
+        -0.4656144678592682,
+        -0.8849875926971436,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        58.30667495727539,
+        7.694887161254883
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        31.592461331432084,
+        4.169341250719778
+      ]
+    },
+    {
+      "frame": 12.5,
+      "timeMs": 345.0,
+      "rootNativeMeters": [
+        -0.05520189553499222,
+        -0.2633533775806427,
+        0.0
+      ],
+      "headingRadians": -0.4974188506603241,
+      "sampledTangentNative": [
+        -0.47186076641082764,
+        -0.8816730976104736,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        59.486881256103516,
+        8.104934692382812
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        32.2319356606776,
+        4.39151839906001
+      ]
+    },
+    {
+      "frame": 12.520000457763672,
+      "timeMs": 345.60001373291016,
+      "rootNativeMeters": [
+        -0.055428266525268555,
+        -0.2637697756290436,
+        0.0
+      ],
+      "headingRadians": -0.49846604466438293,
+      "sampledTangentNative": [
+        -0.4829026758670807,
+        -0.8756740093231201,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        59.58095169067383,
+        8.138174057006836
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        32.28290609534518,
+        4.409528572720835
+      ]
+    },
+    {
+      "frame": 12.75,
+      "timeMs": 352.5,
+      "rootNativeMeters": [
+        -0.058062851428985596,
+        -0.2685413062572479,
+        0.0
+      ],
+      "headingRadians": -0.5105088353157043,
+      "sampledTangentNative": [
+        -0.48907721042633057,
+        -0.8722405433654785,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        60.658756256103516,
+        8.524984359741211
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        32.86689582004015,
+        4.619115031572927
+      ]
+    },
+    {
+      "frame": 13.0,
+      "timeMs": 360.0,
+      "rootNativeMeters": [
+        -0.06099143251776695,
+        -0.2736913561820984,
+        0.0
+      ],
+      "headingRadians": -0.5235987901687622,
+      "sampledTangentNative": [
+        -0.49999991059303284,
+        -0.866025447845459,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        61.82204818725586,
+        8.954973220825195
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        33.49720539229799,
+        4.852097043953094
+      ]
+    },
+    {
+      "frame": 13.25,
+      "timeMs": 367.5,
+      "rootNativeMeters": [
+        -0.06398719549179077,
+        -0.2788025736808777,
+        0.0
+      ],
+      "headingRadians": -0.5366887450218201,
+      "sampledTangentNative": [
+        -0.5112938284873962,
+        -0.8594059944152832,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        62.97659683227539,
+        9.394815444946289
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        34.12277756649185,
+        5.090417930329464
+      ]
+    },
+    {
+      "frame": 13.5,
+      "timeMs": 375.0,
+      "rootNativeMeters": [
+        -0.06704960763454437,
+        -0.2838742136955261,
+        0.0
+      ],
+      "headingRadians": -0.5497786998748779,
+      "sampledTangentNative": [
+        -0.5224961042404175,
+        -0.8526415824890137,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        64.12217330932617,
+        9.844465255737305
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        34.743488326965576,
+        5.33405288757081
+      ]
+    },
+    {
+      "frame": 13.75,
+      "timeMs": 382.5,
+      "rootNativeMeters": [
+        -0.07017812877893448,
+        -0.2889053225517273,
+        0.0
+      ],
+      "headingRadians": -0.5628686547279358,
+      "sampledTangentNative": [
+        -0.5336142182350159,
+        -0.8457279801368713,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        65.25861740112305,
+        10.303802490234375
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        35.3592508627599,
+        5.58293680745767
+      ]
+    },
+    {
+      "frame": 14.0,
+      "timeMs": 390.0,
+      "rootNativeMeters": [
+        -0.0733722522854805,
+        -0.29389500617980957,
+        0.0
+      ],
+      "headingRadians": -0.5759586691856384,
+      "sampledTangentNative": [
+        -0.544640839099884,
+        -0.8386694192886353,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        66.38570022583008,
+        10.772764205932617
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        35.96994115821869,
+        5.837035585684605
+      ]
+    },
+    {
+      "frame": 14.25,
+      "timeMs": 397.5,
+      "rootNativeMeters": [
+        -0.07663141191005707,
+        -0.2988424599170685,
+        0.0
+      ],
+      "headingRadians": -0.5890486240386963,
+      "sampledTangentNative": [
+        -0.5555689334869385,
+        -0.8314704298973083,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        67.50323867797852,
+        11.251293182373047
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        36.575460000817046,
+        6.096318218337587
+      ]
+    },
+    {
+      "frame": 14.5,
+      "timeMs": 405.0,
+      "rootNativeMeters": [
+        -0.07995504140853882,
+        -0.30374687910079956,
+        0.0
+      ],
+      "headingRadians": -0.6021385788917542,
+      "sampledTangentNative": [
+        -0.5664040446281433,
+        -0.824127733707428,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        68.6110725402832,
+        11.739280700683594
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        37.175720579595676,
+        6.360725797979955
+      ]
+    },
+    {
+      "frame": 14.75,
+      "timeMs": 412.5,
+      "rootNativeMeters": [
+        -0.08334258943796158,
+        -0.3086073398590088,
+        0.0
+      ],
+      "headingRadians": -0.615228533744812,
+      "sampledTangentNative": [
+        -0.5771471261978149,
+        -0.8166400790214539,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        69.70895004272461,
+        12.236652374267578
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        37.770586477332856,
+        6.630218019523468
+      ]
+    },
+    {
+      "frame": 15.0,
+      "timeMs": 420.0,
+      "rootNativeMeters": [
+        -0.08679346740245819,
+        -0.3134229779243469,
+        0.0
+      ],
+      "headingRadians": -0.6283185482025146,
+      "sampledTangentNative": [
+        -0.5877876281738281,
+        -0.8090152740478516,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        70.79673385620117,
+        12.743316650390625
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        38.3599832846349,
+        6.904745276705677
+      ]
+    },
+    {
+      "frame": 15.25,
+      "timeMs": 427.5,
+      "rootNativeMeters": [
+        -0.0903070792555809,
+        -0.31819307804107666,
+        0.0
+      ],
+      "headingRadians": -0.6414085030555725,
+      "sampledTangentNative": [
+        -0.5962246060371399,
+        -0.8028177618980408,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        71.87421798706055,
+        13.259204864501953
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        38.94379938741129,
+        7.184270364829744
+      ]
+    },
+    {
+      "frame": 15.399999618530273,
+      "timeMs": 431.9999885559082,
+      "rootNativeMeters": [
+        -0.09244512021541595,
+        -0.32103294134140015,
+        0.0
+      ],
+      "headingRadians": -0.6492624878883362,
+      "sampledTangentNative": [
+        -0.6035555601119995,
+        -0.7973210215568542,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        72.51568222045898,
+        13.573110580444336
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        39.291365665268614,
+        7.354354736814461
+      ]
+    },
+    {
+      "frame": 15.5,
+      "timeMs": 435.0,
+      "rootNativeMeters": [
+        -0.09388284385204315,
+        -0.32291680574417114,
+        0.0
+      ],
+      "headingRadians": -0.6544984579086304,
+      "sampledTangentNative": [
+        -0.611874520778656,
+        -0.7909548282623291,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        72.94121932983398,
+        13.784208297729492
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        39.52193557313714,
+        7.4687343764590075
+      ]
+    },
+    {
+      "frame": 15.75,
+      "timeMs": 442.5,
+      "rootNativeMeters": [
+        -0.0975201204419136,
+        -0.32759326696395874,
+        0.0
+      ],
+      "headingRadians": -0.6675884127616882,
+      "sampledTangentNative": [
+        -0.6190950870513916,
+        -0.7853160500526428,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        73.99753189086914,
+        14.318241119384766
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        40.094280227721924,
+        7.758090805722423
+      ]
+    },
+    {
+      "frame": 16.0,
+      "timeMs": 450.0,
+      "rootNativeMeters": [
+        -0.1012183129787445,
+        -0.33222177624702454,
+        0.0
+      ],
+      "headingRadians": -0.6806784272193909,
+      "sampledTangentNative": [
+        -0.6293207406997681,
+        -0.7771456837654114,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        75.04304122924805,
+        14.861228942871094
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        40.660771343337586,
+        8.052299347531749
+      ]
+    },
+    {
+      "frame": 16.25,
+      "timeMs": 457.5,
+      "rootNativeMeters": [
+        -0.10497675836086273,
+        -0.3368014395236969,
+        0.0
+      ],
+      "headingRadians": -0.6937683820724487,
+      "sampledTangentNative": [
+        -0.6394396424293518,
+        -0.7688412666320801,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        76.07749557495117,
+        15.41305160522461
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        41.22127250276239,
+        8.351294893667518
+      ]
+    },
+    {
+      "frame": 16.5,
+      "timeMs": 465.0,
+      "rootNativeMeters": [
+        -0.10879483819007874,
+        -0.3413315415382385,
+        0.0
+      ],
+      "headingRadians": -0.7068583369255066,
+      "sampledTangentNative": [
+        -0.6494494080543518,
+        -0.7604048252105713,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        77.10078048706055,
+        15.973634719848633
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        41.77572169816826,
+        8.65503713904149
+      ]
+    },
+    {
+      "frame": 16.75,
+      "timeMs": 472.5,
+      "rootNativeMeters": [
+        -0.11267188936471939,
+        -0.34581124782562256,
+        0.0
+      ],
+      "headingRadians": -0.7199482917785645,
+      "sampledTangentNative": [
+        -0.6593468189239502,
+        -0.7518389225006104,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        78.11266708374023,
+        16.542875289916992
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        42.32399491389909,
+        8.96347027660841
+      ]
+    },
+    {
+      "frame": 17.0,
+      "timeMs": 480.0,
+      "rootNativeMeters": [
+        -0.11660725623369217,
+        -0.3502398729324341,
+        0.0
+      ],
+      "headingRadians": -0.7330383062362671,
+      "sampledTangentNative": [
+        -0.6691276431083679,
+        -0.7431474924087524,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        79.11301803588867,
+        17.120681762695312
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        42.86601774056119,
+        9.276544700105827
+      ]
+    },
+    {
+      "frame": 17.25,
+      "timeMs": 487.5,
+      "rootNativeMeters": [
+        -0.12060023844242096,
+        -0.354616641998291,
+        0.0
+      ],
+      "headingRadians": -0.746128261089325,
+      "sampledTangentNative": [
+        -0.6787974834442139,
+        -0.7343255281448364,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        80.10165023803711,
+        17.706945419311523
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        43.40169096562967,
+        9.59420150209708
+      ]
+    },
+    {
+      "frame": 17.5,
+      "timeMs": 495.0,
+      "rootNativeMeters": [
+        -0.12465016543865204,
+        -0.3589407205581665,
+        0.0
+      ],
+      "headingRadians": -0.7592182159423828,
+      "sampledTangentNative": [
+        -0.6883573532104492,
+        -0.7253717184066772,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        81.0783805847168,
+        18.30158042907715
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        43.93091537657962,
+        9.916394176711124
+      ]
+    },
+    {
+      "frame": 17.75,
+      "timeMs": 502.5,
+      "rootNativeMeters": [
+        -0.1287563592195511,
+        -0.36321133375167847,
+        0.0
+      ],
+      "headingRadians": -0.7723081707954407,
+      "sampledTangentNative": [
+        -0.6977774500846863,
+        -0.7163145542144775,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        82.04302597045898,
+        18.904455184936523
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        44.45359176088614,
+        10.243051414945686
+      ]
+    },
+    {
+      "frame": 18.0,
+      "timeMs": 510.0,
+      "rootNativeMeters": [
+        -0.13291801512241364,
+        -0.3674282133579254,
+        0.0
+      ],
+      "headingRadians": -0.7853981852531433,
+      "sampledTangentNative": [
+        -0.7071011662483215,
+        -0.7071124911308289,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        82.99556350708008,
+        19.51548957824707
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        44.96970771698363,
+        10.574129811321122
+      ]
+    },
+    {
+      "frame": 18.25,
+      "timeMs": 517.5,
+      "rootNativeMeters": [
+        -0.13713473081588745,
+        -0.3715898394584656,
+        0.0
+      ],
+      "headingRadians": -0.7984881401062012,
+      "sampledTangentNative": [
+        -0.7163140177726746,
+        -0.6977781057357788,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        83.93558120727539,
+        20.134597778320312
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        45.47904001669105,
+        10.909582859966385
+      ]
+    },
+    {
+      "frame": 18.5,
+      "timeMs": 525.0,
+      "rootNativeMeters": [
+        -0.14140546321868896,
+        -0.3756960332393646,
+        0.0
+      ],
+      "headingRadians": -0.811578094959259,
+      "sampledTangentNative": [
+        -0.7253764867782593,
+        -0.6883523464202881,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        84.86310195922852,
+        20.761642456054688
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        45.98160106157402,
+        11.2493361514878
+      ]
+    },
+    {
+      "frame": 18.75,
+      "timeMs": 532.5,
+      "rootNativeMeters": [
+        -0.14572954177856445,
+        -0.3797459602355957,
+        0.0
+      ],
+      "headingRadians": -0.8246680498123169,
+      "sampledTangentNative": [
+        -0.7343247532844543,
+        -0.678798258304596,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        85.77791976928711,
+        21.396520614624023
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        46.47727923754202,
+        11.593333878840108
+      ]
+    },
+    {
+      "frame": 19.0,
+      "timeMs": 540.0,
+      "rootNativeMeters": [
+        -0.1501062512397766,
+        -0.3837389051914215,
+        0.0
+      ],
+      "headingRadians": -0.8377580642700195,
+      "sampledTangentNative": [
+        -0.7431462407112122,
+        -0.6691290140151978,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        86.67985153198242,
+        22.03912353515625
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        46.96597533207016,
+        11.941517134586654
+      ]
+    },
+    {
+      "frame": 19.25,
+      "timeMs": 547.5,
+      "rootNativeMeters": [
+        -0.15453486144542694,
+        -0.3876742720603943,
+        0.0
+      ],
+      "headingRadians": -0.8508480191230774,
+      "sampledTangentNative": [
+        -0.7518397569656372,
+        -0.659345805644989,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        87.56878280639648,
+        22.689353942871094
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        47.44762733733037,
+        12.293833212073581
+      ]
+    },
+    {
+      "frame": 19.5,
+      "timeMs": 555.0,
+      "rootNativeMeters": [
+        -0.15901459753513336,
+        -0.39155131578445435,
+        0.0
+      ],
+      "headingRadians": -0.8639379739761353,
+      "sampledTangentNative": [
+        -0.7604060769081116,
+        -0.6494479179382324,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        88.44453048706055,
+        23.347074508666992
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        47.922136040797746,
+        12.650207701907215
+      ]
+    },
+    {
+      "frame": 19.75,
+      "timeMs": 562.5,
+      "rootNativeMeters": [
+        -0.16354471445083618,
+        -0.39536941051483154,
+        0.0
+      ],
+      "headingRadians": -0.8770279288291931,
+      "sampledTangentNative": [
+        -0.7688428163528442,
+        -0.6394377946853638,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        89.30698013305664,
+        24.012205123901367
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        48.38943943464424,
+        13.010597198607913
+      ]
+    },
+    {
+      "frame": 20.0,
+      "timeMs": 570.0,
+      "rootNativeMeters": [
+        -0.16812440752983093,
+        -0.3991278409957886,
+        0.0
+      ],
+      "headingRadians": -0.8901179432868958,
+      "sampledTangentNative": [
+        -0.777145266532898,
+        -0.629321277141571,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        90.15594863891602,
+        24.684608459472656
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        48.849438306344936,
+        13.374927292781997
+      ]
+    },
+    {
+      "frame": 20.25,
+      "timeMs": 577.5,
+      "rootNativeMeters": [
+        -0.17275290191173553,
+        -0.40282607078552246,
+        0.0
+      ],
+      "headingRadians": -0.9032078981399536,
+      "sampledTangentNative": [
+        -0.7853168845176697,
+        -0.6190940737724304,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        90.99129867553711,
+        25.364187240600586
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        49.302058246506164,
+        13.743145277775616
+      ]
+    },
+    {
+      "frame": 20.5,
+      "timeMs": 585.0,
+      "rootNativeMeters": [
+        -0.1774294227361679,
+        -0.4064633250236511,
+        0.0
+      ],
+      "headingRadians": -0.9162978529930115,
+      "sampledTangentNative": [
+        -0.7933551669120789,
+        -0.6087590456008911,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        91.81289291381836,
+        26.050804138183594
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        49.74722484573425,
+        14.115176744195095
+      ]
+    },
+    {
+      "frame": 20.75,
+      "timeMs": 592.5,
+      "rootNativeMeters": [
+        -0.18215312063694,
+        -0.4100390672683716,
+        0.0
+      ],
+      "headingRadians": -0.9293878078460693,
+      "sampledTangentNative": [
+        -0.8012521862983704,
+        -0.5983267426490784,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        92.6205940246582,
+        26.744356155395508
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        50.18486369463552,
+        14.490965884995175
+      ]
+    },
+    {
+      "frame": 21.0,
+      "timeMs": 600.0,
+      "rootNativeMeters": [
+        -0.18692323565483093,
+        -0.41355273127555847,
+        0.0
+      ],
+      "headingRadians": -0.942477822303772,
+      "sampledTangentNative": [
+        -0.8090172410011292,
+        -0.5877848863601685,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        93.41426467895508,
+        27.44472026824951
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        50.6149003838163,
+        14.870446041760692
+      ]
+    },
+    {
+      "frame": 21.25,
+      "timeMs": 607.5,
+      "rootNativeMeters": [
+        -0.19173894822597504,
+        -0.4170035719871521,
+        0.0
+      ],
+      "headingRadians": -0.9555603861808777,
+      "sampledTangentNative": [
+        -0.8166295886039734,
+        -0.5771621465682983,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        94.19374465942383,
+        28.151779174804688
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        51.03724810231729,
+        15.25355365646788
+      ]
+    },
+    {
+      "frame": 21.5,
+      "timeMs": 615.0,
+      "rootNativeMeters": [
+        -0.19659927487373352,
+        -0.42039138078689575,
+        0.0
+      ],
+      "headingRadians": -0.9685482978820801,
+      "sampledTangentNative": [
+        -0.824034571647644,
+        -0.5665395855903625,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        94.95898818969727,
+        28.865389823913574
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        51.45188204700728,
+        15.640211219331658
+      ]
+    },
+    {
+      "frame": 21.75,
+      "timeMs": 622.5,
+      "rootNativeMeters": [
+        -0.2015027403831482,
+        -0.42371636629104614,
+        0.0
+      ],
+      "headingRadians": -0.9812370538711548,
+      "sampledTangentNative": [
+        -0.831134021282196,
+        -0.5560721755027771,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        95.71006393432617,
+        29.585346221923828
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        51.8588394225831,
+        16.030307116261515
+      ]
+    },
+    {
+      "frame": 22.0,
+      "timeMs": 630.0,
+      "rootNativeMeters": [
+        -0.20644716918468475,
+        -0.4269801378250122,
+        0.0
+      ],
+      "headingRadians": -0.9933547973632812,
+      "sampledTangentNative": [
+        -0.8377878069877625,
+        -0.5459960103034973,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        96.44729232788086,
+        30.311290740966797
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        52.258293850963334,
+        16.42364757279476
+      ]
+    },
+    {
+      "frame": 22.25,
+      "timeMs": 637.5,
+      "rootNativeMeters": [
+        -0.21142947673797607,
+        -0.4301857352256775,
+        0.0
+      ],
+      "headingRadians": -1.0046117305755615,
+      "sampledTangentNative": [
+        -0.8438513278961182,
+        -0.536577045917511,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        97.17136001586914,
+        31.042811393737793
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        52.65061737911635,
+        16.82000936075036
+      ]
+    },
+    {
+      "frame": 22.5,
+      "timeMs": 645.0,
+      "rootNativeMeters": [
+        -0.21644583344459534,
+        -0.4333379566669464,
+        0.0
+      ],
+      "headingRadians": -1.014740228652954,
+      "sampledTangentNative": [
+        -0.8492226004600525,
+        -0.5280349850654602,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        97.8834114074707,
+        31.779338836669922
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        53.03643008532277,
+        17.2190839911837
+      ]
+    },
+    {
+      "frame": 22.75,
+      "timeMs": 652.5,
+      "rootNativeMeters": [
+        -0.22149188816547394,
+        -0.43644240498542786,
+        0.0
+      ],
+      "headingRadians": -1.0235271453857422,
+      "sampledTangentNative": [
+        -0.8538241982460022,
+        -0.5205614566802979,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        98.58463668823242,
+        32.52021503448486
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        53.41637685099446,
+        17.620514919083433
+      ]
+    },
+    {
+      "frame": 23.0,
+      "timeMs": 660.0,
+      "rootNativeMeters": [
+        -0.2265627384185791,
+        -0.43950605392456055,
+        0.0
+      ],
+      "headingRadians": -1.0308350324630737,
+      "sampledTangentNative": [
+        -0.8575988411903381,
+        -0.514319121837616,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        99.27666091918945,
+        33.26474189758301
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        53.7913381872899,
+        18.023923896698363
+      ]
+    },
+    {
+      "frame": 23.25,
+      "timeMs": 667.5,
+      "rootNativeMeters": [
+        -0.23165351152420044,
+        -0.44253653287887573,
+        0.0
+      ],
+      "headingRadians": -1.0366170406341553,
+      "sampledTangentNative": [
+        -0.8605588674545288,
+        -0.5093509554862976,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        99.96120071411133,
+        34.01217555999756
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        54.16224421163004,
+        18.428907873146088
+      ]
+    },
+    {
+      "frame": 23.5,
+      "timeMs": 675.0,
+      "rootNativeMeters": [
+        -0.2367594987154007,
+        -0.4455413520336151,
+        0.0
+      ],
+      "headingRadians": -1.0409202575683594,
+      "sampledTangentNative": [
+        -0.8627563714981079,
+        -0.5056197643280029,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        100.63992691040039,
+        34.761857986450195
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        54.530000238304595,
+        18.835110303415245
+      ]
+    },
+    {
+      "frame": 23.75,
+      "timeMs": 682.5,
+      "rootNativeMeters": [
+        -0.24187633395195007,
+        -0.44852763414382935,
+        0.0
+      ],
+      "headingRadians": -1.0438816547393799,
+      "sampledTangentNative": [
+        -0.8642672300338745,
+        -0.5030329823493958,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        101.31448745727539,
+        35.51312828063965
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        54.89549918003766,
+        19.242173092298774
+      ]
+    },
+    {
+      "frame": 24.0,
+      "timeMs": 690.0,
+      "rootNativeMeters": [
+        -0.24700024724006653,
+        -0.4515018165111542,
+        0.0
+      ],
+      "headingRadians": -1.0457147359848022,
+      "sampledTangentNative": [
+        -0.8652099370956421,
+        -0.5014097094535828,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        101.98630142211914,
+        36.265451431274414
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        55.25950993389722,
+        19.64980635320048
+      ]
+    },
+    {
+      "frame": 24.25,
+      "timeMs": 697.5,
+      "rootNativeMeters": [
+        -0.2521282732486725,
+        -0.45446887612342834,
+        0.0
+      ],
+      "headingRadians": -1.0466868877410889,
+      "sampledTangentNative": [
+        -0.8657253980636597,
+        -0.5005192160606384,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        102.65651321411133,
+        37.01836395263672
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        55.62265257816391,
+        20.05775895441671
+      ]
+    },
+    {
+      "frame": 24.5,
+      "timeMs": 705.0,
+      "rootNativeMeters": [
+        -0.2572582960128784,
+        -0.45743250846862793,
+        0.0
+      ],
+      "headingRadians": -1.0470881462097168,
+      "sampledTangentNative": [
+        -0.8659023642539978,
+        -0.5002129077911377,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        103.32594680786133,
+        37.771559715270996
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        55.985373569199766,
+        20.465865025007393
+      ]
+    },
+    {
+      "frame": 24.520000457763672,
+      "timeMs": 705.6000137329102,
+      "rootNativeMeters": [
+        -0.25766876339912415,
+        -0.4576694965362549,
+        0.0
+      ],
+      "headingRadians": -1.047104001045227,
+      "sampledTangentNative": [
+        -0.8659896850585938,
+        -0.5000617504119873,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        103.37945938110352,
+        37.83183574676514
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        56.0143684296019,
+        20.498524548048042
+      ]
+    },
+    {
+      "frame": 24.75,
+      "timeMs": 712.5,
+      "rootNativeMeters": [
+        -0.26238906383514404,
+        -0.4603952467441559,
+        0.0
+      ],
+      "headingRadians": -1.0471901893615723,
+      "sampledTangentNative": [
+        -0.8659884333610535,
+        -0.5000640749931335,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        103.99517440795898,
+        38.52487850189209
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        56.34798294614511,
+        20.874037754013244
+      ]
+    },
+    {
+      "frame": 25.0,
+      "timeMs": 720.0,
+      "rootNativeMeters": [
+        -0.26751983165740967,
+        -0.46335798501968384,
+        0.0
+      ],
+      "headingRadians": -1.0471975803375244,
+      "sampledTangentNative": [
+        -0.8659896850585938,
+        -0.5000617504119873,
+        0.0
+      ],
+      "actualFixedCameraProjectedRootDeltaPixels": [
+        104.66440200805664,
+        39.278194427490234
+      ],
+      "actualFixedCameraProjectedRootDeltaScenePixels": [
+        56.71059232309045,
+        21.282208932823394
+      ]
+    }
+  ],
+  "actualProjectedRootPathLengthScenePixels": 62.86226432899233,
+  "coordinateContract": {
+    "nativeForward": [
+      0,
+      -1,
+      0
+    ],
+    "nativePositiveYaw": "left turn, world+Z rotation",
+    "baseGridHeadingChangeRadians": 1.0471975511965976,
+    "baseGridGroundXYFromNativeXY": [
+      [
+        0,
+        -1
+      ],
+      [
+        -1,
+        0
+      ]
+    ],
+    "baseScreenGroundDirectionFromNativeXY": [
+      [
+        0,
+        -1
+      ],
+      [
+        -0.65,
+        0
+      ]
+    ],
+    "note": "Coordinate basis mapping is not an image mirror; camera rotations/rig remain proper3D transforms. Other scene calibrations must use their actual camera projection."
+  }
 }

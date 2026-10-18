@@ -1,5 +1,5 @@
 {
-  "status": "UNREVIEWED ACTUAL TWO-CLIP COMPOSITION; CONTACT/JOIN CHECK REQUIRED",
+  "status": "AUTHOR NATIVE CONTACT/JOIN AND COMPACT12POSE CHECK PASS; INDEPENDENT VARIANT REVIEW PENDING; APPEARANCE REJECTED",
   "appearance": "rejected generic technical mannequin",
   "source": "../../turn-study/mpfb-native60-turn-technical.blend",
   "sourceSha256": "6023f79f2bda78731d59605c3ff9bbdb64bf48d9482b81948c9e691df846dc30",
@@ -39,7 +39,7 @@
     0.0
   ],
   "cameraProofBudget": 12,
-  "renderStatus": "NOT RENDERED",
+  "renderStatus": "12 genuine one-camera384px diagnostic poses complete; no full turn batch",
   "routeCoverage": "Moving arc does not certify arbitrary 1-hex-wide legal routes. Adjacent corner fillets can overlap; compact planted stepping pivot fallback is not authored or certified.",
   "frames": [
     {
@@ -2454,5 +2454,12 @@
         0.0
       ]
     }
-  ]
+  ],
+  "authorChecks": [
+    "native-contact-join-check.json",
+    "straight-source-preservation.json",
+    "raster-path-metadata.json",
+    "render-check.json"
+  ],
+  "planningInput": "planning-input.json"
 }
