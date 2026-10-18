@@ -1,0 +1,574 @@
+[
+  {
+    "viewport": [
+      1280,
+      720
+    ],
+    "normalMotionRealUISolve": true,
+    "pages": [
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 974.998600940974,
+              "y": 179.30030653550162,
+              "w": 69.48493910829211,
+              "h": 131.66209318288648
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "intro",
+        "speaker": "Учительница",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 974.998600940974,
+              "y": 179.30670014591445,
+              "w": 69.48493910829211,
+              "h": 131.6556740999222
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "intro",
+        "speaker": "Рута",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "idle",
+            "reason": "activity",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 929.845017399212,
+              "y": 155.66988049092748,
+              "w": 58.95441355998628,
+              "h": 113.90437638759613
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+          }
+        ],
+        "ruta": null,
+        "state": "activity",
+        "speaker": null,
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 974.998600940974,
+              "y": 179.30670014591445,
+              "w": 69.48493910829211,
+              "h": 131.6556740999222
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "replay",
+        "speaker": "Учительница",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 974.998600940974,
+              "y": 179.30670014591445,
+              "w": 69.48493910829211,
+              "h": 131.6556740999222
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "replay",
+        "speaker": "Рута",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "idle",
+            "reason": "activity",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 929.845017399212,
+              "y": 155.65626124187946,
+              "w": 58.95441355998628,
+              "h": 113.91804989660051
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+          }
+        ],
+        "ruta": null,
+        "state": "persisted-reload",
+        "speaker": null,
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 974.998600940974,
+              "y": 179.30476174080152,
+              "w": 69.48493910829211,
+              "h": 131.65762022776462
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 895.9837674628609,
+            "y": 230.71840044214173,
+            "w": 88.20282374373767,
+            "h": 132.3042356156065
+          },
+          "feet": {
+            "x": 1232.6014457067606,
+            "y": 455.0662718874432
+          }
+        },
+        "state": "arrival",
+        "speaker": "Учительница",
+        "rutaTeacherViewportBoxIntersection": 737.2809211397425,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"889.9837674628609\" y=\"226.71840044214173\" width=\"88.20282374373767\" height=\"132.3042356156065\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 974.998600940974,
+              "y": 179.30670014591445,
+              "w": 69.48493910829211,
+              "h": 131.6556740999222
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 895.9837674628609,
+            "y": 230.71840044214173,
+            "w": 88.20282374373767,
+            "h": 132.3042356156065
+          },
+          "feet": {
+            "x": 1232.6014457067606,
+            "y": 455.0662718874432
+          }
+        },
+        "state": "arrival",
+        "speaker": "Рута",
+        "rutaTeacherViewportBoxIntersection": 737.2808501833791,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"889.9837674628609\" y=\"226.71840044214173\" width=\"88.20282374373767\" height=\"132.3042356156065\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 974.998600940974,
+              "y": 179.30670014591445,
+              "w": 69.48493910829211,
+              "h": 131.6556740999222
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 895.9837674628609,
+            "y": 230.71840044214173,
+            "w": 88.20282374373767,
+            "h": 132.3042356156065
+          },
+          "feet": {
+            "x": 1232.6014457067606,
+            "y": 455.0662718874432
+          }
+        },
+        "state": "arrival",
+        "speaker": "После победы",
+        "rutaTeacherViewportBoxIntersection": 737.2808501833791,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"889.9837674628609\" y=\"226.71840044214173\" width=\"88.20282374373767\" height=\"132.3042356156065\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 929.8304661657838,
+              "y": 203.66988049092748,
+              "w": 60.11619864900911,
+              "h": 113.90437638759613
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 861.4691021869697,
+            "y": 248.14962734881922,
+            "w": 76.3103081827843,
+            "h": 114.46546227417642
+          },
+          "feet": {
+            "x": 1232.6011276795484,
+            "y": 455.0661554979996
+          }
+        },
+        "state": "result",
+        "speaker": null,
+        "rutaTeacherViewportBoxIntersection": 551.8525065129221,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"855.4691021869697\" y=\"196.14962734881922\" width=\"76.31030818278427\" height=\"114.4654622741764\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      }
+    ],
+    "pageErrors": []
+  },
+  {
+    "viewport": [
+      844,
+      390
+    ],
+    "normalMotionRealUISolve": true,
+    "pages": [
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 601.7324390452178,
+              "y": 98.0546291525402,
+              "w": 37.27984383205569,
+              "h": 70.63587249484192
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "intro",
+        "speaker": "Учительница",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 601.7324390452178,
+              "y": 98.05500656721138,
+              "w": 37.27984383205569,
+              "h": 70.63549357652666
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "intro",
+        "speaker": "Рута",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "idle",
+            "reason": "activity",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 567.8635091902688,
+              "y": 80.32736420631409,
+              "w": 29.668613048270345,
+              "h": 57.32199954986572
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+          }
+        ],
+        "ruta": null,
+        "state": "activity",
+        "speaker": null,
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 601.7324390452178,
+              "y": 98.05500656721138,
+              "w": 37.27984383205569,
+              "h": 70.63549357652666
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "replay",
+        "speaker": "Учительница",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 601.7324390452178,
+              "y": 98.05500656721138,
+              "w": 37.27984383205569,
+              "h": 70.63549357652666
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": null,
+        "state": "replay",
+        "speaker": "Рута",
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "idle",
+            "reason": "activity",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 567.8635091902688,
+              "y": 80.29679756879116,
+              "w": 29.668613048270345,
+              "h": 57.35268796682101
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-v1/optimized/teacher-idle.webp"
+          }
+        ],
+        "ruta": null,
+        "state": "persisted-reload",
+        "speaker": null,
+        "rutaMarkup": null
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 601.7324390452178,
+              "y": 98.05157628720002,
+              "w": 37.27984383205569,
+              "h": 70.63893752299222
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 559.3396055769845,
+            "y": 125.6382429338457,
+            "w": 47.322301502960386,
+            "h": 70.98345225444055
+          },
+          "feet": {
+            "x": 1232.601341909999,
+            "y": 455.0662364148594
+          }
+        },
+        "state": "arrival",
+        "speaker": "Учительница",
+        "rutaTeacherViewportBoxIntersection": 212.22479310736065,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"553.3396055769845\" y=\"121.6382429338457\" width=\"47.32230150296037\" height=\"70.98345225444056\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 601.7324390452178,
+              "y": 98.05500656721138,
+              "w": 37.27984383205569,
+              "h": 70.63549357652666
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 559.3396055769845,
+            "y": 125.6382429338457,
+            "w": 47.322301502960386,
+            "h": 70.98345225444055
+          },
+          "feet": {
+            "x": 1232.601341909999,
+            "y": 455.0662364148594
+          }
+        },
+        "state": "arrival",
+        "speaker": "Рута",
+        "rutaTeacherViewportBoxIntersection": 212.2247257390115,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"553.3396055769845\" y=\"121.6382429338457\" width=\"47.32230150296037\" height=\"70.98345225444056\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 601.7324390452178,
+              "y": 98.05500656721138,
+              "w": 37.27984383205569,
+              "h": 70.63549357652666
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 559.3396055769845,
+            "y": 125.6382429338457,
+            "w": 47.322301502960386,
+            "h": 70.98345225444055
+          },
+          "feet": {
+            "x": 1232.601341909999,
+            "y": 455.0662364148594
+          }
+        },
+        "state": "arrival",
+        "speaker": "После победы",
+        "rutaTeacherViewportBoxIntersection": 212.2247257390115,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"553.3396055769845\" y=\"121.6382429338457\" width=\"47.32230150296037\" height=\"70.98345225444056\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      },
+      {
+        "actors": [
+          {
+            "id": "teacher",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1320 405)",
+            "box": {
+              "x": 567.8561863303185,
+              "y": 116.32736420631409,
+              "w": 30.25327754020691,
+              "h": 57.32199954986572
+            },
+            "opacity": "1",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/teacher-conversation-left.png"
+          }
+        ],
+        "ruta": {
+          "direction": "ne",
+          "box": {
+            "x": 533.4536066200659,
+            "y": 138.71166311385383,
+            "w": 38.4029148322453,
+            "h": 57.60437224836801
+          },
+          "feet": {
+            "x": 1232.6012874231537,
+            "y": 455.0662193875369
+          }
+        },
+        "state": "result",
+        "speaker": null,
+        "rutaTeacherViewportBoxIntersection": 139.76251096116522,
+        "expectedFacing": "ne",
+        "rutaMarkup": "<svg x=\"527.4536066200659\" y=\"98.71166311385385\" width=\"38.40291483224533\" height=\"57.604372248367994\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+      }
+    ],
+    "pageErrors": []
+  }
+]
