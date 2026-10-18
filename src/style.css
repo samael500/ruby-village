@@ -36,6 +36,7 @@ header #settings-open span{display:none}
 #field:before{left:0}
 #field:after{right:0;transform:scaleX(-1)}
 #board{display:block;width:100%;height:100%;touch-action:none}
+.narrative-scene #field{margin-bottom:var(--dialogue-reserve,0px)}
 .narrative-scene #board [data-grid],
 .narrative-scene #board [data-instance-outlines],
 .narrative-scene #board #placement-preview,

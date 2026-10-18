@@ -27,6 +27,7 @@ import {scenePoint,goalSignLayout} from './production-camera.ts';
 import {loadPrologue,savePrologue,newPrologue,PROLOGUE_ID,prologueFrames,shouldStartPrologue,speakerPortrait} from './prologue.ts';
 import {loadPreferences,recoverSession,saveSession,type Session} from './session.ts';
 import {chapterScene} from './chapter-art.ts';
+import {frameDialogueScene,type NarrativeBounds} from './dialogue-camera.ts';
 import {sceneBackdrop,sceneForeground,sceneLighting} from './scene-art.ts';
 import {GROUND_SCALE,project,unproject,groundTransform,sceneProjection,type Projection} from './projection.ts';
 import {sceneLayout} from './scene-layout.ts';
@@ -86,6 +87,7 @@ const pieceById=(id:string)=>lookupPiece(id,pieces);
 const placedCells=(id:string,p:Layout[string])=>cellsForPiece(id,p,pieces);
 let screen:'menu'|'map'|'game'='map';
 let phase:'intro'|'playing'|'walking'|'won'='playing';
+let dialogueReserve=0;
 let storage:StorageLike|undefined;
 const artCheck=import.meta.env.DEV && new URLSearchParams(location.search).has('art-check');
 try {if(!artCheck)storage=window.localStorage;} catch { /* Private browsing may deny storage access. */ }
@@ -236,6 +238,17 @@ function meetingDirection(position:{x:number;y:number}){
  const angle=Math.atan2(person.feet.y-position.y,person.feet.x-position.x);
  return Object.entries(motionSet.directions).map(([name,spec])=>({name:name as Direction,error:Math.abs(Math.atan2(Math.sin(angle-spec.screenAngleRadians),Math.cos(angle-spec.screenAngleRadians)))})).sort((a,b)=>a.error-b.error)[0].name;
 }
+function gameScene(width:number,height:number){
+ const scene=chapterScene(level,width,height);
+ if(!story.open||story.classList.contains('reading')||story.classList.contains('letter')||!dialogueReserve)return scene;
+ const feet=rutaJourney&&route.length?rutaJourney.position:scene.metadata.groundAnchors.start;
+ const focus:NarrativeBounds[]=[{top:feet.y-136,bottom:feet.y+8}];
+ for(const actor of residentPlacements())focus.push({top:actor.feet.y-residents.characters[actor.id].sceneHeightPx,bottom:actor.feet.y+8});
+ const assets=(paintedManifest.scenes as unknown as Record<string,{wide?:{canvas:{width:number;height:number};originalRect:{x:number;y:number}};narrativeFocus?:NarrativeBounds[]}>)[level.id];
+ if(PRODUCTION_LAYOUT_VERSION>=2)focus.push(...(assets.narrativeFocus??[]));
+ const wide=PRODUCTION_LAYOUT_VERSION>=2&&assets.wide?{...assets.wide.canvas,...assets.wide.originalRect}:undefined;
+ return frameDialogueScene(scene,{width,height,fullHeight:height+dialogueReserve},focus,wide);
+}
 function renderBoard() {
   if(screen!=='game'||orientationBlocked||portraitWindow()) return;
   if(drag){renderPreview();return;}
@@ -243,7 +256,7 @@ function renderBoard() {
   const illustrated=level.id==='gate',chapterLevel=level.id!=='sandbox';
   const paintedWater=chapterLevel&&PRODUCTION_LAYOUT_VERSION>=2;
   const sceneTransform=illustrated&&!v6Preview?sceneLayout(rect.width,rect.height,cols,rows,level.start,level.goal):null;
-  const v6=v6Preview&&chapterLevel?chapterScene(level,rect.width,rect.height):null;
+  const v6=v6Preview&&chapterLevel?gameScene(rect.width,rect.height):null;
   const availableWidth=rect.width-2*padding;
   radius=Math.max(1,Math.min(availableWidth/(Math.sqrt(3)*(cols+0.5)),(rect.height-2*padding)/(GROUND_SCALE*(1.5*(rows-1)+2))));
   const w=Math.sqrt(3)*radius*(cols+0.5), h=radius*(1.5*(rows-1)+2);
@@ -325,7 +338,7 @@ function prototypeRuta(){
  const layer=el('g',{'pointer-events':'none'},svg);
  if(!route.length){
  el('ellipse',{cx:c.x+origin.x,cy:c.y+origin.y,rx:radius*.23,ry:radius*.08,fill:'#3f3b32',opacity:.25},layer);
- const camera=fitProductionScene(level.id,svg.clientWidth,svg.clientHeight),facing=(residentMeeting||phase==='intro')?meetingDirection(camera.metadata.groundAnchors.start):null;
+ const camera=gameScene(svg.clientWidth,svg.clientHeight),facing=(residentMeeting||phase==='intro')?meetingDirection(camera.metadata.groundAnchors.start):null;
  if(facing&&motionSet&&motionAtlases){
   const pose=drawMotionFrame(layer as SVGElement,motionSet,motionSet.directions[facing].clips.idle.frames[0],foot,136*camera.fit,motionAtlases);pose.id='ruta-idle';pose.setAttribute('data-direction',facing);pose.setAttribute('data-facing-reason','encounter');
  }else rutaImage(layer,{x:foot.x,y:foot.y},radius/70*rutaManifest.characters.ruta.sceneHeightPx,'ruta-idle');
@@ -526,7 +539,7 @@ new ResizeObserver(()=>renderBoard()).observe($('field'));
 function updateRutaMarker() {
   const marker=document.getElementById('ruta-marker');if(!marker||!route.length)return;
   if(rutaJourney&&motionSet&&motionAtlases){
-   const scene=fitProductionScene(level.id,svg.clientWidth,svg.clientHeight),position=rutaJourney.position;
+   const scene=gameScene(svg.clientWidth,svg.clientHeight),position=rutaJourney.position;
    marker.removeAttribute('transform');
    const facing=(phase==='won'||residentMeeting)?meetingDirection(position):null;
    drawMotionFrame(marker as unknown as SVGElement,motionSet,facing?motionSet.directions[facing].clips.idle.frames[0]:rutaJourney.frame,{x:scene.offset.x+position.x*scene.fit,y:scene.offset.y+position.y*scene.fit},136*scene.fit,motionAtlases);
@@ -544,6 +557,15 @@ function updateRutaMarker() {
   rutaImage(marker,{x:0,y:0},radius/70*rutaManifest.characters.ruta.sceneHeightPx);
 }
 const story=$('story') as HTMLDialogElement;
+function syncDialogueLayout(){
+ const active=screen==='game'&&story.open&&!story.classList.contains('reading')&&!story.classList.contains('letter');
+ const reserve=active?Math.max(0,app.getBoundingClientRect().bottom-parseFloat(getComputedStyle(app).paddingBottom)-story.getBoundingClientRect().top):0;
+ if(Math.abs(reserve-dialogueReserve)<.1)return;
+ dialogueReserve=reserve;app.style.setProperty('--dialogue-reserve',`${reserve}px`);
+}
+new ResizeObserver(syncDialogueLayout).observe(story);
+new MutationObserver(syncDialogueLayout).observe(story,{attributes:true,attributeFilter:['open','class']});
+
 function bridgeGuide(parent:Element){
  const diagram=el('svg',{id:'bridge-guide',viewBox:'0 0 240 78',role:'img','aria-label':'Мост: сухой берег, вода посередине, сухой берег'},parent);
  for(let i=0;i<3;i++){
