@@ -1,0 +1,1168 @@
+{
+  "status": "AUTHOR NATIVE CONTACT/STRAIGHT JOIN PASS; INDEPENDENT TURN REVIEW PENDING; APPEARANCE REJECTED",
+  "appearance": "rejected generic mannequin",
+  "source": "../transitions/mpfb-start-stop-technical.blend",
+  "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+  "sourceActions": {
+    "Ruta.MPFB.StandardRig": "Ruta.MPFB.StandardRigAction",
+    "Motion ONE strap thumb pinch control": "Motion ONE strap thumb pinch controlAction",
+    "Motion ONE strap anatomical thumb pole": "Motion ONE strap anatomical thumb poleAction"
+  },
+  "turnActions": {
+    "Ruta.MPFB.StandardRig": "MPFB native60L turn / Ruta.MPFB.StandardRig",
+    "Motion ONE strap thumb pinch control": "MPFB native60L turn / Motion ONE strap thumb pinch control",
+    "Motion ONE strap anatomical thumb pole": "MPFB native60L turn / Motion ONE strap anatomical thumb pole"
+  },
+  "angleRadians": 1.0471975511965976,
+  "durationMs": 720,
+  "maximumKeySpacingMs": 7.5,
+  "exactContactEventPhases": [
+    0.1,
+    0.48,
+    0.5,
+    0.6,
+    0.98
+  ],
+  "rootArcLengthPlannedMeters": 0.5687545572916666,
+  "rootDisplacementPlannedMeters": [
+    0.26751983165740967,
+    -0.46335798501968384,
+    0.0
+  ],
+  "heading": "smooth velocity ramps120ms, constant native forward speed, no endpoint distance fit",
+  "contacts": "world flat-foot transforms fixed until native toe-off; swing reorients to exit heading",
+  "entryExit": "phase0 heel strike; actual evaluated joins must pass before rendering; no independent foot offsets",
+  "cameraProofBudget": 12,
+  "renderStatus": "12 actual E-camera diagnostic poses; no full turn batch",
+  "120degreeStatus": "NOT AUTHORED; compose only after60deg exit join pass",
+  "frames": [
+    {
+      "frame": 1.0,
+      "timeMs": 0.0,
+      "phase": 0.0,
+      "headingRadians": 0.0,
+      "rootNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "frame": 1.25,
+      "timeMs": 7.5,
+      "phase": 0.010416666666666666,
+      "headingRadians": 7.402755592579632e-06,
+      "rootNativeMeters": [
+        8.903971782103781e-09,
+        -0.005924524739384651,
+        0.0
+      ]
+    },
+    {
+      "frame": 1.5,
+      "timeMs": 15.0,
+      "phase": 0.020833333333333332,
+      "headingRadians": 0.00010945592080225667,
+      "rootNativeMeters": [
+        2.6655550300347386e-07,
+        -0.011849060654640198,
+        0.0
+      ]
+    },
+    {
+      "frame": 1.75,
+      "timeMs": 22.5,
+      "phase": 0.03125,
+      "headingRadians": 0.0005106403330766776,
+      "rootNativeMeters": [
+        1.892377781587129e-06,
+        -0.01777360402047634,
+        0.0
+      ]
+    },
+    {
+      "frame": 2.0,
+      "timeMs": 30.0,
+      "phase": 0.041666666666666664,
+      "headingRadians": 0.0014828480949561195,
+      "rootNativeMeters": [
+        7.444450602633879e-06,
+        -0.023698147386312485,
+        0.0
+      ]
+    },
+    {
+      "frame": 2.25,
+      "timeMs": 37.5,
+      "phase": 0.052083333333333336,
+      "headingRadians": 0.0033159476463388965,
+      "rootNativeMeters": [
+        2.1165702491998672e-05,
+        -0.029622670263051987,
+        0.0
+      ]
+    },
+    {
+      "frame": 2.5,
+      "timeMs": 45.0,
+      "phase": 0.0625,
+      "headingRadians": 0.006277337005425771,
+      "rootNativeMeters": [
+        4.896709288004786e-05,
+        -0.03554711118340492,
+        0.0
+      ]
+    },
+    {
+      "frame": 2.75,
+      "timeMs": 52.5,
+      "phase": 0.07291666666666667,
+      "headingRadians": 0.01058048517834342,
+      "rootNativeMeters": [
+        9.820201375987381e-05,
+        -0.04147142916917801,
+        0.0
+      ]
+    },
+    {
+      "frame": 3.0,
+      "timeMs": 60.0,
+      "phase": 0.08333333333333333,
+      "headingRadians": 0.016362461737446838,
+      "rootNativeMeters": [
+        0.0001772623509168625,
+        -0.04739542305469513,
+        0.0
+      ]
+    },
+    {
+      "frame": 3.25,
+      "timeMs": 67.5,
+      "phase": 0.09375,
+      "headingRadians": 0.023670454568300883,
+      "rootNativeMeters": [
+        0.0002950901398435235,
+        -0.05331876873970032,
+        0.0
+      ]
+    },
+    {
+      "frame": 3.4000000000000004,
+      "timeMs": 72.0,
+      "phase": 0.1,
+      "headingRadians": 0.028771962158636765,
+      "rootNativeMeters": [
+        0.0003881371230818331,
+        -0.05687226355075836,
+        0.0
+      ]
+    },
+    {
+      "frame": 3.5,
+      "timeMs": 75.0,
+      "phase": 0.10416666666666667,
+      "headingRadians": 0.03245727578534073,
+      "rootNativeMeters": [
+        0.0004606330185197294,
+        -0.05924095958471298,
+        0.0
+      ]
+    },
+    {
+      "frame": 3.75,
+      "timeMs": 82.5,
+      "phase": 0.11458333333333333,
+      "headingRadians": 0.042585855816211306,
+      "rootNativeMeters": [
+        0.0006822627619840205,
+        -0.0651613101363182,
+        0.0
+      ]
+    },
+    {
+      "frame": 4.0,
+      "timeMs": 90.0,
+      "phase": 0.125,
+      "headingRadians": 0.053842725654786,
+      "rootNativeMeters": [
+        0.0009672996820881963,
+        -0.07107892632484436,
+        0.0
+      ]
+    },
+    {
+      "frame": 4.25,
+      "timeMs": 97.5,
+      "phase": 0.13541666666666666,
+      "headingRadians": 0.06596048728286402,
+      "rootNativeMeters": [
+        0.0013216253137215972,
+        -0.07699282467365265,
+        0.0
+      ]
+    },
+    {
+      "frame": 4.5,
+      "timeMs": 105.0,
+      "phase": 0.14583333333333334,
+      "headingRadians": 0.07864927226054715,
+      "rootNativeMeters": [
+        0.0017494111089035869,
+        -0.08290185034275055,
+        0.0
+      ]
+    },
+    {
+      "frame": 4.75,
+      "timeMs": 112.5,
+      "phase": 0.15625,
+      "headingRadians": 0.09163718848529487,
+      "rootNativeMeters": [
+        0.00225313869304955,
+        -0.08880490064620972,
+        0.0
+      ]
+    },
+    {
+      "frame": 5.0,
+      "timeMs": 120.0,
+      "phase": 0.16666666666666666,
+      "headingRadians": 0.10471975511965975,
+      "rootNativeMeters": [
+        0.002833853242918849,
+        -0.09470085799694061,
+        0.0
+      ]
+    },
+    {
+      "frame": 5.25,
+      "timeMs": 127.5,
+      "phase": 0.17708333333333334,
+      "headingRadians": 0.11780972450961726,
+      "rootNativeMeters": [
+        0.0034916801378130913,
+        -0.10058870911598206,
+        0.0
+      ]
+    },
+    {
+      "frame": 5.5,
+      "timeMs": 135.0,
+      "phase": 0.1875,
+      "headingRadians": 0.1308996938995747,
+      "rootNativeMeters": [
+        0.004226515535265207,
+        -0.10646745562553406,
+        0.0
+      ]
+    },
+    {
+      "frame": 5.75,
+      "timeMs": 142.5,
+      "phase": 0.19791666666666666,
+      "headingRadians": 0.14398966328953217,
+      "rootNativeMeters": [
+        0.005038247909396887,
+        -0.11233606934547424,
+        0.0
+      ]
+    },
+    {
+      "frame": 6.0,
+      "timeMs": 150.0,
+      "phase": 0.20833333333333334,
+      "headingRadians": 0.15707963267948963,
+      "rootNativeMeters": [
+        0.005926723591983318,
+        -0.11819355189800262,
+        0.0
+      ]
+    },
+    {
+      "frame": 6.25,
+      "timeMs": 157.5,
+      "phase": 0.21875,
+      "headingRadians": 0.17016960206944712,
+      "rootNativeMeters": [
+        0.006891789846122265,
+        -0.12403890490531921,
+        0.0
+      ]
+    },
+    {
+      "frame": 6.5,
+      "timeMs": 165.0,
+      "phase": 0.22916666666666666,
+      "headingRadians": 0.18325957145940455,
+      "rootNativeMeters": [
+        0.007933296263217926,
+        -0.12987112998962402,
+        0.0
+      ]
+    },
+    {
+      "frame": 6.75,
+      "timeMs": 172.5,
+      "phase": 0.23958333333333334,
+      "headingRadians": 0.19634954084936204,
+      "rootNativeMeters": [
+        0.009051050990819931,
+        -0.13568919897079468,
+        0.0
+      ]
+    },
+    {
+      "frame": 7.0,
+      "timeMs": 180.0,
+      "phase": 0.25,
+      "headingRadians": 0.20943951023931953,
+      "rootNativeMeters": [
+        0.010244861245155334,
+        -0.14149217307567596,
+        0.0
+      ]
+    },
+    {
+      "frame": 7.25,
+      "timeMs": 187.5,
+      "phase": 0.2604166666666667,
+      "headingRadians": 0.22252947962927702,
+      "rootNativeMeters": [
+        0.011514537036418915,
+        -0.14727900922298431,
+        0.0
+      ]
+    },
+    {
+      "frame": 7.5,
+      "timeMs": 195.0,
+      "phase": 0.2708333333333333,
+      "headingRadians": 0.23561944901923448,
+      "rootNativeMeters": [
+        0.012859847396612167,
+        -0.15304875373840332,
+        0.0
+      ]
+    },
+    {
+      "frame": 7.75,
+      "timeMs": 202.5,
+      "phase": 0.28125,
+      "headingRadians": 0.24870941840919197,
+      "rootNativeMeters": [
+        0.014280561357736588,
+        -0.15880036354064941,
+        0.0
+      ]
+    },
+    {
+      "frame": 8.0,
+      "timeMs": 210.0,
+      "phase": 0.2916666666666667,
+      "headingRadians": 0.26179938779914946,
+      "rootNativeMeters": [
+        0.01577644795179367,
+        -0.16453289985656738,
+        0.0
+      ]
+    },
+    {
+      "frame": 8.25,
+      "timeMs": 217.5,
+      "phase": 0.3020833333333333,
+      "headingRadians": 0.2748893571891069,
+      "rootNativeMeters": [
+        0.017347242683172226,
+        -0.17024534940719604,
+        0.0
+      ]
+    },
+    {
+      "frame": 8.5,
+      "timeMs": 225.0,
+      "phase": 0.3125,
+      "headingRadians": 0.2879793265790644,
+      "rootNativeMeters": [
+        0.018992671743035316,
+        -0.175936758518219,
+        0.0
+      ]
+    },
+    {
+      "frame": 8.75,
+      "timeMs": 232.5,
+      "phase": 0.3229166666666667,
+      "headingRadians": 0.3010692959690218,
+      "rootNativeMeters": [
+        0.020712459459900856,
+        -0.18160614371299744,
+        0.0
+      ]
+    },
+    {
+      "frame": 9.0,
+      "timeMs": 240.0,
+      "phase": 0.3333333333333333,
+      "headingRadians": 0.31415926535897926,
+      "rootNativeMeters": [
+        0.022506309673190117,
+        -0.18725253641605377,
+        0.0
+      ]
+    },
+    {
+      "frame": 9.25,
+      "timeMs": 247.5,
+      "phase": 0.34375,
+      "headingRadians": 0.3272492347489368,
+      "rootNativeMeters": [
+        0.02437390759587288,
+        -0.192874938249588,
+        0.0
+      ]
+    },
+    {
+      "frame": 9.5,
+      "timeMs": 255.0,
+      "phase": 0.3541666666666667,
+      "headingRadians": 0.34033920413889424,
+      "rootNativeMeters": [
+        0.026314951479434967,
+        -0.19847244024276733,
+        0.0
+      ]
+    },
+    {
+      "frame": 9.75,
+      "timeMs": 262.5,
+      "phase": 0.3645833333333333,
+      "headingRadians": 0.3534291735288517,
+      "rootNativeMeters": [
+        0.028329098597168922,
+        -0.20404399931430817,
+        0.0
+      ]
+    },
+    {
+      "frame": 10.0,
+      "timeMs": 270.0,
+      "phase": 0.375,
+      "headingRadians": 0.36651914291880916,
+      "rootNativeMeters": [
+        0.030415993183851242,
+        -0.20958855748176575,
+        0.0
+      ]
+    },
+    {
+      "frame": 10.25,
+      "timeMs": 277.5,
+      "phase": 0.3854166666666667,
+      "headingRadians": 0.3796091123087667,
+      "rootNativeMeters": [
+        0.032575298100709915,
+        -0.21510553359985352,
+        0.0
+      ]
+    },
+    {
+      "frame": 10.5,
+      "timeMs": 285.0,
+      "phase": 0.3958333333333333,
+      "headingRadians": 0.3926990816987241,
+      "rootNativeMeters": [
+        0.03480663150548935,
+        -0.22059375047683716,
+        0.0
+      ]
+    },
+    {
+      "frame": 10.75,
+      "timeMs": 292.5,
+      "phase": 0.40625,
+      "headingRadians": 0.4057890510886816,
+      "rootNativeMeters": [
+        0.03710959851741791,
+        -0.22605231404304504,
+        0.0
+      ]
+    },
+    {
+      "frame": 11.0,
+      "timeMs": 300.0,
+      "phase": 0.4166666666666667,
+      "headingRadians": 0.41887902047863906,
+      "rootNativeMeters": [
+        0.039483826607465744,
+        -0.23148027062416077,
+        0.0
+      ]
+    },
+    {
+      "frame": 11.25,
+      "timeMs": 307.5,
+      "phase": 0.4270833333333333,
+      "headingRadians": 0.4319689898685965,
+      "rootNativeMeters": [
+        0.04192889481782913,
+        -0.23687666654586792,
+        0.0
+      ]
+    },
+    {
+      "frame": 11.5,
+      "timeMs": 315.0,
+      "phase": 0.4375,
+      "headingRadians": 0.445058959258554,
+      "rootNativeMeters": [
+        0.04444439336657524,
+        -0.24224060773849487,
+        0.0
+      ]
+    },
+    {
+      "frame": 11.75,
+      "timeMs": 322.5,
+      "phase": 0.4479166666666667,
+      "headingRadians": 0.4581489286485115,
+      "rootNativeMeters": [
+        0.047029901295900345,
+        -0.2475711703300476,
+        0.0
+      ]
+    },
+    {
+      "frame": 12.0,
+      "timeMs": 330.0,
+      "phase": 0.4583333333333333,
+      "headingRadians": 0.47123889803846897,
+      "rootNativeMeters": [
+        0.049684956669807434,
+        -0.2528674006462097,
+        0.0
+      ]
+    },
+    {
+      "frame": 12.25,
+      "timeMs": 337.5,
+      "phase": 0.46875,
+      "headingRadians": 0.4843288674284264,
+      "rootNativeMeters": [
+        0.052409105002880096,
+        -0.25812846422195435,
+        0.0
+      ]
+    },
+    {
+      "frame": 12.5,
+      "timeMs": 345.0,
+      "phase": 0.4791666666666667,
+      "headingRadians": 0.49741883681838395,
+      "rootNativeMeters": [
+        0.05520189553499222,
+        -0.2633533775806427,
+        0.0
+      ]
+    },
+    {
+      "frame": 12.52,
+      "timeMs": 345.59999999999997,
+      "phase": 0.48,
+      "headingRadians": 0.4984660343695805,
+      "rootNativeMeters": [
+        0.055428266525268555,
+        -0.2637697756290436,
+        0.0
+      ]
+    },
+    {
+      "frame": 12.75,
+      "timeMs": 352.5,
+      "phase": 0.4895833333333333,
+      "headingRadians": 0.5105088062083413,
+      "rootNativeMeters": [
+        0.058062851428985596,
+        -0.2685413062572479,
+        0.0
+      ]
+    },
+    {
+      "frame": 13.0,
+      "timeMs": 360.0,
+      "phase": 0.5,
+      "headingRadians": 0.5235987755982988,
+      "rootNativeMeters": [
+        0.06099143251776695,
+        -0.2736913561820984,
+        0.0
+      ]
+    },
+    {
+      "frame": 13.25,
+      "timeMs": 367.5,
+      "phase": 0.5104166666666666,
+      "headingRadians": 0.5366887449882562,
+      "rootNativeMeters": [
+        0.06398719549179077,
+        -0.2788025736808777,
+        0.0
+      ]
+    },
+    {
+      "frame": 13.5,
+      "timeMs": 375.0,
+      "phase": 0.5208333333333334,
+      "headingRadians": 0.5497787143782138,
+      "rootNativeMeters": [
+        0.06704960763454437,
+        -0.2838742136955261,
+        0.0
+      ]
+    },
+    {
+      "frame": 13.75,
+      "timeMs": 382.5,
+      "phase": 0.53125,
+      "headingRadians": 0.5628686837681712,
+      "rootNativeMeters": [
+        0.07017812877893448,
+        -0.2889053225517273,
+        0.0
+      ]
+    },
+    {
+      "frame": 14.0,
+      "timeMs": 390.0,
+      "phase": 0.5416666666666666,
+      "headingRadians": 0.5759586531581287,
+      "rootNativeMeters": [
+        0.0733722522854805,
+        -0.29389500617980957,
+        0.0
+      ]
+    },
+    {
+      "frame": 14.25,
+      "timeMs": 397.5,
+      "phase": 0.5520833333333334,
+      "headingRadians": 0.5890486225480862,
+      "rootNativeMeters": [
+        0.07663141191005707,
+        -0.2988424599170685,
+        0.0
+      ]
+    },
+    {
+      "frame": 14.5,
+      "timeMs": 405.0,
+      "phase": 0.5625,
+      "headingRadians": 0.6021385919380436,
+      "rootNativeMeters": [
+        0.07995504140853882,
+        -0.30374687910079956,
+        0.0
+      ]
+    },
+    {
+      "frame": 14.75,
+      "timeMs": 412.5,
+      "phase": 0.5729166666666666,
+      "headingRadians": 0.6152285613280011,
+      "rootNativeMeters": [
+        0.08334258943796158,
+        -0.3086073398590088,
+        0.0
+      ]
+    },
+    {
+      "frame": 15.0,
+      "timeMs": 420.0,
+      "phase": 0.5833333333333334,
+      "headingRadians": 0.6283185307179585,
+      "rootNativeMeters": [
+        0.08679346740245819,
+        -0.3134229779243469,
+        0.0
+      ]
+    },
+    {
+      "frame": 15.25,
+      "timeMs": 427.5,
+      "phase": 0.59375,
+      "headingRadians": 0.6414085001079161,
+      "rootNativeMeters": [
+        0.0903070792555809,
+        -0.31819307804107666,
+        0.0
+      ]
+    },
+    {
+      "frame": 15.399999999999999,
+      "timeMs": 432.0,
+      "phase": 0.6,
+      "headingRadians": 0.6492624817418904,
+      "rootNativeMeters": [
+        0.09244512021541595,
+        -0.32103294134140015,
+        0.0
+      ]
+    },
+    {
+      "frame": 15.5,
+      "timeMs": 435.0,
+      "phase": 0.6041666666666666,
+      "headingRadians": 0.6544984694978735,
+      "rootNativeMeters": [
+        0.09388284385204315,
+        -0.32291680574417114,
+        0.0
+      ]
+    },
+    {
+      "frame": 15.75,
+      "timeMs": 442.5,
+      "phase": 0.6145833333333334,
+      "headingRadians": 0.6675884388878309,
+      "rootNativeMeters": [
+        0.0975201204419136,
+        -0.32759326696395874,
+        0.0
+      ]
+    },
+    {
+      "frame": 16.0,
+      "timeMs": 450.0,
+      "phase": 0.625,
+      "headingRadians": 0.6806784082777884,
+      "rootNativeMeters": [
+        0.1012183129787445,
+        -0.33222177624702454,
+        0.0
+      ]
+    },
+    {
+      "frame": 16.25,
+      "timeMs": 457.5,
+      "phase": 0.6354166666666666,
+      "headingRadians": 0.6937683776677458,
+      "rootNativeMeters": [
+        0.10497675836086273,
+        -0.3368014395236969,
+        0.0
+      ]
+    },
+    {
+      "frame": 16.5,
+      "timeMs": 465.0,
+      "phase": 0.6458333333333334,
+      "headingRadians": 0.7068583470577035,
+      "rootNativeMeters": [
+        0.10879483819007874,
+        -0.3413315415382385,
+        0.0
+      ]
+    },
+    {
+      "frame": 16.75,
+      "timeMs": 472.5,
+      "phase": 0.65625,
+      "headingRadians": 0.7199483164476608,
+      "rootNativeMeters": [
+        0.11267188936471939,
+        -0.34581124782562256,
+        0.0
+      ]
+    },
+    {
+      "frame": 17.0,
+      "timeMs": 480.0,
+      "phase": 0.6666666666666666,
+      "headingRadians": 0.7330382858376182,
+      "rootNativeMeters": [
+        0.11660725623369217,
+        -0.3502398729324341,
+        0.0
+      ]
+    },
+    {
+      "frame": 17.25,
+      "timeMs": 487.5,
+      "phase": 0.6770833333333334,
+      "headingRadians": 0.7461282552275758,
+      "rootNativeMeters": [
+        0.12060023844242096,
+        -0.354616641998291,
+        0.0
+      ]
+    },
+    {
+      "frame": 17.5,
+      "timeMs": 495.0,
+      "phase": 0.6875,
+      "headingRadians": 0.7592182246175332,
+      "rootNativeMeters": [
+        0.12465016543865204,
+        -0.3589407205581665,
+        0.0
+      ]
+    },
+    {
+      "frame": 17.75,
+      "timeMs": 502.5,
+      "phase": 0.6979166666666666,
+      "headingRadians": 0.7723081940074905,
+      "rootNativeMeters": [
+        0.1287563592195511,
+        -0.36321133375167847,
+        0.0
+      ]
+    },
+    {
+      "frame": 18.0,
+      "timeMs": 510.0,
+      "phase": 0.7083333333333334,
+      "headingRadians": 0.7853981633974482,
+      "rootNativeMeters": [
+        0.13291801512241364,
+        -0.3674282133579254,
+        0.0
+      ]
+    },
+    {
+      "frame": 18.25,
+      "timeMs": 517.5,
+      "phase": 0.71875,
+      "headingRadians": 0.7984881327874056,
+      "rootNativeMeters": [
+        0.13713473081588745,
+        -0.3715898394584656,
+        0.0
+      ]
+    },
+    {
+      "frame": 18.5,
+      "timeMs": 525.0,
+      "phase": 0.7291666666666666,
+      "headingRadians": 0.811578102177363,
+      "rootNativeMeters": [
+        0.14140546321868896,
+        -0.3756960332393646,
+        0.0
+      ]
+    },
+    {
+      "frame": 18.75,
+      "timeMs": 532.5,
+      "phase": 0.7395833333333334,
+      "headingRadians": 0.8246680715673207,
+      "rootNativeMeters": [
+        0.14572954177856445,
+        -0.3797459602355957,
+        0.0
+      ]
+    },
+    {
+      "frame": 19.0,
+      "timeMs": 540.0,
+      "phase": 0.75,
+      "headingRadians": 0.837758040957278,
+      "rootNativeMeters": [
+        0.1501062512397766,
+        -0.3837389051914215,
+        0.0
+      ]
+    },
+    {
+      "frame": 19.25,
+      "timeMs": 547.5,
+      "phase": 0.7604166666666666,
+      "headingRadians": 0.8508480103472355,
+      "rootNativeMeters": [
+        0.15453486144542694,
+        -0.3876742720603943,
+        0.0
+      ]
+    },
+    {
+      "frame": 19.5,
+      "timeMs": 555.0,
+      "phase": 0.7708333333333334,
+      "headingRadians": 0.863937979737193,
+      "rootNativeMeters": [
+        0.15901459753513336,
+        -0.39155131578445435,
+        0.0
+      ]
+    },
+    {
+      "frame": 19.75,
+      "timeMs": 562.5,
+      "phase": 0.78125,
+      "headingRadians": 0.8770279491271504,
+      "rootNativeMeters": [
+        0.16354471445083618,
+        -0.39536941051483154,
+        0.0
+      ]
+    },
+    {
+      "frame": 20.0,
+      "timeMs": 570.0,
+      "phase": 0.7916666666666666,
+      "headingRadians": 0.8901179185171078,
+      "rootNativeMeters": [
+        0.16812440752983093,
+        -0.3991278409957886,
+        0.0
+      ]
+    },
+    {
+      "frame": 20.25,
+      "timeMs": 577.5,
+      "phase": 0.8020833333333334,
+      "headingRadians": 0.9032078879070654,
+      "rootNativeMeters": [
+        0.17275290191173553,
+        -0.40282607078552246,
+        0.0
+      ]
+    },
+    {
+      "frame": 20.5,
+      "timeMs": 585.0,
+      "phase": 0.8125,
+      "headingRadians": 0.9162978572970228,
+      "rootNativeMeters": [
+        0.1774294227361679,
+        -0.4064633250236511,
+        0.0
+      ]
+    },
+    {
+      "frame": 20.75,
+      "timeMs": 592.5,
+      "phase": 0.8229166666666666,
+      "headingRadians": 0.9293878266869803,
+      "rootNativeMeters": [
+        0.18215312063694,
+        -0.4100390672683716,
+        0.0
+      ]
+    },
+    {
+      "frame": 21.0,
+      "timeMs": 600.0,
+      "phase": 0.8333333333333334,
+      "headingRadians": 0.9424777960769379,
+      "rootNativeMeters": [
+        0.18692323565483093,
+        -0.41355273127555847,
+        0.0
+      ]
+    },
+    {
+      "frame": 21.25,
+      "timeMs": 607.5,
+      "phase": 0.84375,
+      "headingRadians": 0.9555603627113028,
+      "rootNativeMeters": [
+        0.19173894822597504,
+        -0.4170035719871521,
+        0.0
+      ]
+    },
+    {
+      "frame": 21.5,
+      "timeMs": 615.0,
+      "phase": 0.8541666666666666,
+      "headingRadians": 0.9685482789360504,
+      "rootNativeMeters": [
+        0.19659927487373352,
+        -0.42039138078689575,
+        0.0
+      ]
+    },
+    {
+      "frame": 21.75,
+      "timeMs": 622.5,
+      "phase": 0.8645833333333334,
+      "headingRadians": 0.9812370639137337,
+      "rootNativeMeters": [
+        0.2015027403831482,
+        -0.42371636629104614,
+        0.0
+      ]
+    },
+    {
+      "frame": 22.0,
+      "timeMs": 630.0,
+      "phase": 0.875,
+      "headingRadians": 0.9933548255418116,
+      "rootNativeMeters": [
+        0.20644716918468475,
+        -0.4269801378250122,
+        0.0
+      ]
+    },
+    {
+      "frame": 22.25,
+      "timeMs": 637.5,
+      "phase": 0.8854166666666666,
+      "headingRadians": 1.0046116953803863,
+      "rootNativeMeters": [
+        0.21142947673797607,
+        -0.4301857352256775,
+        0.0
+      ]
+    },
+    {
+      "frame": 22.5,
+      "timeMs": 645.0,
+      "phase": 0.8958333333333334,
+      "headingRadians": 1.0147402754112569,
+      "rootNativeMeters": [
+        0.21644583344459534,
+        -0.4333379566669464,
+        0.0
+      ]
+    },
+    {
+      "frame": 22.75,
+      "timeMs": 652.5,
+      "phase": 0.90625,
+      "headingRadians": 1.0235270966282968,
+      "rootNativeMeters": [
+        0.22149188816547394,
+        -0.43644240498542786,
+        0.0
+      ]
+    },
+    {
+      "frame": 23.0,
+      "timeMs": 660.0,
+      "phase": 0.9166666666666666,
+      "headingRadians": 1.0308350894591507,
+      "rootNativeMeters": [
+        0.2265627384185791,
+        -0.43950605392456055,
+        0.0
+      ]
+    },
+    {
+      "frame": 23.25,
+      "timeMs": 667.5,
+      "phase": 0.9270833333333334,
+      "headingRadians": 1.036617066018254,
+      "rootNativeMeters": [
+        0.23165351152420044,
+        -0.44253653287887573,
+        0.0
+      ]
+    },
+    {
+      "frame": 23.5,
+      "timeMs": 675.0,
+      "phase": 0.9375,
+      "headingRadians": 1.040920214191172,
+      "rootNativeMeters": [
+        0.2367594987154007,
+        -0.4455413520336151,
+        0.0
+      ]
+    },
+    {
+      "frame": 23.75,
+      "timeMs": 682.5,
+      "phase": 0.9479166666666666,
+      "headingRadians": 1.0438816035502587,
+      "rootNativeMeters": [
+        0.24187633395195007,
+        -0.44852763414382935,
+        0.0
+      ]
+    },
+    {
+      "frame": 24.0,
+      "timeMs": 690.0,
+      "phase": 0.9583333333333334,
+      "headingRadians": 1.0457147031016414,
+      "rootNativeMeters": [
+        0.24700024724006653,
+        -0.4515018165111542,
+        0.0
+      ]
+    },
+    {
+      "frame": 24.25,
+      "timeMs": 697.5,
+      "phase": 0.96875,
+      "headingRadians": 1.046686910863521,
+      "rootNativeMeters": [
+        0.2521282732486725,
+        -0.45446887612342834,
+        0.0
+      ]
+    },
+    {
+      "frame": 24.5,
+      "timeMs": 705.0,
+      "phase": 0.9791666666666666,
+      "headingRadians": 1.0470880952757953,
+      "rootNativeMeters": [
+        0.2572582960128784,
+        -0.45743250846862793,
+        0.0
+      ]
+    },
+    {
+      "frame": 24.52,
+      "timeMs": 705.6,
+      "phase": 0.98,
+      "headingRadians": 1.0471039869471266,
+      "rootNativeMeters": [
+        0.25766876339912415,
+        -0.4576694965362549,
+        0.0
+      ]
+    },
+    {
+      "frame": 24.75,
+      "timeMs": 712.5,
+      "phase": 0.9895833333333334,
+      "headingRadians": 1.047190148441005,
+      "rootNativeMeters": [
+        0.26238906383514404,
+        -0.4603952467441559,
+        0.0
+      ]
+    },
+    {
+      "frame": 25.0,
+      "timeMs": 720.0,
+      "phase": 1.0,
+      "headingRadians": 1.0471975511965976,
+      "rootNativeMeters": [
+        0.26751983165740967,
+        -0.46335798501968384,
+        0.0
+      ]
+    }
+  ],
+  "turnSourceSha256": "6023f79f2bda78731d59605c3ff9bbdb64bf48d9482b81948c9e691df846dc30",
+  "actualRootDeltaNativeMeters": [
+    0.26751983165740967,
+    -0.46335798501968384,
+    0.0
+  ],
+  "baseGridHeadingChangeRadians": -1.0471975511965976,
+  "actualSavedKeyPolylineLengthMeters": 0.568752056428906,
+  "actualMinimumDiscreteCircumradiusMeters": 0.4499906204838154,
+  "checks": [
+    "native-contact-join-check.json",
+    "straight-source-preservation.json",
+    "raster-path-metadata.json",
+    "render-check.json"
+  ],
+  "loopScope": "compositional endpoint readback only; full6clip loop raster not rendered",
+  "turn120Status": "NOT AUTHORED; awaiting60deg proof review"
+}

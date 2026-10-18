@@ -1,0 +1,63 @@
+{
+  "samples": 257,
+  "flatWorldSoleDriftMeters": {
+    "L": {
+      "toe": 2.7178181598260646e-05,
+      "heel": 2.7182050308695867e-05
+    },
+    "R": {
+      "toe": 2.873711392199564e-05,
+      "heel": 2.8931363800779806e-05
+    }
+  },
+  "maxActualAnkleTargetErrorMeters": 2.985246824181924e-05,
+  "minActualRenderLevelBootZ": 0.0003396835527382791,
+  "joinsToUnchangedStraight": {
+    "entry": {
+      "bodyWorldMatrixMaxElementError": 2.86102294921875e-06,
+      "actualSoleWorldMaxErrorMeters": 2.0755751685354118e-07,
+      "ankleWorldMaxErrorMeters": 1.48264681861791e-07
+    },
+    "exit": {
+      "bodyWorldMatrixMaxElementError": 7.212162017822266e-06,
+      "actualSoleWorldMaxErrorMeters": 2.5686275067689723e-07,
+      "ankleWorldMaxErrorMeters": 1.9880628681371114e-07
+    }
+  },
+  "sixCompositionLoop": {
+    "rootClosureMeters": 1.4901161193847656e-07,
+    "soleClosureMaxMeters": 1.5881985613405132e-07,
+    "bodyWorldMatrixMaxElementError": 5.7220458984375e-06,
+    "method": "Six rigidly composed actual saved60deg clips; evaluate actual rig/skin at360deg, without raster mirroring"
+  },
+  "actualRootDeltaMeters": [
+    0.26751983165740967,
+    -0.46335798501968384,
+    0.0
+  ],
+  "kneeFlexRangeDegrees": {
+    "L": [
+      17.737709397621643,
+      53.41961482938707
+    ],
+    "R": [
+      9.318148868125263,
+      49.050465760734966
+    ]
+  },
+  "maxAdjacentLegRotationDegreesAt2_8125ms": {
+    "L": {
+      "upperLegWorldQuaternion": 1.0241098129718378,
+      "lowerLegWorldQuaternion": 1.209805367588148
+    },
+    "R": {
+      "upperLegWorldQuaternion": 1.2480195289424287,
+      "lowerLegWorldQuaternion": 1.4622982512964786
+    }
+  },
+  "nativeFeasibilityPass": true
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-mpfb-motion/art/characters-mpfb-v1/motion/turn-study/mpfb-native60-turn-technical.blend"
+
+Blender quit
