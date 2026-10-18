@@ -1,0 +1,3835 @@
+{
+  "status": "INCREMENTAL TECHNICAL RASTER CHECKPOINT",
+  "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+  "variant": "pivot60L",
+  "records": [
+    {
+      "frame": 1,
+      "timeMs": 0,
+      "headingRadians": 0.0,
+      "actualRootNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.06999968737363815,
+          -0.008508233353495598,
+          0.05461876094341278
+        ],
+        "R": [
+          -0.06999967992305756,
+          -0.008508237078785896,
+          0.05461876094341278
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          193.9218292236328,
+          289.072717666626
+        ],
+        "R": [
+          193.9218292236328,
+          309.62790298461914
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.1435827761888504,
+              0.14662079513072968
+            ],
+            [
+              -0.1603544056415558,
+              0.08172574639320374
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.17491073386936462
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.18071144819259644,
+              0.17439380288124084
+            ],
+            [
+              -0.18082942068576813,
+              0.10742654651403427
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2301103612090273
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.1166294664144516,
+              0.1166294738650322
+            ],
+            [
+              -0.14568443596363068,
+              0.04204617068171501
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.165515620990469
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.1195732057094574,
+              0.12910450994968414
+            ],
+            [
+              -0.13777416944503784,
+              0.10866089165210724
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1451791385123463
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              -0.05298341438174248,
+              0.052983358502388
+            ],
+            [
+              -0.12796173989772797,
+              -0.09891073405742645
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1328918059034994
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              -0.06725945323705673,
+              0.06726743280887604
+            ],
+            [
+              -0.13898037374019623,
+              -0.10445007681846619
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14101459118221715
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.14148278534412384,
+              0.14039726555347443
+            ],
+            [
+              -0.13084587454795837,
+              0.11386016011238098
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1627835712095509
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.2849999964237213,
+              -0.0949999988079071
+            ],
+            [
+              -0.08500009030103683,
+              0.015000037848949432
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.29188012518315043
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.2824999988079071,
+              -0.09749999642372131
+            ],
+            [
+              -0.10300007462501526,
+              -0.08100003004074097
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2974608676791058
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.20350000262260437,
+              -0.17649999260902405
+            ],
+            [
+              -0.11200007796287537,
+              -0.10400006175041199
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.23121228562908291
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.2025362253189087,
+              0.11790260672569275
+            ],
+            [
+              -0.12399104237556458,
+              -0.05578217655420303
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.21848591813047927
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.07672207057476044,
+              0.0049032969400286674
+            ],
+            [
+              -0.1135639101266861,
+              -0.08076566457748413
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1361705801357597
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.005010633263736963,
+              0.056856464594602585
+            ],
+            [
+              -0.11356452852487564,
+              -0.08076457679271698
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12622384905450512
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.02250000089406967,
+              0.02250000089406967
+            ],
+            [
+              -0.11349992454051971,
+              -0.08849990367889404
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11398457302323267
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.051500000059604645,
+              -0.03850000351667404
+            ],
+            [
+              -0.11250006407499313,
+              -0.10550004988908768
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258103806856753
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.051500000059604645,
+              -0.03850000351667404
+            ],
+            [
+              -0.11250003427267075,
+              -0.10550002753734589
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258101083084723
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.051500000059604645,
+              -0.03850000351667404
+            ],
+            [
+              -0.11250000447034836,
+              -0.1054999977350235
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258098359312812
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.03850000351667404,
+              0.051500000059604645
+            ],
+            [
+              -0.11250006407499313,
+              -0.10550004988908768
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258103806856753
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.03850000351667404,
+              0.051500000059604645
+            ],
+            [
+              -0.11250003427267075,
+              -0.10550002753734589
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258101083084723
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.03850000351667404,
+              0.051500000059604645
+            ],
+            [
+              -0.11250000447034836,
+              -0.1054999977350235
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258098359312812
+        }
+      },
+      "sha256": "1e1e37ff632c2becf866e8e3e3f3fa0e67fa19377a7e9c0c5269f9a13ee57288"
+    },
+    {
+      "frame": 5,
+      "timeMs": 120,
+      "headingRadians": 0.0,
+      "actualRootNativeMeters": [
+        -0.028723789379000664,
+        -0.003491251263767481,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.06999974697828293,
+          -0.008508214727044106,
+          0.05461883544921875
+        ],
+        "R": [
+          -0.06999971717596054,
+          -0.008508248254656792,
+          0.05461879074573517
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          193.13321685791016,
+          284.8553695678711
+        ],
+        "R": [
+          193.13321685791016,
+          305.41058349609375
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.17173682153224945,
+              0.1190517246723175
+            ],
+            [
+              -0.16384583711624146,
+              0.07823524624109268
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1718139804792897
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.2090495377779007,
+              0.14739957451820374
+            ],
+            [
+              -0.1859523355960846,
+              0.10395048558712006
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.25369372498113074
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.12215358018875122,
+              0.11613501608371735
+            ],
+            [
+              -0.14568442106246948,
+              0.04204618185758591
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16551564171430516
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.14821848273277283,
+              0.09983128309249878
+            ],
+            [
+              -0.1412889063358307,
+              0.10559900850057602
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16715411249543324
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              -0.08016707003116608,
+              0.02581137605011463
+            ],
+            [
+              -0.1317899376153946,
+              -0.10188104212284088
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14646441958677334
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              -0.09446224570274353,
+              0.04005792737007141
+            ],
+            [
+              -0.1426822543144226,
+              -0.10725906491279602
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1527370424206115
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.17043547332286835,
+              0.11130949854850769
+            ],
+            [
+              -0.1343371421098709,
+              0.1103847473859787
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.18911683481589564
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.3137238025665283,
+              -0.12372379004955292
+            ],
+            [
+              -0.08849135786294937,
+              0.011508770287036896
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.3206925677366361
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.3112238049507141,
+              -0.12622378766536713
+            ],
+            [
+              -0.1064913421869278,
+              -0.0844912976026535
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.32579976851824793
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.23222379386425018,
+              -0.20522378385066986
+            ],
+            [
+              -0.1154913455247879,
+              -0.10749132931232452
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.25833211477571066
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.2312600165605545,
+              0.08917881548404694
+            ],
+            [
+              -0.12748229503631592,
+              -0.059273429214954376
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2465375225693584
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.10544586181640625,
+              -0.02382049337029457
+            ],
+            [
+              -0.11705517023801804,
+              -0.08425692468881607
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1566446035446211
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.03373442217707634,
+              0.02813267521560192
+            ],
+            [
+              -0.11705578863620758,
+              -0.08425583690404892
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11988670561681486
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.051223792135715485,
+              -0.006223788484930992
+            ],
+            [
+              -0.11699118465185165,
+              -0.09199116379022598
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1239309342615661
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.08022379130125046,
+              -0.06722379475831985
+            ],
+            [
+              -0.11599133163690567,
+              -0.10899131745100021
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13965497545579877
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.08022379130125046,
+              -0.06722379475831985
+            ],
+            [
+              -0.11599130183458328,
+              -0.10899129509925842
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13965495080307277
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.08022379130125046,
+              -0.06722379475831985
+            ],
+            [
+              -0.1159912720322609,
+              -0.10899126529693604
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13965492615034877
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.009776214137673378,
+              0.02277621068060398
+            ],
+            [
+              -0.11599133163690567,
+              -0.10899131745100021
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11758214775429161
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.009776214137673378,
+              0.02277621068060398
+            ],
+            [
+              -0.11599130183458328,
+              -0.10899129509925842
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11758211835517692
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.009776214137673378,
+              0.02277621068060398
+            ],
+            [
+              -0.1159912720322609,
+              -0.10899126529693604
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11758208895606242
+        }
+      },
+      "sha256": "b693687419fbc8e8c256ba5cbd5eb7dddd39365d8d3e4f6544a70bf84622b64b"
+    },
+    {
+      "frame": 9,
+      "timeMs": 240,
+      "headingRadians": 0.009631447494029999,
+      "actualRootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.06992962211370468,
+          -0.017664430662989616,
+          0.08207054436206818
+        ],
+        "R": [
+          -0.06999966502189636,
+          -0.008508225902915001,
+          0.054618850350379944
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          195.17241668701172,
+          279.9982109069824
+        ],
+        "R": [
+          193.10419464111328,
+          305.25536155700684
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.1724693924188614,
+              0.11895542591810226
+            ],
+            [
+              -0.16337791085243225,
+              0.07804066687822342
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.17247908859027244
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.20885495841503143,
+              0.14672189950942993
+            ],
+            [
+              -0.1883835792541504,
+              0.10380318760871887
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2549393467733691
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.12231085449457169,
+              0.11629592627286911
+            ],
+            [
+              -0.14575068652629852,
+              0.0420462004840374
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16575794280964415
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.1507042795419693,
+              0.09730450063943863
+            ],
+            [
+              -0.1421632170677185,
+              0.10593605786561966
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16806453947936242
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              -0.07706159353256226,
+              0.02887796238064766
+            ],
+            [
+              -0.13302139937877655,
+              -0.10006531327962875
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14603094747193895
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              -0.09140704572200775,
+              0.04297872632741928
+            ],
+            [
+              -0.14345256984233856,
+              -0.10486137121915817
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1523191439830653
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.1715722382068634,
+              0.11040319502353668
+            ],
+            [
+              -0.134181946516037,
+              0.11023510992527008
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.18999797127840334
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.314700186252594,
+              -0.12416964769363403
+            ],
+            [
+              -0.09114892780780792,
+              0.010252736508846283
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.3217267247394595
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.31138163805007935,
+              -0.1263902187347412
+            ],
+            [
+              -0.1092299371957779,
+              -0.08566100895404816
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.32678778495340005
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.23224084079265594,
+              -0.20522283017635345
+            ],
+            [
+              -0.1175457015633583,
+              -0.10934380441904068
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2592415405361927
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.23151852190494537,
+              0.08867230266332626
+            ],
+            [
+              -0.12816284596920013,
+              -0.05827978625893593
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.24750609609992366
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.10542183369398117,
+              -0.02394607476890087
+            ],
+            [
+              -0.11789126694202423,
+              -0.08457957953214645
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.15725887911641376
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.03385942056775093,
+              0.028148142620921135
+            ],
+            [
+              -0.116947703063488,
+              -0.08392222970724106
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11950077947579346
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.05131183937191963,
+              -0.006304292008280754
+            ],
+            [
+              -0.11721552908420563,
+              -0.09201440215110779
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12418584783613179
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.08022861927747726,
+              -0.06722922623157501
+            ],
+            [
+              -0.1165768951177597,
+              -0.10951942205429077
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14014010629991172
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.08022862672805786,
+              -0.06722922623157501
+            ],
+            [
+              -0.11657686531543732,
+              -0.10951939970254898
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14014008160441696
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.08022862672805786,
+              -0.06722922623157501
+            ],
+            [
+              -0.11657683551311493,
+              -0.10951936990022659
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14014005690892417
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.009767202660441399,
+              0.022766605019569397
+            ],
+            [
+              -0.11571007966995239,
+              -0.10865260660648346
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11725170033468647
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.009767202660441399,
+              0.022766603156924248
+            ],
+            [
+              -0.11571004986763,
+              -0.10865258425474167
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1172516709388918
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.009767202660441399,
+              0.022766603156924248
+            ],
+            [
+              -0.11571002006530762,
+              -0.10865255445241928
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11725164154309733
+        }
+      },
+      "sha256": "1ac55027807b86a36b5a00cd68cbe6a680448597cfdabac7d16262613bdb2475"
+    },
+    {
+      "frame": 13,
+      "timeMs": 360,
+      "headingRadians": 0.0882590115070343,
+      "actualRootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.0592709481716156,
+          0.016982346773147583,
+          0.10062074661254883
+        ],
+        "R": [
+          -0.06999973207712173,
+          -0.008508186787366867,
+          0.05461879074573517
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          187.34632873535156,
+          278.37890625
+        ],
+        "R": [
+          193.10419464111328,
+          305.2553901672363
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.1724100410938263,
+              0.12115208804607391
+            ],
+            [
+              -0.16183346509933472,
+              0.07751097530126572
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.17268544177748596
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.20011882483959198,
+              0.14752840995788574
+            ],
+            [
+              -0.19840112328529358,
+              0.10333836823701859
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2534761836268118
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.12150981277227402,
+              0.13853876292705536
+            ],
+            [
+              -0.1456844061613083,
+              0.07143393903970718
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16551562529042374
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.1565587818622589,
+              0.09075972437858582
+            ],
+            [
+              -0.144880473613739,
+              0.10731441527605057
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1693094396239317
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              -0.06480107456445694,
+              0.04036334902048111
+            ],
+            [
+              -0.135429248213768,
+              -0.09324084967374802
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14314265260913425
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              -0.07910062372684479,
+              0.05377592146396637
+            ],
+            [
+              -0.1444825828075409,
+              -0.09620743244886398
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1494656182861165
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.17177005112171173,
+              0.11416537314653397
+            ],
+            [
+              -0.13156600296497345,
+              0.10973618924617767
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1892860871419196
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.31305447220802307,
+              -0.11885792762041092
+            ],
+            [
+              -0.11147100478410721,
+              0.001008985098451376
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.32141626087004843
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.3030719459056854,
+              -0.11879201233386993
+            ],
+            [
+              -0.13015015423297882,
+              -0.0938681960105896
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.3262314985410781
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.22305725514888763,
+              -0.1959860473871231
+            ],
+            [
+              -0.13285687565803528,
+              -0.1230369508266449
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.25837041470894495
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.22431765496730804,
+              0.09275120496749878
+            ],
+            [
+              -0.13284780085086823,
+              -0.048938948661088943
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.24686534355666692
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.09634310752153397,
+              -0.016369974240660667
+            ],
+            [
+              -0.12326593697071075,
+              -0.08573053777217865
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.15564323434300156
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.026244167238473892,
+              0.03669389337301254
+            ],
+            [
+              -0.11462543904781342,
+              -0.07968470454216003
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11716515157315786
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.04333473742008209,
+              0.0015782583504915237
+            ],
+            [
+              -0.11760342121124268,
+              -0.09084966778755188
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12207103809165959
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.07147261500358582,
+              -0.05852321907877922
+            ],
+            [
+              -0.11991287767887115,
+              -0.1124112457036972
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13830802515867846
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.07147262245416641,
+              -0.05852322280406952
+            ],
+            [
+              -0.11991284787654877,
+              -0.11241122335195541
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13830800312903752
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.07147262245416641,
+              -0.05852322652935982
+            ],
+            [
+              -0.11991281807422638,
+              -0.11241119354963303
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13830797735763256
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.018177080899477005,
+              0.0311264768242836
+            ],
+            [
+              -0.11197987198829651,
+              -0.10447824001312256
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11490192289183979
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.018177079036831856,
+              0.03112647496163845
+            ],
+            [
+              -0.11197984218597412,
+              -0.10447821766138077
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11490189353152015
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.018177075311541557,
+              0.0311264730989933
+            ],
+            [
+              -0.11197981238365173,
+              -0.10447818785905838
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11490186371813296
+        }
+      },
+      "sha256": "b0ad17da0a8176e099472e5dd6638cbbf779ffa1a7274ac7d7b8dfb860c88be9"
+    },
+    {
+      "frame": 17,
+      "timeMs": 480,
+      "headingRadians": 0.26103073358535767,
+      "actualRootNativeMeters": [
+        -0.029780825600028038,
+        -0.003619729308411479,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.0391693189740181,
+          0.056981343775987625,
+          0.07173427939414978
+        ],
+        "R": [
+          -0.06999975442886353,
+          -0.008508123457431793,
+          0.05461873114109039
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          178.31125259399414,
+          286.28882217407227
+        ],
+        "R": [
+          193.1041717529297,
+          305.2554016113281
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.16990019381046295,
+              0.12335921078920364
+            ],
+            [
+              -0.15431688725948334,
+              0.07752647995948792
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.17308879351287207
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.19204430282115936,
+              0.1534969061613083
+            ],
+            [
+              -0.2152296006679535,
+              0.11007583141326904
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.24929377731856714
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.119713194668293,
+              0.16387413442134857
+            ],
+            [
+              -0.1456843465566635,
+              0.1046990379691124
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16551559228747506
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.16609182953834534,
+              0.08793860673904419
+            ],
+            [
+              -0.14681147038936615,
+              0.11607299000024796
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.17174006339775072
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              -0.042906612157821655,
+              0.05909239873290062
+            ],
+            [
+              -0.13607588410377502,
+              -0.07834739983081818
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13772161070271838
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              -0.05591592937707901,
+              0.07027239352464676
+            ],
+            [
+              -0.14304879307746887,
+              -0.07797528803348541
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1441515354395489
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.1739550679922104,
+              0.1255682408809662
+            ],
+            [
+              -0.13773271441459656,
+              0.10648175328969955
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1872872767669997
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.3033197522163391,
+              -0.1053037941455841
+            ],
+            [
+              -0.15361453592777252,
+              -0.01932280696928501
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.32015425036946366
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.278967946767807,
+              -0.10023489594459534
+            ],
+            [
+              -0.17319843173027039,
+              -0.10987717658281326
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.3244424753808899
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.19877295196056366,
+              -0.17217141389846802
+            ],
+            [
+              -0.1635701209306717,
+              -0.15042150020599365
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.25592976555543434
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.20434553921222687,
+              0.09902580082416534
+            ],
+            [
+              -0.1451009213924408,
+              -0.0275136549025774
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2449137901712202
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.0750315859913826,
+              -4.698801785707474e-05
+            ],
+            [
+              -0.1324390321969986,
+              -0.08647189289331436
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.15170632548800175
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.009663550183176994,
+              0.05395864322781563
+            ],
+            [
+              -0.10713944584131241,
+              -0.06875398755073547
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11217816778514476
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.025581952184438705,
+              0.018151728436350822
+            ],
+            [
+              -0.11598461866378784,
+              -0.08641187846660614
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11719783420281564
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.05140587314963341,
+              -0.03884625807404518
+            ],
+            [
+              -0.12469650059938431,
+              -0.11638515442609787
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13395230071056857
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.051405880600214005,
+              -0.03884626552462578
+            ],
+            [
+              -0.12469647079706192,
+              -0.11638513207435608
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13395227568923931
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.0514058880507946,
+              -0.038846272975206375
+            ],
+            [
+              -0.12469644099473953,
+              -0.11638510227203369
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13395225066791241
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.03554533049464226,
+              0.048104945570230484
+            ],
+            [
+              -0.10146961361169815,
+              -0.09315826743841171
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10984552872506355
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.03554532304406166,
+              0.04810493811964989
+            ],
+            [
+              -0.10146958380937576,
+              -0.09315824508666992
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10984549852057138
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.035545315593481064,
+              0.04810493066906929
+            ],
+            [
+              -0.10146955400705338,
+              -0.09315821528434753
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10984546676869694
+        }
+      },
+      "sha256": "49bb097f6dec5c74f858ac7a520dc249de8054fef1930ed2c43f705c9f3a9954"
+    },
+    {
+      "frame": 21,
+      "timeMs": 600,
+      "headingRadians": 0.4984367787837982,
+      "actualRootNativeMeters": [
+        -0.029013432562351227,
+        -0.003176674246788025,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72592544555664
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.04236814007163048,
+          0.05636750906705856,
+          0.05461879074573517
+        ],
+        "R": [
+          -0.06999969482421875,
+          -0.008508145809173584,
+          0.0546187162399292
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          178.54998779296875,
+          288.8697967529297
+        ],
+        "R": [
+          193.20426177978516,
+          305.36805152893066
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.1599033623933792,
+              0.12328286468982697
+            ],
+            [
+              -0.1374547779560089,
+              0.08118937909603119
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.17184366691140052
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.1813088357448578,
+              0.13974958658218384
+            ],
+            [
+              -0.22885620594024658,
+              0.11605893075466156
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.24190138143725168
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.11634756624698639,
+              0.16528558731079102
+            ],
+            [
+              -0.1456843763589859,
+              0.10443338751792908
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16551558389446433
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.1728309690952301,
+              0.10191203653812408
+            ],
+            [
+              -0.1437937319278717,
+              0.13163956999778748
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1733922987424229
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              -0.015089832246303558,
+              0.07908223569393158
+            ],
+            [
+              -0.1300579011440277,
+              -0.05552254617214203
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1302290780952036
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              -0.025062590837478638,
+              0.08728869259357452
+            ],
+            [
+              -0.13665255904197693,
+              -0.05103408545255661
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13670581050842326
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.17348912358283997,
+              0.13318532705307007
+            ],
+            [
+              -0.14761091768741608,
+              0.120794877409935
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.18263269452982372
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.2786615490913391,
+              -0.07966730743646622
+            ],
+            [
+              -0.20623302459716797,
+              -0.04326372966170311
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.316292539334877
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.2344961166381836,
+              -0.06933470815420151
+            ],
+            [
+              -0.22477133572101593,
+              -0.12485519051551819
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.3199237779576008
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.1569661796092987,
+              -0.13156691193580627
+            ],
+            [
+              -0.1977635771036148,
+              -0.17996956408023834
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2506602907961442
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.16780409216880798,
+              0.10415871441364288
+            ],
+            [
+              -0.1727825254201889,
+              0.0036272555589675903
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.24022873471337722
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              -0.042966198176145554,
+              0.02185426652431488
+            ],
+            [
+              -0.13874389231204987,
+              -0.08274278044700623
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14490897144500506
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.012575889006257057,
+              0.07446643710136414
+            ],
+            [
+              -0.09181550145149231,
+              -0.049942497164011
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10614161522098477
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.0021880443673580885,
+              0.04072781652212143
+            ],
+            [
+              -0.10934317857027054,
+              -0.0744328647851944
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10979892124998086
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.022564468905329704,
+              -0.01029655709862709
+            ],
+            [
+              -0.12536031007766724,
+              -0.11549405753612518
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12681468685595793
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.0225644800812006,
+              -0.010296571999788284
+            ],
+            [
+              -0.12536028027534485,
+              -0.11549403518438339
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12681465908314854
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.022564494982361794,
+              -0.010296585969626904
+            ],
+            [
+              -0.12536025047302246,
+              -0.1154940128326416
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12681463159162878
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.05648531764745712,
+              0.06875322759151459
+            ],
+            [
+              -0.08233553171157837,
+              -0.07246927917003632
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10357117469473297
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.056485310196876526,
+              0.06875322014093399
+            ],
+            [
+              -0.08233550190925598,
+              -0.07246925681829453
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10357114232139795
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.05648529529571533,
+              0.0687532052397728
+            ],
+            [
+              -0.08233547955751419,
+              -0.07246923446655273
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10357111563412245
+        }
+      },
+      "sha256": "9ca07cfb0a2d0985f0dcbce017eb3fe910c727bdb791d3db987dae6b6bcae5b9"
+    },
+    {
+      "frame": 25,
+      "timeMs": 720,
+      "headingRadians": 0.7422409653663635,
+      "actualRootNativeMeters": [
+        0.01307651773095131,
+        0.021123971790075302,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.04236820340156555,
+          0.056367456912994385,
+          0.05461893975734711
+        ],
+        "R": [
+          -0.06999976933002472,
+          -0.008508114144206047,
+          0.05461883544921875
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          184.03908920288086,
+          295.0495719909668
+        ],
+        "R": [
+          198.69332885742188,
+          311.54786109924316
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.10355370491743088,
+              0.17924875020980835
+            ],
+            [
+              -0.1020001694560051,
+              0.1253848373889923
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.18153690087632257
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.1284899115562439,
+              0.16865403950214386
+            ],
+            [
+              -0.20790067315101624,
+              0.15075546503067017
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2086601874614318
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.11613503098487854,
+              0.1652856469154358
+            ],
+            [
+              -0.14568430185317993,
+              0.10443335771560669
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16551562576543316
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.13138878345489502,
+              0.15399910509586334
+            ],
+            [
+              -0.11365259438753128,
+              0.16388121247291565
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.167020852631862
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              0.05187932774424553,
+              0.13451609015464783
+            ],
+            [
+              -0.09552562236785889,
+              -0.007314026355743408
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13768369033738834
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              0.04532277584075928,
+              0.14134490489959717
+            ],
+            [
+              -0.1026957780122757,
+              0.0008173994719982147
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14395359754175777
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.12770816683769226,
+              0.17656707763671875
+            ],
+            [
+              -0.13498705625534058,
+              0.15734358131885529
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1801456157148625
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.1974838376045227,
+              -0.009090306237339973
+            ],
+            [
+              -0.22454944252967834,
+              -0.04164719209074974
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.26707990149092165
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.1355566382408142,
+              0.006039777304977179
+            ],
+            [
+              -0.24093033373355865,
+              -0.10927927494049072
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2726652385621108
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.06528542190790176,
+              -0.042601294815540314
+            ],
+            [
+              -0.19765853881835938,
+              -0.17613369226455688
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2070627631483691
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.0808945819735527,
+              0.15430855751037598
+            ],
+            [
+              -0.1763801872730255,
+              0.05909307673573494
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.193812048266088
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.030280929058790207,
+              0.08271309733390808
+            ],
+            [
+              -0.11352506279945374,
+              -0.04616339132189751
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1183296340224204
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.07427459210157394,
+              0.13094423711299896
+            ],
+            [
+              -0.05447586253285408,
+              -0.0040587447583675385
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13313246267552106
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.061558179557323456,
+              0.10113487392663956
+            ],
+            [
+              -0.07248671352863312,
+              -0.03413030132651329
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11266384907476336
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.047964178025722504,
+              0.05921812355518341
+            ],
+            [
+              -0.09506554156541824,
+              -0.08417768031358719
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10847905157360448
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.04796416312456131,
+              0.05921810492873192
+            ],
+            [
+              -0.09506551921367645,
+              -0.084177665412426
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10847902108388446
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.04796414449810982,
+              0.05921808257699013
+            ],
+            [
+              -0.09506549686193466,
+              -0.0841776430606842
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.10847899891170554
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.11429018527269363,
+              0.12554413080215454
+            ],
+            [
+              -0.03423083573579788,
+              -0.023342978209257126
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1285114239789628
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.11429017037153244,
+              0.12554410099983215
+            ],
+            [
+              -0.03423081710934639,
+              -0.023342961445450783
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12851140459358248
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.11429014801979065,
+              0.12554408609867096
+            ],
+            [
+              -0.0342307947576046,
+              -0.023342939093708992
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12851138520820485
+        }
+      },
+      "sha256": "c0f77aec563616ea4a1ed1927739c3c85df610da042b7044a47ea3edd0f534f6"
+    },
+    {
+      "frame": 29,
+      "timeMs": 840,
+      "headingRadians": 0.9315956830978394,
+      "actualRootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.04236815124750137,
+          0.056367434561252594,
+          0.05461879074573517
+        ],
+        "R": [
+          -0.06966118514537811,
+          -0.0182501170784235,
+          0.08355319499969482
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          184.68446731567383,
+          295.7761859893799
+        ],
+        "R": [
+          201.53924560546875,
+          307.2579689025879
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.08556830137968063,
+              0.1906224638223648
+            ],
+            [
+              -0.09034891426563263,
+              0.1414920836687088
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.19067262334841517
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.11896228045225143,
+              0.16824430227279663
+            ],
+            [
+              -0.2011907547712326,
+              0.16677121818065643
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.21002529265358433
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.11544166505336761,
+              0.16528558731079102
+            ],
+            [
+              -0.14626412093639374,
+              0.1044333204627037
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16559907018804287
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.12235265970230103,
+              0.1621062159538269
+            ],
+            [
+              -0.10370834171772003,
+              0.16742905974388123
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16981566282689664
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              0.07313081622123718,
+              0.14548583328723907
+            ],
+            [
+              -0.08230467140674591,
+              0.013139726594090462
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14595856023919285
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              0.06918182969093323,
+              0.15208850800991058
+            ],
+            [
+              -0.09085693955421448,
+              0.02356237731873989
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.15224797257684264
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.11573974043130875,
+              0.17611485719680786
+            ],
+            [
+              -0.13622194528579712,
+              0.16622230410575867
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.18833622359818458
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.15510177612304688,
+              0.020641785115003586
+            ],
+            [
+              -0.24652977287769318,
+              -0.052244577556848526
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2627404717262136
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.08102813363075256,
+              0.038061462342739105
+            ],
+            [
+              -0.25972607731819153,
+              -0.10705546289682388
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.26935604422372555
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.018688250333070755,
+              0.0014039648231118917
+            ],
+            [
+              -0.20493893325328827,
+              -0.18093235790729523
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.20544784543997657
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.037183597683906555,
+              0.15976068377494812
+            ],
+            [
+              -0.18745432794094086,
+              0.08469661325216293
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.19107696893820883
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.05266518145799637,
+              0.09954531490802765
+            ],
+            [
+              -0.10444032400846481,
+              -0.029397275298833847
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12212886898940163
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.09186919033527374,
+              0.14228686690330505
+            ],
+            [
+              -0.038357190787792206,
+              0.016658326610922813
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14229839563450788
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.080501027405262,
+              0.11766895651817322
+            ],
+            [
+              -0.05691498890519142,
+              -0.015626687556505203
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12131906471994412
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.0733947679400444,
+              0.08392677456140518
+            ],
+            [
+              -0.08304320275783539,
+              -0.07127508521080017
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11408956404772819
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.07339474558830261,
+              0.0839267447590828
+            ],
+            [
+              -0.0830431878566742,
+              -0.07127507776021957
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1140895377723993
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.07339472323656082,
+              0.083926722407341
+            ],
+            [
+              -0.0830431655049324,
+              -0.07127505540847778
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11408950616463044
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.1270846277475357,
+              0.13761663436889648
+            ],
+            [
+              -0.010811639949679375,
+              0.0009564751526340842
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13764774155137388
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.1270846128463745,
+              0.1376166194677353
+            ],
+            [
+              -0.010811622254550457,
+              0.0009564885403960943
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1376477262774063
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.12708459794521332,
+              0.1376165896654129
+            ],
+            [
+              -0.01081160455942154,
+              0.000956506235525012
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13764769610564712
+        }
+      },
+      "sha256": "30cb4f34f90d95b12a16aa49746bf00e9830e40c2235d82caf3567b1782e9d9c"
+    },
+    {
+      "frame": 33,
+      "timeMs": 960,
+      "headingRadians": 1.0291565656661987,
+      "actualRootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.04236817732453346,
+          0.05636736750602722,
+          0.05461892485618591
+        ],
+        "R": [
+          -0.04500240087509155,
+          -0.04179149121046066,
+          0.09515422582626343
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          184.68447875976562,
+          295.7761573791504
+        ],
+        "R": [
+          206.8568344116211,
+          301.6460952758789
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.07599721103906631,
+              0.19256357848644257
+            ],
+            [
+              -0.09761319309473038,
+              0.14821645617485046
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1929736453009736
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.10455480217933655,
+              0.16378258168697357
+            ],
+            [
+              -0.19756966829299927,
+              0.17412741482257843
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2125661669590505
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.0948028489947319,
+              0.1652856469154358
+            ],
+            [
+              -0.15975423157215118,
+              0.10443325340747833
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1655156355720625
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.11835293471813202,
+              0.16267885267734528
+            ],
+            [
+              -0.10023016482591629,
+              0.16583390533924103
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1688484928502983
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              0.07935597747564316,
+              0.14754466712474823
+            ],
+            [
+              -0.07747582346200943,
+              0.020335210487246513
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14759589510155502
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              0.07648217678070068,
+              0.1538592278957367
+            ],
+            [
+              -0.08673907071352005,
+              0.031599171459674835
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1538640585698202
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.11099160462617874,
+              0.17141376435756683
+            ],
+            [
+              -0.13702929019927979,
+              0.16757318377494812
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.18941235543908738
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.13356035947799683,
+              0.03368547558784485
+            ],
+            [
+              -0.25584954023361206,
+              -0.05788473039865494
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.26373116331629354
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.054110877215862274,
+              0.051918573677539825
+            ],
+            [
+              -0.26708555221557617,
+              -0.10542052239179611
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2705758228043916
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.003344173077493906,
+              0.021883226931095123
+            ],
+            [
+              -0.207013800740242,
+              -0.1819896250963211
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.20716836041929398
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.016447970643639565,
+              0.15811675786972046
+            ],
+            [
+              -0.1918116807937622,
+              0.09562566131353378
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1924923808536146
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.061202920973300934,
+              0.10455332696437836
+            ],
+            [
+              -0.09943554550409317,
+              -0.02139206975698471
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12489789186835659
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.09643092006444931,
+              0.14385543763637543
+            ],
+            [
+              -0.030621299520134926,
+              0.026004211977124214
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14453707004039623
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.08672893047332764,
+              0.1224079430103302
+            ],
+            [
+              -0.049341313540935516,
+              -0.006835854612290859
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12396321751136759
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.0831780806183815,
+              0.09327010810375214
+            ],
+            [
+              -0.07684188336133957,
+              -0.06470192223787308
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11699970475165922
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.08317805826663971,
+              0.09327008575201035
+            ],
+            [
+              -0.07684186846017838,
+              -0.06470191478729248
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1169996780490106
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.08317803591489792,
+              0.09327005594968796
+            ],
+            [
+              -0.07684185355901718,
+              -0.06470189988613129
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11699964563573272
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.12957683205604553,
+              0.13966886699199677
+            ],
+            [
+              0.00027592177502810955,
+              0.012415883131325245
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1399490167927128
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.12957681715488434,
+              0.13966883718967438
+            ],
+            [
+              0.0002759371418505907,
+              0.01241589430719614
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13994898799243366
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.12957678735256195,
+              0.139668807387352
+            ],
+            [
+              0.00027595250867307186,
+              0.012415910139679909
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13994895925105574
+        }
+      },
+      "sha256": "1cc611ff1f550376f102fa6f86be9be894706eca1221084706186b5bc71e9a9c"
+    },
+    {
+      "frame": 35,
+      "timeMs": 1020,
+      "headingRadians": 1.044697642326355,
+      "actualRootNativeMeters": [
+        0.018025187775492668,
+        0.023981088772416115,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.04236818850040436,
+          0.05636732652783394,
+          0.05461867153644562
+        ],
+        "R": [
+          -0.03433839604258537,
+          -0.05802934244275093,
+          0.0797063410282135
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          184.68449020385742,
+          295.7761974334717
+        ],
+        "R": [
+          210.52468872070312,
+          302.73209381103516
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.07408833503723145,
+              0.19271984696388245
+            ],
+            [
+              -0.10609543323516846,
+              0.14952149987220764
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.19332521749545392
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.10365999490022659,
+              0.16456352174282074
+            ],
+            [
+              -0.19703029096126556,
+              0.17567668855190277
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.21327904907141315
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.08655912429094315,
+              0.16528566181659698
+            ],
+            [
+              -0.15408636629581451,
+              0.10443320870399475
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16551563137452865
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.11759009957313538,
+              0.1627473682165146
+            ],
+            [
+              -0.10009246319532394,
+              0.16604357957839966
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16880350102197628
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              0.07950903475284576,
+              0.14763584733009338
+            ],
+            [
+              -0.0773194208741188,
+              0.02052314393222332
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14768177758811374
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              0.0766509547829628,
+              0.15394741296768188
+            ],
+            [
+              -0.08659341186285019,
+              0.03179889917373657
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.15394965584120843
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.11005321890115738,
+              0.1705964058637619
+            ],
+            [
+              -0.13647378981113434,
+              0.16768550872802734
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1895925847329829
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.12999027967453003,
+              0.03575272485613823
+            ],
+            [
+              -0.25709035992622375,
+              -0.05871257930994034
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2639161735514997
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.049752991646528244,
+              0.054099567234516144
+            ],
+            [
+              -0.2680037319660187,
+              -0.1050458773970604
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2707961867508652
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.006872191093862057,
+              0.025147143751382828
+            ],
+            [
+              -0.2071416676044464,
+              -0.18197713792324066
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.20746576582336065
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.01310943253338337,
+              0.1577357053756714
+            ],
+            [
+              -0.19231708347797394,
+              0.09731651842594147
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1927436574586144
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.06252709031105042,
+              0.10527622699737549
+            ],
+            [
+              -0.09854558855295181,
+              -0.0200749933719635
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12534749878078336
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.09684333205223083,
+              0.1439950168132782
+            ],
+            [
+              -0.029339076951146126,
+              0.027510078623890877
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14487870219637755
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.08766211569309235,
+              0.12307220697402954
+            ],
+            [
+              -0.04806850850582123,
+              -0.005406239069998264
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12437394649259452
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.08468164503574371,
+              0.0946946069598198
+            ],
+            [
+              -0.07576383650302887,
+              -0.06357522308826447
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11746546019758626
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.08468163013458252,
+              0.094694584608078
+            ],
+            [
+              -0.07576382160186768,
+              -0.06357521563768387
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11746543345210178
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.08468160033226013,
+              0.09469455480575562
+            ],
+            [
+              -0.07576380670070648,
+              -0.06357520073652267
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11746540092146912
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.12987634539604187,
+              0.13988931477069855
+            ],
+            [
+              0.0020657102577388287,
+              0.014254320412874222
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1403012148447449
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.12987633049488068,
+              0.13988928496837616
+            ],
+            [
+              0.0020657251589000225,
+              0.014254331588745117
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1403011862709067
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.1298763006925583,
+              0.13988925516605377
+            ],
+            [
+              0.0020657400600612164,
+              0.014254346489906311
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1403011576970706
+        }
+      },
+      "sha256": "ff35750a2a46e1dd9a4dca45e8e98049ce292f7c92e4b6d8216691cd6a636a49"
+    },
+    {
+      "frame": 39,
+      "timeMs": 1140,
+      "headingRadians": 1.0471975803375244,
+      "actualRootNativeMeters": [
+        0.006247880402952433,
+        0.00831231102347374,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.042368218302726746,
+          0.056367430835962296,
+          0.054618775844573975
+        ],
+        "R": [
+          -0.027785319834947586,
+          -0.06478693336248398,
+          0.054671868681907654
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          181.1451644897461,
+          294.04698944091797
+        ],
+        "R": [
+          208.51181030273438,
+          304.3380603790283
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.08400623500347137,
+              0.18096378445625305
+            ],
+            [
+              -0.11364465951919556,
+              0.13523992896080017
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1809637929085741
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.11493918299674988,
+              0.1532430201768875
+            ],
+            [
+              -0.21322688460350037,
+              0.16171038150787354
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2238824454232243
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.08143371343612671,
+              0.16528573632240295
+            ],
+            [
+              -0.15179510414600372,
+              0.1044333204627037
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1655157115189771
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.12908807396888733,
+              0.15109919011592865
+            ],
+            [
+              -0.11637913435697556,
+              0.1508949100971222
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.15188253393577075
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              0.06639286130666733,
+              0.13559408485889435
+            ],
+            [
+              -0.09393738210201263,
+              0.0033443160355091095
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13730564594665423
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              0.06326093524694443,
+              0.14195646345615387
+            ],
+            [
+              -0.10302074253559113,
+              0.014411438256502151
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14459432109558865
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.12132855504751205,
+              0.15846984088420868
+            ],
+            [
+              -0.1532745212316513,
+              0.15214192867279053
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1719312612258314
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.14118993282318115,
+              0.024307575076818466
+            ],
+            [
+              -0.2729524075984955,
+              -0.07451266795396805
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2820927969407566
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.06082773208618164,
+              0.0426722951233387
+            ],
+            [
+              -0.28381362557411194,
+              -0.12065146863460541
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.28815586717078423
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.00433731684461236,
+              0.013894740492105484
+            ],
+            [
+              -0.22282584011554718,
+              -0.19763930141925812
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.22282618575460228
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.024348972365260124,
+              0.14589394629001617
+            ],
+            [
+              -0.2080622911453247,
+              0.08191809803247452
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.20944796939613705
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.050961799919605255,
+              0.09361325204372406
+            ],
+            [
+              -0.11406844854354858,
+              -0.03553090989589691
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1317718642169181
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.08513060212135315,
+              0.13223734498023987
+            ],
+            [
+              -0.04480038955807686,
+              0.012083463370800018
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13223881460312767
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.07603336870670319,
+              0.11139939725399017
+            ],
+            [
+              -0.06353091448545456,
+              -0.02084438130259514
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11662847186821547
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.07314470410346985,
+              0.08314471691846848
+            ],
+            [
+              -0.09125694632530212,
+              -0.07906077802181244
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.119951311435602
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.07314468175172806,
+              0.08314469456672668
+            ],
+            [
+              -0.09125693142414093,
+              -0.07906077057123184
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1199512855489566
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.07314465939998627,
+              0.0831446647644043
+            ],
+            [
+              -0.09125691652297974,
+              -0.07906075567007065
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11995125479280946
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.11814470589160919,
+              0.12814472615718842
+            ],
+            [
+              -0.013314653187990189,
+              -0.0011184918694198132
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1282280230311775
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.1181446835398674,
+              0.12814469635486603
+            ],
+            [
+              -0.013314638286828995,
+              -0.0011184806935489178
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12822799271119917
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.11814466118812561,
+              0.12814466655254364
+            ],
+            [
+              -0.013314623385667801,
+              -0.001118465792387724
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1282279623912223
+        }
+      },
+      "sha256": "b32b47a4980c77ad8c026ec374aa0469ce1b1cb2eab5a6115bd75f5a33b70ee4"
+    },
+    {
+      "frame": 41,
+      "timeMs": 1200,
+      "headingRadians": 1.0471975803375244,
+      "actualRootNativeMeters": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rootGroundAnchorPixels": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "actualFootBoneWorld": {
+        "L": [
+          0.04236821457743645,
+          0.056367404758930206,
+          0.05461873114109039
+        ],
+        "R": [
+          -0.027631543576717377,
+          -0.06487567722797394,
+          0.05461892485618591
+        ]
+      },
+      "actualFootBoneProjectionPixels": {
+        "L": [
+          179.2675666809082,
+          293.12966537475586
+        ],
+        "R": [
+          206.6542510986328,
+          303.4072494506836
+        ]
+      },
+      "actualRenderLevelGeometryXYBounds": {
+        "Ruta.MPFB.Body": {
+          "vertices": 7840,
+          "worldXYBoundsMeters": [
+            [
+              -0.08916337043046951,
+              0.17471574246883392
+            ],
+            [
+              -0.12229904532432556,
+              0.12772206962108612
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.17491074507443116
+        },
+        "Ruta.male_casualsuit01": {
+          "vertices": 33527,
+          "worldXYBoundsMeters": [
+            [
+              -0.1212126761674881,
+              0.14870066940784454
+            ],
+            [
+              -0.2219335436820984,
+              0.1543230563402176
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.23011037016128022
+        },
+        "Ruta.shoes01": {
+          "vertices": 6762,
+          "worldXYBoundsMeters": [
+            [
+              -0.08133745193481445,
+              0.16528573632240295
+            ],
+            [
+              -0.15179593861103058,
+              0.10443331301212311
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.16551571077823277
+        },
+        "Ruta.long01": {
+          "vertices": 10568,
+          "worldXYBoundsMeters": [
+            [
+              -0.1352340131998062,
+              0.1449596881866455
+            ],
+            [
+              -0.12462484836578369,
+              0.14288395643234253
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14517913748505046
+        },
+        "Ruta.high-poly": {
+          "vertices": 4164,
+          "worldXYBoundsMeters": [
+            [
+              0.06002770736813545,
+              0.12939384579658508
+            ],
+            [
+              -0.10223500430583954,
+              -0.005042817443609238
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1328918100086419
+        },
+        "Ruta.eyebrow006": {
+          "vertices": 438,
+          "worldXYBoundsMeters": [
+            [
+              0.05685337260365486,
+              0.135764017701149
+            ],
+            [
+              -0.11128860712051392,
+              0.005991760641336441
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.14101459261500077
+        },
+        "Ruta fitted olive waistcoat": {
+          "vertices": 11742,
+          "worldXYBoundsMeters": [
+            [
+              -0.12760257720947266,
+              0.1521025151014328
+            ],
+            [
+              -0.16181646287441254,
+              0.14388366043567657
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1627835759594124
+        },
+        "Ruta ONE satchel": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.14743782579898834,
+              0.018059682101011276
+            ],
+            [
+              -0.2812647223472595,
+              -0.08282497525215149
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.29188014800405804
+        },
+        "Satchel flap": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.06707562506198883,
+              0.03642440214753151
+            ],
+            [
+              -0.292125940322876,
+              -0.12896376848220825
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.29746087346530503
+        },
+        "Satchel buckle": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              -0.010585210286080837,
+              0.007646853569895029
+            ],
+            [
+              -0.23113813996315002,
+              -0.20595160126686096
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2312122958936756
+        },
+        "ONE diagonal satchel strap": {
+          "vertices": 120,
+          "worldXYBoundsMeters": [
+            [
+              -0.030596867203712463,
+              0.13964606821537018
+            ],
+            [
+              -0.21637460589408875,
+              0.07360579073429108
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.2184859236522085
+        },
+        "Red scarf left tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.04471390321850777,
+              0.08736535906791687
+            ],
+            [
+              -0.12238074839115143,
+              -0.043843213468790054
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.13617058619001512
+        },
+        "Red scarf right tail": {
+          "vertices": 84,
+          "worldXYBoundsMeters": [
+            [
+              0.07888270169496536,
+              0.12598945200443268
+            ],
+            [
+              -0.05311269313097,
+              0.0037711597979068756
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12622385117356927
+        },
+        "Red scarf knot": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.069785475730896,
+              0.10515151172876358
+            ],
+            [
+              -0.071843221783638,
+              -0.02915668487548828
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.11398457124985961
+        },
+        "Vest brass button": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.06689681112766266,
+              0.07689683139324188
+            ],
+            [
+              -0.09956925362348557,
+              -0.08737308531999588
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258103629601134
+        },
+        "Vest brass button.001": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.06689679622650146,
+              0.0768968015909195
+            ],
+            [
+              -0.09956923872232437,
+              -0.08737307786941528
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258100670822288
+        },
+        "Vest brass button.002": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.06689676642417908,
+              0.0768967792391777
+            ],
+            [
+              -0.09956922382116318,
+              -0.08737306296825409
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258098150572087
+        },
+        "Vest brass button.003": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.111896812915802,
+              0.12189683318138123
+            ],
+            [
+              -0.02162695676088333,
+              -0.009430795907974243
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258104343017465
+        },
+        "Vest brass button.004": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.11189679801464081,
+              0.12189680337905884
+            ],
+            [
+              -0.021626941859722137,
+              -0.009430784732103348
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.1225810122219874
+        },
+        "Vest brass button.005": {
+          "vertices": 96,
+          "worldXYBoundsMeters": [
+            [
+              0.11189676821231842,
+              0.12189678102731705
+            ],
+            [
+              -0.021626926958560944,
+              -0.009430769830942154
+            ]
+          ],
+          "maxWorldXYRadiusFromPivotOriginMeters": 0.12258098842279513
+        }
+      },
+      "sha256": "8220fd6a459c49fbbee75b460b9c3884f4bcef542b4184b5f1801ebb98690888"
+    }
+  ]
+}

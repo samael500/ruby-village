@@ -1,0 +1,12 @@
+"""Exact budget for the single compact stopped-pivot proof."""
+from pathlib import Path
+import json,re,hashlib
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'art/characters-mpfb-v1/motion/pivot-study';proof=json.loads((OUT/'render-check.json').read_text());assert proof['actualRenderedPoseCount']==12 and proof['allContained'];png=list((OUT/'E').glob('*.png'));assert len(png)==12;reported=[]
+for value in re.findall(r'^Time: ([0-9:.]+)',(OUT/'render.log').read_text(),re.M):
+ seconds=0.
+ for part in value.split(':'):seconds=seconds*60+float(part)
+ reported.append(seconds)
+assert len(reported)==12
+raster=json.loads((OUT/'raster-path-metadata.json').read_text());source=OUT/'mpfb-compact-pivot60-technical.blend';sha=hashlib.sha256(source.read_bytes()).hexdigest();assert sha==raster['sourceSha256Before']==raster['sourceSha256AfterFreshProjection'];names=sorted({name for r in raster['renderedFrames'] for name in r['actualRenderLevelGeometryXYBounds']});bounds={name:max(r['actualRenderLevelGeometryXYBounds'][name]['maxWorldXYRadiusFromPivotOriginMeters'] for r in raster['renderedFrames']) for name in names}
+result={'status':'SCOPED TECHNICAL12POSE STOPPED PIVOT PROOF; NO FULL TURN BATCH','actualNewNativeRenderCount':12,'actualNativePngCount':12,'nativePngBytes':sum(p.stat().st_size for p in png),'sourceBlendBytes':source.stat().st_size,'sourceSha256':sha,'cameraCount':1,'camera':'base E,384,ortho1.70m,groundScale.65,shared251to136 calibration','cyclesSamples':8,'blenderThreads':2,'cyclesReportedRenderWallSecondsTotal':sum(reported),'cyclesReportedLongestRenderWallSeconds':max(reported),'cpuUtilizationMeasured':False,'metadataRepair':'Initial export tried to take a moving-arc minimum radius from a compact balance curve with no qualifying circumcircle; metadata raised after all12 successful renders. Fixed non-arc metadata reuses12 exact SHA-verified atomic receipts. Zero additional renders. Original log retained.','actualDiagnosticGeometryWorldXYRadiusByObjectMeters':bounds,'geometryScope':'Actual render-level geometry at12 poses, not certified continuous body/bag sweep or one-hex clearance. Root bound alone is insufficient.','newPivot120OrRightSourceRaster':False,'appearance':'rejected generic technical mannequin; no styled batch'}
+(OUT/'resource-budget.json').write_text(json.dumps(result,indent=2)+'\n');print(json.dumps({k:v for k,v in result.items() if k!='actualDiagnosticGeometryWorldXYRadiusByObjectMeters'},indent=2))

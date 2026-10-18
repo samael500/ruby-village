@@ -42,7 +42,7 @@
       "R": 2.384185791015625e-07
     },
     "relativeTorsoRotationExcursionDegrees": 3.999760058619936,
-    "worldHeadRotationExcursionDegrees": 5.999922900450225
+    "rigLocalHeadRotationExcursionDegrees": 5.999922900450225
   },
   "records": [
     {
@@ -14272,5 +14272,6 @@
         ]
       }
     }
-  ]
+  ],
+  "headMetricNote": "Head matrices in this inherited auditor are rig-object local. The actor object itself turns60degrees;6degree head excursion is local anticipation, not world stabilization."
 }
