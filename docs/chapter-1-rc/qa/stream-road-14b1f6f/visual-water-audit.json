@@ -1,0 +1,47 @@
+{
+  "logicalTruthMaskUnchangedFromC64b249": true,
+  "truthSha256": "1c37082ce71f5f99864c39abcbbb297866a6bbebfe339d42252301199534c857",
+  "visibleBodyCenterAlpha": {
+    "6,0": 255,
+    "6,1": 255,
+    "6,2": 255,
+    "5,3": 255,
+    "5,4": 255,
+    "5,5": 255,
+    "4,6": 255
+  },
+  "bridgeEndMiddleEndActualBodyAlpha": {
+    "5,1": 0,
+    "6,1": 255,
+    "7,1": 0
+  },
+  "bridgeMiddleSharedContacts": {
+    "6,0": {
+      "xy": [
+        898,
+        364
+      ],
+      "bodyAlpha": 255
+    },
+    "6,2": {
+      "xy": [
+        958,
+        432
+      ],
+      "bodyAlpha": 255
+    }
+  },
+  "actualBody4ConnectedCenters": {
+    "6,0": true,
+    "6,1": true,
+    "6,2": true,
+    "5,3": true,
+    "5,4": true,
+    "5,5": true,
+    "4,6": true
+  },
+  "actualBodyConnectedPixelCount": 37068,
+  "freeInteriorRgbChanged": 0,
+  "freeInteriorBodyLeak": 0,
+  "method": "1px conservative free interior; actual visual body mask measured separately from full immutable truthmask; native PNG vs canonical dry source RGB"
+}

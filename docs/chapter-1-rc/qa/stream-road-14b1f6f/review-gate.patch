@@ -1,0 +1,43 @@
+commit c64b249c7c89ae4eb1581795b59fd26423a2f69e
+Author: Maksim Skorokhod <skhmaks@yandex.com>
+Date:   Sun Oct 18 03:13:27 2026 +0300
+
+    test(#46): isolate non-release stream art pilot with explicit pending visual audit
+
+diff --git a/index.html b/index.html
+index d37987b..e31f1b3 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1 @@
+-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#eae6d7"><meta name="description" content="Рута возвращает исчезнувшие дороги. Первая глава из восьми гексагональных головоломок и свободная песочница."><title>Рубиновая деревня · первая глава</title></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
++<!doctype html><html lang="ru"><head><style>body::after{content:"ХУДОЖЕСТВЕННЫЙ ПИЛОТ РУЧЬЯ · НЕ РЕЛИЗ";position:fixed;bottom:0;right:0;z-index:9999;font:10px sans-serif;background:#fff7cf;color:#493d24;padding:3px 6px;pointer-events:none}#map-open,#completion-map,#next-level{display:none!important}</style><script>if(!localStorage.getItem('ruby-village:chapter-1:v1'))localStorage.setItem('ruby-village:chapter-1:v1',JSON.stringify({version:2,completed:['gate','garden','well','bakery'],introSeen:['gate','garden','well','bakery']}));</script><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#eae6d7"><meta name="description" content="Рута возвращает исчезнувшие дороги. Первая глава из восьми гексагональных головоломок и свободная песочница."><title>Рубиновая деревня · первая глава</title></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
+diff --git a/src/main.ts b/src/main.ts
+index 56e3f18..68c48aa 100644
+--- a/src/main.ts
++++ b/src/main.ts
+@@ -6,7 +6,7 @@ import mapPaint from '../public/assets/chapter-map-v2/manifest.json' with {type:
+ import {drawBridge} from './bridge-art.ts';
+ import {drawConnectedRoad} from './connected-road.ts';
+ // Enable only after the finished stream material/bank pilot is reviewed.
+-const CONNECTED_ROAD_PILOT=false;
++const CONNECTED_ROAD_PILOT=true;
+ import {prepareResidentViews,renderResidents,sceneResidents,legacyResidentPlacements,type ResidentPlacement} from './resident-scene.ts';
+ import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
+ import {RutaJourney} from './ruta-journey.ts';
+diff --git a/src/production-chapter.ts b/src/production-chapter.ts
+index 165ae24..dca2154 100644
+--- a/src/production-chapter.ts
++++ b/src/production-chapter.ts
+@@ -6,9 +6,10 @@ import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {
+ import {paintedActivationBlockers} from './painted-activation.ts';
+ // Atomic integration gate: switch only when all matching scene layers pass art review.
+ // #44 remains exported/tested independently; legacy art retains matching gameplay.
+-export const PRODUCTION_LAYOUT_VERSION=1;
++// ISOLATED ART REVIEW ONLY: this branch is not an RC/export for publication.
++export const PRODUCTION_LAYOUT_VERSION=2;
+ const paintedActive=PRODUCTION_LAYOUT_VERSION>=2;
+-if(paintedActive){const blockers=paintedActivationBlockers(paintedManifest,acceptedScenes);if(blockers.length)throw new Error(`Painted chapter activation blocked: ${blockers.join('; ')}`);}
++if(paintedActive){const blockers=paintedActivationBlockers(paintedManifest,{stream:acceptedScenes.stream}).filter(reason=>!reason.includes('full-polygon visual audit not passed')); console.warn('ISOLATED STREAM ART REVIEW: full visual audit pending; production activation gate unchanged on integration branch');if(blockers.length)throw new Error(`Painted chapter activation blocked: ${blockers.join('; ')}`);}
+ export const productionLevels:readonly Level[]=paintedActive?acceptedLevels:acceptedLevels.map(level=>{
+  const logical=legacy['chapter-1.logical.json'][level.id as keyof typeof legacy['chapter-1.logical.json']];
+  const solution=legacy['art-solutions.json'][level.id as keyof typeof legacy['art-solutions.json']];
