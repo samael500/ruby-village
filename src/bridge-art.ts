@@ -21,6 +21,21 @@ export function drawBridge(parent:Element,anchor:Hex,turns:number,radius:number,
  const detailed=!!options.connectedPaving;
  const deck=node('svg',{x:-length/2,y:-radius,width:length,height:radius*2,viewBox:detailed?'24 80 1974 618':'68 167 2033 359',preserveAspectRatio:detailed?'xMidYMid slice':'none',overflow:'hidden'},paint);
  node('image',{href:`${import.meta.env.BASE_URL}assets/${detailed?'bridge-v2/deck-material-v1.webp':'bridge-v1/deck-v1.png'}`,width:detailed?2022:2170,height:detailed?778:725},deck);
+ // Low timber edge beams are part of the deck, not upright railings. They
+ // follow only the actual outside contour and end where paving meets timber.
+ if(detailed)for(const {a,b,count,neighbor}of edges.values()){
+  if(count!==1||options.connectedPaving!.has(key(add(anchor,rotate(neighbor,turns)))))continue;
+  const mx=(a.x+b.x)/2,my=(a.y+b.y)/2,cx=Math.sqrt(3)*radius*Math.round(mx/(Math.sqrt(3)*radius));
+  const nx=cx-mx,ny=-my,n=Math.hypot(nx,ny)||1,ix=nx/n*radius*.065,iy=ny/n*radius*.065;
+  const d=`M${a.x+ix} ${a.y+iy}L${b.x+ix} ${b.y+iy}`;
+  node('path',{d,fill:'none',stroke:'#493620','stroke-width':radius*.17,'stroke-linecap':'round',opacity:.65},paint);
+  node('path',{d,fill:'none',stroke:my<0?'#c39a54':'#947039','stroke-width':radius*.115,'stroke-linecap':'round'},paint);
+  node('path',{d:`M${a.x+ix} ${a.y+iy-radius*.022}L${b.x+ix} ${b.y+iy-radius*.022}`,fill:'none',stroke:'#efd08c','stroke-width':radius*.021,'stroke-linecap':'round',opacity:.8},paint);
+  for(const t of [.33,.62]){
+   const x=a.x+(b.x-a.x)*t+ix,y=a.y+(b.y-a.y)*t+iy;
+   node('path',{d:`M${x} ${y}l${(b.x-a.x)*.12} ${(b.y-a.y)*.12}`,stroke:'#5c4225','stroke-width':radius*.012,opacity:.7,'stroke-linecap':'round'},paint);
+  }
+ }
  // Material detail follows the real deck contour. Pegs sit inside each outer
  // side rather than being bisected when a rectangular bitmap meets a hex edge.
  if(detailed)for(const {a,b,count,neighbor}of edges.values()){
