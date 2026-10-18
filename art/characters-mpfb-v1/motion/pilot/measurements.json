@@ -3,7 +3,13 @@
   "productionEnabled": false,
   "sourceCommit": "25690fa",
   "source": "appearance-v1 rejected generic mannequin",
-  "mpfb": "2.0.18",
+  "rigBones": 167,
+  "baseRigBones": 163,
+  "mpfb": [
+    2,
+    0,
+    18
+  ],
   "blender": "4.5.3 LTS",
   "trackWidthMeters": 0.14,
   "pelvisYawRadians": 0.026,
@@ -13,6 +19,7 @@
   "projectedHeightCalibration": "final actual E cycle max alpha height251px at384px ortho1.70; physical stride preserved after natural COM/stance correction",
   "metersToScenePixels": 122.39043824701194,
   "strideMeters": 0.5687545572916666,
+  "baselineStudyStrideScenePixels": 67.46,
   "strideScenePixels": 69.61011952191234,
   "projection": {
     "angle": 0,
@@ -1445,8 +1452,5 @@
         }
       }
     }
-  ],
-  "baselineStudyStrideScenePixels": 67.46,
-  "rigBones": 167,
-  "baseRigBones": 163
+  ]
 }

@@ -22,6 +22,9 @@ BLENDER_USER_CONFIG=/tmp/ruby-mpfb-motion-config/config \
 BLENDER_USER_SCRIPTS=/tmp/ruby-mpfb-motion-config/scripts \
 BLENDER_USER_DATAFILES=/tmp/ruby-mpfb-motion-config/data \
 /tmp/blender-4.5.3-linux-x64/blender -b --threads 2 --python scripts/mpfb-motion-verify.py
+BLENDER_USER_CONFIG=/tmp/ruby-mpfb-motion-config/config \
+BLENDER_USER_SCRIPTS=/tmp/ruby-mpfb-motion-config/scripts \
+BLENDER_USER_DATAFILES=/tmp/ruby-mpfb-motion-config/data \
 /tmp/blender-4.5.3-linux-x64/blender -b --threads 2 --python scripts/mpfb-motion-contact-render.py
 python3 scripts/mpfb-motion-review.py
 ```
@@ -34,6 +37,15 @@ The initial measured stance was offset too far behind the pelvis; the solver mis
 
 `independent-contact-check.json` is from a separate Blender process opening the saved file. It measures actual armature-evaluated source shoe sole vertices in world coordinates, temporarily disabling subdivision solely to retain source vertex indices. The flat-stance sample window is phase.10–.46; knee angle uses actual hip/knee/ankle bones. Current measured flat-sole drift is about.020mm, knee flex15.75–52.89°, minimum sole height+.400mm on both sides. Measured toe-marker drift during phase.48–.60push-off is1.20mm, rather than the much smaller flat-stance value. These establish solver/skin contact accuracy only, not naturalness, final clothes quality or visual acceptance. Heel/toe roll and overall cadence still require visual review; no six-direction or start/stop pass is claimed yet.
 
-Front-view inspection also identified the original27.8cm-wide MPFB rest stance as too wide for a calm child walk. Actual rejected strip is retained as `motion/rejects/wide-original-rest-track.jpg`. IK stance is narrowed to14cm, without remodeling anatomy. Independent evaluation establishes24 unique poses and endpoint root-relative bone matrices closing within3.1e−7.
+Front-view inspection also identified the original27.8cm-wide MPFB rest stance as too wide for a calm child walk. Actual rejected strip is retained as `motion/rejects/wide-original-rest-track.jpg`. IK stance is narrowed to14cm, without remodeling anatomy. Independent evaluation establishes24 unique poses and endpoint root-relative bone matrices closing within1.13e−6.
 
 The6 `fixed-world/` renders and `actual-fixed-world-strip.jpg` use an unchanged camera and10cm world checker plane. The root genuinely advances in world space while planted shoe vertices stay on that surface. These are rendered geometry, not image offsets. Fresh-process deformation check measures7840changed body vertices,8426shirt/trouser vertices,1722shoe vertices and3106evaluated waistcoat vertices between frames1and7. Exact displacement counts and distances are retained in the independent report.
+
+
+## M1/M2 correction after independent review of24315ea
+
+Independent review correctly rejected constant7.19776° elbows and right-hand/satchel intersections in21/24frames. The preserved24315ea source remains available in Git; its actual three-view sheet is retained under `motion/rejects/24315ea-rigid-elbow-hand-bag.jpg`. Contact accuracy did not imply natural arm motion.
+
+Arm authoring now aims both complete native upper-arm and forearm segments per phase, resetting base rotations each frame to avoid accumulated roll. Left elbow varies4.99–29.41°, bag-side right elbow13.95–25.68°. The bag-side upper arm swings in a smaller anterior arc, with a softly changing elbow bend and wrist aligned to the forearm through the native middle-finger base, so hand, forearm and sleeve pass in front of the actual satchel. Bag/strap geometry, foot contacts, physical stride and720ms duration are preserved. No bag removal, invisibility or speed reduction.
+
+`scripts/mpfb-motion-arm-check.py` opens the saved source independently and intersects actual evaluated body hand/forearm and shirt sleeve triangles against satchel, flap and buckle. Body masks are disabled only in that measurement process; the shirt keeps its actual render subdivision and evaluated interpolated weights define limb membership. All24poses currently report0triangle intersections in those checked regions. This is a repeatable implementation check; external reviewer confirmation and visual naturalness review remain pending. It does not certify all clothing/body collisions or final game art.

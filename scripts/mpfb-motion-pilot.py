@@ -52,6 +52,7 @@ for s in ['L','R']:
  b=rig.pose.bones['lowerarm01.'+s];current=(b.tail-b.head).normalized();desired=Vector((.025 if s=='L' else -.025,-.08,-1)).normalized();q=current.rotation_difference(desired);m=b.matrix.copy();m=Matrix.Translation(m.translation)@q.to_matrix().to_4x4()@m.to_quaternion().to_matrix().to_4x4();b.matrix=m
  bpy.context.view_layer.update()
 base_arms={s:rig.pose.bones['upperarm01.'+s].rotation_euler.copy() for s in ['L','R']}
+base_forearms={s:rig.pose.bones['lowerarm01.'+s].rotation_euler.copy() for s in ['L','R']}
 scene=bpy.context.scene;scene.render.engine='CYCLES';scene.cycles.samples=8;scene.cycles.use_denoising=True
 scene.render.resolution_x=384;scene.render.resolution_y=384;scene.render.resolution_percentage=100;scene.render.film_transparent=True
 scene.render.fps=100;scene.render.fps_base=3 # 24 genuine samples in 720ms
@@ -89,8 +90,19 @@ for frame in range(1,26):
   m=Matrix.Translation(m.translation)@rotation.to_4x4()@m.to_quaternion().to_matrix().to_4x4()
   b=rig.pose.bones[word+'_foot_ik'];b.matrix=m;key(b)
   knee=rig.pose.bones[word+'_knee_ik'];km=knee.bone.matrix_local.copy();km.translation=Vector((.076 if s=='L' else -.076,-.65,.32));knee.matrix=km;key(knee)
+ # Aim complete native upper/forearm segments; preserve skin and neutral wrist.
+ def aim_segment(name,endname,direction):
+  bpy.context.view_layer.update();b=rig.pose.bones[name];end=rig.pose.bones[endname];q=(end.head-b.head).normalized().rotation_difference(Vector(direction).normalized());m=b.matrix.copy();b.matrix=Matrix.Translation(m.translation)@q.to_matrix().to_4x4()@m.to_quaternion().to_matrix().to_4x4();key(b);bpy.context.view_layer.update()
  for s,sgn in [('L',1),('R',-1)]:
-  b=rig.pose.bones['upperarm01.'+s];b.rotation_euler=base_arms[s].copy();b.rotation_euler.x+=.14*sgn*math.sin(2*math.pi*p);key(b)
+  rig.pose.bones['wrist.'+s].rotation_euler=(0,0,0)
+  rig.pose.bones['upperarm01.'+s].rotation_euler=base_arms[s].copy();rig.pose.bones['lowerarm01.'+s].rotation_euler=base_forearms[s].copy();bpy.context.view_layer.update()
+  swing=sgn*math.sin(2*math.pi*p)
+  # Bag-side hand remains in the anterior half-space with gentle elbow modulation.
+  upper_y=-.46+.055*swing if s=='R' else .14*swing
+  lower_y=-.98+.12*math.sin(2*math.pi*p+.5) if s=='R' else -.30+.09*math.sin(2*math.pi*p+math.pi)
+  aim_segment('upperarm01.'+s,'lowerarm01.'+s,(.08*sgn,upper_y,-1))
+  aim_segment('lowerarm01.'+s,'wrist.'+s,(.025*sgn,lower_y,-1))
+  aim_segment('wrist.'+s,'finger3-1.'+s,(.025*sgn,lower_y,-1))
  bpy.context.view_layer.update()
  evaluated=rig.evaluated_get(bpy.context.evaluated_depsgraph_get())
  records.append({'frame':frame,'phase':p,'rootWorld':list(rig.location),'feet':{s:{'phase':foot_at(p,s)[1],'ankleWorld':list(evaluated.matrix_world@evaluated.pose.bones['foot.'+s].head),'toeWorld':list(evaluated.matrix_world@evaluated.pose.bones['toe2-3.'+s].tail),'targetWorld':list(evaluated.matrix_world@evaluated.pose.bones[w+'_foot_ik'].head),'kneeWorld':list(evaluated.matrix_world@evaluated.pose.bones['lowerleg01.'+s].head)}for s,w in [('L','left'),('R','right')]}})
