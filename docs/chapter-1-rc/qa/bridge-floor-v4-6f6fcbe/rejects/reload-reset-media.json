@@ -1,0 +1,80 @@
+[
+  {
+    "file": "mouse1280-actual-input-audio.mp4",
+    "sha256": "8ce8fcd94d3d689f9e7800fdaa7cc339fe055001eee63336f173d909a1e39814",
+    "videoDurationSec": 31.8,
+    "audioDurationSec": 20.786333,
+    "observedRunningBasedOffsetSec": 0.3214990429962054,
+    "alignedAudioEndMinusVideoEndSec": -10.692167957003797,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264",
+        "start_time": "0.000000"
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "start_time": "0.299000"
+      }
+    ],
+    "actualDecodedAudioRms": 0.015203131717802791,
+    "audioStateEvents": [
+      {
+        "createdAt": 216.1000000089407,
+        "startedAt": 216.20000000298023,
+        "stateEvents": [
+          {
+            "at": 216.20000000298023,
+            "state": "running"
+          },
+          {
+            "at": 550.6000000089407,
+            "state": "running"
+          }
+        ],
+        "state": "recording"
+      }
+    ],
+    "alignment": "first actual AudioContext running/MediaRecorder start mapped to browser page clock; page creation/video origin estimated, not hardware synchronized or human AV-review certified"
+  },
+  {
+    "file": "touch844-actual-input-audio.mp4",
+    "sha256": "8d6639cfd7898abb0d349d929529ce4acae20734261dfebabde0bdb998b4be47",
+    "videoDurationSec": 31.16,
+    "audioDurationSec": 20.841333,
+    "observedRunningBasedOffsetSec": 0.2557004889959935,
+    "alignedAudioEndMinusVideoEndSec": -10.062966511004007,
+    "streams": [
+      {
+        "type": "video",
+        "codec": "h264",
+        "start_time": "0.000000"
+      },
+      {
+        "type": "audio",
+        "codec": "aac",
+        "start_time": "0.234000"
+      }
+    ],
+    "actualDecodedAudioRms": 0.01553927188488342,
+    "audioStateEvents": [
+      {
+        "createdAt": 187,
+        "startedAt": 187.09999999403954,
+        "stateEvents": [
+          {
+            "at": 187.09999999403954,
+            "state": "running"
+          },
+          {
+            "at": 188.70000000298023,
+            "state": "running"
+          }
+        ],
+        "state": "recording"
+      }
+    ],
+    "alignment": "first actual AudioContext running/MediaRecorder start mapped to browser page clock; page creation/video origin estimated, not hardware synchronized or human AV-review certified"
+  }
+]
