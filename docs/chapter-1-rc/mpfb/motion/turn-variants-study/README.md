@@ -1,0 +1,16 @@
+# Native turn variants — technical source checkpoint
+
+Issue #36 / PR71. Independent approved left60 source `0f7ba2d` remains unchanged. Appearance is the rejected generic technical mannequin; no game activation or approved likeness claim.
+
+New isolated packed sources:
+
+- `right60`: native −60°,720ms/two steps, **right-support straight phase .5 entry and exit**. Genuine physical IK/body trajectories, original asymmetric bag/carry hand and mesh weights. Initial same-L-support sign-change candidate failed: ankle error2.44mm, left knee0.78°, sampled lower-leg jump26.8°. Its script and measured summary are archived in `right60/rejects`; no failed raster was rendered. Phase-.5 corrected source passes actual257 samples: ankle error≤.02986mm, render boot floor+.33968mm, knee flex9.32–53.42°, joins to unchanged straight phase.5 soles≤.000234mm.
+- `left120`: native+120°,1440ms/four steps, true rigid composition of **two evaluated saved validated left60 clips**, not newly fitted feet. Actual513 samples pass: flat sole drift≤.02908mm, ankle error≤.02990mm, boot floor+.33968mm. Internal720ms join to both previous60 exit and next60 entry has sole error≤.000070mm and body matrix element error≤7.40e−6; exit to unchanged straight phase0≤.000163mm sole/9.60e−6 body. Same original model and native local poses retained.
+
+Source hashes, complete non-key measured sole/body data, immutable straight/mesh provenance and `planning-input.json` are adjacent to each source. New source copy drops unrelated transition actions only for compact packing; immutable donors retain every original action. Original straight actions, rig rest/constraints, all asymmetric mesh geometry/weights and retained approved left60 actions are freshly fingerprinted against immutable donors.
+
+Author native pass precedes raster. Budget is **12 one-camera diagnostic poses per variant,24 total**, no complete turn batch or right120 source yet. At this early checkpoint images are not rendered; rendering/review metadata will be added separately. Independent repeat remains required.
+
+Planning limitations: actual displacement is approximately right60(−.267520,−.463358,0)m and left120(.802560,−.463358,0)m; nominal traveled distances .568755m and1.137509m. These moving arcs have the validated variable curvature, approximately minimum.450m radius (~55scene px); they do not prove arbitrary narrow hex-route coverage. Adjacent corner fillet tangents may overlap. A compact native planted stepping-pivot60/120 may be required as fallback; **not authored/certified**. Do not scale strides, distort curves, slide endpoints, change puzzle paths/goals or assume all legal paths can be smoothed. Root owns route coverage/adapter.
+
+Reproduction from repository root: Blender4.5.3, isolated `/tmp/ruby-mpfb-motion-config` environment and `--threads 2 --python-exit-code 1`. Run `scripts/mpfb-motion-turn-right60.py` and `scripts/mpfb-motion-turn-left120.py`; then `scripts/mpfb-motion-turn-variants-check.py` and `-preservation.py` with `RUBY_MPFB_TURN_VARIANT=right60` or `left120`. Render/projection/review scripts use the same variant environment and refuse native-contact failures. Sources use original licenses documented in the motion pilot; no new external assets.

@@ -1,0 +1,64 @@
+{
+  "samples": 257,
+  "internalActual60Joins": {},
+  "flatWorldSoleDriftMeters": {
+    "0:L": {
+      "toe": 2.8757198877659203e-05,
+      "heel": 2.891736863872541e-05
+    },
+    "0:R": {
+      "toe": 2.7154970537615875e-05,
+      "heel": 2.720146570668652e-05
+    }
+  },
+  "maxActualAnkleTargetErrorMeters": 2.98585482409624e-05,
+  "minActualRenderLevelBootZ": 0.00033968352363444865,
+  "joinsToUnchangedStraight": {
+    "entry": {
+      "bodyWorldMatrixMaxElementError": 1.1920928955078125e-06,
+      "actualSoleWorldMaxErrorMeters": 2.0928042985779254e-07,
+      "ankleWorldMaxErrorMeters": 1.4136482746161726e-07
+    },
+    "exit": {
+      "bodyWorldMatrixMaxElementError": 8.344650268554688e-07,
+      "actualSoleWorldMaxErrorMeters": 2.337619662284851e-07,
+      "ankleWorldMaxErrorMeters": 1.8863363416749483e-07
+    }
+  },
+  "compositionTerminalClosure": {
+    "rootClosureMeters": 1.4901161193847656e-07,
+    "soleClosureMaxMeters": 1.3386445946120434e-07,
+    "bodyWorldMatrixMaxElementError": 1.6540288925170898e-06,
+    "method": "6 rigidly composed actual saved60deg clips; terminal native rig/skin closure only, no complete raster-loop claim"
+  },
+  "actualRootDeltaMeters": [
+    -0.26751983165740967,
+    -0.46335798501968384,
+    0.0
+  ],
+  "kneeFlexRangeDegrees": {
+    "L": [
+      9.318107886990248,
+      49.050465760734966
+    ],
+    "R": [
+      17.737668416486628,
+      53.41961482938707
+    ]
+  },
+  "maxAdjacentLegRotationDegreesAt2_8125ms": {
+    "L": {
+      "upperLegWorldQuaternion": 1.248646518963895,
+      "lowerLegWorldQuaternion": 1.461762935220279
+    },
+    "R": {
+      "upperLegWorldQuaternion": 1.0241098129718378,
+      "lowerLegWorldQuaternion": 1.2104521011251834
+    }
+  },
+  "nativeFeasibilityPass": true
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-mpfb-motion/art/characters-mpfb-v1/motion/turn-variants-study/right60/mpfb-native-right60-technical.blend"
+
+Blender quit

@@ -1,0 +1,60 @@
+{
+  "samples": 257,
+  "internalActual60Joins": {},
+  "flatWorldSoleDriftMeters": {
+    "0:L": {
+      "toe": 2.1744741416990038e-05,
+      "heel": 2.168238902674146e-05
+    },
+    "0:R": {
+      "toe": 2.553793310754762e-05,
+      "heel": 2.5852910243961107e-05
+    }
+  },
+  "maxActualAnkleTargetErrorMeters": 0.0024380935025039773,
+  "minActualRenderLevelBootZ": 0.00034408093779347837,
+  "joinsToUnchangedStraight": {
+    "entry": {
+      "bodyWorldMatrixMaxElementError": 2.86102294921875e-06,
+      "actualSoleWorldMaxErrorMeters": 2.0755751685354118e-07,
+      "ankleWorldMaxErrorMeters": 1.48264681861791e-07
+    },
+    "exit": {
+      "bodyWorldMatrixMaxElementError": 6.854534149169922e-06,
+      "actualSoleWorldMaxErrorMeters": 2.1801354398000835e-07,
+      "ankleWorldMaxErrorMeters": 1.9314112360500873e-07
+    }
+  },
+  "sixCompositionLoop": {
+    "rootClosureMeters": 1.4901161193847656e-07,
+    "soleClosureMaxMeters": 1.3151860940338153e-07,
+    "bodyWorldMatrixMaxElementError": 5.662441253662109e-06,
+    "method": "6 rigidly composed actual saved60deg clips; terminal native rig/skin closure only, no complete raster-loop claim"
+  },
+  "actualRootDeltaMeters": [
+    -0.26751983165740967,
+    -0.46335798501968384,
+    0.0
+  ],
+  "kneeFlexRangeDegrees": {
+    "L": [
+      0.7770792732943619,
+      51.24126259739489
+    ],
+    "R": [
+      19.194629728720372,
+      53.04030710401959
+    ]
+  },
+  "maxAdjacentLegRotationDegreesAt2_8125ms": {
+    "L": {
+      "upperLegWorldQuaternion": 2.6346024652466715,
+      "lowerLegWorldQuaternion": 26.76499443257082
+    },
+    "R": {
+      "upperLegWorldQuaternion": 1.1014383332686661,
+      "lowerLegWorldQuaternion": 1.1225542899745835
+    }
+  },
+  "nativeFeasibilityPass": false
+}

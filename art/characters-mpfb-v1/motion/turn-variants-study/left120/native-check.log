@@ -1,0 +1,81 @@
+{
+  "samples": 513,
+  "internalActual60Joins": {
+    "previous60Exit": {
+      "bodyWorldMatrixMaxElementError": 2.0563602447509766e-06,
+      "actualSoleWorldMaxErrorMeters": 2.9802322387695312e-08
+    },
+    "next60Entry": {
+      "bodyWorldMatrixMaxElementError": 7.3909759521484375e-06,
+      "actualSoleWorldMaxErrorMeters": 6.979950488564272e-08
+    }
+  },
+  "flatWorldSoleDriftMeters": {
+    "0:L": {
+      "toe": 2.7171169337723678e-05,
+      "heel": 2.7185170609408282e-05
+    },
+    "0:R": {
+      "toe": 2.8759330858389484e-05,
+      "heel": 2.891100814741474e-05
+    },
+    "1:L": {
+      "toe": 2.7229378927938157e-05,
+      "heel": 2.714192006939301e-05
+    },
+    "1:R": {
+      "toe": 2.907267768823298e-05,
+      "heel": 2.9074442390644926e-05
+    }
+  },
+  "maxActualAnkleTargetErrorMeters": 2.9896565712651125e-05,
+  "minActualRenderLevelBootZ": 0.00033968378556892276,
+  "joinsToUnchangedStraight": {
+    "entry": {
+      "bodyWorldMatrixMaxElementError": 3.0100345611572266e-06,
+      "actualSoleWorldMaxErrorMeters": 2.0755751685354118e-07,
+      "ankleWorldMaxErrorMeters": 1.48264681861791e-07
+    },
+    "exit": {
+      "bodyWorldMatrixMaxElementError": 9.59634780883789e-06,
+      "actualSoleWorldMaxErrorMeters": 1.621705129101662e-07,
+      "ankleWorldMaxErrorMeters": 1.82653228523303e-07
+    }
+  },
+  "compositionTerminalClosure": {
+    "rootClosureMeters": 2.980232238769531e-07,
+    "soleClosureMaxMeters": 3.654014183045584e-07,
+    "bodyWorldMatrixMaxElementError": 5.841255187988281e-06,
+    "method": "3 rigidly composed actual saved120deg clips; terminal native rig/skin closure only, no complete raster-loop claim"
+  },
+  "actualRootDeltaMeters": [
+    0.8025595545768738,
+    -0.46335798501968384,
+    0.0
+  ],
+  "kneeFlexRangeDegrees": {
+    "L": [
+      17.737627435351612,
+      53.419628489765415
+    ],
+    "R": [
+      9.318107886990248,
+      49.05049308149165
+    ]
+  },
+  "maxAdjacentLegRotationDegreesAt2_8125ms": {
+    "L": {
+      "upperLegWorldQuaternion": 1.0241098129718378,
+      "lowerLegWorldQuaternion": 1.209805367588148
+    },
+    "R": {
+      "upperLegWorldQuaternion": 1.248646518963895,
+      "lowerLegWorldQuaternion": 1.4622982512964786
+    }
+  },
+  "nativeFeasibilityPass": true
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-mpfb-motion/art/characters-mpfb-v1/motion/turn-variants-study/left120/mpfb-native-left120-technical.blend"
+
+Blender quit
