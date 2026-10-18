@@ -91,4 +91,3 @@ def well():
     (OUT/'review/well-native-v1-checks.json').write_text(json.dumps(checks,indent=2)+'\n');print(json.dumps(checks))
 if __name__=='__main__':
     well() if len(sys.argv)>1 and sys.argv[1]=='well' else garden()
-
