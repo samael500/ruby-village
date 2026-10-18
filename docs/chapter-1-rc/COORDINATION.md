@@ -1,6 +1,6 @@
 # Current checkpoint — latest user requirements prevail
 
-Integration438d090 includes independent correction reports. Mainadd76709 unchanged; no mainmerge/deploy. Source/PR pushes authorized. Userpreview5180frozen467eab2; defaultnewgame5286; isolatedstreamreview5306 fromreviewbranch14b1f6f (notRC, explicitwatermark).
+Integrationb00ba9f includes independent start/stop and compact twelve-view correction reports. Mainadd76709 unchanged; no mainmerge/deploy. Source/PR pushes authorized. Userpreview5180frozen467eab2; defaultnewgame5286; isolatedstreamreview5306 fromreviewbranch14b1f6f (notRC, explicitwatermark).
 
 | Task | Actual readiness | Owner | Dependency / PR |
 |---|---|---|---|
@@ -9,15 +9,17 @@ Integration438d090 includes independent correction reports. Mainadd76709 unchang
 | #35 | residents/facings active; millF1 independently corrected andchecked | delivered, coordinator | acceptedlayout2fullalpha/pairwiserepeat / #67,#55 |
 | #45/#46 streamroad | actualmouse/touch topology/input/savePASS; P2contactedgePASS; residualP1bankcutlines in correction | stream_road_finish; rootruntime | firstfinishedstreamfragment beforeall8rollout / #70,#55 |
 | #45 mill | registeredwheel/race source97f61ef; smoothchannel/wide in progress | stream_road_finish sameownertree | exactwater/mill actualpilot / #70 |
-| #45 garden/well | whole-tree/singletable native+paintedwide; well14/14centers+teacher1225,405 candidate, wellwide in progress | npc_facing treegarden-well | sourcebfb56d2/6138651 pending integration; actualgarden/wellpilot / #68 |
-| #36 | genuineMPFB/IK cycle independently technicalGO5ca361b; source35cddbaEstartstop+L/Rnative underindependentreview; appearance NOTREADY | mpfb_walk_rig tree36-mpfb-motion; rootnativeheadstudies tree36-mpfb | 6directions2calibrations proof next; routeadapter pending / #69,#71 |
+| #45 garden/well | whole-tree/singletable native+paintedwide; well14/14centers+teacher1225,405 candidate, wellwide in progress | npc_facing treegarden-well | sourcebfb56d2/6138651 integrated002cfce/62492ca inactive; actualgarden/wellpilot / #68 |
+| #36 | genuineMPFB/IK cycle, start/stop35cddba and compact5184cd0 independently technicalGO; appearance NOTREADY | mpfb_walk_rig tree36-mpfb-motion; rootnativeheadstudies tree36-mpfb | 288-frame two-calibration walk export in progress; no transition raster batch yet; routeadapter pending / #69,#71 |
 | #48/#47 | mapnativepaintedpaving+wide/header+storyhiddenfield/currentresults checked | delivered, coordinator | repeatonfinalscenes / #53,#55 |
 | #50/#51 | steadyhiss fixed,useraccepted; recommendedmixalreadyingame | delivered, coordinator | finalloops/transitions review / #57,#58,#55 |
-| #37/#49 | independent scoped QA repeatedlyfindsandchecksdefects; fullchapter/RC notcertified | qa_map_rotation newestscopes | allart+likeness/gait integration; phone/family NOTRUN |
+| #37/#49 | independent scoped QA repeatedlyfindsandchecksdefects; fullchapter/RC notcertified | independent scoped QA, latest compact_view_qa | allart+likeness/gait integration; phone/family NOTRUN |
 
 Ownership: coordinator alone edits commonruntime/manifest and reviewactivation patches. Resourceowners have separate worktrees; no simultaneous writes. Root currently owns scripts/mpfb-native-target-study.py and native-target-study-* resources in the released appearanceworktree, never motion files. SharedMPFBvendor/assets readonly; unrelated live session confirmed by Maksim. Own Blender configs used.
 
 StreamP1 diagnosis includes overstrict source-pixel guard; optional dry-shore-only boundary contract is art/DRY-SHORE-CONTRACT.md. Logicalwater/solutions/hitcells remain immutable; no water leakage or actual blockers in freecells. New evidence must state any dry-ground boundary changes separately, never reuse fullfreeRGB0 claims.
+
+Latest source work: root native hair study9 uses Cortu Johnstone CC0 strawberry-cloud assets copied from the shared read-only archive; visible scalp gaps reject that fit as final. Study10 tests a fitted native scalp underlay. Separate unrelated MPFB session remains untouched, as explicitly confirmed by Maksim. Root appearance studies are not production assets.
 
 All latest decisions: LATEST-REQUIREMENTS.md and ACCEPTANCE-61-62.md. MPFBmodel/rig/motion technical sources do not certify approved Ruta appearance or realgame gait. Reviewbranch visual-gate waiver is explicitly local/notrelease and is never merged into production activation.
 
