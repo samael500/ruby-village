@@ -1,0 +1,187 @@
+{
+  "schema": "mpfb-isolated-motion-phase-api/v1",
+  "status": "TECHNICAL PROTOTYPE NOT FINAL ART",
+  "productionEnabled": false,
+  "integration": "none; do not load from src/main",
+  "modelForward": [
+    0,
+    -1,
+    0
+  ],
+  "cycleMs": 720.0,
+  "physicalStrideMeters": 0.5687545572916666,
+  "walkSpeedMetersPerSecond": 0.7899368851273147,
+  "states": {
+    "idle": {
+      "rootVelocity": 0,
+      "feet": "both flat"
+    },
+    "start": {
+      "durationMs": 360.0,
+      "rootAdvanceMeters": 0.11375091145833333,
+      "firstLeadStepMeters": 0.2843772786458333,
+      "variants": [
+        "L",
+        "R"
+      ],
+      "entry": "idle",
+      "exit": "walk at phase0(L) or.5(R)"
+    },
+    "walk": {
+      "loopMs": 720.0,
+      "rootAdvanceMeters": 0.5687545572916666,
+      "heelStrikes": {
+        "0": "L",
+        ".5": "R"
+      }
+    },
+    "stop": {
+      "durationMs": 360.0,
+      "rootAdvanceMeters": 0.17062636718749996,
+      "variants": [
+        "L-support",
+        "R-support"
+      ],
+      "entry": "request queued to next heel strike; never freeze an active swing",
+      "lastSwingLandsMs": 300,
+      "feet": "trailing foot completes a shortened step to support foot; support stays planted"
+    },
+    "settle": {
+      "durationMs": 180.0,
+      "rootAdvanceMeters": 0,
+      "body": "4mm gentle pelvis rise, both feet flat"
+    }
+  },
+  "placement": {
+    "rootMotionAppliedExactlyOnce": true,
+    "footAnchor": "actual camera projection of rig object origin on Z0; same framing/scale across directions",
+    "contacts": "planned foot bases are not measured skin contact; verification records actual evaluated soles/bones",
+    "heading": "locked throughout start/stop; turns require separate planning/source, not authored here"
+  },
+  "stopRequestExamples": [
+    {
+      "phase": 0,
+      "queueUntilHeelStrike": true,
+      "waitMs": 0.0,
+      "entryPhase": 0.0,
+      "supportSide": "L",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.125,
+      "queueUntilHeelStrike": true,
+      "waitMs": 270.0,
+      "entryPhase": 0.5,
+      "supportSide": "R",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.4,
+      "queueUntilHeelStrike": true,
+      "waitMs": 71.99999999999999,
+      "entryPhase": 0.5,
+      "supportSide": "R",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.5,
+      "queueUntilHeelStrike": true,
+      "waitMs": 0.0,
+      "entryPhase": 0.5,
+      "supportSide": "R",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.75,
+      "queueUntilHeelStrike": true,
+      "waitMs": 180.0,
+      "entryPhase": 0.0,
+      "supportSide": "L",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.99,
+      "queueUntilHeelStrike": true,
+      "waitMs": 7.200000000000006,
+      "entryPhase": 0.0,
+      "supportSide": "L",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    }
+  ],
+  "nativeRootDeltasMeters": {
+    "idle": [
+      0,
+      0,
+      0
+    ],
+    "start": [
+      0,
+      -0.11375091145833333,
+      0
+    ],
+    "walk": [
+      0,
+      -0.5687545572916666,
+      0
+    ],
+    "stop": [
+      0,
+      -0.17062636718749996,
+      0
+    ],
+    "settle": [
+      0,
+      0,
+      0
+    ]
+  },
+  "phaseJoins": {
+    "startExitByLead": {
+      "L": 0,
+      "R": 0.5
+    },
+    "stopEntryBySupport": {
+      "L": 0,
+      "R": 0.5
+    },
+    "stopExit": "both feet flat, zero gait amplitude; no active walk phase",
+    "supportSemantics": {
+      "start": "opposite lead stays planted; lead lands at360ms",
+      "stop": "entry heel-strike foot stays planted; trailing foot lands at300ms and rolls flat by360ms",
+      "settle": "both feet planted"
+    }
+  },
+  "bodyHeightCalibration": {
+    "nativeReferencePixels": 251,
+    "framePixels": 384,
+    "orthoMeters": 1.7,
+    "displayReferencePixels": 136,
+    "metersToScenePixels": 122.39043824701194,
+    "policy": "one constant scale for all states and directions; no silhouette-height normalization"
+  },
+  "arbitraryRouteAdapter": {
+    "status": "PENDING",
+    "fixedClipsDoNotSolveArbitraryRouteLengths": true,
+    "forbiddenShortcut": "no root retiming, stride scaling or endpoint sliding to fit residual path length",
+    "candidateOnly": "rendered actor endpoint adjustment inside fixed goal-cell safe area, along final tangent at most quarter stride; logical goal/path/solutions unchanged; not implemented or validated"
+  },
+  "savedActionInterpolation": "LINEAR sampled at30ms; tiny chord-velocity jumps, no exact C1 continuity claim"
+}
