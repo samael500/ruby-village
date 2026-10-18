@@ -92,13 +92,25 @@
       }
     },
     "garden": {
-      "status": "style-approved-geometry-pending",
+      "status": "map-matched-source-candidate-awaiting-actual-game",
       "background": "garden/background.webp",
       "foreground": null,
-      "wide": null,
-      "wideStatus": "pending-outpaint",
-      "source": "art/chapter-1-v9/candidates/garden-v4.png",
-      "sourceSha256": "d370c6c97261ed5bd1a21ec35361ae5714f08793a851407badb7c3da77d8bd1f",
+      "wide": {
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        },
+        "file": "garden/wide.webp"
+      },
+      "wideStatus": "painted-native-join-awaiting-actual-game",
+      "source": "art/chapter-1-v9/garden-well/outpaint/garden-native-painted-join-v1.png",
+      "sourceSha256": "7cb0f48dfb333d31826adcca722e9d33bb6fec257de169810b64849feb55771f",
       "geometrySha256": "1343f2bca0299693d5ffc8ceb1a242a812532c30117bdbba4d000cbfa12ff79a",
       "camera": {
         "radius": 66,
@@ -121,18 +133,34 @@
       },
       "semanticAnchors": {
         "residentFeet": {
-          "x": 1280,
-          "y": 245,
-          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+          "x": 1420,
+          "y": 265,
+          "status": "full-alpha-candidate-actual-composition-pending"
         },
         "tableFrontFeet": {
-          "x": 1280,
-          "y": 245,
-          "explanation": "below the actual painted apple table, outside top playable row; goal remains clear"
+          "x": 1299,
+          "y": 263,
+          "explanation": "single embedded source table bottom center; no separate table sprite"
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "pending"
+        "sourceGuardManifest": "public/assets/chapter-1-garden-well/garden-manifest.json",
+        "fullPolygonVisualAudit": "pending",
+        "gameQa": "not-run",
+        "artAcceptance": "pending"
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-garden-well/garden-manifest.json",
+      "residentPresentation": "scene-sprite-and-portrait",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2708410,
+          "sha256": "179e83dd47301ffdb004f04b1d258d6f1b0709cf580bc02d71e2a7219e3d25a3"
+        },
+        "wide.webp": {
+          "bytes": 6001932,
+          "sha256": "1e08d5541677df512dcde7aab3fb4c255748064f115931b1326164bd10ba0e17"
+        }
       }
     },
     "well": {
