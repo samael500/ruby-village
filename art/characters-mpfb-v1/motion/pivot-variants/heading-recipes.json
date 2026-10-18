@@ -5,21 +5,30 @@
     "0": {
       "clips": [],
       "durationMs": 0,
-      "nativeYawRadians": 0
+      "nativeYawRadians": 0,
+      "footprintStates": []
     },
     "60": {
       "clips": [
         "right60"
       ],
       "durationMs": 1200,
-      "nativeYawRadians": -1.0471975511965976
+      "nativeYawRadians": -1.0471975511965976,
+      "footprintStates": [
+        "pivot-right60"
+      ],
+      "nativeYawRadiansActual": -1.0471975803375244
     },
     "120": {
       "clips": [
         "right120"
       ],
       "durationMs": 2400,
-      "nativeYawRadians": -2.0943951023931953
+      "nativeYawRadians": -2.0943951023931953,
+      "footprintStates": [
+        "pivot-right120"
+      ],
+      "nativeYawRadiansActual": -2.094395160675049
     },
     "180": {
       "alternatives": [
@@ -33,14 +42,22 @@
         "left120"
       ],
       "durationMs": 2400,
-      "nativeYawRadians": 2.0943951023931953
+      "nativeYawRadians": 2.0943951023931953,
+      "footprintStates": [
+        "pivot-left120"
+      ],
+      "nativeYawRadiansActual": 2.094395160675049
     },
     "300": {
       "clips": [
         "left60"
       ],
       "durationMs": 1200,
-      "nativeYawRadians": 1.0471975511965976
+      "nativeYawRadians": 1.0471975511965976,
+      "footprintStates": [
+        "pivot-left60"
+      ],
+      "nativeYawRadiansActual": 1.0471975803375244
     }
   },
   "actual180RecipeJoins": {
@@ -70,7 +87,11 @@
           "actualSoleVertexWorldMaxErrorMeters": 1.1002227236049145e-07
         }
       },
-      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim."
+      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim.",
+      "footprintStates": [
+        "pivot-left60",
+        "pivot-left120"
+      ]
     },
     "right180": {
       "nativeYawRadiansActual": -3.1415927410125732,
@@ -98,10 +119,15 @@
           "actualSoleVertexWorldMaxErrorMeters": 1.0848209096909341e-07
         }
       },
-      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim."
+      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim.",
+      "footprintStates": [
+        "pivot-right60",
+        "pivot-right120"
+      ]
     }
   },
   "entryExit": "flat idle at root0 before/after each complete pivot. Requires stop360+settle180 before and start360 after; plus heel-strike queue\u2264360ms.",
   "rootBound": "Each root curve\u2264.03000001m about pivot origin, zero terminal root displacement; rigid placements preserve this. Body/bag swept clearance separately required.",
-  "appearance": "rejected generic technical mannequin; final shoes/source require renewed footprints and source checks"
+  "appearance": "rejected generic technical mannequin; final shoes/source require renewed footprints and source checks",
+  "footprintManifest": "../footprints-native-v1/manifest.json"
 }
