@@ -1,27 +1,27 @@
 # Current checkpoint — latest user requirements prevail
 
-Integrationb00ba9f includes independent start/stop and compact twelve-view correction reports. Mainadd76709 unchanged; no mainmerge/deploy. Source/PR pushes authorized. Userpreview5180frozen467eab2; defaultnewgame5286; isolatedstreamreview5306 fromreviewbranch14b1f6f (notRC, explicitwatermark).
+Integration `426917f`; main remains `add76709`. No merge/publication. User authorized working-branch pushes. Latest bridge feedback: road nearly accepted; bridge craftsmanship improved, but projection looked frontal. Floor-v3 uses staggered horizontal deck boards under the same ground camera; actual stream pilot5308 awaits artistic review. Never integrate review-only activation waivers.
 
 | Task | Actual readiness | Owner | Dependency / PR |
 |---|---|---|---|
-| #44 | acceptedlayout2/migrations staged and tested, not productionactive | coordinator | all8matchingart gate / #52,#55 |
-| #61 | invalidrelease→rotatevalid→autoplace, cancel/undo/save independentlyPASS | delivered, coordinator | finalartinputrepeat / #64,#55 |
-| #35 | residents/facings active; millF1 independently corrected andchecked | delivered, coordinator | acceptedlayout2fullalpha/pairwiserepeat / #67,#55 |
-| #45/#46 streamroad | actualmouse/touch topology/input/savePASS; P2contactedgePASS; residualP1bankcutlines in correction | stream_road_finish; rootruntime | firstfinishedstreamfragment beforeall8rollout / #70,#55 |
-| #45 mill | registeredwheel/race source97f61ef; smoothchannel/wide in progress | stream_road_finish sameownertree | exactwater/mill actualpilot / #70 |
-| #45 garden/well | whole-tree/singletable native+paintedwide; well14/14centers+teacher1225,405 candidate, wellwide in progress | npc_facing treegarden-well | sourcebfb56d2/6138651 integrated002cfce/62492ca inactive; actualgarden/wellpilot / #68 |
-| #36 | genuineMPFB/IK cycle, start/stop35cddba and compact5184cd0 independently technicalGO; appearance NOTREADY | mpfb_walk_rig tree36-mpfb-motion; rootnativeheadstudies tree36-mpfb | 288-frame two-calibration walk export in progress; no transition raster batch yet; routeadapter pending / #69,#71 |
-| #48/#47 | mapnativepaintedpaving+wide/header+storyhiddenfield/currentresults checked | delivered, coordinator | repeatonfinalscenes / #53,#55 |
-| #50/#51 | steadyhiss fixed,useraccepted; recommendedmixalreadyingame | delivered, coordinator | finalloops/transitions review / #57,#58,#55 |
-| #37/#49 | independent scoped QA repeatedlyfindsandchecksdefects; fullchapter/RC notcertified | independent scoped QA, latest compact_view_qa | allart+likeness/gait integration; phone/family NOTRUN |
+| #44 | accepted layouts/migrations tested; layout2 inactive | coordinator | all8 matching art / #52,#55 |
+| #61 | invalid release→rotate valid→place independently checked | delivered | final combined repeat / #64,#55 |
+| #45 stream/road | adaptive banks independently PASS; connected paving/input checked; bridge floor-v3 art review pending | root runtime; stream_road_finish assets | pilot5308 / #70,#55 |
+| #45 mill | source channel/wide corrections in progress, not final game checked | stream_road_finish, separate stream-road tree | exact mask/bridge actual verification / #70 |
+| #45 garden/well | garden actual two mouse solves; well teacher1320,405 independently checked actual mouse/touch/replay/reload | coordinator; source tree released | garden independent final repeat / #68,#55 |
+| #45 gate/bakery/post/forest | four-scene independent audit4007b12 found B1/B2; Baker anchor3675cb7 and dialogue camera7b0ba19 await independent repeat | root fixes; compact_view_qa independent | desktop/landscape / #55 |
+| #35/#36 | genuine native walk288frames and motion/boot-hull sources independently checked; final appearance and game route adapter incomplete | npc_facing owns appearance tree; coordinator integration | sewn vest/boots and likeness / #69,#71 |
+| #47/#48 | painted map/header/story hidden field/current results checked; new dialogue camera repeat running | coordinator; compact_view_qa independent | final scenes / #53,#55 |
+| #50/#51 | hiss fix user accepted; music/SFX/master unchanged | delivered | final all-scene listening/transition review / #57,#58 |
+| #37/#49 | scoped audits retained; full RC acceptance/package pending | independent QA | final art+gait; physical phone/family NOT RUN |
 
-Ownership: coordinator alone edits commonruntime/manifest and reviewactivation patches. Resourceowners have separate worktrees; no simultaneous writes. Root currently owns scripts/mpfb-native-target-study.py and native-target-study-* resources in the released appearanceworktree, never motion files. SharedMPFBvendor/assets readonly; unrelated live session confirmed by Maksim. Own Blender configs used.
+Ownership: root alone edits shared runtime/manifests and integration. Appearance tree ruby-village-36-mpfb belongs exclusively to npc_facing after d70c874; shared vendor/assets are read-only and unrelated live session untouched. Stream-road tree belongs to stream_road_finish. QA has separate worktree and no runtime ownership. Garden-well source tree released to root. No concurrent worktree writers.
 
-StreamP1 diagnosis includes overstrict source-pixel guard; optional dry-shore-only boundary contract is art/DRY-SHORE-CONTRACT.md. Logicalwater/solutions/hitcells remain immutable; no water leakage or actual blockers in freecells. New evidence must state any dry-ground boundary changes separately, never reuse fullfreeRGB0 claims.
+Native MPFB sources are not accepted Ruta appearance or verified game walking. All335 saved boot footprints independently reproduced in426917f; new styled boots require fresh collision/export checks. Teacher has TWO new facing views; eight is total across all six residents.
 
-Latest source work: root native hair study9 uses Cortu Johnstone CC0 strawberry-cloud assets copied from the shared read-only archive; visible scalp gaps reject that fit as final. Study10 tests a fitted native scalp underlay. Separate unrelated MPFB session remains untouched, as explicitly confirmed by Maksim. Root appearance studies are not production assets.
+Isolated pilot5308 = review branch3b3685d, floor-v3 art c171df4; no fullchapter activation. Legacy user preview5180 stays separate. Dry-shore boundary contract is art/DRY-SHORE-CONTRACT.md; water masks, puzzle solutions and rules unchanged.
 
-All latest decisions: LATEST-REQUIREMENTS.md and ACCEPTANCE-61-62.md. MPFBmodel/rig/motion technical sources do not certify approved Ruta appearance or realgame gait. Reviewbranch visual-gate waiver is explicitly local/notrelease and is never merged into production activation.
+All latest requirements: LATEST-REQUIREMENTS.md and ACCEPTANCE-61-62.md. Old checkpoints below are history, not current readiness.
 
 ---
 
