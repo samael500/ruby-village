@@ -1,0 +1,30 @@
+{
+  "status": "exact-mask-checks-passed-bank-wheel-art-and-game-review-pending",
+  "fullFreePolygonInteriorOpaqueLeakPixels": 0,
+  "fullFreePolygonInteriorChangedRgbPixels": 0,
+  "rasterBoundaryTolerancePx": 1,
+  "bridgeCenterAndEndsAlpha": {
+    "2,3": 255,
+    "1,3": 0,
+    "3,3": 0
+  },
+  "rejectedOldBendAlpha": 0,
+  "acceptedNewBendAlpha": 255,
+  "boardCells": 77,
+  "logicalMaskErosionPx": 0,
+  "bankArtInwardFeatherPx": 3,
+  "entryExitFeather": "disabled within6px of fullboard perimeter",
+  "wheelAlphaNativeErosionPx": 5,
+  "sourceSha256": {
+    "art/chapter-1-v9/packages/mill/geometry.json": "7cd199e695fd57a3536b7ca7efeee600c24d16f9d0eaa1274cba314b0bcf23e1",
+    "art/chapter-1-v9/layers/props/mill-dry-map.png": "c9dbe91702bcafb9fc46d879d02416aa0ef88fa7995b55a4dd1d9ee8fd5dd3c5",
+    "art/chapter-1-v9/candidates/mill-continuation-v1.png": "9527d1321e6bafaae8d2ab496f542a6c638470cd140c3ecf8cb35f9d214d5448",
+    "art/chapter-1-v9/candidates/mill-bankstrip-wheelclear-v2.png": "df1ae6bc9f3773c95a68623ae281978a5d464843520d15cd82fd57f9b050e327",
+    "art/chapter-1-v9/candidates/millwheel-v4.png": "1fc0bfe218b05b171b088dd07e9a1b49e1d7a0b7e3e19ffa2def80795bb5ba7a"
+  },
+  "checks": {
+    "nativeBankVisualAudit": "pending",
+    "wheelRaceRegistrationVisualAudit": "pending",
+    "actualGameplay": "not-run"
+  }
+}
