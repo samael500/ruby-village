@@ -24,7 +24,8 @@ for sid in ['garden','well']:
   wideStatus='painted-native-join-awaiting-actual-game',residentPresentation='scene-sprite-and-portrait')
  # Garden: right of the single table, looking toward activity and the approach.
  # Source suggested1295,265 is retained in source manifest for comparison.
- feet={'garden':(1420,265),'well':(1225,405)}[sid]
+ # Well source1225,405 clears free ground but overlaps Ruta on arrival;1320 separates actors.
+ feet={'garden':(1420,265),'well':(1320,405)}[sid]
  entry['semanticAnchors']['residentFeet']={'x':feet[0],'y':feet[1],'status':'full-alpha-candidate-actual-composition-pending'}
  if sid=='garden':
   entry['semanticAnchors']['tableFrontFeet']={'x':1299,'y':263,'explanation':'single embedded source table bottom center; no separate table sprite'}
