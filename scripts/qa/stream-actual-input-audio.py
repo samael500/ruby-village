@@ -1,10 +1,10 @@
 # Coordinator verification derived from the independent14b1f6f real-input harness.
 # Author rerun, not a substitute for independent adaptive-bank review.
 # Record one uninterrupted document so real WebAudio survives the whole clip.
-import json,base64,time,subprocess,re
+import json,base64,time,subprocess,re,os
 from pathlib import Path
 from playwright.sync_api import sync_playwright
-ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/chapter-1-rc/road/stream-pilot/actual-input-audio-afcb676';OUT.mkdir(parents=True,exist_ok=True)
+ROOT=Path(__file__).resolve().parents[2];OUT=ROOT/'docs/chapter-1-rc/road/stream-pilot'/os.environ.get('RUBY_STREAM_AV_EVIDENCE','actual-input-audio-afcb676');OUT.mkdir(parents=True,exist_ok=True)
 manifest=json.loads((ROOT/'art/chapter-1-v9/layers/water/stream-pilot/manifest.json').read_text());geometry=json.loads((ROOT/manifest['geometry']).read_text());solution=[p for p in manifest['solution'] if p['placement']];reports=[]
 AUDIO='''const Native=window.AudioContext,connect=AudioNode.prototype.connect;window.qaContexts=[];AudioNode.prototype.connect=function(destination,...args){const r=connect.call(this,destination,...args);if(destination===this.context.destination&&this.context.captureNode)connect.call(this,this.context.captureNode);return r};window.AudioContext=new Proxy(Native,{construct(Target,args){let c=new Target(...args);c.captureNode=c.createMediaStreamDestination();let chunks=[],recorder=new MediaRecorder(c.captureNode.stream,{mimeType:'audio/webm;codecs=opus'});recorder.ondataavailable=e=>chunks.push(e.data);recorder.start();window.qaContexts.push({recorder,chunks,startedAt:performance.now()});return c}});'''
 with sync_playwright() as p:
@@ -19,7 +19,7 @@ with sync_playwright() as p:
    else:q.mouse.click(**z)
   def cell(a):return q.locator(f'#board [data-cell="{a["q"]},{a["r"]}"] > polygon.cell')
   def saved():return q.evaluate("localStorage.getItem('ruby-village:chapter-1:v1')")
-  q.goto('http://127.0.0.1:5306/ruby-village/');navigationOffset=time.monotonic()-created-q.evaluate('performance.now()')/1000;tap(q.locator('#continue-game'))
+  q.goto(os.environ.get('RUBY_STREAM_REVIEW_URL','http://127.0.0.1:5306/ruby-village/'));navigationOffset=time.monotonic()-created-q.evaluate('performance.now()')/1000;tap(q.locator('#continue-game'))
   while q.locator('#story[open]').count():tap(q.locator('#story-action'))
   q.wait_for_load_state('networkidle');q.wait_for_selector('#app[data-motion="ready"]');states=[]
   def check(label):

@@ -6,7 +6,7 @@ sol=json.loads((r/'art/chapter-1-v9/layers/water/stream-pilot/manifest.json').re
 with sync_playwright() as p:
  b=p.chromium.launch()
  for w,h in [(1280,720),(844,390)]:
-  q=b.new_page(viewport={'width':w,'height':h});err=[];q.on('pageerror',lambda e:err.append(str(e)));q.goto('http://127.0.0.1:5306/ruby-village/');q.locator('#continue-game').click();q.wait_for_load_state('networkidle')
+  q=b.new_page(viewport={'width':w,'height':h});err=[];q.on('pageerror',lambda e:err.append(str(e)));q.goto(os.environ.get('RUBY_STREAM_REVIEW_URL','http://127.0.0.1:5306/ruby-village/'));q.locator('#continue-game').click();q.wait_for_load_state('networkidle')
   while q.locator('#story[open]').count():q.locator('#story-action').click()
   q.screenshot(path=str(o/f'empty-{w}.jpg'))
   for row in sol:
