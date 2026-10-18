@@ -1,0 +1,86 @@
+{
+  "method": "All saved standalone start/stop/settle quarter-samples compared to actual bundled demo sections, allowing only constant global root translation. All three actions including both thumb controls activated; source pose/action data not rebuilt.",
+  "clips": [
+    {
+      "lead": "L",
+      "clip": "start-L",
+      "actualQuarterSamples": 49,
+      "maxRootRelativeBoneMatrixDeltaFromDemo": 4.799231193720463e-34,
+      "maxHelperLocalDeltaFromDemo": 0.0,
+      "constantWorldRootOffset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maxRootOffsetVariation": 0.0
+    },
+    {
+      "lead": "L",
+      "clip": "stop-L",
+      "actualQuarterSamples": 49,
+      "maxRootRelativeBoneMatrixDeltaFromDemo": 3.6954879760742188e-06,
+      "maxHelperLocalDeltaFromDemo": 0.0,
+      "constantWorldRootOffset": [
+        0.0,
+        -0.6825054883956909,
+        0.0
+      ],
+      "maxRootOffsetVariation": 6.332993507385254e-08
+    },
+    {
+      "lead": "L",
+      "clip": "settle",
+      "actualQuarterSamples": 25,
+      "maxRootRelativeBoneMatrixDeltaFromDemo": 3.2782554626464844e-06,
+      "maxHelperLocalDeltaFromDemo": 0.0,
+      "constantWorldRootOffset": [
+        0.0,
+        -0.8531318306922913,
+        0.0
+      ],
+      "maxRootOffsetVariation": 0.0
+    },
+    {
+      "lead": "R",
+      "clip": "start-R",
+      "actualQuarterSamples": 49,
+      "maxRootRelativeBoneMatrixDeltaFromDemo": 0.0,
+      "maxHelperLocalDeltaFromDemo": 0.0,
+      "constantWorldRootOffset": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "maxRootOffsetVariation": 0.0
+    },
+    {
+      "lead": "R",
+      "clip": "stop-R",
+      "actualQuarterSamples": 49,
+      "maxRootRelativeBoneMatrixDeltaFromDemo": 3.2186508178710938e-06,
+      "maxHelperLocalDeltaFromDemo": 0.0,
+      "constantWorldRootOffset": [
+        0.0,
+        -0.6825054883956909,
+        0.0
+      ],
+      "maxRootOffsetVariation": 6.332993507385254e-08
+    },
+    {
+      "lead": "R",
+      "clip": "settle",
+      "actualQuarterSamples": 25,
+      "maxRootRelativeBoneMatrixDeltaFromDemo": 3.2782554626464844e-06,
+      "maxHelperLocalDeltaFromDemo": 0.0,
+      "constantWorldRootOffset": [
+        0.0,
+        -0.8531318306922913,
+        0.0
+      ],
+      "maxRootOffsetVariation": 0.0
+    }
+  ],
+  "idleQuarterSamples": 25,
+  "idleBoneMatrixVariation": 0.0,
+  "sourceActionsPresent": true
+}

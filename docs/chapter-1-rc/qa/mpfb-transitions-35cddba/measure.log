@@ -1,0 +1,226 @@
+{
+  "demos": {
+    "L": {
+      "floorMinZ": 0.0003448739880695939,
+      "maxActualAnkleTargetErrorM": 3.1969749407469184e-05,
+      "rootDistanceM": 0.8531318306922913,
+      "rootMonotonic": true,
+      "settleRootDriftM": 0.0,
+      "settlePelvisRiseM": 0.004000067710876465,
+      "flatMeasuredRuns": {
+        "L": [
+          {
+            "startMs": 450.0,
+            "endMs": 690.0,
+            "markerDriftM": {
+              "toe": 2.0126401354265923e-05,
+              "heel": 2.0110103884453268e-05
+            }
+          },
+          {
+            "startMs": 1170.0,
+            "endMs": 1620.0,
+            "markerDriftM": {
+              "toe": 8.049305229305021e-07,
+              "heel": 8.058831965614542e-07
+            }
+          }
+        ],
+        "R": [
+          {
+            "startMs": 0.0,
+            "endMs": 277.5,
+            "markerDriftM": {
+              "toe": 7.1593528603531e-06,
+              "heel": 0.00012547243709678903
+            }
+          },
+          {
+            "startMs": 810.0,
+            "endMs": 1050.0,
+            "markerDriftM": {
+              "toe": 2.0214982910651538e-05,
+              "heel": 2.021850234102702e-05
+            }
+          },
+          {
+            "startMs": 1440.0,
+            "endMs": 1620.0,
+            "markerDriftM": {
+              "toe": 3.1425556582956693e-07,
+              "heel": 2.8275151224666795e-07
+            }
+          }
+        ]
+      },
+      "firstLeadHeelAdvanceM": 0.28392262756824493,
+      "stopTrailingHeelAdvanceM": 0.28398793935775757,
+      "firstSwingLeadMaxHeelZ": 0.050526030361652374,
+      "stopSwingTrailingMaxHeelZ": 0.050803735852241516,
+      "settleSkinWorldDriftM": {
+        "L": {
+          "toe": 3.111680291668088e-07,
+          "heel": 2.8855410972704803e-07
+        },
+        "R": {
+          "toe": 3.1425556582956693e-07,
+          "heel": 2.8275151224666795e-07
+        }
+      },
+      "savedRootSegmentVelocitiesMPerSec": {
+        "0": 0.0004342824164875007,
+        "330": 0.7798569897810619,
+        "360": 0.7899366319179535,
+        "1050": 0.7899383703867595,
+        "1080": 0.7895012696584066,
+        "1410": 0.010079145431518555,
+        "1440": 0.0,
+        "1590": 0.0
+      }
+    },
+    "R": {
+      "floorMinZ": 0.0003448743955232203,
+      "maxActualAnkleTargetErrorM": 3.197054552087054e-05,
+      "rootDistanceM": 0.8531318306922913,
+      "rootMonotonic": true,
+      "settleRootDriftM": 0.0,
+      "settlePelvisRiseM": 0.004000067710876465,
+      "flatMeasuredRuns": {
+        "L": [
+          {
+            "startMs": 0.0,
+            "endMs": 277.5,
+            "markerDriftM": {
+              "toe": 7.181854466566503e-06,
+              "heel": 0.00012548641011802332
+            }
+          },
+          {
+            "startMs": 810.0,
+            "endMs": 1050.0,
+            "markerDriftM": {
+              "toe": 2.019919456686593e-05,
+              "heel": 2.0194219736911077e-05
+            }
+          },
+          {
+            "startMs": 1440.0,
+            "endMs": 1620.0,
+            "markerDriftM": {
+              "toe": 3.111680291668088e-07,
+              "heel": 2.8855410972704803e-07
+            }
+          }
+        ],
+        "R": [
+          {
+            "startMs": 450.0,
+            "endMs": 690.0,
+            "markerDriftM": {
+              "toe": 2.0126401354265923e-05,
+              "heel": 2.0110275371163937e-05
+            }
+          },
+          {
+            "startMs": 1170.0,
+            "endMs": 1620.0,
+            "markerDriftM": {
+              "toe": 7.143238076094916e-07,
+              "heel": 7.175582445542798e-07
+            }
+          }
+        ]
+      },
+      "firstLeadHeelAdvanceM": 0.28392264246940613,
+      "stopTrailingHeelAdvanceM": 0.28398793935775757,
+      "firstSwingLeadMaxHeelZ": 0.050526030361652374,
+      "stopSwingTrailingMaxHeelZ": 0.050803739577531815,
+      "settleSkinWorldDriftM": {
+        "L": {
+          "toe": 3.111680291668088e-07,
+          "heel": 2.8855410972704803e-07
+        },
+        "R": {
+          "toe": 3.1425556582956693e-07,
+          "heel": 2.8275151224666795e-07
+        }
+      },
+      "savedRootSegmentVelocitiesMPerSec": {
+        "0": 0.0004342824164875007,
+        "330": 0.7798569897810619,
+        "360": 0.7899366319179535,
+        "1050": 0.7899383703867595,
+        "1080": 0.7895012696584066,
+        "1410": 0.010079145431518555,
+        "1440": 0.0,
+        "1590": 0.0
+      }
+    }
+  },
+  "joins": {
+    "L/idle-start": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 0.0,
+      "rootRelativeBoneMatrixMaxDelta": 0.0,
+      "thumbLocalMaxDelta": 0.0,
+      "poleLocalMaxDelta": 0.0
+    },
+    "L/start-walk": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 6.390257477167414e-08,
+      "rootRelativeBoneMatrixMaxDelta": 4.649162292480469e-06,
+      "thumbLocalMaxDelta": 1.1920928955078125e-07,
+      "poleLocalMaxDelta": 1.1920928955078125e-07
+    },
+    "L/walk-stop": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 0.0,
+      "rootRelativeBoneMatrixMaxDelta": 3.948807716369629e-06,
+      "thumbLocalMaxDelta": 1.1920928955078125e-07,
+      "poleLocalMaxDelta": 1.1920928955078125e-07
+    },
+    "L/stop-settle": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 5.807899619515562e-08,
+      "rootRelativeBoneMatrixMaxDelta": 1.6093254089355469e-06,
+      "thumbLocalMaxDelta": 0.0,
+      "poleLocalMaxDelta": 0.0
+    },
+    "L/settle-idle": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 0.0,
+      "rootRelativeBoneMatrixMaxDelta": 0.0,
+      "thumbLocalMaxDelta": 0.0,
+      "poleLocalMaxDelta": 0.0
+    },
+    "R/idle-start": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 0.0,
+      "rootRelativeBoneMatrixMaxDelta": 0.0,
+      "thumbLocalMaxDelta": 0.0,
+      "poleLocalMaxDelta": 0.0
+    },
+    "R/start-walk": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 4.3762252198423185e-08,
+      "rootRelativeBoneMatrixMaxDelta": 3.2186508178710938e-06,
+      "thumbLocalMaxDelta": 1.1920928955078125e-07,
+      "poleLocalMaxDelta": 1.1920928955078125e-07
+    },
+    "R/walk-stop": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 6.280733384224536e-08,
+      "rootRelativeBoneMatrixMaxDelta": 2.8014183044433594e-06,
+      "thumbLocalMaxDelta": 1.1920928955078125e-07,
+      "poleLocalMaxDelta": 1.1920928955078125e-07
+    },
+    "R/stop-settle": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 5.807899619515562e-08,
+      "rootRelativeBoneMatrixMaxDelta": 1.6093254089355469e-06,
+      "thumbLocalMaxDelta": 0.0,
+      "poleLocalMaxDelta": 0.0
+    },
+    "R/settle-idle": {
+      "rootNormalizedActualSoleJoinMaxDistanceM": 0.0,
+      "rootRelativeBoneMatrixMaxDelta": 0.0,
+      "thumbLocalMaxDelta": 0.0,
+      "poleLocalMaxDelta": 0.0
+    }
+  }
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-qa-mpfb-35cddba/art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend"
+
+Blender quit
