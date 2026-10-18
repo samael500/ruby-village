@@ -12,7 +12,7 @@ from mathutils.bvhtree import BVHTree
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'art/characters-mpfb-v1/styled-body-pilot-v3/ruta-styled-body.blend'
-OUT=ROOT/'art/characters-mpfb-v1/tailored-wardrobe-v2';OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'art/characters-mpfb-v1/tailored-wardrobe-v5';OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(SOURCE));scene=bpy.context.scene;scene.frame_set(0)
 rig=next(o for o in bpy.data.objects if o.type=='ARMATURE' and len(o.data.bones)==167)
 body=next(o for o in bpy.data.objects if o.type=='MESH' and len(o.data.vertices)==19158)
@@ -46,6 +46,23 @@ def native_weights(point):
         for name,weight in sw[vertex].items():
             if name in rig.data.bones:result[name]+=weight*factor
     total=sum(result.values());return {n:w/total for n,w in result.items() if w>1e-6}
+def radial_fit(theta,z):
+    origin=Vector((0,-.005,z));direction=Vector((math.sin(theta),-math.cos(theta),0));probe=origin.copy();hits=[]
+    for _ in range(12):
+        loc,n,index,d=sbvh.ray_cast(probe,direction,.19)
+        if loc is None:break
+        radius=(loc-origin).dot(direction)
+        if .045<radius<.17:hits.append((radius,loc,index))
+        if radius>.17:break
+        probe=loc+direction*.00001
+    if hits:radius,loc,index=(min(hits,key=lambda row:row[0]) if z>.90 else max(hits,key=lambda row:row[0]))
+    else:
+        radius=math.hypot(.128*math.sin(theta),.093*math.cos(theta));loc=origin+direction*radius
+    co=origin+direction*(radius+.012)
+    weights=native_weights(loc)
+    torso={n:w for n,w in weights.items() if not any(k in n for k in ['upperarm','lowerarm','hand','finger'])}
+    if not torso:torso={'spine01':1.}
+    total=sum(torso.values());return co,{n:w/total for n,w in torso.items()}
 def apply_weights(o,weights):
     for name in sorted({n for row in weights for n in row}):o.vertex_groups.new(name=name)
     for i,row in enumerate(weights):
@@ -67,7 +84,7 @@ for o in list(bpy.data.objects):
         removed.append(o.name);bpy.data.objects.remove(o,do_unlink=True)
 
 # Parameter domain is a sewn torso sheet, not a cropped/deleted shirt mesh.
-NX=88;NY=44;uv=[];faces=[];gap=.19;holes=[(math.pi/2,.765,.45,.15),(3*math.pi/2,.765,.45,.15)]
+NX=88;NY=44;uv=[];faces=[];gap=.19;holes=[(math.pi/2,.765,.65,.15),(3*math.pi/2,.765,.65,.15)]
 for j in range(NY+1):
     for i in range(NX+1):uv.append([gap+(2*math.pi-2*gap)*i/NX,j/NY])
 def in_hole(t,v):return any(((t-c)/rx)**2+((v-cv)/rv)**2<1 for c,cv,rx,rv in holes)
@@ -86,16 +103,13 @@ for index in boundary:
 used=sorted({i for face in faces for i in face});mapping={i:n for n,i in enumerate(used)};verts=[];weights=[]
 for index in used:
     t,v=uv[index];front=min(t,2*math.pi-t);q=max(0,min(1,(front-gap)/1.0));q=q*q*(3-2*q)
-    top=.960+.095*q-.025*max(0,-math.cos(t))**4;bottom=.680+.012*math.sin(t)**2;z=bottom+(top-bottom)*v
-    nominal=Vector((.128*math.sin(t),-.005-.093*math.cos(t),z));loc,n,tri,d=sbvh.find_nearest(nominal)
-    radial=Vector((math.sin(t),-math.cos(t),0))
-    if n.dot(radial)<0:n=-n
-    co=loc+n*.006;verts.append(co);weights.append(native_weights(loc))
+    top=.945+.080*q-.015*max(0,-math.cos(t))**4;bottom=.680+.012*math.sin(t)**2;z=bottom+(top-bottom)*v
+    co,row_weights=radial_fit(t,z);verts.append(co);weights.append(row_weights)
 vest=mesh_object('Ruta sewn fitted waistcoat',verts,[tuple(mapping[i] for i in f) for f in faces],olive,weights)
 activate(vest);sub=vest.modifiers.new('Sewn boundary refinement','SUBSURF');sub.levels=1;bpy.ops.object.modifier_apply(modifier=sub.name)
 solid=vest.modifiers.new('Real sewn cloth thickness','SOLIDIFY');solid.thickness=.0025;solid.offset=.3
 skin(vest)
-wrap=vest.modifiers.new('Posed shirt clearance, no cloth breakthrough','SHRINKWRAP');wrap.target=shirt;wrap.wrap_method='NEAREST_SURFACEPOINT';wrap.wrap_mode='ABOVE_SURFACE';wrap.offset=.008
+vest.modifiers.move(0,len(vest.modifiers)-1)
 
 # Buttons sit on actual shirt-fit surface and carry the same native torso weights.
 for sign in [-1,1]:
@@ -189,7 +203,7 @@ assert len(body.data.vertices)==19158 and len(rig.data.bones)==167
 assert hashlib.sha256(b''.join(bytes(str(tuple(v.co)),'ascii') for v in body.data.vertices)).hexdigest()==body_hash
 assert rig.animation_data.action.name==source_action
 bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-tailored-source.blend'))
-report={'status':'native-wardrobe-candidate-awaiting-three-view-and-intersection-review','productionEnabled':False,'source':str(SOURCE.relative_to(ROOT)),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'bodyVertices':19158,'bodyRestGeometryChanged':False,'rigBones':167,'actionPreserved':source_action,'nativeHead12Preserved':True,'bagAndSingleStrapGeometryPreserved':True,'removedRejectedGarmentObjects':removed,'newVestVertices':len(vest.data.vertices),'vestConstruction':'authored sewn torso topology, analytical smooth armhole loops, real-shirt surface fit, barycentrically transferred native weights','vestClearanceMeters':.006,'vestThicknessMeters':.0025,'warning':'native source candidate; rendered fit/intersections remain acceptance gates'}
+report={'status':'native-wardrobe-candidate-awaiting-three-view-and-intersection-review','productionEnabled':False,'source':str(SOURCE.relative_to(ROOT)),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'bodyVertices':19158,'bodyRestGeometryChanged':False,'rigBones':167,'actionPreserved':source_action,'nativeHead12Preserved':True,'bagAndSingleStrapGeometryPreserved':True,'removedRejectedGarmentObjects':removed,'newVestVertices':len(vest.data.vertices),'vestConstruction':'authored sewn topology with analytical armhole loops; one-to-one theta/z outer-shirt radial envelope; barycentric native torso weights excluding sleeve drag; no live nearest-surface jumps','vestClearanceMeters':.012,'vestThicknessMeters':.0025,'warning':'native source candidate; rendered fit/intersections remain acceptance gates'}
 report['blendSha256']=hashlib.sha256((OUT/'ruta-tailored-source.blend').read_bytes()).hexdigest()
 (OUT/'checkpoint.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
 if os.environ.get('RUBY_MPFB_WARDROBE_RENDER')=='1':

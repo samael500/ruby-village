@@ -1,0 +1,99 @@
+{
+  "status": "source-check-evidence-not-automatic-art-approval",
+  "version": "v3",
+  "nativeInvariantsUnchanged": true,
+  "invariants": {
+    "bodyRest": "fb6e9569d8461124174dc0ec27f37387aeb4cfb0846094e8aed0ec22a076209f",
+    "bodyWeights": "4c0fb1065ae404cef4dcba1e2fe4b21f0bb6d1c38568786304c12d8a21663875",
+    "rigRest": "4894ae9d702bcb4004ce0bc1f68d295101c35bdcd99a037bbd3c4f5e305b593f",
+    "motionAction": "54bce387f520c9508735b70629ea9d048341657dc43567185e0eaa3dedce2713",
+    "actionName": "MPFB start walk stop demo L / Ruta.MPFB.StandardRig",
+    "actionFrameRange": [
+      1.0,
+      55.0
+    ],
+    "preservedAccessories": {
+      "Ruta ONE satchel": "bf1c9df966b06750a57205feb7e55eebc904172e855a424a6f60c5e1f5b83e1c",
+      "Satchel flap": "83236570a1144e708cdac7e95748f310fd9622d29785d457998432b63b322643",
+      "Satchel buckle": "0b8455e839e6abcf1f1820cd243cdec9b910087122951581df5d772e52ad147e",
+      "ONE diagonal satchel strap": "19c516765f53fc2fc24f7fb58d58997f9806d991380401d6120c327efbfa42bf"
+    }
+  },
+  "vestBaseBoundaryLoops": 3,
+  "expectedBaseBoundaryLoops": 3,
+  "vestWeightSumRange": [
+    0.9999987133778632,
+    1.0000000971883765
+  ],
+  "vestModifierOrder": [
+    [
+      "Native weighted garment motion",
+      "ARMATURE"
+    ],
+    [
+      "Posed shirt clearance, no cloth breakthrough",
+      "SHRINKWRAP"
+    ],
+    [
+      "Real sewn cloth thickness",
+      "SOLIDIFY"
+    ]
+  ],
+  "samples": [
+    {
+      "frame": 12,
+      "evaluatedTriangleIntersectionPairs": {
+        "Ruta sewn fitted waistcoat / Ruta.male_casualsuit01": 4173,
+        "Ruta sewn fitted waistcoat / Ruta.MPFB.Body": 194,
+        "Ruta sewn fitted waistcoat / Ruta ONE satchel": 236,
+        "Ruta sewn fitted waistcoat / ONE diagonal satchel strap": 531,
+        "Ruta.shoes01 / Ruta.male_casualsuit01": 0,
+        "Cream ankle cuff L / Ruta.MPFB.Body": 0,
+        "Cream ankle cuff R / Ruta.MPFB.Body": 0
+      }
+    },
+    {
+      "frame": 24,
+      "evaluatedTriangleIntersectionPairs": {
+        "Ruta sewn fitted waistcoat / Ruta.male_casualsuit01": 4056,
+        "Ruta sewn fitted waistcoat / Ruta.MPFB.Body": 194,
+        "Ruta sewn fitted waistcoat / Ruta ONE satchel": 240,
+        "Ruta sewn fitted waistcoat / ONE diagonal satchel strap": 526,
+        "Ruta.shoes01 / Ruta.male_casualsuit01": 0,
+        "Cream ankle cuff L / Ruta.MPFB.Body": 0,
+        "Cream ankle cuff R / Ruta.MPFB.Body": 0
+      }
+    },
+    {
+      "frame": 36,
+      "evaluatedTriangleIntersectionPairs": {
+        "Ruta sewn fitted waistcoat / Ruta.male_casualsuit01": 4128,
+        "Ruta sewn fitted waistcoat / Ruta.MPFB.Body": 194,
+        "Ruta sewn fitted waistcoat / Ruta ONE satchel": 236,
+        "Ruta sewn fitted waistcoat / ONE diagonal satchel strap": 529,
+        "Ruta.shoes01 / Ruta.male_casualsuit01": 0,
+        "Cream ankle cuff L / Ruta.MPFB.Body": 0,
+        "Cream ankle cuff R / Ruta.MPFB.Body": 0
+      }
+    },
+    {
+      "frame": 48,
+      "evaluatedTriangleIntersectionPairs": {
+        "Ruta sewn fitted waistcoat / Ruta.male_casualsuit01": 4088,
+        "Ruta sewn fitted waistcoat / Ruta.MPFB.Body": 194,
+        "Ruta sewn fitted waistcoat / Ruta ONE satchel": 234,
+        "Ruta sewn fitted waistcoat / ONE diagonal satchel strap": 542,
+        "Ruta.shoes01 / Ruta.male_casualsuit01": 0,
+        "Cream ankle cuff L / Ruta.MPFB.Body": 0,
+        "Cream ankle cuff R / Ruta.MPFB.Body": 0
+      }
+    }
+  ],
+  "underlyingSkinFrame0Intersections": {
+    "Ruta sewn fitted waistcoat": 2150,
+    "Ruta.shoes01": 1016,
+    "Cream ankle cuff L": 50,
+    "Cream ankle cuff R": 52
+  },
+  "interpretation": "Triangle intersections reported directly; contacts/hidden native garment skin require visual interpretation. No candidate is declared passing on numeric counts alone."
+}
