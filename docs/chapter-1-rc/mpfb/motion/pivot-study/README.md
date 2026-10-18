@@ -1,0 +1,13 @@
+# Compact stepping pivot — early native source
+
+#36 / PR71. Moving arcs do not cover every narrow legal route. This separate fallback candidate is a true native two-foot **left60° stepping pivot**,1200ms, from preserved flat idle to the same idle rotated60°. Appearance remains rejected; no game/one-hex clearance/naturalness acceptance.
+
+Source `art/characters-mpfb-v1/motion/pivot-study/mpfb-compact-pivot60-technical.blend` retains original straight/idle/start/stop/settle actions unchanged. Original MPFB rig, all asymmetric bag/carry hand geometry/skin weights and immutable donors are preserved. Right foot steps while left is planted, then left steps while right is planted. Each swing repositions/reorients a real rigged foot, with toe-off/lift/heel-roll; full loaded flat-foot transforms stay fixed in WORLD. Root performs only a small balancing transfer, not a travel-distance fit.
+
+Actual401 fresh samples at3ms intervals pass author native checks: maximum root radius.0300000005m (target≤.10m), root endΔ0, flat sole drift≤.02380mm, ankle target error≤.02724mm, full render boot floor+.36327mm. Knee flex11.33–49.17°, adjacent leg rotation≤.829°/3ms. Entry/exit to retained unchanged flat idle: actual soles≤.000155mm/body matrix≤3.79e−6. Source curve keys use10ms grid plus exact contact-event times; LINEAR interpolation is not exact C1.
+
+**Required sequence:** queue next walk heel strike → stop360ms → settle180ms → pivot1200ms → native start360ms. Fixed2100ms excluding≤360ms queue. This is an intentional stopped corner turn, not a false continuous-walk join. World root/foot placement is applied once around the chosen pivot origin; root is back at that origin for the new start. No stride scaling, root retiming, endpoint sliding, route restriction or puzzle/solver changes.
+
+`planning-input.json` is exported independently of raster and includes every actual root/yaw/sole/support sample and exact boundary semantics. Root≤.10m alone does **not** certify body/bag swept clearance within one goal hex; that geometry/route audit remains separate. Right60 and120 pivots are not authored at this source checkpoint. New pivot raster count0; budget is one-camera12-pose diagnostic only after native/source checks. Independent repeat required.
+
+Reproduce with isolated `/tmp/ruby-mpfb-motion-config` Blender4.5.3, `--threads 2 --python-exit-code 1`: `scripts/mpfb-motion-pivot-study.py`, `-check.py`, `-preservation.py`; pure Python `-planning.py`. Saved-source SHA is recorded before/after checks. Licenses/source versions remain those documented with the original motion pilot; no external/new art.

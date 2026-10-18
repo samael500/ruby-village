@@ -1,0 +1,75 @@
+{
+  "samples": 401,
+  "sampleSpacingMs": 3,
+  "flatWorldSoleDriftMeters": {
+    "R:0": {
+      "toe": 3.405792665226403e-07,
+      "heel": 3.434854143752964e-07
+    },
+    "R:1": {
+      "toe": 2.2746317818572074e-05,
+      "heel": 2.28141857969941e-05
+    },
+    "L:0": {
+      "toe": 2.37932129093719e-05,
+      "heel": 2.3778454260158957e-05
+    },
+    "L:1": {
+      "toe": 2.3267704117725025e-07,
+      "heel": 2.3257765212578637e-07
+    }
+  },
+  "maxActualAnkleTargetErrorMeters": 2.7235082025163865e-05,
+  "minActualRenderLevelBootZ": 0.0003632651933003217,
+  "joinsToUnchangedFlatIdle": {
+    "entry": {
+      "bodyWorldMatrixMaxElementError": 3.7848949432373047e-06,
+      "actualSoleWorldMaxErrorMeters": 9.85013971554352e-08
+    },
+    "exit": {
+      "bodyWorldMatrixMaxElementError": 3.0100345611572266e-06,
+      "actualSoleWorldMaxErrorMeters": 1.5482397489134603e-07
+    }
+  },
+  "actualRootDeltaMeters": [
+    0.0,
+    0.0,
+    0.0
+  ],
+  "maxActualRootDistanceFromPivotOriginMeters": 0.030000000469929844,
+  "rootXYBoundsMeters": [
+    [
+      -0.011755634099245071,
+      0.029780825600028038
+    ],
+    [
+      -0.027600817382335663,
+      0.0
+    ]
+  ],
+  "kneeFlexRangeDegrees": {
+    "L": [
+      11.325036031193434,
+      48.80329487505057
+    ],
+    "R": [
+      11.325350219895256,
+      49.17071807126223
+    ]
+  },
+  "maxAdjacentLegRotationDegreesAt3ms": {
+    "L": {
+      "upperLegWorldQuaternion": 0.7589835872590693,
+      "lowerLegWorldQuaternion": 0.7444063627446754
+    },
+    "R": {
+      "upperLegWorldQuaternion": 0.828973976427218,
+      "lowerLegWorldQuaternion": 0.7962254605128283
+    }
+  },
+  "nativeFeasibilityPass": true
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-mpfb-motion/art/characters-mpfb-v1/motion/pivot-study/mpfb-compact-pivot60-technical.blend"
+
+Blender quit
