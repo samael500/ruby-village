@@ -29,6 +29,9 @@ free = polygon_mask([c for c in cells if c['terrain'] is None])
 dry_path = base/'candidates/stream-dry-v1.png'
 continuation_path = base/'candidates/stream-continuation-v1.png'
 banks_path = base/'candidates/stream-bankstrip-generated-v2.png'
+curved_path=base/'candidates/stream-curved-channel-generated-v3.png'
+curved=curved_path.exists()
+if curved:banks_path=curved_path
 dry = Image.open(dry_path).convert('RGBA')
 continuation = Image.open(continuation_path).convert('RGBA')
 banks = Image.open(banks_path).convert('RGBA')
@@ -39,9 +42,11 @@ decorative.putalpha(outside)
 logical = banks.copy()
 # Feather only the inside of the banks. The first/last water-cell edges at the
 # complete board perimeter remain fully open to decorative continuation.
-side_soft = ImageChops.multiply(water, water.filter(ImageFilter.MinFilter(7)).filter(ImageFilter.GaussianBlur(1.4)))
+visual_body=Image.open(out/'visual-water-body-mask.png') if curved else water.copy()
+visual_art=Image.open(out/'visual-water-and-bank-mask.png') if curved else water.copy()
+side_soft = ImageChops.multiply(visual_art, visual_art.filter(ImageFilter.MinFilter(3 if curved else 7)).filter(ImageFilter.GaussianBlur(1 if curved else 1.4)))
 board_edge = ImageChops.subtract(board,board.filter(ImageFilter.MinFilter(13)))
-art_alpha = ImageChops.lighter(side_soft,ImageChops.multiply(water,board_edge))
+art_alpha = ImageChops.lighter(side_soft,ImageChops.multiply(visual_art,board_edge))
 free_interior = free.filter(ImageFilter.MinFilter(3)).point(lambda a:255 if a>250 else 0)
 art_alpha = ImageChops.multiply(art_alpha,ImageChops.invert(free_interior))
 logical.putalpha(art_alpha)
@@ -105,13 +110,42 @@ bridge=next(p for p in geometry['pieces'] if p['kind']=='bridge')
 bridge_alpha={cid:at(cid) for cid in bridge['cells']}
 assert list(bridge_alpha.values())==[255,0,0],bridge_alpha
 assert at('5,2')==0 and at('6,2')==255
+body=visual_body
+def body_at(cid):
+    p=byid[cid]['center'];return body.getpixel((round(p['x']),round(p['y'])))
+body_bridge={cid:body_at(cid) for cid in bridge['cells']}
+assert list(body_bridge.values())==[255,0,0],body_bridge
+body_centers={c['id']:body_at(c['id']) for c in cells if c['terrain']=='water'}
+assert all(a==255 for a in body_centers.values()),body_centers
+body_free=sum(a>250 and b==255 for a,b in zip(body.getdata(),free_interior.getdata()))
+assert body_free==0
+contacts={}
+middle=byid[bridge['cells'][0]]['center']
+for cid in ['6,0','6,2']:
+    other=byid[cid]['center'];point=(round((middle['x']+other['x'])/2),round((middle['y']+other['y'])/2))
+    contacts[cid]={'point':point,'alpha':body.getpixel(point)}
+assert all(v['alpha']==255 for v in contacts.values()),contacts
+# Flood the actual visible body, rather than substituting the logical mask.
+seed=byid['6,0']['center'];seed=(round(seed['x']),round(seed['y']))
+pixels=body.load();visited={seed};pending=[seed]
+while pending:
+    x,y=pending.pop()
+    for point in [(x-1,y),(x+1,y),(x,y-1),(x,y+1)]:
+        a,b=point
+        if 0<=a<size[0] and 0<=b<size[1] and point not in visited and pixels[a,b]>=128:
+            visited.add(point);pending.append(point)
+connected_centers={c['id']:(round(c['center']['x']),round(c['center']['y'])) in visited for c in cells if c['terrain']=='water'}
+assert all(connected_centers.values()),connected_centers
 sha=lambda p:hashlib.sha256(p.read_bytes()).hexdigest()
 report={'status':'exact-mask-checks-passed-native-art-review-pending','canvas':list(size),
     'camera':geometry['camera'],'boardCells':len(cells),'waterCells':[c['id'] for c in cells if c['terrain']=='water'],
     'fullFreePolygonInteriorOpaqueLeakPixels':leaks,'rasterBoundaryTolerancePx':1,
     'fullFreePolygonInteriorChangedRgbPixels':free_changes,
     'bridgeCenterAndEndsAlpha':bridge_alpha,'rejectedOldBendAlpha':at('5,2'),'acceptedNewBendAlpha':at('6,2'),
-    'logicalMaskErosionPx':0,'bankArtInwardFeatherPx':3,'entryExitFeather':'disabled within 6px of complete board perimeter',
+    'logicalMaskErosionPx':0,'visibleWaterContour':'separate curved artistic channel inside logical zone' if curved else 'full-logical-contour-rejected-by-actual-QA-P1',
+    'actualBodyMask':'visual-water-body-mask.png' if curved else 'logical-water-mask.png',
+    'actualBodyAudit':{'bridgeCenterAndDryEndsAlpha':body_bridge,'waterCellCenterAlpha':body_centers,'bridgeMiddleSharedWaterEdgeAlpha':contacts,'allWaterCellCentersInSameConnectedActualBody':connected_centers,'freeInteriorOpaqueLeakPixels':body_free,'status':'raster-contact-and-connectivity-passed-art-game-review-pending'},
+    'bankArtInwardFeatherPx':1 if curved else 3,'entryExitFeather':'disabled within 6px of complete board perimeter',
     'decorativeWater':'outside complete 77-cell union only; separate from logical layer',
     'sourceSha256':{str(p.relative_to(root)):sha(p) for p in [geometry_path,dry_path,continuation_path,banks_path]},
     'outputSha256':{p.name:sha(p) for p in sorted(out.glob('*.png'))},
@@ -126,6 +160,10 @@ manifest={'schemaVersion':1,'scene':'stream','activation':'inactive-source-hando
     'path':geometry['path'],
     'background':'background.webp','backgroundContent':'baked exact logical water plus guarded dry board and outside-board decorative continuation; do not stack logical-water.png again',
     'dryBackground':'dry-background.webp','logicalWaterOverlay':'logical-water.png','logicalWaterMask':'logical-water-mask.png',
+    'logicalWaterMaskRole':'immutable full accepted77-board water polygons for rules/diagnostic truth, not visible shoreline',
+    'visualWaterBodyMask':'visual-water-body-mask.png' if curved else None,
+    'visualWaterBankMask':'visual-water-and-bank-mask.png' if curved else None,
+    'waterArtOverlay':'logical-water.png','waterArtOverlayRole':'separate painted curved water and banks; legacy filename is not the full logical mask',
     'wide':{'file':'wide.webp',**wide_info},'geometry':str(geometry_path.relative_to(root)),
     'checks':'checks.json','status':'root-art-and-actual-game-review-pending'}
 (out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')

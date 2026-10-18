@@ -34,31 +34,79 @@
   "rejectedOldBendAlpha": 0,
   "acceptedNewBendAlpha": 255,
   "logicalMaskErosionPx": 0,
-  "bankArtInwardFeatherPx": 3,
+  "visibleWaterContour": "separate curved artistic channel inside logical zone",
+  "actualBodyMask": "visual-water-body-mask.png",
+  "actualBodyAudit": {
+    "bridgeCenterAndDryEndsAlpha": {
+      "6,1": 255,
+      "5,1": 0,
+      "7,1": 0
+    },
+    "waterCellCenterAlpha": {
+      "6,0": 255,
+      "6,1": 255,
+      "6,2": 255,
+      "5,3": 255,
+      "5,4": 255,
+      "5,5": 255,
+      "4,6": 255
+    },
+    "bridgeMiddleSharedWaterEdgeAlpha": {
+      "6,0": {
+        "point": [
+          898,
+          364
+        ],
+        "alpha": 255
+      },
+      "6,2": {
+        "point": [
+          958,
+          432
+        ],
+        "alpha": 255
+      }
+    },
+    "allWaterCellCentersInSameConnectedActualBody": {
+      "6,0": true,
+      "6,1": true,
+      "6,2": true,
+      "5,3": true,
+      "5,4": true,
+      "5,5": true,
+      "4,6": true
+    },
+    "freeInteriorOpaqueLeakPixels": 0,
+    "status": "raster-contact-and-connectivity-passed-art-game-review-pending"
+  },
+  "bankArtInwardFeatherPx": 1,
   "entryExitFeather": "disabled within 6px of complete board perimeter",
   "decorativeWater": "outside complete 77-cell union only; separate from logical layer",
   "sourceSha256": {
     "art/chapter-1-v9/packages/stream/geometry.json": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
     "art/chapter-1-v9/candidates/stream-dry-v1.png": "bb565fdacecb05beb40b466e7e0167d2133433533f593e5520ff2717268f00dc",
     "art/chapter-1-v9/candidates/stream-continuation-v1.png": "cafece9e25a9270cd0d28c6413b68099ffcfbf1015df23f00c4dcdbe72f3cc52",
-    "art/chapter-1-v9/candidates/stream-bankstrip-generated-v2.png": "3da29db2e76ba7603a64ceaab318431710f0558c8096de62a99a340ec4adf68d"
+    "art/chapter-1-v9/candidates/stream-curved-channel-generated-v3.png": "d26c4aa7e6a3b1f86a401729858273c2e9c8363e0dafcaca2833a4b1824bad62"
   },
   "outputSha256": {
-    "bank-art-alpha.png": "040c974d3d565473c5768b9362a7bb91ea955792bc11d48132d33c4dbfbeac39",
+    "bank-art-alpha.png": "7ff007ef5142bed9f090767127fb17f92cefa4d278261c0d4b41027aef954faf",
     "bank-strip-edit-guide.png": "66711a1c5102f9895de62df3bb852f5e1d9cfbaf866e6958c531acf7ef1b7dc6",
     "board-mask.png": "836a32cbe55275ce74532097da6ee8546bc8b26e9eb88134d1123c0b6799923c",
-    "bridge-review.png": "6a42bd08b451f553ab9b4d81e75c6d500ceea30dd0730244198d07c40d555096",
+    "bridge-review.png": "9503b423ee84697957b559d93aae4b655d14f6f639c09b86f699a3d4d0164e18",
+    "curved-channel-edit-guide.png": "0958447a384a78132f297d72a7572a6deaed184fb18eeb30b06f21611e754485",
     "decorative-outside-board.png": "dc0305f3380a64a0f4c408d93b051bb9c60ff61c719401f5bd4fb38d3df5b49e",
-    "entry-review.png": "a4156e7287b73c61dd690196410e24c48ec1c4a908a76a3f09166e0b84f3890c",
-    "exit-review.png": "29a3b43675e0f91238705dfa4162474814bf2bdd66087d0c3cded2329c8ca3cc",
+    "entry-review.png": "308c4725ec6636248b5a358627613d29048de684110b4155e73be315953d3548",
+    "exit-review.png": "3d21f051e6f120b93de3e304350ffd2770a0c57c31e10e5f4c4ace7260472413",
     "free-mask.png": "c77ee0cb9a27dd06967d1fa51a0fa74598ed001d6b4c2ef5c60f7ac773c2df6e",
-    "geometry-overlay.png": "ab70322066de8ce1e1bc59e022bf13966286cb6888f881f77f960bb799c17347",
+    "geometry-overlay.png": "72dc604ff9a28084792d5832caa2fd3e5570e33e3825a42ee04341e595cd30dd",
     "logical-water-mask.png": "1c37082ce71f5f99864c39abcbbb297866a6bbebfe339d42252301199534c857",
-    "logical-water.png": "49bc0c26ebdd9812c1519969e97124fe0870151fc5f548d3d165c1092afacdb7",
-    "native-background.png": "205494e18ab3fecc17644547eb94e662f9476966b8c23e5675b4e090e6a6d43d",
+    "logical-water.png": "84798327304dddbacf8df486ffd8e2df0707a93be93d09ac61be9026a9aaea1f",
+    "native-background.png": "c33a5a504289e30cab720db7f201c975a8d04ca0605eabd286991441b2aba515",
     "registered-wide-INCOMPLETE.png": "a45bfdf64fc85f149b44acaa8db5ec631ade6f868d3676552fbc0b5f55c31706",
+    "visual-water-and-bank-mask.png": "c6f87e50132c94c043eb35d26fd01ab0b7cc13cbc684d117df4dd846f13daecd",
+    "visual-water-body-mask.png": "94f5ed1c5fd0f7ea07f50ff67122145b538d9b6dc500887caec2e11af6aa1e2f",
     "wide-opaque-edit-target.png": "cf33fd522c1afdb4f8109c52108bd57376cf13863b333a6eb09908d7e66b5c7a",
-    "wide-registered.png": "08522133a003d2046264b8d4a615fd19a9880abf21a763afc1e29d6351ffbc78"
+    "wide-registered.png": "b19cecb732ac49b7d48625f9fc9fc667718145377855230815534d41463fd009"
   },
   "wide": {
     "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
