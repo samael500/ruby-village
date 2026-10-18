@@ -7,3 +7,9 @@ First checkpoint authors a fresh sewn waistcoat topology with deliberate smooth 
 Native19158-vertex body rest geometry,167-bone motion rig/action, study12 head/eye/hair materials, bag and exactly one strap are preserved. Authored topology is project code, no external asset or image-generation service. Existing selected CC0 asset provenance stays unchanged.
 
 Next: inspect actual3-view cloth fit/intersections, replace failed shoe/lace presentation with proper fitted weighted ankle boots, then one complete source candidate. No directions batch, PNG deformation, main/runtime/common edits or production activation.
+
+## Fit checkpoint v3–v5: rejected, not runtime-ready
+
+Native .blend sources and front/three-quarter/east renders are retained. v3 nearest-surface fitting folds at sleeves; v4 radial envelope catches sleeve geometry; v5 still has shirt breakthroughs at shoulders/armholes. None is accepted. Actual weighted ankle boots now have uppers, soles, eyelets, laces and cuffs; full motion validation remains pending.
+
+The check script records body/weights/rig/action/bag/strap invariants and intersection evidence. Counts are diagnostics, not a collision-free claim. No head/likeness change or production activation.
