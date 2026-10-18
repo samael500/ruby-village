@@ -1,0 +1,30 @@
+{
+  "status": "actual game and user art review pending",
+  "generator": "builtin image_gen",
+  "source": "art/bridge-v2/bridge-painted-generated-v2.png",
+  "sourceSha256": "69f2c11b67cb03572995ab9f20619b22eb8d5a12b98d3b8a2a4f57ea1900494a",
+  "delivery": "public/assets/bridge-v2/bridge-painted-v2.webp",
+  "imageSize": [
+    1840,
+    854
+  ],
+  "deliverySha256": "116598ff6b0907261ea6d9df73ba8521fcaecba5257f68a6732e62f41767ef39",
+  "registration": {
+    "sourcePixelRoot": [
+      920,
+      432
+    ],
+    "sourcePixelHexRadius": 328,
+    "nativePixelRoot": [
+      560,
+      280
+    ],
+    "nativePixelHexRadius": 200,
+    "method": "one uniform asset-level fit of the three top/bottom vertex pairs to the native three-hex guide; actual runtime exact union clip retained"
+  },
+  "sourceGuide": "art/bridge-v2/whole-bridge-guide.png",
+  "styleReference": "docs/chapter-1-rc/road/stream-pilot/actual-input-audio-afcb676/mouse1280-solved-clean.jpg",
+  "rejectedVariant": "uniform code-stroked outer beams6a473f9 look too much like an artificial frame; kept as prior source/review evidence, not final",
+  "rights": "builtin-generated artwork using repository references; no external stock",
+  "productionEnabled": false
+}
