@@ -1,0 +1,5407 @@
+{
+  "schema": "mpfb-isolated-motion-phase-api/v1",
+  "status": "TECHNICAL START STOP PROTOTYPE; author and independent visual/contact review pending",
+  "productionEnabled": false,
+  "integration": "none; do not load from src/main",
+  "modelForward": [
+    0,
+    -1,
+    0
+  ],
+  "cycleMs": 720.0,
+  "physicalStrideMeters": 0.5687545572916666,
+  "walkSpeedMetersPerSecond": 0.7899368851273147,
+  "states": {
+    "idle": {
+      "rootVelocity": 0,
+      "feet": "both flat"
+    },
+    "start": {
+      "durationMs": 360.0,
+      "rootAdvanceMeters": 0.11375091145833333,
+      "firstLeadStepMeters": 0.2843772786458333,
+      "variants": [
+        "L",
+        "R"
+      ],
+      "entry": "idle",
+      "exit": "walk at phase0(L) or.5(R)"
+    },
+    "walk": {
+      "loopMs": 720.0,
+      "rootAdvanceMeters": 0.5687545572916666,
+      "heelStrikes": {
+        "0": "L",
+        ".5": "R"
+      }
+    },
+    "stop": {
+      "durationMs": 360.0,
+      "rootAdvanceMeters": 0.17062636718749996,
+      "variants": [
+        "L-support",
+        "R-support"
+      ],
+      "entry": "request queued to next heel strike; never freeze an active swing",
+      "lastSwingLandsMs": 300,
+      "feet": "trailing foot completes a shortened step to support foot; support stays planted"
+    },
+    "settle": {
+      "durationMs": 180.0,
+      "rootAdvanceMeters": 0,
+      "body": "4mm gentle pelvis rise, both feet flat"
+    }
+  },
+  "placement": {
+    "rootMotionAppliedExactlyOnce": true,
+    "footAnchor": "actual camera projection of rig object origin on Z0; same framing/scale across directions",
+    "contacts": "planned foot bases are not measured skin contact; verification records actual evaluated soles/bones",
+    "heading": "locked throughout start/stop; turns require separate planning/source, not authored here"
+  },
+  "stopRequestExamples": [
+    {
+      "phase": 0,
+      "queueUntilHeelStrike": true,
+      "waitMs": 0.0,
+      "entryPhase": 0.0,
+      "supportSide": "L",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.125,
+      "queueUntilHeelStrike": true,
+      "waitMs": 270.0,
+      "entryPhase": 0.5,
+      "supportSide": "R",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.4,
+      "queueUntilHeelStrike": true,
+      "waitMs": 71.99999999999999,
+      "entryPhase": 0.5,
+      "supportSide": "R",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.5,
+      "queueUntilHeelStrike": true,
+      "waitMs": 0.0,
+      "entryPhase": 0.5,
+      "supportSide": "R",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.75,
+      "queueUntilHeelStrike": true,
+      "waitMs": 180.0,
+      "entryPhase": 0.0,
+      "supportSide": "L",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    },
+    {
+      "phase": 0.99,
+      "queueUntilHeelStrike": true,
+      "waitMs": 7.200000000000006,
+      "entryPhase": 0.0,
+      "supportSide": "L",
+      "stopDurationMs": 360.0,
+      "settleDurationMs": 180.0,
+      "stopRootAdvanceMeters": 0.17062636718749996,
+      "headingLockedDuringStop": true
+    }
+  ],
+  "sourceCycleCommit": "5ca361b",
+  "appearance": "rejected generic technical mannequin",
+  "sourceBlend": "../pilot/mpfb-walk-technical.blend",
+  "blender": "4.5.3 LTS",
+  "frameMs": 30,
+  "frameSize": [
+    384,
+    384
+  ],
+  "nativeHeightReferencePx": 251,
+  "targetDisplayHeightReferencePx": 136,
+  "metersToScenePixels": 122.39043824701194,
+  "clips": {
+    "idle": {
+      "durationMs": 180,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition idle / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition idle / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition idle / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "idle",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "idle",
+          "timeMs": 30,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "idle",
+          "timeMs": 60,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "idle",
+          "timeMs": 90,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "idle",
+          "timeMs": 120,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "idle",
+          "timeMs": 150,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "idle",
+          "timeMs": 180.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.0
+    },
+    "start-L": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition start-L / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition start-L / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition start-L / Motion ONE strap anatomical thumb pol"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "start",
+          "timeMs": 0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": -0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "start",
+          "timeMs": 30,
+          "cyclePhase": 0.5416666666666667,
+          "sourcePhase": 0.5416666666666667,
+          "poseAmplitude": 0.005087770061728394,
+          "rootDistanceMeters": 1.3028472931787307e-05,
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "rootZ": -0.002162078071064242,
+          "rootLateralExtraMeters": -0.002143593539448981,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "start",
+          "timeMs": 60,
+          "cyclePhase": 0.5833333333333333,
+          "sourcePhase": 0.5833333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootDistanceMeters": 0.00019748422128182866,
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "rootZ": -0.0029228395061728397,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "start",
+          "timeMs": 90,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.0009442214330037434,
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "rootZ": -0.0038632812499999995,
+          "rootLateralExtraMeters": -0.015999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "start",
+          "timeMs": 120,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootDistanceMeters": 0.0028086644804526744,
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "rootZ": -0.004098765432098766,
+          "rootLateralExtraMeters": -0.023999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "start",
+          "timeMs": 150,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootDistanceMeters": 0.006428522828184529,
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "rootZ": -0.0034362499307865313,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "start",
+          "timeMs": 180,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.012441505940755208,
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "rootZ": -0.003,
+          "rootLateralExtraMeters": -0.032,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "start",
+          "timeMs": 210,
+          "cyclePhase": 0.7916666666666667,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootDistanceMeters": 0.02140303819051986,
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "rootZ": -0.00470734360866245,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "start",
+          "timeMs": 240,
+          "cyclePhase": 0.8333333333333333,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootDistanceMeters": 0.0337039737654321,
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "rootZ": -0.009901234567901233,
+          "rootLateralExtraMeters": -0.024000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "start",
+          "timeMs": 270,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.04948831157684326,
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "rootZ": -0.01813671875,
+          "rootLateralExtraMeters": -0.016000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "start",
+          "timeMs": 300,
+          "cyclePhase": 0.9166666666666667,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootDistanceMeters": 0.06857091016730164,
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "rootZ": -0.02707716049382716,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "start",
+          "timeMs": 330,
+          "cyclePhase": 0.9583333333333333,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootDistanceMeters": 0.09035520261835168,
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "rootZ": -0.0336943283894868,
+          "rootLateralExtraMeters": -0.002143593539448986,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "start",
+          "timeMs": 360.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.11375091145833333,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": -4.799231304517945e-34,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 5.797304051425744e-22,
+              "anchorId": "L-start-land"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.11375091145833333
+    },
+    "start-R": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition start-R / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition start-R / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition start-R / Motion ONE strap anatomical thumb pol"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "start",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "start",
+          "timeMs": 30,
+          "cyclePhase": 0.041666666666666664,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.005087770061728394,
+          "rootDistanceMeters": 1.3028472931787307e-05,
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "rootZ": -0.002162078071064242,
+          "rootLateralExtraMeters": 0.002143593539448981,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "start",
+          "timeMs": 60,
+          "cyclePhase": 0.08333333333333333,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootDistanceMeters": 0.00019748422128182866,
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "rootZ": -0.0029228395061728397,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "start",
+          "timeMs": 90,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.0009442214330037434,
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "rootZ": -0.0038632812500000004,
+          "rootLateralExtraMeters": 0.015999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "start",
+          "timeMs": 120,
+          "cyclePhase": 0.16666666666666666,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootDistanceMeters": 0.0028086644804526744,
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "rootZ": -0.004098765432098766,
+          "rootLateralExtraMeters": 0.023999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "start",
+          "timeMs": 150,
+          "cyclePhase": 0.20833333333333334,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootDistanceMeters": 0.006428522828184529,
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "rootZ": -0.003436249930786533,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "start",
+          "timeMs": 180,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.012441505940755208,
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "rootZ": -0.003,
+          "rootLateralExtraMeters": 0.032,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "start",
+          "timeMs": 210,
+          "cyclePhase": 0.2916666666666667,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootDistanceMeters": 0.02140303819051986,
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "rootZ": -0.0047073436086624496,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "start",
+          "timeMs": 240,
+          "cyclePhase": 0.3333333333333333,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootDistanceMeters": 0.0337039737654321,
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "rootZ": -0.00990123456790123,
+          "rootLateralExtraMeters": 0.024000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "start",
+          "timeMs": 270,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.04948831157684326,
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "rootZ": -0.018136718749999996,
+          "rootLateralExtraMeters": 0.016000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "start",
+          "timeMs": 300,
+          "cyclePhase": 0.4166666666666667,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootDistanceMeters": 0.06857091016730164,
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "rootZ": -0.02707716049382716,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "start",
+          "timeMs": 330,
+          "cyclePhase": 0.4583333333333333,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootDistanceMeters": 0.09035520261835168,
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "rootZ": -0.03369432838948679,
+          "rootLateralExtraMeters": 0.002143593539448986,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "start",
+          "timeMs": 360.0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.11375091145833333,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 4.799231304517945e-34,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 5.797304051425744e-22,
+              "anchorId": "R-start-land"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.11375091145833333
+    },
+    "stop-L": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition stop-L / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition stop-L / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition stop-L / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "stop",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "stop",
+          "timeMs": 30,
+          "cyclePhase": 0.041666666666666664,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.9949122299382716,
+          "rootDistanceMeters": 0.023685078080887653,
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "rootZ": -0.03371467946973369,
+          "rootLateralExtraMeters": 0.002143593539448981,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "stop",
+          "timeMs": 60,
+          "cyclePhase": 0.08333333333333333,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.9645061728395061,
+          "rootDistanceMeters": 0.04719872888635705,
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "rootZ": -0.027219135802469138,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "stop",
+          "timeMs": 90,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.07015009822845458,
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "rootZ": -0.01855078125,
+          "rootLateralExtraMeters": 0.015999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.11251209365819154,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "stop",
+          "timeMs": 120,
+          "cyclePhase": 0.16666666666666666,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootDistanceMeters": 0.09198376173482509,
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "rootZ": -0.010740740740740742,
+          "rootLateralExtraMeters": 0.023999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.09488996356879688,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "stop",
+          "timeMs": 150,
+          "cyclePhase": 0.20833333333333334,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootDistanceMeters": 0.11206200994091269,
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "rootZ": -0.006093821232119238,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": -0.0503232017795793,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "stop",
+          "timeMs": 180,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.12974713338216143,
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "rootZ": -0.005,
+          "rootLateralExtraMeters": 0.032,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.01443184549901605,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "stop",
+          "timeMs": 210,
+          "cyclePhase": 0.2916666666666667,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootDistanceMeters": 0.14448370768621627,
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "rootZ": -0.006049772307329743,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.08292845502164278,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "stop",
+          "timeMs": 240,
+          "cyclePhase": 0.3333333333333333,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootDistanceMeters": 0.1558808786651234,
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "rootZ": -0.007259259259259258,
+          "rootLateralExtraMeters": 0.024000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.1371048407038042,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "stop",
+          "timeMs": 270,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.1637946474075317,
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "rootZ": -0.00744921875,
+          "rootLateralExtraMeters": 0.016000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.16535946781760447,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "stop",
+          "timeMs": 300,
+          "cyclePhase": 0.4166666666666667,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootDistanceMeters": 0.1684101553708928,
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "rootZ": -0.006780864197530868,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "stop",
+          "timeMs": 330,
+          "cyclePhase": 0.4583333333333333,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootDistanceMeters": 0.17032396947366218,
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "rootZ": -0.006141726990817305,
+          "rootLateralExtraMeters": 0.002143593539448986,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "stop",
+          "timeMs": 360.0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.17062636718749996,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": 4.799231304517945e-34,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.17062636718749996
+    },
+    "stop-R": {
+      "durationMs": 360,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition stop-R / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition stop-R / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition stop-R / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "stop",
+          "timeMs": 0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": -0.0,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "stop",
+          "timeMs": 30,
+          "cyclePhase": 0.5416666666666666,
+          "sourcePhase": 0.5416666666666666,
+          "poseAmplitude": 0.9949122299382716,
+          "rootDistanceMeters": 0.023685078080887653,
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "rootZ": -0.033714679469733694,
+          "rootLateralExtraMeters": -0.002143593539448981,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "stop",
+          "timeMs": 60,
+          "cyclePhase": 0.5833333333333334,
+          "sourcePhase": 0.5833333333333334,
+          "poseAmplitude": 0.9645061728395061,
+          "rootDistanceMeters": 0.04719872888635705,
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "rootZ": -0.02721913580246913,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11375091145833333,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "stop",
+          "timeMs": 90,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.07015009822845458,
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "rootZ": -0.018550781250000002,
+          "rootLateralExtraMeters": -0.015999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.11251209365819154,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "stop",
+          "timeMs": 120,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootDistanceMeters": 0.09198376173482509,
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "rootZ": -0.010740740740740749,
+          "rootLateralExtraMeters": -0.023999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.09488996356879688,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "stop",
+          "timeMs": 150,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootDistanceMeters": 0.11206200994091269,
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "rootZ": -0.006093821232119238,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": -0.0503232017795793,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "stop",
+          "timeMs": 180,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.12974713338216143,
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "rootZ": -0.005,
+          "rootLateralExtraMeters": -0.032,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.01443184549901605,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 8,
+          "state": "stop",
+          "timeMs": 210,
+          "cyclePhase": 0.7916666666666667,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootDistanceMeters": 0.14448370768621627,
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "rootZ": -0.006049772307329745,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.08292845502164278,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 9,
+          "state": "stop",
+          "timeMs": 240,
+          "cyclePhase": 0.8333333333333333,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootDistanceMeters": 0.1558808786651234,
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "rootZ": -0.007259259259259255,
+          "rootLateralExtraMeters": -0.024000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.1371048407038042,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 10,
+          "state": "stop",
+          "timeMs": 270,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.1637946474075317,
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "rootZ": -0.007449218749999999,
+          "rootLateralExtraMeters": -0.016000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.16535946781760447,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          }
+        },
+        {
+          "frame": 11,
+          "state": "stop",
+          "timeMs": 300,
+          "cyclePhase": 0.9166666666666667,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootDistanceMeters": 0.1684101553708928,
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "rootZ": -0.006780864197530868,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 12,
+          "state": "stop",
+          "timeMs": 330,
+          "cyclePhase": 0.9583333333333333,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootDistanceMeters": 0.17032396947366218,
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "rootZ": -0.006141726990817305,
+          "rootLateralExtraMeters": -0.002143593539448986,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        },
+        {
+          "frame": 13,
+          "state": "stop",
+          "timeMs": 360.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.17062636718749996,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": -4.799231304517945e-34,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.17062636718749996,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.17062636718749996
+    },
+    "settle": {
+      "durationMs": 180,
+      "loop": false,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB transition settle / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB transition settle / Motion ONE strap thumb pinch control",
+        "Motion ONE strap anatomical thumb pole": "MPFB transition settle / Motion ONE strap anatomical thumb pole"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "settle",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 2,
+          "state": "settle",
+          "timeMs": 30,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.0058580246913580245,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 3,
+          "state": "settle",
+          "timeMs": 60,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.005160493827160494,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 4,
+          "state": "settle",
+          "timeMs": 90,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 5,
+          "state": "settle",
+          "timeMs": 120,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002839506172839506,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 6,
+          "state": "settle",
+          "timeMs": 150,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002141975308641976,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        },
+        {
+          "frame": 7,
+          "state": "settle",
+          "timeMs": 180.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          }
+        }
+      ],
+      "rootAdvanceMeters": 0.0
+    }
+  },
+  "sourceActions": {
+    "Ruta.MPFB.StandardRig": "Ruta.MPFB.StandardRigAction",
+    "Motion ONE strap thumb pinch control": "Motion ONE strap thumb pinch controlAction",
+    "Motion ONE strap anatomical thumb pole": "Motion ONE strap anatomical thumb poleAction"
+  },
+  "demos": {
+    "L": {
+      "durationMs": 1620,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB start walk stop demo L / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB start walk stop demo L / Motion ONE strap thumb pinch cont",
+        "Motion ONE strap anatomical thumb pole": "MPFB start walk stop demo L / Motion ONE strap anatomical thumb"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "start",
+          "timeMs": 0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": -0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 0
+        },
+        {
+          "frame": 2,
+          "state": "start",
+          "timeMs": 30,
+          "cyclePhase": 0.5416666666666667,
+          "sourcePhase": 0.5416666666666667,
+          "poseAmplitude": 0.005087770061728394,
+          "rootDistanceMeters": 1.3028472931787307e-05,
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "rootZ": -0.002162078071064242,
+          "rootLateralExtraMeters": -0.002143593539448981,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 30
+        },
+        {
+          "frame": 3,
+          "state": "start",
+          "timeMs": 60,
+          "cyclePhase": 0.5833333333333333,
+          "sourcePhase": 0.5833333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootDistanceMeters": 0.00019748422128182866,
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "rootZ": -0.0029228395061728397,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 60
+        },
+        {
+          "frame": 4,
+          "state": "start",
+          "timeMs": 90,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.0009442214330037434,
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "rootZ": -0.0038632812499999995,
+          "rootLateralExtraMeters": -0.015999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-initial"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 90
+        },
+        {
+          "frame": 5,
+          "state": "start",
+          "timeMs": 120,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootDistanceMeters": 0.0028086644804526744,
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "rootZ": -0.004098765432098766,
+          "rootLateralExtraMeters": -0.023999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 120
+        },
+        {
+          "frame": 6,
+          "state": "start",
+          "timeMs": 150,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootDistanceMeters": 0.006428522828184529,
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "rootZ": -0.0034362499307865313,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 150
+        },
+        {
+          "frame": 7,
+          "state": "start",
+          "timeMs": 180,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.012441505940755208,
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "rootZ": -0.003,
+          "rootLateralExtraMeters": -0.032,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 180
+        },
+        {
+          "frame": 8,
+          "state": "start",
+          "timeMs": 210,
+          "cyclePhase": 0.7916666666666667,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootDistanceMeters": 0.02140303819051986,
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "rootZ": -0.00470734360866245,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 210
+        },
+        {
+          "frame": 9,
+          "state": "start",
+          "timeMs": 240,
+          "cyclePhase": 0.8333333333333333,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootDistanceMeters": 0.0337039737654321,
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "rootZ": -0.009901234567901233,
+          "rootLateralExtraMeters": -0.024000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 240
+        },
+        {
+          "frame": 10,
+          "state": "start",
+          "timeMs": 270,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.04948831157684326,
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "rootZ": -0.01813671875,
+          "rootLateralExtraMeters": -0.016000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 270
+        },
+        {
+          "frame": 11,
+          "state": "start",
+          "timeMs": 300,
+          "cyclePhase": 0.9166666666666667,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootDistanceMeters": 0.06857091016730164,
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "rootZ": -0.02707716049382716,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 300
+        },
+        {
+          "frame": 12,
+          "state": "start",
+          "timeMs": 330,
+          "cyclePhase": 0.9583333333333333,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootDistanceMeters": 0.09035520261835168,
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "rootZ": -0.0336943283894868,
+          "rootLateralExtraMeters": -0.002143593539448986,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-support"
+            }
+          },
+          "timelineMs": 330
+        },
+        {
+          "frame": 13,
+          "state": "walk",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.11375091145833333,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333376,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-0"
+            }
+          },
+          "timelineMs": 360
+        },
+        {
+          "frame": 14,
+          "state": "walk",
+          "timeMs": 30,
+          "cyclePhase": 0.041666666666666664,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.13744901801215276,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.03385640646055102,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.1336111111111111,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-0"
+            }
+          },
+          "timelineMs": 390
+        },
+        {
+          "frame": 15,
+          "state": "walk",
+          "timeMs": 60,
+          "cyclePhase": 0.08333333333333333,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.16114712456597222,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.028000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.020000000000000007,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.22388888888888903,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-0"
+            }
+          },
+          "timelineMs": 420
+        },
+        {
+          "frame": 16,
+          "state": "walk",
+          "timeMs": 90,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.18484523111979165,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.02,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.00638738028208416,
+              "contactMode": "swing",
+              "pitchRadians": 0.23625000000000002,
+              "liftMeters": 0.005834547377598817,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 450
+        },
+        {
+          "frame": 17,
+          "state": "walk",
+          "timeMs": 120,
+          "cyclePhase": 0.16666666666666666,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.2085433376736111,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.012000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.0421299672067901,
+              "contactMode": "swing",
+              "pitchRadians": 0.19666666666666668,
+              "liftMeters": 0.01892016934320857,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 480
+        },
+        {
+          "frame": 18,
+          "state": "walk",
+          "timeMs": 150,
+          "cyclePhase": 0.20833333333333334,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.23224144422743054,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.006143593539448981,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.10255808179172478,
+              "contactMode": "swing",
+              "pitchRadians": 0.1570833333333333,
+              "liftMeters": 0.03150425103293307,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 510
+        },
+        {
+          "frame": 19,
+          "state": "walk",
+          "timeMs": 180,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.25593955078124997,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.17995749664306643,
+              "contactMode": "swing",
+              "pitchRadians": 0.1175,
+              "liftMeters": 0.0407597673233479,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 540
+        },
+        {
+          "frame": 20,
+          "state": "walk",
+          "timeMs": 210,
+          "cyclePhase": 0.2916666666666667,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.2796376573350694,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.006143593539448983,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.26661398436699396,
+              "contactMode": "swing",
+              "pitchRadians": 0.07791666666666658,
+              "liftMeters": 0.044879596682165256,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 570
+        },
+        {
+          "frame": 21,
+          "state": "walk",
+          "timeMs": 240,
+          "cyclePhase": 0.3333333333333333,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.30333576388888883,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.011999999999999993,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.3548133175696853,
+              "contactMode": "swing",
+              "pitchRadians": 0.0383333333333334,
+              "liftMeters": 0.04309156195551862,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 600
+        },
+        {
+          "frame": 22,
+          "state": "walk",
+          "timeMs": 270,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.3270338704427083,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.019999999999999997,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.43684126885732005,
+              "contactMode": "swing",
+              "pitchRadians": -0.0012499999999999872,
+              "liftMeters": 0.03572896954083305,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 630
+        },
+        {
+          "frame": 23,
+          "state": "walk",
+          "timeMs": 300,
+          "cyclePhase": 0.4166666666666667,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.35073197699652775,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.028000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5049836108360761,
+              "contactMode": "swing",
+              "pitchRadians": -0.040833333333333395,
+              "liftMeters": 0.024197551539946665,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 660
+        },
+        {
+          "frame": 24,
+          "state": "walk",
+          "timeMs": 330,
+          "cyclePhase": 0.4583333333333333,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.3744300835503472,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.03385640646055101,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.551526116112132,
+              "contactMode": "swing",
+              "pitchRadians": -0.08041666666666658,
+              "liftMeters": 0.01089147026151068,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 690
+        },
+        {
+          "frame": 25,
+          "state": "walk",
+          "timeMs": 360,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.3981281901041666,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333376,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 720
+        },
+        {
+          "frame": 26,
+          "state": "walk",
+          "timeMs": 390,
+          "cyclePhase": 0.5416666666666666,
+          "sourcePhase": 0.5416666666666666,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.4218262966579861,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.033856406460551026,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "toe",
+              "pitchRadians": 0.1336111111111111,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "heel",
+              "pitchRadians": -0.07000000000000017,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 750
+        },
+        {
+          "frame": 27,
+          "state": "walk",
+          "timeMs": 420,
+          "cyclePhase": 0.5833333333333334,
+          "sourcePhase": 0.5833333333333334,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.44552440321180553,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.027999999999999997,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "toe",
+              "pitchRadians": 0.22388888888888903,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "heel",
+              "pitchRadians": -0.01999999999999982,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 780
+        },
+        {
+          "frame": 28,
+          "state": "walk",
+          "timeMs": 450,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.46922250976562496,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.020000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.2907646589279175,
+              "contactMode": "swing",
+              "pitchRadians": 0.23625000000000002,
+              "liftMeters": 0.005834547377598817,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 810
+        },
+        {
+          "frame": 29,
+          "state": "walk",
+          "timeMs": 480,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.4929206163194444,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.012000000000000012,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.32650724585262336,
+              "contactMode": "swing",
+              "pitchRadians": 0.19666666666666668,
+              "liftMeters": 0.01892016934320857,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 840
+        },
+        {
+          "frame": 30,
+          "state": "walk",
+          "timeMs": 510,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5166187228732639,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.0061435935394489796,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.38693536043755805,
+              "contactMode": "swing",
+              "pitchRadians": 0.1570833333333333,
+              "liftMeters": 0.03150425103293307,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 870
+        },
+        {
+          "frame": 31,
+          "state": "walk",
+          "timeMs": 540,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5403168294270833,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.4643347752888997,
+              "contactMode": "swing",
+              "pitchRadians": 0.1175,
+              "liftMeters": 0.0407597673233479,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 900
+        },
+        {
+          "frame": 32,
+          "state": "walk",
+          "timeMs": 570,
+          "cyclePhase": 0.7916666666666666,
+          "sourcePhase": 0.7916666666666666,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5640149359809027,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.006143593539448974,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5509912630128271,
+              "contactMode": "swing",
+              "pitchRadians": 0.07791666666666669,
+              "liftMeters": 0.04487959668216525,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 930
+        },
+        {
+          "frame": 33,
+          "state": "walk",
+          "timeMs": 600,
+          "cyclePhase": 0.8333333333333334,
+          "sourcePhase": 0.8333333333333334,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5877130425347221,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.012000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.6391905962155189,
+              "contactMode": "swing",
+              "pitchRadians": 0.038333333333333275,
+              "liftMeters": 0.04309156195551861,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 960
+        },
+        {
+          "frame": 34,
+          "state": "walk",
+          "timeMs": 630,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.6114111490885417,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.019999999999999993,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.7212185475031534,
+              "contactMode": "swing",
+              "pitchRadians": -0.0012499999999999872,
+              "liftMeters": 0.03572896954083305,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 990
+        },
+        {
+          "frame": 35,
+          "state": "walk",
+          "timeMs": 660,
+          "cyclePhase": 0.9166666666666666,
+          "sourcePhase": 0.9166666666666666,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.635109255642361,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.027999999999999987,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.7893608894819093,
+              "contactMode": "swing",
+              "pitchRadians": -0.04083333333333331,
+              "liftMeters": 0.024197551539946703,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 1020
+        },
+        {
+          "frame": 36,
+          "state": "walk",
+          "timeMs": 690,
+          "cyclePhase": 0.9583333333333334,
+          "sourcePhase": 0.9583333333333334,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.6588073621961805,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.03385640646055102,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8359033947579653,
+              "contactMode": "swing",
+              "pitchRadians": -0.08041666666666672,
+              "liftMeters": 0.01089147026151064,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 1050
+        },
+        {
+          "frame": 37,
+          "state": "stop",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.6825054687499998,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          },
+          "timelineMs": 1080
+        },
+        {
+          "frame": 38,
+          "state": "stop",
+          "timeMs": 30,
+          "cyclePhase": 0.041666666666666664,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.9949122299382716,
+          "rootDistanceMeters": 0.7061905468308874,
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "rootZ": -0.03371467946973369,
+          "rootLateralExtraMeters": 0.002143593539448981,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          },
+          "timelineMs": 1110
+        },
+        {
+          "frame": 39,
+          "state": "stop",
+          "timeMs": 60,
+          "cyclePhase": 0.08333333333333333,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.9645061728395061,
+          "rootDistanceMeters": 0.7297041976363569,
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "rootZ": -0.027219135802469138,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-old"
+            }
+          },
+          "timelineMs": 1140
+        },
+        {
+          "frame": 40,
+          "state": "stop",
+          "timeMs": 90,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.7526555669784545,
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "rootZ": -0.01855078125,
+          "rootLateralExtraMeters": 0.015999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5699933750918083,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1170
+        },
+        {
+          "frame": 41,
+          "state": "stop",
+          "timeMs": 120,
+          "cyclePhase": 0.16666666666666666,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootDistanceMeters": 0.774489230484825,
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "rootZ": -0.010740740740740742,
+          "rootLateralExtraMeters": 0.023999999999999997,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.587615505181203,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1200
+        },
+        {
+          "frame": 42,
+          "state": "stop",
+          "timeMs": 150,
+          "cyclePhase": 0.20833333333333334,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootDistanceMeters": 0.7945674786909125,
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "rootZ": -0.006093821232119238,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.6321822669704206,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1230
+        },
+        {
+          "frame": 43,
+          "state": "stop",
+          "timeMs": 180,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.8122526021321612,
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "rootZ": -0.005,
+          "rootLateralExtraMeters": 0.032,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.6969373142490158,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1260
+        },
+        {
+          "frame": 44,
+          "state": "stop",
+          "timeMs": 210,
+          "cyclePhase": 0.2916666666666667,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootDistanceMeters": 0.8269891764362161,
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "rootZ": -0.006049772307329743,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.7654339237716427,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1290
+        },
+        {
+          "frame": 45,
+          "state": "stop",
+          "timeMs": 240,
+          "cyclePhase": 0.3333333333333333,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootDistanceMeters": 0.8383863474151232,
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "rootZ": -0.007259259259259258,
+          "rootLateralExtraMeters": 0.024000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8196103094538041,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1320
+        },
+        {
+          "frame": 46,
+          "state": "stop",
+          "timeMs": 270,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.8463001161575315,
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "rootZ": -0.00744921875,
+          "rootLateralExtraMeters": 0.016000000000000004,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8478649365676043,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1350
+        },
+        {
+          "frame": 47,
+          "state": "stop",
+          "timeMs": 300,
+          "cyclePhase": 0.4166666666666667,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootDistanceMeters": 0.8509156241208926,
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "rootZ": -0.006780864197530868,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          },
+          "timelineMs": 1380
+        },
+        {
+          "frame": 48,
+          "state": "stop",
+          "timeMs": 330,
+          "cyclePhase": 0.4583333333333333,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootDistanceMeters": 0.8528294382236621,
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "rootZ": -0.006141726990817305,
+          "rootLateralExtraMeters": 0.002143593539448986,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-support"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-land"
+            }
+          },
+          "timelineMs": 1410
+        },
+        {
+          "frame": 49,
+          "state": "settle",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1440
+        },
+        {
+          "frame": 50,
+          "state": "settle",
+          "timeMs": 30,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.0058580246913580245,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1470
+        },
+        {
+          "frame": 51,
+          "state": "settle",
+          "timeMs": 60,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.005160493827160494,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1500
+        },
+        {
+          "frame": 52,
+          "state": "settle",
+          "timeMs": 90,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1530
+        },
+        {
+          "frame": 53,
+          "state": "settle",
+          "timeMs": 120,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002839506172839506,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1560
+        },
+        {
+          "frame": 54,
+          "state": "settle",
+          "timeMs": 150,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002141975308641976,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1590
+        },
+        {
+          "frame": 55,
+          "state": "settle",
+          "timeMs": 180.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1620
+        }
+      ],
+      "contactEvents": [
+        {
+          "timeMs": 360,
+          "foot": "L"
+        },
+        {
+          "timeMs": 720,
+          "foot": "R"
+        },
+        {
+          "timeMs": 1080,
+          "foot": "L"
+        },
+        {
+          "timeMs": 1380,
+          "foot": "R"
+        }
+      ]
+    },
+    "R": {
+      "durationMs": 1620,
+      "actionBundle": {
+        "Ruta.MPFB.StandardRig": "MPFB start walk stop demo R / Ruta.MPFB.StandardRig",
+        "Motion ONE strap thumb pinch control": "MPFB start walk stop demo R / Motion ONE strap thumb pinch cont",
+        "Motion ONE strap anatomical thumb pole": "MPFB start walk stop demo R / Motion ONE strap anatomical thumb"
+      },
+      "frames": [
+        {
+          "frame": 1,
+          "state": "start",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.0,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 0
+        },
+        {
+          "frame": 2,
+          "state": "start",
+          "timeMs": 30,
+          "cyclePhase": 0.041666666666666664,
+          "sourcePhase": 0.041666666666666664,
+          "poseAmplitude": 0.005087770061728394,
+          "rootDistanceMeters": 1.3028472931787307e-05,
+          "rootVelocityMetersPerSecond": 0.0017142727541825404,
+          "rootZ": -0.002162078071064242,
+          "rootLateralExtraMeters": 0.002143593539448981,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.04680156707763672,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 30
+        },
+        {
+          "frame": 3,
+          "state": "start",
+          "timeMs": 60,
+          "cyclePhase": 0.08333333333333333,
+          "sourcePhase": 0.08333333333333333,
+          "poseAmplitude": 0.035493827160493825,
+          "rootDistanceMeters": 0.00019748422128182866,
+          "rootVelocityMetersPerSecond": 0.012799903231229634,
+          "rootZ": -0.0029228395061728397,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.188446044921875,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 60
+        },
+        {
+          "frame": 4,
+          "state": "start",
+          "timeMs": 90,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.0009442214330037434,
+          "rootVelocityMetersPerSecond": 0.040113982447871455,
+          "rootZ": -0.0038632812500000004,
+          "rootLateralExtraMeters": 0.015999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.25942325592041016,
+              "liftMeters": 0.0,
+              "anchorId": "R-start-initial"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 90
+        },
+        {
+          "frame": 5,
+          "state": "start",
+          "timeMs": 120,
+          "cyclePhase": 0.16666666666666666,
+          "sourcePhase": 0.16666666666666666,
+          "poseAmplitude": 0.20987654320987653,
+          "rootDistanceMeters": 0.0028086644804526744,
+          "rootVelocityMetersPerSecond": 0.08777076501414607,
+          "rootZ": -0.004098765432098766,
+          "rootLateralExtraMeters": 0.023999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.0018558128782607424,
+              "contactMode": "swing",
+              "pitchRadians": 0.22545454545454546,
+              "liftMeters": 0.009236529244735912,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 120
+        },
+        {
+          "frame": 6,
+          "state": "start",
+          "timeMs": 150,
+          "cyclePhase": 0.20833333333333334,
+          "sourcePhase": 0.20833333333333334,
+          "poseAmplitude": 0.34661940586419754,
+          "rootDistanceMeters": 0.006428522828184529,
+          "rootVelocityMetersPerSecond": 0.15714166913339958,
+          "rootZ": -0.003436249930786533,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.017480798423221786,
+              "contactMode": "swing",
+              "pitchRadians": 0.18227272727272728,
+              "liftMeters": 0.023727262228738902,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 150
+        },
+        {
+          "frame": 7,
+          "state": "start",
+          "timeMs": 180,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.012441505940755208,
+          "rootVelocityMetersPerSecond": 0.24685527660228584,
+          "rootZ": -0.003,
+          "rootLateralExtraMeters": 0.032,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.05344908836511237,
+              "contactMode": "swing",
+              "pitchRadians": 0.13909090909090913,
+              "liftMeters": 0.036255269694132446,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 180
+        },
+        {
+          "frame": 8,
+          "state": "start",
+          "timeMs": 210,
+          "cyclePhase": 0.2916666666666667,
+          "sourcePhase": 0.2916666666666667,
+          "poseAmplitude": 0.6533805941358025,
+          "rootDistanceMeters": 0.02140303819051986,
+          "rootVelocityMetersPerSecond": 0.3527973328107669,
+          "rootZ": -0.0047073436086624496,
+          "rootLateralExtraMeters": 0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.10628175779434951,
+              "contactMode": "swing",
+              "pitchRadians": 0.09590909090909089,
+              "liftMeters": 0.04371820458447752,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 210
+        },
+        {
+          "frame": 9,
+          "state": "start",
+          "timeMs": 240,
+          "cyclePhase": 0.3333333333333333,
+          "sourcePhase": 0.3333333333333333,
+          "poseAmplitude": 0.7901234567901235,
+          "rootDistanceMeters": 0.0337039737654321,
+          "rootVelocityMetersPerSecond": 0.46811074674211234,
+          "rootZ": -0.00990123456790123,
+          "rootLateralExtraMeters": 0.024000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.16629213475079316,
+              "contactMode": "swing",
+              "pitchRadians": 0.05272727272727275,
+              "liftMeters": 0.04442818642668177,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 240
+        },
+        {
+          "frame": 10,
+          "state": "start",
+          "timeMs": 270,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.04948831157684326,
+          "rootVelocityMetersPerSecond": 0.5831955909729003,
+          "rootZ": -0.018136718749999996,
+          "rootLateralExtraMeters": 0.016000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.2214656421303445,
+              "contactMode": "swing",
+              "pitchRadians": 0.009545454545454565,
+              "liftMeters": 0.038228049646993535,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 270
+        },
+        {
+          "frame": 11,
+          "state": "start",
+          "timeMs": 300,
+          "cyclePhase": 0.4166666666666667,
+          "sourcePhase": 0.4166666666666667,
+          "poseAmplitude": 0.964506172839506,
+          "rootDistanceMeters": 0.06857091016730164,
+          "rootVelocityMetersPerSecond": 0.6857091016730164,
+          "rootZ": -0.02707716049382716,
+          "rootLateralExtraMeters": 0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.26133963959154394,
+              "contactMode": "swing",
+              "pitchRadians": -0.03363636363636363,
+              "liftMeters": 0.026509326975676862,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.009094650205761326,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 300
+        },
+        {
+          "frame": 12,
+          "state": "start",
+          "timeMs": 330,
+          "cyclePhase": 0.4583333333333333,
+          "sourcePhase": 0.4583333333333333,
+          "poseAmplitude": 0.9949122299382724,
+          "rootDistanceMeters": 0.09035520261835168,
+          "rootVelocityMetersPerSecond": 0.7605656786056538,
+          "rootZ": -0.03369432838948679,
+          "rootLateralExtraMeters": 0.002143593539448986,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.28088326546216924,
+              "contactMode": "swing",
+              "pitchRadians": -0.07681818181818181,
+              "liftMeters": 0.012091100952477838,
+              "anchorId": null
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.034238683127572014,
+              "liftMeters": 0.0,
+              "anchorId": "L-start-support"
+            }
+          },
+          "timelineMs": 330
+        },
+        {
+          "frame": 13,
+          "state": "walk",
+          "timeMs": 0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.11375091145833333,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333376,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 360
+        },
+        {
+          "frame": 14,
+          "state": "walk",
+          "timeMs": 30,
+          "cyclePhase": 0.5416666666666666,
+          "sourcePhase": 0.5416666666666666,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.13744901801215276,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.033856406460551026,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.1336111111111111,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.07000000000000017,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 390
+        },
+        {
+          "frame": 15,
+          "state": "walk",
+          "timeMs": 60,
+          "cyclePhase": 0.5833333333333334,
+          "sourcePhase": 0.5833333333333334,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.16114712456597222,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.027999999999999997,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0,
+              "contactMode": "toe",
+              "pitchRadians": 0.22388888888888903,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-0"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "heel",
+              "pitchRadians": -0.01999999999999982,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 420
+        },
+        {
+          "frame": 16,
+          "state": "walk",
+          "timeMs": 90,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.18484523111979165,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.020000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.00638738028208416,
+              "contactMode": "swing",
+              "pitchRadians": 0.23625000000000002,
+              "liftMeters": 0.005834547377598817,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 450
+        },
+        {
+          "frame": 17,
+          "state": "walk",
+          "timeMs": 120,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.2085433376736111,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.012000000000000012,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.0421299672067901,
+              "contactMode": "swing",
+              "pitchRadians": 0.19666666666666668,
+              "liftMeters": 0.01892016934320857,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 480
+        },
+        {
+          "frame": 18,
+          "state": "walk",
+          "timeMs": 150,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.23224144422743054,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.0061435935394489796,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.10255808179172478,
+              "contactMode": "swing",
+              "pitchRadians": 0.1570833333333333,
+              "liftMeters": 0.03150425103293307,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 510
+        },
+        {
+          "frame": 19,
+          "state": "walk",
+          "timeMs": 180,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.25593955078124997,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.17995749664306643,
+              "contactMode": "swing",
+              "pitchRadians": 0.1175,
+              "liftMeters": 0.0407597673233479,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 540
+        },
+        {
+          "frame": 20,
+          "state": "walk",
+          "timeMs": 210,
+          "cyclePhase": 0.7916666666666667,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.2796376573350694,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.006143593539448988,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.26661398436699396,
+              "contactMode": "swing",
+              "pitchRadians": 0.07791666666666658,
+              "liftMeters": 0.044879596682165256,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 570
+        },
+        {
+          "frame": 21,
+          "state": "walk",
+          "timeMs": 240,
+          "cyclePhase": 0.8333333333333333,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.30333576388888883,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.01199999999999998,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.3548133175696853,
+              "contactMode": "swing",
+              "pitchRadians": 0.0383333333333334,
+              "liftMeters": 0.04309156195551862,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 600
+        },
+        {
+          "frame": 22,
+          "state": "walk",
+          "timeMs": 270,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.3270338704427083,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.019999999999999993,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.43684126885732005,
+              "contactMode": "swing",
+              "pitchRadians": -0.0012499999999999872,
+              "liftMeters": 0.03572896954083305,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 630
+        },
+        {
+          "frame": 23,
+          "state": "walk",
+          "timeMs": 300,
+          "cyclePhase": 0.9166666666666667,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.35073197699652775,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.02800000000000001,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5049836108360761,
+              "contactMode": "swing",
+              "pitchRadians": -0.040833333333333395,
+              "liftMeters": 0.024197551539946665,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 660
+        },
+        {
+          "frame": 24,
+          "state": "walk",
+          "timeMs": 330,
+          "cyclePhase": 0.9583333333333333,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.3744300835503472,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.033856406460551006,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.551526116112132,
+              "contactMode": "swing",
+              "pitchRadians": -0.08041666666666658,
+              "liftMeters": 0.01089147026151068,
+              "anchorId": null
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 690
+        },
+        {
+          "frame": 25,
+          "state": "walk",
+          "timeMs": 360,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.3981281901041666,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333376,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 720
+        },
+        {
+          "frame": 26,
+          "state": "walk",
+          "timeMs": 390,
+          "cyclePhase": 0.04166666666666652,
+          "sourcePhase": 0.04166666666666652,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.4218262966579861,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.03385640646055104,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "heel",
+              "pitchRadians": -0.07000000000000017,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111082,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 750
+        },
+        {
+          "frame": 27,
+          "state": "walk",
+          "timeMs": 420,
+          "cyclePhase": 0.08333333333333348,
+          "sourcePhase": 0.08333333333333348,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.44552440321180553,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.027999999999999976,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "heel",
+              "pitchRadians": -0.01999999999999982,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2843772786458333,
+              "contactMode": "toe",
+              "pitchRadians": 0.22388888888888928,
+              "liftMeters": 0.0,
+              "anchorId": "R-cycle-1"
+            }
+          },
+          "timelineMs": 780
+        },
+        {
+          "frame": 28,
+          "state": "walk",
+          "timeMs": 450,
+          "cyclePhase": 0.125,
+          "sourcePhase": 0.125,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.46922250976562496,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.02000000000000001,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.2907646589279175,
+              "contactMode": "swing",
+              "pitchRadians": 0.23625000000000002,
+              "liftMeters": 0.005834547377598817,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 810
+        },
+        {
+          "frame": 29,
+          "state": "walk",
+          "timeMs": 480,
+          "cyclePhase": 0.16666666666666652,
+          "sourcePhase": 0.16666666666666652,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.4929206163194444,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.012000000000000042,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.32650724585262325,
+              "contactMode": "swing",
+              "pitchRadians": 0.1966666666666668,
+              "liftMeters": 0.018920169343208535,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 840
+        },
+        {
+          "frame": 30,
+          "state": "walk",
+          "timeMs": 510,
+          "cyclePhase": 0.20833333333333348,
+          "sourcePhase": 0.20833333333333348,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5166187228732639,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.006143593539448969,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.3869353604375583,
+              "contactMode": "swing",
+              "pitchRadians": 0.15708333333333319,
+              "liftMeters": 0.03150425103293309,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 870
+        },
+        {
+          "frame": 31,
+          "state": "walk",
+          "timeMs": 540,
+          "cyclePhase": 0.25,
+          "sourcePhase": 0.25,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5403168294270833,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.4643347752888997,
+              "contactMode": "swing",
+              "pitchRadians": 0.1175,
+              "liftMeters": 0.0407597673233479,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 900
+        },
+        {
+          "frame": 32,
+          "state": "walk",
+          "timeMs": 570,
+          "cyclePhase": 0.2916666666666665,
+          "sourcePhase": 0.2916666666666665,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5640149359809027,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.006143593539448973,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.5509912630128269,
+              "contactMode": "swing",
+              "pitchRadians": 0.0779166666666668,
+              "liftMeters": 0.04487959668216525,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 930
+        },
+        {
+          "frame": 33,
+          "state": "walk",
+          "timeMs": 600,
+          "cyclePhase": 0.3333333333333335,
+          "sourcePhase": 0.3333333333333335,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.5877130425347221,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.012000000000000025,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.6391905962155191,
+              "contactMode": "swing",
+              "pitchRadians": 0.03833333333333319,
+              "liftMeters": 0.0430915619555186,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 960
+        },
+        {
+          "frame": 34,
+          "state": "walk",
+          "timeMs": 630,
+          "cyclePhase": 0.375,
+          "sourcePhase": 0.375,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.6114111490885417,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.019999999999999962,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.7212185475031534,
+              "contactMode": "swing",
+              "pitchRadians": -0.0012499999999999872,
+              "liftMeters": 0.03572896954083305,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 990
+        },
+        {
+          "frame": 35,
+          "state": "walk",
+          "timeMs": 660,
+          "cyclePhase": 0.4166666666666665,
+          "sourcePhase": 0.4166666666666665,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.635109255642361,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.027999999999999955,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.7893608894819091,
+              "contactMode": "swing",
+              "pitchRadians": -0.04083333333333318,
+              "liftMeters": 0.024197551539946734,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1020
+        },
+        {
+          "frame": 36,
+          "state": "walk",
+          "timeMs": 690,
+          "cyclePhase": 0.4583333333333335,
+          "sourcePhase": 0.4583333333333335,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.6588073621961805,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.03385640646055102,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-cycle-1"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8359033947579655,
+              "contactMode": "swing",
+              "pitchRadians": -0.0804166666666668,
+              "liftMeters": 0.010891470261510605,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1050
+        },
+        {
+          "frame": 37,
+          "state": "stop",
+          "timeMs": 0,
+          "cyclePhase": 0.5,
+          "sourcePhase": 0.5,
+          "poseAmplitude": 1.0,
+          "rootDistanceMeters": 0.6825054687499998,
+          "rootVelocityMetersPerSecond": 0.7899368851273147,
+          "rootZ": -0.036000000000000004,
+          "rootLateralExtraMeters": -0.0,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "toe",
+              "pitchRadians": 0.043333333333333335,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          },
+          "timelineMs": 1080
+        },
+        {
+          "frame": 38,
+          "state": "stop",
+          "timeMs": 30,
+          "cyclePhase": 0.5416666666666666,
+          "sourcePhase": 0.5416666666666666,
+          "poseAmplitude": 0.9949122299382716,
+          "rootDistanceMeters": 0.7061905468308874,
+          "rootVelocityMetersPerSecond": 0.7882226123731323,
+          "rootZ": -0.033714679469733694,
+          "rootLateralExtraMeters": -0.002143593539448981,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.06999999999999999,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "toe",
+              "pitchRadians": 0.13361111111111112,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          },
+          "timelineMs": 1110
+        },
+        {
+          "frame": 39,
+          "state": "stop",
+          "timeMs": 60,
+          "cyclePhase": 0.5833333333333334,
+          "sourcePhase": 0.5833333333333334,
+          "poseAmplitude": 0.9645061728395061,
+          "rootDistanceMeters": 0.7297041976363569,
+          "rootVelocityMetersPerSecond": 0.777136981896085,
+          "rootZ": -0.02721913580246913,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.019999999999999993,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.5687545572916666,
+              "contactMode": "toe",
+              "pitchRadians": 0.2238888888888889,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-old"
+            }
+          },
+          "timelineMs": 1140
+        },
+        {
+          "frame": 40,
+          "state": "stop",
+          "timeMs": 90,
+          "cyclePhase": 0.625,
+          "sourcePhase": 0.625,
+          "poseAmplitude": 0.896484375,
+          "rootDistanceMeters": 0.7526555669784545,
+          "rootVelocityMetersPerSecond": 0.7498229026794433,
+          "rootZ": -0.018550781250000002,
+          "rootLateralExtraMeters": -0.015999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.5699933750918083,
+              "contactMode": "swing",
+              "pitchRadians": 0.22999999999999998,
+              "liftMeters": 0.0077757948045523865,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1170
+        },
+        {
+          "frame": 41,
+          "state": "stop",
+          "timeMs": 120,
+          "cyclePhase": 0.6666666666666666,
+          "sourcePhase": 0.6666666666666666,
+          "poseAmplitude": 0.7901234567901234,
+          "rootDistanceMeters": 0.774489230484825,
+          "rootVelocityMetersPerSecond": 0.7021661201131686,
+          "rootZ": -0.010740740740740749,
+          "rootLateralExtraMeters": -0.023999999999999997,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.587615505181203,
+              "contactMode": "swing",
+              "pitchRadians": 0.18,
+              "liftMeters": 0.024468706691515265,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1200
+        },
+        {
+          "frame": 42,
+          "state": "stop",
+          "timeMs": 150,
+          "cyclePhase": 0.7083333333333334,
+          "sourcePhase": 0.7083333333333334,
+          "poseAmplitude": 0.6533805941358024,
+          "rootDistanceMeters": 0.7945674786909125,
+          "rootVelocityMetersPerSecond": 0.6327952159939152,
+          "rootZ": -0.006093821232119238,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.6321822669704206,
+              "contactMode": "swing",
+              "pitchRadians": 0.13,
+              "liftMeters": 0.03832579006020434,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1230
+        },
+        {
+          "frame": 43,
+          "state": "stop",
+          "timeMs": 180,
+          "cyclePhase": 0.75,
+          "sourcePhase": 0.75,
+          "poseAmplitude": 0.5,
+          "rootDistanceMeters": 0.8122526021321612,
+          "rootVelocityMetersPerSecond": 0.5430816085250288,
+          "rootZ": -0.005,
+          "rootLateralExtraMeters": -0.032,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.6969373142490158,
+              "contactMode": "swing",
+              "pitchRadians": 0.08000000000000004,
+              "liftMeters": 0.04480795982613763,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1260
+        },
+        {
+          "frame": 44,
+          "state": "stop",
+          "timeMs": 210,
+          "cyclePhase": 0.7916666666666667,
+          "sourcePhase": 0.7916666666666667,
+          "poseAmplitude": 0.3466194058641975,
+          "rootDistanceMeters": 0.8269891764362161,
+          "rootVelocityMetersPerSecond": 0.43713955231654783,
+          "rootZ": -0.006049772307329745,
+          "rootLateralExtraMeters": -0.029856406460551023,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.7654339237716427,
+              "contactMode": "swing",
+              "pitchRadians": 0.03,
+              "liftMeters": 0.041973148432298886,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1290
+        },
+        {
+          "frame": 45,
+          "state": "stop",
+          "timeMs": 240,
+          "cyclePhase": 0.8333333333333333,
+          "sourcePhase": 0.8333333333333333,
+          "poseAmplitude": 0.20987654320987648,
+          "rootDistanceMeters": 0.8383863474151232,
+          "rootVelocityMetersPerSecond": 0.3218261383852024,
+          "rootZ": -0.007259259259259255,
+          "rootLateralExtraMeters": -0.024000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.8196103094538041,
+              "contactMode": "swing",
+              "pitchRadians": -0.019999999999999976,
+              "liftMeters": 0.03066239697998594,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1320
+        },
+        {
+          "frame": 46,
+          "state": "stop",
+          "timeMs": 270,
+          "cyclePhase": 0.875,
+          "sourcePhase": 0.875,
+          "poseAmplitude": 0.103515625,
+          "rootDistanceMeters": 0.8463001161575315,
+          "rootVelocityMetersPerSecond": 0.20674129415441442,
+          "rootZ": -0.007449218749999999,
+          "rootLateralExtraMeters": -0.016000000000000004,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.8478649365676043,
+              "contactMode": "swing",
+              "pitchRadians": -0.07,
+              "liftMeters": 0.014390756348470026,
+              "anchorId": null
+            }
+          },
+          "timelineMs": 1350
+        },
+        {
+          "frame": 47,
+          "state": "stop",
+          "timeMs": 300,
+          "cyclePhase": 0.9166666666666667,
+          "sourcePhase": 0.9166666666666667,
+          "poseAmplitude": 0.035493827160493985,
+          "rootDistanceMeters": 0.8509156241208926,
+          "rootVelocityMetersPerSecond": 0.10422778345429828,
+          "rootZ": -0.006780864197530868,
+          "rootLateralExtraMeters": -0.007999999999999998,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.12,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          },
+          "timelineMs": 1380
+        },
+        {
+          "frame": 48,
+          "state": "stop",
+          "timeMs": 330,
+          "cyclePhase": 0.9583333333333333,
+          "sourcePhase": 0.9583333333333333,
+          "poseAmplitude": 0.005087770061727559,
+          "rootDistanceMeters": 0.8528294382236621,
+          "rootVelocityMetersPerSecond": 0.029371206521660732,
+          "rootZ": -0.006141726990817305,
+          "rootLateralExtraMeters": -0.002143593539448986,
+          "feet": {
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "flat",
+              "pitchRadians": -0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-stop-support"
+            },
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374997,
+              "contactMode": "heel",
+              "pitchRadians": -0.06,
+              "liftMeters": 0.0,
+              "anchorId": "L-stop-land"
+            }
+          },
+          "timelineMs": 1410
+        },
+        {
+          "frame": 49,
+          "state": "settle",
+          "timeMs": 0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.006,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1440
+        },
+        {
+          "frame": 50,
+          "state": "settle",
+          "timeMs": 30,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.0058580246913580245,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1470
+        },
+        {
+          "frame": 51,
+          "state": "settle",
+          "timeMs": 60,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.005160493827160494,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1500
+        },
+        {
+          "frame": 52,
+          "state": "settle",
+          "timeMs": 90,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.004,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1530
+        },
+        {
+          "frame": 53,
+          "state": "settle",
+          "timeMs": 120,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002839506172839506,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1560
+        },
+        {
+          "frame": 54,
+          "state": "settle",
+          "timeMs": 150,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002141975308641976,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1590
+        },
+        {
+          "frame": 55,
+          "state": "settle",
+          "timeMs": 180.0,
+          "cyclePhase": 0.0,
+          "sourcePhase": 0.0,
+          "poseAmplitude": 0.0,
+          "rootDistanceMeters": 0.8531318359374999,
+          "rootVelocityMetersPerSecond": 0.0,
+          "rootZ": -0.002,
+          "rootLateralExtraMeters": 0.0,
+          "feet": {
+            "L": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "L-idle"
+            },
+            "R": {
+              "plannedBaseForwardMeters": 0.8531318359374999,
+              "contactMode": "flat",
+              "pitchRadians": 0.0,
+              "liftMeters": 0.0,
+              "anchorId": "R-idle"
+            }
+          },
+          "timelineMs": 1620
+        }
+      ],
+      "contactEvents": [
+        {
+          "timeMs": 360,
+          "foot": "R"
+        },
+        {
+          "timeMs": 720,
+          "foot": "L"
+        },
+        {
+          "timeMs": 1080,
+          "foot": "R"
+        },
+        {
+          "timeMs": 1380,
+          "foot": "L"
+        }
+      ]
+    }
+  },
+  "rootGroundAnchorPixels": [
+    191.9999656677246,
+    308.72593688964844
+  ],
+  "projection": {
+    "variant": "base",
+    "direction": "e",
+    "angle": 0,
+    "groundScale": 0.65,
+    "orthoScale": 1.7,
+    "elevationRadians": 0.7075844367253556,
+    "cameraFollows": "rig object root translation only, not pelvis/feet/bounding box"
+  },
+  "cameraSpecificationsReadOnlyReference": {
+    "base": {
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "directions": {
+        "e": {
+          "screenAngleRadians": 0.0,
+          "nativeCameraAzimuthRadians": -3.141592653589793
+        },
+        "se": {
+          "screenAngleRadians": 0.8445215140369683,
+          "nativeCameraAzimuthRadians": -2.0943951023931957
+        },
+        "sw": {
+          "screenAngleRadians": 2.2970711395528247,
+          "nativeCameraAzimuthRadians": -1.0471975511965979
+        },
+        "w": {
+          "screenAngleRadians": 3.141592653589793,
+          "nativeCameraAzimuthRadians": 0.0
+        },
+        "nw": {
+          "screenAngleRadians": -2.297071139552825,
+          "nativeCameraAzimuthRadians": -5.235987755982989
+        },
+        "ne": {
+          "screenAngleRadians": -0.8445215140369683,
+          "nativeCameraAzimuthRadians": -4.1887902047863905
+        }
+      }
+    },
+    "calibrated-1": {
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "directions": {
+        "e": {
+          "screenAngleRadians": 0.0292282487743918,
+          "nativeCameraAzimuthRadians": -3.0966436042344614
+        },
+        "se": {
+          "screenAngleRadians": 0.897092075650845,
+          "nativeCameraAzimuthRadians": -2.049446053037864
+        },
+        "sw": {
+          "screenAngleRadians": 2.347599662738727,
+          "nativeCameraAzimuthRadians": -1.0022485018412666
+        },
+        "w": {
+          "screenAngleRadians": -3.1123644048154016,
+          "nativeCameraAzimuthRadians": -6.238236257824255
+        },
+        "nw": {
+          "screenAngleRadians": -2.244500577938949,
+          "nativeCameraAzimuthRadians": -5.191038706627658
+        },
+        "ne": {
+          "screenAngleRadians": -0.7939929908510658,
+          "nativeCameraAzimuthRadians": -4.143841155431059
+        }
+      }
+    }
+  },
+  "sixViewExportStatus": "NOT RENDERED; first E transition review required",
+  "savedActionInterpolation": "LINEAR at 30ms; analytic API root easing is sampled, not exact between keys"
+}
