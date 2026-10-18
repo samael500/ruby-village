@@ -12,7 +12,7 @@ for obj in controls:
 rig.rotation_mode='XYZ'
 def smooth(x):x=max(0,min(1,x));return x*x*x*(10+x*(-15+6*x))
 def foot(p,side):
- a,b,c,d=(.12,.18,.44,.50) if side=='R' else (.62,.68,.90,.96)
+ a,b,c,d=(.12,.18,.44,.50) if side=='L' else (.62,.68,.90,.96)
  heading=0.;lift=0.;pitch=0.;center=flat[side].translation.copy();mode='flat-initial'
  if a<=p<b:pitch=.16*smooth((p-a)/(b-a));mode='toe-off'
  elif b<=p<c:
@@ -25,7 +25,7 @@ for p in phases:
  frame=1+duration/30*p;scene.frame_set(int(frame),subframe=frame-int(frame))
  for name,m in basis.items():rig.pose.bones[name].matrix_basis=m
  # Small world-root weight transfer, exact zero at endpoints; no root distance fit.
- left=flat['L'].translation.copy();left.z=0;left.normalize();right=endflat['R'].translation.copy();right.z=0;right.normalize();transfer=smooth((p-.48)/.16);balance=left.lerp(right,transfer)*(.030*smooth(p/.12)*(1-smooth((p-.88)/.12)))
+ firstsupport=flat['R'].translation.copy();firstsupport.z=0;firstsupport.normalize();secondsupport=endflat['L'].translation.copy();secondsupport.z=0;secondsupport.normalize();transfer=smooth((p-.48)/.16);balance=firstsupport.lerp(secondsupport,transfer)*(.030*smooth(p/.12)*(1-smooth((p-.88)/.12)))
  yaw=angle*smooth((p-.12)/.78);rig.location=balance;rig.rotation_euler=(0,0,yaw);thumb.location=idlethumb;pole.location=idlepole;bpy.context.view_layer.update()
  root=rig.pose.bones['root'];m=root.matrix.copy();m.translation.z-=.004*math.sin(math.pi*p)**2;root.matrix=m;bpy.context.view_layer.update();spine=rig.pose.bones['spine01'];m=spine.matrix.copy();spine.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(math.radians(2)*math.sin(2*math.pi*p),4,'Z')@m.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update()
  head=rig.pose.bones['neck01'];m=head.matrix.copy();head.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(math.radians(6)*math.sin(math.pi*p)**2,4,'Z')@neck.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update();delta=rig.pose.bones['spine01'].matrix@chest.inverted();thumb.location=delta@idlethumb;pole.location=delta@idlepole
@@ -43,5 +43,5 @@ keep=set(meta['sourceActions'].values())|set(bundle.values())|{a for clip in met
 for action in list(bpy.data.actions):
  if action.name not in keep:bpy.data.actions.remove(action)
 scene.frame_start=1;scene.frame_end=41;scene.frame_set(1);bpy.context.preferences.filepaths.save_version=0;bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'mpfb-compact-pivot60-technical.blend'))
-result={'status':'UNREVIEWED COMPACT NATIVE PIVOT SOURCE; NO CONTACT/NATURALNESS/ROUTE CLAIM','appearance':'rejected generic technical mannequin','source':'../transitions/mpfb-start-stop-technical.blend','sourceSha256':before,'sourceActions':meta['sourceActions'],'idleActions':meta['clips']['idle']['actionBundle'],'transitionClips':meta['clips'],'turnActions':bundle,'angleRadians':angle,'durationMs':duration,'frames':plans,'worldRootBoundTargetMeters':.10,'rootBalancePlannedMaximumMeters':.030,'entryExit':'Exact preserved flat idle at yaw0/+60, root0; requires stop+settle before pivot and new start afterward. Not a moving-walk join.','contacts':'Loaded support sole fixed in WORLD; R steps first while L supports, then L while R supports. Swing reorients foot; heel/toe roll separate.','routeCoverage':'No one-hex/full-body/bag swept-clearance certificate. Root bound alone does not prove actor clearance.','renderStatus':'NOT RENDERED; actual sole/body join measurements first','proofBudget':12}
+result={'status':'UNREVIEWED COMPACT NATIVE PIVOT SOURCE; NO CONTACT/NATURALNESS/ROUTE CLAIM','appearance':'rejected generic technical mannequin','source':'../transitions/mpfb-start-stop-technical.blend','sourceSha256':before,'sourceActions':meta['sourceActions'],'idleActions':meta['clips']['idle']['actionBundle'],'transitionClips':meta['clips'],'turnActions':bundle,'angleRadians':angle,'durationMs':duration,'frames':plans,'worldRootBoundTargetMeters':.10,'rootBalancePlannedMaximumMeters':.030,'entryExit':'Exact preserved flat idle at yaw0/+60, root0; requires stop+settle before pivot and new start afterward. Not a moving-walk join.','contacts':'Loaded support sole fixed in WORLD; Inside L steps first while R supports, then R while L supports; outside-first boot-crossing candidate rejected. Swing reorients foot; heel/toe roll separate.','routeCoverage':'No one-hex/full-body/bag swept-clearance certificate. Root bound alone does not prove actor clearance.','renderStatus':'NOT RENDERED; actual sole/body join measurements first','proofBudget':12}
 assert hashlib.sha256(SOURCE.read_bytes()).hexdigest()==before;(OUT/'manifest.json').write_text(json.dumps(result,indent=2)+'\n');print('PIVOT_SOURCE_BUILT unreviewed; immutable donors unchanged')

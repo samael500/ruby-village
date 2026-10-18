@@ -29,7 +29,7 @@ for name,observed in [('entry',records[0]),('exit',records[-1])]:
  activate(meta['idleActions']);frame(1);rig.location=Vector(observed['rootWorld']);rig.rotation_euler=(0,0,observed['heading']);bpy.context.view_layer.update();expected=read()
  joins[name]={'bodyWorldMatrixMaxElementError':max(abs(a-b) for n,rows in observed['bones'].items() for ra,rb in zip(rows,expected['bones'][n]) for a,b in zip(ra,rb)),'actualSoleWorldMaxErrorMeters':max((Vector(observed['feet'][s]['sole'][k])-Vector(expected['feet'][s]['sole'][k])).length for s in ['L','R'] for k in ['toe','heel'])}
 flats={}
-for side,windows in [('R',[(0,.12),(.50,1)]),('L',[(0,.62),(.96,1)])]:
+for side,windows in [('L',[(0,.12),(.50,1)]),('R',[(0,.62),(.96,1)])]:
  for index,(a,b) in enumerate(windows):
   window=[r for r in records if a+1e-8<=r['phase']<=b-1e-8]
   flats[f'{side}:{index}']={kind:max((Vector(x['feet'][side]['sole'][kind])-Vector(y['feet'][side]['sole'][kind])).length for x in window for y in window) for kind in ['toe','heel']}

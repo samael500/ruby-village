@@ -2,25 +2,25 @@
   "samples": 401,
   "sampleSpacingMs": 3,
   "flatWorldSoleDriftMeters": {
-    "R:0": {
-      "toe": 3.405792665226403e-07,
-      "heel": 3.434854143752964e-07
-    },
-    "R:1": {
-      "toe": 2.2746317818572074e-05,
-      "heel": 2.28141857969941e-05
-    },
     "L:0": {
-      "toe": 2.37932129093719e-05,
-      "heel": 2.3778454260158957e-05
+      "toe": 3.4752311543153973e-07,
+      "heel": 3.5389308118703886e-07
     },
     "L:1": {
-      "toe": 2.3267704117725025e-07,
-      "heel": 2.3257765212578637e-07
+      "toe": 2.7840148863660098e-05,
+      "heel": 2.771546583024856e-05
+    },
+    "R:0": {
+      "toe": 2.8252493220768813e-05,
+      "heel": 2.8048977806722692e-05
+    },
+    "R:1": {
+      "toe": 1.9685083948606853e-07,
+      "heel": 1.925434814412964e-07
     }
   },
-  "maxActualAnkleTargetErrorMeters": 2.7235082025163865e-05,
-  "minActualRenderLevelBootZ": 0.0003632651933003217,
+  "maxActualAnkleTargetErrorMeters": 2.739606099557961e-05,
+  "minActualRenderLevelBootZ": 0.000361613929271698,
   "joinsToUnchangedFlatIdle": {
     "entry": {
       "bodyWorldMatrixMaxElementError": 3.7848949432373047e-06,
@@ -36,35 +36,35 @@
     0.0,
     0.0
   ],
-  "maxActualRootDistanceFromPivotOriginMeters": 0.030000000469929844,
+  "maxActualRootDistanceFromPivotOriginMeters": 0.03000000022739793,
   "rootXYBoundsMeters": [
     [
-      -0.011755634099245071,
-      0.029780825600028038
+      -0.029780825600028038,
+      0.018025187775492668
     ],
     [
-      -0.027600817382335663,
-      0.0
+      -0.003619729308411479,
+      0.023981088772416115
     ]
   ],
   "kneeFlexRangeDegrees": {
     "L": [
-      11.325036031193434,
-      48.80329487505057
+      11.324995050058419,
+      48.725949812889326
     ],
     "R": [
-      11.325350219895256,
-      49.17071807126223
+      11.325036031193434,
+      47.33106125983264
     ]
   },
   "maxAdjacentLegRotationDegreesAt3ms": {
     "L": {
-      "upperLegWorldQuaternion": 0.7589835872590693,
-      "lowerLegWorldQuaternion": 0.7444063627446754
+      "upperLegWorldQuaternion": 0.8318016213827504,
+      "lowerLegWorldQuaternion": 0.7932709768099747
     },
     "R": {
-      "upperLegWorldQuaternion": 0.828973976427218,
-      "lowerLegWorldQuaternion": 0.7962254605128283
+      "upperLegWorldQuaternion": 0.7932709768099747,
+      "lowerLegWorldQuaternion": 0.8568309029571151
     }
   },
   "nativeFeasibilityPass": true
