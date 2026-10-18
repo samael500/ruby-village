@@ -14,7 +14,7 @@ Independent reconstructed alpha comparison from actual recorded Ruta sprite crop
 
 ## Native art, field and wide checks
 
-- All8 authored teacher views at1320,405: full nonzero alpha overlaps0 pixels of actual accepted playable-ground/water polygons. This is a full sprite audit, not a feet-only test.
+- Both2 delivered authored teacher views at1320,405: full nonzero alpha overlaps0 pixels of actual accepted playable-ground/water polygons. This is a full sprite audit, not a feet-only test.
 - All14 flower-cell centres have actual flower alpha (165–251 in this source). No missing upper-row blockers. The natural lobed flowerbed is visible in real game frames.
 - Flower edges have3 coarse raster-boundary free-mask intersections, consistent with the source's declared1px tolerance. There are **zero full-alpha intersections beyond that1px boundary tolerance**. This is not mislabeled as exact coarse-raster0.
 - Native1672×941 pixels match wide3272×1200 crop `(800,129,1672,941)` exactly. Desktop and landscape-phone game/result frames show painted coverage without black/flat letterbox bands or abrupt visible native/wide seam.
@@ -24,6 +24,8 @@ Source standalone `public/assets/chapter-1-garden-well/well-manifest.json` still
 
 ## Evidence and limits
 
-`review.py/report.json`: real input/state assertions and actual native sprite markup; `pairwise-alpha.py/json`: independently reconstructed character overlap; `clearance.py/json`: eight complete teacher alphas,14flower centres, exact wide registration and immutable geometry. Twenty actual state screenshots and two normal-motion silent WebMs; build log and served asset hashes.
+`review.py/report.json`: real input/state assertions and actual native sprite markup; `pairwise-alpha.py/json`: independently reconstructed character overlap; `clearance.py/json`: two complete delivered teacher-view alphas,14flower centres, exact wide registration and immutable geometry. Twenty actual state screenshots and two normal-motion silent WebMs; build log and served asset hashes.
 
 Original user attachments were unavailable and are not claimed as inspected. This independently reproduces the described arrival/composition scenario. Emulated landscape phone is **not physical phone**; family test remains not run. Current painted-road union is isolated stream scope and is not claimed deployed here; well's old individual tile rendering is visible in these honest captures. MPFB replacement/turns, audio and all-eight complete chapter remain outside this report. No main merge/publication.
+
+Count correction: the teacher facing manifest delivers exactly2 views (`conversation-left`, `conversation-front`). The8 arrival/result alpha checks count runtime states across two viewports, not8 different viewing angles. Legacy fallback/idle artwork was not separately audited by this facing-view script.

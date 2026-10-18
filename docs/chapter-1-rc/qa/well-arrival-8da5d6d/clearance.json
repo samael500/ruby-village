@@ -1,22 +1,4 @@
 {
-  "teacherActual8Views": [
-    {
-      "view": "conversation-left",
-      "feet": [
-        1320,
-        405
-      ],
-      "fullNonzeroAlphaOverPlayableGroundWater": 0
-    },
-    {
-      "view": "conversation-front",
-      "feet": [
-        1320,
-        405
-      ],
-      "fullNonzeroAlphaOverPlayableGroundWater": 0
-    }
-  ],
   "flower14CenterAlpha": {
     "4,1": 216,
     "5,1": 251,
@@ -48,5 +30,24 @@
     "art/blender/chapter-layouts/layout-adjustments.json": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e",
     "src/art-solutions.json": "3a96dcd2bb8e6b9aba6ef32815d07e657eec4b8f22312b70c87265c3b073b3b0",
     "art/chapter-1-v9/packages/well/geometry.json": "89132596e3b2921118dc893577f2f323c96906cf23eea8e19da2f4b1cf6d0c01"
-  }
+  },
+  "teacherActualViews": [
+    {
+      "view": "conversation-left",
+      "feet": [
+        1320,
+        405
+      ],
+      "fullNonzeroAlphaOverPlayableGroundWater": 0
+    },
+    {
+      "view": "conversation-front",
+      "feet": [
+        1320,
+        405
+      ],
+      "fullNonzeroAlphaOverPlayableGroundWater": 0
+    }
+  ],
+  "teacherViewCount": 2
 }
