@@ -280,7 +280,7 @@
       }
     },
     "stream": {
-      "status": "curved-water-body-and-worn-road-candidate-actual-review-pending",
+      "status": "adaptive-water-and-whole-dry-shore-candidate-game-review-pending",
       "background": "stream/background-pilot.webp",
       "foreground": null,
       "wide": {
@@ -327,14 +327,192 @@
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "pending-P1-P2-independent-actual-review",
-        "waterReport": "art/chapter-1-v9/layers/water/stream-pilot/checks.json"
+        "status": "exact-mask-checks-passed-native-art-review-pending",
+        "canvas": [
+          1672,
+          941
+        ],
+        "camera": {
+          "radius": 70,
+          "origin": {
+            "x": 140,
+            "y": 330
+          },
+          "angle": 0,
+          "groundScale": 0.65
+        },
+        "boardCells": 77,
+        "waterCells": [
+          "6,0",
+          "6,1",
+          "6,2",
+          "5,3",
+          "5,4",
+          "5,5",
+          "4,6"
+        ],
+        "rasterBoundaryTolerancePx": 1,
+        "bridgeCenterAndEndsAlpha": {
+          "6,1": 255,
+          "5,1": 0,
+          "7,1": 0
+        },
+        "rejectedOldBendAlpha": 0,
+        "acceptedNewBendAlpha": 255,
+        "logicalMaskErosionPx": 0,
+        "visibleWaterContour": "intrinsically adaptive water with6px dry-edge clearance; separate flat dryshore may extend12px onto ground, core18px protected",
+        "actualBodyMask": "adaptive-water-body-mask.png",
+        "adaptiveWholeBankProfile": "adaptive-channel-profile.json",
+        "actualBodyAudit": {
+          "bridgeCenterAndDryEndsAlpha": {
+            "6,1": 255,
+            "5,1": 0,
+            "7,1": 0
+          },
+          "waterCellCenterAlpha": {
+            "6,0": 255,
+            "6,1": 255,
+            "6,2": 255,
+            "5,3": 255,
+            "5,4": 255,
+            "5,5": 255,
+            "4,6": 255
+          },
+          "bridgeMiddleSharedWaterEdgeAlpha": {
+            "6,0": {
+              "point": [
+                898,
+                364
+              ],
+              "alpha": 255
+            },
+            "6,2": {
+              "point": [
+                958,
+                432
+              ],
+              "alpha": 255
+            }
+          },
+          "allWaterCellCentersInSameConnectedActualBody": {
+            "6,0": true,
+            "6,1": true,
+            "6,2": true,
+            "5,3": true,
+            "5,4": true,
+            "5,5": true,
+            "4,6": true
+          },
+          "waterLeakOverAnyFreePixels": 0,
+          "status": "raster-contact-and-connectivity-passed-art-game-review-pending"
+        },
+        "bankArtInwardFeatherPx": 1,
+        "entryExitFeather": "disabled within 6px of complete board perimeter",
+        "decorativeWater": "outside complete 77-cell union only; separate from logical layer",
+        "sourceSha256": {
+          "art/chapter-1-v9/packages/stream/geometry.json": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
+          "art/chapter-1-v9/candidates/stream-dry-v1.png": "bb565fdacecb05beb40b466e7e0167d2133433533f593e5520ff2717268f00dc",
+          "art/chapter-1-v9/candidates/stream-continuation-v1.png": "cafece9e25a9270cd0d28c6413b68099ffcfbf1015df23f00c4dcdbe72f3cc52",
+          "art/chapter-1-v9/candidates/stream-adaptive-channel-generated-v4.png": "f4b3eb4f71173eac6636f89600261d9e5ebcab64ecd93f0c8e7f24a2133716af"
+        },
+        "outputSha256": {
+          "adaptive-channel-edit-guide.png": "c2cc0aaaa7b7071b22d73c326babc13b942f57b14085e948bc9bda4e47f50b65",
+          "adaptive-source-bend-review.png": "01cc83d246faa95ce055e02c084fcbc12809a9209d5f54e1952b28be79fd5117",
+          "adaptive-source-support-review.png": "fa259b55bb2a8b11f1dd083808042a4be76c821f9a7c1ef3f8bcb6867f6bc261",
+          "adaptive-water-bank-mask.png": "a867557a8a7b06c9d147aa2aba4cd605e0ca14753a5742fbb9ff5cd5caa097ac",
+          "adaptive-water-body-mask.png": "7d5900e8c06633150abc3e3d9c9789546280fa471da38e7816f52efa7fafcfe7",
+          "bank-art-alpha.png": "50d9b66e3a96c9b2292c0fb9a8667ed0bf0fd142b870eaf061e5eef6d29721a5",
+          "bank-strip-edit-guide.png": "66711a1c5102f9895de62df3bb852f5e1d9cfbaf866e6958c531acf7ef1b7dc6",
+          "board-mask.png": "836a32cbe55275ce74532097da6ee8546bc8b26e9eb88134d1123c0b6799923c",
+          "bridge-review.png": "3236844efd75e5af30e0e2aa4d596fab70a5d10ab5b4278f8f8413dcef0a13e0",
+          "curved-channel-edit-guide.png": "0958447a384a78132f297d72a7572a6deaed184fb18eeb30b06f21611e754485",
+          "decorative-outside-board.png": "dc0305f3380a64a0f4c408d93b051bb9c60ff61c719401f5bd4fb38d3df5b49e",
+          "entry-review.png": "14026d4ea20609fd7760c272e0b8415a0dfd032cf8eb5a5a5219bdbcd11dde08",
+          "exit-review.png": "ad4f0c50f71082365953b784219d739fc67276cf1470efc945c7dd3383e7812c",
+          "free-core-mask18.png": "91c5262cf813afbffba9053a7052890e76dc5c861a5a8770b22c2164d9721056",
+          "free-mask.png": "c77ee0cb9a27dd06967d1fa51a0fa74598ed001d6b4c2ef5c60f7ac773c2df6e",
+          "geometry-overlay.png": "e4a453aeb69cd16f3cd73737f08f6f88cfc957854b2d919f30862826ea0ecdd9",
+          "logical-versus-visual-review.png": "6ab037437d6bb667c8ceaf816cd95e4a491a14addc5d70049507214fe0e35a73",
+          "logical-water-mask.png": "1c37082ce71f5f99864c39abcbbb297866a6bbebfe339d42252301199534c857",
+          "logical-water.png": "4bcf028b05e81ac6b8c56e45f6726cf7ab9519da532ed66485bddaf8db563f77",
+          "native-background.png": "59cc95b18c01ad12a380ebcbf5657e0ae0196f27c69ad5fa647de13043e94c3c",
+          "registered-wide-INCOMPLETE.png": "a45bfdf64fc85f149b44acaa8db5ec631ade6f868d3676552fbc0b5f55c31706",
+          "visual-water-and-bank-mask.png": "c6f87e50132c94c043eb35d26fd01ab0b7cc13cbc684d117df4dd846f13daecd",
+          "visual-water-body-mask.png": "94f5ed1c5fd0f7ea07f50ff67122145b538d9b6dc500887caec2e11af6aa1e2f",
+          "wide-opaque-edit-target.png": "cf33fd522c1afdb4f8109c52108bd57376cf13863b333a6eb09908d7e66b5c7a",
+          "wide-registered.png": "6f3dd4a39681323369b828ac3b18ace21f63765414075d14ea52ef35fd221201"
+        },
+        "wide": {
+          "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
+          "canvas": [
+            3272,
+            1200
+          ],
+          "originalRect": [
+            800,
+            129,
+            1672,
+            941
+          ],
+          "joinBandPx": 48,
+          "sourceAffine": {
+            "method": "single uniform source-level affine fit from native source comparison at1/4 scale; native core restored unchanged; visual join audit required",
+            "rgbMeanAbsoluteError": 38.72458855068037,
+            "scale": 0.975,
+            "sourceCoreXAtQuarter": 273,
+            "sourceCoreYAtQuarter": 80,
+            "translation": [
+              120,
+              9
+            ]
+          },
+          "source": "art/chapter-1-v9/candidates/stream-wide-generated-v2.png",
+          "fullBoardInteriorChangedRgbPixels": 0
+        },
+        "checks": {
+          "nativeBankVisualAudit": "pending",
+          "entryExitContinuityVisualAudit": "pending",
+          "actualGameplay": "not-run"
+        },
+        "freeCoreInsetPx": 18,
+        "freeCoreChangedRgbPixels": 0,
+        "dryBankBoundaryChangedRgbPixels": 1819,
+        "dryBankBoundaryChangedRgbMaxDepthPx": 7.083120000000008,
+        "allowedDryBankBoundaryDepthPx": 12,
+        "sourceCyanCandidateChangedFreePixels": 0,
+        "cyanDiagnosticRule": "blue>red+12,green>red+12,min(blue,green)>70; diagnostic only, no gameplay terrain inferred from colors",
+        "dryShoreSemanticAudit": "pending-flat-earth-and-tiny-pebbles-only-no-water-or-tall-obstacles; not established by pixel counts",
+        "fullPolygonVisualAudit": "pending",
+        "gameQa": "pending-adaptive-shore-repeat",
+        "artAcceptance": "pending"
       },
       "dryBackground": "stream/dry-background-pilot.webp",
       "water": "stream/water-pilot.png",
       "waterMask": "stream/water-mask-pilot.png",
       "joinBand": 48,
-      "sourceManifest": "art/chapter-1-v9/layers/water/stream-pilot/manifest.json"
+      "sourceManifest": "art/chapter-1-v9/layers/water/stream-pilot/manifest.json",
+      "deliveryFiles": {
+        "background-pilot.webp": {
+          "bytes": 2373148,
+          "sha256": "6e0e46df6156aae7bf6677eb7a7c0a15933c843ee13458982db52a765be661f4"
+        },
+        "water-pilot.png": {
+          "bytes": 3339382,
+          "sha256": "4bcf028b05e81ac6b8c56e45f6726cf7ab9519da532ed66485bddaf8db563f77"
+        },
+        "dry-background-pilot.webp": {
+          "bytes": 2358662,
+          "sha256": "976458d04b5ed03589593465be0232deca1bad0266fbe11c0f0b7db1272db7e6"
+        },
+        "wide-pilot.webp": {
+          "bytes": 5312084,
+          "sha256": "940a24f274cd8bbfe094178e5a40d7e6243127d4e2418efa9d20a664c9e4bb1e"
+        },
+        "water-mask-pilot.png": {
+          "bytes": 6087,
+          "sha256": "1c37082ce71f5f99864c39abcbbb297866a6bbebfe339d42252301199534c857"
+        }
+      }
     },
     "mill": {
       "status": "exact-water-mask-passed-bank-art-review-pending",
