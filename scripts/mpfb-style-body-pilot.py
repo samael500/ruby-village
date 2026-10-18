@@ -5,7 +5,7 @@ from pathlib import Path
 import bpy,json,math,os,hashlib
 from mathutils import Vector,Matrix
 ROOT=Path(__file__).resolve().parents[1];variant=int(os.environ.get('RUBY_MPFB_STYLE_VARIANT','1'));OUT=ROOT/('art/characters-mpfb-v1/styled-body-pilot' if variant==1 else f'art/characters-mpfb-v1/styled-body-pilot-v{variant}');OUT.mkdir(parents=True,exist_ok=True)
-source=Path('/home/mskorokhod/life/ruby-village-36-mpfb-motion/art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend');style=ROOT/'art/characters-mpfb-v1/native-target-study-8/ruta-head.blend'
+source=Path('/home/mskorokhod/life/ruby-village-36-mpfb-motion/art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend');style=ROOT/('art/characters-mpfb-v1/native-target-study-12/ruta-head.blend' if variant>=3 else 'art/characters-mpfb-v1/native-target-study-8/ruta-head.blend')
 bpy.ops.wm.open_mainfile(filepath=str(source));scene=bpy.context.scene;scene.frame_set(0)
 body=next(o for o in bpy.data.objects if o.type=='MESH' and len(o.data.vertices)==19158);rig=next(o for o in bpy.data.objects if o.type=='ARMATURE' and len(o.data.bones)>160)
 old_assets=[o for o in bpy.data.objects if o.type=='MESH' and any(k in o.name.lower() for k in ['.long01','.high-poly','.eyebrow006','.eyelashes01'])]
@@ -39,8 +39,8 @@ for o in appended:
 body.data.update();bpy.context.view_layer.update()
 if variant>=2:
  import bmesh
- hair=next(o for o in bpy.data.objects if o.type=='MESH' and o.name.endswith('.long01'))
- for v in hair.data.vertices:
+ hair=next(o for o in bpy.data.objects if o.type=='MESH' and (o.name.endswith('.long01') if variant==2 else '.cortu_strawberry_cloud_hair' in o.name))
+ for v in (hair.data.vertices if variant==2 else []):
   if v.co.z<1.21:
    t=min(1,max(0,(1.21-v.co.z)/.16));v.co.z-=.12*t*t*(3-2*t);v.co.x+=.012*t*math.sin(v.co.z*32+v.co.x*10);v.co.y+=.012*t
  vest=next(o for o in bpy.data.objects if o.name=='Ruta fitted olive waistcoat');bm=bmesh.new();bm.from_mesh(vest.data)
