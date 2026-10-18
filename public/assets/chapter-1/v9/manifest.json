@@ -164,13 +164,25 @@
       }
     },
     "well": {
-      "status": "style-approved-geometry-pending",
+      "status": "map-matched-source-candidate-awaiting-actual-game",
       "background": "well/background.webp",
       "foreground": null,
-      "wide": null,
-      "wideStatus": "pending-outpaint",
-      "source": "art/chapter-1-v9/candidates/well-v4.png",
-      "sourceSha256": "a462cb02f6bd172b57abd93c9b97fc4f54ab48e1536c3771ac96e39059ec15fc",
+      "wide": {
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        },
+        "file": "well/wide.webp"
+      },
+      "wideStatus": "painted-native-join-awaiting-actual-game",
+      "source": "art/chapter-1-v9/garden-well/outpaint/well-native-painted-join-v1.png",
+      "sourceSha256": "e3342e0aed29eb5514972ff518766eb03fdee0c1e9a70cf762ab922d87644400",
       "geometrySha256": "89132596e3b2921118dc893577f2f323c96906cf23eea8e19da2f4b1cf6d0c01",
       "camera": {
         "radius": 68.83326050303945,
@@ -193,15 +205,30 @@
       },
       "semanticAnchors": {
         "residentFeet": {
-          "x": 1195,
+          "x": 1225,
           "y": 405,
-          "status": "coordinator-native-alpha-clearance-passed-visual-candidate"
+          "status": "full-alpha-candidate-actual-composition-pending"
         }
       },
       "checks": {
-        "fullPolygonVisualAudit": "pending"
+        "sourceGuardManifest": "public/assets/chapter-1-garden-well/well-manifest.json",
+        "fullPolygonVisualAudit": "pending",
+        "gameQa": "not-run",
+        "artAcceptance": "pending"
       },
-      "residentPresentation": "portrait-only"
+      "residentPresentation": "scene-sprite-and-portrait",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-garden-well/well-manifest.json",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2563032,
+          "sha256": "173d810a5b4a2b45edc4b199131742e4ebae8303df7a9712f18081eec10c0cd2"
+        },
+        "wide.webp": {
+          "bytes": 6256072,
+          "sha256": "05e7a3ae714c1a00ab8b14b4e5a1b1d9c5fdc52689705c09ff2a7a5e241fcad6"
+        }
+      }
     },
     "bakery": {
       "status": "map-matched-native-guard-passed-art-and-game-review-pending",
