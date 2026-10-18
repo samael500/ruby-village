@@ -1,3 +1,25 @@
+# Актуальный checkpoint — 18.10
+
+Эта таблица заменяет противоречащие ранние статусы ниже. Интеграция2fe65f4/151efd4, production layout1 остаётся, main add76709 не менялся.
+
+| Замечание | Статус | PR / проверенный commit | Доказательство |
+|---|---|---|---|
+| #61 invalid release→rotate valid→auto-place | Исправлено, независимые mouse/touch и cancel/undo/save PASS | #55/#64 f2a3600,c385b22,38706d6 | evidence/rotate-place; qa/map-rotation-f2a3600 |
+| #62.1 Rabbit/table | Native candidate: целая яблоня, один соразмерный стол, full-alpha FREE0; wide/game pending | #68 f1e8ea2 | art/garden-well/GARDEN-NATIVE.md; source proof, не игра |
+| #62.2 story stones | Увеличены18→32, текущие игровые кадры проверены; финальный арт повторить | #55 | evidence/prologue-stones |
+| #62.3 story field | Полностью скрывается; сюжетные камни сохраняются | #55 5dc2036 и независимый467eab2 | qa/residents-bridge-audio-467 |
+| #62.4 walk | Пользователь требует MPFB. Genuine model/rig/IK технически работают; лицо/волосы не похожи на принятую Руту, отклонены;24-позный motion-study не финальная ходьба | #69 source25690fa, #71 source24315ea | MPFB head comparisons и motion strips/actual loop в этих ветках; production не активирован |
+| #62.6 stream/mill bridge | Exactmask/source guards, actualstream pilot functionalPASS; ARTNOTREADY P1 steppedbank, P2 flatroadedge | #70/#55 8a584f2,2fe65f4,151efd4 | qa/stream-road-c64b249 clean/overlay/crops/actualinputAV; separate reviewed-only branchc64b249 |
+| #62.7 map | Native painted paving, registeredwide, independent navigation/reload PASS; финальная глава повторить | #55 f2a3600,c385b22 | evidence/painted-map-runtime; qa/map-rotation-f2a3600 |
+| #62.8 results | Текущее место/реальная дорога/жители, старые8 independentlychecked; финальные сцены повторить | #55 | qa/residents-bridge-audio-467, qa/f1-recheck-ff60cb1 |
+| #62.9 residents + facing | Шесть жителей в сценах, восемь authored views, event-driven facing; найденное millF1перекрытие исправлено и независимо перепроверено | #67/#55 0ad8c40,ff60cb1,27d8ecc | qa/facing-header-0ad8c40 и qa/f1-recheck-ff60cb1:2 normalroutes/allarrivalpages/replay/reload, overlap0 |
+| Header emblem | Уточнён пользователем top icon/title; painted ruby plaque+live title,24 realconfigs independentlyPASS | #55 b2ac3c8,25fcc96 | ui-header/before-after-phone.png; qa/facing-header-0ad8c40/headers |
+| Clean sound | Шумовой слой удалён без сниженияmaster, Максим «Шипение исчезло» | #55 51e15d5 | audio-noise matchedRMS+actualWebAudio gameAV+userlistening |
+
+Source masks/Blender renders не заменяют игру. Scope stream pilot явно НЕRC: только отдельная веткаreview/46-stream-road включаетlayout2streamдлялокальногоревью; production gate интеграции остаётся целиком закрыт. IndependentQA подтвердил clip/ownership/edge topology/input/save, но указал P1/P2 — художественно готовым не объявляем. Реальные audio/video сохранены с явными ограничениями A/V alignment, без вымышленного humanlistening. Physical phone/family и финальная #37/#49 NOT RUN.
+
+---
+
 # Приёмка замечаний #61 и #62
 
 Прочитаны координатором 17.10.2026 на интеграционном commit `16f6e54`.
