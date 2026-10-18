@@ -17,6 +17,11 @@ ground=Image.new('RGB',(6*256,283),'#dedcd4')
 for col,f in enumerate(phases):
  im=Image.open(OUT/'fixed-world'/f'{f:02}.png').convert('RGBA');ground.paste(tile(im,f'Fixed WORLD / frame {f:02}'),(col*256,0))
 ground.save(OUT/'actual-fixed-world-strip.jpg',quality=90)
+close=Image.new('RGB',(1200,1294),'#dedcd4');ImageDraw.Draw(close).text((8,10),'ACTUAL ONE-STRAP CARRY / generic appearance rejected / geometry review',fill='#292d2d')
+for row,f in enumerate([1,13]):
+ for col,view in enumerate(['front','three-quarter']):
+  im=Image.open(OUT/'grip-close'/f'{view}-{f:02}.png').convert('RGBA');close.paste(tile(im,f'{view} actual grip / frame {f:02}',600),(col*600,40+row*627))
+close.save(OUT/'actual-grip-close-strip.jpg',quality=92)
 files={str(p.relative_to(OUT)):hashlib.sha256(p.read_bytes()).hexdigest()for p in sorted(OUT.glob('*/*.png'))}
 assert len(set(files.values()))==len(files),'Unexpected duplicate whole-frame render'
 (OUT/'render-check.json').write_text(json.dumps({'actualFrameCount':len(files),'uniqueFrameCount':len(set(files.values())),'cycleGifDurationMs':720,'frameDurationMs':30,'renderSha256':files},indent=2)+'\n')

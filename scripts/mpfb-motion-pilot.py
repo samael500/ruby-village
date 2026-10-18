@@ -34,6 +34,14 @@ for o in list(bpy.data.objects):
  if o.type=='MESH' and o.parent==rig and not any(m.type=='ARMATURE' for m in o.modifiers):
   group=o.vertex_groups.new(name='spine03' if 'scarf' in o.name.lower() else 'root');group.add(list(range(len(o.data.vertices))),1.,'REPLACE')
   mod=o.modifiers.new('Motion study accessory skin','ARMATURE');mod.object=rig
+# The same ONE strap follows the torso at its chest end and root at the bag end.
+strap=bpy.data.objects['ONE diagonal satchel strap']
+for v in strap.data.vertices:
+ for g in strap.vertex_groups:g.remove([v.index])
+ blend=max(0,min(1,(v.co.z-.78)/.15))
+ for name,weight in [('spine02',blend),('root',1-blend)]:
+  group=strap.vertex_groups.get(name) or strap.vertex_groups.new(name=name)
+  if weight:group.add([v.index],weight,'REPLACE')
 # Correct sole weights: fitted source shoes leaked shin deformation into the rigid sole.
 shoe=bpy.data.objects['Ruta.shoes01']
 for v in shoe.data.vertices:
@@ -64,6 +72,15 @@ meters_to_scene=136/projected_height;stride=.5687545572916666
 N=24
 rest={s:rig.data.bones['foot.'+s].matrix_local.copy() for s in ['L','R']}
 records=[]
+# Right palm basis from the actual native hand, not an image overlay.
+wr=rig.data.bones['wrist.R'];hand_axis=(rig.data.bones['finger3-1.R'].head_local-wr.head_local).normalized()
+f3=rig.data.bones['finger3-1.R'];palm_normal=f3.matrix_local.to_3x3().col[0].cross(f3.vector.normalized()).normalized();palm_normal=(palm_normal-hand_axis*palm_normal.dot(hand_axis)).normalized()
+target_hand=Vector((.72,.40,.57)).normalized();target_palm=Vector((0,1,0));target_palm=(target_palm-target_hand*target_hand.dot(target_palm)).normalized()
+source_basis=Matrix((hand_axis,palm_normal,hand_axis.cross(palm_normal))).transposed();target_basis=Matrix((target_hand,target_palm,target_hand.cross(target_palm))).transposed();grip_rotation=target_basis@source_basis.transposed()@wr.matrix_local.to_3x3()
+upper_length=(rig.data.bones['lowerarm01.R'].head_local-rig.data.bones['upperarm01.R'].head_local).length
+lower_length=(wr.head_local-rig.data.bones['lowerarm01.R'].head_local).length
+from mathutils.bvhtree import BVHTree
+
 def key(b):
  b.keyframe_insert('location');b.keyframe_insert('rotation_euler')
 def foot_at(p,side):
@@ -79,6 +96,17 @@ def foot_at(p,side):
   t=(f-.6)/.4;smooth=t*t*(3-2*t)
   y=start+stride*smooth;lift=.045*math.sin(math.pi*t)**1.25;pitch=.26*(1-t)-.12*t
  return y,f,lift,pitch
+# Pose-invariant grasp interior, derived once before animation exists.
+for number in range(2,6):
+ for segment,angle in [(1,.90),(2,1.15),(3,.65)]:rig.pose.bones[f'finger{number}-{segment}.R'].rotation_euler=(angle,0,0)
+for segment,angle in [(1,.65),(2,.85),(3,.55)]:rig.pose.bones[f'finger1-{segment}.R'].rotation_euler=(angle,0,0)
+wrist=rig.pose.bones['wrist.R'];original_wrist=wrist.matrix.copy();wrist.matrix=grip_rotation.to_4x4();bpy.context.view_layer.update()
+grip_offset=sum((rig.pose.bones[f'finger{i}-2.R'].head for i in [2,3,4]),Vector())/3-target_hand*.006+target_palm*.005+Vector((0,.0255,0))
+wrist.matrix=original_wrist;bpy.context.view_layer.update()
+thumb_target=bpy.data.objects.new('Motion ONE strap thumb pinch control',None);bpy.context.collection.objects.link(thumb_target);thumb_target.parent=rig;thumb_target.hide_render=True
+thumb_pole=bpy.data.objects.new('Motion ONE strap anatomical thumb pole',None);bpy.context.collection.objects.link(thumb_pole);thumb_pole.parent=rig;thumb_pole.hide_render=True
+thumb_ik=rig.pose.bones['finger1-3.R'].constraints.new('IK');thumb_ik.name='Native thumb wraps ONE strap edge';thumb_ik.target=thumb_target;thumb_ik.chain_count=3;thumb_ik.use_tail=True;thumb_ik.use_stretch=False;thumb_ik.iterations=200;thumb_ik.pole_target=thumb_pole;thumb_ik.pole_angle=-math.pi/2
+for n in [1,2,3]:rig.pose.bones[f'finger1-{n}.R'].ik_stretch=0
 for frame in range(1,26):
  p=(frame-1)/N;scene.frame_set(frame)
  rig.location=(0,-p*stride,0);rig.keyframe_insert('location')
@@ -90,22 +118,40 @@ for frame in range(1,26):
   m=Matrix.Translation(m.translation)@rotation.to_4x4()@m.to_quaternion().to_matrix().to_4x4()
   b=rig.pose.bones[word+'_foot_ik'];b.matrix=m;key(b)
   knee=rig.pose.bones[word+'_knee_ik'];km=knee.bone.matrix_local.copy();km.translation=Vector((.076 if s=='L' else -.076,-.65,.32));knee.matrix=km;key(knee)
+ # Counter-rotation is distributed through the real torso; neck keeps head yaw calm.
+ for name,amount in [('spine03',-.020),('spine02',-.019),('spine01',-.005)]:
+  b=rig.pose.bones[name];b.rotation_euler=(0,0,0);bpy.context.view_layer.update();m=b.matrix.copy();b.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(amount*math.sin(2*math.pi*p),4,'Z')@m.to_quaternion().to_matrix().to_4x4();key(b)
+ bpy.context.view_layer.update();b=rig.pose.bones['neck01'];m=b.matrix.copy();b.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(.003*math.sin(2*math.pi*p),4,'Z')@b.bone.matrix_local.to_quaternion().to_matrix().to_4x4();key(b)
  # Aim complete native upper/forearm segments; preserve skin and neutral wrist.
  def aim_segment(name,endname,direction):
   bpy.context.view_layer.update();b=rig.pose.bones[name];end=rig.pose.bones[endname];q=(end.head-b.head).normalized().rotation_difference(Vector(direction).normalized());m=b.matrix.copy();b.matrix=Matrix.Translation(m.translation)@q.to_matrix().to_4x4()@m.to_quaternion().to_matrix().to_4x4();key(b);bpy.context.view_layer.update()
- for s,sgn in [('L',1),('R',-1)]:
-  rig.pose.bones['wrist.'+s].rotation_euler=(0,0,0)
-  rig.pose.bones['upperarm01.'+s].rotation_euler=base_arms[s].copy();rig.pose.bones['lowerarm01.'+s].rotation_euler=base_forearms[s].copy();bpy.context.view_layer.update()
-  swing=sgn*math.sin(2*math.pi*p)
-  # Bag-side hand remains in the anterior half-space with gentle elbow modulation.
-  upper_y=-.46+.055*swing if s=='R' else .14*swing
-  lower_y=-.98+.12*math.sin(2*math.pi*p+.5) if s=='R' else -.30+.09*math.sin(2*math.pi*p+math.pi)
-  aim_segment('upperarm01.'+s,'lowerarm01.'+s,(.08*sgn,upper_y,-1))
-  aim_segment('lowerarm01.'+s,'wrist.'+s,(.025*sgn,lower_y,-1))
-  aim_segment('wrist.'+s,'finger3-1.'+s,(.025*sgn,lower_y,-1))
+ for number in range(2,6):
+  for segment,angle in [(1,.15),(2,.25),(3,.10)]:
+   finger=rig.pose.bones[f'finger{number}-{segment}.L'];finger.rotation_euler=(angle,0,0);key(finger)
+ # Free left arm, with same-phase shoulder/forearm travel rather than cancelling swing.
+ s='L';rig.pose.bones['wrist.L'].rotation_euler=(0,0,0);rig.pose.bones['upperarm01.L'].rotation_euler=base_arms[s].copy();rig.pose.bones['lowerarm01.L'].rotation_euler=base_forearms[s].copy();swing=math.cos(2*math.pi*p)
+ aim_segment('upperarm01.L','lowerarm01.L',(.08,.22*swing,-1));aim_segment('lowerarm01.L','wrist.L',(.025,-.30+.10*swing,-1));aim_segment('wrist.L','finger3-1.L',(.025,-.30+.10*swing,-1))
+ # Intentional right-hand carry: closed native fingers surround the existing chest strap.
+ for number in range(2,6):
+  for segment,angle in [(1,.90),(2,1.15),(3,.65)]:
+   finger=rig.pose.bones[f'finger{number}-{segment}.R'];finger.rotation_euler=(angle,0,0);key(finger)
+ for segment,angle in [(1,.65),(2,.85),(3,.55)]:
+  finger=rig.pose.bones[f'finger1-{segment}.R'];finger.rotation_euler=(angle,0,0);key(finger)
+ rig.pose.bones['upperarm01.R'].rotation_euler=base_arms['R'].copy();rig.pose.bones['lowerarm01.R'].rotation_euler=base_forearms['R'].copy()
+ wrist=rig.pose.bones['wrist.R']
+ bpy.context.view_layer.update();deps=bpy.context.evaluated_depsgraph_get();es=strap.evaluated_get(deps)
+ sv=[rig.matrix_world.inverted()@es.matrix_world@v.co for v in es.data.vertices];tree=BVHTree.FromPolygons(sv,[list(poly.vertices)for poly in es.data.polygons])
+ chest=rig.pose.bones['spine02'].matrix@rig.data.bones['spine02'].matrix_local.inverted();nominal=chest@Vector((.080,-.105,.940));contact=tree.find_nearest(nominal)[0]
+ wrist.location=(0,0,0);bpy.context.view_layer.update()
+ thumb_target.location=contact+chest.to_quaternion()@Vector((-.0213,.007,0));thumb_target.keyframe_insert('location');thumb_pole.location=contact+chest.to_quaternion()@Vector((-.070,-.030,-.035));thumb_pole.keyframe_insert('location')
+ offset=chest.to_quaternion()@grip_offset;phase_grip=chest.to_quaternion().to_matrix()@grip_rotation
+ desired=contact-offset;shoulder=rig.pose.bones['upperarm01.R'].head.copy();axis=(desired-shoulder).normalized();distance=(desired-shoulder).length
+ along=(upper_length**2-lower_length**2+distance**2)/(2*distance);height=math.sqrt(max(0,upper_length**2-along**2));pole=Vector((-.7,-.8,-1));pole=(pole-axis*pole.dot(axis)).normalized();elbow=shoulder+axis*along+pole*height
+ aim_segment('upperarm01.R','lowerarm01.R',elbow-shoulder);aim_segment('lowerarm01.R','wrist.R',desired-rig.pose.bones['lowerarm01.R'].head)
+ wrist.matrix=Matrix.Translation(rig.pose.bones['wrist.R'].head.copy())@phase_grip.to_4x4();key(wrist)
  bpy.context.view_layer.update()
  evaluated=rig.evaluated_get(bpy.context.evaluated_depsgraph_get())
- records.append({'frame':frame,'phase':p,'rootWorld':list(rig.location),'feet':{s:{'phase':foot_at(p,s)[1],'ankleWorld':list(evaluated.matrix_world@evaluated.pose.bones['foot.'+s].head),'toeWorld':list(evaluated.matrix_world@evaluated.pose.bones['toe2-3.'+s].tail),'targetWorld':list(evaluated.matrix_world@evaluated.pose.bones[w+'_foot_ik'].head),'kneeWorld':list(evaluated.matrix_world@evaluated.pose.bones['lowerleg01.'+s].head)}for s,w in [('L','left'),('R','right')]}})
+ records.append({'grip':{'contact':list(contact),'referenceOffset':list(offset),'desiredWrist':list(desired),'actualWrist':list(rig.pose.bones['wrist.R'].head)},'frame':frame,'phase':p,'rootWorld':list(rig.location),'feet':{s:{'phase':foot_at(p,s)[1],'ankleWorld':list(evaluated.matrix_world@evaluated.pose.bones['foot.'+s].head),'toeWorld':list(evaluated.matrix_world@evaluated.pose.bones['toe2-3.'+s].tail),'targetWorld':list(evaluated.matrix_world@evaluated.pose.bones[w+'_foot_ik'].head),'kneeWorld':list(evaluated.matrix_world@evaluated.pose.bones['lowerleg01.'+s].head)}for s,w in [('L','left'),('R','right')]}})
 for action in bpy.data.actions:
  for fc in action.fcurves:
   for kp in fc.keyframe_points:kp.interpolation='LINEAR'
@@ -120,7 +166,7 @@ def camera(view,p):
 scene.frame_set(1);camera('E',0)
 bpy.context.preferences.filepaths.save_version=0
 bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'mpfb-walk-technical.blend'))
-report={'status':'TECHNICAL MOTION STUDY NOT FINAL ART','productionEnabled':False,'sourceCommit':'25690fa','source':'appearance-v1 rejected generic mannequin','rigBones':len(rig.data.bones),'baseRigBones':163,'mpfb':list(mpfb.VERSION),'blender':bpy.app.version_string,'trackWidthMeters':.14,'pelvisYawRadians':.026,'cycleMs':720,'poses':24,'projectedHeightMeters':projected_height,'projectedHeightCalibration':'final actual E cycle max alpha height251px at384px ortho1.70; physical stride preserved after natural COM/stance correction','metersToScenePixels':meters_to_scene,'strideMeters':stride,'baselineStudyStrideScenePixels':67.46,'strideScenePixels':stride*meters_to_scene,'projection':{'angle':0,'groundScale':.65,'elevationRadians':elevation},'records':records}
+report={'status':'TECHNICAL MOTION STUDY NOT FINAL ART','productionEnabled':False,'sourceCommit':'25690fa','source':'appearance-v1 rejected generic mannequin','rigBones':len(rig.data.bones),'baseRigBones':163,'mpfb':list(mpfb.VERSION),'blender':bpy.app.version_string,'gesture':'intentional right-hand carry of existing ONE strap; closed fingers; free left swing; experimental not accepted','strapMeshCount':sum(o.type=='MESH' and 'diagonal satchel strap' in o.name for o in bpy.data.objects),'torsoCounterYawAmplitudeRadians':.044,'headWorldYawAmplitudeRadians':.003,'trackWidthMeters':.14,'pelvisYawRadians':.026,'cycleMs':720,'poses':24,'projectedHeightMeters':projected_height,'projectedHeightCalibration':'final actual E cycle max alpha height251px at384px ortho1.70; physical stride preserved after natural COM/stance correction','metersToScenePixels':meters_to_scene,'strideMeters':stride,'baselineStudyStrideScenePixels':67.46,'strideScenePixels':stride*meters_to_scene,'projection':{'angle':0,'groundScale':.65,'elevationRadians':elevation},'records':records}
 (OUT/'measurements.json').write_text(json.dumps(report,indent=2)+'\n')
 if os.environ.get('RUBY_MPFB_RENDER','1')=='1':
  for view in ['E','front','three-quarter']:
