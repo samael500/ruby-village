@@ -1,23 +1,25 @@
-# Current checkpoint — latest handoff takes priority
+# Current checkpoint — latest user requirements prevail
 
-Integration baseline bbf9828 plus resident runtime checkpoint recorded by this commit. main stays add76709; no merge/deploy. User preview5180 remains frozen467eab2; current checks use5286.
+Integration438d090 includes independent correction reports. Mainadd76709 unchanged; no mainmerge/deploy. Source/PR pushes authorized. Userpreview5180frozen467eab2; defaultnewgame5286; isolatedstreamreview5306 fromreviewbranch14b1f6f (notRC, explicitwatermark).
 
-| Task | Actual status | Owner | Dependency / PR |
+| Task | Actual readiness | Owner | Dependency / PR |
 |---|---|---|---|
-| #61 | released invalid→valid rotation auto-place independently checked; cancel/undo supplement PASS | coordinator | #55/#64; repeat after final art |
-| #48 map | painted paving + registered wide; independent navigation/reload PASS | delivered map author | #55 |
-| #48 header | user clarified top icon/title; painted ruby plaque, live title; 24 real viewport/scene checks PASS | coordinator | b2ac3c8 / #55; independent review next |
-| #35 facing | 6 residents/8 authored views integrated; 12 real state runs and 10 full-alpha clearances PASS | npc_facing sources, coordinator runtime | #67/#55; independent review found F1 mill overlap; root anchor correction checked, independent repeat pending; layout2 clearance repeat |
-| #45/#46 road/banks | connected road code disabled; source handoff explicitly NOT ART READY | fresh art executor next | #56/#55; finished stream fragment first |
-| #36 | user explicitly switches character/body/motion generation to MPFB/Blender; painted sources archived010de59, not active | data_ui NEW tree36-mpfb | #60; first approved-appearance 3D Ruta pilot before six views |
-| #50/#51 | hiss fixed and user accepted; final transitions/loops repeat pending | audio/coordinator | #55/#57/#58 |
-| #37/#49 | scoped map/input independent QA done; full chapter not certified | independent reviewer queued | final art/layout2/gait; physical phone/family NOT RUN |
+| #44 | acceptedlayout2/migrations staged and tested, not productionactive | coordinator | all8matchingart gate / #52,#55 |
+| #61 | invalidrelease→rotatevalid→autoplace, cancel/undo/save independentlyPASS | delivered, coordinator | finalartinputrepeat / #64,#55 |
+| #35 | residents/facings active; millF1 independently corrected andchecked | delivered, coordinator | acceptedlayout2fullalpha/pairwiserepeat / #67,#55 |
+| #45/#46 streamroad | actualmouse/touch topology/input/savePASS; P2contactedgePASS; residualP1bankcutlines in correction | stream_road_finish; rootruntime | firstfinishedstreamfragment beforeall8rollout / #70,#55 |
+| #45 mill | registeredwheel/race source97f61ef; smoothchannel/wide in progress | stream_road_finish sameownertree | exactwater/mill actualpilot / #70 |
+| #45 garden/well | whole-tree/singletable native+paintedwide; well14/14centers+teacher1225,405 candidate, wellwide in progress | npc_facing treegarden-well | sourcebfb56d2/6138651 pending integration; actualgarden/wellpilot / #68 |
+| #36 | genuineMPFB/IK cycle independently technicalGO5ca361b; source35cddbaEstartstop+L/Rnative underindependentreview; appearance NOTREADY | mpfb_walk_rig tree36-mpfb-motion; rootnativeheadstudies tree36-mpfb | 6directions2calibrations proof next; routeadapter pending / #69,#71 |
+| #48/#47 | mapnativepaintedpaving+wide/header+storyhiddenfield/currentresults checked | delivered, coordinator | repeatonfinalscenes / #53,#55 |
+| #50/#51 | steadyhiss fixed,useraccepted; recommendedmixalreadyingame | delivered, coordinator | finalloops/transitions review / #57,#58,#55 |
+| #37/#49 | independent scoped QA repeatedlyfindsandchecksdefects; fullchapter/RC notcertified | qa_map_rotation newestscopes | allart+likeness/gait integration; phone/family NOTRUN |
 
-NPC meetings use decoded authored left/front views with original idle retained during loading; anchors and native heights stay fixed. Activity/encounter/arrival are event-driven, not continuous following. Twelve desktop/landscape runs cover intro, waiting, replay, reload, actual UI solutions, arrival dialogue and result resident presence. Reduced motion was explicitly enabled for arrival state checks: these do NOT certify gait. Typecheck, build and 100 tests PASS. Evidence: characters/facing/runtime and runtime-clearance.json. Final accepted-layout2 clearance remains mandatory.
+Ownership: coordinator alone edits commonruntime/manifest and reviewactivation patches. Resourceowners have separate worktrees; no simultaneous writes. Root currently owns scripts/mpfb-native-target-study.py and native-target-study-* resources in the released appearanceworktree, never motion files. SharedMPFBvendor/assets readonly; unrelated live session confirmed by Maksim. Own Blender configs used.
 
-MPFB owner uses a separate Blender config/data folder; shared _tools/mpfb2-v2.0.18 is read-only. A separate live Codex session was already downloading assets there: its processes/configuration are not changed. No duplicate downloads while existing archives are incomplete.
+StreamP1 diagnosis includes overstrict source-pixel guard; optional dry-shore-only boundary contract is art/DRY-SHORE-CONTRACT.md. Logicalwater/solutions/hitcells remain immutable; no water leakage or actual blockers in freecells. New evidence must state any dry-ground boundary changes separately, never reuse fullfreeRGB0 claims.
 
-Sources and rejected art are preserved in art/SOURCE-HANDOFF-NOT-READY.md. Accepted layout2 remains staged: no new data over incompatible old background. Latest requirements: LATEST-REQUIREMENTS.md; road contract: road/CONTRACT.md.
+All latest decisions: LATEST-REQUIREMENTS.md and ACCEPTANCE-61-62.md. MPFBmodel/rig/motion technical sources do not certify approved Ruta appearance or realgame gait. Reviewbranch visual-gate waiver is explicitly local/notrelease and is never merged into production activation.
 
 ---
 
