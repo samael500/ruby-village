@@ -1,1 +1,3 @@
 Rejected source checkpoint cd5c155, packed source SHA a3d7f95ba16dee2ef18d6f740108cf10c5f95a02941d195ef01564529976a9f9. Native contact/root/idle joins pass, but actual401 render-level boot BVH fails174 samples/max294 triangle pairs. No raster was rendered. Packed rejected source remains in git cd5c155; script is archived here and must be placed in scripts/ in an isolated checkout to reproduce. Do not use as a passing pivot.
+
+Intermediate7f2a342 solves boot crossing but rigid chest-follow carry causes actual palm/thumb strap penetrations (16/36 max triangle pairs). Archived rigid-torso-carry-source.py and grip check; packed source retained in git. No raster rendered. Correct current source solves native hand against actual evaluated strap.

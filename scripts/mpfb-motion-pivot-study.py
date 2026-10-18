@@ -2,10 +2,23 @@
 from pathlib import Path
 import bpy,json,math,hashlib
 from mathutils import Vector,Matrix
+from mathutils.bvhtree import BVHTree
 ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'art/characters-mpfb-v1/motion/pivot-study';SOURCE=ROOT/'art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend';meta=json.loads((SOURCE.parent/'manifest.json').read_text());before=hashlib.sha256(SOURCE.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(SOURCE));scene=bpy.context.scene
 rig=bpy.data.objects['Ruta.MPFB.StandardRig'];thumb=bpy.data.objects['Motion ONE strap thumb pinch control'];pole=bpy.data.objects['Motion ONE strap anatomical thumb pole'];controls=[rig,thumb,pole]
 for obj in controls:obj.animation_data.action=bpy.data.actions[meta['clips']['idle']['actionBundle'][obj.name]]
 scene.frame_set(1);bpy.context.view_layer.update();basis={b.name:b.matrix_basis.copy() for b in rig.pose.bones};flat={s:rig.matrix_world@rig.pose.bones[('left' if s=='L' else 'right')+'_foot_ik'].matrix for s in ['L','R']};knees={s:rig.pose.bones[('left' if s=='L' else 'right')+'_knee_ik'].matrix.copy() for s in ['L','R']};idlethumb=thumb.location.copy();idlepole=pole.location.copy();chest=rig.pose.bones['spine01'].matrix.copy();neck=rig.pose.bones['neck01'].matrix.copy()
+# Reference the actual deformed ONE strap and original clean idle hand.
+strap=bpy.data.objects['ONE diagonal satchel strap']
+def strap_contact():
+ bpy.context.view_layer.update();es=strap.evaluated_get(bpy.context.evaluated_depsgraph_get());vertices=[rig.matrix_world.inverted()@es.matrix_world@v.co for v in es.data.vertices];tree=BVHTree.FromPolygons(vertices,[list(p.vertices) for p in es.data.polygons]);c=rig.pose.bones['spine02'].matrix@rig.data.bones['spine02'].matrix_local.inverted();return tree.find_nearest(c@Vector((.080,-.105,.940)))[0],c
+contact0,chest0=strap_contact();offset0=contact0-rig.pose.bones['wrist.R'].head;wrist0=rig.pose.bones['wrist.R'].matrix.to_quaternion();upper_length=(rig.data.bones['lowerarm01.R'].head_local-rig.data.bones['upperarm01.R'].head_local).length;lower_length=(rig.data.bones['wrist.R'].head_local-rig.data.bones['lowerarm01.R'].head_local).length
+
+def aim(name,endname,direction):
+ bpy.context.view_layer.update();bone=rig.pose.bones[name];end=rig.pose.bones[endname];q=(end.head-bone.head).normalized().rotation_difference(direction.normalized());m=bone.matrix.copy();bone.matrix=Matrix.Translation(m.translation)@q.to_matrix().to_4x4()@m.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update()
+def solve_carry(p):
+ if p==0 or p==1:return
+ contact,c=strap_contact();rot=(c@chest0.inverted()).to_quaternion();desired=contact-rot@offset0;shoulder=rig.pose.bones['upperarm01.R'].head.copy();axis=(desired-shoulder).normalized();distance=(desired-shoulder).length;along=(upper_length**2-lower_length**2+distance**2)/(2*distance);height=math.sqrt(max(0,upper_length**2-along**2));bend=Vector((-.7,-.8,-1));bend=(bend-axis*bend.dot(axis)).normalized();elbow=shoulder+axis*along+bend*height
+ aim('upperarm01.R','lowerarm01.R',elbow-shoulder);aim('lowerarm01.R','wrist.R',desired-rig.pose.bones['lowerarm01.R'].head);wrist=rig.pose.bones['wrist.R'];wrist.matrix=Matrix.Translation(wrist.head.copy())@(rot@wrist0).to_matrix().to_4x4();thumb.location=contact+rot@(idlethumb-contact0);pole.location=contact+rot@(idlepole-contact0);bpy.context.view_layer.update()
 angle=math.pi/3;duration=1200;endrotation=Matrix.Rotation(angle,4,'Z');endflat={s:endrotation@flat[s] for s in ['L','R']};bundle={}
 for obj in controls:
  action=bpy.data.actions.new('MPFB compact idle pivot60L / '+obj.name);action.use_fake_user=True;obj.animation_data.action=action;bundle[obj.name]=action.name
@@ -29,6 +42,7 @@ for p in phases:
  yaw=angle*smooth((p-.12)/.78);rig.location=balance;rig.rotation_euler=(0,0,yaw);thumb.location=idlethumb;pole.location=idlepole;bpy.context.view_layer.update()
  root=rig.pose.bones['root'];m=root.matrix.copy();m.translation.z-=.004*math.sin(math.pi*p)**2;root.matrix=m;bpy.context.view_layer.update();spine=rig.pose.bones['spine01'];m=spine.matrix.copy();spine.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(math.radians(2)*math.sin(2*math.pi*p),4,'Z')@m.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update()
  head=rig.pose.bones['neck01'];m=head.matrix.copy();head.matrix=Matrix.Translation(m.translation)@Matrix.Rotation(math.radians(6)*math.sin(math.pi*p)**2,4,'Z')@neck.to_quaternion().to_matrix().to_4x4();bpy.context.view_layer.update();delta=rig.pose.bones['spine01'].matrix@chest.inverted();thumb.location=delta@idlethumb;pole.location=delta@idlepole
+ solve_carry(p)
  feet={}
  for side in ['L','R']:
   target,heading,mode=foot(p,side);helper=rig.pose.bones[('left' if side=='L' else 'right')+'_foot_ik'];helper.matrix=rig.matrix_world.inverted()@target;knee=rig.pose.bones[('left' if side=='L' else 'right')+'_knee_ik'];world=balance+Matrix.Rotation((yaw+heading)/2,3,'Z')@knees[side].translation;km=knee.matrix.copy();km.translation=rig.matrix_world.inverted()@world;knee.matrix=km;feet[side]=mode

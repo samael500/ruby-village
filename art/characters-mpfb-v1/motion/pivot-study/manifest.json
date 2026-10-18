@@ -1,5 +1,5 @@
 {
-  "status": "AUTHOR NATIVE ROOT/CONTACT/IDLE JOIN AND BOOT BVH PASS; CARRY/RASTER/INDEPENDENT REVIEW PENDING",
+  "status": "AUTHOR NATIVE CONTACT/BOOT/CARRY/IDLE JOIN PASS; COMPACT RASTER AND INDEPENDENT REVIEW PENDING",
   "appearance": "rejected generic technical mannequin",
   "source": "../transitions/mpfb-start-stop-technical.blend",
   "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
@@ -3859,7 +3859,11 @@
   "authorChecks": [
     "native-contact-join-check.json",
     "boot-surface-check.json",
+    "carry-check.json",
     "idle-transition-source-preservation.json"
   ],
-  "rejectedSourceCheckpoint": "cd5c155 outside-foot-first crossing boots; see rejects"
+  "rejectedSourceCheckpoints": {
+    "cd5c155": "outside-first boot crossings",
+    "7f2a342": "boots corrected, rigid chest-follow hand penetrated strap during torso counterrotation"
+  }
 }
