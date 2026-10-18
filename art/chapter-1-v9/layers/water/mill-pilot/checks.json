@@ -1,7 +1,28 @@
 {
-  "status": "exact-mask-checks-passed-bank-wheel-art-and-game-review-pending",
-  "fullFreePolygonInteriorOpaqueLeakPixels": 0,
-  "fullFreePolygonInteriorChangedRgbPixels": 0,
+  "status": "exact-mask-checks-passed-native-art-review-pending",
+  "canvas": [
+    1672,
+    941
+  ],
+  "camera": {
+    "radius": 70,
+    "origin": {
+      "x": 140,
+      "y": 330
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "boardCells": 77,
+  "waterCells": [
+    "4,0",
+    "3,1",
+    "2,2",
+    "2,3",
+    "2,4",
+    "1,5",
+    "1,6"
+  ],
   "rasterBoundaryTolerancePx": 1,
   "bridgeCenterAndEndsAlpha": {
     "2,3": 255,
@@ -10,21 +31,123 @@
   },
   "rejectedOldBendAlpha": 0,
   "acceptedNewBendAlpha": 255,
-  "boardCells": 77,
   "logicalMaskErosionPx": 0,
-  "bankArtInwardFeatherPx": 3,
-  "entryExitFeather": "disabled within6px of fullboard perimeter",
-  "wheelAlphaNativeErosionPx": 5,
+  "visibleWaterContour": "intrinsically adaptive water with6px dry-edge clearance; separate flat dryshore may extend12px onto ground, core18px protected",
+  "actualBodyMask": "adaptive-water-body-mask.png",
+  "adaptiveWholeBankProfile": "adaptive-channel-profile.json",
+  "actualBodyAudit": {
+    "bridgeCenterAndDryEndsAlpha": {
+      "2,3": 255,
+      "1,3": 0,
+      "3,3": 0
+    },
+    "waterCellCenterAlpha": {
+      "4,0": 255,
+      "3,1": 255,
+      "2,2": 255,
+      "2,3": 255,
+      "2,4": 255,
+      "1,5": 255,
+      "1,6": 255
+    },
+    "bridgeMiddleSharedWaterEdgeAlpha": {
+      "2,2": {
+        "point": [
+          534,
+          501
+        ],
+        "alpha": 255
+      },
+      "2,4": {
+        "point": [
+          595,
+          569
+        ],
+        "alpha": 255
+      }
+    },
+    "allWaterCellCentersInSameConnectedActualBody": {
+      "4,0": true,
+      "3,1": true,
+      "2,2": true,
+      "2,3": true,
+      "2,4": true,
+      "1,5": true,
+      "1,6": true
+    },
+    "waterLeakOverAnyFreePixels": 0,
+    "status": "raster-contact-and-connectivity-passed-art-game-review-pending"
+  },
+  "bankArtInwardFeatherPx": 1,
+  "entryExitFeather": "disabled within 6px of complete board perimeter",
+  "decorativeWater": "outside complete 77-cell union only; separate from logical layer",
   "sourceSha256": {
     "art/chapter-1-v9/packages/mill/geometry.json": "7cd199e695fd57a3536b7ca7efeee600c24d16f9d0eaa1274cba314b0bcf23e1",
     "art/chapter-1-v9/layers/props/mill-dry-map.png": "c9dbe91702bcafb9fc46d879d02416aa0ef88fa7995b55a4dd1d9ee8fd5dd3c5",
     "art/chapter-1-v9/candidates/mill-continuation-v1.png": "9527d1321e6bafaae8d2ab496f542a6c638470cd140c3ecf8cb35f9d214d5448",
+    "art/chapter-1-v9/candidates/mill-adaptive-channel-generated-v4.png": "44e1e2fd0f0a67e6c88cd7af42ac1a8f84bda0c271b9d63107aaba1eedfa0ec8",
     "art/chapter-1-v9/candidates/mill-bankstrip-wheelclear-v2.png": "df1ae6bc9f3773c95a68623ae281978a5d464843520d15cd82fd57f9b050e327",
-    "art/chapter-1-v9/candidates/millwheel-v4.png": "1fc0bfe218b05b171b088dd07e9a1b49e1d7a0b7e3e19ffa2def80795bb5ba7a"
+    "art/chapter-1-v9/candidates/millwheel-v4.png": "1fc0bfe218b05b171b088dd07e9a1b49e1d7a0b7e3e19ffa2def80795bb5ba7a",
+    "art/chapter-1-v9/candidates/mill-local-bank-generated-v5.png": "2c30709754192f5f0bbffbd016bc149aa89be22367d8e8dd759ff71e92b4565a"
+  },
+  "outputSha256": {
+    "adaptive-channel-edit-guide.png": "117790b5feef3ac46331ff7ae2208e51e93be0ab99887f4f4343c10e6af7db25",
+    "adaptive-water-bank-mask.png": "751bc149782c19c14be1098aba3ada1cdb3a1b4c9c58a44630ef075125d615cc",
+    "adaptive-water-body-mask.png": "862bd3bf9db240de9433b0a0be162c82dd9a675814d3ffa927ada8b9b746c9e9",
+    "bank-art-alpha.png": "4e69d485599689ad1629a2d9d5aa63b25c0bf23be20a8f02cd8c626ba82436cb",
+    "bank-strip-edit-guide.png": "aea76c0031cde437f2f8c8f30447d7dbb2fe28a74a9af3eeb31abeeed0800d66",
+    "board-mask.png": "836a32cbe55275ce74532097da6ee8546bc8b26e9eb88134d1123c0b6799923c",
+    "bridge-review.png": "5ff804731b892b85e0e5dd0cb40b160acefdbd3dbb81985b0eb399029b11e440",
+    "curved-channel-edit-guide.png": "00edd8d62a96cf28fae40dc13e6e5d8f78b394d5f213d9b05f3409b40efaa7e8",
+    "cyan-diagnostic-review.png": "5d55cc5eff1aa2ecee2bbaefd7b22cc24b7eccecb64b4e74fe449aa8f50f0688",
+    "decorative-outside-board.png": "3afc2bbc72523912286984e333abd33fd4fc14bd8745ed92111cf9c0eb61c811",
+    "entry-review.png": "a9b73aebe7aefc7da5cba8252cab01733b3f1e7f74f983e30ae7bc9f122e77ce",
+    "exit-review.png": "f374f8261f10300e7dfc02d0c82cf938e39cbf3f8548d7b4a05cec2a499cd11b",
+    "feeder-race-wheel-review.png": "06a061e1903a305c86ce27f10ba3bc9f7452afbd06deb1c3cfdf9fe434cf47b1",
+    "free-core-mask18.png": "55855efeceacc2786e222ef9fdc07c8f83da6858c989011c622597e9b93085b3",
+    "free-mask.png": "235b81b59bb7a9cc3d77623246bf09ce0c2b6a57eddc92bd2a1461cbd5f18855",
+    "free-water-fringe-guard.png": "eb81ca3642fdac6ea4e2fa75edad218f7a75ee3b8bc98c8e540694eafa164383",
+    "geometry-overlay.png": "32f8592ef72d0ed9f33b8274faa62346390f5cc1079ccc872102fda1fb3e4f1b",
+    "local-dry-bank-repair-guide-v5.png": "12a38879c447d003c1e2b00c86a3eab0f088ba22c5ef21c6319c5aaad88c6432",
+    "logical-versus-visual-review.png": "20abbeaa19e6c76cf0e88c04428378045b88d8e620f42116dda98cf1a35311b4",
+    "logical-water-mask.png": "15741e70e1395d633f540efd780a5a6547b89dc31a882cbf8970ab6a91ac2f8a",
+    "logical-water.png": "a8c81bb6aa064728882331885fabd3f16528fc0fc9a00933a7158cac82e500d1",
+    "native-background.png": "9f256492ff559cbb17ff9d6963683cdf0101ff450343d409ac939d588eafe69e",
+    "native-with-wheel.png": "409c89e748a9a39137fa704cb5ba2cd2330d742140552266e319719386abc3c0",
+    "registered-wide-INCOMPLETE.png": "c2b5c0d66857bfd175d3c7ff274ef0cdd33413049081a3e41a013479fee8663a",
+    "visual-water-and-bank-mask.png": "44663921e33032083009dd0d05c5b3761b9abd3407180e5583f262de9752d73d",
+    "visual-water-body-mask.png": "830f82f90022a97a512efe66c1c8f233b1da59c817781ca9178c08030fa0d1e9",
+    "wheel-110.png": "351f2f746a41806343bb27aa8914472a558e66d12a467a474757a69e4ffadb29",
+    "wheel-native-clean-alpha.png": "b16dba6819a6cbcee9a15cc0cde58e180e446680ed9b53946afe1ab3f1dafebe",
+    "wheel-race-review.png": "e92c8b217922520eb5ba8aac74527f7b7251cd52924cb33231abc70d70b8366f",
+    "wide-opaque-edit-target-v1.png": "e94dab1951f4af5147236d9aca4bcfb71ee1cc9cfd38a7695669248025f8829c"
+  },
+  "wide": {
+    "status": "INCOMPLETE-native-registration-only-no-painted-outer-source",
+    "canvas": [
+      4096,
+      1600
+    ],
+    "originalRect": [
+      1212,
+      329,
+      1672,
+      941
+    ]
   },
   "checks": {
     "nativeBankVisualAudit": "pending",
-    "wheelRaceRegistrationVisualAudit": "pending",
+    "entryExitContinuityVisualAudit": "pending",
     "actualGameplay": "not-run"
-  }
+  },
+  "freeCoreInsetPx": 18,
+  "freeCoreChangedRgbPixels": 0,
+  "dryBankBoundaryChangedRgbPixels": 1825,
+  "dryBankBoundaryChangedRgbMaxDepthPx": 7.381802015575448,
+  "allowedDryBankBoundaryDepthPx": 12,
+  "sourceCyanCandidateChangedFreePixels": 0,
+  "manuallyInspectedFreeFoamFringePixelsRestoredFromOriginalDryPlate": 3,
+  "sourceFringeGuard": "free-water-fringe-guard.png",
+  "cyanDiagnosticRule": "blue>red+12,green>red+12,min(blue,green)>70; diagnostic only, no gameplay terrain inferred from colors",
+  "dryShoreSemanticAudit": "pending-flat-earth-and-tiny-pebbles-only-no-water-or-tall-obstacles; not established by pixel counts"
 }

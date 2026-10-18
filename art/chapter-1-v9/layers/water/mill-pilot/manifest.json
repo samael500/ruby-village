@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "scene": "mill",
-  "activation": "inactive-source-handoff",
+  "activation": "inactive-source-handoff-for-root-game-review",
   "canvas": [
     1672,
     941
@@ -24,12 +24,72 @@
       "x": 1352.435565298214,
       "y": 466.5
     },
+    "residentFeet": {
+      "x": 1430,
+      "y": 398,
+      "status": "existing-native-anchor-game-review-pending"
+    },
     "wheelAxle": {
       "x": 1270,
       "y": 163
     }
   },
-  "geometry": "art/chapter-1-v9/packages/mill/geometry.json",
+  "wheel": {
+    "file": "wheel-110.png",
+    "source": "art/chapter-1-v9/candidates/millwheel-v4.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "sourcePivot": [
+      627,
+      627
+    ],
+    "size": [
+      110,
+      110
+    ],
+    "origin": [
+      1215,
+      108
+    ],
+    "pivot": [
+      55,
+      55
+    ],
+    "worldAxle": [
+      1270,
+      163
+    ],
+    "sourceAlphaErosionNativePx": 5,
+    "transform": "one uniform110/1254 scale; no CSS correction",
+    "layering": "separate background prop above millrace; never foreground over bridge/road",
+    "status": "race-contact-and-animation-game-review-pending"
+  },
+  "millrace": {
+    "feederTop": [
+      1053,
+      0
+    ],
+    "upperFeederJunction": [
+      1050,
+      74
+    ],
+    "upperTroughHead": [
+      950,
+      80
+    ],
+    "branchToMainCreek": [
+      625,
+      285
+    ],
+    "branchToWheel": [
+      1270,
+      163
+    ],
+    "review": "feeder-race-wheel-review.png",
+    "status": "source-continuity-visual-and-game-review-pending"
+  },
   "acceptedLayoutInputs": {
     "src/levels.ts": "8325e4d7673699dc48ede3b1ebc2e4d39c7565fdac52db8266473d5d097167e2",
     "src/hex.ts": "52f06ce865935942b5014d0faeaf9f00e28a9c49eb44ea8d28a4b133720d483d",
@@ -115,42 +175,38 @@
     "9,2"
   ],
   "background": "background.webp",
-  "backgroundContent": "baked exactwater and decorative millrace; old bearing cleared locally above board; small axle and separate wheel overlay",
-  "wheel": {
-    "file": "wheel-110.png",
-    "source": "art/chapter-1-v9/candidates/millwheel-v4.png",
-    "sourceSize": [
-      1254,
-      1254
-    ],
-    "sourcePivot": [
-      627,
-      627
-    ],
-    "size": [
-      110,
-      110
-    ],
-    "origin": [
-      1215,
-      108
-    ],
-    "pivot": [
-      55,
-      55
-    ],
-    "worldAxle": [
-      1270,
-      163
-    ],
-    "transform": "one uniform110/1254 scale; source alpha erosion5px; no CSS correction",
-    "status": "source-alpha-and-axle-art-review-pending"
-  },
+  "backgroundContent": "baked exact logical water plus guarded dry board and outside-board decorative continuation; do not stack logical-water.png again",
   "dryBackground": "dry-background.webp",
   "logicalWaterOverlay": "logical-water.png",
   "logicalWaterMask": "logical-water-mask.png",
-  "wide": null,
-  "wideStatus": "not-started",
+  "logicalWaterMaskRole": "immutable full accepted77-board water polygons for rules/diagnostic truth, not visible shoreline",
+  "visualWaterBodyMask": "adaptive-water-body-mask.png",
+  "visualWaterBankMask": "adaptive-water-bank-mask.png",
+  "intrinsicWholeBankProfile": "adaptive-channel-profile.json",
+  "waterArtOverlay": "logical-water.png",
+  "waterArtOverlayRole": "separate painted curved water and banks; legacy filename is not the full logical mask",
+  "dryShoreGroundContract": {
+    "allowedFreeBoundaryDepthPx": 12,
+    "protectedCoreInsetPx": 18,
+    "content": "flat earth/tiny low pebbles only; never water, tall rocks or bushes",
+    "roadBridgeOrdering": "ground texture below road and bridge; no foreground cover of deck",
+    "freeCoreMask": "free-core-mask18.png"
+  },
+  "wide": {
+    "file": "wide.webp",
+    "status": "INCOMPLETE-native-registration-only-no-painted-outer-source",
+    "canvas": [
+      4096,
+      1600
+    ],
+    "originalRect": [
+      1212,
+      329,
+      1672,
+      941
+    ]
+  },
+  "geometry": "art/chapter-1-v9/packages/mill/geometry.json",
   "checks": "checks.json",
-  "status": "native-bank-wheel-and-game-review-pending"
+  "status": "root-art-and-actual-game-review-pending"
 }

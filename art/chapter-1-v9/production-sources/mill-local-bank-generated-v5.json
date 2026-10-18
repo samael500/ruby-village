@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET exact1672x941. Image2 GUIDANCE ONLY, with orange rectangle x595..665,y530..592 identifying ONLY LOCAL REPAIR and magenta maximum logical water boundary. Change ONLY this small right-shore segment just below the middle of river: at(634,560)/(635,561) pale cyan water/whitefoam accidentally reaches FREE DRY LAND on upper-right side of magenta diagonal. Pull the actual BLUE WATER edge INWARD to left/down by about8native pixels across x615..650,y548..576, replacing that strip with low warm-brown damp earth and tiny flat gray pebbles. Keep all foam/cyan water at least6px on WATER side of magenta border here. This is smooth organic shoreline inset, NOT a straight diagonal/polygon cut, no shelf and no clipped stones. Water along centerline around(600,567) remains clearly flowing and broad enough; no dam or grassplug. Keep entire rest of image pixel-identical: other river bends, all grass, trees, millhouse, race/feeder up to TOP, wheelaxle, light/camera/crop. No newfullwheel/bridge/road/objects/people/text/UI. No colored guide. Repair one small shore section only,1672x941.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-f80030ba-e437-4f03-95ba-22776160dfa9.png",
+  "nativeSize": [
+    1672,
+    941
+  ],
+  "editTarget": "art/chapter-1-v9/candidates/mill-adaptive-channel-generated-v4.png",
+  "guide": "art/chapter-1-v9/layers/water/mill-pilot/local-dry-bank-repair-guide-v5.png",
+  "composition": "Only rectangle605,540..655,582 imported with4pxGaussian join; remainder originalv4source preserved; exactcore and12pxdryboundary guards applied bymill-delivery.py",
+  "status": "local-shore-repair-source-visual-and-game-review-pending"
+}
