@@ -1,0 +1,14 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Image1 exact1672x941 EDIT TARGET shows the NEW approved artistic river channel, a SMOOTH CURVING narrow flowing ribbon inside a larger invisible logical-water zone. Image2 GUIDE ONLY: CYAN is exact visible water body; narrow BROWN band is allowed natural bank region; thin MAGENTA polygons are maximum allowed logical zone, NOT a desired shoreline, never draw a hex/step bank there. Paint beautifully integrated small mossy irregular gray pebbles, low damp earth, fine roots and grass tufts along the SMOOTH CURVED ribbon boundaries in brown guide. Keep most smooth channel full turquoise water/ripples, no central obstructions. Its center must pass through(867,330),(928,398),(989,466),(928,535),(989,603),(1049,671),(989,740). Water continues through every bend, never ponds or individual connectedhexpools. Do NOT fill whole magenta polygons with water: their CORNERS remain matching dry grass/earth. All water+bank details remain INSIDE outer magenta boundary and follow cyan/brown curved inner shape. First channel joins original top stream near(850,285) continuously; last joins lower stream near(1000,785) continuously, no grass plugs/caps/dams. Leave entire outside scene pixel-identical: house, trees, clear lawns, decorative outside streams, light, camera, scale/crop. No visible cyan/brown/magenta guide, no straight cutout/angular hex steps, no bridge, no paving/road/tiles, people/UI/text. Same warm detailed painterly fairy-tale source. Exact1672x941 composition.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-64b2771e-e45d-4f8e-8521-39e7ebe0b3ac.png",
+  "nativeSize": [
+    1672,
+    941
+  ],
+  "editTarget": "art/chapter-1-v9/candidates/stream-curved-channel-edit-target-v3.png",
+  "guide": "art/chapter-1-v9/layers/water/stream-pilot/curved-channel-edit-guide.png",
+  "reason": "Independent actual-game QA c64b249 P1 rejected full logical-water polygons as visible stepped shore. Logical mask unchanged; separate curved visual body and painted banks stay inside it.",
+  "composition": "Smooth body through accepted water-cell centers;24px art support preserves whole source stones/earth/dry corners; exactfull77board/freeguard and unchangedcamera; no rules/layout/runtime changes",
+  "status": "actual-body-raster-contact-and-connectivity-passed-art-game-review-pending"
+}
