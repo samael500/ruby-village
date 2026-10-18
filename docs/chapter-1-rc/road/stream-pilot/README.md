@@ -1,0 +1,5 @@
+# Actual stream UI placement smoke — P2 edge candidate
+
+Source review branch8e8ea9f (=c64b249 isolated stream review + worn edge code matching integration511fc36); art sources0470ec9 +bb4a3e5. Desktop1280×720 and landscape844×390 actual tray/rotate/cell/place actions from accepted solution, no layout injection, no page errors. Road clip contains exactly4,1;8,1;9,1;3,2;1,3;2,3. Initial progress fixture in isolated index opens stream; visible watermark explicitly says not release. These four screenshots show technical water overlay. Full paired clean/water and actual inputAV baseline is independently captured in qa/stream-road-c64b249 before P2 candidate.
+
+These are placement smoke checks ONLY, not the full functional/independent P2 recheck. P1 steppedbanks and P2 artistic contact need review, no rollout/final-art claim. Integration defaultlayout1/roadflagfalse remain unchanged; reviewed-only gate patch never merged. Reproduce scripts/qa/stream-pilot-first.py against local5306 built from8e8ea9f. Physical phone/family NOTRUN.
