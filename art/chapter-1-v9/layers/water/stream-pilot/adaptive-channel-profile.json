@@ -1,0 +1,5472 @@
+{
+  "purpose": "adaptive source width; strict water support separate from allowed flat dry shore; immutable logical truth unchanged",
+  "nativeCanvas": [
+    1672,
+    941
+  ],
+  "camera": {
+    "radius": 70,
+    "origin": {
+      "x": 140,
+      "y": 330
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "centerline": "Catmull-Rom through all seven accepted water centers",
+  "distanceMetric": "exact native-pixel Euclidean distance to exposed union segments bordering dry ground; shared internal water edges removed",
+  "sourcePaintTargetBodyRadiusRangePx": [
+    11.854618849227776,
+    22
+  ],
+  "strictWaterSupportRadiusRangePx": [
+    17.854618849227776,
+    28
+  ],
+  "minimumStrictWaterSupportClearancePx": 6.0,
+  "requiredWaterToDryBoundaryMarginPx": 6,
+  "dryShoreArtSupportAdditionalRadiusPx": 14,
+  "maxDryShoreFreeBoundaryDepthPx": 6.46769937441606,
+  "allowedDryShoreFreeBoundaryDepthPx": 12,
+  "protectedFreeCoreInsetPx": 18,
+  "shoreContentRestriction": "flat damp earth and tiny low pebbles only; no water, tall rocks or shrubs on free ground; source visual review pending",
+  "rasterTolerancePx": 1,
+  "endpointException": "Only boundary segments coincident with complete77-board outside perimeter; permits decorative entry/exit continuity. No dry-cell boundary exception.",
+  "exemptOuterBoardEdges": [
+    [
+      [
+        928.08312,
+        762.25
+      ],
+      [
+        988.7049,
+        785
+      ]
+    ],
+    [
+      [
+        988.7049,
+        785
+      ],
+      [
+        1049.32667,
+        762.25
+      ]
+    ],
+    [
+      [
+        806.83956,
+        307.25
+      ],
+      [
+        867.46134,
+        284.5
+      ]
+    ],
+    [
+      [
+        867.46134,
+        284.5
+      ],
+      [
+        928.08312,
+        307.25
+      ]
+    ]
+  ],
+  "logicalBoundarySegments": [
+    [
+      [
+        1049.32667,
+        625.75
+      ],
+      [
+        1109.94845,
+        648.5
+      ]
+    ],
+    [
+      [
+        928.08312,
+        443.75
+      ],
+      [
+        928.08312,
+        489.25
+      ]
+    ],
+    [
+      [
+        928.08312,
+        307.25
+      ],
+      [
+        928.08312,
+        352.75
+      ]
+    ],
+    [
+      [
+        867.46134,
+        557.5
+      ],
+      [
+        928.08312,
+        580.25
+      ]
+    ],
+    [
+      [
+        928.08312,
+        716.75
+      ],
+      [
+        928.08312,
+        762.25
+      ]
+    ],
+    [
+      [
+        928.08312,
+        625.75
+      ],
+      [
+        988.7049,
+        648.5
+      ]
+    ],
+    [
+      [
+        867.46134,
+        375.5
+      ],
+      [
+        867.46134,
+        421
+      ]
+    ],
+    [
+      [
+        867.46134,
+        512
+      ],
+      [
+        928.08312,
+        489.25
+      ]
+    ],
+    [
+      [
+        806.83956,
+        307.25
+      ],
+      [
+        806.83956,
+        352.75
+      ]
+    ],
+    [
+      [
+        928.08312,
+        580.25
+      ],
+      [
+        928.08312,
+        625.75
+      ]
+    ],
+    [
+      [
+        988.7049,
+        512
+      ],
+      [
+        1049.32667,
+        489.25
+      ]
+    ],
+    [
+      [
+        988.7049,
+        512
+      ],
+      [
+        988.7049,
+        557.5
+      ]
+    ],
+    [
+      [
+        988.7049,
+        557.5
+      ],
+      [
+        1049.32667,
+        580.25
+      ]
+    ],
+    [
+      [
+        1049.32667,
+        580.25
+      ],
+      [
+        1049.32667,
+        625.75
+      ]
+    ],
+    [
+      [
+        988.7049,
+        421
+      ],
+      [
+        1049.32667,
+        443.75
+      ]
+    ],
+    [
+      [
+        928.08312,
+        352.75
+      ],
+      [
+        988.7049,
+        375.5
+      ]
+    ],
+    [
+      [
+        1049.32667,
+        443.75
+      ],
+      [
+        1049.32667,
+        489.25
+      ]
+    ],
+    [
+      [
+        1049.32667,
+        716.75
+      ],
+      [
+        1049.32667,
+        762.25
+      ]
+    ],
+    [
+      [
+        806.83956,
+        352.75
+      ],
+      [
+        867.46134,
+        375.5
+      ]
+    ],
+    [
+      [
+        988.7049,
+        375.5
+      ],
+      [
+        988.7049,
+        421
+      ]
+    ],
+    [
+      [
+        1049.32667,
+        716.75
+      ],
+      [
+        1109.94845,
+        694
+      ]
+    ],
+    [
+      [
+        867.46134,
+        512
+      ],
+      [
+        867.46134,
+        557.5
+      ]
+    ],
+    [
+      [
+        988.7049,
+        648.5
+      ],
+      [
+        988.7049,
+        694
+      ]
+    ],
+    [
+      [
+        867.46134,
+        421
+      ],
+      [
+        928.08312,
+        443.75
+      ]
+    ],
+    [
+      [
+        928.08312,
+        716.75
+      ],
+      [
+        988.7049,
+        694
+      ]
+    ],
+    [
+      [
+        1109.94845,
+        648.5
+      ],
+      [
+        1109.94845,
+        694
+      ]
+    ]
+  ],
+  "profile": [
+    {
+      "point": [
+        850.0,
+        260.0
+      ],
+      "clearance": 63.9952,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        850.1355,
+        260.564
+      ],
+      "clearance": 63.6719,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        850.2692,
+        261.1619
+      ],
+      "clearance": 63.3265,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        850.4015,
+        261.7927
+      ],
+      "clearance": 62.9604,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        850.5327,
+        262.4556
+      ],
+      "clearance": 62.575,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        850.6631,
+        263.1499
+      ],
+      "clearance": 62.1717,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        850.7929,
+        263.8746
+      ],
+      "clearance": 61.7521,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        850.9225,
+        264.6291
+      ],
+      "clearance": 61.3176,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.0521,
+        265.4124
+      ],
+      "clearance": 60.8698,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.182,
+        266.2237
+      ],
+      "clearance": 60.4104,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.3126,
+        267.0622
+      ],
+      "clearance": 59.9409,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.4441,
+        267.9272
+      ],
+      "clearance": 59.463,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.5769,
+        268.8177
+      ],
+      "clearance": 58.9786,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.7112,
+        269.733
+      ],
+      "clearance": 58.4892,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.8472,
+        270.6722
+      ],
+      "clearance": 57.9968,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        851.9854,
+        271.6345
+      ],
+      "clearance": 57.5031,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        852.126,
+        272.6191
+      ],
+      "clearance": 57.0102,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        852.2693,
+        273.6252
+      ],
+      "clearance": 56.5198,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        852.4156,
+        274.652
+      ],
+      "clearance": 56.034,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        852.5651,
+        275.6985
+      ],
+      "clearance": 55.5547,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        852.7182,
+        276.7641
+      ],
+      "clearance": 55.084,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        852.8752,
+        277.8478
+      ],
+      "clearance": 54.6239,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        853.0364,
+        278.9489
+      ],
+      "clearance": 54.1766,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        853.202,
+        280.0666
+      ],
+      "clearance": 53.744,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        853.3724,
+        281.2
+      ],
+      "clearance": 53.3283,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        853.5478,
+        282.3482
+      ],
+      "clearance": 52.9317,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        853.7286,
+        283.5106
+      ],
+      "clearance": 52.5561,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        853.915,
+        284.6862
+      ],
+      "clearance": 52.2036,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        854.1073,
+        285.8742
+      ],
+      "clearance": 51.8764,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        854.3059,
+        287.0739
+      ],
+      "clearance": 51.5764,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        854.5109,
+        288.2844
+      ],
+      "clearance": 51.3055,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        854.7228,
+        289.5048
+      ],
+      "clearance": 51.0656,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        854.9418,
+        290.7344
+      ],
+      "clearance": 50.8586,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        855.1682,
+        291.9723
+      ],
+      "clearance": 50.686,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        855.4023,
+        293.2177
+      ],
+      "clearance": 50.5494,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        855.6444,
+        294.4698
+      ],
+      "clearance": 50.4504,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        855.8947,
+        295.7278
+      ],
+      "clearance": 50.3902,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        856.1536,
+        296.9908
+      ],
+      "clearance": 50.3699,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        856.4214,
+        298.2581
+      ],
+      "clearance": 50.3906,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        856.6984,
+        299.5288
+      ],
+      "clearance": 50.4532,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        856.9848,
+        300.802
+      ],
+      "clearance": 50.5581,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        857.281,
+        302.077
+      ],
+      "clearance": 50.706,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        857.5872,
+        303.353
+      ],
+      "clearance": 50.8971,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        857.9038,
+        304.629
+      ],
+      "clearance": 51.1315,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        858.231,
+        305.9044
+      ],
+      "clearance": 51.4091,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        858.5691,
+        307.1782
+      ],
+      "clearance": 51.7296,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        858.9185,
+        308.4497
+      ],
+      "clearance": 52.0789,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        859.2794,
+        309.7181
+      ],
+      "clearance": 52.4398,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        859.652,
+        310.9824
+      ],
+      "clearance": 52.8125,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        860.0368,
+        312.242
+      ],
+      "clearance": 53.1973,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        860.434,
+        313.4959
+      ],
+      "clearance": 53.5945,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        860.8439,
+        314.7434
+      ],
+      "clearance": 54.0043,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        861.2668,
+        315.9836
+      ],
+      "clearance": 53.5454,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        861.7029,
+        317.2157
+      ],
+      "clearance": 52.5451,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        862.1526,
+        318.4389
+      ],
+      "clearance": 51.5579,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        862.6162,
+        319.6523
+      ],
+      "clearance": 50.5847,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        863.094,
+        320.8552
+      ],
+      "clearance": 49.6264,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        863.5862,
+        322.0468
+      ],
+      "clearance": 48.6837,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        864.0932,
+        323.2261
+      ],
+      "clearance": 47.7577,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        864.6152,
+        324.3924
+      ],
+      "clearance": 46.8492,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        865.1526,
+        325.5449
+      ],
+      "clearance": 45.959,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        865.7056,
+        326.6827
+      ],
+      "clearance": 45.088,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        866.2745,
+        327.805
+      ],
+      "clearance": 44.2371,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        866.8597,
+        328.9111
+      ],
+      "clearance": 43.4072,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        867.4613,
+        330.0
+      ],
+      "clearance": 42.5991,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        868.0818,
+        331.0797
+      ],
+      "clearance": 41.8063,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        868.7229,
+        332.1585
+      ],
+      "clearance": 41.0215,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        869.384,
+        333.2365
+      ],
+      "clearance": 40.2445,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        870.0648,
+        334.3137
+      ],
+      "clearance": 39.4751,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        870.7646,
+        335.3901
+      ],
+      "clearance": 38.7132,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        871.483,
+        336.4658
+      ],
+      "clearance": 37.9585,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        872.2196,
+        337.5408
+      ],
+      "clearance": 37.2109,
+      "sourcePaintBodyRadius": 21.9611,
+      "strictWaterSupportRadius": 27.9611,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9611
+    },
+    {
+      "point": [
+        872.9738,
+        338.615
+      ],
+      "clearance": 36.4702,
+      "sourcePaintBodyRadius": 21.8577,
+      "strictWaterSupportRadius": 27.8577,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8577
+    },
+    {
+      "point": [
+        873.7451,
+        339.6885
+      ],
+      "clearance": 35.7361,
+      "sourcePaintBodyRadius": 21.6903,
+      "strictWaterSupportRadius": 27.6903,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6903
+    },
+    {
+      "point": [
+        874.533,
+        340.7614
+      ],
+      "clearance": 35.0084,
+      "sourcePaintBodyRadius": 21.4595,
+      "strictWaterSupportRadius": 27.4595,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.4595
+    },
+    {
+      "point": [
+        875.337,
+        341.8336
+      ],
+      "clearance": 34.2871,
+      "sourcePaintBodyRadius": 21.1686,
+      "strictWaterSupportRadius": 27.1686,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.1686
+    },
+    {
+      "point": [
+        876.1567,
+        342.9052
+      ],
+      "clearance": 33.5718,
+      "sourcePaintBodyRadius": 20.8225,
+      "strictWaterSupportRadius": 26.8225,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.8225
+    },
+    {
+      "point": [
+        876.9916,
+        343.9761
+      ],
+      "clearance": 32.8625,
+      "sourcePaintBodyRadius": 20.4266,
+      "strictWaterSupportRadius": 26.4266,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.4266
+    },
+    {
+      "point": [
+        877.8411,
+        345.0465
+      ],
+      "clearance": 32.1588,
+      "sourcePaintBodyRadius": 19.9868,
+      "strictWaterSupportRadius": 25.9868,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.9868
+    },
+    {
+      "point": [
+        878.7047,
+        346.1163
+      ],
+      "clearance": 31.4613,
+      "sourcePaintBodyRadius": 19.4613,
+      "strictWaterSupportRadius": 25.4613,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.4613
+    },
+    {
+      "point": [
+        879.5821,
+        347.1855
+      ],
+      "clearance": 30.7997,
+      "sourcePaintBodyRadius": 18.7997,
+      "strictWaterSupportRadius": 24.7997,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.7997
+    },
+    {
+      "point": [
+        880.4726,
+        348.2543
+      ],
+      "clearance": 30.1931,
+      "sourcePaintBodyRadius": 18.1931,
+      "strictWaterSupportRadius": 24.1931,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.1931
+    },
+    {
+      "point": [
+        881.3757,
+        349.3224
+      ],
+      "clearance": 29.6458,
+      "sourcePaintBodyRadius": 17.6458,
+      "strictWaterSupportRadius": 23.6458,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.6458
+    },
+    {
+      "point": [
+        882.2911,
+        350.3901
+      ],
+      "clearance": 29.1621,
+      "sourcePaintBodyRadius": 17.1621,
+      "strictWaterSupportRadius": 23.1621,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.1621
+    },
+    {
+      "point": [
+        883.2181,
+        351.4574
+      ],
+      "clearance": 28.7459,
+      "sourcePaintBodyRadius": 16.7459,
+      "strictWaterSupportRadius": 22.7459,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.7459
+    },
+    {
+      "point": [
+        884.1564,
+        352.5241
+      ],
+      "clearance": 28.401,
+      "sourcePaintBodyRadius": 16.401,
+      "strictWaterSupportRadius": 22.401,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.401
+    },
+    {
+      "point": [
+        885.1053,
+        353.5905
+      ],
+      "clearance": 28.1307,
+      "sourcePaintBodyRadius": 16.1307,
+      "strictWaterSupportRadius": 22.1307,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.1307
+    },
+    {
+      "point": [
+        886.0645,
+        354.6564
+      ],
+      "clearance": 27.938,
+      "sourcePaintBodyRadius": 15.938,
+      "strictWaterSupportRadius": 21.938,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.938
+    },
+    {
+      "point": [
+        887.0333,
+        355.7219
+      ],
+      "clearance": 27.8251,
+      "sourcePaintBodyRadius": 15.8251,
+      "strictWaterSupportRadius": 21.8251,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.8251
+    },
+    {
+      "point": [
+        888.0114,
+        356.7871
+      ],
+      "clearance": 27.7935,
+      "sourcePaintBodyRadius": 15.7935,
+      "strictWaterSupportRadius": 21.7935,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.7935
+    },
+    {
+      "point": [
+        888.9982,
+        357.8519
+      ],
+      "clearance": 27.8441,
+      "sourcePaintBodyRadius": 15.8441,
+      "strictWaterSupportRadius": 21.8441,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.8441
+    },
+    {
+      "point": [
+        889.9933,
+        358.9163
+      ],
+      "clearance": 27.9769,
+      "sourcePaintBodyRadius": 15.9769,
+      "strictWaterSupportRadius": 21.9769,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.9769
+    },
+    {
+      "point": [
+        890.9961,
+        359.9805
+      ],
+      "clearance": 28.1911,
+      "sourcePaintBodyRadius": 16.1911,
+      "strictWaterSupportRadius": 22.1911,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.1911
+    },
+    {
+      "point": [
+        892.0061,
+        361.0444
+      ],
+      "clearance": 28.4853,
+      "sourcePaintBodyRadius": 16.4853,
+      "strictWaterSupportRadius": 22.4853,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.4853
+    },
+    {
+      "point": [
+        893.0229,
+        362.1079
+      ],
+      "clearance": 28.8572,
+      "sourcePaintBodyRadius": 16.8572,
+      "strictWaterSupportRadius": 22.8572,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.8572
+    },
+    {
+      "point": [
+        894.0459,
+        363.1713
+      ],
+      "clearance": 29.3042,
+      "sourcePaintBodyRadius": 17.3042,
+      "strictWaterSupportRadius": 23.3042,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.3042
+    },
+    {
+      "point": [
+        895.0747,
+        364.2344
+      ],
+      "clearance": 29.823,
+      "sourcePaintBodyRadius": 17.823,
+      "strictWaterSupportRadius": 23.823,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.823
+    },
+    {
+      "point": [
+        896.1088,
+        365.2973
+      ],
+      "clearance": 30.41,
+      "sourcePaintBodyRadius": 18.41,
+      "strictWaterSupportRadius": 24.41,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.41
+    },
+    {
+      "point": [
+        897.1476,
+        366.36
+      ],
+      "clearance": 31.0615,
+      "sourcePaintBodyRadius": 18.7994,
+      "strictWaterSupportRadius": 24.7994,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.7994
+    },
+    {
+      "point": [
+        898.1907,
+        367.4225
+      ],
+      "clearance": 31.7733,
+      "sourcePaintBodyRadius": 19.0932,
+      "strictWaterSupportRadius": 25.0932,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.0932
+    },
+    {
+      "point": [
+        899.2376,
+        368.4848
+      ],
+      "clearance": 32.5414,
+      "sourcePaintBodyRadius": 19.3424,
+      "strictWaterSupportRadius": 25.3424,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.3424
+    },
+    {
+      "point": [
+        900.2878,
+        369.5471
+      ],
+      "clearance": 32.4764,
+      "sourcePaintBodyRadius": 19.5468,
+      "strictWaterSupportRadius": 25.5468,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.5468
+    },
+    {
+      "point": [
+        901.3408,
+        370.6092
+      ],
+      "clearance": 32.1574,
+      "sourcePaintBodyRadius": 19.7061,
+      "strictWaterSupportRadius": 25.7061,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.7061
+    },
+    {
+      "point": [
+        902.3961,
+        371.6712
+      ],
+      "clearance": 31.9035,
+      "sourcePaintBodyRadius": 19.8206,
+      "strictWaterSupportRadius": 25.8206,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.8206
+    },
+    {
+      "point": [
+        903.4533,
+        372.7332
+      ],
+      "clearance": 31.7168,
+      "sourcePaintBodyRadius": 19.7168,
+      "strictWaterSupportRadius": 25.7168,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.7168
+    },
+    {
+      "point": [
+        904.5117,
+        373.7951
+      ],
+      "clearance": 31.5992,
+      "sourcePaintBodyRadius": 19.5992,
+      "strictWaterSupportRadius": 25.5992,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.5992
+    },
+    {
+      "point": [
+        905.5709,
+        374.8569
+      ],
+      "clearance": 31.5518,
+      "sourcePaintBodyRadius": 19.5518,
+      "strictWaterSupportRadius": 25.5518,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.5518
+    },
+    {
+      "point": [
+        906.6305,
+        375.9188
+      ],
+      "clearance": 31.5754,
+      "sourcePaintBodyRadius": 19.5754,
+      "strictWaterSupportRadius": 25.5754,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.5754
+    },
+    {
+      "point": [
+        907.6899,
+        376.9806
+      ],
+      "clearance": 31.6702,
+      "sourcePaintBodyRadius": 19.6702,
+      "strictWaterSupportRadius": 25.6702,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.6702
+    },
+    {
+      "point": [
+        908.7487,
+        378.0425
+      ],
+      "clearance": 31.836,
+      "sourcePaintBodyRadius": 19.836,
+      "strictWaterSupportRadius": 25.836,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.836
+    },
+    {
+      "point": [
+        909.8063,
+        379.1044
+      ],
+      "clearance": 32.0718,
+      "sourcePaintBodyRadius": 20.0718,
+      "strictWaterSupportRadius": 26.0718,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.0718
+    },
+    {
+      "point": [
+        910.8623,
+        380.1664
+      ],
+      "clearance": 32.3762,
+      "sourcePaintBodyRadius": 20.3762,
+      "strictWaterSupportRadius": 26.3762,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.3762
+    },
+    {
+      "point": [
+        911.9161,
+        381.2285
+      ],
+      "clearance": 32.7475,
+      "sourcePaintBodyRadius": 20.7475,
+      "strictWaterSupportRadius": 26.7475,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.7475
+    },
+    {
+      "point": [
+        912.9673,
+        382.2907
+      ],
+      "clearance": 33.1835,
+      "sourcePaintBodyRadius": 21.0515,
+      "strictWaterSupportRadius": 27.0515,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.0515
+    },
+    {
+      "point": [
+        914.0153,
+        383.353
+      ],
+      "clearance": 33.6816,
+      "sourcePaintBodyRadius": 21.2633,
+      "strictWaterSupportRadius": 27.2633,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.2633
+    },
+    {
+      "point": [
+        915.0598,
+        384.4155
+      ],
+      "clearance": 34.239,
+      "sourcePaintBodyRadius": 21.46,
+      "strictWaterSupportRadius": 27.46,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.46
+    },
+    {
+      "point": [
+        916.1001,
+        385.4781
+      ],
+      "clearance": 34.8517,
+      "sourcePaintBodyRadius": 21.6353,
+      "strictWaterSupportRadius": 27.6353,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6353
+    },
+    {
+      "point": [
+        917.1358,
+        386.5409
+      ],
+      "clearance": 35.4829,
+      "sourcePaintBodyRadius": 21.783,
+      "strictWaterSupportRadius": 27.783,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.783
+    },
+    {
+      "point": [
+        918.1664,
+        387.604
+      ],
+      "clearance": 36.116,
+      "sourcePaintBodyRadius": 21.8968,
+      "strictWaterSupportRadius": 27.8968,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8968
+    },
+    {
+      "point": [
+        919.1914,
+        388.6672
+      ],
+      "clearance": 36.7514,
+      "sourcePaintBodyRadius": 21.9711,
+      "strictWaterSupportRadius": 27.9711,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9711
+    },
+    {
+      "point": [
+        920.2104,
+        389.7307
+      ],
+      "clearance": 37.3891,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        921.2227,
+        390.7945
+      ],
+      "clearance": 38.0293,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        922.2279,
+        391.8585
+      ],
+      "clearance": 38.6723,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        923.2256,
+        392.9229
+      ],
+      "clearance": 39.3183,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        924.2152,
+        393.9876
+      ],
+      "clearance": 39.9674,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        925.1963,
+        395.0526
+      ],
+      "clearance": 40.6199,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        926.1683,
+        396.118
+      ],
+      "clearance": 41.2758,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        927.1307,
+        397.1838
+      ],
+      "clearance": 41.9355,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.0831,
+        398.25
+      ],
+      "clearance": 42.5991,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        929.0449,
+        399.3164
+      ],
+      "clearance": 41.9386,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        930.0349,
+        400.3828
+      ],
+      "clearance": 41.288,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        931.0517,
+        401.4492
+      ],
+      "clearance": 40.6469,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        932.094,
+        402.5156
+      ],
+      "clearance": 40.0146,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        933.1603,
+        403.582
+      ],
+      "clearance": 39.3909,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        934.2493,
+        404.6484
+      ],
+      "clearance": 38.7751,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        935.3595,
+        405.7148
+      ],
+      "clearance": 38.1667,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        936.4897,
+        406.7812
+      ],
+      "clearance": 37.5654,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        937.6383,
+        407.8477
+      ],
+      "clearance": 36.9706,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        938.804,
+        408.9141
+      ],
+      "clearance": 36.3817,
+      "sourcePaintBodyRadius": 21.9937,
+      "strictWaterSupportRadius": 27.9937,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9937
+    },
+    {
+      "point": [
+        939.9855,
+        409.9805
+      ],
+      "clearance": 35.7984,
+      "sourcePaintBodyRadius": 21.9623,
+      "strictWaterSupportRadius": 27.9623,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9623
+    },
+    {
+      "point": [
+        941.1813,
+        411.0469
+      ],
+      "clearance": 35.2286,
+      "sourcePaintBodyRadius": 21.9131,
+      "strictWaterSupportRadius": 27.9131,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9131
+    },
+    {
+      "point": [
+        942.3901,
+        412.1133
+      ],
+      "clearance": 34.7213,
+      "sourcePaintBodyRadius": 21.8537,
+      "strictWaterSupportRadius": 27.8537,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8537
+    },
+    {
+      "point": [
+        943.6104,
+        413.1797
+      ],
+      "clearance": 34.2876,
+      "sourcePaintBodyRadius": 21.7919,
+      "strictWaterSupportRadius": 27.7919,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7919
+    },
+    {
+      "point": [
+        944.8409,
+        414.2461
+      ],
+      "clearance": 33.9309,
+      "sourcePaintBodyRadius": 21.7351,
+      "strictWaterSupportRadius": 27.7351,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7351
+    },
+    {
+      "point": [
+        946.0802,
+        415.3125
+      ],
+      "clearance": 33.6539,
+      "sourcePaintBodyRadius": 21.6539,
+      "strictWaterSupportRadius": 27.6539,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6539
+    },
+    {
+      "point": [
+        947.3269,
+        416.3789
+      ],
+      "clearance": 33.4589,
+      "sourcePaintBodyRadius": 21.4589,
+      "strictWaterSupportRadius": 27.4589,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.4589
+    },
+    {
+      "point": [
+        948.5796,
+        417.4453
+      ],
+      "clearance": 33.3473,
+      "sourcePaintBodyRadius": 21.3473,
+      "strictWaterSupportRadius": 27.3473,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3473
+    },
+    {
+      "point": [
+        949.8369,
+        418.5117
+      ],
+      "clearance": 33.3196,
+      "sourcePaintBodyRadius": 21.3196,
+      "strictWaterSupportRadius": 27.3196,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3196
+    },
+    {
+      "point": [
+        951.0975,
+        419.5781
+      ],
+      "clearance": 33.3758,
+      "sourcePaintBodyRadius": 21.3122,
+      "strictWaterSupportRadius": 27.3122,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3122
+    },
+    {
+      "point": [
+        952.3599,
+        420.6445
+      ],
+      "clearance": 33.5145,
+      "sourcePaintBodyRadius": 20.9969,
+      "strictWaterSupportRadius": 26.9969,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.9969
+    },
+    {
+      "point": [
+        953.6228,
+        421.7109
+      ],
+      "clearance": 33.7342,
+      "sourcePaintBodyRadius": 20.6135,
+      "strictWaterSupportRadius": 26.6135,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6135
+    },
+    {
+      "point": [
+        954.8847,
+        422.7773
+      ],
+      "clearance": 33.8668,
+      "sourcePaintBodyRadius": 20.1604,
+      "strictWaterSupportRadius": 26.1604,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.1604
+    },
+    {
+      "point": [
+        956.1444,
+        423.8438
+      ],
+      "clearance": 32.6845,
+      "sourcePaintBodyRadius": 19.6366,
+      "strictWaterSupportRadius": 25.6366,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.6366
+    },
+    {
+      "point": [
+        957.4003,
+        424.9102
+      ],
+      "clearance": 31.5478,
+      "sourcePaintBodyRadius": 19.0416,
+      "strictWaterSupportRadius": 25.0416,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.0416
+    },
+    {
+      "point": [
+        958.6512,
+        425.9766
+      ],
+      "clearance": 30.463,
+      "sourcePaintBodyRadius": 18.3757,
+      "strictWaterSupportRadius": 24.3757,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.3757
+    },
+    {
+      "point": [
+        959.8955,
+        427.043
+      ],
+      "clearance": 29.4363,
+      "sourcePaintBodyRadius": 17.4363,
+      "strictWaterSupportRadius": 23.4363,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.4363
+    },
+    {
+      "point": [
+        961.1321,
+        428.1094
+      ],
+      "clearance": 28.4746,
+      "sourcePaintBodyRadius": 16.4746,
+      "strictWaterSupportRadius": 22.4746,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.4746
+    },
+    {
+      "point": [
+        962.3593,
+        429.1758
+      ],
+      "clearance": 27.585,
+      "sourcePaintBodyRadius": 15.585,
+      "strictWaterSupportRadius": 21.585,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.585
+    },
+    {
+      "point": [
+        963.5759,
+        430.2422
+      ],
+      "clearance": 26.7747,
+      "sourcePaintBodyRadius": 14.7747,
+      "strictWaterSupportRadius": 20.7747,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.7747
+    },
+    {
+      "point": [
+        964.7805,
+        431.3086
+      ],
+      "clearance": 26.0508,
+      "sourcePaintBodyRadius": 14.0508,
+      "strictWaterSupportRadius": 20.0508,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.0508
+    },
+    {
+      "point": [
+        965.9717,
+        432.375
+      ],
+      "clearance": 25.4202,
+      "sourcePaintBodyRadius": 13.4202,
+      "strictWaterSupportRadius": 19.4202,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.4202
+    },
+    {
+      "point": [
+        967.1481,
+        433.4414
+      ],
+      "clearance": 24.8894,
+      "sourcePaintBodyRadius": 12.8894,
+      "strictWaterSupportRadius": 18.8894,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.8894
+    },
+    {
+      "point": [
+        968.3083,
+        434.5078
+      ],
+      "clearance": 24.4639,
+      "sourcePaintBodyRadius": 12.4639,
+      "strictWaterSupportRadius": 18.4639,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.4639
+    },
+    {
+      "point": [
+        969.4509,
+        435.5742
+      ],
+      "clearance": 24.1479,
+      "sourcePaintBodyRadius": 12.1479,
+      "strictWaterSupportRadius": 18.1479,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.1479
+    },
+    {
+      "point": [
+        970.5746,
+        436.6406
+      ],
+      "clearance": 23.9445,
+      "sourcePaintBodyRadius": 11.9445,
+      "strictWaterSupportRadius": 17.9445,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.9445
+    },
+    {
+      "point": [
+        971.6779,
+        437.707
+      ],
+      "clearance": 23.8546,
+      "sourcePaintBodyRadius": 11.8546,
+      "strictWaterSupportRadius": 17.8546,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.8546
+    },
+    {
+      "point": [
+        972.7595,
+        438.7734
+      ],
+      "clearance": 23.8778,
+      "sourcePaintBodyRadius": 11.8778,
+      "strictWaterSupportRadius": 17.8778,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.8778
+    },
+    {
+      "point": [
+        973.8179,
+        439.8398
+      ],
+      "clearance": 24.0117,
+      "sourcePaintBodyRadius": 12.0117,
+      "strictWaterSupportRadius": 18.0117,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.0117
+    },
+    {
+      "point": [
+        974.8519,
+        440.9062
+      ],
+      "clearance": 24.2521,
+      "sourcePaintBodyRadius": 12.2521,
+      "strictWaterSupportRadius": 18.2521,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.2521
+    },
+    {
+      "point": [
+        975.8599,
+        441.9727
+      ],
+      "clearance": 24.5936,
+      "sourcePaintBodyRadius": 12.5936,
+      "strictWaterSupportRadius": 18.5936,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.5936
+    },
+    {
+      "point": [
+        976.8407,
+        443.0391
+      ],
+      "clearance": 25.0296,
+      "sourcePaintBodyRadius": 13.0296,
+      "strictWaterSupportRadius": 19.0296,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.0296
+    },
+    {
+      "point": [
+        977.7927,
+        444.1055
+      ],
+      "clearance": 25.5527,
+      "sourcePaintBodyRadius": 13.5527,
+      "strictWaterSupportRadius": 19.5527,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.5527
+    },
+    {
+      "point": [
+        978.7147,
+        445.1719
+      ],
+      "clearance": 26.155,
+      "sourcePaintBodyRadius": 14.155,
+      "strictWaterSupportRadius": 20.155,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.155
+    },
+    {
+      "point": [
+        979.6053,
+        446.2383
+      ],
+      "clearance": 26.8263,
+      "sourcePaintBodyRadius": 14.8263,
+      "strictWaterSupportRadius": 20.8263,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.8263
+    },
+    {
+      "point": [
+        980.463,
+        447.3047
+      ],
+      "clearance": 27.5234,
+      "sourcePaintBodyRadius": 15.5234,
+      "strictWaterSupportRadius": 21.5234,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.5234
+    },
+    {
+      "point": [
+        981.2865,
+        448.3711
+      ],
+      "clearance": 28.2325,
+      "sourcePaintBodyRadius": 16.2325,
+      "strictWaterSupportRadius": 22.2325,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.2325
+    },
+    {
+      "point": [
+        982.0744,
+        449.4375
+      ],
+      "clearance": 28.9541,
+      "sourcePaintBodyRadius": 16.9541,
+      "strictWaterSupportRadius": 22.9541,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.9541
+    },
+    {
+      "point": [
+        982.8253,
+        450.5039
+      ],
+      "clearance": 29.6887,
+      "sourcePaintBodyRadius": 17.6887,
+      "strictWaterSupportRadius": 23.6887,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.6887
+    },
+    {
+      "point": [
+        983.5378,
+        451.5703
+      ],
+      "clearance": 30.4367,
+      "sourcePaintBodyRadius": 18.4367,
+      "strictWaterSupportRadius": 24.4367,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.4367
+    },
+    {
+      "point": [
+        984.2105,
+        452.6367
+      ],
+      "clearance": 31.1988,
+      "sourcePaintBodyRadius": 19.1227,
+      "strictWaterSupportRadius": 25.1227,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.1227
+    },
+    {
+      "point": [
+        984.842,
+        453.7031
+      ],
+      "clearance": 31.9753,
+      "sourcePaintBodyRadius": 19.7115,
+      "strictWaterSupportRadius": 25.7115,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.7115
+    },
+    {
+      "point": [
+        985.431,
+        454.7695
+      ],
+      "clearance": 32.7668,
+      "sourcePaintBodyRadius": 20.2358,
+      "strictWaterSupportRadius": 26.2358,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.2358
+    },
+    {
+      "point": [
+        985.9761,
+        455.8359
+      ],
+      "clearance": 33.5737,
+      "sourcePaintBodyRadius": 20.6945,
+      "strictWaterSupportRadius": 26.6945,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6945
+    },
+    {
+      "point": [
+        986.4758,
+        456.9023
+      ],
+      "clearance": 34.3965,
+      "sourcePaintBodyRadius": 21.0865,
+      "strictWaterSupportRadius": 27.0865,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.0865
+    },
+    {
+      "point": [
+        986.9289,
+        457.9688
+      ],
+      "clearance": 35.2358,
+      "sourcePaintBodyRadius": 21.4104,
+      "strictWaterSupportRadius": 27.4104,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.4104
+    },
+    {
+      "point": [
+        987.3338,
+        459.0352
+      ],
+      "clearance": 36.0919,
+      "sourcePaintBodyRadius": 21.6651,
+      "strictWaterSupportRadius": 27.6651,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6651
+    },
+    {
+      "point": [
+        987.6892,
+        460.1016
+      ],
+      "clearance": 36.9654,
+      "sourcePaintBodyRadius": 21.8491,
+      "strictWaterSupportRadius": 27.8491,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8491
+    },
+    {
+      "point": [
+        987.9938,
+        461.168
+      ],
+      "clearance": 37.8569,
+      "sourcePaintBodyRadius": 21.9612,
+      "strictWaterSupportRadius": 27.9612,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9612
+    },
+    {
+      "point": [
+        988.2461,
+        462.2344
+      ],
+      "clearance": 38.7666,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.4447,
+        463.3008
+      ],
+      "clearance": 39.6952,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.5883,
+        464.3672
+      ],
+      "clearance": 40.6432,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.6755,
+        465.4336
+      ],
+      "clearance": 41.611,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.7049,
+        466.5
+      ],
+      "clearance": 42.5991,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.661,
+        467.5664
+      ],
+      "clearance": 41.6161,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.531,
+        468.6328
+      ],
+      "clearance": 40.6634,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.3178,
+        469.6992
+      ],
+      "clearance": 39.7399,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.0241,
+        470.7656
+      ],
+      "clearance": 38.8446,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        987.6527,
+        471.832
+      ],
+      "clearance": 37.9767,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        987.2064,
+        472.8984
+      ],
+      "clearance": 37.1351,
+      "sourcePaintBodyRadius": 21.9353,
+      "strictWaterSupportRadius": 27.9353,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9353
+    },
+    {
+      "point": [
+        986.6879,
+        473.9648
+      ],
+      "clearance": 36.3188,
+      "sourcePaintBodyRadius": 21.8065,
+      "strictWaterSupportRadius": 27.8065,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8065
+    },
+    {
+      "point": [
+        986.1001,
+        475.0312
+      ],
+      "clearance": 35.527,
+      "sourcePaintBodyRadius": 21.6155,
+      "strictWaterSupportRadius": 27.6155,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6155
+    },
+    {
+      "point": [
+        985.4456,
+        476.0977
+      ],
+      "clearance": 34.7585,
+      "sourcePaintBodyRadius": 21.364,
+      "strictWaterSupportRadius": 27.364,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.364
+    },
+    {
+      "point": [
+        984.7273,
+        477.1641
+      ],
+      "clearance": 34.0124,
+      "sourcePaintBodyRadius": 21.0535,
+      "strictWaterSupportRadius": 27.0535,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.0535
+    },
+    {
+      "point": [
+        983.948,
+        478.2305
+      ],
+      "clearance": 33.2879,
+      "sourcePaintBodyRadius": 20.6855,
+      "strictWaterSupportRadius": 26.6855,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6855
+    },
+    {
+      "point": [
+        983.1104,
+        479.2969
+      ],
+      "clearance": 32.5837,
+      "sourcePaintBodyRadius": 20.2616,
+      "strictWaterSupportRadius": 26.2616,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.2616
+    },
+    {
+      "point": [
+        982.2173,
+        480.3633
+      ],
+      "clearance": 31.8991,
+      "sourcePaintBodyRadius": 19.7875,
+      "strictWaterSupportRadius": 25.7875,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.7875
+    },
+    {
+      "point": [
+        981.2715,
+        481.4297
+      ],
+      "clearance": 31.233,
+      "sourcePaintBodyRadius": 19.233,
+      "strictWaterSupportRadius": 25.233,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.233
+    },
+    {
+      "point": [
+        980.2757,
+        482.4961
+      ],
+      "clearance": 30.5845,
+      "sourcePaintBodyRadius": 18.5845,
+      "strictWaterSupportRadius": 24.5845,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.5845
+    },
+    {
+      "point": [
+        979.2327,
+        483.5625
+      ],
+      "clearance": 29.9525,
+      "sourcePaintBodyRadius": 17.9525,
+      "strictWaterSupportRadius": 23.9525,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.9525
+    },
+    {
+      "point": [
+        978.1454,
+        484.6289
+      ],
+      "clearance": 29.3373,
+      "sourcePaintBodyRadius": 17.3373,
+      "strictWaterSupportRadius": 23.3373,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.3373
+    },
+    {
+      "point": [
+        977.0164,
+        485.6953
+      ],
+      "clearance": 28.7847,
+      "sourcePaintBodyRadius": 16.7847,
+      "strictWaterSupportRadius": 22.7847,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.7847
+    },
+    {
+      "point": [
+        975.8486,
+        486.7617
+      ],
+      "clearance": 28.3241,
+      "sourcePaintBodyRadius": 16.3241,
+      "strictWaterSupportRadius": 22.3241,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.3241
+    },
+    {
+      "point": [
+        974.6447,
+        487.8281
+      ],
+      "clearance": 27.9637,
+      "sourcePaintBodyRadius": 15.9637,
+      "strictWaterSupportRadius": 21.9637,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.9637
+    },
+    {
+      "point": [
+        973.4075,
+        488.8945
+      ],
+      "clearance": 27.7105,
+      "sourcePaintBodyRadius": 15.7105,
+      "strictWaterSupportRadius": 21.7105,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.7105
+    },
+    {
+      "point": [
+        972.1397,
+        489.9609
+      ],
+      "clearance": 27.5704,
+      "sourcePaintBodyRadius": 15.5704,
+      "strictWaterSupportRadius": 21.5704,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.5704
+    },
+    {
+      "point": [
+        970.8442,
+        491.0273
+      ],
+      "clearance": 27.5473,
+      "sourcePaintBodyRadius": 15.5473,
+      "strictWaterSupportRadius": 21.5473,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.5473
+    },
+    {
+      "point": [
+        969.5238,
+        492.0938
+      ],
+      "clearance": 27.6437,
+      "sourcePaintBodyRadius": 15.6437,
+      "strictWaterSupportRadius": 21.6437,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.6437
+    },
+    {
+      "point": [
+        968.1811,
+        493.1602
+      ],
+      "clearance": 27.8597,
+      "sourcePaintBodyRadius": 15.8597,
+      "strictWaterSupportRadius": 21.8597,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.8597
+    },
+    {
+      "point": [
+        966.819,
+        494.2266
+      ],
+      "clearance": 28.1937,
+      "sourcePaintBodyRadius": 16.1937,
+      "strictWaterSupportRadius": 22.1937,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.1937
+    },
+    {
+      "point": [
+        965.4403,
+        495.293
+      ],
+      "clearance": 28.642,
+      "sourcePaintBodyRadius": 16.642,
+      "strictWaterSupportRadius": 22.642,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.642
+    },
+    {
+      "point": [
+        964.0477,
+        496.3594
+      ],
+      "clearance": 29.1994,
+      "sourcePaintBodyRadius": 17.1994,
+      "strictWaterSupportRadius": 23.1994,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.1994
+    },
+    {
+      "point": [
+        962.644,
+        497.4258
+      ],
+      "clearance": 29.8593,
+      "sourcePaintBodyRadius": 17.8102,
+      "strictWaterSupportRadius": 23.8102,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.8102
+    },
+    {
+      "point": [
+        961.232,
+        498.4922
+      ],
+      "clearance": 30.6141,
+      "sourcePaintBodyRadius": 18.0116,
+      "strictWaterSupportRadius": 24.0116,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.0116
+    },
+    {
+      "point": [
+        959.8144,
+        499.5586
+      ],
+      "clearance": 31.4555,
+      "sourcePaintBodyRadius": 18.1334,
+      "strictWaterSupportRadius": 24.1334,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.1334
+    },
+    {
+      "point": [
+        958.394,
+        500.625
+      ],
+      "clearance": 32.375,
+      "sourcePaintBodyRadius": 18.1742,
+      "strictWaterSupportRadius": 24.1742,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.1742
+    },
+    {
+      "point": [
+        956.9736,
+        501.6914
+      ],
+      "clearance": 31.4555,
+      "sourcePaintBodyRadius": 18.1334,
+      "strictWaterSupportRadius": 24.1334,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.1334
+    },
+    {
+      "point": [
+        955.5561,
+        502.7578
+      ],
+      "clearance": 30.6141,
+      "sourcePaintBodyRadius": 18.0116,
+      "strictWaterSupportRadius": 24.0116,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.0116
+    },
+    {
+      "point": [
+        954.144,
+        503.8242
+      ],
+      "clearance": 29.8593,
+      "sourcePaintBodyRadius": 17.8102,
+      "strictWaterSupportRadius": 23.8102,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.8102
+    },
+    {
+      "point": [
+        952.7403,
+        504.8906
+      ],
+      "clearance": 29.1994,
+      "sourcePaintBodyRadius": 17.1994,
+      "strictWaterSupportRadius": 23.1994,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.1994
+    },
+    {
+      "point": [
+        951.3477,
+        505.957
+      ],
+      "clearance": 28.642,
+      "sourcePaintBodyRadius": 16.642,
+      "strictWaterSupportRadius": 22.642,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.642
+    },
+    {
+      "point": [
+        949.969,
+        507.0234
+      ],
+      "clearance": 28.1937,
+      "sourcePaintBodyRadius": 16.1937,
+      "strictWaterSupportRadius": 22.1937,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.1937
+    },
+    {
+      "point": [
+        948.6069,
+        508.0898
+      ],
+      "clearance": 27.8597,
+      "sourcePaintBodyRadius": 15.8597,
+      "strictWaterSupportRadius": 21.8597,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.8597
+    },
+    {
+      "point": [
+        947.2642,
+        509.1562
+      ],
+      "clearance": 27.6437,
+      "sourcePaintBodyRadius": 15.6437,
+      "strictWaterSupportRadius": 21.6437,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.6437
+    },
+    {
+      "point": [
+        945.9438,
+        510.2227
+      ],
+      "clearance": 27.5473,
+      "sourcePaintBodyRadius": 15.5473,
+      "strictWaterSupportRadius": 21.5473,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.5473
+    },
+    {
+      "point": [
+        944.6483,
+        511.2891
+      ],
+      "clearance": 27.5704,
+      "sourcePaintBodyRadius": 15.5704,
+      "strictWaterSupportRadius": 21.5704,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.5704
+    },
+    {
+      "point": [
+        943.3806,
+        512.3555
+      ],
+      "clearance": 27.7105,
+      "sourcePaintBodyRadius": 15.7105,
+      "strictWaterSupportRadius": 21.7105,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.7105
+    },
+    {
+      "point": [
+        942.1433,
+        513.4219
+      ],
+      "clearance": 27.9637,
+      "sourcePaintBodyRadius": 15.9637,
+      "strictWaterSupportRadius": 21.9637,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.9637
+    },
+    {
+      "point": [
+        940.9394,
+        514.4883
+      ],
+      "clearance": 28.3241,
+      "sourcePaintBodyRadius": 16.3241,
+      "strictWaterSupportRadius": 22.3241,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.3241
+    },
+    {
+      "point": [
+        939.7716,
+        515.5547
+      ],
+      "clearance": 28.7847,
+      "sourcePaintBodyRadius": 16.7847,
+      "strictWaterSupportRadius": 22.7847,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.7847
+    },
+    {
+      "point": [
+        938.6426,
+        516.6211
+      ],
+      "clearance": 29.3373,
+      "sourcePaintBodyRadius": 17.3373,
+      "strictWaterSupportRadius": 23.3373,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.3373
+    },
+    {
+      "point": [
+        937.5553,
+        517.6875
+      ],
+      "clearance": 29.9525,
+      "sourcePaintBodyRadius": 17.9525,
+      "strictWaterSupportRadius": 23.9525,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.9525
+    },
+    {
+      "point": [
+        936.5123,
+        518.7539
+      ],
+      "clearance": 30.5845,
+      "sourcePaintBodyRadius": 18.5845,
+      "strictWaterSupportRadius": 24.5845,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.5845
+    },
+    {
+      "point": [
+        935.5165,
+        519.8203
+      ],
+      "clearance": 31.233,
+      "sourcePaintBodyRadius": 19.233,
+      "strictWaterSupportRadius": 25.233,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.233
+    },
+    {
+      "point": [
+        934.5707,
+        520.8867
+      ],
+      "clearance": 31.8991,
+      "sourcePaintBodyRadius": 19.7875,
+      "strictWaterSupportRadius": 25.7875,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.7875
+    },
+    {
+      "point": [
+        933.6776,
+        521.9531
+      ],
+      "clearance": 32.5837,
+      "sourcePaintBodyRadius": 20.2616,
+      "strictWaterSupportRadius": 26.2616,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.2616
+    },
+    {
+      "point": [
+        932.84,
+        523.0195
+      ],
+      "clearance": 33.2878,
+      "sourcePaintBodyRadius": 20.6855,
+      "strictWaterSupportRadius": 26.6855,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6855
+    },
+    {
+      "point": [
+        932.0607,
+        524.0859
+      ],
+      "clearance": 34.0124,
+      "sourcePaintBodyRadius": 21.0535,
+      "strictWaterSupportRadius": 27.0535,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.0535
+    },
+    {
+      "point": [
+        931.3424,
+        525.1523
+      ],
+      "clearance": 34.7585,
+      "sourcePaintBodyRadius": 21.364,
+      "strictWaterSupportRadius": 27.364,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.364
+    },
+    {
+      "point": [
+        930.688,
+        526.2188
+      ],
+      "clearance": 35.527,
+      "sourcePaintBodyRadius": 21.6155,
+      "strictWaterSupportRadius": 27.6155,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6155
+    },
+    {
+      "point": [
+        930.1001,
+        527.2852
+      ],
+      "clearance": 36.3188,
+      "sourcePaintBodyRadius": 21.8065,
+      "strictWaterSupportRadius": 27.8065,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8065
+    },
+    {
+      "point": [
+        929.5816,
+        528.3516
+      ],
+      "clearance": 37.1351,
+      "sourcePaintBodyRadius": 21.9353,
+      "strictWaterSupportRadius": 27.9353,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9353
+    },
+    {
+      "point": [
+        929.1353,
+        529.418
+      ],
+      "clearance": 37.9767,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.7639,
+        530.4844
+      ],
+      "clearance": 38.8446,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.4702,
+        531.5508
+      ],
+      "clearance": 39.7399,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.257,
+        532.6172
+      ],
+      "clearance": 40.6634,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.1271,
+        533.6836
+      ],
+      "clearance": 41.6161,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.0831,
+        534.75
+      ],
+      "clearance": 42.5991,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.1125,
+        535.8164
+      ],
+      "clearance": 41.611,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.1997,
+        536.8828
+      ],
+      "clearance": 40.6432,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.3433,
+        537.9492
+      ],
+      "clearance": 39.6952,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.5419,
+        539.0156
+      ],
+      "clearance": 38.7666,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        928.7942,
+        540.082
+      ],
+      "clearance": 37.8569,
+      "sourcePaintBodyRadius": 21.9612,
+      "strictWaterSupportRadius": 27.9612,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9612
+    },
+    {
+      "point": [
+        929.0988,
+        541.1484
+      ],
+      "clearance": 36.9654,
+      "sourcePaintBodyRadius": 21.8491,
+      "strictWaterSupportRadius": 27.8491,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8491
+    },
+    {
+      "point": [
+        929.4542,
+        542.2148
+      ],
+      "clearance": 36.0919,
+      "sourcePaintBodyRadius": 21.6651,
+      "strictWaterSupportRadius": 27.6651,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6651
+    },
+    {
+      "point": [
+        929.8591,
+        543.2812
+      ],
+      "clearance": 35.2358,
+      "sourcePaintBodyRadius": 21.4104,
+      "strictWaterSupportRadius": 27.4104,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.4104
+    },
+    {
+      "point": [
+        930.3122,
+        544.3477
+      ],
+      "clearance": 34.3965,
+      "sourcePaintBodyRadius": 21.0865,
+      "strictWaterSupportRadius": 27.0865,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.0865
+    },
+    {
+      "point": [
+        930.8119,
+        545.4141
+      ],
+      "clearance": 33.5737,
+      "sourcePaintBodyRadius": 20.6945,
+      "strictWaterSupportRadius": 26.6945,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6945
+    },
+    {
+      "point": [
+        931.357,
+        546.4805
+      ],
+      "clearance": 32.7668,
+      "sourcePaintBodyRadius": 20.2358,
+      "strictWaterSupportRadius": 26.2358,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.2358
+    },
+    {
+      "point": [
+        931.946,
+        547.5469
+      ],
+      "clearance": 31.9753,
+      "sourcePaintBodyRadius": 19.7115,
+      "strictWaterSupportRadius": 25.7115,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.7115
+    },
+    {
+      "point": [
+        932.5775,
+        548.6133
+      ],
+      "clearance": 31.1988,
+      "sourcePaintBodyRadius": 19.1227,
+      "strictWaterSupportRadius": 25.1227,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.1227
+    },
+    {
+      "point": [
+        933.2503,
+        549.6797
+      ],
+      "clearance": 30.4367,
+      "sourcePaintBodyRadius": 18.4367,
+      "strictWaterSupportRadius": 24.4367,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.4367
+    },
+    {
+      "point": [
+        933.9627,
+        550.7461
+      ],
+      "clearance": 29.6887,
+      "sourcePaintBodyRadius": 17.6887,
+      "strictWaterSupportRadius": 23.6887,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.6887
+    },
+    {
+      "point": [
+        934.7136,
+        551.8125
+      ],
+      "clearance": 28.9541,
+      "sourcePaintBodyRadius": 16.9541,
+      "strictWaterSupportRadius": 22.9541,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.9541
+    },
+    {
+      "point": [
+        935.5015,
+        552.8789
+      ],
+      "clearance": 28.2325,
+      "sourcePaintBodyRadius": 16.2325,
+      "strictWaterSupportRadius": 22.2325,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.2325
+    },
+    {
+      "point": [
+        936.325,
+        553.9453
+      ],
+      "clearance": 27.5234,
+      "sourcePaintBodyRadius": 15.5234,
+      "strictWaterSupportRadius": 21.5234,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.5234
+    },
+    {
+      "point": [
+        937.1827,
+        555.0117
+      ],
+      "clearance": 26.8263,
+      "sourcePaintBodyRadius": 14.8263,
+      "strictWaterSupportRadius": 20.8263,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.8263
+    },
+    {
+      "point": [
+        938.0733,
+        556.0781
+      ],
+      "clearance": 26.155,
+      "sourcePaintBodyRadius": 14.155,
+      "strictWaterSupportRadius": 20.155,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.155
+    },
+    {
+      "point": [
+        938.9953,
+        557.1445
+      ],
+      "clearance": 25.5527,
+      "sourcePaintBodyRadius": 13.5527,
+      "strictWaterSupportRadius": 19.5527,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.5527
+    },
+    {
+      "point": [
+        939.9474,
+        558.2109
+      ],
+      "clearance": 25.0296,
+      "sourcePaintBodyRadius": 13.0296,
+      "strictWaterSupportRadius": 19.0296,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.0296
+    },
+    {
+      "point": [
+        940.9281,
+        559.2773
+      ],
+      "clearance": 24.5936,
+      "sourcePaintBodyRadius": 12.5936,
+      "strictWaterSupportRadius": 18.5936,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.5936
+    },
+    {
+      "point": [
+        941.9361,
+        560.3438
+      ],
+      "clearance": 24.2521,
+      "sourcePaintBodyRadius": 12.2521,
+      "strictWaterSupportRadius": 18.2521,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.2521
+    },
+    {
+      "point": [
+        942.9701,
+        561.4102
+      ],
+      "clearance": 24.0117,
+      "sourcePaintBodyRadius": 12.0117,
+      "strictWaterSupportRadius": 18.0117,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.0117
+    },
+    {
+      "point": [
+        944.0285,
+        562.4766
+      ],
+      "clearance": 23.8778,
+      "sourcePaintBodyRadius": 11.8778,
+      "strictWaterSupportRadius": 17.8778,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.8778
+    },
+    {
+      "point": [
+        945.1101,
+        563.543
+      ],
+      "clearance": 23.8546,
+      "sourcePaintBodyRadius": 11.8546,
+      "strictWaterSupportRadius": 17.8546,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.8546
+    },
+    {
+      "point": [
+        946.2134,
+        564.6094
+      ],
+      "clearance": 23.9444,
+      "sourcePaintBodyRadius": 11.9444,
+      "strictWaterSupportRadius": 17.9444,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.9444
+    },
+    {
+      "point": [
+        947.3371,
+        565.6758
+      ],
+      "clearance": 24.1479,
+      "sourcePaintBodyRadius": 12.1479,
+      "strictWaterSupportRadius": 18.1479,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.1479
+    },
+    {
+      "point": [
+        948.4797,
+        566.7422
+      ],
+      "clearance": 24.4639,
+      "sourcePaintBodyRadius": 12.4639,
+      "strictWaterSupportRadius": 18.4639,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.4639
+    },
+    {
+      "point": [
+        949.6399,
+        567.8086
+      ],
+      "clearance": 24.8894,
+      "sourcePaintBodyRadius": 12.8894,
+      "strictWaterSupportRadius": 18.8894,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.8894
+    },
+    {
+      "point": [
+        950.8163,
+        568.875
+      ],
+      "clearance": 25.4202,
+      "sourcePaintBodyRadius": 13.4202,
+      "strictWaterSupportRadius": 19.4202,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.4202
+    },
+    {
+      "point": [
+        952.0075,
+        569.9414
+      ],
+      "clearance": 26.0508,
+      "sourcePaintBodyRadius": 14.0508,
+      "strictWaterSupportRadius": 20.0508,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.0508
+    },
+    {
+      "point": [
+        953.2121,
+        571.0078
+      ],
+      "clearance": 26.7747,
+      "sourcePaintBodyRadius": 14.7747,
+      "strictWaterSupportRadius": 20.7747,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.7747
+    },
+    {
+      "point": [
+        954.4287,
+        572.0742
+      ],
+      "clearance": 27.585,
+      "sourcePaintBodyRadius": 15.585,
+      "strictWaterSupportRadius": 21.585,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.585
+    },
+    {
+      "point": [
+        955.656,
+        573.1406
+      ],
+      "clearance": 28.4746,
+      "sourcePaintBodyRadius": 16.4746,
+      "strictWaterSupportRadius": 22.4746,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.4746
+    },
+    {
+      "point": [
+        956.8925,
+        574.207
+      ],
+      "clearance": 29.4363,
+      "sourcePaintBodyRadius": 17.4363,
+      "strictWaterSupportRadius": 23.4363,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.4363
+    },
+    {
+      "point": [
+        958.1369,
+        575.2734
+      ],
+      "clearance": 30.463,
+      "sourcePaintBodyRadius": 18.3757,
+      "strictWaterSupportRadius": 24.3757,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.3757
+    },
+    {
+      "point": [
+        959.3877,
+        576.3398
+      ],
+      "clearance": 31.5478,
+      "sourcePaintBodyRadius": 19.0416,
+      "strictWaterSupportRadius": 25.0416,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.0416
+    },
+    {
+      "point": [
+        960.6436,
+        577.4062
+      ],
+      "clearance": 32.6845,
+      "sourcePaintBodyRadius": 19.6366,
+      "strictWaterSupportRadius": 25.6366,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.6366
+    },
+    {
+      "point": [
+        961.9033,
+        578.4727
+      ],
+      "clearance": 33.8668,
+      "sourcePaintBodyRadius": 20.1604,
+      "strictWaterSupportRadius": 26.1604,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.1604
+    },
+    {
+      "point": [
+        963.1652,
+        579.5391
+      ],
+      "clearance": 33.7342,
+      "sourcePaintBodyRadius": 20.6135,
+      "strictWaterSupportRadius": 26.6135,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6135
+    },
+    {
+      "point": [
+        964.4281,
+        580.6055
+      ],
+      "clearance": 33.5146,
+      "sourcePaintBodyRadius": 20.9969,
+      "strictWaterSupportRadius": 26.9969,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.9969
+    },
+    {
+      "point": [
+        965.6905,
+        581.6719
+      ],
+      "clearance": 33.3758,
+      "sourcePaintBodyRadius": 21.3122,
+      "strictWaterSupportRadius": 27.3122,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3122
+    },
+    {
+      "point": [
+        966.9511,
+        582.7383
+      ],
+      "clearance": 33.3197,
+      "sourcePaintBodyRadius": 21.3197,
+      "strictWaterSupportRadius": 27.3197,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3197
+    },
+    {
+      "point": [
+        968.2084,
+        583.8047
+      ],
+      "clearance": 33.3473,
+      "sourcePaintBodyRadius": 21.3473,
+      "strictWaterSupportRadius": 27.3473,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3473
+    },
+    {
+      "point": [
+        969.4611,
+        584.8711
+      ],
+      "clearance": 33.4589,
+      "sourcePaintBodyRadius": 21.4589,
+      "strictWaterSupportRadius": 27.4589,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.4589
+    },
+    {
+      "point": [
+        970.7078,
+        585.9375
+      ],
+      "clearance": 33.6539,
+      "sourcePaintBodyRadius": 21.6539,
+      "strictWaterSupportRadius": 27.6539,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6539
+    },
+    {
+      "point": [
+        971.9471,
+        587.0039
+      ],
+      "clearance": 33.9309,
+      "sourcePaintBodyRadius": 21.7351,
+      "strictWaterSupportRadius": 27.7351,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7351
+    },
+    {
+      "point": [
+        973.1776,
+        588.0703
+      ],
+      "clearance": 34.2876,
+      "sourcePaintBodyRadius": 21.7919,
+      "strictWaterSupportRadius": 27.7919,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7919
+    },
+    {
+      "point": [
+        974.3979,
+        589.1367
+      ],
+      "clearance": 34.7213,
+      "sourcePaintBodyRadius": 21.8537,
+      "strictWaterSupportRadius": 27.8537,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8537
+    },
+    {
+      "point": [
+        975.6067,
+        590.2031
+      ],
+      "clearance": 35.2286,
+      "sourcePaintBodyRadius": 21.9131,
+      "strictWaterSupportRadius": 27.9131,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9131
+    },
+    {
+      "point": [
+        976.8025,
+        591.2695
+      ],
+      "clearance": 35.7984,
+      "sourcePaintBodyRadius": 21.9623,
+      "strictWaterSupportRadius": 27.9623,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9623
+    },
+    {
+      "point": [
+        977.984,
+        592.3359
+      ],
+      "clearance": 36.3817,
+      "sourcePaintBodyRadius": 21.9937,
+      "strictWaterSupportRadius": 27.9937,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9937
+    },
+    {
+      "point": [
+        979.1497,
+        593.4023
+      ],
+      "clearance": 36.9706,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        980.2984,
+        594.4688
+      ],
+      "clearance": 37.5654,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        981.4285,
+        595.5352
+      ],
+      "clearance": 38.1667,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        982.5387,
+        596.6016
+      ],
+      "clearance": 38.7751,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        983.6277,
+        597.668
+      ],
+      "clearance": 39.3909,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        984.694,
+        598.7344
+      ],
+      "clearance": 40.0146,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        985.7363,
+        599.8008
+      ],
+      "clearance": 40.6469,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        986.7531,
+        600.8672
+      ],
+      "clearance": 41.288,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        987.7431,
+        601.9336
+      ],
+      "clearance": 41.9386,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.7049,
+        603.0
+      ],
+      "clearance": 42.5991,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        989.6667,
+        604.0664
+      ],
+      "clearance": 41.9386,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        990.6567,
+        605.1328
+      ],
+      "clearance": 41.288,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        991.6735,
+        606.1992
+      ],
+      "clearance": 40.6469,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        992.7158,
+        607.2656
+      ],
+      "clearance": 40.0146,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        993.7821,
+        608.332
+      ],
+      "clearance": 39.3909,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        994.871,
+        609.3984
+      ],
+      "clearance": 38.7751,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        995.9813,
+        610.4648
+      ],
+      "clearance": 38.1667,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        997.1114,
+        611.5312
+      ],
+      "clearance": 37.5654,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        998.2601,
+        612.5977
+      ],
+      "clearance": 36.9706,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        999.4258,
+        613.6641
+      ],
+      "clearance": 36.3817,
+      "sourcePaintBodyRadius": 21.9937,
+      "strictWaterSupportRadius": 27.9937,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9937
+    },
+    {
+      "point": [
+        1000.6073,
+        614.7305
+      ],
+      "clearance": 35.7984,
+      "sourcePaintBodyRadius": 21.9623,
+      "strictWaterSupportRadius": 27.9623,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9623
+    },
+    {
+      "point": [
+        1001.8031,
+        615.7969
+      ],
+      "clearance": 35.2286,
+      "sourcePaintBodyRadius": 21.9131,
+      "strictWaterSupportRadius": 27.9131,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9131
+    },
+    {
+      "point": [
+        1003.0119,
+        616.8633
+      ],
+      "clearance": 34.7213,
+      "sourcePaintBodyRadius": 21.8537,
+      "strictWaterSupportRadius": 27.8537,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8537
+    },
+    {
+      "point": [
+        1004.2322,
+        617.9297
+      ],
+      "clearance": 34.2876,
+      "sourcePaintBodyRadius": 21.7919,
+      "strictWaterSupportRadius": 27.7919,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7919
+    },
+    {
+      "point": [
+        1005.4627,
+        618.9961
+      ],
+      "clearance": 33.9309,
+      "sourcePaintBodyRadius": 21.7351,
+      "strictWaterSupportRadius": 27.7351,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7351
+    },
+    {
+      "point": [
+        1006.702,
+        620.0625
+      ],
+      "clearance": 33.6539,
+      "sourcePaintBodyRadius": 21.6539,
+      "strictWaterSupportRadius": 27.6539,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6539
+    },
+    {
+      "point": [
+        1007.9487,
+        621.1289
+      ],
+      "clearance": 33.4589,
+      "sourcePaintBodyRadius": 21.4589,
+      "strictWaterSupportRadius": 27.4589,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.4589
+    },
+    {
+      "point": [
+        1009.2014,
+        622.1953
+      ],
+      "clearance": 33.3473,
+      "sourcePaintBodyRadius": 21.3473,
+      "strictWaterSupportRadius": 27.3473,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3473
+    },
+    {
+      "point": [
+        1010.4587,
+        623.2617
+      ],
+      "clearance": 33.3196,
+      "sourcePaintBodyRadius": 21.3196,
+      "strictWaterSupportRadius": 27.3196,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3196
+    },
+    {
+      "point": [
+        1011.7193,
+        624.3281
+      ],
+      "clearance": 33.3757,
+      "sourcePaintBodyRadius": 21.3122,
+      "strictWaterSupportRadius": 27.3122,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3122
+    },
+    {
+      "point": [
+        1012.9817,
+        625.3945
+      ],
+      "clearance": 33.5145,
+      "sourcePaintBodyRadius": 20.9969,
+      "strictWaterSupportRadius": 26.9969,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.9969
+    },
+    {
+      "point": [
+        1014.2446,
+        626.4609
+      ],
+      "clearance": 33.7342,
+      "sourcePaintBodyRadius": 20.6135,
+      "strictWaterSupportRadius": 26.6135,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6135
+    },
+    {
+      "point": [
+        1015.5065,
+        627.5273
+      ],
+      "clearance": 33.8668,
+      "sourcePaintBodyRadius": 20.1604,
+      "strictWaterSupportRadius": 26.1604,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.1604
+    },
+    {
+      "point": [
+        1016.7661,
+        628.5938
+      ],
+      "clearance": 32.6845,
+      "sourcePaintBodyRadius": 19.6366,
+      "strictWaterSupportRadius": 25.6366,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.6366
+    },
+    {
+      "point": [
+        1018.0221,
+        629.6602
+      ],
+      "clearance": 31.5478,
+      "sourcePaintBodyRadius": 19.0416,
+      "strictWaterSupportRadius": 25.0416,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.0416
+    },
+    {
+      "point": [
+        1019.2729,
+        630.7266
+      ],
+      "clearance": 30.463,
+      "sourcePaintBodyRadius": 18.3757,
+      "strictWaterSupportRadius": 24.3757,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.3757
+    },
+    {
+      "point": [
+        1020.5173,
+        631.793
+      ],
+      "clearance": 29.4363,
+      "sourcePaintBodyRadius": 17.4363,
+      "strictWaterSupportRadius": 23.4363,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.4363
+    },
+    {
+      "point": [
+        1021.7538,
+        632.8594
+      ],
+      "clearance": 28.4746,
+      "sourcePaintBodyRadius": 16.4746,
+      "strictWaterSupportRadius": 22.4746,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.4746
+    },
+    {
+      "point": [
+        1022.9811,
+        633.9258
+      ],
+      "clearance": 27.585,
+      "sourcePaintBodyRadius": 15.585,
+      "strictWaterSupportRadius": 21.585,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.585
+    },
+    {
+      "point": [
+        1024.1977,
+        634.9922
+      ],
+      "clearance": 26.7747,
+      "sourcePaintBodyRadius": 14.7747,
+      "strictWaterSupportRadius": 20.7747,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.7747
+    },
+    {
+      "point": [
+        1025.4023,
+        636.0586
+      ],
+      "clearance": 26.0508,
+      "sourcePaintBodyRadius": 14.0508,
+      "strictWaterSupportRadius": 20.0508,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.0508
+    },
+    {
+      "point": [
+        1026.5935,
+        637.125
+      ],
+      "clearance": 25.4202,
+      "sourcePaintBodyRadius": 13.4202,
+      "strictWaterSupportRadius": 19.4202,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.4202
+    },
+    {
+      "point": [
+        1027.7699,
+        638.1914
+      ],
+      "clearance": 24.8894,
+      "sourcePaintBodyRadius": 12.8894,
+      "strictWaterSupportRadius": 18.8894,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.8894
+    },
+    {
+      "point": [
+        1028.9301,
+        639.2578
+      ],
+      "clearance": 24.4639,
+      "sourcePaintBodyRadius": 12.4639,
+      "strictWaterSupportRadius": 18.4639,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.4639
+    },
+    {
+      "point": [
+        1030.0727,
+        640.3242
+      ],
+      "clearance": 24.1479,
+      "sourcePaintBodyRadius": 12.1479,
+      "strictWaterSupportRadius": 18.1479,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.1479
+    },
+    {
+      "point": [
+        1031.1964,
+        641.3906
+      ],
+      "clearance": 23.9444,
+      "sourcePaintBodyRadius": 11.9444,
+      "strictWaterSupportRadius": 17.9444,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.9444
+    },
+    {
+      "point": [
+        1032.2997,
+        642.457
+      ],
+      "clearance": 23.8546,
+      "sourcePaintBodyRadius": 11.8546,
+      "strictWaterSupportRadius": 17.8546,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.8546
+    },
+    {
+      "point": [
+        1033.3813,
+        643.5234
+      ],
+      "clearance": 23.8778,
+      "sourcePaintBodyRadius": 11.8778,
+      "strictWaterSupportRadius": 17.8778,
+      "dryArtRadiusBefore12pxBoundaryGuard": 31.8778
+    },
+    {
+      "point": [
+        1034.4397,
+        644.5898
+      ],
+      "clearance": 24.0117,
+      "sourcePaintBodyRadius": 12.0117,
+      "strictWaterSupportRadius": 18.0117,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.0117
+    },
+    {
+      "point": [
+        1035.4737,
+        645.6562
+      ],
+      "clearance": 24.2521,
+      "sourcePaintBodyRadius": 12.2521,
+      "strictWaterSupportRadius": 18.2521,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.2521
+    },
+    {
+      "point": [
+        1036.4817,
+        646.7227
+      ],
+      "clearance": 24.5936,
+      "sourcePaintBodyRadius": 12.5936,
+      "strictWaterSupportRadius": 18.5936,
+      "dryArtRadiusBefore12pxBoundaryGuard": 32.5936
+    },
+    {
+      "point": [
+        1037.4624,
+        647.7891
+      ],
+      "clearance": 25.0296,
+      "sourcePaintBodyRadius": 13.0296,
+      "strictWaterSupportRadius": 19.0296,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.0296
+    },
+    {
+      "point": [
+        1038.4145,
+        648.8555
+      ],
+      "clearance": 25.5527,
+      "sourcePaintBodyRadius": 13.5527,
+      "strictWaterSupportRadius": 19.5527,
+      "dryArtRadiusBefore12pxBoundaryGuard": 33.5527
+    },
+    {
+      "point": [
+        1039.3365,
+        649.9219
+      ],
+      "clearance": 26.155,
+      "sourcePaintBodyRadius": 14.155,
+      "strictWaterSupportRadius": 20.155,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.155
+    },
+    {
+      "point": [
+        1040.2271,
+        650.9883
+      ],
+      "clearance": 26.8263,
+      "sourcePaintBodyRadius": 14.8263,
+      "strictWaterSupportRadius": 20.8263,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.8263
+    },
+    {
+      "point": [
+        1041.0848,
+        652.0547
+      ],
+      "clearance": 27.5234,
+      "sourcePaintBodyRadius": 15.5234,
+      "strictWaterSupportRadius": 21.5234,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.5234
+    },
+    {
+      "point": [
+        1041.9083,
+        653.1211
+      ],
+      "clearance": 28.2325,
+      "sourcePaintBodyRadius": 16.2325,
+      "strictWaterSupportRadius": 22.2325,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.2325
+    },
+    {
+      "point": [
+        1042.6962,
+        654.1875
+      ],
+      "clearance": 28.9541,
+      "sourcePaintBodyRadius": 16.9541,
+      "strictWaterSupportRadius": 22.9541,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.9541
+    },
+    {
+      "point": [
+        1043.447,
+        655.2539
+      ],
+      "clearance": 29.6887,
+      "sourcePaintBodyRadius": 17.6887,
+      "strictWaterSupportRadius": 23.6887,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.6887
+    },
+    {
+      "point": [
+        1044.1595,
+        656.3203
+      ],
+      "clearance": 30.4367,
+      "sourcePaintBodyRadius": 18.4367,
+      "strictWaterSupportRadius": 24.4367,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.4367
+    },
+    {
+      "point": [
+        1044.8323,
+        657.3867
+      ],
+      "clearance": 31.1988,
+      "sourcePaintBodyRadius": 19.1227,
+      "strictWaterSupportRadius": 25.1227,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.1227
+    },
+    {
+      "point": [
+        1045.4638,
+        658.4531
+      ],
+      "clearance": 31.9753,
+      "sourcePaintBodyRadius": 19.7115,
+      "strictWaterSupportRadius": 25.7115,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.7115
+    },
+    {
+      "point": [
+        1046.0528,
+        659.5195
+      ],
+      "clearance": 32.7668,
+      "sourcePaintBodyRadius": 20.2358,
+      "strictWaterSupportRadius": 26.2358,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.2358
+    },
+    {
+      "point": [
+        1046.5979,
+        660.5859
+      ],
+      "clearance": 33.5737,
+      "sourcePaintBodyRadius": 20.6945,
+      "strictWaterSupportRadius": 26.6945,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6945
+    },
+    {
+      "point": [
+        1047.0976,
+        661.6523
+      ],
+      "clearance": 34.3965,
+      "sourcePaintBodyRadius": 21.0865,
+      "strictWaterSupportRadius": 27.0865,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.0865
+    },
+    {
+      "point": [
+        1047.5506,
+        662.7188
+      ],
+      "clearance": 35.2358,
+      "sourcePaintBodyRadius": 21.4104,
+      "strictWaterSupportRadius": 27.4104,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.4104
+    },
+    {
+      "point": [
+        1047.9556,
+        663.7852
+      ],
+      "clearance": 36.0919,
+      "sourcePaintBodyRadius": 21.6651,
+      "strictWaterSupportRadius": 27.6651,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.6651
+    },
+    {
+      "point": [
+        1048.311,
+        664.8516
+      ],
+      "clearance": 36.9654,
+      "sourcePaintBodyRadius": 21.8491,
+      "strictWaterSupportRadius": 27.8491,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.8491
+    },
+    {
+      "point": [
+        1048.6156,
+        665.918
+      ],
+      "clearance": 37.8569,
+      "sourcePaintBodyRadius": 21.9612,
+      "strictWaterSupportRadius": 27.9612,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9612
+    },
+    {
+      "point": [
+        1048.8679,
+        666.9844
+      ],
+      "clearance": 38.7666,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1049.0665,
+        668.0508
+      ],
+      "clearance": 39.6952,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1049.2101,
+        669.1172
+      ],
+      "clearance": 40.6432,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1049.2973,
+        670.1836
+      ],
+      "clearance": 41.611,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1049.3267,
+        671.25
+      ],
+      "clearance": 42.5991,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1049.2869,
+        672.3161
+      ],
+      "clearance": 41.6149,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1049.169,
+        673.3817
+      ],
+      "clearance": 40.6586,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1048.9755,
+        674.4469
+      ],
+      "clearance": 39.7294,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1048.7087,
+        675.5115
+      ],
+      "clearance": 38.8264,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1048.371,
+        676.5757
+      ],
+      "clearance": 37.9487,
+      "sourcePaintBodyRadius": 21.9918,
+      "strictWaterSupportRadius": 27.9918,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9918
+    },
+    {
+      "point": [
+        1047.9649,
+        677.6395
+      ],
+      "clearance": 37.0955,
+      "sourcePaintBodyRadius": 21.916,
+      "strictWaterSupportRadius": 27.916,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.916
+    },
+    {
+      "point": [
+        1047.4925,
+        678.7029
+      ],
+      "clearance": 36.2658,
+      "sourcePaintBodyRadius": 21.7743,
+      "strictWaterSupportRadius": 27.7743,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7743
+    },
+    {
+      "point": [
+        1046.9565,
+        679.7659
+      ],
+      "clearance": 35.4589,
+      "sourcePaintBodyRadius": 21.5685,
+      "strictWaterSupportRadius": 27.5685,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.5685
+    },
+    {
+      "point": [
+        1046.3591,
+        680.8285
+      ],
+      "clearance": 34.6739,
+      "sourcePaintBodyRadius": 21.3,
+      "strictWaterSupportRadius": 27.3,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3
+    },
+    {
+      "point": [
+        1045.7027,
+        681.8909
+      ],
+      "clearance": 33.9099,
+      "sourcePaintBodyRadius": 20.9705,
+      "strictWaterSupportRadius": 26.9705,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.9705
+    },
+    {
+      "point": [
+        1044.9897,
+        682.9529
+      ],
+      "clearance": 33.1661,
+      "sourcePaintBodyRadius": 20.5813,
+      "strictWaterSupportRadius": 26.5813,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.5813
+    },
+    {
+      "point": [
+        1044.2224,
+        684.0147
+      ],
+      "clearance": 32.4416,
+      "sourcePaintBodyRadius": 20.1339,
+      "strictWaterSupportRadius": 26.1339,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.1339
+    },
+    {
+      "point": [
+        1043.4034,
+        685.0763
+      ],
+      "clearance": 31.7355,
+      "sourcePaintBodyRadius": 19.6304,
+      "strictWaterSupportRadius": 25.6304,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.6304
+    },
+    {
+      "point": [
+        1042.5349,
+        686.1376
+      ],
+      "clearance": 31.0469,
+      "sourcePaintBodyRadius": 19.0469,
+      "strictWaterSupportRadius": 25.0469,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.0469
+    },
+    {
+      "point": [
+        1041.6193,
+        687.1988
+      ],
+      "clearance": 30.3751,
+      "sourcePaintBodyRadius": 18.3751,
+      "strictWaterSupportRadius": 24.3751,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.3751
+    },
+    {
+      "point": [
+        1040.6591,
+        688.2598
+      ],
+      "clearance": 29.7192,
+      "sourcePaintBodyRadius": 17.7192,
+      "strictWaterSupportRadius": 23.7192,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.7192
+    },
+    {
+      "point": [
+        1039.6565,
+        689.3206
+      ],
+      "clearance": 29.0782,
+      "sourcePaintBodyRadius": 17.0782,
+      "strictWaterSupportRadius": 23.0782,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.0782
+    },
+    {
+      "point": [
+        1038.614,
+        690.3814
+      ],
+      "clearance": 28.4617,
+      "sourcePaintBodyRadius": 16.4617,
+      "strictWaterSupportRadius": 22.4617,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.4617
+    },
+    {
+      "point": [
+        1037.534,
+        691.442
+      ],
+      "clearance": 27.9206,
+      "sourcePaintBodyRadius": 15.9206,
+      "strictWaterSupportRadius": 21.9206,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.9206
+    },
+    {
+      "point": [
+        1036.4188,
+        692.5026
+      ],
+      "clearance": 27.4691,
+      "sourcePaintBodyRadius": 15.4691,
+      "strictWaterSupportRadius": 21.4691,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.4691
+    },
+    {
+      "point": [
+        1035.2708,
+        693.5632
+      ],
+      "clearance": 27.1145,
+      "sourcePaintBodyRadius": 15.1145,
+      "strictWaterSupportRadius": 21.1145,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.1145
+    },
+    {
+      "point": [
+        1034.0924,
+        694.6237
+      ],
+      "clearance": 26.8636,
+      "sourcePaintBodyRadius": 14.8636,
+      "strictWaterSupportRadius": 20.8636,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.8636
+    },
+    {
+      "point": [
+        1032.8861,
+        695.6843
+      ],
+      "clearance": 26.7219,
+      "sourcePaintBodyRadius": 14.7219,
+      "strictWaterSupportRadius": 20.7219,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.7219
+    },
+    {
+      "point": [
+        1031.6541,
+        696.7449
+      ],
+      "clearance": 26.6932,
+      "sourcePaintBodyRadius": 14.6932,
+      "strictWaterSupportRadius": 20.6932,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.6932
+    },
+    {
+      "point": [
+        1030.3988,
+        697.8056
+      ],
+      "clearance": 26.7798,
+      "sourcePaintBodyRadius": 14.7798,
+      "strictWaterSupportRadius": 20.7798,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.7798
+    },
+    {
+      "point": [
+        1029.1227,
+        698.8663
+      ],
+      "clearance": 26.982,
+      "sourcePaintBodyRadius": 14.982,
+      "strictWaterSupportRadius": 20.982,
+      "dryArtRadiusBefore12pxBoundaryGuard": 34.982
+    },
+    {
+      "point": [
+        1027.8281,
+        699.9272
+      ],
+      "clearance": 27.2983,
+      "sourcePaintBodyRadius": 15.2983,
+      "strictWaterSupportRadius": 21.2983,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.2983
+    },
+    {
+      "point": [
+        1026.5174,
+        700.9883
+      ],
+      "clearance": 27.7254,
+      "sourcePaintBodyRadius": 15.7254,
+      "strictWaterSupportRadius": 21.7254,
+      "dryArtRadiusBefore12pxBoundaryGuard": 35.7254
+    },
+    {
+      "point": [
+        1025.193,
+        702.0495
+      ],
+      "clearance": 28.2585,
+      "sourcePaintBodyRadius": 16.2585,
+      "strictWaterSupportRadius": 22.2585,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.2585
+    },
+    {
+      "point": [
+        1023.8572,
+        703.1109
+      ],
+      "clearance": 28.8915,
+      "sourcePaintBodyRadius": 16.8915,
+      "strictWaterSupportRadius": 22.8915,
+      "dryArtRadiusBefore12pxBoundaryGuard": 36.8915
+    },
+    {
+      "point": [
+        1022.5125,
+        704.1725
+      ],
+      "clearance": 29.6175,
+      "sourcePaintBodyRadius": 17.6171,
+      "strictWaterSupportRadius": 23.6171,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.6171
+    },
+    {
+      "point": [
+        1021.1612,
+        705.2344
+      ],
+      "clearance": 30.4287,
+      "sourcePaintBodyRadius": 17.9418,
+      "strictWaterSupportRadius": 23.9418,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.9418
+    },
+    {
+      "point": [
+        1019.8057,
+        706.2965
+      ],
+      "clearance": 31.3171,
+      "sourcePaintBodyRadius": 18.1917,
+      "strictWaterSupportRadius": 24.1917,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.1917
+    },
+    {
+      "point": [
+        1018.4484,
+        707.359
+      ],
+      "clearance": 32.2747,
+      "sourcePaintBodyRadius": 18.3656,
+      "strictWaterSupportRadius": 24.3656,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.3656
+    },
+    {
+      "point": [
+        1017.0917,
+        708.4218
+      ],
+      "clearance": 31.8402,
+      "sourcePaintBodyRadius": 18.4633,
+      "strictWaterSupportRadius": 24.4633,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.4633
+    },
+    {
+      "point": [
+        1015.738,
+        709.4849
+      ],
+      "clearance": 31.154,
+      "sourcePaintBodyRadius": 18.4852,
+      "strictWaterSupportRadius": 24.4852,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.4852
+    },
+    {
+      "point": [
+        1014.3896,
+        710.5484
+      ],
+      "clearance": 30.5541,
+      "sourcePaintBodyRadius": 18.4329,
+      "strictWaterSupportRadius": 24.4329,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.4329
+    },
+    {
+      "point": [
+        1013.0489,
+        711.6123
+      ],
+      "clearance": 30.047,
+      "sourcePaintBodyRadius": 18.047,
+      "strictWaterSupportRadius": 24.047,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.047
+    },
+    {
+      "point": [
+        1011.7183,
+        712.6767
+      ],
+      "clearance": 29.6384,
+      "sourcePaintBodyRadius": 17.6384,
+      "strictWaterSupportRadius": 23.6384,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.6384
+    },
+    {
+      "point": [
+        1010.4002,
+        713.7415
+      ],
+      "clearance": 29.3327,
+      "sourcePaintBodyRadius": 17.3327,
+      "strictWaterSupportRadius": 23.3327,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.3327
+    },
+    {
+      "point": [
+        1009.0969,
+        714.8067
+      ],
+      "clearance": 29.1334,
+      "sourcePaintBodyRadius": 17.1334,
+      "strictWaterSupportRadius": 23.1334,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.1334
+    },
+    {
+      "point": [
+        1007.8109,
+        715.8725
+      ],
+      "clearance": 29.0422,
+      "sourcePaintBodyRadius": 17.0422,
+      "strictWaterSupportRadius": 23.0422,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.0422
+    },
+    {
+      "point": [
+        1006.5446,
+        716.9388
+      ],
+      "clearance": 29.0593,
+      "sourcePaintBodyRadius": 17.0593,
+      "strictWaterSupportRadius": 23.0593,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.0593
+    },
+    {
+      "point": [
+        1005.3002,
+        718.0057
+      ],
+      "clearance": 29.1835,
+      "sourcePaintBodyRadius": 17.1835,
+      "strictWaterSupportRadius": 23.1835,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.1835
+    },
+    {
+      "point": [
+        1004.0803,
+        719.0732
+      ],
+      "clearance": 29.412,
+      "sourcePaintBodyRadius": 17.412,
+      "strictWaterSupportRadius": 23.412,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.412
+    },
+    {
+      "point": [
+        1002.8871,
+        720.1412
+      ],
+      "clearance": 29.7405,
+      "sourcePaintBodyRadius": 17.7405,
+      "strictWaterSupportRadius": 23.7405,
+      "dryArtRadiusBefore12pxBoundaryGuard": 37.7405
+    },
+    {
+      "point": [
+        1001.7231,
+        721.2099
+      ],
+      "clearance": 30.1638,
+      "sourcePaintBodyRadius": 18.1638,
+      "strictWaterSupportRadius": 24.1638,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.1638
+    },
+    {
+      "point": [
+        1000.5906,
+        722.2793
+      ],
+      "clearance": 30.6756,
+      "sourcePaintBodyRadius": 18.6756,
+      "strictWaterSupportRadius": 24.6756,
+      "dryArtRadiusBefore12pxBoundaryGuard": 38.6756
+    },
+    {
+      "point": [
+        999.4921,
+        723.3493
+      ],
+      "clearance": 31.2682,
+      "sourcePaintBodyRadius": 19.2682,
+      "strictWaterSupportRadius": 25.2682,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.2682
+    },
+    {
+      "point": [
+        998.4299,
+        724.4201
+      ],
+      "clearance": 31.8975,
+      "sourcePaintBodyRadius": 19.8885,
+      "strictWaterSupportRadius": 25.8885,
+      "dryArtRadiusBefore12pxBoundaryGuard": 39.8885
+    },
+    {
+      "point": [
+        997.4063,
+        725.4916
+      ],
+      "clearance": 32.5411,
+      "sourcePaintBodyRadius": 20.3055,
+      "strictWaterSupportRadius": 26.3055,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.3055
+    },
+    {
+      "point": [
+        996.4239,
+        726.5639
+      ],
+      "clearance": 33.1998,
+      "sourcePaintBodyRadius": 20.6928,
+      "strictWaterSupportRadius": 26.6928,
+      "dryArtRadiusBefore12pxBoundaryGuard": 40.6928
+    },
+    {
+      "point": [
+        995.4848,
+        727.6369
+      ],
+      "clearance": 33.8745,
+      "sourcePaintBodyRadius": 21.0415,
+      "strictWaterSupportRadius": 27.0415,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.0415
+    },
+    {
+      "point": [
+        994.5917,
+        728.7108
+      ],
+      "clearance": 34.5661,
+      "sourcePaintBodyRadius": 21.3437,
+      "strictWaterSupportRadius": 27.3437,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.3437
+    },
+    {
+      "point": [
+        993.7467,
+        729.7855
+      ],
+      "clearance": 35.2754,
+      "sourcePaintBodyRadius": 21.5921,
+      "strictWaterSupportRadius": 27.5921,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.5921
+    },
+    {
+      "point": [
+        992.9523,
+        730.8611
+      ],
+      "clearance": 36.0033,
+      "sourcePaintBodyRadius": 21.7832,
+      "strictWaterSupportRadius": 27.7832,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.7832
+    },
+    {
+      "point": [
+        992.2109,
+        731.9376
+      ],
+      "clearance": 36.7506,
+      "sourcePaintBodyRadius": 21.9158,
+      "strictWaterSupportRadius": 27.9158,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9158
+    },
+    {
+      "point": [
+        991.5249,
+        733.0149
+      ],
+      "clearance": 37.5183,
+      "sourcePaintBodyRadius": 21.9886,
+      "strictWaterSupportRadius": 27.9886,
+      "dryArtRadiusBefore12pxBoundaryGuard": 41.9886
+    },
+    {
+      "point": [
+        990.8967,
+        734.0933
+      ],
+      "clearance": 38.3072,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        990.3285,
+        735.1726
+      ],
+      "clearance": 39.118,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        989.8229,
+        736.2529
+      ],
+      "clearance": 39.9518,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        989.3822,
+        737.3342
+      ],
+      "clearance": 40.8093,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        989.0087,
+        738.4166
+      ],
+      "clearance": 41.6915,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.7049,
+        739.5
+      ],
+      "clearance": 42.5991,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.4609,
+        740.593
+      ],
+      "clearance": 43.5367,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.2645,
+        741.7035
+      ],
+      "clearance": 44.5074,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.1144,
+        742.8306
+      ],
+      "clearance": 45.5099,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.0092,
+        743.9735
+      ],
+      "clearance": 46.543,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        987.9478,
+        745.1315
+      ],
+      "clearance": 47.6055,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        987.9287,
+        746.3035
+      ],
+      "clearance": 48.6961,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        987.9507,
+        747.4889
+      ],
+      "clearance": 49.8136,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.0124,
+        748.6868
+      ],
+      "clearance": 50.9568,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.1127,
+        749.8963
+      ],
+      "clearance": 52.1245,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.2502,
+        751.1166
+      ],
+      "clearance": 53.3153,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.4235,
+        752.3469
+      ],
+      "clearance": 54.5281,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.6315,
+        753.5864
+      ],
+      "clearance": 55.7616,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        988.8728,
+        754.8342
+      ],
+      "clearance": 57.0146,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        989.1461,
+        756.0895
+      ],
+      "clearance": 58.2859,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        989.4502,
+        757.3514
+      ],
+      "clearance": 59.5742,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        989.7836,
+        758.6191
+      ],
+      "clearance": 59.5431,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        990.1452,
+        759.8919
+      ],
+      "clearance": 59.1815,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        990.5336,
+        761.1688
+      ],
+      "clearance": 58.793,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        990.9476,
+        762.449
+      ],
+      "clearance": 58.3794,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        991.3858,
+        763.7317
+      ],
+      "clearance": 57.9598,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        991.8469,
+        765.0161
+      ],
+      "clearance": 57.5462,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        992.3297,
+        766.3013
+      ],
+      "clearance": 57.1407,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        992.8329,
+        767.5865
+      ],
+      "clearance": 56.7453,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        993.3551,
+        768.8708
+      ],
+      "clearance": 56.3618,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        993.8951,
+        770.1535
+      ],
+      "clearance": 55.9922,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        994.4516,
+        771.4337
+      ],
+      "clearance": 55.6383,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        995.0232,
+        772.7106
+      ],
+      "clearance": 55.3018,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        995.6087,
+        773.9832
+      ],
+      "clearance": 54.9845,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        996.2068,
+        775.2509
+      ],
+      "clearance": 54.6877,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        996.8162,
+        776.5128
+      ],
+      "clearance": 54.4131,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        997.4355,
+        777.7679
+      ],
+      "clearance": 54.1618,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        998.0636,
+        779.0156
+      ],
+      "clearance": 53.9351,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        998.699,
+        780.255
+      ],
+      "clearance": 53.7339,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        999.3406,
+        781.4852
+      ],
+      "clearance": 53.5593,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        999.987,
+        782.7053
+      ],
+      "clearance": 53.4118,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1000.6369,
+        783.9147
+      ],
+      "clearance": 53.2922,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1001.289,
+        785.1124
+      ],
+      "clearance": 53.2006,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1001.942,
+        786.2976
+      ],
+      "clearance": 53.1375,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1002.5947,
+        787.4695
+      ],
+      "clearance": 53.1027,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1003.2457,
+        788.6272
+      ],
+      "clearance": 53.0963,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1003.8937,
+        789.7699
+      ],
+      "clearance": 53.1178,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1004.5374,
+        790.8968
+      ],
+      "clearance": 53.1669,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1005.1756,
+        792.0071
+      ],
+      "clearance": 53.2428,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1005.807,
+        793.0998
+      ],
+      "clearance": 53.3449,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1006.4302,
+        794.1743
+      ],
+      "clearance": 53.4721,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1007.044,
+        795.2295
+      ],
+      "clearance": 53.6235,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1007.647,
+        796.2648
+      ],
+      "clearance": 53.7978,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1008.238,
+        797.2793
+      ],
+      "clearance": 53.9938,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1008.8156,
+        798.2721
+      ],
+      "clearance": 54.2101,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1009.3787,
+        799.2425
+      ],
+      "clearance": 54.4452,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1009.9258,
+        800.1895
+      ],
+      "clearance": 54.6976,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1010.4557,
+        801.1123
+      ],
+      "clearance": 54.9658,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1010.9671,
+        802.0102
+      ],
+      "clearance": 55.2479,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1011.4587,
+        802.8823
+      ],
+      "clearance": 55.5425,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1011.9291,
+        803.7277
+      ],
+      "clearance": 55.8478,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1012.3772,
+        804.5457
+      ],
+      "clearance": 56.1621,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1012.8016,
+        805.3353
+      ],
+      "clearance": 56.4838,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1013.201,
+        806.0958
+      ],
+      "clearance": 56.8112,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1013.5741,
+        806.8263
+      ],
+      "clearance": 57.1427,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1013.9196,
+        807.526
+      ],
+      "clearance": 57.4767,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1014.2363,
+        808.194
+      ],
+      "clearance": 57.8117,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1014.5227,
+        808.8296
+      ],
+      "clearance": 58.1461,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1014.7778,
+        809.4319
+      ],
+      "clearance": 58.4787,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    },
+    {
+      "point": [
+        1015,
+        810
+      ],
+      "clearance": 58.808,
+      "sourcePaintBodyRadius": 22,
+      "strictWaterSupportRadius": 28,
+      "dryArtRadiusBefore12pxBoundaryGuard": 42
+    }
+  ],
+  "status": "adaptive-water-and-dryshore-guide-passed-source-art-and-actual-game-review-pending"
+}

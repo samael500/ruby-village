@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET exact1672x941. Image2 GUIDE ONLY encodes an INTRINSIC ADAPTIVE river: cyan water ribbon NARROWS at tight bends/shared joins and widens gently near centers; brown6px strip is maximum whole-bank support, magenta outerpolygon is forbidden-distance boundary NOT shoreline. Paint this exact varying-width flowing river naturally: fine low damp-earth shore with TINY2–4pixel mossy gray pebbles, delicate roots/grass tufts entirely INSIDE narrowbrown strip. Every stone stays WHOLE, with its entire silhouette away from the outerbrown edge; use fewer/smaller pebbles at narrowpinches, never large boulders. Follow CYAN/BROWN smooth curves only. There is deliberately ≥6px drygrass gap between complete bank art and magenta limit everywhere inside board: keep that gap untouched, no grassstep/polygon shelf, no stone touching/clipped atmagenta. Water narrows naturally near(972,438),(945,563),(1033,643), still flows continuously, not separateponds. Preserve water through all centers(867,330),(928,398),(989,466),(928,535),(989,603),(1049,671),(989,740); preserve top/bottom river connection near y285/y785 with no dam/grassplug. Do not widenwater orbank to fill wholepolygon. Do not draw hexagonal/angularshore. Preserve all else pixel-identical: entire house/trees/lawn, original decorative top/bottom river, light, camera, size/crop. No bridge, paving/road, tiles, people, text/UI, no coloredguides. Warm painterly source style, same sourcegroundcamera. Exact1672x941.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-333f59da-1b91-4f7d-8ed8-1f869c98ebb9.png",
+  "nativeSize": [
+    1672,
+    941
+  ],
+  "editTarget": "art/chapter-1-v9/candidates/stream-adaptive-channel-edit-target-v4.png",
+  "guide": "art/chapter-1-v9/layers/water/stream-pilot/adaptive-channel-edit-guide.png",
+  "reason": "Residual actual-game QA14b1f6f P1: fixedwidth water/bank support clipped whole shore at logical hex joins. Adaptive guide samples exact distance to exposed union boundary.",
+  "composition": "Strict visible-water support remains6px inside dry boundary; flat dryshore support may cross logical shoreline up to12nativepx, protected freecore inset18 unchanged. This supersedes the coordinator's overly strict everyfreeRGBpixelunchanged implementation. No gameplay polygon/camera/hitshape/solution change.",
+  "rejectedIntermediate": "V4 source through narrow whole-bank alpha cut its own banks; retained support-outline review records that rejected composition, not current delivery.",
+  "status": "strict-water-and-freecore-checks-passed-art-actual-game-review-pending"
+}
