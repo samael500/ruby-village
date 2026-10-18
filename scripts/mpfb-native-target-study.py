@@ -13,7 +13,7 @@ if variant==2:
  targets.update({'eyes/l-eye-scale-incr':1.15,'eyes/r-eye-scale-incr':1.15,'eyes/l-eye-height1-incr':.65,'eyes/r-eye-height1-incr':.65,'nose/nose-scale-vert-decr':.55,'nose/nose-scale-depth-decr':.60,'nose/nose-scale-horiz-decr':.3,'mouth/mouth-angles-up':.85,'mouth/mouth-upperlip-middle-up':.20,'mouth/mouth-lowerlip-middle-down':.22})
 # Coordinator experiment: native topology targets only, no orbital warp.
 strength=float(os.environ.get('RUBY_MPFB_NATIVE_EYE','3'))
-targets.update({'eyes/l-eye-scale-incr':strength,'eyes/r-eye-scale-incr':strength,'eyes/l-eye-height1-incr':1.2,'eyes/r-eye-height1-incr':1.2,'cheek/l-cheek-volume-incr':.65,'cheek/r-cheek-volume-incr':.65,'nose/nose-scale-vert-decr':.8,'nose/nose-scale-depth-decr':.8,'mouth/mouth-angles-up':1.1,'mouth/mouth-scale-horiz-incr':.55,'nose/nose-scale-horiz-decr':.6,'mouth/mouth-scale-depth-decr':.45})
+targets.update({'eyes/l-eye-scale-incr':strength,'eyes/r-eye-scale-incr':strength,'eyes/l-eye-height1-incr':1.2,'eyes/r-eye-height1-incr':1.2,'cheek/l-cheek-volume-incr':.65,'cheek/r-cheek-volume-incr':.65,'nose/nose-scale-vert-decr':.8,'nose/nose-scale-depth-decr':.8,'mouth/mouth-angles-up':float(os.environ.get('RUBY_MPFB_SMILE','1.1')),'mouth/mouth-scale-horiz-incr':.55,'nose/nose-scale-horiz-decr':.6,'mouth/mouth-scale-depth-decr':.45})
 for name,value in targets.items():
  f=MPFB_SRC/'mpfb/data/targets'/(name+'.target.gz')
  if f.exists():
@@ -52,18 +52,43 @@ if variant==2:
  for side,sign in [('L',1),('R',-1)]:
   b=rig.pose.bones['oris03.'+side];b.location=b.bone.matrix_local.to_3x3().inverted()@Vector((sign*.002,0,.004))
 # Head-only anatomy frame; original hair source is optional framing reference, not new hair authoring.
-hair=add('hair/long01/long01.mhclo','Hair');hair.data.materials.clear();hair.data.materials.append(mat('Copper native cap reference only',(.42,.115,.025)))
+hair=add('hair/cortu_strawberry_cloud_hair/cortu_strawberry_cloud_hair.mhclo' if variant>=9 else 'hair/long01/long01.mhclo','Hair');hair.data.materials.clear();hair.data.materials.append(mat('Copper native cap reference only',(.42,.115,.025)))
 if variant>=8:
  # Preserve the native alpha-card scalp/strand edges rather than opaque helmet.
- hm=hair.data.materials[0];hn=hm.node_tree.nodes;hl=hm.node_tree.links;tex=hn.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(assets/'hair/long01/long01_diffuse.png'));ramp=hn.new('ShaderNodeValToRGB');ramp.color_ramp.elements[0].color=(.10,.018,.004,1);ramp.color_ramp.elements[1].color=(.94,.46,.12,1);ramp.color_ramp.elements[1].position=.36;middle=ramp.color_ramp.elements.new(.12);middle.color=(.48,.115,.022,1);hl.new(tex.outputs['Color'],ramp.inputs['Fac']);hl.new(ramp.outputs['Color'],hn.get('Principled BSDF').inputs['Base Color']);hl.new(tex.outputs['Alpha'],hn.get('Principled BSDF').inputs['Alpha'])
+ hm=hair.data.materials[0];hn=hm.node_tree.nodes;hl=hm.node_tree.links;tex=hn.new('ShaderNodeTexImage');tex.image=bpy.data.images.load(str(assets/('hair/cortu_strawberry_cloud_hair/strawberry_cloud_diff.png' if variant>=9 else 'hair/long01/long01_diffuse.png')));ramp=hn.new('ShaderNodeValToRGB');ramp.color_ramp.elements[0].color=(.10,.018,.004,1);ramp.color_ramp.elements[1].color=(.94,.46,.12,1);ramp.color_ramp.elements[1].position=.36;middle=ramp.color_ramp.elements.new(.12);middle.color=(.48,.115,.022,1);hl.new(tex.outputs['Color'],ramp.inputs['Fac']);hl.new(ramp.outputs['Color'],hn.get('Principled BSDF').inputs['Base Color']);hl.new(tex.outputs['Alpha'],hn.get('Principled BSDF').inputs['Alpha'])
  zmin=min(v.co.z for v in hair.data.vertices);zmax=max(v.co.z for v in hair.data.vertices);span=zmax-zmin
- for v in hair.data.vertices:
+ for v in ([] if variant>=9 else hair.data.vertices):
   x,y,z=v.co;t=max(0,min(1,(zmax-z)/span));weight=max(0,min(1,(t-.22)/.35));weight=weight*weight*(3-2*weight)
   v.co.x+=.020*weight*math.sin((z-zmin)*32+x*7)
   v.co.y+=.009*weight*math.sin((z-zmin)*36+x*10+.7)
  # Native upper lashes only: no doll-like lower false-lash fringe.
  import bmesh
  bm=bmesh.new();bm.from_mesh(lashes.data);cutoff=sum(v.co.z for v in eyes.data.vertices)/len(eyes.data.vertices);lower=[f for f in bm.faces if f.calc_center_median().z<cutoff];bmesh.ops.delete(bm,geom=lower,context='FACES');bm.to_mesh(lashes.data);bm.free()
+
+if variant>=12:
+ ramp.color_ramp.elements[0].color=(.08,.010,.002,1)
+ middle.color=(.32,.055,.008,1);middle.position=.35
+ ramp.color_ramp.elements[-1].color=(.65,.19,.025,1);ramp.color_ramp.elements[-1].position=.95
+
+# Study11: correct the fitted curly scalp clearance on its own native cards.
+# Keep low locks untouched; no second hairstyle or opaque shell.
+if variant>=11:
+ for v in hair.data.vertices:
+  w=max(0,min(1,(v.co.z-1.29)/.045));w=w*w*(3-2*w)
+  d=v.co-Vector((0,-.025,1.23))
+  if d.length:v.co+=d.normalized()*.010*w
+
+# Study10: original fitted native scalp underlay beneath the separate curly cards.
+# The CC0 curly asset exposes scalp at exaggerated child-head targets; preserve
+# its complete locks and add only the crown of the system native hair mesh.
+if variant==10:
+ cap=add('hair/long01/long01.mhclo','Hair');cap.name='Ruta native scalp underlay'
+ import bmesh
+ bm=bmesh.new();bm.from_mesh(cap.data);zmax=max(v.co.z for v in bm.verts)
+ bmesh.ops.delete(bm,geom=[f for f in bm.faces if f.calc_center_median().z<zmax-.10],context='FACES')
+ bm.to_mesh(cap.data);bm.free()
+ cm=mat('Copper scalp underlay',(.42,.115,.025));cap.data.materials.clear();cap.data.materials.append(cm)
+ cn=cm.node_tree.nodes;cl=cm.node_tree.links;t=cn.new('ShaderNodeTexImage');t.image=bpy.data.images.load(str(assets/'hair/long01/long01_diffuse.png'));r=cn.new('ShaderNodeValToRGB');r.color_ramp.elements[0].color=(.10,.018,.004,1);r.color_ramp.elements[1].color=(.70,.29,.065,1);r.color_ramp.elements[1].position=.36;cl.new(t.outputs['Color'],r.inputs['Fac']);cl.new(r.outputs['Color'],cn.get('Principled BSDF').inputs['Base Color']);cl.new(t.outputs['Alpha'],cn.get('Principled BSDF').inputs['Alpha'])
 
 scene=bpy.context.scene;scene.render.engine='CYCLES';scene.cycles.samples=12;scene.render.resolution_x=800;scene.render.resolution_y=800;scene.render.resolution_percentage=100;scene.render.film_transparent=True;scene.world.color=(.6,.6,.6);scene.view_settings.view_transform='AgX'
 def look(o,p):o.rotation_euler=(Vector(p)-o.location).to_track_quat('-Z','Y').to_euler()
@@ -75,4 +100,4 @@ for loc,power,size in [((-2,-3,4),130,3),((3,-1,2),50,3)]:
 records=[]
 for name,angle in [('front',0),('three-quarter',-.52),('profile',-math.pi/2)]:
  camera.location=center+Vector((math.sin(angle)*3,-math.cos(angle)*3,.15));look(camera,center);scene.render.filepath=str(OUT/(name+'.png'));bpy.ops.render.render(write_still=True);records.append({'name':name,'camera':list(camera.location),'orthoScale':camera.data.ortho_scale})
-bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-head.blend'));(OUT/'settings.json').write_text(json.dumps({'status':'native target exaggeration experiment; head-only, not approved likeness','productionEnabled':False,'macro':macro,'targets':targets,'macroBakedBeforeSculpt':True,'nativeVertexCount':len(h.data.vertices),'authorShapeKey':key.name,'rig':'default','nativeEyesFittedAfterSculpt':True,'headBone':[list(head.head_local),list(head.tail_local)],'views':records,'hair':'originalstraightreferenceonly-not-final'},indent=2)+'\n')
+bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-head.blend'));(OUT/'settings.json').write_text(json.dumps({'status':'native target exaggeration experiment; head-only, not approved likeness','productionEnabled':False,'macro':macro,'targets':targets,'macroBakedBeforeSculpt':True,'nativeVertexCount':len(h.data.vertices),'authorShapeKey':key.name,'rig':'default','nativeEyesFittedAfterSculpt':True,'headBone':[list(head.head_local),list(head.tail_local)],'views':records,'hair':'CC0 cortu strawberry cloud native fitted study' if variant>=9 else 'originalstraightreferenceonly-not-final'},indent=2)+'\n')
