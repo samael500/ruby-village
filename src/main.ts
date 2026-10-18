@@ -246,7 +246,7 @@ function gameScene(width:number,height:number){
  for(const actor of residentPlacements())focus.push({top:actor.feet.y-residents.characters[actor.id].sceneHeightPx,bottom:actor.feet.y+8});
  const assets=(paintedManifest.scenes as unknown as Record<string,{wide?:{canvas:{width:number;height:number};originalRect:{x:number;y:number}};narrativeFocus?:NarrativeBounds[]}>)[level.id];
  if(PRODUCTION_LAYOUT_VERSION>=2)focus.push(...(assets.narrativeFocus??[]));
- const wide=PRODUCTION_LAYOUT_VERSION>=2&&assets.wide?{...assets.wide.canvas,...assets.wide.originalRect}:undefined;
+ const wide=PRODUCTION_LAYOUT_VERSION>=2&&assets.wide?{...assets.wide.canvas,x:assets.wide.originalRect.x,y:assets.wide.originalRect.y}:undefined;
  return frameDialogueScene(scene,{width,height,fullHeight:height+dialogueReserve},focus,wide);
 }
 function renderBoard() {
