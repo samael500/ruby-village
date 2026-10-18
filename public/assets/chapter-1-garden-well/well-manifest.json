@@ -45,7 +45,7 @@
     "5,4": 251
   },
   "teacherProposedFeet": [
-    1225,
+    1320,
     405
   ],
   "teacherFullAlphaFreeOverlap": 0,
@@ -60,7 +60,7 @@
   "activation": "coordinator-only",
   "recommendedResidentFeet": {
     "teacher": [
-      1225,
+      1320,
       405
     ]
   },
@@ -115,5 +115,16 @@
     },
     "status": "source-candidate-awaiting-actual-game"
   },
-  "sourceBeforeJoin": "art/chapter-1-v9/garden-well/well-native-v1.png"
+  "sourceBeforeJoin": "art/chapter-1-v9/garden-well/well-native-v1.png",
+  "sourceOriginalProposedFeet": [
+    1225,
+    405
+  ],
+  "coordinatorPlacementCorrection": {
+    "commit": "4929ac6",
+    "reason": "old source proposal clears free ground but Ruta hides teacher at accepted goal; keep both actors visible",
+    "independentQa": "docs/chapter-1-rc/qa/well-arrival-8da5d6d/README.md",
+    "fullAlphaGroundWaterOverlap": 0,
+    "arrivalResultPairwiseAlphaOverlap": 0
+  }
 }
