@@ -1,7 +1,7 @@
 {
   "candidate": "well-native-v1",
-  "status": "native-pilot-awaiting-actual-game",
-  "source": "art/chapter-1-v9/garden-well/well-native-v1.png",
+  "status": "native-and-wide-awaiting-actual-game",
+  "source": "art/chapter-1-v9/garden-well/outpaint/well-native-painted-join-v1.png",
   "sourceWholeSize": [
     1593,
     987
@@ -56,7 +56,7 @@
     941
   ],
   "background": "well/background.webp",
-  "sourceSha256": "fec187b85a9f71c41025c866e5e8d89589b43c682cb7f56e58eed1686ac2a2e8",
+  "sourceSha256": "e3342e0aed29eb5514972ff518766eb03fdee0c1e9a70cf762ab922d87644400",
   "activation": "coordinator-only",
   "recommendedResidentFeet": {
     "teacher": [
@@ -65,5 +65,55 @@
     ]
   },
   "npcStatus": "native full-alpha0, actual game composition pending",
-  "mapMatched": "original tile-roof stone well and warm cottages retained; naturally shaped daisies/roses/lavender cover all14 flower-cell centers"
+  "mapMatched": "original tile-roof stone well and warm cottages retained; naturally shaped daisies/roses/lavender cover all14 flower-cell centers",
+  "wide": {
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    },
+    "file": "well/wide.webp",
+    "registration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "baseRegistration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "joinBand": 48,
+    "paintedSeam": {
+      "method": "builtin painted edit constrained to decorative source-pixel perimeter",
+      "coreBand": 72,
+      "outerAdjacency": 192,
+      "freePolygonGuard": 6,
+      "completeFreePolygonChangedPixels": 0,
+      "coreInteriorChangedPixels": 0,
+      "nativePropsChangedPixels": 0,
+      "wideOriginalRectBitExact": true
+    },
+    "status": "source-candidate-awaiting-actual-game"
+  },
+  "sourceBeforeJoin": "art/chapter-1-v9/garden-well/well-native-v1.png"
 }
