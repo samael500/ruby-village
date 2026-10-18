@@ -1,0 +1,9 @@
+# Garden painted wide source proof
+
+Builtin imagegen painted a complete surrounding countryside from a3272×1200 transparent registration input containing native1672×941 at800,129. Raw output is2070×760, not a claim of native3272px detail. Uniform width registration gives3272×1201 with one bottom pixel cropped; no anisotropic scaling. First exact native-core paste exposed an obvious rectangle because the old native edge contains dark blurry foreground plants. This registered attempt is retained as rejected join evidence, not delivered.
+
+A second builtin precise painted edit replaced the four artificial joins with continuous irregular plants/grass/fence-adjacent details. It is not a blurred or reflected ring. Dedicated script takes actual generated pixels only in a72px decorative native perimeter and192px outer adjacency, with complete free polygons+6px protected. The original core interior remains unchanged; full tree/table alpha pixels also assert unchanged. Original source, original native before join, raw outpaint, raw seam painting, masks and exact prompts retained.
+
+Public lossless wide3272×1200 has exact originalRect800,129,1672,941 matching the delivered lossless native background byte-for-byte. JoinBand48 matches common contract. Full free-polygon pixel changes0; core interior0; native prop changes0. Opaque outer artwork covers entire canvas, no template/white/transparent bands, mirrored landmarks or duplicate table/tree.
+
+Whole candidate was viewed; prominent rectangular frame is gone. A local darker foreground shade near bottom-right still needs coordinator's actual viewport review, so this is a source candidate, not final game acceptance. No runtime/common manifest edits here. Reproduce `python3 scripts/art-garden-well-wide.py garden` after preserved builtin sources.

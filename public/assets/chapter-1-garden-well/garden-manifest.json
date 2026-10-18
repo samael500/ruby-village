@@ -1,6 +1,6 @@
 {
   "candidate": "garden-native-v1",
-  "status": "native-pilot-awaiting-actual-game",
+  "status": "native-and-wide-awaiting-actual-game",
   "treeUniformTransform": {
     "source": [
       1374,
@@ -50,8 +50,8 @@
     941
   ],
   "background": "garden/background.webp",
-  "source": "art/chapter-1-v9/garden-well/garden-native-v1.png",
-  "sourceSha256": "3fb22658c3209958aa611e6c1c7c7967a5f00d321090a91b5f0741b6bb2e3293",
+  "source": "art/chapter-1-v9/garden-well/outpaint/garden-native-painted-join-v1.png",
+  "sourceSha256": "7cb0f48dfb333d31826adcca722e9d33bb6fec257de169810b64849feb55771f",
   "recommendedResidentFeet": {
     "rabbit": [
       1295,
@@ -60,5 +60,55 @@
   },
   "mapMatched": "one dominant apple tree, one round table/chairs/apple bowl/basket; no cottage invented",
   "wideStatus": "pending-painted-outpaint-after-native-approval",
-  "activation": "coordinator-only"
+  "activation": "coordinator-only",
+  "wide": {
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    },
+    "file": "garden/wide.webp",
+    "registration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "baseRegistration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "joinBand": 48,
+    "paintedSeam": {
+      "method": "builtin painted edit constrained to decorative source-pixel perimeter",
+      "coreBand": 72,
+      "outerAdjacency": 192,
+      "freePolygonGuard": 6,
+      "completeFreePolygonChangedPixels": 0,
+      "coreInteriorChangedPixels": 0,
+      "nativePropsChangedPixels": 0,
+      "wideOriginalRectBitExact": true
+    },
+    "status": "source-candidate-awaiting-actual-game"
+  },
+  "sourceBeforeJoin": "art/chapter-1-v9/garden-well/garden-native-v1.png"
 }
