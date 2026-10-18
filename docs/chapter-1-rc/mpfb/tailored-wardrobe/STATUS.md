@@ -13,3 +13,7 @@ Next: inspect actual3-view cloth fit/intersections, replace failed shoe/lace pre
 Native .blend sources and front/three-quarter/east renders are retained. v3 nearest-surface fitting folds at sleeves; v4 radial envelope catches sleeve geometry; v5 still has shirt breakthroughs at shoulders/armholes. None is accepted. Actual weighted ankle boots now have uppers, soles, eyelets, laces and cuffs; full motion validation remains pending.
 
 The check script records body/weights/rig/action/bag/strap invariants and intersection evidence. Counts are diagnostics, not a collision-free claim. No head/likeness change or production activation.
+
+## Further native fit evidence
+
+v6 restores actual source shoulder weights and reduces white breakthroughs but shoulder bridges resemble sleeve caps. v7 limits sleeve-root envelope; visible shoulder breakthroughs remain, rejected. Their three-view source evidence is retained. v8 tests a hidden torso-only native-cloth clearance proxy, keeping the visible authored boundary topology intact. v8 acceptance pending actual views and checks.

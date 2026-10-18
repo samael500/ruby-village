@@ -1,0 +1,27 @@
+{
+  "status": "native-wardrobe-candidate-awaiting-three-view-and-intersection-review",
+  "productionEnabled": false,
+  "source": "art/characters-mpfb-v1/styled-body-pilot-v3/ruta-styled-body.blend",
+  "sourceSha256": "1871a86b56d1a140b44c9627072d6c15b4bf98cd88f1e251102bb383d0911dba",
+  "bodyVertices": 19158,
+  "bodyRestGeometryChanged": false,
+  "rigBones": 167,
+  "actionPreserved": "MPFB start walk stop demo L / Ruta.MPFB.StandardRig",
+  "nativeHead12Preserved": true,
+  "bagAndSingleStrapGeometryPreserved": true,
+  "removedRejectedGarmentObjects": [
+    "Ruta fitted olive waistcoat",
+    "Vest brass button",
+    "Vest brass button.001",
+    "Vest brass button.002",
+    "Vest brass button.003",
+    "Vest brass button.004",
+    "Vest brass button.005"
+  ],
+  "newVestVertices": 14735,
+  "vestConstruction": "authored sewn topology with analytical armhole loops; one-to-one theta/z outer-shirt radial envelope; barycentric native garment weights including shoulder blend; no live nearest-surface jumps",
+  "vestClearanceMeters": 0.012,
+  "vestThicknessMeters": 0.0025,
+  "warning": "native source candidate; rendered fit/intersections remain acceptance gates",
+  "blendSha256": "e1972b87dc77bd6466cf6893aa0ce54f409adc19a23e7b03b0fe870a0ca0e383"
+}

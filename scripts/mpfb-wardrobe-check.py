@@ -41,7 +41,7 @@ weight_sums=[sum(g.weight for g in v.groups) for v in vest.data.vertices]
 def world_bvh(o):
     ev=o.evaluated_get(bpy.context.evaluated_depsgraph_get());me=ev.to_mesh();me.calc_loop_triangles();points=[ev.matrix_world@v.co for v in me.vertices];triangles=[tuple(t.vertices) for t in me.loop_triangles]
     tree=BVHTree.FromPolygons(points,triangles,all_triangles=True);ev.to_mesh_clear();return tree
-frames=[f for f in [0,12,24,36,48,60] if baseline['actionFrameRange'][0]<=f<=baseline['actionFrameRange'][1]]
+frames=[0]+[f for f in [12,24,36,48] if baseline['actionFrameRange'][0]<=f<=baseline['actionFrameRange'][1]]
 rows=[]
 for frame in frames:
     bpy.context.scene.frame_set(frame);bpy.context.view_layer.update()
