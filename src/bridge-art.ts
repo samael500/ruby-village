@@ -18,11 +18,27 @@ export function drawBridge(parent:Element,anchor:Hex,turns:number,radius:number,
  }
  const paint=node('g',{'clip-path':`url(#${clipId})`},group),length=3*Math.sqrt(3)*radius;
  node('rect',{x:-length/2,y:-radius,width:length,height:radius*2,fill:'#b89970'},paint);
- const deck=node('svg',{x:-length/2,y:-radius,width:length,height:radius*2,viewBox:'68 167 2033 359',preserveAspectRatio:'none',overflow:'hidden'},paint);
- node('image',{href:`${import.meta.env.BASE_URL}assets/bridge-v1/deck-v1.png`,width:2170,height:725},deck);
+ const detailed=!!options.connectedPaving;
+ const deck=node('svg',{x:-length/2,y:-radius,width:length,height:radius*2,viewBox:detailed?'24 80 1974 618':'68 167 2033 359',preserveAspectRatio:detailed?'xMidYMid slice':'none',overflow:'hidden'},paint);
+ node('image',{href:`${import.meta.env.BASE_URL}assets/${detailed?'bridge-v2/deck-material-v1.webp':'bridge-v1/deck-v1.png'}`,width:detailed?2022:2170,height:detailed?778:725},deck);
+ // Material detail follows the real deck contour. Pegs sit inside each outer
+ // side rather than being bisected when a rectangular bitmap meets a hex edge.
+ if(detailed)for(const {a,b,count,neighbor}of edges.values()){
+  if(count!==1||options.connectedPaving!.has(key(add(anchor,rotate(neighbor,turns)))))continue;
+  const mx=(a.x+b.x)/2,my=(a.y+b.y)/2;
+  const cx=Math.sqrt(3)*radius*Math.round(mx/(Math.sqrt(3)*radius));
+  const inward={x:cx-mx,y:-my},norm=Math.hypot(inward.x,inward.y)||1;
+  for(const t of [.28,.72]){
+   const x=a.x+(b.x-a.x)*t+inward.x/norm*radius*.11,y=a.y+(b.y-a.y)*t+inward.y/norm*radius*.11;
+   node('ellipse',{cx:x,cy:y+radius*.009,rx:radius*.032,ry:radius*.029,fill:'#62472e',opacity:.8},paint);
+   node('circle',{cx:x,cy:y,r:radius*.025,fill:'#a78854',stroke:'#523e2c','stroke-width':radius*.008},paint);
+   node('path',{d:`M${x-radius*.012} ${y-radius*.006}l${radius*.016} ${-radius*.004}`,stroke:'#e4cb8e','stroke-width':radius*.009,'stroke-linecap':'round'},paint);
+  }
+ }
+
  for(const {a,b,count,neighbor}of edges.values()){
   if(options.connectedPaving&&(count>1||options.connectedPaving.has(key(add(anchor,rotate(neighbor,turns))))))continue;
-  node('path',{d:`M${a.x} ${a.y}L${b.x} ${b.y}`,fill:'none',stroke:count===1?'#6e503b':'#816146','stroke-width':radius*(count===1?.035:.022),'stroke-linejoin':'round','stroke-linecap':'round',opacity:count===1?1:.65},group);
+  node('path',{d:`M${a.x} ${a.y}L${b.x} ${b.y}`,fill:'none',stroke:detailed?'#735334':count===1?'#6e503b':'#816146','stroke-width':radius*(count===1?.035:.022),'stroke-linejoin':'round','stroke-linecap':'round',opacity:count===1?1:.65},group);
  }
  return group;
 }
