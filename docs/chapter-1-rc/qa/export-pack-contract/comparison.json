@@ -1,0 +1,35 @@
+{
+  "sourceHashAllEqual": true,
+  "sourceUnchangedAll": true,
+  "baselineVsOptimizedE24MaxBoundsDifferencePx": 3.398471579885154e-05,
+  "nativeHeightDifferencePx": 0.0,
+  "anchorIdentical": true,
+  "containmentFlagsEqual": true,
+  "optimizedChecks": {
+    "baseEWalk24": {
+      "samples": 7625,
+      "maxErrorPx": 3.989757271938288e-05,
+      "timings": {
+        "totalBeforeReportWrite": 4.045726989017567,
+        "geometryIncludingReferenceValidation": 3.2136093709850684,
+        "bulkProjection": 0.09486523384111933
+      },
+      "renderedFrameCount": 0,
+      "frameCount": 24,
+      "duration": 1.6666666666666667
+    },
+    "calibratedNEIdle48": {
+      "samples": 14136,
+      "maxErrorPx": 4.594035596028334e-05,
+      "timings": {
+        "totalBeforeReportWrite": 9.915859300002921,
+        "geometryIncludingReferenceValidation": 7.973674710112391,
+        "bulkProjection": 0.32352177999564447
+      },
+      "renderedFrameCount": 0,
+      "frameCount": 48,
+      "duration": 2.0833333333333335
+    }
+  },
+  "scope": "independent dryrun numerical checks only, no render and no actualpack"
+}
