@@ -1,0 +1,128 @@
+{
+  "status": "deterministic-native-appearance-study-not-approved",
+  "productionEnabled": false,
+  "source": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-ellie-head-v1/layered-locks-pilot/ruta-b-ellie-layered-locks.blend",
+  "sourceSha256": "25a483d3dc20e180029b09d50db5c1384a7ac77f8f758eb5eed598702f7b24f8",
+  "restMap": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-proportions-study-v2/b-neutral/rest-transform-contract.json",
+  "actionsHashBefore": "e2e0f501387381ad666504056aa73532213dcdc0b0db566365be97794f6a2456",
+  "actionsHashAfter": "e2e0f501387381ad666504056aa73532213dcdc0b0db566365be97794f6a2456",
+  "headMode": "source",
+  "headRestTiltDegrees": 0.0,
+  "rootTransform": "Rz(yaw)*T(-RootRestGround)",
+  "views": [],
+  "newObjects": [
+    {
+      "object": "Cream shirt V inside vest",
+      "bone": "Chest",
+      "vertices": 3
+    },
+    {
+      "object": "Vest brass button 1",
+      "bone": "Chest",
+      "vertices": 266
+    },
+    {
+      "object": "Vest brass button 2",
+      "bone": "Chest",
+      "vertices": 266
+    },
+    {
+      "object": "Vest brass button 3",
+      "bone": "Chest",
+      "vertices": 266
+    },
+    {
+      "object": "Left burgundy bow loop",
+      "bone": "Chest",
+      "vertices": 3
+    },
+    {
+      "object": "Right burgundy bow loop",
+      "bone": "Chest",
+      "vertices": 3
+    },
+    {
+      "object": "Burgundy bow knot",
+      "bone": "Chest",
+      "vertices": 266
+    },
+    {
+      "object": "Two burgundy bow tails",
+      "bone": "Chest",
+      "vertices": 6
+    },
+    {
+      "object": "ONE rounded right hip satchel",
+      "bone": "Hips",
+      "vertices": 216
+    },
+    {
+      "object": "Single rounded satchel flap",
+      "bone": "Hips",
+      "vertices": 216
+    },
+    {
+      "object": "Satchel warm brass clasp",
+      "bone": "Hips",
+      "vertices": 216
+    },
+    {
+      "object": "Ankle boot lace R",
+      "bone": "Foot.R",
+      "vertices": 490
+    },
+    {
+      "object": "Ankle boot lace R",
+      "bone": "native boot barycentric weights",
+      "binding": "REST front-surface ray fit + barycentric native boot skin weights",
+      "normalOffsetMeters": 0.0015,
+      "maxRestMoveMeters": 0.018994214189809712,
+      "vertices": 490
+    },
+    {
+      "object": "Cream sock cuff R",
+      "bone": "LowerLeg.R",
+      "vertices": 48
+    },
+    {
+      "object": "Cargo side pocket R",
+      "bone": "UpperLeg.R",
+      "vertices": 216
+    },
+    {
+      "object": "Ankle boot lace L",
+      "bone": "Foot.L",
+      "vertices": 490
+    },
+    {
+      "object": "Ankle boot lace L",
+      "bone": "native boot barycentric weights",
+      "binding": "REST front-surface ray fit + barycentric native boot skin weights",
+      "normalOffsetMeters": 0.0015,
+      "maxRestMoveMeters": 0.03112451768228895,
+      "vertices": 490
+    },
+    {
+      "object": "Cream sock cuff L",
+      "bone": "LowerLeg.L",
+      "vertices": 48
+    },
+    {
+      "object": "Cargo side pocket L",
+      "bone": "UpperLeg.L",
+      "vertices": 216
+    }
+  ],
+  "changes": [
+    "ready authored head geometry, UVs, normals and shaders preserved",
+    "Chest-bound bow/buttons; one rounded Hips-bound bag with original single diagonal strap",
+    "rest-space cargo trouser tailoring and sleeve material assignment",
+    "native boot mesh welded/bisected/capped to ankle height, with bound cuffs and laces"
+  ],
+  "limitations": [
+    "An appearance study, not final painted art",
+    "Proportions must come from independently reviewed whole-rig shape branch",
+    "Camera/origins and actual game walking are not yet accepted",
+    "No imagegen per-frame repaint, image warp or per-frame scale used"
+  ]
+}

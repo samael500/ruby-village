@@ -7,6 +7,8 @@ This script owns only art/ruta-native-style-v1. Never edits its input.
 from pathlib import Path
 import bpy, bmesh, json, os, math, hashlib
 from mathutils import Vector, Matrix
+from mathutils.bvhtree import BVHTree
+from mathutils.geometry import barycentric_transform
 from bpy_extras.object_utils import world_to_camera_view
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -316,6 +318,38 @@ if boots:
         side='L' if v.co.x>0 else 'R'
         center=rig.data.bones[f'Foot.{side}'].head_local.x
         v.co.x=center+(v.co.x-center)*1.3
+    boots.data.calc_loop_triangles()
+    boot_triangles=[tuple(t.vertices) for t in boots.data.loop_triangles]
+    boot_tree=BVHTree.FromPolygons([v.co.copy() for v in boots.data.vertices],boot_triangles,all_triangles=True)
+
+def bind_lace_to_boot_surface(lace):
+    """One REST fit and inherited boot skin weights, never a frame adjustment.
+
+    Upper boot vertices follow LowerLeg while the toe follows Foot. Rigid Foot
+    binding incorrectly detached the whole lace during ankle flexion.
+    """
+    lace.vertex_groups.clear()
+    groups={g.index:lace.vertex_groups.new(name=g.name) for g in boots.vertex_groups}
+    max_move=0.
+    for vertex in lace.data.vertices:
+        hit,normal,triangle,distance=boot_tree.ray_cast(Vector((vertex.co.x,-1,vertex.co.z)),Vector((0,1,0)),2)
+        if hit is None:
+            raise RuntimeError('Lace REST vertex misses boot front surface: '+repr(tuple(vertex.co)))
+        ids=boot_triangles[triangle]
+        a,b,c=[boots.data.vertices[i].co for i in ids]
+        bary=barycentric_transform(hit,a,b,c,Vector((1,0,0)),Vector((0,1,0)),Vector((0,0,1)))
+        weights={}
+        for fraction,i in zip(bary,ids):
+            for g in boots.data.vertices[i].groups:
+                weights[g.group]=weights.get(g.group,0.)+max(0.,fraction)*g.weight
+        total=sum(weights.values())
+        assert total>0
+        for group,weight in weights.items():
+            if weight>1e-8:groups[group].add([vertex.index],weight/total,'REPLACE')
+        position=hit+normal*.0015
+        max_move=max(max_move,(position-vertex.co).length)
+        vertex.co=position
+    added.append({'object':lace.name,'bone':'native boot barycentric weights','binding':'REST front-surface ray fit + barycentric native boot skin weights','normalOffsetMeters':.0015,'maxRestMoveMeters':max_move,'vertices':len(lace.data.vertices)})
 for side,label in [(-1,'R'),(1,'L')]:
     center=side*.110
     # One continuous tied lace on each whole native 3D boot.
@@ -324,7 +358,8 @@ for side,label in [(-1,'R'),(1,'L')]:
         z=.275-j*.035
         y=[-.101,-.102,-.103,-.108,-.130][j]
         points.append((center+(-.025 if j%2 else .025),y,z))
-    path(f'Ankle boot lace {label}',points,.0018,cream,f'Foot.{label}')
+    lace=path(f'Ankle boot lace {label}',points,.0018,cream,f'Foot.{label}')
+    bind_lace_to_boot_surface(lace)
     cuff_vertices=[]
     cuff_faces=[]
     for j,z in enumerate([.315,.338]):
