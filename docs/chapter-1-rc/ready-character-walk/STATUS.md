@@ -15,3 +15,7 @@ Stock adult low-poly explorer is not approved Ruta likeness: short hair, shorts,
 Native Walk spans40 frames at24fps (1.6667s), sampled at24 evenly spaced phases without repeating endpoint. Root travel0m. Foot-sole floor−0.004907m; inferred contact threshold floor+25mm. Median backward ankle velocity in contact1.04952m/s → estimated root travel1.74921m/cycle. Contact velocity residual RMS0.19232m/s (range−0.65279..+0.20768), so constant-speed runtime is not promised slide-free. Contact inference uses sole height, not source-authored contact labels. Endpoint bone-position error0m is a seam check only.
 
 Current status: source/motion pilot ready for independent review, stock likeness explicitly unapproved, game integration not performed. No six-direction batch before E review.
+
+## Material-only study
+
+art/ready-character-colour-v1 preserves native geometry, weights,62-bone skeleton and Walk (independent reopened-file hashes verified equal). Only copper/olive/cream/brown materials change; E phase00 rendered separately. Short hair, shorts and stock backpack remain: palette study, not approved Ruta likeness or single-satchel claim. No retopology or extra animation.
