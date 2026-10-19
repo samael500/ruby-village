@@ -1,0 +1,33 @@
+{
+  "status": "AUTHOR-UI-SMOKE-NOT-INDEPENDENT-MOTION-ACCEPTANCE",
+  "rows": [
+    {
+      "context": "desktop",
+      "viewport": {
+        "width": 1280,
+        "height": 900
+      },
+      "mouseOrNativeCdpTouchPause": true,
+      "actualKeyboardSeek39And14": true,
+      "togglePreservesPhase": true,
+      "baselineAndCandidateDestinationsDiffer": true,
+      "occlusion14ExplicitlyEstimated": true,
+      "pageErrors": [],
+      "physicalPhone": "NOT RUN"
+    },
+    {
+      "context": "landscape-emulated",
+      "viewport": {
+        "width": 844,
+        "height": 390
+      },
+      "mouseOrNativeCdpTouchPause": true,
+      "actualKeyboardSeek39And14": true,
+      "togglePreservesPhase": true,
+      "baselineAndCandidateDestinationsDiffer": true,
+      "occlusion14ExplicitlyEstimated": true,
+      "pageErrors": [],
+      "physicalPhone": "NOT RUN"
+    }
+  ]
+}

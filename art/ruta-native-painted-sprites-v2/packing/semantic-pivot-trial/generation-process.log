@@ -1,0 +1,170 @@
+{
+  "globalTargetBiasNativePx": [
+    -15.655435744238218,
+    -10.020854561845198
+  ],
+  "measuredCount": 43,
+  "estimatedOccludedPhases": [
+    14,
+    15,
+    16,
+    17,
+    32
+  ],
+  "translationRangeNativePx": {
+    "min": [
+      -2.3263126049288587,
+      -9.239219067189254
+    ],
+    "max": [
+      4.652625209857689,
+      11.889042359438434
+    ]
+  },
+  "maxAdjacentPivotStepNativePx": 11.930963822521717,
+  "heldOutBowTrajectoryCenteredRmsNativePx": {
+    "baseline": 4.413466959009754,
+    "candidate": 3.06094961181974,
+    "meaning": "descriptive variance after removal of each curve constant mean; not a fitted pivot/bias, not used for any correction or acceptance"
+  },
+  "boundaries": [
+    {
+      "from": 7,
+      "to": 8,
+      "pivotStepNativePx": [
+        -2.3263126049288445,
+        -2.966991010690549
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        1.1006105260972276,
+        3.7792523851764486
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        -1.2257020788316169,
+        0.8122613744858995
+      ],
+      "beforeLength": 3.9362535641162513,
+      "afterLength": 1.4704129102173544,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "pivotStepNativePx": [
+        0.0,
+        -0.06996345520019531
+      ],
+      "claspPivotsEstimated": [
+        true,
+        true
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        1.2469575719956651,
+        0.3679169573845229
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.2469575719956651,
+        0.2979535021843276
+      ],
+      "beforeLength": 1.30010233208329,
+      "afterLength": 1.2820606365617933,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "pivotStepNativePx": [
+        0.0,
+        -1.9794517193087415
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        -0.0002288818359375,
+        0.8180215673569933
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        -0.0002288818359375,
+        -1.1614301519517483
+      ],
+      "beforeLength": 0.8180215993774778,
+      "afterLength": 1.161430174504501,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "pivotStepNativePx": [
+        1.1631563024644294,
+        -2.0806566949075744
+      ],
+      "claspPivotsEstimated": [
+        false,
+        true
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        -0.0576629638671875,
+        2.8296619091280775
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.1054933385972419,
+        0.749005214220503
+      ],
+      "beforeLength": 2.830249377240865,
+      "afterLength": 1.3353367862125185,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "pivotStepNativePx": [
+        -2.3263126049288587,
+        11.70197279942451
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        3.5749181261432454,
+        -11.303022222642255
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.2486055212143867,
+        0.398950576782255
+      ],
+      "beforeLength": 11.854887218956248,
+      "afterLength": 1.310792626742287,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 47,
+      "to": 0,
+      "pivotStepNativePx": [
+        0.0,
+        -1.5716139550394246
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        1.1631715612534776,
+        0.9900453405503526
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.1631715612534776,
+        -0.5815686144890719
+      ],
+      "beforeLength": 1.5274677925423883,
+      "afterLength": 1.3004576633891591,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    }
+  ]
+}
