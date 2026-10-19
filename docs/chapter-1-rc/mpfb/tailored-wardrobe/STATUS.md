@@ -17,3 +17,5 @@ The check script records body/weights/rig/action/bag/strap invariants and inters
 ## Further native fit evidence
 
 v6 restores actual source shoulder weights and reduces white breakthroughs but shoulder bridges resemble sleeve caps. v7 limits sleeve-root envelope; visible shoulder breakthroughs remain, rejected. Their three-view source evidence is retained. v8 tests a hidden torso-only native-cloth clearance proxy, keeping the visible authored boundary topology intact. v8 acceptance pending actual views and checks.
+
+v8 three views/checks completed: preserved native invariants and three sewn boundary loops. Boots/trousers and cuffs/visible skin have zero triangle intersections in frames0/12/24/36/48. Vest still intersects shirt/skin/bag and is NOT accepted. Root cause found: deleting proxy sleeve faces before subdivision changes the target surface. Next fitting method masks unwanted areas AFTER source smoothing, retaining exact source torso surface. No concealment of numerical failures.

@@ -12,7 +12,7 @@ from mathutils.bvhtree import BVHTree
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'art/characters-mpfb-v1/styled-body-pilot-v3/ruta-styled-body.blend'
-OUT=ROOT/'art/characters-mpfb-v1/tailored-wardrobe-v8';OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'art/characters-mpfb-v1/tailored-wardrobe-v9';OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(SOURCE));scene=bpy.context.scene;scene.frame_set(0)
 rig=next(o for o in bpy.data.objects if o.type=='ARMATURE' and len(o.data.bones)==167)
 body=next(o for o in bpy.data.objects if o.type=='MESH' and len(o.data.vertices)==19158)
@@ -117,9 +117,10 @@ vest.modifiers.move(0,len(vest.modifiers)-1)
 # An invisible torso-only fitting proxy follows the real native cloth in pose.
 # The visible garment retains its clean sewn loops; only proxy sleeve faces are omitted.
 proxy=shirt.copy();proxy.data=shirt.data.copy();scene.collection.objects.link(proxy);proxy.name='Tailoring torso fitting proxy'
-bm=bmesh.new();bm.from_mesh(proxy.data)
-bmesh.ops.delete(bm,geom=[f for f in bm.faces if f.calc_center_median().z<.64 or f.calc_center_median().z>1.12 or abs(f.calc_center_median().x)>.145],context='FACES')
-bm.to_mesh(proxy.data);bm.free();proxy.hide_render=True;proxy.display_type='WIRE'
+group=proxy.vertex_groups.new(name='Torso fit after exact source smoothing')
+group.add([v.index for v in proxy.data.vertices if .64<v.co.z<1.12 and abs(v.co.x)<.145],1.,'REPLACE')
+mask=proxy.modifiers.new('Exclude sleeves AFTER original cloth smoothing','MASK');mask.vertex_group=group.name
+proxy.hide_render=True;proxy.display_type='WIRE'
 fit=vest.modifiers.new('Posed torso cloth clearance','SHRINKWRAP');fit.target=proxy;fit.wrap_method='NEAREST_SURFACEPOINT';fit.wrap_mode='ABOVE_SURFACE';fit.offset=.008
 vest.modifiers.move(len(vest.modifiers)-1,1)
 
