@@ -11,3 +11,5 @@ Author manually viewed actual phases00/04/08/12/20/23/32/40/47. The old detached
 **Pending:** independent real browser loop/scrubber review and artistic acceptance. No claim that jerk, no-slip, other directions/cameras, turns, walking in the game or runtime integration are accepted. No physical-phone/family-test claim. This asset is not installed in production. Root's review HTML will be supplied separately. Auxiliary sheet/animatedWebP can follow without blocking browser review.
 
 Rejected wardrobe v1 and its17actualPNG remain separately preserved unchanged; no v1 frames were mixed into this delivery. Licenses/attribution remain those of the canonical source handoff; export does not relicense the actor.
+
+Auxiliary contact-sheet-48.png now contains an ordinary8×6 assembly of the complete delivery canvases, uniformly reduced .5 for thumbnails, with labels outside each frame. `make-review.py` defaults to sheet-only; optional animatedWebP requires explicit --animated-webp and was **not run** during browser QA. Source/atlas/manifest unchanged. The review-artifacts sidecar explicitly marks loop.generated=false.
