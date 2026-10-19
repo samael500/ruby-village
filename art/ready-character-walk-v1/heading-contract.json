@@ -1,0 +1,119 @@
+{
+  "status": "heading-contract-only-no-six-view-export",
+  "source": "public/assets/characters-walk-v1/animated-v3/manifest.json",
+  "sourceSha256": "e8a8696a2df1b987f1fcd05d50e15b890351e395d51c62081ee48f0dcda9e676",
+  "erratum": "Original sixViewYawRadians unprojected artificial screen60deg increments. E was correct, diagonals were not accepted hex headings. Do not use old values as grid calibration.",
+  "rule": "Accepted motion screenAngleRadians -> one inverse groundScale projection -> stock forward -Y yaw. Includes camera angle exactly once; no second unprojection. Equivalently base yaw E minus native hex heading minus camera.angle.",
+  "variants": {
+    "base": {
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "gate",
+        "garden",
+        "stream",
+        "mill",
+        "forest"
+      ],
+      "directions": {
+        "e": {
+          "acceptedScreenAngleRadians": 0.0,
+          "nativeHeadingAfterCameraRadians": 0.0,
+          "stockForwardMinusYBlenderYawRadians": 1.5707963267948966,
+          "reprojectionErrorRadians": 3.9801020972288984e-17
+        },
+        "se": {
+          "acceptedScreenAngleRadians": 0.8445215140369683,
+          "nativeHeadingAfterCameraRadians": 1.0471975511965976,
+          "stockForwardMinusYBlenderYawRadians": 0.5235987755982989,
+          "reprojectionErrorRadians": 1.1102230246251565e-16
+        },
+        "sw": {
+          "acceptedScreenAngleRadians": 2.2970711395528247,
+          "nativeHeadingAfterCameraRadians": 2.0943951023931953,
+          "stockForwardMinusYBlenderYawRadians": -0.5235987755982987,
+          "reprojectionErrorRadians": 0.0
+        },
+        "w": {
+          "acceptedScreenAngleRadians": 3.141592653589793,
+          "nativeHeadingAfterCameraRadians": 3.141592653589793,
+          "stockForwardMinusYBlenderYawRadians": -1.5707963267948966,
+          "reprojectionErrorRadians": 0.0
+        },
+        "nw": {
+          "acceptedScreenAngleRadians": -2.297071139552825,
+          "nativeHeadingAfterCameraRadians": -2.0943951023931957,
+          "stockForwardMinusYBlenderYawRadians": 3.6651914291880923,
+          "reprojectionErrorRadians": 4.440892098500626e-16
+        },
+        "ne": {
+          "acceptedScreenAngleRadians": -0.8445215140369683,
+          "nativeHeadingAfterCameraRadians": -1.0471975511965976,
+          "stockForwardMinusYBlenderYawRadians": 2.617993877991494,
+          "reprojectionErrorRadians": 2.220446049250313e-16
+        }
+      }
+    },
+    "calibrated-1": {
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "well",
+        "bakery",
+        "post"
+      ],
+      "directions": {
+        "e": {
+          "acceptedScreenAngleRadians": 0.0292282487743918,
+          "nativeHeadingAfterCameraRadians": 0.04494904935533156,
+          "stockForwardMinusYBlenderYawRadians": 1.525847277439565,
+          "reprojectionErrorRadians": 3.469446951953614e-18
+        },
+        "se": {
+          "acceptedScreenAngleRadians": 0.897092075650845,
+          "nativeHeadingAfterCameraRadians": 1.0921466005519291,
+          "stockForwardMinusYBlenderYawRadians": 0.4786497262429674,
+          "reprojectionErrorRadians": 0.0
+        },
+        "sw": {
+          "acceptedScreenAngleRadians": 2.347599662738727,
+          "nativeHeadingAfterCameraRadians": 2.1393441517485265,
+          "stockForwardMinusYBlenderYawRadians": -0.56854782495363,
+          "reprojectionErrorRadians": 0.0
+        },
+        "w": {
+          "acceptedScreenAngleRadians": -3.1123644048154016,
+          "nativeHeadingAfterCameraRadians": -3.096643604234462,
+          "stockForwardMinusYBlenderYawRadians": 4.667439931029358,
+          "reprojectionErrorRadians": 0.0
+        },
+        "nw": {
+          "acceptedScreenAngleRadians": -2.244500577938949,
+          "nativeHeadingAfterCameraRadians": -2.049446053037865,
+          "stockForwardMinusYBlenderYawRadians": 3.6202423798327614,
+          "reprojectionErrorRadians": 0.0
+        },
+        "ne": {
+          "acceptedScreenAngleRadians": -0.7939929908510658,
+          "nativeHeadingAfterCameraRadians": -1.0022485018412663,
+          "stockForwardMinusYBlenderYawRadians": 2.5730448286361627,
+          "reprojectionErrorRadians": 2.220446049250313e-16
+        }
+      }
+    }
+  }
+}

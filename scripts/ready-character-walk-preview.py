@@ -1,8 +1,8 @@
 """Pack whole Blender renders, preserve their pixels, and audit full alpha."""
 from pathlib import Path
 from PIL import Image,ImageDraw
-import json,hashlib,statistics
-ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'art/ready-character-walk-v1';frames=[Image.open(OUT/'e'/f'{i:02}.png').convert('RGBA')for i in range(24)]
+import json,hashlib,statistics,os
+ROOT=Path(__file__).resolve().parents[1];OUT=ROOT/'art'/os.environ.get('READY_PREVIEW_FOLDER','ready-character-walk-v1');frames=[Image.open(OUT/'e'/f'{i:02}.png').convert('RGBA')for i in range(24)]
 rows=[]
 for i,im in enumerate(frames):
  b=im.getchannel('A').getbbox();assert b and b[0]>0 and b[1]>0 and b[2]<512 and b[3]<640,(i,b)

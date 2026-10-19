@@ -19,3 +19,7 @@ Current status: source/motion pilot ready for independent review, stock likeness
 ## Material-only study
 
 art/ready-character-colour-v1 preserves native geometry, weights,62-bone skeleton and Walk (independent reopened-file hashes verified equal). Only copper/olive/cream/brown materials change; E phase00 rendered separately. Short hair, shorts and stock backpack remain: palette study, not approved Ruta likeness or single-satchel claim. No retopology or extra animation.
+
+## Heading erratum before six-view export
+
+The initial sixViewYawRadians prototype unprojected artificial screen60° increments. E pilot is correct, diagonals are not accepted grid calibration. `heading-contract.json` derives directions once from accepted motion manifest screen angles for both camera variants0 and0.04494904935533156. Native hex60° projects to48.387° at scale.65. Stock forward−Y yaw is π/2 minus native heading minus camera angle; do not apply angle or unprojection twice. Reprojection errors asserted below1e−12rad. No six-view export yet.

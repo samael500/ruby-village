@@ -64,11 +64,11 @@ def cube(name,center,size,material,bone='Hips'):
  bpy.ops.mesh.primitive_cube_add(size=1,location=center);o=bpy.context.object;o.name=name;o.dimensions=size;bpy.ops.object.transform_apply(location=True,rotation=True,scale=True);o.data.materials.append(material)
  bevel=o.modifiers.new('Soft leather edge','BEVEL');bevel.width=.012;bevel.segments=2;bpy.context.view_layer.objects.active=o;bpy.ops.object.modifier_apply(modifier=bevel.name)
  bind(o,[{bone:1.}for v in o.data.vertices]);return o
-bag=cube('ONE hip satchel',(-.235,-.020,1.005),(.22,.12,.22),brown)
-cube('Satchel flap',(-.235,-.087,1.052),(.225,.023,.105),brown)
-cube('Satchel buckle',(-.235,-.104,1.040),(.035,.010,.040),gold)
+bag=cube('ONE hip satchel',(-.295,.000,.965),(.22,.12,.22),brown)
+cube('Satchel flap',(-.295,-.067,1.012),(.225,.023,.105),brown)
+cube('Satchel buckle',(-.295,-.084,1.000),(.035,.010,.040),gold)
 curve=bpy.data.curves.new('Single diagonal strap path','CURVE');curve.dimensions='3D';curve.bevel_depth=.014;curve.bevel_resolution=2;spline=curve.splines.new('BEZIER');spline.bezier_points.add(3)
-for p,co in zip(spline.bezier_points,[(.12,-.115,1.49),(.035,-.175,1.34),(-.115,-.16,1.18),(-.235,-.09,1.11)]):p.co=co;p.handle_left_type='AUTO';p.handle_right_type='AUTO'
+for p,co in zip(spline.bezier_points,[(.12,-.115,1.49),(.035,-.175,1.34),(-.145,-.15,1.16),(-.295,-.07,1.07)]):p.co=co;p.handle_left_type='AUTO';p.handle_right_type='AUTO'
 strap=bpy.data.objects.new('ONE diagonal satchel strap',curve);scene.collection.objects.link(strap);strap.data.materials.append(brown);bpy.ops.object.select_all(action='DESELECT');strap.select_set(True);bpy.context.view_layer.objects.active=strap;bpy.ops.object.convert(target='MESH');strap=bpy.context.object
 weights=[]
 for v in strap.data.vertices:
@@ -76,7 +76,7 @@ for v in strap.data.vertices:
 bind(strap,weights)
 rig.data.pose_position='POSE';scene.frame_set(0);bpy.context.view_layer.update();assert walk_hash==action_hash();assert bones_hash==digest([(b.name,tuple(b.head_local),tuple(b.tail_local))for b in rig.data.bones])
 bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-stock-adapted.blend'))
-report={'status':'minimal-stock-parts-pilot-not-approved-Ruta','rigBones':len(rig.data.bones),'walkActionSha256':walk_hash,'stockBoneRestSha256':bones_hash,'sourceActionsAndBoneRestUnchanged':True,'removedAccessoryVertices':removed,'removedAccessories':'all disconnected backpack/bedroll/strap/buckle pieces; main shirt+arms component preserved without face cuts','trousers':'Casual_Legs, same CC0 pack, identical62-bone rest skeleton measured restdiff0m, original weights preserved','hair':{'source':str(HAIR_SOURCE),'sourceSha256':hashlib.sha256(HAIR_SOURCE.read_bytes()).hexdigest(),'part':'Cortu Johnstone strawberry_cloud, CC0 official hair01 pack; stale OBJheader documented','fit':'scalp xy.72/z.62, lower wave length extended, native mesh Head1','physics':'rigid head-bound; no extra hair motion authored'},'satchel':'one native beveled rigid Hips-weighted bag with flap/buckle; one Chest/Hips blended diagonal strap','limitations':['adult stock proportions and low-poly likeness remain','no new vest; source green shirt retained','hair/boot/trouser/bag intersections require three-view and loop review','no production or six-direction batch']}
+report={'status':'minimal-stock-parts-pilot-not-approved-Ruta','rigBones':len(rig.data.bones),'walkActionSha256':walk_hash,'stockBoneRestSha256':bones_hash,'sourceActionsAndBoneRestUnchanged':True,'removedAccessoryVertices':removed,'removedAccessories':'all disconnected backpack/bedroll/strap/buckle pieces; main shirt+arms component preserved without face cuts','trousers':'Casual_Legs, same CC0 pack, identical62-bone rest skeleton measured restdiff0m, original weights preserved','hair':{'source':str(HAIR_CACHE.relative_to(ROOT)),'sourceSha256':hashlib.sha256(HAIR_CACHE.read_bytes()).hexdigest(),'part':'Cortu Johnstone strawberry_cloud, CC0 official hair01 pack; stale OBJheader documented','fit':'scalp xy.72/z.62, lower wave length extended, native mesh Head1','physics':'rigid head-bound; no extra hair motion authored'},'satchel':'one native beveled rigid Hips-weighted bag with flap/buckle; one Chest/Hips blended diagonal strap','limitations':['adult stock proportions and low-poly likeness remain','no new vest; source green shirt retained','hair/boot/trouser/bag intersections require three-view and loop review','no production or six-direction batch']}
 (OUT/'assembly.json').write_text(json.dumps(report,indent=2)+'\n')
 if os.environ.get('ADAPTED_RENDER')=='1':
  for name,yaw in [('front',0),('three-quarter',math.pi/4),('e',math.pi/2)]:
