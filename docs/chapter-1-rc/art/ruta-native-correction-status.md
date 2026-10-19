@@ -48,3 +48,12 @@ Root prepared but did not invoke another generation call: semantic evidence is b
 ## User art acceptance; motion remains rejected
 
 Maksim reviewed the semantic-pivot trial at5322: «Да, хорошо, почти идеально -- только изображение дребезжит и дёргается». **Illustrated appearance/style is accepted. Animation smoothness is NOT accepted.** Do not ask appearance approval again or change approved identity/outfit while fixing jitter. The current trial does not solve the user's motion complaint. Next diagnosis separates actual browser cadence, uncertainty/high-frequency pivot noise, whole-head registration and internal drawing/scale changes. No body/limb warp or source-pixel edit is authorized by this diagnosis. Runtime still unchanged; no game or release acceptance.
+
+## Next motion candidates, not yet accepted
+
+- Head-translation-only trial `34f8384` (author bb845ed): same raw48/fixed scale/clock, loop-constrained common-template registration plus exact smooth native Head trajectory. Root regenerated manifest without a diff. Frozen preview: `http://localhost:5311/art/ruta-native-painted-sprites-v2/packing/head-pivot-trial/review.html`. Author desktop/CDP touch controls pass; independent actual motion comparison pending. Lower-face correspondence remains imperfect, no physical-anchor claim.
+- Independent eye-patch annotations `7a323fa` (46 visible / 2 null, approximate), author cross-check `d5ee2b8`: adjacent eye-minus-nativeHead vector RMS clasp2.307 vs head0.935 native-half px; seam5.055 vs1.742. These descriptive metrics have annotation/systematic uncertainty and partly shared image evidence; they do not prove user-visible jitter fixed. Native projected Head bone length varies by1.086 due to orientation, not growth.
+- Isolated cadence study `ff5ee32` keeps cycle40/24s and phase-faithful source pixels; 48/24/16 unique phases are explicitly distinguished. No arbitrary reordering/blending or invented poses. Not a recommended setting until actual comparison.
+- Bounded deterministic native shader fallback `751cacf` (three actual poses only) preserves source geometry/weights/rig/actions after cold open, but visibly does **not** match the accepted painted appearance. Kept as a study, not substituted for approved art and not expanded to48.
+
+Current user motion verdict remains FAIL. Runtime still uses the previous set. No six-direction, in-game, no-slip, full-chapter or release acceptance is inferred from these studies.
