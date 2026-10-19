@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Рута — проверка цельных кадров</title>
+<style>
+body{margin:0;background:#eee5d2;color:#342e26;font:16px system-ui;padding:20px}main{max-width:1080px;margin:auto}h1{font-size:24px}p{max-width:900px}section{display:flex;gap:20px;flex-wrap:wrap}figure{margin:0;flex:1;min-width:280px;background:#dfd8c6;border-radius:16px;padding:12px}canvas{display:block;width:100%;height:auto}figcaption{text-align:center}nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:16px 0}input{flex:1;min-width:180px}button,select{font:inherit;padding:8px}output{font-variant-numeric:tabular-nums}#error{color:#8d1c13;white-space:pre-wrap}
+</style>
+<main><h1>Рута — цельные кадры из одной 3D-модели</h1>
+<p>Рабочий пилот, внешность ещё не принята. Одна камера, одинаковый размер холста и одна привязка во всех кадрах. Покадрового растяжения, подгонки размера и сдвига нет. Это проверка спрайтов, а не запись игры.</p>
+<nav><button id="play" disabled>Пауза</button><select id="clip" aria-label="Ракурс и анимация"></select><input id="phase" aria-label="Кадр" type="range" min="0" max="23" value="0" step="1"><output id="status"></output></nav>
+<section><figure><canvas id="actor" width="512" height="640"></canvas><figcaption>Новый пилот — фиксированная привязка</figcaption></figure><figure><canvas id="reference" width="512" height="640"></canvas><figcaption>Принятая Рута — ориентир внешности</figcaption></figure></section><p id="error" role="alert"></p></main>
+<script type="module">
+const query=new URLSearchParams(location.search),url=new URL(query.get('manifest')||'./manifest.json',location.href),canonical=new URL(query.get('reference')||'../../public/assets/characters-v1/optimized/ruta-idle-pilot.webp',location.href);
+const $=id=>document.getElementById(id),ctx=$('actor').getContext('2d'),ref=$('reference').getContext('2d');
+let playing=true,index=0,elapsed=0,last=null,active=null;const choices=[];
+const load=async url=>{const im=new Image();im.src=url;await im.decode();return im};
+function baseline(c){c.clearRect(0,0,512,640);c.strokeStyle='#8b8063';c.lineWidth=1;c.beginPath();c.moveTo(0,560.5);c.lineTo(512,560.5);c.stroke();c.beginPath();c.moveTo(251,560);c.lineTo(261,560);c.moveTo(256,555);c.lineTo(256,565);c.stroke()}
+function draw(){if(!active)return;const {spec,clip,im}=active;const frame=clip.frames[index],r=frame.rect,scale=420/spec.nativeHeightPx,anchor=spec.footAnchor;baseline(ctx);ctx.drawImage(im,...r,256-anchor[0]*scale,560-anchor[1]*scale,r[2]*scale,r[3]*scale);$('phase').value=index;$('status').textContent=`${index+1}/${clip.frames.length} · ${(clip.durationSeconds*1000/clip.frames.length).toFixed(1)} мс/кадр`;window.rutaSpriteReview={index,playing,sourceFrame:frame.sourceFrame,sourceSha256:manifest.sourceSha256,perFrameTransform:false}}
+let manifest;
+try{
+ const response=await fetch(url);if(!response.ok)throw Error(`manifest HTTP ${response.status}`);manifest=await response.json();if(!manifest.packedFrameCount)throw Error('Нет фактически упакованных кадров');
+ for(const [variant,v]of Object.entries(manifest.cameraVariants))for(const [direction,spec]of Object.entries(v.directions))for(const [name,clip]of Object.entries(spec.clips)){const im=await load(new URL(clip.atlas,url));choices.push({spec,clip,im});$('clip').add(new Option(`${variant} / ${direction} / ${name}`,String(choices.length-1)))}
+ const reference=await load(canonical);baseline(ref);const scale=420/reference.height;ref.drawImage(reference,256-reference.width*scale/2,560-reference.height*scale,reference.width*scale,reference.height*scale);
+ function select(){active=choices[Number($('clip').value)];index=0;elapsed=0;$('phase').max=active.clip.frames.length-1;draw()}
+ $('clip').onchange=select;$('phase').oninput=()=>{playing=false;index=Number($('phase').value);elapsed=index*active.clip.durationSeconds*1000/active.clip.frames.length;$('play').textContent='Играть';draw()};$('play').disabled=false;$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Пауза':'Играть';draw()};select();
+ function tick(now){if(last!==null&&playing){elapsed+=Math.min(now-last,100);index=Math.floor(elapsed/(active.clip.durationSeconds*1000)*active.clip.frames.length)%active.clip.frames.length;draw()}last=now;requestAnimationFrame(tick)}
+ document.addEventListener('visibilitychange',()=>{last=null});requestAnimationFrame(tick);
+}catch(error){$('error').textContent=String(error);throw error}
+</script></html>
