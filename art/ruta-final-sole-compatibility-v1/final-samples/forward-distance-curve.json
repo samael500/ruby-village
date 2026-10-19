@@ -1,0 +1,3409 @@
+{
+  "status": "AUTHORING-CANDIDATE-NOT-RUNTIME-NOT-NO-SLIP-NOT-ART-ACCEPTANCE",
+  "sourceCommit": "e18d727-frozen-style-v2",
+  "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "mesh": "Adventurer_Feet",
+  "sampleArchiveSha256": "638c78dab736d47f3d0a0c164675a8acf9cb455e55bf64957cfeafc25a7dfbb8",
+  "durationSeconds": 1.6666666666666667,
+  "strideMeters": 1.2777502963046894,
+  "axes": {
+    "forward": [
+      0,
+      -1,
+      0
+    ],
+    "up": [
+      0,
+      0,
+      1
+    ],
+    "headingAndCamera": "separate; rotate displacement once in future adapter"
+  },
+  "interpolation": "linear periodic velocity; integrate analytically within each interval for C1 distance; NOT linear distance interpolation",
+  "cycleRule": "distance(n*T+phase)=n*stride+distance(phase)",
+  "contactInference": {
+    "floorM": -0.001194837037473917,
+    "floorDefinition": "minimum evaluated candidate sole z across cycle, NOT calibrated ground",
+    "heightBandM": 0.0175,
+    "weight": "static rest surface area * max(0,1-max(0,z-floor)/heightBand)^2",
+    "contactConfidenceThreshold": 0.01,
+    "uncertainty": "heuristic height band; compare +/-7mm, no measured physical contacts; above-plane vertices deliberately soft weighted"
+  },
+  "fit": {
+    "objective": "sum normalizedTotalWeight*(v-weightedDesiredSpeed)^2 + lambda*sum cyclic adjacentVelocityDifference^2",
+    "desiredSpeed": "negative material vertex forward velocity, never changing contact centroid",
+    "smoothingSeconds": 0.025,
+    "lambda": 51.84,
+    "constraint": "v>=0",
+    "solverKktResidual": 2.3272453842509977e-14
+  },
+  "samples": [
+    {
+      "timeSeconds": 0.0,
+      "distanceMeters": 0.0,
+      "velocityMps": 0.717366040717145,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.00010114680054587148
+    },
+    {
+      "timeSeconds": 0.0034722222222222225,
+      "distanceMeters": 0.002490093576295586,
+      "velocityMps": 0.7169278592291123,
+      "leftConfidence": 0.0,
+      "rightConfidence": 7.748366719345641e-05
+    },
+    {
+      "timeSeconds": 0.006944444444444445,
+      "distanceMeters": 0.0049786679054639555,
+      "velocityMps": 0.7164909543718684,
+      "leftConfidence": 0.0,
+      "rightConfidence": 5.61043918657746e-05
+    },
+    {
+      "timeSeconds": 0.010416666666666668,
+      "distanceMeters": 0.007465726778490646,
+      "velocityMps": 0.7160549564915054,
+      "leftConfidence": 0.0,
+      "rightConfidence": 3.7445815744814984e-05
+    },
+    {
+      "timeSeconds": 0.01388888888888889,
+      "distanceMeters": 0.009951272801033171,
+      "velocityMps": 0.7156195524929888,
+      "leftConfidence": 0.0,
+      "rightConfidence": 2.1976822408489018e-05
+    },
+    {
+      "timeSeconds": 0.017361111111111112,
+      "distanceMeters": 0.012435307597691557,
+      "velocityMps": 0.7151844903822419,
+      "leftConfidence": 0.0,
+      "rightConfidence": 1.0210524110777389e-05
+    },
+    {
+      "timeSeconds": 0.020833333333333336,
+      "distanceMeters": 0.014917832032502082,
+      "velocityMps": 0.7147495840686198,
+      "leftConfidence": 0.0,
+      "rightConfidence": 2.6893612419473076e-06
+    },
+    {
+      "timeSeconds": 0.024305555555555556,
+      "distanceMeters": 0.017398846445814624,
+      "velocityMps": 0.7143147179994049,
+      "leftConfidence": 0.0,
+      "rightConfidence": 4.3124279921097445e-10
+    },
+    {
+      "timeSeconds": 0.02777777777777778,
+      "distanceMeters": 0.019878350907508936,
+      "velocityMps": 0.7138798519365179,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.03125,
+      "distanceMeters": 0.022356345417596,
+      "velocityMps": 0.713444985873631,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.034722222222222224,
+      "distanceMeters": 0.024832829976075818,
+      "velocityMps": 0.713010119810744,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.03819444444444445,
+      "distanceMeters": 0.02730780458294839,
+      "velocityMps": 0.712575253747857,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.04166666666666667,
+      "distanceMeters": 0.029781269238213712,
+      "velocityMps": 0.7121403876849699,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.045138888888888895,
+      "distanceMeters": 0.032253223941871786,
+      "velocityMps": 0.7117055216220829,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.04861111111111111,
+      "distanceMeters": 0.03472366869392262,
+      "velocityMps": 0.7112706555591959,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.052083333333333336,
+      "distanceMeters": 0.037192603494366205,
+      "velocityMps": 0.7108357894963089,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.05555555555555556,
+      "distanceMeters": 0.03966002834320254,
+      "velocityMps": 0.7104009234334218,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.05902777777777778,
+      "distanceMeters": 0.04212594324043163,
+      "velocityMps": 0.7099660573705348,
+      "leftConfidence": 1.384728718667507e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.0625,
+      "distanceMeters": 0.04459034827559109,
+      "velocityMps": 0.7095312428813111,
+      "leftConfidence": 0.000308612114614334,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.06597222222222222,
+      "distanceMeters": 0.047053245496801954,
+      "velocityMps": 0.7090975565361467,
+      "leftConfidence": 0.0014258645603522717,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.06944444444444445,
+      "distanceMeters": 0.04951464579133686,
+      "velocityMps": 0.7086690131159602,
+      "leftConfidence": 0.0035496063792525875,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.07291666666666667,
+      "distanceMeters": 0.05197457991590877,
+      "velocityMps": 0.7082530426374593,
+      "leftConfidence": 0.006678714958652506,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.0763888888888889,
+      "distanceMeters": 0.05443310999566699,
+      "velocityMps": 0.707860283303272,
+      "leftConfidence": 0.01105067262782728,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.07986111111111112,
+      "distanceMeters": 0.05689034227497724,
+      "velocityMps": 0.707505509579433,
+      "leftConfidence": 0.017354363502233815,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.08333333333333334,
+      "distanceMeters": 0.05934644673222931,
+      "velocityMps": 0.7072106577977594,
+      "leftConfidence": 0.026484464480898966,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.08680555555555557,
+      "distanceMeters": 0.06180155923604929,
+      "velocityMps": 0.7069341444025483,
+      "leftConfidence": 0.03466014442469692,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.09027777777777779,
+      "distanceMeters": 0.06425558755421898,
+      "velocityMps": 0.7065861668631928,
+      "leftConfidence": 0.04805783220310199,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.09375,
+      "distanceMeters": 0.06670824193535116,
+      "velocityMps": 0.7061427566689407,
+      "leftConfidence": 0.06708845844159851,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.09722222222222222,
+      "distanceMeters": 0.06915912969997752,
+      "velocityMps": 0.7055685957558422,
+      "leftConfidence": 0.09190976282398204,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.10069444444444445,
+      "distanceMeters": 0.07160771016359097,
+      "velocityMps": 0.7048137512854986,
+      "leftConfidence": 0.12287633330524644,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.10416666666666667,
+      "distanceMeters": 0.07405323675377097,
+      "velocityMps": 0.7038095646581867,
+      "leftConfidence": 0.1609315189760653,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.1076388888888889,
+      "distanceMeters": 0.07649468121710255,
+      "velocityMps": 0.7024624462208073,
+      "leftConfidence": 0.20658875093994605,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.11111111111111112,
+      "distanceMeters": 0.07893063252312166,
+      "velocityMps": 0.7006455060461971,
+      "leftConfidence": 0.2610721282893537,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.11458333333333334,
+      "distanceMeters": 0.08135915918446442,
+      "velocityMps": 0.6981858508872296,
+      "leftConfidence": 0.3247631234587133,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.11805555555555557,
+      "distanceMeters": 0.08377761793042214,
+      "velocityMps": 0.6948463867844233,
+      "leftConfidence": 0.3976244601468407,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.12152777777777779,
+      "distanceMeters": 0.08618238514754417,
+      "velocityMps": 0.69029953027787,
+      "leftConfidence": 0.47961060244076215,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.125,
+      "distanceMeters": 0.08856847621778478,
+      "velocityMps": 0.6840889261807214,
+      "leftConfidence": 0.5706720571227204,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.12847222222222224,
+      "distanceMeters": 0.09093241300545096,
+      "velocityMps": 0.6775386635150019,
+      "leftConfidence": 0.5727738745025264,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.13194444444444445,
+      "distanceMeters": 0.09327587283978375,
+      "velocityMps": 0.6722942010606886,
+      "leftConfidence": 0.5746664181672015,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.13541666666666669,
+      "distanceMeters": 0.09560297567485189,
+      "velocityMps": 0.6681170319385549,
+      "leftConfidence": 0.5763452610134401,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.1388888888888889,
+      "distanceMeters": 0.09791709509492472,
+      "velocityMps": 0.6648157540233918,
+      "leftConfidence": 0.5778091054279341,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.14236111111111113,
+      "distanceMeters": 0.10022100822787705,
+      "velocityMps": 0.6622382105571522,
+      "leftConfidence": 0.5790575366082952,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.14583333333333334,
+      "distanceMeters": 0.1025170206813695,
+      "velocityMps": 0.6602649626544989,
+      "leftConfidence": 0.5800868378677975,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.14930555555555555,
+      "distanceMeters": 0.10480707164310667,
+      "velocityMps": 0.6588043913061077,
+      "leftConfidence": 0.5808984903538551,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.1527777777777778,
+      "distanceMeters": 0.10709282298895302,
+      "velocityMps": 0.6577883839013956,
+      "leftConfidence": 0.5814931495962371,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.15625,
+      "distanceMeters": 0.10937573595512293,
+      "velocityMps": 0.6571694846124717,
+      "leftConfidence": 0.5818713620843139,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.15972222222222224,
+      "distanceMeters": 0.11165713979151308,
+      "velocityMps": 0.6569191251482546,
+      "leftConfidence": 0.5820327654425861,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.16319444444444445,
+      "distanceMeters": 0.11393829438179301,
+      "velocityMps": 0.6570259188529809,
+      "leftConfidence": 0.5819817900828289,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.16666666666666669,
+      "distanceMeters": 0.11622044971649964,
+      "velocityMps": 0.6574955539380415,
+      "leftConfidence": 0.5817191373179496,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.1701388888888889,
+      "distanceMeters": 0.11850449414838023,
+      "velocityMps": 0.6581140388251786,
+      "leftConfidence": 0.5830134305362592,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.17361111111111113,
+      "distanceMeters": 0.12079058181938744,
+      "velocityMps": 0.6586724596749798,
+      "leftConfidence": 0.5841813149798076,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.17708333333333334,
+      "distanceMeters": 0.12307854808034224,
+      "velocityMps": 0.6591961066349875,
+      "leftConfidence": 0.5852239718406045,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.18055555555555558,
+      "distanceMeters": 0.12536831433832651,
+      "velocityMps": 0.6597092579639525,
+      "leftConfidence": 0.5861383896578953,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.1840277777777778,
+      "distanceMeters": 0.12765988591460728,
+      "velocityMps": 0.6602359699737631,
+      "leftConfidence": 0.5869265590458392,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.1875,
+      "distanceMeters": 0.1299533529273046,
+      "velocityMps": 0.6608010293398808,
+      "leftConfidence": 0.5875858733087088,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.19097222222222224,
+      "distanceMeters": 0.13224889524531913,
+      "velocityMps": 0.6614313458364965,
+      "leftConfidence": 0.5881193253967593,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.19444444444444445,
+      "distanceMeters": 0.13454679222986574,
+      "velocityMps": 0.662157317262352,
+      "leftConfidence": 0.588524507325392,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.19791666666666669,
+      "distanceMeters": 0.1368474370339587,
+      "velocityMps": 0.6630140898952052,
+      "leftConfidence": 0.5888046339155188,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2013888888888889,
+      "distanceMeters": 0.13915135571647358,
+      "velocityMps": 0.664043071233362,
+      "leftConfidence": 0.5889582819300928,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.20486111111111113,
+      "distanceMeters": 0.14145923242606406,
+      "velocityMps": 0.6652939134907491,
+      "leftConfidence": 0.5889860207954398,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.20833333333333334,
+      "distanceMeters": 0.14377194168326168,
+      "velocityMps": 0.6668266186550812,
+      "leftConfidence": 0.5888897478437725,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.21180555555555558,
+      "distanceMeters": 0.14609002134596544,
+      "velocityMps": 0.6683872670622761,
+      "leftConfidence": 0.5893292558219811,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2152777777777778,
+      "distanceMeters": 0.14841312738641155,
+      "velocityMps": 0.6697218122346794,
+      "leftConfidence": 0.5896806995870957,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.21875000000000003,
+      "distanceMeters": 0.15074058166941742,
+      "velocityMps": 0.6708918547767,
+      "leftConfidence": 0.589944478525924,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.22222222222222224,
+      "distanceMeters": 0.15307190707552504,
+      "velocityMps": 0.6719515791412793,
+      "leftConfidence": 0.5901207525274966,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.22569444444444445,
+      "distanceMeters": 0.15540680624831477,
+      "velocityMps": 0.6729503443856094,
+      "leftConfidence": 0.5902088483340682,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.22916666666666669,
+      "distanceMeters": 0.15774514850020574,
+      "velocityMps": 0.6739347927035912,
+      "leftConfidence": 0.5902089519467957,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2326388888888889,
+      "distanceMeters": 0.16008696415636908,
+      "velocityMps": 0.6749510252465024,
+      "leftConfidence": 0.5901218067344812,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.23611111111111113,
+      "distanceMeters": 0.16243244638689028,
+      "velocityMps": 0.6760467395337085,
+      "leftConfidence": 0.5899468675403912,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.23958333333333334,
+      "distanceMeters": 0.16478196063611003,
+      "velocityMps": 0.6772734680168686,
+      "leftConfidence": 0.5896853537149338,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.24305555555555558,
+      "distanceMeters": 0.16713606134266484,
+      "velocityMps": 0.6786885389587097,
+      "leftConfidence": 0.5893384232983013,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2465277777777778,
+      "distanceMeters": 0.1694955177823518,
+      "velocityMps": 0.6803583703009755,
+      "leftConfidence": 0.588904446585081,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.25,
+      "distanceMeters": 0.1718613502413955,
+      "velocityMps": 0.6823611261081908,
+      "leftConfidence": 0.5883863820338189,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.25347222222222227,
+      "distanceMeters": 0.17423417475591,
+      "velocityMps": 0.6843857942521445,
+      "leftConfidence": 0.5877440659454222,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2569444444444445,
+      "distanceMeters": 0.1766135267226371,
+      "velocityMps": 0.6861209385826728,
+      "leftConfidence": 0.5870250407234127,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2604166666666667,
+      "distanceMeters": 0.17899853591367665,
+      "velocityMps": 0.6876443554561092,
+      "leftConfidence": 0.586227740392636,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2638888888888889,
+      "distanceMeters": 0.1813885854957593,
+      "velocityMps": 0.6890242038235136,
+      "leftConfidence": 0.585353265629145,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2673611111111111,
+      "distanceMeters": 0.1837832833444086,
+      "velocityMps": 0.6903217569984721,
+      "leftConfidence": 0.5844006006983253,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.27083333333333337,
+      "distanceMeters": 0.18618244295225234,
+      "velocityMps": 0.6915941771195204,
+      "leftConfidence": 0.5833715694916273,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2743055555555556,
+      "distanceMeters": 0.18858607449365655,
+      "velocityMps": 0.6928975907293075,
+      "leftConfidence": 0.5822650536003784,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2777777777777778,
+      "distanceMeters": 0.19099438560175547,
+      "velocityMps": 0.6942896075356755,
+      "leftConfidence": 0.5810813181746901,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.28125,
+      "distanceMeters": 0.19340779017863408,
+      "velocityMps": 0.6958314287464014,
+      "leftConfidence": 0.5798217102697413,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.28472222222222227,
+      "distanceMeters": 0.19582692650674033,
+      "velocityMps": 0.6975910962427986,
+      "leftConfidence": 0.5784870265428138,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2881944444444445,
+      "distanceMeters": 0.19825268626251857,
+      "velocityMps": 0.6996465230854693,
+      "leftConfidence": 0.5770758272119217,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2916666666666667,
+      "distanceMeters": 0.20068625414842697,
+      "velocityMps": 0.7020885791977685,
+      "leftConfidence": 0.575590523165922,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2951388888888889,
+      "distanceMeters": 0.20312834129292065,
+      "velocityMps": 0.7045536160305944,
+      "leftConfidence": 0.5735730216784171,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.2986111111111111,
+      "distanceMeters": 0.20557839795556185,
+      "velocityMps": 0.7066790216507417,
+      "leftConfidence": 0.5714651822378687,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.30208333333333337,
+      "distanceMeters": 0.20803540260871137,
+      "velocityMps": 0.7085556585633757,
+      "leftConfidence": 0.5692669184612974,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3055555555555556,
+      "distanceMeters": 0.21049862869114955,
+      "velocityMps": 0.7102625649210151,
+      "leftConfidence": 0.5669789681272824,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3090277777777778,
+      "distanceMeters": 0.21296761040484563,
+      "velocityMps": 0.7118709021679368,
+      "leftConfidence": 0.5646029552821639,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3125,
+      "distanceMeters": 0.2154421206959816,
+      "velocityMps": 0.7134470255263777,
+      "leftConfidence": 0.5621357575051072,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.31597222222222227,
+      "distanceMeters": 0.21792215966021627,
+      "velocityMps": 0.7150554178727939,
+      "leftConfidence": 0.5595805437162256,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3194444444444445,
+      "distanceMeters": 0.22040795325477947,
+      "velocityMps": 0.7167616925955957,
+      "leftConfidence": 0.5569373174553892,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3229166666666667,
+      "distanceMeters": 0.2228999616346808,
+      "velocityMps": 0.7186351342275638,
+      "leftConfidence": 0.5542058431176676,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3263888888888889,
+      "distanceMeters": 0.22539889717681522,
+      "velocityMps": 0.7207517380418735,
+      "leftConfidence": 0.5513887656903437,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.32986111111111116,
+      "distanceMeters": 0.22790575371750854,
+      "velocityMps": 0.7231976293974754,
+      "leftConfidence": 0.5484848697592264,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.33333333333333337,
+      "distanceMeters": 0.23042184756870826,
+      "velocityMps": 0.7260724288935563,
+      "leftConfidence": 0.5454966996997719,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3368055555555556,
+      "distanceMeters": 0.2329479621812383,
+      "velocityMps": 0.7289695879237459,
+      "leftConfidence": 0.5417870759048841,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3402777777777778,
+      "distanceMeters": 0.2354834757459982,
+      "velocityMps": 0.7314862253779596,
+      "leftConfidence": 0.5379664289021037,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.34375,
+      "distanceMeters": 0.23802724264232794,
+      "velocityMps": 0.7337235069079713,
+      "leftConfidence": 0.5340353067102326,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.34722222222222227,
+      "distanceMeters": 0.24057844633182504,
+      "velocityMps": 0.7357698182423645,
+      "leftConfidence": 0.5299911853234426,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3506944444444445,
+      "distanceMeters": 0.24313656099973718,
+      "velocityMps": 0.737704230475035,
+      "leftConfidence": 0.5258377277586808,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3541666666666667,
+      "distanceMeters": 0.24570132565929695,
+      "velocityMps": 0.7396002134313879,
+      "leftConfidence": 0.5215751004416276,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3576388888888889,
+      "distanceMeters": 0.24827273052175447,
+      "velocityMps": 0.7415289873441396,
+      "leftConfidence": 0.5172041532228971,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.36111111111111116,
+      "distanceMeters": 0.25085101323109354,
+      "velocityMps": 0.7435618532351688,
+      "leftConfidence": 0.512726509776331,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.36458333333333337,
+      "distanceMeters": 0.25343666471769044,
+      "velocityMps": 0.7457734030446403,
+      "leftConfidence": 0.5081451223974888,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3680555555555556,
+      "distanceMeters": 0.2560304458222972,
+      "velocityMps": 0.7482445132088832,
+      "leftConfidence": 0.5034583939209074,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3715277777777778,
+      "distanceMeters": 0.2586334132555346,
+      "velocityMps": 0.7510647283358658,
+      "leftConfidence": 0.4986726703401563,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.375,
+      "distanceMeters": 0.26124695624192906,
+      "velocityMps": 0.7543360318273374,
+      "leftConfidence": 0.4937874769786666,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.37847222222222227,
+      "distanceMeters": 0.26387189092091723,
+      "velocityMps": 0.7576263432698458,
+      "leftConfidence": 0.48811321042472294,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3819444444444445,
+      "distanceMeters": 0.2665075472307814,
+      "velocityMps": 0.760511691211907,
+      "leftConfidence": 0.48231938761102655,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3854166666666667,
+      "distanceMeters": 0.26915270428072313,
+      "velocityMps": 0.7630987695545418,
+      "leftConfidence": 0.4764076267599349,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3888888888888889,
+      "distanceMeters": 0.27180648862820006,
+      "velocityMps": 0.7654810145921788,
+      "leftConfidence": 0.4703770736358903,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.39236111111111116,
+      "distanceMeters": 0.2744683340286913,
+      "velocityMps": 0.767741936090779,
+      "leftConfidence": 0.4642327876924683,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.39583333333333337,
+      "distanceMeters": 0.27713795350312387,
+      "velocityMps": 0.7699588811823791,
+      "leftConfidence": 0.4579753523351128,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.3993055555555556,
+      "distanceMeters": 0.27981532323467084,
+      "velocityMps": 0.7722060841886753,
+      "leftConfidence": 0.4516082833745251,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4027777777777778,
+      "distanceMeters": 0.2825006753248584,
+      "velocityMps": 0.7745567197593539,
+      "leftConfidence": 0.44513463757264427,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.40625000000000006,
+      "distanceMeters": 0.28519449935423513,
+      "velocityMps": 0.7770859211616383,
+      "leftConfidence": 0.43855873172264404,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.40972222222222227,
+      "distanceMeters": 0.2878975533593381,
+      "velocityMps": 0.7798731857776795,
+      "leftConfidence": 0.4318821465513306,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4131944444444445,
+      "distanceMeters": 0.2906108823028394,
+      "velocityMps": 0.783004285679071,
+      "leftConfidence": 0.4251122119137293,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4166666666666667,
+      "distanceMeters": 0.2933358448036704,
+      "velocityMps": 0.7865741147996234,
+      "leftConfidence": 0.418251927586017,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4201388888888889,
+      "distanceMeters": 0.29607322368668193,
+      "velocityMps": 0.7901561218150003,
+      "leftConfidence": 0.4105766160264254,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.42361111111111116,
+      "distanceMeters": 0.2988223450101869,
+      "velocityMps": 0.7933377605238578,
+      "leftConfidence": 0.40281250270238045,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.42708333333333337,
+      "distanceMeters": 0.30158199768626215,
+      "velocityMps": 0.7962221808954942,
+      "leftConfidence": 0.3949619722787131,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4305555555555556,
+      "distanceMeters": 0.30435130699561846,
+      "velocityMps": 0.7988999812937418,
+      "leftConfidence": 0.38703002713928375,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4340277777777778,
+      "distanceMeters": 0.3071296959191768,
+      "velocityMps": 0.8014520386758797,
+      "leftConfidence": 0.37901956988636026,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.43750000000000006,
+      "distanceMeters": 0.30991685695463256,
+      "velocityMps": 0.8039527177466078,
+      "leftConfidence": 0.37093664541011695,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.44097222222222227,
+      "distanceMeters": 0.31271273355121343,
+      "velocityMps": 0.8064722018839641,
+      "leftConfidence": 0.36278491674270497,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4444444444444445,
+      "distanceMeters": 0.3155175085029312,
+      "velocityMps": 0.8090781703054704,
+      "leftConfidence": 0.3545708839557876,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4479166666666667,
+      "distanceMeters": 0.3183315991221636,
+      "velocityMps": 0.8118380263723913,
+      "leftConfidence": 0.3463005294459822,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4513888888888889,
+      "distanceMeters": 0.3211556591264218,
+      "velocityMps": 0.8148205360803453,
+      "leftConfidence": 0.33798073837736003,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.45486111111111116,
+      "distanceMeters": 0.32399058528641606,
+      "velocityMps": 0.8180969320763568,
+      "leftConfidence": 0.3296193815199196,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.45833333333333337,
+      "distanceMeters": 0.3268375290172743,
+      "velocityMps": 0.8217426568980094,
+      "leftConfidence": 0.3212235162464707,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4618055555555556,
+      "distanceMeters": 0.3296971186417993,
+      "velocityMps": 0.8253809668283894,
+      "leftConfidence": 0.3119665035897131,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4652777777777778,
+      "distanceMeters": 0.3325687081069799,
+      "velocityMps": 0.8286545651156549,
+      "leftConfidence": 0.3027072872870918,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.46875000000000006,
+      "distanceMeters": 0.33545118104099425,
+      "velocityMps": 0.8316498448766148,
+      "leftConfidence": 0.29345120775668626,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.47222222222222227,
+      "distanceMeters": 0.33834370230781746,
+      "velocityMps": 0.8344424048135505,
+      "leftConfidence": 0.28420552767533735,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4756944444444445,
+      "distanceMeters": 0.34124568395510296,
+      "velocityMps": 0.8370990240229076,
+      "leftConfidence": 0.27497569149190526,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4791666666666667,
+      "distanceMeters": 0.34415675845657134,
+      "velocityMps": 0.8396798888228653,
+      "leftConfidence": 0.2657689686535608,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4826388888888889,
+      "distanceMeters": 0.347076758498311,
+      "velocityMps": 0.8422401352191832,
+      "leftConfidence": 0.2565943746801468,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.48611111111111116,
+      "distanceMeters": 0.350005701156744,
+      "velocityMps": 0.8448308360382343,
+      "leftConfidence": 0.2474590541796257,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.48958333333333337,
+      "distanceMeters": 0.3529437762204693,
+      "velocityMps": 0.8475004006675448,
+      "leftConfidence": 0.23837193505216148,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4930555555555556,
+      "distanceMeters": 0.3558913382715804,
+      "velocityMps": 0.8502953407724788,
+      "leftConfidence": 0.22934419719711321,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.4965277777777778,
+      "distanceMeters": 0.3588489008053664,
+      "velocityMps": 0.8532606786882531,
+      "leftConfidence": 0.22038401574345381,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5,
+      "distanceMeters": 0.36181713261934767,
+      "velocityMps": 0.8564408461649432,
+      "leftConfidence": 0.21150405650389514,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5034722222222222,
+      "distanceMeters": 0.3647962900536228,
+      "velocityMps": 0.8595538359775151,
+      "leftConfidence": 0.20180137353495461,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5069444444444445,
+      "distanceMeters": 0.3677856898176705,
+      "velocityMps": 0.8623404281139597,
+      "leftConfidence": 0.19224187939872261,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5104166666666667,
+      "distanceMeters": 0.3707842977184986,
+      "velocityMps": 0.8648577227629954,
+      "leftConfidence": 0.18283332693679855,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.513888888888889,
+      "distanceMeters": 0.3737912639656234,
+      "velocityMps": 0.8671548355808916,
+      "leftConfidence": 0.17358466766729552,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5173611111111112,
+      "distanceMeters": 0.3768058973059506,
+      "velocityMps": 0.8692739684475863,
+      "leftConfidence": 0.1645042713133477,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5208333333333334,
+      "distanceMeters": 0.37982764334555125,
+      "velocityMps": 0.8712517503623849,
+      "leftConfidence": 0.15560250443698928,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5243055555555556,
+      "distanceMeters": 0.38285606673735717,
+      "velocityMps": 0.873120123317815,
+      "leftConfidence": 0.146889148269616,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5277777777777778,
+      "distanceMeters": 0.38589083583987044,
+      "velocityMps": 0.8749068797298157,
+      "leftConfidence": 0.13837482289208475,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.53125,
+      "distanceMeters": 0.3889317096449307,
+      "velocityMps": 0.8766364319848905,
+      "leftConfidence": 0.1300711169189687,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5347222222222222,
+      "distanceMeters": 0.391978526805871,
+      "velocityMps": 0.8783302527167147,
+      "leftConfidence": 0.12198941210078017,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5381944444444445,
+      "distanceMeters": 0.39503119587497,
+      "velocityMps": 0.8800071310843183,
+      "leftConfidence": 0.11414208612093722,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5416666666666667,
+      "distanceMeters": 0.3980896867599223,
+      "velocityMps": 0.8816836186482085,
+      "leftConfidence": 0.10654115184692685,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.545138888888889,
+      "distanceMeters": 0.4011537224303621,
+      "velocityMps": 0.883200927525127,
+      "leftConfidence": 0.09831140935685165,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5486111111111112,
+      "distanceMeters": 0.4042225146375017,
+      "velocityMps": 0.8844233837872667,
+      "leftConfidence": 0.09044353752704681,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5520833333333334,
+      "distanceMeters": 0.4072950959666959,
+      "velocityMps": 0.8853834618286,
+      "leftConfidence": 0.08294513955067191,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5555555555555556,
+      "distanceMeters": 0.41037060441427003,
+      "velocityMps": 0.8861094039741046,
+      "leftConfidence": 0.07582135752786927,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5590277777777778,
+      "distanceMeters": 0.4134482698240842,
+      "velocityMps": 0.8866258720788587,
+      "leftConfidence": 0.06907189796165024,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5625,
+      "distanceMeters": 0.4165274025737962,
+      "velocityMps": 0.8869545917552502,
+      "leftConfidence": 0.06269042172268219,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5659722222222222,
+      "distanceMeters": 0.41960738413846854,
+      "velocityMps": 0.887114789495999,
+      "leftConfidence": 0.0566841488752884,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5694444444444445,
+      "distanceMeters": 0.42268765904341676,
+      "velocityMps": 0.8871235557541821,
+      "leftConfidence": 0.05104482017128747,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5729166666666667,
+      "distanceMeters": 0.4257677281563026,
+      "velocityMps": 0.8869962532680478,
+      "leftConfidence": 0.04575508771504088,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.576388888888889,
+      "distanceMeters": 0.4288471431581862,
+      "velocityMps": 0.8867467878168949,
+      "leftConfidence": 0.04079764840256163,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5798611111111112,
+      "distanceMeters": 0.43192550185724693,
+      "velocityMps": 0.8863878228420858,
+      "leftConfidence": 0.03617108743251649,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5833333333333334,
+      "distanceMeters": 0.43500244422733025,
+      "velocityMps": 0.8859309823258998,
+      "leftConfidence": 0.03187680949512763,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5868055555555556,
+      "distanceMeters": 0.43807755699017736,
+      "velocityMps": 0.8853339690740398,
+      "leftConfidence": 0.02740324627912853,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5902777777777778,
+      "distanceMeters": 0.4411503064810457,
+      "velocityMps": 0.8845697376661074,
+      "leftConfidence": 0.02336861685183034,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.59375,
+      "distanceMeters": 0.444220152712875,
+      "velocityMps": 0.8836616918675659,
+      "leftConfidence": 0.019766173897488182,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.5972222222222222,
+      "distanceMeters": 0.4472866327271646,
+      "velocityMps": 0.8826307963632428,
+      "leftConfidence": 0.016537690173154554,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6006944444444445,
+      "distanceMeters": 0.4503493527785883,
+      "velocityMps": 0.8814959532567795,
+      "leftConfidence": 0.013629190695763878,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6041666666666667,
+      "distanceMeters": 0.4534079818665373,
+      "velocityMps": 0.8802744014018649,
+      "leftConfidence": 0.011036578335077962,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.607638888888889,
+      "distanceMeters": 0.4564622460046059,
+      "velocityMps": 0.878981742125643,
+      "leftConfidence": 0.008764920594870008,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6111111111111112,
+      "distanceMeters": 0.45951192241014693,
+      "velocityMps": 0.8776318674659924,
+      "leftConfidence": 0.006819023238167781,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6145833333333334,
+      "distanceMeters": 0.4625568334547888,
+      "velocityMps": 0.8762368942477383,
+      "leftConfidence": 0.00520294173209074,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6180555555555556,
+      "distanceMeters": 0.46559684033115584,
+      "velocityMps": 0.8748070665396629,
+      "leftConfidence": 0.003881353828879186,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6215277777777778,
+      "distanceMeters": 0.4686318368063151,
+      "velocityMps": 0.8733509031520814,
+      "leftConfidence": 0.002798426194931375,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.625,
+      "distanceMeters": 0.4716617437691245,
+      "velocityMps": 0.871875507426128,
+      "leftConfidence": 0.0019353435187746072,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6284722222222223,
+      "distanceMeters": 0.47468645552933514,
+      "velocityMps": 0.8703584664551941,
+      "leftConfidence": 0.00136886354226035,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6319444444444445,
+      "distanceMeters": 0.47770581397083595,
+      "velocityMps": 0.8687919958492732,
+      "leftConfidence": 0.0009677271516363585,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6354166666666667,
+      "distanceMeters": 0.4807196722200085,
+      "velocityMps": 0.8671903556741175,
+      "leftConfidence": 0.0006473043883022146,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.638888888888889,
+      "distanceMeters": 0.4837279282642984,
+      "velocityMps": 0.8655651258368502,
+      "leftConfidence": 0.00040052251091885957,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6423611111111112,
+      "distanceMeters": 0.4867305157991419,
+      "velocityMps": 0.8639252942330092,
+      "leftConfidence": 0.0002270479185004604,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6458333333333334,
+      "distanceMeters": 0.4897273950845641,
+      "velocityMps": 0.8622771741701609,
+      "leftConfidence": 0.00011083995080730222,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6493055555555556,
+      "distanceMeters": 0.4927185447106637,
+      "velocityMps": 0.860625010463206,
+      "leftConfidence": 4.593961277314541e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6527777777777778,
+      "distanceMeters": 0.4957039547197697,
+      "velocityMps": 0.858971154781856,
+      "leftConfidence": 9.985498942855802e-06,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.65625,
+      "distanceMeters": 0.4986836215275399,
+      "velocityMps": 0.8573169264938126,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6597222222222223,
+      "distanceMeters": 0.5016575444870878,
+      "velocityMps": 0.8556626982057691,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6631944444444445,
+      "distanceMeters": 0.5046257235984133,
+      "velocityMps": 0.8540084699177255,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6666666666666667,
+      "distanceMeters": 0.5075881588615164,
+      "velocityMps": 0.852354241629682,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.670138888888889,
+      "distanceMeters": 0.5105448502763972,
+      "velocityMps": 0.8507000133416384,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6736111111111112,
+      "distanceMeters": 0.5134957978430555,
+      "velocityMps": 0.8490457850535947,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6770833333333334,
+      "distanceMeters": 0.5164410015614915,
+      "velocityMps": 0.8473915567655512,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6805555555555556,
+      "distanceMeters": 0.5193804614317051,
+      "velocityMps": 0.8457373284775076,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6840277777777778,
+      "distanceMeters": 0.5223141774536963,
+      "velocityMps": 0.8440831001894641,
+      "leftConfidence": 5.195851002852813e-06,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6875,
+      "distanceMeters": 0.525242149246791,
+      "velocityMps": 0.8424286526330895,
+      "leftConfidence": 3.067047307257474e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6909722222222223,
+      "distanceMeters": 0.528164374112184,
+      "velocityMps": 0.8407728698332616,
+      "leftConfidence": 7.519603039632957e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6944444444444445,
+      "distanceMeters": 0.5310808438764885,
+      "velocityMps": 0.8391137144061482,
+      "leftConfidence": 0.000142604792009219,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.6979166666666667,
+      "distanceMeters": 0.5339915412884765,
+      "velocityMps": 0.837447994898935,
+      "leftConfidence": 0.00025824019665917025,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.701388888888889,
+      "distanceMeters": 0.5368964340769677,
+      "velocityMps": 0.8357702512720127,
+      "leftConfidence": 0.0004214209695593222,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7048611111111112,
+      "distanceMeters": 0.5397954668903314,
+      "velocityMps": 0.8340726492254426,
+      "leftConfidence": 0.0006321240454850097,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7083333333333334,
+      "distanceMeters": 0.5426885529039743,
+      "velocityMps": 0.832344894632895,
+      "leftConfidence": 0.0008803035581055664,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7118055555555556,
+      "distanceMeters": 0.5455756024009211,
+      "velocityMps": 0.8305956156084231,
+      "leftConfidence": 0.0008146552250382498,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7152777777777778,
+      "distanceMeters": 0.5484565759171771,
+      "velocityMps": 0.8288451297550833,
+      "leftConfidence": 0.0007561795630539768,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.71875,
+      "distanceMeters": 0.5513314685442047,
+      "velocityMps": 0.8270930234127847,
+      "leftConfidence": 0.0007077461860368571,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7222222222222223,
+      "distanceMeters": 0.5542002740342847,
+      "velocityMps": 0.8253389388733096,
+      "leftConfidence": 0.0006613896608576419,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7256944444444445,
+      "distanceMeters": 0.5570629850005823,
+      "velocityMps": 0.8235825777140685,
+      "leftConfidence": 0.0006138223468073573,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7291666666666667,
+      "distanceMeters": 0.5599195931316471,
+      "velocityMps": 0.8218237057792397,
+      "leftConfidence": 0.0005671375666058125,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.732638888888889,
+      "distanceMeters": 0.5627700894033597,
+      "velocityMps": 0.8200621467272224,
+      "leftConfidence": 0.0005237894193722387,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7361111111111112,
+      "distanceMeters": 0.5656144642593249,
+      "velocityMps": 0.8182977703087744,
+      "leftConfidence": 0.00048557324083291117,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7395833333333334,
+      "distanceMeters": 0.5684527077420346,
+      "velocityMps": 0.8165304757319787,
+      "leftConfidence": 0.00045257378355801015,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7430555555555556,
+      "distanceMeters": 0.5712848095786338,
+      "velocityMps": 0.8147601821491876,
+      "leftConfidence": 0.00042714585286021727,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7465277777777778,
+      "distanceMeters": 0.574110759212268,
+      "velocityMps": 0.8129868068240688,
+      "leftConfidence": 0.00040306099739973806,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.75,
+      "distanceMeters": 0.5769305458434029,
+      "velocityMps": 0.8112102927096262,
+      "leftConfidence": 0.0003760889534509706,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7534722222222223,
+      "distanceMeters": 0.5797441620705709,
+      "velocityMps": 0.8094326541391301,
+      "leftConfidence": 0.00032510191643984746,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7569444444444445,
+      "distanceMeters": 0.5825516069465204,
+      "velocityMps": 0.8076555944077871,
+      "leftConfidence": 0.0002746827407858382,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7604166666666667,
+      "distanceMeters": 0.5853528820279893,
+      "velocityMps": 0.8058788525182703,
+      "leftConfidence": 0.000225566695280799,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.763888888888889,
+      "distanceMeters": 0.5881479880784722,
+      "velocityMps": 0.8041022325598801,
+      "leftConfidence": 0.00017858182344769415,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7673611111111112,
+      "distanceMeters": 0.5909369252888187,
+      "velocityMps": 0.8023256005997069,
+      "leftConfidence": 0.00013467084336630622,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7708333333333334,
+      "distanceMeters": 0.5937196934819648,
+      "velocityMps": 0.800548878652511,
+      "leftConfidence": 9.486014068709722e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7743055555555556,
+      "distanceMeters": 0.5964962922943334,
+      "velocityMps": 0.7987720372717969,
+      "leftConfidence": 6.029971401388746e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7777777777777778,
+      "distanceMeters": 0.5992667213259053,
+      "velocityMps": 0.796995084913591,
+      "leftConfidence": 3.2254388997365135e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.78125,
+      "distanceMeters": 0.6020309802487369,
+      "velocityMps": 0.7952180546374256,
+      "leftConfidence": 1.2102458164624399e-05,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7847222222222223,
+      "distanceMeters": 0.604789068864922,
+      "velocityMps": 0.7934409882852038,
+      "leftConfidence": 1.3488280337202836e-06,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7881944444444445,
+      "distanceMeters": 0.6075409871035509,
+      "velocityMps": 0.7916639171650411,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7916666666666667,
+      "distanceMeters": 0.6102867349563459,
+      "velocityMps": 0.7898868460448785,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.795138888888889,
+      "distanceMeters": 0.613026312423307,
+      "velocityMps": 0.7881097749247157,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.7986111111111112,
+      "distanceMeters": 0.6157597195044342,
+      "velocityMps": 0.786332703804553,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8020833333333334,
+      "distanceMeters": 0.6184869561997275,
+      "velocityMps": 0.7845556326843902,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8055555555555556,
+      "distanceMeters": 0.6212080225091869,
+      "velocityMps": 0.7827785615642274,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8090277777777778,
+      "distanceMeters": 0.6239229184328124,
+      "velocityMps": 0.7810014904440649,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8125000000000001,
+      "distanceMeters": 0.626631643970604,
+      "velocityMps": 0.7792244193239022,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8159722222222223,
+      "distanceMeters": 0.6293341991225617,
+      "velocityMps": 0.7774473482037395,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8194444444444445,
+      "distanceMeters": 0.6320305838886855,
+      "velocityMps": 0.7756702770835768,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8229166666666667,
+      "distanceMeters": 0.6347207982689754,
+      "velocityMps": 0.7738932059634142,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.826388888888889,
+      "distanceMeters": 0.6374048422634314,
+      "velocityMps": 0.7721161348432514,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8298611111111112,
+      "distanceMeters": 0.6400827158720536,
+      "velocityMps": 0.7703390637230886,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8333333333333334,
+      "distanceMeters": 0.6427544190948418,
+      "velocityMps": 0.7685619926029258,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8368055555555556,
+      "distanceMeters": 0.6454199519317961,
+      "velocityMps": 0.7667849214827631,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8402777777777778,
+      "distanceMeters": 0.6480793143829165,
+      "velocityMps": 0.7650078503626004,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8437500000000001,
+      "distanceMeters": 0.650732506448203,
+      "velocityMps": 0.7632307792424377,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8472222222222223,
+      "distanceMeters": 0.6533795281276557,
+      "velocityMps": 0.7614537081222749,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8506944444444445,
+      "distanceMeters": 0.6560203794212743,
+      "velocityMps": 0.7596766370021124,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8541666666666667,
+      "distanceMeters": 0.6586550603290592,
+      "velocityMps": 0.7578995658819497,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.857638888888889,
+      "distanceMeters": 0.6612835708510101,
+      "velocityMps": 0.7561224947617873,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8611111111111112,
+      "distanceMeters": 0.6639059109871271,
+      "velocityMps": 0.7543454236416246,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8645833333333334,
+      "distanceMeters": 0.6665220807374103,
+      "velocityMps": 0.7525683525214621,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8680555555555556,
+      "distanceMeters": 0.6691320801018595,
+      "velocityMps": 0.7507912814012996,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8715277777777778,
+      "distanceMeters": 0.6717359090804749,
+      "velocityMps": 0.749014210281137,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8750000000000001,
+      "distanceMeters": 0.6743335676732564,
+      "velocityMps": 0.7472371391609746,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8784722222222223,
+      "distanceMeters": 0.6769250558802039,
+      "velocityMps": 0.745460068040812,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8819444444444445,
+      "distanceMeters": 0.6795103737013175,
+      "velocityMps": 0.7436829969206493,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8854166666666667,
+      "distanceMeters": 0.6820895211365973,
+      "velocityMps": 0.7419059258004868,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.888888888888889,
+      "distanceMeters": 0.6846624981860431,
+      "velocityMps": 0.7401288546803241,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 0.8923611111111112,
+      "distanceMeters": 0.687229304849655,
+      "velocityMps": 0.7383517835601615,
+      "leftConfidence": 0.0,
+      "rightConfidence": 3.144987557351843e-05
+    },
+    {
+      "timeSeconds": 0.8958333333333334,
+      "distanceMeters": 0.6897899414488637,
+      "velocityMps": 0.7365748975840428,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0004115627949851857
+    },
+    {
+      "timeSeconds": 0.8993055555555556,
+      "distanceMeters": 0.692344412393615,
+      "velocityMps": 0.7348003665926705,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0016591136865911334
+    },
+    {
+      "timeSeconds": 0.9027777777777778,
+      "distanceMeters": 0.6948927378136821,
+      "velocityMps": 0.7330350753660128,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0038936066958945195
+    },
+    {
+      "timeSeconds": 0.9062500000000001,
+      "distanceMeters": 0.6974349702738138,
+      "velocityMps": 0.7312908216698477,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.007124610785284947
+    },
+    {
+      "timeSeconds": 0.9097222222222223,
+      "distanceMeters": 0.6999712111055152,
+      "velocityMps": 0.7295838973901505,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.011631799387390906
+    },
+    {
+      "timeSeconds": 0.9131944444444445,
+      "distanceMeters": 0.70250162833788,
+      "velocityMps": 0.7279364284519427,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.018124145820948123
+    },
+    {
+      "timeSeconds": 0.9166666666666667,
+      "distanceMeters": 0.7050264837087139,
+      "velocityMps": 0.726380265148389,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.02761337466674875
+    },
+    {
+      "timeSeconds": 0.920138888888889,
+      "distanceMeters": 0.7075460429275432,
+      "velocityMps": 0.7248858448973009,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.036264889671447344
+    },
+    {
+      "timeSeconds": 0.9236111111111112,
+      "distanceMeters": 0.7100603778468731,
+      "velocityMps": 0.7233710686367608,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.050086593378334134
+    },
+    {
+      "timeSeconds": 0.9270833333333334,
+      "distanceMeters": 0.7125694021872472,
+      "velocityMps": 0.721826951418682,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.06942690536742811
+    },
+    {
+      "timeSeconds": 0.9305555555555556,
+      "distanceMeters": 0.7150729868524504,
+      "velocityMps": 0.7202378157383769,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.09445754802209148
+    },
+    {
+      "timeSeconds": 0.9340277777777778,
+      "distanceMeters": 0.7175709299832382,
+      "velocityMps": 0.7185774275954168,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.1255408099976179
+    },
+    {
+      "timeSeconds": 0.9375000000000001,
+      "distanceMeters": 0.7200629125428087,
+      "velocityMps": 0.7168045267172182,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.16362549671590887
+    },
+    {
+      "timeSeconds": 0.9409722222222223,
+      "distanceMeters": 0.7225484370325647,
+      "velocityMps": 0.7148575793821613,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.20919871071621207
+    },
+    {
+      "timeSeconds": 0.9444444444444445,
+      "distanceMeters": 0.7250267443048328,
+      "velocityMps": 0.7126474094443038,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.26347364953114666
+    },
+    {
+      "timeSeconds": 0.9479166666666667,
+      "distanceMeters": 0.7274966996894029,
+      "velocityMps": 0.7100468920680442,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3267951210619113
+    },
+    {
+      "timeSeconds": 0.951388888888889,
+      "distanceMeters": 0.729956636210556,
+      "velocityMps": 0.7068765441161462,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.39912547857339964
+    },
+    {
+      "timeSeconds": 0.9548611111111112,
+      "distanceMeters": 0.7324041372689528,
+      "velocityMps": 0.7028840655204399,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.48042262276756
+    },
+    {
+      "timeSeconds": 0.9583333333333334,
+      "distanceMeters": 0.7348357311181395,
+      "velocityMps": 0.6977139916110725,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5706448488327036
+    },
+    {
+      "timeSeconds": 0.9618055555555556,
+      "distanceMeters": 0.7372491852816254,
+      "velocityMps": 0.6924356065568236,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5726048007369663
+    },
+    {
+      "timeSeconds": 0.9652777777777778,
+      "distanceMeters": 0.7396463958435306,
+      "velocityMps": 0.6883576771006152,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5743847042390673
+    },
+    {
+      "timeSeconds": 0.9687500000000001,
+      "distanceMeters": 0.7420312109471311,
+      "velocityMps": 0.6852958225732612,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5759808230168779
+    },
+    {
+      "timeSeconds": 0.9722222222222223,
+      "distanceMeters": 0.7444069161802849,
+      "velocityMps": 0.6831103917232915,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5773933236394584
+    },
+    {
+      "timeSeconds": 0.9756944444444445,
+      "distanceMeters": 0.7467763818755855,
+      "velocityMps": 0.681701848769876,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5786209954029711
+    },
+    {
+      "timeSeconds": 0.9791666666666667,
+      "distanceMeters": 0.7491421931698223,
+      "velocityMps": 0.6810054567105425,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5796631738595984
+    },
+    {
+      "timeSeconds": 0.982638888888889,
+      "distanceMeters": 0.7515067666287208,
+      "velocityMps": 0.6809888556150068,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5805182766286657
+    },
+    {
+      "timeSeconds": 0.9861111111111112,
+      "distanceMeters": 0.7538724621264178,
+      "velocityMps": 0.6816517510584327,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5811874044257586
+    },
+    {
+      "timeSeconds": 0.9895833333333334,
+      "distanceMeters": 0.756241692350146,
+      "velocityMps": 0.6830248578090518,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5816717726144969
+    },
+    {
+      "timeSeconds": 0.9930555555555556,
+      "distanceMeters": 0.7586170331810738,
+      "velocityMps": 0.6851714608052984,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5819712155627457
+    },
+    {
+      "timeSeconds": 0.9965277777777779,
+      "distanceMeters": 0.76100134345377,
+      "velocityMps": 0.6881912562677258,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5820865161601053
+    },
+    {
+      "timeSeconds": 1.0,
+      "distanceMeters": 0.7633978980180631,
+      "velocityMps": 0.6922241727650995,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5820218704784935
+    },
+    {
+      "timeSeconds": 1.0034722222222223,
+      "distanceMeters": 0.765808781894921,
+      "velocityMps": 0.6964449403050244,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5834153239536214
+    },
+    {
+      "timeSeconds": 1.0069444444444444,
+      "distanceMeters": 0.7682332251209248,
+      "velocityMps": 0.7000343578731927,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5846748297706553
+    },
+    {
+      "timeSeconds": 1.0104166666666667,
+      "distanceMeters": 0.7706693204383127,
+      "velocityMps": 0.7031565449421963,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.585798442868471
+    },
+    {
+      "timeSeconds": 1.013888888888889,
+      "distanceMeters": 0.7731156939920304,
+      "velocityMps": 0.7059546219991908,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5867851162622789
+    },
+    {
+      "timeSeconds": 1.0173611111111112,
+      "distanceMeters": 0.7755714450082789,
+      "velocityMps": 0.7085579633599397,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5876365554642782
+    },
+    {
+      "timeSeconds": 1.0208333333333335,
+      "distanceMeters": 0.7780361078854363,
+      "velocityMps": 0.7110878538827204,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5883511242336527
+    },
+    {
+      "timeSeconds": 1.0243055555555556,
+      "distanceMeters": 0.780509632078637,
+      "velocityMps": 0.7136620814008422,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5889281055424583
+    },
+    {
+      "timeSeconds": 1.027777777777778,
+      "distanceMeters": 0.7829923815659069,
+      "velocityMps": 0.716401623266615,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5893701110674355
+    },
+    {
+      "timeSeconds": 1.03125,
+      "distanceMeters": 0.7854851545008144,
+      "velocityMps": 0.719435587240066,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5896756702086787
+    },
+    {
+      "timeSeconds": 1.0347222222222223,
+      "distanceMeters": 0.7879892208792466,
+      "velocityMps": 0.7229066467369274,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5898456075132459
+    },
+    {
+      "timeSeconds": 1.0381944444444444,
+      "distanceMeters": 0.790506382865438,
+      "velocityMps": 0.7269786573092645,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5898832574824829
+    },
+    {
+      "timeSeconds": 1.0416666666666667,
+      "distanceMeters": 0.7930390599020899,
+      "velocityMps": 0.73184331580228,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5897850150034356
+    },
+    {
+      "timeSeconds": 1.045138888888889,
+      "distanceMeters": 0.7955886395486894,
+      "velocityMps": 0.7367145606390205,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5903342203442503
+    },
+    {
+      "timeSeconds": 1.0486111111111112,
+      "distanceMeters": 0.7981537778902733,
+      "velocityMps": 0.740805124113293,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5907732825185033
+    },
+    {
+      "timeSeconds": 1.0520833333333335,
+      "distanceMeters": 0.8007320939151443,
+      "velocityMps": 0.7443049062124263,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5911036206047878
+    },
+    {
+      "timeSeconds": 1.0555555555555556,
+      "distanceMeters": 0.803321818268819,
+      "velocityMps": 0.7473763215041931,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5913220314275084
+    },
+    {
+      "timeSeconds": 1.059027777777778,
+      "distanceMeters": 0.8059217128978825,
+      "velocityMps": 0.7501629848364232,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5914316791831081
+    },
+    {
+      "timeSeconds": 1.0625,
+      "distanceMeters": 0.8085310152077905,
+      "velocityMps": 0.752795145670589,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5914315665454927
+    },
+    {
+      "timeSeconds": 1.0659722222222223,
+      "distanceMeters": 0.8111494024106166,
+      "velocityMps": 0.7553958831572671,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5913226831316774
+    },
+    {
+      "timeSeconds": 1.0694444444444444,
+      "distanceMeters": 0.8137769776282915,
+      "velocityMps": 0.7580874422234389,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5911034689325703
+    },
+    {
+      "timeSeconds": 1.0729166666666667,
+      "distanceMeters": 0.8164142752626813,
+      "velocityMps": 0.7609959951850993,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5907757954161696
+    },
+    {
+      "timeSeconds": 1.076388888888889,
+      "distanceMeters": 0.819062284718258,
+      "velocityMps": 0.7642574512271149,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5903413197094893
+    },
+    {
+      "timeSeconds": 1.0798611111111112,
+      "distanceMeters": 0.8217224969878621,
+      "velocityMps": 0.7680248160648766,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5897987036823391
+    },
+    {
+      "timeSeconds": 1.0833333333333335,
+      "distanceMeters": 0.8243969742753103,
+      "velocityMps": 0.7724741015053048,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5891512330637177
+    },
+    {
+      "timeSeconds": 1.0868055555555556,
+      "distanceMeters": 0.8270868674022487,
+      "velocityMps": 0.77690433961118,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.588458387930766
+    },
+    {
+      "timeSeconds": 1.090277777777778,
+      "distanceMeters": 0.8297908911688342,
+      "velocityMps": 0.7806133499420652,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5876622813849905
+    },
+    {
+      "timeSeconds": 1.09375,
+      "distanceMeters": 0.8325068356354794,
+      "velocityMps": 0.7837706628455701,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5867656297573682
+    },
+    {
+      "timeSeconds": 1.0972222222222223,
+      "distanceMeters": 0.8352330344475996,
+      "velocityMps": 0.7865198529356189,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5857675271424133
+    },
+    {
+      "timeSeconds": 1.1006944444444444,
+      "distanceMeters": 0.8379682880433107,
+      "velocityMps": 0.7889862181939737,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5846659817867276
+    },
+    {
+      "timeSeconds": 1.1041666666666667,
+      "distanceMeters": 0.8407118079741216,
+      "velocityMps": 0.7912812619530928,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5834656227027494
+    },
+    {
+      "timeSeconds": 1.107638888888889,
+      "distanceMeters": 0.843463177802536,
+      "velocityMps": 0.7935077592135712,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5821624768299585
+    },
+    {
+      "timeSeconds": 1.1111111111111112,
+      "distanceMeters": 0.8462223340175159,
+      "velocityMps": 0.7957662206148357,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5807591740717117
+    },
+    {
+      "timeSeconds": 1.1145833333333335,
+      "distanceMeters": 0.8489895631890186,
+      "velocityMps": 0.7981577821707576,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5792581299902467
+    },
+    {
+      "timeSeconds": 1.1180555555555556,
+      "distanceMeters": 0.8517655118474857,
+      "velocityMps": 0.8007886451063159,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5776558799556579
+    },
+    {
+      "timeSeconds": 1.121527777777778,
+      "distanceMeters": 0.8545512152119218,
+      "velocityMps": 0.803776492808877,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5759565413674824
+    },
+    {
+      "timeSeconds": 1.125,
+      "distanceMeters": 0.8573481437095926,
+      "velocityMps": 0.807254321849501,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5741600210897486
+    },
+    {
+      "timeSeconds": 1.1284722222222223,
+      "distanceMeters": 0.860157083949538,
+      "velocityMps": 0.8106952563591148,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5718033707824123
+    },
+    {
+      "timeSeconds": 1.1319444444444444,
+      "distanceMeters": 0.8629769928486322,
+      "velocityMps": 0.813572269519066,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5693326211526821
+    },
+    {
+      "timeSeconds": 1.1354166666666667,
+      "distanceMeters": 0.8658061285651548,
+      "velocityMps": 0.8160099031979973,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5667476185892456
+    },
+    {
+      "timeSeconds": 1.138888888888889,
+      "distanceMeters": 0.8686431457350541,
+      "velocityMps": 0.8181119866639625,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5640484914750387
+    },
+    {
+      "timeSeconds": 1.1423611111111112,
+      "distanceMeters": 0.871487033650247,
+      "velocityMps": 0.8199674524871955,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5612370933579302
+    },
+    {
+      "timeSeconds": 1.1458333333333335,
+      "distanceMeters": 0.8743370694442426,
+      "velocityMps": 0.8216531648542555,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5583121100609841
+    },
+    {
+      "timeSeconds": 1.1493055555555556,
+      "distanceMeters": 0.8771927825777198,
+      "velocityMps": 0.8232376000285903,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5552752417619844
+    },
+    {
+      "timeSeconds": 1.152777777777778,
+      "distanceMeters": 0.8800539335183707,
+      "velocityMps": 0.8247853417862929,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5521283466774725
+    },
+    {
+      "timeSeconds": 1.15625,
+      "distanceMeters": 0.8829205026273695,
+      "velocityMps": 0.826358464997049,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.548870295070211
+    },
+    {
+      "timeSeconds": 1.1597222222222223,
+      "distanceMeters": 0.8857926859937061,
+      "velocityMps": 0.828019154012827,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5455047372348361
+    },
+    {
+      "timeSeconds": 1.1631944444444444,
+      "distanceMeters": 0.888670902686941,
+      "velocityMps": 0.8298336612904835,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5420314499312887
+    },
+    {
+      "timeSeconds": 1.1666666666666667,
+      "distanceMeters": 0.8915558115813924,
+      "velocityMps": 0.8318738619134872,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5384539110645077
+    },
+    {
+      "timeSeconds": 1.170138888888889,
+      "distanceMeters": 0.8944477097386107,
+      "velocityMps": 0.833859476644234,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5340759594889343
+    },
+    {
+      "timeSeconds": 1.1736111111111112,
+      "distanceMeters": 0.8973459211943727,
+      "velocityMps": 0.8355103218746973,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5295669335490697
+    },
+    {
+      "timeSeconds": 1.1770833333333335,
+      "distanceMeters": 0.9002493921084074,
+      "velocityMps": 0.836888924609257,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.524925824745659
+    },
+    {
+      "timeSeconds": 1.1805555555555556,
+      "distanceMeters": 0.9031572640608473,
+      "velocityMps": 0.8380453199961143,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5201529928317125
+    },
+    {
+      "timeSeconds": 1.184027777777778,
+      "distanceMeters": 0.9060688371080503,
+      "velocityMps": 0.8390207551928466,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5152525039216296
+    },
+    {
+      "timeSeconds": 1.1875,
+      "distanceMeters": 0.9089835403643937,
+      "velocityMps": 0.8398483204609231,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5102234682091821
+    },
+    {
+      "timeSeconds": 1.1909722222222223,
+      "distanceMeters": 0.9119009063502899,
+      "velocityMps": 0.8405544874152917,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.5050672667719026
+    },
+    {
+      "timeSeconds": 1.1944444444444444,
+      "distanceMeters": 0.9148205520104526,
+      "velocityMps": 0.8411614128384476,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4997884327702592
+    },
+    {
+      "timeSeconds": 1.1979166666666667,
+      "distanceMeters": 0.9177421638078933,
+      "velocityMps": 0.8416869824873857,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.49438793925704216
+    },
+    {
+      "timeSeconds": 1.201388888888889,
+      "distanceMeters": 0.9206654843284882,
+      "velocityMps": 0.8421456373752708,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4888680251150477
+    },
+    {
+      "timeSeconds": 1.2048611111111112,
+      "distanceMeters": 0.9235903029445225,
+      "velocityMps": 0.8425498854605161,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4832344893411102
+    },
+    {
+      "timeSeconds": 1.2083333333333335,
+      "distanceMeters": 0.9265164485676654,
+      "velocityMps": 0.8429099934697671,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.47748924326340936
+    },
+    {
+      "timeSeconds": 1.2118055555555556,
+      "distanceMeters": 0.9294437286573227,
+      "velocityMps": 0.8432033381728539,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4709822450138909
+    },
+    {
+      "timeSeconds": 1.215277777777778,
+      "distanceMeters": 0.932371867350443,
+      "velocityMps": 0.8434045490643824,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.464341649019506
+    },
+    {
+      "timeSeconds": 1.21875,
+      "distanceMeters": 0.9353005453925947,
+      "velocityMps": 0.8435140032149633,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.45757059689746077
+    },
+    {
+      "timeSeconds": 1.2222222222222223,
+      "distanceMeters": 0.9382294389352063,
+      "velocityMps": 0.8435286773293165,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.45067139819083607
+    },
+    {
+      "timeSeconds": 1.2256944444444444,
+      "distanceMeters": 0.9411582097506428,
+      "velocityMps": 0.8434433123621319,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.44364744484006124
+    },
+    {
+      "timeSeconds": 1.2291666666666667,
+      "distanceMeters": 0.9440864956300908,
+      "velocityMps": 0.8432493541999585,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4365012854484212
+    },
+    {
+      "timeSeconds": 1.232638888888889,
+      "distanceMeters": 0.9470138986010441,
+      "velocityMps": 0.84293475706913,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4292360756459346
+    },
+    {
+      "timeSeconds": 1.2361111111111112,
+      "distanceMeters": 0.9499399743081681,
+      "velocityMps": 0.842484850234296,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4218593963575887
+    },
+    {
+      "timeSeconds": 1.2395833333333335,
+      "distanceMeters": 0.9528642208763848,
+      "velocityMps": 0.8418811730584945,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4143738878708992
+    },
+    {
+      "timeSeconds": 1.2430555555555556,
+      "distanceMeters": 0.9557860651299793,
+      "velocityMps": 0.8411011170119314,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.4067857479773338
+    },
+    {
+      "timeSeconds": 1.246527777777778,
+      "distanceMeters": 0.9587048488479212,
+      "velocityMps": 0.8401183045225618,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.39910256131084654
+    },
+    {
+      "timeSeconds": 1.25,
+      "distanceMeters": 0.9616198133115377,
+      "velocityMps": 0.8389012265205429,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3913287605007337
+    },
+    {
+      "timeSeconds": 1.2534722222222223,
+      "distanceMeters": 0.9645304365580231,
+      "velocityMps": 0.8376177634550409,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3830539209974028
+    },
+    {
+      "timeSeconds": 1.2569444444444446,
+      "distanceMeters": 0.9674367644960354,
+      "velocityMps": 0.8364271288401068,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.37468419163022465
+    },
+    {
+      "timeSeconds": 1.2604166666666667,
+      "distanceMeters": 0.9703390460399132,
+      "velocityMps": 0.8352870404334604,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.366224730205044
+    },
+    {
+      "timeSeconds": 1.263888888888889,
+      "distanceMeters": 0.973237388778772,
+      "velocityMps": 0.8341583771491988,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3576809314153172
+    },
+    {
+      "timeSeconds": 1.2673611111111112,
+      "distanceMeters": 0.9761317694248478,
+      "velocityMps": 0.833004874990501,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.34905656466635293
+    },
+    {
+      "timeSeconds": 1.2708333333333335,
+      "distanceMeters": 0.9790220405156855,
+      "velocityMps": 0.831791273332021,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3403598478505303
+    },
+    {
+      "timeSeconds": 1.2743055555555556,
+      "distanceMeters": 0.9819079325202247,
+      "velocityMps": 0.8304825212825583,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3315964149882949
+    },
+    {
+      "timeSeconds": 1.277777777777778,
+      "distanceMeters": 0.9847890544544492,
+      "velocityMps": 0.8290437128307855,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.32277455444424724
+    },
+    {
+      "timeSeconds": 1.28125,
+      "distanceMeters": 0.9876648920065206,
+      "velocityMps": 0.8274387171623643,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3139021704710766
+    },
+    {
+      "timeSeconds": 1.2847222222222223,
+      "distanceMeters": 0.9905348021746807,
+      "velocityMps": 0.8256295396978106,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.3049899565100417
+    },
+    {
+      "timeSeconds": 1.2881944444444446,
+      "distanceMeters": 0.9933980070734003,
+      "velocityMps": 0.823576481964709,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.2960470703107817
+    },
+    {
+      "timeSeconds": 1.2916666666666667,
+      "distanceMeters": 0.9962535857937174,
+      "velocityMps": 0.8212368609378875,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.28708427742798054
+    },
+    {
+      "timeSeconds": 1.295138888888889,
+      "distanceMeters": 0.9991009637567302,
+      "velocityMps": 0.8188528457574703,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.2779448990059909
+    },
+    {
+      "timeSeconds": 1.2986111111111112,
+      "distanceMeters": 1.0019403807437763,
+      "velocityMps": 0.8166513387810919,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.2687948829161206
+    },
+    {
+      "timeSeconds": 1.3020833333333335,
+      "distanceMeters": 1.004772375943225,
+      "velocityMps": 0.8145778961013408,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.2596405982891141
+    },
+    {
+      "timeSeconds": 1.3055555555555556,
+      "distanceMeters": 1.0075973097292583,
+      "velocityMps": 0.8125839646538977,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.2504903388839207
+    },
+    {
+      "timeSeconds": 1.309027777777778,
+      "distanceMeters": 1.010415382972974,
+      "velocityMps": 0.8106262237263109,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.24135198007538
+    },
+    {
+      "timeSeconds": 1.3125,
+      "distanceMeters": 1.013226652468691,
+      "velocityMps": 0.8086650058066375,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.23223535356351907
+    },
+    {
+      "timeSeconds": 1.3159722222222223,
+      "distanceMeters": 1.0160310423002978,
+      "velocityMps": 0.8066635371989125,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.22315048687897007
+    },
+    {
+      "timeSeconds": 1.3194444444444446,
+      "distanceMeters": 1.0188283533836857,
+      "velocityMps": 0.8045876468325329,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.21410921125642152
+    },
+    {
+      "timeSeconds": 1.3229166666666667,
+      "distanceMeters": 1.0216182708481774,
+      "velocityMps": 0.8024048127146776,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.20512196029910043
+    },
+    {
+      "timeSeconds": 1.326388888888889,
+      "distanceMeters": 1.0244003691026913,
+      "velocityMps": 0.8000837818853315,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.19620329332184325
+    },
+    {
+      "timeSeconds": 1.3298611111111112,
+      "distanceMeters": 1.027174116425558,
+      "velocityMps": 0.7975946760858459,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.1873661603363478
+    },
+    {
+      "timeSeconds": 1.3333333333333335,
+      "distanceMeters": 1.0299388786400392,
+      "velocityMps": 0.7949083594554343,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.17862620762878942
+    },
+    {
+      "timeSeconds": 1.3368055555555556,
+      "distanceMeters": 1.0326943334633976,
+      "velocityMps": 0.7922336187989663,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.1701288417364448
+    },
+    {
+      "timeSeconds": 1.340277777777778,
+      "distanceMeters": 1.0354408505338877,
+      "velocityMps": 0.7897602138033178,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.161719412735222
+    },
+    {
+      "timeSeconds": 1.34375,
+      "distanceMeters": 1.0381790575244467,
+      "velocityMps": 0.7874470127586746,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.15340823171173407
+    },
+    {
+      "timeSeconds": 1.3472222222222223,
+      "distanceMeters": 1.0409094490836792,
+      "velocityMps": 0.785258525359279,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.14520570787509182
+    },
+    {
+      "timeSeconds": 1.3506944444444446,
+      "distanceMeters": 1.0436324038809275,
+      "velocityMps": 0.7831634378557726,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.1371241356073925
+    },
+    {
+      "timeSeconds": 1.3541666666666667,
+      "distanceMeters": 1.046348198991854,
+      "velocityMps": 0.7811345460379169,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.12917774247061628
+    },
+    {
+      "timeSeconds": 1.357638888888889,
+      "distanceMeters": 1.0490570232875651,
+      "velocityMps": 0.7791482482917095,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.12138062702012152
+    },
+    {
+      "timeSeconds": 1.3611111111111112,
+      "distanceMeters": 1.05175898823067,
+      "velocityMps": 0.7771835589367089,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.11374903856146054
+    },
+    {
+      "timeSeconds": 1.3645833333333335,
+      "distanceMeters": 1.054454137272037,
+      "velocityMps": 0.7752222888907715,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.10630062311067966
+    },
+    {
+      "timeSeconds": 1.3680555555555556,
+      "distanceMeters": 1.057142454982734,
+      "velocityMps": 0.7732487124706905,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.09905241502778246
+    },
+    {
+      "timeSeconds": 1.371527777777778,
+      "distanceMeters": 1.0598238743869113,
+      "velocityMps": 0.7712488643354393,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.09202456925320356
+    },
+    {
+      "timeSeconds": 1.375,
+      "distanceMeters": 1.0624982836014438,
+      "velocityMps": 0.7692108432353356,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.08523731802845037
+    },
+    {
+      "timeSeconds": 1.3784722222222223,
+      "distanceMeters": 1.0651657482177566,
+      "velocityMps": 0.7672487757608291,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.07857337652657141
+    },
+    {
+      "timeSeconds": 1.3819444444444446,
+      "distanceMeters": 1.0678267000647852,
+      "velocityMps": 0.7654594881276915,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.07222120148352124
+    },
+    {
+      "timeSeconds": 1.3854166666666667,
+      "distanceMeters": 1.0704816976382763,
+      "velocityMps": 0.7638191142031133,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0661724919190888
+    },
+    {
+      "timeSeconds": 1.388888888888889,
+      "distanceMeters": 1.0731312221672007,
+      "velocityMps": 0.7623070144573632,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.06043191712964095
+    },
+    {
+      "timeSeconds": 1.3923611111111112,
+      "distanceMeters": 1.0757756875949853,
+      "velocityMps": 0.7609050719465997,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.05500336196894567
+    },
+    {
+      "timeSeconds": 1.3958333333333335,
+      "distanceMeters": 1.078415449189299,
+      "velocityMps": 0.7595976063780433,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.04987747501458253
+    },
+    {
+      "timeSeconds": 1.3993055555555556,
+      "distanceMeters": 1.0810508114259374,
+      "velocityMps": 0.7583710419256386,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.04504726687459623
+    },
+    {
+      "timeSeconds": 1.402777777777778,
+      "distanceMeters": 1.083682034438062,
+      "velocityMps": 0.7572134130580782,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.040502202403711
+    },
+    {
+      "timeSeconds": 1.40625,
+      "distanceMeters": 1.0863093395838503,
+      "velocityMps": 0.7561143509160742,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.03623861272448087
+    },
+    {
+      "timeSeconds": 1.4097222222222223,
+      "distanceMeters": 1.0889329146036026,
+      "velocityMps": 0.7550648604612986,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.03226152577886719
+    },
+    {
+      "timeSeconds": 1.4131944444444446,
+      "distanceMeters": 1.0915529178906243,
+      "velocityMps": 0.7540570328631248,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.028568946932390774
+    },
+    {
+      "timeSeconds": 1.4166666666666667,
+      "distanceMeters": 1.094169482271266,
+      "velocityMps": 0.7530840503865556,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.025164776019368607
+    },
+    {
+      "timeSeconds": 1.420138888888889,
+      "distanceMeters": 1.0967827785997957,
+      "velocityMps": 0.7521746348465871,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.022017218491355073
+    },
+    {
+      "timeSeconds": 1.4236111111111112,
+      "distanceMeters": 1.0993930634884874,
+      "velocityMps": 0.7513494610398183,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.019118633172582018
+    },
+    {
+      "timeSeconds": 1.4270833333333335,
+      "distanceMeters": 1.1020006082576537,
+      "velocityMps": 0.7505963259999108,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.01643043629566084
+    },
+    {
+      "timeSeconds": 1.4305555555555556,
+      "distanceMeters": 1.1046056441705254,
+      "velocityMps": 0.7499043598142008,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.013942365023506325
+    },
+    {
+      "timeSeconds": 1.434027777777778,
+      "distanceMeters": 1.1072083666438453,
+      "velocityMps": 0.7492637848179624,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.011662408127803638
+    },
+    {
+      "timeSeconds": 1.4375,
+      "distanceMeters": 1.1098089390088828,
+      "velocityMps": 0.7486658974436826,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.009600083645072624
+    },
+    {
+      "timeSeconds": 1.4409722222222223,
+      "distanceMeters": 1.1124074961539248,
+      "velocityMps": 0.7481030181005344,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.007765409004267629
+    },
+    {
+      "timeSeconds": 1.4444444444444446,
+      "distanceMeters": 1.1150041479400778,
+      "velocityMps": 0.747568410723668,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.006168758364744141
+    },
+    {
+      "timeSeconds": 1.4479166666666667,
+      "distanceMeters": 1.1175989824986505,
+      "velocityMps": 0.7470562950141498,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0048118080366938544
+    },
+    {
+      "timeSeconds": 1.451388888888889,
+      "distanceMeters": 1.1201920694598675,
+      "velocityMps": 0.7465617946467689,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0036640842256491293
+    },
+    {
+      "timeSeconds": 1.4548611111111112,
+      "distanceMeters": 1.1227834628024398,
+      "velocityMps": 0.7460807706748429,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0027042458713285675
+    },
+    {
+      "timeSeconds": 1.4583333333333335,
+      "distanceMeters": 1.1253732032694523,
+      "velocityMps": 0.7456097383243526,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0019318402575992755
+    },
+    {
+      "timeSeconds": 1.4618055555555556,
+      "distanceMeters": 1.1279613116549525,
+      "velocityMps": 0.7451406917237444,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0012847414440576663
+    },
+    {
+      "timeSeconds": 1.465277777777778,
+      "distanceMeters": 1.13054778773307,
+      "velocityMps": 0.7446695292720267,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0008229297953144449
+    },
+    {
+      "timeSeconds": 1.46875,
+      "distanceMeters": 1.133132625385853,
+      "velocityMps": 0.7441969587308769,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0004764653187222743
+    },
+    {
+      "timeSeconds": 1.4722222222222223,
+      "distanceMeters": 1.1357158206961175,
+      "velocityMps": 0.7437235399815761,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0002321867274647609
+    },
+    {
+      "timeSeconds": 1.4756944444444446,
+      "distanceMeters": 1.138297371444703,
+      "velocityMps": 0.7432496912037589,
+      "leftConfidence": 0.0,
+      "rightConfidence": 8.785642321350155e-05
+    },
+    {
+      "timeSeconds": 1.4791666666666667,
+      "distanceMeters": 1.140877276591598,
+      "velocityMps": 0.7427756734077042,
+      "leftConfidence": 0.0,
+      "rightConfidence": 2.1491362739525383e-05
+    },
+    {
+      "timeSeconds": 1.482638888888889,
+      "distanceMeters": 1.1434555357689398,
+      "velocityMps": 0.7423016127412103,
+      "leftConfidence": 0.0,
+      "rightConfidence": 2.425501287952037e-08
+    },
+    {
+      "timeSeconds": 1.4861111111111112,
+      "distanceMeters": 1.1460321489022136,
+      "velocityMps": 0.7418275520245644,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.4895833333333335,
+      "distanceMeters": 1.1486071159913325,
+      "velocityMps": 0.7413534913079184,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.4930555555555556,
+      "distanceMeters": 1.1511804370362964,
+      "velocityMps": 0.7408794305912725,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.496527777777778,
+      "distanceMeters": 1.1537521120371053,
+      "velocityMps": 0.7404053698746267,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5,
+      "distanceMeters": 1.1563221409937592,
+      "velocityMps": 0.7399313091579808,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5034722222222223,
+      "distanceMeters": 1.158890523906258,
+      "velocityMps": 0.7394572484413349,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5069444444444446,
+      "distanceMeters": 1.1614572607746017,
+      "velocityMps": 0.7389831877246891,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5104166666666667,
+      "distanceMeters": 1.1640223515987904,
+      "velocityMps": 0.7385091270080432,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.513888888888889,
+      "distanceMeters": 1.1665857963788242,
+      "velocityMps": 0.7380350662913973,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5173611111111112,
+      "distanceMeters": 1.169147595114703,
+      "velocityMps": 0.7375610055747513,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5208333333333335,
+      "distanceMeters": 1.1717077478064266,
+      "velocityMps": 0.7370869448581054,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5243055555555556,
+      "distanceMeters": 1.1742662544539952,
+      "velocityMps": 0.7366128841414594,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.527777777777778,
+      "distanceMeters": 1.1768231150574089,
+      "velocityMps": 0.7361388234248135,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.53125,
+      "distanceMeters": 1.1793783296166676,
+      "velocityMps": 0.7356647627081674,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5347222222222223,
+      "distanceMeters": 1.1819318981317712,
+      "velocityMps": 0.7351907019915213,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5381944444444446,
+      "distanceMeters": 1.18448382060272,
+      "velocityMps": 0.7347166412748751,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5416666666666667,
+      "distanceMeters": 1.1870340970295135,
+      "velocityMps": 0.7342425805582289,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.545138888888889,
+      "distanceMeters": 1.189582727412152,
+      "velocityMps": 0.7337685198415828,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5486111111111112,
+      "distanceMeters": 1.1921297117506355,
+      "velocityMps": 0.7332944591249366,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5520833333333335,
+      "distanceMeters": 1.194675050044964,
+      "velocityMps": 0.7328203984082906,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5555555555555556,
+      "distanceMeters": 1.1972187422951377,
+      "velocityMps": 0.7323463376916446,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.559027777777778,
+      "distanceMeters": 1.199760788501156,
+      "velocityMps": 0.7318722769749985,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5625,
+      "distanceMeters": 1.2023011886630195,
+      "velocityMps": 0.7313982162583524,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5659722222222223,
+      "distanceMeters": 1.204839942780728,
+      "velocityMps": 0.7309241555417065,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5694444444444446,
+      "distanceMeters": 1.2073770508542814,
+      "velocityMps": 0.7304500948250607,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5729166666666667,
+      "distanceMeters": 1.2099125128836798,
+      "velocityMps": 0.7299760341084149,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.576388888888889,
+      "distanceMeters": 1.2124463288689231,
+      "velocityMps": 0.7295019733917689,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5798611111111112,
+      "distanceMeters": 1.2149784988100114,
+      "velocityMps": 0.7290279126751229,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5833333333333335,
+      "distanceMeters": 1.2175090227069447,
+      "velocityMps": 0.7285538519584769,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5868055555555556,
+      "distanceMeters": 1.220037900559723,
+      "velocityMps": 0.728079791241831,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.590277777777778,
+      "distanceMeters": 1.2225651323683464,
+      "velocityMps": 0.7276057305251851,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.59375,
+      "distanceMeters": 1.2250907181328148,
+      "velocityMps": 0.7271316698085392,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.5972222222222223,
+      "distanceMeters": 1.227614657853128,
+      "velocityMps": 0.7266576090918931,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.0
+    },
+    {
+      "timeSeconds": 1.6006944444444446,
+      "distanceMeters": 1.2301369515292861,
+      "velocityMps": 0.7261835483752471,
+      "leftConfidence": 0.0,
+      "rightConfidence": 1.267005503763146e-07
+    },
+    {
+      "timeSeconds": 1.6041666666666667,
+      "distanceMeters": 1.2326575991619222,
+      "velocityMps": 0.7257094880231727,
+      "leftConfidence": 0.0,
+      "rightConfidence": 2.339683557935104e-06
+    },
+    {
+      "timeSeconds": 1.607638888888889,
+      "distanceMeters": 1.235176600761692,
+      "velocityMps": 0.7252354334441913,
+      "leftConfidence": 0.0,
+      "rightConfidence": 6.9841247189970804e-06
+    },
+    {
+      "timeSeconds": 1.6111111111111112,
+      "distanceMeters": 1.2376939563635823,
+      "velocityMps": 0.7247613932445576,
+      "leftConfidence": 0.0,
+      "rightConfidence": 1.3642587038330934e-05
+    },
+    {
+      "timeSeconds": 1.6145833333333335,
+      "distanceMeters": 1.2402096660317958,
+      "velocityMps": 0.7242873756464204,
+      "leftConfidence": 0.0,
+      "rightConfidence": 2.190315393395535e-05
+    },
+    {
+      "timeSeconds": 1.6180555555555556,
+      "distanceMeters": 1.242723729853482,
+      "velocityMps": 0.7238133856446881,
+      "leftConfidence": 0.0,
+      "rightConfidence": 3.136476236135558e-05
+    },
+    {
+      "timeSeconds": 1.621527777777778,
+      "distanceMeters": 1.2452361479236265,
+      "velocityMps": 0.7233394227585925,
+      "leftConfidence": 0.0,
+      "rightConfidence": 4.1639446461261447e-05
+    },
+    {
+      "timeSeconds": 1.6250000000000002,
+      "distanceMeters": 1.2477469203237326,
+      "velocityMps": 0.7228654797024991,
+      "leftConfidence": 0.0,
+      "rightConfidence": 5.235645772550235e-05
+    },
+    {
+      "timeSeconds": 1.6284722222222223,
+      "distanceMeters": 1.2502560488352974,
+      "velocityMps": 0.7223925429587739,
+      "leftConfidence": 0.0,
+      "rightConfidence": 5.652302957849043e-05
+    },
+    {
+      "timeSeconds": 1.6319444444444446,
+      "distanceMeters": 1.252763538945484,
+      "velocityMps": 0.7219217605087027,
+      "leftConfidence": 0.0,
+      "rightConfidence": 6.0715668446696145e-05
+    },
+    {
+      "timeSeconds": 1.6354166666666667,
+      "distanceMeters": 1.2552693984033172,
+      "velocityMps": 0.7214532872031884,
+      "leftConfidence": 0.0,
+      "rightConfidence": 6.492702241241404e-05
+    },
+    {
+      "timeSeconds": 1.638888888888889,
+      "distanceMeters": 1.257773635495757,
+      "velocityMps": 0.7209872780420563,
+      "leftConfidence": 0.0,
+      "rightConfidence": 6.913641955426776e-05
+    },
+    {
+      "timeSeconds": 1.6423611111111112,
+      "distanceMeters": 1.2602762590466068,
+      "velocityMps": 0.7205238872473936,
+      "leftConfidence": 0.0,
+      "rightConfidence": 7.333058738937923e-05
+    },
+    {
+      "timeSeconds": 1.6458333333333335,
+      "distanceMeters": 1.2627772784130205,
+      "velocityMps": 0.7200632678068544,
+      "leftConfidence": 0.0,
+      "rightConfidence": 7.749751203908436e-05
+    },
+    {
+      "timeSeconds": 1.6493055555555556,
+      "distanceMeters": 1.2652767034804417,
+      "velocityMps": 0.7196055710277632,
+      "leftConfidence": 0.0,
+      "rightConfidence": 8.162320187906562e-05
+    },
+    {
+      "timeSeconds": 1.652777777777778,
+      "distanceMeters": 1.2677745446558253,
+      "velocityMps": 0.7191509459931525,
+      "leftConfidence": 0.0,
+      "rightConfidence": 8.569137061630883e-05
+    },
+    {
+      "timeSeconds": 1.6562500000000002,
+      "distanceMeters": 1.2702708128591202,
+      "velocityMps": 0.718699539104684,
+      "leftConfidence": 0.0,
+      "rightConfidence": 8.968841406818076e-05
+    },
+    {
+      "timeSeconds": 1.6597222222222223,
+      "distanceMeters": 1.2727655195129752,
+      "velocityMps": 0.7182514935157287,
+      "leftConfidence": 0.0,
+      "rightConfidence": 9.360910574548332e-05
+    },
+    {
+      "timeSeconds": 1.6631944444444446,
+      "distanceMeters": 1.2752586765310534,
+      "velocityMps": 0.7178069488972454,
+      "leftConfidence": 0.0,
+      "rightConfidence": 9.743277166226135e-05
+    },
+    {
+      "timeSeconds": 1.6666666666666667,
+      "distanceMeters": 1.2777502963046894,
+      "velocityMps": 0.717366040717145,
+      "leftConfidence": 0.0,
+      "rightConfidence": 0.00010114680054587148
+    }
+  ]
+}
