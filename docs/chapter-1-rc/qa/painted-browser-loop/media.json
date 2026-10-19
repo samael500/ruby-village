@@ -1,0 +1,42 @@
+[
+  {
+    "file": "docs/chapter-1-rc/qa/painted-browser-loop/1280/actual-phase-controls-and-loop-silent.webm",
+    "sha256": "7eeadb50d6bfd7414bb9fba365373e316ad72a98af0c7f4a8bf393739767e4d3",
+    "media": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 800
+        }
+      ],
+      "format": {
+        "duration": "19.760000",
+        "size": "3938698"
+      }
+    },
+    "scope": "Actual browser video: pause,24 real slider phases, resume and actual repeating loop. No synthetic loop or audio."
+  },
+  {
+    "file": "docs/chapter-1-rc/qa/painted-browser-loop/844/actual-phase-controls-and-loop-silent.webm",
+    "sha256": "eaa3bac75afed6bccd991be9e10337c1374655cb426b9901367b27080088e140",
+    "media": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 844,
+          "height": 390
+        }
+      ],
+      "format": {
+        "duration": "18.200000",
+        "size": "1613537"
+      }
+    },
+    "scope": "Actual browser video: pause,24 real slider phases, resume and actual repeating loop. No synthetic loop or audio."
+  }
+]
