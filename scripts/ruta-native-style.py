@@ -10,7 +10,7 @@ from mathutils import Vector, Matrix
 from bpy_extras.object_utils import world_to_camera_view
 
 ROOT = Path(__file__).resolve().parents[1]
-OUT = ROOT / 'art/ruta-native-style-v1'
+OUT = ROOT / os.environ.get('RUTA_STYLE_OUTPUT_DIR','art/ruta-native-style-v1')
 OUT.mkdir(parents=True, exist_ok=True)
 SOURCE = Path(os.environ.get('RUTA_STYLE_INPUT', str(ROOT / 'art/ruta-native-proportions-study-v2/b-neutral/ruta-proportion-proposal.blend')))
 bpy.ops.wm.open_mainfile(filepath=str(SOURCE))
@@ -346,6 +346,8 @@ for row in added:
 for o in scene.objects:
     if o.type != 'MESH' or o.parent != rig:
         continue
+    if head_mode=='source' and o.name.startswith('Ellie ready '):
+        continue
     o.data.update()
     normals = {}
     for p in o.data.polygons:
@@ -356,7 +358,10 @@ for o in scene.objects:
     o.data.normals_split_custom_set_from_vertices([normals[tuple(round(c,6) for c in v.co)].normalized() for v in o.data.vertices])
 
 # Eevee toon shading keeps source texture/alpha links, including actual hair alpha.
+source_head_materials={m for o in scene.objects if head_mode=='source' and o.name.startswith('Ellie ready ') for m in o.data.materials if m}
 for m in list(bpy.data.materials):
+    if m in source_head_materials:
+        continue
     if not m.use_nodes:
         continue
     nt = m.node_tree
@@ -428,7 +433,7 @@ ground_root.z=0
 rig.matrix_world=Matrix.Translation(-ground_root)
 bpy.context.view_layer.update()
 bpy.ops.file.pack_all()
-bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-native-style.blend'))
+bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-native-style.blend'),compress=True)
 views=[]
 if os.environ.get('RUTA_STYLE_RENDER','1') == '1':
     for name,yaw in [('front',0),('three-quarter',math.pi/4),('e',math.pi/2)]:
@@ -439,4 +444,4 @@ if os.environ.get('RUTA_STYLE_RENDER','1') == '1':
         views.append({'view':name,'yaw':yaw,'rootPx':[q.x*768,(1-q.y)*960]})
         scene.render.filepath = str(OUT/f'{name}-00.png')
         bpy.ops.render.render(write_still=True)
-(OUT/'appearance.json').write_text(json.dumps({'status':'deterministic-native-appearance-study-not-approved','productionEnabled':False,'source':str(SOURCE),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'restMap':rest_map_path,'actionsHashBefore':before_actions,'actionsHashAfter':action_hash(),'headMode':head_mode,'headRestTiltDegrees':head_tilt_degrees,'rootTransform':'Rz(yaw)*T(-RootRestGround)','views':views,'newObjects':added,'changes':['whole 3D head replacement and fixed rest-space UV face texture','Head-bound native copper wave meshes','Chest-bound bow/buttons; one rounded Hips-bound bag with original single diagonal strap','rest-space cargo trouser tailoring and sleeve material assignment','native boot mesh welded/bisected/capped to ankle height, with bound cuffs and laces'],'limitations':['An appearance study, not final painted art','Proportions must come from independently reviewed whole-rig shape branch','Camera/origins and actual game walking are not yet accepted','No imagegen per-frame repaint, image warp or per-frame scale used']},indent=2)+'\n')
+(OUT/'appearance.json').write_text(json.dumps({'status':'deterministic-native-appearance-study-not-approved','productionEnabled':False,'source':str(SOURCE),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'restMap':rest_map_path,'actionsHashBefore':before_actions,'actionsHashAfter':action_hash(),'headMode':head_mode,'headRestTiltDegrees':head_tilt_degrees,'rootTransform':'Rz(yaw)*T(-RootRestGround)','views':views,'newObjects':added,'changes':(['ready authored head geometry, UVs, normals and shaders preserved'] if head_mode=='source' else ['whole 3D head replacement and fixed rest-space UV face texture','Head-bound native copper wave meshes'])+['Chest-bound bow/buttons; one rounded Hips-bound bag with original single diagonal strap','rest-space cargo trouser tailoring and sleeve material assignment','native boot mesh welded/bisected/capped to ankle height, with bound cuffs and laces'],'limitations':['An appearance study, not final painted art','Proportions must come from independently reviewed whole-rig shape branch','Camera/origins and actual game walking are not yet accepted','No imagegen per-frame repaint, image warp or per-frame scale used']},indent=2)+'\n')
