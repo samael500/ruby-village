@@ -1,0 +1,1943 @@
+{
+  "status": "manual_semantic_annotation_NOT_physical_joint_registration_NOT_art_acceptance",
+  "sourceFrameSize": [
+    384,
+    416
+  ],
+  "oneGlobalScaleInitializationOnly": 0.9389975318017847,
+  "scaleApplied": false,
+  "perFrameResizeOrWarp": false,
+  "coordinateSource": "manual inspection of whole frames and coordinate-labelled grids; no bbox-extremum or auto-fit landmarks",
+  "definitions": {
+    "ankleL/ankleR": "physical joint center: occluded -> null in all24",
+    "estimatedAnkleCenter": "manual visual guess of internal ankle center from boot bend; separate from physical ankle, 8-10px uncertainty",
+    "heelL/heelR": "visible rear-most heel/outsole profile midpoint of drawn boot, not native mean vertex landmark or inferred floor contact",
+    "toeL/toeR": "visible frontmost toe profile midpoint on drawn boot; not bbox bottom, physical contact or native vertex-mean counterpart",
+    "satchelClaspCenter": "center of visible large gold flap clasp on satchel; NOT waist belt buckle or Hips joint",
+    "waistBuckleCenter": "null: waist-belt hardware cannot be identified independently of satchel/strap fittings",
+    "uncertaintyPx": "manual radial visual uncertainty estimate in original art pixels; not statistical confidence or measured residual"
+  },
+  "sourceHashes": {
+    "art/painted-ruta-whole24-v1/frame-00.png": "0509602dde43a59e10e221c49cb4645a5e3d909ce0b9c2494da5cbca8a52c4e2",
+    "art/painted-ruta-whole24-v1/frame-01.png": "104bdef1d032554c188cf5318b2ef870ef0ad60975a1bcd7e3e6a6995435a4fc",
+    "art/painted-ruta-whole24-v1/frame-02.png": "c2bdcb7da32d7ea24e8040afd9447277aa483de4c2e50c2a32a733db2bc21a22",
+    "art/painted-ruta-whole24-v1/frame-03.png": "0be439d46998df8c7c0d0b698f2e8981c2a815f3db94bfd92b11ba3be1794315",
+    "art/painted-ruta-whole24-v1/frame-04.png": "ca8551225d0b106b891ddee0967028e44a43da043c56606943d585053fed8788",
+    "art/painted-ruta-whole24-v1/frame-05.png": "c1133bd40aa91f86eacbfd8206f1585c1cfde1de5b1c1addf27932c8e4a6a5aa",
+    "art/painted-ruta-whole24-v1/frame-06.png": "71a532361731d179f29b6bc73ac61216f3e83a13f39fbdd16fc7153b9cb2902a",
+    "art/painted-ruta-whole24-v1/frame-07.png": "7fcd661c1c6c04b2fe433b60dd146c7805f47ee26dbcb71e44f6b16916dcadc2",
+    "art/painted-ruta-whole24-v1/frame-08.png": "df2a9597f62497213bbb8d9319c49f65f8734fb82c1c27889f34bacaa4adc1ea",
+    "art/painted-ruta-whole24-v1/frame-09.png": "8a415fba85cb33ac189c2664a10064d1c2fb09b1868adaa6d575b639132c6307",
+    "art/painted-ruta-whole24-v1/frame-10.png": "0fe3638fa620cae9c850836634faec635bb5db26b6b6d9c66ed2335c6d017e6a",
+    "art/painted-ruta-whole24-v1/frame-11.png": "8d96f95df14d7631f4eed014f3286f9ddf55adb32e41501701dee1553c625f1d",
+    "art/painted-ruta-whole24-v1/frame-12.png": "69735a6497e850bcb63e9a001587053c6727a4bd9c81fe039c165792793167b7",
+    "art/painted-ruta-whole24-v1/frame-13.png": "1f117fe91314a7991fdb70579120abac982af09ef8df725f3ae34c4308b8eee8",
+    "art/painted-ruta-whole24-v1/frame-14.png": "8f1041ccc76d27889640fa79ad891d6c1a8316686c7ace4986d3366354168915",
+    "art/painted-ruta-whole24-v1/frame-15.png": "68ec6a7eb58b717c84437e20703bd9640b14f0d78577d3e02324a504e999c54a",
+    "art/painted-ruta-whole24-v1/frame-16.png": "7eb9c630bda3acbfb09e7c8da98afb2b06b9a89dd7a59e6c62bf2336a2087f48",
+    "art/painted-ruta-whole24-v1/frame-17.png": "5756cf15548b9c70bd8eb23d14708108d20b7badec4642ce3fc49fa374a277f3",
+    "art/painted-ruta-whole24-v1/frame-18.png": "4428e2949fc28bef28ea99ff2401fca7afa0cda06d566d767c1109621ee63810",
+    "art/painted-ruta-whole24-v1/frame-19.png": "b8533d1e87ada466fd69e761caafaa31e61123f81a49cff16a2e90a37ea645e8",
+    "art/painted-ruta-whole24-v1/frame-20.png": "274888ea9b89a1e16d6d6363b112377b9ae692f302c0bde34d6262a495a5422e",
+    "art/painted-ruta-whole24-v1/frame-21.png": "977ec5eebda23890af63344c42d98f7c7c520f9f2511dd1e1aacd5d3f01b4b21",
+    "art/painted-ruta-whole24-v1/frame-22.png": "664350dfa7cf2fa8a43097e2f2c735cae184e4ca7fc5d0b603b6005fc8cc8f98",
+    "art/painted-ruta-whole24-v1/frame-23.png": "28fddd84a055a55c8505b5ea147ec1053c584c1aef0d2dbfffe0486bc2b38510",
+    "art/painted-ruta-whole24-v1/packing.json": "9969c4b62fd983a01bc9703e81abf35f176ecc270b4c2fe95bbe1661878bd909",
+    "art/painted-ruta-registration24-v1/native-landmarks24.json": "baaafcabdca86ee54edc0dd37bc67f61789d226c5f5190d0a69333975e749c1c",
+    "art/painted-ruta-registration24-v1/manual-painted-landmarks-template.json": "0ba3e2c588bb90639df1d2b759f0e2963540b465756af27a70a6818bbe862868",
+    "art/painted-ruta-registration24-v1/scale-study.json": "a63745bc331ad3d93d425822f5d9e3139e33443fd1611767949e1b4fd9508e3d"
+  },
+  "frames": [
+    {
+      "index": 0,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        235,
+        315
+      ],
+      "toeL": [
+        283,
+        301
+      ],
+      "heelR": [
+        110,
+        305
+      ],
+      "toeR": [
+        146,
+        329
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          244,
+          304
+        ],
+        "R": [
+          130,
+          309
+        ]
+      },
+      "satchelClaspCenter": [
+        170,
+        220
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 0.0,
+        "ankleLGuidePx": [
+          182.5447540283203,
+          243.00556182861328
+        ],
+        "ankleRGuidePx": [
+          58.072669982910156,
+          251.86928749084473
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 1,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        242,
+        320
+      ],
+      "toeL": [
+        288,
+        309
+      ],
+      "heelR": [
+        118,
+        299
+      ],
+      "toeR": [
+        149,
+        328
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          250,
+          310
+        ],
+        "R": [
+          136,
+          309
+        ]
+      },
+      "satchelClaspCenter": [
+        187,
+        220
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 1.6666666666666667,
+        "ankleLGuidePx": [
+          176.94705200195312,
+          246.82887077331543
+        ],
+        "ankleRGuidePx": [
+          52.3995246887207,
+          246.03181838989258
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 2,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        228,
+        325
+      ],
+      "toeL": [
+        277,
+        318
+      ],
+      "heelR": [
+        117,
+        296
+      ],
+      "toeR": [
+        146,
+        327
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          236,
+          314
+        ],
+        "R": [
+          133,
+          309
+        ]
+      },
+      "satchelClaspCenter": [
+        187,
+        220
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 3.3333333333333335,
+        "ankleLGuidePx": [
+          166.79588317871094,
+          249.29753303527832
+        ],
+        "ankleRGuidePx": [
+          48.78208541870117,
+          242.10087299346924
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 3,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        216,
+        325
+      ],
+      "toeL": [
+        264,
+        317
+      ],
+      "heelR": [
+        110,
+        295
+      ],
+      "toeR": [
+        141,
+        328
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          224,
+          314
+        ],
+        "R": [
+          126,
+          309
+        ]
+      },
+      "satchelClaspCenter": [
+        180,
+        219
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 5.0,
+        "ankleLGuidePx": [
+          156.93441772460938,
+          249.2300319671631
+        ],
+        "ankleRGuidePx": [
+          53.27730178833008,
+          242.4935483932495
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 4,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        198,
+        327
+      ],
+      "toeL": [
+        246,
+        321
+      ],
+      "heelR": [
+        121,
+        302
+      ],
+      "toeR": [
+        151,
+        330
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          207,
+          316
+        ],
+        "R": [
+          136,
+          310
+        ]
+      },
+      "satchelClaspCenter": [
+        173,
+        219
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 6.666666666666667,
+        "ankleLGuidePx": [
+          146.67611694335938,
+          249.05147552490234
+        ],
+        "ankleRGuidePx": [
+          65.34071350097656,
+          243.32924842834473
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 5,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        189,
+        326
+      ],
+      "toeL": [
+        237,
+        320
+      ],
+      "heelR": [
+        140,
+        301
+      ],
+      "toeR": [
+        172,
+        329
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          198,
+          315
+        ],
+        "R": [
+          155,
+          310
+        ]
+      },
+      "satchelClaspCenter": [
+        181,
+        222
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 8.333333333333334,
+        "ankleLGuidePx": [
+          135.90281677246094,
+          248.7611436843872
+        ],
+        "ankleRGuidePx": [
+          81.26776885986328,
+          244.8229742050171
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 6,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        190,
+        310
+      ],
+      "toeL": [
+        237,
+        308
+      ],
+      "heelR": [
+        149,
+        294
+      ],
+      "toeR": [
+        184,
+        318
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          199,
+          302
+        ],
+        "R": [
+          167,
+          304
+        ]
+      },
+      "satchelClaspCenter": [
+        175,
+        225
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 10,
+        "estimatedAnkleR": 10,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 10.0,
+        "ankleLGuidePx": [
+          124.4639892578125,
+          248.3204984664917
+        ],
+        "ankleRGuidePx": [
+          97.215576171875,
+          246.94706439971924
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 7,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": null,
+      "toeL": null,
+      "heelR": null,
+      "toeR": null,
+      "estimatedAnkleCenter": {
+        "L": null,
+        "R": null
+      },
+      "satchelClaspCenter": [
+        178,
+        232
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "occluded_or_anatomical_association_ambiguous",
+        "toeL": "occluded_or_anatomical_association_ambiguous",
+        "heelR": "occluded_or_anatomical_association_ambiguous",
+        "toeR": "occluded_or_anatomical_association_ambiguous",
+        "estimatedAnkleL": "not_estimated_due_to_overlap",
+        "estimatedAnkleR": "not_estimated_due_to_overlap",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": null,
+        "toeL": null,
+        "heelR": null,
+        "toeR": null,
+        "estimatedAnkleL": null,
+        "estimatedAnkleR": null,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Crossing boots: native ankles nearly overlap in x/y and painted anatomy cannot be assigned confidently; bilateral contour/joint-proxy points left null rather than swapping guessed L/R.",
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 11.666666666666666,
+        "ankleLGuidePx": [
+          112.09562683105469,
+          247.65192985534668
+        ],
+        "ankleRGuidePx": [
+          112.67052459716797,
+          250.5761194229126
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 8,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        146,
+        310
+      ],
+      "toeL": null,
+      "heelR": [
+        184,
+        320
+      ],
+      "toeR": [
+        234,
+        326
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          162,
+          301
+        ],
+        "R": [
+          202,
+          315
+        ]
+      },
+      "satchelClaspCenter": [
+        178,
+        235
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "occluded_or_anatomical_association_ambiguous",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": null,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 10,
+        "estimatedAnkleR": 10,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Back/left toe contour occluded at front boot overlap; toeL remains null.",
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 13.333333333333334,
+        "ankleLGuidePx": [
+          98.7918930053711,
+          246.73529148101807
+        ],
+        "ankleRGuidePx": [
+          129.76454162597656,
+          255.36648273468018
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 9,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        135,
+        304
+      ],
+      "toeL": [
+        178,
+        311
+      ],
+      "heelR": [
+        211,
+        316
+      ],
+      "toeR": [
+        258,
+        314
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          153,
+          302
+        ],
+        "R": [
+          222,
+          309
+        ]
+      },
+      "satchelClaspCenter": [
+        173,
+        232
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 15.0,
+        "ankleLGuidePx": [
+          84.52178955078125,
+          245.5466604232788
+        ],
+        "ankleRGuidePx": [
+          149.1157684326172,
+          259.1760015487671
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 10,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        122,
+        296
+      ],
+      "toeL": [
+        161,
+        309
+      ],
+      "heelR": [
+        230,
+        321
+      ],
+      "toeR": [
+        275,
+        306
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          138,
+          301
+        ],
+        "R": [
+          241,
+          310
+        ]
+      },
+      "satchelClaspCenter": null,
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "hand_occlusion_or_unclear"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": null
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 16.666666666666668,
+        "ankleLGuidePx": [
+          66.3218765258789,
+          240.32596588134766
+        ],
+        "ankleRGuidePx": [
+          172.6970977783203,
+          258.8993835449219
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 11,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        115,
+        287
+      ],
+      "toeL": [
+        150,
+        309
+      ],
+      "heelR": [
+        242,
+        321
+      ],
+      "toeR": [
+        287,
+        303
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          131,
+          294
+        ],
+        "R": [
+          253,
+          309
+        ]
+      },
+      "satchelClaspCenter": [
+        184,
+        227
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 18.333333333333332,
+        "ankleLGuidePx": [
+          55.8944206237793,
+          234.8155117034912
+        ],
+        "ankleRGuidePx": [
+          181.5463409423828,
+          258.06318283081055
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 12,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        101,
+        279
+      ],
+      "toeL": [
+        135,
+        304
+      ],
+      "heelR": [
+        225,
+        316
+      ],
+      "toeR": [
+        273,
+        301
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          119,
+          289
+        ],
+        "R": [
+          236,
+          308
+        ]
+      },
+      "satchelClaspCenter": [
+        175,
+        223
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 20.0,
+        "ankleLGuidePx": [
+          50.239219665527344,
+          229.23011779785156
+        ],
+        "ankleRGuidePx": [
+          182.54473876953125,
+          257.6584243774414
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 13,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        106,
+        281
+      ],
+      "toeL": [
+        138,
+        309
+      ],
+      "heelR": [
+        229,
+        320
+      ],
+      "toeR": [
+        276,
+        306
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          123,
+          292
+        ],
+        "R": [
+          240,
+          310
+        ]
+      },
+      "satchelClaspCenter": [
+        181,
+        223
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 21.666666666666668,
+        "ankleLGuidePx": [
+          48.59290313720703,
+          225.4078769683838
+        ],
+        "ankleRGuidePx": [
+          176.9473114013672,
+          260.20735263824463
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 14,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        107,
+        278
+      ],
+      "toeL": [
+        136,
+        307
+      ],
+      "heelR": [
+        213,
+        319
+      ],
+      "toeR": [
+        261,
+        307
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          124,
+          289
+        ],
+        "R": [
+          224,
+          309
+        ]
+      },
+      "satchelClaspCenter": [
+        190,
+        223
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 23.333333333333332,
+        "ankleLGuidePx": [
+          48.78208541870117,
+          224.17098999023438
+        ],
+        "ankleRGuidePx": [
+          166.7435760498047,
+          262.3119926452637
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 15,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        118,
+        280
+      ],
+      "toeL": [
+        146,
+        305
+      ],
+      "heelR": [
+        210,
+        321
+      ],
+      "toeR": [
+        257,
+        311
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          135,
+          289
+        ],
+        "R": [
+          221,
+          311
+        ]
+      },
+      "satchelClaspCenter": null,
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "hand_occlusion_or_unclear"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": null
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 25.0,
+        "ankleLGuidePx": [
+          53.27730941772461,
+          223.9580535888672
+        ],
+        "ankleRGuidePx": [
+          156.31809997558594,
+          262.48337268829346
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 16,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        120,
+        285
+      ],
+      "toeL": [
+        153,
+        310
+      ],
+      "heelR": [
+        193,
+        327
+      ],
+      "toeR": [
+        240,
+        320
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          138,
+          292
+        ],
+        "R": [
+          204,
+          317
+        ]
+      },
+      "satchelClaspCenter": [
+        167,
+        224
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 26.666666666666668,
+        "ankleLGuidePx": [
+          65.34071350097656,
+          224.15024757385254
+        ],
+        "ankleRGuidePx": [
+          144.71990966796875,
+          262.6959228515625
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 17,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        146,
+        285
+      ],
+      "toeL": [
+        177,
+        309
+      ],
+      "heelR": [
+        193,
+        327
+      ],
+      "toeR": [
+        241,
+        321
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          163,
+          292
+        ],
+        "R": [
+          204,
+          317
+        ]
+      },
+      "satchelClaspCenter": [
+        184,
+        218
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 28.333333333333332,
+        "ankleLGuidePx": [
+          81.26778411865234,
+          225.1828670501709
+        ],
+        "ankleRGuidePx": [
+          132.318359375,
+          262.8265047073364
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 18,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        159,
+        266
+      ],
+      "toeL": null,
+      "heelR": [
+        179,
+        302
+      ],
+      "toeR": [
+        227,
+        296
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          174,
+          280
+        ],
+        "R": [
+          190,
+          293
+        ]
+      },
+      "satchelClaspCenter": [
+        174,
+        205
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "occluded_or_anatomical_association_ambiguous",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": null,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 10,
+        "estimatedAnkleR": 10,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Back/left toe contour occluded at front boot overlap; toeL remains null.",
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 30.0,
+        "ankleLGuidePx": [
+          97.21558380126953,
+          227.1396255493164
+        ],
+        "ankleRGuidePx": [
+          119.54747009277344,
+          262.80089378356934
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 19,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": null,
+      "toeL": [
+        209,
+        277
+      ],
+      "heelR": [
+        155,
+        296
+      ],
+      "toeR": [
+        203,
+        299
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          192,
+          265
+        ],
+        "R": [
+          171,
+          282
+        ]
+      },
+      "satchelClaspCenter": [
+        177,
+        205
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "occluded_or_anatomical_association_ambiguous",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": null,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 10,
+        "estimatedAnkleR": 10,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Raised L toe identifiable above front R boot; L heel hidden behind front leg. L estimated center is broad visual inference only, 10px uncertainty.",
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 31.666666666666668,
+        "ankleLGuidePx": [
+          112.67052459716797,
+          231.04711532592773
+        ],
+        "ankleRGuidePx": [
+          107.0648193359375,
+          262.54051208496094
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 20,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        190,
+        279
+      ],
+      "toeL": [
+        231,
+        283
+      ],
+      "heelR": [
+        149,
+        298
+      ],
+      "toeR": [
+        197,
+        302
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          202,
+          269
+        ],
+        "R": [
+          165,
+          284
+        ]
+      },
+      "satchelClaspCenter": [
+        180,
+        203
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 33.333333333333336,
+        "ankleLGuidePx": [
+          129.7645263671875,
+          236.60139083862305
+        ],
+        "ankleRGuidePx": [
+          95.3244400024414,
+          262.0639896392822
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 21,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        213,
+        287
+      ],
+      "toeL": [
+        258,
+        283
+      ],
+      "heelR": [
+        135,
+        297
+      ],
+      "toeR": [
+        179,
+        301
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          224,
+          271
+        ],
+        "R": [
+          151,
+          285
+        ]
+      },
+      "satchelClaspCenter": [
+        180,
+        201
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 35.0,
+        "ankleLGuidePx": [
+          149.1157684326172,
+          241.55380725860596
+        ],
+        "ankleRGuidePx": [
+          84.52178192138672,
+          261.38988971710205
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 22,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        231,
+        292
+      ],
+      "toeL": [
+        276,
+        278
+      ],
+      "heelR": [
+        122,
+        290
+      ],
+      "toeR": [
+        162,
+        303
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          242,
+          270
+        ],
+        "R": [
+          139,
+          286
+        ]
+      },
+      "satchelClaspCenter": [
+        175,
+        199
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 36.666666666666664,
+        "ankleLGuidePx": [
+          172.6971435546875,
+          242.52911567687988
+        ],
+        "ankleRGuidePx": [
+          72.80411529541016,
+          258.5724925994873
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    },
+    {
+      "index": 23,
+      "coordinateSystem": "whole packed frame 384x416; x right, y down; unchanged source pixels",
+      "annotator": "independent QA, manual visual semantic annotation",
+      "ankleL": null,
+      "ankleR": null,
+      "hip": null,
+      "waistBuckleCenter": null,
+      "heelL": [
+        242,
+        289
+      ],
+      "toeL": [
+        287,
+        275
+      ],
+      "heelR": [
+        121,
+        288
+      ],
+      "toeR": [
+        160,
+        301
+      ],
+      "estimatedAnkleCenter": {
+        "L": [
+          253,
+          267
+        ],
+        "R": [
+          138,
+          284
+        ]
+      },
+      "satchelClaspCenter": [
+        177,
+        200
+      ],
+      "visibility": {
+        "ankleL": "occluded_by_opaque_boot",
+        "ankleR": "occluded_by_opaque_boot",
+        "hip": "not_unambiguously_visible",
+        "waistBuckleCenter": "not_unambiguously_visible",
+        "heelL": "visible_drawn_contour",
+        "toeL": "visible_drawn_contour",
+        "heelR": "visible_drawn_contour",
+        "toeR": "visible_drawn_contour",
+        "estimatedAnkleL": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "estimatedAnkleR": "estimated_center_from_visible_boot_bend_NOT_visible_joint",
+        "satchelClaspCenter": "visible_satchel_flap_hardware_NOT_waist_buckle"
+      },
+      "uncertaintyPx": {
+        "ankleL": null,
+        "ankleR": null,
+        "hip": null,
+        "waistBuckleCenter": null,
+        "heelL": 3,
+        "toeL": 3,
+        "heelR": 3,
+        "toeR": 3,
+        "estimatedAnkleL": 8,
+        "estimatedAnkleR": 8,
+        "satchelClaspCenter": 3
+      },
+      "notes": [
+        "Physical ankle bone heads hidden; estimatedAnkleCenter is an artist proxy inside opaque boot, not a physical joint measurement. Heel/toe are 2D profile landmarks, not native sole-region mean vertices."
+      ],
+      "nativeSideAssociation": {
+        "sourceFrame": 38.333333333333336,
+        "ankleLGuidePx": [
+          181.5465850830078,
+          242.76803493499756
+        ],
+        "ankleRGuidePx": [
+          62.27090072631836,
+          254.10210132598877
+        ],
+        "method": "anatomical side associated by native phase/order plus visible drawn leg continuity, never fixed screen-side"
+      }
+    }
+  ]
+}
