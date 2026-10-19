@@ -1,0 +1,21 @@
+{
+  "status": "AUTHOR-REGRESSION-PASS-NEEDS-INDEPENDENT-REVIEW-NO-ACTUAL-RENDER",
+  "exporterSha256": "955964dd7d9689ae60c018206790a76ccea9dd971b6ecc00fdf672d5896333d4",
+  "sourceSha256": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
+  "caseCount": 17,
+  "casesEvidence": "visibility-probes/results.json",
+  "currentE24ElapsedSeconds": 3.62,
+  "temporaryWalk48ElapsedSeconds": 6.61,
+  "timingCaveat": "single local cold-process observations; no universal benchmark",
+  "E24Checks": 28,
+  "E48Checks": 52,
+  "E48ProjectionReferenceSamples": 14393,
+  "E48ProjectionMaxErrorPx": 4.254996662211852e-05,
+  "sourceUnchanged": true,
+  "E48GeometryContainedFrames": 48,
+  "renderedFrames": 0,
+  "scope": "temporary blue-copper actor only; final costume frozen source smoke pending",
+  "sourceFixtures": "temporary copies only, original author .blend unchanged",
+  "sourceModeGuard": "both dry-run-contract.json and source-contract.json checked before source load/render/write",
+  "knownRestriction": "object eye supported and cold-readback verified; collection eye unsupported failclosed; conservative disabled duplicate membership rejects; this is not universal Blender render evaluation"
+}

@@ -3,7 +3,7 @@
   "productionEnabled": false,
   "source": "/tmp/ruby-ready-sprite-export/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend",
   "sourceSha256": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
-  "exporterSha256": "1da7adb3fee242ca49babe1f9b456cfbf1065014e1e5a081ed1db41c614d2297",
+  "exporterSha256": "955964dd7d9689ae60c018206790a76ccea9dd971b6ecc00fdf672d5896333d4",
   "parameters": {
     "variants": [
       "base"
@@ -768,6 +768,43 @@
     }
   },
   "renderedFrameCount": 0,
+  "evaluationVisibilityPolicy": {
+    "scope": "current explicit mesh/armature pipeline, fail closed; NOT universal render-depsgraph equivalence",
+    "objectEyeHideSetSupported": true,
+    "collectionEyeUnsupported": true,
+    "collectionMonitorOrExcludedDependencyUnsupported": true,
+    "supportedGeometryModifiers": [
+      "ARMATURE",
+      "SUBSURF equal levels",
+      "MASK"
+    ],
+    "unsupportedGeometryNodesSimulationParticlesInstances": true,
+    "dependencyClosure": "parents, modifier object pointers, object/pose-bone constraint targets, object/data/shape-key driver object targets",
+    "conservativeDuplicateMembershipRule": "any disabled collection membership path rejects, even another visible path",
+    "checkCount": 28,
+    "dependencyObjects": [
+      "Adventurer_Body",
+      "Adventurer_Feet",
+      "CharacterArmature",
+      "Ellie ready eye.L",
+      "Ellie ready eye.R",
+      "Ellie ready eye_highlights",
+      "Ellie ready eyebrows",
+      "Ellie ready eyelashes",
+      "Ellie ready face_line1",
+      "Ellie ready face_line2",
+      "Ellie ready hair_cut",
+      "Ellie ready head",
+      "Ellie ready teeth_btm",
+      "Ellie ready teeth_top",
+      "Ellie ready tongue",
+      "ONE diagonal satchel strap",
+      "ONE hip satchel",
+      "Ruta stock long trousers",
+      "Satchel buckle",
+      "Satchel flap"
+    ]
+  },
   "bulkProjectionValidation": {
     "reference": "world_to_camera_view on original mathutils matrix @ mesh vertex; quantile and axis-extrema deterministic samples of every object/evaluated phase",
     "thresholdPx": 0.0001,
@@ -9050,9 +9087,9 @@
     ]
   },
   "timingsSeconds": {
-    "totalBeforeReportWrite": 2.7450116879772395,
-    "geometryIncludingReferenceValidation": 2.146435191069031,
-    "bulkProjection": 0.09150007204152644
+    "totalBeforeReportWrite": 3.2601901099842507,
+    "geometryIncludingReferenceValidation": 2.5637697009951808,
+    "bulkProjection": 0.0851131800445728
   },
   "sourceSha256After": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
   "sourceUnchanged": true,
