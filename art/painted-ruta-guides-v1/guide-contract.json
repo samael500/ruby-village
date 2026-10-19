@@ -1,0 +1,223 @@
+{
+  "status": "pose-guides-only-not-painted-Ruta",
+  "sourceAtlas": "art/ready-character-six-v1/assets/base-e.webp",
+  "sourceSha256": "f7be1ea5313a2d6be0460ebe451f636c49c6505636a1231d953f79ba693db09b",
+  "sourceAction": "Walk",
+  "cycleDurationMs": 1666.6666666666667,
+  "frameCount": 24,
+  "frameSize": [
+    256,
+    320
+  ],
+  "rootLocal": [
+    128.0,
+    258.42965602874756
+  ],
+  "fullSheet": {
+    "file": "walk-e24-guide.png",
+    "size": [
+      1536,
+      1280
+    ],
+    "columns": 6,
+    "rows": 4
+  },
+  "keySheet": {
+    "file": "walk-e8-key-guide.png",
+    "size": [
+      1536,
+      960
+    ],
+    "cellSize": [
+      384,
+      480
+    ],
+    "columns": 4,
+    "rows": 2,
+    "uniformScale": 1.5,
+    "rootLocal": [
+      192,
+      387.64448404312134
+    ],
+    "resampler": "Pillow LANCZOS"
+  },
+  "frames": [
+    {
+      "slot": 0,
+      "walkFrameIndex": 0,
+      "sourceFrame": 0.0,
+      "sourceAtlasRect": [
+        0,
+        0,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        0,
+        0
+      ],
+      "rootKeySheet": [
+        192,
+        387.64448404312134
+      ]
+    },
+    {
+      "slot": 1,
+      "walkFrameIndex": 3,
+      "sourceFrame": 5.0,
+      "sourceAtlasRect": [
+        768,
+        0,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        384,
+        0
+      ],
+      "rootKeySheet": [
+        576,
+        387.64448404312134
+      ]
+    },
+    {
+      "slot": 2,
+      "walkFrameIndex": 6,
+      "sourceFrame": 10.0,
+      "sourceAtlasRect": [
+        0,
+        320,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        768,
+        0
+      ],
+      "rootKeySheet": [
+        960,
+        387.64448404312134
+      ]
+    },
+    {
+      "slot": 3,
+      "walkFrameIndex": 9,
+      "sourceFrame": 15.0,
+      "sourceAtlasRect": [
+        768,
+        320,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        1152,
+        0
+      ],
+      "rootKeySheet": [
+        1344,
+        387.64448404312134
+      ]
+    },
+    {
+      "slot": 4,
+      "walkFrameIndex": 12,
+      "sourceFrame": 20.0,
+      "sourceAtlasRect": [
+        0,
+        640,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        0,
+        480
+      ],
+      "rootKeySheet": [
+        192,
+        867.6444840431213
+      ]
+    },
+    {
+      "slot": 5,
+      "walkFrameIndex": 15,
+      "sourceFrame": 25.0,
+      "sourceAtlasRect": [
+        768,
+        640,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        384,
+        480
+      ],
+      "rootKeySheet": [
+        576,
+        867.6444840431213
+      ]
+    },
+    {
+      "slot": 6,
+      "walkFrameIndex": 18,
+      "sourceFrame": 30.0,
+      "sourceAtlasRect": [
+        0,
+        960,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        768,
+        480
+      ],
+      "rootKeySheet": [
+        960,
+        867.6444840431213
+      ]
+    },
+    {
+      "slot": 7,
+      "walkFrameIndex": 21,
+      "sourceFrame": 35.0,
+      "sourceAtlasRect": [
+        768,
+        960,
+        256,
+        320
+      ],
+      "keyCellOrigin": [
+        1152,
+        480
+      ],
+      "rootKeySheet": [
+        1344,
+        867.6444840431213
+      ]
+    }
+  ],
+  "perFrameCropOrTranslation": false,
+  "artisticModification": false,
+  "checks": {
+    "walk-e24-guide.png": {
+      "sha256": "ed6e0d97446571142d340572063845a9175e909e7ee370e597be0538e4c8a6fe",
+      "alphaBBox": [
+        38,
+        49,
+        1492,
+        1233
+      ],
+      "transparentPixelCount": 1710358
+    },
+    "walk-e8-key-guide.png": {
+      "sha256": "f78ea2a9e92f17d0b94aa8340bb3f02942d7dddee285602959028528d9ad5842",
+      "alphaBBox": [
+        56,
+        69,
+        1441,
+        890
+      ],
+      "transparentPixelCount": 1276029
+    },
+    "walk24ExactAtlasRGBAEquality": true
+  }
+}
