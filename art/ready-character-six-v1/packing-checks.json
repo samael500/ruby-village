@@ -2,6 +2,8 @@
   "status": "576-native-source-frames-and12-lossless-atlases-checked",
   "sourceFrameCount": 576,
   "allSourceAnyAlphaWithinCanvas": true,
+  "allDeliveryAnyAlphaWithinFrameCells": true,
+  "minimumDeliveryAnyAlphaMarginPixels": 18,
   "minimumSourceAnyAlphaMarginPixels": 41,
   "losslessWebPDecodedPixelsMatchHalfResolutionPacking": true,
   "fixedNativeHeightPxAllVariants": 209.65872262812678,
@@ -11029,7 +11031,5 @@
       "sha256": "232b5d8a5ed737df4f722e121f178bebc4ad274e35a9fd05d3d1ef1bad1b68f7",
       "decodedRGBABytes": 15728640
     }
-  ],
-  "allDeliveryAnyAlphaWithinFrameCells": true,
-  "minimumDeliveryAnyAlphaMarginPixels": 18
+  ]
 }

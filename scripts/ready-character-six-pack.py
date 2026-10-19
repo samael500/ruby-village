@@ -14,9 +14,9 @@ for variant,spec in source['cameraVariants'].items():
    cs=ds['clips'][clip];assert len(cs['frames'])==24;frames=[];hashes=[]
    for i,row in enumerate(cs['frames']):
     p=OUT/row['file'];im=Image.open(p).convert('RGBA');assert im.size==(512,640);b=im.getchannel('A').getbbox();assert b and b[0]>0 and b[1]>0 and b[2]<512 and b[3]<640,(variant,name,clip,i,b)
-    scaled=im.resize((256,320),Image.Resampling.LANCZOS);x=(i%6)*256;y=(i//6+clip_index*4)*320;atlas.alpha_composite(scaled,(x,y));h=hashlib.sha256(p.read_bytes()).hexdigest();hashes.append(h)
+    scaled=im.resize((256,320),Image.Resampling.LANCZOS);db=scaled.getchannel('A').getbbox();assert db and db[0]>0 and db[1]>0 and db[2]<256 and db[3]<320;x=(i%6)*256;y=(i//6+clip_index*4)*320;atlas.alpha_composite(scaled,(x,y));h=hashlib.sha256(p.read_bytes()).hexdigest();hashes.append(h)
     frames.append({'file':f'assets/{variant}-{name}.webp','sourceRect':[x,y,256,320],'frameSize':[256,320],'footAnchor':anchor,'durationMs':cs['cycleDurationMs']/24,'motionFraction':i/24 if clip=='walk' else 0,'sourceFrame':row['sourceFrame'],'sourceFile':row['file']})
-    audit.append({'variant':variant,'direction':name,'clip':clip,'index':i,'sourceSha256':h,'sourceAlphaBounds':list(b)})
+    audit.append({'variant':variant,'direction':name,'clip':clip,'index':i,'sourceSha256':h,'sourceAlphaBounds':list(b),'deliveryAlphaBounds':list(db)})
     if clip=='walk':walkpreviews[variant][name].append(scaled)
    if clip=='walk':assert len(set(hashes))>=20,(variant,name,clip,'insufficient distinct walk renders')
    clips[clip]={'loop':True,'sourceAction':cs['sourceAction'],'cycleDurationMs':cs['cycleDurationMs'],'frames':frames,'uniqueSourceFrames':len(set(hashes))}
@@ -32,7 +32,7 @@ for variant,spec in source['cameraVariants'].items():
 manifest['directions']=manifest['cameraVariants']['base']['directions'];manifest['files']=files;manifest['decodedRGBABytesAll12Atlases']=sum(f['decodedRGBABytes']for f in files);manifest['compressedBytesAll12Atlases']=sum(f['sizeBytes']for f in files)
 (OUT/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n');(OUT/'source-contract.json').write_text(json.dumps(source,indent=2)+'\n')
 margin=min(min(r['sourceAlphaBounds'][0],r['sourceAlphaBounds'][1],512-r['sourceAlphaBounds'][2],640-r['sourceAlphaBounds'][3])for r in audit)
-(OUT/'packing-checks.json').write_text(json.dumps({'status':'576-native-source-frames-and12-lossless-atlases-checked','sourceFrameCount':len(audit),'allSourceAnyAlphaWithinCanvas':True,'minimumSourceAnyAlphaMarginPixels':margin,'losslessWebPDecodedPixelsMatchHalfResolutionPacking':True,'fixedNativeHeightPxAllVariants':height,'fixedFootAnchorAllFrames':anchor,'sourceRootProjectionMaximumErrorPixels':ref['maximumAnchorErrorPixels'],'frames':audit,'files':files},indent=2)+'\n')
+(OUT/'packing-checks.json').write_text(json.dumps({'status':'576-native-source-frames-and12-lossless-atlases-checked','sourceFrameCount':len(audit),'allSourceAnyAlphaWithinCanvas':True,'allDeliveryAnyAlphaWithinFrameCells':True,'minimumDeliveryAnyAlphaMarginPixels':min(min(r['deliveryAlphaBounds'][0],r['deliveryAlphaBounds'][1],256-r['deliveryAlphaBounds'][2],320-r['deliveryAlphaBounds'][3])for r in audit),'minimumSourceAnyAlphaMarginPixels':margin,'losslessWebPDecodedPixelsMatchHalfResolutionPacking':True,'fixedNativeHeightPxAllVariants':height,'fixedFootAnchorAllFrames':anchor,'sourceRootProjectionMaximumErrorPixels':ref['maximumAnchorErrorPixels'],'frames':audit,'files':files},indent=2)+'\n')
 loops=[]
 for i in range(24):
  canvas=Image.new('RGBA',(1536,640),(237,233,220,255));d=ImageDraw.Draw(canvas)
