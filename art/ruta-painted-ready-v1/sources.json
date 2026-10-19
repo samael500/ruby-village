@@ -90,7 +90,7 @@
     "mode": "RGBA",
     "sourceMotionCommit": "3dbe699",
     "generator": "builtin image_gen",
-    "status": "whole24-source-independent-review-pending",
+    "status": "rejected-heading-mismatch",
     "productionEnabled": false,
     "cameraExactnessVerified": false,
     "registration": "Pending whole-actor extraction and artist origins; no per-frame resize or pose warp permitted."
@@ -108,5 +108,17 @@
     "productionEnabled": false,
     "cameraExactnessVerified": false,
     "registration": "Pending whole-actor extraction and artist origins; no per-frame resize or pose warp permitted."
+  },
+  "painted-base-sw24-v2.png": {
+    "sha256": "21561fc66d3bc951852d4270641207d4df1881851383a9b38eba75e3eb0aac17",
+    "size": [
+      1374,
+      1145
+    ],
+    "mode": "RGBA",
+    "sourceMotionCommit": "3dbe699",
+    "generator": "builtin image_gen",
+    "status": "corrected-heading-candidate-independent-review-pending",
+    "productionEnabled": false
   }
 }
