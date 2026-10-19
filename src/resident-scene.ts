@@ -23,7 +23,7 @@ const readyViews=new Set<string>(),loadingViews=new Map<string,Promise<void>>();
 /** Retain the approved idle until a new authored view is decoded. */
 export async function prepareResidentViews(ids:readonly string[]){
  return Promise.allSettled(ids.flatMap(id=>Object.values(facings[id]?.frames??{})).map(frame=>{
-  if(!loadingViews.has(frame.image)){const image=new Image();image.src=`${import.meta.env.BASE_URL}assets/characters-facing-v1/${frame.image}`;loadingViews.set(frame.image,image.decode().then(()=>{readyViews.add(frame.image);}));}
+  if(!loadingViews.has(frame.image)){const image=new Image();image.src=`${import.meta.env.BASE_URL}assets/characters-facing-v1/${frame.image}`;const pending=image.decode().then(()=>{readyViews.add(frame.image);}).catch(error=>{if(loadingViews.get(frame.image)===pending)loadingViews.delete(frame.image);throw error;});loadingViews.set(frame.image,pending);}
   return loadingViews.get(frame.image)!;
  }));
 }
