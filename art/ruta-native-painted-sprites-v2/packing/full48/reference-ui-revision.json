@@ -1,0 +1,29 @@
+{
+  "scope": "REFERENCE-COMPARATOR-UI-ONLY-NO-ASSET-OR-CLOCK-CORRECTION",
+  "before": {
+    "commit": "a983198",
+    "rootCherry": "c2e1d05",
+    "htmlSha256": "8bd6d1c4817bc049656a7a9b728f1a35a2cc73fdb7d9798210e7a820f081f78a",
+    "referenceSha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1",
+    "paintedAtlasSha256": "a14e61a8b06f6df1d3fe6ab9e02d59b1e98292a1bc79650f338d2bdf4a171db5",
+    "nativeAtlasSha256": "b44a06d118ecb597d6c9f0f78ffa1060bec5ff274b7cf211d33a651ccfaa211f",
+    "manifestSha256": "0a94c283d170bd0e7091cc743c35dcfba274b34f8abbe8c9d5747bb617a36dd3"
+  },
+  "after": {
+    "htmlSha256": "3a3f6c7c7e1948e925fb04cced4520367dcec266bea62728e95421e02792efcc",
+    "referenceSha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1",
+    "paintedAtlasSha256": "a14e61a8b06f6df1d3fe6ab9e02d59b1e98292a1bc79650f338d2bdf4a171db5",
+    "nativeAtlasSha256": "b44a06d118ecb597d6c9f0f78ffa1060bec5ff274b7cf211d33a651ccfaa211f",
+    "manifestSha256": "5d8a80644e99c6e8662abd5047709c11b5ec82f82294c65e64a4ab93a0206767"
+  },
+  "referenceDrawingRule": "whole exact reference image; scale=nativeHeightPx/reference.height, centered at nativeFootAnchor.x, bottom at nativeFootAnchor.y; no persisted bitmap resize",
+  "nativeHeightPx": 186.55436028830434,
+  "footAnchor": [
+    128.0,
+    258.42965602874756
+  ],
+  "sourceNativeMetadataSha256": "737324de8d44e3f44ef726d6284d7d1dfea2b608693d489efcfbe2ca778bc672",
+  "rawFramesGridCalibrationClockUnchanged": true,
+  "known39to40Issue": "unchanged; no attempted fix",
+  "smoke": "browser-smoke.json: desktop and emulated landscape actual pause/seek47, reference CANVAS height/center/bottom exact, reference fixed across sampled frames"
+}
