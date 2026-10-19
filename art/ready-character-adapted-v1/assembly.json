@@ -1,0 +1,24 @@
+{
+  "status": "minimal-stock-parts-pilot-not-approved-Ruta",
+  "rigBones": 62,
+  "walkActionSha256": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+  "stockBoneRestSha256": "1dfeaec8a3fb309b5b0642dfb81903604d27c9478ebaec12d5cf6f899bb74ce0",
+  "sourceActionsAndBoneRestUnchanged": true,
+  "removedAccessoryVertices": 2431,
+  "removedAccessories": "all disconnected backpack/bedroll/strap/buckle pieces; main shirt+arms component preserved without face cuts",
+  "trousers": "Casual_Legs, same CC0 pack, identical62-bone rest skeleton measured restdiff0m, original weights preserved",
+  "hair": {
+    "source": "/home/mskorokhod/life/ruby-village-36-mpfb/art/characters-mpfb-v1/styled-body-pilot-v3/ruta-styled-body.blend",
+    "sourceSha256": "1871a86b56d1a140b44c9627072d6c15b4bf98cd88f1e251102bb383d0911dba",
+    "part": "Cortu Johnstone strawberry_cloud, CC0 official hair01 pack; stale OBJheader documented",
+    "fit": "scalp xy.72/z.62, lower wave length extended, native mesh Head1",
+    "physics": "rigid head-bound; no extra hair motion authored"
+  },
+  "satchel": "one native beveled rigid Hips-weighted bag with flap/buckle; one Chest/Hips blended diagonal strap",
+  "limitations": [
+    "adult stock proportions and low-poly likeness remain",
+    "no new vest; source green shirt retained",
+    "hair/boot/trouser/bag intersections require three-view and loop review",
+    "no production or six-direction batch"
+  ]
+}
