@@ -1,0 +1,60 @@
+{
+  "artAcceptance": "PENDING",
+  "gameEnabled": false,
+  "results": [
+    {
+      "scope": "style12",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "rawGeneratedOriginal": "/home/mskorokhod/.codex/generated_images/01a146ce-39de-7612-80ce-b3e4df958cc3/exec-32937448-d5fe-4d53-8ef3-ba3347f1ef72.png",
+      "rawWorkspace": "art/ruta-native-painted-sprites-v2/painted-sheet-v1.png",
+      "rawSha256": "0576a082552b2d7172005527ec9a2ef00e2f800b97b479b50cab16504ad8f64c",
+      "rawSize": [
+        1295,
+        1215
+      ],
+      "prompt": "art/ruta-native-painted-sprites-v2/prompt-v1.txt",
+      "promptSha256": "c417a3941547c34b95867e0bc82f86f174e93dead8f2eb838992a4777a9c70dd",
+      "exactOrderedReferences": [
+        {
+          "path": "art/ruta-native-painted-sprites-v2/pose-source-12.png",
+          "sha256": "1b32c90929fa220a2c24d32dc7dd9c55c177172546c554b14db1a50c78aea902"
+        },
+        {
+          "path": "public/assets/characters-v1/ruta-idle-pilot.png",
+          "sha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1"
+        }
+      ],
+      "workspaceOperation": "unmodified copy of tool output; beige JPEG is QA alpha composite only; no pixel cleanup/registration/warp"
+    },
+    {
+      "scope": "full48",
+      "tool": "built-in image_gen.imagegen",
+      "transparentBackground": true,
+      "rawGeneratedOriginal": "/home/mskorokhod/.codex/generated_images/01a146ce-39de-7612-80ce-b3e4df958cc3/exec-d1abb1b6-7c6a-4e9b-88b0-4e38945098bd.png",
+      "rawWorkspace": "art/ruta-native-painted-sprites-v2/full48/painted-sheet-v1.png",
+      "rawSha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+      "rawSize": [
+        1295,
+        1215
+      ],
+      "prompt": "art/ruta-native-painted-sprites-v2/full48/prompt-v1.txt",
+      "promptSha256": "c64cab8024ef2df9768b1848c678bd1b7c4903d2e7975e0b6d5d66d6b8775b08",
+      "exactOrderedReferences": [
+        {
+          "path": "art/ruta-native-painted-sprites-v2/full48/pose-source-48.png",
+          "sha256": "b44a06d118ecb597d6c9f0f78ffa1060bec5ff274b7cf211d33a651ccfaa211f"
+        },
+        {
+          "path": "public/assets/characters-v1/ruta-idle-pilot.png",
+          "sha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1"
+        },
+        {
+          "path": "art/ruta-native-painted-sprites-v2/painted-sheet-v1-beige-review.jpg",
+          "sha256": "38cd92f435fe9638f064b2636004b1a43cb8a5631a1c85de3b6c4887b458d391"
+        }
+      ],
+      "workspaceOperation": "unmodified copy of tool output; beige JPEG is QA alpha composite only; no pixel cleanup/registration/warp"
+    }
+  ]
+}
