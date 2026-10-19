@@ -7,13 +7,13 @@ Latest user acceptance: ready gait accepted; painted pilot rejected because adul
 | Child proportion rest mesh + rig | Technical audit passed; art not accepted | proportion author, independent QA | `qa/retarget-b-e6ab193`; cold-open saved actions; source B a4215f55… |
 | Authored face/hair | One Ellie CC BY4.0 candidate, native blue eyes/copper loose locks | npc_facing | `art/ruta-ellie-head-v1/layered-locks-pilot`; source topology/UV and matrices retained |
 | Costume | Frozen v2 candidate; art not accepted | root | e18d727; source SHA bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706 |
-| Boot laces | v1 defect reproduced; v2 corrected in rest geometry + skin weights | root, independent review pending | `art/ruta-native-layered-style-v2/lace-check`: 48-phase max distance 42.065 mm before / 1.532 mm after; real E04 regression render |
-| Export/pack | Fixed camera, Root, full canvas; fail-closed evaluation guards; actual v2 render in progress | compact_view_qa; independent stream_road_finish | exporter 24129ad / root de838ea; 19 negative/positive guard probes; actual pack still pending |
-| First loop | 48 phases, 1.666667 s (28.8 fps); not completed/reviewed yet | exporter author, independent browser reviewer | new output `art/ruta-native-layered-walk48-v2`; old 17 frames explicitly rejected wardrobe proof |
-| World distance curve | B experiment independently reproduced, final sole compatibility pending | curve author; npc_facing final-sole probe | `art/ruta-b-contact-forward-v1`, `qa/contact-forward`; no no-slip claim |
+| Boot laces | v1 defect reproduced; v2 corrected in rest geometry + skin weights | root, independent regression reproduced | `art/ruta-native-layered-style-v2/lace-check`: 48-phase max distance 42.065 mm before / 1.532 mm after; real E04 regression render |
+| Export/pack | Fixed camera, Root, full canvas; fail-closed evaluation guards; actual v2 render/pack complete | compact_view_qa; independent stream_road_finish | exporter 24129ad / root de838ea; 19 negative/positive guard probes; actual pack still pending |
+| First loop | 48 actual phases, 1.666667 s (28.8 fps); independent browser controls/anchor checks passed, visual closure being reviewed | exporter author, independent browser reviewer | new output `art/ruta-native-layered-walk48-v2`; actual delivery e70d049; old 17 frames explicitly rejected wardrobe proof |
+| World distance curve | B experiment independently reproduced, final sole re-sampled; max curve path discrepancy 0.301 mm (author diagnostic) | curve author; npc_facing final-sole probe | `art/ruta-b-contact-forward-v1`, `qa/contact-forward`; no no-slip claim |
 | Runtime | Unchanged, new character NOT enabled | root #46 | integration remains e32cad4 / PR55; new source PR78 is draft |
 
-Next gate: complete actual render → lossless atlas/alpha checks → real browser loop, desktop and landscape viewport → artistic review against accepted Ruta → six headings/cameras and actual game short/long/bridge/turn/stop checks. No per-frame raster warp, size fit or registration. Physical phone/family NOT RUN.
+Next gate: independent visual loop closure → artistic review against accepted Ruta → six headings/cameras and actual game short/long/bridge/turn/stop checks. No per-frame raster warp, size fit or registration. Physical phone/family NOT RUN.
 
 Separate worktrees/owners: head author `ruby-village-36-ellie-head`; exporter ` /tmp/ruby-ready-sprite-export`; independent QA `/tmp/ruby-export-pack-qa`; root costume/integration `ruby-village-36-ruta-render-style`. No concurrent runtime writes. Main is neither merged nor published.
 

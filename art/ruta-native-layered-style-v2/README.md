@@ -8,4 +8,4 @@ Root cause: the boot shaft blends LowerLeg and Foot weights, but added laces wer
 
 Reproduce model with scripts/ruta-native-style.py, same environment as v1 but RUTA_STYLE_OUTPUT_DIR=art/ruta-native-layered-style-v2 and RUTA_STYLE_RENDER=0. Reproduce check/render with scripts/ruta-native-lace-check.py -- --source art/ruta-native-layered-style-v2/ruta-native-style.blend --out art/ruta-native-layered-style-v2/lace-check --render.
 
-Quaternius CC0 body/gait; Ellie Blender Studio / Blender Foundation CC BY4.0 head/hair, see ../ruta-ellie-head-v1/ATTRIBUTION.md. New actual 48-frame export/pack and independent browser review remain pending. Runtime unchanged; physical phone NOT RUN.
+Quaternius CC0 body/gait; Ellie Blender Studio / Blender Foundation CC BY4.0 head/hair, see ../ruta-ellie-head-v1/ATTRIBUTION.md. Actual 48-frame E/Walk export and exact lossless pack are now in ../ruta-native-layered-walk48-v2 (e70d049). Independent browser controls/anchor checks passed; visual closure and artistic review remain pending. Runtime unchanged; physical phone NOT RUN.

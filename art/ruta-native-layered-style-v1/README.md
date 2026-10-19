@@ -1,4 +1,6 @@
-# Native child-proportion Ruta pilot — artistic review pending
+# Historical native costume v1 — rejected detached boot laces
+
+**Superseded by ../ruta-native-layered-style-v2. Actual v1 frames exposed detached lace loops; do not use this source as the final costume.**
 
 Frozen source SHA256: `d33699efbf0a09dbedb3254c30ea645ee60ef2abd046ac73da21106cc659a3ae`.
 
