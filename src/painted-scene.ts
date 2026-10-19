@@ -4,6 +4,7 @@ type Scene=ReturnType<typeof fitScene>;
 export type PaintedSceneAssets={
  background:string;foreground?:string|null;gateClosed?:string;gateOpen?:string;
  joinBand?:number;
+ wheel?:{file:string;origin:number[];pivot:number[];size:number[]};
  wide?:{file:string;canvas:{width:number;height:number};originalRect:{x:number;y:number;width:number;height:number}}|null;
 };
 const ns='http://www.w3.org/2000/svg';
@@ -17,6 +18,14 @@ export function paintedBackdrop(svg:SVGSVGElement,scene:Scene,assets:PaintedScen
  const group=world(svg,scene,'data-painted-world'),{canvas,originalRect}=assets.wide;
  node('image',{'data-surroundings':'',href:url(assets.wide.file),x:-originalRect.x,y:-originalRect.y,width:canvas.width,height:canvas.height},group);
  node('image',{'data-painted-background':'',href:url(assets.background),width:originalRect.width,height:originalRect.height,mask:sceneJoinMask(group,originalRect.width,originalRect.height,assets.joinBand??48)},group);
+}
+/** Wheel shares the native scene transform, never the hex ground compression. */
+export function paintedWheel(svg:SVGSVGElement,scene:Scene,assets:PaintedSceneAssets,running:boolean){
+ const wheel=assets.wheel;if(!wheel)return;
+ const group=world(svg,scene,'data-painted-wheel-world');
+ const axle=node('g',{transform:`translate(${wheel.origin[0]+wheel.pivot[0]} ${wheel.origin[1]+wheel.pivot[1]})`},group);
+ const rotor=node('g',{class:running?'mill-wheel turning':'mill-wheel','data-wheel':running?'running':'still'},axle);
+ node('image',{href:url(wheel.file),x:-wheel.pivot[0],y:-wheel.pivot[1],width:wheel.size[0],height:wheel.size[1]},rotor);
 }
 export function paintedForeground(svg:SVGSVGElement,scene:Scene,assets:PaintedSceneAssets,open:boolean){
  const worldGroup=world(svg,scene,'data-painted-foreground'),group=node('g',{mask:sceneJoinMask(worldGroup,1672,941,assets.joinBand??48)},worldGroup);

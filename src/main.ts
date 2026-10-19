@@ -5,6 +5,7 @@ import {renderMapTrails} from './map-trails.ts';
 import mapPaint from '../public/assets/chapter-map-v2/manifest.json' with {type:'json'};
 import {drawBridge} from './bridge-art.ts';
 import {drawConnectedRoad} from './connected-road.ts';
+import {paintedWheel,type PaintedSceneAssets} from './painted-scene.ts';
 // Enable only after the finished stream material/bank pilot is reviewed.
 const CONNECTED_ROAD_PILOT=false;
 import {prepareResidentViews,renderResidents,sceneResidents,legacyResidentPlacements,type ResidentPlacement} from './resident-scene.ts';
@@ -265,7 +266,9 @@ function renderBoard() {
   svg.setAttribute('viewBox',`0 0 ${rect.width} ${rect.height}`); svg.replaceChildren();
   if(sceneTransform&&!v6)backdrop(svg,rect.width,rect.height,sceneTransform);
   groundOffset={x:0,y:0};
-  if(v6){radius=v6.radius;origin=v6.origin;groundOffset=v6.translation;sceneBackdrop(svg,v6,level.id!=='gate'||completed.includes('gate')||phase==='won');}
+  if(v6){radius=v6.radius;origin=v6.origin;groundOffset=v6.translation;sceneBackdrop(svg,v6,level.id!=='gate'||completed.includes('gate')||phase==='won');
+   if(PRODUCTION_LAYOUT_VERSION>=2&&level.id==='mill')paintedWheel(svg,v6,paintedManifest.scenes.mill as unknown as PaintedSceneAssets,phase==='won'||completed.includes('mill'));
+  }
   projection=sceneTransform?sceneProjection({x:sceneTransform.offset.x+sceneTransform.startArt.x*sceneTransform.fit,y:sceneTransform.offset.y+sceneTransform.startArt.y*sceneTransform.fit},{x:sceneTransform.offset.x+sceneTransform.goalArt.x*sceneTransform.fit,y:sceneTransform.offset.y+sceneTransform.goalArt.y*sceneTransform.fit}):{scale:GROUND_SCALE,pivotY:0};
   if(v6)projection=v6.projection;
   const vertices=Array.from({length:6},(_,i)=>groundPoint(radius*Math.cos((i*60-90)*Math.PI/180),radius*Math.sin((i*60-90)*Math.PI/180)));
