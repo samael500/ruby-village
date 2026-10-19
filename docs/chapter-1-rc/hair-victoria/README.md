@@ -30,3 +30,7 @@ Official Spring https://studio.blender.org/characters/spring/v1/ was the only fa
 **Decision:** there is a verified, legally reusable solid donor (Victoria), but no verified ready-to-use Ruta-matching long-wave hairstyle among these two. If the requirement means zero shape adaptation, the search result is **not a suitable asset**, rather than pretending the bouffant matches. A donor-fit visual pilot needs separate approval before implementation; NPC head work stays separate.
 
 Reproduce with the official file at `sources/victoria.blend`, then `blender --background --threads 2 --disable-autoexec --python inspect-source.py` and `render-geometry.py` (paths relative to each script). No image generation was used.
+
+## Delivery details for one rest-fit
+
+`delivery-native-bounds.json` supplies native world bounds, original object matrices and authored Head/Head_Top rest bone endpoints (not scalp surface landmarks). Hair-only library was independently cold-loaded: exactly two mesh objects, zero modifiers/parents, original material slots retained. **Both original hair meshes have zero UV layers**; this is preserved, not a missing UV transfer. Original material slots and polygon material indices were copied with mesh data; previews use neutral clay for geometry inspection. No original body/rig object is included.

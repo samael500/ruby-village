@@ -1,0 +1,149 @@
+{
+  "sourceSha256": "852dc7bea686db2d59302679609bd0c438ef88936f3684dd193a74b3b292cd6b",
+  "space": "original native world meters, raw rest geometry; bone points are authored rig landmarks NOT measured scalp surface",
+  "hair": {
+    "GEO-victoria_hair_main": {
+      "min": [
+        -0.2354368418455124,
+        -0.12871763110160828,
+        1.0475807189941406
+      ],
+      "max": [
+        0.25068867206573486,
+        0.2765560746192932,
+        1.6544991731643677
+      ],
+      "objectMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uvLayers": [],
+      "materials": [
+        "victoria.hair_orange",
+        "victoria.hair_blonde",
+        "victoria.hair_red"
+      ]
+    },
+    "GEO-victoria_hair_bangs": {
+      "min": [
+        -0.1480730026960373,
+        -0.1811007708311081,
+        1.313754916191101
+      ],
+      "max": [
+        0.13476067781448364,
+        -0.042330317199230194,
+        1.513508915901184
+      ],
+      "objectMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          1.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          1.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "uvLayers": [],
+      "materials": [
+        "victoria.hair_blonde"
+      ]
+    }
+  },
+  "headRestBoneLandmarks": {
+    "META-Victoria/Head": {
+      "head": [
+        -1.7507073847381898e-16,
+        -0.014444693922996521,
+        1.1515930891036987
+      ],
+      "tail": [
+        -1.738046359759106e-16,
+        -0.012759854085743427,
+        1.2434263229370117
+      ]
+    },
+    "META-Victoria/Head_Top": {
+      "head": [
+        -1.738046359759106e-16,
+        -0.012759854085743427,
+        1.2434263229370117
+      ],
+      "tail": [
+        -1.7253844083377364e-16,
+        -0.009352756664156914,
+        1.4291322231292725
+      ]
+    },
+    "RIG-Victoria/ORG-Head": {
+      "head": [
+        -1.7507073847381898e-16,
+        -0.014444693922996521,
+        1.1515930891036987
+      ],
+      "tail": [
+        -1.738046359759106e-16,
+        -0.012759854085743427,
+        1.2434263229370117
+      ]
+    },
+    "RIG-Victoria/ORG-Head_Top": {
+      "head": [
+        -1.738046359759106e-16,
+        -0.012759854085743427,
+        1.2434263229370117
+      ],
+      "tail": [
+        -1.7253844083377364e-16,
+        -0.009352756664156914,
+        1.4291322231292725
+      ]
+    }
+  },
+  "delivery": {
+    "hairOnlyBlendSha256": "1b0a23b6710f2bee75ac517692c92b593c4ec7b7c2b20dcb37f007c5b8b465ac",
+    "uvNote": "Both original meshes have zero UV layers; original materials/face material indices preserved, no UV invented.",
+    "noRig": true,
+    "noModifiers": true,
+    "noParents": true
+  }
+}
