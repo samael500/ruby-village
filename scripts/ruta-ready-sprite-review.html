@@ -19,7 +19,7 @@ let manifest;
 try{
  const response=await fetch(url);if(!response.ok)throw Error(`manifest HTTP ${response.status}`);manifest=await response.json();if(!manifest.packedFrameCount)throw Error('Нет фактически упакованных кадров');
  for(const [variant,v]of Object.entries(manifest.cameraVariants))for(const [direction,spec]of Object.entries(v.directions))for(const [name,clip]of Object.entries(spec.clips)){const im=await load(new URL(clip.atlas,url));choices.push({spec,clip,im});$('clip').add(new Option(`${variant} / ${direction} / ${name}`,String(choices.length-1)))}
- const reference=await load(canonical);baseline(ref);const scale=420/493;ref.drawImage(reference,256-reference.width*scale/2,560-502*scale,reference.width*scale,reference.height*scale);
+ const reference=await load(canonical);baseline(ref);const scale=420/reference.height;ref.drawImage(reference,256-reference.width*scale/2,560-reference.height*scale,reference.width*scale,reference.height*scale);
  function select(){active=choices[Number($('clip').value)];index=0;elapsed=0;$('phase').max=active.clip.frames.length-1;draw()}
  $('clip').onchange=select;$('phase').oninput=()=>{playing=false;index=Number($('phase').value);elapsed=index*active.clip.durationSeconds*1000/active.clip.frames.length;$('play').textContent='Играть';draw()};$('play').disabled=false;$('play').onclick=()=>{playing=!playing;$('play').textContent=playing?'Пауза':'Играть';draw()};select();
  function tick(now){if(last!==null&&playing){elapsed+=Math.min(now-last,100);index=Math.floor(elapsed/(active.clip.durationSeconds*1000)*active.clip.frames.length)%active.clip.frames.length;draw()}last=now;requestAnimationFrame(tick)}
