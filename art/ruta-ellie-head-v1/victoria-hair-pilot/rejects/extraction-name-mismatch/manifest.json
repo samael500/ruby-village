@@ -1,0 +1,63 @@
+{
+  "status": "ONE-native-solid-donor-restfit-candidate-independent-art-review-pending-NOT-final-Ruta",
+  "sourceLibrary": "art/ruta-ellie-head-v1/victoria-hair-pilot/source/victoria-hair-only-raw-rest.blend",
+  "sourceSha256": "1b0a23b6710f2bee75ac517692c92b593c4ec7b7c2b20dcb37f007c5b8b465ac",
+  "sourceLicense": "Victoria/SpriteFright Blender Studio/Blender Foundation CC-BY4.0; extraction+restfit+recolor+subdivision modifications",
+  "restFit": {
+    "definition": "single fixed global rest cage: matched inner head elliptical radii, softly compressed outer bouffant radial mass; monotone cubic height profile compresses crown and lengthens existing lower locks. No strand creation or per-frame change.",
+    "sourceHeadCenterXY": [
+      0.0,
+      -0.02262062955
+    ],
+    "sourceHeadRadiiXY": [
+      0.1288955212,
+      0.13027449325
+    ],
+    "targetHeadCenterXY": [
+      -0.0002406388521194458,
+      -0.02449817955493927
+    ],
+    "targetHeadRadiiXY": [
+      0.21094639599323273,
+      0.1758165806531906
+    ],
+    "sourceHeadBoundsLimitation": "source raw skin points above authored Head-bone height, not exact scalp surface/opening measurements",
+    "radialFormula": "r<=1 ->r; r>1 ->1+.4u+.6*(1-exp(-4u))/4,u=r-1",
+    "zKnotsSource": [
+      1.0475807189941406,
+      1.1515930891036987,
+      1.4233322143554688,
+      1.6544991731643677
+    ],
+    "zKnotsTarget": [
+      0.86,
+      1.2563754320144653,
+      1.5397509336471558,
+      1.612795352935791
+    ],
+    "zHermiteSlopes": [
+      3.8108489557247465,
+      1.637538582535069,
+      0.48500350707070317,
+      0.3159812270101265
+    ]
+  },
+  "parts": [],
+  "views": [
+    "front-whole.png",
+    "front-face.png",
+    "three-quarter-whole.png",
+    "three-quarter-face.png"
+  ],
+  "actions": {
+    "Walk_ProportionProposal": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd",
+    "Idle_Neutral_ProportionProposal": "3b87d66ba83c5f8cd7ffeb5928f4b9c25cd5a420f8879dc824b2704e28fb3eca"
+  },
+  "materialProtection": "all visible head/hair ASCII prefix Ellie ready ; preserve shaders/normals/UV/alpha; honor hidden rejected donor objects",
+  "limitations": [
+    "1980s bouffant donor is not a ready Ruta hairstyle; shape must be judged from actual two views",
+    "rest lower locks are lengthened significantly; may read as broad lobes instead of natural waves",
+    "head/face/body/gait curves unchanged; no walking/contact/no-slip approval",
+    "donor originally has0UVlayers, not lost UV; materials/face assignments retained with native color changed"
+  ]
+}
