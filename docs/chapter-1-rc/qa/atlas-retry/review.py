@@ -4,9 +4,14 @@ from PIL import Image
 from playwright.sync_api import sync_playwright
 p=argparse.ArgumentParser();p.add_argument('--ref',default='5a7672a');p.add_argument('--repo',default='/home/mskorokhod/life/ruby-village');p.add_argument('--output',default='before.json');a=p.parse_args()
 source=subprocess.check_output(['git','show',a.ref+':src/ruta-motion-view.ts'],cwd=a.repo,text=True)
-# Remove imports whose names are unused by prepareMotionAtlases. Compile exact function/cache logic.
+# Include exact source-version decoder dependency before removing import declarations.
+dependency=''
+if "from './image-decoder.ts'" in source:
+ dependency=subprocess.check_output(['git','show',a.ref+':src/image-decoder.ts'],cwd=a.repo,text=True)
+compiledSource=dependency+'\n'+source
+# Compile exact function/cache logic without unused module imports.
 compiler="const e=require('./node_modules/esbuild');let s=require('fs').readFileSync(0,'utf8').replace(/^import .*;$/mg,'').replaceAll('import.meta.env.BASE_URL',JSON.stringify('http://qa.test/'));process.stdout.write(e.transformSync(s,{loader:'ts',format:'iife',globalName:'Motion'}).code)"
-js=subprocess.check_output(['/home/mskorokhod/.ya/tools/v3/14019382748/bin/node','-e',compiler],input=source,text=True,cwd=a.repo)
+js=subprocess.check_output(['/home/mskorokhod/.ya/tools/v3/14019382748/bin/node','-e',compiler],input=compiledSource,text=True,cwd=a.repo)
 buf=io.BytesIO();Image.new('RGBA',(2,2),(0,0,0,255)).save(buf,format='PNG');png=buf.getvalue()
 with sync_playwright() as pw:
  b=pw.chromium.launch(headless=True,args=['--no-sandbox']);page=b.new_page();requests=[];allow=False
@@ -16,9 +21,9 @@ with sync_playwright() as pw:
   else:route.fulfill(status=200,content_type='image/png',body=png)
  page.route('http://qa.test/**',handle);page.add_script_tag(content=js)
  call="""async()=>{const set={directions:{E:{clips:{idle:{frames:[{file:'atlas.png'}]}}}}};return await Promise.all([0,1].map(async()=>{try{const m=await Motion.prepareMotionAtlases(set);return {status:'ok',dimensions:m.get('atlas.png')}}catch(e){return {status:'error',name:e.name,message:e.message}}}))}"""
- failed=page.evaluate(call);allow=True;retry=page.evaluate(call)
+ failed=page.evaluate(call);allow=True;retry=page.evaluate(call);cached=page.evaluate(call)
  # Independently prove the restored endpoint serves a valid decodable PNG.
  fresh=page.evaluate("async()=>{let i=new Image();i.src='http://qa.test/control.png';await i.decode();return [i.naturalWidth,i.naturalHeight]}")
- result={'sourceRef':a.ref,'sourceSha256':hashlib.sha256(source.encode()).hexdigest(),'browser':b.version,'scope':'Real Chromium exact compiled module function, not full game reentry','concurrentInitialFailure':failed,'concurrentRetryAfterNetworkRestored':retry,'freshControlDimensions':fresh,'requests':requests}
+ result={'sourceRef':a.ref,'sourceSha256':hashlib.sha256(source.encode()).hexdigest(),'decoderDependencySha256':hashlib.sha256(dependency.encode()).hexdigest() if dependency else None,'browser':b.version,'scope':'Real Chromium exact compiled module function, not full game reentry','concurrentInitialFailure':failed,'concurrentRetryAfterNetworkRestored':retry,'concurrentCachedSuccess':cached,'freshControlDimensions':fresh,'requests':requests}
  b.close()
 pathlib.Path(a.output).write_text(json.dumps(result,indent=2)+'\n');print(json.dumps(result,indent=2))
