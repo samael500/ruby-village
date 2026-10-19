@@ -57,3 +57,9 @@ Maksim reviewed the semantic-pivot trial at5322: «Да, хорошо, почт�
 - Bounded deterministic native shader fallback `751cacf` (three actual poses only) preserves source geometry/weights/rig/actions after cold open, but visibly does **not** match the accepted painted appearance. Kept as a study, not substituted for approved art and not expanded to48.
 
 Current user motion verdict remains FAIL. Runtime still uses the previous set. No six-direction, in-game, no-slip, full-chapter or release acceptance is inferred from these studies.
+
+## Latest user distinction: movement accepted, image flicker/blur rejected
+
+Maksim on head+48: «да хорошо -- движения нормально, но само изображение МЕРЦАЕТ, и плывёт -- картинка не чёткая и дребезжащая». Preserve the accepted gait, phase, head registration and appearance. The outstanding complaint is rendered-image clarity/flicker, not another invitation to tune gait speed or pivots. The pilot is still not game/release accepted.
+
+Actual Chromium baseline uses backing256×320 at CSS320×400 (and the same small backing atDPR2), ctx smoothing low. Source162×200 is first filtered to≈188×233 inside backing then compositor-upscaled. A same-frame controlled drawImage experiment shows lower gradient-energy proxy and stronger offset-dependent sharpness in two passes vs direct; this is evidence of a sampling contribution, not proof the compositor or all temporal art defects are solved. A separate DPR-aware single-pass renderer study is now assigned to NPC; stream independently checks it. Original pixels/clock/pivots stay frozen. Native transition inventory is complete, no new IK/actions/render were started; source five-direction pose batch continues independently.
