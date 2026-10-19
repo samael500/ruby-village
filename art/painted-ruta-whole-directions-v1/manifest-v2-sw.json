@@ -1,0 +1,27 @@
+{
+  "status": "source-only-unregistered-all-six",
+  "directions": [
+    {
+      "direction": "e",
+      "manifest": "../painted-ruta-whole24-v1/packing.json",
+      "loop": "../painted-ruta-whole24-v1/index.html",
+      "frameSize": [
+        384,
+        416
+      ]
+    },
+    {
+      "direction": "sw",
+      "manifest": "sw-v2/manifest.json",
+      "loop": "sw-v2/index.html",
+      "actorCount": 24,
+      "sourceSha256": "21561fc66d3bc951852d4270641207d4df1881851383a9b38eba75e3eb0aac17"
+    }
+  ],
+  "newDirectionsCommonFrameSize": [
+    512,
+    512
+  ],
+  "newDirectionsScale": 1,
+  "footAnchorsNotAssigned": true
+}

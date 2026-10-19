@@ -1,0 +1,832 @@
+{
+  "status": "candidate-independent-review-pending",
+  "direction": "sw",
+  "sourceVersion": "v2",
+  "sourceFile": "painted-base-sw24-v2.png",
+  "sourceSha256": "21561fc66d3bc951852d4270641207d4df1881851383a9b38eba75e3eb0aac17",
+  "sourceSize": [
+    1374,
+    1145
+  ],
+  "componentMethod": "8-connected alpha>=16, actor>=500pixels",
+  "actorCount": 24,
+  "ignoredSmallComponentSizes": [
+    1,
+    1,
+    2,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "otherActorWithinEachBBox": false,
+  "frameSize": [
+    512,
+    512
+  ],
+  "scale": 1,
+  "commonPaddingFromSourceCellOrigin": [
+    128,
+    96
+  ],
+  "footAnchor": null,
+  "cycleDurationMs": 1666.6666666666667,
+  "frames": [
+    {
+      "index": 0,
+      "pixelCountAlpha16": 18231,
+      "sourceBBoxXYXY": [
+        55,
+        41,
+        183,
+        300
+      ],
+      "sourceCellOriginRounded": [
+        0,
+        0
+      ],
+      "sourceCellOriginExact": [
+        0.0,
+        0.0
+      ],
+      "bboxOffsetFromCell": [
+        55,
+        41
+      ],
+      "packedBBoxOrigin": [
+        183,
+        137
+      ],
+      "sourceToPackedTranslation": [
+        128,
+        96
+      ],
+      "sourceCropRawRGBASha256": "05da9155f39a97c5066954acdf326e33891d6a7f0d804f719ab7bead738ff566",
+      "framePngSha256": "10873493c298b0c3ff47da501d277944468f9e132d956b7f65a2a16394559b48",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 1,
+      "pixelCountAlpha16": 18247,
+      "sourceBBoxXYXY": [
+        287,
+        43,
+        415,
+        300
+      ],
+      "sourceCellOriginRounded": [
+        229,
+        0
+      ],
+      "sourceCellOriginExact": [
+        229.0,
+        0.0
+      ],
+      "bboxOffsetFromCell": [
+        58,
+        43
+      ],
+      "packedBBoxOrigin": [
+        186,
+        139
+      ],
+      "sourceToPackedTranslation": [
+        -101,
+        96
+      ],
+      "sourceCropRawRGBASha256": "2b3d2d080d44d50db75bc550cc2acd6f6fc699ef4a121f30c85c55a9bd61c4ec",
+      "framePngSha256": "cad0cfcbdbc30e57eb48ffee2c078042468aee2df9029d340aaa57bb2ffba374",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 2,
+      "pixelCountAlpha16": 18272,
+      "sourceBBoxXYXY": [
+        517,
+        43,
+        648,
+        300
+      ],
+      "sourceCellOriginRounded": [
+        458,
+        0
+      ],
+      "sourceCellOriginExact": [
+        458.0,
+        0.0
+      ],
+      "bboxOffsetFromCell": [
+        59,
+        43
+      ],
+      "packedBBoxOrigin": [
+        187,
+        139
+      ],
+      "sourceToPackedTranslation": [
+        -330,
+        96
+      ],
+      "sourceCropRawRGBASha256": "902825a7ad9340ba46b1a722a5548a1f1e90985cac46565562e67e9bc05a2fc4",
+      "framePngSha256": "1f14a741ae13fc07accd7e7b416db9c5299071d2cb484711609c75a79ea54952",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 3,
+      "pixelCountAlpha16": 18035,
+      "sourceBBoxXYXY": [
+        753,
+        45,
+        880,
+        300
+      ],
+      "sourceCellOriginRounded": [
+        687,
+        0
+      ],
+      "sourceCellOriginExact": [
+        687.0,
+        0.0
+      ],
+      "bboxOffsetFromCell": [
+        66,
+        45
+      ],
+      "packedBBoxOrigin": [
+        194,
+        141
+      ],
+      "sourceToPackedTranslation": [
+        -559,
+        96
+      ],
+      "sourceCropRawRGBASha256": "db781b9bc7d2678e7e9e9c3cc99ce0c688fbc399447cbfa65d65c7c40499e3d1",
+      "framePngSha256": "d03c9798ddfe3794dccf8921c06f51c46c6bfa6785c194a8cfb01b96ac16ea49",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 4,
+      "pixelCountAlpha16": 17986,
+      "sourceBBoxXYXY": [
+        987,
+        42,
+        1111,
+        297
+      ],
+      "sourceCellOriginRounded": [
+        916,
+        0
+      ],
+      "sourceCellOriginExact": [
+        916.0,
+        0.0
+      ],
+      "bboxOffsetFromCell": [
+        71,
+        42
+      ],
+      "packedBBoxOrigin": [
+        199,
+        138
+      ],
+      "sourceToPackedTranslation": [
+        -788,
+        96
+      ],
+      "sourceCropRawRGBASha256": "18a99debeb7ff85c4099bafdcb42f4b94ca24f23c65e91f26d26652cac71dd60",
+      "framePngSha256": "14110afee5325cf9c58205ab5828658a5eeb17c38c8d44c304b49815186887a7",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 5,
+      "pixelCountAlpha16": 17903,
+      "sourceBBoxXYXY": [
+        1226,
+        43,
+        1346,
+        300
+      ],
+      "sourceCellOriginRounded": [
+        1145,
+        0
+      ],
+      "sourceCellOriginExact": [
+        1145.0,
+        0.0
+      ],
+      "bboxOffsetFromCell": [
+        81,
+        43
+      ],
+      "packedBBoxOrigin": [
+        209,
+        139
+      ],
+      "sourceToPackedTranslation": [
+        -1017,
+        96
+      ],
+      "sourceCropRawRGBASha256": "ab5f0a80505da15defb1ff8e155fce8545b2e5de60855f64953fafbdbf69d5ee",
+      "framePngSha256": "fc6b27b5cf9a152fc4ee716a2c02c0ed0eb5b01f84dcb0746b4de50d7c2a0ae4",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 6,
+      "pixelCountAlpha16": 18941,
+      "sourceBBoxXYXY": [
+        52,
+        329,
+        186,
+        578
+      ],
+      "sourceCellOriginRounded": [
+        0,
+        286
+      ],
+      "sourceCellOriginExact": [
+        0.0,
+        286.25
+      ],
+      "bboxOffsetFromCell": [
+        52,
+        43
+      ],
+      "packedBBoxOrigin": [
+        180,
+        139
+      ],
+      "sourceToPackedTranslation": [
+        128,
+        -190
+      ],
+      "sourceCropRawRGBASha256": "75b766f29680ef900fbd7b4b39cc366e63d4a8ce0982b1f12b92dc7378117251",
+      "framePngSha256": "543c5cb0a5d4e1ed18106df0bc652aa88ee26addadfdcdaf5e52c78c0bb4336d",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 7,
+      "pixelCountAlpha16": 18924,
+      "sourceBBoxXYXY": [
+        288,
+        330,
+        419,
+        576
+      ],
+      "sourceCellOriginRounded": [
+        229,
+        286
+      ],
+      "sourceCellOriginExact": [
+        229.0,
+        286.25
+      ],
+      "bboxOffsetFromCell": [
+        59,
+        44
+      ],
+      "packedBBoxOrigin": [
+        187,
+        140
+      ],
+      "sourceToPackedTranslation": [
+        -101,
+        -190
+      ],
+      "sourceCropRawRGBASha256": "02d8662a289dd67b36227a38f6657b340b9bf2f7bb9194d3b9e4fc42f45ea989",
+      "framePngSha256": "f790d59a5fa6816118567029036bd73635a2d1ae9050da0fdd6da7a150722398",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 8,
+      "pixelCountAlpha16": 18984,
+      "sourceBBoxXYXY": [
+        522,
+        331,
+        657,
+        578
+      ],
+      "sourceCellOriginRounded": [
+        458,
+        286
+      ],
+      "sourceCellOriginExact": [
+        458.0,
+        286.25
+      ],
+      "bboxOffsetFromCell": [
+        64,
+        45
+      ],
+      "packedBBoxOrigin": [
+        192,
+        141
+      ],
+      "sourceToPackedTranslation": [
+        -330,
+        -190
+      ],
+      "sourceCropRawRGBASha256": "3c63b6084ffe249b33a6d3873b895e4cae65345a7b9f47153abaa2eadc900718",
+      "framePngSha256": "920d2cdaa9439af96f68319399c0ec54b42962c958943d0d4dbd1b780d9935fb",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 9,
+      "pixelCountAlpha16": 18812,
+      "sourceBBoxXYXY": [
+        754,
+        331,
+        878,
+        582
+      ],
+      "sourceCellOriginRounded": [
+        687,
+        286
+      ],
+      "sourceCellOriginExact": [
+        687.0,
+        286.25
+      ],
+      "bboxOffsetFromCell": [
+        67,
+        45
+      ],
+      "packedBBoxOrigin": [
+        195,
+        141
+      ],
+      "sourceToPackedTranslation": [
+        -559,
+        -190
+      ],
+      "sourceCropRawRGBASha256": "ad4821b926e9df5a42bff324ce71789aa4ab811956aa0397d863d9e58b248fbb",
+      "framePngSha256": "7fde02e4c22046cabf0d501881d0e6a18be81a36094e14e8748cf277985cbf21",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 10,
+      "pixelCountAlpha16": 18998,
+      "sourceBBoxXYXY": [
+        978,
+        331,
+        1114,
+        586
+      ],
+      "sourceCellOriginRounded": [
+        916,
+        286
+      ],
+      "sourceCellOriginExact": [
+        916.0,
+        286.25
+      ],
+      "bboxOffsetFromCell": [
+        62,
+        45
+      ],
+      "packedBBoxOrigin": [
+        190,
+        141
+      ],
+      "sourceToPackedTranslation": [
+        -788,
+        -190
+      ],
+      "sourceCropRawRGBASha256": "7d2222ef6c7f0f644c1042ee3afb967c9116de9705a25616fba5c9311e98791e",
+      "framePngSha256": "d927eb56fe05f74f427b810cc340171f15e2c89d7275f98cf84bd7ab1c4e5edf",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 11,
+      "pixelCountAlpha16": 17973,
+      "sourceBBoxXYXY": [
+        1217,
+        333,
+        1351,
+        584
+      ],
+      "sourceCellOriginRounded": [
+        1145,
+        286
+      ],
+      "sourceCellOriginExact": [
+        1145.0,
+        286.25
+      ],
+      "bboxOffsetFromCell": [
+        72,
+        47
+      ],
+      "packedBBoxOrigin": [
+        200,
+        143
+      ],
+      "sourceToPackedTranslation": [
+        -1017,
+        -190
+      ],
+      "sourceCropRawRGBASha256": "4265f2cf2aa8d7469b38cc1d0529bdf09ae4d2b7fb58317f290cf5b4288a3041",
+      "framePngSha256": "124e9ff18d24e6c1628b5cfc43e23a5079ebd873d696a48d6054fe8daccf4b41",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 12,
+      "pixelCountAlpha16": 19061,
+      "sourceBBoxXYXY": [
+        46,
+        609,
+        194,
+        860
+      ],
+      "sourceCellOriginRounded": [
+        0,
+        572
+      ],
+      "sourceCellOriginExact": [
+        0.0,
+        572.5
+      ],
+      "bboxOffsetFromCell": [
+        46,
+        37
+      ],
+      "packedBBoxOrigin": [
+        174,
+        133
+      ],
+      "sourceToPackedTranslation": [
+        128,
+        -476
+      ],
+      "sourceCropRawRGBASha256": "db354d9c4987507cbbb757608cacbb4a53f1e5d3ded028575d5fb979131bc7d1",
+      "framePngSha256": "7e65378a14aed806933c6a65132b65c4e60368b6d65d84d00cb986effbe761ee",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 13,
+      "pixelCountAlpha16": 18997,
+      "sourceBBoxXYXY": [
+        291,
+        608,
+        430,
+        860
+      ],
+      "sourceCellOriginRounded": [
+        229,
+        572
+      ],
+      "sourceCellOriginExact": [
+        229.0,
+        572.5
+      ],
+      "bboxOffsetFromCell": [
+        62,
+        36
+      ],
+      "packedBBoxOrigin": [
+        190,
+        132
+      ],
+      "sourceToPackedTranslation": [
+        -101,
+        -476
+      ],
+      "sourceCropRawRGBASha256": "5b4605deccd1bd3cd6fc7b08f1bf06218c2ffea76b060d172f6cbc6741f0bdbe",
+      "framePngSha256": "ac7409169cd9ee806f0e5dc19726fdb36dfd3d0ddfd0c385544d946ecad9ff14",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 14,
+      "pixelCountAlpha16": 19252,
+      "sourceBBoxXYXY": [
+        522,
+        609,
+        660,
+        860
+      ],
+      "sourceCellOriginRounded": [
+        458,
+        572
+      ],
+      "sourceCellOriginExact": [
+        458.0,
+        572.5
+      ],
+      "bboxOffsetFromCell": [
+        64,
+        37
+      ],
+      "packedBBoxOrigin": [
+        192,
+        133
+      ],
+      "sourceToPackedTranslation": [
+        -330,
+        -476
+      ],
+      "sourceCropRawRGBASha256": "7b8656da7c601fd14ebdc6ccf89e37aa471b53c93c9fb0e024e3a616e3c1add9",
+      "framePngSha256": "936e9f29a1cc321af0bf5ebeced9393e34252f46fd8ef0b36a2bbbfa3e11a6ca",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 15,
+      "pixelCountAlpha16": 19105,
+      "sourceBBoxXYXY": [
+        745,
+        611,
+        882,
+        861
+      ],
+      "sourceCellOriginRounded": [
+        687,
+        572
+      ],
+      "sourceCellOriginExact": [
+        687.0,
+        572.5
+      ],
+      "bboxOffsetFromCell": [
+        58,
+        39
+      ],
+      "packedBBoxOrigin": [
+        186,
+        135
+      ],
+      "sourceToPackedTranslation": [
+        -559,
+        -476
+      ],
+      "sourceCropRawRGBASha256": "116342382d1e37df157646fa0f01dc0ade3fc3b341be3de2f34f5542da6c74a0",
+      "framePngSha256": "dda7def0fbef9c04d6e0c44c17df39c27d7c41d1ce4ff775c60fd17d7162eb33",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 16,
+      "pixelCountAlpha16": 19425,
+      "sourceBBoxXYXY": [
+        979,
+        609,
+        1111,
+        862
+      ],
+      "sourceCellOriginRounded": [
+        916,
+        572
+      ],
+      "sourceCellOriginExact": [
+        916.0,
+        572.5
+      ],
+      "bboxOffsetFromCell": [
+        63,
+        37
+      ],
+      "packedBBoxOrigin": [
+        191,
+        133
+      ],
+      "sourceToPackedTranslation": [
+        -788,
+        -476
+      ],
+      "sourceCropRawRGBASha256": "fd70854202f1b30eac9b6ac0d8957fac1a18a7cd5244dcd7e4f0cb113189afdd",
+      "framePngSha256": "05c00aded6a455018e38046549f8c4aedabb16a71ca7340ec21075b16b1fc6e4",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 17,
+      "pixelCountAlpha16": 19286,
+      "sourceBBoxXYXY": [
+        1216,
+        609,
+        1348,
+        862
+      ],
+      "sourceCellOriginRounded": [
+        1145,
+        572
+      ],
+      "sourceCellOriginExact": [
+        1145.0,
+        572.5
+      ],
+      "bboxOffsetFromCell": [
+        71,
+        37
+      ],
+      "packedBBoxOrigin": [
+        199,
+        133
+      ],
+      "sourceToPackedTranslation": [
+        -1017,
+        -476
+      ],
+      "sourceCropRawRGBASha256": "d58e2ce646a8b3e726004b02aa3bbb681ba47ccc9eddfbb83f273215bf79cbf7",
+      "framePngSha256": "e6a91b2e072f9dc57f89245494e70561062dad86292d0f243d290934021de95b",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 18,
+      "pixelCountAlpha16": 17402,
+      "sourceBBoxXYXY": [
+        53,
+        885,
+        185,
+        1119
+      ],
+      "sourceCellOriginRounded": [
+        0,
+        859
+      ],
+      "sourceCellOriginExact": [
+        0.0,
+        858.75
+      ],
+      "bboxOffsetFromCell": [
+        53,
+        26
+      ],
+      "packedBBoxOrigin": [
+        181,
+        122
+      ],
+      "sourceToPackedTranslation": [
+        128,
+        -763
+      ],
+      "sourceCropRawRGBASha256": "f9c25ef90c61d8e3791d8c4c653e3951b0af66dff22ec41fd0d2c7a69040f850",
+      "framePngSha256": "7f6f17298e6287d44abcc3561ee00542f123f96e1e95646a2ce919f3a271b1ae",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 19,
+      "pixelCountAlpha16": 16920,
+      "sourceBBoxXYXY": [
+        289,
+        885,
+        422,
+        1116
+      ],
+      "sourceCellOriginRounded": [
+        229,
+        859
+      ],
+      "sourceCellOriginExact": [
+        229.0,
+        858.75
+      ],
+      "bboxOffsetFromCell": [
+        60,
+        26
+      ],
+      "packedBBoxOrigin": [
+        188,
+        122
+      ],
+      "sourceToPackedTranslation": [
+        -101,
+        -763
+      ],
+      "sourceCropRawRGBASha256": "f58fa2761b1b13f176649d4fd7bbc1ed7aa1de52ece54f2d784ea47f648ee006",
+      "framePngSha256": "c893f58dc50828756f749d647ae957d87fed5919d074db0fa629d3a94346a4f4",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 20,
+      "pixelCountAlpha16": 17115,
+      "sourceBBoxXYXY": [
+        518,
+        885,
+        652,
+        1125
+      ],
+      "sourceCellOriginRounded": [
+        458,
+        859
+      ],
+      "sourceCellOriginExact": [
+        458.0,
+        858.75
+      ],
+      "bboxOffsetFromCell": [
+        60,
+        26
+      ],
+      "packedBBoxOrigin": [
+        188,
+        122
+      ],
+      "sourceToPackedTranslation": [
+        -330,
+        -763
+      ],
+      "sourceCropRawRGBASha256": "1f6b39e9857336c454afe805d336e267eaac0f9104a711f7a262937a290af0bb",
+      "framePngSha256": "6f35349e74c51a2951ac871722dce4d5ac1abcd945cc4dded62f6923a2e9485b",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 21,
+      "pixelCountAlpha16": 17646,
+      "sourceBBoxXYXY": [
+        749,
+        886,
+        880,
+        1130
+      ],
+      "sourceCellOriginRounded": [
+        687,
+        859
+      ],
+      "sourceCellOriginExact": [
+        687.0,
+        858.75
+      ],
+      "bboxOffsetFromCell": [
+        62,
+        27
+      ],
+      "packedBBoxOrigin": [
+        190,
+        123
+      ],
+      "sourceToPackedTranslation": [
+        -559,
+        -763
+      ],
+      "sourceCropRawRGBASha256": "17cd42d2bdf924e82e78e96f53b32eb537889bb43f8b9c8928a6253210c5f4d5",
+      "framePngSha256": "f2fe6480c762cd0469c2ab530eace7386c13763e63e05c882e623f63a21379c2",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 22,
+      "pixelCountAlpha16": 17838,
+      "sourceBBoxXYXY": [
+        982,
+        884,
+        1110,
+        1131
+      ],
+      "sourceCellOriginRounded": [
+        916,
+        859
+      ],
+      "sourceCellOriginExact": [
+        916.0,
+        858.75
+      ],
+      "bboxOffsetFromCell": [
+        66,
+        25
+      ],
+      "packedBBoxOrigin": [
+        194,
+        121
+      ],
+      "sourceToPackedTranslation": [
+        -788,
+        -763
+      ],
+      "sourceCropRawRGBASha256": "9f6a47525202ac9ef24e47c7fd2d85b008270916eb56d8db4629fbf9eb54e8b5",
+      "framePngSha256": "e994707e86c1ab0b5240483b1a0b72508228ad1aabb580288080ef112dcc97ba",
+      "exactCropRGBAEquality": true
+    },
+    {
+      "index": 23,
+      "pixelCountAlpha16": 18235,
+      "sourceBBoxXYXY": [
+        1215,
+        886,
+        1347,
+        1132
+      ],
+      "sourceCellOriginRounded": [
+        1145,
+        859
+      ],
+      "sourceCellOriginExact": [
+        1145.0,
+        858.75
+      ],
+      "bboxOffsetFromCell": [
+        70,
+        27
+      ],
+      "packedBBoxOrigin": [
+        198,
+        123
+      ],
+      "sourceToPackedTranslation": [
+        -1017,
+        -763
+      ],
+      "sourceCropRawRGBASha256": "28ee8071b711589763fdcb813a8320203d9a240199892c6e77be683a1323d931",
+      "framePngSha256": "a2fee5dbab8570e7c00fe8f946fdce8bcc7cd6115d4f634220112e9140286fcb",
+      "exactCropRGBAEquality": true
+    }
+  ]
+}
