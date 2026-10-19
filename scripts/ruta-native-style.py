@@ -141,9 +141,14 @@ if body:
         body.data.materials.append(cream)
     cream_index=next(i for i,m in enumerate(body.data.materials)if m==cream)
     source_positions=[original_weighted_position(body,v)for v in body.data.vertices]
+    skin_index=next(i for i,m in enumerate(body.data.materials)if m and m.name=='Skin')
+    hand_groups={g.index for g in body.vertex_groups if g.name.startswith(('Wrist.','Index','Middle','Ring','Pinky','Thumb'))}
     for polygon in body.data.polygons:
         center=sum((source_positions[i]for i in polygon.vertices),Vector())/len(polygon.vertices)
-        if abs(center.x)>.145 and center.z>1.39:
+        hand_weight=sum(sum(g.weight for g in body.data.vertices[i].groups if g.group in hand_groups) for i in polygon.vertices)/len(polygon.vertices)
+        if hand_weight>.25:
+            polygon.material_index=skin_index
+        elif abs(center.x)>.145 and center.z>1.39:
             polygon.material_index=cream_index
 
 # Real 3D details follow the same rest transform and armature in every frame.
