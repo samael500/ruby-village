@@ -1,0 +1,7 @@
+# Temporary native ready-head color handoff — hair length BLOCKED
+
+Current reusable source: ruta-b-ellie-blue-copper-temporary.blend. Source Ellie face/eyes/brows/lashes/teeth/tongue geometry retained unchanged, with previously selected authored pose assets. Blue iris uses only2nonblack stops of native ellie.eyes_pupils ColorRamp.004; original black stop/positions/native UV-depth iris mask and separate white material preserved. Eyebrow native Principled base color chestnut. Existing ready short haircut uses native SH-Hair Base Color parameter copper(.27,.075,.018). No eye spheres/face decals/new sculpt. Two actual native face views retain shared camera and frame0; not per-frame compensation.
+
+Visible selected source hair: `Ellie ready hair_cut`. All native head/eye/hair objects use strictly ASCII `Ellie ready ` prefix; downstream root NPR must preserve their native shader/alpha/UV/normals. Rejected CC0 object `Ellie ready CC0 Cortu waves` remains hidden as a source reject: downstream appenders must honor hide_render or explicitly exclude it. This source is not accepted Ruta hairstyle or complete appearance; source hair is short and gaze/frown likeness remains for native authored-pose review. Root wardrobe/body source remains separately owned.
+
+Saved source cold-open check confirms both retarget actions/hashes/fakeusers and all Head1weights; saved-pilot-roundtrip.json is technical source integrity only, not physical/no-slip/art acceptance. Geometry and action curves are unchanged by material adaptation. No runtime integration or push.
