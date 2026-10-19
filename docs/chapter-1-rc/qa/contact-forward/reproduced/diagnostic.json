@@ -1,0 +1,232 @@
+{
+  "main": {
+    "heightBandM": 0.0175,
+    "strideM": 1.2779574578614357,
+    "speedMinMps": 0.656928097564189,
+    "speedMaxMps": 0.887807090102099,
+    "constantBestActualSoleMps": 0.7492653016699048,
+    "sameStrideConstantMps": 0.7667744747168613,
+    "uniformBestActualSole": {
+      "forwardRmsMps": 0.06928653038274052,
+      "full3dRmsMps": 0.09908222530288696
+    },
+    "uniformSameStride": {
+      "forwardRmsMps": 0.07146463764175041,
+      "full3dRmsMps": 0.10061738672694852
+    },
+    "previousAnkleDerivedUniform": {
+      "forwardRmsMps": 0.08092096786084192,
+      "full3dRmsMps": 0.10754007215000853
+    },
+    "contactAware": {
+      "forwardRmsMps": 0.01234989650116753,
+      "full3dRmsMps": 0.07189703764469837
+    },
+    "unsmoothedPerPhaseLowerBound": {
+      "forwardRmsMps": 0.0034447220203167217,
+      "full3dRmsMps": 0.07091213005044257
+    },
+    "perFoot": {
+      "L": {
+        "forwardRmsMps": 0.013228956336845914,
+        "full3dRmsMps": 0.0712034711522588
+      },
+      "R": {
+        "forwardRmsMps": 0.011374659089885613,
+        "full3dRmsMps": 0.07260379100452533
+      }
+    },
+    "perRegion": {
+      "heel": {
+        "forwardRmsMps": 0.012323184137322987,
+        "full3dRmsMps": 0.06291080243412
+      },
+      "toe": {
+        "forwardRmsMps": 0.014011857983760733,
+        "full3dRmsMps": 0.07430536463052276
+      },
+      "midsole": {
+        "forwardRmsMps": 0.012142813248465365,
+        "full3dRmsMps": 0.07382590058630545
+      }
+    },
+    "supportConfidenceThreshold": 0.01,
+    "noFootAboveConfidenceFraction": 0.3625,
+    "zeroTotalWeightFraction": 0.16458333333333333,
+    "bothFootConfidenceFraction": 0.0,
+    "bothFootMeanDesiredSpeedGapRmsMps": null,
+    "bothFootMeanDesiredSpeedGapMaxMps": null,
+    "contactSwitchIndices": [
+      22,
+      175,
+      262,
+      415
+    ],
+    "maxAdjacentVelocityDeltaMps": 0.006541857329437573,
+    "maxAccelerationMps2": 1.8840549108780207,
+    "switchAdjacentVelocityDeltaMaxMps": 0.0017227246337828683,
+    "periodicVelocityJoinErrorMps": 0.0,
+    "nonnegativeProgress": true,
+    "solverKktResidual": 2.708944180085382e-14,
+    "projectedIterations": 0
+  },
+  "heightBandSensitivity": [
+    {
+      "heightBandM": 0.0105,
+      "strideM": 1.264955336510615,
+      "speedMinMps": 0.6560374984046153,
+      "speedMaxMps": 0.8433074752131591,
+      "constantBestActualSoleMps": 0.738470356660379,
+      "sameStrideConstantMps": 0.758973201906369,
+      "uniformBestActualSole": {
+        "forwardRmsMps": 0.06559789979217041,
+        "full3dRmsMps": 0.08659174252910203
+      },
+      "uniformSameStride": {
+        "forwardRmsMps": 0.0687273680590538,
+        "full3dRmsMps": 0.08898593449195953
+      },
+      "previousAnkleDerivedUniform": {
+        "forwardRmsMps": 0.07255790723951494,
+        "full3dRmsMps": 0.09197660202497547
+      },
+      "contactAware": {
+        "forwardRmsMps": 0.011186781228505716,
+        "full3dRmsMps": 0.05762108547517232
+      },
+      "unsmoothedPerPhaseLowerBound": {
+        "forwardRmsMps": 0.003810429889456087,
+        "full3dRmsMps": 0.056653021040586414
+      },
+      "perFoot": {
+        "L": {
+          "forwardRmsMps": 0.011374112666505684,
+          "full3dRmsMps": 0.05654457513981368
+        },
+        "R": {
+          "forwardRmsMps": 0.010989544902843198,
+          "full3dRmsMps": 0.05871441473174837
+        }
+      },
+      "perRegion": {
+        "heel": {
+          "forwardRmsMps": 0.012450282006185729,
+          "full3dRmsMps": 0.0508280669827853
+        },
+        "toe": {
+          "forwardRmsMps": 0.009515225055710386,
+          "full3dRmsMps": 0.04974382032593015
+        },
+        "midsole": {
+          "forwardRmsMps": 0.010916807110279956,
+          "full3dRmsMps": 0.05962576718705653
+        }
+      },
+      "supportConfidenceThreshold": 0.01,
+      "noFootAboveConfidenceFraction": 0.47708333333333336,
+      "zeroTotalWeightFraction": 0.4125,
+      "bothFootConfidenceFraction": 0.0,
+      "bothFootMeanDesiredSpeedGapRmsMps": null,
+      "bothFootMeanDesiredSpeedGapMaxMps": null,
+      "contactSwitchIndices": [
+        27,
+        154,
+        267,
+        391
+      ],
+      "maxAdjacentVelocityDeltaMps": 0.006374492924663078,
+      "maxAccelerationMps2": 1.8358539623029662,
+      "switchAdjacentVelocityDeltaMaxMps": 0.001079739109078437,
+      "periodicVelocityJoinErrorMps": 0.0,
+      "nonnegativeProgress": true,
+      "solverKktResidual": 2.708944180085382e-14,
+      "projectedIterations": 0
+    },
+    {
+      "heightBandM": 0.0245,
+      "strideM": 1.3061706466958154,
+      "speedMinMps": 0.6575371916401115,
+      "speedMaxMps": 1.0276216915873464,
+      "constantBestActualSoleMps": 0.7575751098751468,
+      "sameStrideConstantMps": 0.7837023880174891,
+      "uniformBestActualSole": {
+        "forwardRmsMps": 0.08403577300275071,
+        "full3dRmsMps": 0.11891048502229733
+      },
+      "uniformSameStride": {
+        "forwardRmsMps": 0.08800366928314504,
+        "full3dRmsMps": 0.12174702506166347
+      },
+      "previousAnkleDerivedUniform": {
+        "forwardRmsMps": 0.09784381077904956,
+        "full3dRmsMps": 0.12903915534377386
+      },
+      "contactAware": {
+        "forwardRmsMps": 0.03403490113411743,
+        "full3dRmsMps": 0.09075277846588113
+      },
+      "unsmoothedPerPhaseLowerBound": {
+        "forwardRmsMps": 0.02298217934637905,
+        "full3dRmsMps": 0.08721165559474996
+      },
+      "perFoot": {
+        "L": {
+          "forwardRmsMps": 0.03721745908323552,
+          "full3dRmsMps": 0.09187305985413413
+        },
+        "R": {
+          "forwardRmsMps": 0.030431258495388247,
+          "full3dRmsMps": 0.0895905615940674
+        }
+      },
+      "perRegion": {
+        "heel": {
+          "forwardRmsMps": 0.014901720849124103,
+          "full3dRmsMps": 0.07617980302075117
+        },
+        "toe": {
+          "forwardRmsMps": 0.08311599954399825,
+          "full3dRmsMps": 0.12285986054383606
+        },
+        "midsole": {
+          "forwardRmsMps": 0.022565924667248268,
+          "full3dRmsMps": 0.08842684914373826
+        }
+      },
+      "supportConfidenceThreshold": 0.01,
+      "noFootAboveConfidenceFraction": 0.22291666666666668,
+      "zeroTotalWeightFraction": 0.022916666666666665,
+      "bothFootConfidenceFraction": 0.0,
+      "bothFootMeanDesiredSpeedGapRmsMps": null,
+      "bothFootMeanDesiredSpeedGapMaxMps": null,
+      "contactSwitchIndices": [
+        19,
+        217,
+        258,
+        433
+      ],
+      "maxAdjacentVelocityDeltaMps": 0.006164459018640267,
+      "maxAccelerationMps2": 1.7753641973683967,
+      "switchAdjacentVelocityDeltaMaxMps": 0.004460395910005355,
+      "periodicVelocityJoinErrorMps": 0.0,
+      "nonnegativeProgress": true,
+      "solverKktResidual": 2.7755575615628914e-14,
+      "projectedIterations": 0
+    }
+  ],
+  "materialPointEndpointClosureMaxM": 0.0,
+  "positionSourceUnchanged": true,
+  "limitations": [
+    "Sampled finite differences at 480 intervals; not analytic continuous swept proof.",
+    "Nonzero lateral/vertical and within/between-foot velocities remain: one forward rigid translation cannot cancel this candidate set.",
+    "No source pose, shoe, scale, bone, runtime or camera modified. New shoe geometry/action invalidates these surface-derived metrics.",
+    "Soft contact candidates are not physical ground truth; lower bound is only for this explicitly weighted sampled set."
+  ],
+  "materialPointIntervals": {
+    "count": 222,
+    "curveForwardSpanMedianM": 0.0013376458949336811,
+    "curveForwardSpanMaxM": 0.004875090123429127,
+    "sameStrideUniformSpanMedianM": 0.01761976598004858,
+    "sameStrideUniformSpanMaxM": 0.02118068495742681
+  }
+}

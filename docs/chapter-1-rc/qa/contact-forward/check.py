@@ -1,0 +1,17 @@
+from pathlib import Path
+import numpy as np,json,hashlib,subprocess
+R=Path('/tmp/ruby-contact-forward-qa');O=R/'docs/chapter-1-rc/qa/contact-forward';A=R/'art/ruta-b-contact-forward-v1';B=O/'reproduced';m=json.load(open(A/'sample-source.json'));src=R/m['source'];a=np.load(A/'actual-sole-samples.npz');b=np.load(B/'actual-sole-samples.npz');c=json.load(open(A/'forward-distance-curve.json'));cc=json.load(open(B/'forward-distance-curve.json'));p=a['positions'];times=a['sample_times'];dt=np.diff(times);v=np.array([x['velocityMps']for x in c['samples']]);s=np.array([x['distanceMeters']for x in c['samples']]);n=len(v)-1
+# Completely independent residual accumulation and same-stride comparator.
+vel=(np.roll(p[:-1],-1,axis=0)-np.roll(p[:-1],1,axis=0))/(2*dt[0]);w=a['rest_area_weights'][None,:]*np.maximum(0,1-(p[:-1,:,2]-p[:,:,2].min())/.0175)**2;W=w.sum();uniform=s[-1]/times[-1]
+def residual(speed):
+ r=vel.copy();r[:,:,1]-=np.asarray(speed)[:,None] if np.ndim(speed) else speed
+ return {'forwardRms':float(np.sqrt(np.sum(w*r[:,:,1]**2)/W)),'full3dRms':float(np.sqrt(np.sum(w*np.sum(r*r,axis=2))/W))}
+conf=np.array([[sum(w[i,j]for j,x in enumerate(m['columnSides'])if x==side)for side in ['L','R']]for i in range(n)]);labels=conf>.01;switch=np.flatnonzero(np.any(labels!=np.roll(labels,1,axis=0),axis=1));intervals=[]
+for side,k in [('L',0),('R',1)]:
+ on=labels[:,k];starts=np.flatnonzero(on&~np.roll(on,1));ends=np.flatnonzero(~on&np.roll(on,1))
+ for lo in starts:
+  end=next((int(x)for x in np.r_[ends,ends+n] if x>lo),int(lo+n));intervals.append({'side':side,'startSample':int(lo),'endSampleExclusive':end,'startSeconds':float(times[lo]),'durationSeconds':float((end-lo)*dt[0]),'wraps':end>n})
+def distance(t):
+ cycles=np.floor(t/times[-1]);phase=t-cycles*times[-1];i=min(int(phase/dt[0]),n-1);f=phase-times[i];return cycles*s[-1]+s[i]+v[i]*f+(v[i+1]-v[i])*f*f/(2*dt[0])
+grid=np.linspace(0,4*times[-1],10001);ds=np.diff([distance(float(t))for t in grid]);report={'sourceShaMatchesMetadata':hashlib.sha256(src.read_bytes()).hexdigest()==m['sourceSha256Before'],'sourceGitFrozenBlobMatches':subprocess.check_output(['git','show','e6ab193:'+m['source']],cwd=R)==src.read_bytes(),'coldSampleArraysMaxAbsDifference':{k:float(np.max(np.abs(a[k]-b[k])))for k in a.files},'coldFitMaxVelocityDifference':float(np.max(np.abs(v-np.array([x['velocityMps']for x in cc['samples']])))),'coldFitMaxDistanceDifference':float(np.max(np.abs(s-np.array([x['distanceMeters']for x in cc['samples']])))),'minimumVelocity':float(v.min()),'maximumVelocity':float(v.max()),'strictDistanceSampleIncrementsPositive':bool(np.all(np.diff(s)>0)),'analyticIntegrationKnotMaxError':float(np.max(np.abs(np.diff(s)-(v[:-1]+v[1:])*dt/2))),'periodicVelocityError':float(abs(v[-1]-v[0])),'multipleCycleDenseMinimumProgress':float(ds.min()),'supportThresholdIntervals':intervals,'supportSwitchSamples':switch.tolist(),'largestSwitchVelocityDelta':float(max(abs(v[i]-v[(i-1)%n])for i in switch)),'zeroSoftWeightFraction':float(np.mean(w.sum(axis=1)==0)),'neitherFootConfidentFraction':float(np.mean(~labels.any(axis=1))),'bothFeetConfidentFraction':float(np.mean(labels.all(axis=1))),'independentSameStrideUniformSpeed':float(uniform),'independentSameStrideUniformResidual':residual(uniform),'independentCurveResidual':residual(v[:-1]),'status':'technical-candidate-contract-not-no-slip-not-runtime'}
+(O/'independent-report.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report,indent=2))
