@@ -17,3 +17,9 @@ A separate failure-injection test found **P2 resident-facing rejected decode cac
 Harness corrections were documented rather than attributed to the game: the first gate result assertion incorrectly compared a localized `data-result-scene` title with a scene ID; the final harness compares the actual level title. Preliminary failed-attempt artifacts remain local, outside the successful-run directories. The server later exited with signal 143 after both full sequences had completed; it was restarted only for additional targeted checks, without changing the frozen bundle.
 
 **Not performed / not accepted:** physical phone, family test, new final character appearance, artistic acceptance of all eight scenes or bridge craftsmanship, full audio listening/mix test, deployment, main merge. This is concrete scoped QA evidence for review, not a claim that all release/user acceptance gates are closed.
+
+## Targeted follow-up
+
+The independent actual invalid-drop/rotate test also passed on `6108ec2` for a three-cell composite and bridge, with mouse and native touch, cancel/undo/reload and native touch cancellation. See `drag/README.md`, evidence commit `16cf7bf`.
+
+Resident-facing recovery was independently fixed and verified on author's `7244fb2`: real failed load → network restored → map → garden reentry now reaches the authored `conversation-left` facing, with a fresh successful request and no page reload. See `resident-retry-fixed/README.md` and raw before/after evidence. Only the matching rejected-cache catch differs in runtime; the successful full-chapter evidence remains explicitly scoped to `6108ec2`.
