@@ -1,0 +1,21 @@
+<!doctype html><html lang="ru"><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Рута — рисованные кадры ходьбы</title>
+<style>body{margin:24px auto;max-width:1200px;padding:0 16px;background:#f5efdf;color:#503e2d;font:17px/1.5 system-ui}h1{font-size:26px;margin:0}p{max-width:900px}.views{display:flex;flex-wrap:wrap;gap:16px}.view{background:#fffaf0;border:1px solid #d8c7a9;border-radius:12px;padding:12px;text-align:center}h2{font-size:18px;margin:0}canvas{width:360px;height:360px;max-width:100%;background:linear-gradient(#faf6eb,#eee7d5)}.reference{height:272px;margin:40px 32px 32px}button,input{font:inherit}button{padding:7px 16px;background:#fdf8e9;border:1px solid #bba582;border-radius:8px}label{margin-left:12px}details{margin:24px 0}#status{color:#75634e}a{color:#69512d}</style>
+<h1>Рута — рисованные кадры ходьбы</h1>
+<p>24 цельных кадра по принятой 3D-походке. Это пилот рисовки: привязка кадров к движению в игре ещё проверяется.</p>
+<button id="play">Пауза</button><label>Кадр <input id="frame" type="range" min="0" max="23" value="0"><span id="number">0</span></label>
+<div class="views"><section class="view"><h2>Принятая внешность</h2><img class="reference" src="accepted-ruta.webp" alt="Принятая Рута"></section><section class="view"><h2>Новая рисовка</h2><canvas id="painted" width="600" height="600"></canvas></section><section class="view"><h2>Исходная 3D-походка</h2><canvas id="native" width="600" height="600"></canvas></section></div>
+<p id="status">Загрузка кадров…</p>
+<details><summary>Что уже проверено и что остаётся</summary><p>Все персонажи извлечены целиком, без растягивания частей тела и индивидуального изменения роста. Для совмещения использована пробная разметка видимых контуров обуви. Она не доказывает точное положение скрытых суставов; кадр 7 имеет интерполированную точку регистрации. Эта петля не является проверкой отсутствия скольжения или финальной игровой анимацией.</p><p><a href="../painted-ruta-artist-origin24-v1/index.html">Диагностика регистрации</a> · <a href="../painted-ruta-whole24-v1/whole24-sheet.png">Все 24 целых спрайта</a></p></details>
+<script type="module">
+const data=await fetch('../painted-ruta-artist-origin24-v1/artist-origin-proposal.json').then(r=>r.json());
+const load=async(url)=>{const im=new Image();im.src=url;await im.decode();return im;};
+const painted=await Promise.all(Array.from({length:24},(_,i)=>load(`../painted-ruta-whole24-v1/frame-${String(i).padStart(2,'0')}.png`)));
+const native=await Promise.all(Array.from({length:24},(_,i)=>load(`../painted-ruta-analysis24-v1/guide-${String(i).padStart(2,'0')}.png`)));
+let playing=true,k=0,last=performance.now(),elapsed=0;const slider=document.querySelector('#frame');
+document.querySelector('#play').onclick=()=>{playing=!playing;document.querySelector('#play').textContent=playing?'Пауза':'Играть';};
+slider.oninput=()=>{k=Number(slider.value);elapsed=k*data.cycleDurationMs/24;};
+function draw(id,img,anchor,scale){const c=document.querySelector('#'+id),x=c.getContext('2d');x.clearRect(0,0,600,600);x.drawImage(img,300-anchor[0]*scale*2,500-anchor[1]*scale*2,img.naturalWidth*scale*2,img.naturalHeight*scale*2);}
+const cycle=data.cycleDurationMs??1666.666667;
+function tick(now){const dt=now-last;last=now;if(playing){elapsed=(elapsed+Math.min(dt,100))%cycle;k=Math.floor(elapsed/cycle*24);}const f=data.frames[k];draw('painted',painted[k],f.footAnchorProposalArtPx,data.paintedDisplayScale);draw('native',native[k],f.nativeRootPx,data.nativeDisplayScale);slider.value=String(k);document.querySelector('#number').textContent=String(k);requestAnimationFrame(tick);}
+document.querySelector('#status').textContent='24 кадра · цикл 1,667 с · показ в двойном игровом масштабе';requestAnimationFrame(tick);
+</script></html>

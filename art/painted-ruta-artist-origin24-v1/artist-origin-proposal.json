@@ -1,0 +1,3120 @@
+{
+  "status": "PROPOSAL-not-runtime-NOT-no-slip-NOT-physical-anchor-PASS",
+  "globalScaleArtToGuide": 0.9389975,
+  "nativeDisplayScale": 0.6486732261610895,
+  "paintedDisplayScale": 0.6091025376821977,
+  "cycleDurationMs": 1666.6666666666667,
+  "annotationCommit": "662ff48",
+  "annotationSha256": "30a9ba5b2c2f3594f27d362479cd670ba207b0c2c595b9223d295a449b2bdd97",
+  "definitionBias": "native toe/heel mean of selected boot sole vertices versus painted front/rear profile midpoint are different definitions;8 guidepx heuristic allowance per point, NOT measured/calibrated/statistical bound",
+  "translationEstimator": "equal-weight mean(nativeContourFeature - S*paintedContourPoint), translation only; no per-frame scale or raster edits",
+  "uncertainty": "max point allowance (S*manual uncertainty+8) plus observed residual RMS; frame7 adds half neighbor translation difference, heuristic not confidence interval",
+  "frames": [
+    {
+      "index": 0,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            235,
+            315
+          ],
+          "nativeGuidePx": [
+            182.30068969726562,
+            246.05397701263428
+          ],
+          "translationGuidePx": [
+            -38.36372280273437,
+            -49.730235487365746
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            13.191855367431643,
+            -5.858493429565428
+          ],
+          "residualMagnitudeGuidePx": 14.434229917092782
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            283,
+            301
+          ],
+          "nativeGuidePx": [
+            205.60940551757812,
+            237.77624130249023
+          ],
+          "translationGuidePx": [
+            -60.126886982421865,
+            -44.8620061975098
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -8.57130881225585,
+            -0.9902641397094811
+          ],
+          "residualMagnitudeGuidePx": 8.628323001687486
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            110,
+            305
+          ],
+          "nativeGuidePx": [
+            55.34447479248047,
+            252.18099117279053
+          ],
+          "translationGuidePx": [
+            -47.945250207519535,
+            -34.213246327209504
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.6103279626464797,
+            9.658495730590815
+          ],
+          "residualMagnitudeGuidePx": 10.311207871811531
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            146,
+            329
+          ],
+          "nativeGuidePx": [
+            77.30718231201172,
+            262.2486972808838
+          ],
+          "translationGuidePx": [
+            -59.78645268798829,
+            -46.681480219116224
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -8.230874517822272,
+            -2.809738161315906
+          ],
+          "residualMagnitudeGuidePx": 8.697236564753824
+        }
+      ],
+      "translationGuidePx": [
+        -51.555578170166015,
+        -43.87174205780032
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 10.779121981403966,
+      "uncertaintyAllowanceGuidePx": 21.596114481403966,
+      "bilateralTranslationDifferenceGuidePx": [
+        4.6205465551757925,
+        -6.848757569274909
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -46.57063597167971,
+            -42.44967817138672
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -63.99700501708985,
+            -38.2809400091553
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        191.2205071580766,
+        321.94057820872564
+      ]
+    },
+    {
+      "index": 1,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            242,
+            320
+          ],
+          "nativeGuidePx": [
+            176.28541564941406,
+            249.85514163970947
+          ],
+          "translationGuidePx": [
+            -50.95197935058596,
+            -50.62405836029052
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            12.908246164855946,
+            -6.471557813034039
+          ],
+          "residualMagnitudeGuidePx": 14.439663416436
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            288,
+            309
+          ],
+          "nativeGuidePx": [
+            201.51718139648438,
+            246.38554096221924
+          ],
+          "translationGuidePx": [
+            -68.91409860351564,
+            -43.76468653778079
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -5.053873088073736,
+            0.3878140094756901
+          ],
+          "residualMagnitudeGuidePx": 5.06873089602334
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            118,
+            299
+          ],
+          "nativeGuidePx": [
+            49.38199234008789,
+            245.8180856704712
+          ],
+          "translationGuidePx": [
+            -61.41971265991211,
+            -34.942166829528844
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            2.4405128555297964,
+            9.210333717727636
+          ],
+          "residualMagnitudeGuidePx": 9.528187140790045
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            149,
+            328
+          ],
+          "nativeGuidePx": [
+            65.7555160522461,
+            260.7120895385742
+          ],
+          "translationGuidePx": [
+            -74.15511144775391,
+            -47.27909046142577
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -10.294885932312006,
+            -3.126589914169287
+          ],
+          "residualMagnitudeGuidePx": 10.759193317842223
+        }
+      ],
+      "translationGuidePx": [
+        -63.860225515441904,
+        -44.15250054725648
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 10.496934118075611,
+      "uncertaintyAllowanceGuidePx": 21.313926618075612,
+      "bilateralTranslationDifferenceGuidePx": [
+        7.85437307678221,
+        -6.083743803558349
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -57.80232299804689,
+            -44.26035422668457
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -75.3041353112793,
+            -44.11840911010745
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        204.32453282936524,
+        322.2395763311447
+      ]
+    },
+    {
+      "index": 2,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            228,
+            325
+          ],
+          "nativeGuidePx": [
+            165.68194580078125,
+            252.2380495071411
+          ],
+          "translationGuidePx": [
+            -48.40948419921875,
+            -52.9361379928589
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            16.861847179260252,
+            -6.96839290786744
+          ],
+          "residualMagnitudeGuidePx": 18.245010003152757
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            277,
+            318
+          ],
+          "nativeGuidePx": [
+            191.4132537841797,
+            252.3368787765503
+          ],
+          "translationGuidePx": [
+            -68.68905371582031,
+            -46.2643262234497
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -3.417722337341303,
+            -0.29658113845823664
+          ],
+          "residualMagnitudeGuidePx": 3.4305664760868404
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            117,
+            296
+          ],
+          "nativeGuidePx": [
+            45.78410720825195,
+            241.4210844039917
+          ],
+          "translationGuidePx": [
+            -64.07860029174805,
+            -36.52217559600831
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            1.1927310867309586,
+            9.445569488983153
+          ],
+          "residualMagnitudeGuidePx": 9.520577210256944
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            146,
+            327
+          ],
+          "nativeGuidePx": [
+            57.185447692871094,
+            258.9038419723511
+          ],
+          "translationGuidePx": [
+            -79.90818730712891,
+            -48.14834052764894
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -14.636855928649908,
+            -2.180595442657477
+          ],
+          "residualMagnitudeGuidePx": 14.798396803728183
+        }
+      ],
+      "translationGuidePx": [
+        -65.271331378479,
+        -45.96774508499146
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 12.789479218668868,
+      "uncertaintyAllowanceGuidePx": 23.606471718668868,
+      "bilateralTranslationDifferenceGuidePx": [
+        13.44412484191895,
+        -7.264974046325676
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -54.80752682128906,
+            -45.547681964721676
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -76.10458208129883,
+            -48.04935450653079
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        205.82731197737905,
+        324.17274924985315
+      ]
+    },
+    {
+      "index": 3,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            216,
+            325
+          ],
+          "nativeGuidePx": [
+            155.62979125976562,
+            252.08199977874756
+          ],
+          "translationGuidePx": [
+            -47.193668740234386,
+            -53.09218772125246
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            12.038397250061031,
+            -7.565676805877686
+          ],
+          "residualMagnitudeGuidePx": 14.2183850658671
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            264,
+            317
+          ],
+          "nativeGuidePx": [
+            181.55178833007812,
+            252.26937294006348
+          ],
+          "translationGuidePx": [
+            -66.34355166992188,
+            -45.392834559936546
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -7.111485679626462,
+            0.13367635543822587
+          ],
+          "residualMagnitudeGuidePx": 7.112741942425262
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            110,
+            295
+          ],
+          "nativeGuidePx": [
+            50.30950927734375,
+            241.7785930633545
+          ],
+          "translationGuidePx": [
+            -52.980215722656254,
+            -35.225669436645546
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            6.251850267639163,
+            10.300841478729225
+          ],
+          "residualMagnitudeGuidePx": 12.049604430805534
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            141,
+            328
+          ],
+          "nativeGuidePx": [
+            61.98781967163086,
+            259.59582805633545
+          ],
+          "translationGuidePx": [
+            -70.41082782836915,
+            -48.39535194366454
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -11.178761838073733,
+            -2.868841028289765
+          ],
+          "residualMagnitudeGuidePx": 11.54101230733129
+        }
+      ],
+      "translationGuidePx": [
+        -59.23206599029542,
+        -45.52651091537477
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 11.523253705417458,
+      "uncertaintyAllowanceGuidePx": 22.340246205417458,
+      "bilateralTranslationDifferenceGuidePx": [
+        4.926911570434569,
+        -7.43200045043946
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -53.40102227539063,
+            -45.61518303283691
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -65.03638321166993,
+            -47.656679106750516
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        199.3957023211408,
+        323.70285005457663
+      ]
+    },
+    {
+      "index": 4,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            198,
+            327
+          ],
+          "nativeGuidePx": [
+            145.25978088378906,
+            251.86750411987305
+          ],
+          "translationGuidePx": [
+            -40.661724116210934,
+            -55.18467838012697
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            13.892424956665053,
+            -6.516827772064204
+          ],
+          "residualMagnitudeGuidePx": 15.344983394820513
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            246,
+            321
+          ],
+          "nativeGuidePx": [
+            171.29348754882812,
+            252.09082126617432
+          ],
+          "translationGuidePx": [
+            -59.69989745117189,
+            -49.3273762338257
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -5.145748378295906,
+            -0.6595256257629387
+          ],
+          "residualMagnitudeGuidePx": 5.187841595863635
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            121,
+            302
+          ],
+          "nativeGuidePx": [
+            62.416481018066406,
+            242.71653652191162
+          ],
+          "translationGuidePx": [
+            -51.202216481933604,
+            -40.860708478088384
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.3519325909423827,
+            7.80714212997438
+          ],
+          "residualMagnitudeGuidePx": 8.496288621029928
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            151,
+            330
+          ],
+          "nativeGuidePx": [
+            75.1358642578125,
+            260.57053565979004
+          ],
+          "translationGuidePx": [
+            -66.6527582421875,
+            -49.29863934021
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -12.098609169311516,
+            -0.6307887321472379
+          ],
+          "residualMagnitudeGuidePx": 12.115041818184228
+        }
+      ],
+      "translationGuidePx": [
+        -54.55414907287599,
+        -48.667850608062764
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 10.969769532666644,
+      "uncertaintyAllowanceGuidePx": 21.786762032666644,
+      "bilateralTranslationDifferenceGuidePx": [
+        8.74667657836914,
+        -7.1763533978271425
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -47.69636555664064,
+            -47.67173447509765
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -62.36294649902344,
+            -47.75997657165527
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        194.41388190370685,
+        327.04826864481566
+      ]
+    },
+    {
+      "index": 5,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            189,
+            326
+          ],
+          "nativeGuidePx": [
+            134.4326934814453,
+            251.5549659729004
+          ],
+          "translationGuidePx": [
+            -43.03783401855469,
+            -54.5582190270996
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            13.59537115905762,
+            -7.401955554885845
+          ],
+          "residualMagnitudeGuidePx": 15.479763014627878
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            237,
+            320
+          ],
+          "nativeGuidePx": [
+            160.5201873779297,
+            251.80047512054443
+          ],
+          "translationGuidePx": [
+            -62.02222012207031,
+            -48.67872487945556
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -5.389014944457998,
+            -1.5224614072418063
+          ],
+          "residualMagnitudeGuidePx": 5.5999438218728885
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            140,
+            301
+          ],
+          "nativeGuidePx": [
+            78.40196228027344,
+            244.42047119140625
+          ],
+          "translationGuidePx": [
+            -53.05768771972657,
+            -38.217776308593784
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.575517457885738,
+            8.938487163619968
+          ],
+          "residualMagnitudeGuidePx": 9.627090830871214
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            172,
+            329
+          ],
+          "nativeGuidePx": [
+            93.09249114990234,
+            261.75984382629395
+          ],
+          "translationGuidePx": [
+            -68.41507885009767,
+            -47.17033367370607
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -11.78187367248536,
+            -0.014070201492316414
+          ],
+          "residualMagnitudeGuidePx": 11.781882073971616
+        }
+      ],
+      "translationGuidePx": [
+        -56.63320517761231,
+        -47.15626347221375
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 11.207988856926917,
+      "uncertaintyAllowanceGuidePx": 22.024981356926915,
+      "bilateralTranslationDifferenceGuidePx": [
+        8.206356214599623,
+        -8.924416962127651
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -50.01868822753906,
+            -47.02306881561282
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -64.27684364013672,
+            -46.26625079498291
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        196.62800505604358,
+        325.4384804016638
+      ]
+    },
+    {
+      "index": 6,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            190,
+            310
+          ],
+          "nativeGuidePx": [
+            122.96332550048828,
+            251.08301162719727
+          ],
+          "translationGuidePx": [
+            -55.44619949951172,
+            -40.00621337280273
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.369159698486328,
+            -4.300717693710325
+          ],
+          "residualMagnitudeGuidePx": 5.463278297405098
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            237,
+            308
+          ],
+          "nativeGuidePx": [
+            149.08135986328125,
+            251.3598346710205
+          ],
+          "translationGuidePx": [
+            -73.46104763671875,
+            -37.85139532897949
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -14.645688438720697,
+            -2.1458996498870846
+          ],
+          "residualMagnitudeGuidePx": 14.802063205900135
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            149,
+            294
+          ],
+          "nativeGuidePx": [
+            94.50100708007812,
+            246.8228578567505
+          ],
+          "translationGuidePx": [
+            -45.40962041992188,
+            -29.242407143249523
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            13.40573877807617,
+            6.463088535842886
+          ],
+          "residualMagnitudeGuidePx": 14.882383734071599
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            184,
+            318
+          ],
+          "nativeGuidePx": [
+            111.83097076416016,
+            262.8792381286621
+          ],
+          "translationGuidePx": [
+            -60.94456923583985,
+            -35.721966871337884
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -2.1292100378418013,
+            -0.016471192245475663
+          ],
+          "residualMagnitudeGuidePx": 2.129273746003616
+        }
+      ],
+      "translationGuidePx": [
+        -58.81535919799805,
+        -35.70549567909241
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 10.896876125752042,
+      "uncertaintyAllowanceGuidePx": 21.713868625752042,
+      "bilateralTranslationDifferenceGuidePx": [
+        -11.276528740234369,
+        -6.44661734359741
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -62.396513242187496,
+            -35.256746533508306
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -59.59700632812502,
+            -38.508175600280765
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        198.95192393802756,
+        313.24380704723916
+      ]
+    },
+    {
+      "index": 7,
+      "status": "interpolated-artist-origin-from6-and8-NOT-verified",
+      "pointCount": 0,
+      "points": [],
+      "translationGuidePx": [
+        -54.91988040018718,
+        -39.15692081434885
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "separateEstimatedAnkleComparison": [],
+      "interpolatedFrom": [
+        6,
+        8
+      ],
+      "uncertaintyAllowanceGuidePx": 28.32975629101644,
+      "footAnchorProposalArtPx": [
+        194.8033731721194,
+        316.9194559549907
+      ]
+    },
+    {
+      "index": 8,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 3,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            146,
+            310
+          ],
+          "nativeGuidePx": [
+            97.25921630859375,
+            249.50397491455078
+          ],
+          "translationGuidePx": [
+            -39.834418691406256,
+            -41.58525008544922
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            11.189982910970052,
+            1.0230958641560832
+          ],
+          "residualMagnitudeGuidePx": 11.236656206143136
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            184,
+            320
+          ],
+          "nativeGuidePx": [
+            127.6152572631836,
+            256.2497854232788
+          ],
+          "translationGuidePx": [
+            -45.16028273681641,
+            -44.22941457672118
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            5.864118865559895,
+            -1.621068627115882
+          ],
+          "residualMagnitudeGuidePx": 6.084057327411934
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            234,
+            326
+          ],
+          "nativeGuidePx": [
+            151.64691162109375,
+            264.1028118133545
+          ],
+          "translationGuidePx": [
+            -68.07850337890625,
+            -42.010373186645495
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -17.05410177652994,
+            0.597972762959806
+          ],
+          "residualMagnitudeGuidePx": 17.06458199984645
+        }
+      ],
+      "translationGuidePx": [
+        -51.02440160237631,
+        -42.6083459496053
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 12.30823782523685,
+      "uncertaintyAllowanceGuidePx": 23.12523032523685,
+      "bilateralTranslationDifferenceGuidePx": [
+        16.784974366455074,
+        1.5346437962341213
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -53.3257019946289,
+            -35.90295601898197
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -59.91295337402346,
+            -40.41772976531985
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        190.6548224062112,
+        320.59510486274223
+      ]
+    },
+    {
+      "index": 9,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            135,
+            304
+          ],
+          "nativeGuidePx": [
+            82.87931060791016,
+            248.22181701660156
+          ],
+          "translationGuidePx": [
+            -43.885351892089844,
+            -37.23342298339844
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            11.410020518188489,
+            0.41394639831543145
+          ],
+          "residualMagnitudeGuidePx": 11.417526870831557
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            178,
+            311
+          ],
+          "nativeGuidePx": [
+            109.13916015625,
+            248.58599185943604
+          ],
+          "translationGuidePx": [
+            -58.00239484375001,
+            -43.44223064056399
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -2.7070224334716784,
+            -5.794861258850119
+          ],
+          "residualMagnitudeGuidePx": 6.395966499649675
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            211,
+            316
+          ],
+          "nativeGuidePx": [
+            147.609130859375,
+            260.4812479019165
+          ],
+          "translationGuidePx": [
+            -50.519341640625015,
+            -36.24196209808349
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            4.7760307696533175,
+            1.4054072836303817
+          ],
+          "residualMagnitudeGuidePx": 4.9785178060901405
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            258,
+            314
+          ],
+          "nativeGuidePx": [
+            173.48695373535156,
+            261.17335319519043
+          ],
+          "translationGuidePx": [
+            -68.77440126464845,
+            -33.671861804809566
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -13.479028854370114,
+            3.975507576904306
+          ],
+          "residualMagnitudeGuidePx": 14.053073662048657
+        }
+      ],
+      "translationGuidePx": [
+        -55.29537241027833,
+        -37.64736938171387
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 9.918956928620617,
+      "uncertaintyAllowanceGuidePx": 20.735949428620614,
+      "bilateralTranslationDifferenceGuidePx": [
+        8.702998084716803,
+        -5.380914860534688
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -59.14482794921875,
+            -38.030584576721196
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -59.34167656738282,
+            -30.97422595123294
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        195.20325923155102,
+        315.31183566565556
+      ]
+    },
+    {
+      "index": 10,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            122,
+            296
+          ],
+          "nativeGuidePx": [
+            64.02220153808594,
+            242.69996166229248
+          ],
+          "translationGuidePx": [
+            -50.53549346191407,
+            -35.24329833770753
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.8946210784911983,
+            2.7482275111389214
+          ],
+          "residualMagnitudeGuidePx": 4.766636948416438
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            161,
+            309
+          ],
+          "nativeGuidePx": [
+            89.1375503540039,
+            247.64182090759277
+          ],
+          "translationGuidePx": [
+            -62.04104714599609,
+            -42.508406592407255
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -7.610932605590818,
+            -4.5168807435608045
+          ],
+          "residualMagnitudeGuidePx": 8.850339359504575
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            230,
+            321
+          ],
+          "nativeGuidePx": [
+            172.06532287597656,
+            260.5514621734619
+          ],
+          "translationGuidePx": [
+            -43.90410212402344,
+            -40.866735326538105
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            10.526012416381832,
+            -2.875209477691655
+          ],
+          "residualMagnitudeGuidePx": 10.911634475660941
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            275,
+            306
+          ],
+          "nativeGuidePx": [
+            196.9844970703125,
+            253.9855718612671
+          ],
+          "translationGuidePx": [
+            -61.239815429687496,
+            -33.34766313873291
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -6.809700889282226,
+            4.643862710113538
+          ],
+          "residualMagnitudeGuidePx": 8.242419976673974
+        }
+      ],
+      "translationGuidePx": [
+        -54.43011454040527,
+        -37.99152584884645
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 8.486026581662221,
+      "uncertaintyAllowanceGuidePx": 19.30301908166222,
+      "bilateralTranslationDifferenceGuidePx": [
+        -3.716311527099613,
+        -1.768653232421883
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -63.259778474121106,
+            -42.31228161865238
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -53.60129972167971,
+            -32.189841455078124
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        194.28178939816695,
+        315.6783504509799
+      ]
+    },
+    {
+      "index": 11,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            115,
+            287
+          ],
+          "nativeGuidePx": [
+            53.19878005981445,
+            236.7116928100586
+          ],
+          "translationGuidePx": [
+            -54.78593244018555,
+            -32.780589689941394
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.1193907296752954,
+            5.1868110810089405
+          ],
+          "residualMagnitudeGuidePx": 6.052570339488944
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            150,
+            309
+          ],
+          "nativeGuidePx": [
+            74.644775390625,
+            247.0640754699707
+          ],
+          "translationGuidePx": [
+            -66.204849609375,
+            -43.086152030029325
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -8.29952643951416,
+            -5.118751259078991
+          ],
+          "residualMagnitudeGuidePx": 9.751089865882548
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            242,
+            321
+          ],
+          "nativeGuidePx": [
+            181.27830505371094,
+            259.64688301086426
+          ],
+          "translationGuidePx": [
+            -45.95908994628908,
+            -41.77131448913576
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            11.94623322357176,
+            -3.8039137181854272
+          ],
+          "residualMagnitudeGuidePx": 12.5372344561059
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            287,
+            303
+          ],
+          "nativeGuidePx": [
+            204.82086181640625,
+            250.28469562530518
+          ],
+          "translationGuidePx": [
+            -64.67142068359374,
+            -34.23154687469486
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -6.766097513732895,
+            3.7358538962554775
+          ],
+          "residualMagnitudeGuidePx": 7.72895076317023
+        }
+      ],
+      "translationGuidePx": [
+        -57.90532316986084,
+        -37.967400770950334
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 9.335902326420534,
+      "uncertaintyAllowanceGuidePx": 20.152894826420535,
+      "bilateralTranslationDifferenceGuidePx": [
+        -5.180135709838865,
+        0.06805982192994975
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -67.1142518762207,
+            -41.2497532965088
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -56.0200265576172,
+            -32.08704466918948
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        197.9827669081769,
+        315.6526580738478
+      ]
+    },
+    {
+      "index": 12,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            101,
+            279
+          ],
+          "nativeGuidePx": [
+            47.32665252685547,
+            230.62387466430664
+          ],
+          "translationGuidePx": [
+            -47.51209497314454,
+            -31.356427835693353
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            0.05510426635741794,
+            4.156397670516981
+          ],
+          "residualMagnitudeGuidePx": 4.156762932336865
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            135,
+            304
+          ],
+          "nativeGuidePx": [
+            63.718711853027344,
+            245.44786930084229
+          ],
+          "translationGuidePx": [
+            -63.045950646972656,
+            -40.00737069915772
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -15.478751407470696,
+            -4.494545192947385
+          ],
+          "residualMagnitudeGuidePx": 16.118085544683105
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            225,
+            316
+          ],
+          "nativeGuidePx": [
+            182.3006134033203,
+            259.22576427459717
+          ],
+          "translationGuidePx": [
+            -28.973824096679692,
+            -37.49744572540283
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            18.593375142822268,
+            -1.984620219192493
+          ],
+          "residualMagnitudeGuidePx": 18.698992395745517
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            273,
+            301
+          ],
+          "nativeGuidePx": [
+            205.60939025878906,
+            249.4481897354126
+          ],
+          "translationGuidePx": [
+            -50.736927241210935,
+            -33.190057764587436
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -3.1697280017089753,
+            2.322767741622897
+          ],
+          "residualMagnitudeGuidePx": 3.9296851764921206
+        }
+      ],
+      "translationGuidePx": [
+        -47.56719923950196,
+        -35.51282550621033
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 12.670498233138494,
+      "uncertaintyAllowanceGuidePx": 23.487490733138493,
+      "bilateralTranslationDifferenceGuidePx": [
+        -15.423647141113285,
+        -0.338147522430404
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -61.50148283447267,
+            -42.14015970214842
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -39.05867123046875,
+            -31.552805622558594
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        186.9730209500046,
+        313.03861994835756
+      ]
+    },
+    {
+      "index": 13,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            106,
+            281
+          ],
+          "nativeGuidePx": [
+            45.593135833740234,
+            226.4688777923584
+          ],
+          "translationGuidePx": [
+            -53.94059916625977,
+            -37.38941970764159
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            1.5152132110595744,
+            0.9210949696350212
+          ],
+          "residualMagnitudeGuidePx": 1.773213754192203
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            138,
+            309
+          ],
+          "nativeGuidePx": [
+            58.11208724975586,
+            243.59618663787842
+          ],
+          "translationGuidePx": [
+            -71.46956775024415,
+            -46.55404086212161
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -16.013755372924805,
+            -8.243526184844995
+          ],
+          "residualMagnitudeGuidePx": 18.0109990035007
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            229,
+            320
+          ],
+          "nativeGuidePx": [
+            176.26321411132812,
+            261.73118591308594
+          ],
+          "translationGuidePx": [
+            -38.76721338867188,
+            -38.748014086914054
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            16.68859898864747,
+            -0.4374994096374394
+          ],
+          "residualMagnitudeGuidePx": 16.694332629288255
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            276,
+            306
+          ],
+          "nativeGuidePx": [
+            201.51744079589844,
+            256.7826509475708
+          ],
+          "translationGuidePx": [
+            -57.64586920410159,
+            -30.5505840524292
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -2.1900568267822393,
+            7.759930624847414
+          ],
+          "residualMagnitudeGuidePx": 8.063056009168005
+        }
+      ],
+      "translationGuidePx": [
+        -55.45581237731935,
+        -38.310514677276615
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 12.954284872837041,
+      "uncertaintyAllowanceGuidePx": 23.77127737283704,
+      "bilateralTranslationDifferenceGuidePx": [
+        -14.498542161865231,
+        -7.322431215209974
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -66.90378936279298,
+            -48.77939303161622
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -48.412088598632835,
+            -30.88187236175537
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        195.37412227116616,
+        316.0180625678174
+      ]
+    },
+    {
+      "index": 14,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            107,
+            278
+          ],
+          "nativeGuidePx": [
+            45.779266357421875,
+            225.12483596801758
+          ],
+          "translationGuidePx": [
+            -54.69346614257813,
+            -35.916469031982444
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -1.3624353170776402,
+            -0.1521124807739227
+          ],
+          "residualMagnitudeGuidePx": 1.3709005069762163
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            136,
+            307
+          ],
+          "nativeGuidePx": [
+            57.17954635620117,
+            242.83695220947266
+          ],
+          "translationGuidePx": [
+            -70.52411364379883,
+            -45.43528029052737
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -17.193082818298336,
+            -9.670923739318852
+          ],
+          "residualMagnitudeGuidePx": 19.726349453677088
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            213,
+            319
+          ],
+          "nativeGuidePx": [
+            165.61732482910156,
+            263.7371349334717
+          ],
+          "translationGuidePx": [
+            -34.38914267089845,
+            -35.80306756652834
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            18.94188815460204,
+            -0.03871101531981935
+          ],
+          "residualMagnitudeGuidePx": 18.941927710878854
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            261,
+            307
+          ],
+          "nativeGuidePx": [
+            191.36094665527344,
+            262.3696231842041
+          ],
+          "translationGuidePx": [
+            -53.71740084472657,
+            -25.902609315795928
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -0.38637001922607794,
+            9.861747235412594
+          ],
+          "residualMagnitudeGuidePx": 9.869313062565434
+        }
+      ],
+      "translationGuidePx": [
+        -53.33103082550049,
+        -35.76435655120852
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 14.55342053178306,
+      "uncertaintyAllowanceGuidePx": 25.37041303178306,
+      "bilateralTranslationDifferenceGuidePx": [
+        -18.55551813537597,
+        -9.823036220092774
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -67.65360458129884,
+            -47.19928750976561
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -43.59186395019532,
+            -27.838234854736356
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        193.11130309239425,
+        313.306491848973
+      ]
+    },
+    {
+      "index": 15,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            118,
+            280
+          ],
+          "nativeGuidePx": [
+            50.29058074951172,
+            224.94298934936523
+          ],
+          "translationGuidePx": [
+            -60.51112425048828,
+            -37.97631065063479
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -0.9603593771362213,
+            -0.7120732001495327
+          ],
+          "residualMagnitudeGuidePx": 1.1955494032555356
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            146,
+            305
+          ],
+          "nativeGuidePx": [
+            61.97371292114258,
+            242.3896360397339
+          ],
+          "translationGuidePx": [
+            -75.11992207885743,
+            -44.004601460266144
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -15.56915720550537,
+            -6.74036400978089
+          ],
+          "residualMagnitudeGuidePx": 16.96558761358089
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            210,
+            321
+          ],
+          "nativeGuidePx": [
+            155.0043487548828,
+            263.8293790817261
+          ],
+          "translationGuidePx": [
+            -42.1851262451172,
+            -37.588818418273945
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            17.365638628234855,
+            -0.32458096778869105
+          ],
+          "residualMagnitudeGuidePx": 17.368671733068513
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            257,
+            311
+          ],
+          "nativeGuidePx": [
+            180.9354705810547,
+            262.5410032272339
+          ],
+          "translationGuidePx": [
+            -60.38688691894532,
+            -29.48721927276614
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -0.8361220455932639,
+            7.777018177719114
+          ],
+          "residualMagnitudeGuidePx": 7.82183557815559
+        }
+      ],
+      "translationGuidePx": [
+        -59.55076487335206,
+        -37.264237450485254
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 12.768245484722126,
+      "uncertaintyAllowanceGuidePx": 23.585237984722127,
+      "bilateralTranslationDifferenceGuidePx": [
+        -16.52951658264159,
+        -7.452437209930423
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -73.48735308227539,
+            -47.4122239111328
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -51.20034752441407,
+            -29.54484981170657
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        199.73510565614077,
+        314.90381335331864
+      ]
+    },
+    {
+      "index": 16,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            120,
+            285
+          ],
+          "nativeGuidePx": [
+            62.40005111694336,
+            225.3165054321289
+          ],
+          "translationGuidePx": [
+            -50.27964888305665,
+            -42.29778206787108
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            2.9142205282592784,
+            0.80269926574708
+          ],
+          "residualMagnitudeGuidePx": 3.0227483187587234
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            153,
+            310
+          ],
+          "nativeGuidePx": [
+            75.1396255493164,
+            241.76006317138672
+          ],
+          "translationGuidePx": [
+            -68.5269919506836,
+            -49.32916182861328
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -15.333122539367665,
+            -6.2286804949951176
+          ],
+          "residualMagnitudeGuidePx": 16.549957930943428
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            193,
+            327
+          ],
+          "nativeGuidePx": [
+            143.27980041503906,
+            264.0028476715088
+          ],
+          "translationGuidePx": [
+            -37.94671708496094,
+            -43.049334828491226
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            15.247152326354993,
+            0.05114650512693686
+          ],
+          "residualMagnitudeGuidePx": 15.247238111476424
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            240,
+            320
+          ],
+          "nativeGuidePx": [
+            169.3372802734375,
+            262.75355339050293
+          ],
+          "translationGuidePx": [
+            -56.02211972656252,
+            -37.72564660949706
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -2.828250315246592,
+            5.374834724121101
+          ],
+          "residualMagnitudeGuidePx": 6.073536709143232
+        }
+      ],
+      "translationGuidePx": [
+        -53.19386941131593,
+        -43.10048133361816
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 11.751640663115145,
+      "uncertaintyAllowanceGuidePx": 22.568633163115145,
+      "bilateralTranslationDifferenceGuidePx": [
+        -12.418902011108393,
+        -5.425981229248038
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -64.24094149902345,
+            -50.03702242614747
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -46.83558033203127,
+            -34.96628464843752
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        192.9652309098969,
+        321.11921209839824
+      ]
+    },
+    {
+      "index": 17,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            146,
+            285
+          ],
+          "nativeGuidePx": [
+            78.39585876464844,
+            226.6241455078125
+          ],
+          "translationGuidePx": [
+            -58.69777623535157,
+            -40.99014199218749
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            4.196690550537113,
+            1.7990660050201654
+          ],
+          "residualMagnitudeGuidePx": 4.566054102547047
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            177,
+            309
+          ],
+          "nativeGuidePx": [
+            93.09912109375,
+            241.4586877822876
+          ],
+          "translationGuidePx": [
+            -73.10343640625001,
+            -48.69153971771243
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -10.20896962036133,
+            -5.902331720504776
+          ],
+          "residualMagnitudeGuidePx": 11.792395025962174
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            193,
+            327
+          ],
+          "nativeGuidePx": [
+            130.81253051757812,
+            264.1110944747925
+          ],
+          "translationGuidePx": [
+            -50.413986982421875,
+            -42.941088025207534
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            12.480479803466807,
+            -0.15188002799987999
+          ],
+          "residualMagnitudeGuidePx": 12.481403914129537
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            241,
+            321
+          ],
+          "nativeGuidePx": [
+            156.93572998046875,
+            262.88413524627686
+          ],
+          "translationGuidePx": [
+            -69.36266751953127,
+            -38.534062253723164
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -6.46820073364259,
+            4.255145743484491
+          ],
+          "residualMagnitudeGuidePx": 7.742343703878608
+        }
+      ],
+      "translationGuidePx": [
+        -62.89446678588868,
+        -42.789207997207654
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 9.690701215757828,
+      "uncertaintyAllowanceGuidePx": 20.507693715757828,
+      "bilateralTranslationDifferenceGuidePx": [
+        -6.012279069824217,
+        -4.103265715484611
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -71.78880838134765,
+            -49.004402949829114
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -59.23713062500002,
+            -34.8357027926636
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        203.29603304150297,
+        320.78771671485305
+      ]
+    },
+    {
+      "index": 18,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 3,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            159,
+            266
+          ],
+          "nativeGuidePx": [
+            94.50104522705078,
+            228.87499809265137
+          ],
+          "translationGuidePx": [
+            -54.799557272949215,
+            -20.898336907348636
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.1545249129231863,
+            -2.3951940508015923
+          ],
+          "residualMagnitudeGuidePx": 3.9608057219773323
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            179,
+            302
+          ],
+          "nativeGuidePx": [
+            118.00545501708984,
+            264.05089378356934
+          ],
+          "translationGuidePx": [
+            -50.07509748291017,
+            -19.52635121643067
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            7.878984702962235,
+            -1.0232083598836255
+          ],
+          "residualMagnitudeGuidePx": 7.945146650455776
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            227,
+            296
+          ],
+          "nativeGuidePx": [
+            144.1648406982422,
+            262.8585195541382
+          ],
+          "translationGuidePx": [
+            -68.98759180175782,
+            -15.084740445861826
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -11.033509615885414,
+            3.4184024106852178
+          ],
+          "residualMagnitudeGuidePx": 11.550922451701181
+        }
+      ],
+      "translationGuidePx": [
+        -57.9540821858724,
+        -18.503142856547043
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 8.411047234633577,
+      "uncertaintyAllowanceGuidePx": 19.228039734633576,
+      "bilateralTranslationDifferenceGuidePx": [
+        4.731787369384776,
+        -3.5927910762023885
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -66.16998119873048,
+            -35.779674450683615
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -58.862054907226565,
+            -12.325373716430704
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        198.03469358105042,
+        294.9238937114258
+      ]
+    },
+    {
+      "index": 19,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 3,
+      "points": [
+        {
+          "name": "toeL",
+          "paintedPx": [
+            209,
+            277
+          ],
+          "nativeGuidePx": [
+            130.806884765625,
+            243.25914859771729
+          ],
+          "translationGuidePx": [
+            -65.44359273437502,
+            -16.84315890228271
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -10.649105883789069,
+            -0.47290009023028645
+          ],
+          "residualMagnitudeGuidePx": 10.65960086586223
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            155,
+            296
+          ],
+          "nativeGuidePx": [
+            105.53904724121094,
+            263.8377523422241
+          ],
+          "translationGuidePx": [
+            -40.00556525878906,
+            -14.105507657775888
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            14.788921591796885,
+            2.264751154276535
+          ],
+          "residualMagnitudeGuidePx": 14.961326800759117
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            203,
+            299
+          ],
+          "nativeGuidePx": [
+            131.68218994140625,
+            262.59814262390137
+          ],
+          "translationGuidePx": [
+            -58.93430255859377,
+            -18.16210987609867
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -4.1398157080078235,
+            -1.791851064046245
+          ],
+          "residualMagnitudeGuidePx": 4.510964900328086
+        }
+      ],
+      "translationGuidePx": [
+        -54.79448685058595,
+        -16.370258812052423
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 10.921190328753788,
+      "uncertaintyAllowanceGuidePx": 21.738182828753786,
+      "bilateralTranslationDifferenceGuidePx": [
+        -15.9736588256836,
+        -0.7093501353454315
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -67.61699540283203,
+            -17.78722217407227
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -53.503753164062516,
+            -2.256782915039082
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 10
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        194.66983336013774,
+        292.65244565699055
+      ]
+    },
+    {
+      "index": 20,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            190,
+            279
+          ],
+          "nativeGuidePx": [
+            127.61619567871094,
+            239.10321235656738
+          ],
+          "translationGuidePx": [
+            -50.793329321289065,
+            -22.87709014343261
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            6.002422260742186,
+            -2.649340353546137
+          ],
+          "residualMagnitudeGuidePx": 6.561103360348875
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            231,
+            283
+          ],
+          "nativeGuidePx": [
+            151.6468963623047,
+            245.6248426437378
+          ],
+          "translationGuidePx": [
+            -65.26152613769531,
+            -20.111449856262197
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -8.465774555664062,
+            0.11629993362427626
+          ],
+          "residualMagnitudeGuidePx": 8.466573362458396
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            149,
+            298
+          ],
+          "nativeGuidePx": [
+            93.82317352294922,
+            263.35442066192627
+          ],
+          "translationGuidePx": [
+            -46.087453977050785,
+            -16.46683433807374
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            10.708297604980466,
+            3.7609154518127355
+          ],
+          "residualMagnitudeGuidePx": 11.349542838040401
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            197,
+            302
+          ],
+          "nativeGuidePx": [
+            119.94181060791016,
+            262.12162017822266
+          ],
+          "translationGuidePx": [
+            -65.04069689208984,
+            -21.45562482177735
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -8.24494531005859,
+            -1.2278750318908749
+          ],
+          "residualMagnitudeGuidePx": 8.335874294865425
+        }
+      ],
+      "translationGuidePx": [
+        -56.79575158203125,
+        -20.227749789886474
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 8.846325009564476,
+      "uncertaintyAllowanceGuidePx": 19.663317509564475,
+      "bilateralTranslationDifferenceGuidePx": [
+        -2.463352294921876,
+        -2.5330404199218606
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -59.91296863281252,
+            -15.988936661376954
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -59.610147497558614,
+            -4.611300360717792
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        196.80111137892405,
+        296.7605407028603
+      ]
+    },
+    {
+      "index": 21,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            213,
+            287
+          ],
+          "nativeGuidePx": [
+            147.61099243164062,
+            244.3200445175171
+          ],
+          "translationGuidePx": [
+            -52.39547506835939,
+            -25.172237982482898
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.60404628479003,
+            -4.5712507125854245
+          ],
+          "residualMagnitudeGuidePx": 5.821123834812447
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            258,
+            283
+          ],
+          "nativeGuidePx": [
+            173.48695373535156,
+            245.9941864013672
+          ],
+          "translationGuidePx": [
+            -68.77440126464845,
+            -19.742106098632803
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -12.774879911499028,
+            0.8588811712646702
+          ],
+          "residualMagnitudeGuidePx": 12.80371952284079
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            135,
+            297
+          ],
+          "nativeGuidePx": [
+            82.87785339355469,
+            262.5833797454834
+          ],
+          "translationGuidePx": [
+            -43.88680910644531,
+            -16.29887775451664
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            12.112712246704106,
+            4.302109515380835
+          ],
+          "residualMagnitudeGuidePx": 12.854024438042195
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            179,
+            301
+          ],
+          "nativeGuidePx": [
+            109.13915252685547,
+            261.4475202560425
+          ],
+          "translationGuidePx": [
+            -58.94139997314454,
+            -21.190727243957554
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -2.941878619995123,
+            -0.5897399740600804
+          ],
+          "residualMagnitudeGuidePx": 3.000407147669928
+        }
+      ],
+      "translationGuidePx": [
+        -55.99952135314942,
+        -20.600987269897473
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 9.64428721608511,
+      "uncertaintyAllowanceGuidePx": 20.46127971608511,
+      "bilateralTranslationDifferenceGuidePx": [
+        -9.17083362670899,
+        -3.7123695413207543
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -61.21967156738282,
+            -12.914515241394042
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -57.266840578613284,
+            -6.224397782897938
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        195.95315360599938,
+        297.15802576539875
+      ]
+    },
+    {
+      "index": 22,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            231,
+            292
+          ],
+          "nativeGuidePx": [
+            172.06793212890625,
+            245.6443166732788
+          ],
+          "translationGuidePx": [
+            -44.84049037109375,
+            -28.542953326721204
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            6.695807871704105,
+            -7.343881419372551
+          ],
+          "residualMagnitudeGuidePx": 9.938130475928562
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            276,
+            278
+          ],
+          "nativeGuidePx": [
+            196.98451232910156,
+            240.59653759002686
+          ],
+          "translationGuidePx": [
+            -62.17879767089846,
+            -20.444767409973167
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -10.642499428100606,
+            0.754304497375486
+          ],
+          "residualMagnitudeGuidePx": 10.669197221529023
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            122,
+            290
+          ],
+          "nativeGuidePx": [
+            70.71332550048828,
+            259.55461978912354
+          ],
+          "translationGuidePx": [
+            -43.84436949951173,
+            -12.754655210876479
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            7.691928743286127,
+            8.444416696472175
+          ],
+          "residualMagnitudeGuidePx": 11.422519036335608
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            162,
+            303
+          ],
+          "nativeGuidePx": [
+            96.8360595703125,
+            261.46233081817627
+          ],
+          "translationGuidePx": [
+            -55.281535429687494,
+            -23.053911681823763
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -3.7452371868896392,
+            -1.85483977447511
+          ],
+          "residualMagnitudeGuidePx": 4.179381793403888
+        }
+      ],
+      "translationGuidePx": [
+        -51.536298242797855,
+        -21.199071907348653
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 9.4939372762167,
+      "uncertaintyAllowanceGuidePx": 20.3109297762167,
+      "bilateralTranslationDifferenceGuidePx": [
+        -3.9466915563964946,
+        -6.589576921997065
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -54.54025144531252,
+            -11.000209323120117
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -57.716537204589855,
+            -9.980792400512712
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        191.19997469939784,
+        297.7949653072518
+      ]
+    },
+    {
+      "index": 23,
+      "status": "contour-based-artist-origin-proposal",
+      "pointCount": 4,
+      "points": [
+        {
+          "name": "heelL",
+          "paintedPx": [
+            242,
+            289
+          ],
+          "nativeGuidePx": [
+            181.2739715576172,
+            245.8173418045044
+          ],
+          "translationGuidePx": [
+            -45.96342344238283,
+            -25.55293569549559
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            11.822542590026842,
+            -5.0262822455596705
+          ],
+          "residualMagnitudeGuidePx": 12.846634831932716
+        },
+        {
+          "name": "toeL",
+          "paintedPx": [
+            287,
+            275
+          ],
+          "nativeGuidePx": [
+            204.82110595703125,
+            237.97049522399902
+          ],
+          "translationGuidePx": [
+            -64.67117654296874,
+            -20.253817276000973
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -6.885210510559062,
+            0.2728361739349481
+          ],
+          "residualMagnitudeGuidePx": 6.890614149153937
+        },
+        {
+          "name": "heelR",
+          "paintedPx": [
+            121,
+            288
+          ],
+          "nativeGuidePx": [
+            59.71303939819336,
+            254.65674877166748
+          ],
+          "translationGuidePx": [
+            -53.90565810180665,
+            -15.774531228332535
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            3.880307930603024,
+            4.752122221603386
+          ],
+          "residualMagnitudeGuidePx": 6.135100263676009
+        },
+        {
+          "name": "toeR",
+          "paintedPx": [
+            160,
+            301
+          ],
+          "nativeGuidePx": [
+            83.63599395751953,
+            262.11291790008545
+          ],
+          "translationGuidePx": [
+            -66.60360604248046,
+            -20.525329599914585
+          ],
+          "annotationUncertaintyArtPx": 3,
+          "definitionBiasAllowanceGuidePx": 8.0,
+          "conservativePointUncertaintyGuidePx": 10.8169925,
+          "residualGuidePx": [
+            -8.81764001007079,
+            0.0013238500213361704
+          ],
+          "residualMagnitudeGuidePx": 8.817640109449924
+        }
+      ],
+      "translationGuidePx": [
+        -57.785966032409675,
+        -20.52665344993592
+      ],
+      "nativeRootPx": [
+        128.0,
+        258.42965602874756
+      ],
+      "residualRmsGuidePx": 9.054098825983248,
+      "uncertaintyAllowanceGuidePx": 19.871091325983247,
+      "bilateralTranslationDifferenceGuidePx": [
+        4.937332079467772,
+        -4.753446071624722
+      ],
+      "separateEstimatedAnkleComparison": [
+        {
+          "side": "L",
+          "translationGuidePx": [
+            -56.0197824169922,
+            -7.944297565002444
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        },
+        {
+          "side": "R",
+          "translationGuidePx": [
+            -67.31075427368165,
+            -12.573188674011249
+          ],
+          "status": "estimated-internal-joint-only-NOT-visible-physical-point",
+          "uncertaintyArtPx": 8
+        }
+      ],
+      "footAnchorProposalArtPx": [
+        197.85565566725114,
+        297.07886280707186
+      ]
+    }
+  ]
+}
