@@ -13,3 +13,7 @@ Run from this checkout with `/tmp/ruby-rc-tools/bin/python docs/chapter-1-rc/qa/
 **PASS, scoped Chromium module test.** The harness includes the exact extracted `image-decoder.ts` dependency at the requested Git commit (hash recorded separately); no replacement decoder is injected. Two concurrent failures share the first aborted atlas request. Two simultaneous retry callers both succeed after network restoration, sharing exactly one fresh request. Two further callers reuse the successful decoded image without another request. The endpoint control also decodes. Raw outcome: `after-41f8c8c.json`; exact dependency: `decoder-41f8c8c.ts`.
 
 Full-game reentry remains to be verified against the forthcoming frozen ordinary production build; this result alone makes no full-game claim.
+
+## Actual game reentry verification
+
+**PASS** on an isolated clean production build of `41f8c8c`, layout version 1, served bundle `index-BC1WQ_hQ.js` (port 5298). Real mouse UI enters gate with image requests deliberately aborted, observes `data-motion=load-failed`, restores network, opens settings, returns to the map, and enters the same level. Without a page reload, motion reaches `ready` and the six real atlas requests succeed. `game-reentry.py`, before/after screenshots and `game-reentry-41f8c8c.json` preserve evidence. A progress-only `introSeen=['gate']` fixture skips the unrelated prologue; no layout/win state is injected. This is a targeted retry test, not the forthcoming layout-2 full-chapter acceptance.
