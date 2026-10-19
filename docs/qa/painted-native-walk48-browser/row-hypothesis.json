@@ -1,0 +1,208 @@
+{
+  "rowAggregateRawCrownAndBottom": [
+    [
+      40,
+      207
+    ],
+    [
+      243,
+      410
+    ],
+    [
+      443,
+      611
+    ],
+    [
+      642,
+      816
+    ],
+    [
+      846,
+      1022
+    ],
+    [
+      1039,
+      1204
+    ]
+  ],
+  "halfCycleMatchedPairs": [
+    {
+      "phases": [
+        16,
+        40
+      ],
+      "paintBboxDelta": [
+        0,
+        -4,
+        3,
+        -6
+      ],
+      "nativeBboxDelta": [
+        1,
+        -1,
+        2,
+        0
+      ],
+      "paintSilhouetteHeights": [
+        167,
+        165
+      ]
+    },
+    {
+      "phases": [
+        17,
+        41
+      ],
+      "paintBboxDelta": [
+        3,
+        -4,
+        -2,
+        -8
+      ],
+      "nativeBboxDelta": [
+        1,
+        -2,
+        2,
+        1
+      ],
+      "paintSilhouetteHeights": [
+        168,
+        164
+      ]
+    },
+    {
+      "phases": [
+        18,
+        42
+      ],
+      "paintBboxDelta": [
+        1,
+        -5,
+        -3,
+        -7
+      ],
+      "nativeBboxDelta": [
+        1,
+        -2,
+        2,
+        0
+      ],
+      "paintSilhouetteHeights": [
+        166,
+        164
+      ]
+    },
+    {
+      "phases": [
+        19,
+        43
+      ],
+      "paintBboxDelta": [
+        8,
+        -5,
+        -1,
+        -6
+      ],
+      "nativeBboxDelta": [
+        3,
+        -2,
+        2,
+        2
+      ],
+      "paintSilhouetteHeights": [
+        163,
+        162
+      ]
+    },
+    {
+      "phases": [
+        20,
+        44
+      ],
+      "paintBboxDelta": [
+        7,
+        -5,
+        -7,
+        -9
+      ],
+      "nativeBboxDelta": [
+        4,
+        -3,
+        2,
+        2
+      ],
+      "paintSilhouetteHeights": [
+        166,
+        162
+      ]
+    },
+    {
+      "phases": [
+        21,
+        45
+      ],
+      "paintBboxDelta": [
+        5,
+        -5,
+        -2,
+        -8
+      ],
+      "nativeBboxDelta": [
+        4,
+        -2,
+        0,
+        2
+      ],
+      "paintSilhouetteHeights": [
+        167,
+        164
+      ]
+    },
+    {
+      "phases": [
+        22,
+        46
+      ],
+      "paintBboxDelta": [
+        4,
+        -5,
+        -3,
+        -8
+      ],
+      "nativeBboxDelta": [
+        4,
+        -3,
+        0,
+        1
+      ],
+      "paintSilhouetteHeights": [
+        167,
+        164
+      ]
+    },
+    {
+      "phases": [
+        23,
+        47
+      ],
+      "paintBboxDelta": [
+        10,
+        -5,
+        -3,
+        -8
+      ],
+      "nativeBboxDelta": [
+        4,
+        -2,
+        1,
+        1
+      ],
+      "paintSilhouetteHeights": [
+        166,
+        163
+      ]
+    }
+  ],
+  "limits": "bbox/crown are shape proxies not bodyjoints, oppositehalfcyclefeetocclusiondiffers; nooffsetapplied",
+  "conclusion": "lastguttercompressedbutonewholebodyrigidrowoffsetnotproven; lastrow+8woulddamage47to0crowncontinuity"
+}

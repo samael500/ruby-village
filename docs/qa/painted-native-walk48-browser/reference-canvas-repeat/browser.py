@@ -1,0 +1,23 @@
+from pathlib import Path
+import json,hashlib,urllib.request,urllib.parse,io
+from PIL import Image
+from playwright.sync_api import sync_playwright
+O=Path(__file__).resolve().parent;url='http://localhost:5322/full48/review.html';join=lambda x:urllib.parse.urljoin(url,x);fetch=lambda x:urllib.request.urlopen(x,timeout=15).read();sha=lambda x:hashlib.sha256(x).hexdigest();mraw=fetch(join('manifest.json'));m=json.loads(mraw);rawp=Path('/tmp/ruby-painted-native48-qa/art/ruta-native-painted-sprites-v2/full48/painted-sheet-v1.png');raw=Image.open(rawp).convert('RGBA');assert sha(rawp.read_bytes())==m['raw']['sha256'];atlasbytes=fetch(join(m['paintedAtlas']['path']));assert sha(atlasbytes)==m['paintedAtlas']['sha256'];atlas=Image.open(io.BytesIO(atlasbytes)).convert('RGBA');assert atlas.crop((0,0,raw.width,raw.height)).tobytes()==raw.tobytes();nativebytes=fetch(join(m['nativeAtlas']['path']));assert sha(nativebytes)==m['nativeAtlas']['sha256'];native=Image.open(io.BytesIO(nativebytes)).convert('RGBA');source=Image.open('/tmp/ruby-painted-native48-qa/art/ruta-native-painted-sprites-v2/full48/pose-source-48.png').convert('RGBA');assert native.tobytes()==source.tobytes();assert m['frameCount']==48 and abs(m['cycleSeconds']-40/24)<1e-9
+report={'url':url,'htmlSha256':sha(fetch(url)),'manifestSha256':sha(mraw),'manifest':m,'rawRgbaPreserved':True,'nativeMatchedSourceSheetExact':True,'cases':[],'scope':'newpainted48independentQA,notinheritednativeacceptance'}
+with sync_playwright()as p:
+ b=p.chromium.launch()
+ for label,vp in [('desktop',{'width':1280,'height':800}),('landscape',{'width':844,'height':390})]:
+  D=O/label;D.mkdir(exist_ok=True);errors=[];failures=[];http=[];context=b.new_context(viewport=vp,record_video_dir=str(D/'video'),record_video_size=vp);page=context.new_page();page.on('pageerror',lambda e:errors.append(str(e)));page.on('requestfailed',lambda r:failures.append({'url':r.url,'failure':r.failure}));page.on('response',lambda r:http.append({'url':r.url,'status':r.status})if r.status>=400 else None)
+  page.add_init_script("""window.__qaDraws=[];window.__qaPhases=[];const old=CanvasRenderingContext2D.prototype.drawImage;CanvasRenderingContext2D.prototype.drawImage=function(...a){if(['painted','native','reference'].includes(this.canvas.id))window.__qaDraws.push({canvas:this.canvas.id,args:a.slice(1),time:performance.now()});return old.apply(this,a)};function tick(t){const r=window.reviewState;if(r?.ready&&window.__qaPhases.at(-1)?.index!==r.frame)window.__qaPhases.push({index:r.frame,t});requestAnimationFrame(tick)}requestAnimationFrame(tick)""")
+  page.goto(url,wait_until='networkidle');page.wait_for_function('window.reviewState?.ready');page.wait_for_timeout(3500);page.screenshot(path=str(D/'loop.png'));page.locator('#play').click();assert page.evaluate('window.reviewState.playing')is False;paused=page.evaluate('window.reviewState.frame');page.wait_for_timeout(150);assert page.evaluate('window.reviewState.frame')==paused
+  for i in [0,15,16,23,24,31,32,38,39,40,41,46,47]:
+   page.locator('#frame').focus();page.keyboard.press('Home')
+   for j in range(i):page.keyboard.press('ArrowRight')
+   page.wait_for_function(f'window.reviewState.frame==={i}');page.screenshot(path=str(D/f'phase-{i:02}.png'))
+  page.locator('#play').click();page.wait_for_function('window.reviewState.playing');page.wait_for_function('window.__qaPhases.some((r,i,a)=>i&&a[i-1].index===47&&r.index===0)',timeout=4000);page.wait_for_timeout(400)
+  data=page.evaluate("""()=>({draws:__qaDraws,phases:__qaPhases,state:reviewState,rects:[...document.querySelectorAll('canvas,#reference')].map(c=>({id:c.id,rect:c.getBoundingClientRect().toJSON()})),scrollWidth:document.documentElement.scrollWidth,innerWidth})""");checks={}
+  for cid in ['painted','native']:
+   dd=[x for x in data['draws']if x['canvas']==cid];src={tuple(x['args'][:4])for x in dd};dest={tuple(x['args'][4:])for x in dd};assert len(src)==48 and len(dest)==1;checks[cid]={'actualUniqueSourceRects':len(src),'actualUniqueDestRects':len(dest),'dest':list(next(iter(dest)))}
+  assert all(abs(x['rect']['width']/x['rect']['height']-.8)<1e-4 for x in data['rects']if x['id']!='reference');assert not errors and not failures and not http;video=page.video.path();context.close();report['cases'].append({'viewport':vp,'errors':errors,'requestFailures':failures,'httpFailures':http,'pauseStablePhase':paused,'sliderExactPhases':[0,15,16,23,24,31,32,38,39,40,41,46,47],'resumeAnd47to0Observed':True,'drawChecks':checks,'data':data,'silentVideoPath':str(video)})
+ b.close()
+(O/'browser-report.json').write_text(json.dumps(report,indent=2)+'\n');print('PAINTED48_BROWSER_COMPLETE')
