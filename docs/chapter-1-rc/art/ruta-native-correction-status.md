@@ -16,3 +16,11 @@ Latest user acceptance: ready gait accepted; painted pilot rejected because adul
 Next gate: complete actual render → lossless atlas/alpha checks → real browser loop, desktop and landscape viewport → artistic review against accepted Ruta → six headings/cameras and actual game short/long/bridge/turn/stop checks. No per-frame raster warp, size fit or registration. Physical phone/family NOT RUN.
 
 Separate worktrees/owners: head author `ruby-village-36-ellie-head`; exporter ` /tmp/ruby-ready-sprite-export`; independent QA `/tmp/ruby-export-pack-qa`; root costume/integration `ruby-village-36-ruta-render-style`. No concurrent runtime writes. Main is neither merged nor published.
+
+## Runtime integration constraints (pending, not implemented)
+
+- Do not fill native `start`/`stop-L`/`stop-R` clips with the rejected painted frames or freeze one pose while the actor translates. New source-native transitions and their contact behaviour require actual route review.
+- Native Walk duration is 40/24 seconds; sample source phase and forward-distance curve from one continuous clock through headings. Old painted half-step assumptions and `.72` world distance are not evidence of native sole contact.
+- A final-sole compatibility probe is necessary: costume tailoring/welding changed mesh IDs; raw B contact vertex IDs cannot simply be applied to the final model.
+- The pilot intentionally retains the full 256×320 delivery canvas. A complete 12-atlas Walk/Idle48 set would decode to roughly 189 MB before other resources. Measure memory/loading before activation; an explicitly recorded single constant crop over the entire resource set could remove transparent margins without per-frame fitting, but is not implemented or claimed here.
+- Browser landscape emulation is separate from a physical-device check. No promotion from static six-heading views to six-direction walk acceptance.
