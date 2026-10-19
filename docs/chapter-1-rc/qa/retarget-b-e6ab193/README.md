@@ -30,3 +30,9 @@ The nonzero residual is retained, scaled from the original gait, rather than cer
 `audit.json` preserves the actual rest/curve checks, 401×2 model sample sets, all 24 camera/Root readbacks and neutral markers. `summary.json` is a compact independently checked aggregation; `audit.log` records the cold-open process. Reproduction uses `../retarget-b-a6250cb/audit.py --source-commit e6ab193 --output-dir <own-output>` after Blender's `--`; it never saves source files. Optional technical E24 render evidence is being captured separately and is not a final-art claim.
 
 **Not checked/accepted:** stock likeness/style, the internally rejected 3D style prototype, final boots/face/clothes, mesh collisions through all poses, physical foot no-slip, route/gameplay, physical phone, final game animation. Numerical retarget success does not approve the appearance.
+
+## Technical E24 proof (completed)
+
+`e24/phase-00..23.png` are actual new Blender renders of the cold-opened saved Walk copy, with the same source camera and one constant 50% render resolution (256×320). No per-phase camera, crop, resize or actor-origin adjustment is applied. All 24 actors remain clear of the outer 2-pixel border; projected Root has zero observed spread at [128,258.429656]. Source B hash remained unchanged after rendering.
+
+`technical-e24-contact-sheet.png` and `technical-stock-b-native-loop.webp` are explicitly labelled **technical stock B, not final Ruta art**. The loop uses all 24 actual renders, excludes the duplicate frame-40 endpoint, and integer-millisecond packing totals 1667 ms for the 1.6667 s source cycle. Blue crosses label the normalized Root, not a physical sole point. This is an offline native-render proof, not a real game/browser recording or a no-slip certificate. `render.json`/`proof-check.json` record the actual camera, source frames, hashes and containment. Appearance remains unaccepted independently of these successful technical readbacks.
