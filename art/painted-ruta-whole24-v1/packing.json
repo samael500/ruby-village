@@ -1,0 +1,840 @@
+{
+  "status": "whole-actor-extraction-only-not-registered",
+  "sourceSha256": "dad0788ada0345958fab685194d49c8bf375a4a5e6b7a18f08dcbb589300a874",
+  "sourceSize": [
+    1374,
+    1145
+  ],
+  "segmentation": "4-connected alpha>=16 components, actor minimum500pixels",
+  "actorCount": 24,
+  "frameSize": [
+    384,
+    416
+  ],
+  "scale": 1,
+  "padding": [
+    64,
+    48
+  ],
+  "originalRGBAWithinSourceBBoxPreservedExactly": true,
+  "footAnchor": null,
+  "rootReference": "unverified original nominal grid root retained as metadata only, not anatomical support",
+  "frames": [
+    {
+      "index": 0,
+      "pixelCountAlpha16": 16271,
+      "bbox": [
+        44,
+        54,
+        221,
+        290
+      ],
+      "sourceNominalCellOriginRounded": [
+        0,
+        0
+      ],
+      "sourceNominalCellOriginExact": [
+        0.0,
+        0.0
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        44,
+        54
+      ],
+      "packedBBoxOrigin": [
+        108,
+        102
+      ],
+      "sourceToPackedTranslation": [
+        64,
+        48
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.1734032444656
+      ]
+    },
+    {
+      "index": 1,
+      "pixelCountAlpha16": 16336,
+      "bbox": [
+        281,
+        54,
+        455,
+        288
+      ],
+      "sourceNominalCellOriginRounded": [
+        229,
+        0
+      ],
+      "sourceNominalCellOriginExact": [
+        229.0,
+        0.0
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        52,
+        54
+      ],
+      "packedBBoxOrigin": [
+        116,
+        102
+      ],
+      "sourceToPackedTranslation": [
+        -165,
+        48
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.1734032444656
+      ]
+    },
+    {
+      "index": 2,
+      "pixelCountAlpha16": 16250,
+      "bbox": [
+        509,
+        56,
+        678,
+        287
+      ],
+      "sourceNominalCellOriginRounded": [
+        458,
+        0
+      ],
+      "sourceNominalCellOriginExact": [
+        458.0,
+        0.0
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        51,
+        56
+      ],
+      "packedBBoxOrigin": [
+        115,
+        104
+      ],
+      "sourceToPackedTranslation": [
+        -394,
+        48
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.1734032444656
+      ]
+    },
+    {
+      "index": 3,
+      "pixelCountAlpha16": 15560,
+      "bbox": [
+        731,
+        56,
+        889,
+        288
+      ],
+      "sourceNominalCellOriginRounded": [
+        687,
+        0
+      ],
+      "sourceNominalCellOriginExact": [
+        687.0,
+        0.0
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        44,
+        56
+      ],
+      "packedBBoxOrigin": [
+        108,
+        104
+      ],
+      "sourceToPackedTranslation": [
+        -623,
+        48
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.1734032444656
+      ]
+    },
+    {
+      "index": 4,
+      "pixelCountAlpha16": 15091,
+      "bbox": [
+        970,
+        55,
+        1102,
+        290
+      ],
+      "sourceNominalCellOriginRounded": [
+        916,
+        0
+      ],
+      "sourceNominalCellOriginExact": [
+        916.0,
+        0.0
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        54,
+        55
+      ],
+      "packedBBoxOrigin": [
+        118,
+        103
+      ],
+      "sourceToPackedTranslation": [
+        -852,
+        48
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.1734032444656
+      ]
+    },
+    {
+      "index": 5,
+      "pixelCountAlpha16": 12800,
+      "bbox": [
+        1217,
+        55,
+        1320,
+        289
+      ],
+      "sourceNominalCellOriginRounded": [
+        1145,
+        0
+      ],
+      "sourceNominalCellOriginExact": [
+        1145.0,
+        0.0
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        72,
+        55
+      ],
+      "packedBBoxOrigin": [
+        136,
+        103
+      ],
+      "sourceToPackedTranslation": [
+        -1081,
+        48
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.1734032444656
+      ]
+    },
+    {
+      "index": 6,
+      "pixelCountAlpha16": 13010,
+      "bbox": [
+        82,
+        334,
+        175,
+        565
+      ],
+      "sourceNominalCellOriginRounded": [
+        0,
+        286
+      ],
+      "sourceNominalCellOriginExact": [
+        0.0,
+        286.25
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        82,
+        48
+      ],
+      "packedBBoxOrigin": [
+        146,
+        96
+      ],
+      "sourceToPackedTranslation": [
+        64,
+        -238
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.4234032444656
+      ]
+    },
+    {
+      "index": 7,
+      "pixelCountAlpha16": 13024,
+      "bbox": [
+        323,
+        333,
+        411,
+        568
+      ],
+      "sourceNominalCellOriginRounded": [
+        229,
+        286
+      ],
+      "sourceNominalCellOriginExact": [
+        229.0,
+        286.25
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        94,
+        47
+      ],
+      "packedBBoxOrigin": [
+        158,
+        95
+      ],
+      "sourceToPackedTranslation": [
+        -165,
+        -238
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.4234032444656
+      ]
+    },
+    {
+      "index": 8,
+      "pixelCountAlpha16": 14116,
+      "bbox": [
+        538,
+        334,
+        653,
+        574
+      ],
+      "sourceNominalCellOriginRounded": [
+        458,
+        286
+      ],
+      "sourceNominalCellOriginExact": [
+        458.0,
+        286.25
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        80,
+        48
+      ],
+      "packedBBoxOrigin": [
+        144,
+        96
+      ],
+      "sourceToPackedTranslation": [
+        -394,
+        -238
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.4234032444656
+      ]
+    },
+    {
+      "index": 9,
+      "pixelCountAlpha16": 14050,
+      "bbox": [
+        755,
+        333,
+        894,
+        565
+      ],
+      "sourceNominalCellOriginRounded": [
+        687,
+        286
+      ],
+      "sourceNominalCellOriginExact": [
+        687.0,
+        286.25
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        68,
+        47
+      ],
+      "packedBBoxOrigin": [
+        132,
+        95
+      ],
+      "sourceToPackedTranslation": [
+        -623,
+        -238
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.4234032444656
+      ]
+    },
+    {
+      "index": 10,
+      "pixelCountAlpha16": 14740,
+      "bbox": [
+        970,
+        334,
+        1130,
+        566
+      ],
+      "sourceNominalCellOriginRounded": [
+        916,
+        286
+      ],
+      "sourceNominalCellOriginExact": [
+        916.0,
+        286.25
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        54,
+        48
+      ],
+      "packedBBoxOrigin": [
+        118,
+        96
+      ],
+      "sourceToPackedTranslation": [
+        -852,
+        -238
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.4234032444656
+      ]
+    },
+    {
+      "index": 11,
+      "pixelCountAlpha16": 15124,
+      "bbox": [
+        1194,
+        336,
+        1372,
+        566
+      ],
+      "sourceNominalCellOriginRounded": [
+        1145,
+        286
+      ],
+      "sourceNominalCellOriginExact": [
+        1145.0,
+        286.25
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        49,
+        50
+      ],
+      "packedBBoxOrigin": [
+        113,
+        98
+      ],
+      "sourceToPackedTranslation": [
+        -1081,
+        -238
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.4234032444656
+      ]
+    },
+    {
+      "index": 12,
+      "pixelCountAlpha16": 15047,
+      "bbox": [
+        36,
+        625,
+        211,
+        848
+      ],
+      "sourceNominalCellOriginRounded": [
+        0,
+        572
+      ],
+      "sourceNominalCellOriginExact": [
+        0.0,
+        572.5
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        36,
+        53
+      ],
+      "packedBBoxOrigin": [
+        100,
+        101
+      ],
+      "sourceToPackedTranslation": [
+        64,
+        -524
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.6734032444656
+      ]
+    },
+    {
+      "index": 13,
+      "pixelCountAlpha16": 15185,
+      "bbox": [
+        269,
+        622,
+        443,
+        851
+      ],
+      "sourceNominalCellOriginRounded": [
+        229,
+        572
+      ],
+      "sourceNominalCellOriginExact": [
+        229.0,
+        572.5
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        40,
+        50
+      ],
+      "packedBBoxOrigin": [
+        104,
+        98
+      ],
+      "sourceToPackedTranslation": [
+        -165,
+        -524
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.6734032444656
+      ]
+    },
+    {
+      "index": 14,
+      "pixelCountAlpha16": 14867,
+      "bbox": [
+        499,
+        622,
+        670,
+        850
+      ],
+      "sourceNominalCellOriginRounded": [
+        458,
+        572
+      ],
+      "sourceNominalCellOriginExact": [
+        458.0,
+        572.5
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        41,
+        50
+      ],
+      "packedBBoxOrigin": [
+        105,
+        98
+      ],
+      "sourceToPackedTranslation": [
+        -394,
+        -524
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.6734032444656
+      ]
+    },
+    {
+      "index": 15,
+      "pixelCountAlpha16": 14268,
+      "bbox": [
+        739,
+        623,
+        891,
+        852
+      ],
+      "sourceNominalCellOriginRounded": [
+        687,
+        572
+      ],
+      "sourceNominalCellOriginExact": [
+        687.0,
+        572.5
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        52,
+        51
+      ],
+      "packedBBoxOrigin": [
+        116,
+        99
+      ],
+      "sourceToPackedTranslation": [
+        -623,
+        -524
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.6734032444656
+      ]
+    },
+    {
+      "index": 16,
+      "pixelCountAlpha16": 14284,
+      "bbox": [
+        970,
+        627,
+        1100,
+        857
+      ],
+      "sourceNominalCellOriginRounded": [
+        916,
+        572
+      ],
+      "sourceNominalCellOriginExact": [
+        916.0,
+        572.5
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        54,
+        55
+      ],
+      "packedBBoxOrigin": [
+        118,
+        103
+      ],
+      "sourceToPackedTranslation": [
+        -852,
+        -524
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.6734032444656
+      ]
+    },
+    {
+      "index": 17,
+      "pixelCountAlpha16": 12606,
+      "bbox": [
+        1225,
+        622,
+        1324,
+        857
+      ],
+      "sourceNominalCellOriginRounded": [
+        1145,
+        572
+      ],
+      "sourceNominalCellOriginExact": [
+        1145.0,
+        572.5
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        80,
+        50
+      ],
+      "packedBBoxOrigin": [
+        144,
+        98
+      ],
+      "sourceToPackedTranslation": [
+        -1081,
+        -524
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        279.6734032444656
+      ]
+    },
+    {
+      "index": 18,
+      "pixelCountAlpha16": 11603,
+      "bbox": [
+        87,
+        898,
+        170,
+        1122
+      ],
+      "sourceNominalCellOriginRounded": [
+        0,
+        859
+      ],
+      "sourceNominalCellOriginExact": [
+        0.0,
+        858.75
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        87,
+        39
+      ],
+      "packedBBoxOrigin": [
+        151,
+        87
+      ],
+      "sourceToPackedTranslation": [
+        64,
+        -811
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        278.9234032444656
+      ]
+    },
+    {
+      "index": 19,
+      "pixelCountAlpha16": 11402,
+      "bbox": [
+        317,
+        897,
+        400,
+        1122
+      ],
+      "sourceNominalCellOriginRounded": [
+        229,
+        859
+      ],
+      "sourceNominalCellOriginExact": [
+        229.0,
+        858.75
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        88,
+        38
+      ],
+      "packedBBoxOrigin": [
+        152,
+        86
+      ],
+      "sourceToPackedTranslation": [
+        -165,
+        -811
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        278.9234032444656
+      ]
+    },
+    {
+      "index": 20,
+      "pixelCountAlpha16": 13925,
+      "bbox": [
+        541,
+        896,
+        656,
+        1125
+      ],
+      "sourceNominalCellOriginRounded": [
+        458,
+        859
+      ],
+      "sourceNominalCellOriginExact": [
+        458.0,
+        858.75
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        83,
+        37
+      ],
+      "packedBBoxOrigin": [
+        147,
+        85
+      ],
+      "sourceToPackedTranslation": [
+        -394,
+        -811
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        278.9234032444656
+      ]
+    },
+    {
+      "index": 21,
+      "pixelCountAlpha16": 14400,
+      "bbox": [
+        755,
+        895,
+        896,
+        1122
+      ],
+      "sourceNominalCellOriginRounded": [
+        687,
+        859
+      ],
+      "sourceNominalCellOriginExact": [
+        687.0,
+        858.75
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        68,
+        36
+      ],
+      "packedBBoxOrigin": [
+        132,
+        84
+      ],
+      "sourceToPackedTranslation": [
+        -623,
+        -811
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        278.9234032444656
+      ]
+    },
+    {
+      "index": 22,
+      "pixelCountAlpha16": 15154,
+      "bbox": [
+        970,
+        894,
+        1131,
+        1125
+      ],
+      "sourceNominalCellOriginRounded": [
+        916,
+        859
+      ],
+      "sourceNominalCellOriginExact": [
+        916.0,
+        858.75
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        54,
+        35
+      ],
+      "packedBBoxOrigin": [
+        118,
+        83
+      ],
+      "sourceToPackedTranslation": [
+        -852,
+        -811
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        278.9234032444656
+      ]
+    },
+    {
+      "index": 23,
+      "pixelCountAlpha16": 14810,
+      "bbox": [
+        1201,
+        897,
+        1371,
+        1124
+      ],
+      "sourceNominalCellOriginRounded": [
+        1145,
+        859
+      ],
+      "sourceNominalCellOriginExact": [
+        1145.0,
+        858.75
+      ],
+      "bboxOffsetFromRoundedOrigin": [
+        56,
+        38
+      ],
+      "packedBBoxOrigin": [
+        120,
+        86
+      ],
+      "sourceToPackedTranslation": [
+        -1081,
+        -811
+      ],
+      "unverifiedGridRootReference": [
+        178.5,
+        278.9234032444656
+      ]
+    }
+  ]
+}
