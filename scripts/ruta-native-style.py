@@ -7,6 +7,7 @@ This script owns only art/ruta-native-style-v1. Never edits its input.
 from pathlib import Path
 import bpy, bmesh, json, os, math, hashlib
 from mathutils import Vector, Matrix
+from bpy_extras.object_utils import world_to_camera_view
 
 ROOT = Path(__file__).resolve().parents[1]
 OUT = ROOT / 'art/ruta-native-style-v1'
@@ -422,12 +423,20 @@ rig.animation_data.action = action
 rig.animation_data.action_slot = action.slots[0]
 scene.frame_set(0)
 assert before_actions == action_hash(), 'Appearance must not alter motion curves'
+ground_root=rig.data.bones['Root'].head_local.copy()
+ground_root.z=0
+rig.matrix_world=Matrix.Translation(-ground_root)
+bpy.context.view_layer.update()
 bpy.ops.file.pack_all()
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-native-style.blend'))
+views=[]
 if os.environ.get('RUTA_STYLE_RENDER','1') == '1':
     for name,yaw in [('front',0),('three-quarter',math.pi/4),('e',math.pi/2)]:
-        rig.rotation_euler.z = yaw
+        rig.matrix_world=Matrix.Rotation(yaw,4,'Z')@Matrix.Translation(-ground_root)
         scene.frame_set(0)
+        bpy.context.view_layer.update()
+        q=world_to_camera_view(scene,scene.camera,rig.matrix_world@rig.pose.bones['Root'].head)
+        views.append({'view':name,'yaw':yaw,'rootPx':[q.x*768,(1-q.y)*960]})
         scene.render.filepath = str(OUT/f'{name}-00.png')
         bpy.ops.render.render(write_still=True)
-(OUT/'appearance.json').write_text(json.dumps({'status':'deterministic-native-appearance-study-not-approved','productionEnabled':False,'source':str(SOURCE),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'restMap':rest_map_path,'actionsHashBefore':before_actions,'actionsHashAfter':action_hash(),'headMode':head_mode,'headRestTiltDegrees':head_tilt_degrees,'newObjects':added,'changes':['whole 3D head replacement and fixed rest-space UV face texture','Head-bound native copper wave meshes','Chest-bound bow/buttons; one rounded Hips-bound bag with original single diagonal strap','rest-space cargo trouser tailoring and sleeve material assignment','native boot mesh welded/bisected/capped to ankle height, with bound cuffs and laces'],'limitations':['An appearance study, not final painted art','Proportions must come from independently reviewed whole-rig shape branch','Camera/origins and actual game walking are not yet accepted','No imagegen per-frame repaint, image warp or per-frame scale used']},indent=2)+'\n')
+(OUT/'appearance.json').write_text(json.dumps({'status':'deterministic-native-appearance-study-not-approved','productionEnabled':False,'source':str(SOURCE),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'restMap':rest_map_path,'actionsHashBefore':before_actions,'actionsHashAfter':action_hash(),'headMode':head_mode,'headRestTiltDegrees':head_tilt_degrees,'rootTransform':'Rz(yaw)*T(-RootRestGround)','views':views,'newObjects':added,'changes':['whole 3D head replacement and fixed rest-space UV face texture','Head-bound native copper wave meshes','Chest-bound bow/buttons; one rounded Hips-bound bag with original single diagonal strap','rest-space cargo trouser tailoring and sleeve material assignment','native boot mesh welded/bisected/capped to ankle height, with bound cuffs and laces'],'limitations':['An appearance study, not final painted art','Proportions must come from independently reviewed whole-rig shape branch','Camera/origins and actual game walking are not yet accepted','No imagegen per-frame repaint, image warp or per-frame scale used']},indent=2)+'\n')
