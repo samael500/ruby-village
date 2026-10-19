@@ -1,0 +1,23 @@
+# Independent actual Walk48 pack/browser review — precompact CSS46e6f9b
+
+**Scoped technical PASS: actual delivery pixels, fixed registration/scale, playback and controls. Landscape review layout needs correction; no game, physical-phone, no-slip or artistic acceptance.** This is an actual standalone sprite-review page, not the Ruby Village game. Reviewed frozen sourcebae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706 and actual packe70d049/authoraca7d4f. Root page46e6f9b was frozen during the main captures; later compact CSS is a separate repeat.
+
+All48 served source PNG hashes match the delivered manifest. Every decoded atlas tile equals the corresponding actual whole512×640RGBA PNG resized uniformly.5 to256×320, including alpha. Served atlas hash matches manifest; live sourceBlend hash matches the frozen source. Duration40/24s,48 phases means28.8 source frames/s,34.7222ms/phase. No synthetic/dummy frame was substituted. Manifest/atlas/source checks and per-frame results are in `report.json`.
+
+Actual Chromium runs at1280×800 and844×390 retain untouched screenshots and silent browser WebMs. Zero page errors, request failures and HTTP≥400 responses. Pause remains stable; actual keyboard Home/End on the slider reaches0/47; resume advances and a real47→0 transition is observed. All48 actual atlas source rectangles were observed through instrumented CanvasRenderingContext2D.drawImage. Their destination rectangle is constant and equals the manifest nativeHeight/anchor formula, not just a declarative page helper. CSS canvas aspect remains.8, with no model stretch. The accepted reference uses actual512px source image height, not the old493 landmark estimate.
+
+## Concrete visual observations
+
+Opened the complete48 source-frame contact sheet, large actual desktop/landscape images and actual canvas-recording decoded sequence around47→0. Alternating extension/recovery and arm swing remain coherent; no whole-sprite position/size pop was seen at the inspected closure sequence. Hair/shoulder/hand silhouettes remain connected, and the old cream lace loops hanging below the raised boot are absent in the inspected source/actual frames. Near-side hair naturally occludes some shoulder/shirt details; this visual pass does not prove absence of all3D garment/hand/hair intersections. Source/costume resemblance remains a separate pending artistic decision.
+
+Some feet are below the horizontal reference line. That line is the projection of worldorigin's horizontal row, **not the whole ground plane**: at groundScale.65, different groundY/depth projects to different screenY even at identicalZ. This is not diagnosed as penetration or slip. Fixed sprite/root registration alone cannot establish planted physical contact; actual sole coordinates, travel curve, route translation and starts/stops remain untested by an in-place preview.
+
+## Landscape defect
+
+The original844×390 canvas exceeds viewport height. Scrolling to the actor still leaves head/feet impossible to inspect together at once; `landscape/loop.png` visibly crops the bottom of the figure in the viewport. Its CSS aspect is correct, so this is composition, not deformation. Root was notified and is applying a compact landscape media rule; this report retains the actual defect and requires a separate post-fix reload. Browser functionality passing does not erase the review-layout limitation.
+
+## Actual recordings and limits
+
+Playwright WebMs are actual silent browser captures, retain their recorded cadence and controls, and may undersample28.8fps source playback. Additional `actual-canvas-60fps.webm` uses captureStream(60)/MediaRecorder of the **actual actor canvas copied1:1 over beige** for readable background. No sprite scale/anchor/pose correction is applied; document controls/HUD are absent from that auxiliary capture. `canvas-media.json` records actual codec/cadence/duration; `canvas-capture.json` records live phase changes. `actual-canvas-47-to0-decoded.jpg` is a labelled decoded-video sequence, viewed directly; timestamp alignment uses first-copy/rAF timing and is not hardware calibrated.
+
+Visual tools expose still sequences rather than a human realtime video player. I inspected actual decoded loop frames, not merely file existence, but do not assert subjective realtime smoothness/AV timing. Browser captured48 phases and actual loop; acceptance of motion feel and appearance remains with Maksim. No audio, physical phone, game route/contact, other directions/camera groups, walk/idle transitions or production activation was tested. Raw screenshots/media, exact scripts and machine logs retained; no source/runtime changes.
