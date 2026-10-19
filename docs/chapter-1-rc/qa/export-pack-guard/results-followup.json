@@ -1,0 +1,180 @@
+{
+  "status": "ACTUAL-BLENDER-FAIL-CLOSED-REGRESSIONS-NOT-RENDER-OR-ART-ACCEPTANCE",
+  "sourceSha256": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
+  "sourceUnchanged": true,
+  "exporterSha256": "40132a0742dea6c989da551188890808618df5adc72af1a09148c4c71ab32eb2",
+  "fixtureDirectoryLocalOnly": "/tmp/ruta-ready-visibility-3cd34u2y",
+  "fixturesAreTemporaryCopiesOnly": true,
+  "caseCount": 19,
+  "rows": [
+    {
+      "case": "baseline",
+      "expectedPass": true,
+      "actualPass": true,
+      "error": null,
+      "seconds": 2.139052601007279,
+      "fixtureSha256": "3becf872f221e5d4e7fa3873de72430a172058b2ade157904b91a7d0b9cc6bc2",
+      "renderedFrames": 0
+    },
+    {
+      "case": "object_eye_supported",
+      "expectedPass": true,
+      "actualPass": true,
+      "error": null,
+      "seconds": 1.8155253770237323,
+      "fixtureSha256": "7bd5518d4ff3eb2d4a6daab42a0cb0cad348c5a962805961565eb24ed78c51e5",
+      "renderedFrames": 0,
+      "loadedObjectEyeHidden": true,
+      "exactEyeVsBaselineGeometryAndHeight": true
+    },
+    {
+      "case": "object_monitor",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled Adventurer_Body",
+      "seconds": 0.5739195699861739,
+      "fixtureSha256": "5dfab6f0f7ca2a95e2676a9a3a91f90e3533b7c54c8eeed1c70f71b65d03390f",
+      "renderedFrames": 0
+    },
+    {
+      "case": "collection_monitor",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: Adventurer_Body: collection viewport monitor QA disabled collection",
+      "seconds": 0.4658768630179111,
+      "fixtureSha256": "69161c766636b86107ff97e518cd8a4b659197de8998dc886b26d84e4fa871d8",
+      "renderedFrames": 0
+    },
+    {
+      "case": "collection_eye_explicitly_unsupported",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: Adventurer_Body: collection eye QA disabled collection",
+      "seconds": 0.5634785990114324,
+      "fixtureSha256": "9071716eb63adc5281b91c83d6e22066ed5acdb94c965d6736d95ac53ad14364",
+      "renderedFrames": 0
+    },
+    {
+      "case": "modifier_viewport_only_off",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: modifier viewport/render mismatch Adventurer_Body/Armature",
+      "seconds": 0.5347220010007732,
+      "fixtureSha256": "3066bc94d279a10a53595f380427ea5d7f34b9fbf3395b969f8d435738bd277f",
+      "renderedFrames": 0
+    },
+    {
+      "case": "modifier_render_only_off",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: modifier viewport/render mismatch Adventurer_Body/Armature",
+      "seconds": 0.46687280101468787,
+      "fixtureSha256": "5f1bbe14c70ca8c8c68ba9ef4d2182dd785cf82f9d444f7e9ba830ac5885349c",
+      "renderedFrames": 0
+    },
+    {
+      "case": "dependency_rig_monitor",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled CharacterArmature",
+      "seconds": 0.33812187699368224,
+      "fixtureSha256": "5545eec23d7668994f48369b7ce982e0f6c7a47fa6b5c1412f0c4e43a04ebdfe",
+      "renderedFrames": 0
+    },
+    {
+      "case": "dependency_rig_collection_monitor",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: CharacterArmature: collection viewport monitor QA disabled collection",
+      "seconds": 0.3637948560062796,
+      "fixtureSha256": "0d4db093e5ae48831ae7e0f7cd45628eb7ac339edb98cb39c7f527665a1b16dd",
+      "renderedFrames": 0
+    },
+    {
+      "case": "pose_bone_constraint_hidden_target",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled QA hidden dependency",
+      "seconds": 0.3660241909965407,
+      "fixtureSha256": "656d4065d84e41b26867aa62b4880b4fb37e882b0813142d1ce0e45764ec517b",
+      "renderedFrames": 0
+    },
+    {
+      "case": "driver_hidden_target",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled QA hidden dependency",
+      "seconds": 0.3633003679860849,
+      "fixtureSha256": "5b47226a7a482caa7b66e83ed583df7d482a9c4d33d5941fac35227b72671231",
+      "renderedFrames": 0
+    },
+    {
+      "case": "subdivision_levels_mismatch",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: subdivision viewport/render levels mismatch Adventurer_Body/QA differing subdivision",
+      "seconds": 0.3411823849892244,
+      "fixtureSha256": "2ba393d77e6cc8b53217728e20cc56d19a84008878b9742a208d953696fa8c26",
+      "renderedFrames": 0
+    },
+    {
+      "case": "scene_simplify_unsupported",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: scene simplify unsupported for viewport/render congruence",
+      "seconds": 0.349543336982606,
+      "fixtureSha256": "7bc54ebc3a1b31664ca2d5914a6737c08e9f9495b8b98365be610861b8579711",
+      "renderedFrames": 0
+    },
+    {
+      "case": "unsupported_geometry_nodes",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Evaluation visibility: unsupported geometry modifier Adventurer_Body/NODES",
+      "seconds": 0.3508284840208944,
+      "fixtureSha256": "cbfbdb8a65679c6ec4286c98c62e16177b5cff1f82d7a47212844e65a685c577",
+      "renderedFrames": 0
+    },
+    {
+      "case": "unsupported_collection_instance",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Visible non-mesh geometry needs explicit support/reference definition: ['QA unsupported collection instance']",
+      "seconds": 0.33498774201143533,
+      "fixtureSha256": "5c60a54fab3a3aed6c79aab821c4a4fc94dbcc548243a564ca8d13e8efb5a37c",
+      "renderedFrames": 0
+    },
+    {
+      "case": "UNSUPPORTED_VERTS_REJECT",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Visible non-mesh geometry needs explicit support/reference definition: ['Adventurer_Body']",
+      "seconds": 0.34123235201695934,
+      "fixtureSha256": "3ca4b93d9fdd00ee0654654b7ae943ebdb97e556933ca0d251c33a72ccbf08b4",
+      "renderedFrames": 0
+    },
+    {
+      "case": "UNSUPPORTED_FACES_REJECT",
+      "expectedPass": false,
+      "actualPass": false,
+      "error": "RuntimeError: Visible non-mesh geometry needs explicit support/reference definition: ['Adventurer_Body']",
+      "seconds": 0.30199463199824095,
+      "fixtureSha256": "a7c32db9da2cb8d1be82ddd266617845f4ebb19a06d13fe2afe743e6ae5c2d4e",
+      "renderedFrames": 0
+    },
+    {
+      "case": "stale-opposite-mode-dry-run-contract.json",
+      "actualPass": false,
+      "expectedPass": false,
+      "error": "Output already belongs to another source hash (source-contract.json): use a new --out",
+      "noReportOrRenderWritten": true
+    },
+    {
+      "case": "stale-opposite-mode-source-contract.json",
+      "actualPass": false,
+      "expectedPass": false,
+      "error": "Output already belongs to another source hash (dry-run-contract.json): use a new --out",
+      "noReportOrRenderWritten": true
+    }
+  ]
+}
