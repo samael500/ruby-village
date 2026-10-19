@@ -1,0 +1,859 @@
+{
+  "status": "DETERMINISTIC-NATIVE-RENDER-FALLBACK-STUDY-NOT-ACCEPTED-STYLE-NOT-RUNTIME",
+  "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "invariantsBefore": {
+    "meshes": {
+      "Adventurer_Body": {
+        "positions": "539e5fce065278bc66d8347b965eabdf3f32482ea3cb4af3f474656f15b872be",
+        "polygons": "8727e0257b3751fc6742c18c5c1dbd551c3708dbccb03517086943f21afccff7",
+        "weights": "404161fdcd3fc39a4bc9cade6fd10f730ad344948b56dba2fb935c23ff5293e1"
+      },
+      "Adventurer_Feet": {
+        "positions": "6498d7f8a071c763a55954ca85190ea1e20ed324f15765c2cd2fc29f201d7630",
+        "polygons": "4b029d508320da4148c2c970806f6f364b97a92bcc8773742ea9133598f13c11",
+        "weights": "89d9af0615caa6c564e76c0b05c57f93a6ddf8a72678a494ef8d2bd0112abdf4"
+      },
+      "Adventurer_Head": {
+        "positions": "8014d2dbd943c9bd3de1b279d54f1a041cb670d9b13eeaddd9c4fafd97e84f9a",
+        "polygons": "f7c8f9c8c2e2f4b3350f75cf4985756c6bcc0e1e79ebd9778bda2f2480d5b327",
+        "weights": "3c0a6eeb0c4aa48f775c7b401c0f6b7161926a1ddb424ed7c3c4e75f4b14bc5b"
+      },
+      "Ruta stock long trousers": {
+        "positions": "c24ad096a7a16b190982f9a75cdf29adb438acf0a5ac5f09333f4076e226386f",
+        "polygons": "55a00564bdb36104d6418c9ea128133754085ba92437da5f262cbd3caf3f674d",
+        "weights": "9e53c803881a11f3ab998eb718c0aad3dca3a739d1f178d7a76c6d64e9e41e13"
+      },
+      "Ruta CC0 ginger waves": {
+        "positions": "a83c096001e3cd36c5a3eaf3c5c2e49f98721c20f345b4d8d6ccd074f7840e51",
+        "polygons": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+        "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd"
+      },
+      "ONE diagonal satchel strap": {
+        "positions": "b806644dd7fadfe45f98c0b76720d9862d15dc4b97ccc72b11b78c6d86f950a9",
+        "polygons": "2eb7c621c0c312b8dc962579975c224d3dc78db19586fdd41ef22665c5627076",
+        "weights": "9288cccd355af19e03b02ba01a7b5d2a7878a4e9eff2dfa53b159e93036be018"
+      },
+      "Ellie ready tongue": {
+        "positions": "1c183ce50c407f040e5560e707a07f3f6ebf59596694a415ed48a783f41a6a1c",
+        "polygons": "8a8360fceb3d9b44298e730212368e5390a4f666a19b24e90a21e214a09c6a5f",
+        "weights": "1d2ca2edd516ebbd5bb44314efcfc721e6fedde95666c3959cf4f3cfc5dae17e"
+      },
+      "Ellie ready teeth_top": {
+        "positions": "128e5635e6d9c54896c0befc84d52a958b1a50c6f21981390fdc2afd80729c8d",
+        "polygons": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+        "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd"
+      },
+      "Ellie ready teeth_btm": {
+        "positions": "cdf090ef569e3230a1ad009234e6ae6441f5679917bbfa1c4058a13be6cedf17",
+        "polygons": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+        "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd"
+      },
+      "Ellie ready head": {
+        "positions": "e7e59cb79bda71af330e672b0f87d7462761b49b0e4c3a5e551a34423ba72dac",
+        "polygons": "2a1ac9fa497231a5b52e4751d35d6328bdfb3496d448da95f449ea25863dd266",
+        "weights": "9164b776d65f4b0caaad2f8d797be547d14864949099887a8943457d36468b5e"
+      },
+      "Ellie ready hair_cut": {
+        "positions": "781a1cc172eec9184517f36efbe04fb8805ce6965467be37a866b31a925883ef",
+        "polygons": "c087f910055a89ce5b75d7173a284eef8a98e7edbf3755af0cb9d68ecb13bfb1",
+        "weights": "45a38f217cc9ef406107ecf6baec08b517d86d558c5aae4e13975e1f9f2e6c57"
+      },
+      "Ellie ready face_line2": {
+        "positions": "347ff0a5d7f869a91a18b42d364dd86b0befcbc5355edfc2db0b19b3f02cd663",
+        "polygons": "0a1ae08135254218f182e2cd00bc73f0ab7cddb19ec4a52f473269ff3c23d548",
+        "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8"
+      },
+      "Ellie ready face_line1": {
+        "positions": "10202908e08bb7399c0e5f75ad5e97b520c216caf08cebbcdafadb23512e52b1",
+        "polygons": "e36b12e240f1c5dd8b76077298bac2b45b9a50d5c489351f5b1ab50fba8c850c",
+        "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8"
+      },
+      "Ellie ready eyelashes": {
+        "positions": "6495940f6c1b75bebe70d9028689774bc2b714b76e7fbd7d07f2a00199ffdfb7",
+        "polygons": "edf5e30eb0e3d87ff53dbb1f2d81ac39c897a49e829e51c3e788efbe7f23219c",
+        "weights": "99a7ce31ff7e5b3b3c92764e7cb2685182340c3d3263400552828a786db293cb"
+      },
+      "Ellie ready eyebrows": {
+        "positions": "f83ff001529b755745d811367b79068736a0cd78d34ca4df85ee0dd4f3ede413",
+        "polygons": "c59983431943c788de83b41f80983136d6ef2f187f5286c6dc9707ad9a9e561e",
+        "weights": "70e3124a1809920bd6a227416959d65a954417f245b0568a2c43e93a51380141"
+      },
+      "Ellie ready eye_highlights": {
+        "positions": "7a48c967a5e352c4b8121ffe005fbc60fc2de4fdc453b6c6d58f208b8d5b1d65",
+        "polygons": "d58b33dd1efaf57cef539d10e3f664f4d0839fbc6c56b85e89119f0da34f9035",
+        "weights": "458abebee3db32028540fd61e0eb75f272016c5d1e5e698c8abd55932e5d4eb9"
+      },
+      "Ellie ready eye.R": {
+        "positions": "6cfaaa27683daf74ec8c2991412cc9fb47b6f58ace51665fe0f6aa5d06126dbc",
+        "polygons": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+        "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312"
+      },
+      "Ellie ready eye.L": {
+        "positions": "f4f681049b8a2c330020ecc5d3ffdb58e15f536ea62be2db1ab51fa6401f9005",
+        "polygons": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+        "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312"
+      },
+      "Ellie ready CC0 Cortu waves": {
+        "positions": "2cfde4236e6ac6d36bbcfd20c16c3028982b7f26406579580f4f4b94d924e72c",
+        "polygons": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+        "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd"
+      },
+      "Ellie ready Loose cap": {
+        "positions": "fbecaf3acf9da08d13ecf075e0494954d5bc151ef36610c8ea6e14a139805a17",
+        "polygons": "dbe51f3a9f303c9a47aad5182db9c72608a6447c0ae2f3787ea35d747cfb22b8",
+        "weights": "1d7029ae442cc7b53130411b1c1522fe7a9c9a5394f7cfd925bebd206f52bd1a"
+      },
+      "Ellie ready Layered wave 1": {
+        "positions": "dd0a2096646293207d2aaadd781eb905e01108ebc3d742ac2e502cafff6a3c27",
+        "polygons": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+        "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9"
+      },
+      "Ellie ready Layered wave 2": {
+        "positions": "bdd6fa205b60b3bc5cedbaa6d1bf714750c78cbe3495f2452c7879258a9ccd44",
+        "polygons": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+        "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906"
+      },
+      "Ellie ready Layered wave 3": {
+        "positions": "0bb40fcb10ba9c5fde68a72393d2f711e168ca3544490d5eb64c18e267f85976",
+        "polygons": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+        "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4"
+      },
+      "Ellie ready Layered wave 4": {
+        "positions": "2695b5f00707438cc7dd029413d7e6c8049628286428b12071af5dfa01849d23",
+        "polygons": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+        "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281"
+      },
+      "Ellie ready Layered wave 5": {
+        "positions": "1e9c98884dc152284b08bea96ef218fb5f5c6b8b4c2b07df2f1647090ead9f50",
+        "polygons": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+        "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc"
+      },
+      "Ellie ready Layered wave 6": {
+        "positions": "38ebb0b29c55b882246217e6668ed2a10aa62b1e772fe03c969f065b2abe512f",
+        "polygons": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+        "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512"
+      },
+      "Ellie ready Layered wave 7": {
+        "positions": "b2ea78f81a3f7ed4163cb6d0288e9736b58fbdc67ce74e7394b551d0b8c98c96",
+        "polygons": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+        "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9"
+      },
+      "Ellie ready Layered wave 8": {
+        "positions": "fb4238e18dde9d7868fee931a381c7cdab94562d57b509cea31f8552f986bd92",
+        "polygons": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+        "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906"
+      },
+      "Ellie ready Layered wave 9": {
+        "positions": "944a0a19638f3b18a12be11339362cf2dffde0b83ca00491cfe6094bb369793d",
+        "polygons": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+        "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4"
+      },
+      "Ellie ready Layered wave 10": {
+        "positions": "6b412b4ecec465d872d9da47d19e7da08a63894fbb581bccabb9828390236415",
+        "polygons": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+        "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281"
+      },
+      "Ellie ready Layered wave 11": {
+        "positions": "1546e85f27493dfdd14b0fd5e6f8c497ec65998bfc59bbaac7793a8204eb19b5",
+        "polygons": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+        "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc"
+      },
+      "Ellie ready Layered wave 12": {
+        "positions": "77d6eb059967687e8ab613245ea229eec2467197898e1f06a2c5defe137a6293",
+        "polygons": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+        "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512"
+      },
+      "Ellie ready Layered wave 13": {
+        "positions": "bacbd85a3e9a961e46da5d29d3fc220e06676b9c34b96c08a6bf7249d3e5a4e2",
+        "polygons": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+        "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9"
+      },
+      "Ellie ready Layered wave 14": {
+        "positions": "695637114123accf1bbaeeaca7c6bb876c8532adc1ce4ffe44c9e8100367e8f7",
+        "polygons": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+        "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906"
+      },
+      "Ellie ready Layered wave 15": {
+        "positions": "d9b45a5d27faf39d2bcb550978b1a57e2ec0a1bf64fb26423be7364aaa7c3153",
+        "polygons": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+        "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4"
+      },
+      "Ellie ready Layered wave 16": {
+        "positions": "feff4d8f7691a6d1f7433de98592e3283567d76318eac040e31e6dd1898ed994",
+        "polygons": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+        "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281"
+      },
+      "Ellie ready Layered wave 17": {
+        "positions": "96ee5b299b477b5495de9c6c1d910ecea1227bd4179feb254ab008551d929224",
+        "polygons": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+        "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc"
+      },
+      "Ellie ready Layered wave 18": {
+        "positions": "097fe74490728638038ac2fd87308cd68044cf60188b3d4568859e6e65d3ead1",
+        "polygons": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+        "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512"
+      },
+      "Cream shirt V inside vest": {
+        "positions": "aee9fb3c3a0a0c7ac37debd289e6682d5cc1dc02a4b376f0150a45a16f0a9a8a",
+        "polygons": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+        "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677"
+      },
+      "Vest brass button 1": {
+        "positions": "609a96e0edaa569081206d767111337df66296b5e3a7c7b0e691fbdefa55dbce",
+        "polygons": "fb5e0fb21b9b1b6aac0b1ed67a7d4f91a626fa20008e11363de77c424ba6ed70",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Vest brass button 2": {
+        "positions": "8d12c7c5f8c37039baf1353c3f4d2595a8dea72f8c959fa520bafae3fea44978",
+        "polygons": "bac1ed0e888fcc6484d1821a8e1e1d9d215fe4d8290730de8d48dcf3717a4de3",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Vest brass button 3": {
+        "positions": "09310517bcabbfd300cf23eab8a53c90078fd8149fba3d9742e1133bdeaa3648",
+        "polygons": "dc9d7b87cc3d1e5286c5ac7a69fba7ed5a7ada966e306ab5a148de7addcdd03e",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Left burgundy bow loop": {
+        "positions": "9acf1c4aea3b6576e09465c582bebb7d165da15163a5abf076984299e3db3c9b",
+        "polygons": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+        "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677"
+      },
+      "Right burgundy bow loop": {
+        "positions": "a62ffe3158e64ac7622ff24793e7a550099f35e2d52ee2a5318fe0c74c880656",
+        "polygons": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+        "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677"
+      },
+      "Burgundy bow knot": {
+        "positions": "9d525dda4dff15c197d5b535f156a75826728e5f734e97907d20ac274cd46e9d",
+        "polygons": "b7621f9d2d6c766fc89ae445c76c828543e744ec13664603552a3b0e5cd24a0a",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Two burgundy bow tails": {
+        "positions": "7b6f35f60d938b7a3695e55a38bd12f0bd48965ea91baa7925ea940985eb9484",
+        "polygons": "d42ef3a453691152af9df3974094032f222579d3757a55de4baf2ae3aef6da0c",
+        "weights": "82dafb5b123f5adad5764f3190285488d118ff735068f919f57e1f4da5a4c387"
+      },
+      "ONE rounded right hip satchel": {
+        "positions": "296c70ab161e68d25e8ec4741090c1635bfc0c6003a697f90b1616e51b79e13c",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Single rounded satchel flap": {
+        "positions": "a78732e7ba822ba718cc96e01344be08831761af12c36753e4310d130b616a49",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Satchel warm brass clasp": {
+        "positions": "06b48714c947943338bd5c1cda9d3b4f0c2a7837f8fa306444a4ba47ebb052c7",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Ankle boot lace R": {
+        "positions": "3727a4e4a312606552d4358388056441addb77850a4b3c17bf5d07e9ef3dfc04",
+        "polygons": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+        "weights": "0c973a43d9c947835bef4ff657f2b534fe74d0f5be4aeb9158d00c9c048e0fed"
+      },
+      "Cream sock cuff R": {
+        "positions": "5f843bffbba04d4510998ef32bbc0b4e55a754cd8b47a5c6308dfaaeb43513d6",
+        "polygons": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+        "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834"
+      },
+      "Cargo side pocket R": {
+        "positions": "1402afe78f4ce3908c7105adeb7b8070ba3da334f79a4744a613f160e7b501fc",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Ankle boot lace L": {
+        "positions": "9654d0e0b3d40acf7e13cc308c8bd08dab412ce46a0fbd6c0ca51b0a08c98065",
+        "polygons": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+        "weights": "d910c262687aadaec5b09a756a42f3d47a88a6750b05bf0283b606cebc108211"
+      },
+      "Cream sock cuff L": {
+        "positions": "f940a5a4af9dffbb1dd198a13976d294583826dad0bdbda7a3a2186357a888fa",
+        "polygons": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+        "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834"
+      },
+      "Cargo side pocket L": {
+        "positions": "d97e365632444135669b1768bcfe5079adab89a146c244bd4cdd6a4ebb3e0c04",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Icosphere": {
+        "positions": "6a46b8216ee826d01a26612877cae0267201bd1301346dd6b32a3e6376875a20",
+        "polygons": "547f3010843e1d60add13bd4c5af0ca871f0aa6056a21e6aa8d14a8ad844fd66",
+        "weights": "220acd169ab40af02c2a2a753ec26009708ea5760f0096f86e90322fbba65147"
+      }
+    },
+    "actions": {
+      "Death": "3b299321c5a099f963daadf7ee39dbb244670ea039845b65cd5ab44e68d953ee",
+      "Death.001": "3b299321c5a099f963daadf7ee39dbb244670ea039845b65cd5ab44e68d953ee",
+      "Gun_Shoot": "8718f03b270fc56f549488c71531f8ef78cac0f8d18dfed82edfc0979def2e49",
+      "Gun_Shoot.001": "8718f03b270fc56f549488c71531f8ef78cac0f8d18dfed82edfc0979def2e49",
+      "HitRecieve": "57220379bfa5a8473b4e78f13fe002cbceaa7cba8dba0a081c4ec66e16099faf",
+      "HitRecieve.001": "57220379bfa5a8473b4e78f13fe002cbceaa7cba8dba0a081c4ec66e16099faf",
+      "HitRecieve_2": "89ea4445a185714e0403befd4152cebb6a591120d35cc522d544ce8b06ce1362",
+      "HitRecieve_2.001": "89ea4445a185714e0403befd4152cebb6a591120d35cc522d544ce8b06ce1362",
+      "Idle": "d924f1217b35561489394784ce631aee4de342466758836e9f96a52d234254d5",
+      "Idle.001": "d924f1217b35561489394784ce631aee4de342466758836e9f96a52d234254d5",
+      "Idle_Gun": "0ce32bdddbc4b3cf0934f3f7d295d913bffa0009051c9f4a537c9da19eb86d61",
+      "Idle_Gun.001": "0ce32bdddbc4b3cf0934f3f7d295d913bffa0009051c9f4a537c9da19eb86d61",
+      "Idle_Gun_Pointing": "4da2c38d88aa008e4ed72e2e6031cb24471cff8a7657b52eddf2fd5765fb89aa",
+      "Idle_Gun_Pointing.001": "4da2c38d88aa008e4ed72e2e6031cb24471cff8a7657b52eddf2fd5765fb89aa",
+      "Idle_Gun_Shoot": "789df3dbb12fc2ef6adeb223ea3e0db443170fcea88ef5897056ca27473df51e",
+      "Idle_Gun_Shoot.001": "789df3dbb12fc2ef6adeb223ea3e0db443170fcea88ef5897056ca27473df51e",
+      "Idle_Neutral": "e10d773f92dd86bddf560051ab11dfeb48e76da32cba856fd66e667b94412594",
+      "Idle_Neutral.001": "e10d773f92dd86bddf560051ab11dfeb48e76da32cba856fd66e667b94412594",
+      "Idle_Neutral_ProportionProposal": "3b87d66ba83c5f8cd7ffeb5928f4b9c25cd5a420f8879dc824b2704e28fb3eca",
+      "Idle_Sword": "fc6a744b1247b7d10b0fc79cd6c41004276803190bf689628cf9f98a51600c6c",
+      "Idle_Sword.001": "fc6a744b1247b7d10b0fc79cd6c41004276803190bf689628cf9f98a51600c6c",
+      "Interact": "428138eb70138244ef73bd3c21518f2b6f71f456d9e595265ef956a09a9d33e7",
+      "Interact.001": "428138eb70138244ef73bd3c21518f2b6f71f456d9e595265ef956a09a9d33e7",
+      "Kick_Left": "a861303ff7786cb7c45dddb01abf1536c95152f7f258e8561d37d56fefdefb22",
+      "Kick_Left.001": "a861303ff7786cb7c45dddb01abf1536c95152f7f258e8561d37d56fefdefb22",
+      "Kick_Right": "69115eb88aa6fd90f63aae5353e4ea04e06405eedcaf7876f1397c5929028986",
+      "Kick_Right.001": "69115eb88aa6fd90f63aae5353e4ea04e06405eedcaf7876f1397c5929028986",
+      "Punch_Left": "82cb36d629783edfb4f122a5201b884dfea15f31a584ae8688c906c17b3709ea",
+      "Punch_Left.001": "82cb36d629783edfb4f122a5201b884dfea15f31a584ae8688c906c17b3709ea",
+      "Punch_Right": "c4f80aedb63c8af7913a170fa72bfa84f00cbcb37f33666dd826be1aac68315f",
+      "Punch_Right.001": "c4f80aedb63c8af7913a170fa72bfa84f00cbcb37f33666dd826be1aac68315f",
+      "Roll": "e3ecf89d00b6b37bad97553e4743fde2bcc6a417081711de0bc3e32f0cad2464",
+      "Roll.001": "e3ecf89d00b6b37bad97553e4743fde2bcc6a417081711de0bc3e32f0cad2464",
+      "Run": "b9bb12fd6f5c49c8daa816169924d29f81c378be42eec36e5d1f2c15dce1f2ac",
+      "Run.001": "b9bb12fd6f5c49c8daa816169924d29f81c378be42eec36e5d1f2c15dce1f2ac",
+      "Run_Back": "ed28c75fb9f3cc04f0ef1dd495e55e44a1486053f68e08a0b3d99d734e4e0ab3",
+      "Run_Back.001": "ed28c75fb9f3cc04f0ef1dd495e55e44a1486053f68e08a0b3d99d734e4e0ab3",
+      "Run_Left": "00840cb754b59b166685af1cea655923cf63f0d370d1214a7389c449483ba81a",
+      "Run_Left.001": "00840cb754b59b166685af1cea655923cf63f0d370d1214a7389c449483ba81a",
+      "Run_Right": "a2c63b02fc3c1c10e4771f62e2e4e97b20796114463f37b5c85e6d0512221685",
+      "Run_Right.001": "a2c63b02fc3c1c10e4771f62e2e4e97b20796114463f37b5c85e6d0512221685",
+      "Run_Shoot": "cb0588eb6381a4e54c6d405ef2da8dede97acbd041894d1258794a606d7a0a67",
+      "Run_Shoot.001": "cb0588eb6381a4e54c6d405ef2da8dede97acbd041894d1258794a606d7a0a67",
+      "Sword_Slash": "c7028a89af7c841472d4130b3ffaa27b7d40c17f72562eb576e8752eeb1b208b",
+      "Sword_Slash.001": "c7028a89af7c841472d4130b3ffaa27b7d40c17f72562eb576e8752eeb1b208b",
+      "Walk": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+      "Walk.001": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+      "Walk_ProportionProposal": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd",
+      "Wave": "0a638e6ad2017e40b782e0a69e22f99cdd36498cd61b5b656ffa14bf8b3e7396",
+      "Wave.001": "0a638e6ad2017e40b782e0a69e22f99cdd36498cd61b5b656ffa14bf8b3e7396"
+    },
+    "restBones": "d24d6d5ccb0d813933702ffeb74ffb1c1e5d29cd12d71bcb68dc06ef3bb17479"
+  },
+  "invariantsAfter": {
+    "meshes": {
+      "Adventurer_Body": {
+        "positions": "539e5fce065278bc66d8347b965eabdf3f32482ea3cb4af3f474656f15b872be",
+        "polygons": "8727e0257b3751fc6742c18c5c1dbd551c3708dbccb03517086943f21afccff7",
+        "weights": "404161fdcd3fc39a4bc9cade6fd10f730ad344948b56dba2fb935c23ff5293e1"
+      },
+      "Adventurer_Feet": {
+        "positions": "6498d7f8a071c763a55954ca85190ea1e20ed324f15765c2cd2fc29f201d7630",
+        "polygons": "4b029d508320da4148c2c970806f6f364b97a92bcc8773742ea9133598f13c11",
+        "weights": "89d9af0615caa6c564e76c0b05c57f93a6ddf8a72678a494ef8d2bd0112abdf4"
+      },
+      "Adventurer_Head": {
+        "positions": "8014d2dbd943c9bd3de1b279d54f1a041cb670d9b13eeaddd9c4fafd97e84f9a",
+        "polygons": "f7c8f9c8c2e2f4b3350f75cf4985756c6bcc0e1e79ebd9778bda2f2480d5b327",
+        "weights": "3c0a6eeb0c4aa48f775c7b401c0f6b7161926a1ddb424ed7c3c4e75f4b14bc5b"
+      },
+      "Ruta stock long trousers": {
+        "positions": "c24ad096a7a16b190982f9a75cdf29adb438acf0a5ac5f09333f4076e226386f",
+        "polygons": "55a00564bdb36104d6418c9ea128133754085ba92437da5f262cbd3caf3f674d",
+        "weights": "9e53c803881a11f3ab998eb718c0aad3dca3a739d1f178d7a76c6d64e9e41e13"
+      },
+      "Ruta CC0 ginger waves": {
+        "positions": "a83c096001e3cd36c5a3eaf3c5c2e49f98721c20f345b4d8d6ccd074f7840e51",
+        "polygons": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+        "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd"
+      },
+      "ONE diagonal satchel strap": {
+        "positions": "b806644dd7fadfe45f98c0b76720d9862d15dc4b97ccc72b11b78c6d86f950a9",
+        "polygons": "2eb7c621c0c312b8dc962579975c224d3dc78db19586fdd41ef22665c5627076",
+        "weights": "9288cccd355af19e03b02ba01a7b5d2a7878a4e9eff2dfa53b159e93036be018"
+      },
+      "Ellie ready tongue": {
+        "positions": "1c183ce50c407f040e5560e707a07f3f6ebf59596694a415ed48a783f41a6a1c",
+        "polygons": "8a8360fceb3d9b44298e730212368e5390a4f666a19b24e90a21e214a09c6a5f",
+        "weights": "1d2ca2edd516ebbd5bb44314efcfc721e6fedde95666c3959cf4f3cfc5dae17e"
+      },
+      "Ellie ready teeth_top": {
+        "positions": "128e5635e6d9c54896c0befc84d52a958b1a50c6f21981390fdc2afd80729c8d",
+        "polygons": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+        "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd"
+      },
+      "Ellie ready teeth_btm": {
+        "positions": "cdf090ef569e3230a1ad009234e6ae6441f5679917bbfa1c4058a13be6cedf17",
+        "polygons": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+        "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd"
+      },
+      "Ellie ready head": {
+        "positions": "e7e59cb79bda71af330e672b0f87d7462761b49b0e4c3a5e551a34423ba72dac",
+        "polygons": "2a1ac9fa497231a5b52e4751d35d6328bdfb3496d448da95f449ea25863dd266",
+        "weights": "9164b776d65f4b0caaad2f8d797be547d14864949099887a8943457d36468b5e"
+      },
+      "Ellie ready hair_cut": {
+        "positions": "781a1cc172eec9184517f36efbe04fb8805ce6965467be37a866b31a925883ef",
+        "polygons": "c087f910055a89ce5b75d7173a284eef8a98e7edbf3755af0cb9d68ecb13bfb1",
+        "weights": "45a38f217cc9ef406107ecf6baec08b517d86d558c5aae4e13975e1f9f2e6c57"
+      },
+      "Ellie ready face_line2": {
+        "positions": "347ff0a5d7f869a91a18b42d364dd86b0befcbc5355edfc2db0b19b3f02cd663",
+        "polygons": "0a1ae08135254218f182e2cd00bc73f0ab7cddb19ec4a52f473269ff3c23d548",
+        "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8"
+      },
+      "Ellie ready face_line1": {
+        "positions": "10202908e08bb7399c0e5f75ad5e97b520c216caf08cebbcdafadb23512e52b1",
+        "polygons": "e36b12e240f1c5dd8b76077298bac2b45b9a50d5c489351f5b1ab50fba8c850c",
+        "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8"
+      },
+      "Ellie ready eyelashes": {
+        "positions": "6495940f6c1b75bebe70d9028689774bc2b714b76e7fbd7d07f2a00199ffdfb7",
+        "polygons": "edf5e30eb0e3d87ff53dbb1f2d81ac39c897a49e829e51c3e788efbe7f23219c",
+        "weights": "99a7ce31ff7e5b3b3c92764e7cb2685182340c3d3263400552828a786db293cb"
+      },
+      "Ellie ready eyebrows": {
+        "positions": "f83ff001529b755745d811367b79068736a0cd78d34ca4df85ee0dd4f3ede413",
+        "polygons": "c59983431943c788de83b41f80983136d6ef2f187f5286c6dc9707ad9a9e561e",
+        "weights": "70e3124a1809920bd6a227416959d65a954417f245b0568a2c43e93a51380141"
+      },
+      "Ellie ready eye_highlights": {
+        "positions": "7a48c967a5e352c4b8121ffe005fbc60fc2de4fdc453b6c6d58f208b8d5b1d65",
+        "polygons": "d58b33dd1efaf57cef539d10e3f664f4d0839fbc6c56b85e89119f0da34f9035",
+        "weights": "458abebee3db32028540fd61e0eb75f272016c5d1e5e698c8abd55932e5d4eb9"
+      },
+      "Ellie ready eye.R": {
+        "positions": "6cfaaa27683daf74ec8c2991412cc9fb47b6f58ace51665fe0f6aa5d06126dbc",
+        "polygons": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+        "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312"
+      },
+      "Ellie ready eye.L": {
+        "positions": "f4f681049b8a2c330020ecc5d3ffdb58e15f536ea62be2db1ab51fa6401f9005",
+        "polygons": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+        "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312"
+      },
+      "Ellie ready CC0 Cortu waves": {
+        "positions": "2cfde4236e6ac6d36bbcfd20c16c3028982b7f26406579580f4f4b94d924e72c",
+        "polygons": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+        "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd"
+      },
+      "Ellie ready Loose cap": {
+        "positions": "fbecaf3acf9da08d13ecf075e0494954d5bc151ef36610c8ea6e14a139805a17",
+        "polygons": "dbe51f3a9f303c9a47aad5182db9c72608a6447c0ae2f3787ea35d747cfb22b8",
+        "weights": "1d7029ae442cc7b53130411b1c1522fe7a9c9a5394f7cfd925bebd206f52bd1a"
+      },
+      "Ellie ready Layered wave 1": {
+        "positions": "dd0a2096646293207d2aaadd781eb905e01108ebc3d742ac2e502cafff6a3c27",
+        "polygons": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+        "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9"
+      },
+      "Ellie ready Layered wave 2": {
+        "positions": "bdd6fa205b60b3bc5cedbaa6d1bf714750c78cbe3495f2452c7879258a9ccd44",
+        "polygons": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+        "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906"
+      },
+      "Ellie ready Layered wave 3": {
+        "positions": "0bb40fcb10ba9c5fde68a72393d2f711e168ca3544490d5eb64c18e267f85976",
+        "polygons": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+        "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4"
+      },
+      "Ellie ready Layered wave 4": {
+        "positions": "2695b5f00707438cc7dd029413d7e6c8049628286428b12071af5dfa01849d23",
+        "polygons": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+        "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281"
+      },
+      "Ellie ready Layered wave 5": {
+        "positions": "1e9c98884dc152284b08bea96ef218fb5f5c6b8b4c2b07df2f1647090ead9f50",
+        "polygons": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+        "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc"
+      },
+      "Ellie ready Layered wave 6": {
+        "positions": "38ebb0b29c55b882246217e6668ed2a10aa62b1e772fe03c969f065b2abe512f",
+        "polygons": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+        "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512"
+      },
+      "Ellie ready Layered wave 7": {
+        "positions": "b2ea78f81a3f7ed4163cb6d0288e9736b58fbdc67ce74e7394b551d0b8c98c96",
+        "polygons": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+        "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9"
+      },
+      "Ellie ready Layered wave 8": {
+        "positions": "fb4238e18dde9d7868fee931a381c7cdab94562d57b509cea31f8552f986bd92",
+        "polygons": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+        "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906"
+      },
+      "Ellie ready Layered wave 9": {
+        "positions": "944a0a19638f3b18a12be11339362cf2dffde0b83ca00491cfe6094bb369793d",
+        "polygons": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+        "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4"
+      },
+      "Ellie ready Layered wave 10": {
+        "positions": "6b412b4ecec465d872d9da47d19e7da08a63894fbb581bccabb9828390236415",
+        "polygons": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+        "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281"
+      },
+      "Ellie ready Layered wave 11": {
+        "positions": "1546e85f27493dfdd14b0fd5e6f8c497ec65998bfc59bbaac7793a8204eb19b5",
+        "polygons": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+        "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc"
+      },
+      "Ellie ready Layered wave 12": {
+        "positions": "77d6eb059967687e8ab613245ea229eec2467197898e1f06a2c5defe137a6293",
+        "polygons": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+        "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512"
+      },
+      "Ellie ready Layered wave 13": {
+        "positions": "bacbd85a3e9a961e46da5d29d3fc220e06676b9c34b96c08a6bf7249d3e5a4e2",
+        "polygons": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+        "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9"
+      },
+      "Ellie ready Layered wave 14": {
+        "positions": "695637114123accf1bbaeeaca7c6bb876c8532adc1ce4ffe44c9e8100367e8f7",
+        "polygons": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+        "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906"
+      },
+      "Ellie ready Layered wave 15": {
+        "positions": "d9b45a5d27faf39d2bcb550978b1a57e2ec0a1bf64fb26423be7364aaa7c3153",
+        "polygons": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+        "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4"
+      },
+      "Ellie ready Layered wave 16": {
+        "positions": "feff4d8f7691a6d1f7433de98592e3283567d76318eac040e31e6dd1898ed994",
+        "polygons": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+        "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281"
+      },
+      "Ellie ready Layered wave 17": {
+        "positions": "96ee5b299b477b5495de9c6c1d910ecea1227bd4179feb254ab008551d929224",
+        "polygons": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+        "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc"
+      },
+      "Ellie ready Layered wave 18": {
+        "positions": "097fe74490728638038ac2fd87308cd68044cf60188b3d4568859e6e65d3ead1",
+        "polygons": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+        "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512"
+      },
+      "Cream shirt V inside vest": {
+        "positions": "aee9fb3c3a0a0c7ac37debd289e6682d5cc1dc02a4b376f0150a45a16f0a9a8a",
+        "polygons": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+        "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677"
+      },
+      "Vest brass button 1": {
+        "positions": "609a96e0edaa569081206d767111337df66296b5e3a7c7b0e691fbdefa55dbce",
+        "polygons": "fb5e0fb21b9b1b6aac0b1ed67a7d4f91a626fa20008e11363de77c424ba6ed70",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Vest brass button 2": {
+        "positions": "8d12c7c5f8c37039baf1353c3f4d2595a8dea72f8c959fa520bafae3fea44978",
+        "polygons": "bac1ed0e888fcc6484d1821a8e1e1d9d215fe4d8290730de8d48dcf3717a4de3",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Vest brass button 3": {
+        "positions": "09310517bcabbfd300cf23eab8a53c90078fd8149fba3d9742e1133bdeaa3648",
+        "polygons": "dc9d7b87cc3d1e5286c5ac7a69fba7ed5a7ada966e306ab5a148de7addcdd03e",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Left burgundy bow loop": {
+        "positions": "9acf1c4aea3b6576e09465c582bebb7d165da15163a5abf076984299e3db3c9b",
+        "polygons": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+        "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677"
+      },
+      "Right burgundy bow loop": {
+        "positions": "a62ffe3158e64ac7622ff24793e7a550099f35e2d52ee2a5318fe0c74c880656",
+        "polygons": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+        "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677"
+      },
+      "Burgundy bow knot": {
+        "positions": "9d525dda4dff15c197d5b535f156a75826728e5f734e97907d20ac274cd46e9d",
+        "polygons": "b7621f9d2d6c766fc89ae445c76c828543e744ec13664603552a3b0e5cd24a0a",
+        "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639"
+      },
+      "Two burgundy bow tails": {
+        "positions": "7b6f35f60d938b7a3695e55a38bd12f0bd48965ea91baa7925ea940985eb9484",
+        "polygons": "d42ef3a453691152af9df3974094032f222579d3757a55de4baf2ae3aef6da0c",
+        "weights": "82dafb5b123f5adad5764f3190285488d118ff735068f919f57e1f4da5a4c387"
+      },
+      "ONE rounded right hip satchel": {
+        "positions": "296c70ab161e68d25e8ec4741090c1635bfc0c6003a697f90b1616e51b79e13c",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Single rounded satchel flap": {
+        "positions": "a78732e7ba822ba718cc96e01344be08831761af12c36753e4310d130b616a49",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Satchel warm brass clasp": {
+        "positions": "06b48714c947943338bd5c1cda9d3b4f0c2a7837f8fa306444a4ba47ebb052c7",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Ankle boot lace R": {
+        "positions": "3727a4e4a312606552d4358388056441addb77850a4b3c17bf5d07e9ef3dfc04",
+        "polygons": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+        "weights": "0c973a43d9c947835bef4ff657f2b534fe74d0f5be4aeb9158d00c9c048e0fed"
+      },
+      "Cream sock cuff R": {
+        "positions": "5f843bffbba04d4510998ef32bbc0b4e55a754cd8b47a5c6308dfaaeb43513d6",
+        "polygons": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+        "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834"
+      },
+      "Cargo side pocket R": {
+        "positions": "1402afe78f4ce3908c7105adeb7b8070ba3da334f79a4744a613f160e7b501fc",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Ankle boot lace L": {
+        "positions": "9654d0e0b3d40acf7e13cc308c8bd08dab412ce46a0fbd6c0ca51b0a08c98065",
+        "polygons": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+        "weights": "d910c262687aadaec5b09a756a42f3d47a88a6750b05bf0283b606cebc108211"
+      },
+      "Cream sock cuff L": {
+        "positions": "f940a5a4af9dffbb1dd198a13976d294583826dad0bdbda7a3a2186357a888fa",
+        "polygons": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+        "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834"
+      },
+      "Cargo side pocket L": {
+        "positions": "d97e365632444135669b1768bcfe5079adab89a146c244bd4cdd6a4ebb3e0c04",
+        "polygons": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+        "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9"
+      },
+      "Icosphere": {
+        "positions": "6a46b8216ee826d01a26612877cae0267201bd1301346dd6b32a3e6376875a20",
+        "polygons": "547f3010843e1d60add13bd4c5af0ca871f0aa6056a21e6aa8d14a8ad844fd66",
+        "weights": "220acd169ab40af02c2a2a753ec26009708ea5760f0096f86e90322fbba65147"
+      }
+    },
+    "actions": {
+      "Death": "3b299321c5a099f963daadf7ee39dbb244670ea039845b65cd5ab44e68d953ee",
+      "Death.001": "3b299321c5a099f963daadf7ee39dbb244670ea039845b65cd5ab44e68d953ee",
+      "Gun_Shoot": "8718f03b270fc56f549488c71531f8ef78cac0f8d18dfed82edfc0979def2e49",
+      "Gun_Shoot.001": "8718f03b270fc56f549488c71531f8ef78cac0f8d18dfed82edfc0979def2e49",
+      "HitRecieve": "57220379bfa5a8473b4e78f13fe002cbceaa7cba8dba0a081c4ec66e16099faf",
+      "HitRecieve.001": "57220379bfa5a8473b4e78f13fe002cbceaa7cba8dba0a081c4ec66e16099faf",
+      "HitRecieve_2": "89ea4445a185714e0403befd4152cebb6a591120d35cc522d544ce8b06ce1362",
+      "HitRecieve_2.001": "89ea4445a185714e0403befd4152cebb6a591120d35cc522d544ce8b06ce1362",
+      "Idle": "d924f1217b35561489394784ce631aee4de342466758836e9f96a52d234254d5",
+      "Idle.001": "d924f1217b35561489394784ce631aee4de342466758836e9f96a52d234254d5",
+      "Idle_Gun": "0ce32bdddbc4b3cf0934f3f7d295d913bffa0009051c9f4a537c9da19eb86d61",
+      "Idle_Gun.001": "0ce32bdddbc4b3cf0934f3f7d295d913bffa0009051c9f4a537c9da19eb86d61",
+      "Idle_Gun_Pointing": "4da2c38d88aa008e4ed72e2e6031cb24471cff8a7657b52eddf2fd5765fb89aa",
+      "Idle_Gun_Pointing.001": "4da2c38d88aa008e4ed72e2e6031cb24471cff8a7657b52eddf2fd5765fb89aa",
+      "Idle_Gun_Shoot": "789df3dbb12fc2ef6adeb223ea3e0db443170fcea88ef5897056ca27473df51e",
+      "Idle_Gun_Shoot.001": "789df3dbb12fc2ef6adeb223ea3e0db443170fcea88ef5897056ca27473df51e",
+      "Idle_Neutral": "e10d773f92dd86bddf560051ab11dfeb48e76da32cba856fd66e667b94412594",
+      "Idle_Neutral.001": "e10d773f92dd86bddf560051ab11dfeb48e76da32cba856fd66e667b94412594",
+      "Idle_Neutral_ProportionProposal": "3b87d66ba83c5f8cd7ffeb5928f4b9c25cd5a420f8879dc824b2704e28fb3eca",
+      "Idle_Sword": "fc6a744b1247b7d10b0fc79cd6c41004276803190bf689628cf9f98a51600c6c",
+      "Idle_Sword.001": "fc6a744b1247b7d10b0fc79cd6c41004276803190bf689628cf9f98a51600c6c",
+      "Interact": "428138eb70138244ef73bd3c21518f2b6f71f456d9e595265ef956a09a9d33e7",
+      "Interact.001": "428138eb70138244ef73bd3c21518f2b6f71f456d9e595265ef956a09a9d33e7",
+      "Kick_Left": "a861303ff7786cb7c45dddb01abf1536c95152f7f258e8561d37d56fefdefb22",
+      "Kick_Left.001": "a861303ff7786cb7c45dddb01abf1536c95152f7f258e8561d37d56fefdefb22",
+      "Kick_Right": "69115eb88aa6fd90f63aae5353e4ea04e06405eedcaf7876f1397c5929028986",
+      "Kick_Right.001": "69115eb88aa6fd90f63aae5353e4ea04e06405eedcaf7876f1397c5929028986",
+      "Punch_Left": "82cb36d629783edfb4f122a5201b884dfea15f31a584ae8688c906c17b3709ea",
+      "Punch_Left.001": "82cb36d629783edfb4f122a5201b884dfea15f31a584ae8688c906c17b3709ea",
+      "Punch_Right": "c4f80aedb63c8af7913a170fa72bfa84f00cbcb37f33666dd826be1aac68315f",
+      "Punch_Right.001": "c4f80aedb63c8af7913a170fa72bfa84f00cbcb37f33666dd826be1aac68315f",
+      "Roll": "e3ecf89d00b6b37bad97553e4743fde2bcc6a417081711de0bc3e32f0cad2464",
+      "Roll.001": "e3ecf89d00b6b37bad97553e4743fde2bcc6a417081711de0bc3e32f0cad2464",
+      "Run": "b9bb12fd6f5c49c8daa816169924d29f81c378be42eec36e5d1f2c15dce1f2ac",
+      "Run.001": "b9bb12fd6f5c49c8daa816169924d29f81c378be42eec36e5d1f2c15dce1f2ac",
+      "Run_Back": "ed28c75fb9f3cc04f0ef1dd495e55e44a1486053f68e08a0b3d99d734e4e0ab3",
+      "Run_Back.001": "ed28c75fb9f3cc04f0ef1dd495e55e44a1486053f68e08a0b3d99d734e4e0ab3",
+      "Run_Left": "00840cb754b59b166685af1cea655923cf63f0d370d1214a7389c449483ba81a",
+      "Run_Left.001": "00840cb754b59b166685af1cea655923cf63f0d370d1214a7389c449483ba81a",
+      "Run_Right": "a2c63b02fc3c1c10e4771f62e2e4e97b20796114463f37b5c85e6d0512221685",
+      "Run_Right.001": "a2c63b02fc3c1c10e4771f62e2e4e97b20796114463f37b5c85e6d0512221685",
+      "Run_Shoot": "cb0588eb6381a4e54c6d405ef2da8dede97acbd041894d1258794a606d7a0a67",
+      "Run_Shoot.001": "cb0588eb6381a4e54c6d405ef2da8dede97acbd041894d1258794a606d7a0a67",
+      "Sword_Slash": "c7028a89af7c841472d4130b3ffaa27b7d40c17f72562eb576e8752eeb1b208b",
+      "Sword_Slash.001": "c7028a89af7c841472d4130b3ffaa27b7d40c17f72562eb576e8752eeb1b208b",
+      "Walk": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+      "Walk.001": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+      "Walk_ProportionProposal": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd",
+      "Wave": "0a638e6ad2017e40b782e0a69e22f99cdd36498cd61b5b656ffa14bf8b3e7396",
+      "Wave.001": "0a638e6ad2017e40b782e0a69e22f99cdd36498cd61b5b656ffa14bf8b3e7396"
+    },
+    "restBones": "d24d6d5ccb0d813933702ffeb74ffb1c1e5d29cd12d71bcb68dc06ef3bb17479"
+  },
+  "invariantsExactEqual": true,
+  "allowedDataAddition": "POINT vector rest coordinate attribute only; no vertex/topology/weights/restbone/action edits",
+  "materials": [
+    {
+      "material": "ellie.head",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "Ruta burgundy neck bow",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "Ruta warm loose cargo cloth",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "Gold",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "ellie.hair_mesh",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "ellie.tongue",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "Ruta satchel warm leather",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "Cargo pocket cloth L",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "ellie.eyes",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "ellie.head_lips",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "ellie.gums",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "Brown2",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "Ruta cream shirt",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "ellie.face_lines",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "Skin",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "ellie.teeth",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "ellie.eyes_pupils",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "Adapted warm brown leather",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "ellie.eyelashes",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "Ruta warm brass detail",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "Cargo pocket cloth R",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "ellie.head_hair",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "Ruta olive sleeveless vest",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "Brown_02",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "White",
+      "policy": "existing warm toon retained; subtle rest-bound pigment variation and warm facing-edge ink",
+      "emissionColorNodesModified": 1
+    },
+    {
+      "material": "ellie.mouth_inner",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "ellie.highlights",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    },
+    {
+      "material": "ellie.eyebrows",
+      "policy": "native Ellie UV/alpha/eye/skin/hair shader preserved"
+    }
+  ],
+  "camera": {
+    "matrixWorld": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.6499999761581421,
+        -0.7599342465400696,
+        -8.0
+      ],
+      [
+        0.0,
+        0.7599342465400696,
+        0.6499999761581421,
+        7.692697525024414
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "orthoScale": 2.0999999046325684,
+    "canvas": [
+      512,
+      640
+    ],
+    "worldZPixelsPerMeter": 231.59903526306152,
+    "worldOriginAnchorPx": [
+      256.0,
+      516.8593120574951
+    ]
+  },
+  "poses": [
+    0,
+    30,
+    40
+  ],
+  "cycleSeconds": 1.6666666666666667,
+  "nativeHeadingYawRadians": 1.5707963267948966,
+  "outline": "Blender compositor1px warm outer silhouette; no PNG redraw/warp/per-frame offsets",
+  "limits": [
+    "native silhouette/face/view retained, not imagegen-painted redraw",
+    "three actual poses only, no whole-cycle approval",
+    "protected native face/eye/hair shading retained to avoid breaking UV/alpha; this may limit storybook match"
+  ]
+}
