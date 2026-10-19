@@ -104,7 +104,9 @@ for name, im in [('board-mask',board),('free-mask',free),('logical-water-mask',w
 native.save(out/'background.webp',lossless=True,method=6)
 # Explicit registration artifact; transparent outer region is not painted outpaint.
 wide_info={'status':'INCOMPLETE-native-registration-only-no-painted-outer-source','canvas':[4096,1600],'originalRect':[1212,329,1672,941]}
-wide_source=base/'candidates/mill-wide-generated-v1.png'
+native_before_wide=native.copy()
+native_before_wide.save(out/'native-registration-reference.png')
+wide_source=base/'candidates/mill-wide-generated-v2.png'
 fit_path=out/'wide-registration-fit.json'
 if wide_source.exists() and fit_path.exists():
     fit=json.loads(fit_path.read_text())
@@ -116,18 +118,53 @@ if wide_source.exists() and fit_path.exists():
     for inset in range(49):
         draw.rectangle((inset,inset,size[0]-1-inset,size[1]-1-inset),fill=round(inset*255/48))
     blend=ImageChops.lighter(blend,board)
+    ImageDraw.Draw(blend).rectangle((1210,40,1671,430),fill=255)
     patch=canvas.crop((1212,329,2884,1270))
     canvas.paste(Image.composite(native,patch,blend),(1212,329))
     wide=canvas.crop((412,200,3684,1400))
+    feeder_join_source=base/'candidates/mill-feeder-join-generated-v3.png'
+    if feeder_join_source.exists():
+        # Decorative feeder repair is entirely above the77-board and left of
+        # the protected building. Native and wide receive the same world patch.
+        patch=Image.open(feeder_join_source).convert('RGB').resize((250,185),Image.Resampling.LANCZOS)
+        patch_mask=Image.new('L',(250,185));patch_draw=ImageDraw.Draw(patch_mask)
+        for inset in range(17):
+            patch_draw.rectangle((inset,inset,249-inset,184-inset),fill=round(inset*255/16))
+        area=wide.crop((1730,45,1980,230))
+        wide.paste(Image.composite(patch,area,patch_mask),(1730,45))
+        native=wide.crop((800,129,2472,1070))
+        # Preserve a consistent core asset when runtime composites native over
+        # wide; do not reintroduce the repaired feeder seam with an old core.
+        native.save(out/'native-background.png')
+        native.save(out/'background.webp',lossless=True,method=6)
+        dry_outer=Image.composite(Image.open(out/'dry-background.webp').convert('RGB'),native,board)
+        dry_outer.save(out/'dry-background.webp',lossless=True,method=6)
+        decorative=native.convert('RGBA');decorative.putalpha(outside)
+        decorative.save(out/'decorative-outside-board.png')
+        with_wheel=native.convert('RGBA');with_wheel.alpha_composite(wheel,(1215,108))
+        with_wheel.convert('RGB').save(out/'native-with-wheel.png')
+        with_wheel.crop((1160,55,1390,285)).resize((690,690)).save(out/'wheel-race-review.png')
+        with_wheel.crop((560,0,1370,310)).resize((1215,465)).save(out/'feeder-race-wheel-review.png')
     wide.save(out/'wide-registered.png')
     wide.save(out/'wide.webp',lossless=True,method=6)
     wide_info={'status':'painted-registered-native-guard-passed-join-and-game-review-pending','canvas':[3272,1200],'originalRect':[800,129,1672,941],'joinBandPx':48,'sourceAffine':fit,'source':str(wide_source.relative_to(root))}
     guarded=wide.crop((800,129,2472,1070))
-    delta=ImageChops.difference(native,guarded)
+    delta=ImageChops.difference(native_before_wide,guarded)
     board_inner=board.filter(ImageFilter.MinFilter(3))
     changed=sum(max(p)>0 and a>250 for p,a in zip(delta.getdata(),board_inner.getdata()))
     assert changed==0,changed
     wide_info['fullBoardInteriorChangedRgbPixels']=changed
+    building_diff=ImageChops.difference(native_before_wide.crop((1210,40,1672,431)),guarded.crop((1210,40,1672,431)))
+    building_changed=sum(max(pixel)>0 for pixel in building_diff.getdata())
+    assert building_changed==0,building_changed
+    wide_info['millBuildingNativeGuardRectangle']=[1210,40,462,391]
+    wide_info['millBuildingChangedRgbPixels']=building_changed
+    if feeder_join_source.exists():
+        wide_info['feederJoinPatch']={'source':str(feeder_join_source.relative_to(root)),'sourceSha256':hashlib.sha256(feeder_join_source.read_bytes()).hexdigest(),'sourceNativeSize':list(Image.open(feeder_join_source).size),'deliveredWorldRect':[1730,45,250,185],'edgeBlendPx':16,'nativeAndWideSameWorldPatch':True,'outsideWhole77Board':True,'status':'source-art-and-actual-game-join-review-pending'}
+    wide_with_wheel=wide.convert('RGBA');wide_with_wheel.alpha_composite(wheel,(2015,237))
+    wide_with_wheel.convert('RGB').save(out/'wide-with-wheel-review.png')
+    for label,box in [('wide-top-feeder-join-review',(1730,45,1980,230)),('wide-bottom-creek-join-review',(1490,975,1760,1160)),('wide-mill-right-join-review',(2310,250,2580,600))]:
+        wide.crop(box).resize(((box[2]-box[0])*2,(box[3]-box[1])*2)).save(out/(label+'.png'))
 else:
     wide = Image.new('RGBA',(4096,1600))
     wide.paste(native,(1212,329))
@@ -236,7 +273,7 @@ manifest={'schemaVersion':1,'scene':'mill','activation':'inactive-source-handoff
     'canvas':list(size),'camera':geometry['camera'],
     'anchors':{'start':geometry['start']['pixel'],'goal':geometry['goal']['pixel'],'residentFeet':{'x':1430,'y':398,'status':'existing-native-anchor-game-review-pending'},'wheelAxle':{'x':1270,'y':163}},
     'wheel':{'file':'wheel-110.png','source':str(wheel_source.relative_to(root)),'sourceSize':[1254,1254],'sourcePivot':[627,627],'size':[110,110],'origin':[1215,108],'pivot':[55,55],'worldAxle':[1270,163],'sourceAlphaErosionNativePx':5,'transform':'one uniform110/1254 scale; no CSS correction','layering':'separate background prop above millrace; never foreground over bridge/road','status':'race-contact-and-animation-game-review-pending'},
-    'millrace':{'feederTop':[1053,0],'upperFeederJunction':[1050,74],'upperTroughHead':[950,80],'branchToMainCreek':[625,285],'branchToWheel':[1270,163],'review':'feeder-race-wheel-review.png','status':'source-continuity-visual-and-game-review-pending'},
+    'millrace':{'feederTop':[1056,0],'feederTopObservation':'source cyan range1034..1077 at nativeTOP afterjoin; decorative anchor only','upperFeederJunction':[1050,74],'upperTroughHead':[950,80],'branchToMainCreek':[625,285],'branchToWheel':[1270,163],'review':'feeder-race-wheel-review.png','status':'source-continuity-visual-and-game-review-pending'},
     'acceptedLayoutInputs':geometry['inputs'],'layoutChanges':geometry['layoutChanges'],
     'solution':[{'id':piece['id'],'placement':piece['placement'],'cells':piece['cells']} for piece in geometry['pieces']],
     'path':geometry['path'],
