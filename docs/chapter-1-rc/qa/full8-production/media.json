@@ -1,0 +1,86 @@
+[
+  {
+    "file": "docs/chapter-1-rc/qa/full8-production/1280/actual-full-chapter-silent.webm",
+    "sha256": "89f49ef054d74e2c9fc0f3c0dd2849077258f6d8051b9ce7a591296a6ea4e3f4",
+    "media": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "format": {
+        "duration": "269.040000",
+        "size": "136674291"
+      }
+    },
+    "committed": false,
+    "audio": "none; actual silent browser video, no synthesized soundtrack"
+  },
+  {
+    "file": "docs/chapter-1-rc/qa/full8-production/1280/actual-full-chapter-silent.mp4",
+    "sha256": "f8e299f9ef2ade83c728f11c188f99cd0cc50cfd60887702cc3be75e65f2f59b",
+    "media": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 1280,
+          "height": 720
+        }
+      ],
+      "format": {
+        "duration": "269.040000",
+        "size": "25294854"
+      }
+    },
+    "committed": true,
+    "audio": "none; actual silent browser video, no synthesized soundtrack"
+  },
+  {
+    "file": "docs/chapter-1-rc/qa/full8-production/844/actual-full-chapter-silent.webm",
+    "sha256": "e85475c2d196674e8de3af05da14620b96b12f85fb798111bcade7f5b675e1bb",
+    "media": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "vp9",
+          "codec_type": "video",
+          "width": 844,
+          "height": 390
+        }
+      ],
+      "format": {
+        "duration": "242.360000",
+        "size": "46709311"
+      }
+    },
+    "committed": false,
+    "audio": "none; actual silent browser video, no synthesized soundtrack"
+  },
+  {
+    "file": "docs/chapter-1-rc/qa/full8-production/844/actual-full-chapter-silent.mp4",
+    "sha256": "8f30480ba09d7577ca9470accf092b106394270e5597758f5a3ca806dcfc7259",
+    "media": {
+      "programs": [],
+      "streams": [
+        {
+          "codec_name": "h264",
+          "codec_type": "video",
+          "width": 844,
+          "height": 390
+        }
+      ],
+      "format": {
+        "duration": "242.360000",
+        "size": "10283987"
+      }
+    },
+    "committed": true,
+    "audio": "none; actual silent browser video, no synthesized soundtrack"
+  }
+]
