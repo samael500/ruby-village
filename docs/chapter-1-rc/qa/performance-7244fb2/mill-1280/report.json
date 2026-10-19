@@ -1,0 +1,6790 @@
+{
+  "source": "7244fb2",
+  "servedBundle": "index-Booi3P-Q.js",
+  "scene": "mill",
+  "viewport": [
+    1280,
+    720
+  ],
+  "input": "mouse",
+  "cache": "fresh context; browser cache cleared and disabled through cold-ready snapshot; restored before interaction",
+  "network": "local localhost server, no network/CPU throttling",
+  "browser": "156.0.8078.4",
+  "menuGotoReturnMs": 43.914387992117554,
+  "menuRequestCountAtGotoReturn": 14,
+  "menuEncodedBytesAtGotoReturn": 4072395,
+  "navToMotionReadyMs": 595.3568379918579,
+  "afterFinalEntryInputToMotionReadyMs": 416.9417679950129,
+  "coldReadyNetworkIdleMs": 777.182821999304,
+  "coldRequestCount": 46,
+  "coldEncodedBytes": 28417392,
+  "coldRequests": [
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/",
+      "status": 200,
+      "mime": "text/html",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 238,
+      "encodedBytes": 975,
+      "finishedAt": 156251.874664007
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/index-D45q4dot.css",
+      "status": 200,
+      "mime": "text/css",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 347,
+      "encodedBytes": 5556,
+      "finishedAt": 156251.876315489
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/linen.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 265,
+      "encodedBytes": 9648,
+      "finishedAt": 156251.878270691
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/index-Booi3P-Q.js",
+      "status": 200,
+      "mime": "text/javascript",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 355,
+      "encodedBytes": 60242,
+      "finishedAt": 156251.882045133
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/paper.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 267,
+      "encodedBytes": 24678,
+      "finishedAt": 156251.899354153
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v6/01-courtyard.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 271,
+      "encodedBytes": 2989416,
+      "finishedAt": 156251.907310925
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/leaves.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 857012,
+      "finishedAt": 156251.903234158
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-garden.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 16632,
+      "finishedAt": 156251.906308019
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-well.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 11416,
+      "finishedAt": 156251.909350471
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-bakery.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 12584,
+      "finishedAt": 156251.909416121
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-stream.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 14114,
+      "finishedAt": 156251.909472162
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-mill.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 38712,
+      "finishedAt": 156251.909521581
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-post.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 16870,
+      "finishedAt": 156251.909846746
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-forest.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 14540,
+      "finishedAt": 156251.909787545
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/audio/music/manifest.json",
+      "status": 200,
+      "mime": "application/json",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 752,
+      "finishedAt": 156251.986762533
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/audio/sfx/click.ogg",
+      "status": 200,
+      "mime": "audio/ogg",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 265,
+      "encodedBytes": 4080,
+      "finishedAt": 156251.987099457
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/map-wide.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 272,
+      "encodedBytes": 2193518,
+      "finishedAt": 156251.996102027
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/map-base.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 774110,
+      "finishedAt": 156251.996810078
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/audio/music/village.ogg",
+      "status": 200,
+      "mime": "audio/ogg",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 271,
+      "encodedBytes": 1192598,
+      "finishedAt": 156252.002630913
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 272,
+      "encodedBytes": 1153288,
+      "finishedAt": 156252.090635499
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/wood.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 267,
+      "encodedBytes": 18411,
+      "finishedAt": 156252.079896629
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 513178,
+      "finishedAt": 156252.080111331
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 900992,
+      "finishedAt": 156252.080934748
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 866030,
+      "finishedAt": 156252.081628769
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/wide.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 272,
+      "encodedBytes": 5703484,
+      "finishedAt": 156252.104843288
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/background.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 272,
+      "encodedBytes": 2542460,
+      "finishedAt": 156252.09632726
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/wheel-110.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 267,
+      "encodedBytes": 25261,
+      "finishedAt": 156252.085929139
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/road-v1/charoite.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 272,
+      "encodedBytes": 1573190,
+      "finishedAt": 156252.094482835
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-v1/optimized/miller-idle.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 40624,
+      "finishedAt": 156252.087708476
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-v1/optimized/squirrel-idle.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 80444,
+      "finishedAt": 156252.087857194
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-v1/optimized/ruta-idle-pilot.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 268,
+      "encodedBytes": 47820,
+      "finishedAt": 156252.088792438
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-02.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 452791,
+      "finishedAt": 156252.089346572
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-01.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 457262,
+      "finishedAt": 156252.089698366
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-06.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 449268,
+      "finishedAt": 156252.091599104
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-05.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 453243,
+      "finishedAt": 156252.091959973
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-03.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 457846,
+      "finishedAt": 156252.092347977
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-04.png",
+      "status": 200,
+      "mime": "image/png",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 269,
+      "encodedBytes": 455812,
+      "finishedAt": 156252.092761512
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/audio/sfx/water.ogg",
+      "status": 200,
+      "mime": "audio/ogg",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 267,
+      "encodedBytes": 10513,
+      "finishedAt": 156252.106337631
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/manifest.json",
+      "status": 200,
+      "mime": "application/json",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 304,
+      "encodedBytes": 23546,
+      "finishedAt": 156252.109598288
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/audio/music/water.ogg",
+      "status": 200,
+      "mime": "audio/ogg",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 271,
+      "encodedBytes": 1236188,
+      "finishedAt": 156252.113854799
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-e.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 450222,
+      "finishedAt": 156252.138724758
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-se.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 482312,
+      "finishedAt": 156252.139320273
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-sw.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 478038,
+      "finishedAt": 156252.140905464
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-w.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 448124,
+      "finishedAt": 156252.141301814
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-nw.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 431792,
+      "finishedAt": 156252.141637709
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-ne.webp",
+      "status": 200,
+      "mime": "image/webp",
+      "fromDiskCache": false,
+      "fromServiceWorker": false,
+      "responseEncodedBytes": 270,
+      "encodedBytes": 427800,
+      "finishedAt": 156252.141982887
+    }
+  ],
+  "resourceTimings": [
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/index-Booi3P-Q.js",
+      "start": 5.199999988079071,
+      "duration": 6.200000017881393,
+      "transferSize": 60135,
+      "encodedBodySize": 59835,
+      "decodedBodySize": 183896,
+      "initiatorType": "script"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/index-D45q4dot.css",
+      "start": 5.4000000059604645,
+      "duration": 2.5999999940395355,
+      "transferSize": 5491,
+      "encodedBodySize": 5191,
+      "decodedBodySize": 19136,
+      "initiatorType": "link"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/linen.png",
+      "start": 9,
+      "duration": 1.0999999940395355,
+      "transferSize": 9683,
+      "encodedBodySize": 9383,
+      "decodedBodySize": 9383,
+      "initiatorType": "css"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/paper.png",
+      "start": 20.5,
+      "duration": 1.0999999940395355,
+      "transferSize": 24711,
+      "encodedBodySize": 24411,
+      "decodedBodySize": 24411,
+      "initiatorType": "css"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v6/01-courtyard.png",
+      "start": 27.299999982118607,
+      "duration": 11.100000023841858,
+      "transferSize": 2989445,
+      "encodedBodySize": 2989145,
+      "decodedBodySize": 2989145,
+      "initiatorType": "css"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/leaves.png",
+      "start": 27.5,
+      "duration": 7.5999999940395355,
+      "transferSize": 857043,
+      "encodedBodySize": 856743,
+      "decodedBodySize": 856743,
+      "initiatorType": "css"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-garden.webp",
+      "start": 29.799999982118607,
+      "duration": 8.600000023841858,
+      "transferSize": 16664,
+      "encodedBodySize": 16364,
+      "decodedBodySize": 16364,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-well.webp",
+      "start": 29.799999982118607,
+      "duration": 11,
+      "transferSize": 11448,
+      "encodedBodySize": 11148,
+      "decodedBodySize": 11148,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-bakery.webp",
+      "start": 29.900000005960464,
+      "duration": 10.899999976158142,
+      "transferSize": 12616,
+      "encodedBodySize": 12316,
+      "decodedBodySize": 12316,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-stream.webp",
+      "start": 29.900000005960464,
+      "duration": 11,
+      "transferSize": 14146,
+      "encodedBodySize": 13846,
+      "decodedBodySize": 13846,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-mill.webp",
+      "start": 29.900000005960464,
+      "duration": 11.099999994039536,
+      "transferSize": 38744,
+      "encodedBodySize": 38444,
+      "decodedBodySize": 38444,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-post.webp",
+      "start": 30,
+      "duration": 11.299999982118607,
+      "transferSize": 16902,
+      "encodedBodySize": 16602,
+      "decodedBodySize": 16602,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/completed-forest.webp",
+      "start": 30.099999994039536,
+      "duration": 11.199999988079071,
+      "transferSize": 14572,
+      "encodedBodySize": 14272,
+      "decodedBodySize": 14272,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/audio/music/manifest.json",
+      "start": 114.2999999821186,
+      "duration": 1.300000011920929,
+      "transferSize": 782,
+      "encodedBodySize": 482,
+      "decodedBodySize": 482,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/audio/sfx/click.ogg",
+      "start": 116.59999999403954,
+      "duration": 1.699999988079071,
+      "transferSize": 4115,
+      "encodedBodySize": 3815,
+      "decodedBodySize": 3815,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/map-wide.webp",
+      "start": 118.19999998807907,
+      "duration": 8.300000011920929,
+      "transferSize": 2193546,
+      "encodedBodySize": 2193246,
+      "decodedBodySize": 2193246,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-map-v2/map-base.webp",
+      "start": 118.2999999821186,
+      "duration": 10.700000017881393,
+      "transferSize": 774140,
+      "encodedBodySize": 773840,
+      "decodedBodySize": 773840,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/audio/music/village.ogg",
+      "start": 120,
+      "duration": 11.400000005960464,
+      "transferSize": 1192627,
+      "encodedBodySize": 1192327,
+      "decodedBodySize": 1192327,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/manifest.json",
+      "start": 160.69999998807907,
+      "duration": 6,
+      "transferSize": 23516,
+      "encodedBodySize": 23216,
+      "decodedBodySize": 738924,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/audio/sfx/water.ogg",
+      "start": 161,
+      "duration": 1.2999999821186066,
+      "transferSize": 10546,
+      "encodedBodySize": 10246,
+      "decodedBodySize": 10246,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp",
+      "start": 161.7999999821186,
+      "duration": 3.600000023841858,
+      "transferSize": 1153316,
+      "encodedBodySize": 1153016,
+      "decodedBodySize": 1153016,
+      "initiatorType": "css"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/ui/v7/wood.png",
+      "start": 162.09999999403954,
+      "duration": 4.0999999940395355,
+      "transferSize": 18444,
+      "encodedBodySize": 18144,
+      "decodedBodySize": 18144,
+      "initiatorType": "css"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+      "start": 171.69999998807907,
+      "duration": 15.599999994039536,
+      "transferSize": 513209,
+      "encodedBodySize": 512909,
+      "decodedBodySize": 512909,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+      "start": 171.7999999821186,
+      "duration": 10.900000005960464,
+      "transferSize": 901023,
+      "encodedBodySize": 900723,
+      "decodedBodySize": 900723,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+      "start": 171.7999999821186,
+      "duration": 11.100000023841858,
+      "transferSize": 866061,
+      "encodedBodySize": 865761,
+      "decodedBodySize": 865761,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/wide.webp",
+      "start": 171.90000000596046,
+      "duration": 60.5,
+      "transferSize": 5703512,
+      "encodedBodySize": 5703212,
+      "decodedBodySize": 5703212,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/audio/music/water.ogg",
+      "start": 171.90000000596046,
+      "duration": 15.5,
+      "transferSize": 1236217,
+      "encodedBodySize": 1235917,
+      "decodedBodySize": 1235917,
+      "initiatorType": "fetch"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/wheel-110.png",
+      "start": 172,
+      "duration": 21.19999998807907,
+      "transferSize": 25294,
+      "encodedBodySize": 24994,
+      "decodedBodySize": 24994,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-v1/optimized/miller-idle.webp",
+      "start": 172,
+      "duration": 21.400000005960464,
+      "transferSize": 40656,
+      "encodedBodySize": 40356,
+      "decodedBodySize": 40356,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-v1/optimized/squirrel-idle.webp",
+      "start": 172,
+      "duration": 21.799999982118607,
+      "transferSize": 80476,
+      "encodedBodySize": 80176,
+      "decodedBodySize": 80176,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/road-v1/charoite.webp",
+      "start": 172,
+      "duration": 26.69999998807907,
+      "transferSize": 1573218,
+      "encodedBodySize": 1572918,
+      "decodedBodySize": 1572918,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/background.webp",
+      "start": 172,
+      "duration": 46.400000005960464,
+      "transferSize": 2542488,
+      "encodedBodySize": 2542188,
+      "decodedBodySize": 2542188,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-v1/optimized/ruta-idle-pilot.webp",
+      "start": 172.09999999403954,
+      "duration": 28.19999998807907,
+      "transferSize": 47852,
+      "encodedBodySize": 47552,
+      "decodedBodySize": 47552,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-02.png",
+      "start": 172.19999998807907,
+      "duration": 29.599999994039536,
+      "transferSize": 452822,
+      "encodedBodySize": 452522,
+      "decodedBodySize": 452522,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-01.png",
+      "start": 172.19999998807907,
+      "duration": 29.700000017881393,
+      "transferSize": 457293,
+      "encodedBodySize": 456993,
+      "decodedBodySize": 456993,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-06.png",
+      "start": 172.19999998807907,
+      "duration": 32.20000001788139,
+      "transferSize": 449299,
+      "encodedBodySize": 448999,
+      "decodedBodySize": 448999,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-05.png",
+      "start": 172.19999998807907,
+      "duration": 32.30000001192093,
+      "transferSize": 453274,
+      "encodedBodySize": 452974,
+      "decodedBodySize": 452974,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-03.png",
+      "start": 172.19999998807907,
+      "duration": 34.5,
+      "transferSize": 457877,
+      "encodedBodySize": 457577,
+      "decodedBodySize": 457577,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-04.png",
+      "start": 172.19999998807907,
+      "duration": 34.5,
+      "transferSize": 455843,
+      "encodedBodySize": 455543,
+      "decodedBodySize": 455543,
+      "initiatorType": "image"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-e.webp",
+      "start": 249.40000000596046,
+      "duration": 6.299999982118607,
+      "transferSize": 450252,
+      "encodedBodySize": 449952,
+      "decodedBodySize": 449952,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-se.webp",
+      "start": 249.40000000596046,
+      "duration": 7.5999999940395355,
+      "transferSize": 482342,
+      "encodedBodySize": 482042,
+      "decodedBodySize": 482042,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-sw.webp",
+      "start": 249.5,
+      "duration": 7.5,
+      "transferSize": 478068,
+      "encodedBodySize": 477768,
+      "decodedBodySize": 477768,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-w.webp",
+      "start": 249.5,
+      "duration": 7.199999988079071,
+      "transferSize": 448154,
+      "encodedBodySize": 447854,
+      "decodedBodySize": 447854,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-nw.webp",
+      "start": 249.5,
+      "duration": 7.299999982118607,
+      "transferSize": 431822,
+      "encodedBodySize": 431522,
+      "decodedBodySize": 431522,
+      "initiatorType": "img"
+    },
+    {
+      "name": "http://127.0.0.1:5298/ruby-village/assets/characters-walk-v1/animated-v3/base-ne.webp",
+      "start": 249.5,
+      "duration": 7.4000000059604645,
+      "transferSize": 427830,
+      "encodedBodySize": 427530,
+      "decodedBodySize": 427530,
+      "initiatorType": "img"
+    }
+  ],
+  "visibleRasterDecodeProbeAfterColdSnapshot": [
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/wide.webp",
+      "width": 3272,
+      "height": 1200,
+      "rgbaPixelEstimate": 15705600
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/background.webp",
+      "width": 1672,
+      "height": 941,
+      "rgbaPixelEstimate": 6293408
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/chapter-1/v9/mill/wheel-110.png",
+      "width": 110,
+      "height": 110,
+      "rgbaPixelEstimate": 48400
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+      "width": 433,
+      "height": 1000,
+      "rgbaPixelEstimate": 1732000
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+      "width": 893,
+      "height": 904,
+      "rgbaPixelEstimate": 3229088
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-v1/optimized/ruta-idle-pilot.webp",
+      "width": 244,
+      "height": 512,
+      "rgbaPixelEstimate": 499712
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-02.png",
+      "width": 512,
+      "height": 512,
+      "rgbaPixelEstimate": 1048576
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-01.png",
+      "width": 512,
+      "height": 512,
+      "rgbaPixelEstimate": 1048576
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-06.png",
+      "width": 512,
+      "height": 512,
+      "rgbaPixelEstimate": 1048576
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-05.png",
+      "width": 512,
+      "height": 512,
+      "rgbaPixelEstimate": 1048576
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-03.png",
+      "width": 512,
+      "height": 512,
+      "rgbaPixelEstimate": 1048576
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/level-1/v5/tile-04.png",
+      "width": 512,
+      "height": 512,
+      "rgbaPixelEstimate": 1048576
+    }
+  ],
+  "estimatedVisibleRgbaPixelBytes": 33799664,
+  "phases": {
+    "drag": {
+      "rafIntervals": {
+        "count": 126,
+        "p50Ms": 16.699999999999818,
+        "p95Ms": 16.799999999999955,
+        "maxMs": 16.800000000000182,
+        "over50ms": 0,
+        "over100ms": 0
+      },
+      "firstTimestamp": 1032.8,
+      "lastTimestamp": 3132.8,
+      "longTasks": {
+        "count": 0,
+        "p50Ms": null,
+        "p95Ms": null,
+        "maxMs": null,
+        "over50ms": 0,
+        "over100ms": 0
+      }
+    },
+    "walk": {
+      "rafIntervals": {
+        "count": 1314,
+        "p50Ms": 16.69999999999891,
+        "p95Ms": 16.700000000000728,
+        "maxMs": 16.80000000000291,
+        "over50ms": 0,
+        "over100ms": 0
+      },
+      "firstTimestamp": 3966,
+      "lastTimestamp": 25865.2,
+      "longTasks": {
+        "count": 0,
+        "p50Ms": null,
+        "p95Ms": null,
+        "maxMs": null,
+        "over50ms": 0,
+        "over100ms": 0
+      }
+    }
+  },
+  "rawFramesAndLongTasks": {
+    "frames": [
+      {
+        "phase": "drag",
+        "t": 1032.8
+      },
+      {
+        "phase": "drag",
+        "t": 1049.5
+      },
+      {
+        "phase": "drag",
+        "t": 1066.1
+      },
+      {
+        "phase": "drag",
+        "t": 1082.9
+      },
+      {
+        "phase": "drag",
+        "t": 1099.5
+      },
+      {
+        "phase": "drag",
+        "t": 1116.1
+      },
+      {
+        "phase": "drag",
+        "t": 1132.8
+      },
+      {
+        "phase": "drag",
+        "t": 1149.5
+      },
+      {
+        "phase": "drag",
+        "t": 1166.2
+      },
+      {
+        "phase": "drag",
+        "t": 1182.8
+      },
+      {
+        "phase": "drag",
+        "t": 1199.4
+      },
+      {
+        "phase": "drag",
+        "t": 1216.2
+      },
+      {
+        "phase": "drag",
+        "t": 1232.8
+      },
+      {
+        "phase": "drag",
+        "t": 1249.4
+      },
+      {
+        "phase": "drag",
+        "t": 1266.2
+      },
+      {
+        "phase": "drag",
+        "t": 1282.8
+      },
+      {
+        "phase": "drag",
+        "t": 1299.5
+      },
+      {
+        "phase": "drag",
+        "t": 1316.2
+      },
+      {
+        "phase": "drag",
+        "t": 1332.8
+      },
+      {
+        "phase": "drag",
+        "t": 1349.5
+      },
+      {
+        "phase": "drag",
+        "t": 1366.2
+      },
+      {
+        "phase": "drag",
+        "t": 1382.8
+      },
+      {
+        "phase": "drag",
+        "t": 1399.5
+      },
+      {
+        "phase": "drag",
+        "t": 1416.2
+      },
+      {
+        "phase": "drag",
+        "t": 1432.8
+      },
+      {
+        "phase": "drag",
+        "t": 1449.4
+      },
+      {
+        "phase": "drag",
+        "t": 1466.2
+      },
+      {
+        "phase": "drag",
+        "t": 1482.8
+      },
+      {
+        "phase": "drag",
+        "t": 1499.4
+      },
+      {
+        "phase": "drag",
+        "t": 1516.1
+      },
+      {
+        "phase": "drag",
+        "t": 1532.8
+      },
+      {
+        "phase": "drag",
+        "t": 1549.5
+      },
+      {
+        "phase": "drag",
+        "t": 1566.2
+      },
+      {
+        "phase": "drag",
+        "t": 1582.8
+      },
+      {
+        "phase": "drag",
+        "t": 1599.4
+      },
+      {
+        "phase": "drag",
+        "t": 1616.1
+      },
+      {
+        "phase": "drag",
+        "t": 1632.7
+      },
+      {
+        "phase": "drag",
+        "t": 1649.5
+      },
+      {
+        "phase": "drag",
+        "t": 1666.1
+      },
+      {
+        "phase": "drag",
+        "t": 1682.8
+      },
+      {
+        "phase": "drag",
+        "t": 1699.4
+      },
+      {
+        "phase": "drag",
+        "t": 1716.2
+      },
+      {
+        "phase": "drag",
+        "t": 1732.8
+      },
+      {
+        "phase": "drag",
+        "t": 1749.4
+      },
+      {
+        "phase": "drag",
+        "t": 1766.1
+      },
+      {
+        "phase": "drag",
+        "t": 1782.8
+      },
+      {
+        "phase": "drag",
+        "t": 1799.4
+      },
+      {
+        "phase": "drag",
+        "t": 1816.1
+      },
+      {
+        "phase": "drag",
+        "t": 1832.8
+      },
+      {
+        "phase": "drag",
+        "t": 1849.4
+      },
+      {
+        "phase": "drag",
+        "t": 1866.1
+      },
+      {
+        "phase": "drag",
+        "t": 1882.8
+      },
+      {
+        "phase": "drag",
+        "t": 1899.4
+      },
+      {
+        "phase": "drag",
+        "t": 1916.1
+      },
+      {
+        "phase": "drag",
+        "t": 1932.8
+      },
+      {
+        "phase": "drag",
+        "t": 1949.5
+      },
+      {
+        "phase": "drag",
+        "t": 1966.1
+      },
+      {
+        "phase": "drag",
+        "t": 1982.7
+      },
+      {
+        "phase": "drag",
+        "t": 1999.5
+      },
+      {
+        "phase": "drag",
+        "t": 2016.1
+      },
+      {
+        "phase": "drag",
+        "t": 2032.8
+      },
+      {
+        "phase": "drag",
+        "t": 2049.5
+      },
+      {
+        "phase": "drag",
+        "t": 2066.1
+      },
+      {
+        "phase": "drag",
+        "t": 2082.8
+      },
+      {
+        "phase": "drag",
+        "t": 2099.4
+      },
+      {
+        "phase": "drag",
+        "t": 2116.1
+      },
+      {
+        "phase": "drag",
+        "t": 2132.8
+      },
+      {
+        "phase": "drag",
+        "t": 2149.5
+      },
+      {
+        "phase": "drag",
+        "t": 2166.1
+      },
+      {
+        "phase": "drag",
+        "t": 2182.8
+      },
+      {
+        "phase": "drag",
+        "t": 2199.4
+      },
+      {
+        "phase": "drag",
+        "t": 2216.1
+      },
+      {
+        "phase": "drag",
+        "t": 2232.8
+      },
+      {
+        "phase": "drag",
+        "t": 2249.4
+      },
+      {
+        "phase": "drag",
+        "t": 2266.1
+      },
+      {
+        "phase": "drag",
+        "t": 2282.7
+      },
+      {
+        "phase": "drag",
+        "t": 2299.4
+      },
+      {
+        "phase": "drag",
+        "t": 2316.1
+      },
+      {
+        "phase": "drag",
+        "t": 2332.7
+      },
+      {
+        "phase": "drag",
+        "t": 2349.4
+      },
+      {
+        "phase": "drag",
+        "t": 2366.1
+      },
+      {
+        "phase": "drag",
+        "t": 2382.7
+      },
+      {
+        "phase": "drag",
+        "t": 2399.5
+      },
+      {
+        "phase": "drag",
+        "t": 2416.1
+      },
+      {
+        "phase": "drag",
+        "t": 2432.7
+      },
+      {
+        "phase": "drag",
+        "t": 2449.4
+      },
+      {
+        "phase": "drag",
+        "t": 2466.1
+      },
+      {
+        "phase": "drag",
+        "t": 2482.8
+      },
+      {
+        "phase": "drag",
+        "t": 2499.4
+      },
+      {
+        "phase": "drag",
+        "t": 2516.1
+      },
+      {
+        "phase": "drag",
+        "t": 2532.7
+      },
+      {
+        "phase": "drag",
+        "t": 2549.5
+      },
+      {
+        "phase": "drag",
+        "t": 2566.1
+      },
+      {
+        "phase": "drag",
+        "t": 2582.8
+      },
+      {
+        "phase": "drag",
+        "t": 2599.5
+      },
+      {
+        "phase": "drag",
+        "t": 2616.1
+      },
+      {
+        "phase": "drag",
+        "t": 2632.8
+      },
+      {
+        "phase": "drag",
+        "t": 2649.5
+      },
+      {
+        "phase": "drag",
+        "t": 2666
+      },
+      {
+        "phase": "drag",
+        "t": 2682.7
+      },
+      {
+        "phase": "drag",
+        "t": 2699.4
+      },
+      {
+        "phase": "drag",
+        "t": 2716.1
+      },
+      {
+        "phase": "drag",
+        "t": 2732.7
+      },
+      {
+        "phase": "drag",
+        "t": 2749.4
+      },
+      {
+        "phase": "drag",
+        "t": 2766.1
+      },
+      {
+        "phase": "drag",
+        "t": 2782.7
+      },
+      {
+        "phase": "drag",
+        "t": 2799.4
+      },
+      {
+        "phase": "drag",
+        "t": 2816
+      },
+      {
+        "phase": "drag",
+        "t": 2832.7
+      },
+      {
+        "phase": "drag",
+        "t": 2849.4
+      },
+      {
+        "phase": "drag",
+        "t": 2866.1
+      },
+      {
+        "phase": "drag",
+        "t": 2882.7
+      },
+      {
+        "phase": "drag",
+        "t": 2899.4
+      },
+      {
+        "phase": "drag",
+        "t": 2916
+      },
+      {
+        "phase": "drag",
+        "t": 2932.8
+      },
+      {
+        "phase": "drag",
+        "t": 2949.4
+      },
+      {
+        "phase": "drag",
+        "t": 2966.1
+      },
+      {
+        "phase": "drag",
+        "t": 2982.8
+      },
+      {
+        "phase": "drag",
+        "t": 2999.4
+      },
+      {
+        "phase": "drag",
+        "t": 3016.1
+      },
+      {
+        "phase": "drag",
+        "t": 3032.8
+      },
+      {
+        "phase": "drag",
+        "t": 3049.4
+      },
+      {
+        "phase": "drag",
+        "t": 3066
+      },
+      {
+        "phase": "drag",
+        "t": 3082.7
+      },
+      {
+        "phase": "drag",
+        "t": 3099.4
+      },
+      {
+        "phase": "drag",
+        "t": 3116
+      },
+      {
+        "phase": "drag",
+        "t": 3132.8
+      },
+      {
+        "phase": "walk",
+        "t": 3966
+      },
+      {
+        "phase": "walk",
+        "t": 3982.7
+      },
+      {
+        "phase": "walk",
+        "t": 3999.4
+      },
+      {
+        "phase": "walk",
+        "t": 4016
+      },
+      {
+        "phase": "walk",
+        "t": 4032.7
+      },
+      {
+        "phase": "walk",
+        "t": 4049.4
+      },
+      {
+        "phase": "walk",
+        "t": 4066
+      },
+      {
+        "phase": "walk",
+        "t": 4082.7
+      },
+      {
+        "phase": "walk",
+        "t": 4099.3
+      },
+      {
+        "phase": "walk",
+        "t": 4116
+      },
+      {
+        "phase": "walk",
+        "t": 4132.6
+      },
+      {
+        "phase": "walk",
+        "t": 4149.3
+      },
+      {
+        "phase": "walk",
+        "t": 4166
+      },
+      {
+        "phase": "walk",
+        "t": 4182.7
+      },
+      {
+        "phase": "walk",
+        "t": 4199.4
+      },
+      {
+        "phase": "walk",
+        "t": 4216
+      },
+      {
+        "phase": "walk",
+        "t": 4232.7
+      },
+      {
+        "phase": "walk",
+        "t": 4249.4
+      },
+      {
+        "phase": "walk",
+        "t": 4266
+      },
+      {
+        "phase": "walk",
+        "t": 4282.7
+      },
+      {
+        "phase": "walk",
+        "t": 4299.4
+      },
+      {
+        "phase": "walk",
+        "t": 4316
+      },
+      {
+        "phase": "walk",
+        "t": 4332.7
+      },
+      {
+        "phase": "walk",
+        "t": 4349.4
+      },
+      {
+        "phase": "walk",
+        "t": 4366
+      },
+      {
+        "phase": "walk",
+        "t": 4382.6
+      },
+      {
+        "phase": "walk",
+        "t": 4399.3
+      },
+      {
+        "phase": "walk",
+        "t": 4416
+      },
+      {
+        "phase": "walk",
+        "t": 4432.7
+      },
+      {
+        "phase": "walk",
+        "t": 4449.3
+      },
+      {
+        "phase": "walk",
+        "t": 4466
+      },
+      {
+        "phase": "walk",
+        "t": 4482.7
+      },
+      {
+        "phase": "walk",
+        "t": 4499.3
+      },
+      {
+        "phase": "walk",
+        "t": 4516
+      },
+      {
+        "phase": "walk",
+        "t": 4532.7
+      },
+      {
+        "phase": "walk",
+        "t": 4549.3
+      },
+      {
+        "phase": "walk",
+        "t": 4566
+      },
+      {
+        "phase": "walk",
+        "t": 4582.7
+      },
+      {
+        "phase": "walk",
+        "t": 4599.4
+      },
+      {
+        "phase": "walk",
+        "t": 4616
+      },
+      {
+        "phase": "walk",
+        "t": 4632.7
+      },
+      {
+        "phase": "walk",
+        "t": 4649.3
+      },
+      {
+        "phase": "walk",
+        "t": 4666
+      },
+      {
+        "phase": "walk",
+        "t": 4682.7
+      },
+      {
+        "phase": "walk",
+        "t": 4699.3
+      },
+      {
+        "phase": "walk",
+        "t": 4716
+      },
+      {
+        "phase": "walk",
+        "t": 4732.7
+      },
+      {
+        "phase": "walk",
+        "t": 4749.4
+      },
+      {
+        "phase": "walk",
+        "t": 4766
+      },
+      {
+        "phase": "walk",
+        "t": 4782.7
+      },
+      {
+        "phase": "walk",
+        "t": 4799.3
+      },
+      {
+        "phase": "walk",
+        "t": 4815.9
+      },
+      {
+        "phase": "walk",
+        "t": 4832.6
+      },
+      {
+        "phase": "walk",
+        "t": 4849.4
+      },
+      {
+        "phase": "walk",
+        "t": 4866
+      },
+      {
+        "phase": "walk",
+        "t": 4882.6
+      },
+      {
+        "phase": "walk",
+        "t": 4899.3
+      },
+      {
+        "phase": "walk",
+        "t": 4916
+      },
+      {
+        "phase": "walk",
+        "t": 4932.7
+      },
+      {
+        "phase": "walk",
+        "t": 4949.3
+      },
+      {
+        "phase": "walk",
+        "t": 4966
+      },
+      {
+        "phase": "walk",
+        "t": 4982.7
+      },
+      {
+        "phase": "walk",
+        "t": 4999.4
+      },
+      {
+        "phase": "walk",
+        "t": 5016
+      },
+      {
+        "phase": "walk",
+        "t": 5032.6
+      },
+      {
+        "phase": "walk",
+        "t": 5049.3
+      },
+      {
+        "phase": "walk",
+        "t": 5066
+      },
+      {
+        "phase": "walk",
+        "t": 5082.7
+      },
+      {
+        "phase": "walk",
+        "t": 5099.4
+      },
+      {
+        "phase": "walk",
+        "t": 5115.9
+      },
+      {
+        "phase": "walk",
+        "t": 5132.7
+      },
+      {
+        "phase": "walk",
+        "t": 5149.4
+      },
+      {
+        "phase": "walk",
+        "t": 5166
+      },
+      {
+        "phase": "walk",
+        "t": 5182.6
+      },
+      {
+        "phase": "walk",
+        "t": 5199.3
+      },
+      {
+        "phase": "walk",
+        "t": 5216
+      },
+      {
+        "phase": "walk",
+        "t": 5232.7
+      },
+      {
+        "phase": "walk",
+        "t": 5249.3
+      },
+      {
+        "phase": "walk",
+        "t": 5265.9
+      },
+      {
+        "phase": "walk",
+        "t": 5282.6
+      },
+      {
+        "phase": "walk",
+        "t": 5299.3
+      },
+      {
+        "phase": "walk",
+        "t": 5316
+      },
+      {
+        "phase": "walk",
+        "t": 5332.7
+      },
+      {
+        "phase": "walk",
+        "t": 5349.3
+      },
+      {
+        "phase": "walk",
+        "t": 5366
+      },
+      {
+        "phase": "walk",
+        "t": 5382.6
+      },
+      {
+        "phase": "walk",
+        "t": 5399.3
+      },
+      {
+        "phase": "walk",
+        "t": 5416
+      },
+      {
+        "phase": "walk",
+        "t": 5432.6
+      },
+      {
+        "phase": "walk",
+        "t": 5449.3
+      },
+      {
+        "phase": "walk",
+        "t": 5466
+      },
+      {
+        "phase": "walk",
+        "t": 5482.6
+      },
+      {
+        "phase": "walk",
+        "t": 5499.3
+      },
+      {
+        "phase": "walk",
+        "t": 5516
+      },
+      {
+        "phase": "walk",
+        "t": 5532.6
+      },
+      {
+        "phase": "walk",
+        "t": 5549.3
+      },
+      {
+        "phase": "walk",
+        "t": 5566
+      },
+      {
+        "phase": "walk",
+        "t": 5582.6
+      },
+      {
+        "phase": "walk",
+        "t": 5599.3
+      },
+      {
+        "phase": "walk",
+        "t": 5615.9
+      },
+      {
+        "phase": "walk",
+        "t": 5632.6
+      },
+      {
+        "phase": "walk",
+        "t": 5649.3
+      },
+      {
+        "phase": "walk",
+        "t": 5666
+      },
+      {
+        "phase": "walk",
+        "t": 5682.6
+      },
+      {
+        "phase": "walk",
+        "t": 5699.3
+      },
+      {
+        "phase": "walk",
+        "t": 5716
+      },
+      {
+        "phase": "walk",
+        "t": 5732.6
+      },
+      {
+        "phase": "walk",
+        "t": 5749.3
+      },
+      {
+        "phase": "walk",
+        "t": 5766
+      },
+      {
+        "phase": "walk",
+        "t": 5782.7
+      },
+      {
+        "phase": "walk",
+        "t": 5799.3
+      },
+      {
+        "phase": "walk",
+        "t": 5816
+      },
+      {
+        "phase": "walk",
+        "t": 5832.6
+      },
+      {
+        "phase": "walk",
+        "t": 5849.3
+      },
+      {
+        "phase": "walk",
+        "t": 5866
+      },
+      {
+        "phase": "walk",
+        "t": 5882.6
+      },
+      {
+        "phase": "walk",
+        "t": 5899.3
+      },
+      {
+        "phase": "walk",
+        "t": 5915.9
+      },
+      {
+        "phase": "walk",
+        "t": 5932.6
+      },
+      {
+        "phase": "walk",
+        "t": 5949.3
+      },
+      {
+        "phase": "walk",
+        "t": 5966
+      },
+      {
+        "phase": "walk",
+        "t": 5982.6
+      },
+      {
+        "phase": "walk",
+        "t": 5999.2
+      },
+      {
+        "phase": "walk",
+        "t": 6015.9
+      },
+      {
+        "phase": "walk",
+        "t": 6032.6
+      },
+      {
+        "phase": "walk",
+        "t": 6049.3
+      },
+      {
+        "phase": "walk",
+        "t": 6065.9
+      },
+      {
+        "phase": "walk",
+        "t": 6082.6
+      },
+      {
+        "phase": "walk",
+        "t": 6099.3
+      },
+      {
+        "phase": "walk",
+        "t": 6116
+      },
+      {
+        "phase": "walk",
+        "t": 6132.6
+      },
+      {
+        "phase": "walk",
+        "t": 6149.3
+      },
+      {
+        "phase": "walk",
+        "t": 6165.9
+      },
+      {
+        "phase": "walk",
+        "t": 6182.6
+      },
+      {
+        "phase": "walk",
+        "t": 6199.3
+      },
+      {
+        "phase": "walk",
+        "t": 6215.9
+      },
+      {
+        "phase": "walk",
+        "t": 6232.6
+      },
+      {
+        "phase": "walk",
+        "t": 6249.2
+      },
+      {
+        "phase": "walk",
+        "t": 6265.9
+      },
+      {
+        "phase": "walk",
+        "t": 6282.6
+      },
+      {
+        "phase": "walk",
+        "t": 6299.3
+      },
+      {
+        "phase": "walk",
+        "t": 6315.9
+      },
+      {
+        "phase": "walk",
+        "t": 6332.6
+      },
+      {
+        "phase": "walk",
+        "t": 6349.3
+      },
+      {
+        "phase": "walk",
+        "t": 6365.9
+      },
+      {
+        "phase": "walk",
+        "t": 6382.6
+      },
+      {
+        "phase": "walk",
+        "t": 6399.2
+      },
+      {
+        "phase": "walk",
+        "t": 6415.9
+      },
+      {
+        "phase": "walk",
+        "t": 6432.6
+      },
+      {
+        "phase": "walk",
+        "t": 6449.3
+      },
+      {
+        "phase": "walk",
+        "t": 6465.9
+      },
+      {
+        "phase": "walk",
+        "t": 6482.6
+      },
+      {
+        "phase": "walk",
+        "t": 6499.3
+      },
+      {
+        "phase": "walk",
+        "t": 6516
+      },
+      {
+        "phase": "walk",
+        "t": 6532.6
+      },
+      {
+        "phase": "walk",
+        "t": 6549.2
+      },
+      {
+        "phase": "walk",
+        "t": 6565.9
+      },
+      {
+        "phase": "walk",
+        "t": 6582.6
+      },
+      {
+        "phase": "walk",
+        "t": 6599.3
+      },
+      {
+        "phase": "walk",
+        "t": 6615.9
+      },
+      {
+        "phase": "walk",
+        "t": 6632.5
+      },
+      {
+        "phase": "walk",
+        "t": 6649.2
+      },
+      {
+        "phase": "walk",
+        "t": 6665.9
+      },
+      {
+        "phase": "walk",
+        "t": 6682.6
+      },
+      {
+        "phase": "walk",
+        "t": 6699.2
+      },
+      {
+        "phase": "walk",
+        "t": 6715.9
+      },
+      {
+        "phase": "walk",
+        "t": 6732.6
+      },
+      {
+        "phase": "walk",
+        "t": 6749.3
+      },
+      {
+        "phase": "walk",
+        "t": 6765.9
+      },
+      {
+        "phase": "walk",
+        "t": 6782.6
+      },
+      {
+        "phase": "walk",
+        "t": 6799.2
+      },
+      {
+        "phase": "walk",
+        "t": 6815.9
+      },
+      {
+        "phase": "walk",
+        "t": 6832.6
+      },
+      {
+        "phase": "walk",
+        "t": 6849.3
+      },
+      {
+        "phase": "walk",
+        "t": 6866
+      },
+      {
+        "phase": "walk",
+        "t": 6882.6
+      },
+      {
+        "phase": "walk",
+        "t": 6899.2
+      },
+      {
+        "phase": "walk",
+        "t": 6915.9
+      },
+      {
+        "phase": "walk",
+        "t": 6932.6
+      },
+      {
+        "phase": "walk",
+        "t": 6949.2
+      },
+      {
+        "phase": "walk",
+        "t": 6965.9
+      },
+      {
+        "phase": "walk",
+        "t": 6982.5
+      },
+      {
+        "phase": "walk",
+        "t": 6999.2
+      },
+      {
+        "phase": "walk",
+        "t": 7015.9
+      },
+      {
+        "phase": "walk",
+        "t": 7032.5
+      },
+      {
+        "phase": "walk",
+        "t": 7049.2
+      },
+      {
+        "phase": "walk",
+        "t": 7065.9
+      },
+      {
+        "phase": "walk",
+        "t": 7082.5
+      },
+      {
+        "phase": "walk",
+        "t": 7099.2
+      },
+      {
+        "phase": "walk",
+        "t": 7115.9
+      },
+      {
+        "phase": "walk",
+        "t": 7132.5
+      },
+      {
+        "phase": "walk",
+        "t": 7149.2
+      },
+      {
+        "phase": "walk",
+        "t": 7165.9
+      },
+      {
+        "phase": "walk",
+        "t": 7182.5
+      },
+      {
+        "phase": "walk",
+        "t": 7199.3
+      },
+      {
+        "phase": "walk",
+        "t": 7215.9
+      },
+      {
+        "phase": "walk",
+        "t": 7232.6
+      },
+      {
+        "phase": "walk",
+        "t": 7249.3
+      },
+      {
+        "phase": "walk",
+        "t": 7265.9
+      },
+      {
+        "phase": "walk",
+        "t": 7282.6
+      },
+      {
+        "phase": "walk",
+        "t": 7299.3
+      },
+      {
+        "phase": "walk",
+        "t": 7315.9
+      },
+      {
+        "phase": "walk",
+        "t": 7332.6
+      },
+      {
+        "phase": "walk",
+        "t": 7349.3
+      },
+      {
+        "phase": "walk",
+        "t": 7365.9
+      },
+      {
+        "phase": "walk",
+        "t": 7382.5
+      },
+      {
+        "phase": "walk",
+        "t": 7399.2
+      },
+      {
+        "phase": "walk",
+        "t": 7415.8
+      },
+      {
+        "phase": "walk",
+        "t": 7432.5
+      },
+      {
+        "phase": "walk",
+        "t": 7449.2
+      },
+      {
+        "phase": "walk",
+        "t": 7465.9
+      },
+      {
+        "phase": "walk",
+        "t": 7482.5
+      },
+      {
+        "phase": "walk",
+        "t": 7499.2
+      },
+      {
+        "phase": "walk",
+        "t": 7515.9
+      },
+      {
+        "phase": "walk",
+        "t": 7532.6
+      },
+      {
+        "phase": "walk",
+        "t": 7549.2
+      },
+      {
+        "phase": "walk",
+        "t": 7565.9
+      },
+      {
+        "phase": "walk",
+        "t": 7582.5
+      },
+      {
+        "phase": "walk",
+        "t": 7599.2
+      },
+      {
+        "phase": "walk",
+        "t": 7615.9
+      },
+      {
+        "phase": "walk",
+        "t": 7632.6
+      },
+      {
+        "phase": "walk",
+        "t": 7649.2
+      },
+      {
+        "phase": "walk",
+        "t": 7665.8
+      },
+      {
+        "phase": "walk",
+        "t": 7682.5
+      },
+      {
+        "phase": "walk",
+        "t": 7699.2
+      },
+      {
+        "phase": "walk",
+        "t": 7715.9
+      },
+      {
+        "phase": "walk",
+        "t": 7732.6
+      },
+      {
+        "phase": "walk",
+        "t": 7749.2
+      },
+      {
+        "phase": "walk",
+        "t": 7765.9
+      },
+      {
+        "phase": "walk",
+        "t": 7782.6
+      },
+      {
+        "phase": "walk",
+        "t": 7799.2
+      },
+      {
+        "phase": "walk",
+        "t": 7815.9
+      },
+      {
+        "phase": "walk",
+        "t": 7832.6
+      },
+      {
+        "phase": "walk",
+        "t": 7849.2
+      },
+      {
+        "phase": "walk",
+        "t": 7865.9
+      },
+      {
+        "phase": "walk",
+        "t": 7882.5
+      },
+      {
+        "phase": "walk",
+        "t": 7899.2
+      },
+      {
+        "phase": "walk",
+        "t": 7915.8
+      },
+      {
+        "phase": "walk",
+        "t": 7932.5
+      },
+      {
+        "phase": "walk",
+        "t": 7949.2
+      },
+      {
+        "phase": "walk",
+        "t": 7965.8
+      },
+      {
+        "phase": "walk",
+        "t": 7982.6
+      },
+      {
+        "phase": "walk",
+        "t": 7999.2
+      },
+      {
+        "phase": "walk",
+        "t": 8015.9
+      },
+      {
+        "phase": "walk",
+        "t": 8032.6
+      },
+      {
+        "phase": "walk",
+        "t": 8049.2
+      },
+      {
+        "phase": "walk",
+        "t": 8065.8
+      },
+      {
+        "phase": "walk",
+        "t": 8082.6
+      },
+      {
+        "phase": "walk",
+        "t": 8099.2
+      },
+      {
+        "phase": "walk",
+        "t": 8115.9
+      },
+      {
+        "phase": "walk",
+        "t": 8132.6
+      },
+      {
+        "phase": "walk",
+        "t": 8149.2
+      },
+      {
+        "phase": "walk",
+        "t": 8165.8
+      },
+      {
+        "phase": "walk",
+        "t": 8182.6
+      },
+      {
+        "phase": "walk",
+        "t": 8199.2
+      },
+      {
+        "phase": "walk",
+        "t": 8215.9
+      },
+      {
+        "phase": "walk",
+        "t": 8232.5
+      },
+      {
+        "phase": "walk",
+        "t": 8249.2
+      },
+      {
+        "phase": "walk",
+        "t": 8265.8
+      },
+      {
+        "phase": "walk",
+        "t": 8282.5
+      },
+      {
+        "phase": "walk",
+        "t": 8299.2
+      },
+      {
+        "phase": "walk",
+        "t": 8315.9
+      },
+      {
+        "phase": "walk",
+        "t": 8332.5
+      },
+      {
+        "phase": "walk",
+        "t": 8349.2
+      },
+      {
+        "phase": "walk",
+        "t": 8365.9
+      },
+      {
+        "phase": "walk",
+        "t": 8382.5
+      },
+      {
+        "phase": "walk",
+        "t": 8399.2
+      },
+      {
+        "phase": "walk",
+        "t": 8415.8
+      },
+      {
+        "phase": "walk",
+        "t": 8432.5
+      },
+      {
+        "phase": "walk",
+        "t": 8449.2
+      },
+      {
+        "phase": "walk",
+        "t": 8465.9
+      },
+      {
+        "phase": "walk",
+        "t": 8482.6
+      },
+      {
+        "phase": "walk",
+        "t": 8499.2
+      },
+      {
+        "phase": "walk",
+        "t": 8515.9
+      },
+      {
+        "phase": "walk",
+        "t": 8532.6
+      },
+      {
+        "phase": "walk",
+        "t": 8549.2
+      },
+      {
+        "phase": "walk",
+        "t": 8565.9
+      },
+      {
+        "phase": "walk",
+        "t": 8582.5
+      },
+      {
+        "phase": "walk",
+        "t": 8599.2
+      },
+      {
+        "phase": "walk",
+        "t": 8615.8
+      },
+      {
+        "phase": "walk",
+        "t": 8632.5
+      },
+      {
+        "phase": "walk",
+        "t": 8649.2
+      },
+      {
+        "phase": "walk",
+        "t": 8665.8
+      },
+      {
+        "phase": "walk",
+        "t": 8682.5
+      },
+      {
+        "phase": "walk",
+        "t": 8699.2
+      },
+      {
+        "phase": "walk",
+        "t": 8715.9
+      },
+      {
+        "phase": "walk",
+        "t": 8732.5
+      },
+      {
+        "phase": "walk",
+        "t": 8749.1
+      },
+      {
+        "phase": "walk",
+        "t": 8765.8
+      },
+      {
+        "phase": "walk",
+        "t": 8782.5
+      },
+      {
+        "phase": "walk",
+        "t": 8799.2
+      },
+      {
+        "phase": "walk",
+        "t": 8815.8
+      },
+      {
+        "phase": "walk",
+        "t": 8832.5
+      },
+      {
+        "phase": "walk",
+        "t": 8849.1
+      },
+      {
+        "phase": "walk",
+        "t": 8865.9
+      },
+      {
+        "phase": "walk",
+        "t": 8882.5
+      },
+      {
+        "phase": "walk",
+        "t": 8899.1
+      },
+      {
+        "phase": "walk",
+        "t": 8915.8
+      },
+      {
+        "phase": "walk",
+        "t": 8932.5
+      },
+      {
+        "phase": "walk",
+        "t": 8949.1
+      },
+      {
+        "phase": "walk",
+        "t": 8965.8
+      },
+      {
+        "phase": "walk",
+        "t": 8982.4
+      },
+      {
+        "phase": "walk",
+        "t": 8999.1
+      },
+      {
+        "phase": "walk",
+        "t": 9015.8
+      },
+      {
+        "phase": "walk",
+        "t": 9032.5
+      },
+      {
+        "phase": "walk",
+        "t": 9049.1
+      },
+      {
+        "phase": "walk",
+        "t": 9065.8
+      },
+      {
+        "phase": "walk",
+        "t": 9082.5
+      },
+      {
+        "phase": "walk",
+        "t": 9099.2
+      },
+      {
+        "phase": "walk",
+        "t": 9115.8
+      },
+      {
+        "phase": "walk",
+        "t": 9132.5
+      },
+      {
+        "phase": "walk",
+        "t": 9149.1
+      },
+      {
+        "phase": "walk",
+        "t": 9165.8
+      },
+      {
+        "phase": "walk",
+        "t": 9182.5
+      },
+      {
+        "phase": "walk",
+        "t": 9199.2
+      },
+      {
+        "phase": "walk",
+        "t": 9215.8
+      },
+      {
+        "phase": "walk",
+        "t": 9232.5
+      },
+      {
+        "phase": "walk",
+        "t": 9249.1
+      },
+      {
+        "phase": "walk",
+        "t": 9265.8
+      },
+      {
+        "phase": "walk",
+        "t": 9282.5
+      },
+      {
+        "phase": "walk",
+        "t": 9299.2
+      },
+      {
+        "phase": "walk",
+        "t": 9315.8
+      },
+      {
+        "phase": "walk",
+        "t": 9332.5
+      },
+      {
+        "phase": "walk",
+        "t": 9349.1
+      },
+      {
+        "phase": "walk",
+        "t": 9365.8
+      },
+      {
+        "phase": "walk",
+        "t": 9382.4
+      },
+      {
+        "phase": "walk",
+        "t": 9399.2
+      },
+      {
+        "phase": "walk",
+        "t": 9415.8
+      },
+      {
+        "phase": "walk",
+        "t": 9432.4
+      },
+      {
+        "phase": "walk",
+        "t": 9449.1
+      },
+      {
+        "phase": "walk",
+        "t": 9465.8
+      },
+      {
+        "phase": "walk",
+        "t": 9482.5
+      },
+      {
+        "phase": "walk",
+        "t": 9499.2
+      },
+      {
+        "phase": "walk",
+        "t": 9515.8
+      },
+      {
+        "phase": "walk",
+        "t": 9532.4
+      },
+      {
+        "phase": "walk",
+        "t": 9549.1
+      },
+      {
+        "phase": "walk",
+        "t": 9565.8
+      },
+      {
+        "phase": "walk",
+        "t": 9582.5
+      },
+      {
+        "phase": "walk",
+        "t": 9599.1
+      },
+      {
+        "phase": "walk",
+        "t": 9615.8
+      },
+      {
+        "phase": "walk",
+        "t": 9632.5
+      },
+      {
+        "phase": "walk",
+        "t": 9649.1
+      },
+      {
+        "phase": "walk",
+        "t": 9665.8
+      },
+      {
+        "phase": "walk",
+        "t": 9682.5
+      },
+      {
+        "phase": "walk",
+        "t": 9699.2
+      },
+      {
+        "phase": "walk",
+        "t": 9715.8
+      },
+      {
+        "phase": "walk",
+        "t": 9732.5
+      },
+      {
+        "phase": "walk",
+        "t": 9749.1
+      },
+      {
+        "phase": "walk",
+        "t": 9765.8
+      },
+      {
+        "phase": "walk",
+        "t": 9782.5
+      },
+      {
+        "phase": "walk",
+        "t": 9799.1
+      },
+      {
+        "phase": "walk",
+        "t": 9815.8
+      },
+      {
+        "phase": "walk",
+        "t": 9832.4
+      },
+      {
+        "phase": "walk",
+        "t": 9849.1
+      },
+      {
+        "phase": "walk",
+        "t": 9865.8
+      },
+      {
+        "phase": "walk",
+        "t": 9882.4
+      },
+      {
+        "phase": "walk",
+        "t": 9899.1
+      },
+      {
+        "phase": "walk",
+        "t": 9915.8
+      },
+      {
+        "phase": "walk",
+        "t": 9932.5
+      },
+      {
+        "phase": "walk",
+        "t": 9949.2
+      },
+      {
+        "phase": "walk",
+        "t": 9965.8
+      },
+      {
+        "phase": "walk",
+        "t": 9982.5
+      },
+      {
+        "phase": "walk",
+        "t": 9999.1
+      },
+      {
+        "phase": "walk",
+        "t": 10015.8
+      },
+      {
+        "phase": "walk",
+        "t": 10032.4
+      },
+      {
+        "phase": "walk",
+        "t": 10049.1
+      },
+      {
+        "phase": "walk",
+        "t": 10065.8
+      },
+      {
+        "phase": "walk",
+        "t": 10082.4
+      },
+      {
+        "phase": "walk",
+        "t": 10099.1
+      },
+      {
+        "phase": "walk",
+        "t": 10115.8
+      },
+      {
+        "phase": "walk",
+        "t": 10132.4
+      },
+      {
+        "phase": "walk",
+        "t": 10149.1
+      },
+      {
+        "phase": "walk",
+        "t": 10165.8
+      },
+      {
+        "phase": "walk",
+        "t": 10182.4
+      },
+      {
+        "phase": "walk",
+        "t": 10199.2
+      },
+      {
+        "phase": "walk",
+        "t": 10215.7
+      },
+      {
+        "phase": "walk",
+        "t": 10232.4
+      },
+      {
+        "phase": "walk",
+        "t": 10249.1
+      },
+      {
+        "phase": "walk",
+        "t": 10265.8
+      },
+      {
+        "phase": "walk",
+        "t": 10282.4
+      },
+      {
+        "phase": "walk",
+        "t": 10299.1
+      },
+      {
+        "phase": "walk",
+        "t": 10315.7
+      },
+      {
+        "phase": "walk",
+        "t": 10332.4
+      },
+      {
+        "phase": "walk",
+        "t": 10349.1
+      },
+      {
+        "phase": "walk",
+        "t": 10365.8
+      },
+      {
+        "phase": "walk",
+        "t": 10382.5
+      },
+      {
+        "phase": "walk",
+        "t": 10399.1
+      },
+      {
+        "phase": "walk",
+        "t": 10415.8
+      },
+      {
+        "phase": "walk",
+        "t": 10432.4
+      },
+      {
+        "phase": "walk",
+        "t": 10449.1
+      },
+      {
+        "phase": "walk",
+        "t": 10465.7
+      },
+      {
+        "phase": "walk",
+        "t": 10482.4
+      },
+      {
+        "phase": "walk",
+        "t": 10499.1
+      },
+      {
+        "phase": "walk",
+        "t": 10515.8
+      },
+      {
+        "phase": "walk",
+        "t": 10532.4
+      },
+      {
+        "phase": "walk",
+        "t": 10549.1
+      },
+      {
+        "phase": "walk",
+        "t": 10565.8
+      },
+      {
+        "phase": "walk",
+        "t": 10582.4
+      },
+      {
+        "phase": "walk",
+        "t": 10599.1
+      },
+      {
+        "phase": "walk",
+        "t": 10615.8
+      },
+      {
+        "phase": "walk",
+        "t": 10632.4
+      },
+      {
+        "phase": "walk",
+        "t": 10649.1
+      },
+      {
+        "phase": "walk",
+        "t": 10665.8
+      },
+      {
+        "phase": "walk",
+        "t": 10682.4
+      },
+      {
+        "phase": "walk",
+        "t": 10699.1
+      },
+      {
+        "phase": "walk",
+        "t": 10715.7
+      },
+      {
+        "phase": "walk",
+        "t": 10732.4
+      },
+      {
+        "phase": "walk",
+        "t": 10749
+      },
+      {
+        "phase": "walk",
+        "t": 10765.7
+      },
+      {
+        "phase": "walk",
+        "t": 10782.4
+      },
+      {
+        "phase": "walk",
+        "t": 10799.1
+      },
+      {
+        "phase": "walk",
+        "t": 10815.7
+      },
+      {
+        "phase": "walk",
+        "t": 10832.4
+      },
+      {
+        "phase": "walk",
+        "t": 10849.1
+      },
+      {
+        "phase": "walk",
+        "t": 10865.7
+      },
+      {
+        "phase": "walk",
+        "t": 10882.4
+      },
+      {
+        "phase": "walk",
+        "t": 10899.1
+      },
+      {
+        "phase": "walk",
+        "t": 10915.7
+      },
+      {
+        "phase": "walk",
+        "t": 10932.4
+      },
+      {
+        "phase": "walk",
+        "t": 10949.1
+      },
+      {
+        "phase": "walk",
+        "t": 10965.8
+      },
+      {
+        "phase": "walk",
+        "t": 10982.4
+      },
+      {
+        "phase": "walk",
+        "t": 10999
+      },
+      {
+        "phase": "walk",
+        "t": 11015.8
+      },
+      {
+        "phase": "walk",
+        "t": 11032.4
+      },
+      {
+        "phase": "walk",
+        "t": 11049.1
+      },
+      {
+        "phase": "walk",
+        "t": 11065.8
+      },
+      {
+        "phase": "walk",
+        "t": 11082.4
+      },
+      {
+        "phase": "walk",
+        "t": 11099.1
+      },
+      {
+        "phase": "walk",
+        "t": 11115.7
+      },
+      {
+        "phase": "walk",
+        "t": 11132.4
+      },
+      {
+        "phase": "walk",
+        "t": 11149.1
+      },
+      {
+        "phase": "walk",
+        "t": 11165.7
+      },
+      {
+        "phase": "walk",
+        "t": 11182.4
+      },
+      {
+        "phase": "walk",
+        "t": 11199.1
+      },
+      {
+        "phase": "walk",
+        "t": 11215.8
+      },
+      {
+        "phase": "walk",
+        "t": 11232.4
+      },
+      {
+        "phase": "walk",
+        "t": 11249.1
+      },
+      {
+        "phase": "walk",
+        "t": 11265.7
+      },
+      {
+        "phase": "walk",
+        "t": 11282.4
+      },
+      {
+        "phase": "walk",
+        "t": 11299.1
+      },
+      {
+        "phase": "walk",
+        "t": 11315.7
+      },
+      {
+        "phase": "walk",
+        "t": 11332.4
+      },
+      {
+        "phase": "walk",
+        "t": 11349.1
+      },
+      {
+        "phase": "walk",
+        "t": 11365.7
+      },
+      {
+        "phase": "walk",
+        "t": 11382.4
+      },
+      {
+        "phase": "walk",
+        "t": 11399.1
+      },
+      {
+        "phase": "walk",
+        "t": 11415.7
+      },
+      {
+        "phase": "walk",
+        "t": 11432.4
+      },
+      {
+        "phase": "walk",
+        "t": 11449
+      },
+      {
+        "phase": "walk",
+        "t": 11465.8
+      },
+      {
+        "phase": "walk",
+        "t": 11482.4
+      },
+      {
+        "phase": "walk",
+        "t": 11499.1
+      },
+      {
+        "phase": "walk",
+        "t": 11515.7
+      },
+      {
+        "phase": "walk",
+        "t": 11532.4
+      },
+      {
+        "phase": "walk",
+        "t": 11549.1
+      },
+      {
+        "phase": "walk",
+        "t": 11565.7
+      },
+      {
+        "phase": "walk",
+        "t": 11582.4
+      },
+      {
+        "phase": "walk",
+        "t": 11599
+      },
+      {
+        "phase": "walk",
+        "t": 11615.7
+      },
+      {
+        "phase": "walk",
+        "t": 11632.4
+      },
+      {
+        "phase": "walk",
+        "t": 11649.1
+      },
+      {
+        "phase": "walk",
+        "t": 11665.8
+      },
+      {
+        "phase": "walk",
+        "t": 11682.4
+      },
+      {
+        "phase": "walk",
+        "t": 11699.1
+      },
+      {
+        "phase": "walk",
+        "t": 11715.7
+      },
+      {
+        "phase": "walk",
+        "t": 11732.4
+      },
+      {
+        "phase": "walk",
+        "t": 11749.1
+      },
+      {
+        "phase": "walk",
+        "t": 11765.7
+      },
+      {
+        "phase": "walk",
+        "t": 11782.4
+      },
+      {
+        "phase": "walk",
+        "t": 11799
+      },
+      {
+        "phase": "walk",
+        "t": 11815.7
+      },
+      {
+        "phase": "walk",
+        "t": 11832.4
+      },
+      {
+        "phase": "walk",
+        "t": 11849
+      },
+      {
+        "phase": "walk",
+        "t": 11865.7
+      },
+      {
+        "phase": "walk",
+        "t": 11882.3
+      },
+      {
+        "phase": "walk",
+        "t": 11899.1
+      },
+      {
+        "phase": "walk",
+        "t": 11915.7
+      },
+      {
+        "phase": "walk",
+        "t": 11932.4
+      },
+      {
+        "phase": "walk",
+        "t": 11949
+      },
+      {
+        "phase": "walk",
+        "t": 11965.7
+      },
+      {
+        "phase": "walk",
+        "t": 11982.4
+      },
+      {
+        "phase": "walk",
+        "t": 11999.1
+      },
+      {
+        "phase": "walk",
+        "t": 12015.8
+      },
+      {
+        "phase": "walk",
+        "t": 12032.4
+      },
+      {
+        "phase": "walk",
+        "t": 12049.1
+      },
+      {
+        "phase": "walk",
+        "t": 12065.7
+      },
+      {
+        "phase": "walk",
+        "t": 12082.3
+      },
+      {
+        "phase": "walk",
+        "t": 12099.1
+      },
+      {
+        "phase": "walk",
+        "t": 12115.7
+      },
+      {
+        "phase": "walk",
+        "t": 12132.3
+      },
+      {
+        "phase": "walk",
+        "t": 12149
+      },
+      {
+        "phase": "walk",
+        "t": 12165.7
+      },
+      {
+        "phase": "walk",
+        "t": 12182.4
+      },
+      {
+        "phase": "walk",
+        "t": 12199
+      },
+      {
+        "phase": "walk",
+        "t": 12215.7
+      },
+      {
+        "phase": "walk",
+        "t": 12232.4
+      },
+      {
+        "phase": "walk",
+        "t": 12249
+      },
+      {
+        "phase": "walk",
+        "t": 12265.7
+      },
+      {
+        "phase": "walk",
+        "t": 12282.3
+      },
+      {
+        "phase": "walk",
+        "t": 12299.1
+      },
+      {
+        "phase": "walk",
+        "t": 12315.7
+      },
+      {
+        "phase": "walk",
+        "t": 12332.3
+      },
+      {
+        "phase": "walk",
+        "t": 12349.1
+      },
+      {
+        "phase": "walk",
+        "t": 12365.7
+      },
+      {
+        "phase": "walk",
+        "t": 12382.3
+      },
+      {
+        "phase": "walk",
+        "t": 12399
+      },
+      {
+        "phase": "walk",
+        "t": 12415.7
+      },
+      {
+        "phase": "walk",
+        "t": 12432.4
+      },
+      {
+        "phase": "walk",
+        "t": 12449
+      },
+      {
+        "phase": "walk",
+        "t": 12465.7
+      },
+      {
+        "phase": "walk",
+        "t": 12482.3
+      },
+      {
+        "phase": "walk",
+        "t": 12499
+      },
+      {
+        "phase": "walk",
+        "t": 12515.7
+      },
+      {
+        "phase": "walk",
+        "t": 12532.3
+      },
+      {
+        "phase": "walk",
+        "t": 12549.1
+      },
+      {
+        "phase": "walk",
+        "t": 12565.7
+      },
+      {
+        "phase": "walk",
+        "t": 12582.3
+      },
+      {
+        "phase": "walk",
+        "t": 12599
+      },
+      {
+        "phase": "walk",
+        "t": 12615.7
+      },
+      {
+        "phase": "walk",
+        "t": 12632.4
+      },
+      {
+        "phase": "walk",
+        "t": 12649
+      },
+      {
+        "phase": "walk",
+        "t": 12665.7
+      },
+      {
+        "phase": "walk",
+        "t": 12682.3
+      },
+      {
+        "phase": "walk",
+        "t": 12699
+      },
+      {
+        "phase": "walk",
+        "t": 12715.7
+      },
+      {
+        "phase": "walk",
+        "t": 12732.4
+      },
+      {
+        "phase": "walk",
+        "t": 12749
+      },
+      {
+        "phase": "walk",
+        "t": 12765.6
+      },
+      {
+        "phase": "walk",
+        "t": 12782.4
+      },
+      {
+        "phase": "walk",
+        "t": 12799
+      },
+      {
+        "phase": "walk",
+        "t": 12815.7
+      },
+      {
+        "phase": "walk",
+        "t": 12832.3
+      },
+      {
+        "phase": "walk",
+        "t": 12849
+      },
+      {
+        "phase": "walk",
+        "t": 12865.7
+      },
+      {
+        "phase": "walk",
+        "t": 12882.3
+      },
+      {
+        "phase": "walk",
+        "t": 12899
+      },
+      {
+        "phase": "walk",
+        "t": 12915.6
+      },
+      {
+        "phase": "walk",
+        "t": 12932.4
+      },
+      {
+        "phase": "walk",
+        "t": 12949
+      },
+      {
+        "phase": "walk",
+        "t": 12965.6
+      },
+      {
+        "phase": "walk",
+        "t": 12982.3
+      },
+      {
+        "phase": "walk",
+        "t": 12999
+      },
+      {
+        "phase": "walk",
+        "t": 13015.7
+      },
+      {
+        "phase": "walk",
+        "t": 13032.4
+      },
+      {
+        "phase": "walk",
+        "t": 13049
+      },
+      {
+        "phase": "walk",
+        "t": 13065.6
+      },
+      {
+        "phase": "walk",
+        "t": 13082.3
+      },
+      {
+        "phase": "walk",
+        "t": 13099
+      },
+      {
+        "phase": "walk",
+        "t": 13115.6
+      },
+      {
+        "phase": "walk",
+        "t": 13132.4
+      },
+      {
+        "phase": "walk",
+        "t": 13149
+      },
+      {
+        "phase": "walk",
+        "t": 13165.7
+      },
+      {
+        "phase": "walk",
+        "t": 13182.3
+      },
+      {
+        "phase": "walk",
+        "t": 13199
+      },
+      {
+        "phase": "walk",
+        "t": 13215.6
+      },
+      {
+        "phase": "walk",
+        "t": 13232.3
+      },
+      {
+        "phase": "walk",
+        "t": 13249
+      },
+      {
+        "phase": "walk",
+        "t": 13265.7
+      },
+      {
+        "phase": "walk",
+        "t": 13282.3
+      },
+      {
+        "phase": "walk",
+        "t": 13299
+      },
+      {
+        "phase": "walk",
+        "t": 13315.7
+      },
+      {
+        "phase": "walk",
+        "t": 13332.3
+      },
+      {
+        "phase": "walk",
+        "t": 13349
+      },
+      {
+        "phase": "walk",
+        "t": 13365.7
+      },
+      {
+        "phase": "walk",
+        "t": 13382.3
+      },
+      {
+        "phase": "walk",
+        "t": 13398.9
+      },
+      {
+        "phase": "walk",
+        "t": 13415.7
+      },
+      {
+        "phase": "walk",
+        "t": 13432.3
+      },
+      {
+        "phase": "walk",
+        "t": 13449
+      },
+      {
+        "phase": "walk",
+        "t": 13465.6
+      },
+      {
+        "phase": "walk",
+        "t": 13482.3
+      },
+      {
+        "phase": "walk",
+        "t": 13499
+      },
+      {
+        "phase": "walk",
+        "t": 13515.7
+      },
+      {
+        "phase": "walk",
+        "t": 13532.4
+      },
+      {
+        "phase": "walk",
+        "t": 13549
+      },
+      {
+        "phase": "walk",
+        "t": 13565.7
+      },
+      {
+        "phase": "walk",
+        "t": 13582.3
+      },
+      {
+        "phase": "walk",
+        "t": 13599
+      },
+      {
+        "phase": "walk",
+        "t": 13615.7
+      },
+      {
+        "phase": "walk",
+        "t": 13632.3
+      },
+      {
+        "phase": "walk",
+        "t": 13649
+      },
+      {
+        "phase": "walk",
+        "t": 13665.6
+      },
+      {
+        "phase": "walk",
+        "t": 13682.3
+      },
+      {
+        "phase": "walk",
+        "t": 13699
+      },
+      {
+        "phase": "walk",
+        "t": 13715.6
+      },
+      {
+        "phase": "walk",
+        "t": 13732.3
+      },
+      {
+        "phase": "walk",
+        "t": 13749
+      },
+      {
+        "phase": "walk",
+        "t": 13765.6
+      },
+      {
+        "phase": "walk",
+        "t": 13782.3
+      },
+      {
+        "phase": "walk",
+        "t": 13799
+      },
+      {
+        "phase": "walk",
+        "t": 13815.6
+      },
+      {
+        "phase": "walk",
+        "t": 13832.3
+      },
+      {
+        "phase": "walk",
+        "t": 13849
+      },
+      {
+        "phase": "walk",
+        "t": 13865.7
+      },
+      {
+        "phase": "walk",
+        "t": 13882.3
+      },
+      {
+        "phase": "walk",
+        "t": 13899
+      },
+      {
+        "phase": "walk",
+        "t": 13915.7
+      },
+      {
+        "phase": "walk",
+        "t": 13932.3
+      },
+      {
+        "phase": "walk",
+        "t": 13948.9
+      },
+      {
+        "phase": "walk",
+        "t": 13965.7
+      },
+      {
+        "phase": "walk",
+        "t": 13982.3
+      },
+      {
+        "phase": "walk",
+        "t": 13998.9
+      },
+      {
+        "phase": "walk",
+        "t": 14015.6
+      },
+      {
+        "phase": "walk",
+        "t": 14032.3
+      },
+      {
+        "phase": "walk",
+        "t": 14048.9
+      },
+      {
+        "phase": "walk",
+        "t": 14065.6
+      },
+      {
+        "phase": "walk",
+        "t": 14082.2
+      },
+      {
+        "phase": "walk",
+        "t": 14098.9
+      },
+      {
+        "phase": "walk",
+        "t": 14115.6
+      },
+      {
+        "phase": "walk",
+        "t": 14132.3
+      },
+      {
+        "phase": "walk",
+        "t": 14149
+      },
+      {
+        "phase": "walk",
+        "t": 14165.6
+      },
+      {
+        "phase": "walk",
+        "t": 14182.3
+      },
+      {
+        "phase": "walk",
+        "t": 14198.9
+      },
+      {
+        "phase": "walk",
+        "t": 14215.6
+      },
+      {
+        "phase": "walk",
+        "t": 14232.3
+      },
+      {
+        "phase": "walk",
+        "t": 14249
+      },
+      {
+        "phase": "walk",
+        "t": 14265.6
+      },
+      {
+        "phase": "walk",
+        "t": 14282.3
+      },
+      {
+        "phase": "walk",
+        "t": 14298.9
+      },
+      {
+        "phase": "walk",
+        "t": 14315.6
+      },
+      {
+        "phase": "walk",
+        "t": 14332.3
+      },
+      {
+        "phase": "walk",
+        "t": 14349
+      },
+      {
+        "phase": "walk",
+        "t": 14365.6
+      },
+      {
+        "phase": "walk",
+        "t": 14382.3
+      },
+      {
+        "phase": "walk",
+        "t": 14398.9
+      },
+      {
+        "phase": "walk",
+        "t": 14415.6
+      },
+      {
+        "phase": "walk",
+        "t": 14432.3
+      },
+      {
+        "phase": "walk",
+        "t": 14448.9
+      },
+      {
+        "phase": "walk",
+        "t": 14465.6
+      },
+      {
+        "phase": "walk",
+        "t": 14482.3
+      },
+      {
+        "phase": "walk",
+        "t": 14498.9
+      },
+      {
+        "phase": "walk",
+        "t": 14515.6
+      },
+      {
+        "phase": "walk",
+        "t": 14532.3
+      },
+      {
+        "phase": "walk",
+        "t": 14549
+      },
+      {
+        "phase": "walk",
+        "t": 14565.6
+      },
+      {
+        "phase": "walk",
+        "t": 14582.3
+      },
+      {
+        "phase": "walk",
+        "t": 14598.9
+      },
+      {
+        "phase": "walk",
+        "t": 14615.6
+      },
+      {
+        "phase": "walk",
+        "t": 14632.3
+      },
+      {
+        "phase": "walk",
+        "t": 14649
+      },
+      {
+        "phase": "walk",
+        "t": 14665.6
+      },
+      {
+        "phase": "walk",
+        "t": 14682.3
+      },
+      {
+        "phase": "walk",
+        "t": 14698.9
+      },
+      {
+        "phase": "walk",
+        "t": 14715.6
+      },
+      {
+        "phase": "walk",
+        "t": 14732.2
+      },
+      {
+        "phase": "walk",
+        "t": 14748.9
+      },
+      {
+        "phase": "walk",
+        "t": 14765.6
+      },
+      {
+        "phase": "walk",
+        "t": 14782.2
+      },
+      {
+        "phase": "walk",
+        "t": 14799
+      },
+      {
+        "phase": "walk",
+        "t": 14815.5
+      },
+      {
+        "phase": "walk",
+        "t": 14832.3
+      },
+      {
+        "phase": "walk",
+        "t": 14848.9
+      },
+      {
+        "phase": "walk",
+        "t": 14865.6
+      },
+      {
+        "phase": "walk",
+        "t": 14882.2
+      },
+      {
+        "phase": "walk",
+        "t": 14898.9
+      },
+      {
+        "phase": "walk",
+        "t": 14915.6
+      },
+      {
+        "phase": "walk",
+        "t": 14932.2
+      },
+      {
+        "phase": "walk",
+        "t": 14948.9
+      },
+      {
+        "phase": "walk",
+        "t": 14965.6
+      },
+      {
+        "phase": "walk",
+        "t": 14982.3
+      },
+      {
+        "phase": "walk",
+        "t": 14999
+      },
+      {
+        "phase": "walk",
+        "t": 15015.6
+      },
+      {
+        "phase": "walk",
+        "t": 15032.2
+      },
+      {
+        "phase": "walk",
+        "t": 15048.9
+      },
+      {
+        "phase": "walk",
+        "t": 15065.6
+      },
+      {
+        "phase": "walk",
+        "t": 15082.2
+      },
+      {
+        "phase": "walk",
+        "t": 15098.9
+      },
+      {
+        "phase": "walk",
+        "t": 15115.6
+      },
+      {
+        "phase": "walk",
+        "t": 15132.3
+      },
+      {
+        "phase": "walk",
+        "t": 15148.9
+      },
+      {
+        "phase": "walk",
+        "t": 15165.6
+      },
+      {
+        "phase": "walk",
+        "t": 15182.3
+      },
+      {
+        "phase": "walk",
+        "t": 15198.9
+      },
+      {
+        "phase": "walk",
+        "t": 15215.6
+      },
+      {
+        "phase": "walk",
+        "t": 15232.3
+      },
+      {
+        "phase": "walk",
+        "t": 15248.9
+      },
+      {
+        "phase": "walk",
+        "t": 15265.5
+      },
+      {
+        "phase": "walk",
+        "t": 15282.3
+      },
+      {
+        "phase": "walk",
+        "t": 15298.9
+      },
+      {
+        "phase": "walk",
+        "t": 15315.6
+      },
+      {
+        "phase": "walk",
+        "t": 15332.3
+      },
+      {
+        "phase": "walk",
+        "t": 15348.9
+      },
+      {
+        "phase": "walk",
+        "t": 15365.6
+      },
+      {
+        "phase": "walk",
+        "t": 15382.2
+      },
+      {
+        "phase": "walk",
+        "t": 15398.9
+      },
+      {
+        "phase": "walk",
+        "t": 15415.6
+      },
+      {
+        "phase": "walk",
+        "t": 15432.3
+      },
+      {
+        "phase": "walk",
+        "t": 15448.9
+      },
+      {
+        "phase": "walk",
+        "t": 15465.5
+      },
+      {
+        "phase": "walk",
+        "t": 15482.2
+      },
+      {
+        "phase": "walk",
+        "t": 15498.9
+      },
+      {
+        "phase": "walk",
+        "t": 15515.6
+      },
+      {
+        "phase": "walk",
+        "t": 15532.2
+      },
+      {
+        "phase": "walk",
+        "t": 15548.9
+      },
+      {
+        "phase": "walk",
+        "t": 15565.6
+      },
+      {
+        "phase": "walk",
+        "t": 15582.3
+      },
+      {
+        "phase": "walk",
+        "t": 15598.9
+      },
+      {
+        "phase": "walk",
+        "t": 15615.6
+      },
+      {
+        "phase": "walk",
+        "t": 15632.2
+      },
+      {
+        "phase": "walk",
+        "t": 15648.9
+      },
+      {
+        "phase": "walk",
+        "t": 15665.6
+      },
+      {
+        "phase": "walk",
+        "t": 15682.3
+      },
+      {
+        "phase": "walk",
+        "t": 15698.9
+      },
+      {
+        "phase": "walk",
+        "t": 15715.5
+      },
+      {
+        "phase": "walk",
+        "t": 15732.2
+      },
+      {
+        "phase": "walk",
+        "t": 15748.8
+      },
+      {
+        "phase": "walk",
+        "t": 15765.5
+      },
+      {
+        "phase": "walk",
+        "t": 15782.2
+      },
+      {
+        "phase": "walk",
+        "t": 15798.9
+      },
+      {
+        "phase": "walk",
+        "t": 15815.5
+      },
+      {
+        "phase": "walk",
+        "t": 15832.2
+      },
+      {
+        "phase": "walk",
+        "t": 15848.8
+      },
+      {
+        "phase": "walk",
+        "t": 15865.5
+      },
+      {
+        "phase": "walk",
+        "t": 15882.3
+      },
+      {
+        "phase": "walk",
+        "t": 15898.8
+      },
+      {
+        "phase": "walk",
+        "t": 15915.6
+      },
+      {
+        "phase": "walk",
+        "t": 15932.2
+      },
+      {
+        "phase": "walk",
+        "t": 15948.9
+      },
+      {
+        "phase": "walk",
+        "t": 15965.5
+      },
+      {
+        "phase": "walk",
+        "t": 15982.2
+      },
+      {
+        "phase": "walk",
+        "t": 15998.9
+      },
+      {
+        "phase": "walk",
+        "t": 16015.5
+      },
+      {
+        "phase": "walk",
+        "t": 16032.2
+      },
+      {
+        "phase": "walk",
+        "t": 16048.9
+      },
+      {
+        "phase": "walk",
+        "t": 16065.5
+      },
+      {
+        "phase": "walk",
+        "t": 16082.2
+      },
+      {
+        "phase": "walk",
+        "t": 16098.9
+      },
+      {
+        "phase": "walk",
+        "t": 16115.5
+      },
+      {
+        "phase": "walk",
+        "t": 16132.2
+      },
+      {
+        "phase": "walk",
+        "t": 16148.9
+      },
+      {
+        "phase": "walk",
+        "t": 16165.6
+      },
+      {
+        "phase": "walk",
+        "t": 16182.2
+      },
+      {
+        "phase": "walk",
+        "t": 16198.9
+      },
+      {
+        "phase": "walk",
+        "t": 16215.5
+      },
+      {
+        "phase": "walk",
+        "t": 16232.2
+      },
+      {
+        "phase": "walk",
+        "t": 16248.8
+      },
+      {
+        "phase": "walk",
+        "t": 16265.5
+      },
+      {
+        "phase": "walk",
+        "t": 16282.2
+      },
+      {
+        "phase": "walk",
+        "t": 16298.9
+      },
+      {
+        "phase": "walk",
+        "t": 16315.5
+      },
+      {
+        "phase": "walk",
+        "t": 16332.2
+      },
+      {
+        "phase": "walk",
+        "t": 16348.8
+      },
+      {
+        "phase": "walk",
+        "t": 16365.6
+      },
+      {
+        "phase": "walk",
+        "t": 16382.2
+      },
+      {
+        "phase": "walk",
+        "t": 16398.9
+      },
+      {
+        "phase": "walk",
+        "t": 16415.5
+      },
+      {
+        "phase": "walk",
+        "t": 16432.2
+      },
+      {
+        "phase": "walk",
+        "t": 16448.9
+      },
+      {
+        "phase": "walk",
+        "t": 16465.6
+      },
+      {
+        "phase": "walk",
+        "t": 16482.2
+      },
+      {
+        "phase": "walk",
+        "t": 16498.9
+      },
+      {
+        "phase": "walk",
+        "t": 16515.6
+      },
+      {
+        "phase": "walk",
+        "t": 16532.2
+      },
+      {
+        "phase": "walk",
+        "t": 16548.9
+      },
+      {
+        "phase": "walk",
+        "t": 16565.5
+      },
+      {
+        "phase": "walk",
+        "t": 16582.2
+      },
+      {
+        "phase": "walk",
+        "t": 16598.8
+      },
+      {
+        "phase": "walk",
+        "t": 16615.6
+      },
+      {
+        "phase": "walk",
+        "t": 16632.2
+      },
+      {
+        "phase": "walk",
+        "t": 16648.8
+      },
+      {
+        "phase": "walk",
+        "t": 16665.5
+      },
+      {
+        "phase": "walk",
+        "t": 16682.1
+      },
+      {
+        "phase": "walk",
+        "t": 16698.8
+      },
+      {
+        "phase": "walk",
+        "t": 16715.5
+      },
+      {
+        "phase": "walk",
+        "t": 16732.2
+      },
+      {
+        "phase": "walk",
+        "t": 16748.8
+      },
+      {
+        "phase": "walk",
+        "t": 16765.5
+      },
+      {
+        "phase": "walk",
+        "t": 16782.2
+      },
+      {
+        "phase": "walk",
+        "t": 16798.8
+      },
+      {
+        "phase": "walk",
+        "t": 16815.5
+      },
+      {
+        "phase": "walk",
+        "t": 16832.1
+      },
+      {
+        "phase": "walk",
+        "t": 16848.8
+      },
+      {
+        "phase": "walk",
+        "t": 16865.5
+      },
+      {
+        "phase": "walk",
+        "t": 16882.2
+      },
+      {
+        "phase": "walk",
+        "t": 16898.8
+      },
+      {
+        "phase": "walk",
+        "t": 16915.5
+      },
+      {
+        "phase": "walk",
+        "t": 16932.2
+      },
+      {
+        "phase": "walk",
+        "t": 16948.9
+      },
+      {
+        "phase": "walk",
+        "t": 16965.5
+      },
+      {
+        "phase": "walk",
+        "t": 16982.2
+      },
+      {
+        "phase": "walk",
+        "t": 16998.9
+      },
+      {
+        "phase": "walk",
+        "t": 17015.5
+      },
+      {
+        "phase": "walk",
+        "t": 17032.2
+      },
+      {
+        "phase": "walk",
+        "t": 17048.8
+      },
+      {
+        "phase": "walk",
+        "t": 17065.5
+      },
+      {
+        "phase": "walk",
+        "t": 17082.2
+      },
+      {
+        "phase": "walk",
+        "t": 17098.8
+      },
+      {
+        "phase": "walk",
+        "t": 17115.5
+      },
+      {
+        "phase": "walk",
+        "t": 17132.1
+      },
+      {
+        "phase": "walk",
+        "t": 17148.8
+      },
+      {
+        "phase": "walk",
+        "t": 17165.5
+      },
+      {
+        "phase": "walk",
+        "t": 17182.1
+      },
+      {
+        "phase": "walk",
+        "t": 17198.8
+      },
+      {
+        "phase": "walk",
+        "t": 17215.5
+      },
+      {
+        "phase": "walk",
+        "t": 17232.1
+      },
+      {
+        "phase": "walk",
+        "t": 17248.8
+      },
+      {
+        "phase": "walk",
+        "t": 17265.5
+      },
+      {
+        "phase": "walk",
+        "t": 17282.2
+      },
+      {
+        "phase": "walk",
+        "t": 17298.8
+      },
+      {
+        "phase": "walk",
+        "t": 17315.5
+      },
+      {
+        "phase": "walk",
+        "t": 17332.2
+      },
+      {
+        "phase": "walk",
+        "t": 17348.9
+      },
+      {
+        "phase": "walk",
+        "t": 17365.5
+      },
+      {
+        "phase": "walk",
+        "t": 17382.2
+      },
+      {
+        "phase": "walk",
+        "t": 17398.8
+      },
+      {
+        "phase": "walk",
+        "t": 17415.5
+      },
+      {
+        "phase": "walk",
+        "t": 17432.1
+      },
+      {
+        "phase": "walk",
+        "t": 17448.8
+      },
+      {
+        "phase": "walk",
+        "t": 17465.5
+      },
+      {
+        "phase": "walk",
+        "t": 17482.1
+      },
+      {
+        "phase": "walk",
+        "t": 17498.8
+      },
+      {
+        "phase": "walk",
+        "t": 17515.5
+      },
+      {
+        "phase": "walk",
+        "t": 17532.2
+      },
+      {
+        "phase": "walk",
+        "t": 17548.8
+      },
+      {
+        "phase": "walk",
+        "t": 17565.5
+      },
+      {
+        "phase": "walk",
+        "t": 17582.1
+      },
+      {
+        "phase": "walk",
+        "t": 17598.8
+      },
+      {
+        "phase": "walk",
+        "t": 17615.5
+      },
+      {
+        "phase": "walk",
+        "t": 17632.2
+      },
+      {
+        "phase": "walk",
+        "t": 17648.8
+      },
+      {
+        "phase": "walk",
+        "t": 17665.5
+      },
+      {
+        "phase": "walk",
+        "t": 17682.2
+      },
+      {
+        "phase": "walk",
+        "t": 17698.8
+      },
+      {
+        "phase": "walk",
+        "t": 17715.5
+      },
+      {
+        "phase": "walk",
+        "t": 17732.1
+      },
+      {
+        "phase": "walk",
+        "t": 17748.8
+      },
+      {
+        "phase": "walk",
+        "t": 17765.5
+      },
+      {
+        "phase": "walk",
+        "t": 17782.2
+      },
+      {
+        "phase": "walk",
+        "t": 17798.8
+      },
+      {
+        "phase": "walk",
+        "t": 17815.5
+      },
+      {
+        "phase": "walk",
+        "t": 17832.2
+      },
+      {
+        "phase": "walk",
+        "t": 17848.8
+      },
+      {
+        "phase": "walk",
+        "t": 17865.5
+      },
+      {
+        "phase": "walk",
+        "t": 17882.1
+      },
+      {
+        "phase": "walk",
+        "t": 17898.8
+      },
+      {
+        "phase": "walk",
+        "t": 17915.5
+      },
+      {
+        "phase": "walk",
+        "t": 17932.1
+      },
+      {
+        "phase": "walk",
+        "t": 17948.8
+      },
+      {
+        "phase": "walk",
+        "t": 17965.4
+      },
+      {
+        "phase": "walk",
+        "t": 17982.2
+      },
+      {
+        "phase": "walk",
+        "t": 17998.8
+      },
+      {
+        "phase": "walk",
+        "t": 18015.5
+      },
+      {
+        "phase": "walk",
+        "t": 18032.1
+      },
+      {
+        "phase": "walk",
+        "t": 18048.8
+      },
+      {
+        "phase": "walk",
+        "t": 18065.5
+      },
+      {
+        "phase": "walk",
+        "t": 18082.1
+      },
+      {
+        "phase": "walk",
+        "t": 18098.8
+      },
+      {
+        "phase": "walk",
+        "t": 18115.4
+      },
+      {
+        "phase": "walk",
+        "t": 18132.1
+      },
+      {
+        "phase": "walk",
+        "t": 18148.8
+      },
+      {
+        "phase": "walk",
+        "t": 18165.4
+      },
+      {
+        "phase": "walk",
+        "t": 18182.1
+      },
+      {
+        "phase": "walk",
+        "t": 18198.8
+      },
+      {
+        "phase": "walk",
+        "t": 18215.5
+      },
+      {
+        "phase": "walk",
+        "t": 18232.1
+      },
+      {
+        "phase": "walk",
+        "t": 18248.8
+      },
+      {
+        "phase": "walk",
+        "t": 18265.5
+      },
+      {
+        "phase": "walk",
+        "t": 18282.1
+      },
+      {
+        "phase": "walk",
+        "t": 18298.7
+      },
+      {
+        "phase": "walk",
+        "t": 18315.5
+      },
+      {
+        "phase": "walk",
+        "t": 18332.1
+      },
+      {
+        "phase": "walk",
+        "t": 18348.8
+      },
+      {
+        "phase": "walk",
+        "t": 18365.4
+      },
+      {
+        "phase": "walk",
+        "t": 18382.1
+      },
+      {
+        "phase": "walk",
+        "t": 18398.8
+      },
+      {
+        "phase": "walk",
+        "t": 18415.4
+      },
+      {
+        "phase": "walk",
+        "t": 18432.1
+      },
+      {
+        "phase": "walk",
+        "t": 18448.7
+      },
+      {
+        "phase": "walk",
+        "t": 18465.5
+      },
+      {
+        "phase": "walk",
+        "t": 18482.1
+      },
+      {
+        "phase": "walk",
+        "t": 18498.8
+      },
+      {
+        "phase": "walk",
+        "t": 18515.4
+      },
+      {
+        "phase": "walk",
+        "t": 18532.1
+      },
+      {
+        "phase": "walk",
+        "t": 18548.8
+      },
+      {
+        "phase": "walk",
+        "t": 18565.5
+      },
+      {
+        "phase": "walk",
+        "t": 18582.1
+      },
+      {
+        "phase": "walk",
+        "t": 18598.8
+      },
+      {
+        "phase": "walk",
+        "t": 18615.5
+      },
+      {
+        "phase": "walk",
+        "t": 18632.1
+      },
+      {
+        "phase": "walk",
+        "t": 18648.7
+      },
+      {
+        "phase": "walk",
+        "t": 18665.5
+      },
+      {
+        "phase": "walk",
+        "t": 18682.1
+      },
+      {
+        "phase": "walk",
+        "t": 18698.8
+      },
+      {
+        "phase": "walk",
+        "t": 18715.5
+      },
+      {
+        "phase": "walk",
+        "t": 18732.1
+      },
+      {
+        "phase": "walk",
+        "t": 18748.7
+      },
+      {
+        "phase": "walk",
+        "t": 18765.5
+      },
+      {
+        "phase": "walk",
+        "t": 18782.1
+      },
+      {
+        "phase": "walk",
+        "t": 18798.8
+      },
+      {
+        "phase": "walk",
+        "t": 18815.4
+      },
+      {
+        "phase": "walk",
+        "t": 18832.1
+      },
+      {
+        "phase": "walk",
+        "t": 18848.7
+      },
+      {
+        "phase": "walk",
+        "t": 18865.4
+      },
+      {
+        "phase": "walk",
+        "t": 18882.1
+      },
+      {
+        "phase": "walk",
+        "t": 18898.8
+      },
+      {
+        "phase": "walk",
+        "t": 18915.4
+      },
+      {
+        "phase": "walk",
+        "t": 18932.1
+      },
+      {
+        "phase": "walk",
+        "t": 18948.8
+      },
+      {
+        "phase": "walk",
+        "t": 18965.4
+      },
+      {
+        "phase": "walk",
+        "t": 18982.1
+      },
+      {
+        "phase": "walk",
+        "t": 18998.7
+      },
+      {
+        "phase": "walk",
+        "t": 19015.4
+      },
+      {
+        "phase": "walk",
+        "t": 19032.1
+      },
+      {
+        "phase": "walk",
+        "t": 19048.8
+      },
+      {
+        "phase": "walk",
+        "t": 19065.4
+      },
+      {
+        "phase": "walk",
+        "t": 19082.1
+      },
+      {
+        "phase": "walk",
+        "t": 19098.7
+      },
+      {
+        "phase": "walk",
+        "t": 19115.4
+      },
+      {
+        "phase": "walk",
+        "t": 19132.1
+      },
+      {
+        "phase": "walk",
+        "t": 19148.8
+      },
+      {
+        "phase": "walk",
+        "t": 19165.4
+      },
+      {
+        "phase": "walk",
+        "t": 19182.1
+      },
+      {
+        "phase": "walk",
+        "t": 19198.7
+      },
+      {
+        "phase": "walk",
+        "t": 19215.4
+      },
+      {
+        "phase": "walk",
+        "t": 19232
+      },
+      {
+        "phase": "walk",
+        "t": 19248.7
+      },
+      {
+        "phase": "walk",
+        "t": 19265.4
+      },
+      {
+        "phase": "walk",
+        "t": 19282.1
+      },
+      {
+        "phase": "walk",
+        "t": 19298.8
+      },
+      {
+        "phase": "walk",
+        "t": 19315.4
+      },
+      {
+        "phase": "walk",
+        "t": 19332
+      },
+      {
+        "phase": "walk",
+        "t": 19348.8
+      },
+      {
+        "phase": "walk",
+        "t": 19365.4
+      },
+      {
+        "phase": "walk",
+        "t": 19382.1
+      },
+      {
+        "phase": "walk",
+        "t": 19398.7
+      },
+      {
+        "phase": "walk",
+        "t": 19415.4
+      },
+      {
+        "phase": "walk",
+        "t": 19432.1
+      },
+      {
+        "phase": "walk",
+        "t": 19448.7
+      },
+      {
+        "phase": "walk",
+        "t": 19465.4
+      },
+      {
+        "phase": "walk",
+        "t": 19482.1
+      },
+      {
+        "phase": "walk",
+        "t": 19498.7
+      },
+      {
+        "phase": "walk",
+        "t": 19515.4
+      },
+      {
+        "phase": "walk",
+        "t": 19532.1
+      },
+      {
+        "phase": "walk",
+        "t": 19548.8
+      },
+      {
+        "phase": "walk",
+        "t": 19565.4
+      },
+      {
+        "phase": "walk",
+        "t": 19582.1
+      },
+      {
+        "phase": "walk",
+        "t": 19598.8
+      },
+      {
+        "phase": "walk",
+        "t": 19615.4
+      },
+      {
+        "phase": "walk",
+        "t": 19632
+      },
+      {
+        "phase": "walk",
+        "t": 19648.8
+      },
+      {
+        "phase": "walk",
+        "t": 19665.3
+      },
+      {
+        "phase": "walk",
+        "t": 19682.1
+      },
+      {
+        "phase": "walk",
+        "t": 19698.7
+      },
+      {
+        "phase": "walk",
+        "t": 19715.4
+      },
+      {
+        "phase": "walk",
+        "t": 19732.1
+      },
+      {
+        "phase": "walk",
+        "t": 19748.7
+      },
+      {
+        "phase": "walk",
+        "t": 19765.4
+      },
+      {
+        "phase": "walk",
+        "t": 19782.1
+      },
+      {
+        "phase": "walk",
+        "t": 19798.7
+      },
+      {
+        "phase": "walk",
+        "t": 19815.4
+      },
+      {
+        "phase": "walk",
+        "t": 19832
+      },
+      {
+        "phase": "walk",
+        "t": 19848.7
+      },
+      {
+        "phase": "walk",
+        "t": 19865.4
+      },
+      {
+        "phase": "walk",
+        "t": 19882.1
+      },
+      {
+        "phase": "walk",
+        "t": 19898.7
+      },
+      {
+        "phase": "walk",
+        "t": 19915.4
+      },
+      {
+        "phase": "walk",
+        "t": 19932
+      },
+      {
+        "phase": "walk",
+        "t": 19948.8
+      },
+      {
+        "phase": "walk",
+        "t": 19965.4
+      },
+      {
+        "phase": "walk",
+        "t": 19982.1
+      },
+      {
+        "phase": "walk",
+        "t": 19998.7
+      },
+      {
+        "phase": "walk",
+        "t": 20015.4
+      },
+      {
+        "phase": "walk",
+        "t": 20032.1
+      },
+      {
+        "phase": "walk",
+        "t": 20048.7
+      },
+      {
+        "phase": "walk",
+        "t": 20065.4
+      },
+      {
+        "phase": "walk",
+        "t": 20082.1
+      },
+      {
+        "phase": "walk",
+        "t": 20098.7
+      },
+      {
+        "phase": "walk",
+        "t": 20115.4
+      },
+      {
+        "phase": "walk",
+        "t": 20132
+      },
+      {
+        "phase": "walk",
+        "t": 20148.7
+      },
+      {
+        "phase": "walk",
+        "t": 20165.4
+      },
+      {
+        "phase": "walk",
+        "t": 20182
+      },
+      {
+        "phase": "walk",
+        "t": 20198.7
+      },
+      {
+        "phase": "walk",
+        "t": 20215.4
+      },
+      {
+        "phase": "walk",
+        "t": 20232.1
+      },
+      {
+        "phase": "walk",
+        "t": 20248.7
+      },
+      {
+        "phase": "walk",
+        "t": 20265.4
+      },
+      {
+        "phase": "walk",
+        "t": 20282
+      },
+      {
+        "phase": "walk",
+        "t": 20298.7
+      },
+      {
+        "phase": "walk",
+        "t": 20315.4
+      },
+      {
+        "phase": "walk",
+        "t": 20332
+      },
+      {
+        "phase": "walk",
+        "t": 20348.7
+      },
+      {
+        "phase": "walk",
+        "t": 20365.3
+      },
+      {
+        "phase": "walk",
+        "t": 20382.1
+      },
+      {
+        "phase": "walk",
+        "t": 20398.7
+      },
+      {
+        "phase": "walk",
+        "t": 20415.3
+      },
+      {
+        "phase": "walk",
+        "t": 20432
+      },
+      {
+        "phase": "walk",
+        "t": 20448.7
+      },
+      {
+        "phase": "walk",
+        "t": 20465.3
+      },
+      {
+        "phase": "walk",
+        "t": 20482.1
+      },
+      {
+        "phase": "walk",
+        "t": 20498.7
+      },
+      {
+        "phase": "walk",
+        "t": 20515.4
+      },
+      {
+        "phase": "walk",
+        "t": 20532.1
+      },
+      {
+        "phase": "walk",
+        "t": 20548.7
+      },
+      {
+        "phase": "walk",
+        "t": 20565.3
+      },
+      {
+        "phase": "walk",
+        "t": 20582
+      },
+      {
+        "phase": "walk",
+        "t": 20598.7
+      },
+      {
+        "phase": "walk",
+        "t": 20615.4
+      },
+      {
+        "phase": "walk",
+        "t": 20632.1
+      },
+      {
+        "phase": "walk",
+        "t": 20648.7
+      },
+      {
+        "phase": "walk",
+        "t": 20665.4
+      },
+      {
+        "phase": "walk",
+        "t": 20682
+      },
+      {
+        "phase": "walk",
+        "t": 20698.6
+      },
+      {
+        "phase": "walk",
+        "t": 20715.4
+      },
+      {
+        "phase": "walk",
+        "t": 20732
+      },
+      {
+        "phase": "walk",
+        "t": 20748.7
+      },
+      {
+        "phase": "walk",
+        "t": 20765.4
+      },
+      {
+        "phase": "walk",
+        "t": 20782
+      },
+      {
+        "phase": "walk",
+        "t": 20798.7
+      },
+      {
+        "phase": "walk",
+        "t": 20815.4
+      },
+      {
+        "phase": "walk",
+        "t": 20832.1
+      },
+      {
+        "phase": "walk",
+        "t": 20848.7
+      },
+      {
+        "phase": "walk",
+        "t": 20865.4
+      },
+      {
+        "phase": "walk",
+        "t": 20882
+      },
+      {
+        "phase": "walk",
+        "t": 20898.7
+      },
+      {
+        "phase": "walk",
+        "t": 20915.4
+      },
+      {
+        "phase": "walk",
+        "t": 20932
+      },
+      {
+        "phase": "walk",
+        "t": 20948.7
+      },
+      {
+        "phase": "walk",
+        "t": 20965.4
+      },
+      {
+        "phase": "walk",
+        "t": 20982
+      },
+      {
+        "phase": "walk",
+        "t": 20998.6
+      },
+      {
+        "phase": "walk",
+        "t": 21015.3
+      },
+      {
+        "phase": "walk",
+        "t": 21032
+      },
+      {
+        "phase": "walk",
+        "t": 21048.7
+      },
+      {
+        "phase": "walk",
+        "t": 21065.3
+      },
+      {
+        "phase": "walk",
+        "t": 21082
+      },
+      {
+        "phase": "walk",
+        "t": 21098.7
+      },
+      {
+        "phase": "walk",
+        "t": 21115.3
+      },
+      {
+        "phase": "walk",
+        "t": 21132
+      },
+      {
+        "phase": "walk",
+        "t": 21148.7
+      },
+      {
+        "phase": "walk",
+        "t": 21165.3
+      },
+      {
+        "phase": "walk",
+        "t": 21182
+      },
+      {
+        "phase": "walk",
+        "t": 21198.7
+      },
+      {
+        "phase": "walk",
+        "t": 21215.3
+      },
+      {
+        "phase": "walk",
+        "t": 21232
+      },
+      {
+        "phase": "walk",
+        "t": 21248.7
+      },
+      {
+        "phase": "walk",
+        "t": 21265.4
+      },
+      {
+        "phase": "walk",
+        "t": 21282
+      },
+      {
+        "phase": "walk",
+        "t": 21298.6
+      },
+      {
+        "phase": "walk",
+        "t": 21315.3
+      },
+      {
+        "phase": "walk",
+        "t": 21332
+      },
+      {
+        "phase": "walk",
+        "t": 21348.7
+      },
+      {
+        "phase": "walk",
+        "t": 21365.3
+      },
+      {
+        "phase": "walk",
+        "t": 21382
+      },
+      {
+        "phase": "walk",
+        "t": 21398.6
+      },
+      {
+        "phase": "walk",
+        "t": 21415.3
+      },
+      {
+        "phase": "walk",
+        "t": 21432
+      },
+      {
+        "phase": "walk",
+        "t": 21448.7
+      },
+      {
+        "phase": "walk",
+        "t": 21465.3
+      },
+      {
+        "phase": "walk",
+        "t": 21482
+      },
+      {
+        "phase": "walk",
+        "t": 21498.7
+      },
+      {
+        "phase": "walk",
+        "t": 21515.4
+      },
+      {
+        "phase": "walk",
+        "t": 21532
+      },
+      {
+        "phase": "walk",
+        "t": 21548.7
+      },
+      {
+        "phase": "walk",
+        "t": 21565.3
+      },
+      {
+        "phase": "walk",
+        "t": 21581.9
+      },
+      {
+        "phase": "walk",
+        "t": 21598.7
+      },
+      {
+        "phase": "walk",
+        "t": 21615.3
+      },
+      {
+        "phase": "walk",
+        "t": 21632
+      },
+      {
+        "phase": "walk",
+        "t": 21648.7
+      },
+      {
+        "phase": "walk",
+        "t": 21665.3
+      },
+      {
+        "phase": "walk",
+        "t": 21682
+      },
+      {
+        "phase": "walk",
+        "t": 21698.6
+      },
+      {
+        "phase": "walk",
+        "t": 21715.3
+      },
+      {
+        "phase": "walk",
+        "t": 21732
+      },
+      {
+        "phase": "walk",
+        "t": 21748.6
+      },
+      {
+        "phase": "walk",
+        "t": 21765.3
+      },
+      {
+        "phase": "walk",
+        "t": 21782
+      },
+      {
+        "phase": "walk",
+        "t": 21798.7
+      },
+      {
+        "phase": "walk",
+        "t": 21815.3
+      },
+      {
+        "phase": "walk",
+        "t": 21832
+      },
+      {
+        "phase": "walk",
+        "t": 21848.6
+      },
+      {
+        "phase": "walk",
+        "t": 21865.3
+      },
+      {
+        "phase": "walk",
+        "t": 21882
+      },
+      {
+        "phase": "walk",
+        "t": 21898.6
+      },
+      {
+        "phase": "walk",
+        "t": 21915.4
+      },
+      {
+        "phase": "walk",
+        "t": 21932
+      },
+      {
+        "phase": "walk",
+        "t": 21948.6
+      },
+      {
+        "phase": "walk",
+        "t": 21965.3
+      },
+      {
+        "phase": "walk",
+        "t": 21982
+      },
+      {
+        "phase": "walk",
+        "t": 21998.7
+      },
+      {
+        "phase": "walk",
+        "t": 22015.3
+      },
+      {
+        "phase": "walk",
+        "t": 22032
+      },
+      {
+        "phase": "walk",
+        "t": 22048.7
+      },
+      {
+        "phase": "walk",
+        "t": 22065.3
+      },
+      {
+        "phase": "walk",
+        "t": 22082
+      },
+      {
+        "phase": "walk",
+        "t": 22098.7
+      },
+      {
+        "phase": "walk",
+        "t": 22115.3
+      },
+      {
+        "phase": "walk",
+        "t": 22132
+      },
+      {
+        "phase": "walk",
+        "t": 22148.6
+      },
+      {
+        "phase": "walk",
+        "t": 22165.3
+      },
+      {
+        "phase": "walk",
+        "t": 22182
+      },
+      {
+        "phase": "walk",
+        "t": 22198.6
+      },
+      {
+        "phase": "walk",
+        "t": 22215.3
+      },
+      {
+        "phase": "walk",
+        "t": 22232
+      },
+      {
+        "phase": "walk",
+        "t": 22248.6
+      },
+      {
+        "phase": "walk",
+        "t": 22265.3
+      },
+      {
+        "phase": "walk",
+        "t": 22281.9
+      },
+      {
+        "phase": "walk",
+        "t": 22298.6
+      },
+      {
+        "phase": "walk",
+        "t": 22315.3
+      },
+      {
+        "phase": "walk",
+        "t": 22332
+      },
+      {
+        "phase": "walk",
+        "t": 22348.6
+      },
+      {
+        "phase": "walk",
+        "t": 22365.3
+      },
+      {
+        "phase": "walk",
+        "t": 22382
+      },
+      {
+        "phase": "walk",
+        "t": 22398.6
+      },
+      {
+        "phase": "walk",
+        "t": 22415.3
+      },
+      {
+        "phase": "walk",
+        "t": 22431.9
+      },
+      {
+        "phase": "walk",
+        "t": 22448.6
+      },
+      {
+        "phase": "walk",
+        "t": 22465.3
+      },
+      {
+        "phase": "walk",
+        "t": 22482
+      },
+      {
+        "phase": "walk",
+        "t": 22498.6
+      },
+      {
+        "phase": "walk",
+        "t": 22515.3
+      },
+      {
+        "phase": "walk",
+        "t": 22532
+      },
+      {
+        "phase": "walk",
+        "t": 22548.6
+      },
+      {
+        "phase": "walk",
+        "t": 22565.3
+      },
+      {
+        "phase": "walk",
+        "t": 22581.9
+      },
+      {
+        "phase": "walk",
+        "t": 22598.6
+      },
+      {
+        "phase": "walk",
+        "t": 22615.3
+      },
+      {
+        "phase": "walk",
+        "t": 22631.9
+      },
+      {
+        "phase": "walk",
+        "t": 22648.6
+      },
+      {
+        "phase": "walk",
+        "t": 22665.3
+      },
+      {
+        "phase": "walk",
+        "t": 22681.9
+      },
+      {
+        "phase": "walk",
+        "t": 22698.6
+      },
+      {
+        "phase": "walk",
+        "t": 22715.3
+      },
+      {
+        "phase": "walk",
+        "t": 22732
+      },
+      {
+        "phase": "walk",
+        "t": 22748.6
+      },
+      {
+        "phase": "walk",
+        "t": 22765.3
+      },
+      {
+        "phase": "walk",
+        "t": 22782
+      },
+      {
+        "phase": "walk",
+        "t": 22798.6
+      },
+      {
+        "phase": "walk",
+        "t": 22815.3
+      },
+      {
+        "phase": "walk",
+        "t": 22831.9
+      },
+      {
+        "phase": "walk",
+        "t": 22848.6
+      },
+      {
+        "phase": "walk",
+        "t": 22865.2
+      },
+      {
+        "phase": "walk",
+        "t": 22881.9
+      },
+      {
+        "phase": "walk",
+        "t": 22898.6
+      },
+      {
+        "phase": "walk",
+        "t": 22915.3
+      },
+      {
+        "phase": "walk",
+        "t": 22931.9
+      },
+      {
+        "phase": "walk",
+        "t": 22948.6
+      },
+      {
+        "phase": "walk",
+        "t": 22965.3
+      },
+      {
+        "phase": "walk",
+        "t": 22981.9
+      },
+      {
+        "phase": "walk",
+        "t": 22998.6
+      },
+      {
+        "phase": "walk",
+        "t": 23015.3
+      },
+      {
+        "phase": "walk",
+        "t": 23032
+      },
+      {
+        "phase": "walk",
+        "t": 23048.6
+      },
+      {
+        "phase": "walk",
+        "t": 23065.3
+      },
+      {
+        "phase": "walk",
+        "t": 23082
+      },
+      {
+        "phase": "walk",
+        "t": 23098.6
+      },
+      {
+        "phase": "walk",
+        "t": 23115.2
+      },
+      {
+        "phase": "walk",
+        "t": 23131.9
+      },
+      {
+        "phase": "walk",
+        "t": 23148.6
+      },
+      {
+        "phase": "walk",
+        "t": 23165.3
+      },
+      {
+        "phase": "walk",
+        "t": 23182
+      },
+      {
+        "phase": "walk",
+        "t": 23198.6
+      },
+      {
+        "phase": "walk",
+        "t": 23215.3
+      },
+      {
+        "phase": "walk",
+        "t": 23232
+      },
+      {
+        "phase": "walk",
+        "t": 23248.6
+      },
+      {
+        "phase": "walk",
+        "t": 23265.2
+      },
+      {
+        "phase": "walk",
+        "t": 23281.9
+      },
+      {
+        "phase": "walk",
+        "t": 23298.6
+      },
+      {
+        "phase": "walk",
+        "t": 23315.2
+      },
+      {
+        "phase": "walk",
+        "t": 23331.9
+      },
+      {
+        "phase": "walk",
+        "t": 23348.5
+      },
+      {
+        "phase": "walk",
+        "t": 23365.3
+      },
+      {
+        "phase": "walk",
+        "t": 23381.9
+      },
+      {
+        "phase": "walk",
+        "t": 23398.6
+      },
+      {
+        "phase": "walk",
+        "t": 23415.2
+      },
+      {
+        "phase": "walk",
+        "t": 23431.9
+      },
+      {
+        "phase": "walk",
+        "t": 23448.5
+      },
+      {
+        "phase": "walk",
+        "t": 23465.3
+      },
+      {
+        "phase": "walk",
+        "t": 23481.9
+      },
+      {
+        "phase": "walk",
+        "t": 23498.6
+      },
+      {
+        "phase": "walk",
+        "t": 23515.3
+      },
+      {
+        "phase": "walk",
+        "t": 23531.9
+      },
+      {
+        "phase": "walk",
+        "t": 23548.5
+      },
+      {
+        "phase": "walk",
+        "t": 23565.2
+      },
+      {
+        "phase": "walk",
+        "t": 23581.9
+      },
+      {
+        "phase": "walk",
+        "t": 23598.5
+      },
+      {
+        "phase": "walk",
+        "t": 23615.2
+      },
+      {
+        "phase": "walk",
+        "t": 23631.9
+      },
+      {
+        "phase": "walk",
+        "t": 23648.6
+      },
+      {
+        "phase": "walk",
+        "t": 23665.3
+      },
+      {
+        "phase": "walk",
+        "t": 23682
+      },
+      {
+        "phase": "walk",
+        "t": 23698.6
+      },
+      {
+        "phase": "walk",
+        "t": 23715.3
+      },
+      {
+        "phase": "walk",
+        "t": 23731.9
+      },
+      {
+        "phase": "walk",
+        "t": 23748.6
+      },
+      {
+        "phase": "walk",
+        "t": 23765.2
+      },
+      {
+        "phase": "walk",
+        "t": 23781.9
+      },
+      {
+        "phase": "walk",
+        "t": 23798.5
+      },
+      {
+        "phase": "walk",
+        "t": 23815.2
+      },
+      {
+        "phase": "walk",
+        "t": 23831.9
+      },
+      {
+        "phase": "walk",
+        "t": 23848.5
+      },
+      {
+        "phase": "walk",
+        "t": 23865.2
+      },
+      {
+        "phase": "walk",
+        "t": 23881.9
+      },
+      {
+        "phase": "walk",
+        "t": 23898.6
+      },
+      {
+        "phase": "walk",
+        "t": 23915.2
+      },
+      {
+        "phase": "walk",
+        "t": 23931.9
+      },
+      {
+        "phase": "walk",
+        "t": 23948.6
+      },
+      {
+        "phase": "walk",
+        "t": 23965.2
+      },
+      {
+        "phase": "walk",
+        "t": 23981.9
+      },
+      {
+        "phase": "walk",
+        "t": 23998.6
+      },
+      {
+        "phase": "walk",
+        "t": 24015.3
+      },
+      {
+        "phase": "walk",
+        "t": 24031.8
+      },
+      {
+        "phase": "walk",
+        "t": 24048.6
+      },
+      {
+        "phase": "walk",
+        "t": 24065.2
+      },
+      {
+        "phase": "walk",
+        "t": 24081.9
+      },
+      {
+        "phase": "walk",
+        "t": 24098.6
+      },
+      {
+        "phase": "walk",
+        "t": 24115.2
+      },
+      {
+        "phase": "walk",
+        "t": 24131.9
+      },
+      {
+        "phase": "walk",
+        "t": 24148.5
+      },
+      {
+        "phase": "walk",
+        "t": 24165.2
+      },
+      {
+        "phase": "walk",
+        "t": 24181.9
+      },
+      {
+        "phase": "walk",
+        "t": 24198.5
+      },
+      {
+        "phase": "walk",
+        "t": 24215.3
+      },
+      {
+        "phase": "walk",
+        "t": 24231.9
+      },
+      {
+        "phase": "walk",
+        "t": 24248.5
+      },
+      {
+        "phase": "walk",
+        "t": 24265.2
+      },
+      {
+        "phase": "walk",
+        "t": 24281.9
+      },
+      {
+        "phase": "walk",
+        "t": 24298.5
+      },
+      {
+        "phase": "walk",
+        "t": 24315.2
+      },
+      {
+        "phase": "walk",
+        "t": 24331.9
+      },
+      {
+        "phase": "walk",
+        "t": 24348.5
+      },
+      {
+        "phase": "walk",
+        "t": 24365.2
+      },
+      {
+        "phase": "walk",
+        "t": 24381.9
+      },
+      {
+        "phase": "walk",
+        "t": 24398.5
+      },
+      {
+        "phase": "walk",
+        "t": 24415.2
+      },
+      {
+        "phase": "walk",
+        "t": 24431.8
+      },
+      {
+        "phase": "walk",
+        "t": 24448.5
+      },
+      {
+        "phase": "walk",
+        "t": 24465.2
+      },
+      {
+        "phase": "walk",
+        "t": 24481.9
+      },
+      {
+        "phase": "walk",
+        "t": 24498.6
+      },
+      {
+        "phase": "walk",
+        "t": 24515.2
+      },
+      {
+        "phase": "walk",
+        "t": 24531.9
+      },
+      {
+        "phase": "walk",
+        "t": 24548.6
+      },
+      {
+        "phase": "walk",
+        "t": 24565.2
+      },
+      {
+        "phase": "walk",
+        "t": 24581.8
+      },
+      {
+        "phase": "walk",
+        "t": 24598.5
+      },
+      {
+        "phase": "walk",
+        "t": 24615.2
+      },
+      {
+        "phase": "walk",
+        "t": 24631.8
+      },
+      {
+        "phase": "walk",
+        "t": 24648.5
+      },
+      {
+        "phase": "walk",
+        "t": 24665.2
+      },
+      {
+        "phase": "walk",
+        "t": 24681.8
+      },
+      {
+        "phase": "walk",
+        "t": 24698.5
+      },
+      {
+        "phase": "walk",
+        "t": 24715.2
+      },
+      {
+        "phase": "walk",
+        "t": 24731.8
+      },
+      {
+        "phase": "walk",
+        "t": 24748.5
+      },
+      {
+        "phase": "walk",
+        "t": 24765.2
+      },
+      {
+        "phase": "walk",
+        "t": 24781.8
+      },
+      {
+        "phase": "walk",
+        "t": 24798.6
+      },
+      {
+        "phase": "walk",
+        "t": 24815.1
+      },
+      {
+        "phase": "walk",
+        "t": 24831.9
+      },
+      {
+        "phase": "walk",
+        "t": 24848.5
+      },
+      {
+        "phase": "walk",
+        "t": 24865.2
+      },
+      {
+        "phase": "walk",
+        "t": 24881.9
+      },
+      {
+        "phase": "walk",
+        "t": 24898.5
+      },
+      {
+        "phase": "walk",
+        "t": 24915.1
+      },
+      {
+        "phase": "walk",
+        "t": 24931.8
+      },
+      {
+        "phase": "walk",
+        "t": 24948.5
+      },
+      {
+        "phase": "walk",
+        "t": 24965.2
+      },
+      {
+        "phase": "walk",
+        "t": 24981.8
+      },
+      {
+        "phase": "walk",
+        "t": 24998.5
+      },
+      {
+        "phase": "walk",
+        "t": 25015.2
+      },
+      {
+        "phase": "walk",
+        "t": 25031.9
+      },
+      {
+        "phase": "walk",
+        "t": 25048.5
+      },
+      {
+        "phase": "walk",
+        "t": 25065.2
+      },
+      {
+        "phase": "walk",
+        "t": 25081.9
+      },
+      {
+        "phase": "walk",
+        "t": 25098.6
+      },
+      {
+        "phase": "walk",
+        "t": 25115.1
+      },
+      {
+        "phase": "walk",
+        "t": 25131.9
+      },
+      {
+        "phase": "walk",
+        "t": 25148.5
+      },
+      {
+        "phase": "walk",
+        "t": 25165.2
+      },
+      {
+        "phase": "walk",
+        "t": 25181.8
+      },
+      {
+        "phase": "walk",
+        "t": 25198.5
+      },
+      {
+        "phase": "walk",
+        "t": 25215.2
+      },
+      {
+        "phase": "walk",
+        "t": 25231.8
+      },
+      {
+        "phase": "walk",
+        "t": 25248.5
+      },
+      {
+        "phase": "walk",
+        "t": 25265.1
+      },
+      {
+        "phase": "walk",
+        "t": 25281.9
+      },
+      {
+        "phase": "walk",
+        "t": 25298.5
+      },
+      {
+        "phase": "walk",
+        "t": 25315.2
+      },
+      {
+        "phase": "walk",
+        "t": 25331.8
+      },
+      {
+        "phase": "walk",
+        "t": 25348.5
+      },
+      {
+        "phase": "walk",
+        "t": 25365.1
+      },
+      {
+        "phase": "walk",
+        "t": 25381.9
+      },
+      {
+        "phase": "walk",
+        "t": 25398.5
+      },
+      {
+        "phase": "walk",
+        "t": 25415.1
+      },
+      {
+        "phase": "walk",
+        "t": 25431.8
+      },
+      {
+        "phase": "walk",
+        "t": 25448.5
+      },
+      {
+        "phase": "walk",
+        "t": 25465.2
+      },
+      {
+        "phase": "walk",
+        "t": 25481.9
+      },
+      {
+        "phase": "walk",
+        "t": 25498.5
+      },
+      {
+        "phase": "walk",
+        "t": 25515.2
+      },
+      {
+        "phase": "walk",
+        "t": 25531.9
+      },
+      {
+        "phase": "walk",
+        "t": 25548.5
+      },
+      {
+        "phase": "walk",
+        "t": 25565.2
+      },
+      {
+        "phase": "walk",
+        "t": 25581.8
+      },
+      {
+        "phase": "walk",
+        "t": 25598.5
+      },
+      {
+        "phase": "walk",
+        "t": 25615.2
+      },
+      {
+        "phase": "walk",
+        "t": 25631.8
+      },
+      {
+        "phase": "walk",
+        "t": 25648.5
+      },
+      {
+        "phase": "walk",
+        "t": 25665.1
+      },
+      {
+        "phase": "walk",
+        "t": 25681.8
+      },
+      {
+        "phase": "walk",
+        "t": 25698.5
+      },
+      {
+        "phase": "walk",
+        "t": 25715.1
+      },
+      {
+        "phase": "walk",
+        "t": 25731.9
+      },
+      {
+        "phase": "walk",
+        "t": 25748.5
+      },
+      {
+        "phase": "walk",
+        "t": 25765.2
+      },
+      {
+        "phase": "walk",
+        "t": 25781.8
+      },
+      {
+        "phase": "walk",
+        "t": 25798.5
+      },
+      {
+        "phase": "walk",
+        "t": 25815.2
+      },
+      {
+        "phase": "walk",
+        "t": 25831.8
+      },
+      {
+        "phase": "walk",
+        "t": 25848.5
+      },
+      {
+        "phase": "walk",
+        "t": 25865.2
+      }
+    ],
+    "longTasks": [
+      {
+        "start": 283.09999999403954,
+        "duration": 103,
+        "name": "self"
+      }
+    ],
+    "clock": 25905.69999998808
+  },
+  "errors": [],
+  "physicalPhone": "NOT RUN",
+  "scope": "single observed local sample per scene/viewport; RAF timestamps measure scheduling cadence, not GPU presentation or universal device FPS"
+}

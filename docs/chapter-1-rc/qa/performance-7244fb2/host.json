@@ -1,0 +1,22 @@
+{
+  "host": "Linux-6.17.0-1032-oem-x86_64-with-glibc2.39",
+  "logicalCpuCount": 16,
+  "loadavg": [
+    0.76220703125,
+    1.654296875,
+    2.62255859375
+  ],
+  "python": "3.12.3",
+  "topProcessNamesCpu": [
+    "COMMAND         %CPU",
+    "python3         33.3",
+    "chrome-headless 32.9",
+    "zoom            32.6",
+    "git-remote-http 10.2",
+    "aomhost          9.1",
+    "firefox          6.4",
+    "Isolated Web Co  5.1",
+    "git              3.8"
+  ],
+  "limitations": "Shared live development host; other jobs are not stopped or controlled. This is not an isolated benchmark."
+}
