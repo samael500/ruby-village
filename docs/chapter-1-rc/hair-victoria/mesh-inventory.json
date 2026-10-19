@@ -1,0 +1,656 @@
+[
+  {
+    "name": "GEO-victoria_hair.scalp",
+    "vertices": 4947,
+    "polygons": 4918,
+    "dimensions": [
+      0.19945640861988068,
+      0.204566091299057,
+      0.24723505973815918
+    ],
+    "nonTwoFaceEdges": 66,
+    "materials": [
+      "victoria.hair_particles.orange",
+      "victoria.hair_particles.blonde",
+      "victoria.hair_particles.red"
+    ],
+    "modifiers": [
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "MASK"
+    ],
+    "particles": 7
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-back",
+    "vertices": 740,
+    "polygons": 0,
+    "dimensions": [
+      0.4279739260673523,
+      0.251761257648468,
+      0.5031116008758545
+    ],
+    "nonTwoFaceEdges": 703,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-combined",
+    "vertices": 4990,
+    "polygons": 2360,
+    "dimensions": [
+      0.4464939534664154,
+      0.4293575882911682,
+      0.5750690698623657
+    ],
+    "nonTwoFaceEdges": 4990,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-extra_gel_back",
+    "vertices": 340,
+    "polygons": 0,
+    "dimensions": [
+      0.43786340951919556,
+      0.2472701221704483,
+      0.5453122854232788
+    ],
+    "nonTwoFaceEdges": 323,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-extra_gel_front",
+    "vertices": 415,
+    "polygons": 0,
+    "dimensions": [
+      0.3835783898830414,
+      0.18835631012916565,
+      0.3154280185699463
+    ],
+    "nonTwoFaceEdges": 390,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-extra_gel_top",
+    "vertices": 220,
+    "polygons": 0,
+    "dimensions": [
+      0.3865296244621277,
+      0.2218579649925232,
+      0.3331669569015503
+    ],
+    "nonTwoFaceEdges": 209,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-front_bangs",
+    "vertices": 115,
+    "polygons": 0,
+    "dimensions": [
+      0.27172210812568665,
+      0.10377799719572067,
+      0.19237840175628662
+    ],
+    "nonTwoFaceEdges": 105,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-side",
+    "vertices": 440,
+    "polygons": 0,
+    "dimensions": [
+      0.38644111156463623,
+      0.1294354945421219,
+      0.16091382503509521
+    ],
+    "nonTwoFaceEdges": 418,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair.scalp-top",
+    "vertices": 225,
+    "polygons": 0,
+    "dimensions": [
+      0.349112331867218,
+      0.21577873826026917,
+      0.30510544776916504
+    ],
+    "nonTwoFaceEdges": 212,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_bangs",
+    "vertices": 2110,
+    "polygons": 2050,
+    "dimensions": [
+      0.2828337550163269,
+      0.13877049088478088,
+      0.1997537612915039
+    ],
+    "nonTwoFaceEdges": 100,
+    "materials": [
+      "victoria.hair_blonde"
+    ],
+    "modifiers": [
+      "ARMATURE",
+      "CORRECTIVE_SMOOTH",
+      "SUBSURF"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_bangs_chomped",
+    "vertices": 2110,
+    "polygons": 2050,
+    "dimensions": [
+      0.21230268478393555,
+      0.10533032566308975,
+      0.19621098041534424
+    ],
+    "nonTwoFaceEdges": 100,
+    "materials": [
+      "victoria.hair_blonde"
+    ],
+    "modifiers": [
+      "ARMATURE",
+      "SUBSURF"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_cage",
+    "vertices": 386,
+    "polygons": 384,
+    "dimensions": [
+      0.4508838653564453,
+      0.512438178062439,
+      0.6793256998062134
+    ],
+    "nonTwoFaceEdges": 0,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_cut.scalp",
+    "vertices": 4947,
+    "polygons": 4918,
+    "dimensions": [
+      0.1974780112504959,
+      0.20266807079315186,
+      0.24556052684783936
+    ],
+    "nonTwoFaceEdges": 66,
+    "materials": [
+      "victoria.hair_particles.orange_distressed",
+      "victoria.hair_particles.blonde_distressed",
+      "victoria.hair_particles.red_distressed"
+    ],
+    "modifiers": [
+      "DISPLACE",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "MASK"
+    ],
+    "particles": 2
+  },
+  {
+    "name": "GEO-victoria_hair_cut.scalp-front_bangs",
+    "vertices": 105,
+    "polygons": 0,
+    "dimensions": [
+      0.20535632967948914,
+      0.07350713014602661,
+      0.18580341339111328
+    ],
+    "nonTwoFaceEdges": 96,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_cut.scalp-stubbles",
+    "vertices": 240,
+    "polygons": 0,
+    "dimensions": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "nonTwoFaceEdges": 192,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_cut.scalp_stubbles",
+    "vertices": 4947,
+    "polygons": 4918,
+    "dimensions": [
+      0.1974780410528183,
+      0.20266816020011902,
+      0.2455606460571289
+    ],
+    "nonTwoFaceEdges": 66,
+    "materials": [
+      "victoria.hair_particles.orange",
+      "victoria.hair_particles.blonde",
+      "victoria.hair_particles.red"
+    ],
+    "modifiers": [
+      "ARMATURE",
+      "DISPLACE",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "MASK"
+    ],
+    "particles": 2
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp",
+    "vertices": 4947,
+    "polygons": 4918,
+    "dimensions": [
+      0.19945640861988068,
+      0.204566091299057,
+      0.24723505973815918
+    ],
+    "nonTwoFaceEdges": 66,
+    "materials": [
+      "victoria.hair_particles.orange_distressed",
+      "victoria.hair_particles.blonde_distressed",
+      "victoria.hair_particles.red_distressed"
+    ],
+    "modifiers": [
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "PARTICLE_SYSTEM",
+      "MASK"
+    ],
+    "particles": 7
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp-back",
+    "vertices": 740,
+    "polygons": 0,
+    "dimensions": [
+      0.4279739260673523,
+      0.251761257648468,
+      0.5031116008758545
+    ],
+    "nonTwoFaceEdges": 703,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp-extra_gel_back",
+    "vertices": 340,
+    "polygons": 0,
+    "dimensions": [
+      0.43786340951919556,
+      0.2472701221704483,
+      0.5453122854232788
+    ],
+    "nonTwoFaceEdges": 323,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp-extra_gel_front",
+    "vertices": 415,
+    "polygons": 0,
+    "dimensions": [
+      0.3835783898830414,
+      0.18835631012916565,
+      0.3154280185699463
+    ],
+    "nonTwoFaceEdges": 390,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp-extra_gel_top",
+    "vertices": 220,
+    "polygons": 0,
+    "dimensions": [
+      0.3865296244621277,
+      0.2218579649925232,
+      0.3331669569015503
+    ],
+    "nonTwoFaceEdges": 209,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp-front_bangs",
+    "vertices": 115,
+    "polygons": 0,
+    "dimensions": [
+      0.27172210812568665,
+      0.10377799719572067,
+      0.19237840175628662
+    ],
+    "nonTwoFaceEdges": 105,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp-side",
+    "vertices": 440,
+    "polygons": 0,
+    "dimensions": [
+      0.38644111156463623,
+      0.1294354945421219,
+      0.16091382503509521
+    ],
+    "nonTwoFaceEdges": 418,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_distressed.scalp-top",
+    "vertices": 225,
+    "polygons": 0,
+    "dimensions": [
+      0.349112331867218,
+      0.21577873826026917,
+      0.30510544776916504
+    ],
+    "nonTwoFaceEdges": 212,
+    "materials": [],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "GEO-victoria_hair_main",
+    "vertices": 2699,
+    "polygons": 2691,
+    "dimensions": [
+      0.4861256182193756,
+      0.4052729308605194,
+      0.6069180965423584
+    ],
+    "nonTwoFaceEdges": 0,
+    "materials": [
+      "victoria.hair_orange",
+      "victoria.hair_blonde",
+      "victoria.hair_red"
+    ],
+    "modifiers": [
+      "ARMATURE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "LATTICE",
+      "SUBSURF"
+    ],
+    "particles": 0
+  },
+  {
+    "name": "WGT-Hair_Side_Main",
+    "vertices": 4,
+    "polygons": 0,
+    "dimensions": [
+      0.008392316289246082,
+      0.037615034729242325,
+      0.0
+    ],
+    "nonTwoFaceEdges": 4,
+    "materials": [],
+    "modifiers": [],
+    "particles": 0
+  },
+  {
+    "name": "WGT-Victoria_Hair1",
+    "vertices": 4,
+    "polygons": 0,
+    "dimensions": [
+      0.0,
+      0.14972718060016632,
+      0.03340572863817215
+    ],
+    "nonTwoFaceEdges": 4,
+    "materials": [],
+    "modifiers": [],
+    "particles": 0
+  },
+  {
+    "name": "WGT-Victoria_Hair_Bananas",
+    "vertices": 10,
+    "polygons": 0,
+    "dimensions": [
+      0.21759873628616333,
+      0.052373114973306656,
+      0.17730650305747986
+    ],
+    "nonTwoFaceEdges": 10,
+    "materials": [],
+    "modifiers": [],
+    "particles": 0
+  },
+  {
+    "name": "WGT-Victoria_Hair_Curl",
+    "vertices": 5,
+    "polygons": 0,
+    "dimensions": [
+      0.09178382158279419,
+      0.019009049981832504,
+      0.09178382158279419
+    ],
+    "nonTwoFaceEdges": 4,
+    "materials": [],
+    "modifiers": [],
+    "particles": 0
+  },
+  {
+    "name": "WGT-Victoria_Hair_Top",
+    "vertices": 13,
+    "polygons": 0,
+    "dimensions": [
+      0.3695518374443054,
+      0.128852978348732,
+      0.36939141154289246
+    ],
+    "nonTwoFaceEdges": 12,
+    "materials": [],
+    "modifiers": [],
+    "particles": 0
+  }
+]
