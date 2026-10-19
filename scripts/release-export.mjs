@@ -10,8 +10,18 @@ export function pruneReleaseExports(root,outDir){
  const motion=read('src/ruta-motion-view.ts').match(/assets\/(characters-walk-v1\/[^/]+)\/manifest\.json/ )?.[1];
  const maps=[...read('src/main.ts').matchAll(/assets\/(chapter-map-[\w-]+)\//g)].map(m=>m[1]);
  if(!motion||!maps.length)throw new Error('Missing explicit motion/map release entry');
- const dirs=['audio','ui/v7','ui/v8','prologue','bridge-v1',...(version===2?['bridge-v2']:[]),'road-v1','level-1/v4','level-1/v5','characters-v1/optimized','characters-facing-v1',motion,...maps, ...(version===1?['chapter-1/v6','chapter-1/v8']:['chapter-1/v9'])].map(x=>`assets/${x}/`);
+ const dirs=['audio','ui/v7','ui/v8','prologue','bridge-v1','road-v1','level-1/v4','level-1/v5','characters-v1/optimized','characters-facing-v1',motion,...maps, ...(version===1?['chapter-1/v6','chapter-1/v8']:[])].map(x=>`assets/${x}/`);
  const files=new Set(['assets/chapter-1/v6/01-courtyard.png']); // current menu CSS
+ if(version===2){
+  files.add('assets/chapter-1/v9/manifest.json');
+  const chapter=JSON.parse(read('public/assets/chapter-1/v9/manifest.json'));
+  for(const scene of Object.values(chapter.scenes))for(const file of [scene.background,scene.foreground,scene.gateOpen,scene.gateClosed,scene.wide?.file,scene.wheel?.file]){
+   if(file)files.add(`assets/chapter-1/v9/${file}`);
+  }
+  const bridge=read('src/bridge-art.ts').match(/assets\/(bridge-v2\/[\w.-]+)/)?.[1];
+  if(!bridge)throw new Error('Missing active painted bridge material');
+  files.add(`assets/${bridge}`);
+ }
  const optimized=JSON.parse(read('public/assets/characters-v1/delivery-manifest.json')).deliveries;
  for(const file of ['manifest.json','poses-manifest.json','residents-manifest.json']){
   const walk=value=>{if(value&&typeof value==='object')for(const[k,v]of Object.entries(value)){if(k==='image'&&typeof v==='string')files.add(`assets/characters-v1/${optimized[v]?.image??v}`);else walk(v);}};
