@@ -3,7 +3,7 @@
 <h1>Рута — рисованные кадры ходьбы</h1>
 <p>24 цельных кадра по принятой 3D-походке. Это пилот рисовки: привязка кадров к движению в игре ещё проверяется.</p>
 <button id="play">Пауза</button><label>Кадр <input id="frame" type="range" min="0" max="23" value="0"><span id="number">0</span></label>
-<div class="views"><section class="view"><h2>Принятая внешность</h2><img class="reference" src="accepted-ruta.webp" alt="Принятая Рута"></section><section class="view"><h2>Новая рисовка</h2><canvas id="painted" width="600" height="600"></canvas></section><section class="view"><h2>Исходная 3D-походка</h2><canvas id="native" width="600" height="600"></canvas></section></div>
+<div class="views"><section class="view"><h2>Принятая внешность</h2><img class="reference" src="accepted-ruta.webp" alt="Принятая Рута"></section><section class="view"><h2>Новая рисовка</h2><canvas id="painted" width="360" height="360"></canvas></section><section class="view"><h2>Исходная 3D-походка</h2><canvas id="native" width="360" height="360"></canvas></section></div>
 <p id="status">Загрузка кадров…</p>
 <details><summary>Что уже проверено и что остаётся</summary><p>Все персонажи извлечены целиком, без растягивания частей тела и индивидуального изменения роста. Для совмещения использована пробная разметка видимых контуров обуви. Она не доказывает точное положение скрытых суставов; кадр 7 имеет интерполированную точку регистрации. Эта петля не является проверкой отсутствия скольжения или финальной игровой анимацией.</p><p><a href="../painted-ruta-artist-origin24-v1/index.html">Диагностика регистрации</a> · <a href="../painted-ruta-whole24-v1/whole24-sheet.png">Все 24 целых спрайта</a></p></details>
 <script type="module">
@@ -13,8 +13,8 @@ const painted=await Promise.all(Array.from({length:24},(_,i)=>load(`../painted-r
 const native=await Promise.all(Array.from({length:24},(_,i)=>load(`../painted-ruta-analysis24-v1/guide-${String(i).padStart(2,'0')}.png`)));
 let playing=true,k=0,last=performance.now(),elapsed=0;const slider=document.querySelector('#frame');
 document.querySelector('#play').onclick=()=>{playing=!playing;document.querySelector('#play').textContent=playing?'Пауза':'Играть';};
-slider.oninput=()=>{k=Number(slider.value);elapsed=k*data.cycleDurationMs/24;};
-function draw(id,img,anchor,scale){const c=document.querySelector('#'+id),x=c.getContext('2d');x.clearRect(0,0,600,600);x.drawImage(img,300-anchor[0]*scale*2,500-anchor[1]*scale*2,img.naturalWidth*scale*2,img.naturalHeight*scale*2);}
+slider.oninput=()=>{k=Number(slider.value);elapsed=k*cycle/24;};
+function draw(id,img,anchor,scale){const c=document.querySelector('#'+id),x=c.getContext('2d');x.clearRect(0,0,360,360);x.drawImage(img,180-anchor[0]*scale*2,320-anchor[1]*scale*2,img.naturalWidth*scale*2,img.naturalHeight*scale*2);}
 const cycle=data.cycleDurationMs??1666.666667;
 function tick(now){const dt=now-last;last=now;if(playing){elapsed=(elapsed+Math.min(dt,100))%cycle;k=Math.floor(elapsed/cycle*24);}const f=data.frames[k];draw('painted',painted[k],f.footAnchorProposalArtPx,data.paintedDisplayScale);draw('native',native[k],f.nativeRootPx,data.nativeDisplayScale);slider.value=String(k);document.querySelector('#number').textContent=String(k);requestAnimationFrame(tick);}
 document.querySelector('#status').textContent='24 кадра · цикл 1,667 с · показ в двойном игровом масштабе';requestAnimationFrame(tick);
