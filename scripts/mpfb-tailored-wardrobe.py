@@ -12,7 +12,7 @@ from mathutils.bvhtree import BVHTree
 
 ROOT=Path(__file__).resolve().parents[1]
 SOURCE=ROOT/'art/characters-mpfb-v1/styled-body-pilot-v3/ruta-styled-body.blend'
-OUT=ROOT/'art/characters-mpfb-v1/tailored-wardrobe-v9';OUT.mkdir(parents=True,exist_ok=True)
+OUT=ROOT/'art/characters-mpfb-v1/tailored-wardrobe-v10';OUT.mkdir(parents=True,exist_ok=True)
 bpy.ops.wm.open_mainfile(filepath=str(SOURCE));scene=bpy.context.scene;scene.frame_set(0)
 rig=next(o for o in bpy.data.objects if o.type=='ARMATURE' and len(o.data.bones)==167)
 body=next(o for o in bpy.data.objects if o.type=='MESH' and len(o.data.vertices)==19158)
@@ -121,7 +121,7 @@ group=proxy.vertex_groups.new(name='Torso fit after exact source smoothing')
 group.add([v.index for v in proxy.data.vertices if .64<v.co.z<1.12 and abs(v.co.x)<.145],1.,'REPLACE')
 mask=proxy.modifiers.new('Exclude sleeves AFTER original cloth smoothing','MASK');mask.vertex_group=group.name
 proxy.hide_render=True;proxy.display_type='WIRE'
-fit=vest.modifiers.new('Posed torso cloth clearance','SHRINKWRAP');fit.target=proxy;fit.wrap_method='NEAREST_SURFACEPOINT';fit.wrap_mode='ABOVE_SURFACE';fit.offset=.008
+fit=vest.modifiers.new('Posed torso cloth clearance','SHRINKWRAP');fit.target=proxy;fit.wrap_method='NEAREST_SURFACEPOINT';fit.wrap_mode='ABOVE_SURFACE';fit.offset=.014
 vest.modifiers.move(len(vest.modifiers)-1,1)
 
 # Buttons sit on actual shirt-fit surface and carry the same native torso weights.
@@ -216,7 +216,7 @@ assert len(body.data.vertices)==19158 and len(rig.data.bones)==167
 assert hashlib.sha256(b''.join(bytes(str(tuple(v.co)),'ascii') for v in body.data.vertices)).hexdigest()==body_hash
 assert rig.animation_data.action.name==source_action
 bpy.ops.file.pack_all();bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-tailored-source.blend'))
-report={'status':'native-wardrobe-candidate-awaiting-three-view-and-intersection-review','productionEnabled':False,'source':str(SOURCE.relative_to(ROOT)),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'bodyVertices':19158,'bodyRestGeometryChanged':False,'rigBones':167,'actionPreserved':source_action,'nativeHead12Preserved':True,'bagAndSingleStrapGeometryPreserved':True,'removedRejectedGarmentObjects':removed,'newVestVertices':len(vest.data.vertices),'vestConstruction':'authored sewn topology, native garment weights, hidden torso-only posed cloth fitting proxy then solidify','vestClearanceMeters':.008,'vestThicknessMeters':.0025,'warning':'native source candidate; rendered fit/intersections remain acceptance gates'}
+report={'status':'native-wardrobe-candidate-awaiting-three-view-and-intersection-review','productionEnabled':False,'source':str(SOURCE.relative_to(ROOT)),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'bodyVertices':19158,'bodyRestGeometryChanged':False,'rigBones':167,'actionPreserved':source_action,'nativeHead12Preserved':True,'bagAndSingleStrapGeometryPreserved':True,'removedRejectedGarmentObjects':removed,'newVestVertices':len(vest.data.vertices),'vestConstruction':'authored sewn topology, native garment weights, hidden torso-only posed cloth fitting proxy then solidify','vestClearanceMeters':.014,'vestThicknessMeters':.0025,'warning':'native source candidate; rendered fit/intersections remain acceptance gates'}
 report['blendSha256']=hashlib.sha256((OUT/'ruta-tailored-source.blend').read_bytes()).hexdigest()
 (OUT/'checkpoint.json').write_text(json.dumps(report,indent=2)+'\n');print(json.dumps(report))
 if os.environ.get('RUBY_MPFB_WARDROBE_RENDER')=='1':
