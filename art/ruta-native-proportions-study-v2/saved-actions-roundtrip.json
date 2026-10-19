@@ -1,0 +1,62 @@
+{
+  "status": "saved-action-preservation-PASS-not-gait-or-art-acceptance",
+  "files": [
+    {
+      "file": "art/ruta-native-proportions-v1/ruta-proportion-proposal.blend",
+      "sha256": "32fbb832c1dd04d18ccd7fc37456fa11c3e6bb076e7e33b459d52b433358c57c",
+      "requiredActionCount": 50,
+      "allRequiredActionsPresent": true,
+      "allRequiredCurveHashesMatch": true,
+      "retargetedActions": {
+        "Walk_ProportionProposal": {
+          "fakeUser": true,
+          "users": 2,
+          "sha256": "8cb4828a50bd237ec48331af9c7f9088da8cb3f85654855f3703e9e6b38f16df"
+        },
+        "Idle_Neutral_ProportionProposal": {
+          "fakeUser": true,
+          "users": 1,
+          "sha256": "4fedba0d4e11bb16ced8f727af319e784a29c3eb2dd67395b43cb2265125bed7"
+        }
+      }
+    },
+    {
+      "file": "art/ruta-native-proportions-study-v2/a-neutral/ruta-proportion-proposal.blend",
+      "sha256": "d8f0998fa07c6839b5caca41dc2317558aae8662ec9c783bf1fb34e7279a929b",
+      "requiredActionCount": 50,
+      "allRequiredActionsPresent": true,
+      "allRequiredCurveHashesMatch": true,
+      "retargetedActions": {
+        "Walk_ProportionProposal": {
+          "fakeUser": true,
+          "users": 1,
+          "sha256": "8cb4828a50bd237ec48331af9c7f9088da8cb3f85654855f3703e9e6b38f16df"
+        },
+        "Idle_Neutral_ProportionProposal": {
+          "fakeUser": true,
+          "users": 2,
+          "sha256": "4fedba0d4e11bb16ced8f727af319e784a29c3eb2dd67395b43cb2265125bed7"
+        }
+      }
+    },
+    {
+      "file": "art/ruta-native-proportions-study-v2/b-neutral/ruta-proportion-proposal.blend",
+      "sha256": "a4215f55a1bad78ae2e0e35b9ce572515e398053e64db5d483ee518e8b1923b5",
+      "requiredActionCount": 50,
+      "allRequiredActionsPresent": true,
+      "allRequiredCurveHashesMatch": true,
+      "retargetedActions": {
+        "Walk_ProportionProposal": {
+          "fakeUser": true,
+          "users": 1,
+          "sha256": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd"
+        },
+        "Idle_Neutral_ProportionProposal": {
+          "fakeUser": true,
+          "users": 2,
+          "sha256": "3b87d66ba83c5f8cd7ffeb5928f4b9c25cd5a420f8879dc824b2704e28fb3eca"
+        }
+      }
+    }
+  ]
+}

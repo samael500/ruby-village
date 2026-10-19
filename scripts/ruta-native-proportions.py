@@ -10,6 +10,9 @@ def curves(a):return [f for l in a.layers for s in l.strips for b in s.channelba
 def actionhash(a):return digest([(f.data_path,f.array_index,[(tuple(k.co),k.interpolation)for k in f.keyframe_points])for f in curves(a)])
 bpy.ops.wm.open_mainfile(filepath=str(SOURCE));sc=bpy.context.scene;rig=bpy.data.objects['CharacterArmature'];rig.matrix_world=Matrix.Identity(4)
 for t in rig.animation_data.nla_tracks:t.mute=True
+# Preserve the imported originals too, including unused duplicate action IDs.
+# In-memory curve checks alone do not prove Blender retained them on disk.
+for action in bpy.data.actions:action.use_fake_user=True
 rig.data.pose_position='REST';bpy.context.view_layer.update();meshobjects=[o for o in sc.objects if o.type=='MESH' and o.parent==rig];old={b.name:{'head':b.head_local.copy(),'tail':b.tail_local.copy(),'parent':b.parent.name if b.parent else None,'length':b.length}for b in rig.data.bones};sourcehashes={a.name:actionhash(a)for a in bpy.data.actions};weights_before=digest([(o.name,[[(g.group,g.weight)for g in v.groups]for v in o.data.vertices])for o in meshobjects]);counts={o.name:[len(o.data.vertices),len(o.data.polygons)]for o in meshobjects}
 def scale(name):
  if name in ['Head','Neck']:return HEAD
@@ -47,7 +50,7 @@ for b in rig.data.edit_bones:b.head=new[b.name]['head'];b.tail=new[b.name]['tail
 bpy.ops.object.mode_set(mode='OBJECT');after={'body':usedbounds(meshobjects),'headMesh':usedbounds([bpy.data.objects['Adventurer_Head']]),'hair':usedbounds([bpy.data.objects['Ruta CC0 ginger waves']])}
 retarget={}
 for source_name in ['Walk','Idle_Neutral']:
- a=bpy.data.actions[source_name].copy();a.name=source_name+'_ProportionProposal';changed=[]
+ a=bpy.data.actions[source_name].copy();a.name=source_name+'_ProportionProposal';a.use_fake_user=True;changed=[]
  for f in curves(a):
   match=re.match(r'pose.bones\["(.+)"\]\.location$',f.data_path)
   if not match:continue
@@ -55,7 +58,7 @@ for source_name in ['Walk','Idle_Neutral']:
   for k in f.keyframe_points:k.co.y*=factor;k.handle_left.y*=factor;k.handle_right.y*=factor
   changed.append({'bone':name,'axis':f.array_index,'factor':factor})
  original=bpy.data.actions[source_name];assert [(f.data_path,f.array_index,[(tuple(k.co),k.interpolation)for k in f.keyframe_points])for f in curves(a)if'rotation'in f.data_path]==[(f.data_path,f.array_index,[(tuple(k.co),k.interpolation)for k in f.keyframe_points])for f in curves(original)if'rotation'in f.data_path]
- retarget[source_name]={'action':a.name,'hash':actionhash(a),'translationChannels':changed,'rotationCurvesExactlyPreserved':True,'keyframeTimesUnchanged':True}
+ retarget[source_name]={'action':a.name,'hash':actionhash(a),'translationChannels':changed,'rotationCurvesExactlyPreserved':True,'keyframeTimesUnchanged':True,'retainedOnSave':a.use_fake_user}
 assert all(actionhash(bpy.data.actions[name])==h for name,h in sourcehashes.items());assert weights_before==digest([(o.name,[[(g.group,g.weight)for g in v.groups]for v in o.data.vertices])for o in meshobjects]);assert counts=={o.name:[len(o.data.vertices),len(o.data.polygons)]for o in meshobjects}
 rig.data.pose_position='POSE';a=bpy.data.actions[retarget[CLIP]['action']];rig.animation_data.action=a;rig.animation_data.action_slot=a.slots[0];sc.frame_set(0);p=rig.data.bones['Root'].head_local.copy();p.z=0;rig.matrix_world=Matrix.Translation(-p);bpy.context.view_layer.update()
 # Lightweight warm native shading; root owns detailed material/accessory styling.
@@ -66,7 +69,7 @@ for m in bpy.data.materials:
   bs=m.node_tree.nodes.get('Principled BSDF')
   if bs:bs.inputs['Roughness'].default_value=.9
 bpy.ops.wm.save_as_mainfile(filepath=str(OUT/'ruta-proportion-proposal.blend'))
-contract={'status':'UNAPPROVED-native-rest-proportion-proposal-not-runtime','source':str(SOURCE.relative_to(ROOT)),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'parameters':{'body':BODY,'torso':TORSO,'proofAction':CLIP,'headNeck':HEAD,'upperLowerArm':ARM,'wrist':ARM*.95238095238,'fingers':ARM*.873015873},'restTransform':'T_b(p)=newHead_b+s_b*(p-oldHead_b); newHead_b=newHead_parent+s_parent*(oldHead_b-oldHead_parent); rest vertices blended with unchanged normalized source weights','bones':{n:{'oldHead':list(v['head']),'oldTail':list(v['tail']),'newHead':list(new[n]['head']),'newTail':list(new[n]['tail']),'scale':scale(n),'parent':v['parent']}for n,v in old.items()},'restMeshBoundsBefore':before,'restMeshBoundsAfter':after,'originalActionsHashes':sourcehashes,'originalActionsUntouched':True,'retargetedActions':retarget,'weightsAndTopologyUnchanged':True,'bodyReference':'not frozen; root will calibrate after silhouette acceptance','limitations':['proposal proportions awaiting independent reference measurements','same source timing and rotation curves, changed translations/rest lengths mean changed motion metrics','no exact original-motion/no-slip claim','stock simple face, boot geometry, green shirt and single original satchel remain for separate root styling','no raster deformation or per-frame adjustments'],'views':[]}
+contract={'status':'UNAPPROVED-native-rest-proportion-proposal-not-runtime','source':str(SOURCE.relative_to(ROOT)),'sourceSha256':hashlib.sha256(SOURCE.read_bytes()).hexdigest(),'parameters':{'body':BODY,'torso':TORSO,'proofAction':CLIP,'headNeck':HEAD,'upperLowerArm':ARM,'wrist':ARM*.95238095238,'fingers':ARM*.873015873},'restTransform':'T_b(p)=newHead_b+s_b*(p-oldHead_b); newHead_b=newHead_parent+s_parent*(oldHead_b-oldHead_parent); rest vertices blended with unchanged normalized source weights','bones':{n:{'oldHead':list(v['head']),'oldTail':list(v['tail']),'newHead':list(new[n]['head']),'newTail':list(new[n]['tail']),'scale':scale(n),'parent':v['parent']}for n,v in old.items()},'restMeshBoundsBefore':before,'restMeshBoundsAfter':after,'originalActionsHashes':sourcehashes,'originalActionsUntouched':True,'originalActionCurvesUntouched':True,'persistenceFlagsChanged':'all original and retarget actions use_fake_user=True; curves unaffected','retargetedActions':retarget,'weightsAndTopologyUnchanged':True,'bodyReference':'not frozen; root will calibrate after silhouette acceptance','limitations':['proposal proportions awaiting independent reference measurements','same source timing and rotation curves, changed translations/rest lengths mean changed motion metrics','no exact original-motion/no-slip claim','stock simple face, boot geometry, green shirt and single original satchel remain for separate root styling','no raster deformation or per-frame adjustments'],'views':[]}
 (OUT/'rest-transform-contract.json').write_text(json.dumps(contract,indent=2)+'\n')
 for name,yaw in [('front',0),('three-quarter',math.pi/4)]:
  rig.matrix_world=Matrix.Rotation(yaw,4,'Z')@Matrix.Translation(-p);bpy.context.view_layer.update();q=world_to_camera_view(sc,sc.camera,rig.matrix_world@rig.pose.bones['Root'].head);sc.render.filepath=str(OUT/(name+'-'+('neutral'if CLIP=='Idle_Neutral'else'walk')+'00.png'));bpy.ops.render.render(write_still=True);contract['views'].append({'view':name,'frame':0,'yaw':yaw,'rootPx':[q.x*512,(1-q.y)*640]})

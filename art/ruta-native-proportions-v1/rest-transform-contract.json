@@ -4,6 +4,8 @@
   "sourceSha256": "e643c4e4067585a9c7fbbe5d4fa0269019ea04e2d79764a8b3568732c7209d9c",
   "parameters": {
     "body": 0.7,
+    "torso": 0.7,
+    "proofAction": "Walk",
     "headNeck": 1.6,
     "upperLowerArm": 0.63,
     "wrist": 0.5999999999994,
@@ -2486,7 +2488,8 @@
         }
       ],
       "rotationCurvesExactlyPreserved": true,
-      "keyframeTimesUnchanged": true
+      "keyframeTimesUnchanged": true,
+      "retainedOnSave": true
     },
     "Idle_Neutral": {
       "action": "Idle_Neutral_ProportionProposal",
@@ -3274,7 +3277,8 @@
         }
       ],
       "rotationCurvesExactlyPreserved": true,
-      "keyframeTimesUnchanged": true
+      "keyframeTimesUnchanged": true,
+      "retainedOnSave": true
     }
   },
   "weightsAndTopologyUnchanged": true,
@@ -3305,5 +3309,7 @@
         516.8593120574951
       ]
     }
-  ]
+  ],
+  "originalActionCurvesUntouched": true,
+  "persistenceFlagsChanged": "all original and retarget actions use_fake_user=True; curves unaffected"
 }

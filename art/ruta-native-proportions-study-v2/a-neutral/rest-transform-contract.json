@@ -2488,7 +2488,8 @@
         }
       ],
       "rotationCurvesExactlyPreserved": true,
-      "keyframeTimesUnchanged": true
+      "keyframeTimesUnchanged": true,
+      "retainedOnSave": true
     },
     "Idle_Neutral": {
       "action": "Idle_Neutral_ProportionProposal",
@@ -3276,7 +3277,8 @@
         }
       ],
       "rotationCurvesExactlyPreserved": true,
-      "keyframeTimesUnchanged": true
+      "keyframeTimesUnchanged": true,
+      "retainedOnSave": true
     }
   },
   "weightsAndTopologyUnchanged": true,
@@ -3307,5 +3309,7 @@
         516.8593120574951
       ]
     }
-  ]
+  ],
+  "originalActionCurvesUntouched": true,
+  "persistenceFlagsChanged": "all original and retarget actions use_fake_user=True; curves unaffected"
 }
