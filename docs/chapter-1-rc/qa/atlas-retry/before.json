@@ -1,0 +1,44 @@
+{
+  "sourceRef": "5a7672a",
+  "sourceSha256": "65e083e85d37dd32d5c090e83984d8e110efeb8be55fbe7f069c8fab5cce3674",
+  "browser": "156.0.8078.4",
+  "scope": "Real Chromium exact compiled module function, not full game reentry",
+  "concurrentInitialFailure": [
+    {
+      "status": "error",
+      "name": "EncodingError",
+      "message": "The source image cannot be decoded."
+    },
+    {
+      "status": "error",
+      "name": "EncodingError",
+      "message": "The source image cannot be decoded."
+    }
+  ],
+  "concurrentRetryAfterNetworkRestored": [
+    {
+      "status": "error",
+      "name": "EncodingError",
+      "message": "The source image cannot be decoded."
+    },
+    {
+      "status": "error",
+      "name": "EncodingError",
+      "message": "The source image cannot be decoded."
+    }
+  ],
+  "freshControlDimensions": [
+    2,
+    2
+  ],
+  "requests": [
+    {
+      "url": "http://qa.test/atlas.png",
+      "networkRestored": false
+    },
+    {
+      "url": "http://qa.test/control.png",
+      "networkRestored": true
+    }
+  ]
+}
