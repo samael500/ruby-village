@@ -7,3 +7,7 @@ The bounded change is shader/compositor only: preserve native Ellie face/eyes/ha
 render-study.py saves the native source/manifest before rendering only E phases0/30/40. The goal is stable actual3D motion with a more drawn surface. Matching the accepted generated illustration is an open artistic question; preserving the existing native silhouette/face may limit it. No full48 export, no gameplay/no-slip acceptance.
 
 Blender Studio Ellie CC BY4.0 and inherited Quaternius/Cortu rights/provenance remain in the repository source handoffs. Material/compositor adaptation is recorded in manifest.json. Source packed textures and native shader protections are retained.
+
+Actual three-pose outcome: thin warm silhouette ink and subtle surface variation appear, but the native back-three-quarter face, smooth3D hair and sparse garment/bag detail remain visibly different from the accepted painted target. This study **does not match or replace the accepted artwork**; bounded fallback completed without a48batch. comparison-native-v-accepted.png uses one shared global scale/translation for the painted reference display, never individual fitting. Cold-open source-data checks are recorded separately.
+
+Reproduce with Blender4.5.3 `--disable-autoexec --python-exit-code 1 -b -t 3 --python art/ruta-native-painted-render-study-v1/render-study.py`. Python exit exceptions must fail. This original run was explicitly checked by final log marker, three actual outputfiles and a separate cold-open probe, not exitcode alone.
