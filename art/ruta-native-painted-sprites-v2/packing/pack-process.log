@@ -1,0 +1,63 @@
+{
+  "grid": {
+    "origin": [
+      0,
+      32
+    ],
+    "columnPitch": 324,
+    "rowPitch": 384,
+    "columns": 4,
+    "rows": 3,
+    "frameSize": [
+      324,
+      384
+    ],
+    "reason": "one shared nonoverlapping grid contains all alpha>128 actor components; intentionally not raw dimensions divided into equal rows",
+    "notUniquePhysicalRegistration": true,
+    "rightPaddingPixels": 1,
+    "bottomPaddingPixels": 0,
+    "rawUnassignedTopGutterPixels": 32
+  },
+  "actors": 12,
+  "minActorMarginPx": 12,
+  "commonDiagnosticTransform": {
+    "paintedCellToNativeCanvasUniformScale": 1.170296097830776,
+    "translation": [
+      49.07305816302406,
+      98.28014538781625
+    ],
+    "fit": "ONE common scalar and XY translation over all selected shape descriptors (5perpose), not per-frame registration; metadata/display only, atlas RGBA untouched",
+    "rmsNativePx": 13.255938673099168,
+    "maxNativePx": 30.474950555730207,
+    "perProxy": {
+      "centroid": {
+        "rmsNativePx": 11.672014164209015,
+        "maxNativePx": 19.059385603572434,
+        "maxSuccessiveDeltaMismatchNativePx": 19.920068771876338
+      },
+      "crownBand": {
+        "rmsNativePx": 8.761838105961163,
+        "maxNativePx": 17.01783060013913,
+        "maxSuccessiveDeltaMismatchNativePx": 16.44214162914734
+      },
+      "lowerBand": {
+        "rmsNativePx": 10.710360133598217,
+        "maxNativePx": 16.157813659766767,
+        "maxSuccessiveDeltaMismatchNativePx": 16.512188081199195
+      },
+      "bboxMin": {
+        "rmsNativePx": 18.412423498978473,
+        "maxNativePx": 30.474950555730207,
+        "maxSuccessiveDeltaMismatchNativePx": 31.192537555251047
+      },
+      "bboxMax": {
+        "rmsNativePx": 14.555571977189945,
+        "maxNativePx": 27.30193449480323,
+        "maxSuccessiveDeltaMismatchNativePx": 28.195509248672142
+      }
+    },
+    "uncertainty": "alpha128 shape descriptors, not semantic bones or physical support points; crown/lower15percent bands change membership, and artwork/proportions/heading differ. No exact joint correspondence or physical Root recovered.",
+    "poseCorrespondence": "intended row-major source phase mapping; hashes prove source inputs, not generated anatomical pose fidelity"
+  },
+  "alpha1": 214073
+}
