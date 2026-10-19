@@ -14,7 +14,7 @@ Core gait remains original in-place Walk; original measured root/stride contract
 
 ## Source-origin calibration erratum
 
-Native Root rest head ground point is(0,−0.0723,0), not object origin. Earlier E pilot has constant17.6native-pixel forward origin offset. Rotating that object without normalization would orbit the semantic root; this was discovered before runtime integration, not called an observed game bug. Pre-normalization six-view draft renders are retained under ready-character-six-v1/rejects.
+Native Root rest head ground point is(0,−0.0723,0), not object origin. Earlier E pilot has constant22.0308native-pixel forward origin offset (corrected from17.6 after true portrait-camera PPM measurement). Rotating that object without normalization would orbit the semantic root; this was discovered before runtime integration, not called an observed game bug. Pre-normalization six-view draft renders are retained under ready-character-six-v1/rejects.
 
 New render-only world matrix is Rz(yaw) @ T(−RootRestGround), using actual native rest Root, never posed hips. Source bone rest, local geometry/weights/actions remain unchanged. Camera/viewport fixed, world anchor0 shared. Static proof of all12 headings precedes any full rerender; no per-frame crop/translation.
 

@@ -637,6 +637,1106 @@
               ]
             }
           }
+        },
+        "sw": {
+          "acceptedScreenAngleRadians": 2.347599662738727,
+          "nativeHeadingAfterCameraRadians": 2.1393441517485265,
+          "stockForwardMinusYBlenderYawRadians": -0.56854782495363,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/sw/walk/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 1.6666666666666667,
+                  "file": "renders/calibrated-1/sw/walk/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 3.3333333333333335,
+                  "file": "renders/calibrated-1/sw/walk/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 5.0,
+                  "file": "renders/calibrated-1/sw/walk/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 6.666666666666667,
+                  "file": "renders/calibrated-1/sw/walk/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/sw/walk/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 10.0,
+                  "file": "renders/calibrated-1/sw/walk/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 11.666666666666666,
+                  "file": "renders/calibrated-1/sw/walk/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 13.333333333333334,
+                  "file": "renders/calibrated-1/sw/walk/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 15.0,
+                  "file": "renders/calibrated-1/sw/walk/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/sw/walk/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 18.333333333333332,
+                  "file": "renders/calibrated-1/sw/walk/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 20.0,
+                  "file": "renders/calibrated-1/sw/walk/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 21.666666666666668,
+                  "file": "renders/calibrated-1/sw/walk/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 23.333333333333332,
+                  "file": "renders/calibrated-1/sw/walk/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/sw/walk/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 26.666666666666668,
+                  "file": "renders/calibrated-1/sw/walk/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 28.333333333333332,
+                  "file": "renders/calibrated-1/sw/walk/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 30.0,
+                  "file": "renders/calibrated-1/sw/walk/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 31.666666666666668,
+                  "file": "renders/calibrated-1/sw/walk/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/sw/walk/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 35.0,
+                  "file": "renders/calibrated-1/sw/walk/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 36.666666666666664,
+                  "file": "renders/calibrated-1/sw/walk/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 38.333333333333336,
+                  "file": "renders/calibrated-1/sw/walk/23.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/sw/idle/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 2.0833333333333335,
+                  "file": "renders/calibrated-1/sw/idle/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 4.166666666666667,
+                  "file": "renders/calibrated-1/sw/idle/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 6.25,
+                  "file": "renders/calibrated-1/sw/idle/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/sw/idle/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 10.416666666666666,
+                  "file": "renders/calibrated-1/sw/idle/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 12.5,
+                  "file": "renders/calibrated-1/sw/idle/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 14.583333333333334,
+                  "file": "renders/calibrated-1/sw/idle/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/sw/idle/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 18.75,
+                  "file": "renders/calibrated-1/sw/idle/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 20.833333333333332,
+                  "file": "renders/calibrated-1/sw/idle/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 22.916666666666668,
+                  "file": "renders/calibrated-1/sw/idle/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/sw/idle/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 27.083333333333332,
+                  "file": "renders/calibrated-1/sw/idle/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 29.166666666666668,
+                  "file": "renders/calibrated-1/sw/idle/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 31.25,
+                  "file": "renders/calibrated-1/sw/idle/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/sw/idle/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 35.416666666666664,
+                  "file": "renders/calibrated-1/sw/idle/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 37.5,
+                  "file": "renders/calibrated-1/sw/idle/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 39.583333333333336,
+                  "file": "renders/calibrated-1/sw/idle/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 41.666666666666664,
+                  "file": "renders/calibrated-1/sw/idle/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 43.75,
+                  "file": "renders/calibrated-1/sw/idle/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 45.833333333333336,
+                  "file": "renders/calibrated-1/sw/idle/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 47.916666666666664,
+                  "file": "renders/calibrated-1/sw/idle/23.png"
+                }
+              ]
+            }
+          }
+        },
+        "w": {
+          "acceptedScreenAngleRadians": -3.1123644048154016,
+          "nativeHeadingAfterCameraRadians": -3.096643604234462,
+          "stockForwardMinusYBlenderYawRadians": 4.667439931029358,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/w/walk/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 1.6666666666666667,
+                  "file": "renders/calibrated-1/w/walk/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 3.3333333333333335,
+                  "file": "renders/calibrated-1/w/walk/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 5.0,
+                  "file": "renders/calibrated-1/w/walk/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 6.666666666666667,
+                  "file": "renders/calibrated-1/w/walk/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/w/walk/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 10.0,
+                  "file": "renders/calibrated-1/w/walk/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 11.666666666666666,
+                  "file": "renders/calibrated-1/w/walk/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 13.333333333333334,
+                  "file": "renders/calibrated-1/w/walk/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 15.0,
+                  "file": "renders/calibrated-1/w/walk/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/w/walk/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 18.333333333333332,
+                  "file": "renders/calibrated-1/w/walk/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 20.0,
+                  "file": "renders/calibrated-1/w/walk/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 21.666666666666668,
+                  "file": "renders/calibrated-1/w/walk/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 23.333333333333332,
+                  "file": "renders/calibrated-1/w/walk/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/w/walk/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 26.666666666666668,
+                  "file": "renders/calibrated-1/w/walk/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 28.333333333333332,
+                  "file": "renders/calibrated-1/w/walk/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 30.0,
+                  "file": "renders/calibrated-1/w/walk/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 31.666666666666668,
+                  "file": "renders/calibrated-1/w/walk/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/w/walk/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 35.0,
+                  "file": "renders/calibrated-1/w/walk/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 36.666666666666664,
+                  "file": "renders/calibrated-1/w/walk/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 38.333333333333336,
+                  "file": "renders/calibrated-1/w/walk/23.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/w/idle/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 2.0833333333333335,
+                  "file": "renders/calibrated-1/w/idle/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 4.166666666666667,
+                  "file": "renders/calibrated-1/w/idle/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 6.25,
+                  "file": "renders/calibrated-1/w/idle/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/w/idle/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 10.416666666666666,
+                  "file": "renders/calibrated-1/w/idle/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 12.5,
+                  "file": "renders/calibrated-1/w/idle/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 14.583333333333334,
+                  "file": "renders/calibrated-1/w/idle/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/w/idle/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 18.75,
+                  "file": "renders/calibrated-1/w/idle/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 20.833333333333332,
+                  "file": "renders/calibrated-1/w/idle/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 22.916666666666668,
+                  "file": "renders/calibrated-1/w/idle/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/w/idle/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 27.083333333333332,
+                  "file": "renders/calibrated-1/w/idle/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 29.166666666666668,
+                  "file": "renders/calibrated-1/w/idle/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 31.25,
+                  "file": "renders/calibrated-1/w/idle/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/w/idle/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 35.416666666666664,
+                  "file": "renders/calibrated-1/w/idle/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 37.5,
+                  "file": "renders/calibrated-1/w/idle/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 39.583333333333336,
+                  "file": "renders/calibrated-1/w/idle/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 41.666666666666664,
+                  "file": "renders/calibrated-1/w/idle/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 43.75,
+                  "file": "renders/calibrated-1/w/idle/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 45.833333333333336,
+                  "file": "renders/calibrated-1/w/idle/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 47.916666666666664,
+                  "file": "renders/calibrated-1/w/idle/23.png"
+                }
+              ]
+            }
+          }
+        },
+        "nw": {
+          "acceptedScreenAngleRadians": -2.244500577938949,
+          "nativeHeadingAfterCameraRadians": -2.049446053037865,
+          "stockForwardMinusYBlenderYawRadians": 3.6202423798327614,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/nw/walk/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 1.6666666666666667,
+                  "file": "renders/calibrated-1/nw/walk/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 3.3333333333333335,
+                  "file": "renders/calibrated-1/nw/walk/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 5.0,
+                  "file": "renders/calibrated-1/nw/walk/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 6.666666666666667,
+                  "file": "renders/calibrated-1/nw/walk/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/nw/walk/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 10.0,
+                  "file": "renders/calibrated-1/nw/walk/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 11.666666666666666,
+                  "file": "renders/calibrated-1/nw/walk/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 13.333333333333334,
+                  "file": "renders/calibrated-1/nw/walk/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 15.0,
+                  "file": "renders/calibrated-1/nw/walk/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/nw/walk/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 18.333333333333332,
+                  "file": "renders/calibrated-1/nw/walk/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 20.0,
+                  "file": "renders/calibrated-1/nw/walk/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 21.666666666666668,
+                  "file": "renders/calibrated-1/nw/walk/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 23.333333333333332,
+                  "file": "renders/calibrated-1/nw/walk/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/nw/walk/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 26.666666666666668,
+                  "file": "renders/calibrated-1/nw/walk/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 28.333333333333332,
+                  "file": "renders/calibrated-1/nw/walk/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 30.0,
+                  "file": "renders/calibrated-1/nw/walk/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 31.666666666666668,
+                  "file": "renders/calibrated-1/nw/walk/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/nw/walk/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 35.0,
+                  "file": "renders/calibrated-1/nw/walk/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 36.666666666666664,
+                  "file": "renders/calibrated-1/nw/walk/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 38.333333333333336,
+                  "file": "renders/calibrated-1/nw/walk/23.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/nw/idle/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 2.0833333333333335,
+                  "file": "renders/calibrated-1/nw/idle/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 4.166666666666667,
+                  "file": "renders/calibrated-1/nw/idle/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 6.25,
+                  "file": "renders/calibrated-1/nw/idle/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/nw/idle/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 10.416666666666666,
+                  "file": "renders/calibrated-1/nw/idle/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 12.5,
+                  "file": "renders/calibrated-1/nw/idle/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 14.583333333333334,
+                  "file": "renders/calibrated-1/nw/idle/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/nw/idle/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 18.75,
+                  "file": "renders/calibrated-1/nw/idle/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 20.833333333333332,
+                  "file": "renders/calibrated-1/nw/idle/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 22.916666666666668,
+                  "file": "renders/calibrated-1/nw/idle/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/nw/idle/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 27.083333333333332,
+                  "file": "renders/calibrated-1/nw/idle/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 29.166666666666668,
+                  "file": "renders/calibrated-1/nw/idle/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 31.25,
+                  "file": "renders/calibrated-1/nw/idle/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/nw/idle/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 35.416666666666664,
+                  "file": "renders/calibrated-1/nw/idle/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 37.5,
+                  "file": "renders/calibrated-1/nw/idle/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 39.583333333333336,
+                  "file": "renders/calibrated-1/nw/idle/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 41.666666666666664,
+                  "file": "renders/calibrated-1/nw/idle/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 43.75,
+                  "file": "renders/calibrated-1/nw/idle/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 45.833333333333336,
+                  "file": "renders/calibrated-1/nw/idle/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 47.916666666666664,
+                  "file": "renders/calibrated-1/nw/idle/23.png"
+                }
+              ]
+            }
+          }
+        },
+        "ne": {
+          "acceptedScreenAngleRadians": -0.7939929908510658,
+          "nativeHeadingAfterCameraRadians": -1.0022485018412663,
+          "stockForwardMinusYBlenderYawRadians": 2.5730448286361627,
+          "reprojectionErrorRadians": 2.220446049250313e-16,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/ne/walk/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 1.6666666666666667,
+                  "file": "renders/calibrated-1/ne/walk/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 3.3333333333333335,
+                  "file": "renders/calibrated-1/ne/walk/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 5.0,
+                  "file": "renders/calibrated-1/ne/walk/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 6.666666666666667,
+                  "file": "renders/calibrated-1/ne/walk/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/ne/walk/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 10.0,
+                  "file": "renders/calibrated-1/ne/walk/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 11.666666666666666,
+                  "file": "renders/calibrated-1/ne/walk/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 13.333333333333334,
+                  "file": "renders/calibrated-1/ne/walk/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 15.0,
+                  "file": "renders/calibrated-1/ne/walk/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/ne/walk/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 18.333333333333332,
+                  "file": "renders/calibrated-1/ne/walk/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 20.0,
+                  "file": "renders/calibrated-1/ne/walk/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 21.666666666666668,
+                  "file": "renders/calibrated-1/ne/walk/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 23.333333333333332,
+                  "file": "renders/calibrated-1/ne/walk/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/ne/walk/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 26.666666666666668,
+                  "file": "renders/calibrated-1/ne/walk/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 28.333333333333332,
+                  "file": "renders/calibrated-1/ne/walk/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 30.0,
+                  "file": "renders/calibrated-1/ne/walk/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 31.666666666666668,
+                  "file": "renders/calibrated-1/ne/walk/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/ne/walk/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 35.0,
+                  "file": "renders/calibrated-1/ne/walk/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 36.666666666666664,
+                  "file": "renders/calibrated-1/ne/walk/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 38.333333333333336,
+                  "file": "renders/calibrated-1/ne/walk/23.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/ne/idle/00.png"
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 2.0833333333333335,
+                  "file": "renders/calibrated-1/ne/idle/01.png"
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 4.166666666666667,
+                  "file": "renders/calibrated-1/ne/idle/02.png"
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 6.25,
+                  "file": "renders/calibrated-1/ne/idle/03.png"
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 8.333333333333334,
+                  "file": "renders/calibrated-1/ne/idle/04.png"
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 10.416666666666666,
+                  "file": "renders/calibrated-1/ne/idle/05.png"
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 12.5,
+                  "file": "renders/calibrated-1/ne/idle/06.png"
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 14.583333333333334,
+                  "file": "renders/calibrated-1/ne/idle/07.png"
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 16.666666666666668,
+                  "file": "renders/calibrated-1/ne/idle/08.png"
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 18.75,
+                  "file": "renders/calibrated-1/ne/idle/09.png"
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 20.833333333333332,
+                  "file": "renders/calibrated-1/ne/idle/10.png"
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 22.916666666666668,
+                  "file": "renders/calibrated-1/ne/idle/11.png"
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 25.0,
+                  "file": "renders/calibrated-1/ne/idle/12.png"
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 27.083333333333332,
+                  "file": "renders/calibrated-1/ne/idle/13.png"
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 29.166666666666668,
+                  "file": "renders/calibrated-1/ne/idle/14.png"
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 31.25,
+                  "file": "renders/calibrated-1/ne/idle/15.png"
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 33.333333333333336,
+                  "file": "renders/calibrated-1/ne/idle/16.png"
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 35.416666666666664,
+                  "file": "renders/calibrated-1/ne/idle/17.png"
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 37.5,
+                  "file": "renders/calibrated-1/ne/idle/18.png"
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 39.583333333333336,
+                  "file": "renders/calibrated-1/ne/idle/19.png"
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 41.666666666666664,
+                  "file": "renders/calibrated-1/ne/idle/20.png"
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 43.75,
+                  "file": "renders/calibrated-1/ne/idle/21.png"
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 45.833333333333336,
+                  "file": "renders/calibrated-1/ne/idle/22.png"
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 47.916666666666664,
+                  "file": "renders/calibrated-1/ne/idle/23.png"
+                }
+              ]
+            }
+          }
         }
       }
     }

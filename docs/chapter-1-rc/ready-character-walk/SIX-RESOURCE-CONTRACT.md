@@ -13,3 +13,9 @@ Manifest follows cameraVariants[variant].directions[name].clips[walk|idle].frame
 Stride1.749205515native meters/cycle is measured from inferred stance motion, not game hex units. Per-direction projectedStridePixels measures that stride after camera projection and delivery resize; projectedStrideDisplayPixelsAt136 includes136/nativeHeightPx display scale. Source stance-speed RMS residual0.192322m/s remains disclosed. Root should validate actual route video and cadence, preserving source cycle until observed.
 
 Stock low-poly adult face/proportions/green shirt remain an unapproved likeness variant. This package is a source-resource delivery, not actual-game acceptance or permission to merge/deploy.
+
+## Completed delivery
+
+576/576 native renders complete:12 headings × Walk24 + Idle_Neutral24. All source any-alpha within512×640 (minimum margin41px); all576 delivery cells also fully contain any-alpha after uniform resize.12 lossless1536×2560 WebP atlases total9,340,716bytes,188,743,680decodedRGBAbytes. Exact decoded pixel equality verified against packed RGBA. Five-second all12-view MP4 and animated WebP plus four-phase sheets for both cameras are delivered.
+
+Source local rig/actions remain unchanged; all10407 evaluated vertices match at Walk0↔40 and Idle_Neutral0↔50 (maximum/RMS endpoint displacement0m). This loop closure check does not replace stance-speed analysis or actual-game review. Native Root projection maximum error0pixels over12heading proof. Source-origin draft and camera-PPM metadata errata remain documented; current package uses measured camera coefficients and worldtransform normalization.
