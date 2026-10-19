@@ -38,7 +38,7 @@ def collect(lc,parent=True):
 collect(bpy.context.view_layer.layer_collection)
 meshes=[o for o in sc.objects if o.type=='MESH'and not o.hide_render and o.name in allowed];assert meshes
 unsupported=[o.name for o in sc.objects if o.type in ['CURVE','CURVES','SURFACE','META','FONT','VOLUME']and not o.hide_render and o.name in allowed]
-unsupported += [o.name for o in sc.objects if o.instance_type=='COLLECTION'and not o.hide_render and o.name in allowed]
+unsupported += [o.name for o in sc.objects if o.instance_type!='NONE'and not o.hide_render and o.name in allowed]
 if unsupported:raise RuntimeError('Visible non-mesh geometry needs explicit support/reference definition: '+repr(unsupported))
 # Evaluation policy is intentionally scoped, not a universal Blender render depsgraph.
 # Object eye hide_set is supported; collection eyes are conservatively unsupported.
@@ -79,7 +79,7 @@ def verify_evaluation_visibility():
   # Fail closed on ANY disabled membership path, even a duplicate linked visible path.
   for reasons in paths[obj.name]:
    if reasons:raise RuntimeError('Evaluation visibility: '+obj.name+': '+', '.join(reasons))
-  if obj.instance_type=='COLLECTION':raise RuntimeError('Evaluation visibility: collection instances unsupported '+obj.name)
+  if obj.instance_type!='NONE':raise RuntimeError('Evaluation visibility: instances unsupported '+obj.name)
   if obj.parent:pending.append(obj.parent)
   for mod in obj.modifiers:
    if mod.show_viewport!=mod.show_render:raise RuntimeError('Evaluation visibility: modifier viewport/render mismatch '+obj.name+'/'+mod.name)

@@ -1,0 +1,14 @@
+{
+  "status": "AUTHOR-REGRESSION-PASS-NEEDS-INDEPENDENT-REVIEW",
+  "exporterSha256": "530dfd2d7f53b6f6a5fcbe5b7b954c6ffcfb2787dcaa0d9021a5321a7dd2160a",
+  "sourceSha256": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
+  "caseCount": 19,
+  "casesEvidence": "visibility-probes/results.json",
+  "change": "reject any instance_type != NONE in render-visible objects and dependency closure; includes VERTS and FACES in addition to COLLECTION",
+  "dryRunScope": "temporary base/E/Walk24; actual wardrobe v1 rejected separately and not rerendered",
+  "dryRunGeometryContainedFrames": 24,
+  "dryRunEndpointSeamMeters": 0,
+  "renderedFrames": 0,
+  "sourceUnchanged": true,
+  "packerAndRuntimeChanged": false
+}
