@@ -630,7 +630,7 @@
       1.0164573192596436
     ]
   },
-  "coordinateSystem": "native Ellie world meters, neutral source frame1 frozen",
+  "coordinateSystem": "native Ellie world meters, source-current expression at frame1 frozen, NOT neutral/friendly acceptance",
   "binding": "not yet bound; original complete rig/face actions preserved in source original",
   "materials": "original native material graphs/textures/UV; driver values frozen only in derived static parts; no new face drawing or primitives",
   "hair": "existing native haircut geometry, dark short hair not Ruta waves",
@@ -638,5 +638,6 @@
     "complete frozen neutral head has no independent facial animation in derivative; full upstream facial rig preserved in original blend",
     "native existing modifier stack evaluated with subdivision render level clamped1..2",
     "rig/script compatibility and source expression require visual review before acceptance"
-  ]
+  ],
+  "expressionVariant": "source-default-frowning-reject"
 }

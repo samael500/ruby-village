@@ -1,0 +1,657 @@
+{
+  "status": "native-Ellie-head-source-extraction-not-Ruta-acceptance",
+  "sourceSha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "sourceFrame": 1,
+  "expressionVariant": "friendly",
+  "appliedNativePoseAssets": [
+    {
+      "nativePoseAsset": "face_default",
+      "sourceFrame": 1.0
+    },
+    {
+      "nativePoseAsset": "eyemask_content",
+      "sourceFrame": 40.0
+    },
+    {
+      "nativePoseAsset": "mouth_smileclosed2",
+      "sourceFrame": 70.0
+    }
+  ],
+  "autoExecScripts": false,
+  "parts": [
+    {
+      "sourceObject": "GEO-ellie_head",
+      "outputObject": "Ellie ready head",
+      "sourceVertices": 1659,
+      "evaluatedVertices": 25239,
+      "polygons": 25136,
+      "originalModifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "CorrectiveSmooth",
+          "type": "CORRECTIVE_SMOOTH",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "VertexWeightMix",
+          "type": "VERTEX_WEIGHT_MIX",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice NeckHead",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 0,
+          "renderLevels": 2
+        },
+        {
+          "name": "Shrinkwrap",
+          "type": "SHRINKWRAP",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Cheek.L",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Cheek.R",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Lips",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Lips.L",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Lips.R",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "DataTransfer",
+          "type": "DATA_TRANSFER",
+          "viewportEnabled": false,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "a8b5a9b29c5476c5189ef40a39a371b00c37f49c72fd41639879df3dc6af6116"
+    },
+    {
+      "sourceObject": "GEO-ellie_eye.L",
+      "outputObject": "Ellie ready eye.L",
+      "sourceVertices": 610,
+      "evaluatedVertices": 9986,
+      "polygons": 9984,
+      "originalModifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice.L",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 0,
+          "renderLevels": 2
+        },
+        {
+          "name": "NormalEdit",
+          "type": "NORMAL_EDIT",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "a722234dc9260e34573994f57c0879eb07f5f88819aa4188d3c2aa518bb556ed"
+    },
+    {
+      "sourceObject": "GEO-ellie_eye.R",
+      "outputObject": "Ellie ready eye.R",
+      "sourceVertices": 610,
+      "evaluatedVertices": 9986,
+      "polygons": 9984,
+      "originalModifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice.R",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 0,
+          "renderLevels": 2
+        },
+        {
+          "name": "NormalEdit",
+          "type": "NORMAL_EDIT",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "525cbdda7926414f54217854cfa042e8b4d1e5dd24c7cb1160a7a4aa03819e40"
+    },
+    {
+      "sourceObject": "GEO-ellie_eye_highlights",
+      "outputObject": "Ellie ready eye_highlights",
+      "sourceVertices": 64,
+      "evaluatedVertices": 64,
+      "polygons": 2,
+      "originalModifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice.L",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "4009156cabb0af82cae334b5336ccf22012ef2db806b797196cf3724981c0581"
+    },
+    {
+      "sourceObject": "GEO-ellie_eyebrows",
+      "outputObject": "Ellie ready eyebrows",
+      "sourceVertices": 212,
+      "evaluatedVertices": 3332,
+      "polygons": 3328,
+      "originalModifiers": [
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 1,
+          "renderLevels": 2
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "578ebd5833a73d918cb95f8ff3f9d94186331bf4bfce4feb09716d76e78ac326"
+    },
+    {
+      "sourceObject": "GEO-ellie_eyelashes",
+      "outputObject": "Ellie ready eyelashes",
+      "sourceVertices": 72,
+      "evaluatedVertices": 2244,
+      "polygons": 2240,
+      "originalModifiers": [
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Shrinkwrap Clipping Fix",
+          "type": "SHRINKWRAP",
+          "viewportEnabled": false,
+          "renderEnabled": false,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Shrinkwrap",
+          "type": "SHRINKWRAP",
+          "viewportEnabled": false,
+          "renderEnabled": false,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Solidify",
+          "type": "SOLIDIFY",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 1,
+          "renderLevels": 2
+        },
+        {
+          "name": "Lattice Mask",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Eyelash.L",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Lattice Eyelash.R",
+          "type": "LATTICE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "1c621181eb305296fe8907f3c8c45498eb1c4c25701f6a8627b7eaeb4d802442"
+    },
+    {
+      "sourceObject": "GEO-ellie_face_line1",
+      "outputObject": "Ellie ready face_line1",
+      "sourceVertices": 34,
+      "evaluatedVertices": 650,
+      "polygons": 512,
+      "originalModifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 2,
+          "renderLevels": 2
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": true,
+      "meshSha256": "922bd1cc0daca356bfb921bf217e604b458aa9721338d500390f84886c570c67"
+    },
+    {
+      "sourceObject": "GEO-ellie_face_line2",
+      "outputObject": "Ellie ready face_line2",
+      "sourceVertices": 34,
+      "evaluatedVertices": 650,
+      "polygons": 512,
+      "originalModifiers": [
+        {
+          "name": "Mirror",
+          "type": "MIRROR",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 2,
+          "renderLevels": 2
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": true,
+      "meshSha256": "5b8bbb9728ac5f8a8aea9dea724b3aace864898d0e824d87d94c1f9ac5767823"
+    },
+    {
+      "sourceObject": "GEO-ellie_teeth_top",
+      "outputObject": "Ellie ready teeth_top",
+      "sourceVertices": 678,
+      "evaluatedVertices": 10042,
+      "polygons": 9776,
+      "originalModifiers": [
+        {
+          "name": "SurfaceDeform",
+          "type": "SURFACE_DEFORM",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 0,
+          "renderLevels": 2
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "84d882ab3a450646cd35fbc97d75c0eab25e862f49aa1418ec78ed77c1b94832"
+    },
+    {
+      "sourceObject": "GEO-ellie_teeth_btm",
+      "outputObject": "Ellie ready teeth_btm",
+      "sourceVertices": 678,
+      "evaluatedVertices": 10042,
+      "polygons": 9776,
+      "originalModifiers": [
+        {
+          "name": "SurfaceDeform",
+          "type": "SURFACE_DEFORM",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 0,
+          "renderLevels": 2
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "f957f0466e681c5a66f77e9686e19129a773a8c4a99c7c8f68781528d54c9d81"
+    },
+    {
+      "sourceObject": "GEO-ellie_tongue",
+      "outputObject": "Ellie ready tongue",
+      "sourceVertices": 169,
+      "evaluatedVertices": 1933,
+      "polygons": 1904,
+      "originalModifiers": [
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Shrinkwrap",
+          "type": "SHRINKWRAP",
+          "viewportEnabled": false,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 0,
+          "renderLevels": 2
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": false,
+      "meshSha256": "2cd4635e63b1298b97e935a724c27943ab2454b21670a86e46bef1431beaedd7"
+    },
+    {
+      "sourceObject": "GEO-ellie_hair_cut",
+      "outputObject": "Ellie ready hair_cut",
+      "sourceVertices": 9969,
+      "evaluatedVertices": 143803,
+      "polygons": 142404,
+      "originalModifiers": [
+        {
+          "name": "Mask",
+          "type": "MASK",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Armature",
+          "type": "ARMATURE",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": null,
+          "renderLevels": null
+        },
+        {
+          "name": "Subdivision",
+          "type": "SUBSURF",
+          "viewportEnabled": true,
+          "renderEnabled": true,
+          "viewportLevels": 0,
+          "renderLevels": 2
+        }
+      ],
+      "nativeSubdivEvaluation": "render levels, clamped1..2",
+      "sourceWasHiddenRender": true,
+      "meshSha256": "29983d2eb6342aaa27474afaaa3b4c81c37a57fd7bbde9cedb0dfcc264e20212"
+    }
+  ],
+  "sourceMarkersWorld": {
+    "ORG-Head": [
+      4.014090171367002e-10,
+      -0.0012937652645632625,
+      1.01289963722229
+    ],
+    "ORG-Neck": [
+      4.0140898938112457e-10,
+      0.001549099455587566,
+      0.9423601627349854
+    ],
+    "DEF-Chin": [
+      -9.916971976053901e-06,
+      -0.06261841952800751,
+      1.0169177055358887
+    ]
+  },
+  "coordinateSystem": "native Ellie world meters, neutral source frame1 frozen",
+  "binding": "not yet bound; original complete rig/face actions preserved in source original",
+  "materials": "original native material graphs/textures/UV; driver values frozen only in derived static parts; no new face drawing or primitives",
+  "hair": "existing native haircut geometry, dark short hair not Ruta waves",
+  "limitations": [
+    "complete frozen neutral head has no independent facial animation in derivative; full upstream facial rig preserved in original blend",
+    "native existing modifier stack evaluated with subdivision render level clamped1..2",
+    "rig/script compatibility and source expression require visual review before acceptance"
+  ]
+}

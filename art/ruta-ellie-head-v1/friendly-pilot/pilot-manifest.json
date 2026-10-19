@@ -1,0 +1,257 @@
+{
+  "status": "internal-ready-native-head-pilot-NOT-approved-Ruta-or-runtime",
+  "bodySource": "art/ruta-ellie-head-v1/source/body-b-corrected-e6ab193.blend",
+  "bodySourceSha256": "a4215f55a1bad78ae2e0e35b9ce572515e398053e64db5d483ee518e8b1923b5",
+  "bodyContractSha256": "a863fa63e3cd0925561af8e545cbdb84210e902ac9fd6494e00cdf4c556e0d14",
+  "originalEllieSourceSha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "headPartsLibrarySha256": "145680ae409b213b8ba254a38abe851930cf6c0cb6a977f93913c1413ffde528",
+  "uniformHeadFit": {
+    "scale": 1.3484260722742596,
+    "offset": [
+      -0.00024064333410933614,
+      -0.0232082512229681,
+      -0.1994190216064453
+    ],
+    "sourceChinBoneZ": 1.0169177055358887,
+    "sourceHaircutCrownZ": 1.3439478874206543,
+    "targetOldBHeadMeshLowerProxyZ": 1.1718193292617798,
+    "targetOldBHairCrownZ": 1.612795352935791,
+    "definition": "single3Drest similarity transform preserving native facial/eye/brow/mouth geometry; proxies not anatomical equivalence"
+  },
+  "bodyAndActions": "B body/rest/action curves unchanged; only original stock head/hair render visibility disabled and ready native head parts added",
+  "actionHashesUnchangedByHeadBinding": {
+    "Walk_ProportionProposal": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd",
+    "Idle_Neutral_ProportionProposal": "3b87d66ba83c5f8cd7ffeb5928f4b9c25cd5a420f8879dc824b2704e28fb3eca"
+  },
+  "parts": [
+    {
+      "name": "Ellie ready tongue",
+      "vertices": 1933,
+      "polygons": 1904,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.tongue"
+      ]
+    },
+    {
+      "name": "Ellie ready teeth_top",
+      "vertices": 10042,
+      "polygons": 9776,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ]
+    },
+    {
+      "name": "Ellie ready teeth_btm",
+      "vertices": 10042,
+      "polygons": 9776,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ]
+    },
+    {
+      "name": "Ellie ready head",
+      "vertices": 25239,
+      "polygons": 25136,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.head",
+        "ellie.head_lips",
+        "ellie.mouth_inner",
+        "ellie.head_hair"
+      ]
+    },
+    {
+      "name": "Ellie ready hair_cut",
+      "vertices": 143803,
+      "polygons": 142404,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.hair_mesh"
+      ]
+    },
+    {
+      "name": "Ellie ready face_line2",
+      "vertices": 650,
+      "polygons": 512,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.face_lines"
+      ]
+    },
+    {
+      "name": "Ellie ready face_line1",
+      "vertices": 650,
+      "polygons": 512,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.face_lines"
+      ]
+    },
+    {
+      "name": "Ellie ready eyelashes",
+      "vertices": 2244,
+      "polygons": 2240,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.eyelashes"
+      ]
+    },
+    {
+      "name": "Ellie ready eyebrows",
+      "vertices": 3332,
+      "polygons": 3328,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.eyebrows"
+      ]
+    },
+    {
+      "name": "Ellie ready eye_highlights",
+      "vertices": 64,
+      "polygons": 2,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.highlights"
+      ]
+    },
+    {
+      "name": "Ellie ready eye.R",
+      "vertices": 9986,
+      "polygons": 9984,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ]
+    },
+    {
+      "name": "Ellie ready eye.L",
+      "vertices": 9986,
+      "polygons": 9984,
+      "binding": "Head weight1 native Armature",
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ]
+    }
+  ],
+  "views": [
+    {
+      "view": "front",
+      "proof": "whole",
+      "sourceFrame": 0,
+      "headExpression": [
+        {
+          "nativePoseAsset": "face_default",
+          "sourceFrame": 1.0
+        },
+        {
+          "nativePoseAsset": "eyemask_content",
+          "sourceFrame": 40.0
+        },
+        {
+          "nativePoseAsset": "mouth_smileclosed2",
+          "sourceFrame": 70.0
+        }
+      ],
+      "action": "Idle_Neutral_ProportionProposal",
+      "yaw": 0,
+      "file": "front-whole.png",
+      "rootPxWholeCamera": [
+        256.0,
+        516.8593120574951
+      ]
+    },
+    {
+      "view": "front",
+      "proof": "face",
+      "sourceFrame": 0,
+      "headExpression": [
+        {
+          "nativePoseAsset": "face_default",
+          "sourceFrame": 1.0
+        },
+        {
+          "nativePoseAsset": "eyemask_content",
+          "sourceFrame": 40.0
+        },
+        {
+          "nativePoseAsset": "mouth_smileclosed2",
+          "sourceFrame": 70.0
+        }
+      ],
+      "action": "Idle_Neutral_ProportionProposal",
+      "yaw": 0,
+      "file": "front-face.png",
+      "rootPxWholeCamera": [
+        256.0,
+        516.8593120574951
+      ]
+    },
+    {
+      "view": "three-quarter",
+      "proof": "whole",
+      "sourceFrame": 0,
+      "headExpression": [
+        {
+          "nativePoseAsset": "face_default",
+          "sourceFrame": 1.0
+        },
+        {
+          "nativePoseAsset": "eyemask_content",
+          "sourceFrame": 40.0
+        },
+        {
+          "nativePoseAsset": "mouth_smileclosed2",
+          "sourceFrame": 70.0
+        }
+      ],
+      "action": "Idle_Neutral_ProportionProposal",
+      "yaw": 0.7853981633974483,
+      "file": "three-quarter-whole.png",
+      "rootPxWholeCamera": [
+        256.0,
+        516.8593120574951
+      ]
+    },
+    {
+      "view": "three-quarter",
+      "proof": "face",
+      "sourceFrame": 0,
+      "headExpression": [
+        {
+          "nativePoseAsset": "face_default",
+          "sourceFrame": 1.0
+        },
+        {
+          "nativePoseAsset": "eyemask_content",
+          "sourceFrame": 40.0
+        },
+        {
+          "nativePoseAsset": "mouth_smileclosed2",
+          "sourceFrame": 70.0
+        }
+      ],
+      "action": "Idle_Neutral_ProportionProposal",
+      "yaw": 0.7853981633974483,
+      "file": "three-quarter-face.png",
+      "rootPxWholeCamera": [
+        256.0,
+        516.8593120574951
+      ]
+    }
+  ],
+  "limitations": [
+    "short dark native Ellie haircut not accepted Ruta chestnut waves",
+    "static authored source expression, original complete facial rig retained separately",
+    "chin proxy and neck/collar fit need visual review",
+    "simple B stock garments unchanged; detailed root styling separate",
+    "no Walking/contact/no-slip proof from neutral pilot",
+    "no per-frame/image deformation or camera compensation"
+  ]
+}
