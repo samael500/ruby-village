@@ -1,0 +1,2298 @@
+{
+  "scope": "held-out chromatic-eye patch crossvalidation of frozen head trial bb845ed; NOT anatomical eye/head identity, acceptance or physical Root",
+  "sourceEyeCommit": "97ace61",
+  "sourceEyeSha256": "17266d14c8eaaf1cd3f2dfe4c76299330492dfb8f0f25927f31982acd8127926",
+  "headTrialManifestSha256": "a3d51c711ee2bd2178b38ab535828a48e3731ca327463f44a0100a96f025919d",
+  "measuredCount": 46,
+  "nullPhases": [
+    27,
+    28
+  ],
+  "validAdjacentPairs": 45,
+  "annotationUncertaintyMeaning": "conservative reviewed chromatic patch location interval, not statistical confidence or anatomical identity bound; residual systematic pose/view/feature mismatch unknown",
+  "nativeHeadProjectedBoneLengthFullPx": {
+    "min": 27.269929858655722,
+    "max": 29.61594650319813,
+    "ratio": 1.086029434498078,
+    "meaning": "orientation/projection variation, not proof of head growth or global frame scale"
+  },
+  "summary": {
+    "baseline": {
+      "meanCenteredEyeMinusHeadPositionVectorRmsNativeHalfPx": 4.683125277888798,
+      "adjacentMotionResidualVectorRmsNativeHalfPx": 2.7455660931902606,
+      "maxAdjacentMotionResidualNativeHalfPx": 10.982733130655776
+    },
+    "clasp": {
+      "meanCenteredEyeMinusHeadPositionVectorRmsNativeHalfPx": 3.6260814559257395,
+      "adjacentMotionResidualVectorRmsNativeHalfPx": 2.3067229815094272,
+      "maxAdjacentMotionResidualNativeHalfPx": 5.156439483052118
+    },
+    "head": {
+      "meanCenteredEyeMinusHeadPositionVectorRmsNativeHalfPx": 2.0467436641135306,
+      "adjacentMotionResidualVectorRmsNativeHalfPx": 0.9347363707393044,
+      "maxAdjacentMotionResidualNativeHalfPx": 2.2971176462037652
+    }
+  },
+  "requestedPairs": [
+    {
+      "from": 15,
+      "to": 16,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          4.535320936487693,
+          -0.18003463745117188
+        ],
+        "clasp": [
+          4.535320936487693,
+          -0.2499980926513672
+        ],
+        "head": [
+          1.1772684109858176,
+          -0.5158717897282088
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 4.5388928680489675,
+        "clasp": 4.542205966628212,
+        "head": 1.2853344370016924
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          2.518216744895909,
+          5.691246761440681
+        ],
+        "clasp": [
+          3.6813730473603528,
+          3.6105900665331063
+        ],
+        "head": [
+          -0.9889096661961503,
+          2.073356494335826
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 6.22348015774801,
+        "clasp": 5.156439483052118,
+        "head": 2.2971176462037652
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -4.220501600550193,
+          -0.7223298864488044
+        ],
+        "clasp": [
+          -4.220501600550193,
+          1.4194085912827603
+        ],
+        "head": [
+          -0.6094828393377725,
+          -0.46892073626550257
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 4.281868076564701,
+        "clasp": 4.452791765763817,
+        "head": 0.7689967414410895
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 47,
+      "to": 0,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          5.040405012502077,
+          1.959685582024619
+        ],
+        "clasp": [
+          5.040405012502077,
+          0.3880716269851945
+        ],
+        "head": [
+          -1.0329883246664906,
+          1.4029428163472915
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 5.407961748242237,
+        "clasp": 5.055322173484792,
+        "head": 1.7422150914389856
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    }
+  ],
+  "pairs": [
+    {
+      "from": 0,
+      "to": 1,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.25136142406711315,
+          -0.23819520788316595
+        ],
+        "clasp": [
+          -0.25136142406711315,
+          -0.1395089896214472
+        ],
+        "head": [
+          0.15799354022610146,
+          -0.4325025778702809
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.34629398286362373,
+        "clasp": 0.2874809971011026,
+        "head": 0.46045677171436533
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.10675705828725768,
+          -0.763972390370526
+        ],
+        "clasp": [
+          -1.2699133607516728,
+          0.6379934976651782
+        ],
+        "head": [
+          -0.18562407498555444,
+          -0.4433609960971694
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.7713954127051861,
+        "clasp": 1.4211670017554785,
+        "head": 0.48065088169534964
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.7955468533131409,
+          -0.4030609130859375
+        ],
+        "clasp": [
+          0.7955468533131409,
+          1.0670450048569933
+        ],
+        "head": [
+          0.6809217977744595,
+          -0.017943456682544934
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.8918255970054402,
+        "clasp": 1.3309695106225015,
+        "head": 0.6811581771674772
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.8463198418802165,
+          -0.9893883624138482
+        ],
+        "clasp": [
+          -0.6831635394158013,
+          -1.8764368767923258
+        ],
+        "head": [
+          -0.9557509096873389,
+          -0.5119155083603886
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 2.0947043443408773,
+        "clasp": 1.9969295866838328,
+        "head": 1.0842127508326265
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -3.222721819592664,
+          -0.5072749110878192
+        ],
+        "clasp": [
+          -2.641143668360428,
+          -1.5232601930444218
+        ],
+        "head": [
+          0.6561508581129942,
+          -0.6575520530343368
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 3.2624015329045264,
+        "clasp": 3.048927925129439,
+        "head": 0.9289287653270782
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.10230778297813,
+          0.6278087507965893
+        ],
+        "clasp": [
+          0.6424266707184643,
+          -0.586788744294779
+        ],
+        "head": [
+          -0.08061696400673668,
+          -0.39451404015021296
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.2685528274340545,
+        "clasp": 0.8700764665714467,
+        "head": 0.40266663974224054
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.15748829436608958,
+          0.12891769409179688
+        ],
+        "clasp": [
+          1.3206445968305331,
+          -2.5600104961642103
+        ],
+        "head": [
+          0.5801760509152984,
+          0.2615636790439879
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.20352477665455426,
+        "clasp": 2.880582561151235,
+        "head": 0.6364116657091519
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          4.04706610596628,
+          4.261804526688053
+        ],
+        "clasp": [
+          1.7207535010374215,
+          1.2948135159975038
+        ],
+        "head": [
+          0.9487778899043349,
+          1.033810539474132
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 5.877220592232339,
+        "clasp": 2.153493592408011,
+        "head": 1.403190548677947
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.10129547119140625,
+          0.22410145345912724
+        ],
+        "clasp": [
+          -1.2644517736558214,
+          -1.2424197061959603
+        ],
+        "head": [
+          0.5214231651010834,
+          -0.16495250865469302
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.24593136019300665,
+        "clasp": 1.772694281100215,
+        "head": 0.5468925371729882
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.11742047993547544,
+          1.3642205157341607
+        ],
+        "clasp": [
+          -1.0457358225289397,
+          0.8782461004380764
+        ],
+        "head": [
+          -0.0024351802853175286,
+          0.2766474456784209
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.3692644684860031,
+        "clasp": 1.3656059546790815,
+        "head": 0.27665816326907267
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.2114045934800686,
+          -0.2910783605698839
+        ],
+        "clasp": [
+          -3.5377171984089273,
+          -1.4540746526841417
+        ],
+        "head": [
+          -0.45603143705304205,
+          -0.5559802242625835
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.2458843048600707,
+        "clasp": 3.8248890273440375,
+        "head": 0.7190818321663642
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.763327288169279,
+          0.8577919006347656
+        ],
+        "clasp": [
+          -1.763327288169279,
+          0.8714845495347276
+        ],
+        "head": [
+          -0.2630838858293316,
+          -0.018110492509507026
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.96090032128026,
+        "clasp": 1.966928683323361,
+        "head": 0.26370650527053313
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.1285569982651964,
+          0.07748709534982368
+        ],
+        "clasp": [
+          -1.1285569982651964,
+          -0.8750142016472466
+        ],
+        "head": [
+          -0.006082510366866245,
+          -0.5161130179222937
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.1312140152416355,
+        "clasp": 1.428037377458209,
+        "head": 0.5161488585681663
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.573535255984126,
+          0.7339417002576738
+        ],
+        "clasp": [
+          -0.573535255984126,
+          0.6639782450574785
+        ],
+        "head": [
+          -0.1290353139206104,
+          0.4377903612159173
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.931457518748924,
+        "clasp": 0.8773880554044408,
+        "head": 0.4564104650554738
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.8046906514919385,
+          2.116281427132094
+        ],
+        "clasp": [
+          0.8046906514919385,
+          2.0463179719318987
+        ],
+        "head": [
+          -0.5575739415904195,
+          1.3361812054356506
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 2.2641055901664067,
+        "clasp": 2.1988506740681597,
+        "head": 1.4478497553614273
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          4.535320936487693,
+          -0.18003463745117188
+        ],
+        "clasp": [
+          4.535320936487693,
+          -0.2499980926513672
+        ],
+        "head": [
+          1.1772684109858176,
+          -0.5158717897282088
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 4.5388928680489675,
+        "clasp": 4.542205966628212,
+        "head": 1.2853344370016924
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.18523406982421875,
+          -0.5002021789550781
+        ],
+        "clasp": [
+          0.18523406982421875,
+          -0.5701656341552734
+        ],
+        "head": [
+          0.319506515667598,
+          -0.0901443838798599
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.5333984256210844,
+        "clasp": 0.5995002176774656,
+        "head": 0.33197955283289454
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.0036207842368867205,
+          -1.0594287458444427
+        ],
+        "clasp": [
+          -0.0036207842368867205,
+          -1.129392201044638
+        ],
+        "head": [
+          -0.28417640599667493,
+          -0.2416330635683579
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.0594349331601347,
+        "clasp": 1.1293980050712602,
+        "head": 0.3730184541475356
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.19306380793580047,
+          -0.7243427690481354
+        ],
+        "clasp": [
+          0.9700924945286431,
+          0.06527095470674737
+        ],
+        "head": [
+          0.2770631598294244,
+          0.1503756973383048
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.7496306297150566,
+        "clasp": 0.972285835271262,
+        "head": 0.31524093148677035
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.25465802876360044,
+          -0.19688711976387197
+        ],
+        "clasp": [
+          -0.9084982737008431,
+          -0.7035244860710606
+        ],
+        "head": [
+          0.3205424121341309,
+          0.561905071556069
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.32189322692886224,
+        "clasp": 1.1490499622814327,
+        "head": 0.6469039707848439
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.5597351946892388,
+          -0.5955696105957031
+        ],
+        "clasp": [
+          0.6034211077752047,
+          -1.2327840643052639
+        ],
+        "head": [
+          -0.1344918197457048,
+          0.023236324126060026
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.8173167374028979,
+        "clasp": 1.3725427434195483,
+        "head": 0.1364843446604865
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.159883292210509,
+          -1.2766079407778363
+        ],
+        "clasp": [
+          -1.159883292210509,
+          -0.8407120209780317
+        ],
+        "head": [
+          -0.20302077755900427,
+          -0.6157814563146786
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.7248353793930935,
+        "clasp": 1.432524329205635,
+        "head": 0.6483858712693308
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.3874593680740759,
+          0.42432827769189885
+        ],
+        "clasp": [
+          0.7756969343903393,
+          -0.3507970189131413
+        ],
+        "head": [
+          0.7007020010170777,
+          0.2957979202698482
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.5746122598390461,
+        "clasp": 0.8513308889620517,
+        "head": 0.7605785323458086
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          3.17918708187932,
+          0.46829266367821276
+        ],
+        "clasp": [
+          3.17918708187932,
+          -1.5111590556305288
+        ],
+        "head": [
+          1.304327712031494,
+          -0.24882896346279892
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 3.2134916400145155,
+        "clasp": 3.5200613905161506,
+        "head": 1.3278503806646602
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.6502617799931727,
+          -0.5588260236764739
+        ],
+        "clasp": [
+          -2.813418082457588,
+          -0.18111377392061456
+        ],
+        "head": [
+          1.1452554559062094,
+          -0.9041599997406138
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.742311816881322,
+        "clasp": 2.819241654382096,
+        "head": 1.4591488493001274
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.5284089007439263,
+          0.26263131285331553
+        ],
+        "clasp": [
+          0.5284089007438979,
+          0.6880368151726515
+        ],
+        "head": [
+          0.6362981585610896,
+          0.2843057288130524
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.5900772600909653,
+        "clasp": 0.8675313397326346,
+        "head": 0.6969254580112241
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.13330078125,
+          -1.1577966528062262
+        ],
+        "clasp": [
+          -1.2964570837144436,
+          -0.9231260137681403
+        ],
+        "head": [
+          0.3758512481826983,
+          -0.866631599672516
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.165445059851026,
+        "clasp": 1.5915283871828414,
+        "head": 0.9446239941434033
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -2.070452663124314,
+          0.6211400931717463
+        ],
+        "clasp": [
+          -2.070452663124314,
+          1.8143275998597943
+        ],
+        "head": [
+          -1.4709007797990807,
+          1.275416605835062
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 2.161617275463899,
+        "clasp": 2.7529182461256574,
+        "head": 1.9468530048397013
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          2.518216744895909,
+          5.691246761440681
+        ],
+        "clasp": [
+          3.6813730473603528,
+          3.6105900665331063
+        ],
+        "head": [
+          -0.9889096661961503,
+          2.073356494335826
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 6.22348015774801,
+        "clasp": 5.156439483052118,
+        "head": 2.2971176462037652
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.07666460747907422,
+          0.9649577680612538
+        ],
+        "clasp": [
+          1.2398209099434894,
+          -1.1156989268463207
+        ],
+        "head": [
+          0.17136248140968746,
+          -0.025417073566146087
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.9679984277785151,
+        "clasp": 1.667914861166221,
+        "head": 0.17323720057641304
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.9161654620751847,
+          1.1483111921335194
+        ],
+        "clasp": [
+          0.9161654620751847,
+          -1.8117370695336206
+        ],
+        "head": [
+          0.6790947295126841,
+          -0.10923770112779607
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.4690057004241137,
+        "clasp": 2.030209438216094,
+        "head": 0.6878244885140331
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -1.2074525671128526,
+          -0.14211443234724186
+        ],
+        "clasp": [
+          -2.952187020809504,
+          0.27795791625977984
+        ],
+        "head": [
+          -0.7075616120740449,
+          -0.9129530886110331
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.2157870758108908,
+        "clasp": 2.9652434653915978,
+        "head": 1.1550440584173602
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.24758487377411598,
+          1.7242190073087187
+        ],
+        "clasp": [
+          1.4971495799225352,
+          -0.1957160121967405
+        ],
+        "head": [
+          -0.11925034317630434,
+          0.6272160821951189
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.7419039740715927,
+        "clasp": 1.5098879501778992,
+        "head": 0.6384517664725038
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.1540200980198847,
+          0.5286814356767024
+        ],
+        "clasp": [
+          0.1540200980198847,
+          -0.6653940452674192
+        ],
+        "head": [
+          -0.944200803946444,
+          -0.1569077823071865
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.5506598324040297,
+        "clasp": 0.6829871346309498,
+        "head": 0.9571495234923698
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.09346771240234375,
+          0.09350882386544868
+        ],
+        "clasp": [
+          0.09346771240234375,
+          1.4274671392564358
+        ],
+        "head": [
+          -1.5501957661985557,
+          -0.26192083672052036
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.1322123799136327,
+        "clasp": 1.4305239064478021,
+        "head": 1.572167115241985
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -4.220501600550193,
+          -0.7223298864488044
+        ],
+        "clasp": [
+          -4.220501600550193,
+          1.4194085912827603
+        ],
+        "head": [
+          -0.6094828393377725,
+          -0.46892073626550257
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 4.281868076564701,
+        "clasp": 4.452791765763817,
+        "head": 0.7689967414410895
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          5.117036416821463,
+          -9.717837482080412
+        ],
+        "clasp": [
+          2.7907238118926045,
+          1.9841353173440979
+        ],
+        "head": [
+          0.1942794960614549,
+          0.2000581026486401
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 10.982733130655776,
+        "clasp": 3.424168855619792,
+        "head": 0.27886872722710715
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          0.649504769520945,
+          -0.9521679383364301
+        ],
+        "clasp": [
+          1.2310829207531526,
+          -0.01909404430634254
+        ],
+        "head": [
+          0.1672898359752253,
+          -0.3630411531977842
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.1525971665878343,
+        "clasp": 1.2312309857610333,
+        "head": 0.39973086963079896
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.907890756161059,
+      "totalUncertainty": null
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.29629432030219505,
+          -0.23667187061062123
+        ],
+        "clasp": [
+          0.28528383093004095,
+          -0.16959889879598222
+        ],
+        "head": [
+          -0.026817425094378677,
+          0.2592702654137611
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.3792148448856801,
+        "clasp": 0.33188951574722875,
+        "head": 0.2606534956919142
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -2.211375776315549,
+          -0.6562423706054688
+        ],
+        "clasp": [
+          -2.211375776315549,
+          1.296499045384337
+        ],
+        "head": [
+          -1.149188245668057,
+          0.31937281082340974
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 2.3066939270421383,
+        "clasp": 2.5634142464216927,
+        "head": 1.1927416385264966
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.8134072659108256,
+          -0.8523888070614305
+        ],
+        "clasp": [
+          0.9313271877857972,
+          -0.19586033416103987
+        ],
+        "head": [
+          0.6212208391540912,
+          -0.4134200471752507
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.1782181710702535,
+        "clasp": 0.951699322899137,
+        "head": 0.7462114086542097
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.7352004613479721,
+          0.0026760123785294354
+        ],
+        "clasp": [
+          -0.15362231011576455,
+          0.5776271842535294
+        ],
+        "head": [
+          0.039532464955641444,
+          0.3813841273884151
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.7352053314608927,
+        "clasp": 0.5977064314142563,
+        "head": 0.38342752693213333
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.6949793527677173,
+          -0.966570962147884
+        ],
+        "clasp": [
+          -0.6949793527677173,
+          -1.6079148256474554
+        ],
+        "head": [
+          0.23161897164339962,
+          -0.44160246552014826
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 1.1904854999708823,
+        "clasp": 1.7516810175686446,
+        "head": 0.4986582853804995
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          -0.38755855020298213,
+          -0.581074750647602
+        ],
+        "clasp": [
+          -0.38755855020298213,
+          0.4273489511217434
+        ],
+        "head": [
+          -0.7574258090604076,
+          -0.12381430413776684
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 0.6984622363990842,
+        "clasp": 0.5769131267879868,
+        "head": 0.7674788844912493
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    },
+    {
+      "from": 47,
+      "to": 0,
+      "residualVectorsNativeHalfPx": {
+        "baseline": [
+          5.040405012502077,
+          1.959685582024619
+        ],
+        "clasp": [
+          5.040405012502077,
+          0.3880716269851945
+        ],
+        "head": [
+          -1.0329883246664906,
+          1.4029428163472915
+        ]
+      },
+      "residualLengthsNativeHalfPx": {
+        "baseline": 5.407961748242237,
+        "clasp": 5.055322173484792,
+        "head": 1.7422150914389856
+      },
+      "annotationOnlyWorstCaseDifferencePerAxisNativeHalfPx": 2.326312604928847,
+      "totalUncertainty": null
+    }
+  ],
+  "rows": [
+    {
+      "phase": 0,
+      "bluePatch": [
+        106.0,
+        44.5
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.89702668044714,
+          105.07419674065946
+        ],
+        "clasp": [
+          154.06018298291156,
+          113.99248107585754
+        ],
+        "head": [
+          147.62555237738707,
+          110.91801762903621
+        ]
+      }
+    },
+    {
+      "phase": 1,
+      "bluePatch": [
+        105.8,
+        44.4
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.66439541995425,
+          104.95788111041301
+        ],
+        "clasp": [
+          153.82755172241866,
+          113.97485166387281
+        ],
+        "head": [
+          147.8022760811874,
+          110.60739462880265
+        ]
+      }
+    },
+    {
+      "phase": 2,
+      "bluePatch": [
+        105.75,
+        44.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.60623760483105,
+          104.49261858942725
+        ],
+        "clasp": [
+          152.60623760483105,
+          114.91155503092276
+        ],
+        "head": [
+          147.6652512493659,
+          110.46274350209025
+        ]
+      }
+    },
+    {
+      "phase": 3,
+      "bluePatch": [
+        106.5,
+        44.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          153.47860483167935,
+          104.49261858942725
+        ],
+        "clasp": [
+          153.47860483167935,
+          116.38166094886569
+        ],
+        "head": [
+          148.4229934206755,
+          110.84786095849364
+        ]
+      }
+    },
+    {
+      "phase": 4,
+      "bluePatch": [
+        105.0,
+        43.5
+      ],
+      "uncertaintyRawPx": 1.5,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          151.73387037798273,
+          103.91104043819504
+        ],
+        "clasp": [
+          152.89702668044714,
+          114.913034283255
+        ],
+        "head": [
+          147.56882789917177,
+          110.74375566131489
+        ]
+      }
+    },
+    {
+      "phase": 5,
+      "bluePatch": [
+        102.33333333333333,
+        43.333333333333336
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          148.63212023807756,
+          103.71718105445098
+        ],
+        "clasp": [
+          150.3768546917742,
+          113.70318961755433
+        ],
+        "head": [
+          148.34595043697226,
+          110.3996191356243
+        ]
+      }
+    },
+    {
+      "phase": 6,
+      "bluePatch": [
+        101.5,
+        44.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          147.66282331935724,
+          104.49261858942725
+        ],
+        "clasp": [
+          151.1522922267505,
+          113.26402965743924
+        ],
+        "head": [
+          148.39834433722334,
+          110.15273387965378
+        ]
+      }
+    },
+    {
+      "phase": 7,
+      "bluePatch": [
+        101.75,
+        44.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          147.95361239497333,
+          104.49261858942725
+        ],
+        "clasp": [
+          152.60623760483102,
+          110.57510146718323
+        ],
+        "head": [
+          149.11182116938863,
+          110.28537986460597
+        ]
+      }
+    },
+    {
+      "phase": 8,
+      "bluePatch": [
+        105.33333333333333,
+        47.333333333333336
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.12158914547086,
+          108.36980626430866
+        ],
+        "clasp": [
+          154.4479017503997,
+          111.4852981313741
+        ],
+        "head": [
+          150.18150970382422,
+          110.93457355227346
+        ]
+      }
+    },
+    {
+      "phase": 9,
+      "bluePatch": [
+        105.33333333333333,
+        47.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.12158914547086,
+          107.98208749682053
+        ],
+        "clasp": [
+          153.28474544793528,
+          109.63105820423087
+        ],
+        "head": [
+          150.8042283401167,
+          110.1578008226715
+        ]
+      }
+    },
+    {
+      "phase": 10,
+      "bluePatch": [
+        105.5,
+        47.5
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.31544852921493,
+          108.56366564805273
+        ],
+        "clasp": [
+          152.31544852921493,
+          109.72666194016699
+        ],
+        "head": [
+          150.87823206363998,
+          109.65180590384797
+        ]
+      }
+    },
+    {
+      "phase": 11,
+      "bluePatch": [
+        104.5,
+        46.5
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          151.1522922267505,
+          107.40050934558832
+        ],
+        "clasp": [
+          148.82597962182163,
+          107.40050934558832
+        ],
+        "head": [
+          150.47044891760257,
+          108.22374773769086
+        ]
+      }
+    },
+    {
+      "phase": 12,
+      "bluePatch": [
+        103.0,
+        46.5
+      ],
+      "uncertaintyRawPx": 1.5,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          149.40755777305387,
+          107.40050934558832
+        ],
+        "clasp": [
+          147.081245168125,
+          107.41420199448828
+        ],
+        "head": [
+          150.2259578662459,
+          107.34784534454658
+        ]
+      }
+    },
+    {
+      "phase": 13,
+      "bluePatch": [
+        102.0,
+        46.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          148.24440147058945,
+          106.81893119435611
+        ],
+        "clasp": [
+          145.9180888656606,
+          105.880122546259
+        ],
+        "head": [
+          150.1852760516798,
+          106.17266708004226
+        ]
+      }
+    },
+    {
+      "phase": 14,
+      "bluePatch": [
+        101.42857142857143,
+        46.285714285714285
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          147.57974072632408,
+          107.15126156648878
+        ],
+        "clasp": [
+          145.25342812139522,
+          106.14248946319148
+        ],
+        "head": [
+          149.96511524947795,
+          106.20884611313318
+        ]
+      }
+    },
+    {
+      "phase": 15,
+      "bluePatch": [
+        102.0,
+        48.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          148.24440147058945,
+          109.14524379928494
+        ],
+        "clasp": [
+          145.9180888656606,
+          108.06650824078744
+        ],
+        "head": [
+          149.26751140066096,
+          107.42272812423289
+        ]
+      }
+    },
+    {
+      "phase": 16,
+      "bluePatch": [
+        105.75,
+        48.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.60623760483105,
+          109.14524379928494
+        ],
+        "clasp": [
+          150.2799249999022,
+          107.99654478558725
+        ],
+        "head": [
+          150.2712950094007,
+          107.08689097195585
+        ]
+      }
+    },
+    {
+      "phase": 17,
+      "bluePatch": [
+        105.75,
+        48.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.60623760483105,
+          109.14524379928494
+        ],
+        "clasp": [
+          150.2799249999022,
+          107.92658133038705
+        ],
+        "head": [
+          150.40556745524407,
+          107.49694876703107
+        ]
+      }
+    },
+    {
+      "phase": 18,
+      "bluePatch": [
+        105.6,
+        47.8
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.43176415946135,
+          108.91261253879206
+        ],
+        "clasp": [
+          150.1054515545325,
+          107.62398661469398
+        ],
+        "head": [
+          149.95053838811458,
+          108.08211318881428
+        ]
+      }
+    },
+    {
+      "phase": 19,
+      "bluePatch": [
+        105.33333333333333,
+        48.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.12158914547086,
+          109.14524379928494
+        ],
+        "clasp": [
+          150.95843284300645,
+          108.64623159894174
+        ],
+        "head": [
+          150.11049034188932,
+          109.1894629156936
+        ]
+      }
+    },
+    {
+      "phase": 20,
+      "bluePatch": [
+        105.5,
+        48.5
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.31544852921493,
+          109.72682195051716
+        ],
+        "clasp": [
+          149.98913592428607,
+          108.72117238386677
+        ],
+        "head": [
+          150.37023410900392,
+          110.52983325824576
+        ]
+      }
+    },
+    {
+      "phase": 21,
+      "bluePatch": [
+        105.0,
+        48.5
+      ],
+      "uncertaintyRawPx": 1.5,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          151.73387037798273,
+          109.72682195051716
+        ],
+        "clasp": [
+          150.5707140755183,
+          108.08395793015721
+        ],
+        "head": [
+          150.21389933271524,
+          111.14863919296752
+        ]
+      }
+    },
+    {
+      "phase": 22,
+      "bluePatch": [
+        104.0,
+        47.8
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          150.5707140755183,
+          108.91261253879206
+        ],
+        "clasp": [
+          149.4075577730539,
+          107.70564443823191
+        ],
+        "head": [
+          150.00760554490233,
+          110.99525626570558
+        ]
+      }
+    },
+    {
+      "phase": 23,
+      "bluePatch": [
+        103.66666666666667,
+        48.5
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          150.18299530803017,
+          109.72682195051716
+        ],
+        "clasp": [
+          150.18299530803017,
+          107.74472855335198
+        ],
+        "head": [
+          150.70804814650535,
+          111.68093532000863
+        ]
+      }
+    },
+    {
+      "phase": 24,
+      "bluePatch": [
+        106.4,
+        49.2
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          153.36228920143293,
+          110.54103136224225
+        ],
+        "clasp": [
+          153.36228920143293,
+          106.57948624576832
+        ],
+        "head": [
+          152.01248267006028,
+          111.7780231045927
+        ]
+      }
+    },
+    {
+      "phase": 25,
+      "bluePatch": [
+        105.0,
+        49.0
+      ],
+      "uncertaintyRawPx": 1.5,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          151.73387037798273,
+          110.30840010174937
+        ],
+        "clasp": [
+          150.5707140755183,
+          106.7245672350313
+        ],
+        "head": [
+          153.17958108250946,
+          111.20005786803569
+        ]
+      }
+    },
+    {
+      "phase": 26,
+      "bluePatch": [
+        105.5,
+        49.5
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.31544852921493,
+          110.88997825298159
+        ],
+        "clasp": [
+          151.1522922267505,
+          107.73155088858286
+        ],
+        "head": [
+          153.86904849155883,
+          111.80331043522764
+        ]
+      }
+    },
+    {
+      "phase": 27,
+      "bluePatch": null,
+      "uncertaintyRawPx": null,
+      "nullMeaning": "no threshold-selected chromatic pixels; eye still visually exists; NOT occluded/missing-eye inference"
+    },
+    {
+      "phase": 28,
+      "bluePatch": null,
+      "uncertaintyRawPx": null,
+      "nullMeaning": "no threshold-selected chromatic pixels; eye still visually exists; NOT occluded/missing-eye inference"
+    },
+    {
+      "phase": 29,
+      "bluePatch": [
+        105.0,
+        50.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          151.73387037798273,
+          111.4715564042138
+        ],
+        "clasp": [
+          150.5707140755183,
+          110.61977899462326
+        ],
+        "head": [
+          154.88644023430362,
+          111.66945829887378
+        ]
+      }
+    },
+    {
+      "phase": 30,
+      "bluePatch": [
+        105.0,
+        49.0
+      ],
+      "uncertaintyRawPx": 1.5,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          151.73387037798273,
+          110.30840010174937
+        ],
+        "clasp": [
+          149.40755777305387,
+          109.69129333119692
+        ],
+        "head": [
+          155.39559226373632,
+          110.79746704954306
+        ]
+      }
+    },
+    {
+      "phase": 31,
+      "bluePatch": [
+        103.33333333333333,
+        49.333333333333336
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          149.795276540542,
+          110.69611886923752
+        ],
+        "clasp": [
+          147.46896393561315,
+          111.27219960537312
+        ],
+        "head": [
+          154.05655030962083,
+          111.83946232969453
+        ]
+      }
+    },
+    {
+      "phase": 32,
+      "bluePatch": [
+        105.6,
+        53.8
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.43176415946135,
+          115.8915503535786
+        ],
+        "clasp": [
+          151.26860785699694,
+          114.38697439480661
+        ],
+        "head": [
+          153.18591151744812,
+          113.41700354693074
+        ]
+      }
+    },
+    {
+      "phase": 33,
+      "bluePatch": [
+        105.75,
+        54.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.60623760483105,
+          116.12418161407149
+        ],
+        "clasp": [
+          152.60623760483105,
+          112.53894896039193
+        ],
+        "head": [
+          153.45508283674843,
+          112.65925996579624
+        ]
+      }
+    },
+    {
+      "phase": 34,
+      "bluePatch": [
+        106.6,
+        54.2
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          153.59492046192577,
+          116.35681287456438
+        ],
+        "clasp": [
+          153.59492046192577,
+          109.81153195921769
+        ],
+        "head": [
+          154.20669496128065,
+          111.63434233302782
+        ]
+      }
+    },
+    {
+      "phase": 35,
+      "bluePatch": [
+        105.6,
+        53.2
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.43176415946135,
+          115.19365657209995
+        ],
+        "clasp": [
+          150.6870297057647,
+          109.06844800536028
+        ],
+        "head": [
+          153.54342961385504,
+          109.7003473742996
+        ]
+      }
+    },
+    {
+      "phase": 36,
+      "bluePatch": [
+        105.4,
+        53.8
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.1991328989685,
+          115.8915503535786
+        ],
+        "clasp": [
+          152.1991328989685,
+          107.84640676733346
+        ],
+        "head": [
+          153.43913288395999,
+          109.30123823066464
+        ]
+      }
+    },
+    {
+      "phase": 37,
+      "bluePatch": [
+        105.5,
+        53.5
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.31544852921493,
+          115.54260346283928
+        ],
+        "clasp": [
+          152.31544852921493,
+          106.30338439565003
+        ],
+        "head": [
+          152.4572276122401,
+          108.26670212194144
+        ]
+      }
+    },
+    {
+      "phase": 38,
+      "bluePatch": [
+        105.5,
+        53.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.31544852921493,
+          114.96102531160707
+        ],
+        "clasp": [
+          152.31544852921493,
+          107.05576455980881
+        ],
+        "head": [
+          150.8135641336392,
+          107.32969431012326
+        ]
+      }
+    },
+    {
+      "phase": 39,
+      "bluePatch": [
+        101.75,
+        52.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          147.95361239497333,
+          113.79786900914264
+        ],
+        "clasp": [
+          147.95361239497333,
+          108.03434673507594
+        ],
+        "head": [
+          150.06274676061003,
+          106.41994715784213
+        ]
+      }
+    },
+    {
+      "phase": 40,
+      "bluePatch": [
+        106.0,
+        43.5
+      ],
+      "uncertaintyRawPx": 1.5,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.89702668044714,
+          103.91104043819504
+        ],
+        "clasp": [
+          150.57071407551828,
+          109.84949096355285
+        ],
+        "head": [
+          150.08340412532382,
+          106.45101417162358
+        ]
+      }
+    },
+    {
+      "phase": 41,
+      "bluePatch": [
+        106.4,
+        42.8
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          153.36228920143293,
+          103.09683102646994
+        ],
+        "clasp": [
+          151.61755474773628,
+          109.96835544585784
+        ],
+        "head": [
+          150.0664517127639,
+          106.22593154503713
+        ]
+      }
+    },
+    {
+      "phase": 42,
+      "bluePatch": [
+        106.0,
+        43.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          152.89702668044714,
+          103.32946228696284
+        ],
+        "clasp": [
+          151.73387037798273,
+          110.26805967816537
+        ],
+        "head": [
+          149.87066608698592,
+          106.9545049415544
+        ]
+      }
+    },
+    {
+      "phase": 43,
+      "bluePatch": [
+        104.0,
+        43.0
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          150.5707140755183,
+          103.32946228696284
+        ],
+        "clasp": [
+          149.4075577730539,
+          112.22080109415518
+        ],
+        "head": [
+          148.60654101270458,
+          107.93012012298328
+        ]
+      }
+    },
+    {
+      "phase": 44,
+      "bluePatch": [
+        103.25,
+        42.75
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          149.69834684866998,
+          103.03867321134672
+        ],
+        "clasp": [
+          150.2799249999022,
+          112.58654049143945
+        ],
+        "head": [
+          149.16880189092117,
+          108.07829980725334
+        ]
+      }
+    },
+    {
+      "phase": 45,
+      "bluePatch": [
+        102.6,
+        43.2
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          148.9422952520681,
+          103.56209354745572
+        ],
+        "clasp": [
+          150.10545155453252,
+          113.68491199942345
+        ],
+        "head": [
+          149.1874832206229,
+          108.98042825837223
+        ]
+      }
+    },
+    {
+      "phase": 46,
+      "bluePatch": [
+        102.0,
+        42.8
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          148.24440147058945,
+          103.09683102646994
+        ],
+        "clasp": [
+          149.40755777305387,
+          112.5783056149381
+        ],
+        "head": [
+          149.41618776355537,
+          109.04013423401419
+        ]
+      }
+    },
+    {
+      "phase": 47,
+      "bluePatch": [
+        101.66666666666667,
+        42.666666666666664
+      ],
+      "uncertaintyRawPx": 1.0,
+      "positionsNativeHalfPx": {
+        "baseline": [
+          147.8566827031013,
+          102.94174351947468
+        ],
+        "clasp": [
+          149.01983900556573,
+          113.43164180971219
+        ],
+        "head": [
+          148.6586017372098,
+          109.34230717352877
+        ]
+      }
+    }
+  ],
+  "limits": [
+    "46 blue patches contain only1\u20137 selected pixels;27/28null mean no threshold-blue pixels, not invisible eye.",
+    "Bone-head endpoint and chromatic iris patch are distinct features. Genuine head orientation can move the eye relative to endpoint.",
+    "Clasp and head pivots never fitted these eye annotations, but upper-head image ROI may include related face texture; this is held-out annotation, not fully disjoint image information.",
+    "Annotation-only difference intervals omit systematic bias/native-feature correspondence and optimizer model error. No exact subpixel anatomy claim.",
+    "No metadata/player/source changes; no new independent browser animation acceptance."
+  ]
+}

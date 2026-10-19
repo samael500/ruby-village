@@ -43,3 +43,20 @@ This supports a translation-only diagnostic experiment, but does not yet justify
 `torso-crosscheck.py` applies the fitted head mapping diagnostically to independent clasp/bow points, adding the native relative torso-feature versus Head-bone displacement. The frozen actual native Head endpoints and camera are preserved in `native-head-projections.json`. This comparison assumes approximate correspondence despite the changed illustrated heading; that systematic uncertainty is unknown. At30 the clasp residual is4.07raw pixels, at31 it is5.71raw; at40 it is4.85raw despite head similarity being nearly identity. Sparse bow residuals are1.35–3.32raw and their annotation uncertainty is±3.5raw per axis. These observations do not establish one shared head-and-body similarity; uncertainty prevents declaring a universal nonrigid failure solely from those points either.
 
 Therefore do not resize/rotate the whole actor based on head fit alone. The next justified experiment remains separate translation-only head registration, conditional on independent face measurements. Native Head-bone endpoint is a trajectory reference, not the same physical feature as painted iris, hair or chin. Native head bob should be retained. A head-stabilized candidate can be shown only as a diagnostic A/B and must report internal face/torso/sole residuals rather than imply morphing is fixed.
+
+## Frozen head trial: independently annotated eye-patch check
+
+`head-eye-crosscheck.py` compares frozen head trial `bb845ed` against NPC annotations `97ace61`:46 reviewed chromatic blue-eye-region centroids, phases27/28 null (no threshold-blue samples; eye still visible). Each annotation has1–1.5raw-pixel uncertainty and only1–7 selected pixels. This is NOT an exact iris/pupil centre. Neither clasp nor head registration fitted these annotations; however the upper-head image ROI can contain related face texture, so the check is held-out annotation, not completely disjoint image information.
+
+Subtract actual native Head-bone-head displacement from adjacent rendered eye-patch displacement. On45 valid cyclic adjacent pairs, vector RMS residual is2.746px baseline,2.307px clasp trial,0.935px head trial; maximum2.297px in the head trial. Units are native-half comparison pixels. Mean-centred eye-minus-Head positional vector RMS is4.683/3.626/2.047 respectively. Thus the head trial improves this coarse feature diagnostic, without demonstrating exact anatomy or complete smoothness.
+
+| Pair | Clasp motion residual | Head motion residual |
+|---|---:|---:|
+|15→16|4.542|1.285|
+|31→32|5.156|2.297|
+|38→39|4.453|0.769|
+|47→0|5.055|1.742|
+
+For these four pairs the annotation-only worst-case difference interval is±2.326 native-half pixels **per axis**; it is not a vector threshold or total confidence bound. Systematic chromatic-feature bias, painted/native view mismatch, genuine eye movement relative to Head endpoint and registration-model error remain unknown. No claim of hypersubpixel semantic precision, physicalRoot or final jitter fix follows.
+
+The actual native projected Head bone head-to-tail length varies27.26993–29.61595 full-source pixels, ratio1.08603, due to pose/orientation/projection. This is not evidence of8.6% head growth or whole-frame scale error. Likewise a head-only similarity fit cannot justify resizing the complete actor. Existing players and images remain frozen; independent actual A/B video is still necessary.
