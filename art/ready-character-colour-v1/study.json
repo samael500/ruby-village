@@ -102,5 +102,28 @@
     "palette cannot replace approved Ruta likeness/outfit",
     "one E pose only; no new direction batch"
   ],
-  "alphaEqualsStockFrame00": true
+  "alphaEqualsStockFrame00": true,
+  "nativeSkeletonGeometryWeightsAndWalkUnchangedVerified": true,
+  "invariants": {
+    "boneRestSha256": "1dfeaec8a3fb309b5b0642dfb81903604d27c9478ebaec12d5cf6f899bb74ce0",
+    "walkActionSha256": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+    "meshes": {
+      "Adventurer_Body": {
+        "vertices": 8173,
+        "geometryWeightsSha256": "afd143aec30f913e272706ef4ed392fa036405f41ad39f29f2677989c28452f8"
+      },
+      "Adventurer_Feet": {
+        "vertices": 1568,
+        "geometryWeightsSha256": "2ba5b144e28bf986b59fa5c379b8a97bac3c3afdbba69bdb0edc4c50027799a4"
+      },
+      "Adventurer_Head": {
+        "vertices": 1302,
+        "geometryWeightsSha256": "ab4ccd46c384d9e256864fa337fcc13e3f1dc5d0d97e35d0b4841003af2ec957"
+      },
+      "Adventurer_Legs": {
+        "vertices": 2672,
+        "geometryWeightsSha256": "8767250c91f9722bbfe8bcc97609e5dba46fc60bf79eec5a938a7bc551af82f6"
+      }
+    }
+  }
 }
