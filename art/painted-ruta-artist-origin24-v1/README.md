@@ -1,0 +1,11 @@
+# E24 artist-origin PROPOSAL — not runtime / no no-slip claim
+
+Manual annotations copied from independent QA commit662ff48, with original provenance/hash retained. Source whole-character RGBA is immutable; this folder only adds metadata and browser rendering. No resampled PNG, per-frame height fit, warp or pose editing.
+
+Fixed S=.9389975 across24frames maps art pixels to native guide delivery pixels. For each available heel/toe contour pair, t_i=nativeFeature_i−S*paintedPoint_i. Equal-weight mean t estimates artist-origin translation; residuals are retained per point and side. FootAnchor proposal=(nativeRoot−t)/S in original packed art pixels. Native heel/toe vertex means differ from painted front/rear profile midpoints: this is semantic contour registration, not exact physical point registration. Eight guide-pixel definition-bias allowance is an explicitly heuristic review allowance, not measured accuracy or statistical confidence. Uncertainty is max(S*manualPointUncertainty+8) plus observed RMS. Frame7 lacks points and explicitly interpolates translations6/8; uncertainty adds half their translation distance. Estimated internal ankle centers remain separate comparison data and never affect the contour proposal.
+
+Open `index.html`: native versus artist-origin-painted side-by-side,136px native body reference,1666.667ms cycle. Native draw scale136/209.6587226281; painted draw scale0.6091025377. Browser draw transforms leave original PNGs unchanged. Toggle unregistered nominal grid-origin placement to assess drawing-origin drift. Red crosses mark the shared proposed origin. Missing physical ankle, pose mismatch, silhouette/shape differences and native source foot-slide remain unresolved.
+
+Median contour residual RMS10.8969guidepx, maximum14.5534 (~7.07/9.44gamepx). These residuals combine definition mismatch, manual uncertainty and changed drawing pose; they cannot be assigned uniquely to anatomical pose error. No physical anchor/contact/no-slip PASS or runtime activation is claimed. The preview has been generated, not independently art-reviewed.
+
+Reproduce `python3 scripts/painted-ruta-artist-origin24.py` while QA annotation source remains at its documented /tmp path. Metadata and input copy make this proposal inspectable without that external file.
