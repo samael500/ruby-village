@@ -1,3 +1,17 @@
+# Current work — 2026-10-19
+
+User requested fixes to atlas retry and ordinary-build integration, and replaced bespoke MPFB fitting with ready licensed3D character + existing walk → rendered frames.
+
+- Ordinary runtime freeze6108ec2: layout2 + all8 registered backgrounds/wides, connected paving all8, mill native wheel and corrected Squirrel anchor. No private review waiver, no main merge/deploy.90tests/tsc/buildPASS, exported103.7MiB. Independent clean full8 mouse/native-touch QA RUNNING; legacy migration actual both viewports PASS reported, evidence handoff pending.
+- Atlas retry41f8c8c independently PASS in Chromium and real game reentry; source/evidence qa/atlas-retry. Failed decode evicted, successful/in-flight requests shared.
+- Source registration all8 and scoped garden/mill polygon/semantic checks documented in art/full8-source-audit and art/garden-mill-polygon-visual. Art acceptance and fullchapter game QA remain explicitly pending; source audit is not whole-game certification.
+- Ready character PR74/source d583987: Quaternius CC0 Adventurer,62bones/24actions,24whole Walk E frames+loop, provenance retained. Stock silhouette is NOT approved Ruta. Root/source motion in-place, contact residual measured, not slide-free/game-walking accepted. Independent source-motion review assigned stream_road_finish in a fresh QA tree. Prior MPFB wardrobe8e9619f rejected/read-only; do not continue radial vest fitting.
+- Owners: root common runtime/manifests/integration; compact_view_qa independent full8+legacy; npc_facing ready character source tree ruby-village-36-ready-walk; stream_road_finish independent motion review. No competing worktree writes. Physical phone/family NOT RUN.
+
+Earlier checkpoints below are history and may describe closed gates or pending fixes that are superseded above.
+
+---
+
 # Current checkpoint — latest user requirements prevail
 
 Integration `426917f`; main remains `add76709`. No merge/publication. User authorized working-branch pushes. Latest bridge feedback: road nearly accepted; bridge craftsmanship improved, but projection looked frontal. Floor-v3 uses staggered horizontal deck boards under the same ground camera; actual stream pilot5308 awaits artistic review. Never integrate review-only activation waivers.
