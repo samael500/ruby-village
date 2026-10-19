@@ -1,0 +1,4927 @@
+{
+  "status": "REJECTED-pilot-causal-diagnostic-only-NOT-a-fix",
+  "equation": "r_proposal(i)=O+k*(p_i-a_i); r_fixed(i)=O+k*(p_i-A); delta_r=k*delta_p-k*delta_a",
+  "canvasOrigin": [
+    180,
+    320
+  ],
+  "oneGlobalDisplayScale": 1.2182050753643954,
+  "fixedOriginArtPx": [
+    195.66363793858278,
+    315.66550426241383
+  ],
+  "fixedOriginDefinition": "component-wise median proposal anchor, only constant diagnostic gauge; no physical/reference correctness claim",
+  "manualEyeDefinition": "center of visible painted blue iris, hand-read from all24 source head crops, uncertainty2artpx; NOT head bone/native joint",
+  "sourceHashes": {
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/ruta-painted-ready-v1/review.html": "b044e179f19fce6afcc08ca6ace94530bee24b377e187f78848b22379432815f",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-artist-origin24-v1/artist-origin-proposal.json": "c957c1b5b93a01e6882e56c446f3bf0c4abc0d3c1f41da4e58241ff0f9418c14",
+    "/tmp/ruby-qa-painted-landmarks24/docs/chapter-1-rc/qa/painted-landmarks24/manual-painted-landmarks24.json": "30a9ba5b2c2f3594f27d362479cd670ba207b0c2c595b9223d295a449b2bdd97",
+    "/home/mskorokhod/life/ruby-village-36-painted-guides/art/painted-ruta-registration24-v1/native-landmarks24.json": "baaafcabdca86ee54edc0dd37bc67f61789d226c5f5190d0a69333975e749c1c",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-00.png": "0509602dde43a59e10e221c49cb4645a5e3d909ce0b9c2494da5cbca8a52c4e2",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-01.png": "104bdef1d032554c188cf5318b2ef870ef0ad60975a1bcd7e3e6a6995435a4fc",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-02.png": "c2bdcb7da32d7ea24e8040afd9447277aa483de4c2e50c2a32a733db2bc21a22",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-03.png": "0be439d46998df8c7c0d0b698f2e8981c2a815f3db94bfd92b11ba3be1794315",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-04.png": "ca8551225d0b106b891ddee0967028e44a43da043c56606943d585053fed8788",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-05.png": "c1133bd40aa91f86eacbfd8206f1585c1cfde1de5b1c1addf27932c8e4a6a5aa",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-06.png": "71a532361731d179f29b6bc73ac61216f3e83a13f39fbdd16fc7153b9cb2902a",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-07.png": "7fcd661c1c6c04b2fe433b60dd146c7805f47ee26dbcb71e44f6b16916dcadc2",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-08.png": "df2a9597f62497213bbb8d9319c49f65f8734fb82c1c27889f34bacaa4adc1ea",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-09.png": "8a415fba85cb33ac189c2664a10064d1c2fb09b1868adaa6d575b639132c6307",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-10.png": "0fe3638fa620cae9c850836634faec635bb5db26b6b6d9c66ed2335c6d017e6a",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-11.png": "8d96f95df14d7631f4eed014f3286f9ddf55adb32e41501701dee1553c625f1d",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-12.png": "69735a6497e850bcb63e9a001587053c6727a4bd9c81fe039c165792793167b7",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-13.png": "1f117fe91314a7991fdb70579120abac982af09ef8df725f3ae34c4308b8eee8",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-14.png": "8f1041ccc76d27889640fa79ad891d6c1a8316686c7ace4986d3366354168915",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-15.png": "68ec6a7eb58b717c84437e20703bd9640b14f0d78577d3e02324a504e999c54a",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-16.png": "7eb9c630bda3acbfb09e7c8da98afb2b06b9a89dd7a59e6c62bf2336a2087f48",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-17.png": "5756cf15548b9c70bd8eb23d14708108d20b7badec4642ce3fc49fa374a277f3",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-18.png": "4428e2949fc28bef28ea99ff2401fca7afa0cda06d566d767c1109621ee63810",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-19.png": "b8533d1e87ada466fd69e761caafaa31e61123f81a49cff16a2e90a37ea645e8",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-20.png": "274888ea9b89a1e16d6d6363b112377b9ae692f302c0bde34d6262a495a5422e",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-21.png": "977ec5eebda23890af63344c42d98f7c7c520f9f2511dd1e1aacd5d3f01b4b21",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-22.png": "664350dfa7cf2fa8a43097e2f2c735cae184e4ca7fc5d0b603b6005fc8cc8f98",
+    "/home/mskorokhod/life/ruby-village-36-painted-ready/art/painted-ruta-whole24-v1/frame-23.png": "28fddd84a055a55c8505b5ea147ec1053c584c1aef0d2dbfffe0486bc2b38510"
+  },
+  "frames": [
+    {
+      "phase": 0,
+      "anchorArtPx": [
+        191.2205071580766,
+        321.94057820872564
+      ],
+      "sourceAlpha16BBox": [
+        108,
+        102,
+        285,
+        338
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        5.412644467320397,
+        -7.6443269296839285
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            213,
+            134
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            201.1192442515732,
+            98.69416068889527
+          ],
+          "proposalCanvasPx": [
+            206.5318887188936,
+            91.04983375921134
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            170,
+            220
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            148.7364260109042,
+            203.4597971702333
+          ],
+          "proposalCanvasPx": [
+            154.14907047822462,
+            195.81547024054936
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            235,
+            315
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            227.91975590958992,
+            319.1892793298508
+          ],
+          "proposalCanvasPx": [
+            233.3324003769103,
+            311.5449524001669
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            110,
+            305
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            75.64412148904049,
+            307.0072285762069
+          ],
+          "proposalCanvasPx": [
+            81.05676595636088,
+            299.36290164652297
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        78,
+        52,
+        295,
+        340
+      ],
+      "actualNativeBBox": [
+        73,
+        51,
+        287,
+        332
+      ]
+    },
+    {
+      "phase": 1,
+      "anchorArtPx": [
+        204.32453282936524,
+        322.2395763311447
+      ],
+      "sourceAlpha16BBox": [
+        116,
+        102,
+        290,
+        336
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -10.550746113148751,
+        -8.00856795993924
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            223,
+            136
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            213.30129500521716,
+            101.13057083962406
+          ],
+          "proposalCanvasPx": [
+            202.75054889206842,
+            93.12200287968483
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            187,
+            220
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            169.44591229209894,
+            203.4597971702333
+          ],
+          "proposalCanvasPx": [
+            158.89516617895018,
+            195.45122921029403
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            242,
+            320
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            236.44719143714067,
+            325.2803047066728
+          ],
+          "proposalCanvasPx": [
+            225.8964453239919,
+            317.27173674673355
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            118,
+            299
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            85.38976209195565,
+            299.6979981240205
+          ],
+          "proposalCanvasPx": [
+            74.8390159788069,
+            291.6894301640813
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        72,
+        52,
+        284,
+        337
+      ],
+      "actualNativeBBox": [
+        68,
+        52,
+        283,
+        330
+      ]
+    },
+    {
+      "phase": 2,
+      "anchorArtPx": [
+        205.82731197737905,
+        324.17274924985315
+      ],
+      "sourceAlpha16BBox": [
+        115,
+        104,
+        284,
+        335
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -12.381439298410962,
+        -10.363569021066894
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            227,
+            137
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            218.17411530667474,
+            102.34877591498847
+          ],
+          "proposalCanvasPx": [
+            205.79267600826378,
+            91.98520689392157
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            187,
+            220
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            169.44591229209894,
+            203.4597971702333
+          ],
+          "proposalCanvasPx": [
+            157.06447299368796,
+            193.0962281491664
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            228,
+            325
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            219.39232038203914,
+            331.3713300834948
+          ],
+          "proposalCanvasPx": [
+            207.0108810836282,
+            321.0077610624279
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            117,
+            296
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            84.17155701659125,
+            296.0433828979273
+          ],
+          "proposalCanvasPx": [
+            71.79011771818028,
+            285.6798138768604
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        69,
+        51,
+        276,
+        333
+      ],
+      "actualNativeBBox": [
+        65,
+        53,
+        274,
+        328
+      ]
+    },
+    {
+      "phase": 3,
+      "anchorArtPx": [
+        199.3957023211408,
+        323.70285005457663
+      ],
+      "sourceAlpha16BBox": [
+        108,
+        104,
+        266,
+        336
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -4.5464197724188535,
+        -9.791135436471384
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            220,
+            138
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            209.64667977912399,
+            103.56698099035285
+          ],
+          "proposalCanvasPx": [
+            205.10026000670513,
+            93.77584555388145
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            180,
+            219
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            160.91847676454816,
+            202.24159209486888
+          ],
+          "proposalCanvasPx": [
+            156.3720569921293,
+            192.45045665839748
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            216,
+            325
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            204.7738594776664,
+            331.3713300834948
+          ],
+          "proposalCanvasPx": [
+            200.22743970524755,
+            321.5801946470234
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            110,
+            295
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            75.64412148904049,
+            294.8251778225629
+          ],
+          "proposalCanvasPx": [
+            71.09770171662163,
+            285.0340423860915
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        68,
+        52,
+        262,
+        335
+      ],
+      "actualNativeBBox": [
+        71,
+        54,
+        262,
+        329
+      ]
+    },
+    {
+      "phase": 4,
+      "anchorArtPx": [
+        194.41388190370685,
+        327.04826864481566
+      ],
+      "sourceAlpha16BBox": [
+        118,
+        103,
+        250,
+        338
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        1.5224591446531395,
+        -13.866541342318978
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            208,
+            135
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            195.02821887475125,
+            99.91236576425968
+          ],
+          "proposalCanvasPx": [
+            196.55067801940436,
+            86.0458244219407
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            173,
+            219
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            152.39104123699738,
+            202.24159209486888
+          ],
+          "proposalCanvasPx": [
+            153.91350038165052,
+            188.3750507525499
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            198,
+            327
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            182.84616812110727,
+            333.80774023422356
+          ],
+          "proposalCanvasPx": [
+            184.3686272657604,
+            319.9411988919046
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            121,
+            302
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            89.04437731804883,
+            303.3526133501137
+          ],
+          "proposalCanvasPx": [
+            90.56683646270197,
+            289.4860720077947
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        86,
+        47,
+        248,
+        334
+      ],
+      "actualNativeBBox": [
+        86,
+        53,
+        244,
+        330
+      ]
+    },
+    {
+      "phase": 5,
+      "anchorArtPx": [
+        196.62800505604358,
+        325.4384804016638
+      ],
+      "sourceAlpha16BBox": [
+        136,
+        103,
+        239,
+        337
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -1.1747969170052737,
+        -11.905489134249455
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            215,
+            135
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            203.555654402302,
+            99.91236576425968
+          ],
+          "proposalCanvasPx": [
+            202.38085748529673,
+            88.0068766300102
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            181,
+            222
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            162.13668183991257,
+            205.89620732096205
+          ],
+          "proposalCanvasPx": [
+            160.96188492290727,
+            193.9907181867126
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            189,
+            326
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            171.88232244282773,
+            332.5895351588592
+          ],
+          "proposalCanvasPx": [
+            170.70752552582243,
+            320.6840460246097
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            140,
+            301
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            112.19027374997235,
+            302.1344082747493
+          ],
+          "proposalCanvasPx": [
+            111.01547683296707,
+            290.22891914049984
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        106,
+        49,
+        232,
+        334
+      ],
+      "actualNativeBBox": [
+        106,
+        50,
+        230,
+        332
+      ]
+    },
+    {
+      "phase": 6,
+      "anchorArtPx": [
+        198.95192393802756,
+        313.24380704723916
+      ],
+      "sourceAlpha16BBox": [
+        146,
+        96,
+        239,
+        327
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -4.005806693773316,
+        2.950123838521611
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            224,
+            127
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            214.51950008058157,
+            90.16672516134449
+          ],
+          "proposalCanvasPx": [
+            210.51369338680826,
+            93.11684899986611
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            175,
+            225
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            154.82745138772617,
+            209.55082254705525
+          ],
+          "proposalCanvasPx": [
+            150.82164469395286,
+            212.50094638557687
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            190,
+            310
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            173.1005275181921,
+            313.09825395302886
+          ],
+          "proposalCanvasPx": [
+            169.0947208244188,
+            316.0483777915505
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            149,
+            294
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            123.1541194282519,
+            293.60697274719854
+          ],
+          "proposalCanvasPx": [
+            119.1483127344786,
+            296.55709658572016
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        116,
+        55,
+        229,
+        337
+      ],
+      "actualNativeBBox": [
+        125,
+        47,
+        221,
+        333
+      ]
+    },
+    {
+      "phase": 7,
+      "anchorArtPx": [
+        194.8033731721194,
+        316.9194559549907
+      ],
+      "sourceAlpha16BBox": [
+        158,
+        95,
+        246,
+        330
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        1.0479789046628654,
+        -1.5275703161589425
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            222,
+            126
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            212.08308992985278,
+            88.9485200859801
+          ],
+          "proposalCanvasPx": [
+            213.13106883451564,
+            87.42094976982116
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            178,
+            232
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            158.48206661381937,
+            218.07825807460603
+          ],
+          "proposalCanvasPx": [
+            159.53004551848224,
+            216.55068775844705
+          ]
+        },
+        "heelL": null,
+        "heelR": null
+      },
+      "actualProposalPaintedBBox": [
+        135,
+        50,
+        243,
+        336
+      ],
+      "actualNativeBBox": [
+        141,
+        45,
+        226,
+        334
+      ]
+    },
+    {
+      "phase": 8,
+      "anchorArtPx": [
+        190.6548224062112,
+        320.59510486274223
+      ],
+      "sourceAlpha16BBox": [
+        144,
+        96,
+        259,
+        336
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        6.101764503099081,
+        -6.0052644708394265
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            222,
+            127
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            212.08308992985278,
+            90.16672516134449
+          ],
+          "proposalCanvasPx": [
+            218.18485443295185,
+            84.16146069050507
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            178,
+            235
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            158.48206661381937,
+            221.7328733006992
+          ],
+          "proposalCanvasPx": [
+            164.58383111691845,
+            215.72760882985978
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            146,
+            310
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            119.49950420215872,
+            313.09825395302886
+          ],
+          "proposalCanvasPx": [
+            125.60126870525781,
+            307.0929894821894
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            184,
+            320
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            165.79129706600574,
+            325.2803047066728
+          ],
+          "proposalCanvasPx": [
+            171.89306156910482,
+            319.2750402358334
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        123,
+        46,
+        264,
+        339
+      ],
+      "actualNativeBBox": [
+        124,
+        45,
+        240,
+        335
+      ]
+    },
+    {
+      "phase": 9,
+      "anchorArtPx": [
+        195.20325923155102,
+        315.31183566565556
+      ],
+      "sourceAlpha16BBox": [
+        132,
+        95,
+        271,
+        327
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        0.5608356774957943,
+        0.4308408795679264
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            218,
+            126
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            207.2102696283952,
+            88.9485200859801
+          ],
+          "proposalCanvasPx": [
+            207.77110530589098,
+            89.37936096554802
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            173,
+            232
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            152.39104123699738,
+            218.07825807460603
+          ],
+          "proposalCanvasPx": [
+            152.9518769144932,
+            218.50909895417394
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            135,
+            304
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            106.09924837315037,
+            305.78902350084246
+          ],
+          "proposalCanvasPx": [
+            106.66008405064616,
+            306.2198643804104
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            211,
+            316
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            198.68283410084442,
+            320.4074844052152
+          ],
+          "proposalCanvasPx": [
+            199.2436697783402,
+            320.83832528478314
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        103,
+        52,
+        273,
+        334
+      ],
+      "actualNativeBBox": [
+        106,
+        48,
+        257,
+        333
+      ]
+    },
+    {
+      "phase": 10,
+      "anchorArtPx": [
+        194.28178939816695,
+        315.6783504509799
+      ],
+      "sourceAlpha16BBox": [
+        118,
+        96,
+        278,
+        328
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        1.6833749053194471,
+        -0.01564929211027779
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            214,
+            128
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            202.33744932693762,
+            91.3849302367089
+          ],
+          "proposalCanvasPx": [
+            204.02082423225704,
+            91.36928094459861
+          ]
+        },
+        "satchelClasp": null,
+        "heelL": {
+          "sourceArtPx": [
+            122,
+            296
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            90.26258239341323,
+            296.0433828979273
+          ],
+          "proposalCanvasPx": [
+            91.94595729873268,
+            296.02773360581705
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            230,
+            321
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            221.82873053276793,
+            326.4985097820372
+          ],
+          "proposalCanvasPx": [
+            223.51210543808736,
+            326.4828604899269
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        87,
+        52,
+        282,
+        336
+      ],
+      "actualNativeBBox": [
+        84,
+        51,
+        277,
+        330
+      ]
+    },
+    {
+      "phase": 11,
+      "anchorArtPx": [
+        197.9827669081769,
+        315.6526580738478
+      ],
+      "sourceAlpha16BBox": [
+        113,
+        98,
+        291,
+        328
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -2.825174681184155,
+        0.015649292110208542
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            218,
+            130
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            207.2102696283952,
+            93.82134038743769
+          ],
+          "proposalCanvasPx": [
+            204.38509494721103,
+            93.83698967954788
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            184,
+            227
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            165.79129706600574,
+            211.98723269778404
+          ],
+          "proposalCanvasPx": [
+            162.96612238482157,
+            212.00288198989426
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            115,
+            287
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            81.73514686586246,
+            285.07953721964776
+          ],
+          "proposalCanvasPx": [
+            78.90997218467831,
+            285.09518651175796
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            242,
+            321
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            236.44719143714067,
+            326.4985097820372
+          ],
+          "proposalCanvasPx": [
+            233.6220167559565,
+            326.5141590741474
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        76,
+        55,
+        293,
+        336
+      ],
+      "actualNativeBBox": [
+        71,
+        53,
+        286,
+        330
+      ]
+    },
+    {
+      "phase": 12,
+      "anchorArtPx": [
+        186.9730209500046,
+        313.03861994835756
+      ],
+      "sourceAlpha16BBox": [
+        100,
+        101,
+        275,
+        324
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        10.586953723533965,
+        3.200083803778466
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            213,
+            132
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            201.1192442515732,
+            96.25775053816648
+          ],
+          "proposalCanvasPx": [
+            211.70619797510716,
+            99.45783434194493
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            175,
+            223
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            154.82745138772617,
+            207.11441239632646
+          ],
+          "proposalCanvasPx": [
+            165.41440511126015,
+            210.31449620010494
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            101,
+            279
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            64.68027581076093,
+            275.3338966167326
+          ],
+          "proposalCanvasPx": [
+            75.2672295342949,
+            278.53398042051106
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            225,
+            316
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            215.73770515594595,
+            320.4074844052152
+          ],
+          "proposalCanvasPx": [
+            226.32465887947993,
+            323.6075682089937
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        74,
+        61,
+        288,
+        334
+      ],
+      "actualNativeBBox": [
+        65,
+        54,
+        287,
+        329
+      ]
+    },
+    {
+      "phase": 13,
+      "anchorArtPx": [
+        195.37412227116616,
+        316.0180625678174
+      ],
+      "sourceAlpha16BBox": [
+        104,
+        98,
+        278,
+        327
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        0.3526894554444405,
+        -0.42948831700452456
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            217,
+            128
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            205.9920645530308,
+            91.3849302367089
+          ],
+          "proposalCanvasPx": [
+            206.34475400847523,
+            90.95544191970438
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            181,
+            223
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            162.13668183991257,
+            207.11441239632646
+          ],
+          "proposalCanvasPx": [
+            162.489371295357,
+            206.68492407932195
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            106,
+            281
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            70.7713011875829,
+            277.77030676746136
+          ],
+          "proposalCanvasPx": [
+            71.12399064302734,
+            277.3408184504569
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            229,
+            320
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            220.61052545740353,
+            325.2803047066728
+          ],
+          "proposalCanvasPx": [
+            220.96321491284797,
+            324.8508163896683
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        69,
+        54,
+        281,
+        334
+      ],
+      "actualNativeBBox": [
+        64,
+        54,
+        283,
+        332
+      ]
+    },
+    {
+      "phase": 14,
+      "anchorArtPx": [
+        193.11130309239425,
+        313.306491848973
+      ],
+      "sourceAlpha16BBox": [
+        105,
+        98,
+        276,
+        326
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        3.1092672636562697,
+        2.873760894901239
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            222,
+            127
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            212.08308992985278,
+            90.16672516134449
+          ],
+          "proposalCanvasPx": [
+            215.19235719350905,
+            93.04048605624573
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            190,
+            223
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            173.1005275181921,
+            207.11441239632646
+          ],
+          "proposalCanvasPx": [
+            176.2097947818484,
+            209.9881732912277
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            107,
+            278
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            71.9895062629473,
+            274.1156915413682
+          ],
+          "proposalCanvasPx": [
+            75.09877352660357,
+            276.98945243626946
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            213,
+            319
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            201.1192442515732,
+            324.0620996313084
+          ],
+          "proposalCanvasPx": [
+            204.22851151522948,
+            326.93586052620964
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        73,
+        57,
+        281,
+        336
+      ],
+      "actualNativeBBox": [
+        65,
+        56,
+        274,
+        335
+      ]
+    },
+    {
+      "phase": 15,
+      "anchorArtPx": [
+        199.73510565614077,
+        314.90381335331864
+      ],
+      "sourceAlpha16BBox": [
+        116,
+        99,
+        268,
+        328
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -4.959882637711439,
+        0.9278957313186851
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            214,
+            129
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            202.33744932693762,
+            92.60313531207328
+          ],
+          "proposalCanvasPx": [
+            197.37756668922617,
+            93.53103104339198
+          ]
+        },
+        "satchelClasp": null,
+        "heelL": {
+          "sourceArtPx": [
+            118,
+            280
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            85.38976209195565,
+            276.552101692097
+          ],
+          "proposalCanvasPx": [
+            80.42987945424422,
+            277.4799974234157
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            210,
+            321
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            197.46462902548,
+            326.4985097820372
+          ],
+          "proposalCanvasPx": [
+            192.5047463877686,
+            327.42640551335586
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        78,
+        57,
+        264,
+        336
+      ],
+      "actualNativeBBox": [
+        71,
+        56,
+        261,
+        335
+      ]
+    },
+    {
+      "phase": 16,
+      "anchorArtPx": [
+        192.9652309098969,
+        321.11921209839824
+      ],
+      "sourceAlpha16BBox": [
+        118,
+        103,
+        248,
+        333
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        3.2872131377441116,
+        -6.643734565350774
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            208,
+            133
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            195.02821887475125,
+            97.47595561353089
+          ],
+          "proposalCanvasPx": [
+            198.31543201249534,
+            90.83222104818009
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            167,
+            224
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            145.081810784811,
+            208.33261747169087
+          ],
+          "proposalCanvasPx": [
+            148.36902392255513,
+            201.6888829063401
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            120,
+            285
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            87.82617224268444,
+            282.64312706891894
+          ],
+          "proposalCanvasPx": [
+            91.11338538042855,
+            275.9993925035682
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            193,
+            327
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            176.7551427442853,
+            333.80774023422356
+          ],
+          "proposalCanvasPx": [
+            180.04235588202943,
+            327.1640056688728
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        88,
+        54,
+        247,
+        335
+      ],
+      "actualNativeBBox": [
+        86,
+        54,
+        242,
+        336
+      ]
+    },
+    {
+      "phase": 17,
+      "anchorArtPx": [
+        203.29603304150297,
+        320.78771671485305
+      ],
+      "sourceAlpha16BBox": [
+        144,
+        98,
+        243,
+        333
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -9.297822451563727,
+        -6.239905206656157
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            218,
+            128
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            207.2102696283952,
+            91.3849302367089
+          ],
+          "proposalCanvasPx": [
+            197.91244717683145,
+            85.14502503005275
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            184,
+            218
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            165.79129706600574,
+            201.02338701950447
+          ],
+          "proposalCanvasPx": [
+            156.49347461444202,
+            194.78348181284832
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            146,
+            285
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            119.49950420215872,
+            282.64312706891894
+          ],
+          "proposalCanvasPx": [
+            110.20168175059499,
+            276.4032218622628
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            193,
+            327
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            176.7551427442853,
+            333.80774023422356
+          ],
+          "proposalCanvasPx": [
+            167.45732029272156,
+            327.5678350275674
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        107,
+        48,
+        229,
+        335
+      ],
+      "actualNativeBBox": [
+        106,
+        52,
+        226,
+        336
+      ]
+    },
+    {
+      "phase": 18,
+      "anchorArtPx": [
+        198.03469358105042,
+        294.9238937114258
+      ],
+      "sourceAlpha16BBox": [
+        151,
+        87,
+        234,
+        311
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -2.888432017625464,
+        25.26753524444529
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            213,
+            118
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            201.1192442515732,
+            79.20287948306495
+          ],
+          "proposalCanvasPx": [
+            198.23081223394774,
+            104.47041472751025
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            174,
+            205
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            153.6092463123618,
+            185.18672103976735
+          ],
+          "proposalCanvasPx": [
+            150.72081429473633,
+            210.45425628421265
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            159,
+            266
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            135.33617018189585,
+            259.4972306369955
+          ],
+          "proposalCanvasPx": [
+            132.4477381642704,
+            284.7647658814407
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            179,
+            302
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            159.70027168918375,
+            303.3526133501137
+          ],
+          "proposalCanvasPx": [
+            156.8118396715583,
+            328.620148594559
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        123,
+        66,
+        224,
+        340
+      ],
+      "actualNativeBBox": [
+        125,
+        49,
+        221,
+        336
+      ]
+    },
+    {
+      "phase": 19,
+      "anchorArtPx": [
+        194.66983336013774,
+        292.65244565699055
+      ],
+      "sourceAlpha16BBox": [
+        152,
+        86,
+        235,
+        311
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        1.210657781382117,
+        28.034624792784918
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            215,
+            118
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            203.555654402302,
+            79.20287948306495
+          ],
+          "proposalCanvasPx": [
+            204.7663121836841,
+            107.23750427584986
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            177,
+            205
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            157.263861538455,
+            185.18672103976735
+          ],
+          "proposalCanvasPx": [
+            158.4745193198371,
+            213.22134583255226
+          ]
+        },
+        "heelL": null,
+        "heelR": {
+          "sourceArtPx": [
+            155,
+            296
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            130.46334988043827,
+            296.0433828979273
+          ],
+          "proposalCanvasPx": [
+            131.67400766182038,
+            324.07800769071224
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        128,
+        68,
+        229,
+        343
+      ],
+      "actualNativeBBox": [
+        135,
+        45,
+        226,
+        335
+      ]
+    },
+    {
+      "phase": 20,
+      "anchorArtPx": [
+        196.80111137892405,
+        296.7605407028603
+      ],
+      "sourceAlpha16BBox": [
+        147,
+        85,
+        262,
+        314
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -1.3856759181159317,
+        23.03012255782708
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            217,
+            116
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            205.9920645530308,
+            76.76646933233616
+          ],
+          "proposalCanvasPx": [
+            204.60638863491485,
+            99.79659189016323
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            180,
+            203
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            160.91847676454816,
+            182.75031088903856
+          ],
+          "proposalCanvasPx": [
+            159.53280084643222,
+            205.78043344686563
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            190,
+            279
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            173.1005275181921,
+            275.3338966167326
+          ],
+          "proposalCanvasPx": [
+            171.71485160007617,
+            298.3640191745597
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            149,
+            298
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            123.1541194282519,
+            298.4797930486561
+          ],
+          "proposalCanvasPx": [
+            121.76844351013597,
+            321.50991560648316
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        119,
+        62,
+        260,
+        341
+      ],
+      "actualNativeBBox": [
+        119,
+        44,
+        245,
+        335
+      ]
+    },
+    {
+      "phase": 21,
+      "anchorArtPx": [
+        195.95315360599938,
+        297.15802576539875
+      ],
+      "sourceAlpha16BBox": [
+        132,
+        84,
+        273,
+        311
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -0.3526894554444059,
+        22.54590423726119
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            213,
+            116
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            201.1192442515732,
+            76.76646933233616
+          ],
+          "proposalCanvasPx": [
+            200.7665547961288,
+            99.31237356959733
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            180,
+            201
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            160.91847676454816,
+            180.31390073830977
+          ],
+          "proposalCanvasPx": [
+            160.56578730910377,
+            202.85980497557097
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            213,
+            287
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            201.1192442515732,
+            285.07953721964776
+          ],
+          "proposalCanvasPx": [
+            200.7665547961288,
+            307.62544145690896
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            135,
+            297
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            106.09924837315037,
+            297.26158797329174
+          ],
+          "proposalCanvasPx": [
+            105.74655891770597,
+            319.8074922105529
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        103,
+        60,
+        274,
+        337
+      ],
+      "actualNativeBBox": [
+        106,
+        45,
+        261,
+        334
+      ]
+    },
+    {
+      "phase": 22,
+      "anchorArtPx": [
+        191.19997469939784,
+        297.7949653072518
+      ],
+      "sourceAlpha16BBox": [
+        118,
+        83,
+        279,
+        314
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        5.43765721269257,
+        21.76998125467553
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            211,
+            114
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            198.68283410084442,
+            74.33005918160737
+          ],
+          "proposalCanvasPx": [
+            204.120491313537,
+            96.10004043628288
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            175,
+            199
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            154.82745138772617,
+            177.87749058758098
+          ],
+          "proposalCanvasPx": [
+            160.26510860041876,
+            199.6474718422565
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            231,
+            292
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            223.04693560813232,
+            291.1705625964697
+          ],
+          "proposalCanvasPx": [
+            228.4845928208249,
+            312.94054385114526
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            122,
+            290
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            90.26258239341323,
+            288.73415244574096
+          ],
+          "proposalCanvasPx": [
+            95.7002396061058,
+            310.50413370041645
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        92,
+        59,
+        287,
+        340
+      ],
+      "actualNativeBBox": [
+        91,
+        48,
+        277,
+        333
+      ]
+    },
+    {
+      "phase": 23,
+      "anchorArtPx": [
+        197.85565566725114,
+        297.07886280707186
+      ],
+      "sourceAlpha16BBox": [
+        120,
+        86,
+        290,
+        313
+      ],
+      "commonMetadataOffsetVersusFixedCanvasPx": [
+        -2.6703271223525316,
+        22.642340954875866
+      ],
+      "points": {
+        "visibleBlueIrisCenter": {
+          "sourceArtPx": [
+            218,
+            116
+          ],
+          "manualRadialUncertaintyArtPx": 2,
+          "fixedOriginCanvasPx": [
+            207.2102696283952,
+            76.76646933233616
+          ],
+          "proposalCanvasPx": [
+            204.53994250604265,
+            99.40881028721202
+          ]
+        },
+        "satchelClasp": {
+          "sourceArtPx": [
+            177,
+            200
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            157.263861538455,
+            179.09569566294536
+          ],
+          "proposalCanvasPx": [
+            154.59353441610244,
+            201.73803661782122
+          ]
+        },
+        "heelL": {
+          "sourceArtPx": [
+            242,
+            289
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            236.44719143714067,
+            287.5159473703766
+          ],
+          "proposalCanvasPx": [
+            233.77686431478816,
+            310.15828832525244
+          ]
+        },
+        "heelR": {
+          "sourceArtPx": [
+            121,
+            288
+          ],
+          "manualRadialUncertaintyArtPx": 3,
+          "fixedOriginCanvasPx": [
+            89.04437731804883,
+            286.29774229501214
+          ],
+          "proposalCanvasPx": [
+            86.3740501956963,
+            308.940083249888
+          ]
+        }
+      },
+      "actualProposalPaintedBBox": [
+        85,
+        63,
+        292,
+        340
+      ],
+      "actualNativeBBox": [
+        78,
+        50,
+        286,
+        333
+      ]
+    }
+  ],
+  "transitions": [
+    {
+      "from": 0,
+      "to": 1,
+      "metadataCommonDeltaCanvasPx": [
+        -15.963390580469149,
+        -0.3642410302553116
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            12.182050753643953,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -15.963390580469149,
+            -0.3642410302553116
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -3.781339826825196,
+            2.072169120473479
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            12.182050753643953,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            20.70948628119472,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -15.963390580469149,
+            -0.3642410302553116
+          ],
+          "shownProposalDeltaCanvasPx": [
+            4.746095700725572,
+            -0.3642410302553116
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            20.70948628119472,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            8.527435527550768,
+            6.091025376821976
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -15.963390580469149,
+            -0.3642410302553116
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -7.435955052918381,
+            5.726784346566665
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            8.527435527550768,
+            6.091025376821976
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            9.745640602915163,
+            -7.309230452186372
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -15.963390580469149,
+            -0.3642410302553116
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -6.217749977553986,
+            -7.673471482441684
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            9.745640602915163,
+            -7.309230452186372
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            3.654615226093186,
+            -3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            2.4364101507287907,
+            9.745640602915163
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            12.182050753643953,
+            -6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            10.963845678279558,
+            7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        7.73540545664477,
+        8.848523506406067
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "metadataCommonDeltaCanvasPx": [
+        -1.8306931852622113,
+        -2.3550010611276533
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            4.8728203014575815,
+            1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -1.8306931852622113,
+            -2.3550010611276533
+          ],
+          "shownProposalDeltaCanvasPx": [
+            3.0421271161953705,
+            -1.136795985763258
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            4.8728203014575815,
+            1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            0.0,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -1.8306931852622113,
+            -2.3550010611276533
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -1.8306931852622113,
+            -2.3550010611276533
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            0.0,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -17.054871055101536,
+            6.091025376821976
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -1.8306931852622113,
+            -2.3550010611276533
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -18.88556424036375,
+            3.736024315694323
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -17.054871055101536,
+            6.091025376821976
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -1.2182050753643954,
+            -3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -1.8306931852622113,
+            -2.3550010611276533
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -3.048898260626607,
+            -6.009616287220839
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -1.2182050753643954,
+            -3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            21.927691356559116,
+            -4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            6.091025376821976,
+            4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            17.054871055101536,
+            -6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            1.2182050753643954,
+            3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        4.6677035116500605,
+        6.697002217791621
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "metadataCommonDeltaCanvasPx": [
+        7.835019525992109,
+        0.5724335845955084
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -8.527435527550768,
+            1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            7.835019525992109,
+            0.5724335845955084
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.6924160015586587,
+            1.7906386599599038
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -8.527435527550768,
+            1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -8.527435527550768,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            7.835019525992109,
+            0.5724335845955084
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.6924160015586587,
+            -0.645771490768887
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -8.527435527550768,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -14.618460904372744,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            7.835019525992109,
+            0.5724335845955084
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -6.783441378380635,
+            0.5724335845955084
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -14.618460904372744,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -8.527435527550768,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            7.835019525992109,
+            0.5724335845955084
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.6924160015586587,
+            -0.645771490768887
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -8.527435527550768,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            6.091025376821976,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            0.0,
+            2.4364101507287907
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            6.091025376821976,
+            -1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            0.0,
+            0.0
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -5.871014319667694,
+        -0.4256806694542945
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "metadataCommonDeltaCanvasPx": [
+        6.068878917071993,
+        -4.075405905847593
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -14.618460904372744,
+            -3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.068878917071993,
+            -4.075405905847593
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -8.549581987300751,
+            -7.730021131940779
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -14.618460904372744,
+            -3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -8.527435527550768,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.068878917071993,
+            -4.075405905847593
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -2.458556610478775,
+            -4.075405905847593
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -8.527435527550768,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -21.927691356559116,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.068878917071993,
+            -4.075405905847593
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -15.858812439487123,
+            -1.6389957551188026
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -21.927691356559116,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            13.40025582900835,
+            8.527435527550768
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.068878917071993,
+            -4.075405905847593
+          ],
+          "shownProposalDeltaCanvasPx": [
+            19.469134746080343,
+            4.452029621703175
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            13.40025582900835,
+            8.527435527550768
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            7.309230452186372,
+            -6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -28.018716733381094,
+            -12.182050753643953
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            13.40025582900835,
+            -2.4364101507287907
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -21.927691356559116,
+            -8.527435527550768
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -15.706936836191403,
+        -3.2563139101018947
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "metadataCommonDeltaCanvasPx": [
+        -2.697256061658413,
+        1.961052208069522
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            8.527435527550768,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.697256061658413,
+            1.961052208069522
+          ],
+          "shownProposalDeltaCanvasPx": [
+            5.830179465892355,
+            1.961052208069522
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            8.527435527550768,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            9.745640602915163,
+            3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.697256061658413,
+            1.961052208069522
+          ],
+          "shownProposalDeltaCanvasPx": [
+            7.04838454125675,
+            5.615667434162708
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            9.745640602915163,
+            3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -10.963845678279558,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.697256061658413,
+            1.961052208069522
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -13.66110173993797,
+            0.7428471327051267
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -10.963845678279558,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            23.14589643192351,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.697256061658413,
+            1.961052208069522
+          ],
+          "shownProposalDeltaCanvasPx": [
+            20.448640370265096,
+            0.7428471327051267
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            23.14589643192351,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            19.491281205830326,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -14.618460904372744,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            20.70948628119472,
+            4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -13.40025582900835,
+            4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -20.738707404186968,
+        -6.020742117767853
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "metadataCommonDeltaCanvasPx": [
+        -2.831009776768042,
+        14.855612972771066
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            10.963845678279558,
+            -9.745640602915163
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.831009776768042,
+            14.855612972771066
+          ],
+          "shownProposalDeltaCanvasPx": [
+            8.132835901511516,
+            5.109972369855903
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            10.963845678279558,
+            -9.745640602915163
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -7.309230452186372,
+            3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.831009776768042,
+            14.855612972771066
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -10.140240228954415,
+            18.51022819886425
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -7.309230452186372,
+            3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            1.2182050753643954,
+            -19.491281205830326
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.831009776768042,
+            14.855612972771066
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -1.6128047014036468,
+            -4.63566823305926
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            1.2182050753643954,
+            -19.491281205830326
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            10.963845678279558,
+            -8.527435527550768
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.831009776768042,
+            14.855612972771066
+          ],
+          "shownProposalDeltaCanvasPx": [
+            8.132835901511516,
+            6.328177445220298
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            10.963845678279558,
+            -8.527435527550768
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            9.745640602915163,
+            9.745640602915163
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            0.0,
+            -1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -8.527435527550768,
+            23.14589643192351
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -18.27307613046593,
+            12.182050753643953
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -20.886038656802434,
+        -7.581329976132025
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "metadataCommonDeltaCanvasPx": [
+        5.053785598436181,
+        -4.477694154680553
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -2.4364101507287907,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.053785598436181,
+            -4.477694154680553
+          ],
+          "shownProposalDeltaCanvasPx": [
+            2.6173754477073903,
+            -5.695899230044949
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -2.4364101507287907,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            3.654615226093186,
+            8.527435527550768
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.053785598436181,
+            -4.477694154680553
+          ],
+          "shownProposalDeltaCanvasPx": [
+            8.708400824529367,
+            4.049741372870215
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            3.654615226093186,
+            8.527435527550768
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": null,
+        "heelR": null
+      },
+      "translationInvariantDiagnostics": {},
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -20.286795882476188,
+        -8.505435193084992
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "metadataCommonDeltaCanvasPx": [
+        5.053785598436216,
+        -4.477694154680484
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            0.0,
+            1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.053785598436216,
+            -4.477694154680484
+          ],
+          "shownProposalDeltaCanvasPx": [
+            5.053785598436216,
+            -3.2594890793160887
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            0.0,
+            1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            0.0,
+            3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.053785598436216,
+            -4.477694154680484
+          ],
+          "shownProposalDeltaCanvasPx": [
+            5.053785598436216,
+            -0.8230789285872979
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            0.0,
+            3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": null,
+        "heelR": null
+      },
+      "translationInvariantDiagnostics": {},
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -22.673859113884753,
+        -7.950963402191263
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "metadataCommonDeltaCanvasPx": [
+        -5.540928825603287,
+        6.436105350407352
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -4.8728203014575815,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -5.540928825603287,
+            6.436105350407352
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -10.413749127060868,
+            5.2179002750429575
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -4.8728203014575815,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -6.091025376821976,
+            -3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -5.540928825603287,
+            6.436105350407352
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -11.631954202425263,
+            2.7814901243141663
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -6.091025376821976,
+            -3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -13.40025582900835,
+            -7.309230452186372
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -5.540928825603287,
+            6.436105350407352
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -18.941184654611636,
+            -0.8731251017790198
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -13.40025582900835,
+            -7.309230452186372
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            32.89153703483868,
+            -4.8728203014575815
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -5.540928825603287,
+            6.436105350407352
+          ],
+          "shownProposalDeltaCanvasPx": [
+            27.35060820923539,
+            1.563285048949771
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            32.89153703483868,
+            -4.8728203014575815
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            8.527435527550768,
+            6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -37.76435733629626,
+            3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            7.309230452186372,
+            3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -38.98256241166065,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -25.93898097819701,
+        -3.931905897290477
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "metadataCommonDeltaCanvasPx": [
+        1.1225392278236528,
+        -0.44649017167820415
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -4.8728203014575815,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            1.1225392278236528,
+            -0.44649017167820415
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -3.7502810736339285,
+            1.9899199790505866
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -4.8728203014575815,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": null,
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -15.83666597973714,
+            -9.745640602915163
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            1.1225392278236528,
+            -0.44649017167820415
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -14.714126751913486,
+            -10.192130774593368
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -15.83666597973714,
+            -9.745640602915163
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            23.14589643192351,
+            6.091025376821976
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            1.1225392278236528,
+            -0.44649017167820415
+          ],
+          "shownProposalDeltaCanvasPx": [
+            24.268435659747162,
+            5.6445352051437725
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            23.14589643192351,
+            6.091025376821976
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            10.963845678279558,
+            12.182050753643953
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -28.018716733381094,
+            -3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -31.72815395004803,
+        2.5891537543423624
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "metadataCommonDeltaCanvasPx": [
+        -4.5085495865036025,
+        0.031298584220486335
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            4.8728203014575815,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -4.5085495865036025,
+            0.031298584220486335
+          ],
+          "shownProposalDeltaCanvasPx": [
+            0.364270714953979,
+            2.467708734949277
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            4.8728203014575815,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": null,
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -8.527435527550768,
+            -10.963845678279558
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -4.5085495865036025,
+            0.031298584220486335
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -13.03598511405437,
+            -10.932547094059071
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -8.527435527550768,
+            -10.963845678279558
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            14.618460904372744,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -4.5085495865036025,
+            0.031298584220486335
+          ],
+          "shownProposalDeltaCanvasPx": [
+            10.109911317869141,
+            0.031298584220486335
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            14.618460904372744,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            13.40025582900835,
+            13.40025582900835
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -9.745640602915163,
+            2.4364101507287907
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -11.95242974359116,
+        2.95615184644069
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "metadataCommonDeltaCanvasPx": [
+        13.41212840471812,
+        3.184434511668257
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -6.091025376821976,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            13.41212840471812,
+            3.184434511668257
+          ],
+          "shownProposalDeltaCanvasPx": [
+            7.321103027896143,
+            5.620844662397047
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -6.091025376821976,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -10.963845678279558,
+            -4.8728203014575815
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            13.41212840471812,
+            3.184434511668257
+          ],
+          "shownProposalDeltaCanvasPx": [
+            2.4482827264385616,
+            -1.6883857897893244
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -10.963845678279558,
+            -4.8728203014575815
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -17.054871055101536,
+            -9.745640602915163
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            13.41212840471812,
+            3.184434511668257
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -3.6427426503834166,
+            -6.5612060912469055
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -17.054871055101536,
+            -9.745640602915163
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -20.70948628119472,
+            -6.091025376821976
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            13.41212840471812,
+            3.184434511668257
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -7.297357876476601,
+            -2.9065908651537193
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -20.70948628119472,
+            -6.091025376821976
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            10.963845678279558,
+            12.182050753643953
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            14.618460904372744,
+            8.527435527550768
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            6.091025376821976,
+            4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            9.745640602915163,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        -1.3262881105450646,
+        1.9083220303816404
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "metadataCommonDeltaCanvasPx": [
+        -10.234264268089525,
+        -3.6295721207829903
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            4.8728203014575815,
+            -4.8728203014575815
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -10.234264268089525,
+            -3.6295721207829903
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -5.361443966631944,
+            -8.502392422240572
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            4.8728203014575815,
+            -4.8728203014575815
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            7.309230452186372,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -10.234264268089525,
+            -3.6295721207829903
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -2.925033815903153,
+            -3.6295721207829903
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            7.309230452186372,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            6.091025376821976,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -10.234264268089525,
+            -3.6295721207829903
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -4.143238891267549,
+            -1.1931619700541995
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            6.091025376821976,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            4.8728203014575815,
+            4.8728203014575815
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -10.234264268089525,
+            -3.6295721207829903
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -5.361443966631944,
+            1.2432481806745912
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            4.8728203014575815,
+            4.8728203014575815
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -1.2182050753643954,
+            -7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            0.0,
+            -9.745640602915163
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            1.2182050753643954,
+            -2.4364101507287907
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            2.4364101507287907,
+            -4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        7.832598552718501,
+        -1.7307648582045658
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "metadataCommonDeltaCanvasPx": [
+        2.756577808211829,
+        3.3032492119057637
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            6.091025376821976,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            2.756577808211829,
+            3.3032492119057637
+          ],
+          "shownProposalDeltaCanvasPx": [
+            8.847603185033805,
+            2.0850441365413683
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            6.091025376821976,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            10.963845678279558,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            2.756577808211829,
+            3.3032492119057637
+          ],
+          "shownProposalDeltaCanvasPx": [
+            13.720423486491388,
+            3.3032492119057637
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            10.963845678279558,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            1.2182050753643954,
+            -3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            2.756577808211829,
+            3.3032492119057637
+          ],
+          "shownProposalDeltaCanvasPx": [
+            3.9747828835762244,
+            -0.3513660141874224
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            1.2182050753643954,
+            -3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -19.491281205830326,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            2.756577808211829,
+            3.3032492119057637
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -16.734703397618496,
+            2.0850441365413683
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -19.491281205830326,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            4.8728203014575815,
+            2.4364101507287907
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            25.582306582652304,
+            0.0
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            9.745640602915163,
+            3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            30.455126884109884,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        13.81140669211134,
+        -0.9907247273416431
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "metadataCommonDeltaCanvasPx": [
+        -8.069149901367709,
+        -1.945865163582554
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -9.745640602915163,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -8.069149901367709,
+            -1.945865163582554
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -17.814790504282872,
+            0.49054498714623684
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -9.745640602915163,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": null,
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            13.40025582900835,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -8.069149901367709,
+            -1.945865163582554
+          ],
+          "shownProposalDeltaCanvasPx": [
+            5.331105927640641,
+            0.49054498714623684
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            13.40025582900835,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -3.654615226093186,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -8.069149901367709,
+            -1.945865163582554
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -11.723765127460895,
+            0.49054498714623684
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -3.654615226093186,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -23.14589643192351,
+            0.0
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            -6.091025376821976,
+            0.0
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        13.768706858467866,
+        1.046703922207172
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "metadataCommonDeltaCanvasPx": [
+        8.24709577545555,
+        -7.571630296669459
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -7.309230452186372,
+            4.8728203014575815
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            8.24709577545555,
+            -7.571630296669459
+          ],
+          "shownProposalDeltaCanvasPx": [
+            0.937865323269178,
+            -2.698809995211877
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -7.309230452186372,
+            4.8728203014575815
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": null,
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            2.4364101507287907,
+            6.091025376821976
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            8.24709577545555,
+            -7.571630296669459
+          ],
+          "shownProposalDeltaCanvasPx": [
+            10.683505926184342,
+            -1.4806049198474822
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            2.4364101507287907,
+            6.091025376821976
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -20.70948628119472,
+            7.309230452186372
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            8.24709577545555,
+            -7.571630296669459
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -12.46239050573917,
+            -0.2623998444830864
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -20.70948628119472,
+            7.309230452186372
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -9.745640602915163,
+            -1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            13.40025582900835,
+            -2.4364101507287907
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        15.210801193776177,
+        -0.39972324856185537
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "metadataCommonDeltaCanvasPx": [
+        -12.585035589307838,
+        0.4038293586946159
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            12.182050753643953,
+            -6.091025376821976
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -12.585035589307838,
+            0.4038293586946159
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.40298483566388477,
+            -5.68719601812736
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            12.182050753643953,
+            -6.091025376821976
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            20.70948628119472,
+            -7.309230452186372
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -12.585035589307838,
+            0.4038293586946159
+          ],
+          "shownProposalDeltaCanvasPx": [
+            8.124450691886883,
+            -6.905401093491756
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            20.70948628119472,
+            -7.309230452186372
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            31.67333195947428,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -12.585035589307838,
+            0.4038293586946159
+          ],
+          "shownProposalDeltaCanvasPx": [
+            19.08829637016644,
+            0.4038293586946159
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            31.67333195947428,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            0.0,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -12.585035589307838,
+            0.4038293586946159
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -12.585035589307838,
+            0.4038293586946159
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            0.0,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -19.491281205830326,
+            -6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            12.182050753643953,
+            -6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -10.963845678279558,
+            -7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            20.70948628119472,
+            -7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        16.174368371614044,
+        -1.959531641951628
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "metadataCommonDeltaCanvasPx": [
+        6.409390433938262,
+        31.50744045110145
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -6.091025376821976,
+            -12.182050753643953
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.409390433938262,
+            31.50744045110145
+          ],
+          "shownProposalDeltaCanvasPx": [
+            0.31836505711628593,
+            19.325389697457496
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -6.091025376821976,
+            -12.182050753643953
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -12.182050753643953,
+            -15.83666597973714
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.409390433938262,
+            31.50744045110145
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -5.7726603197056905,
+            15.67077447136431
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -12.182050753643953,
+            -15.83666597973714
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            15.83666597973714,
+            -23.14589643192351
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.409390433938262,
+            31.50744045110145
+          ],
+          "shownProposalDeltaCanvasPx": [
+            22.2460564136754,
+            8.361544019177938
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            15.83666597973714,
+            -23.14589643192351
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -17.054871055101536,
+            -30.455126884109884
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            6.409390433938262,
+            31.50744045110145
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -10.645480621163273,
+            1.0523135669915646
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -17.054871055101536,
+            -30.455126884109884
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -21.927691356559116,
+            10.963845678279558
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            10.963845678279558,
+            18.27307613046593
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -28.018716733381094,
+            7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            4.8728203014575815,
+            14.618460904372744
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        16.615213965180764,
+        -2.5216743579899514
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "metadataCommonDeltaCanvasPx": [
+        4.099089799007581,
+        2.767089548339625
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            2.4364101507287907,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            4.099089799007581,
+            2.767089548339625
+          ],
+          "shownProposalDeltaCanvasPx": [
+            6.535499949736372,
+            2.767089548339625
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            2.4364101507287907,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            3.654615226093186,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            4.099089799007581,
+            2.767089548339625
+          ],
+          "shownProposalDeltaCanvasPx": [
+            7.753705025100768,
+            2.767089548339625
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            3.654615226093186,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": null,
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -29.23692180874549,
+            -7.309230452186372
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            4.099089799007581,
+            2.767089548339625
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -25.137832009737906,
+            -4.542140903846747
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -29.23692180874549,
+            -7.309230452186372
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            31.67333195947428,
+            7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            32.89153703483868,
+            7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        16.173249901238123,
+        -1.4806679535716114
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "metadataCommonDeltaCanvasPx": [
+        -2.596333699498049,
+        -5.004502234957836
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            2.4364101507287907,
+            -2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.596333699498049,
+            -5.004502234957836
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.15992354876925807,
+            -7.440912385686627
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            2.4364101507287907,
+            -2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            3.654615226093186,
+            -2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.596333699498049,
+            -5.004502234957836
+          ],
+          "shownProposalDeltaCanvasPx": [
+            1.0582815265951373,
+            -7.440912385686627
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            3.654615226093186,
+            -2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": null,
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -7.309230452186372,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -2.596333699498049,
+            -5.004502234957836
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -9.905564151684422,
+            -2.568092084229045
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -7.309230452186372,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            9.745640602915163,
+            -4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            10.963845678279558,
+            -4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        15.199547204241494,
+        0.5035220009818602
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "metadataCommonDeltaCanvasPx": [
+        1.032986462671526,
+        -0.4842183205658918
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -4.8728203014575815,
+            0.0
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            1.032986462671526,
+            -0.4842183205658918
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -3.8398338387860553,
+            -0.4842183205658918
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -4.8728203014575815,
+            0.0
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            0.0,
+            -2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            1.032986462671526,
+            -0.4842183205658918
+          ],
+          "shownProposalDeltaCanvasPx": [
+            1.032986462671526,
+            -2.9206284712946826
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            0.0,
+            -2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            28.018716733381094,
+            9.745640602915163
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            1.032986462671526,
+            -0.4842183205658918
+          ],
+          "shownProposalDeltaCanvasPx": [
+            29.05170319605262,
+            9.26142228234927
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            28.018716733381094,
+            9.745640602915163
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -17.054871055101536,
+            -1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            1.032986462671526,
+            -0.4842183205658918
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -16.02188459243001,
+            -1.7024233959302872
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -17.054871055101536,
+            -1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -32.89153703483868,
+            -9.745640602915163
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            12.182050753643953,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -28.018716733381094,
+            -12.182050753643953
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            17.054871055101536,
+            -1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        14.199872239400527,
+        2.8857463633193845
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "metadataCommonDeltaCanvasPx": [
+        5.7903466681369755,
+        -0.775922982585662
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -2.4364101507287907,
+            -2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.7903466681369755,
+            -0.775922982585662
+          ],
+          "shownProposalDeltaCanvasPx": [
+            3.3539365174081848,
+            -3.212333133314453
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -2.4364101507287907,
+            -2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -6.091025376821976,
+            -2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.7903466681369755,
+            -0.775922982585662
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.3006787086850009,
+            -3.212333133314453
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -6.091025376821976,
+            -2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            21.927691356559116,
+            6.091025376821976
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.7903466681369755,
+            -0.775922982585662
+          ],
+          "shownProposalDeltaCanvasPx": [
+            27.718038024696092,
+            5.315102394236314
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            21.927691356559116,
+            6.091025376821976
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -15.83666597973714,
+            -8.527435527550768
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            5.7903466681369755,
+            -0.775922982585662
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -10.046319311600165,
+            -9.30335851013643
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -15.83666597973714,
+            -8.527435527550768
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -24.364101507287906,
+            -8.527435527550768
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            13.40025582900835,
+            6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -28.018716733381094,
+            -8.527435527550768
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            9.745640602915163,
+            6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        15.78160710624389,
+        6.609596974753174
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "metadataCommonDeltaCanvasPx": [
+        -8.107984335045101,
+        0.8723597002003395
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            8.527435527550768,
+            2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -8.107984335045101,
+            0.8723597002003395
+          ],
+          "shownProposalDeltaCanvasPx": [
+            0.419451192505667,
+            3.30876985092913
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            8.527435527550768,
+            2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            2.4364101507287907,
+            1.2182050753643954
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -8.107984335045101,
+            0.8723597002003395
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -5.67157418431631,
+            2.0905647755647347
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            2.4364101507287907,
+            1.2182050753643954
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            13.40025582900835,
+            -3.654615226093186
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -8.107984335045101,
+            0.8723597002003395
+          ],
+          "shownProposalDeltaCanvasPx": [
+            5.2922714939632485,
+            -2.7822555258928467
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            13.40025582900835,
+            -3.654615226093186
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -1.2182050753643954,
+            -2.4364101507287907
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            -8.107984335045101,
+            0.8723597002003395
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -9.326189410409496,
+            -1.5640504505284514
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -1.2182050753643954,
+            -2.4364101507287907
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -4.8728203014575815,
+            6.091025376821976
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            9.745640602915163,
+            4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            -10.963845678279558,
+            4.8728203014575815
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            3.654615226093186,
+            3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        14.271182149341286,
+        8.386808047462125
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    },
+    {
+      "from": 23,
+      "to": 0,
+      "metadataCommonDeltaCanvasPx": [
+        8.082971589672928,
+        -30.286667884559794
+      ],
+      "features": {
+        "visibleBlueIrisCenter": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -6.091025376821976,
+            21.927691356559116
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            8.082971589672928,
+            -30.286667884559794
+          ],
+          "shownProposalDeltaCanvasPx": [
+            1.9919462128509515,
+            -8.358976528000678
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -6.091025376821976,
+            21.927691356559116
+          ],
+          "manualDeltaAllowanceCanvasPx": 4.8728203014575815
+        },
+        "satchelClasp": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -8.527435527550768,
+            24.364101507287906
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            8.082971589672928,
+            -30.286667884559794
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.4444639378778401,
+            -5.922566377271888
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -8.527435527550768,
+            24.364101507287906
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelL": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -8.527435527550768,
+            31.67333195947428
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            8.082971589672928,
+            -30.286667884559794
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -0.4444639378778401,
+            1.386664074914485
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -8.527435527550768,
+            31.67333195947428
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        },
+        "heelR": {
+          "rawSourceFrameFeatureDeltaAtCommonScaleCanvasPx": [
+            -13.40025582900835,
+            20.70948628119472
+          ],
+          "metadataCommonDeltaCanvasPx": [
+            8.082971589672928,
+            -30.286667884559794
+          ],
+          "shownProposalDeltaCanvasPx": [
+            -5.317284239335422,
+            -9.577181603365073
+          ],
+          "fixedOriginDeltaCanvasPx": [
+            -13.40025582900835,
+            20.70948628119472
+          ],
+          "manualDeltaAllowanceCanvasPx": 7.309230452186372
+        }
+      },
+      "translationInvariantDiagnostics": {
+        "visibleBlueIrisCenterMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            2.4364101507287907,
+            -9.745640602915163
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "visibleBlueIrisCenterMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            7.309230452186372,
+            1.2182050753643954
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 12.182050753643953,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelL": {
+          "translationInvariantChangeCanvasPx": [
+            0.0,
+            -7.309230452186372
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        },
+        "satchelClaspMinusheelR": {
+          "translationInvariantChangeCanvasPx": [
+            4.8728203014575815,
+            3.654615226093186
+          ],
+          "manualWorstCaseCoordinateAllowanceCanvasPx": 14.618460904372744,
+          "interpretation": "2D relative geometry changes; not proof of incorrect anatomy or physical source mismatch"
+        }
+      },
+      "nativeHipMinusHeelRDeltaCanvasPx": [
+        5.667541792961856,
+        4.3239272895579575
+      ],
+      "nativeFeatureCaveat": "evaluated native Hips/heel region means; NOT equivalent to painted iris/satchel/profile points"
+    }
+  ],
+  "diagnosticRenderChecks": [
+    {
+      "phase": 0,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 1,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 2,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 3,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 4,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 5,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 6,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 7,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 8,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 9,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 10,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 11,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 12,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 13,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 14,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 15,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 16,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 17,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 18,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 19,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 20,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 21,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 22,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    },
+    {
+      "phase": 23,
+      "diagnosticProposalPixelBytesMatchActualCapturedCanvas": true
+    }
+  ],
+  "sourceUnchangedAfterAnalysis": true,
+  "notCertified": [
+    "physical origin/no-slip",
+    "native iris/hip or profile/vertex semantic equivalence",
+    "which drawing or anchor is uniquely correct",
+    "corrected runtime or accepted pilot",
+    "adult-proportion anatomy from silhouette height"
+  ]
+}
