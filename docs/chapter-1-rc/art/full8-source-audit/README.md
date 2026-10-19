@@ -8,7 +8,7 @@ The current `fullPolygonVisualAudit:pending` values are literal conservative ins
 
 |Scene|Observed source proof|Existing actual evidence|Unclosed scope|
 |---|---|---|---|
-|gate|77polygon registration; existing full-free guard0|`qa/four-scenes-36912d2` environment/native-wide pass|Latest frozen `qa/b1-b2-7b0ba19` still found open-gate dialogue clipping; later coordinator camera fix needs its own actual repeat/evidence. No new source defect found.|
+|gate|77polygon registration; existing full-free guard0|`qa/four-scenes-36912d2` environment/native-wide pass|B2 final repeat `qa/gate-wide-8b18e2e` (evidence0f8cd21) scoped PASS: combined gate/Ruta framing all10 dialogue states, minimum margin20.519px; supersedes earlier failed B2 repeat. No new source defect found.|
 |garden|77polygon registration; source tree/table/rabbit full-alpha free overlap0; painted join guard0|Coordinator author two-solves only, per current handoff|Independent full-alpha semantic/polygon and actual narrative/result/arrival repeat still needed. Native source alone is insufficient.|
 |well|77polygon registration; source flower guard, teacher delivered-alpha checks|`qa/well-arrival-8da5d6d` scoped PASS incl14 flower centres, free-interior alpha0 beyond1px tolerance, teacher arrival0 overlap, two real solves|Standalone source manifest proposed teacher1225,405 is stale; actual accepted1320,405 must remain authoritative. Whole chapter/user acceptance pending.|
 |bakery|77polygon registration; full-free guard0|`qa/four-scenes-36912d2`; B1 fixed repeat `qa/b1-b2-7b0ba19` PASS1360,405 any-alpha separation0|Connected-road rollout verification and full-chapter acceptance, no outstanding B1 source blocker.|
