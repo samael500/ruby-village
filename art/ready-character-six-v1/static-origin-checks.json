@@ -1,0 +1,1137 @@
+{
+  "status": "12-headings-native-rest-origin-and-pose-root-projection-verified",
+  "nativeRootRestGround": [
+    0.0,
+    -0.07228865474462509,
+    0.0
+  ],
+  "commonFootAnchor": [
+    256.0,
+    516.8593120574951
+  ],
+  "bodyReference": {
+    "method": "evaluated REST native world Z bbox including hair/boots, multiplied by measured camera projection of1m vertical Z",
+    "worldZBoundsMeters": [
+      -0.0005078937974758446,
+      1.8100240230560303
+    ],
+    "worldHeightMeters": 1.8105319168535061,
+    "nativeHorizontalPixelsPerMeter": 304.76190185546875,
+    "nativeVerticalZPixelsPerMeter": 231.59903526306152,
+    "nativeHeightPx": 419.31744525625356,
+    "deliveryScale": 0.5,
+    "deliveryNativeHeightPx": 209.65872262812678,
+    "orthographicScaleMeters": 2.0999999046325684,
+    "actualViewportWidthMeters": 1.6800000160217288,
+    "frameCanvasHeightIsNotBodyHeight": true
+  },
+  "worldTransform": "Rz(yaw) @ T(-native Root rest ground)",
+  "samples": [
+    {
+      "variant": "base",
+      "direction": "e",
+      "yaw": 1.5707963267948966,
+      "forwardReprojectionErrorRadians": 1.265596694111075e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747828651005e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747828651005e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747828651005e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747828651005e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747828651005e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747828651005e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base",
+      "direction": "se",
+      "yaw": 0.5235987755982989,
+      "forwardReprojectionErrorRadians": -1.614607448852112e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base",
+      "direction": "sw",
+      "yaw": -0.5235987755982987,
+      "forwardReprojectionErrorRadians": 1.614607452182781e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base",
+      "direction": "w",
+      "yaw": -1.5707963267948966,
+      "forwardReprojectionErrorRadians": -4.907363582162816e-08,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747917468847e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747917468847e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747917468847e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747917468847e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747917468847e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            -8.61747917468847e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base",
+      "direction": "nw",
+      "yaw": 3.6651914291880923,
+      "forwardReprojectionErrorRadians": 2.369987561756659e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "base",
+      "direction": "ne",
+      "yaw": 2.617993877991494,
+      "forwardReprojectionErrorRadians": 3.1401001987507726e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "calibrated-1",
+      "direction": "e",
+      "yaw": 1.525847277439565,
+      "forwardReprojectionErrorRadians": -2.4111527368447794e-08,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            -7.450580596923828e-09,
+            8.847564458847046e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            -7.450580596923828e-09,
+            8.847564458847046e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            -7.450580596923828e-09,
+            8.847564458847046e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            -7.450580596923828e-09,
+            8.847564458847046e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            -7.450580596923828e-09,
+            8.847564458847046e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            -7.450580596923828e-09,
+            8.847564458847046e-09,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "calibrated-1",
+      "direction": "se",
+      "yaw": 0.4786497262429674,
+      "forwardReprojectionErrorRadians": -1.194198874232555e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "calibrated-1",
+      "direction": "sw",
+      "yaw": -0.56854782495363,
+      "forwardReprojectionErrorRadians": 1.2710871644117105e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "calibrated-1",
+      "direction": "w",
+      "yaw": 4.667439931029358,
+      "forwardReprojectionErrorRadians": 2.6476358661042815e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "calibrated-1",
+      "direction": "nw",
+      "yaw": 3.6202423798327614,
+      "forwardReprojectionErrorRadians": 2.3000449900223427e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    },
+    {
+      "variant": "calibrated-1",
+      "direction": "ne",
+      "yaw": 2.5730448286361627,
+      "forwardReprojectionErrorRadians": -2.0035112080485362e-07,
+      "samples": [
+        {
+          "action": "Walk",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 20.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Walk",
+          "frame": 40,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 25.0,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        },
+        {
+          "action": "Idle_Neutral",
+          "frame": 50,
+          "actualPosedRootWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "projectedRootPixel": [
+            256.0,
+            516.8593120574951
+          ],
+          "anchorErrorPixels": 0.0
+        }
+      ]
+    }
+  ],
+  "maximumAnchorErrorPixels": 0.0,
+  "noSourceLocalGeometryWeightsRestOrActionsEdited": true
+}

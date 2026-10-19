@@ -1,0 +1,643 @@
+{
+  "status": "source-six-view-export-not-approved-Ruta-or-game-installation",
+  "productionEnabled": false,
+  "source": "art/ready-character-adapted-v1/ruta-stock-adapted.blend",
+  "sourceSha256": "e643c4e4067585a9c7fbbe5d4fa0269019ea04e2d79764a8b3568732c7209d9c",
+  "frameSize": [
+    512,
+    640
+  ],
+  "footAnchor": [
+    256.0,
+    516.8593120574951
+  ],
+  "cameraElevationRadians": 0.7075844367253556,
+  "orthographicWidthMeters": 2.1,
+  "groundScale": 0.65,
+  "originNormalization": {
+    "nativeRootRestGround": [
+      0.0,
+      -0.07228865474462509,
+      0.0
+    ],
+    "worldTransform": "Rz(yaw) @ Translation(-RootRestGround)",
+    "rootGroundWorld": [
+      0,
+      0,
+      0
+    ],
+    "perFrameCropOrShift": false
+  },
+  "actionHashes": {
+    "walk": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+    "idle": "e10d773f92dd86bddf560051ab11dfeb48e76da32cba856fd66e667b94412594"
+  },
+  "actions": {
+    "walk": {
+      "sourceAction": "Walk",
+      "sourceRange": [
+        0,
+        40
+      ],
+      "frameCount": 24,
+      "cycleDurationMs": 1666.6666666666667
+    },
+    "idle": {
+      "sourceAction": "Idle_Neutral",
+      "sourceRange": [
+        0,
+        50
+      ],
+      "frameCount": 24,
+      "cycleDurationMs": 2083.3333333333335
+    }
+  },
+  "cameraVariants": {
+    "base": {
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "gate",
+        "garden",
+        "stream",
+        "mill",
+        "forest"
+      ],
+      "directions": {
+        "e": {
+          "acceptedScreenAngleRadians": 0.0,
+          "nativeHeadingAfterCameraRadians": 0.0,
+          "stockForwardMinusYBlenderYawRadians": 1.5707963267948966,
+          "reprojectionErrorRadians": 3.9801020972288984e-17,
+          "normalizedRootGroundWorld": [
+            0.0,
+            -8.61747828651005e-09,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/e/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/e/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "se": {
+          "acceptedScreenAngleRadians": 0.8445215140369683,
+          "nativeHeadingAfterCameraRadians": 1.0471975511965976,
+          "stockForwardMinusYBlenderYawRadians": 0.5235987755982989,
+          "reprojectionErrorRadians": 1.1102230246251565e-16,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/se/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/se/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "sw": {
+          "acceptedScreenAngleRadians": 2.2970711395528247,
+          "nativeHeadingAfterCameraRadians": 2.0943951023931953,
+          "stockForwardMinusYBlenderYawRadians": -0.5235987755982987,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/sw/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/sw/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "w": {
+          "acceptedScreenAngleRadians": 3.141592653589793,
+          "nativeHeadingAfterCameraRadians": 3.141592653589793,
+          "stockForwardMinusYBlenderYawRadians": -1.5707963267948966,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            -8.61747917468847e-09,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/w/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/w/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "nw": {
+          "acceptedScreenAngleRadians": -2.297071139552825,
+          "nativeHeadingAfterCameraRadians": -2.0943951023931957,
+          "stockForwardMinusYBlenderYawRadians": 3.6651914291880923,
+          "reprojectionErrorRadians": 4.440892098500626e-16,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/nw/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/nw/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "ne": {
+          "acceptedScreenAngleRadians": -0.8445215140369683,
+          "nativeHeadingAfterCameraRadians": -1.0471975511965976,
+          "stockForwardMinusYBlenderYawRadians": 2.617993877991494,
+          "reprojectionErrorRadians": 2.220446049250313e-16,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/ne/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/base/ne/idle/00.png"
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "calibrated-1": {
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "well",
+        "bakery",
+        "post"
+      ],
+      "directions": {
+        "e": {
+          "acceptedScreenAngleRadians": 0.0292282487743918,
+          "nativeHeadingAfterCameraRadians": 0.04494904935533156,
+          "stockForwardMinusYBlenderYawRadians": 1.525847277439565,
+          "reprojectionErrorRadians": 3.469446951953614e-18,
+          "normalizedRootGroundWorld": [
+            -7.450580596923828e-09,
+            8.847564458847046e-09,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/e/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/e/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "se": {
+          "acceptedScreenAngleRadians": 0.897092075650845,
+          "nativeHeadingAfterCameraRadians": 1.0921466005519291,
+          "stockForwardMinusYBlenderYawRadians": 0.4786497262429674,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/se/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/se/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "sw": {
+          "acceptedScreenAngleRadians": 2.347599662738727,
+          "nativeHeadingAfterCameraRadians": 2.1393441517485265,
+          "stockForwardMinusYBlenderYawRadians": -0.56854782495363,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/sw/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/sw/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "w": {
+          "acceptedScreenAngleRadians": -3.1123644048154016,
+          "nativeHeadingAfterCameraRadians": -3.096643604234462,
+          "stockForwardMinusYBlenderYawRadians": 4.667439931029358,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/w/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/w/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "nw": {
+          "acceptedScreenAngleRadians": -2.244500577938949,
+          "nativeHeadingAfterCameraRadians": -2.049446053037865,
+          "stockForwardMinusYBlenderYawRadians": 3.6202423798327614,
+          "reprojectionErrorRadians": 0.0,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/nw/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/nw/idle/00.png"
+                }
+              ]
+            }
+          }
+        },
+        "ne": {
+          "acceptedScreenAngleRadians": -0.7939929908510658,
+          "nativeHeadingAfterCameraRadians": -1.0022485018412663,
+          "stockForwardMinusYBlenderYawRadians": 2.5730448286361627,
+          "reprojectionErrorRadians": 2.220446049250313e-16,
+          "normalizedRootGroundWorld": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "loop": true,
+              "sourceAction": "Walk",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "cycleDurationMs": 1666.6666666666667,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/ne/walk/00.png"
+                }
+              ]
+            },
+            "idle": {
+              "loop": true,
+              "sourceAction": "Idle_Neutral",
+              "sourceRange": [
+                0,
+                50
+              ],
+              "cycleDurationMs": 2083.3333333333335,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "file": "renders/calibrated-1/ne/idle/00.png"
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "headingReference": "../ready-character-walk-v1/heading-contract.json",
+  "limitations": [
+    "stock likeness unapproved",
+    "no root/runtime changes",
+    "Idle_Neutral selected as ready relaxed source Idle; original Idle also preserved in native source",
+    "no generated/retargeted poses",
+    "contact residual measurements in original motion-checks remain applicable"
+  ]
+}

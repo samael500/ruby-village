@@ -491,9 +491,11 @@
     "suggestedStrideMetersPerCycle": 1.7492055147886276,
     "stanceSpeedResidualRmsMetersPerSecond": 0.1923221227879063
   },
-  "orthographicWidthMeters": 2.1,
-  "nativeHorizontalPixelsPerMeter": 243.8095238095238,
+  "orthographicWidthMeters": 1.680000016,
+  "nativeHorizontalPixelsPerMeter": 304.76190185546875,
   "sixViewCalibrationStatus": "old sixViewYawRadians prototype is invalid for grid diagonals; use ../ready-character-walk-v1/heading-contract.json before any six-view export",
   "headingContract": "../ready-character-walk-v1/heading-contract.json",
-  "source": "../ready-character-walk-v1/source/adventurer-original.gltf"
+  "source": "../ready-character-walk-v1/source/adventurer-original.gltf",
+  "orthographicScaleMeters": 2.1,
+  "cameraMeasurementErratum": "Portrait ortho_scale is vertical span here. Previous512/2.1 ppm metadata was incorrect; actual world_to_camera_view gives640/2.1. No source pixels/camera changed."
 }
