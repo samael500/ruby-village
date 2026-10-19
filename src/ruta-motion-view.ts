@@ -1,6 +1,7 @@
 import {selectPaintedScene,type PaintedFrame,type PaintedSet} from '../scripts/character-paint-playback.ts';
 import type {Direction} from './character-animation.ts';
 import type {GroundDirection} from '../scripts/character-paint-route-planner.ts';
+import {createImageDecoder} from './image-decoder.ts';
 export type RuntimeMotionSet=PaintedSet&{directions:Record<Direction,PaintedSet['directions'][Direction]&GroundDirection>};
 type Manifest=RuntimeMotionSet&{sceneCameraVariant:Record<string,string>;cameraVariants:Record<string,{directions:RuntimeMotionSet['directions']}>};
 let manifestPromise:Promise<Manifest>|null=null;
@@ -9,11 +10,7 @@ export async function loadMotionSet(sceneId:string):Promise<RuntimeMotionSet>{
  try{return selectPaintedScene(await manifestPromise,sceneId) as RuntimeMotionSet;}catch(error){manifestPromise=null;throw error;}
 }
 const ns='http://www.w3.org/2000/svg';
-const images=new Map<string,Promise<HTMLImageElement>>();
-function decoded(file:string){
- if(!images.has(file)){const image=new Image();image.src=import.meta.env.BASE_URL+file;images.set(file,image.decode().then(()=>image));}
- return images.get(file)!;
-}
+const decoded=createImageDecoder(import.meta.env.BASE_URL);
 /** Decode only this scene's six atlas views, not both camera groups. */
 export async function prepareMotionAtlases(set:PaintedSet){
  const files=new Set(Object.values(set.directions).flatMap(direction=>Object.values(direction.clips).flatMap(clip=>clip.frames.map(frame=>frame.file))));
