@@ -68,9 +68,10 @@
   },
   "millrace": {
     "feederTop": [
-      1053,
+      1056,
       0
     ],
+    "feederTopObservation": "source cyan range1034..1077 at nativeTOP afterjoin; decorative anchor only",
     "upperFeederJunction": [
       1050,
       74
@@ -194,17 +195,67 @@
   },
   "wide": {
     "file": "wide.webp",
-    "status": "INCOMPLETE-native-registration-only-no-painted-outer-source",
+    "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
     "canvas": [
-      4096,
-      1600
+      3272,
+      1200
     ],
     "originalRect": [
-      1212,
-      329,
+      800,
+      129,
       1672,
       941
-    ]
+    ],
+    "joinBandPx": 48,
+    "sourceAffine": {
+      "method": "single uniform source-level affine fitted to nativecore at1/4 scale; exact native board and building restored bydeliverybuilder; join/art/game review pending",
+      "source": "art/chapter-1-v9/candidates/mill-wide-generated-v2.png",
+      "sourceSha256": "eb96fff7990288551a791fbee303be90e4cb9aea91c4de8748428600c6f2b5c6",
+      "sourceNativeSize": [
+        2007,
+        784
+      ],
+      "rgbMeanAbsoluteError": 31.198242220638637,
+      "scale": 0.925,
+      "sourceCoreXAtQuarter": 262,
+      "sourceCoreYAtQuarter": 71,
+      "translation": [
+        164,
+        45
+      ],
+      "registeredPaintSize": [
+        3789,
+        1480
+      ],
+      "coverage": "entire3272x1200crop covered by painted source; no blank fill/reflection/repeated edge strips"
+    },
+    "source": "art/chapter-1-v9/candidates/mill-wide-generated-v2.png",
+    "fullBoardInteriorChangedRgbPixels": 0,
+    "millBuildingNativeGuardRectangle": [
+      1210,
+      40,
+      462,
+      391
+    ],
+    "millBuildingChangedRgbPixels": 0,
+    "feederJoinPatch": {
+      "source": "art/chapter-1-v9/candidates/mill-feeder-join-generated-v3.png",
+      "sourceSha256": "405e920a79115caca99e979a64865f0e66b13b52c1fac9eac531f2f82513055e",
+      "sourceNativeSize": [
+        1458,
+        1079
+      ],
+      "deliveredWorldRect": [
+        1730,
+        45,
+        250,
+        185
+      ],
+      "edgeBlendPx": 16,
+      "nativeAndWideSameWorldPatch": true,
+      "outsideWhole77Board": true,
+      "status": "source-art-and-actual-game-join-review-pending"
+    }
   },
   "geometry": "art/chapter-1-v9/packages/mill/geometry.json",
   "checks": "checks.json",

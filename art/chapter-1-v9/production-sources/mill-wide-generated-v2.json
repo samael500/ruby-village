@@ -1,0 +1,23 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Image1 is the EDIT TARGET painted wide watermill scene. Its outpainting FAILED because rectangular collage boundaries remain visible: obvious vertical seam around15%fromleft, another around28%fromleft, horizontal seam around18%fromtop across centralforest. REPAIR ALL these straight rectangular/box patch seams into ONE COHESIVE continuous hand-painted woodland illustration. Repaint the seam bands and continue individual leaf/grass/stone forms naturally across them, remove repeated/pasted rectangular panels, blend brushscale/lighting organically. Do NOT solve by blur/smear/mirroring/reflection or repeatingtreeblocks. Preserve current composition/positions/scales of the central millhouse, upperraisedstone+woodrace, tinyaxle(no fullwheel), narrow smooth mainriver, topfeeder and lowerwaterexit, clearpuzzlemeadow, major native trees. Especially preserve upperrace visibly feeding wheelaxle so mill is not distant from water. Keep water continuously flowing across whole TOP→race→leftcreek→BOTTOM with no ponds/dams or water acrossfree lawn. Exact same wide2.56:1composition4096x1600; do not zoom/crop/reframe/move central painting. Warm painterly forest, same groundcamera/sunlight; match brushwork across entireimage, no rightangle seams or ghostrectangles anywhere. No extra buildings/bridge/road/tiles/characters/UI/text/coloredguides, no white/gray/transparent borders.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-16a399b4-32b8-4d91-9aa6-c226ede2a0e7.png",
+  "nativeSize": [
+    2007,
+    784
+  ],
+  "editTarget": "art/chapter-1-v9/candidates/mill-wide-generated-v1.png",
+  "registration": "Uniform normalizedsource scale0.925→3789x1480,translation164,45 on4096x1600; exactnative77board/buildingrestore at1212,329;48pxdecorativejoin;crop412,200..3684,1400",
+  "deliverySize": [
+    3272,
+    1200
+  ],
+  "deliveryOriginalRect": [
+    800,
+    129,
+    1672,
+    941
+  ],
+  "status": "painted-coverage-native-guard-passed-art-and-actual-game-review-pending",
+  "rights": "Built-in image_gen edits of existing repository-owned scene sources; no externalstockdownloaded; no exclusivecopyrightclaim"
+}

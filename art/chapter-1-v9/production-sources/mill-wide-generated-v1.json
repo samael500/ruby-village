@@ -1,0 +1,12 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. OUTPAINT GRAY AREA ONLY in Image1, a4096x1600 exact registration target. Colorful native1672x941 inset at x1212,y329 is LOCKED in size/location; do not zoom/recompose/scale/move it. Replace everygray pixel with seamless warm painted woodland meadow continuing identical brushscale/light/top-down-obliquegroundcamera, trees/mossyboulders/flowers across all fourinsetedges, no rectangular seam. Native millhouse stays nearworld(2660,580), original exactroof/facade/doorstep andclearmeadow unchanged; no additionalbuilding. Continuous feederwater exits nativeTOP atworld(2265,329): extend narrowstream upward into gray to outerTOP around(2260,0), same stonyshore. Native lowercreek exitsworld(1902,1270): extend naturally down to outerBOTTOM around(1940,1600). Keep mill's existing upper stone/wooden raisedrace visibly connecting feeder→leftcreek and right→wheelaxle, no isolatedpond. No completewheel: tinyaxle stays, transparent wheel added separately. Left/rightwide gray become varied lushforest margins andsmallclearings atsameobjectscale, not mirrored/reflected/repeatedsmears. Do not altercoloredinset; no newwater acrossfreecore, no bridge/paving/road/tiles/people/UI/text/frame. Fullyopaque finishedwide illustration, no gray/white/transparent areas.4096x1600 composition, preserve locked originalRect1212,329,1672,941.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-d18295c5-1926-4168-941b-331eda2b4a3e.png",
+  "nativeSize": [
+    2007,
+    784
+  ],
+  "editTarget": "art/chapter-1-v9/layers/water/mill-pilot/wide-opaque-edit-target-v1.png",
+  "status": "REJECTED-visible-rectangular-collage-seams",
+  "diagnosis": "Baked vertical panels around15%/28%fromleft and horizontal boxedge around18%fromtop. Not hidden by native48pxjoin; retained as failedsource."
+}
