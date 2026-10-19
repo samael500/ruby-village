@@ -1,0 +1,55 @@
+{
+  "status": "source-only-unregistered-all-six",
+  "directions": [
+    {
+      "direction": "e",
+      "manifest": "../painted-ruta-whole24-v1/packing.json",
+      "loop": "../painted-ruta-whole24-v1/index.html",
+      "frameSize": [
+        384,
+        416
+      ]
+    },
+    {
+      "direction": "se",
+      "manifest": "se/manifest.json",
+      "loop": "se/index.html",
+      "actorCount": 24,
+      "sourceSha256": "ae565fb21ace368544ce54f58a7ae89a4770db5b4382527b0cafc51c751d6fdb"
+    },
+    {
+      "direction": "sw",
+      "manifest": "sw/manifest.json",
+      "loop": "sw/index.html",
+      "actorCount": 24,
+      "sourceSha256": "f9854efebaad93c7e20ef8c7238f581863190fe7b49e1a4593dbbc768caf1faa"
+    },
+    {
+      "direction": "w",
+      "manifest": "w/manifest.json",
+      "loop": "w/index.html",
+      "actorCount": 24,
+      "sourceSha256": "930dcf04942b29c0a69a2813d13055eafd52e17a29b88bb3ecd2753e2a06be03"
+    },
+    {
+      "direction": "nw",
+      "manifest": "nw/manifest.json",
+      "loop": "nw/index.html",
+      "actorCount": 24,
+      "sourceSha256": "ed965c960a1cf058d35b46bb536aa4f7741d1a63187bbe731e2bcc6a833d8a00"
+    },
+    {
+      "direction": "ne",
+      "manifest": "ne/manifest.json",
+      "loop": "ne/index.html",
+      "actorCount": 24,
+      "sourceSha256": "f78ed7d4199bae36c828ee73ada9f132ae94bef5bdeabb4714c3d8b32439275e"
+    }
+  ],
+  "newDirectionsCommonFrameSize": [
+    512,
+    512
+  ],
+  "newDirectionsScale": 1,
+  "footAnchorsNotAssigned": true
+}
