@@ -1,8 +1,8 @@
 {
   "schemaVersion": 1,
-  "version": "chapter-1-v9-painted-2026-10-17",
+  "version": "chapter-1-v9-integrated-review-2026-10-19",
   "styleStatus": "accepted-by-Maksim-2026-10-17",
-  "activationStatus": "inactive-until-all-eight-art-and-geometry-reviewed",
+  "activationStatus": "ordinary-integrated-review-build-not-published",
   "canvas": {
     "width": 1672,
     "height": 941
@@ -70,9 +70,11 @@
           1672,
           941
         ],
-        "gameQa": "not-run",
+        "gameQa": "full-chapter-repeat-pending",
         "artAcceptance": "pending",
-        "fullPolygonVisualAudit": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "residentPresentation": "portrait-only",
       "gateClosed": "gate/gate-closed.webp",
@@ -152,9 +154,11 @@
       },
       "checks": {
         "sourceGuardManifest": "public/assets/chapter-1-garden-well/garden-manifest.json",
-        "fullPolygonVisualAudit": "pending",
-        "gameQa": "not-run",
-        "artAcceptance": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/art/garden-mill-polygon-visual/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "joinBand": 48,
       "sourceManifest": "public/assets/chapter-1-garden-well/garden-manifest.json",
@@ -219,9 +223,11 @@
       },
       "checks": {
         "sourceGuardManifest": "public/assets/chapter-1-garden-well/well-manifest.json",
-        "fullPolygonVisualAudit": "pending",
-        "gameQa": "not-run",
-        "artAcceptance": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/well-arrival-8da5d6d/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "residentPresentation": "scene-sprite-and-portrait",
       "joinBand": 48,
@@ -295,9 +301,11 @@
           1672,
           941
         ],
-        "gameQa": "not-run",
+        "gameQa": "full-chapter-repeat-pending",
         "artAcceptance": "pending",
-        "fullPolygonVisualAudit": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "joinBand": 48,
       "sourceManifest": "public/assets/chapter-1-map-match/bakery/manifest.json",
@@ -524,9 +532,11 @@
         "sourceCyanCandidateChangedFreePixels": 0,
         "cyanDiagnosticRule": "blue>red+12,green>red+12,min(blue,green)>70; diagnostic only, no gameplay terrain inferred from colors",
         "dryShoreSemanticAudit": "pending-flat-earth-and-tiny-pebbles-only-no-water-or-tall-obstacles; not established by pixel counts",
-        "fullPolygonVisualAudit": "pending",
-        "gameQa": "pending-adaptive-shore-repeat",
-        "artAcceptance": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/bridge-floor-v4-6f6fcbe/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "dryBackground": "stream/dry-background-pilot.webp",
       "water": "stream/water-pilot.png",
@@ -816,9 +826,11 @@
         "sourceFringeGuard": "free-water-fringe-guard.png",
         "cyanDiagnosticRule": "blue>red+12,green>red+12,min(blue,green)>70; diagnostic only, no gameplay terrain inferred from colors",
         "dryShoreSemanticAudit": "pending-flat-earth-and-tiny-pebbles-only-no-water-or-tall-obstacles; not established by pixel counts",
-        "fullPolygonVisualAudit": "pending",
-        "gameQa": "pending",
-        "artAcceptance": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/art/garden-mill-polygon-visual/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "dryBackground": "mill/dry-background.webp",
       "water": "mill/water.webp",
@@ -929,12 +941,14 @@
           1672,
           941
         ],
-        "gameQa": "not-run",
+        "gameQa": "full-chapter-repeat-pending",
         "artAcceptance": "pending",
         "wideNativeCoreExact": true,
         "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
         "physicalPhone": "not-tested",
-        "fullPolygonVisualAudit": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "joinBand": 48,
       "sourceManifest": "public/assets/chapter-1-map-match/post/manifest.json",
@@ -1002,12 +1016,14 @@
           1672,
           941
         ],
-        "gameQa": "not-run",
+        "gameQa": "full-chapter-repeat-pending",
         "artAcceptance": "pending",
         "wideNativeCoreExact": true,
         "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
         "physicalPhone": "not-tested",
-        "fullPolygonVisualAudit": "pending"
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
       },
       "residentPresentation": "portrait-only",
       "joinBand": 48,
