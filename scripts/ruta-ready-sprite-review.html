@@ -3,6 +3,11 @@
 <title>Рута — проверка цельных кадров</title>
 <style>
 body{margin:0;background:#eee5d2;color:#342e26;font:16px system-ui;padding:20px}main{max-width:1080px;margin:auto}h1{font-size:24px}p{max-width:900px}section{display:flex;gap:20px;flex-wrap:wrap}figure{margin:0;flex:1;min-width:280px;background:#dfd8c6;border-radius:16px;padding:12px}canvas{display:block;width:100%;height:auto}figcaption{text-align:center}nav{display:flex;gap:12px;align-items:center;flex-wrap:wrap;margin:16px 0}input{flex:1;min-width:180px}button,select{font:inherit;padding:8px}output{font-variant-numeric:tabular-nums}#error{color:#8d1c13;white-space:pre-wrap}
+#error:empty{display:none}
+@media(max-height:600px) and (min-width:600px){
+body{padding:8px}h1{font-size:18px;line-height:1.2;margin:4px 0}main>p:not(#error){display:none}
+nav{margin:8px 0;gap:8px}figure{min-width:240px;padding:8px}canvas{width:min(100%,calc(80svh - 128px));height:auto;margin:auto}
+}
 </style>
 <main><h1>Рута — цельные кадры из одной 3D-модели</h1>
 <p>Рабочий пилот, внешность ещё не принята. Одна камера, одинаковый размер холста и одна привязка во всех кадрах. Покадрового растяжения, подгонки размера и сдвига нет. Это проверка спрайтов, а не запись игры.</p>
