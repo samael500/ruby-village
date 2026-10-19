@@ -1,0 +1,231 @@
+{
+  "status": "SOURCE-INVENTORY-AND-BOUNDED-PROPOSAL-NO-NEW-ANIMATION",
+  "frozenSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "actionCount": 50,
+  "originalNamedClipCount": 24,
+  "exactDuplicateCount": 24,
+  "retargetedProposalCount": 2,
+  "duplicates": [
+    {
+      "duplicate": "Death.001",
+      "original": "Death",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Gun_Shoot.001",
+      "original": "Gun_Shoot",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "HitRecieve.001",
+      "original": "HitRecieve",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "HitRecieve_2.001",
+      "original": "HitRecieve_2",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Idle.001",
+      "original": "Idle",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Idle_Gun.001",
+      "original": "Idle_Gun",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Idle_Gun_Pointing.001",
+      "original": "Idle_Gun_Pointing",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Idle_Gun_Shoot.001",
+      "original": "Idle_Gun_Shoot",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Idle_Neutral.001",
+      "original": "Idle_Neutral",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Idle_Sword.001",
+      "original": "Idle_Sword",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Interact.001",
+      "original": "Interact",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Kick_Left.001",
+      "original": "Kick_Left",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Kick_Right.001",
+      "original": "Kick_Right",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Punch_Left.001",
+      "original": "Punch_Left",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Punch_Right.001",
+      "original": "Punch_Right",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Roll.001",
+      "original": "Roll",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Run.001",
+      "original": "Run",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Run_Back.001",
+      "original": "Run_Back",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Run_Left.001",
+      "original": "Run_Left",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Run_Right.001",
+      "original": "Run_Right",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Run_Shoot.001",
+      "original": "Run_Shoot",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Sword_Slash.001",
+      "original": "Sword_Slash",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Walk.001",
+      "original": "Walk",
+      "exactFcurveHashEqual": true
+    },
+    {
+      "duplicate": "Wave.001",
+      "original": "Wave",
+      "exactFcurveHashEqual": true
+    }
+  ],
+  "readySourceTransitions": [],
+  "reusableCurrentActions": [
+    "Idle_Neutral_ProportionProposal",
+    "Walk_ProportionProposal"
+  ],
+  "doNotUseOriginalUnadaptedAlternatives": [
+    "Idle_Neutral",
+    "Idle_Neutral.001",
+    "Walk",
+    "Walk.001"
+  ],
+  "cycleSeconds": 1.6666666666666667,
+  "idleCycleSeconds": 2.0833333333333335,
+  "sourceForward": [
+    0,
+    -1,
+    0
+  ],
+  "contactCandidateWindows": {
+    "left": {
+      "sampleIndices": [
+        22,
+        174
+      ],
+      "phaseRangeInclusive": [
+        0.04583333333333333,
+        0.3625
+      ],
+      "sourceFrameRangeInclusive": [
+        1.8333333333333333,
+        14.5
+      ],
+      "timeSecondsRangeInclusive": [
+        0.07638888888888888,
+        0.6041666666666666
+      ],
+      "definition": "minimum-z+17.5mm weighted sole confidence>.01, heuristic not physical support"
+    },
+    "right": {
+      "sampleIndices": [
+        262,
+        413
+      ],
+      "phaseRangeInclusive": [
+        0.5458333333333333,
+        0.8604166666666667
+      ],
+      "sourceFrameRangeInclusive": [
+        21.833333333333332,
+        34.416666666666664
+      ],
+      "timeSecondsRangeInclusive": [
+        0.9097222222222222,
+        1.434027777777778
+      ],
+      "definition": "minimum-z+17.5mm weighted sole confidence>.01, heuristic not physical support"
+    }
+  },
+  "contactCurveReference": {
+    "path": "/home/mskorokhod/life/ruby-village-36-sole-compatibility/art/ruta-final-sole-compatibility-v1/final-samples/forward-distance-curve.json",
+    "sha256": "30e9a76480217570c887d506992c0461751669cf5ece862bba0a952351321bc0",
+    "finalRefitStrideM": 1.2777502963046894,
+    "oldExperimentalBStrideM": 1.2779574578614357
+  },
+  "phaseZeroLimit": "Walkframe0 has L/R low sole heights+.03083/+.01469m; it is not flat idle or a certified planted heel strike. PR71 phase0/.5 semantics cannot be transplanted.",
+  "existingPR71": {
+    "url": "https://github.com/samael500/ruby-village/pull/71",
+    "sourceCommit": "b3e5ec2caafc610ec0b26bdd27123fe9559e0125",
+    "reuse": "phase/support state machine, root translation consumed once, finish swing before settle, actual used sole/boot clearance/endpoint joins/fakeuser persistence validation",
+    "doNotReuse": "different MPFB rig/IK actions/thumb controls, .5687545573mstride/.72s cycle,360msstartstop/180settle constants, any rejected painted cutout parts"
+  },
+  "boundedNextProbeProposal": {
+    "implementationStarted": false,
+    "initialScope": "one E lead start and matching stop source-only, no sixview/48batch/runtime; new action copies only; originalActions/mesh/restRig/weights immutable",
+    "sourceJoinCandidates": [
+      {
+        "walkFrame": 5,
+        "phase": 0.125,
+        "candidateSupport": "L"
+      },
+      {
+        "walkFrame": 25,
+        "phase": 0.625,
+        "candidateSupport": "R"
+      }
+    ],
+    "candidateLimitation": "inside low-sole confidence windows, not proved true contact/optimal join; exact endpoints and source one-sided velocities must be measured",
+    "durationTrialSeconds": 0.4,
+    "durationStatus": "engineering trial not authored/accepted clip duration; adjust only after measured source/contact continuity",
+    "method": "smooth local-quaternion/translation interpolation idle\u2194evaluatedWalk pose on a copy; bound existing two-bone leg FK solve to fixed actual sole support point; Root travel from same measured support trajectory. No rig restructuring or independent pixel movement.",
+    "gates": [
+      "actual source pose+one-sided velocity continuity at join",
+      "full used sole vertex trajectories and calibrated contact-floor uncertainty, not ankle equality only",
+      "Root/Hips/Head acceleration and no frozen swing",
+      "actual bag/hand/shoulder/boot intersections",
+      "cold-open retained source/copy actions and unchanged original geometry/weights/actions",
+      "one small actual E demonstration only after numerical feasibility; independent review before directions/export"
+    ],
+    "queueLimitIfOnlyTwoCandidatePhasesSeconds": 0.8333333333333334,
+    "noSlipClaim": false
+  }
+}
