@@ -6,8 +6,6 @@ import mapPaint from '../public/assets/chapter-map-v2/manifest.json' with {type:
 import {drawBridge} from './bridge-art.ts';
 import {drawConnectedRoad} from './connected-road.ts';
 import {paintedWheel,type PaintedSceneAssets} from './painted-scene.ts';
-// Enable only after the finished stream material/bank pilot is reviewed.
-const CONNECTED_ROAD_PILOT=false;
 import {prepareResidentViews,renderResidents,sceneResidents,legacyResidentPlacements,type ResidentPlacement} from './resident-scene.ts';
 import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {type:'json'};
 import {RutaJourney} from './ruta-journey.ts';
@@ -277,7 +275,7 @@ function renderBoard() {
   const owners=new Map<string,string>();
   for(const [id,p] of Object.entries(layout)) for(const h of placedCells(id,p)) owners.set(key(h),id);
   const [start,end]=endpoints();
-  const connectedRoad=CONNECTED_ROAD_PILOT&&level.id==='stream';
+  const connectedRoad=chapterLevel&&PRODUCTION_LAYOUT_VERSION>=2;
   const paved=new Set(owners.keys());
   if(chapterLevel){paved.add(key(start));paved.add(key(end));}
   const landmarks=document.createElementNS(ns,'g');landmarks.setAttribute('pointer-events','none');landmarks.setAttribute('data-puzzle-landmarks','');
