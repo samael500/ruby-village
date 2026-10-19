@@ -1,5 +1,5 @@
 {
-  "status": "source-six-view-export-not-approved-Ruta-or-game-installation",
+  "status": "static-frame-zero-only-proof-not-full-export",
   "productionEnabled": false,
   "source": "art/ready-character-adapted-v1/ruta-stock-adapted.blend",
   "sourceSha256": "e643c4e4067585a9c7fbbe5d4fa0269019ea04e2d79764a8b3568732c7209d9c",
@@ -12,7 +12,7 @@
     516.8593120574951
   ],
   "cameraElevationRadians": 0.7075844367253556,
-  "orthographicWidthMeters": 2.1,
+  "orthographicWidthMeters": 1.6800000160217288,
   "groundScale": 0.65,
   "originNormalization": {
     "nativeRootRestGround": [
@@ -639,5 +639,24 @@
     "Idle_Neutral selected as ready relaxed source Idle; original Idle also preserved in native source",
     "no generated/retargeted poses",
     "contact residual measurements in original motion-checks remain applicable"
-  ]
+  ],
+  "bodyReference": {
+    "method": "evaluated REST native world Z bbox including hair/boots, multiplied by measured camera projection of1m vertical Z",
+    "worldZBoundsMeters": [
+      -0.0005078937974758446,
+      1.8100240230560303
+    ],
+    "worldHeightMeters": 1.8105319168535061,
+    "nativeHorizontalPixelsPerMeter": 304.76190185546875,
+    "nativeVerticalZPixelsPerMeter": 231.59903526306152,
+    "nativeHeightPx": 419.31744525625356,
+    "deliveryScale": 0.5,
+    "deliveryNativeHeightPx": 209.65872262812678,
+    "orthographicScaleMeters": 2.0999999046325684,
+    "actualViewportWidthMeters": 1.6800000160217288,
+    "frameCanvasHeightIsNotBodyHeight": true
+  },
+  "nativeHeightPx": 419.31744525625356,
+  "orthographicScaleMeters": 2.1,
+  "nativeHorizontalPixelsPerMeter": 304.76190185546875
 }
