@@ -1,0 +1,51 @@
+{
+  "status": "NPR-source-study-not-approved-Ruta",
+  "sourceSha256": "e643c4e4067585a9c7fbbe5d4fa0269019ea04e2d79764a8b3568732c7209d9c",
+  "actionsHash": "5405ffdfc9d680fca78f5dac7f05488b45b1afea65571215ef064ec9ae6464a6",
+  "geometryAndWeightsHash": "0c3c410bc96e8f2e55473963f55b675c404559cee7729d28016ebe309cffeb6f",
+  "actionsGeometryWeightsUnchanged": true,
+  "changes": [
+    "smooth shared-position custom normals only; no vertex welding",
+    "native compositor subtle gradient contour, source render alpha retained",
+    "warm three-stop Eevee lighting ramp multiplying existing materials, source alpha retained"
+  ],
+  "materials": [
+    "Adapted brown trousers",
+    "Adapted warm brass",
+    "Adapted warm brown leather",
+    "Brown",
+    "Brown2",
+    "Brown_02",
+    "Copper native cap reference only",
+    "Gold",
+    "Green",
+    "Hair_Brown",
+    "LightGreen",
+    "Skin",
+    "White"
+  ],
+  "views": [
+    {
+      "view": "e",
+      "yaw": 1.5707963267948966,
+      "rootPx": [
+        384.0,
+        775.2889680862427
+      ]
+    },
+    {
+      "view": "front",
+      "yaw": 0,
+      "rootPx": [
+        384.0,
+        775.2889680862427
+      ]
+    }
+  ],
+  "limitations": [
+    "stock head/body/boot geometry and adult proportions unchanged",
+    "soft compositor gradient ink, not hand-drawn illustration",
+    "no bow/garment fitting or pose changes",
+    "not a painted sprite replacement; style and game acceptance pending"
+  ]
+}
