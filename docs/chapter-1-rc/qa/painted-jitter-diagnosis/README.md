@@ -27,3 +27,11 @@ Use a large high-information stable face/head patch with translation-only subpix
 If those checks justify it, publish a separate metadata-only head-registration candidate with unchanged pixels, common scale, accepted tempo, baseline toggle, phase-level residuals, and both seams. Do not claim a unique physical Root from a face feature. No such candidate or smoothing is implemented here. Bow/sole/whole-body checks and actual browser video remain necessary; head stability alone can conceal body deformation or foot sliding.
 
 `analysis.json` contains the raw probe and pivot diagnostics; `cadence.json` contains actual browser samples. Neither proves completed smoothness or contact fidelity.
+
+## Subpixel template and cyclic graph follow-up
+
+`head-template.py` now evaluates a fixed phase0 upper-head template against all48 frames, plus cyclic neighbouring upper-head edges; only translation is optimized, to search resolution1/32 raw pixel. A unit-weight least-squares graph combines template and cyclic edges, fixing phase0 as gauge. The lower-face window is held out. No raster or registration metadata is changed.
+
+The unconstrained neighbour shifts sum to(3.28125,0.4375) raw pixels around the loop. Global-template versus graph per-coordinate RMS is0.1637raw; held-out lower-face versus graph RMS is1.2655raw. Importantly, held-out disagreement reaches4.833raw at30,4.416at29,4.285at31,3.637at28: upper hair/head and lower face are not demonstrably one perfectly rigid feature. Best upper template RGB RMS can remain0.06565. The subpixel search resolution therefore must not be advertised as1/32-pixel semantic accuracy.
+
+This supports a translation-only diagnostic experiment, but does not yet justify claiming precise head registration. NPC's independent iris/nose measurements and actual native Head projection are required before choosing the head target path or building the separate candidate. Same28.8fps native is visually accepted, so refresh quantization is insufficient to explain the extra painted jitter.
