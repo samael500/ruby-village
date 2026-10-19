@@ -1,0 +1,486 @@
+{
+  "status": "candidate-only-not-runtime-approved",
+  "sourceSha256": "a93e801d25e3eb5a9e6d60261e5c71a89524f964c29f61b11e500d69e4468729",
+  "sourceSize": [
+    1586,
+    992
+  ],
+  "globalCanvasResize": {
+    "size": [
+      1536,
+      960
+    ],
+    "scaleX": 0.9684741488020177,
+    "scaleY": 0.967741935483871,
+    "note": "one whole-sheet resize; no per-cell pose scale, crop, translation, warp or foot correction; original retained"
+  },
+  "rootReference": [
+    192,
+    387.64448404312134
+  ],
+  "paintedAnkleLandmarks": "Not inferred: low-alpha components are foot candidates only; anatomical ankle requires visual annotation. Guide ankles are native skeletal projections.",
+  "frames": [
+    {
+      "slot": 0,
+      "walkFrameIndex": 0,
+      "nativeCellXYXY": [
+        0,
+        0,
+        396,
+        496
+      ],
+      "paintedAlpha16BBox": [
+        54,
+        46,
+        339,
+        438
+      ],
+      "paintedAnyAlphaBBox": [
+        22,
+        28,
+        384,
+        480
+      ],
+      "guideAlpha16BBox": [
+        69,
+        77,
+        315,
+        401
+      ],
+      "heightRatio": 1.2098765432098766,
+      "bottomDifferencePx": 37,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            55,
+            343,
+            176,
+            437
+          ],
+          "pixels": 4834
+        },
+        {
+          "bbox": [
+            246,
+            343,
+            339,
+            410
+          ],
+          "pixels": 3777
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          273.81713104248047,
+          364.5083427429199
+        ],
+        "ankleRight": [
+          87.10900497436523,
+          377.8039312362671
+        ]
+      }
+    },
+    {
+      "slot": 1,
+      "walkFrameIndex": 3,
+      "nativeCellXYXY": [
+        396,
+        0,
+        793,
+        496
+      ],
+      "paintedAlpha16BBox": [
+        82,
+        50,
+        324,
+        428
+      ],
+      "paintedAnyAlphaBBox": [
+        0,
+        18,
+        384,
+        480
+      ],
+      "guideAlpha16BBox": [
+        66,
+        80,
+        286,
+        398
+      ],
+      "heightRatio": 1.1886792452830188,
+      "bottomDifferencePx": 30,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            83,
+            333,
+            229,
+            428
+          ],
+          "pixels": 5433
+        },
+        {
+          "bbox": [
+            242,
+            333,
+            323,
+            419
+          ],
+          "pixels": 4423
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          235.40162658691406,
+          373.84504795074463
+        ],
+        "ankleRight": [
+          79.91595268249512,
+          363.74032258987427
+        ]
+      }
+    },
+    {
+      "slot": 2,
+      "walkFrameIndex": 6,
+      "nativeCellXYXY": [
+        793,
+        0,
+        1190,
+        496
+      ],
+      "paintedAlpha16BBox": [
+        138,
+        48,
+        294,
+        435
+      ],
+      "paintedAnyAlphaBBox": [
+        0,
+        16,
+        384,
+        480
+      ],
+      "guideAlpha16BBox": [
+        129,
+        73,
+        239,
+        402
+      ],
+      "heightRatio": 1.1762917933130699,
+      "bottomDifferencePx": 33,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            159,
+            340,
+            280,
+            434
+          ],
+          "pixels": 6714
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          186.69598388671875,
+          372.48074769973755
+        ],
+        "ankleRight": [
+          145.8233642578125,
+          370.42059659957886
+        ]
+      }
+    },
+    {
+      "slot": 3,
+      "walkFrameIndex": 9,
+      "nativeCellXYXY": [
+        1190,
+        0,
+        1586,
+        496
+      ],
+      "paintedAlpha16BBox": [
+        105,
+        47,
+        323,
+        436
+      ],
+      "paintedAnyAlphaBBox": [
+        0,
+        14,
+        372,
+        480
+      ],
+      "guideAlpha16BBox": [
+        106,
+        73,
+        281,
+        402
+      ],
+      "heightRatio": 1.182370820668693,
+      "bottomDifferencePx": 34,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            232,
+            341,
+            322,
+            435
+          ],
+          "pixels": 4828
+        },
+        {
+          "bbox": [
+            106,
+            341,
+            186,
+            413
+          ],
+          "pixels": 3680
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          126.78268432617188,
+          368.3199906349182
+        ],
+        "ankleRight": [
+          223.67365264892578,
+          388.76400232315063
+        ]
+      }
+    },
+    {
+      "slot": 4,
+      "walkFrameIndex": 12,
+      "nativeCellXYXY": [
+        0,
+        496,
+        396,
+        992
+      ],
+      "paintedAlpha16BBox": [
+        39,
+        33,
+        347,
+        422
+      ],
+      "paintedAnyAlphaBBox": [
+        30,
+        0,
+        384,
+        459
+      ],
+      "guideAlpha16BBox": [
+        59,
+        80,
+        315,
+        398
+      ],
+      "heightRatio": 1.2232704402515724,
+      "bottomDifferencePx": 24,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            232,
+            327,
+            346,
+            421
+          ],
+          "pixels": 5274
+        },
+        {
+          "bbox": [
+            40,
+            327,
+            147,
+            402
+          ],
+          "pixels": 3666
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          75.35882949829102,
+          343.84517669677734
+        ],
+        "ankleRight": [
+          273.8171081542969,
+          386.4876365661621
+        ]
+      }
+    },
+    {
+      "slot": 5,
+      "walkFrameIndex": 15,
+      "nativeCellXYXY": [
+        396,
+        496,
+        793,
+        992
+      ],
+      "paintedAlpha16BBox": [
+        88,
+        37,
+        337,
+        429
+      ],
+      "paintedAnyAlphaBBox": [
+        0,
+        0,
+        384,
+        480
+      ],
+      "guideAlpha16BBox": [
+        66,
+        82,
+        286,
+        405
+      ],
+      "heightRatio": 1.2136222910216719,
+      "bottomDifferencePx": 24,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            243,
+            334,
+            329,
+            429
+          ],
+          "pixels": 5118
+        },
+        {
+          "bbox": [
+            89,
+            334,
+            173,
+            393
+          ],
+          "pixels": 2356
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          79.91596412658691,
+          335.9370803833008
+        ],
+        "ankleRight": [
+          234.4771499633789,
+          393.7250590324402
+        ]
+      }
+    },
+    {
+      "slot": 6,
+      "walkFrameIndex": 18,
+      "nativeCellXYXY": [
+        793,
+        496,
+        1190,
+        992
+      ],
+      "paintedAlpha16BBox": [
+        130,
+        33,
+        295,
+        431
+      ],
+      "paintedAnyAlphaBBox": [
+        0,
+        0,
+        383,
+        480
+      ],
+      "guideAlpha16BBox": [
+        129,
+        74,
+        239,
+        406
+      ],
+      "heightRatio": 1.1987951807228916,
+      "bottomDifferencePx": 25,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            158,
+            336,
+            276,
+            430
+          ],
+          "pixels": 6720
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          145.8233757019043,
+          340.7094383239746
+        ],
+        "ankleRight": [
+          179.32120513916016,
+          394.201340675354
+        ]
+      }
+    },
+    {
+      "slot": 7,
+      "walkFrameIndex": 21,
+      "nativeCellXYXY": [
+        1190,
+        496,
+        1586,
+        992
+      ],
+      "paintedAlpha16BBox": [
+        109,
+        37,
+        325,
+        429
+      ],
+      "paintedAnyAlphaBBox": [
+        2,
+        0,
+        372,
+        480
+      ],
+      "guideAlpha16BBox": [
+        106,
+        70,
+        285,
+        404
+      ],
+      "heightRatio": 1.1736526946107784,
+      "bottomDifferencePx": 25,
+      "low95pxComponentsNotAnkleLandmarks": [
+        {
+          "bbox": [
+            110,
+            334,
+            198,
+            428
+          ],
+          "pixels": 4853
+        },
+        {
+          "bbox": [
+            242,
+            334,
+            325,
+            402
+          ],
+          "pixels": 3707
+        }
+      ],
+      "guideAnkleLandmarks": {
+        "ankleLeft": [
+          223.67365264892578,
+          362.33071088790894
+        ],
+        "ankleRight": [
+          126.78267288208008,
+          392.0848345756531
+        ]
+      }
+    }
+  ]
+}
