@@ -1,3 +1,23 @@
+# Review fixes 1/2 — 2026-10-19
+
+| Finding | Fix / verified scope | Evidence |
+|---|---|---|
+| Rejected walk atlas decode stays cached |41f8c8c: evict rejected promise only; independent concurrent failure/retry and actual game reentry PASS |qa/atlas-retry/ |
+| New scene/layout/road only in pilot |6108ec2 ordinary build:8 matching scenes+accepted layout2+connected paving all8+native millwheel, no private waiver. Independent clean mouse/native-touch chapter PASS |qa/full8-production/RESULTS.md |
+| Same failure cache in resident facings found during QA |7244fb2 catch-only: independent real failure→network restored→map/reentry→decoded conversation-left PASS |qa/full8-production/resident-retry-fixed/ |
+
+Full chapter observations:16 real routes/results,238 runtime states,48 reloads, all dialogue and NPC-presence checks,0page/HTTP errors. Legacy migration and composite/bridge invalidrelease→rotate→autoplace, cancel/undo/reload separately PASS. Exact full8 snapshot6108ec2 is distinguished from the later catch-only7244fb2 targeted recovery test; the final source does not pretend to have a fresh full8 run after every documentation commit.
+
+90 application tests +6 route-planner tests, TypeScript and clean Vite production build PASS. Export103.7MiB; independent local cold-load budget31.62MB for menu+six-frame prologue+gate,28.42MB for mill. Four local drag/walk RAF samples p95≈16.7–16.8ms, no phase>50ms long task observed. These are headless localhost samples, not WAN/real-phone certification: qa/performance-7244fb2/.
+
+New character strategy supersedes further MPFB vest fitting: Quaternius CC0 ready62-bone character with existing24actions, native whole-body Walk rendered24E frames, independent source reviewPASS (qa/ready-walk-source/). PR74 adaptation adds native long trousers/ginger hair/single satchel; full direction export and runtime calibration remain in progress. Existing runtime character has NOT been silently replaced with an unaccepted stock likeness.
+
+Remaining RC gates: final character appearance/6direction integration and actual gait review; user artistic acceptance of scenes/bridge; final all-scene audio listening and final package after character integration. Physical phone/family NOT RUN; no main merge/deploy/publication.
+
+Earlier entries below are historical checkpoints.
+
+---
+
 # Актуальный checkpoint — 18.10
 
 Эта таблица заменяет противоречащие ранние статусы ниже. Интеграция2fe65f4/151efd4, production layout1 остаётся, main add76709 не менялся.
