@@ -1,0 +1,19 @@
+# Native six-heading pose guides (technical source)
+
+Five additional directions from the frozen accepted-motion 3D source. These are pose guides for later artwork, not final painted sprites, runtime installation, or acceptance of new character art. Existing E48 remains at `art/ruta-native-layered-walk48-v2/` and is not rendered again.
+
+Source: `art/ruta-native-layered-style-v2/ruta-native-style.blend` in the author's read-only tree, SHA256 `bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706`. Worktree baseline `b33addd`. Exporter and packer are existing unchanged verified scripts, exact hashes preserved in `batch-report.json`.
+
+Scope: base camera only, Walk_ProportionProposal,48 phases over40/24seconds, directions SE/SW/W/NW/NE in that order, sequential Blender processes with threads2. No Idle, StartStop, second camera, pose/gait/source edits, imagegen, per-frame crop/warp/fit, or runtime work. Fixed full512×640 render canvases; packer applies one common delivery resize0.5 and verifies exact decoded losslessWebP byte equality.
+
+`run-batch.py` contains the complete commands (including `--python-exit-code 1` and `--frame-count 48` as separate actual arguments). Each direction has its own render/process log, source contract,48 actual PNGs, lossless atlas/manifest and alpha containment audit. The batch checks source SHA before/after every direction and stops on error; it never silently skips a failed heading. Actual timing/commands/PIDs/counts/checkpoints are retained in `batch-report.json`. `batch-process.log` records completed checkpoint messages. A RUNNING status does not mean all240 frames are finished.
+
+Each heading uses the same validated heading contract `art/ready-character-walk-v1/heading-contract.json` (SHA c6d0b584393ad3065cc0123ca29459fd24c951aab224c7fae44bdcc671f21257); yaw includes camera projection exactly once. Root transform Rz(yaw)×T(-RootRestGround), fixed camera, actual visible REST nativeHeight and projected Root anchor follow the existing exporter contract. Technical geometry/seam/containment checks are distinct from visual pose approval, painted-art acceptance and real game validation. No physical-phone test is claimed.
+
+## Completed batch and recovery
+
+All five directions completed:240 actual source PNGs, five lossless delivery atlases. Existing48 E frames were referenced without rerendering. Final source hash matches before/after; final actual image readback passed every PNG hash, decoded atlas bytes, shared exact camera, constant nativeHeight373.1087206px, fixed anchor[256,516.859312], containment, heading yaw contract and zero endpoint seam. Projection oracle error remained below1e-4px. See `final-readback.json`.
+
+Actual render seconds SE736.38, SW669.82, W573.38, NW521.63, NE553.60; wall time51minutes46seconds including setup/packing/checkpoints. Per-direction exact times are authoritative in batch report. Initial controller used incorrect count directory `frames/` instead of actual `renders/`; it stopped fail-closed after successful SE render. Original code/log/report are preserved. Corrected controller `--resume-verified-se` explicitly reverified and packed those same48 saved SE frames without rerendering, then ran the four remaining directions normally. No export/model/runtime defect or suppressed renderer error was involved.
+
+`pose-guide-sheets.json` records five2048×1920 PNG sheets:8×6 unchanged whole-frame cells at common0.5 scale, no per-frame fit or crop. These cheap static source guides are distinct from the six-column delivery atlases; hashes/source-phase mapping are explicit. No animated encoding, new poses/cameras or runtime changes follow this completion. Technical guide checks do not certify final painted image sharpness/temporal quality. Batch stopped with no own Blender process left.

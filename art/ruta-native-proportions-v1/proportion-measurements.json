@@ -1,0 +1,29 @@
+{
+  "reference": {
+    "file": "public/assets/characters-v1/optimized/ruta-idle-pilot.webp",
+    "annotation": "independent stream_road_finish reviewer, 2D visible proxy measurements; NOT physical bone landmarks",
+    "crownY": 6,
+    "chinY": 146,
+    "shoulderY": 166,
+    "waistY": 251,
+    "garmentCrotchY": 329,
+    "soleY": 499,
+    "headFraction": 0.2839756592292089,
+    "shoulderAboveGroundFraction": 0.6754563894523327,
+    "waistAboveGroundFraction": 0.5030425963488844
+  },
+  "proposal": {
+    "worldHeight": 1.5369143933057785,
+    "crownToHeadMeshMinimumFraction": 0.28685384828021954,
+    "upperArmHeadHeightFraction": 0.6573233605756663,
+    "upperLegHeadHeightFraction": 0.4722782097238372,
+    "thighLengthFraction": 0.2194466242623321,
+    "shinLengthFraction": 0.21944662945572785
+  },
+  "status": "UNAPPROVED-initial-measurement-not-contract-freeze",
+  "comparisonLimits": [
+    "native bone heads versus painted garment/contour markers differ in definition",
+    "head mesh minimum is a chin proxy, not exact matched semantic point",
+    "front/three-quarter Walk00 rendered for silhouette review before any24frame batch"
+  ]
+}

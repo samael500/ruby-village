@@ -1,0 +1,9 @@
+# Independent compact landscape repeat — d183a7c
+
+**Scoped PASS: prior landscape review composition defect corrected.** Reloaded the actual served page independently at844×390 and1280×800 after rootd183a7c. Current raw HTML bytes equal committed template; SHA in `comparison.json`. Player module bytes equal pre-fix46e6f9b; manifest/source/atlas unchanged.
+
+Actual landscape screenshots show both complete figures, baseline and controls together. Actor canvas x118,y99.59375,width184,height230,bottom329.59375 fits390px; CSS aspect.8, document width844 with no horizontal overflow. Independently measured both canvases and both complete figures inside the viewport. This closes the earlier clipped-feet review-layout defect without modifying model/anchor/clock.
+
+Repeated real pause, keyboard Home/End slider0/47 and resume;47→0 observed again. All48 real drawImage source rectangles observed, actual destination rectangle constant and exactly equal to pre-fix at both viewports. Desktop canvas width/height and draw registration unchanged. Zero page errors, request failures or HTTP≥400 responses. New untouched screenshots and silent browser videos retained; old pre-fix media remains honestly labelled in the parent report. Existing60fps auxiliary canvas capture predates CSS and is not silently relabelled as post-fix capture.
+
+Viewed post-fix landscape loop screenshot: full body/feet visible with no CSS distortion. Original all48 pixel/atlas/source checks repeated successfully by the harness; there is no claim of a new model change or new artistic acceptance. Source/visual limitations from the parent report still apply: standalone in-place pilot, no game/physical phone, no root travel/contact/turns/other views, no subjective no-slip or final art approval. This is sufficient to present the functioning pilot for Maksim's separate art review.

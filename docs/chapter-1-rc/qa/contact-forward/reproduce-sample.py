@@ -1,0 +1,27 @@
+"""Actual saved B sole-vertex samples; no source saves, ankle is diagnostic only."""
+import bpy,json,hashlib,math
+from pathlib import Path
+from mathutils import Matrix
+import numpy as np
+R=Path('/tmp/ruby-contact-forward-qa');O=Path('/tmp/ruby-contact-forward-qa/docs/chapter-1-rc/qa/contact-forward/reproduced');O.mkdir(exist_ok=True);P=R/'art/ruta-native-proportions-study-v2/b-neutral/ruta-proportion-proposal.blend';h=hashlib.sha256(P.read_bytes()).hexdigest();bpy.ops.wm.open_mainfile(filepath=str(P));sc=bpy.context.scene;rig=bpy.data.objects['CharacterArmature'];a=bpy.data.actions['Walk_ProportionProposal'];rig.animation_data.action=a;rig.animation_data.action_slot=a.slots[0]
+for t in rig.animation_data.nla_tracks:t.mute=True
+p=rig.data.bones['Root'].head_local.copy();p.z=0;rig.matrix_world=Matrix.Translation(-p);feet=bpy.data.objects['Adventurer_Feet'];used={i for f in feet.data.polygons for i in f.vertices};area=np.zeros(len(feet.data.vertices))
+for face in feet.data.polygons:
+ for i in face.vertices:area[i]+=face.area/len(face.vertices)
+regions={};ids=[];weights=[];sideFor=[];regionFor=[]
+for side in ['L','R']:
+ eligible=[v for v in feet.data.vertices if v.index in used and sum(g.weight for g in v.groups if feet.vertex_groups[g.group].name=='Foot.'+side)>=.5];zmin=min(v.co.z for v in eligible);sole=[v.index for v in eligible if v.co.z<=zmin+.0084];ys=[feet.data.vertices[i].co.y for i in sole];low,high=min(ys),max(ys);toe=[i for i in sole if feet.data.vertices[i].co.y<=low+.15*(high-low)];heel=[i for i in sole if feet.data.vertices[i].co.y>=high-.15*(high-low)];regions[side]={'sole':sole,'heel':heel,'toe':toe,'restZMin':zmin,'restYRange':[low,high]};mass=sum(area[i]for i in sole)
+ for i in sole:ids.append(i);weights.append(area[i]/mass);sideFor.append(side);regionFor.append('toe'if i in toe else'heel'if i in heel else'midsole')
+
+from collections import Counter
+coordcounts=Counter(tuple(feet.data.vertices[i].co) for i in ids);unique_ids=set(ids)
+qa={'selectedCount':len(ids),'uniqueVertexIds':len(unique_ids),'uniqueRestCoordinates':len(coordcounts),'coordinateMultiplicityCounts':dict(Counter(coordcounts.values())),'unusedMeshVertices':len(feet.data.vertices)-len(used),'sideWeightOverlap':len(set(regions['L']['sole'])&set(regions['R']['sole'])),'zeroAreaSelected':int(sum(area[i]==0 for i in ids)),'perSideSoleCounts':{k:len(v['sole'])for k,v in regions.items()},'sourceHeadAction':a.name,'duplicateCoordinateColumnGroups':[[j for j,i in enumerate(ids) if tuple(feet.data.vertices[i].co)==coord] for coord in coordcounts]}
+(O/'independent-selection-inspection.json').write_text(json.dumps(qa,indent=2)+'\n')
+
+N=480;pos=[];ankles=[];roots=[]
+for i in range(N+1):
+ frame=40*i/N;sc.frame_set(int(frame),subframe=frame-int(frame));bpy.context.view_layer.update();ev=feet.evaluated_get(bpy.context.evaluated_depsgraph_get());me=ev.to_mesh();pos.append([[*(ev.matrix_world@me.vertices[j].co)]for j in ids]);ev.to_mesh_clear();ankles.append([list(rig.matrix_world@rig.pose.bones['Foot.'+side].head)for side in ['L','R']]);roots.append(list(rig.matrix_world@rig.pose.bones['Root'].head))
+np.savez_compressed(O/'actual-sole-samples.npz',positions=np.array(pos,dtype=np.float64),ankles=np.array(ankles),roots=np.array(roots),vertex_ids=np.array(ids),rest_area_weights=np.array(weights),sample_times=np.linspace(0,40/24,N+1));after=hashlib.sha256(P.read_bytes()).hexdigest();assert after==h
+qa['coincidentRestColumnsMaxEvaluatedSeparationM']=max(float(np.max(np.linalg.norm(np.array(pos)[:,group,:]-np.array(pos)[:,group[0]:group[0]+1,:],axis=2))) for group in qa['duplicateCoordinateColumnGroups']);(O/'independent-selection-inspection.json').write_text(json.dumps(qa,indent=2)+'\n')
+metadata={'sourceCommit':'e6ab193','source':str(P.relative_to(R)),'sourceSha256Before':h,'sourceSha256After':after,'action':a.name,'fps':sc.render.fps/sc.render.fps_base,'cycleSeconds':40/24,'intervalCount':N,'sampleCount':N+1,'rigYawRadians':0,'origin':'only static rest Root XY normalization, no per-frame transform','forwardUnitNativeWorld':[0,-1,0],'lateralUnitNativeWorld':[1,0,0],'upUnit':[0,0,1],'cameraOrHeadingUse':False,'actualMesh':feet.name,'actualUsedVertexCount':len(used),'definition':'used polygon vertices with Foot.side weight>=.5 and restZ <= side minimum +8.4mm; heel/toe extreme15percent of rest-nativeY span; toe negativeY, heel positiveY','staticPerVertexAreaWeights':'sum incident rest polygon area/face vertex count, normalized independently per foot; no membership-changing centroid differentiated','regions':regions,'columnVertexIds':ids,'columnSides':sideFor,'columnRegions':regionFor,'restAreaWeights':weights,'sampleArchiveSha256':hashlib.sha256((O/'actual-sole-samples.npz').read_bytes()).hexdigest(),'sourceUnchanged':True,'status':'measured-input-for-contact-curve-authoring-NOT-physical-contact-labels'}
+(O/'sample-source.json').write_text(json.dumps(metadata,indent=2)+'\n');print('SAMPLED',len(ids),[(s,{r:len(v)for r,v in z.items()if isinstance(v,list)})for s,z in regions.items()],flush=True)

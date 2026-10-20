@@ -1,0 +1,2471 @@
+{
+  "selectedPilot": {
+    "scope": "ONE actual straight E final-run subroute, not whole stream route",
+    "scene": "stream",
+    "startHex": {
+      "q": 4,
+      "r": 1
+    },
+    "goalHex": {
+      "q": 9,
+      "r": 1
+    },
+    "startPoint": {
+      "x": 685.5960043841964,
+      "y": 398.25
+    },
+    "goalPoint": {
+      "x": 1291.8137870333032,
+      "y": 398.25
+    },
+    "lengthM": 5.457132314768997,
+    "startM": 0.14,
+    "wholeWalkCycles": 4,
+    "walkTravelM": 5.111001185218758,
+    "requiredNEWFinishForwardM": 0.20613112955023993,
+    "oldStopM": 0.1401984873227775,
+    "additionalAdvanceVsOldStopM": 0.06593264222746242,
+    "requiredNEWFinishRootLateralM": 0,
+    "requiredNEWFinishRootZM": 0,
+    "oldStopRootLateralM": -0.021197920897975564,
+    "bridgeBankCenterDistanceFromSubrouteStartM": [
+      1.0914264629537997,
+      3.274279388861399
+    ],
+    "finishBeginsDistanceM": 5.251001185218757,
+    "requiresNewNativeFinishAction": true,
+    "requiresControllerRefactor": true,
+    "currentlySolved": false
+  },
+  "status": "READONLY-ROOT-RUNTIME-ROUTE-FEASIBILITY-NOT-INTEGRATION",
+  "rootRuntimePath": "/home/mskorokhod/life/ruby-village",
+  "commit": "e32cad43a8b4061dec2f95a09e3669ac4537f405",
+  "sourceFilePins": [
+    {
+      "file": "src/levels.ts",
+      "sha256": "d3d6c3a65f3409549a76bbb63280da8bb2f62e7ad93afe908e29d17bae0dfa68",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/art-solutions.json",
+      "sha256": "3a96dcd2bb8e6b9aba6ef32815d07e657eec4b8f22312b70c87265c3b073b3b0",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/chapter-1.logical.json",
+      "sha256": "5275e226ebbc2d8f8253bcf0545c7fd1f064990585fcaae74bdb10008a1ff886",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/production-chapter.ts",
+      "sha256": "e45544ecb298e1e360005d1b165fc7f5f6fc00f74b93e9bb94718c86be1ece75",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/production-camera.ts",
+      "sha256": "fb9e1834f3872e6919ee60f7e9cb031507e0e1165655aa587fa57afca8aae35b",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/scene-camera.ts",
+      "sha256": "1da5006f3dc89faee723cc2d46414f31d8d57b24ab3aa49e83897826d06b5354",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/scene-v8.json",
+      "sha256": "f21a19b9a9a313483f77c931a49a12fabaf34e1db6d92566ea453bebc23b33d6",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/hex.ts",
+      "sha256": "52f06ce865935942b5014d0faeaf9f00e28a9c49eb44ea8d28a4b133720d483d",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/game.ts",
+      "sha256": "eb3e1eaccc1a609a80556eb01244730d7e6d8255c5f0a24792e5e414a8133ec5",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/projection.ts",
+      "sha256": "18bad50b251f62274351ce0840e33f7da61c351bc473852137ead7e668f44fd0",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/ruta-journey.ts",
+      "sha256": "f9195fecd8b2bf88174c91d5287b374bc84c4562ba4f8adb60436fc04271a2fb",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/route-surface.ts",
+      "sha256": "7c2a283c87b2c8154083aa254a07148aa15db3fd310353e21fb3ec0c2be6a256",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/ruta-motion-view.ts",
+      "sha256": "01bb1910dc3da32ba7d79d3d59e282d6022a6274259b417876fc8f00a5eff690",
+      "matchesCommit": true
+    },
+    {
+      "file": "src/main.ts",
+      "sha256": "05b64838dc97040e2e4072dc2172ab74c31ceb88d5507cf22ac2b552801f89e5",
+      "matchesCommit": true
+    },
+    {
+      "file": "scripts/character-paint-route-planner.ts",
+      "sha256": "d455b5b29b548d2e8b1e6abfa2e134e491ce52ccc947ad935ef3fbde2c99dabb",
+      "matchesCommit": true
+    },
+    {
+      "file": "scripts/character-paint-playback.ts",
+      "sha256": "138ea8c9895293bdbbb67bdf7c2b638e5110d5a1ed4140d41d4106a2761b83b2",
+      "matchesCommit": true
+    },
+    {
+      "file": "public/assets/characters-walk-v1/animated-v3/manifest.json",
+      "sha256": "e8a8696a2df1b987f1fcd05d50e15b890351e395d51c62081ee48f0dcda9e676",
+      "matchesCommit": true
+    }
+  ],
+  "currentRuntimeContract": {
+    "manifest": "assets/characters-walk-v1/animated-v3/manifest.json",
+    "stride": 0.72,
+    "halfStep": 0.36,
+    "startStopEach": 0.18,
+    "cycleMs": 800,
+    "phaseContacts": [
+      0,
+      0.5
+    ],
+    "exactCenterRequestedByMain": false
+  },
+  "futureNativeScaleAssumption": {
+    "displayBodyHeightPx": 136,
+    "measuredSourceNativeHeightPx": 373.1087205766087,
+    "nativeCameraXYpxPerMeter": 304.76190476190476,
+    "sceneGroundPxPerNativeMeter": 111.08724283786553,
+    "caveat": "Prototype frozen body calibration only; NOT current runtime asset/scale and not a claim new hair height accepted. Scene fit scales body and scene together, so meters per hex invariant under viewport fit."
+  },
+  "prototype": {
+    "startM": 0.14,
+    "stopM": 0.1401984873227775,
+    "strideM": 1.2777502963046894,
+    "stopLateralM": -0.021197920897975564,
+    "cycleSeconds": 1.6666666666666667,
+    "joinPhase": 0.125,
+    "onlyAuthoredSupportSide": "L"
+  },
+  "routes": [
+    {
+      "scene": "gate",
+      "hexRoute": [
+        {
+          "q": 2,
+          "r": 2
+        },
+        {
+          "q": 3,
+          "r": 2
+        },
+        {
+          "q": 4,
+          "r": 2
+        },
+        {
+          "q": 5,
+          "r": 2
+        },
+        {
+          "q": 6,
+          "r": 2
+        },
+        {
+          "q": 7,
+          "r": 2
+        },
+        {
+          "q": 7,
+          "r": 3
+        },
+        {
+          "q": 7,
+          "r": 4
+        },
+        {
+          "q": 7,
+          "r": 5
+        },
+        {
+          "q": 7,
+          "r": 6
+        }
+      ],
+      "edgeCount": 9,
+      "turnCount": 1,
+      "turnIndices": [
+        5
+      ],
+      "screenLengthPx": 971.3602206099662,
+      "futureNativeLengthM": 9.822838166584198,
+      "nativeHexEdgeM": 1.0914264629537997,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 503.73066958946424,
+        "y": 426.5
+      },
+      "goalAnchor": {
+        "x": 1352.435565298214,
+        "y": 699.5
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": 2,
+            "r": 2
+          },
+          "hexB": {
+            "q": 3,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 3,
+            "r": 2
+          },
+          "hexB": {
+            "q": 4,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 4,
+            "r": 2
+          },
+          "hexB": {
+            "q": 5,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629538006,
+          "screenLengthPx": 121.24355652982149,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 5,
+            "r": 2
+          },
+          "hexB": {
+            "q": 6,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 6,
+            "r": 2
+          },
+          "hexB": {
+            "q": 7,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 7,
+            "r": 2
+          },
+          "hexB": {
+            "q": 7,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629538,
+          "screenLengthPx": 91.28560949021485,
+          "screenAngleRadians": 0.8445215140369682,
+          "nativeGroundAngleRadians": 1.0471975511965974,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 7,
+            "r": 3
+          },
+          "hexB": {
+            "q": 7,
+            "r": 4
+          },
+          "nativeLengthM": 1.0914264629538,
+          "screenLengthPx": 91.28560949021485,
+          "screenAngleRadians": 0.8445215140369682,
+          "nativeGroundAngleRadians": 1.0471975511965974,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 7,
+            "r": 4
+          },
+          "hexB": {
+            "q": 7,
+            "r": 5
+          },
+          "nativeLengthM": 1.0914264629537989,
+          "screenLengthPx": 91.28560949021471,
+          "screenAngleRadians": 0.84452151403697,
+          "nativeGroundAngleRadians": 1.0471975511965992,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 8,
+          "hexA": {
+            "q": 7,
+            "r": 5
+          },
+          "hexB": {
+            "q": 7,
+            "r": 6
+          },
+          "nativeLengthM": 1.0914264629538,
+          "screenLengthPx": 91.28560949021485,
+          "screenAngleRadians": 0.8445215140369682,
+          "nativeGroundAngleRadians": 1.0471975511965974,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 4,
+          "angle": 0,
+          "lengthM": 5.457132314769
+        },
+        {
+          "firstSegment": 5,
+          "lastSegment": 8,
+          "angle": 1.0471975511965974,
+          "lengthM": 4.365705851815199
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 20.52,
+        "nominalWorldLength": 20.573642213207293,
+        "residualPixels": 1.7996452252968773,
+        "endpoint": {
+          "x": 1351.2404405199197,
+          "y": 698.1544890556963
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 7,
+        "forwardLengthM": 9.224450561455605,
+        "forwardResidualGoalMinusPairM": 0.5983876051285932,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": []
+    },
+    {
+      "scene": "garden",
+      "hexRoute": [
+        {
+          "q": -1,
+          "r": 6
+        },
+        {
+          "q": 0,
+          "r": 6
+        },
+        {
+          "q": 1,
+          "r": 6
+        },
+        {
+          "q": 2,
+          "r": 6
+        },
+        {
+          "q": 3,
+          "r": 6
+        },
+        {
+          "q": 4,
+          "r": 6
+        },
+        {
+          "q": 5,
+          "r": 6
+        },
+        {
+          "q": 6,
+          "r": 5
+        },
+        {
+          "q": 7,
+          "r": 4
+        },
+        {
+          "q": 8,
+          "r": 3
+        },
+        {
+          "q": 9,
+          "r": 2
+        },
+        {
+          "q": 9,
+          "r": 1
+        }
+      ],
+      "edgeCount": 11,
+      "turnCount": 2,
+      "turnIndices": [
+        6,
+        10
+      ],
+      "screenLengthPx": 1116.2385645368593,
+      "futureNativeLengthM": 11.319651601492266,
+      "nativeHexEdgeM": 1.029059236499297,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 66,
+        "origin": {
+          "x": 180,
+          "y": 315
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 408.6307065990918,
+        "y": 701.1
+      },
+      "goalAnchor": {
+        "x": 1265.995856345686,
+        "y": 379.35
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": -1,
+            "r": 6
+          },
+          "hexB": {
+            "q": 0,
+            "r": 6
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 0,
+            "r": 6
+          },
+          "hexB": {
+            "q": 1,
+            "r": 6
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 1,
+            "r": 6
+          },
+          "hexB": {
+            "q": 2,
+            "r": 6
+          },
+          "nativeLengthM": 1.029059236499296,
+          "screenLengthPx": 114.31535329954579,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 2,
+            "r": 6
+          },
+          "hexB": {
+            "q": 3,
+            "r": 6
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 3,
+            "r": 6
+          },
+          "hexB": {
+            "q": 4,
+            "r": 6
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 4,
+            "r": 6
+          },
+          "hexB": {
+            "q": 5,
+            "r": 6
+          },
+          "nativeLengthM": 1.029059236499298,
+          "screenLengthPx": 114.31535329954602,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 5,
+            "r": 6
+          },
+          "hexB": {
+            "q": 6,
+            "r": 5
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 86.06928894791677,
+          "screenAngleRadians": -0.8445215140369696,
+          "nativeGroundAngleRadians": -1.0471975511965987,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 6,
+            "r": 5
+          },
+          "hexB": {
+            "q": 7,
+            "r": 4
+          },
+          "nativeLengthM": 1.0290592364992954,
+          "screenLengthPx": 86.0692889479167,
+          "screenAngleRadians": -0.8445215140369687,
+          "nativeGroundAngleRadians": -1.047197551196598,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 8,
+          "hexA": {
+            "q": 7,
+            "r": 4
+          },
+          "hexB": {
+            "q": 8,
+            "r": 3
+          },
+          "nativeLengthM": 1.0290592364992983,
+          "screenLengthPx": 86.06928894791697,
+          "screenAngleRadians": -0.8445215140369682,
+          "nativeGroundAngleRadians": -1.0471975511965974,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 9,
+          "hexA": {
+            "q": 8,
+            "r": 3
+          },
+          "hexB": {
+            "q": 9,
+            "r": 2
+          },
+          "nativeLengthM": 1.029059236499296,
+          "screenLengthPx": 86.06928894791675,
+          "screenAngleRadians": -0.8445215140369692,
+          "nativeGroundAngleRadians": -1.0471975511965983,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 10,
+          "hexA": {
+            "q": 9,
+            "r": 2
+          },
+          "hexB": {
+            "q": 9,
+            "r": 1
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 86.06928894791677,
+          "screenAngleRadians": -2.2970711395528234,
+          "nativeGroundAngleRadians": -2.094395102393195,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 5,
+          "angle": 0,
+          "lengthM": 6.174355418995782
+        },
+        {
+          "firstSegment": 6,
+          "lastSegment": 9,
+          "angle": -1.0471975511965987,
+          "lengthM": 4.116236945997187
+        },
+        {
+          "firstSegment": 10,
+          "lastSegment": 10,
+          "angle": -2.094395102393195,
+          "lengthM": 1.029059236499297
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 23.759999999999998,
+        "nominalWorldLength": 23.7907018755308,
+        "residualPixels": 1.0300187185258132,
+        "endpoint": {
+          "x": 1266.679880549631,
+          "y": 380.1200970386458
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 9,
+        "forwardLengthM": 11.779951154064982,
+        "forwardResidualGoalMinusPairM": -0.4602995525727156,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": []
+    },
+    {
+      "scene": "well",
+      "hexRoute": [
+        {
+          "q": -1,
+          "r": 6
+        },
+        {
+          "q": 0,
+          "r": 6
+        },
+        {
+          "q": 1,
+          "r": 6
+        },
+        {
+          "q": 2,
+          "r": 6
+        },
+        {
+          "q": 3,
+          "r": 6
+        },
+        {
+          "q": 4,
+          "r": 6
+        },
+        {
+          "q": 5,
+          "r": 5
+        },
+        {
+          "q": 6,
+          "r": 4
+        },
+        {
+          "q": 7,
+          "r": 3
+        },
+        {
+          "q": 8,
+          "r": 2
+        }
+      ],
+      "edgeCount": 9,
+      "turnCount": 1,
+      "turnIndices": [
+        5
+      ],
+      "screenLengthPx": 962.0441395970736,
+      "futureNativeLengthM": 9.659113977138409,
+      "nativeHexEdgeM": 1.073234886348712,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 378.91832705503657,
+        "y": 700.3035714285716
+      },
+      "goalAnchor": {
+        "x": 1231.192008768393,
+        "y": 456.5
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": -1,
+            "r": 6
+          },
+          "hexB": {
+            "q": 0,
+            "r": 6
+          },
+          "nativeLengthM": 1.0732348863487122,
+          "screenLengthPx": 119.15317701901026,
+          "screenAngleRadians": 0.029228248774391986,
+          "nativeGroundAngleRadians": 0.04494904935533184,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 0,
+            "r": 6
+          },
+          "hexB": {
+            "q": 1,
+            "r": 6
+          },
+          "nativeLengthM": 1.073234886348711,
+          "screenLengthPx": 119.15317701901014,
+          "screenAngleRadians": 0.029228248774390106,
+          "nativeGroundAngleRadians": 0.04494904935532896,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 1,
+            "r": 6
+          },
+          "hexB": {
+            "q": 2,
+            "r": 6
+          },
+          "nativeLengthM": 1.0732348863487127,
+          "screenLengthPx": 119.15317701901031,
+          "screenAngleRadians": 0.029228248774391972,
+          "nativeGroundAngleRadians": 0.04494904935533182,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 2,
+            "r": 6
+          },
+          "hexB": {
+            "q": 3,
+            "r": 6
+          },
+          "nativeLengthM": 1.0732348863487127,
+          "screenLengthPx": 119.15317701901031,
+          "screenAngleRadians": 0.029228248774391972,
+          "nativeGroundAngleRadians": 0.04494904935533182,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 3,
+            "r": 6
+          },
+          "hexB": {
+            "q": 4,
+            "r": 6
+          },
+          "nativeLengthM": 1.0732348863487107,
+          "screenLengthPx": 119.15317701901009,
+          "screenAngleRadians": 0.029228248774392028,
+          "nativeGroundAngleRadians": 0.0449490493553319,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 4,
+            "r": 6
+          },
+          "hexB": {
+            "q": 5,
+            "r": 5
+          },
+          "nativeLengthM": 1.0732348863487136,
+          "screenLengthPx": 91.56956362550567,
+          "screenAngleRadians": -0.7939929908510667,
+          "nativeGroundAngleRadians": -1.002248501841267,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 5,
+            "r": 5
+          },
+          "hexB": {
+            "q": 6,
+            "r": 4
+          },
+          "nativeLengthM": 1.073234886348711,
+          "screenLengthPx": 91.5695636255055,
+          "screenAngleRadians": -0.7939929908510649,
+          "nativeGroundAngleRadians": -1.0022485018412655,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 6,
+            "r": 4
+          },
+          "hexB": {
+            "q": 7,
+            "r": 3
+          },
+          "nativeLengthM": 1.0732348863487122,
+          "screenLengthPx": 91.56956362550558,
+          "screenAngleRadians": -0.7939929908510658,
+          "nativeGroundAngleRadians": -1.0022485018412663,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 8,
+          "hexA": {
+            "q": 7,
+            "r": 3
+          },
+          "hexB": {
+            "q": 8,
+            "r": 2
+          },
+          "nativeLengthM": 1.0732348863487133,
+          "screenLengthPx": 91.56956362550574,
+          "screenAngleRadians": -0.793992990851064,
+          "nativeGroundAngleRadians": -1.0022485018412646,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 4,
+          "angle": 0.04494904935533184,
+          "lengthM": 5.366174431743559
+        },
+        {
+          "firstSegment": 5,
+          "lastSegment": 8,
+          "angle": -1.002248501841267,
+          "lengthM": 4.29293954539485
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 20.16,
+        "nominalWorldLength": 20.102030640661415,
+        "residualPixels": 2.010448193152101,
+        "endpoint": {
+          "x": 1232.6013395421078,
+          "y": 455.06623268707614
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 7,
+        "forwardLengthM": 9.224450561455605,
+        "forwardResidualGoalMinusPairM": 0.4346634156828042,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": []
+    },
+    {
+      "scene": "bakery",
+      "hexRoute": [
+        {
+          "q": -1,
+          "r": 6
+        },
+        {
+          "q": 0,
+          "r": 5
+        },
+        {
+          "q": 1,
+          "r": 5
+        },
+        {
+          "q": 2,
+          "r": 4
+        },
+        {
+          "q": 3,
+          "r": 3
+        },
+        {
+          "q": 4,
+          "r": 3
+        },
+        {
+          "q": 5,
+          "r": 3
+        },
+        {
+          "q": 6,
+          "r": 2
+        },
+        {
+          "q": 7,
+          "r": 2
+        },
+        {
+          "q": 8,
+          "r": 2
+        }
+      ],
+      "edgeCount": 9,
+      "turnCount": 5,
+      "turnIndices": [
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "screenLengthPx": 962.0441395970735,
+      "futureNativeLengthM": 9.659113977138409,
+      "nativeHexEdgeM": 1.073234886348712,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 378.91832705503657,
+        "y": 700.3035714285716
+      },
+      "goalAnchor": {
+        "x": 1231.192008768393,
+        "y": 456.5
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": -1,
+            "r": 6
+          },
+          "hexB": {
+            "q": 0,
+            "r": 5
+          },
+          "nativeLengthM": 1.0732348863487136,
+          "screenLengthPx": 91.56956362550567,
+          "screenAngleRadians": -0.7939929908510667,
+          "nativeGroundAngleRadians": -1.002248501841267,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 0,
+            "r": 5
+          },
+          "hexB": {
+            "q": 1,
+            "r": 5
+          },
+          "nativeLengthM": 1.0732348863487118,
+          "screenLengthPx": 119.1531770190102,
+          "screenAngleRadians": 0.029228248774391046,
+          "nativeGroundAngleRadians": 0.0449490493553304,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 1,
+            "r": 5
+          },
+          "hexB": {
+            "q": 2,
+            "r": 4
+          },
+          "nativeLengthM": 1.073234886348711,
+          "screenLengthPx": 91.5695636255055,
+          "screenAngleRadians": -0.7939929908510649,
+          "nativeGroundAngleRadians": -1.0022485018412655,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 2,
+            "r": 4
+          },
+          "hexB": {
+            "q": 3,
+            "r": 3
+          },
+          "nativeLengthM": 1.0732348863487127,
+          "screenLengthPx": 91.56956362550565,
+          "screenAngleRadians": -0.7939929908510649,
+          "nativeGroundAngleRadians": -1.0022485018412655,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 3,
+            "r": 3
+          },
+          "hexB": {
+            "q": 4,
+            "r": 3
+          },
+          "nativeLengthM": 1.0732348863487107,
+          "screenLengthPx": 119.15317701901009,
+          "screenAngleRadians": 0.029228248774392028,
+          "nativeGroundAngleRadians": 0.0449490493553319,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 4,
+            "r": 3
+          },
+          "hexB": {
+            "q": 5,
+            "r": 3
+          },
+          "nativeLengthM": 1.0732348863487127,
+          "screenLengthPx": 119.15317701901031,
+          "screenAngleRadians": 0.029228248774391972,
+          "nativeGroundAngleRadians": 0.04494904935533182,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 5,
+            "r": 3
+          },
+          "hexB": {
+            "q": 6,
+            "r": 2
+          },
+          "nativeLengthM": 1.0732348863487122,
+          "screenLengthPx": 91.56956362550558,
+          "screenAngleRadians": -0.7939929908510658,
+          "nativeGroundAngleRadians": -1.0022485018412663,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 6,
+            "r": 2
+          },
+          "hexB": {
+            "q": 7,
+            "r": 2
+          },
+          "nativeLengthM": 1.0732348863487107,
+          "screenLengthPx": 119.15317701901009,
+          "screenAngleRadians": 0.029228248774391553,
+          "nativeGroundAngleRadians": 0.04494904935533118,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 8,
+          "hexA": {
+            "q": 7,
+            "r": 2
+          },
+          "hexB": {
+            "q": 8,
+            "r": 2
+          },
+          "nativeLengthM": 1.073234886348715,
+          "screenLengthPx": 119.15317701901054,
+          "screenAngleRadians": 0.029228248774391438,
+          "nativeGroundAngleRadians": 0.044949049355331006,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 0,
+          "angle": -1.002248501841267,
+          "lengthM": 1.0732348863487136
+        },
+        {
+          "firstSegment": 1,
+          "lastSegment": 1,
+          "angle": 0.0449490493553304,
+          "lengthM": 1.0732348863487118
+        },
+        {
+          "firstSegment": 2,
+          "lastSegment": 3,
+          "angle": -1.0022485018412655,
+          "lengthM": 2.1464697726974236
+        },
+        {
+          "firstSegment": 4,
+          "lastSegment": 5,
+          "angle": 0.0449490493553319,
+          "lengthM": 2.146469772697423
+        },
+        {
+          "firstSegment": 6,
+          "lastSegment": 6,
+          "angle": -1.0022485018412663,
+          "lengthM": 1.0732348863487122
+        },
+        {
+          "firstSegment": 7,
+          "lastSegment": 8,
+          "angle": 0.04494904935533118,
+          "lengthM": 2.146469772697426
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 20.16,
+        "nominalWorldLength": 20.102030640661415,
+        "residualPixels": 3.6198602193929057,
+        "endpoint": {
+          "x": 1234.8103228917123,
+          "y": 456.6057871113651
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 7,
+        "forwardLengthM": 9.224450561455605,
+        "forwardResidualGoalMinusPairM": 0.4346634156828042,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": []
+    },
+    {
+      "scene": "stream",
+      "hexRoute": [
+        {
+          "q": 1,
+          "r": 3
+        },
+        {
+          "q": 2,
+          "r": 3
+        },
+        {
+          "q": 3,
+          "r": 2
+        },
+        {
+          "q": 4,
+          "r": 1
+        },
+        {
+          "q": 5,
+          "r": 1
+        },
+        {
+          "q": 6,
+          "r": 1
+        },
+        {
+          "q": 7,
+          "r": 1
+        },
+        {
+          "q": 8,
+          "r": 1
+        },
+        {
+          "q": 9,
+          "r": 1
+        }
+      ],
+      "edgeCount": 8,
+      "turnCount": 2,
+      "turnIndices": [
+        1,
+        3
+      ],
+      "screenLengthPx": 910.032558159358,
+      "futureNativeLengthM": 8.7314117036304,
+      "nativeHexEdgeM": 1.0914264629537997,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 330
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 443.1088913245535,
+        "y": 534.75
+      },
+      "goalAnchor": {
+        "x": 1291.8137870333032,
+        "y": 398.25
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": 1,
+            "r": 3
+          },
+          "hexB": {
+            "q": 2,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629538006,
+          "screenLengthPx": 121.24355652982149,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 2,
+            "r": 3
+          },
+          "hexB": {
+            "q": 3,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 91.28560949021478,
+          "screenAngleRadians": -0.8445215140369691,
+          "nativeGroundAngleRadians": -1.0471975511965983,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 3,
+            "r": 2
+          },
+          "hexB": {
+            "q": 4,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629538,
+          "screenLengthPx": 91.28560949021485,
+          "screenAngleRadians": -0.8445215140369682,
+          "nativeGroundAngleRadians": -1.0471975511965974,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 4,
+            "r": 1
+          },
+          "hexB": {
+            "q": 5,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 5,
+            "r": 1
+          },
+          "hexB": {
+            "q": 6,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "water"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 6,
+            "r": 1
+          },
+          "hexB": {
+            "q": 7,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "water",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 7,
+            "r": 1
+          },
+          "hexB": {
+            "q": 8,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629538006,
+          "screenLengthPx": 121.24355652982149,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 8,
+            "r": 1
+          },
+          "hexB": {
+            "q": 9,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629537984,
+          "screenLengthPx": 121.24355652982126,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 0,
+          "angle": 0,
+          "lengthM": 1.0914264629538006
+        },
+        {
+          "firstSegment": 1,
+          "lastSegment": 2,
+          "angle": -1.0471975511965983,
+          "lengthM": 2.1828529259075995
+        },
+        {
+          "firstSegment": 3,
+          "lastSegment": 7,
+          "angle": 0,
+          "lengthM": 5.457132314768997
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 16.919999999999998,
+        "nominalWorldLength": 17.069683504092147,
+        "residualPixels": 9.36456581935704,
+        "endpoint": {
+          "x": 1282.4492212139462,
+          "y": 398.25
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 7,
+        "forwardLengthM": 9.224450561455605,
+        "forwardResidualGoalMinusPairM": -0.49303885782520496,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": [
+        {
+          "index": 4,
+          "hexA": {
+            "q": 5,
+            "r": 1
+          },
+          "hexB": {
+            "q": 6,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "water"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 6,
+            "r": 1
+          },
+          "hexB": {
+            "q": 7,
+            "r": 1
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "water",
+          "terrainTo": "ground"
+        }
+      ]
+    },
+    {
+      "scene": "mill",
+      "hexRoute": [
+        {
+          "q": 0,
+          "r": 4
+        },
+        {
+          "q": 1,
+          "r": 3
+        },
+        {
+          "q": 2,
+          "r": 3
+        },
+        {
+          "q": 3,
+          "r": 3
+        },
+        {
+          "q": 4,
+          "r": 3
+        },
+        {
+          "q": 5,
+          "r": 3
+        },
+        {
+          "q": 6,
+          "r": 2
+        },
+        {
+          "q": 7,
+          "r": 2
+        },
+        {
+          "q": 8,
+          "r": 2
+        },
+        {
+          "q": 9,
+          "r": 2
+        }
+      ],
+      "edgeCount": 9,
+      "turnCount": 3,
+      "turnIndices": [
+        1,
+        5,
+        6
+      ],
+      "screenLengthPx": 1031.2761146891794,
+      "futureNativeLengthM": 9.822838166584198,
+      "nativeHexEdgeM": 1.0914264629537997,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 330
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 382.4871130596428,
+        "y": 603
+      },
+      "goalAnchor": {
+        "x": 1352.435565298214,
+        "y": 466.5
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": 0,
+            "r": 4
+          },
+          "hexB": {
+            "q": 1,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629537997,
+          "screenLengthPx": 91.28560949021482,
+          "screenAngleRadians": -0.8445215140369686,
+          "nativeGroundAngleRadians": -1.0471975511965979,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 1,
+            "r": 3
+          },
+          "hexB": {
+            "q": 2,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629538006,
+          "screenLengthPx": 121.24355652982149,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "water"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 2,
+            "r": 3
+          },
+          "hexB": {
+            "q": 3,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "water",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 3,
+            "r": 3
+          },
+          "hexB": {
+            "q": 4,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 4,
+            "r": 3
+          },
+          "hexB": {
+            "q": 5,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 5,
+            "r": 3
+          },
+          "hexB": {
+            "q": 6,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629538,
+          "screenLengthPx": 91.28560949021485,
+          "screenAngleRadians": -0.8445215140369682,
+          "nativeGroundAngleRadians": -1.0471975511965974,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 6,
+            "r": 2
+          },
+          "hexB": {
+            "q": 7,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 7,
+            "r": 2
+          },
+          "hexB": {
+            "q": 8,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629538006,
+          "screenLengthPx": 121.24355652982149,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 8,
+          "hexA": {
+            "q": 8,
+            "r": 2
+          },
+          "hexB": {
+            "q": 9,
+            "r": 2
+          },
+          "nativeLengthM": 1.0914264629537984,
+          "screenLengthPx": 121.24355652982126,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 0,
+          "angle": -1.0471975511965979,
+          "lengthM": 1.0914264629537997
+        },
+        {
+          "firstSegment": 1,
+          "lastSegment": 4,
+          "angle": 0,
+          "lengthM": 4.365705851815199
+        },
+        {
+          "firstSegment": 5,
+          "lastSegment": 5,
+          "angle": -1.0471975511965974,
+          "lengthM": 1.0914264629538
+        },
+        {
+          "firstSegment": 6,
+          "lastSegment": 8,
+          "angle": 0,
+          "lengthM": 3.274279388861398
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 19.08,
+        "nominalWorldLength": 19.007644189088865,
+        "residualPixels": 4.5267563570207585,
+        "endpoint": {
+          "x": 1356.9623216552347,
+          "y": 466.5
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 7,
+        "forwardLengthM": 9.224450561455605,
+        "forwardResidualGoalMinusPairM": 0.5983876051285932,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": [
+        {
+          "index": 1,
+          "hexA": {
+            "q": 1,
+            "r": 3
+          },
+          "hexB": {
+            "q": 2,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629538006,
+          "screenLengthPx": 121.24355652982149,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "water"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 2,
+            "r": 3
+          },
+          "hexB": {
+            "q": 3,
+            "r": 3
+          },
+          "nativeLengthM": 1.0914264629537995,
+          "screenLengthPx": 121.24355652982138,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "water",
+          "terrainTo": "ground"
+        }
+      ]
+    },
+    {
+      "scene": "post",
+      "hexRoute": [
+        {
+          "q": -1,
+          "r": 6
+        },
+        {
+          "q": 0,
+          "r": 5
+        },
+        {
+          "q": 1,
+          "r": 5
+        },
+        {
+          "q": 2,
+          "r": 4
+        },
+        {
+          "q": 3,
+          "r": 3
+        },
+        {
+          "q": 4,
+          "r": 3
+        },
+        {
+          "q": 5,
+          "r": 3
+        },
+        {
+          "q": 6,
+          "r": 2
+        },
+        {
+          "q": 7,
+          "r": 2
+        },
+        {
+          "q": 8,
+          "r": 2
+        }
+      ],
+      "edgeCount": 9,
+      "turnCount": 5,
+      "turnIndices": [
+        1,
+        2,
+        4,
+        6,
+        7
+      ],
+      "screenLengthPx": 962.0441395970735,
+      "futureNativeLengthM": 9.659113977138409,
+      "nativeHexEdgeM": 1.073234886348712,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 378.91832705503657,
+        "y": 700.3035714285716
+      },
+      "goalAnchor": {
+        "x": 1231.192008768393,
+        "y": 456.5
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": -1,
+            "r": 6
+          },
+          "hexB": {
+            "q": 0,
+            "r": 5
+          },
+          "nativeLengthM": 1.0732348863487136,
+          "screenLengthPx": 91.56956362550567,
+          "screenAngleRadians": -0.7939929908510667,
+          "nativeGroundAngleRadians": -1.002248501841267,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 0,
+            "r": 5
+          },
+          "hexB": {
+            "q": 1,
+            "r": 5
+          },
+          "nativeLengthM": 1.0732348863487118,
+          "screenLengthPx": 119.1531770190102,
+          "screenAngleRadians": 0.029228248774391046,
+          "nativeGroundAngleRadians": 0.0449490493553304,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 1,
+            "r": 5
+          },
+          "hexB": {
+            "q": 2,
+            "r": 4
+          },
+          "nativeLengthM": 1.073234886348711,
+          "screenLengthPx": 91.5695636255055,
+          "screenAngleRadians": -0.7939929908510649,
+          "nativeGroundAngleRadians": -1.0022485018412655,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 2,
+            "r": 4
+          },
+          "hexB": {
+            "q": 3,
+            "r": 3
+          },
+          "nativeLengthM": 1.0732348863487127,
+          "screenLengthPx": 91.56956362550565,
+          "screenAngleRadians": -0.7939929908510649,
+          "nativeGroundAngleRadians": -1.0022485018412655,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 3,
+            "r": 3
+          },
+          "hexB": {
+            "q": 4,
+            "r": 3
+          },
+          "nativeLengthM": 1.0732348863487107,
+          "screenLengthPx": 119.15317701901009,
+          "screenAngleRadians": 0.029228248774392028,
+          "nativeGroundAngleRadians": 0.0449490493553319,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 4,
+            "r": 3
+          },
+          "hexB": {
+            "q": 5,
+            "r": 3
+          },
+          "nativeLengthM": 1.0732348863487127,
+          "screenLengthPx": 119.15317701901031,
+          "screenAngleRadians": 0.029228248774391972,
+          "nativeGroundAngleRadians": 0.04494904935533182,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 5,
+            "r": 3
+          },
+          "hexB": {
+            "q": 6,
+            "r": 2
+          },
+          "nativeLengthM": 1.0732348863487122,
+          "screenLengthPx": 91.56956362550558,
+          "screenAngleRadians": -0.7939929908510658,
+          "nativeGroundAngleRadians": -1.0022485018412663,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 6,
+            "r": 2
+          },
+          "hexB": {
+            "q": 7,
+            "r": 2
+          },
+          "nativeLengthM": 1.0732348863487107,
+          "screenLengthPx": 119.15317701901009,
+          "screenAngleRadians": 0.029228248774391553,
+          "nativeGroundAngleRadians": 0.04494904935533118,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 8,
+          "hexA": {
+            "q": 7,
+            "r": 2
+          },
+          "hexB": {
+            "q": 8,
+            "r": 2
+          },
+          "nativeLengthM": 1.073234886348715,
+          "screenLengthPx": 119.15317701901054,
+          "screenAngleRadians": 0.029228248774391438,
+          "nativeGroundAngleRadians": 0.044949049355331006,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 0,
+          "angle": -1.002248501841267,
+          "lengthM": 1.0732348863487136
+        },
+        {
+          "firstSegment": 1,
+          "lastSegment": 1,
+          "angle": 0.0449490493553304,
+          "lengthM": 1.0732348863487118
+        },
+        {
+          "firstSegment": 2,
+          "lastSegment": 3,
+          "angle": -1.0022485018412655,
+          "lengthM": 2.1464697726974236
+        },
+        {
+          "firstSegment": 4,
+          "lastSegment": 5,
+          "angle": 0.0449490493553319,
+          "lengthM": 2.146469772697423
+        },
+        {
+          "firstSegment": 6,
+          "lastSegment": 6,
+          "angle": -1.0022485018412663,
+          "lengthM": 1.0732348863487122
+        },
+        {
+          "firstSegment": 7,
+          "lastSegment": 8,
+          "angle": 0.04494904935533118,
+          "lengthM": 2.146469772697426
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 20.16,
+        "nominalWorldLength": 20.102030640661415,
+        "residualPixels": 3.6198602193929057,
+        "endpoint": {
+          "x": 1234.8103228917123,
+          "y": 456.6057871113651
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 7,
+        "forwardLengthM": 9.224450561455605,
+        "forwardResidualGoalMinusPairM": 0.4346634156828042,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": []
+    },
+    {
+      "scene": "forest",
+      "hexRoute": [
+        {
+          "q": -1,
+          "r": 6
+        },
+        {
+          "q": 0,
+          "r": 6
+        },
+        {
+          "q": 1,
+          "r": 5
+        },
+        {
+          "q": 2,
+          "r": 4
+        },
+        {
+          "q": 3,
+          "r": 3
+        },
+        {
+          "q": 4,
+          "r": 3
+        },
+        {
+          "q": 5,
+          "r": 3
+        },
+        {
+          "q": 6,
+          "r": 2
+        },
+        {
+          "q": 7,
+          "r": 2
+        },
+        {
+          "q": 8,
+          "r": 1
+        },
+        {
+          "q": 9,
+          "r": 1
+        }
+      ],
+      "edgeCount": 10,
+      "turnCount": 6,
+      "turnIndices": [
+        1,
+        4,
+        6,
+        7,
+        8,
+        9
+      ],
+      "screenLengthPx": 1001.9232112373137,
+      "futureNativeLengthM": 10.29059236499297,
+      "nativeHexEdgeM": 1.029059236499297,
+      "groundPixelsPerNativeMeterAssumption": 111.08724283786553,
+      "camera": {
+        "radius": 66,
+        "origin": {
+          "x": 180,
+          "y": 250
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "startAnchor": {
+        "x": 408.6307065990918,
+        "y": 636.1
+      },
+      "goalAnchor": {
+        "x": 1265.995856345686,
+        "y": 314.35
+      },
+      "sceneMetadataAnchorMatches": true,
+      "segments": [
+        {
+          "index": 0,
+          "hexA": {
+            "q": -1,
+            "r": 6
+          },
+          "hexB": {
+            "q": 0,
+            "r": 6
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 1,
+          "hexA": {
+            "q": 0,
+            "r": 6
+          },
+          "hexB": {
+            "q": 1,
+            "r": 5
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 86.06928894791677,
+          "screenAngleRadians": -0.8445215140369696,
+          "nativeGroundAngleRadians": -1.0471975511965987,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 2,
+          "hexA": {
+            "q": 1,
+            "r": 5
+          },
+          "hexB": {
+            "q": 2,
+            "r": 4
+          },
+          "nativeLengthM": 1.0290592364992972,
+          "screenLengthPx": 86.06928894791689,
+          "screenAngleRadians": -0.8445215140369673,
+          "nativeGroundAngleRadians": -1.0471975511965965,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 3,
+          "hexA": {
+            "q": 2,
+            "r": 4
+          },
+          "hexB": {
+            "q": 3,
+            "r": 3
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 86.06928894791677,
+          "screenAngleRadians": -0.8445215140369696,
+          "nativeGroundAngleRadians": -1.0471975511965987,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 4,
+          "hexA": {
+            "q": 3,
+            "r": 3
+          },
+          "hexB": {
+            "q": 4,
+            "r": 3
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 5,
+          "hexA": {
+            "q": 4,
+            "r": 3
+          },
+          "hexB": {
+            "q": 5,
+            "r": 3
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 6,
+          "hexA": {
+            "q": 5,
+            "r": 3
+          },
+          "hexB": {
+            "q": 6,
+            "r": 2
+          },
+          "nativeLengthM": 1.0290592364992965,
+          "screenLengthPx": 86.06928894791682,
+          "screenAngleRadians": -0.8445215140369682,
+          "nativeGroundAngleRadians": -1.0471975511965974,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 7,
+          "hexA": {
+            "q": 6,
+            "r": 2
+          },
+          "hexB": {
+            "q": 7,
+            "r": 2
+          },
+          "nativeLengthM": 1.029059236499298,
+          "screenLengthPx": 114.31535329954602,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 8,
+          "hexA": {
+            "q": 7,
+            "r": 2
+          },
+          "hexB": {
+            "q": 8,
+            "r": 1
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 86.06928894791677,
+          "screenAngleRadians": -0.8445215140369696,
+          "nativeGroundAngleRadians": -1.0471975511965987,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        },
+        {
+          "index": 9,
+          "hexA": {
+            "q": 8,
+            "r": 1
+          },
+          "hexB": {
+            "q": 9,
+            "r": 1
+          },
+          "nativeLengthM": 1.029059236499297,
+          "screenLengthPx": 114.3153532995459,
+          "screenAngleRadians": 0,
+          "nativeGroundAngleRadians": 0,
+          "terrainFrom": "ground",
+          "terrainTo": "ground"
+        }
+      ],
+      "straightRuns": [
+        {
+          "firstSegment": 0,
+          "lastSegment": 0,
+          "angle": 0,
+          "lengthM": 1.029059236499297
+        },
+        {
+          "firstSegment": 1,
+          "lastSegment": 3,
+          "angle": -1.0471975511965987,
+          "lengthM": 3.087177709497891
+        },
+        {
+          "firstSegment": 4,
+          "lastSegment": 5,
+          "angle": 0,
+          "lengthM": 2.058118472998594
+        },
+        {
+          "firstSegment": 6,
+          "lastSegment": 6,
+          "angle": -1.0471975511965974,
+          "lengthM": 1.0290592364992965
+        },
+        {
+          "firstSegment": 7,
+          "lastSegment": 7,
+          "angle": 0,
+          "lengthM": 1.029059236499298
+        },
+        {
+          "firstSegment": 8,
+          "lastSegment": 8,
+          "angle": -1.0471975511965987,
+          "lengthM": 1.029059236499297
+        },
+        {
+          "firstSegment": 9,
+          "lastSegment": 9,
+          "angle": 0,
+          "lengthM": 1.029059236499297
+        }
+      ],
+      "legacyPlan": {
+        "status": "ready",
+        "worldLength": 21.96,
+        "nominalWorldLength": 21.963481801105328,
+        "residualPixels": 0.2178299861332107,
+        "endpoint": {
+          "x": 1265.7780263595528,
+          "y": 314.35
+        },
+        "reason": null
+      },
+      "fixedPairArithmeticOnly": {
+        "nearestWholeWalkCycles": 8,
+        "forwardLengthM": 10.502200857760293,
+        "forwardResidualGoalMinusPairM": -0.21160849276732385,
+        "lateralEndpointOffsetM": -0.021197920897975564,
+        "exact2dGoalSatisfied": false
+      },
+      "bridgeTransitions": []
+    }
+  ]
+}

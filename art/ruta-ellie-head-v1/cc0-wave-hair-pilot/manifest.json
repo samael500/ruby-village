@@ -1,0 +1,92 @@
+{
+  "status": "ONE-native-CC0-hair-restfit-study-not-accepted-Ruta",
+  "hairObjectName": "Ellie ready CC0 Cortu waves",
+  "rootMaterialProtection": "ASCII prefix Ellie ready ; preserve all native hair alpha/UV/normals/shader",
+  "rawHairSource": "art/ready-character-adapted-v1/source/ginger-native-part.blend",
+  "rawHairSha256": "126432627e4dcfc39291cbb85f1755d0f08aa3452ceb2b2415d9e15b10bd0eef",
+  "license": "Cortu Johnstone strawberry_cloud CC0, official hair01 table and author mhclo retained in ready-character-adapted-v1/source; stale generic OBJ AGPL header documented in inherited provenance",
+  "sourceVertices": 479,
+  "sourceGeometrySha256": "7e0a742f3234a27573eae5226d5d8089c670d18f06bfdeff5fdd49633866e5e1",
+  "restFit": {
+    "sourceAnchor": [
+      0.026000000536441803,
+      -0.009999999776482582,
+      1.4145387411117554
+    ],
+    "targetAnchor": [
+      -0.0002406427956884727,
+      -0.04995279759168625,
+      1.612795352935791
+    ],
+    "scaleXYZ": [
+      1.5499999523162842,
+      1.5499999523162842,
+      1.899999976158142
+    ],
+    "matrixRows": [
+      [
+        1.5499999523162842,
+        0.0,
+        0.0,
+        -0.04054064303636551
+      ],
+      [
+        0.0,
+        1.5499999523162842,
+        0.0,
+        -0.03445279970765114
+      ],
+      [
+        0.0,
+        0.0,
+        1.899999976158142,
+        -1.0748281478881836
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "definition": "one global3Drest affine fit; no old lower extension, no per-strand or per-frame changes"
+  },
+  "nativeAlphaLinks": [
+    {
+      "material": "Copper native cap reference only.001",
+      "from": "Image Texture:Alpha",
+      "to": "Principled Alpha"
+    }
+  ],
+  "nativeUVLayers": [
+    "UVMap"
+  ],
+  "existingCutHairMaterialParameterFix": {
+    "socket": "ellie.hair_mesh / Group.009 SH-Hair Base Color",
+    "oldLink": [
+      {
+        "from": "Mix.010:Result",
+        "to": "Input_7"
+      }
+    ],
+    "newNativeBaseColor": [
+      0.27,
+      0.075,
+      0.018,
+      1
+    ],
+    "note": "previous palette selection looked pale; corrected direct native author parameter, haircut hidden in this study"
+  },
+  "views": [
+    "front-whole.png",
+    "front-face.png",
+    "three-quarter-whole.png",
+    "three-quarter-face.png"
+  ],
+  "limitations": [
+    "479vertex ready card mesh may show flat cards/triangular silhouette; inspect actual two views before selecting",
+    "rest X/Y1.55 Z1.90 may distort source waves; no resemblance/fit/no-slip PASS claimed",
+    "body/style and gait curves unchanged by this hair rest fit",
+    "no procedural cap or generated/new sculpt hair"
+  ]
+}

@@ -1,0 +1,271 @@
+{
+  "status": "ACTUAL-FULL-SELECTED-SOLE-DIAGNOSTIC-NOT-PHYSICAL-CONTACT-TRUTH",
+  "sourceSHA256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "sampleSHA256": "638c78dab736d47f3d0a0c164675a8acf9cb455e55bf64957cfeafc25a7dfbb8",
+  "restSampleSHA256": "8768a55042608be72915ec2f34db917e15ce0cf8a73cafbac59221e14b3dadcb",
+  "action": "Walk_ProportionProposal",
+  "actionCurveHash": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd",
+  "cycleSeconds": 1.6666666666666667,
+  "intervalCount": 480,
+  "soleDefinition": "used polygon vertices with Foot.side weight>=.5 and restZ <= side minimum +8.4mm; heel/toe extreme15percent of rest-nativeY span; toe negativeY, heel positiveY",
+  "inferredFloorM": -0.001194837037473917,
+  "curveStrideM": 1.2777502963046894,
+  "thresholdDefinitions": "10mm full-envelope diagnostic;17.5mm original fuzzy band;24.5mm +7mm sensitivity. All thresholds descriptive, not physical collision. Plane/rigid fit uses fixed selected material vertices.",
+  "perFoot": {
+    "L": {
+      "sourceJoinFrame": 5,
+      "selectedActualUsedSoleVertices": 28,
+      "soleVertexIds": [
+        89,
+        91,
+        198,
+        199,
+        200,
+        201,
+        202,
+        204,
+        205,
+        206,
+        207,
+        212,
+        213,
+        214,
+        215,
+        216,
+        217,
+        218,
+        219,
+        220,
+        221,
+        222,
+        223,
+        228,
+        230,
+        231,
+        232,
+        235
+      ],
+      "join": {
+        "phase": 0.125,
+        "confidence": 0.5888897478437725,
+        "allSoleHeightAboveInferredFloorRangeM": [
+          0.0004871048149652779,
+          0.008847641292959452
+        ],
+        "areaFractionBelow3mm": 0.3260408639326121,
+        "areaFractionBelow8mm": 0.9282299177237016,
+        "areaFractionBelow17_5mm": 0.9999999999999999,
+        "heelToeGeometricPitchDegrees": 1.7892170747298677,
+        "restToPoseRigidTiltDegrees": 0.13985969645222093,
+        "rigidFitRmsM": 0.00023555522898339982,
+        "allSoleAreaWeightedWorldVelocityRmsMps": 0.01517893349776798,
+        "allSoleForwardVelocityRmsMps": 0.0038137217551018625,
+        "maxActualSolePointSpeedMps": 0.018796261682045037,
+        "heelMeanVelocityWorldMps": [
+          0.014635842293500899,
+          0.007145988003854353,
+          0.005035192589275539
+        ]
+      },
+      "heelToeLowEnvelope10mmWindows": {
+        "heel": [
+          {
+            "sampleStart": 32,
+            "sampleEnd": 125,
+            "phaseStart": 0.06666666666666667,
+            "phaseEnd": 0.2604166666666667,
+            "durationSeconds": 0.3229166666666667
+          }
+        ],
+        "toe": [
+          {
+            "sampleStart": 36,
+            "sampleEnd": 108,
+            "phaseStart": 0.075,
+            "phaseEnd": 0.225,
+            "durationSeconds": 0.25
+          }
+        ]
+      },
+      "allSoleLowEnvelopeWindowsByThresholdMm": {
+        "10": [
+          {
+            "sampleStart": 36,
+            "sampleEnd": 108,
+            "phaseStart": 0.075,
+            "phaseEnd": 0.225,
+            "durationSeconds": 0.25
+          }
+        ],
+        "17.5": [
+          {
+            "sampleStart": 32,
+            "sampleEnd": 158,
+            "phaseStart": 0.06666666666666667,
+            "phaseEnd": 0.32916666666666666,
+            "durationSeconds": 0.43750000000000006
+          }
+        ],
+        "24.5": [
+          {
+            "sampleStart": 28,
+            "sampleEnd": 181,
+            "phaseStart": 0.058333333333333334,
+            "phaseEnd": 0.3770833333333333,
+            "durationSeconds": 0.53125
+          }
+        ]
+      },
+      "contactIntervalSpan": {
+        "intervalSamples": [
+          36,
+          108
+        ],
+        "maxMaterialVertexAxisSpanM": [
+          0.003954879939556122,
+          0.0018482335336101885,
+          0.002169325132854283
+        ],
+        "areaWeightedRmsAxisSpanM": [
+          0.003853050897264542,
+          0.001184971085687229,
+          0.0012954201100086218
+        ],
+        "definition": "fixed sole vertex spans over threshold-limited low-envelope interval, not certified physical stance drift"
+      },
+      "cycleMaxRigidFitRmsM": 0.0012304440347064849,
+      "physicalContactCertified": false
+    },
+    "R": {
+      "sourceJoinFrame": 25,
+      "selectedActualUsedSoleVertices": 28,
+      "soleVertexIds": [
+        188,
+        192,
+        247,
+        248,
+        249,
+        250,
+        251,
+        253,
+        254,
+        255,
+        256,
+        261,
+        262,
+        263,
+        264,
+        265,
+        266,
+        267,
+        268,
+        269,
+        270,
+        271,
+        272,
+        277,
+        279,
+        280,
+        281,
+        291
+      ],
+      "join": {
+        "phase": 0.625,
+        "confidence": 0.5897850150034356,
+        "allSoleHeightAboveInferredFloorRangeM": [
+          0.0005131814396008849,
+          0.008836416061967611
+        ],
+        "areaFractionBelow3mm": 0.32604087076536675,
+        "areaFractionBelow8mm": 0.928229919361179,
+        "areaFractionBelow17_5mm": 1.0,
+        "heelToeGeometricPitchDegrees": 1.7811063710499544,
+        "restToPoseRigidTiltDegrees": 0.13532523779767458,
+        "rigidFitRmsM": 0.00023654731518311627,
+        "allSoleAreaWeightedWorldVelocityRmsMps": 0.020714112942223344,
+        "allSoleForwardVelocityRmsMps": 0.004017804008194752,
+        "maxActualSolePointSpeedMps": 0.024075566245007247,
+        "heelMeanVelocityWorldMps": [
+          -0.02037784829735756,
+          0.008147574223812515,
+          0.004792379593709484
+        ]
+      },
+      "heelToeLowEnvelope10mmWindows": {
+        "heel": [
+          {
+            "sampleStart": 272,
+            "sampleEnd": 359,
+            "phaseStart": 0.5666666666666667,
+            "phaseEnd": 0.7479166666666667,
+            "durationSeconds": 0.30208333333333337
+          }
+        ],
+        "toe": [
+          {
+            "sampleStart": 276,
+            "sampleEnd": 345,
+            "phaseStart": 0.575,
+            "phaseEnd": 0.71875,
+            "durationSeconds": 0.23958333333333334
+          }
+        ]
+      },
+      "allSoleLowEnvelopeWindowsByThresholdMm": {
+        "10": [
+          {
+            "sampleStart": 276,
+            "sampleEnd": 345,
+            "phaseStart": 0.575,
+            "phaseEnd": 0.71875,
+            "durationSeconds": 0.23958333333333334
+          }
+        ],
+        "17.5": [
+          {
+            "sampleStart": 272,
+            "sampleEnd": 395,
+            "phaseStart": 0.5666666666666667,
+            "phaseEnd": 0.8229166666666666,
+            "durationSeconds": 0.42708333333333337
+          }
+        ],
+        "24.5": [
+          {
+            "sampleStart": 268,
+            "sampleEnd": 422,
+            "phaseStart": 0.5583333333333333,
+            "phaseEnd": 0.8791666666666667,
+            "durationSeconds": 0.5347222222222222
+          }
+        ]
+      },
+      "contactIntervalSpan": {
+        "intervalSamples": [
+          276,
+          345
+        ],
+        "maxMaterialVertexAxisSpanM": [
+          0.005019180476665497,
+          0.0023009986867075227,
+          0.0021946501219645143
+        ],
+        "areaWeightedRmsAxisSpanM": [
+          0.00490415372952883,
+          0.0011887725904730128,
+          0.001291012491096699
+        ],
+        "definition": "fixed sole vertex spans over threshold-limited low-envelope interval, not certified physical stance drift"
+      },
+      "cycleMaxRigidFitRmsM": 0.001233953966336891,
+      "physicalContactCertified": false
+    }
+  },
+  "limitations": [
+    "selected lowest8.4mm rest band is actual native material geometry, not the entire shoe surface or continuous sole triangles",
+    "Source motion has no authored ground/contact constraint labels, minimum-Z floor inferred; cannot certify true physical heel strike/toe off",
+    "Rigid translation cannot eliminate all fullsole lateral/vertical/rotation residuals; heel proxy is insufficient",
+    "10mm versus17.5/24.5mm windows reflect geometry tolerance; no no-slip claim",
+    "Material/UV branch unchanged foot positions/topology/weights verified separately by cold-open hashes; no new samples/clips/rig/source writes"
+  ]
+}

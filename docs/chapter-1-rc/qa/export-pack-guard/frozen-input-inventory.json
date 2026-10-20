@@ -1,0 +1,634 @@
+{
+  "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-layered-style-v1/ruta-native-style.blend",
+  "sha256": "d33699efbf0a09dbedb3254c30ea645ee60ef2abd046ac73da21106cc659a3ae",
+  "matchesRootFrozenHash": true,
+  "allSceneObjectInstanceTypesNONE": true,
+  "objects": [
+    {
+      "name": "CharacterArmature",
+      "type": "ARMATURE",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": []
+    },
+    {
+      "name": "Adventurer_Body",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Adventurer_Feet",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Adventurer_Head",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": true,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Area",
+      "type": "LIGHT",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": []
+    },
+    {
+      "name": "Area.001",
+      "type": "LIGHT",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": []
+    },
+    {
+      "name": "Area.002",
+      "type": "LIGHT",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": []
+    },
+    {
+      "name": "Camera",
+      "type": "CAMERA",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": []
+    },
+    {
+      "name": "Ruta stock long trousers",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ruta CC0 ginger waves",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": true,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "ONE diagonal satchel strap",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready tongue",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready teeth_top",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready teeth_btm",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready head",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready hair_cut",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": true,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready face_line2",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready face_line1",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eyelashes",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eyebrows",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eye_highlights",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eye.R",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eye.L",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie native face proof camera",
+      "type": "CAMERA",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": []
+    },
+    {
+      "name": "Ellie ready CC0 Cortu waves",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": true,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready Loose cap",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 1",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 2",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 3",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 4",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 5",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 6",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 7",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 8",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 9",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 10",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 11",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 12",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 13",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 14",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 15",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 16",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 17",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 18",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Cream shirt V inside vest",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Vest brass button 1",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Vest brass button 2",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Vest brass button 3",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Left burgundy bow loop",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Right burgundy bow loop",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Burgundy bow knot",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Two burgundy bow tails",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "ONE rounded right hip satchel",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Single rounded satchel flap",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Satchel warm brass clasp",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ankle boot lace R",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cream sock cuff R",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cargo side pocket R",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ankle boot lace L",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cream sock cuff L",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cargo side pocket L",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Icosphere",
+      "type": "MESH",
+      "instanceType": "NONE",
+      "hideViewport": false,
+      "hideRender": false,
+      "modifiers": []
+    }
+  ],
+  "sourceUnchanged": true
+}

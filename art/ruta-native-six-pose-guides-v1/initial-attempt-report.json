@@ -1,0 +1,60 @@
+{
+  "scope": "technical native pose guides, NOT final painted artwork/runtime or new art acceptance",
+  "baseCommit": "b33addd",
+  "source": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-layered-style-v2/ruta-native-style.blend",
+  "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "exporterSha256": "530dfd2d7f53b6f6a5fcbe5b7b954c6ffcfb2787dcaa0d9021a5321a7dd2160a",
+  "packerSha256": "c2b975062d132b691f834225a57bf8412ddd52015557908bbbcb92dbbc864b2d",
+  "parameters": {
+    "variant": "base",
+    "directions": [
+      "se",
+      "sw",
+      "w",
+      "nw",
+      "ne"
+    ],
+    "clip": "walk",
+    "frameCountPerDirection": 48,
+    "existingENotRepeated": "art/ruta-native-layered-walk48-v2"
+  },
+  "startedUtc": "2026-10-19T23:40:42.270825+00:00",
+  "batchPid": 670377,
+  "status": "STOPPED-ERROR",
+  "checkpoints": [
+    {
+      "direction": "se",
+      "command": [
+        "/tmp/blender-4.5.3-linux-x64/blender",
+        "--background",
+        "--threads",
+        "2",
+        "--disable-autoexec",
+        "--python-exit-code",
+        "1",
+        "--python",
+        "/tmp/ruby-native-six-pose-guides/scripts/ruta-ready-sprite-export.py",
+        "--",
+        "--source",
+        "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-layered-style-v2/ruta-native-style.blend",
+        "--out",
+        "/tmp/ruby-native-six-pose-guides/art/ruta-native-six-pose-guides-v1/se",
+        "--variants",
+        "base",
+        "--directions",
+        "se",
+        "--clips",
+        "walk",
+        "--frame-count",
+        "48",
+        "--allow-batch"
+      ],
+      "startedUtc": "2026-10-19T23:40:42.326172+00:00",
+      "status": "RENDERING",
+      "blenderPid": 670380,
+      "renderSeconds": 736.3839575409947,
+      "renderExitCode": 0
+    }
+  ],
+  "error": "AssertionError()"
+}

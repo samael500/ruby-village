@@ -1,0 +1,15 @@
+{
+  "tool": "built-in image_gen.imagegen",
+  "status": "REJECTED-CONFIRMED-BROWN-TO-OLIVE-PALETTE-REGRESSION",
+  "cachePath": "/home/mskorokhod/.codex/generated_images/01a146ce-39de-7612-80ce-b3e4df958cc3/exec-e72aeb47-9ad9-43e4-a1d8-2072261ef8f6.png",
+  "output": "painted-garment-uv-v1.png",
+  "actualSize": [
+    1254,
+    1254
+  ],
+  "sha256": "3cf73bc4c6e824fb359b840eb87dde51f024ddfa126cbcb8619a9df94fa4d927",
+  "prompt": "prompt-v1.txt",
+  "inputs": "inputs.json",
+  "observation": "Actual UV validation finds 12.227% trouser interior olive-green instead of brown. Initial white-interior suspicion was disproved: white areas are empty gutters. No mixed garment material installed.",
+  "validation": "art/ruta-native-garment-paint-pilot-v1/rejected-mixed-v1/palette-validation.json"
+}

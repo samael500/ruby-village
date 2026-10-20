@@ -1,0 +1,629 @@
+{
+  "status": "READ-ONLY-LAYOUT-HYPOTHESIS-TEST-NOT-REGISTRATION-FIX",
+  "baselineCommit": "1a16d10",
+  "rawSha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+  "manifestSha256": "5d8a80644e99c6e8662abd5047709c11b5ec82f82294c65e64a4ab93a0206767",
+  "htmlSha256": "3a3f6c7c7e1948e925fb04cced4520367dcec266bea62728e95421e02792efcc",
+  "fixedGrid": {
+    "origin": [
+      0,
+      30
+    ],
+    "columnPitch": 162,
+    "rowPitch": 200,
+    "columns": 8,
+    "rows": 6,
+    "frameSize": [
+      162,
+      200
+    ],
+    "reason": "one shared nonoverlapping grid contains all alpha>128 actor components; intentionally not raw dimensions divided into equal rows",
+    "notUniquePhysicalRegistration": true,
+    "rightPaddingPixels": 1,
+    "bottomPaddingPixels": 15,
+    "rawUnassignedTopGutterPixels": 30
+  },
+  "globalPaintedToNativeHalf": {
+    "scale": 1.1631563024644236,
+    "translation": [
+      29.60245861921824,
+      53.313741280992616
+    ]
+  },
+  "nativeFullToPainted": {
+    "scale": 0.4298648418450994,
+    "translation": [
+      -25.450112385152693,
+      -45.835405927848875
+    ]
+  },
+  "units": "native comparison pixels256x320; original512x640 errors2x; painted cell162x200",
+  "rowBands": [
+    {
+      "row": 0,
+      "opaqueYMin": 40,
+      "opaqueYMaxExclusive": 207,
+      "crownBBoxLocalYRange": [
+        10,
+        12
+      ],
+      "meanResidualsPaintedPx": {
+        "centroid": [
+          -0.027368752600372328,
+          -2.0780964892556657
+        ],
+        "crownBand": [
+          3.6633869190281163,
+          -2.460791556330872
+        ],
+        "lowerBand": [
+          3.8609608412554706,
+          -6.995082037104734
+        ],
+        "bboxMin": [
+          1.0388317896064314,
+          -1.9661449840071934
+        ],
+        "bboxMax": [
+          0.35657342676544396,
+          -6.68583193497977
+        ]
+      }
+    },
+    {
+      "row": 1,
+      "opaqueYMin": 243,
+      "opaqueYMaxExclusive": 410,
+      "crownBBoxLocalYRange": [
+        13,
+        13
+      ],
+      "meanResidualsPaintedPx": {
+        "centroid": [
+          -2.446904166209056,
+          2.740509805774526
+        ],
+        "crownBand": [
+          0.8584163826093781,
+          1.3536617621111564
+        ],
+        "lowerBand": [
+          -1.8629656117683027,
+          -2.2725731620806178
+        ],
+        "bboxMin": [
+          -9.10937693897547,
+          2.2007130147570346
+        ],
+        "bboxMax": [
+          1.803430573798352,
+          -3.2254264605150667
+        ]
+      }
+    },
+    {
+      "row": 2,
+      "opaqueYMin": 443,
+      "opaqueYMaxExclusive": 611,
+      "crownBBoxLocalYRange": [
+        13,
+        14
+      ],
+      "meanResidualsPaintedPx": {
+        "centroid": [
+          0.5914159964054675,
+          5.291894225572913
+        ],
+        "crownBand": [
+          3.2436257694309423,
+          1.4489884286419614
+        ],
+        "lowerBand": [
+          0.0328142522467045,
+          -1.801636822551876
+        ],
+        "bboxMin": [
+          -7.573735363605357,
+          1.9835171206055555
+        ],
+        "bboxMax": [
+          6.975357003371343,
+          -1.8854940395925066
+        ]
+      }
+    },
+    {
+      "row": 3,
+      "opaqueYMin": 642,
+      "opaqueYMaxExclusive": 816,
+      "crownBBoxLocalYRange": [
+        12,
+        14
+      ],
+      "meanResidualsPaintedPx": {
+        "centroid": [
+          -0.38150205250576513,
+          4.626825571719397
+        ],
+        "crownBand": [
+          2.895702091430519,
+          -0.9386237490999733
+        ],
+        "lowerBand": [
+          -3.5266561982686313,
+          1.355745324860867
+        ],
+        "bboxMin": [
+          -3.029039895319547,
+          -0.8807395095424919
+        ],
+        "bboxMax": [
+          3.3390396372267284,
+          2.487242487178563
+        ]
+      }
+    },
+    {
+      "row": 4,
+      "opaqueYMin": 846,
+      "opaqueYMaxExclusive": 1022,
+      "crownBBoxLocalYRange": [
+        16,
+        18
+      ],
+      "meanResidualsPaintedPx": {
+        "centroid": [
+          -1.223486373485962,
+          10.525819537072367
+        ],
+        "crownBand": [
+          2.1756170109678257,
+          5.803089341868345
+        ],
+        "lowerBand": [
+          -1.8712321849812592,
+          4.869610019237237
+        ],
+        "bboxMin": [
+          -9.966843149436746,
+          5.663381962450657
+        ],
+        "bboxMax": [
+          5.178430573798364,
+          5.537580382565815
+        ]
+      }
+    },
+    {
+      "row": 5,
+      "opaqueYMin": 1039,
+      "opaqueYMaxExclusive": 1204,
+      "crownBBoxLocalYRange": [
+        9,
+        9
+      ],
+      "meanResidualsPaintedPx": {
+        "centroid": [
+          0.0846192052904012,
+          -1.582377831315001
+        ],
+        "crownBand": [
+          2.7473386769924852,
+          -1.6551315833583296
+        ],
+        "lowerBand": [
+          3.818313842390577,
+          -10.168381589388972
+        ],
+        "bboxMin": [
+          -5.1879919937534,
+          -0.9395573015527683
+        ],
+        "bboxMax": [
+          3.5432286882973236,
+          -10.35268993374399
+        ]
+      }
+    }
+  ],
+  "opaqueGutters": [
+    {
+      "betweenRows": [
+        0,
+        1
+      ],
+      "emptyOpaqueIntervalY": [
+        207,
+        243
+      ],
+      "height": 36,
+      "midpointY": 225.0,
+      "baselineNextRowStart": 230,
+      "midpointMinusBaseline": -5.0
+    },
+    {
+      "betweenRows": [
+        1,
+        2
+      ],
+      "emptyOpaqueIntervalY": [
+        410,
+        443
+      ],
+      "height": 33,
+      "midpointY": 426.5,
+      "baselineNextRowStart": 430,
+      "midpointMinusBaseline": -3.5
+    },
+    {
+      "betweenRows": [
+        2,
+        3
+      ],
+      "emptyOpaqueIntervalY": [
+        611,
+        642
+      ],
+      "height": 31,
+      "midpointY": 626.5,
+      "baselineNextRowStart": 630,
+      "midpointMinusBaseline": -3.5
+    },
+    {
+      "betweenRows": [
+        3,
+        4
+      ],
+      "emptyOpaqueIntervalY": [
+        816,
+        846
+      ],
+      "height": 30,
+      "midpointY": 831.0,
+      "baselineNextRowStart": 830,
+      "midpointMinusBaseline": 1.0
+    },
+    {
+      "betweenRows": [
+        4,
+        5
+      ],
+      "emptyOpaqueIntervalY": [
+        1022,
+        1039
+      ],
+      "height": 17,
+      "midpointY": 1030.5,
+      "baselineNextRowStart": 1030,
+      "midpointMinusBaseline": 0.5
+    }
+  ],
+  "halfCyclePairing40to47Minus16to23": {
+    "centroid": {
+      "meanDeltaPaintedPx": [
+        -0.5067967911150664,
+        -6.874272056887914
+      ],
+      "stdDeltaPaintedPx": [
+        1.2905127006182224,
+        0.8937550845683051
+      ],
+      "rangeDeltaPaintedPx": [
+        [
+          -2.6118936798587002,
+          -7.617382730889192
+        ],
+        [
+          0.9726900355312293,
+          -4.962274067145088
+        ]
+      ]
+    },
+    "crownBand": {
+      "meanDeltaPaintedPx": [
+        -0.496287092438457,
+        -3.104120012000291
+      ],
+      "stdDeltaPaintedPx": [
+        1.012728358621842,
+        0.2531398787015132
+      ],
+      "rangeDeltaPaintedPx": [
+        [
+          -2.0278811966299033,
+          -3.5503442979919444
+        ],
+        [
+          0.8980652288484503,
+          -2.7547232380237157
+        ]
+      ]
+    },
+    "lowerBand": {
+      "meanDeltaPaintedPx": [
+        3.7854995901438726,
+        -8.366744766837096
+      ],
+      "stdDeltaPaintedPx": [
+        3.224700168088467,
+        1.1533567961909588
+      ],
+      "rangeDeltaPaintedPx": [
+        [
+          -2.814528728734503,
+          -10.0161303072807
+        ],
+        [
+          8.562458022128823,
+          -6.134723743758565
+        ]
+      ]
+    },
+    "bboxMin": {
+      "meanDeltaPaintedPx": [
+        2.3857433698519572,
+        -2.923074422158324
+      ],
+      "stdDeltaPaintedPx": [
+        2.4410925294020194,
+        0.4294894187726556
+      ],
+      "rangeDeltaPaintedPx": [
+        [
+          -0.8597296836901988,
+          -3.280540632619597
+        ],
+        [
+          6.561081265239206,
+          -2.280540632619604
+        ]
+      ]
+    },
+    "bboxMax": {
+      "meanDeltaPaintedPx": [
+        -3.432128315074019,
+        -8.467195894151484
+      ],
+      "stdDeltaPaintedPx": [
+        2.618047101134388,
+        1.4098728742520614
+      ],
+      "rangeDeltaPaintedPx": [
+        [
+          -8.719459367380395,
+          -10.71945936738038
+        ],
+        [
+          1.2805406326196296,
+          -5.999999999999981
+        ]
+      ]
+    }
+  },
+  "boundaryCounterfactuals": {
+    "centroid": {
+      "baseline39to40NativeHalfPx": [
+        3.8404710153040895,
+        -8.894860065035289
+      ],
+      "baseline47to0NativeHalfPx": [
+        3.432023174943197,
+        0.7711744808564163
+      ],
+      "candidateLastRowPlus8PaintedPx39to40": [
+        3.8404710153040895,
+        0.4103903546801
+      ],
+      "candidateLastRowPlus8PaintedPx47to0": [
+        3.432023174943197,
+        -8.534075938858972
+      ],
+      "baselineTwoBoundaryRms": 7.28838961462756,
+      "candidateTwoBoundaryRms": 7.054320416105442,
+      "algebraicTwoBoundaryOptimumPaintedPx": [
+        -0.17557736629870752,
+        4.155088411339005
+      ],
+      "notAFixRecommendation": true
+    },
+    "crownBand": {
+      "baseline39to40NativeHalfPx": [
+        5.288043506543929,
+        -8.993529629025787
+      ],
+      "baseline47to0NativeHalfPx": [
+        5.177562456111204,
+        1.2037389248999375
+      ],
+      "candidateLastRowPlus8PaintedPx39to40": [
+        5.288043506543929,
+        0.311720790689602
+      ],
+      "candidateLastRowPlus8PaintedPx47to0": [
+        5.177562456111204,
+        -8.101511494815451
+      ],
+      "baselineTwoBoundaryRms": 8.279586937206398,
+      "candidateTwoBoundaryRms": 7.762158703157541,
+      "algebraicTwoBoundaryOptimumPaintedPx": [
+        -0.04749191927114366,
+        4.383447234185287
+      ],
+      "notAFixRecommendation": true
+    },
+    "lowerBand": {
+      "baseline39to40NativeHalfPx": [
+        5.176986365986707,
+        -18.262023127589572
+      ],
+      "baseline47to0NativeHalfPx": [
+        -1.1070580475046086,
+        0.9676947410747232
+      ],
+      "candidateLastRowPlus8PaintedPx39to40": [
+        5.176986365986707,
+        -8.956772707874183
+      ],
+      "candidateLastRowPlus8PaintedPx47to0": [
+        -1.1070580475046086,
+        -8.337555678640665
+      ],
+      "baselineTwoBoundaryRms": 13.462256259235987,
+      "candidateTwoBoundaryRms": 9.42776159512718,
+      "algebraicTwoBoundaryOptimumPaintedPx": [
+        -2.7012897579530244,
+        8.26617963033926
+      ],
+      "notAFixRecommendation": true
+    },
+    "bboxMin": {
+      "baseline39to40NativeHalfPx": [
+        2.3263126049288445,
+        -8.305250419715385
+      ],
+      "baseline47to0NativeHalfPx": [
+        2.163156302464415,
+        1.1631563024644223
+      ],
+      "candidateLastRowPlus8PaintedPx39to40": [
+        2.3263126049288445,
+        1.0000000000000036
+      ],
+      "candidateLastRowPlus8PaintedPx47to0": [
+        2.163156302464415,
+        -8.142094117250966
+      ],
+      "baselineTwoBoundaryRms": 6.341178622420584,
+      "candidateTwoBoundaryRms": 6.2203163962500785,
+      "algebraicTwoBoundaryOptimumPaintedPx": [
+        -0.07013515815490312,
+        4.070135158154899
+      ],
+      "notAFixRecommendation": true
+    },
+    "bboxMax": {
+      "baseline39to40NativeHalfPx": [
+        0.9789378147865477,
+        -18.610500839430784
+      ],
+      "baseline47to0NativeHalfPx": [
+        1.3263126049288303,
+        2.3263126049288587
+      ],
+      "candidateLastRowPlus8PaintedPx39to40": [
+        0.9789378147865477,
+        -9.305250419715396
+      ],
+      "candidateLastRowPlus8PaintedPx47to0": [
+        1.3263126049288303,
+        -6.97893781478653
+      ],
+      "baselineTwoBoundaryRms": 13.31314944334204,
+      "candidateTwoBoundaryRms": 8.306945370215308,
+      "algebraicTwoBoundaryOptimumPaintedPx": [
+        0.14932420922548686,
+        9.000000000000009
+      ],
+      "notAFixRecommendation": true
+    }
+  },
+  "selectedLocalProxies": {
+    "0": {
+      "crownBBoxY": 10,
+      "centroid": [
+        81.92408599538443,
+        85.96489736426577
+      ],
+      "crownBand": [
+        86.75879396984925,
+        23.842546063651593
+      ],
+      "lowerBand": [
+        80.41547619047618,
+        157.02142857142857
+      ]
+    },
+    "16": {
+      "crownBBoxY": 13,
+      "centroid": [
+        81.82843839541547,
+        90.58440783190066
+      ],
+      "crownBand": [
+        86.44684129429892,
+        27.529275808936827
+      ],
+      "lowerBand": [
+        80.82854406130268,
+        166.02586206896552
+      ]
+    },
+    "23": {
+      "crownBBoxY": 14,
+      "centroid": [
+        79.91347219144693,
+        92.31442499446045
+      ],
+      "crownBand": [
+        83.76685170499603,
+        27.6304520222046
+      ],
+      "lowerBand": [
+        92.92881355932204,
+        165.44858757062147
+      ]
+    },
+    "39": {
+      "crownBBoxY": 17,
+      "centroid": [
+        78.27797408716137,
+        91.65999214762466
+      ],
+      "crownBand": [
+        82.37957911145752,
+        31.279812938425565
+      ],
+      "lowerBand": [
+        74.70057306590257,
+        175.98567335243553
+      ]
+    },
+    "40": {
+      "crownBBoxY": 9,
+      "centroid": [
+        81.74968851233491,
+        85.09705955644156
+      ],
+      "crownBand": [
+        86.7566909975669,
+        22.942416869424168
+      ],
+      "lowerBand": [
+        79.1856846473029,
+        159.9149377593361
+      ]
+    },
+    "47": {
+      "crownBBoxY": 9,
+      "centroid": [
+        78.97302481716821,
+        85.19134396355354
+      ],
+      "crownBand": [
+        82.2900641025641,
+        22.737179487179485
+      ],
+      "lowerBand": [
+        81.62208713272543,
+        156.27355623100303
+      ]
+    }
+  },
+  "limits": [
+    "Alpha shape descriptors are not semantic head/torso/belt/foot landmarks.",
+    "Changing-band membership, garment shape and pose changes affect these measurements.",
+    "Empty gutter contains no unique authored frame-boundary marker. Row decoding vs shared whole-drawing displacement is not identifiable from opacity gap alone.",
+    "Counterfactual adds metadata displacement numerically only; no PNG, rect, player or calibration changed."
+  ],
+  "recommendation": "No rigid row-origin correction justified by these proxies alone; await semantic multi-landmark evidence and both boundary checks."
+}

@@ -1,0 +1,43 @@
+{
+  "status": "APPEARANCE-AND-PILOT-MOVEMENT-ACCEPTED-IMAGE-QUALITY-REJECTED",
+  "reviewedPage": "http://localhost:5322/semantic-pivot-trial/review.html",
+  "reviewedTrialRootCommit": "3a52813",
+  "userQuote": "Да, хорошо, почти идеально -- только изображение дребезжит и дёргается",
+  "acceptedScope": [
+    "painted appearance and illustration style",
+    "movement of the head-registered single-direction pilot loop"
+  ],
+  "notAccepted": [
+    "image flicker/swimming/blur and final visual quality",
+    "physical foot contact",
+    "all six walking directions",
+    "in-game integration",
+    "release candidate"
+  ],
+  "paintedRaw": {
+    "path": "art/ruta-native-painted-sprites-v2/full48/painted-sheet-v1.png",
+    "sha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb"
+  },
+  "canonicalReference": {
+    "path": "public/assets/characters-v1/ruta-idle-pilot.png",
+    "sha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1"
+  },
+  "preservationRule": "Preserve this accepted identity/outfit/palette while correcting motion. Do not silently substitute the 3D study appearance or claim a metadata test accepted by the user.",
+  "runtimeEnabled": false,
+  "reviews": [
+    {
+      "page": "http://localhost:5322/semantic-pivot-trial/review.html",
+      "trialCommit": "3a52813",
+      "userQuote": "Да, хорошо, почти идеально -- только изображение дребезжит и дёргается",
+      "accepted": "appearance only; motion rejected"
+    },
+    {
+      "page": "http://localhost:5311/art/ruta-native-painted-sprites-v2/packing/head-pivot-trial/review.html",
+      "trialCommit": "34f8384",
+      "userQuote": "да хорошо -- движения нормально, но само изображение МЕРЦАЕТ, и плывёт -- картинка не чёткая и дребезжащая",
+      "accepted": "single-direction head-registered pilot movement; rendered image quality rejected"
+    }
+  ],
+  "latestReviewedPage": "http://localhost:5311/art/ruta-native-painted-sprites-v2/packing/head-pivot-trial/review.html",
+  "latestReviewedTrialRootCommit": "34f8384"
+}

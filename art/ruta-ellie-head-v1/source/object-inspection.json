@@ -1,0 +1,4388 @@
+{
+  "objects": [
+    {
+      "name": "CUR-fannypack_strap",
+      "type": "CURVE",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie"
+    },
+    {
+      "name": "GEO-ellie_body",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 2110,
+      "polygons": 2072,
+      "shapeKeys": [
+        "Basis",
+        "KneeBend125.L",
+        "KneeBend125.R",
+        "Elbow90.L",
+        "Elbow90.R",
+        "Lengthen_Base"
+      ],
+      "materials": [
+        "ellie.skin"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Left Arm",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Right Arm",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Left Leg",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Right Leg",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Belly",
+        "DEF-RibCage",
+        "DEF-Chest",
+        "DEF-Finger_Index3.L",
+        "DEF-Finger_Index2.L",
+        "DEF-Finger_Index1.L",
+        "DEF-Finger_Index_Carpal.L",
+        "DEF-Finger_Middle3.L",
+        "DEF-Finger_Middle2.L",
+        "DEF-Finger_Middle1.L",
+        "DEF-Finger_Middle_Carpal.L",
+        "DEF-Finger_Ring3.L",
+        "DEF-Finger_Ring2.L",
+        "DEF-Finger_Ring1.L",
+        "DEF-Finger_Ring_Carpal.L",
+        "DEF-Finger_Pinky3.L",
+        "DEF-Finger_Pinky2.L",
+        "DEF-Finger_Pinky1.L",
+        "DEF-Finger_Pinky_Carpal.L",
+        "DEF-Finger_Thumb3.L",
+        "DEF-Finger_Thumb2.L",
+        "DEF-Finger_Thumb1.L",
+        "DEF-Wrist.L",
+        "DEF-Forearm2.L",
+        "DEF-Forearm1.L",
+        "DEF-UpperArm1.L",
+        "DEF-UpperArm2.L",
+        "DEF-Shoulder.L",
+        "DEF-Forearm1.R",
+        "DEF-Knee1.L",
+        "DEF-Thigh1.L",
+        "DEF-Thigh2.L",
+        "DEF-Spine",
+        "DEF-Finger_Index3.R",
+        "DEF-Finger_Index2.R",
+        "DEF-Finger_Index1.R",
+        "DEF-Finger_Index_Carpal.R",
+        "DEF-Finger_Middle3.R",
+        "DEF-Finger_Middle2.R",
+        "DEF-Finger_Middle1.R",
+        "DEF-Finger_Middle_Carpal.R",
+        "DEF-Finger_Ring3.R",
+        "DEF-Finger_Ring2.R",
+        "DEF-Finger_Ring1.R",
+        "DEF-Finger_Ring_Carpal.R",
+        "DEF-Finger_Pinky3.R",
+        "DEF-Finger_Pinky2.R",
+        "DEF-Finger_Pinky1.R",
+        "DEF-Finger_Pinky_Carpal.R",
+        "DEF-Finger_Thumb3.R",
+        "DEF-Finger_Thumb2.R",
+        "DEF-Finger_Thumb1.R",
+        "DEF-Wrist.R",
+        "DEF-Forearm2.R",
+        "DEF-UpperArm1.R",
+        "DEF-UpperArm2.R",
+        "DEF-Shoulder.R",
+        "DEF-Knee1.R",
+        "DEF-Thigh1.R",
+        "DEF-Thigh2.R",
+        "Side.L",
+        "Side.R",
+        "Mask Left Arm",
+        "Mask Right Arm",
+        "Mask Left Leg",
+        "Mask Right Leg"
+      ]
+    },
+    {
+      "name": "GEO-ellie_boots",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 9244,
+      "polygons": 8574,
+      "shapeKeys": [
+        "Basis",
+        "BootX90.L",
+        "BootX90.R"
+      ],
+      "materials": [
+        "ellie.shoes_leather",
+        "ellie.socks",
+        "ellie.shoes_metal",
+        "ellie.shoes_loop",
+        "ellie.shoes_laces",
+        "ellie.shoes_soles_side",
+        "ellie.shoes_soles_underneath",
+        "ellie.shoes_seam",
+        "ellie.shoes_inner"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Left Leg",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Right Leg",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice R",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Toes.L",
+        "DEF-Foot.L",
+        "DEF-Knee2.L",
+        "DEF-Toes.R",
+        "DEF-Foot.R",
+        "DEF-Knee2.R",
+        "DEF-Knee1.L",
+        "DEF-Knee1.R",
+        "Side.L",
+        "Side.R",
+        "Mask Left Leg",
+        "Mask Right Leg"
+      ]
+    },
+    {
+      "name": "GEO-ellie_earrings",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 372,
+      "polygons": 372,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.earrings",
+        "ellie.earrings_metal"
+      ],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Earring.L",
+        "DEF-Earring.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_eye.L",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 610,
+      "polygons": 640,
+      "shapeKeys": [
+        "Basis",
+        "iris_shrink.L",
+        "iris_grow.L",
+        "iris_narrow.L",
+        "iris_wide.L"
+      ],
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Mask",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        },
+        {
+          "type": "NORMAL_EDIT",
+          "name": "NormalEdit",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eye.L"
+      ]
+    },
+    {
+      "name": "GEO-ellie_eye.R",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 610,
+      "polygons": 640,
+      "shapeKeys": [
+        "Basis",
+        "iris_shrink.R",
+        "iris_grow,R",
+        "iris_narrow.R",
+        "iris_wide.R"
+      ],
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice.R",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Mask",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        },
+        {
+          "type": "NORMAL_EDIT",
+          "name": "NormalEdit",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eye.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_eye_highlights",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 64,
+      "polygons": 2,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.highlights"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Mask",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eye_Highlight.L",
+        "DEF-Eye_Highlight.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_eyebrows",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 212,
+      "polygons": 208,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.eyebrows"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Mask",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eyebrow1.L",
+        "DEF-Eyebrow2.L",
+        "DEF-Eyebrow3.L",
+        "DEF-Eyebrow4.L",
+        "DEF-Eyebrow5.L",
+        "DEF-Eyebrow1.R",
+        "DEF-Eyebrow2.R",
+        "DEF-Eyebrow3.R",
+        "DEF-Eyebrow4.R",
+        "DEF-Eyebrow5.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_eyelash_deform_helper",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 36,
+      "polygons": 16,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Mask",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "DEF-BrowRing2.L",
+        "DEF-BrowRing2.R",
+        "DEF-Cheek2_4.L",
+        "mask_lattice"
+      ]
+    },
+    {
+      "name": "GEO-ellie_eyelash_helper",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 160,
+      "polygons": 128,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SHRINKWRAP",
+          "name": "Shrinkwrap",
+          "armature": null
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Cheek.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Cheek.R",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Lips",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Lips.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Lips.R",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head",
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower3.L",
+        "DEF-Eyelid_Lower2.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower4.L",
+        "DEF-Eye_Ring_Lower3.L",
+        "DEF-Eye_Ring_Lower2.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Cheek1_2.L",
+        "DEF-Cheek2_1.L",
+        "DEF-Cheek1_1.L",
+        "DEF-Nose_Mid",
+        "DEF-OuterLip_Upper2.L",
+        "DEF-OuterLip_Upper1.L",
+        "DEF-Cheek2_2.L",
+        "DEF-OuterLip_Upper",
+        "DEF-Nostril.L",
+        "DEF-Nose_Tip",
+        "DEF-Nostril.R",
+        "DEF-Nose_Base",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower3.R",
+        "DEF-Eyelid_Lower2.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower4.R",
+        "DEF-Eye_Ring_Lower3.R",
+        "DEF-Eye_Ring_Lower2.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "DEF-Cheek1_2.R",
+        "DEF-Cheek2_1.R",
+        "DEF-Cheek1_1.R",
+        "DEF-OuterLip_Upper2.R",
+        "DEF-OuterLip_Upper1.R",
+        "DEF-Cheek2_2.R",
+        "DEF-Eyebrow_Mid",
+        "DEF-ForeheadRing",
+        "DEF-ForeheadRing1.L",
+        "DEF-ForeheadRing1.R",
+        "DEF-ForeheadRing2.L",
+        "DEF-ForeheadRing2.R",
+        "DEF-HeadSide2.L",
+        "DEF-HeadSide2.R",
+        "DEF-OuterLip_Lower2.L",
+        "DEF-OuterLip_Lower2.R",
+        "DEF-Bridge_Chin",
+        "DEF-OuterLip_Lower",
+        "DEF-Bridge_Chin2_1.L",
+        "DEF-Bridge_Chin1_1.L",
+        "DEF-OuterLip_Lower1.L",
+        "DEF-ForeheadRing3.L",
+        "DEF-Cheek3_1.L",
+        "DEF-JawLine2.L",
+        "DEF-JawLine3.L",
+        "DEF-Chin",
+        "DEF-JawLine2.R",
+        "DEF-JawLine3.R",
+        "DEF-Bridge_Lower_Chin",
+        "DEF-Bridge_Chin2_2.L",
+        "DEF-Cheek3_2.L",
+        "DEF-Bridge_Chin2_1.R",
+        "DEF-Bridge_Chin1_1.R",
+        "DEF-OuterLip_Lower1.R",
+        "DEF-ForeheadRing3.R",
+        "DEF-Cheek3_1.R",
+        "DEF-Bridge_Chin2_2.R",
+        "DEF-Cheek3_2.R",
+        "DEF-BrowRing3.L",
+        "DEF-BrowRing1.L",
+        "DEF-BrowRing2.L",
+        "DEF-BrowRing3.R",
+        "DEF-BrowRing1.R",
+        "DEF-BrowRing2.R",
+        "DEF-Lip_Top2.L",
+        "DEF-Lip_Top2.R",
+        "DEF-Lip_Bottom2.L",
+        "DEF-Lip_Bottom1.L",
+        "DEF-Lip_Bottom2.R",
+        "DEF-Lip_Bottom1.R",
+        "DEF-Lip_Top1.L",
+        "DEF-Lip_Top1.R",
+        "DEF-OuterLip.L",
+        "DEF-OuterLip.R",
+        "DEF-NoseBridge1",
+        "DEF-Ear1.L",
+        "DEF-Ear.L",
+        "DEF-Ear3.L",
+        "DEF-Ear2.L",
+        "DEF-Ear1.R",
+        "DEF-Ear.R",
+        "DEF-Ear3.R",
+        "DEF-Ear2.R",
+        "DEF-HeadSide1.L",
+        "DEF-HeadSide1.R",
+        "DEF-JawLine4.L",
+        "DEF-JawLine4.R",
+        "DEF-Neck",
+        "DEF-Chest",
+        "DEF-Jaw",
+        "DEF-Cheek2_3.L",
+        "DEF-Cheek2_3.R",
+        "DEF-Cheek2_4.L",
+        "DEF-Chin_Main",
+        "DEF-Lip_Corner.L",
+        "DEF-Lip_Corner.R",
+        "shrinkwrap",
+        "DEF-NoseBridge1.L",
+        "DEF-NoseBridge1.R",
+        "smooth_weights",
+        "DEF-Bridge_Chin1_2.L",
+        "DEF-Bridge_Chin1_2.R",
+        "mask_lattice",
+        "corrective_smooth",
+        "DEF-Head_Top",
+        "DEF-Cheek2_4.R",
+        "lattice_neckhead"
+      ]
+    },
+    {
+      "name": "GEO-ellie_eyelashes",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 72,
+      "polygons": 70,
+      "shapeKeys": [
+        "Basis",
+        "Tweak",
+        "GapFix"
+      ],
+      "materials": [
+        "ellie.eyelashes"
+      ],
+      "modifiers": [
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "armature": null
+        },
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SHRINKWRAP",
+          "name": "Shrinkwrap Clipping Fix",
+          "armature": null
+        },
+        {
+          "type": "SHRINKWRAP",
+          "name": "Shrinkwrap",
+          "armature": null
+        },
+        {
+          "type": "SOLIDIFY",
+          "name": "Solidify",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Mask",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Eyelash.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Eyelash.R",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Lower1.R",
+        "shrinkwrap",
+        "DEF-Eyelash1.L",
+        "DEF-Eyelash1.R",
+        "DEF-Eyelash2.L",
+        "DEF-Eyelash2.R",
+        "DEF-Eyelash3.L",
+        "DEF-Eyelash3.R",
+        "DEF-Eyelash4.L",
+        "DEF-Eyelash4.R",
+        "mask",
+        "Side.L",
+        "Side.R",
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelash5.L",
+        "DEF-Eyelash5.R",
+        "clipping"
+      ]
+    },
+    {
+      "name": "GEO-ellie_face_line1",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 34,
+      "polygons": 16,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.face_lines"
+      ],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Line1_2.L",
+        "DEF-Line1_1.L",
+        "DEF-Line1_2.R",
+        "DEF-Line1_1.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_face_line2",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 34,
+      "polygons": 16,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.face_lines"
+      ],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Line2_1.L",
+        "DEF-Line2_2.L",
+        "DEF-Line2_1.R",
+        "DEF-Line2_2.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_buckle_ext",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 616,
+      "polygons": 620,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fanny_pack_buckle"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-FannyPack_Buckle_Outer"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_buckle_int",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 746,
+      "polygons": 744,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fanny_pack_buckle"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-FannyPack_Buckle_Inner",
+        "DEF-FannyPack_Buckle_Calmp_Top",
+        "DEF-FannyPack_Buckle_Calmp_Bottom"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_main",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 800,
+      "polygons": 796,
+      "shapeKeys": [
+        "Basis",
+        "OpenDown",
+        "OpenForward",
+        "OpenTop",
+        "OpenTopMore",
+        "Thinner",
+        "Key 6"
+      ],
+      "materials": [
+        "ellie.fannypack_magenta",
+        "ellie.fannypack_green",
+        "ellie.fannypack_purple"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Front",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Top",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "top_open",
+        "outer",
+        "innterior",
+        "DEF-FannyPack1",
+        "DEF-FannyPack2",
+        "DEF-FannyPack3",
+        "DEF-FannyPack4",
+        "upperzip",
+        "upperpart",
+        "lowerzip",
+        "front bag",
+        "bothzips",
+        "OpeningGradient",
+        "OpeningMask"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_strap",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 740,
+      "polygons": 736,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fannypack_purple"
+      ],
+      "modifiers": [
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-FannyPack7",
+        "DEF-FannyPack1",
+        "DEF-FannyPack5",
+        "DEF-FannyPack4",
+        "Mask End",
+        "DEF-FannyPack5_2",
+        "DEF-FannyPack7_2",
+        "DEF-FannyPack_Strap_Ring_Inner",
+        "DEF-FannyPack_Strap_Ring_Outer"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_strap_cap",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 48,
+      "polygons": 40,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fannypack_purple"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Fannypack_End2",
+        "DEF-Fannypack_End1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_strap_end",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": null,
+      "vertices": 28,
+      "polygons": 14,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fannypack_purple"
+      ],
+      "modifiers": [
+        {
+          "type": "ARRAY",
+          "name": "Array",
+          "armature": null
+        },
+        {
+          "type": "CURVE",
+          "name": "Curve",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Fannypack_End2",
+        "DEF-Fannypack_End1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_strap_slide",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 160,
+      "polygons": 160,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fanny_pack_black"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-FannyPack7"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_zipper_combined_deformer",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 209,
+      "polygons": 180,
+      "shapeKeys": [
+        "Basis",
+        "OpenDown",
+        "OpenForward",
+        "OpenTop",
+        "OpenTopMore",
+        "PostBind"
+      ],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "top_open",
+        "outer",
+        "innterior",
+        "DEF-FannyPack1",
+        "DEF-FannyPack2",
+        "DEF-FannyPack3",
+        "DEF-FannyPack4",
+        "upperzip",
+        "upperpart",
+        "lowerzip",
+        "front bag",
+        "bothzips",
+        "OpeningGradient",
+        "OpeningMask"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_zipper_lower_deformer",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 216,
+      "polygons": 187,
+      "shapeKeys": [
+        "Basis",
+        "OpenDown",
+        "OpenForward",
+        "OpenTop",
+        "OpenTopMore",
+        "PostBind"
+      ],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "top_open",
+        "outer",
+        "innterior",
+        "DEF-FannyPack1",
+        "DEF-FannyPack2",
+        "DEF-FannyPack3",
+        "DEF-FannyPack4",
+        "upperzip",
+        "upperpart",
+        "lowerzip",
+        "front bag",
+        "bothzips",
+        "OpeningGradient",
+        "OpeningMask"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_zipper_pull",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 376,
+      "polygons": 364,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fannypack_zipper"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Fannypack_Zipper_Slider",
+        "DEF-Fannypack_Zipper_Tab",
+        "Fannypack_Zipper_Slider"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_zipper_stop",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 110,
+      "polygons": 108,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.fannypack_zipper"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-FannyPack4"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_zipper_upper_deformer",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 187,
+      "polygons": 159,
+      "shapeKeys": [
+        "Basis",
+        "OpenDown",
+        "OpenForward",
+        "OpenTop",
+        "OpenTopMore",
+        "PostBind"
+      ],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "top_open",
+        "outer",
+        "innterior",
+        "DEF-FannyPack1",
+        "DEF-FannyPack2",
+        "DEF-FannyPack3",
+        "DEF-FannyPack4",
+        "upperzip",
+        "upperpart",
+        "lowerzip",
+        "front bag",
+        "bothzips",
+        "OpeningGradient",
+        "OpeningMask"
+      ]
+    },
+    {
+      "name": "GEO-ellie_fannypack_zippers",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 2500,
+      "polygons": 2400,
+      "shapeKeys": [
+        "Basis",
+        "OpenDown",
+        "OpenForward",
+        "OpenTop",
+        "OpenTopMore",
+        "Thinner",
+        "Key 6"
+      ],
+      "materials": [
+        "ellie.fannypack_zipper"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "SurfaceDeform",
+          "armature": null
+        },
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "SurfaceDeform OpenableTop",
+          "armature": null
+        },
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "SurfaceDeform OpenableBot",
+          "armature": null
+        },
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Front",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Top",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "top_open",
+        "outer",
+        "innterior",
+        "DEF-FannyPack1",
+        "DEF-FannyPack2",
+        "DEF-FannyPack3",
+        "DEF-FannyPack4",
+        "upperzip",
+        "upperpart",
+        "lowerzip",
+        "front bag",
+        "bothzips",
+        "OpeningGradient",
+        "OpeningMask"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 7364,
+      "polygons": 6938,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.hair_mesh"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top",
+        "DEF-Ponytail2",
+        "DEF-Ponytail1",
+        "DEF-Ponytail3",
+        "DEF-Ponytail4",
+        "DEF-Ponytail5",
+        "DEF-Head",
+        "DEF-Ponytail6",
+        "DEF-Hair_Side.L",
+        "DEF-Hair_Front4",
+        "DEF-Hair_Front3",
+        "DEF-Hair_Front2",
+        "DEF-Hair_Front1",
+        "DEF-Hair_Side.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.groom_base",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 4719,
+      "polygons": 4397,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.hair"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head",
+        "DEF-Ponytail2",
+        "DEF-Ponytail1",
+        "DEF-Ponytail3",
+        "DEF-Ponytail4",
+        "DEF-Ponytail5",
+        "DEF-Head_Top",
+        "DEF-Ponytail6",
+        "DEF-Hair_Side.L",
+        "DEF-Hair_Front4",
+        "DEF-Hair_Front3",
+        "DEF-Hair_Front2",
+        "DEF-Hair_Front1",
+        "DEF-Hair_Side.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.scalp",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 1659,
+      "polygons": 1636,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.hair_particles"
+      ],
+      "modifiers": [
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ellie_hair.front",
+          "armature": null
+        },
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ellie_hair.back",
+          "armature": null
+        },
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ellie_hair.ponytail",
+          "armature": null
+        },
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ellie_hair.loose",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head",
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower3.L",
+        "DEF-Eyelid_Lower2.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower4.L",
+        "DEF-Eye_Ring_Lower3.L",
+        "DEF-Eye_Ring_Lower2.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Cheek1_2.L",
+        "DEF-Cheek2_1.L",
+        "DEF-Cheek1_1.L",
+        "DEF-Nose_Mid",
+        "DEF-OuterLip_Upper2.L",
+        "DEF-OuterLip_Upper1.L",
+        "DEF-Cheek2_2.L",
+        "DEF-OuterLip_Upper",
+        "DEF-Nostril.L",
+        "DEF-Nose_Tip",
+        "DEF-Nostril.R",
+        "DEF-Nose_Base",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower3.R",
+        "DEF-Eyelid_Lower2.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower4.R",
+        "DEF-Eye_Ring_Lower3.R",
+        "DEF-Eye_Ring_Lower2.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "DEF-Cheek1_2.R",
+        "DEF-Cheek2_1.R",
+        "DEF-Cheek1_1.R",
+        "DEF-OuterLip_Upper2.R",
+        "DEF-OuterLip_Upper1.R",
+        "DEF-Cheek2_2.R",
+        "DEF-Eyebrow_Mid",
+        "DEF-ForeheadRing",
+        "DEF-ForeheadRing1.L",
+        "DEF-ForeheadRing1.R",
+        "DEF-ForeheadRing2.L",
+        "DEF-ForeheadRing2.R",
+        "DEF-HeadSide2.L",
+        "DEF-HeadSide2.R",
+        "DEF-OuterLip_Lower2.L",
+        "DEF-OuterLip_Lower2.R",
+        "DEF-Bridge_Chin",
+        "DEF-OuterLip_Lower",
+        "DEF-Bridge_Chin2_1.L",
+        "DEF-Bridge_Chin1_1.L",
+        "DEF-OuterLip_Lower1.L",
+        "DEF-ForeheadRing3.L",
+        "DEF-Cheek3_1.L",
+        "DEF-JawLine2.L",
+        "DEF-JawLine3.L",
+        "DEF-Chin",
+        "DEF-JawLine2.R",
+        "DEF-JawLine3.R",
+        "DEF-Bridge_Lower_Chin",
+        "DEF-Bridge_Chin2_2.L",
+        "DEF-Cheek3_2.L",
+        "DEF-Bridge_Chin2_1.R",
+        "DEF-Bridge_Chin1_1.R",
+        "DEF-OuterLip_Lower1.R",
+        "DEF-ForeheadRing3.R",
+        "DEF-Cheek3_1.R",
+        "DEF-Bridge_Chin2_2.R",
+        "DEF-Cheek3_2.R",
+        "DEF-BrowRing3.L",
+        "DEF-BrowRing1.L",
+        "DEF-BrowRing2.L",
+        "DEF-BrowRing3.R",
+        "DEF-BrowRing1.R",
+        "DEF-BrowRing2.R",
+        "DEF-Lip_Top2.L",
+        "DEF-Lip_Top2.R",
+        "DEF-Lip_Bottom2.L",
+        "DEF-Lip_Bottom1.L",
+        "DEF-Lip_Bottom2.R",
+        "DEF-Lip_Bottom1.R",
+        "DEF-Lip_Top1.L",
+        "DEF-Lip_Top1.R",
+        "DEF-OuterLip.L",
+        "DEF-OuterLip.R",
+        "DEF-NoseBridge1",
+        "DEF-Ear1.L",
+        "DEF-Ear.L",
+        "DEF-Ear3.L",
+        "DEF-Ear2.L",
+        "DEF-Ear1.R",
+        "DEF-Ear.R",
+        "DEF-Ear3.R",
+        "DEF-Ear2.R",
+        "DEF-HeadSide1.L",
+        "DEF-HeadSide1.R",
+        "DEF-JawLine4.L",
+        "DEF-JawLine4.R",
+        "DEF-Neck",
+        "DEF-Chest",
+        "DEF-Jaw",
+        "DEF-Cheek2_3.L",
+        "DEF-Cheek2_3.R",
+        "DEF-Cheek2_4.L",
+        "DEF-Chin_Main",
+        "DEF-Lip_Corner.L",
+        "DEF-Lip_Corner.R",
+        "shrinkwrap",
+        "DEF-NoseBridge1.L",
+        "DEF-NoseBridge1.R",
+        "smooth_weights",
+        "DEF-Bridge_Chin1_2.L",
+        "DEF-Bridge_Chin1_2.R",
+        "mask_lattice",
+        "corrective_smooth",
+        "mask_scalp"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-back",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 546,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-front",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 255,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top",
+        "DEF-Hair_Side.R",
+        "DEF-Hair_Front1",
+        "DEF-Hair_Front3",
+        "DEF-Hair_Front2",
+        "DEF-Hair_Front4",
+        "DEF-Hair_Side.L"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-loose",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 475,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top",
+        "DEF-Ponytail2",
+        "DEF-Ponytail3",
+        "DEF-Ponytail1",
+        "DEF-Hair_Side.R",
+        "DEF-Hair_Front1",
+        "DEF-Hair_Front2",
+        "DEF-Hair_Front3",
+        "DEF-Hair_Front4",
+        "DEF-Hair_Side.L",
+        "deleteme"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair.scalp-ponytail",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 438,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Ponytail2",
+        "DEF-Ponytail3",
+        "DEF-Ponytail4",
+        "DEF-Ponytail5",
+        "DEF-Head_Top"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair_cut",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 9969,
+      "polygons": 9657,
+      "shapeKeys": [
+        "Basis",
+        "Key 1"
+      ],
+      "materials": [
+        "ellie.hair_mesh"
+      ],
+      "modifiers": [
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top",
+        "small strands",
+        "DEF-Hair_Cut_Back3",
+        "DEF-Hair_Cut_Back2",
+        "DEF-Hair_Cut_Back1",
+        "DEF-Hair_Cut_Front5",
+        "DEF-Hair_Cut_Front4",
+        "DEF-Hair_Cut_Front3",
+        "DEF-Hair_Cut_Front2",
+        "DEF-Hair_Cut_Front1",
+        "DEF-Hair_Side.R",
+        "DEF-Hair_Side.L",
+        "DEF-Hair_Cut_Top1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 1659,
+      "polygons": 1636,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.hair_particles"
+      ],
+      "modifiers": [
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ellie_hair_cut.front",
+          "armature": null
+        },
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ellie_hair_cut.back",
+          "armature": null
+        },
+        {
+          "type": "PARTICLE_SYSTEM",
+          "name": "ellie_hair_cut.loose",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head",
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower3.L",
+        "DEF-Eyelid_Lower2.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower4.L",
+        "DEF-Eye_Ring_Lower3.L",
+        "DEF-Eye_Ring_Lower2.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Cheek1_2.L",
+        "DEF-Cheek2_1.L",
+        "DEF-Cheek1_1.L",
+        "DEF-Nose_Mid",
+        "DEF-OuterLip_Upper2.L",
+        "DEF-OuterLip_Upper1.L",
+        "DEF-Cheek2_2.L",
+        "DEF-OuterLip_Upper",
+        "DEF-Nostril.L",
+        "DEF-Nose_Tip",
+        "DEF-Nostril.R",
+        "DEF-Nose_Base",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower3.R",
+        "DEF-Eyelid_Lower2.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower4.R",
+        "DEF-Eye_Ring_Lower3.R",
+        "DEF-Eye_Ring_Lower2.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "DEF-Cheek1_2.R",
+        "DEF-Cheek2_1.R",
+        "DEF-Cheek1_1.R",
+        "DEF-OuterLip_Upper2.R",
+        "DEF-OuterLip_Upper1.R",
+        "DEF-Cheek2_2.R",
+        "DEF-Eyebrow_Mid",
+        "DEF-ForeheadRing",
+        "DEF-ForeheadRing1.L",
+        "DEF-ForeheadRing1.R",
+        "DEF-ForeheadRing2.L",
+        "DEF-ForeheadRing2.R",
+        "DEF-HeadSide2.L",
+        "DEF-HeadSide2.R",
+        "DEF-OuterLip_Lower2.L",
+        "DEF-OuterLip_Lower2.R",
+        "DEF-Bridge_Chin",
+        "DEF-OuterLip_Lower",
+        "DEF-Bridge_Chin2_1.L",
+        "DEF-Bridge_Chin1_1.L",
+        "DEF-OuterLip_Lower1.L",
+        "DEF-ForeheadRing3.L",
+        "DEF-Cheek3_1.L",
+        "DEF-JawLine2.L",
+        "DEF-JawLine3.L",
+        "DEF-Chin",
+        "DEF-JawLine2.R",
+        "DEF-JawLine3.R",
+        "DEF-Bridge_Lower_Chin",
+        "DEF-Bridge_Chin2_2.L",
+        "DEF-Cheek3_2.L",
+        "DEF-Bridge_Chin2_1.R",
+        "DEF-Bridge_Chin1_1.R",
+        "DEF-OuterLip_Lower1.R",
+        "DEF-ForeheadRing3.R",
+        "DEF-Cheek3_1.R",
+        "DEF-Bridge_Chin2_2.R",
+        "DEF-Cheek3_2.R",
+        "DEF-BrowRing3.L",
+        "DEF-BrowRing1.L",
+        "DEF-BrowRing2.L",
+        "DEF-BrowRing3.R",
+        "DEF-BrowRing1.R",
+        "DEF-BrowRing2.R",
+        "DEF-Lip_Top2.L",
+        "DEF-Lip_Top2.R",
+        "DEF-Lip_Bottom2.L",
+        "DEF-Lip_Bottom1.L",
+        "DEF-Lip_Bottom2.R",
+        "DEF-Lip_Bottom1.R",
+        "DEF-Lip_Top1.L",
+        "DEF-Lip_Top1.R",
+        "DEF-OuterLip.L",
+        "DEF-OuterLip.R",
+        "DEF-NoseBridge1",
+        "DEF-Ear1.L",
+        "DEF-Ear.L",
+        "DEF-Ear3.L",
+        "DEF-Ear2.L",
+        "DEF-Ear1.R",
+        "DEF-Ear.R",
+        "DEF-Ear3.R",
+        "DEF-Ear2.R",
+        "DEF-HeadSide1.L",
+        "DEF-HeadSide1.R",
+        "DEF-JawLine4.L",
+        "DEF-JawLine4.R",
+        "DEF-Neck",
+        "DEF-Chest",
+        "DEF-Jaw",
+        "DEF-Cheek2_3.L",
+        "DEF-Cheek2_3.R",
+        "DEF-Cheek2_4.L",
+        "DEF-Chin_Main",
+        "DEF-Lip_Corner.L",
+        "DEF-Lip_Corner.R",
+        "shrinkwrap",
+        "DEF-NoseBridge1.L",
+        "DEF-NoseBridge1.R",
+        "smooth_weights",
+        "DEF-Bridge_Chin1_2.L",
+        "DEF-Bridge_Chin1_2.R",
+        "mask_lattice",
+        "corrective_smooth",
+        "mask_scalp"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp-back",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 1535,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top",
+        "small strands",
+        "DEF-Hair_Cut_Back3",
+        "DEF-Hair_Cut_Back2",
+        "DEF-Hair_Cut_Back1",
+        "DEF-Hair_Cut_Front5",
+        "DEF-Hair_Cut_Front4",
+        "DEF-Hair_Cut_Front3",
+        "DEF-Hair_Cut_Front2",
+        "DEF-Hair_Cut_Front1",
+        "DEF-Hair_Side.R",
+        "DEF-Hair_Side.L",
+        "DEF-Hair_Cut_Top1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp-front",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 830,
+      "polygons": 384,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top",
+        "small strands",
+        "DEF-Hair_Cut_Back3",
+        "DEF-Hair_Cut_Back2",
+        "DEF-Hair_Cut_Back1",
+        "DEF-Hair_Cut_Front5",
+        "DEF-Hair_Cut_Front4",
+        "DEF-Hair_Cut_Front3",
+        "DEF-Hair_Cut_Front2",
+        "DEF-Hair_Cut_Front1",
+        "DEF-Hair_Side.R",
+        "DEF-Hair_Side.L",
+        "DEF-Hair_Cut_Top1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_hair_cut.scalp-loose",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 1990,
+      "polygons": 936,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head_Top",
+        "DEF-Hair_Cut_Back3",
+        "DEF-Hair_Cut_Back2",
+        "DEF-Hair_Cut_Back1",
+        "DEF-Hair_Cut_Front5",
+        "DEF-Hair_Cut_Front4",
+        "DEF-Hair_Cut_Front3",
+        "DEF-Hair_Cut_Front2",
+        "DEF-Hair_Cut_Front1",
+        "DEF-Hair_Side.R",
+        "DEF-Hair_Side.L",
+        "DEF-Hair_Cut_Top1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_handkerchief",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 1758,
+      "polygons": 1716,
+      "shapeKeys": [
+        "Basis",
+        "UpperArmDown.L",
+        "UpperArmDown.R"
+      ],
+      "materials": [
+        "ellie.handkerchief"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice R",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Chest",
+        "DEF-Neck",
+        "DEF-Shoulder.L",
+        "DEF-Shoulder.R",
+        "mask",
+        "DEF-UpperArm1.L",
+        "DEF-Scarf.R",
+        "DEF-Handkerchief.L",
+        "DEF-Handkerchief.R",
+        "DEF-Handkerchief_Knot",
+        "DEF-Handkerchief_Back",
+        "lattice",
+        "DEF-Belly",
+        "DEF-UpperArm2.L",
+        "DEF-Spine",
+        "DEF-Sleeve1.R",
+        "Side.L",
+        "Side.R",
+        "DEF-Sleeve2.L",
+        "DEF-Sleeve_Elbow.L",
+        "DEF-Sleeve1.L",
+        "DEF-Sleeve2.R",
+        "DEF-Sleeve_Elbow.R",
+        "DEF-Collar1.L",
+        "DEF-Collar2.L",
+        "DEF-Collar_Back.L",
+        "DEF-Collar2.R",
+        "DEF-Collar1.R",
+        "DEF-UpperArm2.R",
+        "DEF-Scarf.L"
+      ]
+    },
+    {
+      "name": "GEO-ellie_handkerchief_weight_paint_helper",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 171,
+      "polygons": 144,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Belly",
+        "DEF-Chest",
+        "DEF-UpperArm1.L",
+        "DEF-UpperArm2.L",
+        "DEF-Shoulder.L",
+        "DEF-Spine",
+        "DEF-UpperArm1.R",
+        "DEF-Sleeve1.R",
+        "DEF-Shoulder.R",
+        "Side.L",
+        "Side.R",
+        "DEF-Sleeve2.L",
+        "DEF-Sleeve_Elbow.L",
+        "DEF-Sleeve1.L",
+        "DEF-Sleeve2.R",
+        "DEF-Sleeve_Elbow.R",
+        "DEF-Collar1.L",
+        "DEF-Collar2.L",
+        "DEF-Collar_Back.L",
+        "DEF-Collar2.R",
+        "DEF-Collar1.R",
+        "DEF-UpperArm2.R",
+        "DEF-Neck",
+        "mask",
+        "DEF-Handkerchief.L",
+        "DEF-Handkerchief.R",
+        "DEF-Handkerchief_Knot",
+        "DEF-Handkerchief_Back",
+        "lattice"
+      ]
+    },
+    {
+      "name": "GEO-ellie_head",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 1659,
+      "polygons": 1636,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.head",
+        "ellie.head_lips",
+        "ellie.mouth_inner",
+        "ellie.head_hair"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice NeckHead",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        },
+        {
+          "type": "SHRINKWRAP",
+          "name": "Shrinkwrap",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Mask",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Cheek.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Cheek.R",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Lips",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Lips.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Lips.R",
+          "armature": null
+        },
+        {
+          "type": "DATA_TRANSFER",
+          "name": "DataTransfer",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head",
+        "DEF-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower3.L",
+        "DEF-Eyelid_Lower2.L",
+        "DEF-Eyelid_Lower1.L",
+        "DEF-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper1.L",
+        "DEF-Eye_Ring_Lower4.L",
+        "DEF-Eye_Ring_Lower3.L",
+        "DEF-Eye_Ring_Lower2.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "DEF-Cheek1_2.L",
+        "DEF-Cheek2_1.L",
+        "DEF-Cheek1_1.L",
+        "DEF-Nose_Mid",
+        "DEF-OuterLip_Upper2.L",
+        "DEF-OuterLip_Upper1.L",
+        "DEF-Cheek2_2.L",
+        "DEF-OuterLip_Upper",
+        "DEF-Nostril.L",
+        "DEF-Nose_Tip",
+        "DEF-Nostril.R",
+        "DEF-Nose_Base",
+        "DEF-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower3.R",
+        "DEF-Eyelid_Lower2.R",
+        "DEF-Eyelid_Lower1.R",
+        "DEF-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper1.R",
+        "DEF-Eye_Ring_Lower4.R",
+        "DEF-Eye_Ring_Lower3.R",
+        "DEF-Eye_Ring_Lower2.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "DEF-Cheek1_2.R",
+        "DEF-Cheek2_1.R",
+        "DEF-Cheek1_1.R",
+        "DEF-OuterLip_Upper2.R",
+        "DEF-OuterLip_Upper1.R",
+        "DEF-Cheek2_2.R",
+        "DEF-Eyebrow_Mid",
+        "DEF-ForeheadRing",
+        "DEF-ForeheadRing1.L",
+        "DEF-ForeheadRing1.R",
+        "DEF-ForeheadRing2.L",
+        "DEF-ForeheadRing2.R",
+        "DEF-HeadSide2.L",
+        "DEF-HeadSide2.R",
+        "DEF-OuterLip_Lower2.L",
+        "DEF-OuterLip_Lower2.R",
+        "DEF-Bridge_Chin",
+        "DEF-OuterLip_Lower",
+        "DEF-Bridge_Chin2_1.L",
+        "DEF-Bridge_Chin1_1.L",
+        "DEF-OuterLip_Lower1.L",
+        "DEF-ForeheadRing3.L",
+        "DEF-Cheek3_1.L",
+        "DEF-JawLine2.L",
+        "DEF-JawLine3.L",
+        "DEF-Chin",
+        "DEF-JawLine2.R",
+        "DEF-JawLine3.R",
+        "DEF-Bridge_Lower_Chin",
+        "DEF-Bridge_Chin2_2.L",
+        "DEF-Cheek3_2.L",
+        "DEF-Bridge_Chin2_1.R",
+        "DEF-Bridge_Chin1_1.R",
+        "DEF-OuterLip_Lower1.R",
+        "DEF-ForeheadRing3.R",
+        "DEF-Cheek3_1.R",
+        "DEF-Bridge_Chin2_2.R",
+        "DEF-Cheek3_2.R",
+        "DEF-BrowRing3.L",
+        "DEF-BrowRing1.L",
+        "DEF-BrowRing2.L",
+        "DEF-BrowRing3.R",
+        "DEF-BrowRing1.R",
+        "DEF-BrowRing2.R",
+        "DEF-Lip_Top2.L",
+        "DEF-Lip_Top2.R",
+        "DEF-Lip_Bottom2.L",
+        "DEF-Lip_Bottom1.L",
+        "DEF-Lip_Bottom2.R",
+        "DEF-Lip_Bottom1.R",
+        "DEF-Lip_Top1.L",
+        "DEF-Lip_Top1.R",
+        "DEF-OuterLip.L",
+        "DEF-OuterLip.R",
+        "DEF-NoseBridge1",
+        "DEF-Ear1.L",
+        "DEF-Ear.L",
+        "DEF-Ear3.L",
+        "DEF-Ear2.L",
+        "DEF-Ear1.R",
+        "DEF-Ear.R",
+        "DEF-Ear3.R",
+        "DEF-Ear2.R",
+        "DEF-HeadSide1.L",
+        "DEF-HeadSide1.R",
+        "DEF-JawLine4.L",
+        "DEF-JawLine4.R",
+        "DEF-Neck",
+        "DEF-Chest",
+        "DEF-Jaw",
+        "DEF-Cheek2_3.L",
+        "DEF-Cheek2_3.R",
+        "DEF-Cheek2_4.L",
+        "DEF-Chin_Main",
+        "DEF-Lip_Corner.L",
+        "DEF-Lip_Corner.R",
+        "shrinkwrap",
+        "DEF-NoseBridge1.L",
+        "DEF-NoseBridge1.R",
+        "smooth_weights",
+        "DEF-Bridge_Chin1_2.L",
+        "DEF-Bridge_Chin1_2.R",
+        "mask_lattice",
+        "corrective_smooth",
+        "DEF-Head_Top",
+        "DEF-Cheek2_4.R",
+        "lattice_neckhead",
+        "mask"
+      ]
+    },
+    {
+      "name": "GEO-ellie_head_rig_helper",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 969,
+      "polygons": 958,
+      "shapeKeys": [
+        "Basis",
+        "Blink"
+      ],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Head",
+        "DEF-Neck",
+        "DEF-Chest",
+        "DEF-Jaw",
+        "DEF-Chin_Main",
+        "DEF-Chin_Center_Silhouette",
+        "DEF-Head_Top",
+        "DEF-Head_Bottom"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 5186,
+      "polygons": 5030,
+      "shapeKeys": [
+        "Basis",
+        "Elbow90.L",
+        "Elbow90.R",
+        "Elbow90to125.L",
+        "Elbow90to125.R"
+      ],
+      "materials": [
+        "ellie.denim",
+        "ellie.denim_inside"
+      ],
+      "modifiers": [
+        {
+          "type": "MASK",
+          "name": "Mask Collar",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth A Lot",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Armpit.L",
+          "armature": null
+        },
+        {
+          "type": "LATTICE",
+          "name": "Lattice Armpit.R",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Left Arm",
+          "armature": null
+        },
+        {
+          "type": "MASK",
+          "name": "Mask Right Arm",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Belly",
+        "DEF-Chest",
+        "DEF-UpperArm1.L",
+        "DEF-UpperArm2.L",
+        "DEF-Shoulder.L",
+        "DEF-Spine",
+        "DEF-UpperArm1.R",
+        "DEF-Sleeve1.R",
+        "DEF-Shoulder.R",
+        "mask",
+        "strong smooth",
+        "surfdef",
+        "Side.L",
+        "Side.R",
+        "DEF-Sleeve2.L",
+        "DEF-Sleeve_Elbow.L",
+        "DEF-Sleeve1.L",
+        "DEF-Sleeve2.R",
+        "DEF-Sleeve_Elbow.R",
+        "mask_collar",
+        "shrinkwrap",
+        "Mask Left Arm",
+        "Mask Right Arm",
+        "DEF-UpperArm2.R",
+        "DEF-Neck",
+        "lattice"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket_buttons",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 1590,
+      "polygons": 1632,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.buttons"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Button2",
+        "DEF-Button1",
+        "DEF-Button3"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket_pin_1",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 546,
+      "polygons": 576,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.pins_blue",
+        "ellie.pins_underside"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Pin4"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket_pin_2",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 546,
+      "polygons": 576,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.pins_gold",
+        "ellie.pins_underside"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Pin5"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket_pin_3",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 546,
+      "polygons": 576,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.pins_light",
+        "ellie.pins_underside"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Pin3"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket_pin_4",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 546,
+      "polygons": 576,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.pins_magenta",
+        "ellie.pins_underside"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Pin2"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket_pin_5",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 546,
+      "polygons": 576,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.pins_green",
+        "ellie.pins_underside"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Pin1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_jacket_weight_paint_helper",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 1091,
+      "polygons": 1033,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Belly",
+        "DEF-Chest",
+        "DEF-UpperArm1.L",
+        "DEF-UpperArm2.L",
+        "DEF-Shoulder.L",
+        "DEF-Spine",
+        "DEF-UpperArm1.R",
+        "DEF-Sleeve1.R",
+        "DEF-Shoulder.R",
+        "Side.L",
+        "Side.R",
+        "DEF-Sleeve2.L",
+        "DEF-Sleeve_Elbow.L",
+        "DEF-Sleeve1.L",
+        "DEF-Sleeve2.R",
+        "DEF-Sleeve_Elbow.R",
+        "DEF-Collar1.L",
+        "DEF-Collar2.L",
+        "DEF-Collar_Back.L",
+        "DEF-Collar2.R",
+        "DEF-Collar1.R",
+        "DEF-UpperArm2.R",
+        "DEF-Neck",
+        "mask",
+        "DEF-Handkerchief.L",
+        "DEF-Handkerchief.R",
+        "DEF-Handkerchief_Knot",
+        "DEF-Handkerchief_Back",
+        "lattice"
+      ]
+    },
+    {
+      "name": "GEO-ellie_scrunchy",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 895,
+      "polygons": 895,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.scrunchie"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Ponytail1"
+      ]
+    },
+    {
+      "name": "GEO-ellie_teeth_bot_deformer",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 22,
+      "polygons": 10,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SHRINKWRAP",
+          "name": "Shrinkwrap",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Gum_Lower1.L",
+        "DEF-Gum_Lower2.L",
+        "DEF-Gum_Lower2.R",
+        "DEF-Gum_Lower1.R",
+        "DEF-Teeth_Lower1.L",
+        "DEF-Teeth_Lower2.L",
+        "DEF-Teeth_Lower2.R",
+        "DEF-Teeth_Lower1.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_teeth_btm",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 678,
+      "polygons": 612,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "SurfaceDeform",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "GEO-ellie_teeth_top",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 678,
+      "polygons": 612,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ],
+      "modifiers": [
+        {
+          "type": "SURFACE_DEFORM",
+          "name": "SurfaceDeform",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "GEO-ellie_teeth_top_deformer",
+      "type": "MESH",
+      "hiddenRender": true,
+      "parent": "RIG-Ellie",
+      "vertices": 129,
+      "polygons": 84,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SHRINKWRAP",
+          "name": "Shrinkwrap",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Gum_Upper1.L",
+        "DEF-Gum_Upper2.L",
+        "DEF-Gum_Upper2.R",
+        "DEF-Gum_Upper1.R",
+        "DEF-Teeth_Upper1.L",
+        "DEF-Teeth_Upper2.L",
+        "DEF-Teeth_Upper2.R",
+        "DEF-Teeth_Upper1.R"
+      ]
+    },
+    {
+      "name": "GEO-ellie_tongue",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 169,
+      "polygons": 161,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.tongue"
+      ],
+      "modifiers": [
+        {
+          "type": "MASK",
+          "name": "Mask",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SHRINKWRAP",
+          "name": "Shrinkwrap",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Tongue5",
+        "DEF-Tongue4",
+        "DEF-Tongue3",
+        "DEF-Tongue2",
+        "DEF-Tongue1",
+        "shrinkwrap",
+        "mask"
+      ]
+    },
+    {
+      "name": "GEO-ellie_trousers",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 2369,
+      "polygons": 2332,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.shorts"
+      ],
+      "modifiers": [
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix Hips",
+          "armature": null
+        },
+        {
+          "type": "VERTEX_WEIGHT_MIX",
+          "name": "VertexWeightMix Hips 2",
+          "armature": null
+        },
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "CORRECTIVE_SMOOTH",
+          "name": "CorrectiveSmooth",
+          "armature": null
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Spine",
+        "DEF-Shorts.L",
+        "DEF-Shorts.R",
+        "Side.L",
+        "Side.R",
+        "DEF-Hips.L",
+        "DEF-Hips.R",
+        "DEF-Hip_Center",
+        "hip center mix"
+      ]
+    },
+    {
+      "name": "GEO-ellie_watch",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": "RIG-Ellie",
+      "vertices": 1984,
+      "polygons": 1946,
+      "shapeKeys": [],
+      "materials": [
+        "ellie.watch_strap",
+        "ellie.watch_metal",
+        "ellie.watch_rubber_guard",
+        "ellie.watch_gold",
+        "ellie.watch_glass",
+        "ellie.watch_red"
+      ],
+      "modifiers": [
+        {
+          "type": "ARMATURE",
+          "name": "Armature",
+          "armature": "RIG-Ellie"
+        },
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Watch"
+      ]
+    },
+    {
+      "name": "META-ellie",
+      "type": "ARMATURE",
+      "hiddenRender": false,
+      "parent": null,
+      "bones": 466,
+      "headBoneNames": [
+        "Neck",
+        "Head",
+        "Head_Top",
+        "ACT-Eyelid_Upper.L",
+        "ACT-Eyelid_Lower.L",
+        "MSTR-Eyebrow.L",
+        "Eyebrow5.L",
+        "Eyebrow1.L",
+        "Eyebrow3.L",
+        "DT-Eyebrow2.L",
+        "Eyebrow2.L",
+        "DT-Eyebrow4.L",
+        "Eyebrow4.L",
+        "MSTR-Eyebrow_Detached.L",
+        "Eyelid_Lower1.L",
+        "Eyelid_Lower2.L",
+        "Eyelid_Lower3.L",
+        "Eyelid_Lower4.L",
+        "Eyelid_Upper1.L",
+        "Eyelid_Upper2.L",
+        "Eyelid_Upper3.L",
+        "Eyelid_Upper4.L",
+        "Eyelash4.L",
+        "Eyelash5.L",
+        "Eyelash3.L",
+        "Eyelash2.L",
+        "Eyelash.L",
+        "Eyelash1.L",
+        "Eye_Ring_Lower1.L",
+        "Eye_Ring_Lower2.L",
+        "Eye_Ring_Lower3.L",
+        "Eye_Ring_Lower4.L",
+        "Eye_Ring_Upper1.L",
+        "Eye_Ring_Upper2.L",
+        "Eye_Ring_Upper3.L",
+        "Eye_Ring_Upper4.L",
+        "MSTR-EyeRing_Upper.L",
+        "MSTR-EyeRing_Lower.L",
+        "HeadSide1.L",
+        "ForeheadRing3.L",
+        "ForeheadRing3.R",
+        "ForeheadRing2.L",
+        "ForeheadRing1.L",
+        "ForeheadRing",
+        "Eyebrow_Mid",
+        "MSTR-Head_Top",
+        "HeadSide2.L",
+        "ACT-Eyelid_Upper.R",
+        "ACT-Eyelid_Lower.R",
+        "MSTR-Eyebrow.R",
+        "Eyebrow5.R",
+        "Eyebrow1.R",
+        "Eyebrow3.R",
+        "DT-Eyebrow2.R",
+        "Eyebrow2.R",
+        "DT-Eyebrow4.R",
+        "Eyebrow4.R",
+        "MSTR-Eyebrow_Detached.R",
+        "Eyelid_Lower1.R",
+        "Eyelid_Lower2.R",
+        "Eyelid_Lower3.R",
+        "Eyelid_Lower4.R",
+        "Eyelid_Upper1.R",
+        "Eyelid_Upper2.R",
+        "Eyelid_Upper3.R",
+        "Eyelid_Upper4.R",
+        "Eyelash4.R",
+        "Eyelash5.R",
+        "Eyelash3.R",
+        "Eyelash2.R",
+        "Eyelash.R",
+        "Eyelash1.R",
+        "Eye_Ring_Lower1.R",
+        "Eye_Ring_Lower2.R",
+        "Eye_Ring_Lower3.R",
+        "Eye_Ring_Lower4.R",
+        "Eye_Ring_Upper1.R",
+        "Eye_Ring_Upper2.R",
+        "Eye_Ring_Upper3.R",
+        "Eye_Ring_Upper4.R",
+        "MSTR-EyeRing_Upper.R",
+        "MSTR-EyeRing_Lower.R",
+        "HeadSide1.R",
+        "ForeheadRing2.R",
+        "ForeheadRing1.R",
+        "HeadSide2.R",
+        "Eye.L",
+        "Eye.R",
+        "STR-Head_Top",
+        "MSTR-Head_Bottom",
+        "MSTR-H-Head_Bottom",
+        "MSTR-Head_Bottom_Squash",
+        "NeckHead",
+        "PRP-Head"
+      ]
+    },
+    {
+      "name": "RIG-Ellie",
+      "type": "ARMATURE",
+      "hiddenRender": false,
+      "parent": null,
+      "bones": 1887,
+      "headBoneNames": [
+        "ROOT-Neck",
+        "ORG-Neck",
+        "ORG-TIP-Neck",
+        "STR-TIP-TAN-Neck",
+        "STR-Neck",
+        "DEF-Neck",
+        "STR-TAN-Neck",
+        "ROOT-Head",
+        "ORG-Head",
+        "ORG-Head_Top",
+        "ORG-Eyelid_Lower1.L",
+        "ORG-Eyelid_Lower2.L",
+        "ORG-Eyelid_Lower3.L",
+        "ORG-Eyelid_Lower4.L",
+        "ORG-TIP-Eyelid_Lower4.L",
+        "STR-TIP-TAN-Eyelid_Lower4.L",
+        "STR-TAN-Eyelid_Lower4.L",
+        "STR-TAN-Eyelid_Lower3.L",
+        "STR-TAN-Eyelid_Lower2.L",
+        "STR-TAN-Eyelid_Lower1.L",
+        "ORG-Eyelid_Upper1.L",
+        "ORG-Eyelid_Upper2.L",
+        "ORG-Eyelid_Upper3.L",
+        "ORG-Eyelid_Upper4.L",
+        "ORG-TIP-Eyelid_Upper4.L",
+        "STR-TIP-TAN-Eyelid_Upper4.L",
+        "STR-TAN-Eyelid_Upper4.L",
+        "STR-TAN-Eyelid_Upper3.L",
+        "STR-TAN-Eyelid_Upper2.L",
+        "STR-TAN-Eyelid_Upper1.L",
+        "ORG-Eye_Ring_Lower1.L",
+        "ORG-Eye_Ring_Lower2.L",
+        "ORG-Eye_Ring_Lower3.L",
+        "ORG-Eye_Ring_Lower4.L",
+        "ORG-TIP-Eye_Ring_Lower4.L",
+        "STR-TIP-TAN-Eye_Ring_Lower4.L",
+        "STR-TAN-Eye_Ring_Lower4.L",
+        "STR-TAN-Eye_Ring_Lower3.L",
+        "STR-TAN-Eye_Ring_Lower2.L",
+        "STR-TAN-Eye_Ring_Lower1.L",
+        "ORG-Eye_Ring_Upper1.L",
+        "ORG-Eye_Ring_Upper2.L",
+        "ORG-Eye_Ring_Upper3.L",
+        "ORG-Eye_Ring_Upper4.L",
+        "ORG-TIP-Eye_Ring_Upper4.L",
+        "STR-TIP-TAN-Eye_Ring_Upper4.L",
+        "STR-TAN-Eye_Ring_Upper4.L",
+        "STR-TAN-Eye_Ring_Upper3.L",
+        "STR-TAN-Eye_Ring_Upper2.L",
+        "STR-TAN-Eye_Ring_Upper1.L",
+        "ORG-Eyelid_Lower1.R",
+        "ORG-Eyelid_Lower2.R",
+        "ORG-Eyelid_Lower3.R",
+        "ORG-Eyelid_Lower4.R",
+        "ORG-TIP-Eyelid_Lower4.R",
+        "STR-TIP-TAN-Eyelid_Lower4.R",
+        "STR-TAN-Eyelid_Lower4.R",
+        "STR-TAN-Eyelid_Lower3.R",
+        "STR-TAN-Eyelid_Lower2.R",
+        "STR-TAN-Eyelid_Lower1.R",
+        "ORG-Eyelid_Upper1.R",
+        "ORG-Eyelid_Upper2.R",
+        "ORG-Eyelid_Upper3.R",
+        "ORG-Eyelid_Upper4.R",
+        "ORG-TIP-Eyelid_Upper4.R",
+        "STR-TIP-TAN-Eyelid_Upper4.R",
+        "STR-TAN-Eyelid_Upper4.R",
+        "STR-TAN-Eyelid_Upper3.R",
+        "STR-TAN-Eyelid_Upper2.R",
+        "STR-TAN-Eyelid_Upper1.R",
+        "ORG-Eye_Ring_Lower1.R",
+        "ORG-Eye_Ring_Lower2.R",
+        "ORG-Eye_Ring_Lower3.R",
+        "ORG-Eye_Ring_Lower4.R",
+        "ORG-TIP-Eye_Ring_Lower4.R",
+        "STR-TIP-TAN-Eye_Ring_Lower4.R",
+        "STR-TAN-Eye_Ring_Lower4.R",
+        "STR-TAN-Eye_Ring_Lower3.R",
+        "STR-TAN-Eye_Ring_Lower2.R",
+        "STR-TAN-Eye_Ring_Lower1.R",
+        "ORG-Eye_Ring_Upper1.R",
+        "ORG-Eye_Ring_Upper2.R",
+        "ORG-Eye_Ring_Upper3.R",
+        "ORG-Eye_Ring_Upper4.R",
+        "ORG-TIP-Eye_Ring_Upper4.R",
+        "STR-TIP-TAN-Eye_Ring_Upper4.R",
+        "STR-TAN-Eye_Ring_Upper4.R",
+        "STR-TAN-Eye_Ring_Upper3.R",
+        "STR-TAN-Eye_Ring_Upper2.R",
+        "STR-TAN-Eye_Ring_Upper1.R",
+        "ORG-STR-Head_Top",
+        "ORG-TIP-Head_Top",
+        "STR-Head_Top",
+        "DEF-Head_Top",
+        "ACT-Eyelid_Upper.L",
+        "ACT-Eyelid_Lower.L",
+        "MSTR-Eyebrow.L",
+        "MSTR-Eyebrow_Detached.L",
+        "MSTR-EyeRing_Upper.L",
+        "MSTR-EyeRing_Lower.L",
+        "ForeheadRing3.L",
+        "DEF-ForeheadRing3.L",
+        "ForeheadRing3.R",
+        "DEF-ForeheadRing3.R",
+        "ForeheadRing2.L",
+        "DEF-ForeheadRing2.L",
+        "ForeheadRing1.L",
+        "DEF-ForeheadRing1.L",
+        "ForeheadRing",
+        "DEF-ForeheadRing",
+        "HeadSide2.L",
+        "DEF-HeadSide2.L",
+        "ACT-Eyelid_Upper.R",
+        "ACT-Eyelid_Lower.R",
+        "MSTR-Eyebrow.R",
+        "MSTR-Eyebrow_Detached.R",
+        "MSTR-EyeRing_Upper.R",
+        "MSTR-EyeRing_Lower.R",
+        "ForeheadRing2.R",
+        "DEF-ForeheadRing2.R",
+        "ForeheadRing1.R",
+        "DEF-ForeheadRing1.R",
+        "HeadSide2.R",
+        "DEF-HeadSide2.R",
+        "ROOT-Eye.L",
+        "ORG-Eye.L",
+        "AIM-Eye.L",
+        "CTR-Eye.L",
+        "DSP-CTR-Eye.L",
+        "DEF-Eye.L",
+        "CTR-Eye_Highlight.L",
+        "DEF-Eye_Highlight.L",
+        "ROOT-Eye.R",
+        "ORG-Eye.R",
+        "AIM-Eye.R",
+        "CTR-Eye.R",
+        "DSP-CTR-Eye.R",
+        "DEF-Eye.R",
+        "CTR-Eye_Highlight.R",
+        "DEF-Eye_Highlight.R",
+        "CEN-Eyes",
+        "STR-Head",
+        "STR-TIP-Neck",
+        "LTC-NeckHead",
+        "ORG-NeckHead",
+        "ROOT-LTC-NeckHead",
+        "DEF-Head",
+        "MSTR-Head_Bottom",
+        "MSTR-H-Head_Bottom",
+        "DEF-Head_Bottom",
+        "MSTR-Head_Bottom_Squash",
+        "STR-TIP-P-Eyelid_Lower4.L",
+        "STR-TIP-Eyelid_Lower4.L",
+        "STR-P-Eyelid_Lower4.L",
+        "STR-Eyelid_Lower4.L",
+        "DEF-Eyelid_Lower4.L",
+        "STR-P-Eyelid_Lower3.L",
+        "STR-Eyelid_Lower3.L",
+        "DEF-Eyelid_Lower3.L",
+        "STR-P-Eyelid_Lower2.L",
+        "STR-Eyelid_Lower2.L",
+        "DEF-Eyelid_Lower2.L",
+        "STR-P-Eyelid_Lower1.L",
+        "STR-Eyelid_Lower1.L",
+        "DEF-Eyelid_Lower1.L",
+        "Eyelash5.L",
+        "DEF-Eyelash5.L",
+        "STR-TIP-P-Eyelid_Upper4.L",
+        "STR-TIP-Eyelid_Upper4.L",
+        "STR-P-Eyelid_Upper4.L",
+        "STR-Eyelid_Upper4.L",
+        "DEF-Eyelid_Upper4.L",
+        "P-Eyelash4.L",
+        "Eyelash4.L",
+        "DEF-Eyelash4.L",
+        "STR-P-Eyelid_Upper3.L",
+        "STR-Eyelid_Upper3.L",
+        "DEF-Eyelid_Upper3.L",
+        "P-Eyelash3.L",
+        "Eyelash3.L",
+        "DEF-Eyelash3.L",
+        "STR-P-Eyelid_Upper2.L",
+        "STR-Eyelid_Upper2.L",
+        "DEF-Eyelid_Upper2.L",
+        "ORG-P-Eyelash.L",
+        "ORG-Eyelash.L",
+        "ROOT-LTC-Eyelash.L",
+        "LTC-Eyelash.L",
+        "P-Eyelash2.L",
+        "Eyelash2.L",
+        "DEF-Eyelash2.L",
+        "STR-P-Eyelid_Upper1.L",
+        "STR-Eyelid_Upper1.L",
+        "DEF-Eyelid_Upper1.L",
+        "P-Eyelash1.L",
+        "Eyelash1.L",
+        "DEF-Eyelash1.L",
+        "STR-TIP-P-Eye_Ring_Lower4.L",
+        "STR-TIP-Eye_Ring_Lower4.L",
+        "STR-P-Eye_Ring_Lower4.L",
+        "STR-Eye_Ring_Lower4.L",
+        "DEF-Eye_Ring_Lower4.L",
+        "STR-P-Eye_Ring_Lower3.L",
+        "STR-Eye_Ring_Lower3.L",
+        "DEF-Eye_Ring_Lower3.L",
+        "STR-P-Eye_Ring_Lower2.L",
+        "STR-Eye_Ring_Lower2.L",
+        "DEF-Eye_Ring_Lower2.L",
+        "STR-P-Eye_Ring_Lower1.L",
+        "STR-Eye_Ring_Lower1.L",
+        "DEF-Eye_Ring_Lower1.L",
+        "STR-TIP-P-Eye_Ring_Upper4.L",
+        "STR-TIP-Eye_Ring_Upper4.L",
+        "STR-P-Eye_Ring_Upper4.L",
+        "STR-Eye_Ring_Upper4.L",
+        "DEF-Eye_Ring_Upper4.L",
+        "STR-P-Eye_Ring_Upper3.L",
+        "STR-Eye_Ring_Upper3.L",
+        "DEF-Eye_Ring_Upper3.L",
+        "STR-P-Eye_Ring_Upper2.L",
+        "STR-Eye_Ring_Upper2.L",
+        "DEF-Eye_Ring_Upper2.L",
+        "STR-P-Eye_Ring_Upper1.L",
+        "STR-Eye_Ring_Upper1.L",
+        "DEF-Eye_Ring_Upper1.L",
+        "HeadSide1.L",
+        "DEF-HeadSide1.L",
+        "STR-TIP-P-Eyelid_Lower4.R",
+        "STR-TIP-Eyelid_Lower4.R",
+        "STR-P-Eyelid_Lower4.R",
+        "STR-Eyelid_Lower4.R",
+        "DEF-Eyelid_Lower4.R",
+        "STR-P-Eyelid_Lower3.R",
+        "STR-Eyelid_Lower3.R",
+        "DEF-Eyelid_Lower3.R",
+        "STR-P-Eyelid_Lower2.R",
+        "STR-Eyelid_Lower2.R",
+        "DEF-Eyelid_Lower2.R",
+        "STR-P-Eyelid_Lower1.R",
+        "STR-Eyelid_Lower1.R",
+        "DEF-Eyelid_Lower1.R",
+        "Eyelash5.R",
+        "DEF-Eyelash5.R",
+        "STR-TIP-P-Eyelid_Upper4.R",
+        "STR-TIP-Eyelid_Upper4.R",
+        "STR-P-Eyelid_Upper4.R",
+        "STR-Eyelid_Upper4.R",
+        "DEF-Eyelid_Upper4.R",
+        "P-Eyelash4.R",
+        "Eyelash4.R",
+        "DEF-Eyelash4.R",
+        "STR-P-Eyelid_Upper3.R",
+        "STR-Eyelid_Upper3.R",
+        "DEF-Eyelid_Upper3.R",
+        "P-Eyelash3.R",
+        "Eyelash3.R",
+        "DEF-Eyelash3.R",
+        "STR-P-Eyelid_Upper2.R",
+        "STR-Eyelid_Upper2.R",
+        "DEF-Eyelid_Upper2.R",
+        "ORG-P-Eyelash.R",
+        "ORG-Eyelash.R",
+        "ROOT-LTC-Eyelash.R",
+        "LTC-Eyelash.R",
+        "P-Eyelash2.R",
+        "Eyelash2.R",
+        "DEF-Eyelash2.R",
+        "STR-P-Eyelid_Upper1.R",
+        "STR-Eyelid_Upper1.R",
+        "DEF-Eyelid_Upper1.R",
+        "P-Eyelash1.R",
+        "Eyelash1.R",
+        "DEF-Eyelash1.R",
+        "STR-TIP-P-Eye_Ring_Lower4.R",
+        "STR-TIP-Eye_Ring_Lower4.R",
+        "STR-P-Eye_Ring_Lower4.R",
+        "STR-Eye_Ring_Lower4.R",
+        "DEF-Eye_Ring_Lower4.R",
+        "STR-P-Eye_Ring_Lower3.R",
+        "STR-Eye_Ring_Lower3.R",
+        "DEF-Eye_Ring_Lower3.R",
+        "STR-P-Eye_Ring_Lower2.R",
+        "STR-Eye_Ring_Lower2.R",
+        "DEF-Eye_Ring_Lower2.R",
+        "STR-P-Eye_Ring_Lower1.R",
+        "STR-Eye_Ring_Lower1.R",
+        "DEF-Eye_Ring_Lower1.R",
+        "STR-TIP-P-Eye_Ring_Upper4.R",
+        "STR-TIP-Eye_Ring_Upper4.R",
+        "STR-P-Eye_Ring_Upper4.R",
+        "STR-Eye_Ring_Upper4.R",
+        "DEF-Eye_Ring_Upper4.R",
+        "STR-P-Eye_Ring_Upper3.R",
+        "STR-Eye_Ring_Upper3.R",
+        "DEF-Eye_Ring_Upper3.R",
+        "STR-P-Eye_Ring_Upper2.R",
+        "STR-Eye_Ring_Upper2.R",
+        "DEF-Eye_Ring_Upper2.R",
+        "STR-P-Eye_Ring_Upper1.R",
+        "STR-Eye_Ring_Upper1.R",
+        "DEF-Eye_Ring_Upper1.R",
+        "HeadSide1.R",
+        "DEF-HeadSide1.R",
+        "Eyebrow5.L",
+        "DEF-Eyebrow5.L",
+        "Eyebrow1.L",
+        "DEF-Eyebrow1.L",
+        "Eyebrow3.L",
+        "DEF-Eyebrow3.L",
+        "DT-Eyebrow2.L",
+        "Eyebrow2.L",
+        "DEF-Eyebrow2.L",
+        "DT-Eyebrow4.L",
+        "Eyebrow4.L",
+        "DEF-Eyebrow4.L",
+        "Eyebrow_Mid",
+        "DEF-Eyebrow_Mid",
+        "Eyebrow5.R",
+        "DEF-Eyebrow5.R",
+        "Eyebrow1.R",
+        "DEF-Eyebrow1.R",
+        "Eyebrow3.R",
+        "DEF-Eyebrow3.R",
+        "DT-Eyebrow2.R",
+        "Eyebrow2.R",
+        "DEF-Eyebrow2.R",
+        "DT-Eyebrow4.R",
+        "Eyebrow4.R",
+        "DEF-Eyebrow4.R",
+        "P-MSTR-TGT-Eyes",
+        "MSTR-TGT-Eyes",
+        "TGT-Eye.L",
+        "DSP-TGT-Eye.L",
+        "TGT-Eye.R",
+        "DSP-TGT-Eye.R",
+        "FK-HNG-Head",
+        "FK-Head",
+        "MSTR-Head_Top",
+        "STR-TIP-Head_Top",
+        "PRP-Head",
+        "FK-Head_Top",
+        "FK-HNG-Neck",
+        "FK-Neck"
+      ]
+    },
+    {
+      "name": "WGT-Arrow_Head",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 5,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Arrow_Two-way",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 10,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Circle",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 32,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Circle_Spiked_2",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 32,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Clavicle",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 44,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Cogwheel",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 36,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Cogwheel_Y",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 36,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Collar1.L",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Cube",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 8,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Cube_Flat",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 8,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Curve_Point",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 50,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Double_Arrow",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 10,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Double_Arrow2",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 10,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Chin",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 9,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Ear",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 7,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Earring",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 21,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Eyebrow",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 14,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Eyebrow.L",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 24,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eyebrows2.L",
+        "DEF-Eyebrows1.L",
+        "DEF-Eyebrows2.R",
+        "DEF-Eyebrows1.R"
+      ]
+    },
+    {
+      "name": "WGT-Ellie_Eyebrow.R",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 24,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": [
+        "DEF-Eyebrows2.L",
+        "DEF-Eyebrows1.L",
+        "DEF-Eyebrows2.R",
+        "DEF-Eyebrows1.R"
+      ]
+    },
+    {
+      "name": "WGT-Ellie_Eyebrow_Base",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 8,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Head_Bot",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 18,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Head_Top",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 17,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Jaw",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 38,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Ellie_Nose",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Eyelash",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 8,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-FannyPack_Buckle_Clamp",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 6,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Fannypack_Shapes",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 12,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Fannypack_Zipper_Slider",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 18,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Fannypack_Zipper_Tab",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 16,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Foot",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 46,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "SUBSURF",
+          "name": "Subdivision",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Hair_Front1",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Hair_Front2",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Hair_Front3",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Hair_Front4",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Hair_Side.L",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Hair_Side.R",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Handkerchief.L",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 10,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Handkerchief_Back",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 8,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [
+        {
+          "type": "MIRROR",
+          "name": "Mirror",
+          "armature": null
+        }
+      ],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Handkerchief_Knot",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 10,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Hyperbola",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 32,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Line",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Lip_Center",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 33,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Lip_Corner",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 6,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Lip_Lower",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 6,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Lip_Master",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 33,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Lip_Upper",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 6,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Lower_Eyelid",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 30,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Mask_Lattice",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 12,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Mask_Lattice_Root",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Mouth_Master",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 6,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-MouthCorner",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 30,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-MSTR-Head_Bottom",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 13,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Roll",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 26,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Roll_Flat",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 58,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Root",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 24,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Sleeve_Elbow.L",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Sphere",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 96,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Sphere_Half",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 66,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Square",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Squares_2",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 8,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-STR-Head_Top",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 4,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Torso_Master",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 32,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    },
+    {
+      "name": "WGT-Upper_Eyelid",
+      "type": "MESH",
+      "hiddenRender": false,
+      "parent": null,
+      "vertices": 30,
+      "polygons": 0,
+      "shapeKeys": [],
+      "materials": [],
+      "modifiers": [],
+      "vertexGroupNames": []
+    }
+  ],
+  "images": [
+    {
+      "name": "ellie.boots.folds",
+      "filepath": "//maps/ellie.boots.folds.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "ellie.bruise_map",
+      "filepath": "//maps/ellie.bruise_map.png",
+      "packed": true,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "ellie.dirt_map",
+      "filepath": "//maps/ellie.dirt_map.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "ellie.fannypack.folds",
+      "filepath": "//maps/ellie.fannypack.folds.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "ellie.head",
+      "filepath": "//maps/ellie.head.png",
+      "packed": true,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "ellie.jacket.folds",
+      "filepath": "//maps/ellie.jacket.folds.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "ellie.progression_map",
+      "filepath": "//maps/ellie.progression_map.png",
+      "packed": true,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "ellie.shorts.folds",
+      "filepath": "//maps/ellie.shorts.folds.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ]
+    },
+    {
+      "name": "ellie.skin",
+      "filepath": "//maps/ellie.skin.png",
+      "packed": true,
+      "size": [
+        1024,
+        1024
+      ]
+    },
+    {
+      "name": "ellie_pins",
+      "filepath": "//maps/ellie_pins.png",
+      "packed": true,
+      "size": [
+        1024,
+        1536
+      ]
+    },
+    {
+      "name": "scratches",
+      "filepath": "//../../maps/grunge/scratches.png",
+      "packed": true,
+      "size": [
+        2048,
+        2048
+      ]
+    }
+  ],
+  "texts": [
+    "cloudrig.py",
+    "ellie_post_generation.py",
+    "ReadMe.txt",
+    "rigged_particle_hair.py"
+  ],
+  "collections": [
+    "CH-ellie",
+    "colored",
+    "ellie.hair",
+    "ellie.hair.mesh",
+    "ellie.hair.particles",
+    "ellie.hair.particles.proxy",
+    "ellie.rig",
+    "ellie.rig.helpers",
+    "ellie.rig.widgets",
+    "Lighting",
+    "lighting.lower_body",
+    "lighting_hair-flipped",
+    "non-colored"
+  ]
+}

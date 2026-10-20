@@ -1,0 +1,157 @@
+{
+  "status": "ENDPOINT-POSE-FEASIBLE-VELOCITY-PENDING",
+  "endpointPoseGate": true,
+  "endpointVelocityGate": true,
+  "joins": [
+    {
+      "clip": "start",
+      "edge": "start",
+      "sourceAction": "Idle_Neutral_ProportionProposal",
+      "sourceTimeSeconds": 0,
+      "maximumBoneHeadPositionErrorM": [
+        6.502952791461139e-07,
+        "LowerLeg.L"
+      ],
+      "maximumBoneRotationErrorRadians": [
+        0.0,
+        "Wrist.R"
+      ],
+      "maximumBoneHeadVelocityDifferenceMps": [
+        0.0030401655678604787,
+        "LowerLeg.L"
+      ],
+      "maximumBoneAngularVelocityDifferenceRadps": [
+        0.006571026927910051,
+        "LowerLeg.L"
+      ],
+      "velocityDefinition": "one-sided prototype linear baked endpoint vs outgoing Walk-right tangent for Start-end / incoming Walk-left for Stop-start; static Idle0 zero tangent (original Idle breathing preserved, not played)"
+    },
+    {
+      "clip": "start",
+      "edge": "end",
+      "sourceAction": "Walk_ProportionProposal",
+      "sourceTimeSeconds": 0.20833333333333334,
+      "maximumBoneHeadPositionErrorM": [
+        2.928561569308273e-07,
+        "LowerLeg.L"
+      ],
+      "maximumBoneRotationErrorRadians": [
+        0.0,
+        "Wrist.R"
+      ],
+      "maximumBoneHeadVelocityDifferenceMps": [
+        0.0035824821234259926,
+        "UpperArm.L"
+      ],
+      "maximumBoneAngularVelocityDifferenceRadps": [
+        0.008977509265272356,
+        "Foot.R"
+      ],
+      "velocityDefinition": "one-sided prototype linear baked endpoint vs outgoing Walk-right tangent for Start-end / incoming Walk-left for Stop-start; static Idle0 zero tangent (original Idle breathing preserved, not played)"
+    },
+    {
+      "clip": "stop",
+      "edge": "start",
+      "sourceAction": "Walk_ProportionProposal",
+      "sourceTimeSeconds": 0.20833333333333334,
+      "maximumBoneHeadPositionErrorM": [
+        2.928561569308273e-07,
+        "LowerLeg.L"
+      ],
+      "maximumBoneRotationErrorRadians": [
+        0.0,
+        "Wrist.R"
+      ],
+      "maximumBoneHeadVelocityDifferenceMps": [
+        0.0043622497225715064,
+        "Ring4.L"
+      ],
+      "maximumBoneAngularVelocityDifferenceRadps": [
+        0.005161914864732443,
+        "Pinky3.L"
+      ],
+      "velocityDefinition": "one-sided prototype linear baked endpoint vs outgoing Walk-right tangent for Start-end / incoming Walk-left for Stop-start; static Idle0 zero tangent (original Idle breathing preserved, not played)"
+    },
+    {
+      "clip": "stop",
+      "edge": "end",
+      "sourceAction": "Idle_Neutral_ProportionProposal",
+      "sourceTimeSeconds": 0,
+      "maximumBoneHeadPositionErrorM": [
+        6.502952791461139e-07,
+        "LowerLeg.L"
+      ],
+      "maximumBoneRotationErrorRadians": [
+        0.0,
+        "Wrist.R"
+      ],
+      "maximumBoneHeadVelocityDifferenceMps": [
+        0.001934283224604602,
+        "LowerLeg.R"
+      ],
+      "maximumBoneAngularVelocityDifferenceRadps": [
+        0.008621208787346138,
+        "LowerLeg.R"
+      ],
+      "velocityDefinition": "one-sided prototype linear baked endpoint vs outgoing Walk-right tangent for Start-end / incoming Walk-left for Stop-start; static Idle0 zero tangent (original Idle breathing preserved, not played)"
+    }
+  ],
+  "clips": {
+    "start": {
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "durationSeconds": 0.4,
+      "externalRootEndXYZM": [
+        0.0,
+        -0.14000000059604645,
+        0.0
+      ],
+      "RootBoneMaximumLocalTranslationM": 0.0,
+      "allSoleMinZNativeM": -0.000707717495970428,
+      "maximumDepthBelowInferredFloorM": 0,
+      "supportSide": "R",
+      "supportIntervalSeconds": [
+        0,
+        0.2
+      ],
+      "allSupportMaterialVertexMaximumAxisSpanM": [
+        0.0010801032185554504,
+        0.010041318833827972,
+        0.003038914786884561
+      ],
+      "allSupportMaterialVertexMaximumEuclideanSpanBoundM": 0.010157092713037953,
+      "leadSwingPeakMinimumSoleHeightM": 0.06454013288021088,
+      "fixedWorldSoleTrajectoriesSaved": true
+    },
+    "stop": {
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "durationSeconds": 0.42049457355359643,
+      "externalRootEndXYZM": [
+        -0.02119792066514492,
+        -0.1401984840631485,
+        -0.00027357181534171104
+      ],
+      "RootBoneMaximumLocalTranslationM": 0.0,
+      "allSoleMinZNativeM": -0.000748917693272233,
+      "maximumDepthBelowInferredFloorM": 0,
+      "supportSide": "L",
+      "supportIntervalSeconds": [
+        0,
+        0.42049457355359643
+      ],
+      "allSupportMaterialVertexMaximumAxisSpanM": [
+        0.0009681954979896545,
+        0.001196257770061493,
+        0.001526974665466696
+      ],
+      "allSupportMaterialVertexMaximumEuclideanSpanBoundM": 0.002141350243574317,
+      "leadSwingPeakMinimumSoleHeightM": 0.044520843774080276,
+      "fixedWorldSoleTrajectoriesSaved": true
+    }
+  },
+  "limitations": [
+    "Native Root external metadata uses analytic Hermite parameters, source Root constant; no runtime adapter authored",
+    "Footproxycontact preserves source curvedsole; inferredfloor notphysicalcollision",
+    "No no-slip or user acceptance claim",
+    "No actual render until pose+velocity gates assessed"
+  ]
+}

@@ -1,0 +1,131 @@
+{
+  "status": "PASS-only-retarget-contract-and-disclosed-motion-comparison-NOT-art-or-no-slip",
+  "source": "e6ab193",
+  "oldMissingActionBlocker": "a6250cb/c1a5881 missing Walk copy; corrected source now actually audited",
+  "originalActionsCount": 48,
+  "allOriginalActionsExactlyPreserved": true,
+  "retargetCurves": {
+    "Walk": {
+      "sourceCurveCount": 408,
+      "allChannelKeyCountsPreserved": true,
+      "locationCurveInterpolationAndHandleTypesUnchanged": true,
+      "targetCurveCount": 408,
+      "keyTimesAndHandleXExactlyPreserved": true,
+      "rotationCurvesAndHandlesExactlyPreserved": true,
+      "nonLocationNonRotationExactlyPreserved": true,
+      "maximumKeyValueScalingError": 1.1920928910669204e-08,
+      "maximumHandleYScalingError": 1.4901161193847656e-08,
+      "factorListMatchesContract": true
+    },
+    "Idle_Neutral": {
+      "sourceCurveCount": 380,
+      "allChannelKeyCountsPreserved": true,
+      "locationCurveInterpolationAndHandleTypesUnchanged": true,
+      "targetCurveCount": 380,
+      "keyTimesAndHandleXExactlyPreserved": true,
+      "rotationCurvesAndHandlesExactlyPreserved": true,
+      "nonLocationNonRotationExactlyPreserved": true,
+      "maximumKeyValueScalingError": 1.4901161207725444e-09,
+      "maximumHandleYScalingError": 1.4901161207725444e-09,
+      "factorListMatchesContract": true
+    }
+  },
+  "restBoneErrorMeters": 0.0,
+  "restVertexErrorMeters": 0.0,
+  "restVertexCount": 10407,
+  "weightsFacesObjectLocalsExactlyPreserved": true,
+  "seam": {
+    "meshCount": 9,
+    "evaluatedVertexCount": 10407,
+    "maxEndpointDistanceMeters": 0.0,
+    "rmsEndpointDistanceMeters": 0.0
+  },
+  "rootProjection512": [
+    256.0,
+    516.8593120574951
+  ],
+  "rootProjectionSpreadPixels": 0.0,
+  "cameraStaticAcross24": true,
+  "neutralMarkerMaxDifferenceFromAuthorNumbersMeters": 3.003425057343598e-08,
+  "restBodyHeightMeters": 1.613150879740715,
+  "originalRestBodyHeightMeters": 1.810531917551998,
+  "headMeshRestHeightMeters": 0.36626482009887695,
+  "headMeshRestHeightFractionOfWholeRestHeight": 0.22704932607280195,
+  "neutralPoseJointHeads": {
+    "Root": [
+      0.0,
+      0.0,
+      0.0
+    ],
+    "Hips": [
+      -0.00015156228619161993,
+      -0.003622889518737793,
+      0.6959559321403503
+    ],
+    "UpperLeg.L": [
+      0.0678778886795044,
+      0.019037865102291107,
+      0.720470130443573
+    ],
+    "UpperArm.L": [
+      0.09258867055177689,
+      0.008806008845567703,
+      1.0686562061309814
+    ],
+    "LowerArm.L": [
+      0.1638455092906952,
+      0.04699447378516197,
+      0.9150229096412659
+    ],
+    "Wrist.L": [
+      0.180077463388443,
+      0.012724589556455612,
+      0.7303423285484314
+    ],
+    "Middle4.L": [
+      0.18143844604492188,
+      -0.004267558455467224,
+      0.5735124945640564
+    ],
+    "Neck": [
+      -0.00027308796416036785,
+      0.021178938448429108,
+      1.1282577514648438
+    ],
+    "Head": [
+      -0.0003053925174754113,
+      0.019844425842165947,
+      1.2510160207748413
+    ]
+  },
+  "maxAnkleTrajectoryErrorAgainstUniform07Meters": 1.0505318642738373e-07,
+  "scaledSoleDiagnosticContactWindowsIdentical": true,
+  "motion": {
+    "originalMotion": {
+      "floor": -0.005832654889672995,
+      "tolerance": 0.025,
+      "medianBackwardAnkleSpeedMetersPerSecond": 1.010656356811527,
+      "strideAtMedianSpeedMeters": 1.684427261352545,
+      "speedResidualRmsMetersPerSecond": 0.27577390513205013,
+      "inPlaceRootTravelMeters": 0.0
+    },
+    "retargetMotion": {
+      "floor": -0.004082795698195696,
+      "tolerance": 0.017499999999999998,
+      "medianBackwardAnkleSpeedMetersPerSecond": 0.707461237907431,
+      "strideAtMedianSpeedMeters": 1.1791020631790516,
+      "speedResidualRmsMetersPerSecond": 0.1930419439225493,
+      "inPlaceRootTravelMeters": 0.0
+    }
+  },
+  "stridePerWholeRestHeight": {
+    "original": 0.9303493879467434,
+    "B": 0.7309310480421838
+  },
+  "inputHashes": {
+    "art/ruta-native-proportions-study-v2/b-neutral/ruta-proportion-proposal.blend": "a4215f55a1bad78ae2e0e35b9ce572515e398053e64db5d483ee518e8b1923b5",
+    "art/ruta-native-proportions-study-v2/b-neutral/rest-transform-contract.json": "a863fa63e3cd0925561af8e545cbdb84210e902ac9fd6494e00cdf4c556e0d14",
+    "art/ready-character-adapted-v1/ruta-stock-adapted.blend": "e643c4e4067585a9c7fbbe5d4fa0269019ea04e2d79764a8b3568732c7209d9c"
+  },
+  "inputsUnchangedAfterAudit": true
+}

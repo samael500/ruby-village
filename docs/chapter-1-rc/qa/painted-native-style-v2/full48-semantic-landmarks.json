@@ -1,0 +1,1829 @@
+{
+  "status": "READONLY-SEMANTIC-ANNOTATIONS-NO-PIVOT-APPLIED-NOT-PHYSICAL-ANCHORS",
+  "sourceProjection": "full48-native-semantic-projections.json",
+  "sharedGrid": {
+    "origin": [
+      0,
+      30
+    ],
+    "pitch": [
+      162,
+      200
+    ],
+    "layout": [
+      8,
+      6
+    ]
+  },
+  "claspDefinition": "centre of entire visible brass FRONT flap clasp/ring including its dark aperture; NOT top bright highlight or strap side buckle. Manual estimate at raw pixel scale from5xnearest QA crop with5px rulers.",
+  "nativeDefinition": "centroid of evaluated used vertices of authored Satchel warm brass clasp (Hips) and Burgundy bow knot (Chest); exact model geometric features, not same as all painted visible contours",
+  "bowDefinition": "estimated centre of knotted narrow junction between upper bow loops and lower tails. Hair/profile obscure exact topology; uncertainty3.5px per axis, NOT centre of whole red silhouette/tail.",
+  "uncertaintyMeaning": "Conservative approximate per-axis annotation intervals, not statistical confidence; systematic style/view feature-definition bias additionally remains unbounded. Single datum does not establish exact registration.",
+  "nullRule": "Painted clasp14/15/16/17/32 occluded, no substituted points/interpolation. Bow only row-boundaries/halfcyclecheck annotated; null means not annotated, not automatically occluded.",
+  "faceLimit": "No anatomically matched face/eye point annotated: hidden native profile and repainted camera prevent a reliable same-feature correspondence.",
+  "rows": [
+    {
+      "phase": 0,
+      "cellOriginRaw": [
+        0,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72,
+          111
+        ],
+        "paintedRawPx": [
+          72,
+          141
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.28253989331976
+        ],
+        "paintMinusNativePx": [
+          -14.459442820426148,
+          -16.282539893319765
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          99,
+          70
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.51435433391687,
+          68.27222486691478
+        ],
+        "paintMinusNativePx": [
+          -2.51435433391687,
+          1.727775133085217
+        ]
+      }
+    },
+    {
+      "phase": 1,
+      "cellOriginRaw": [
+        162,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72,
+          111
+        ],
+        "paintedRawPx": [
+          234,
+          141
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.36738336453048
+        ],
+        "paintMinusNativePx": [
+          -14.459442820426148,
+          -16.367383364530482
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.52316992149376,
+          68.38769988126847
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 2,
+      "cellOriginRaw": [
+        324,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          110
+        ],
+        "paintedRawPx": [
+          397,
+          140
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.57269505399587
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -17.572695053995872
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.54581233839515,
+          68.67232070264548
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 3,
+      "cellOriginRaw": [
+        486,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          109
+        ],
+        "paintedRawPx": [
+          559,
+          139
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.83658874982005
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -18.836588749820052
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.58131082051285,
+          69.06311884835365
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 4,
+      "cellOriginRaw": [
+        648,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72,
+          110
+        ],
+        "paintedRawPx": [
+          720,
+          140
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          128.07396681113556
+        ],
+        "paintMinusNativePx": [
+          -14.459442820426148,
+          -18.073966811135563
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.6277763133661,
+          69.47284033495421
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 5,
+      "cellOriginRaw": [
+        810,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          71.5,
+          111
+        ],
+        "paintedRawPx": [
+          881.5,
+          141
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          128.2004941060451
+        ],
+        "paintMinusNativePx": [
+          -14.959442820426148,
+          -17.200494106045113
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.68248018270491,
+          69.81364084948312
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 6,
+      "cellOriginRaw": [
+        972,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          70,
+          112
+        ],
+        "paintedRawPx": [
+          1042,
+          142
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          128.15626858577932
+        ],
+        "paintMinusNativePx": [
+          -16.459442820426148,
+          -16.156268585779316
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.74194604354732,
+          70.02084651284198
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 7,
+      "cellOriginRaw": [
+        1134,
+        30
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          69,
+          114
+        ],
+        "paintedRawPx": [
+          1203,
+          144
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.84451720330486
+        ],
+        "paintMinusNativePx": [
+          -17.459442820426148,
+          -13.84451720330486
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          97,
+          70
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.8014381412575,
+          69.99410130574019
+        ],
+        "paintMinusNativePx": [
+          -4.801438141257506,
+          0.005898694259812487
+        ]
+      }
+    },
+    {
+      "phase": 8,
+      "cellOriginRaw": [
+        0,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          71,
+          116
+        ],
+        "paintedRawPx": [
+          71,
+          346
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.2937069601722
+        ],
+        "paintMinusNativePx": [
+          -15.459442820426148,
+          -11.293706960172202
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          98,
+          73
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.85521060178982,
+          69.74496584804699
+        ],
+        "paintMinusNativePx": [
+          -3.855210601789821,
+          3.255034151953012
+        ]
+      }
+    },
+    {
+      "phase": 9,
+      "cellOriginRaw": [
+        162,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72,
+          116.5
+        ],
+        "paintedRawPx": [
+          234,
+          346.5
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.53289518745696
+        ],
+        "paintMinusNativePx": [
+          -14.459442820426148,
+          -10.032895187456958
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.90016747474525,
+          69.29462641050152
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 10,
+      "cellOriginRaw": [
+        324,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          116
+        ],
+        "paintedRawPx": [
+          397,
+          346
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.61508855711291
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -9.615088557112912
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.93410486322954,
+          68.68975182168239
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 11,
+      "cellOriginRaw": [
+        486,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          116
+        ],
+        "paintedRawPx": [
+          561,
+          346
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.61522612276065
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -8.615226122760646
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.95568468698549,
+          67.99932864583072
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 12,
+      "cellOriginRaw": [
+        648,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          115
+        ],
+        "paintedRawPx": [
+          723,
+          345
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          123.6269980994683
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -8.626998099468295
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.96431661648788,
+          67.31248024321522
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 13,
+      "cellOriginRaw": [
+        810,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          115
+        ],
+        "paintedRawPx": [
+          885,
+          345
+        ],
+        "uncertaintyPerAxisPx": 2.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          122.80810446068651
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -7.808104460686508
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.95231324947468,
+          66.78754611093886
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 14,
+      "cellOriginRaw": [
+        972,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": null,
+        "paintedRawPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "occluded-null-no-estimation",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          122.20832146402256
+        ],
+        "paintMinusNativePx": null
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.91760187339064,
+          66.47842661426444
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 15,
+      "cellOriginRaw": [
+        1134,
+        230
+      ],
+      "clasp": {
+        "paintedCellPx": null,
+        "paintedRawPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "occluded-null-no-estimation",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          121.85314806535831
+        ],
+        "paintMinusNativePx": null
+      },
+      "bow": {
+        "paintedCellPx": [
+          98,
+          75
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.86180917403861,
+          66.40506177271114
+        ],
+        "paintMinusNativePx": [
+          -3.861809174038612,
+          8.594938227288864
+        ]
+      }
+    },
+    {
+      "phase": 16,
+      "cellOriginRaw": [
+        0,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": null,
+        "paintedRawPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "occluded-null-no-estimation",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          121.77026416021053
+        ],
+        "paintMinusNativePx": null
+      },
+      "bow": {
+        "paintedCellPx": [
+          99,
+          75.5
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.78976273509167,
+          66.58875264331465
+        ],
+        "paintMinusNativePx": [
+          -2.7897627350916707,
+          8.911247356685351
+        ]
+      }
+    },
+    {
+      "phase": 17,
+      "cellOriginRaw": [
+        162,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": null,
+        "paintedRawPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "occluded-null-no-estimation",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          121.98361089043613
+        ],
+        "paintMinusNativePx": null
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.70951727496086,
+          67.04643840384087
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 18,
+      "cellOriginRaw": [
+        324,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          115
+        ],
+        "paintedRawPx": [
+          399,
+          545
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          122.50735616464081
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -7.507356164640811
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.63192173847668,
+          67.78521940663504
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 19,
+      "cellOriginRaw": [
+        486,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          115
+        ],
+        "paintedRawPx": [
+          560,
+          545
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          123.18621052160204
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -8.186210521602035
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.5746335376607,
+          68.63481837975043
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 20,
+      "cellOriginRaw": [
+        648,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          116
+        ],
+        "paintedRawPx": [
+          723,
+          546
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          123.75063933892112
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -7.750639338921118
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.54084045194925,
+          69.32704534026256
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 21,
+      "cellOriginRaw": [
+        810,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          117
+        ],
+        "paintedRawPx": [
+          884,
+          547
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.2028071581906
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -7.202807158190595
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.52604285851659,
+          69.85337330614017
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 22,
+      "cellOriginRaw": [
+        972,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          117
+        ],
+        "paintedRawPx": [
+          1046,
+          547
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.57755981944193
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -7.57755981944193
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.522395933894,
+          70.25612562473444
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 23,
+      "cellOriginRaw": [
+        1134,
+        430
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          118
+        ],
+        "paintedRawPx": [
+          1207,
+          548
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.9111615933714
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -6.9111615933714035
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          98,
+          76
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.52226474955506,
+          70.59056369882467
+        ],
+        "paintMinusNativePx": [
+          -3.522264749555063,
+          5.409436301175333
+        ]
+      }
+    },
+    {
+      "phase": 24,
+      "cellOriginRaw": [
+        0,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          120
+        ],
+        "paintedRawPx": [
+          73,
+          750
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.20936819285008
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -5.209368192850079
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          98,
+          77
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.52246152606348,
+          70.88728627546907
+        ],
+        "paintMinusNativePx": [
+          -3.5224615260634806,
+          6.112713724530934
+        ]
+      }
+    },
+    {
+      "phase": 25,
+      "cellOriginRaw": [
+        162,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          120
+        ],
+        "paintedRawPx": [
+          236,
+          750
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.5340986258586
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -5.534098625858604
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.53497651199855,
+          71.16164192232387
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 26,
+      "cellOriginRaw": [
+        324,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          120
+        ],
+        "paintedRawPx": [
+          398,
+          750
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.89983236380768
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -5.8998323638076755
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.56295813149487,
+          71.42745418910506
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 27,
+      "cellOriginRaw": [
+        486,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          120
+        ],
+        "paintedRawPx": [
+          559,
+          750
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.26997717515367
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -6.26997717515367
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.60350721066183,
+          71.66107709871837
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 28,
+      "cellOriginRaw": [
+        648,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          120
+        ],
+        "paintedRawPx": [
+          721,
+          750
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.60735869784891
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -6.607358697848909
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.6535933912699,
+          71.83335493183394
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 29,
+      "cellOriginRaw": [
+        810,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          119
+        ],
+        "paintedRawPx": [
+          884,
+          749
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.88292779983892
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -7.882927799838924
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.70993706484548,
+          71.9204121387643
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 30,
+      "cellOriginRaw": [
+        972,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          119
+        ],
+        "paintedRawPx": [
+          1047,
+          749
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.08468111411051
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -8.08468111411051
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.76890442519989,
+          71.91357415509695
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 31,
+      "cellOriginRaw": [
+        1134,
+        630
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          118
+        ],
+        "paintedRawPx": [
+          1209,
+          748
+        ],
+        "uncertaintyPerAxisPx": 2.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.11049983181853
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -9.11049983181853
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          98,
+          78
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.82572036239567,
+          71.70945132370323
+        ],
+        "paintMinusNativePx": [
+          -3.8257203623956713,
+          6.2905486762967655
+        ]
+      }
+    },
+    {
+      "phase": 32,
+      "cellOriginRaw": [
+        0,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": null,
+        "paintedRawPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "occluded-null-no-estimation",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.92073348651776
+        ],
+        "paintMinusNativePx": null
+      },
+      "bow": {
+        "paintedCellPx": [
+          98,
+          80
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.87529492408184,
+          71.27670698561835
+        ],
+        "paintMinusNativePx": [
+          -3.8752949240818424,
+          8.723293014381653
+        ]
+      }
+    },
+    {
+      "phase": 33,
+      "cellOriginRaw": [
+        162,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          121
+        ],
+        "paintedRawPx": [
+          235,
+          951
+        ],
+        "uncertaintyPerAxisPx": 2.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.53289518745696
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -5.532895187456958
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.91507001564905,
+          70.63583869380201
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 34,
+      "cellOriginRaw": [
+        324,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          123
+        ],
+        "paintedRawPx": [
+          397,
+          953
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.98805383174616
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -2.988053831746157
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.94334024069106,
+          69.83107196852004
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 35,
+      "cellOriginRaw": [
+        486,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74.5,
+          122
+        ],
+        "paintedRawPx": [
+          560.5,
+          952
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.34920249914106
+        ],
+        "paintMinusNativePx": [
+          -11.959442820426148,
+          -3.3492024991410574
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.95925290100472,
+          68.92809736749761
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 36,
+      "cellOriginRaw": [
+        648,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          123
+        ],
+        "paintedRawPx": [
+          721,
+          953
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.6985773721159
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -1.6985773721159063
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.96263745694942,
+          68.01193874041152
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 37,
+      "cellOriginRaw": [
+        810,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          123.5
+        ],
+        "paintedRawPx": [
+          883,
+          953.5
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.1719952365816
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -0.6719952365815942
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.94589833530043,
+          67.19710361711574
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 38,
+      "cellOriginRaw": [
+        972,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          122
+        ],
+        "paintedRawPx": [
+          1045,
+          952
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          123.81883879712859
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -1.818838797128592
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.90723831061422,
+          66.52417715247046
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 39,
+      "cellOriginRaw": [
+        1134,
+        830
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          73,
+          120
+        ],
+        "paintedRawPx": [
+          1207,
+          950
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          123.66015494113589
+        ],
+        "paintMinusNativePx": [
+          -13.459442820426148,
+          -3.660154941135886
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          97,
+          79
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.84861202954104,
+          66.0255290821096
+        ],
+        "paintMinusNativePx": [
+          -4.848612029541044,
+          12.9744709178904
+        ]
+      }
+    },
+    {
+      "phase": 40,
+      "cellOriginRaw": [
+        0,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          75,
+          110
+        ],
+        "paintedRawPx": [
+          75,
+          1140
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          123.72068831453643
+        ],
+        "paintMinusNativePx": [
+          -11.459442820426148,
+          -13.720688314536432
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          100,
+          69
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.77514879973353,
+          65.74307280232513
+        ],
+        "paintMinusNativePx": [
+          -1.775148799733529,
+          3.2569271976748695
+        ]
+      }
+    },
+    {
+      "phase": 41,
+      "cellOriginRaw": [
+        162,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74.5,
+          109.5
+        ],
+        "paintedRawPx": [
+          236.5,
+          1139.5
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.02287963831047
+        ],
+        "paintMinusNativePx": [
+          -11.959442820426148,
+          -14.52287963831047
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.6949689317722,
+          65.72052549406948
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 42,
+      "cellOriginRaw": [
+        324,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          110
+        ],
+        "paintedRawPx": [
+          398,
+          1140
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          124.58054426315286
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -14.58054426315286
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.61873771241301,
+          65.9947171605006
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 43,
+      "cellOriginRaw": [
+        486,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          74,
+          109
+        ],
+        "paintedRawPx": [
+          560,
+          1139
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.25937402305053
+        ],
+        "paintMinusNativePx": [
+          -12.459442820426148,
+          -16.259374023050526
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.56345663198285,
+          66.4681286436575
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 44,
+      "cellOriginRaw": [
+        648,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72.5,
+          109
+        ],
+        "paintedRawPx": [
+          720.5,
+          1139
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          125.82381103939079
+        ],
+        "paintMinusNativePx": [
+          -13.959442820426148,
+          -16.82381103939079
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.5314607717149,
+          66.90115174846262
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 45,
+      "cellOriginRaw": [
+        810,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72,
+          109
+        ],
+        "paintedRawPx": [
+          882,
+          1139
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.3181136285242
+        ],
+        "paintMinusNativePx": [
+          -14.459442820426148,
+          -17.318113628524202
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.5176732976921,
+          67.3290094699219
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 46,
+      "cellOriginRaw": [
+        972,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72,
+          110
+        ],
+        "paintedRawPx": [
+          1044,
+          1140
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          126.76673127162105
+        ],
+        "paintMinusNativePx": [
+          -14.459442820426148,
+          -16.766731271621055
+        ]
+      },
+      "bow": {
+        "paintedCellPx": null,
+        "uncertaintyPerAxisPx": null,
+        "status": "not-annotated",
+        "nativeExpectedCellPx": [
+          101.51435433391687,
+          67.75629325989833
+        ],
+        "paintMinusNativePx": null
+      }
+    },
+    {
+      "phase": 47,
+      "cellOriginRaw": [
+        1134,
+        1030
+      ],
+      "clasp": {
+        "paintedCellPx": [
+          72,
+          109.5
+        ],
+        "paintedRawPx": [
+          1206,
+          1139.5
+        ],
+        "uncertaintyPerAxisPx": 1.5,
+        "status": "manual-visible-front-ring-centre",
+        "nativeExpectedCellPx": [
+          86.45944282042615,
+          127.1337030617689
+        ],
+        "paintMinusNativePx": [
+          -14.459442820426148,
+          -17.633703061768898
+        ]
+      },
+      "bow": {
+        "paintedCellPx": [
+          98,
+          69
+        ],
+        "uncertaintyPerAxisPx": 3.5,
+        "status": "manual-estimated-knot-centre-partially-obscured-not-exact-joint",
+        "nativeExpectedCellPx": [
+          101.51436745235075,
+          68.1233962343851
+        ],
+        "paintMinusNativePx": [
+          -3.514367452350754,
+          0.8766037656149024
+        ]
+      }
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+{
+  "sourceSHA256": "09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d",
+  "samples": 32,
+  "referenceSamples": 128,
+  "threads": 2,
+  "rows": [
+    {
+      "phase": 0,
+      "sourceFrame": 0.0,
+      "renderSecondsIncludingWrite": 14.93680631701136,
+      "file": "/tmp/ruby-native-garment-seams/docs/chapter-1-rc/qa/native-volume-aa-benchmark/phase-00-AA32.png",
+      "reference": "/tmp/ruby-combined-loop/art/ruta-native-volume-front-proof-v1/renders/front-proof/front-proof/walk/00.png",
+      "referenceSHA256": "7b846fbfcb3b6d500d46a164e8912e30789406ae7e45d0e1984a43ce71e3c36d"
+    },
+    {
+      "phase": 23,
+      "sourceFrame": 19.166666666666668,
+      "renderSecondsIncludingWrite": 12.941850372997578,
+      "file": "/tmp/ruby-native-garment-seams/docs/chapter-1-rc/qa/native-volume-aa-benchmark/phase-23-AA32.png",
+      "reference": "/tmp/ruby-combined-loop/art/ruta-native-volume-front-proof-v1/renders/front-proof/front-proof/walk/23.png",
+      "referenceSHA256": "c92c56b670cfdf92221e4a2481645aa41f918c2464e4535a496695d2969eaf75"
+    }
+  ],
+  "context": "Concurrent with independent ongoing128AA proof render; per-frame timings are observed, not controlled universal speedup."
+}

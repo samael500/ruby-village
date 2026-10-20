@@ -1,0 +1,457 @@
+{
+  "status": "ONE-native-six-authored-lock-kitbash-art-review-pending-NOT-final-Ruta",
+  "source": "Blender Studio Ellie CC-BY4.0; upstream original retained in ../source",
+  "sourceSha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "parts": [
+    {
+      "name": "Ellie ready Loose cap",
+      "baseVertices": 5617,
+      "baseFaces": 5197,
+      "UVLayers": 2,
+      "sourceGeometrySha256": "5cf9a8e102885e0a24fd84ae2b7a9758470c4a9a3324ed17fd938c4f6ae1d5f7",
+      "matrix": [
+        [
+          1.449558138847351,
+          0.0,
+          0.0,
+          -0.00024064333410933614
+        ],
+        [
+          0.0,
+          1.449558138847351,
+          0.0,
+          -0.023077409714460373
+        ],
+        [
+          0.0,
+          0.0,
+          1.449558138847351,
+          -0.3018556833267212
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "definition": {
+        "capScaleAboutNativeHead": 1.075,
+        "sourceHeadPivot": [
+          0.0,
+          -0.0012937650317326188,
+          1.01289963722229
+        ],
+        "headFit": {
+          "scale": 1.3484260722742596,
+          "offset": [
+            -0.00024064333410933614,
+            -0.0232082512229681,
+            -0.1994190216064453
+          ],
+          "sourceChinBoneZ": 1.0169177055358887,
+          "sourceHaircutCrownZ": 1.3439478874206543,
+          "targetOldBHeadMeshLowerProxyZ": 1.1718193292617798,
+          "targetOldBHairCrownZ": 1.612795352935791,
+          "definition": "single3Drest similarity transform preserving native facial/eye/brow/mouth geometry; proxies not anatomical equivalence"
+        }
+      }
+    },
+    {
+      "name": "Ellie ready Loose wave 1",
+      "baseVertices": 339,
+      "baseFaces": 338,
+      "UVLayers": 2,
+      "sourceGeometrySha256": "788c556f499d46d917ec1dc3b9e8bc0b0afaa8232a446fa2edf1426951957ead",
+      "matrix": [
+        [
+          -0.21952581405639648,
+          0.5761653780937195,
+          -0.9368097186088562,
+          1.0736666917800903
+        ],
+        [
+          0.5559829473495483,
+          0.8823720216751099,
+          0.4123992621898651,
+          -0.4223923981189728
+        ],
+        [
+          0.9489268064498901,
+          -0.3836973309516907,
+          -0.4583503007888794,
+          2.1845016479492188
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "definition": {
+        "sourceRootProxy": [
+          -0.10011149942874908,
+          0.05520710349082947,
+          1.2835607528686523
+        ],
+        "sourceTipProxy": [
+          -0.4595426619052887,
+          0.20386764407157898,
+          1.5713005065917969
+        ],
+        "sourceDefinition": "mean of existing extreme-X terminal vertices; hair attachment proxies, not anatomy",
+        "targetRoot": [
+          -0.07500000298023224,
+          0.10000000149011612,
+          1.4800000190734863
+        ],
+        "targetTip": [
+          -0.18000000715255737,
+          0.15000000596046448,
+          0.949999988079071
+        ],
+        "uniformScale": 1.1215036645776273,
+        "rotationQuaternion": [
+          0.5436775088310242,
+          -0.326410174369812,
+          -0.7731770277023315,
+          -0.008275066502392292
+        ]
+      }
+    },
+    {
+      "name": "Ellie ready Loose wave 2",
+      "baseVertices": 313,
+      "baseFaces": 312,
+      "UVLayers": 2,
+      "sourceGeometrySha256": "54bc33a9c4454d9a5467552f706a24b013e1c428b891a780b2093d495904fcb2",
+      "matrix": [
+        [
+          -0.31247851252555847,
+          0.2441456913948059,
+          -0.9180019497871399,
+          0.9582123756408691
+        ],
+        [
+          0.5058315396308899,
+          0.8607509732246399,
+          0.05673982575535774,
+          -0.021514050662517548
+        ],
+        [
+          0.804033100605011,
+          -0.4466294050216675,
+          -0.3924672603607178,
+          2.07692813873291
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "definition": {
+        "sourceRootProxy": [
+          -0.10455920547246933,
+          0.06758836656808853,
+          1.2553200721740723
+        ],
+        "sourceTipProxy": [
+          -0.47406336665153503,
+          0.22335438430309296,
+          1.5695804357528687
+        ],
+        "sourceDefinition": "mean of existing extreme-X terminal vertices; hair attachment proxies, not anatomy",
+        "targetRoot": [
+          -0.14499999582767487,
+          0.054999999701976776,
+          1.4700000286102295
+        ],
+        "targetTip": [
+          -0.2800000011920929,
+          0.019999999552965164,
+          0.9800000190734863
+        ],
+        "uniformScale": 0.9999885676782457,
+        "rotationQuaternion": [
+          0.537542462348938,
+          -0.23410941660404205,
+          -0.8008924126625061,
+          0.12170612812042236
+        ]
+      }
+    },
+    {
+      "name": "Ellie ready Loose wave 3",
+      "baseVertices": 301,
+      "baseFaces": 300,
+      "UVLayers": 2,
+      "sourceGeometrySha256": "a4b796e4b06fb9e6dda8ece45de09f0b5e3591569dd48cc24b2dd3716a8422b8",
+      "matrix": [
+        [
+          -0.23918072879314423,
+          0.1705443561077118,
+          -0.7069995999336243,
+          0.7188228368759155
+        ],
+        [
+          0.36246258020401,
+          0.6731869578361511,
+          0.03976553678512573,
+          -0.09012515842914581
+        ],
+        [
+          0.630519449710846,
+          -0.32229653000831604,
+          -0.2910524010658264,
+          1.8910974264144897
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "definition": {
+        "sourceRootProxy": [
+          -0.08995077759027481,
+          0.07546593993902206,
+          1.3058106899261475
+        ],
+        "sourceTipProxy": [
+          -0.46311405301094055,
+          0.2156839519739151,
+          1.579031229019165
+        ],
+        "sourceDefinition": "mean of existing extreme-X terminal vertices; hair attachment proxies, not anatomy",
+        "targetRoot": [
+          -0.17000000178813934,
+          -0.019999999552965164,
+          1.4299999475479126
+        ],
+        "targetTip": [
+          -0.25,
+          -0.05000000074505806,
+          1.0700000524520874
+        ],
+        "uniformScale": 0.7655985309090118,
+        "rotationQuaternion": [
+          0.5446838736534119,
+          -0.21705880761146545,
+          -0.801852285861969,
+          0.1150563582777977
+        ]
+      }
+    },
+    {
+      "name": "Ellie ready Loose wave 4",
+      "baseVertices": 298,
+      "baseFaces": 297,
+      "UVLayers": 2,
+      "sourceGeometrySha256": "13bfb68f1138958293a5ebaffa0e0b472ee4108489a82bf209da5c64a36b0a77",
+      "matrix": [
+        [
+          -0.24872441589832306,
+          0.9392924904823303,
+          -0.4582585096359253,
+          0.579007089138031
+        ],
+        [
+          0.6603937745094299,
+          0.506350040435791,
+          0.6794298887252808,
+          -0.7151142954826355
+        ],
+        [
+          0.8100315928459167,
+          -0.1243966817855835,
+          -0.6946287751197815,
+          2.452291250228882
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "definition": {
+        "sourceRootProxy": [
+          -0.10738038271665573,
+          0.0522233322262764,
+          1.26515531539917
+        ],
+        "sourceTipProxy": [
+          -0.47338008880615234,
+          0.21673910319805145,
+          1.571885108947754
+        ],
+        "sourceDefinition": "mean of existing extreme-X terminal vertices; hair attachment proxies, not anatomy",
+        "targetRoot": [
+          0.07500000298023224,
+          0.10000000149011612,
+          1.4800000190734863
+        ],
+        "targetTip": [
+          0.18000000715255737,
+          0.15000000596046448,
+          0.949999988079071
+        ],
+        "uniformScale": 1.0743070042261262,
+        "rotationQuaternion": [
+          0.3851047456264496,
+          -0.4857301712036133,
+          -0.766392707824707,
+          -0.16853076219558716
+        ]
+      }
+    },
+    {
+      "name": "Ellie ready Loose wave 5",
+      "baseVertices": 265,
+      "baseFaces": 264,
+      "UVLayers": 2,
+      "sourceGeometrySha256": "c68d2b955cf34943df914086abf6291226b0794ccaca79a92ae24fcf61e2f9e2",
+      "matrix": [
+        [
+          -0.5771757364273071,
+          0.6400408148765564,
+          -0.57628333568573,
+          0.7760435342788696
+        ],
+        [
+          0.5988742113113403,
+          0.796815037727356,
+          0.2851697504520416,
+          -0.32500582933425903
+        ],
+        [
+          0.6189542412757874,
+          -0.17412608861923218,
+          -0.8133032917976379,
+          2.5817270278930664
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "definition": {
+        "sourceRootProxy": [
+          -0.08959963917732239,
+          0.08603830635547638,
+          1.2803186178207397
+        ],
+        "sourceTipProxy": [
+          -0.4637480080127716,
+          0.21985597908496857,
+          1.5694090127944946
+        ],
+        "sourceDefinition": "mean of existing extreme-X terminal vertices; hair attachment proxies, not anatomy",
+        "targetRoot": [
+          0.14499999582767487,
+          0.054999999701976776,
+          1.4700000286102295
+        ],
+        "targetTip": [
+          0.2800000011920929,
+          0.019999999552965164,
+          0.9800000190734863
+        ],
+        "uniformScale": 1.036767184739816,
+        "rotationQuaternion": [
+          0.3268752098083496,
+          -0.3388201594352722,
+          -0.8817206621170044,
+          -0.030368370935320854
+        ]
+      }
+    },
+    {
+      "name": "Ellie ready Loose wave 6",
+      "baseVertices": 231,
+      "baseFaces": 230,
+      "UVLayers": 2,
+      "sourceGeometrySha256": "faaeb41807edad74b9ae6d4acdd8a12567c995a442711dcfecb9fa9d58afbf03",
+      "matrix": [
+        [
+          -0.44424644112586975,
+          0.4993399381637573,
+          -0.504781186580658,
+          0.7436379790306091
+        ],
+        [
+          0.49632734060287476,
+          0.6441910862922668,
+          0.20044063031673431,
+          -0.2717938721179962
+        ],
+        [
+          0.5077436566352844,
+          -0.19281305372714996,
+          -0.6375883221626282,
+          2.3136684894561768
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "definition": {
+        "sourceRootProxy": [
+          -0.09817297011613846,
+          0.06578169018030167,
+          1.28788161277771
+        ],
+        "sourceTipProxy": [
+          -0.43062829971313477,
+          0.19412697851657867,
+          1.5489453077316284
+        ],
+        "sourceDefinition": "mean of existing extreme-X terminal vertices; hair attachment proxies, not anatomy",
+        "targetRoot": [
+          0.17000000178813934,
+          -0.019999999552965164,
+          1.4299999475479126
+        ],
+        "targetTip": [
+          0.25,
+          -0.05000000074505806,
+          1.0700000524520874
+        ],
+        "uniformScale": 0.8375555887102261,
+        "rotationQuaternion": [
+          0.34549781680107117,
+          -0.3397456109523773,
+          -0.8747556209564209,
+          -0.0026027115527540445
+        ]
+      }
+    }
+  ],
+  "baseVerticesTotal": 7364,
+  "definition": "Original full hair split along existing disconnected islands:21 scalp/fringe islands plus6 long locks. Each whole part one constant rest similarity matrix, no mirrored geometry, new strands, sculpt or per-frame adjustment. Existing authored topology/UV/material preserved.",
+  "actions": {
+    "Walk_ProportionProposal": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd",
+    "Idle_Neutral_ProportionProposal": "3b87d66ba83c5f8cd7ffeb5928f4b9c25cd5a420f8879dc824b2704e28fb3eca"
+  },
+  "views": [
+    "front-whole.png",
+    "front-face.png",
+    "three-quarter-whole.png",
+    "three-quarter-face.png"
+  ],
+  "materialProtection": "ASCII Ellie ready prefix: preserve native shaders/normals/UV/alpha. Honor hide_render for rejected hair.",
+  "limitations": [
+    "one rest kitbash for actual visual review, not accepted Ruta likeness",
+    "rigid Head binding; shoulder/wardrobe intersections need actual-motion review",
+    "no no-slip/contact claim; actions unchanged by hair assembly"
+  ]
+}

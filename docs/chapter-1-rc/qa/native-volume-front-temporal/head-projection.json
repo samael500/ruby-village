@@ -1,0 +1,887 @@
+{
+  "sourceSHA256": "09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d",
+  "definition": "Two CV phase0 visible-blue-region centroid rays intersect actual evaluated eye geometry, converted ONCE to Head-local points; all48project via full actual Head transform incl rotation. Not anatomical cornea/iris center, no per-frame fit. Raster centers use +.5 then subtract.5.",
+  "anchors": [
+    {
+      "referenceCVCenterXY": [
+        244.39473684210526,
+        230.0
+      ],
+      "eyeObject": "Ellie ready eye.R",
+      "worldReference": [
+        -0.03643914312124252,
+        -0.1001075729727745,
+        1.3220701217651367
+      ],
+      "HeadLocalReference": [
+        -0.05903232842683792,
+        0.11044424027204514,
+        0.10357440263032913
+      ]
+    },
+    {
+      "referenceCVCenterXY": [
+        279.6923076923077,
+        228.3846153846154
+      ],
+      "eyeObject": "Ellie ready eye.L",
+      "worldReference": [
+        0.07938100397586823,
+        -0.08892478793859482,
+        1.3194804191589355
+      ],
+      "HeadLocalReference": [
+        0.057355135679244995,
+        0.11033892631530762,
+        0.10372642427682877
+      ]
+    }
+  ],
+  "eyeAttachment": [
+    {
+      "object": "Ellie ready eye.L",
+      "parentType": "OBJECT",
+      "parentBone": "",
+      "modifiers": [
+        "ARMATURE"
+      ],
+      "vertexGroupWeights": {
+        "Head": [
+          1.0
+        ]
+      }
+    },
+    {
+      "object": "Ellie ready eye.R",
+      "parentType": "OBJECT",
+      "parentBone": "",
+      "modifiers": [
+        "ARMATURE"
+      ],
+      "vertexGroupWeights": {
+        "Head": [
+          1.0
+        ]
+      }
+    }
+  ],
+  "frames": [
+    {
+      "phase": 0,
+      "HeadBoneHeadPixelXY": [
+        258.859375,
+        232.06214904785156
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          244.39474487304688,
+          229.9999542236328
+        ],
+        [
+          279.69232177734375,
+          228.38446807861328
+        ]
+      ]
+    },
+    {
+      "phase": 1,
+      "HeadBoneHeadPixelXY": [
+        258.8449401855469,
+        232.3208999633789
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          244.2984161376953,
+          230.0294418334961
+        ],
+        [
+          279.60101318359375,
+          228.42318725585938
+        ]
+      ]
+    },
+    {
+      "phase": 2,
+      "HeadBoneHeadPixelXY": [
+        258.8104553222656,
+        232.9590606689453
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          244.0603485107422,
+          230.14685821533203
+        ],
+        [
+          279.3753356933594,
+          228.5650177001953
+        ]
+      ]
+    },
+    {
+      "phase": 3,
+      "HeadBoneHeadPixelXY": [
+        258.7578430175781,
+        233.83087158203125
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          243.706298828125,
+          230.44345092773438
+        ],
+        [
+          279.0393981933594,
+          228.8996810913086
+        ]
+      ]
+    },
+    {
+      "phase": 4,
+      "HeadBoneHeadPixelXY": [
+        258.6878662109375,
+        234.73308563232422
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          243.2609100341797,
+          230.9511489868164
+        ],
+        [
+          278.6158142089844,
+          229.45609283447266
+        ]
+      ]
+    },
+    {
+      "phase": 5,
+      "HeadBoneHeadPixelXY": [
+        258.60040283203125,
+        235.46031951904297
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          242.75247192382812,
+          231.6102523803711
+        ],
+        [
+          278.1305847167969,
+          230.1778335571289
+        ]
+      ]
+    },
+    {
+      "phase": 6,
+      "HeadBoneHeadPixelXY": [
+        258.49462890625,
+        235.85975646972656
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          242.21873474121094,
+          232.23788452148438
+        ],
+        [
+          277.6191101074219,
+          230.89816284179688
+        ]
+      ]
+    },
+    {
+      "phase": 7,
+      "HeadBoneHeadPixelXY": [
+        258.36474609375,
+        235.69076538085938
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          241.71656799316406,
+          232.5072021484375
+        ],
+        [
+          277.1367492675781,
+          231.32727813720703
+        ]
+      ]
+    },
+    {
+      "phase": 8,
+      "HeadBoneHeadPixelXY": [
+        258.2115783691406,
+        234.97913360595703
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          241.22608947753906,
+          232.33103942871094
+        ],
+        [
+          276.6629943847656,
+          231.35226440429688
+        ]
+      ]
+    },
+    {
+      "phase": 9,
+      "HeadBoneHeadPixelXY": [
+        258.0314025878906,
+        233.7700653076172
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          240.7115020751953,
+          231.6595001220703
+        ],
+        [
+          276.1620788574219,
+          230.90350341796875
+        ]
+      ]
+    },
+    {
+      "phase": 10,
+      "HeadBoneHeadPixelXY": [
+        257.8200988769531,
+        232.1668243408203
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          240.1349334716797,
+          230.5015869140625
+        ],
+        [
+          275.5959777832031,
+          229.97088623046875
+        ]
+      ]
+    },
+    {
+      "phase": 11,
+      "HeadBoneHeadPixelXY": [
+        257.5733337402344,
+        230.3249740600586
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          239.46456909179688,
+          228.93435668945312
+        ],
+        [
+          274.93243408203125,
+          228.61582946777344
+        ]
+      ]
+    },
+    {
+      "phase": 12,
+      "HeadBoneHeadPixelXY": [
+        257.2868347167969,
+        228.4473419189453
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          238.68197631835938,
+          227.11341094970703
+        ],
+        [
+          274.1521301269531,
+          226.98416900634766
+        ]
+      ]
+    },
+    {
+      "phase": 13,
+      "HeadBoneHeadPixelXY": [
+        256.9132080078125,
+        226.84139251708984
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          237.71160888671875,
+          225.37352752685547
+        ],
+        [
+          273.1777038574219,
+          225.42411041259766
+        ]
+      ]
+    },
+    {
+      "phase": 14,
+      "HeadBoneHeadPixelXY": [
+        256.4493713378906,
+        225.6182098388672
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          236.57603454589844,
+          223.9387435913086
+        ],
+        [
+          272.0291748046875,
+          224.17864990234375
+        ]
+      ]
+    },
+    {
+      "phase": 15,
+      "HeadBoneHeadPixelXY": [
+        255.91258239746094,
+        224.84264373779297
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          235.32196044921875,
+          222.8843994140625
+        ],
+        [
+          270.7513732910156,
+          223.319580078125
+        ]
+      ]
+    },
+    {
+      "phase": 16,
+      "HeadBoneHeadPixelXY": [
+        255.3275604248047,
+        224.59693908691406
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          234.01541137695312,
+          222.31375885009766
+        ],
+        [
+          269.4103088378906,
+          222.94512939453125
+        ]
+      ]
+    },
+    {
+      "phase": 17,
+      "HeadBoneHeadPixelXY": [
+        254.7232208251953,
+        224.9637222290039
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          232.73410034179688,
+          222.33859252929688
+        ],
+        [
+          268.0863037109375,
+          223.16191864013672
+        ]
+      ]
+    },
+    {
+      "phase": 18,
+      "HeadBoneHeadPixelXY": [
+        254.12985229492188,
+        226.00948333740234
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          231.56069946289062,
+          223.0599136352539
+        ],
+        [
+          266.86761474609375,
+          224.06668853759766
+        ]
+      ]
+    },
+    {
+      "phase": 19,
+      "HeadBoneHeadPixelXY": [
+        253.63235473632812,
+        227.4478530883789
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          230.66802978515625,
+          224.24552154541016
+        ],
+        [
+          265.9379577636719,
+          225.41724395751953
+        ]
+      ]
+    },
+    {
+      "phase": 20,
+      "HeadBoneHeadPixelXY": [
+        253.27488708496094,
+        228.69338989257812
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          230.0971221923828,
+          225.31623077392578
+        ],
+        [
+          265.3428649902344,
+          226.63348388671875
+        ]
+      ]
+    },
+    {
+      "phase": 21,
+      "HeadBoneHeadPixelXY": [
+        253.0727081298828,
+        229.72469329833984
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          229.86109924316406,
+          226.224853515625
+        ],
+        [
+          265.09765625,
+          227.67459106445312
+        ]
+      ]
+    },
+    {
+      "phase": 22,
+      "HeadBoneHeadPixelXY": [
+        252.99661254882812,
+        230.5957794189453
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          229.97134399414062,
+          227.00473022460938
+        ],
+        [
+          265.21722412109375,
+          228.58248901367188
+        ]
+      ]
+    },
+    {
+      "phase": 23,
+      "HeadBoneHeadPixelXY": [
+        252.99131774902344,
+        231.37176513671875
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          230.3360137939453,
+          227.70236206054688
+        ],
+        [
+          265.6054382324219,
+          229.39112854003906
+        ]
+      ]
+    },
+    {
+      "phase": 24,
+      "HeadBoneHeadPixelXY": [
+        252.9939727783203,
+        232.06546783447266
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          230.656005859375,
+          228.30855560302734
+        ],
+        [
+          265.9464416503906,
+          230.03436279296875
+        ]
+      ]
+    },
+    {
+      "phase": 25,
+      "HeadBoneHeadPixelXY": [
+        253.08291625976562,
+        232.8040313720703
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          230.9079132080078,
+          228.75682067871094
+        ],
+        [
+          266.2106018066406,
+          230.44322204589844
+        ]
+      ]
+    },
+    {
+      "phase": 26,
+      "HeadBoneHeadPixelXY": [
+        253.23451232910156,
+        233.609619140625
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          231.34442138671875,
+          229.06478118896484
+        ],
+        [
+          266.6662292480469,
+          230.7090301513672
+        ]
+      ]
+    },
+    {
+      "phase": 27,
+      "HeadBoneHeadPixelXY": [
+        253.41749572753906,
+        234.39579010009766
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          231.89913940429688,
+          229.35336303710938
+        ],
+        [
+          267.2439880371094,
+          230.9510726928711
+        ]
+      ]
+    },
+    {
+      "phase": 28,
+      "HeadBoneHeadPixelXY": [
+        253.61349487304688,
+        235.07415771484375
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          232.53131103515625,
+          229.73162841796875
+        ],
+        [
+          267.9010314941406,
+          231.2745590209961
+        ]
+      ]
+    },
+    {
+      "phase": 29,
+      "HeadBoneHeadPixelXY": [
+        253.8130340576172,
+        235.57472229003906
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          233.20787048339844,
+          230.253173828125
+        ],
+        [
+          268.6021728515625,
+          231.72457885742188
+        ]
+      ]
+    },
+    {
+      "phase": 30,
+      "HeadBoneHeadPixelXY": [
+        254.01144409179688,
+        235.86627960205078
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          233.88406372070312,
+          230.8726043701172
+        ],
+        [
+          269.3003845214844,
+          232.24017333984375
+        ]
+      ]
+    },
+    {
+      "phase": 31,
+      "HeadBoneHeadPixelXY": [
+        254.2053985595703,
+        235.69686889648438
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          234.4812774658203,
+          231.3075942993164
+        ],
+        [
+          269.9156799316406,
+          232.50800323486328
+        ]
+      ]
+    },
+    {
+      "phase": 32,
+      "HeadBoneHeadPixelXY": [
+        254.39865112304688,
+        234.98462677001953
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          235.02789306640625,
+          231.33731079101562
+        ],
+        [
+          270.4764709472656,
+          232.33233642578125
+        ]
+      ]
+    },
+    {
+      "phase": 33,
+      "HeadBoneHeadPixelXY": [
+        254.59498596191406,
+        233.7747573852539
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          235.55953979492188,
+          230.89209747314453
+        ],
+        [
+          271.01861572265625,
+          231.66285705566406
+        ]
+      ]
+    },
+    {
+      "phase": 34,
+      "HeadBoneHeadPixelXY": [
+        254.79920959472656,
+        232.17041015625
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          236.1151580810547,
+          229.96123504638672
+        ],
+        [
+          271.5810241699219,
+          230.5080337524414
+        ]
+      ]
+    },
+    {
+      "phase": 35,
+      "HeadBoneHeadPixelXY": [
+        255.01693725585938,
+        230.32745361328125
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          236.72903442382812,
+          228.60614013671875
+        ],
+        [
+          272.1976318359375,
+          228.9446563720703
+        ]
+      ]
+    },
+    {
+      "phase": 36,
+      "HeadBoneHeadPixelXY": [
+        255.25428771972656,
+        228.44852447509766
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          237.4235076904297,
+          226.97249603271484
+        ],
+        [
+          272.8902282714844,
+          227.12794494628906
+        ]
+      ]
+    },
+    {
+      "phase": 37,
+      "HeadBoneHeadPixelXY": [
+        255.55734252929688,
+        226.84120178222656
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          238.27401733398438,
+          225.40866088867188
+        ],
+        [
+          273.7326965332031,
+          225.39275360107422
+        ]
+      ]
+    },
+    {
+      "phase": 38,
+      "HeadBoneHeadPixelXY": [
+        255.9374542236328,
+        225.61660766601562
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          239.2751007080078,
+          224.1585464477539
+        ],
+        [
+          274.7177734375,
+          223.9635009765625
+        ]
+      ]
+    },
+    {
+      "phase": 39,
+      "HeadBoneHeadPixelXY": [
+        256.3814697265625,
+        224.8398208618164
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          240.38864135742188,
+          223.2945556640625
+        ],
+        [
+          275.80609130859375,
+          222.91541290283203
+        ]
+      ]
+    },
+    {
+      "phase": 40,
+      "HeadBoneHeadPixelXY": [
+        256.8692626953125,
+        224.59320068359375
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          241.55636596679688,
+          222.91548919677734
+        ],
+        [
+          276.9397888183594,
+          222.3519058227539
+        ]
+      ]
+    },
+    {
+      "phase": 41,
+      "HeadBoneHeadPixelXY": [
+        257.376953125,
+        224.95960235595703
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          242.70660400390625,
+          223.12831115722656
+        ],
+        [
+          278.0499267578125,
+          222.38463592529297
+        ]
+      ]
+    },
+    {
+      "phase": 42,
+      "HeadBoneHeadPixelXY": [
+        257.87957763671875,
+        226.0052490234375
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          243.76077270507812,
+          224.02999114990234
+        ],
+        [
+          279.06304931640625,
+          223.11404418945312
+        ]
+      ]
+    },
+    {
+      "phase": 43,
+      "HeadBoneHeadPixelXY": [
+        258.3035583496094,
+        227.4439239501953
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          244.55613708496094,
+          225.3788299560547
+        ],
+        [
+          279.8261413574219,
+          224.3072052001953
+        ]
+      ]
+    },
+    {
+      "phase": 44,
+      "HeadBoneHeadPixelXY": [
+        258.6102294921875,
+        228.68976593017578
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          245.05789184570312,
+          226.59457397460938
+        ],
+        [
+          280.3076171875,
+          225.38382720947266
+        ]
+      ]
+    },
+    {
+      "phase": 45,
+      "HeadBoneHeadPixelXY": [
+        258.7874755859375,
+        229.81937408447266
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          245.2571563720703,
+          227.7345199584961
+        ],
+        [
+          280.4998779296875,
+          226.39434051513672
+        ]
+      ]
+    },
+    {
+      "phase": 46,
+      "HeadBoneHeadPixelXY": [
+        258.855224609375,
+        230.86223602294922
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          245.1161651611328,
+          228.79798126220703
+        ],
+        [
+          280.36968994140625,
+          227.33470153808594
+        ]
+      ]
+    },
+    {
+      "phase": 47,
+      "HeadBoneHeadPixelXY": [
+        258.85821533203125,
+        231.7159652709961
+      ],
+      "fixedReferenceHeadAttachedEyeRaysPixelXY": [
+        [
+          244.71475219726562,
+          229.65949249267578
+        ],
+        [
+          279.992919921875,
+          228.09111785888672
+        ]
+      ]
+    }
+  ],
+  "limits": "If eye-relative-Head deformation/gaze occurs, residual includes genuine geometry. Blue-region centroid can change with shading/occlusion/AA; threshold stability not exact joint stability."
+}

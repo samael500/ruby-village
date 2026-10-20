@@ -1,0 +1,15 @@
+# Independent high-resolution temporal comparison
+
+Frozen author3cd0973, exact HTML68d9db53eb3d704f7c1ecfe26ed9ecf72af9a572c58421c64213eed9d6a2daa1 and manifestf431a9c647a99634ae67ba79eaa9934e7304bb785f8cd59f38120563ba4f316c. Read-only browser/source audit; no page/PNG changes.
+
+**Verdict: substantially clearer candidate, residual internal image variation remains; do not declare flicker fixed.** Recommend this high-resolution candidate over the previous blurred source for the next user image-quality review. Movement/registration of the earlier head+48 was accepted by the user; this is not a new gait/pivot/FPS acceptance and does not inherit image-quality acceptance.
+
+Actual Chromium: desktop1280×800 DPR1 andDPR2; landscape844×390 CDP touch DPR1 (emulation, not physical phone). Both panels played simultaneously4.2seconds per context, shared48-phase40/24-second clock. Silent actual browser videos and paused quarter pairs11/12,23/24,35/36,47/0 retained. No page/request/HTTP errors. Actual Canvas2D instrumentation observed48 distinct source rectangles per panel per context; all source/destination rectangles and fixed scales match frozen manifests (actual-draw-validation.json). Both use high smoothing and single-pass backing320×400/DPR1,640×800/DPR2; same desktop CSS320×400. High has one fixed global scale.5127893376456061; no per-phase/quarter scales observed. Identical presentation dimensions are not proof of identical drawn anatomy.
+
+Viewed actual browser seam screenshots and decoded simultaneous browser-video sequences. At equal CSS size, high clearly resolves hair strand divisions, face/eye edges, satchel hardware and boot laces that remain blurred in the old panel, includingDPR2. This is more substantial than the earlier renderer-only improvement. It is not merely a raw pixel-count conclusion.
+
+Residuals:11→12 visibly changes lower-face/eye/fringe rendering and shoulder/hair silhouette despite nearby head placement.35→36 changes satchel contour/placement and local hair/body drawing;23→24 and47→0 remain useful closure controls with fine hair/face-line differences. These are internal redraw/pose changes, not proof of whole-actor zoom or a new camera. No new gross baseline-style spatial jump was identified in inspected seam pairs. The decoded loop retains changing internal strand/face/cloth detail in the high panel; sharper detail does not certify stable texture. We cannot declare all perceived swimming gone.
+
+Landscape: both figures including boots visible in inspected boundary frames; both canvases184×230,bottom358<390, aspect.8. No horizontal overflow (scrollWidth844). Lower metadata/footer scroll vertically (scrollHeight740); not a zero-scroll UI. Desktop lower metadata also scrolls; actors fit.
+
+Limits: actual screenshots and decoded browser-video sequences inspected, not human real-time display playback. Video encoding/downsampling weakens subtle shimmer/sharpness assessment; exact DPR screenshots carry static detail evidence. No quantitative internal-face tracking or final image-quality acceptance claimed. No physical-phone/game/no-slip acceptance, FPS reduction, pivot tuning or pixel modification.

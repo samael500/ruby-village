@@ -1,0 +1,583 @@
+{
+  "inputRootSnapshot": "root b06b455 lineage; external readonly input hashes authoritative",
+  "sourceDimensions": [
+    1295,
+    1215
+  ],
+  "inputs": [
+    {
+      "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-sprites-v2/full48/painted-sheet-v1.png",
+      "sha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+      "bytes": 1564521
+    },
+    {
+      "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-sprites-v2/full48/painted-sheet-v1-beige-review.jpg",
+      "sha256": "9196de10fcba35060337c121285badca389b89d1a62cb8ac6e121c36cd6159dc",
+      "bytes": 303895
+    },
+    {
+      "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-sprites-v2/full48/pose-source-48.png",
+      "sha256": "b44a06d118ecb597d6c9f0f78ffa1060bec5ff274b7cf211d33a651ccfaa211f",
+      "bytes": 1170825
+    },
+    {
+      "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-sprites-v2/full48/source-grid.json",
+      "sha256": "32eb3fe6aa48afa8c6ea0bc5c0dd751c9f1b13504cd8afd00f17a3fc1946f002",
+      "bytes": 11287
+    },
+    {
+      "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-sprites-v2/full48/prompt-v1.txt",
+      "sha256": "c64cab8024ef2df9768b1848c678bd1b7c4903d2e7975e0b6d5d66d6b8775b08",
+      "bytes": 3614
+    },
+    {
+      "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/public/assets/characters-v1/ruta-idle-pilot.png",
+      "sha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1",
+      "bytes": 676343
+    },
+    {
+      "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-sprites-v2/painted-sheet-v1.png",
+      "sha256": "0576a082552b2d7172005527ec9a2ef00e2f800b97b479b50cab16504ad8f64c",
+      "bytes": 1399183
+    }
+  ],
+  "proofBands": [
+    {
+      "file": "full48-raw-band-0.png",
+      "rawRectangle": [
+        0,
+        0,
+        1295,
+        430
+      ],
+      "operation": "overlapping full-width raw1:1 QA bands, not frame extraction"
+    },
+    {
+      "file": "full48-raw-band-1.png",
+      "rawRectangle": [
+        0,
+        390,
+        1295,
+        445
+      ],
+      "operation": "overlapping full-width raw1:1 QA bands, not frame extraction"
+    },
+    {
+      "file": "full48-raw-band-2.png",
+      "rawRectangle": [
+        0,
+        790,
+        1295,
+        425
+      ],
+      "operation": "overlapping full-width raw1:1 QA bands, not frame extraction"
+    }
+  ],
+  "exactApprovedIdentityAttachment": "public/assets/characters-v1/ruta-idle-pilot.png463x970 confirmed by coordinator with b06b455; this supersedes earlier12-sheet exact-ref uncertainty",
+  "limits": "No competing cell grid authored. Whole-width raw bands only. Individual extraction contract belongs to packer.",
+  "sharedGrid": {
+    "owner": "compact_view_qa",
+    "origin": [
+      0,
+      30
+    ],
+    "pitch": [
+      162,
+      200
+    ],
+    "layout": [
+      8,
+      6
+    ],
+    "transparentPadding": {
+      "right": 1,
+      "bottom": 15
+    },
+    "proofContract": "shared grid adopted from owner; no alternate grid, no per-frame correction; packaging origin not physicalRoot"
+  },
+  "cells": [
+    {
+      "phase": 0,
+      "rawRectangle": [
+        0,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "18f9a6b3b082cdcf6e4456f3eba00c03427d5e3b35df2c3bc1dcf1157292a99c"
+    },
+    {
+      "phase": 1,
+      "rawRectangle": [
+        162,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "11ca4a4aec14727670b7beaaf8a3b186ada4e69e8f003f1629042ccae96855d4"
+    },
+    {
+      "phase": 2,
+      "rawRectangle": [
+        324,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "13e680393d09d80f233d1c2acedb2d36ff7bd9dd179284e75103c3394b360859"
+    },
+    {
+      "phase": 3,
+      "rawRectangle": [
+        486,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "953afddc671907a9d92732e510cbb837b70e5896979857567b3a2ef0fe4719d7"
+    },
+    {
+      "phase": 4,
+      "rawRectangle": [
+        648,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "b73065b2b33072119065e40e436c6d9dff183208322c468fe1ed5965a2beee2e"
+    },
+    {
+      "phase": 5,
+      "rawRectangle": [
+        810,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "22eabf4f79fd571f978763a4e7ce90208cf5dae3ebc49046a0ceebff51b1c39a"
+    },
+    {
+      "phase": 6,
+      "rawRectangle": [
+        972,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "9b9fc68ccdb348df1247b0527300702c4f98df12317d22b061a46d4370c3059c"
+    },
+    {
+      "phase": 7,
+      "rawRectangle": [
+        1134,
+        30,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "f15400af29ad67092c023be31a2f76fa6f20f95dc491192a6a3a201cc7ce8406"
+    },
+    {
+      "phase": 8,
+      "rawRectangle": [
+        0,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "fdacd71aaa68b3020acc57a136deef7c3bc67d6345819f3e52bc15fd8f41f4dc"
+    },
+    {
+      "phase": 9,
+      "rawRectangle": [
+        162,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "8e0a965f909f445787c08e1da53e897298b3382a2f2bdd03fadb4af7a721bb38"
+    },
+    {
+      "phase": 10,
+      "rawRectangle": [
+        324,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "2379cfb0873d46f44053c5835f2056509002e1848a546fcf3962c775760d3637"
+    },
+    {
+      "phase": 11,
+      "rawRectangle": [
+        486,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "bb84290410338548afde546528b8b8c9118f828eceba5e06f18b3dd419fe61f9"
+    },
+    {
+      "phase": 12,
+      "rawRectangle": [
+        648,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "791df92e2c78a423f9553a755b79e3eb5e4f5484621e379cb364d27a16455870"
+    },
+    {
+      "phase": 13,
+      "rawRectangle": [
+        810,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "c02900ed86813c4bae22bd91218b6b870fc31608d9b4fa66c17ab29e0f37d814"
+    },
+    {
+      "phase": 14,
+      "rawRectangle": [
+        972,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "48857b5563e4da5be0023754cdcadd4ff57548e53e09e2680c96a3477aa08f71"
+    },
+    {
+      "phase": 15,
+      "rawRectangle": [
+        1134,
+        230,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "e44f05a575e42f5f86ef2db97b3ea8f13bf3b8a24c6860b6b26af77e57326d34"
+    },
+    {
+      "phase": 16,
+      "rawRectangle": [
+        0,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "966178d2840008e0540b9a063a8568be0af8896da302f659951dc4420bd4eda8"
+    },
+    {
+      "phase": 17,
+      "rawRectangle": [
+        162,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "060806e77d6d6164e0186cc79c3b6271cbc87f171715297e16c256abfd3a9281"
+    },
+    {
+      "phase": 18,
+      "rawRectangle": [
+        324,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "9c48d630f3fbf55459db02c69e07065c09706e3a7bd0cb2592e836eaad5e203f"
+    },
+    {
+      "phase": 19,
+      "rawRectangle": [
+        486,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "d8e0bf984d2ef34a28b6a7a00841354aa081cfffd98f73e35e355f9c774e2c7b"
+    },
+    {
+      "phase": 20,
+      "rawRectangle": [
+        648,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "689b0a4cfcd3b1024fd920544c4448d26c3b1fa369c179a681f4bd98df01cf59"
+    },
+    {
+      "phase": 21,
+      "rawRectangle": [
+        810,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "4b5ef203ca161b14345adb4b6faefdead80dd9bef0c2cb6f99b20994904306b6"
+    },
+    {
+      "phase": 22,
+      "rawRectangle": [
+        972,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "1a7efea5af6ed96186a1651c132b58c8222767b489596d7edfab6e12790a1b70"
+    },
+    {
+      "phase": 23,
+      "rawRectangle": [
+        1134,
+        430,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "3ac14868e55ff3730c2383fff72d944b4631e7b1f62791d79b6de37510209f35"
+    },
+    {
+      "phase": 24,
+      "rawRectangle": [
+        0,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "b8b2af20d35644b77acb78a7be13659b5067605c7bc88fd2d2cfda7b8212906a"
+    },
+    {
+      "phase": 25,
+      "rawRectangle": [
+        162,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "793f74102ac3e109cb6d7566f5af182d4f7d5a3c3961275aab976740c4662439"
+    },
+    {
+      "phase": 26,
+      "rawRectangle": [
+        324,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "3397830a383f92905349eb071a1c4ea2c00af0d302add2de26f8b041b22df31d"
+    },
+    {
+      "phase": 27,
+      "rawRectangle": [
+        486,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "f66ca5b7f7851951b7577b76dccf8ccdbc12c758cdcf76b93dd3ebfff48dc07f"
+    },
+    {
+      "phase": 28,
+      "rawRectangle": [
+        648,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "832a0a3c54d47057ebf2aa2d7fc0be03463f551ce707eb63ac14a612a48976f9"
+    },
+    {
+      "phase": 29,
+      "rawRectangle": [
+        810,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "db308968b765840e6afc4c6622b0d2facd4ac2b084f40b6103746023bc72e710"
+    },
+    {
+      "phase": 30,
+      "rawRectangle": [
+        972,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "124860b40da6e7dda7ab3ec403a0d8d1fa108a38d986e4890d1d09d569440497"
+    },
+    {
+      "phase": 31,
+      "rawRectangle": [
+        1134,
+        630,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "2783ca2612274e19fc06b63763e8969c91561bc1d630c1b5d80563a7064ba90a"
+    },
+    {
+      "phase": 32,
+      "rawRectangle": [
+        0,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "a59aeb8fda1fdc741699c067059145fe225283a7ba2c5e29cc60f138403a438f"
+    },
+    {
+      "phase": 33,
+      "rawRectangle": [
+        162,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "73d0a96c2072bc889daa6842120b9696a9259a7a84f715dedd3612bf29e00770"
+    },
+    {
+      "phase": 34,
+      "rawRectangle": [
+        324,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "e971052f3975640df81ca61769d48c5327bb1130fcd449f28f67460886381a8c"
+    },
+    {
+      "phase": 35,
+      "rawRectangle": [
+        486,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "42b6aaf35ec33709ccc277ddb4a90f690d1c551e74180d394242906185d81655"
+    },
+    {
+      "phase": 36,
+      "rawRectangle": [
+        648,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "26e4a2be8a174ae76635a76f401a39a83eba71bd82ff8090202c69a91d2cda8b"
+    },
+    {
+      "phase": 37,
+      "rawRectangle": [
+        810,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "4b578f32b09015a22d75be630b03531d499027e4c19d732cec33d2972aca2a5e"
+    },
+    {
+      "phase": 38,
+      "rawRectangle": [
+        972,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "eb4c2df3c2e85ef57fc5bfc168aa80a19b8f99e3eda1e937a412988bb3bfdb43"
+    },
+    {
+      "phase": 39,
+      "rawRectangle": [
+        1134,
+        830,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "3d8f19d50513c6d51a3abd5baacb586ba6d3bbe007820dfbd08e0f3a2b319c0d"
+    },
+    {
+      "phase": 40,
+      "rawRectangle": [
+        0,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "3fa306b3789ae4a27f648e4a4d731f6b3894fa096591510d5c1e18105ca9948a"
+    },
+    {
+      "phase": 41,
+      "rawRectangle": [
+        162,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "bef55c2f94c83ee4a871971a3da988ac93d200b640d8c359522c1ec28033c848"
+    },
+    {
+      "phase": 42,
+      "rawRectangle": [
+        324,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "cc43cef1daa80488baab87f6e4759d527608abb094043b9d062bb0529915a049"
+    },
+    {
+      "phase": 43,
+      "rawRectangle": [
+        486,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "515520643789746a9f736fbe63e92735699eae7750d735485f9b43e6706a7835"
+    },
+    {
+      "phase": 44,
+      "rawRectangle": [
+        648,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "6dd1213409103a8a910210ad7c3ac9d57c768f1ca385c18e86ce5edff62171e0"
+    },
+    {
+      "phase": 45,
+      "rawRectangle": [
+        810,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "475f52f4876b378563041b22ffecf0e22d0409b6d18c62c7b68a1929db1cdd54"
+    },
+    {
+      "phase": 46,
+      "rawRectangle": [
+        972,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "1abb2acca23f4e6205a4c02535f230b1117ebb05cd1f1d370f964c9c265aba72"
+    },
+    {
+      "phase": 47,
+      "rawRectangle": [
+        1134,
+        1030,
+        162,
+        200
+      ],
+      "rawRGBACellSha256": "6298053d5f1aae4132a7ba530808acf3e97eeb2071b1f085ce8038f713823be0"
+    }
+  ],
+  "rawCellHashesUniqueCount": 48,
+  "distinctPoseLimit": "Different rawcell bytes do not establish48 semantically distinct poses; static visual progression reviewed separately.",
+  "sharedGridProof": "full48-shared-grid-phase-proof.png"
+}

@@ -1,0 +1,5 @@
+Traceback (most recent call last):
+  File "/tmp/ruby-painted-native48-qa/docs/qa/painted-native-walk48-browser/browser.py", line 21, in <module>
+    assert all(abs(x['rect']['width']/x['rect']['height']-.8)<1e-6 for x in data['rects']if x['id']!='reference');assert not errors and not failures and not http;video=page.video.path();context.close();report['cases'].append({'viewport':vp,'errors':errors,'requestFailures':failures,'httpFailures':http,'pauseStablePhase':paused,'sliderExactPhases':[0,15,16,23,24,31,32,38,39,40,41,46,47],'resumeAnd47to0Observed':True,'drawChecks':checks,'data':data,'silentVideoPath':str(video)})
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AssertionError

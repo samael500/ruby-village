@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 1,
+  "status": "WHOLE-SPRITE-DELIVERY-CANDIDATE-NOT-ART-OR-GAME-ACCEPTANCE",
+  "productionEnabled": false,
+  "sourceContract": "source-contract.json",
+  "sourceContractSha256": "5562d2dda3f8d3f51d4afdb7630b54334ae691711f70aeaabfc8de7de85aac8c",
+  "sourceBlend": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-layered-style-v2/ruta-native-style.blend",
+  "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "headingContractSha256": "c6d0b584393ad3065cc0123ca29459fd24c951aab224c7fae44bdcc671f21257",
+  "actionHashes": {
+    "walk": "4955d2ae2dd31bf52e908d8a0edad00e49e96f4768e5e84921d766f38857a87b"
+  },
+  "sourceFrameSize": [
+    512,
+    640
+  ],
+  "frameSize": [
+    256,
+    320
+  ],
+  "deliveryTransform": {
+    "wholeCanvasUniformScale": 0.5,
+    "resample": "Pillow LANCZOS RGBA",
+    "perFrameCrop": false,
+    "perFrameTranslate": false,
+    "perFrameScaleFit": false,
+    "perDirectionScaleFit": false
+  },
+  "cameraVariants": {
+    "base": {
+      "gameCamera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "gate",
+        "garden",
+        "stream",
+        "mill",
+        "forest"
+      ],
+      "fixedRenderCamera": {
+        "matrixWorld": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6499999761581421,
+            -0.7599342465400696,
+            -8.0
+          ],
+          [
+            0.0,
+            0.7599342465400696,
+            0.6499999761581421,
+            7.692697525024414
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "orthoScale": 2.0999999046325684,
+        "canvas": [
+          512,
+          640
+        ],
+        "worldZPixelsPerMeter": 231.59903526306152,
+        "worldOriginAnchorPx": [
+          256.0,
+          516.8593120574951
+        ]
+      },
+      "directions": {
+        "w": {
+          "heading": {
+            "acceptedScreenAngleRadians": 3.141592653589793,
+            "nativeHeadingAfterCameraRadians": 3.141592653589793,
+            "stockForwardMinusYBlenderYawRadians": -1.5707963267948966,
+            "reprojectionErrorRadians": 0.0
+          },
+          "nativeHeightPx": 186.55436028830434,
+          "visibleRestHeightMeters": 1.6110115491319448,
+          "footAnchor": [
+            128.0,
+            258.42965602874756
+          ],
+          "clips": {
+            "walk": {
+              "atlas": "atlases/base-w-walk.webp",
+              "frames": [
+                {
+                  "index": 0,
+                  "rect": [
+                    0,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 0.0,
+                  "sourcePng": "renders/base/w/walk/00.png",
+                  "sourcePngSha256": "cf5c9ea9ca206a7e37683e4c68d720cc4074ea44780d47e179d8b3ba38396a75"
+                },
+                {
+                  "index": 1,
+                  "rect": [
+                    256,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 0.8333333333333334,
+                  "sourcePng": "renders/base/w/walk/01.png",
+                  "sourcePngSha256": "7a05d3f55bffa875a0ef27e7891bf4a432d9eb55f6f0ef768cbe0a4a1505d432"
+                },
+                {
+                  "index": 2,
+                  "rect": [
+                    512,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 1.6666666666666667,
+                  "sourcePng": "renders/base/w/walk/02.png",
+                  "sourcePngSha256": "d6d0a8c86f550d7c876bcd3c03cf2ec2db13130b1d3162cb8412a6e3ace53884"
+                },
+                {
+                  "index": 3,
+                  "rect": [
+                    768,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 2.5,
+                  "sourcePng": "renders/base/w/walk/03.png",
+                  "sourcePngSha256": "07918f5cb7a48132b73842bdcdb88bf8971b0ab824dab7381968f7baf6fa3f32"
+                },
+                {
+                  "index": 4,
+                  "rect": [
+                    1024,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 3.3333333333333335,
+                  "sourcePng": "renders/base/w/walk/04.png",
+                  "sourcePngSha256": "fc89269c492706e18df73fcf697f8ecd2879e63395b963936ad7de9965f06fba"
+                },
+                {
+                  "index": 5,
+                  "rect": [
+                    1280,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 4.166666666666667,
+                  "sourcePng": "renders/base/w/walk/05.png",
+                  "sourcePngSha256": "6f8c77cefada45f9790eff6cd1af1dfc334828ae49d13bb95b6415b375804748"
+                },
+                {
+                  "index": 6,
+                  "rect": [
+                    0,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 5.0,
+                  "sourcePng": "renders/base/w/walk/06.png",
+                  "sourcePngSha256": "7ffefbcac15d6f14e023ea229b43ab43b80171770c6bddaaab2e2346732546e0"
+                },
+                {
+                  "index": 7,
+                  "rect": [
+                    256,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 5.833333333333333,
+                  "sourcePng": "renders/base/w/walk/07.png",
+                  "sourcePngSha256": "ad2f61806be8ff372ff623b2f75b33a7fef8f3e4bfa080489a64189c247b9b4b"
+                },
+                {
+                  "index": 8,
+                  "rect": [
+                    512,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 6.666666666666667,
+                  "sourcePng": "renders/base/w/walk/08.png",
+                  "sourcePngSha256": "bcd9219607df6a9a9a9dc017887610a1ac667fe6d8cd25cca0c96dc2f7acd3d6"
+                },
+                {
+                  "index": 9,
+                  "rect": [
+                    768,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 7.5,
+                  "sourcePng": "renders/base/w/walk/09.png",
+                  "sourcePngSha256": "d6a72b60e031a22340dd69711fd17b2b35173199f294ba5d384f6798fe36bbf4"
+                },
+                {
+                  "index": 10,
+                  "rect": [
+                    1024,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 8.333333333333334,
+                  "sourcePng": "renders/base/w/walk/10.png",
+                  "sourcePngSha256": "0ea04a100115b86604329d31ca6f9f2f4d42cdb6b5d2840ab0ecd3cf686a42a0"
+                },
+                {
+                  "index": 11,
+                  "rect": [
+                    1280,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 9.166666666666666,
+                  "sourcePng": "renders/base/w/walk/11.png",
+                  "sourcePngSha256": "75af8eed07537b0b93e9d74a8188a832fcfa5f4231fdcd21fb28cf953bdfcaaa"
+                },
+                {
+                  "index": 12,
+                  "rect": [
+                    0,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 10.0,
+                  "sourcePng": "renders/base/w/walk/12.png",
+                  "sourcePngSha256": "ad53a53da8bfe5a91e53d8351241236f525f4e20104c067e82f00090e27da993"
+                },
+                {
+                  "index": 13,
+                  "rect": [
+                    256,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 10.833333333333334,
+                  "sourcePng": "renders/base/w/walk/13.png",
+                  "sourcePngSha256": "b4c1095a2bd2e62e5655aa9c86720009708790b91f6a9af495bbafd866da1c0a"
+                },
+                {
+                  "index": 14,
+                  "rect": [
+                    512,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 11.666666666666666,
+                  "sourcePng": "renders/base/w/walk/14.png",
+                  "sourcePngSha256": "c2e45fb3921920447b18d3b6038754b7c46d94f5e400d351b47aaacde7c5f7d0"
+                },
+                {
+                  "index": 15,
+                  "rect": [
+                    768,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 12.5,
+                  "sourcePng": "renders/base/w/walk/15.png",
+                  "sourcePngSha256": "a8448f6932cffc2b6ba9e451b388845ed5b8f668f1bea69256585e08d882d88c"
+                },
+                {
+                  "index": 16,
+                  "rect": [
+                    1024,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 13.333333333333334,
+                  "sourcePng": "renders/base/w/walk/16.png",
+                  "sourcePngSha256": "56f4563c2a975bbab5d5deaf32834f112f5ca6a199635a733e8ea87047fc4d1a"
+                },
+                {
+                  "index": 17,
+                  "rect": [
+                    1280,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 14.166666666666666,
+                  "sourcePng": "renders/base/w/walk/17.png",
+                  "sourcePngSha256": "a77c68c01b579d12794edde2c9966a0c838dedeee2dac3b52ae5fcac70e0bdc7"
+                },
+                {
+                  "index": 18,
+                  "rect": [
+                    0,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 15.0,
+                  "sourcePng": "renders/base/w/walk/18.png",
+                  "sourcePngSha256": "9ee3527bffb33af2f32ce51f7ee2b343b6935a356840c86d5b05fc0998f39d49"
+                },
+                {
+                  "index": 19,
+                  "rect": [
+                    256,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 15.833333333333334,
+                  "sourcePng": "renders/base/w/walk/19.png",
+                  "sourcePngSha256": "a46aa3fc35fbd4f73c85d07b1e248fa3e026f45de1a104d0f8e48528ed70b819"
+                },
+                {
+                  "index": 20,
+                  "rect": [
+                    512,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 16.666666666666668,
+                  "sourcePng": "renders/base/w/walk/20.png",
+                  "sourcePngSha256": "d48b61f87da49fc9195883cd949e55807725bd98c725e1c731a3cd2a6cb37320"
+                },
+                {
+                  "index": 21,
+                  "rect": [
+                    768,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 17.5,
+                  "sourcePng": "renders/base/w/walk/21.png",
+                  "sourcePngSha256": "e04ed119e9f6fa46453eaa272644dae28a3c4e8a42e22c1b7ec0af583aa34004"
+                },
+                {
+                  "index": 22,
+                  "rect": [
+                    1024,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 18.333333333333332,
+                  "sourcePng": "renders/base/w/walk/22.png",
+                  "sourcePngSha256": "de4d77e46984245a82ffa349ed6454addeafee775d01068f52be1de1ad2b0d5e"
+                },
+                {
+                  "index": 23,
+                  "rect": [
+                    1280,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 19.166666666666668,
+                  "sourcePng": "renders/base/w/walk/23.png",
+                  "sourcePngSha256": "63a55adcb11524177404d0b4081beb498425cf0ee5544e31e7a22348e0b79eec"
+                },
+                {
+                  "index": 24,
+                  "rect": [
+                    0,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 20.0,
+                  "sourcePng": "renders/base/w/walk/24.png",
+                  "sourcePngSha256": "a17ff2de05ab3549288a0dc3d3dec32faa3e48eb982c54fdb6a3e01c7bf650ce"
+                },
+                {
+                  "index": 25,
+                  "rect": [
+                    256,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 20.833333333333332,
+                  "sourcePng": "renders/base/w/walk/25.png",
+                  "sourcePngSha256": "8373e2f7590a40814487faab5c2f170f4ac5ef0d01b31216c7cc20cf4693fcde"
+                },
+                {
+                  "index": 26,
+                  "rect": [
+                    512,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 21.666666666666668,
+                  "sourcePng": "renders/base/w/walk/26.png",
+                  "sourcePngSha256": "27a9031614a64870d38b58de600b52704ddd96e1320ecbfb5e776847824d434b"
+                },
+                {
+                  "index": 27,
+                  "rect": [
+                    768,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 22.5,
+                  "sourcePng": "renders/base/w/walk/27.png",
+                  "sourcePngSha256": "fc9522413cf67af0d376bebc347dd6df5ceba639273e522a675ab769939f2823"
+                },
+                {
+                  "index": 28,
+                  "rect": [
+                    1024,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 23.333333333333332,
+                  "sourcePng": "renders/base/w/walk/28.png",
+                  "sourcePngSha256": "91ddf937850e8ecf4d440e5a90361aaef8ac8f1f13d71bfe014f6e14b75ddc42"
+                },
+                {
+                  "index": 29,
+                  "rect": [
+                    1280,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 24.166666666666668,
+                  "sourcePng": "renders/base/w/walk/29.png",
+                  "sourcePngSha256": "004264fd608edf457fc5e72794e4f968deeaff49c5c88589a285de48834f0d01"
+                },
+                {
+                  "index": 30,
+                  "rect": [
+                    0,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 25.0,
+                  "sourcePng": "renders/base/w/walk/30.png",
+                  "sourcePngSha256": "51bfe0589255d7172a098cd71989336bc90d9413aa3bbc404e4147299321cfed"
+                },
+                {
+                  "index": 31,
+                  "rect": [
+                    256,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 25.833333333333332,
+                  "sourcePng": "renders/base/w/walk/31.png",
+                  "sourcePngSha256": "da28cf3b7708881396fcda38218c2d4c3e4ade6ea33d990689a5d47de89068e6"
+                },
+                {
+                  "index": 32,
+                  "rect": [
+                    512,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 26.666666666666668,
+                  "sourcePng": "renders/base/w/walk/32.png",
+                  "sourcePngSha256": "5efe376b6586729f1cd0a8bf6d8d04bf629c97b5f06f7f14d2f828a1a105056a"
+                },
+                {
+                  "index": 33,
+                  "rect": [
+                    768,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 27.5,
+                  "sourcePng": "renders/base/w/walk/33.png",
+                  "sourcePngSha256": "3fbd746cb8670cc3a678ce05087381f946a96d886934180c392e9fe07816af8e"
+                },
+                {
+                  "index": 34,
+                  "rect": [
+                    1024,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 28.333333333333332,
+                  "sourcePng": "renders/base/w/walk/34.png",
+                  "sourcePngSha256": "67b4d0cd2024e7d46e5f1684c4ab3c037bdbc7ca46d8b140249d1ba5041455e9"
+                },
+                {
+                  "index": 35,
+                  "rect": [
+                    1280,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 29.166666666666668,
+                  "sourcePng": "renders/base/w/walk/35.png",
+                  "sourcePngSha256": "f04fe684b916aba66e5962827dceb0b6007a7c99bae7d19fea167dafb1a33dba"
+                },
+                {
+                  "index": 36,
+                  "rect": [
+                    0,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 30.0,
+                  "sourcePng": "renders/base/w/walk/36.png",
+                  "sourcePngSha256": "bd0ac67359c1b10695bbf953068c9ebea153ab7972471fbcf23d93cfd601bfa5"
+                },
+                {
+                  "index": 37,
+                  "rect": [
+                    256,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 30.833333333333332,
+                  "sourcePng": "renders/base/w/walk/37.png",
+                  "sourcePngSha256": "87ee90a7bc128b31145acfb4766de56b5570389350fd1bd4bc4068e0747fe0de"
+                },
+                {
+                  "index": 38,
+                  "rect": [
+                    512,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 31.666666666666668,
+                  "sourcePng": "renders/base/w/walk/38.png",
+                  "sourcePngSha256": "d5577c47beab00554f9f212767b22d889e3c85707217a1c1859d0f652f4fb514"
+                },
+                {
+                  "index": 39,
+                  "rect": [
+                    768,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 32.5,
+                  "sourcePng": "renders/base/w/walk/39.png",
+                  "sourcePngSha256": "3cb5f58a19dd46ebed434a482032c85252b5655f18e5827d0a8dca78b52744d0"
+                },
+                {
+                  "index": 40,
+                  "rect": [
+                    1024,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 33.333333333333336,
+                  "sourcePng": "renders/base/w/walk/40.png",
+                  "sourcePngSha256": "f5a393389c06b5bb44d7b9c565ed73ccb5d7f06e7e25098d16a5e9f32e214b02"
+                },
+                {
+                  "index": 41,
+                  "rect": [
+                    1280,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 34.166666666666664,
+                  "sourcePng": "renders/base/w/walk/41.png",
+                  "sourcePngSha256": "16f8b6c59ab5b8947969bed7a62117b9bc619ebc65dbdfa84f2fb54379e28f35"
+                },
+                {
+                  "index": 42,
+                  "rect": [
+                    0,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 35.0,
+                  "sourcePng": "renders/base/w/walk/42.png",
+                  "sourcePngSha256": "05c91785db6dfdacff96499e2a8b03c1ae9604f370a1402b615ae4dfaacefe77"
+                },
+                {
+                  "index": 43,
+                  "rect": [
+                    256,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 35.833333333333336,
+                  "sourcePng": "renders/base/w/walk/43.png",
+                  "sourcePngSha256": "099da3c5e6189a62a6d1f2b9d8a6f45b03c8b2f1ab5f1b544d092bd309c685c4"
+                },
+                {
+                  "index": 44,
+                  "rect": [
+                    512,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 36.666666666666664,
+                  "sourcePng": "renders/base/w/walk/44.png",
+                  "sourcePngSha256": "075a483f9cf7d1225e814bdd9f7aa485784ccb081c68bfb5b0d8a61ed43a7235"
+                },
+                {
+                  "index": 45,
+                  "rect": [
+                    768,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 37.5,
+                  "sourcePng": "renders/base/w/walk/45.png",
+                  "sourcePngSha256": "609972d0ec76a684e60f77718f1be97f9666e942971f422982e6a16b5c08e9c2"
+                },
+                {
+                  "index": 46,
+                  "rect": [
+                    1024,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 38.333333333333336,
+                  "sourcePng": "renders/base/w/walk/46.png",
+                  "sourcePngSha256": "60c0d4db402c4a8d74e141507b54d7d31d03f9d6cb63277b125cf0a70815349e"
+                },
+                {
+                  "index": 47,
+                  "rect": [
+                    1280,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 39.166666666666664,
+                  "sourcePng": "renders/base/w/walk/47.png",
+                  "sourcePngSha256": "53517d1f18c77c391e5f7f8ed59756d94c9c9d86864f45afbb3dbc5f4e8c8dc2"
+                }
+              ],
+              "durationSeconds": 1.6666666666666667,
+              "loop": true,
+              "sourceAction": "Walk_ProportionProposal",
+              "loopEndpointMaxUsedVertexErrorMeters": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "atlases/base-w-walk.webp",
+      "sha256": "48e02400791a28c66113ed63877e3e021acc1b6ba81b8479541c058be35c54df",
+      "bytes": 877050,
+      "size": [
+        1536,
+        2560
+      ],
+      "decodedRGBABytes": 15728640
+    }
+  ],
+  "packedFrameCount": 48,
+  "limitations": [
+    "No art/style/wardrobe approval follows from geometry containment/seam.",
+    "No no-slip, turn/start/stop, gameplay or performance acceptance.",
+    "REST height uses visible accessories/hair too; independent body landmark height is a different metric.",
+    "Raster alpha containment is checked by packer only after actual render, not by dry-run."
+  ]
+}

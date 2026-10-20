@@ -1,0 +1,266 @@
+{
+  "sourceCommit": "a6250cb",
+  "blendSha256": "32a86cd5e047708e30c0b21c589b85a2753e2c793ebe3e69ec5148d00c926987",
+  "contractSha256": "e7d65d8f3d5f8b2c51378122b32e51d04b369af4212cac710df88014058934f4",
+  "expectedRetargetActions": {
+    "Walk": "Walk_ProportionProposal",
+    "Idle_Neutral": "Idle_Neutral_ProportionProposal"
+  },
+  "missing": [
+    "Walk_ProportionProposal"
+  ],
+  "savedActiveAction": "Idle_Neutral_ProportionProposal",
+  "actions": [
+    {
+      "name": "Death",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        32.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Gun_Shoot",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        18.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "HitRecieve",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        17.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "HitRecieve_2",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        17.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Idle",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        50.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Idle_Gun",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        50.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Idle_Gun_Pointing",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        50.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Idle_Gun_Shoot",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        20.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Idle_Neutral",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        50.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Idle_Neutral_ProportionProposal",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        50.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Idle_Sword",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        50.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Interact",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        38.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Kick_Left",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        28.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Kick_Right",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        28.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Punch_Left",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        25.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Punch_Right",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        25.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Roll",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        40.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Run",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        24.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Run_Back",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        25.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Run_Left",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        24.0
+      ],
+      "curveCount": 434
+    },
+    {
+      "name": "Run_Right",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        24.0
+      ],
+      "curveCount": 434
+    },
+    {
+      "name": "Run_Shoot",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        25.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Sword_Slash",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        31.0
+      ],
+      "curveCount": 380
+    },
+    {
+      "name": "Walk",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        40.0
+      ],
+      "curveCount": 408
+    },
+    {
+      "name": "Wave",
+      "users": 1,
+      "fakeUser": false,
+      "frameRange": [
+        0.0,
+        50.0
+      ],
+      "curveCount": 380
+    }
+  ],
+  "sourceWrites": false
+}

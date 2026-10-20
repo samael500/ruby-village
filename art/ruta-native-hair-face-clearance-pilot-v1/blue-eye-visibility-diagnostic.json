@@ -1,0 +1,39 @@
+{
+  "actualFixedGeometryEyeROI": [
+    258,
+    174,
+    288,
+    240
+  ],
+  "blueProxyDefinition": "B>R+25 andB>G+10 andB>70 alpha>128 insideunchangedprojectedglobeROI; notsemanticiris/faceacceptance",
+  "rows": [
+    {
+      "state": "baseline",
+      "blueRGBThresholdPixelCountWithinFixedEyeGeometryROI": 0,
+      "alpha128ActorBBox": [
+        142,
+        127,
+        374,
+        531
+      ]
+    },
+    {
+      "state": "candidate",
+      "blueRGBThresholdPixelCountWithinFixedEyeGeometryROI": 0,
+      "alpha128ActorBBox": [
+        142,
+        127,
+        374,
+        531
+      ]
+    }
+  ],
+  "commonFaceEvidenceCrop": [
+    250,
+    175,
+    335,
+    280
+  ],
+  "noPixelRegistration": true,
+  "geometryRisk": "RESThead/ear-side contacts increased, candidateNOTselected"
+}

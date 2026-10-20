@@ -1,0 +1,113 @@
+{
+  "url": "http://localhost:5311/art/ruta-native-painted-sprites-v2/packing/head-pivot-trial/review.html",
+  "htmlSha": "a384ba2f9c6044e2567c163d198bbe0386595f928d3c9966eda1780b5efa6221",
+  "scope": "CDP touch emulation, not physical phone",
+  "errors": [],
+  "httpFailures": [],
+  "state": {
+    "ready": true,
+    "playing": true,
+    "frame": 44,
+    "nativePhaseIndex": 44,
+    "frameCount": 48,
+    "cycleSeconds": 1.6666666666666667,
+    "mode": "head",
+    "drawCount": 291,
+    "commonScale": 1.1631563024644236,
+    "referenceDraw": {
+      "x": 83.47697483840983,
+      "y": 71.87529574044322,
+      "width": 89.04605032318032,
+      "height": 186.55436028830434
+    },
+    "physicalRootCertified": false,
+    "translationNativeComparisonPx": [
+      -0.5295449577488096,
+      5.039626595906621
+    ],
+    "lastDraw": {
+      "paintedRect": [
+        648,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        1600,
+        256,
+        320
+      ],
+      "displayOrigin": [
+        29.07291366146943,
+        58.353367876899235
+      ],
+      "fixedScale": 1.1631563024644236,
+      "mode": "head"
+    }
+  },
+  "geometry": {
+    "viewport": [
+      844,
+      390
+    ],
+    "scroll": [
+      844,
+      583
+    ],
+    "canvases": [
+      {
+        "id": "painted",
+        "rect": {
+          "x": 68.65625,
+          "y": 199,
+          "width": 156,
+          "height": 195,
+          "top": 199,
+          "right": 224.65625,
+          "bottom": 394,
+          "left": 68.65625
+        },
+        "backing": [
+          256,
+          320
+        ]
+      },
+      {
+        "id": "native",
+        "rect": {
+          "x": 343.984375,
+          "y": 199,
+          "width": 156,
+          "height": 195,
+          "top": 199,
+          "right": 499.984375,
+          "bottom": 394,
+          "left": 343.984375
+        },
+        "backing": [
+          256,
+          320
+        ]
+      },
+      {
+        "id": "reference",
+        "rect": {
+          "x": 619.328125,
+          "y": 199,
+          "width": 156,
+          "height": 195,
+          "top": 199,
+          "right": 775.328125,
+          "bottom": 394,
+          "left": 619.328125
+        },
+        "backing": [
+          256,
+          320
+        ]
+      }
+    ]
+  },
+  "video": "/tmp/ruby-painted-native48-qa/docs/qa/painted-head-pivot-browser/landscape/video/page@64ea440649cae120bb75323dce0a52e2.webm"
+}

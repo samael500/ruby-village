@@ -1,0 +1,39 @@
+{
+  "status": "diagnostic-only-not-UV-match-PASS",
+  "sourceSHA256": "46310dda750bd16bf1c03828374a5bb93660cd70a16c18dc6174d942d6133d87",
+  "size": [
+    1254,
+    1254
+  ],
+  "uvDefinition": "actual native UVMap polygons, normalized; rasterized at output size, no UV modification",
+  "backgroundMedianRGB": [
+    230.0,
+    225.0,
+    211.0
+  ],
+  "interiorErosionPixels": 3,
+  "uvTexels": 900849,
+  "interiorTexels": 800613,
+  "thresholdSensitivity": [
+    {
+      "RGBDistanceBelow": 15,
+      "wholeUVBackgroundLikeFraction": 0.000845868730497564,
+      "erodedInteriorBackgroundLikeFraction": 0.0
+    },
+    {
+      "RGBDistanceBelow": 25,
+      "wholeUVBackgroundLikeFraction": 0.0014231019849053504,
+      "erodedInteriorBackgroundLikeFraction": 0.0
+    },
+    {
+      "RGBDistanceBelow": 35,
+      "wholeUVBackgroundLikeFraction": 0.0018560269257111902,
+      "erodedInteriorBackgroundLikeFraction": 0.0
+    },
+    {
+      "RGBDistanceBelow": 50,
+      "wholeUVBackgroundLikeFraction": 0.0025498168949513182,
+      "erodedInteriorBackgroundLikeFraction": 0.0
+    }
+  ]
+}

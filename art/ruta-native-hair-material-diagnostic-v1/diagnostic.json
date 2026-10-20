@@ -1,0 +1,48 @@
+{
+  "sourceSha256": "b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7",
+  "variants": [
+    {
+      "name": "normal-zero",
+      "changes": [
+        {
+          "node": "Normal Map",
+          "parameter": "Strength",
+          "before": 0.25,
+          "after": 0
+        }
+      ],
+      "originalAlphaLinksUnchanged": true,
+      "geometryUVActionCameraUnchanged": true
+    },
+    {
+      "name": "uniform-copper-normal-zero",
+      "changes": [
+        {
+          "node": "Normal Map",
+          "parameter": "Strength",
+          "before": 0.25,
+          "after": 0
+        },
+        {
+          "node": "Diffuse BSDF",
+          "parameter": "Color",
+          "afterLinearRGBA": [
+            0.32,
+            0.095,
+            0.035,
+            1
+          ],
+          "removedColorLinks": [
+            [
+              "Fixed storybook RGB source",
+              "Color"
+            ]
+          ]
+        }
+      ],
+      "originalAlphaLinksUnchanged": true,
+      "geometryUVActionCameraUnchanged": true
+    }
+  ],
+  "sourceHashAfter": "b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7"
+}

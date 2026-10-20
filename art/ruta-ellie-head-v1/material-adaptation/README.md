@@ -1,0 +1,3 @@
+# Native material/hair inventory and intermediate color reject
+
+Use ../color-handoff for the current blue-iris/copper-cut source. This folder's palette-linked color renders/source were intermediate pale-hair rejects, not the final copper result; direct native SH-Hair BaseColor was corrected in color-handoff. All artifacts retained for traceability. Native-material-inventory records source graph/socket structure; component inventory and numeric pony proposal are separate technical research, not accepted hair. See HAIR-INVENTORY-AND-BLOCKER.md. Rejected raw CC0 one-fit is elsewhere and is not repeated. Ready solid Victoria donor will be evaluated separately, without overwriting these sources.

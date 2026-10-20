@@ -1,0 +1,7739 @@
+{
+  "source": "/home/mskorokhod/life/ruby-village-36-garment-paint/art/ruta-native-garment-paint-pilot-v1/ruta-painted-garment-pilot.blend",
+  "sha256": "12527b6f2321ec70fb734ac3bbc67c409e3da2ff74e6ac19ed69455db8aec662",
+  "objects": [
+    {
+      "name": "Adventurer_Body",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Skin",
+          "polygons": 1932,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "White",
+          "polygons": 0,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "Ruta painted garment Brown2",
+          "polygons": 80,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        },
+        {
+          "name": "Ruta painted garment Ruta olive sleeveless vest",
+          "polygons": 384,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        },
+        {
+          "name": "Gold",
+          "polygons": 16,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "Ruta painted garment Ruta cream shirt",
+          "polygons": 442,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Adventurer_Feet",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Brown_02",
+          "polygons": 416,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        },
+        {
+          "name": "Ruta painted garment Brown2",
+          "polygons": 194,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Adventurer_Head",
+      "hideRender": true,
+      "materials": [
+        {
+          "name": "Skin",
+          "polygons": 336,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "Hair_Brown",
+          "polygons": 0,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "Brown",
+          "polygons": 24,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ruta stock long trousers",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Ruta warm loose cargo cloth",
+          "polygons": 706,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-trousers-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ruta CC0 ginger waves",
+      "hideRender": true,
+      "materials": [
+        {
+          "name": "Copper native cap reference only",
+          "polygons": 288,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "strawberry_cloud_diff.png.001",
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "ONE diagonal satchel strap",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Adapted warm brown leather",
+          "polygons": 288,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready tongue",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.tongue",
+          "polygons": 1904,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Combine XYZ",
+              "type": "COMBXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.001",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready teeth_top",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.teeth",
+          "polygons": 5248,
+          "nodes": [
+            {
+              "name": "Frame.011",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Frame.002",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.001",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.006",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.002",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.009",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.004",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.008",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.002",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.007",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture.001",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.010",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.014",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.005",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.003",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.004",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.005",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.003",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Bump",
+              "type": "BUMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.001",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.015",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.001",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.001",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Separate XYZ.001",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.002",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.001",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.004",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.013",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Clamp",
+              "type": "CLAMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Attribute.015",
+              "type": "ATTRIBUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.016",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.017",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "ellie.gums",
+          "polygons": 4528,
+          "nodes": [
+            {
+              "name": "Frame.011",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Frame.002",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Clamp",
+              "type": "CLAMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Attribute.015",
+              "type": "ATTRIBUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.017",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.018",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB",
+              "type": "RGB",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready teeth_btm",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.teeth",
+          "polygons": 5248,
+          "nodes": [
+            {
+              "name": "Frame.011",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Frame.002",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.001",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.006",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.002",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.009",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.004",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.008",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.002",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.007",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture.001",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.010",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.014",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.005",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.003",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.004",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.005",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.003",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Bump",
+              "type": "BUMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.001",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.015",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.001",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.001",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Separate XYZ.001",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.002",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.001",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.004",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.013",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Clamp",
+              "type": "CLAMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Attribute.015",
+              "type": "ATTRIBUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.016",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.017",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "ellie.gums",
+          "polygons": 4528,
+          "nodes": [
+            {
+              "name": "Frame.011",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Frame.002",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Clamp",
+              "type": "CLAMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Attribute.015",
+              "type": "ATTRIBUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.017",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.018",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB",
+              "type": "RGB",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready head",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.head",
+          "polygons": 17648,
+          "nodes": [
+            {
+              "name": "Material Output.001",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "ellie.head_lips",
+          "polygons": 1152,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "ellie.mouth_inner",
+          "polygons": 4032,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "ellie.head_hair",
+          "polygons": 2304,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "UVMap-Mix",
+        "Baking",
+        "Baking-Mix",
+        "Full",
+        "Full-Mix"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready hair_cut",
+      "hideRender": true,
+      "materials": [
+        {
+          "name": "ellie.hair_mesh",
+          "polygons": 142404,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready face_line2",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.face_lines",
+          "polygons": 512,
+          "nodes": [
+            {
+              "name": "Frame",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.001",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.002",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Bump",
+              "type": "BUMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.001",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.001",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.004",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.002",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Light Path",
+              "type": "LIGHT_PATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB",
+              "type": "RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.005",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.004",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.003",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": ""
+            },
+            {
+              "name": "Vector Math.002",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Value",
+              "type": "VALUE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader.001",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready face_line1",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.face_lines",
+          "polygons": 512,
+          "nodes": [
+            {
+              "name": "Frame",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.001",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.002",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Bump",
+              "type": "BUMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.001",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.001",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.004",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.002",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Light Path",
+              "type": "LIGHT_PATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB",
+              "type": "RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.005",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.004",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.003",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": ""
+            },
+            {
+              "name": "Vector Math.002",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Value",
+              "type": "VALUE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader.001",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eyelashes",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.eyelashes",
+          "polygons": 2240,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eyebrows",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.eyebrows",
+          "polygons": 3328,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eye_highlights",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.highlights",
+          "polygons": 2,
+          "nodes": [
+            {
+              "name": "Group.001",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Attribute",
+              "type": "ATTRIBUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eye.R",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.eyes",
+          "polygons": 8576,
+          "nodes": [
+            {
+              "name": "Frame.011",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.016",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ.001",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.001",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Blood Shot"
+            },
+            {
+              "name": "Vector Math.001",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.001",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.002",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.004",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.005",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.001",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Attribute.015",
+              "type": "ATTRIBUTE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "ellie.eyes_pupils",
+          "polygons": 1408,
+          "nodes": [
+            {
+              "name": "Bump",
+              "type": "BUMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.005",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Iris"
+            },
+            {
+              "name": "Tangent",
+              "type": "TANGENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.007",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Combine XYZ",
+              "type": "COMBXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.008",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.006",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Camera Data",
+              "type": "CAMERA",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Transform",
+              "type": "VECT_TRANSFORM",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Geometry",
+              "type": "NEW_GEOMETRY",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.001",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.008",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.002",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.003",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.009",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.004",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.009",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.010",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.010",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.011",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.012",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.013",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.001",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.013",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.002",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.015",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.003",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.014",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.019",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.017",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.018",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.014",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.016",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.007",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.001",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.006",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.001",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.002",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.003",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Value.001",
+              "type": "VALUE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.002",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.003",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.004",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.001",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.004",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Value",
+              "type": "VALUE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Iris",
+        "Blood Shot"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready eye.L",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "ellie.eyes",
+          "polygons": 8576,
+          "nodes": [
+            {
+              "name": "Frame.011",
+              "type": "FRAME",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.016",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ.001",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.001",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Blood Shot"
+            },
+            {
+              "name": "Vector Math.001",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.001",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.002",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.004",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.005",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.001",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Attribute.015",
+              "type": "ATTRIBUTE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        },
+        {
+          "name": "ellie.eyes_pupils",
+          "polygons": 1408,
+          "nodes": [
+            {
+              "name": "Bump",
+              "type": "BUMP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.003",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.005",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Iris"
+            },
+            {
+              "name": "Tangent",
+              "type": "TANGENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.007",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Combine XYZ",
+              "type": "COMBXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.008",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.006",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Camera Data",
+              "type": "CAMERA",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Transform",
+              "type": "VECT_TRANSFORM",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Geometry",
+              "type": "NEW_GEOMETRY",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.001",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.008",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.002",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.003",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.009",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.004",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.009",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.010",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.010",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.011",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.012",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.013",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range.001",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.013",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.002",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Separate XYZ",
+              "type": "SEPXYZ",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.015",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.003",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.014",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.019",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.017",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Noise Texture",
+              "type": "TEX_NOISE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Map Range",
+              "type": "MAP_RANGE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.018",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.014",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Vector Math.016",
+              "type": "VECT_MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.007",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "RGB Curves.001",
+              "type": "CURVE_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.006",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.001",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.002",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.003",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Value.001",
+              "type": "VALUE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.002",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.003",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.004",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.001",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Reroute.004",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Value",
+              "type": "VALUE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Iris"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready CC0 Cortu waves",
+      "hideRender": true,
+      "materials": [
+        {
+          "name": "Copper native cap reference only.001",
+          "polygons": 288,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "strawberry_cloud_diff.png.002",
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ellie ready Loose cap",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 5197,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 1",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 338,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 2",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 312,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 3",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 300,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 4",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 297,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 5",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 264,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 6",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 230,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 7",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 338,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 8",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 312,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 9",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 300,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 10",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 297,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 11",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 264,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 12",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 230,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 13",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 338,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 14",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 312,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 15",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 300,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 16",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 297,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 17",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 264,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Ellie ready Layered wave 18",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ellie ready Stable painted copper UV pilot",
+          "polygons": 230,
+          "nodes": [
+            {
+              "name": "Material Output.002",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.010",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.010",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix.009",
+              "type": "MIX",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.011",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "UV Map.002",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "Alignment"
+            },
+            {
+              "name": "Reroute.006",
+              "type": "REROUTE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.012",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.006",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.026",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.027",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.028",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.029",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.007",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math.030",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.005",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.008",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "ColorRamp.001",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Group.009",
+              "type": "GROUP",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Ruta copper native palette",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-hair-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "UVMap"
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "Alignment"
+      ],
+      "modifiers": [
+        "ARMATURE",
+        "SUBSURF"
+      ]
+    },
+    {
+      "name": "Cream shirt V inside vest",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Ruta cream shirt",
+          "polygons": 1,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Vest brass button 1",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta warm brass detail",
+          "polygons": 288,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Vest brass button 2",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta warm brass detail",
+          "polygons": 288,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Vest brass button 3",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta warm brass detail",
+          "polygons": 288,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Left burgundy bow loop",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta burgundy neck bow",
+          "polygons": 1,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Right burgundy bow loop",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta burgundy neck bow",
+          "polygons": 1,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Burgundy bow knot",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta burgundy neck bow",
+          "polygons": 288,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Two burgundy bow tails",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta burgundy neck bow",
+          "polygons": 2,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "ONE rounded right hip satchel",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Ruta satchel warm leather",
+          "polygons": 218,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Single rounded satchel flap",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Ruta satchel warm leather",
+          "polygons": 218,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Satchel warm brass clasp",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta warm brass detail",
+          "polygons": 218,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ankle boot lace R",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta cream shirt",
+          "polygons": 480,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cream sock cuff R",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta cream shirt",
+          "polygons": 24,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cargo side pocket R",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Cargo pocket cloth R",
+          "polygons": 218,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Ankle boot lace L",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta cream shirt",
+          "polygons": 480,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cream sock cuff L",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta cream shirt",
+          "polygons": 24,
+          "nodes": [
+            {
+              "name": "Principled BSDF",
+              "type": "BSDF_PRINCIPLED",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Shader to RGB",
+              "type": "SHADERTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Math",
+              "type": "MATH",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Color Ramp",
+              "type": "VALTORGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix (Legacy)",
+              "type": "MIX_RGB",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Emission",
+              "type": "EMISSION",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Transparent BSDF",
+              "type": "BSDF_TRANSPARENT",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Mix Shader",
+              "type": "MIX_SHADER",
+              "image": null,
+              "uv": null
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Cargo side pocket L",
+      "hideRender": false,
+      "materials": [
+        {
+          "name": "Ruta painted garment Cargo pocket cloth L",
+          "polygons": 218,
+          "nodes": [
+            {
+              "name": "Material Output",
+              "type": "OUTPUT_MATERIAL",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Diffuse BSDF",
+              "type": "BSDF_DIFFUSE",
+              "image": null,
+              "uv": null
+            },
+            {
+              "name": "Image Texture",
+              "type": "TEX_IMAGE",
+              "image": "painted-garment-uv-v1.png",
+              "uv": null
+            },
+            {
+              "name": "UV Map",
+              "type": "UVMAP",
+              "image": null,
+              "uv": "RutaPaint"
+            }
+          ]
+        }
+      ],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": [
+        "ARMATURE"
+      ]
+    },
+    {
+      "name": "Icosphere",
+      "hideRender": false,
+      "materials": [],
+      "uvLayers": [
+        "UVMap",
+        "RutaPaint"
+      ],
+      "modifiers": []
+    }
+  ],
+  "images": [
+    {
+      "name": "ellie.bruise_map",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "//../../../ruby-village-36-ruta-render-style/art/ruta-ellie-head-v1/maps/ellie.bruise_map.png"
+    },
+    {
+      "name": "ellie.dirt_map",
+      "size": [
+        2048,
+        2048
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "//../../../ruby-village-36-ruta-render-style/art/ruta-ellie-head-v1/maps/ellie.dirt_map.png"
+    },
+    {
+      "name": "ellie.head",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "//../../../ruby-village-36-ruta-render-style/art/ruta-ellie-head-v1/maps/ellie.head.png"
+    },
+    {
+      "name": "ellie.progression_map",
+      "size": [
+        1024,
+        1024
+      ],
+      "colorspace": "Non-Color",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "//../../../ruby-village-36-ruta-render-style/art/ruta-ellie-head-v1/maps/ellie.progression_map.png"
+    },
+    {
+      "name": "painted-garment-uv-v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "/home/mskorokhod/life/ruby-village-36-garment-paint/art/ruta-native-garment-paint-pilot-v1/rejected-mixed-v1/painted-garment-uv-v1.png"
+    },
+    {
+      "name": "painted-hair-uv-v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "/home/mskorokhod/life/ruby-village-36-uv-paint/art/ruta-native-uv-paint-pilot-v1/inputs/painted-hair-uv-v1.png"
+    },
+    {
+      "name": "painted-trousers-uv-v1.png",
+      "size": [
+        1254,
+        1254
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "/home/mskorokhod/life/ruby-village-36-garment-paint/art/ruta-native-garment-paint-pilot-v1/trousers-only/generated-v1/painted-trousers-uv-v1.png"
+    },
+    {
+      "name": "Render Result",
+      "size": [
+        0,
+        0
+      ],
+      "colorspace": "",
+      "alphaMode": "STRAIGHT",
+      "packed": false,
+      "filepath": ""
+    },
+    {
+      "name": "strawberry_cloud_diff.png.001",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "//../../../ruby-village-36-ruta-render-style/ruby-village-36-mpfb/art/characters-mpfb-v1/source-assets/hair/cortu_strawberry_cloud_hair/strawberry_cloud_diff.png"
+    },
+    {
+      "name": "strawberry_cloud_diff.png.002",
+      "size": [
+        512,
+        512
+      ],
+      "colorspace": "sRGB",
+      "alphaMode": "STRAIGHT",
+      "packed": true,
+      "filepath": "//../../../ruby-village-36-ruta-render-style/ruby-village-36-mpfb/art/characters-mpfb-v1/source-assets/hair/cortu_strawberry_cloud_hair/strawberry_cloud_diff.png"
+    }
+  ]
+}

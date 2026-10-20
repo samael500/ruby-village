@@ -1,0 +1,7814 @@
+{
+  "schemaVersion": 1,
+  "status": "MECHANICALLY-PACKABLE-48-POSE-STYLE-PILOT-NOT-ANIMATION-OR-ART-ACCEPTANCE",
+  "sourceCommit": "b06b455",
+  "nativeBlendSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "raw": {
+    "path": "../../full48/painted-sheet-v1.png",
+    "sha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+    "size": [
+      1295,
+      1215
+    ]
+  },
+  "paintedAtlas": {
+    "path": "painted-fixed-grid.png",
+    "size": [
+      1296,
+      1230
+    ],
+    "frameSize": [
+      162,
+      200
+    ],
+    "sha256": "a14e61a8b06f6df1d3fe6ab9e02d59b1e98292a1bc79650f338d2bdf4a171db5",
+    "rawRgbaPreservedExactlyWithOnlyTransparentOuterPadding": true
+  },
+  "nativeAtlas": {
+    "path": "native-matched48.png",
+    "size": [
+      2048,
+      1920
+    ],
+    "frameSize": [
+      256,
+      320
+    ],
+    "oneUniformScaleFromActualPngs": 0.5,
+    "sha256": "b44a06d118ecb597d6c9f0f78ffa1060bec5ff274b7cf211d33a651ccfaa211f",
+    "matchesInputPoseSheetRgbaExactly": true,
+    "nativeHeightPx": 186.55436028830434,
+    "footAnchor": [
+      128.0,
+      258.42965602874756
+    ],
+    "nativeAssetMetadataSource": "art/ruta-native-layered-walk48-v2/manifest.json",
+    "nativeAssetMetadataSha256": "737324de8d44e3f44ef726d6284d7d1dfea2b608693d489efcfbe2ca778bc672"
+  },
+  "reference": {
+    "path": "approved-reference.png",
+    "originalSource": "public/assets/characters-v1/ruta-idle-pilot.png",
+    "sha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1"
+  },
+  "grid": {
+    "origin": [
+      0,
+      30
+    ],
+    "columnPitch": 162,
+    "rowPitch": 200,
+    "columns": 8,
+    "rows": 6,
+    "frameSize": [
+      162,
+      200
+    ],
+    "reason": "one shared nonoverlapping grid contains all alpha>128 actor components; intentionally not raw dimensions divided into equal rows",
+    "notUniquePhysicalRegistration": true,
+    "rightPaddingPixels": 1,
+    "bottomPaddingPixels": 15,
+    "rawUnassignedTopGutterPixels": 30
+  },
+  "frameCount": 48,
+  "cycleSeconds": 1.6666666666666667,
+  "displayFramesPerSecond": 28.799999999999997,
+  "native48PhasesSampled": [
+    0,
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9,
+    10,
+    11,
+    12,
+    13,
+    14,
+    15,
+    16,
+    17,
+    18,
+    19,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27,
+    28,
+    29,
+    30,
+    31,
+    32,
+    33,
+    34,
+    35,
+    36,
+    37,
+    38,
+    39,
+    40,
+    41,
+    42,
+    43,
+    44,
+    45,
+    46,
+    47
+  ],
+  "intermediatePosesGenerated": 0,
+  "frames": [
+    {
+      "cell": 0,
+      "nativePhaseIndex": 0,
+      "paintedRect": [
+        0,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/00.png",
+      "frameSha256": "b134dc5b25b6d79fab9e51acb4d71c195968c203bbf680fde6c913ac7e8d8a5d",
+      "actorAlpha128Component": {
+        "pixels": 8233,
+        "bbox": [
+          36,
+          40,
+          135,
+          204
+        ],
+        "centroid": [
+          81.92408599538443,
+          115.96489736426577
+        ]
+      },
+      "actorMarginPx": 10,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/00.png",
+      "nativePngSha256": "7a89e04162e6a7c2eabcc960eceb792efc4c7b6da863fad5bc166ac46fb117a4",
+      "paintedDescriptors": {
+        "bbox": [
+          36,
+          10,
+          135,
+          174
+        ],
+        "centroid": [
+          81.92408599538443,
+          85.96489736426577
+        ],
+        "crownBandCentroid": [
+          86.75879396984925,
+          23.842546063651593
+        ],
+        "lowerBandCentroid": [
+          80.41547619047618,
+          157.02142857142857
+        ],
+        "fitPoints": [
+          [
+            81.92408599538443,
+            85.96489736426577
+          ],
+          [
+            86.75879396984925,
+            23.842546063651593
+          ],
+          [
+            80.41547619047618,
+            157.02142857142857
+          ],
+          [
+            36.0,
+            10.0
+          ],
+          [
+            135.0,
+            174.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          71,
+          67,
+          187,
+          265
+        ],
+        "centroid": [
+          124.52333572674121,
+          156.03220843163402
+        ],
+        "crownBandCentroid": [
+          124.59337913803873,
+          83.56214865708932
+        ],
+        "lowerBandCentroid": [
+          120.80572597137014,
+          246.25153374233128
+        ],
+        "fitPoints": [
+          [
+            124.52333572674121,
+            156.03220843163402
+          ],
+          [
+            124.59337913803873,
+            83.56214865708932
+          ],
+          [
+            120.80572597137014,
+            246.25153374233128
+          ],
+          [
+            71.0,
+            67.0
+          ],
+          [
+            187.0,
+            265.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.3696398416458493,
+            -2.727854990688371
+          ],
+          "length": 2.7527852191472224
+        },
+        "crownBand": {
+          "delta": [
+            5.923117481422111,
+            -2.5157996553620308
+          ],
+          "length": 6.435259793096773
+        },
+        "lowerBand": {
+          "delta": [
+            2.332500594478276,
+            -10.2973281965142
+          ],
+          "length": 10.558197147712667
+        },
+        "bboxMin": {
+          "delta": [
+            0.4760855079374835,
+            -2.054695694363147
+          ],
+          "length": 2.10913058090355
+        },
+        "bboxMax": {
+          "delta": [
+            -0.3714405480845926,
+            -9.29706209019767
+          ],
+          "length": 9.304479114370244
+        }
+      }
+    },
+    {
+      "cell": 1,
+      "nativePhaseIndex": 1,
+      "paintedRect": [
+        162,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/01.png",
+      "frameSha256": "169542d2612b9aa258988d5aac4a07e2052c6f6c5cd0f7b78f931adc18633357",
+      "actorAlpha128Component": {
+        "pixels": 8313,
+        "bbox": [
+          198,
+          41,
+          297,
+          204
+        ],
+        "centroid": [
+          243.84025021051366,
+          116.4911584265608
+        ]
+      },
+      "actorMarginPx": 11,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/01.png",
+      "nativePngSha256": "32036a77cf7296883205c09cd85ddd94cda949eb8f9fe03c36b78cf54b5050b5",
+      "paintedDescriptors": {
+        "bbox": [
+          36,
+          11,
+          135,
+          174
+        ],
+        "centroid": [
+          81.84025021051366,
+          86.4911584265608
+        ],
+        "crownBandCentroid": [
+          86.77651821862348,
+          24.55060728744939
+        ],
+        "lowerBandCentroid": [
+          83.34873487348734,
+          157.5005500550055
+        ],
+        "fitPoints": [
+          [
+            81.84025021051366,
+            86.4911584265608
+          ],
+          [
+            86.77651821862348,
+            24.55060728744939
+          ],
+          [
+            83.34873487348734,
+            157.5005500550055
+          ],
+          [
+            36.0,
+            11.0
+          ],
+          [
+            135.0,
+            174.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          70,
+          67,
+          186,
+          265
+        ],
+        "centroid": [
+          124.34904013961605,
+          156.29134585771482
+        ],
+        "crownBandCentroid": [
+          124.5894538606403,
+          83.62084118016321
+        ],
+        "lowerBandCentroid": [
+          120.91065989847716,
+          246.16142131979694
+        ],
+        "fitPoints": [
+          [
+            124.34904013961605,
+            156.29134585771482
+          ],
+          [
+            124.5894538606403,
+            83.62084118016321
+          ],
+          [
+            120.91065989847716,
+            246.16142131979694
+          ],
+          [
+            70.0,
+            67.0
+          ],
+          [
+            186.0,
+            265.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.4464213072265153,
+            -2.3748685454190763
+          ],
+          "length": 2.416462826440074
+        },
+        "crownBand": {
+          "delta": [
+            5.947658830488706,
+            -1.7509063034448218
+          ],
+          "length": 6.2000256811833525
+        },
+        "lowerBand": {
+          "delta": [
+            5.639404991274176,
+            -9.64992260071125
+          ],
+          "length": 11.176935843751
+        },
+        "bboxMin": {
+          "delta": [
+            1.4760855079374835,
+            -0.891539391898732
+          ],
+          "length": 1.72443350525621
+        },
+        "bboxMax": {
+          "delta": [
+            0.6285594519154074,
+            -9.29706209019767
+          ],
+          "length": 9.31828581304431
+        }
+      }
+    },
+    {
+      "cell": 2,
+      "nativePhaseIndex": 2,
+      "paintedRect": [
+        324,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/02.png",
+      "frameSha256": "fdca661d39f614298856824c9f7afa538768680dd6644867a859b75e97322a8e",
+      "actorAlpha128Component": {
+        "pixels": 8256,
+        "bbox": [
+          358,
+          40,
+          457,
+          203
+        ],
+        "centroid": [
+          405.9305959302326,
+          116.08781492248062
+        ]
+      },
+      "actorMarginPx": 10,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/02.png",
+      "nativePngSha256": "8a5b506450140cc1718e8880a1061c7d9d09c411c56ff580720da83bf8806a25",
+      "paintedDescriptors": {
+        "bbox": [
+          34,
+          10,
+          133,
+          173
+        ],
+        "centroid": [
+          81.93059593023256,
+          86.08781492248062
+        ],
+        "crownBandCentroid": [
+          87.02441077441077,
+          23.873737373737374
+        ],
+        "lowerBandCentroid": [
+          80.37274774774775,
+          156.81981981981983
+        ],
+        "fitPoints": [
+          [
+            81.93059593023256,
+            86.08781492248062
+          ],
+          [
+            87.02441077441077,
+            23.873737373737374
+          ],
+          [
+            80.37274774774775,
+            156.81981981981983
+          ],
+          [
+            34.0,
+            10.0
+          ],
+          [
+            133.0,
+            173.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          68,
+          68,
+          186,
+          264
+        ],
+        "centroid": [
+          123.93590932509017,
+          156.64410097887688
+        ],
+        "crownBandCentroid": [
+          124.34825260576334,
+          84.30165542611894
+        ],
+        "lowerBandCentroid": [
+          120.48133595284872,
+          245.58742632612967
+        ],
+        "fitPoints": [
+          [
+            123.93590932509017,
+            156.64410097887688
+          ],
+          [
+            124.34825260576334,
+            84.30165542611894
+          ],
+          [
+            120.48133595284872,
+            245.58742632612967
+          ],
+          [
+            68.0,
+            68.0
+          ],
+          [
+            186.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.9646383150441267,
+            -3.1967752054100913
+          ],
+          "length": 3.339146416792157
+        },
+        "crownBand": {
+          "delta": [
+            6.477197873963675,
+            -3.2190260554832406
+          ],
+          "length": 7.2329953023874936
+        },
+        "lowerBand": {
+          "delta": [
+            2.6071907555456164,
+            -9.867723270378292
+          ],
+          "length": 10.206341468742254
+        },
+        "bboxMin": {
+          "delta": [
+            1.149772903008639,
+            -3.054695694363147
+          ],
+          "length": 3.263915365577616
+        },
+        "bboxMax": {
+          "delta": [
+            -1.6977531530134229,
+            -9.460218392662114
+          ],
+          "length": 9.611352548181216
+        }
+      }
+    },
+    {
+      "cell": 3,
+      "nativePhaseIndex": 3,
+      "paintedRect": [
+        486,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/03.png",
+      "frameSha256": "7c67ecc69b160cd97921f2c4fa3c17eb5f671795a0f1b033918bf106a1954718",
+      "actorAlpha128Component": {
+        "pixels": 8381,
+        "bbox": [
+          518,
+          40,
+          620,
+          202
+        ],
+        "centroid": [
+          568.2732370838802,
+          117.07994272759814
+        ]
+      },
+      "actorMarginPx": 10,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/03.png",
+      "nativePngSha256": "03cc5296008339fc6f5b4ef2f1a0fa84bacae2e0faf808bb4660f801ca41c7fa",
+      "paintedDescriptors": {
+        "bbox": [
+          32,
+          10,
+          134,
+          172
+        ],
+        "centroid": [
+          82.2732370838802,
+          87.07994272759814
+        ],
+        "crownBandCentroid": [
+          87.38461538461539,
+          23.791563275434243
+        ],
+        "lowerBandCentroid": [
+          81.58267716535433,
+          157.12893700787401
+        ],
+        "fitPoints": [
+          [
+            82.2732370838802,
+            87.07994272759814
+          ],
+          [
+            87.38461538461539,
+            23.791563275434243
+          ],
+          [
+            81.58267716535433,
+            157.12893700787401
+          ],
+          [
+            32.0,
+            10.0
+          ],
+          [
+            134.0,
+            172.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          67,
+          68,
+          185,
+          263
+        ],
+        "centroid": [
+          123.51178172798677,
+          157.11409673418768
+        ],
+        "crownBandCentroid": [
+          124.0943160524672,
+          84.52342286071206
+        ],
+        "lowerBandCentroid": [
+          119.52720450281426,
+          245.12851782363978
+        ],
+        "fitPoints": [
+          [
+            123.51178172798677,
+            157.11409673418768
+          ],
+          [
+            124.0943160524672,
+            84.52342286071206
+          ],
+          [
+            119.52720450281426,
+            245.12851782363978
+          ],
+          [
+            67.0,
+            68.0
+          ],
+          [
+            185.0,
+            263.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.7873111294964588,
+            -2.5127712513482265
+          ],
+          "length": 3.083585645838954
+        },
+        "crownBand": {
+          "delta": [
+            7.15010868979607,
+            -3.536374810416987
+          ],
+          "length": 7.976841547608243
+        },
+        "lowerBand": {
+          "delta": [
+            4.9686592332062816,
+            -9.049263162403093
+          ],
+          "length": 10.323601036370578
+        },
+        "bboxMin": {
+          "delta": [
+            -0.17653970192020552,
+            -3.054695694363147
+          ],
+          "length": 3.059792811860768
+        },
+        "bboxMax": {
+          "delta": [
+            0.46540314945099226,
+            -9.623374695126529
+          ],
+          "length": 9.634621975683348
+        }
+      }
+    },
+    {
+      "cell": 4,
+      "nativePhaseIndex": 4,
+      "paintedRect": [
+        648,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/04.png",
+      "frameSha256": "c7c8c90b2a0ac3566af503cf5fc40f0e43eb9bd76d95003cf52f36fc43efaad8",
+      "actorAlpha128Component": {
+        "pixels": 8143,
+        "bbox": [
+          685,
+          41,
+          781,
+          203
+        ],
+        "centroid": [
+          729.5773056613042,
+          116.53837651971018
+        ]
+      },
+      "actorMarginPx": 11,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/04.png",
+      "nativePngSha256": "9f31c5508a4208ed12433e39b39513f5d52edacdfdc560f2122ede38ecbfcc46",
+      "paintedDescriptors": {
+        "bbox": [
+          37,
+          11,
+          133,
+          173
+        ],
+        "centroid": [
+          81.5773056613042,
+          86.53837651971018
+        ],
+        "crownBandCentroid": [
+          86.09128289473684,
+          24.54029605263158
+        ],
+        "lowerBandCentroid": [
+          82.3835005574136,
+          157.63545150501673
+        ],
+        "fitPoints": [
+          [
+            81.5773056613042,
+            86.53837651971018
+          ],
+          [
+            86.09128289473684,
+            24.54029605263158
+          ],
+          [
+            82.3835005574136,
+            157.63545150501673
+          ],
+          [
+            37.0,
+            11.0
+          ],
+          [
+            133.0,
+            173.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          67,
+          69,
+          182,
+          263
+        ],
+        "centroid": [
+          123.25353283458021,
+          157.33468412302577
+        ],
+        "crownBandCentroid": [
+          124.02687843616371,
+          85.2278558338424
+        ],
+        "lowerBandCentroid": [
+          118.07312440645774,
+          245.12345679012347
+        ],
+        "fitPoints": [
+          [
+            123.25353283458021,
+            157.33468412302577
+          ],
+          [
+            124.02687843616371,
+            85.2278558338424
+          ],
+          [
+            118.07312440645774,
+            245.12345679012347
+          ],
+          [
+            67.0,
+            69.0
+          ],
+          [
+            182.0,
+            263.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.2360830026507017,
+            -3.3632847880929546
+          ],
+          "length": 3.583236770750636
+        },
+        "crownBand": {
+          "delta": [
+            5.7131984693153015,
+            -3.369914534888551
+          ],
+          "length": 6.633020482573517
+        },
+        "lowerBand": {
+          "delta": [
+            7.354222105197479,
+            -8.455046599245634
+          ],
+          "length": 11.205908966611785
+        },
+        "bboxMin": {
+          "delta": [
+            5.639241810401913,
+            -2.891539391898732
+          ],
+          "length": 6.337353410619225
+        },
+        "bboxMax": {
+          "delta": [
+            2.302246846986577,
+            -8.460218392662114
+          ],
+          "length": 8.767875215580908
+        }
+      }
+    },
+    {
+      "cell": 5,
+      "nativePhaseIndex": 5,
+      "paintedRect": [
+        810,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/05.png",
+      "frameSha256": "505cc60b68e8a455218d472c599fe6167b9944e1025a35e4ff8d710d725871e1",
+      "actorAlpha128Component": {
+        "pixels": 8199,
+        "bbox": [
+          845,
+          41,
+          942,
+          205
+        ],
+        "centroid": [
+          889.8113184534699,
+          117.55909257226492
+        ]
+      },
+      "actorMarginPx": 11,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/05.png",
+      "nativePngSha256": "69fbc3649264ccf1ab38616327f3d5e32acf376d5e974dd93d47973bbbc974c6",
+      "paintedDescriptors": {
+        "bbox": [
+          35,
+          11,
+          132,
+          175
+        ],
+        "centroid": [
+          79.81131845346994,
+          87.55909257226492
+        ],
+        "crownBandCentroid": [
+          82.90818858560795,
+          24.464846980976013
+        ],
+        "lowerBandCentroid": [
+          79.53258426966292,
+          159.32247191011237
+        ],
+        "fitPoints": [
+          [
+            79.81131845346994,
+            87.55909257226492
+          ],
+          [
+            82.90818858560795,
+            24.464846980976013
+          ],
+          [
+            79.53258426966292,
+            159.32247191011237
+          ],
+          [
+            35.0,
+            11.0
+          ],
+          [
+            132.0,
+            175.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          68,
+          69,
+          179,
+          263
+        ],
+        "centroid": [
+          123.12954830614805,
+          157.72375575073193
+        ],
+        "crownBandCentroid": [
+          124.09707529558183,
+          85.44741754822651
+        ],
+        "lowerBandCentroid": [
+          116.60396975425331,
+          245.18998109640833
+        ],
+        "fitPoints": [
+          [
+            123.12954830614805,
+            157.72375575073193
+          ],
+          [
+            124.09707529558183,
+            85.44741754822651
+          ],
+          [
+            116.60396975425331,
+            245.18998109640833
+          ],
+          [
+            68.0,
+            69.0
+          ],
+          [
+            179.0,
+            263.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.6940516197811064,
+            -2.565104106243467
+          ],
+          "length": 2.657342041737923
+        },
+        "crownBand": {
+          "delta": [
+            1.940565402895274,
+            -3.6772353124839157
+          ],
+          "length": 4.157866475284263
+        },
+        "lowerBand": {
+          "delta": [
+            5.507315509506228,
+            -6.559302488957428
+          ],
+          "length": 8.564751792252414
+        },
+        "bboxMin": {
+          "delta": [
+            2.3129292054730684,
+            -2.891539391898732
+          ],
+          "length": 3.702788349937432
+        },
+        "bboxMax": {
+          "delta": [
+            4.139090544522162,
+            -6.133905787733283
+          ],
+          "length": 7.3997885610698795
+        }
+      }
+    },
+    {
+      "cell": 6,
+      "nativePhaseIndex": 6,
+      "paintedRect": [
+        972,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/06.png",
+      "frameSha256": "3a82ed125b53a001b6da92d2455f977dc6bd7ba087ae614eca31400dbdbdbe18",
+      "actorAlpha128Component": {
+        "pixels": 7991,
+        "bbox": [
+          1007,
+          42,
+          1094,
+          205
+        ],
+        "centroid": [
+          1050.7428356901514,
+          118.66412213740458
+        ]
+      },
+      "actorMarginPx": 12,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/06.png",
+      "nativePngSha256": "52effc68b492c9eb6da9811907f73ae72eeccba3a01e7134061e39b0d91c7938",
+      "paintedDescriptors": {
+        "bbox": [
+          35,
+          12,
+          122,
+          175
+        ],
+        "centroid": [
+          78.74283569015142,
+          88.66412213740458
+        ],
+        "crownBandCentroid": [
+          82.22165820642978,
+          25.64467005076142
+        ],
+        "lowerBandCentroid": [
+          77.72937293729373,
+          159.64466446644664
+        ],
+        "fitPoints": [
+          [
+            78.74283569015142,
+            88.66412213740458
+          ],
+          [
+            82.22165820642978,
+            25.64467005076142
+          ],
+          [
+            77.72937293729373,
+            159.64466446644664
+          ],
+          [
+            35.0,
+            12.0
+          ],
+          [
+            122.0,
+            175.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          70,
+          69,
+          175,
+          263
+        ],
+        "centroid": [
+          123.05414819506016,
+          157.73094785729364
+        ],
+        "crownBandCentroid": [
+          124.43339587242026,
+          85.5234521575985
+        ],
+        "lowerBandCentroid": [
+          116.17121354656632,
+          245.2173095014111
+        ],
+        "fitPoints": [
+          [
+            123.05414819506016,
+            157.73094785729364
+          ],
+          [
+            124.43339587242026,
+            85.5234521575985
+          ],
+          [
+            116.17121354656632,
+            245.2173095014111
+          ],
+          [
+            70.0,
+            69.0
+          ],
+          [
+            175.0,
+            263.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.861463968921754,
+            -1.2869741097034648
+          ],
+          "length": 2.263040093909287
+        },
+        "crownBand": {
+          "delta": [
+            0.805702688682473,
+            -2.3809512824420835
+          ],
+          "length": 2.513580281573033
+        },
+        "lowerBand": {
+          "delta": [
+            3.842655091272732,
+            -6.211870591452879
+          ],
+          "length": 7.304336684151504
+        },
+        "bboxMin": {
+          "delta": [
+            0.31292920547306835,
+            -1.7283830894343026
+          ],
+          "length": 1.756483074635355
+        },
+        "bboxMax": {
+          "delta": [
+            -3.492472480122103,
+            -6.133905787733283
+          ],
+          "length": 7.058481723231853
+        }
+      }
+    },
+    {
+      "cell": 7,
+      "nativePhaseIndex": 7,
+      "paintedRect": [
+        1134,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        0,
+        256,
+        320
+      ],
+      "frame": "frames/07.png",
+      "frameSha256": "74431d2a784359169b382ab6c93ec963344af21554522e3df80e234b7f8430b5",
+      "actorAlpha128Component": {
+        "pixels": 7894,
+        "bbox": [
+          1170,
+          42,
+          1255,
+          207
+        ],
+        "centroid": [
+          1212.249176589815,
+          118.40967823663541
+        ]
+      },
+      "actorMarginPx": 12,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/07.png",
+      "nativePngSha256": "0b90dcf351b0013be41db25f5f4d03384b2e671be6b2ca1fe41606d4107cdb65",
+      "paintedDescriptors": {
+        "bbox": [
+          36,
+          12,
+          121,
+          177
+        ],
+        "centroid": [
+          78.24917658981505,
+          88.40967823663541
+        ],
+        "crownBandCentroid": [
+          81.94701429772918,
+          25.527333894028594
+        ],
+        "lowerBandCentroid": [
+          77.91284403669725,
+          160.76032110091742
+        ],
+        "fitPoints": [
+          [
+            78.24917658981505,
+            88.40967823663541
+          ],
+          [
+            81.94701429772918,
+            25.527333894028594
+          ],
+          [
+            77.91284403669725,
+            160.76032110091742
+          ],
+          [
+            36.0,
+            12.0
+          ],
+          [
+            121.0,
+            177.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          73,
+          69,
+          169,
+          263
+        ],
+        "centroid": [
+          123.12173263629575,
+          157.45759095273658
+        ],
+        "crownBandCentroid": [
+          124.78846153846153,
+          85.45409429280397
+        ],
+        "lowerBandCentroid": [
+          116.55201499531397,
+          245.3036551077788
+        ],
+        "fitPoints": [
+          [
+            123.12173263629575,
+            157.45759095273658
+          ],
+          [
+            124.78846153846153,
+            85.45409429280397
+          ],
+          [
+            116.55201499531397,
+            245.3036551077788
+          ],
+          [
+            73.0,
+            69.0
+          ],
+          [
+            169.0,
+            263.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.5032511039824925,
+            -1.309575231949708
+          ],
+          "length": 2.8251112151074156
+        },
+        "crownBand": {
+          "delta": [
+            0.1311832293026356,
+            -2.448073707858299
+          ],
+          "length": 2.4515860006855457
+        },
+        "lowerBand": {
+          "delta": [
+            3.6752592081163584,
+            -5.000533152049627
+          ],
+          "length": 6.205873190099155
+        },
+        "bboxMin": {
+          "delta": [
+            -1.5239144920625165,
+            -1.7283830894343026
+          ],
+          "length": 2.304262025673431
+        },
+        "bboxMax": {
+          "delta": [
+            1.3443712174134816,
+            -3.8075931828043963
+          ],
+          "length": 4.0379573816409104
+        }
+      }
+    },
+    {
+      "cell": 8,
+      "nativePhaseIndex": 8,
+      "paintedRect": [
+        0,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/08.png",
+      "frameSha256": "58ac4b1023f915c291d06c4389ef7c92254c22ab42d00a05c68dbadc742b19b7",
+      "actorAlpha128Component": {
+        "pixels": 7990,
+        "bbox": [
+          38,
+          243,
+          117,
+          409
+        ],
+        "centroid": [
+          78.73842302878599,
+          318.781351689612
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/08.png",
+      "nativePngSha256": "d7c3260542f9fdb06a2176c6a9db63645701bc7afee2855fb8b4cad0180de65c",
+      "paintedDescriptors": {
+        "bbox": [
+          38,
+          13,
+          117,
+          179
+        ],
+        "centroid": [
+          78.73580185138854,
+          88.81686264698524
+        ],
+        "crownBandCentroid": [
+          85.54683746997598,
+          26.792634107285828
+        ],
+        "lowerBandCentroid": [
+          75.21397379912663,
+          163.44650655021834
+        ],
+        "fitPoints": [
+          [
+            78.73580185138854,
+            88.81686264698524
+          ],
+          [
+            85.54683746997598,
+            26.792634107285828
+          ],
+          [
+            75.21397379912663,
+            163.44650655021834
+          ],
+          [
+            38.0,
+            13.0
+          ],
+          [
+            117.0,
+            179.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          78,
+          68,
+          163,
+          264
+        ],
+        "centroid": [
+          123.18894713848842,
+          156.38706858890345
+        ],
+        "crownBandCentroid": [
+          125.30387794024158,
+          84.79593134138588
+        ],
+        "lowerBandCentroid": [
+          117.2258382642998,
+          245.98717948717947
+        ],
+        "fitPoints": [
+          [
+            123.18894713848842,
+            156.38706858890345
+          ],
+          [
+            125.30387794024158,
+            84.79593134138588
+          ],
+          [
+            117.2258382642998,
+            245.98717948717947
+          ],
+          [
+            78.0,
+            68.0
+          ],
+          [
+            163.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.004444366237564,
+            0.23456624504711954
+          ],
+          "length": 2.0181225286530586
+        },
+        "crownBand": {
+          "delta": [
+            3.8029238380789394,
+            -0.31816883888048153
+          ],
+          "length": 3.816210309752806
+        },
+        "lowerBand": {
+          "delta": [
+            -0.13777198723339268,
+            -2.5596039965076898
+          ],
+          "length": 2.563309138477912
+        },
+        "bboxMin": {
+          "delta": [
+            -4.197601887133658,
+            0.4347732130301267
+          ],
+          "length": 4.220057979416466
+        },
+        "bboxMax": {
+          "delta": [
+            2.691746007555821,
+            -2.481280577875566
+          ],
+          "length": 3.6609083401985365
+        }
+      }
+    },
+    {
+      "cell": 9,
+      "nativePhaseIndex": 9,
+      "paintedRect": [
+        162,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/09.png",
+      "frameSha256": "f5e763c752dc7ab20c9221f18159b6ef016cffbdb6d1ed6e05f7ba29ec77f4fe",
+      "actorAlpha128Component": {
+        "pixels": 7887,
+        "bbox": [
+          200,
+          243,
+          277,
+          408
+        ],
+        "centroid": [
+          240.69773044250033,
+          318.42284772410295
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/09.png",
+      "nativePngSha256": "65b811c35e1e5939142a329f5dccf7b474f91ba5f5c410c91b73cd3d52004766",
+      "paintedDescriptors": {
+        "bbox": [
+          38,
+          13,
+          115,
+          178
+        ],
+        "centroid": [
+          78.70043103448276,
+          88.4315415821501
+        ],
+        "crownBandCentroid": [
+          85.0448717948718,
+          26.713942307692307
+        ],
+        "lowerBandCentroid": [
+          77.1519250780437,
+          163.6545265348595
+        ],
+        "fitPoints": [
+          [
+            78.70043103448276,
+            88.4315415821501
+          ],
+          [
+            85.0448717948718,
+            26.713942307692307
+          ],
+          [
+            77.1519250780437,
+            163.6545265348595
+          ],
+          [
+            38.0,
+            13.0
+          ],
+          [
+            115.0,
+            178.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          83,
+          68,
+          159,
+          264
+        ],
+        "centroid": [
+          123.11281993713516,
+          154.46654692411315
+        ],
+        "crownBandCentroid": [
+          125.69349845201238,
+          84.5764705882353
+        ],
+        "lowerBandCentroid": [
+          117.94905094905094,
+          246.34265734265733
+        ],
+        "fitPoints": [
+          [
+            123.11281993713516,
+            154.46654692411315
+          ],
+          [
+            125.69349845201238,
+            84.5764705882353
+          ],
+          [
+            117.94905094905094,
+            246.34265734265733
+          ],
+          [
+            83.0,
+            68.0
+          ],
+          [
+            159.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.969458953491582,
+            1.7068992848021196
+          ],
+          "length": 2.6061990979098555
+        },
+        "crownBand": {
+          "delta": [
+            2.829438787689881,
+            -0.19023894837935984
+          ],
+          "length": 2.83582698886312
+        },
+        "lowerBand": {
+          "delta": [
+            1.3931555719568394,
+            -2.6731220958116353
+          ],
+          "length": 3.0143762516963237
+        },
+        "bboxMin": {
+          "delta": [
+            -9.197601887133658,
+            0.4347732130301267
+          ],
+          "length": 9.207872078877571
+        },
+        "bboxMax": {
+          "delta": [
+            4.365433402626934,
+            -3.644436880339981
+          ],
+          "length": 5.686732714622096
+        }
+      }
+    },
+    {
+      "cell": 10,
+      "nativePhaseIndex": 10,
+      "paintedRect": [
+        324,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/10.png",
+      "frameSha256": "d72f21abd3af052f64bbd69adbeacf3a399131d8c3750dc2fb9aaebb02f5d1b5",
+      "actorAlpha128Component": {
+        "pixels": 7838,
+        "bbox": [
+          363,
+          243,
+          440,
+          408
+        ],
+        "centroid": [
+          403.12439397805565,
+          318.22990558816025
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/10.png",
+      "nativePngSha256": "be4d1025ba46fe59114ecb8a149ae4db558f80f00009c49beba964925c5eb39e",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          13,
+          116,
+          178
+        ],
+        "centroid": [
+          79.12439397805562,
+          88.22990558816025
+        ],
+        "crownBandCentroid": [
+          85.5988924050633,
+          26.67246835443038
+        ],
+        "lowerBandCentroid": [
+          76.52434077079107,
+          163.4553752535497
+        ],
+        "fitPoints": [
+          [
+            79.12439397805562,
+            88.22990558816025
+          ],
+          [
+            85.5988924050633,
+            26.67246835443038
+          ],
+          [
+            76.52434077079107,
+            163.4553752535497
+          ],
+          [
+            39.0,
+            13.0
+          ],
+          [
+            116.0,
+            178.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          67,
+          160,
+          264
+        ],
+        "centroid": [
+          123.07720887031232,
+          152.07639614536166
+        ],
+        "crownBandCentroid": [
+          126.11235257603973,
+          83.63190564866542
+        ],
+        "lowerBandCentroid": [
+          119.16904276985743,
+          246.59164969450103
+        ],
+        "fitPoints": [
+          [
+            123.07720887031232,
+            152.07639614536166
+          ],
+          [
+            126.11235257603973,
+            83.63190564866542
+          ],
+          [
+            119.16904276985743,
+            246.59164969450103
+          ],
+          [
+            87.0,
+            67.0
+          ],
+          [
+            160.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.4407127168405935,
+            3.862515886340617
+          ],
+          "length": 4.122460685646359
+        },
+        "crownBand": {
+          "delta": [
+            3.0549972281019535,
+            0.7060853010657837
+          ],
+          "length": 3.13553257295978
+        },
+        "lowerBand": {
+          "delta": [
+            -0.5568148911583108,
+            -3.153758515654687
+          ],
+          "length": 3.202535807462595
+        },
+        "bboxMin": {
+          "delta": [
+            -12.034445584669243,
+            1.4347732130301267
+          ],
+          "length": 12.119672219296767
+        },
+        "bboxMax": {
+          "delta": [
+            4.528589705091349,
+            -3.644436880339981
+          ],
+          "length": 5.812920513119164
+        }
+      }
+    },
+    {
+      "cell": 11,
+      "nativePhaseIndex": 11,
+      "paintedRect": [
+        486,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/11.png",
+      "frameSha256": "7eb70709e00a5cea0ea57cda89a8099b0a344e700044502f62873243d2620758",
+      "actorAlpha128Component": {
+        "pixels": 7384,
+        "bbox": [
+          525,
+          243,
+          600,
+          409
+        ],
+        "centroid": [
+          564.1022481040087,
+          317.5511917659805
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/11.png",
+      "nativePngSha256": "3cdc09fa90e4a65eb5f7764fca46315cf1cbf9274baebc38690cbcb3483e50ae",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          13,
+          114,
+          179
+        ],
+        "centroid": [
+          78.10224810400867,
+          87.5511917659805
+        ],
+        "crownBandCentroid": [
+          84.58426966292134,
+          26.54895666131621
+        ],
+        "lowerBandCentroid": [
+          74.91772771792361,
+          164.64740450538687
+        ],
+        "fitPoints": [
+          [
+            78.10224810400867,
+            87.5511917659805
+          ],
+          [
+            84.58426966292134,
+            26.54895666131621
+          ],
+          [
+            74.91772771792361,
+            164.64740450538687
+          ],
+          [
+            39.0,
+            13.0
+          ],
+          [
+            114.0,
+            179.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          66,
+          160,
+          265
+        ],
+        "centroid": [
+          123.10952720361131,
+          150.1926823473509
+        ],
+        "crownBandCentroid": [
+          126.32479700187383,
+          82.75890068707058
+        ],
+        "lowerBandCentroid": [
+          119.95273899033297,
+          247.5639097744361
+        ],
+        "fitPoints": [
+          [
+            123.10952720361131,
+            150.1926823473509
+          ],
+          [
+            126.32479700187383,
+            82.75890068707058
+          ],
+          [
+            119.95273899033297,
+            247.5639097744361
+          ],
+          [
+            87.0,
+            66.0
+          ],
+          [
+            160.0,
+            265.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.661946465575312,
+            4.956779424513286
+          ],
+          "length": 5.626332841991056
+        },
+        "crownBand": {
+          "delta": [
+            1.6623879651217095,
+            1.4354268583868333
+          ],
+          "length": 2.19635698654836
+        },
+        "lowerBand": {
+          "delta": [
+            -3.2092532096982467,
+            -2.7395022585934043
+          ],
+          "length": 4.219499826851147
+        },
+        "bboxMin": {
+          "delta": [
+            -12.034445584669243,
+            2.4347732130301267
+          ],
+          "length": 12.27827354025207
+        },
+        "bboxMax": {
+          "delta": [
+            2.2022771001625188,
+            -3.481280577875566
+          ],
+          "length": 4.1193857415631605
+        }
+      }
+    },
+    {
+      "cell": 12,
+      "nativePhaseIndex": 12,
+      "paintedRect": [
+        648,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/12.png",
+      "frameSha256": "a70aa62e4f3f2198abaf1d1c4a0395d729d04529c9539507061db961bb3fd84a",
+      "actorAlpha128Component": {
+        "pixels": 7179,
+        "bbox": [
+          687,
+          243,
+          760,
+          409
+        ],
+        "centroid": [
+          726.1096252960023,
+          316.1083716395041
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/12.png",
+      "nativePngSha256": "6a78c4548f2f7a7499e9fae691b3cb09ab875bb0397ecaccc325c158b2b8a203",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          13,
+          112,
+          179
+        ],
+        "centroid": [
+          78.10962529600224,
+          86.10837163950411
+        ],
+        "crownBandCentroid": [
+          83.0415309446254,
+          26.596091205211728
+        ],
+        "lowerBandCentroid": [
+          77.58773784355179,
+          165.02536997885835
+        ],
+        "fitPoints": [
+          [
+            78.10962529600224,
+            86.10837163950411
+          ],
+          [
+            83.0415309446254,
+            26.596091205211728
+          ],
+          [
+            77.58773784355179,
+            165.02536997885835
+          ],
+          [
+            39.0,
+            13.0
+          ],
+          [
+            112.0,
+            179.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          65,
+          160,
+          265
+        ],
+        "centroid": [
+          123.35646763192533,
+          148.7505085557018
+        ],
+        "crownBandCentroid": [
+          126.46959247648903,
+          81.84200626959247
+        ],
+        "lowerBandCentroid": [
+          120.40522133938705,
+          248.35414301929626
+        ],
+        "fitPoints": [
+          [
+            123.35646763192533,
+            148.7505085557018
+          ],
+          [
+            126.46959247648903,
+            81.84200626959247
+          ],
+          [
+            120.40522133938705,
+            248.35414301929626
+          ],
+          [
+            87.0,
+            65.0
+          ],
+          [
+            160.0,
+            265.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.90030606652752,
+            4.72072789272886
+          ],
+          "length": 5.540491595221908
+        },
+        "crownBand": {
+          "delta": [
+            -0.27685377273527934,
+            2.407146117660787
+          ],
+          "length": 2.423014742680522
+        },
+        "lowerBand": {
+          "delta": [
+            -0.5560964534840878,
+            -3.0901025808712745
+          ],
+          "length": 3.139741585845066
+        },
+        "bboxMin": {
+          "delta": [
+            -12.034445584669243,
+            3.4347732130301267
+          ],
+          "length": 12.515012886741841
+        },
+        "bboxMax": {
+          "delta": [
+            -0.12403550476631153,
+            -3.481280577875566
+          ],
+          "length": 3.483489524648563
+        }
+      }
+    },
+    {
+      "cell": 13,
+      "nativePhaseIndex": 13,
+      "paintedRect": [
+        810,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/13.png",
+      "frameSha256": "2b67ae945442df1d23170398333fc66f4daada24ef7e3374b61094cfa7546af6",
+      "actorAlpha128Component": {
+        "pixels": 7014,
+        "bbox": [
+          849,
+          243,
+          921,
+          409
+        ],
+        "centroid": [
+          888.2909894496721,
+          314.35785571713717
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/13.png",
+      "nativePngSha256": "0d2d541ffa58920d1025843c32bfeea4ab087f1f942690c3cfb65a5875a39ed7",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          13,
+          111,
+          179
+        ],
+        "centroid": [
+          78.29098944967208,
+          84.35785571713716
+        ],
+        "crownBandCentroid": [
+          81.92647058823529,
+          26.577614379084967
+        ],
+        "lowerBandCentroid": [
+          79.09497206703911,
+          166.06843575418995
+        ],
+        "fitPoints": [
+          [
+            78.29098944967208,
+            84.35785571713716
+          ],
+          [
+            81.92647058823529,
+            26.577614379084967
+          ],
+          [
+            79.09497206703911,
+            166.06843575418995
+          ],
+          [
+            39.0,
+            13.0
+          ],
+          [
+            111.0,
+            179.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          65,
+          160,
+          266
+        ],
+        "centroid": [
+          123.72664652567975,
+          147.05716012084594
+        ],
+        "crownBandCentroid": [
+          126.23254437869822,
+          82.0905325443787
+        ],
+        "lowerBandCentroid": [
+          121.65902578796562,
+          249.21919770773638
+        ],
+        "fitPoints": [
+          [
+            123.72664652567975,
+            147.05716012084594
+          ],
+          [
+            126.23254437869822,
+            82.0905325443787
+          ],
+          [
+            121.65902578796562,
+            249.21919770773638
+          ],
+          [
+            87.0,
+            65.0
+          ],
+          [
+            160.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -3.059530101899739,
+            4.377952699919263
+          ],
+          "length": 5.341085497083995
+        },
+        "crownBand": {
+          "delta": [
+            -1.3367951561078684,
+            2.1371284061156786
+          ],
+          "length": 2.520781448999496
+        },
+        "lowerBand": {
+          "delta": [
+            -0.05675191572329652,
+            -2.741908738849503
+          ],
+          "length": 2.742496000383143
+        },
+        "bboxMin": {
+          "delta": [
+            -12.034445584669243,
+            3.4347732130301267
+          ],
+          "length": 12.515012886741841
+        },
+        "bboxMax": {
+          "delta": [
+            -1.2871918072307267,
+            -4.481280577875566
+          ],
+          "length": 4.662481996345581
+        }
+      }
+    },
+    {
+      "cell": 14,
+      "nativePhaseIndex": 14,
+      "paintedRect": [
+        972,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/14.png",
+      "frameSha256": "033db4a448dc05b779e29722f28e2391fd8b2e97625bd2b72b4258832c935acf",
+      "actorAlpha128Component": {
+        "pixels": 7033,
+        "bbox": [
+          1010,
+          243,
+          1083,
+          410
+        ],
+        "centroid": [
+          1049.184558509882,
+          314.2641831366415
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/14.png",
+      "nativePngSha256": "a319063d5ab17c15bae16945da94e524ee36875afc51c312fc79f28356a5a9b0",
+      "paintedDescriptors": {
+        "bbox": [
+          38,
+          13,
+          111,
+          180
+        ],
+        "centroid": [
+          77.18455850988198,
+          84.26418313664155
+        ],
+        "crownBandCentroid": [
+          81.53518948182521,
+          27.05800464037123
+        ],
+        "lowerBandCentroid": [
+          75.48956884561892,
+          165.99165507649514
+        ],
+        "fitPoints": [
+          [
+            77.18455850988198,
+            84.26418313664155
+          ],
+          [
+            81.53518948182521,
+            27.05800464037123
+          ],
+          [
+            75.48956884561892,
+            165.99165507649514
+          ],
+          [
+            38.0,
+            13.0
+          ],
+          [
+            111.0,
+            180.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          86,
+          64,
+          160,
+          266
+        ],
+        "centroid": [
+          124.00375895688947,
+          147.65276635733585
+        ],
+        "crownBandCentroid": [
+          126.18995765275257,
+          81.40471869328493
+        ],
+        "lowerBandCentroid": [
+          122.73353751914242,
+          248.79019908116385
+        ],
+        "fitPoints": [
+          [
+            124.00375895688947,
+            147.65276635733585
+          ],
+          [
+            126.18995765275257,
+            81.40471869328493
+          ],
+          [
+            122.73353751914242,
+            248.79019908116385
+          ],
+          [
+            86.0,
+            64.0
+          ],
+          [
+            160.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -4.623594653967942,
+            3.6733906110577834
+          ],
+          "length": 5.905203307728567
+        },
+        "crownBand": {
+          "delta": [
+            -1.7493295151183474,
+            3.381711217267096
+          ],
+          "length": 3.80737764208573
+        },
+        "lowerBand": {
+          "delta": [
+            -5.324911126820524,
+            -2.4022180414451952
+          ],
+          "length": 5.841688970424719
+        },
+        "bboxMin": {
+          "delta": [
+            -12.197601887133658,
+            4.434773213030127
+          ],
+          "length": 12.978779035333645
+        },
+        "bboxMax": {
+          "delta": [
+            -1.2871918072307267,
+            -3.318124275411151
+          ],
+          "length": 3.559046425051896
+        }
+      }
+    },
+    {
+      "cell": 15,
+      "nativePhaseIndex": 15,
+      "paintedRect": [
+        1134,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        320,
+        256,
+        320
+      ],
+      "frame": "frames/15.png",
+      "frameSha256": "6ae4c40e96c0d2fa1e5241c2d3f8b211bb375b5c9f1b7247623f982fda997f6e",
+      "actorAlpha128Component": {
+        "pixels": 7236,
+        "bbox": [
+          1173,
+          243,
+          1251,
+          409
+        ],
+        "centroid": [
+          1211.6644555002763,
+          314.0800165837479
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/15.png",
+      "nativePngSha256": "27665f0208bacd7d61374d4f66b40cb97ba7c4a4717d9d0190b77b9958fd5ef1",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          13,
+          117,
+          179
+        ],
+        "centroid": [
+          77.66445550027639,
+          84.08001658374793
+        ],
+        "crownBandCentroid": [
+          82.82481139983236,
+          26.76865046102263
+        ],
+        "lowerBandCentroid": [
+          72.18808777429467,
+          166.72100313479623
+        ],
+        "fitPoints": [
+          [
+            77.66445550027639,
+            84.08001658374793
+          ],
+          [
+            82.82481139983236,
+            26.76865046102263
+          ],
+          [
+            72.18808777429467,
+            166.72100313479623
+          ],
+          [
+            39.0,
+            13.0
+          ],
+          [
+            117.0,
+            179.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          86,
+          64,
+          160,
+          267
+        ],
+        "centroid": [
+          124.04742220691239,
+          149.14364450568377
+        ],
+        "crownBandCentroid": [
+          125.93964996982498,
+          81.41279420639711
+        ],
+        "lowerBandCentroid": [
+          122.4554054054054,
+          249.02297297297298
+        ],
+        "fitPoints": [
+          [
+            124.04742220691239,
+            149.14364450568377
+          ],
+          [
+            125.93964996982498,
+            81.41279420639711
+          ],
+          [
+            122.4554054054054,
+            249.02297297297298
+          ],
+          [
+            86.0,
+            64.0
+          ],
+          [
+            160.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -4.109062695079899,
+            1.9682979760085004
+          ],
+          "length": 4.556159913178689
+        },
+        "crownBand": {
+          "delta": [
+            0.0010100295354931177,
+            3.037071566801174
+          ],
+          "length": 3.037071734752375
+        },
+        "lowerBand": {
+          "delta": [
+            -8.886917528661314,
+            -1.7866461425512057
+          ],
+          "length": 9.06473428181548
+        },
+        "bboxMin": {
+          "delta": [
+            -11.034445584669243,
+            4.434773213030127
+          ],
+          "length": 11.892274921647083
+        },
+        "bboxMax": {
+          "delta": [
+            5.691746007555821,
+            -5.481280577875566
+          ],
+          "length": 7.901924410415701
+        }
+      }
+    },
+    {
+      "cell": 16,
+      "nativePhaseIndex": 16,
+      "paintedRect": [
+        0,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/16.png",
+      "frameSha256": "b528504b9424c8f0199207b7e6c9eb59a124253751e95c1d02c8a104e5aa47ae",
+      "actorAlpha128Component": {
+        "pixels": 8376,
+        "bbox": [
+          40,
+          443,
+          121,
+          610
+        ],
+        "centroid": [
+          81.82843839541547,
+          520.5844078319006
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/16.png",
+      "nativePngSha256": "0c24647ec1d51de1e1ab59c09a8f2adddbd14d954f576fb23056f7ae730bc678",
+      "paintedDescriptors": {
+        "bbox": [
+          40,
+          13,
+          121,
+          180
+        ],
+        "centroid": [
+          81.82843839541547,
+          90.58440783190066
+        ],
+        "crownBandCentroid": [
+          86.44684129429892,
+          27.529275808936827
+        ],
+        "lowerBandCentroid": [
+          80.82854406130268,
+          166.02586206896552
+        ],
+        "fitPoints": [
+          [
+            81.82843839541547,
+            90.58440783190066
+          ],
+          [
+            86.44684129429892,
+            27.529275808936827
+          ],
+          [
+            80.82854406130268,
+            166.02586206896552
+          ],
+          [
+            40.0,
+            13.0
+          ],
+          [
+            121.0,
+            180.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          86,
+          64,
+          163,
+          267
+        ],
+        "centroid": [
+          123.99090602896598,
+          150.7889300550129
+        ],
+        "crownBandCentroid": [
+          125.71003039513678,
+          81.52036474164133
+        ],
+        "lowerBandCentroid": [
+          123.69930875576037,
+          249.66244239631337
+        ],
+        "fitPoints": [
+          [
+            123.99090602896598,
+            150.7889300550129
+          ],
+          [
+            125.71003039513678,
+            81.52036474164133
+          ],
+          [
+            123.69930875576037,
+            249.66244239631337
+          ],
+          [
+            86.0,
+            64.0
+          ],
+          [
+            163.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.7908164307015966,
+            7.888636100662637
+          ],
+          "length": 7.928175714232464
+        },
+        "crownBand": {
+          "delta": [
+            4.443616503687025,
+            3.8142271987975533
+          ],
+          "length": 5.856112768371758
+        },
+        "lowerBand": {
+          "delta": [
+            -0.0806196926145617,
+            -3.234673277714421
+          ],
+          "length": 3.235677788098967
+        },
+        "bboxMin": {
+          "delta": [
+            -9.871289282204813,
+            4.434773213030127
+          ],
+          "length": 10.821717310296973
+        },
+        "bboxMax": {
+          "delta": [
+            7.344371217413482,
+            -4.318124275411151
+          ],
+          "length": 8.519740948941267
+        }
+      }
+    },
+    {
+      "cell": 17,
+      "nativePhaseIndex": 17,
+      "paintedRect": [
+        162,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/17.png",
+      "frameSha256": "b82a2615436978f9e14f832b2d7d7008f3c62c70c2b2edc57f2d51fb8fe8c5f4",
+      "actorAlpha128Component": {
+        "pixels": 8425,
+        "bbox": [
+          201,
+          443,
+          291,
+          611
+        ],
+        "centroid": [
+          243.83382789317508,
+          520.3773293768546
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/17.png",
+      "nativePngSha256": "4c16a00ef6a205d02282aeaeb429fb160d6c485234d02ef934e9dc2fc4710f51",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          13,
+          129,
+          181
+        ],
+        "centroid": [
+          81.83382789317507,
+          90.3773293768546
+        ],
+        "crownBandCentroid": [
+          86.28472222222223,
+          27.531635802469136
+        ],
+        "lowerBandCentroid": [
+          80.90338645418326,
+          166.347609561753
+        ],
+        "fitPoints": [
+          [
+            81.83382789317507,
+            90.3773293768546
+          ],
+          [
+            86.28472222222223,
+            27.531635802469136
+          ],
+          [
+            80.90338645418326,
+            166.347609561753
+          ],
+          [
+            39.0,
+            13.0
+          ],
+          [
+            129.0,
+            181.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          85,
+          65,
+          168,
+          266
+        ],
+        "centroid": [
+          124.02575957727873,
+          152.29579480405107
+        ],
+        "crownBandCentroid": [
+          125.30322966507177,
+          82.30741626794259
+        ],
+        "lowerBandCentroid": [
+          125.07892004153686,
+          249.4870197300104
+        ],
+        "fitPoints": [
+          [
+            124.02575957727873,
+            152.29579480405107
+          ],
+          [
+            125.30322966507177,
+            82.30741626794259
+          ],
+          [
+            125.07892004153686,
+            249.4870197300104
+          ],
+          [
+            85.0,
+            65.0
+          ],
+          [
+            168.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.7622317106750245,
+            6.140906741533058
+          ],
+          "length": 6.188031414671772
+        },
+        "crownBand": {
+          "delta": [
+            4.661847413316366,
+            3.0299207138471758
+          ],
+          "length": 5.559967701097253
+        },
+        "lowerBand": {
+          "delta": [
+            -1.3731775774204777,
+            -2.685007987373581
+          ],
+          "length": 3.015772629259424
+        },
+        "bboxMin": {
+          "delta": [
+            -10.034445584669243,
+            3.4347732130301267
+          ],
+          "length": 10.606024948897554
+        },
+        "bboxMax": {
+          "delta": [
+            11.64962163712886,
+            -2.154967972946679
+          ],
+          "length": 11.847260073649384
+        }
+      }
+    },
+    {
+      "cell": 18,
+      "nativePhaseIndex": 18,
+      "paintedRect": [
+        324,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/18.png",
+      "frameSha256": "81e75d4710b2e40bdd5d138d22784ee51ccafed4e8d92f9113c09c83cf9fdebd",
+      "actorAlpha128Component": {
+        "pixels": 8742,
+        "bbox": [
+          364,
+          444,
+          457,
+          610
+        ],
+        "centroid": [
+          406.4947380462137,
+          522.7299245024022
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/18.png",
+      "nativePngSha256": "6eac292011dfcb1366a6cd04fca60784de48b35678b7695ccfd57422271a88ca",
+      "paintedDescriptors": {
+        "bbox": [
+          40,
+          14,
+          133,
+          180
+        ],
+        "centroid": [
+          82.5017154620311,
+          92.7451967063129
+        ],
+        "crownBandCentroid": [
+          85.82301587301588,
+          27.653968253968255
+        ],
+        "lowerBandCentroid": [
+          84.41092211280215,
+          167.55684870188003
+        ],
+        "fitPoints": [
+          [
+            82.5017154620311,
+            92.7451967063129
+          ],
+          [
+            85.82301587301588,
+            27.653968253968255
+          ],
+          [
+            84.41092211280215,
+            167.55684870188003
+          ],
+          [
+            40.0,
+            14.0
+          ],
+          [
+            133.0,
+            180.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          85,
+          66,
+          173,
+          266
+        ],
+        "centroid": [
+          124.08317929759704,
+          153.21572251821246
+        ],
+        "crownBandCentroid": [
+          125.15776397515528,
+          82.75465838509317
+        ],
+        "lowerBandCentroid": [
+          126.96507936507936,
+          249.9957671957672
+        ],
+        "fitPoints": [
+          [
+            124.08317929759704,
+            153.21572251821246
+          ],
+          [
+            125.15776397515528,
+            82.75465838509317
+          ],
+          [
+            126.96507936507936,
+            249.9957671957672
+          ],
+          [
+            85.0,
+            66.0
+          ],
+          [
+            173.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.4816696254092534,
+            7.975178835030704
+          ],
+          "length": 8.111647325271365
+        },
+        "crownBand": {
+          "delta": [
+            4.270276453265623,
+            2.724970358653721
+          ],
+          "length": 5.065641562808824
+        },
+        "lowerBand": {
+          "delta": [
+            0.8204753064782864,
+            -1.7872213261049694
+          ],
+          "length": 1.9665553124753554
+        },
+        "bboxMin": {
+          "delta": [
+            -8.871289282204813,
+            3.597929515494542
+          ],
+          "length": 9.5731327331772
+        },
+        "bboxMax": {
+          "delta": [
+            11.302246846986577,
+            -3.318124275411151
+          ],
+          "length": 11.779250082127078
+        }
+      }
+    },
+    {
+      "cell": 19,
+      "nativePhaseIndex": 19,
+      "paintedRect": [
+        486,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/19.png",
+      "frameSha256": "6834d68a8d0a1dfc1340480f3daf44a91089393107f07f124d8450a044fc5c15",
+      "actorAlpha128Component": {
+        "pixels": 8645,
+        "bbox": [
+          518,
+          444,
+          620,
+          607
+        ],
+        "centroid": [
+          567.2133024869867,
+          521.2646616541354
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/19.png",
+      "nativePngSha256": "d6e993999100dfc092965d7d4e7c9730bfd8d1b36ed69737ae85a1cf50d55498",
+      "paintedDescriptors": {
+        "bbox": [
+          32,
+          14,
+          134,
+          177
+        ],
+        "centroid": [
+          81.20781774025674,
+          91.28009714351798
+        ],
+        "crownBandCentroid": [
+          85.47660586835845,
+          27.704996034892943
+        ],
+        "lowerBandCentroid": [
+          80.99710424710425,
+          163.503861003861
+        ],
+        "fitPoints": [
+          [
+            81.20781774025674,
+            91.28009714351798
+          ],
+          [
+            85.47660586835845,
+            27.704996034892943
+          ],
+          [
+            80.99710424710425,
+            163.503861003861
+          ],
+          [
+            32.0,
+            14.0
+          ],
+          [
+            134.0,
+            177.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          82,
+          67,
+          176,
+          264
+        ],
+        "centroid": [
+          124.10313036020584,
+          154.1978987993139
+        ],
+        "crownBandCentroid": [
+          124.93990086741016,
+          83.75774473358116
+        ],
+        "lowerBandCentroid": [
+          127.9077079107505,
+          248.59634888438134
+        ],
+        "fitPoints": [
+          [
+            124.10313036020584,
+            154.1978987993139
+          ],
+          [
+            124.93990086741016,
+            83.75774473358116
+          ],
+          [
+            127.9077079107505,
+            248.59634888438134
+          ],
+          [
+            82.0,
+            67.0
+          ],
+          [
+            176.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.043286727025744653,
+            5.288862763726485
+          ],
+          "length": 5.289039900990458
+        },
+        "crownBand": {
+          "delta": [
+            4.085210580856739,
+            1.7812372951490403
+          ],
+          "length": 4.456652532066385
+        },
+        "lowerBand": {
+          "delta": [
+            -4.092957005145024,
+            -5.1020611994807155
+          ],
+          "length": 6.540896385757255
+        },
+        "bboxMin": {
+          "delta": [
+            -15.176539701920206,
+            2.597929515494542
+          ],
+          "length": 15.397291810296963
+        },
+        "bboxMax": {
+          "delta": [
+            9.465403149450992,
+            -4.807593182804396
+          ],
+          "length": 10.61634631090113
+        }
+      }
+    },
+    {
+      "cell": 20,
+      "nativePhaseIndex": 20,
+      "paintedRect": [
+        648,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/20.png",
+      "frameSha256": "a9b3bf8cc9fe28162cde6c819414fece4cbfa59f3ab7ad443b74909e296b435f",
+      "actorAlpha128Component": {
+        "pixels": 8817,
+        "bbox": [
+          680,
+          444,
+          787,
+          610
+        ],
+        "centroid": [
+          730.8041283883407,
+          521.987297266644
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/20.png",
+      "nativePngSha256": "a3b3ac277abe05f7bc688709733914b28868e06eeb2c13a4399a22b93cdb603c",
+      "paintedDescriptors": {
+        "bbox": [
+          32,
+          14,
+          139,
+          180
+        ],
+        "centroid": [
+          82.79265389411631,
+          92.01745833805691
+        ],
+        "crownBandCentroid": [
+          85.40348101265823,
+          27.706487341772153
+        ],
+        "lowerBandCentroid": [
+          91.84848484848484,
+          165.24660397074192
+        ],
+        "fitPoints": [
+          [
+            82.79265389411631,
+            92.01745833805691
+          ],
+          [
+            85.40348101265823,
+            27.706487341772153
+          ],
+          [
+            91.84848484848484,
+            165.24660397074192
+          ],
+          [
+            32.0,
+            14.0
+          ],
+          [
+            139.0,
+            180.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          77,
+          68,
+          179,
+          264
+        ],
+        "centroid": [
+          124.1576943416182,
+          154.99143310417767
+        ],
+        "crownBandCentroid": [
+          124.82667486170867,
+          84.66933005531654
+        ],
+        "lowerBandCentroid": [
+          130.809375,
+          247.70833333333334
+        ],
+        "fitPoints": [
+          [
+            124.1576943416182,
+            154.99143310417767
+          ],
+          [
+            124.82667486170867,
+            84.66933005531654
+          ],
+          [
+            130.809375,
+            247.70833333333334
+          ],
+          [
+            77.0,
+            68.0
+          ],
+          [
+            179.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.7455614522971388,
+            5.352994779483367
+          ],
+          "length": 5.630411875957378
+        },
+        "crownBand": {
+          "delta": [
+            4.113380949783746,
+            0.8713865964091241
+          ],
+          "length": 4.204666150652785
+        },
+        "lowerBand": {
+          "delta": [
+            5.627227642541527,
+            -2.186963182929617
+          ],
+          "length": 6.037259221242128
+        },
+        "bboxMin": {
+          "delta": [
+            -10.176539701920206,
+            1.5979295154945419
+          ],
+          "length": 10.301229977106948
+        },
+        "bboxMax": {
+          "delta": [
+            12.281184661773125,
+            -1.3181242754111508
+          ],
+          "length": 12.351718435181382
+        }
+      }
+    },
+    {
+      "cell": 21,
+      "nativePhaseIndex": 21,
+      "paintedRect": [
+        810,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/21.png",
+      "frameSha256": "b0374322f0f09df6b256520ab884cf7e7aaa8144ec66fcd05b594ecaef177e5f",
+      "actorAlpha128Component": {
+        "pixels": 8911,
+        "bbox": [
+          843,
+          444,
+          947,
+          611
+        ],
+        "centroid": [
+          892.1664235214903,
+          522.9755358545618
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/21.png",
+      "nativePngSha256": "386eb4f86e2f16453dc8d5a4cd58c3c5103429c6a9bd91dd18ede012dadf11c2",
+      "paintedDescriptors": {
+        "bbox": [
+          33,
+          14,
+          137,
+          181
+        ],
+        "centroid": [
+          82.16642352149029,
+          92.97553585456178
+        ],
+        "crownBandCentroid": [
+          84.79712339137018,
+          28.18319454958365
+        ],
+        "lowerBandCentroid": [
+          87.39393939393939,
+          166.05785123966942
+        ],
+        "fitPoints": [
+          [
+            82.16642352149029,
+            92.97553585456178
+          ],
+          [
+            84.79712339137018,
+            28.18319454958365
+          ],
+          [
+            87.39393939393939,
+            166.05785123966942
+          ],
+          [
+            33.0,
+            14.0
+          ],
+          [
+            137.0,
+            181.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          73,
+          68,
+          184,
+          264
+        ],
+        "centroid": [
+          124.07429109553208,
+          155.523804541174
+        ],
+        "crownBandCentroid": [
+          124.81344221105527,
+          84.91206030150754
+        ],
+        "lowerBandCentroid": [
+          132.54175588865095,
+          246.94111349036402
+        ],
+        "fitPoints": [
+          [
+            124.07429109553208,
+            155.523804541174
+          ],
+          [
+            124.81344221105527,
+            84.91206030150754
+          ],
+          [
+            132.54175588865095,
+            246.94111349036402
+          ],
+          [
+            73.0,
+            68.0
+          ],
+          [
+            184.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.1005608936686428,
+            5.935017244059139
+          ],
+          "length": 6.0361961505531
+        },
+        "crownBand": {
+          "delta": [
+            3.421324911688572,
+            1.1831413434142917
+          ],
+          "length": 3.6201225932055103
+        },
+        "lowerBand": {
+          "delta": [
+            -1.2864858661782534,
+            -0.4761359662502116
+          ],
+          "length": 1.3717694202137012
+        },
+        "bboxMin": {
+          "delta": [
+            -5.01338339945579,
+            1.5979295154945419
+          ],
+          "length": 5.261881017889659
+        },
+        "bboxMax": {
+          "delta": [
+            4.9548720568442945,
+            -0.15496797294667886
+          ],
+          "length": 4.957294844200374
+        }
+      }
+    },
+    {
+      "cell": 22,
+      "nativePhaseIndex": 22,
+      "paintedRect": [
+        972,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/22.png",
+      "frameSha256": "85707b6d2e364d00bf070ceaf99f44710261d7be42d51fbdc100e5aa0a8e16f9",
+      "actorAlpha128Component": {
+        "pixels": 8886,
+        "bbox": [
+          1005,
+          444,
+          1110,
+          611
+        ],
+        "centroid": [
+          1054.063695701103,
+          522.6573261309926
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/22.png",
+      "nativePngSha256": "912fa2ca092e686bb5a77a59a57e5442d0b865d95f2c23a45d5af914bd938278",
+      "paintedDescriptors": {
+        "bbox": [
+          33,
+          14,
+          138,
+          181
+        ],
+        "centroid": [
+          82.06369570110286,
+          92.65732613099257
+        ],
+        "crownBandCentroid": [
+          84.29574309185959,
+          28.1142643764003
+        ],
+        "lowerBandCentroid": [
+          88.18796296296296,
+          165.7962962962963
+        ],
+        "fitPoints": [
+          [
+            82.06369570110286,
+            92.65732613099257
+          ],
+          [
+            84.29574309185959,
+            28.1142643764003
+          ],
+          [
+            88.18796296296296,
+            165.7962962962963
+          ],
+          [
+            33.0,
+            14.0
+          ],
+          [
+            138.0,
+            181.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          70,
+          69,
+          185,
+          264
+        ],
+        "centroid": [
+          123.97111157630312,
+          155.565522294327
+        ],
+        "crownBandCentroid": [
+          124.73910374462861,
+          85.64456721915286
+        ],
+        "lowerBandCentroid": [
+          133.55156950672645,
+          246.65582959641256
+        ],
+        "fitPoints": [
+          [
+            123.97111157630312,
+            155.565522294327
+          ],
+          [
+            124.73910374462861,
+            85.64456721915286
+          ],
+          [
+            133.55156950672645,
+            246.65582959641256
+          ],
+          [
+            70.0,
+            69.0
+          ],
+          [
+            185.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.0842519011755343,
+            5.523171845431165
+          ],
+          "length": 5.628590358106216
+        },
+        "crownBand": {
+          "delta": [
+            2.9124797228080155,
+            0.37045786040079065
+          ],
+          "length": 2.9359457014905073
+        },
+        "lowerBand": {
+          "delta": [
+            -1.3727259656386934,
+            -0.4950813531239362
+          ],
+          "length": 1.4592745193930137
+        },
+        "bboxMin": {
+          "delta": [
+            -2.0133833994557904,
+            0.5979295154945419
+          ],
+          "length": 2.100293412526853
+        },
+        "bboxMax": {
+          "delta": [
+            5.11802835930871,
+            -0.15496797294667886
+          ],
+          "length": 5.120373947215906
+        }
+      }
+    },
+    {
+      "cell": 23,
+      "nativePhaseIndex": 23,
+      "paintedRect": [
+        1134,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        640,
+        256,
+        320
+      ],
+      "frame": "frames/23.png",
+      "frameSha256": "b48c72d8437af67f508a8ef8409a2a31dc8e89550d01c738dd88c27ae242624c",
+      "actorAlpha128Component": {
+        "pixels": 9026,
+        "bbox": [
+          1159,
+          444,
+          1270,
+          610
+        ],
+        "centroid": [
+          1213.913472191447,
+          522.3144249944604
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/23.png",
+      "nativePngSha256": "ddb5bdf5dfa1e1112a2a52d69ef6a2c61c38b3abb8569ceedf71f3698698462f",
+      "paintedDescriptors": {
+        "bbox": [
+          25,
+          14,
+          136,
+          180
+        ],
+        "centroid": [
+          79.91347219144693,
+          92.31442499446045
+        ],
+        "crownBandCentroid": [
+          83.76685170499603,
+          27.6304520222046
+        ],
+        "lowerBandCentroid": [
+          92.92881355932204,
+          165.44858757062147
+        ],
+        "fitPoints": [
+          [
+            79.91347219144693,
+            92.31442499446045
+          ],
+          [
+            83.76685170499603,
+            27.6304520222046
+          ],
+          [
+            92.92881355932204,
+            165.44858757062147
+          ],
+          [
+            25.0,
+            14.0
+          ],
+          [
+            136.0,
+            180.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          68,
+          69,
+          185,
+          264
+        ],
+        "centroid": [
+          123.97284878863826,
+          155.55221386800335
+        ],
+        "crownBandCentroid": [
+          124.76178660049628,
+          85.74441687344913
+        ],
+        "lowerBandCentroid": [
+          135.62958579881658,
+          246.55384615384617
+        ],
+        "fitPoints": [
+          [
+            123.97284878863826,
+            155.55221386800335
+          ],
+          [
+            124.76178660049628,
+            85.74441687344913
+          ],
+          [
+            135.62958579881658,
+            246.55384615384617
+          ],
+          [
+            68.0,
+            69.0
+          ],
+          [
+            185.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.4185313381230742,
+            5.13763265367524
+          ],
+          "length": 5.329868707702595
+        },
+        "crownBand": {
+          "delta": [
+            2.27461351699084,
+            -0.29214118288834356
+          ],
+          "length": 2.2932974343544794
+        },
+        "lowerBand": {
+          "delta": [
+            2.0636079924684907,
+            -0.7975375062480907
+          ],
+          "length": 2.2123616387137655
+        },
+        "bboxMin": {
+          "delta": [
+            -9.318633819171168,
+            0.5979295154945419
+          ],
+          "length": 9.337797168567123
+        },
+        "bboxMax": {
+          "delta": [
+            2.7917157543798226,
+            -1.3181242754111508
+          ],
+          "length": 3.087252574487658
+        }
+      }
+    },
+    {
+      "cell": 24,
+      "nativePhaseIndex": 24,
+      "paintedRect": [
+        0,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/24.png",
+      "frameSha256": "d47f6c308725de809a115c443c002671144db4b7496ededeb58b3ca82286137b",
+      "actorAlpha128Component": {
+        "pixels": 9334,
+        "bbox": [
+          27,
+          642,
+          137,
+          815
+        ],
+        "centroid": [
+          81.20462824083994,
+          723.1690593529033
+        ]
+      },
+      "actorMarginPx": 12,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/24.png",
+      "nativePngSha256": "4fc03f1ac0e7136253f557f46a05cd702ea404dd9c83e42efcd7bc9758327d12",
+      "paintedDescriptors": {
+        "bbox": [
+          27,
+          12,
+          137,
+          185
+        ],
+        "centroid": [
+          81.20462824083994,
+          93.16905935290336
+        ],
+        "crownBandCentroid": [
+          86.14755351681957,
+          26.643730886850154
+        ],
+        "lowerBandCentroid": [
+          90.17530319735391,
+          170.14112458654907
+        ],
+        "fitPoints": [
+          [
+            81.20462824083994,
+            93.16905935290336
+          ],
+          [
+            86.14755351681957,
+            26.643730886850154
+          ],
+          [
+            90.17530319735391,
+            170.14112458654907
+          ],
+          [
+            27.0,
+            12.0
+          ],
+          [
+            137.0,
+            185.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          67,
+          69,
+          186,
+          263
+        ],
+        "centroid": [
+          124.02655237298767,
+          155.5629312147188
+        ],
+        "crownBandCentroid": [
+          124.82873274780427,
+          85.88268506900879
+        ],
+        "lowerBandCentroid": [
+          136.7811004784689,
+          245.99162679425837
+        ],
+        "fitPoints": [
+          [
+            124.02655237298767,
+            155.5629312147188
+          ],
+          [
+            124.82873274780427,
+            85.88268506900879
+          ],
+          [
+            136.7811004784689,
+            245.99162679425837
+          ],
+          [
+            67.0,
+            69.0
+          ],
+          [
+            186.0,
+            263.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.029581373844067116,
+            6.120988647285344
+          ],
+          "length": 6.121060126961225
+        },
+        "crownBand": {
+          "delta": [
+            4.976795686393885,
+            -1.5781202858103853
+          ],
+          "length": 5.2210112948158836
+        },
+        "lowerBand": {
+          "delta": [
+            -2.290669618608149,
+            5.222835857963503
+          ],
+          "length": 5.703085279113733
+        },
+        "bboxMin": {
+          "delta": [
+            -5.992321214242324,
+            -1.7283830894343026
+          ],
+          "length": 6.236603373511985
+        },
+        "bboxMax": {
+          "delta": [
+            2.9548720568442945,
+            5.497657236910982
+          ],
+          "length": 6.241434447855631
+        }
+      }
+    },
+    {
+      "cell": 25,
+      "nativePhaseIndex": 25,
+      "paintedRect": [
+        162,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/25.png",
+      "frameSha256": "de10b95d85ed8ba6ab28093ede234e881d72785f2f6cde54dd998fd9b2bdcd87",
+      "actorAlpha128Component": {
+        "pixels": 9458,
+        "bbox": [
+          189,
+          642,
+          298,
+          815
+        ],
+        "centroid": [
+          242.61725523366462,
+          722.433178261789
+        ]
+      },
+      "actorMarginPx": 12,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/25.png",
+      "nativePngSha256": "0e5c29a538193ecebc9d7c3fdb00f811a075c2e3f4eff1888bbe0a9e0e66ee1a",
+      "paintedDescriptors": {
+        "bbox": [
+          27,
+          12,
+          136,
+          185
+        ],
+        "centroid": [
+          80.61725523366462,
+          92.43317826178897
+        ],
+        "crownBandCentroid": [
+          84.87192851824274,
+          26.64929262844378
+        ],
+        "lowerBandCentroid": [
+          91.81313703284258,
+          169.79841449603623
+        ],
+        "fitPoints": [
+          [
+            80.61725523366462,
+            92.43317826178897
+          ],
+          [
+            84.87192851824274,
+            26.64929262844378
+          ],
+          [
+            91.81313703284258,
+            169.79841449603623
+          ],
+          [
+            27.0,
+            12.0
+          ],
+          [
+            136.0,
+            185.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          66,
+          69,
+          187,
+          264
+        ],
+        "centroid": [
+          123.98960084033614,
+          155.7376050420168
+        ],
+        "crownBandCentroid": [
+          124.6968152866242,
+          86.03503184713375
+        ],
+        "lowerBandCentroid": [
+          140.74160206718346,
+          247.3049095607235
+        ],
+        "fitPoints": [
+          [
+            123.98960084033614,
+            155.7376050420168
+          ],
+          [
+            124.6968152866242,
+            86.03503184713375
+          ],
+          [
+            140.74160206718346,
+            247.3049095607235
+          ],
+          [
+            66.0,
+            69.0
+          ],
+          [
+            187.0,
+            264.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.61667370869786,
+            5.09037009099319
+          ],
+          "length": 5.127587554228322
+        },
+        "crownBand": {
+          "delta": [
+            3.6249618908981347,
+            -1.7239978891480519
+          ],
+          "length": 4.014040038695518
+        },
+        "lowerBand": {
+          "delta": [
+            -4.346114459184605,
+            3.5109276898001838
+          ],
+          "length": 5.587067579270824
+        },
+        "bboxMin": {
+          "delta": [
+            -4.992321214242324,
+            -1.7283830894343026
+          ],
+          "length": 5.283046394838533
+        },
+        "bboxMax": {
+          "delta": [
+            0.7917157543798226,
+            4.497657236910982
+          ],
+          "length": 4.56680790667518
+        }
+      }
+    },
+    {
+      "cell": 26,
+      "nativePhaseIndex": 26,
+      "paintedRect": [
+        324,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/26.png",
+      "frameSha256": "7293ae5caca642e2502bbd2b6dc2ac08315d8628cda92356705e9c928aa1eb99",
+      "actorAlpha128Component": {
+        "pixels": 9568,
+        "bbox": [
+          352,
+          642,
+          461,
+          815
+        ],
+        "centroid": [
+          404.93290133779266,
+          723.0529891304348
+        ]
+      },
+      "actorMarginPx": 12,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/26.png",
+      "nativePngSha256": "0c7e1f57bccc0274a1ac8eb01c2e99bcd5dd6ad64d9ee84f0d298ba876e62c39",
+      "paintedDescriptors": {
+        "bbox": [
+          28,
+          12,
+          137,
+          185
+        ],
+        "centroid": [
+          80.93290133779264,
+          93.05298913043478
+        ],
+        "crownBandCentroid": [
+          84.99699021820918,
+          26.645598194130926
+        ],
+        "lowerBandCentroid": [
+          94.51434878587196,
+          170.00110375275938
+        ],
+        "fitPoints": [
+          [
+            80.93290133779264,
+            93.05298913043478
+          ],
+          [
+            84.99699021820918,
+            26.645598194130926
+          ],
+          [
+            94.51434878587196,
+            170.00110375275938
+          ],
+          [
+            28.0,
+            12.0
+          ],
+          [
+            137.0,
+            185.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          66,
+          70,
+          186,
+          265
+        ],
+        "centroid": [
+          123.7488411293721,
+          156.08638853771598
+        ],
+        "crownBandCentroid": [
+          124.35003092145949,
+          86.63141620284478
+        ],
+        "lowerBandCentroid": [
+          142.76954177897574,
+          249.19272237196765
+        ],
+        "fitPoints": [
+          [
+            123.7488411293721,
+            156.08638853771598
+          ],
+          [
+            124.35003092145949,
+            86.63141620284478
+          ],
+          [
+            142.76954177897574,
+            249.19272237196765
+          ],
+          [
+            66.0,
+            70.0
+          ],
+          [
+            186.0,
+            265.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.008768242368958568,
+            5.46252351349537
+          ],
+          "length": 5.462530550721345
+        },
+        "crownBand": {
+          "delta": [
+            4.117212560575709,
+            -2.3246794494141056
+          ],
+          "length": 4.728168124283511
+        },
+        "lowerBand": {
+          "delta": [
+            -3.232122696149787,
+            1.8588741649554095
+          ],
+          "length": 3.728542648824771
+        },
+        "bboxMin": {
+          "delta": [
+            -3.8291649117779016,
+            -2.7283830894343026
+          ],
+          "length": 4.701763307983733
+        },
+        "bboxMax": {
+          "delta": [
+            2.9548720568442945,
+            3.4976572369109817
+          ],
+          "length": 4.578741641459474
+        }
+      }
+    },
+    {
+      "cell": 27,
+      "nativePhaseIndex": 27,
+      "paintedRect": [
+        486,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/27.png",
+      "frameSha256": "b1b4dd989ed5c0496692b926e296b537ccfa6264c93abf0ffc23bfeed5fbbad5",
+      "actorAlpha128Component": {
+        "pixels": 9538,
+        "bbox": [
+          515,
+          644,
+          623,
+          815
+        ],
+        "centroid": [
+          566.6430069196897,
+          723.5240092262529
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/27.png",
+      "nativePngSha256": "c98ff5660cc51f4deaf9fbf7bd178178a61df4219f700490fd05a24358b42045",
+      "paintedDescriptors": {
+        "bbox": [
+          29,
+          14,
+          137,
+          185
+        ],
+        "centroid": [
+          80.63989936051998,
+          93.53087325715484
+        ],
+        "crownBandCentroid": [
+          84.94847605224963,
+          28.35631349782293
+        ],
+        "lowerBandCentroid": [
+          96.7479674796748,
+          170.37282229965157
+        ],
+        "fitPoints": [
+          [
+            80.63989936051998,
+            93.53087325715484
+          ],
+          [
+            84.94847605224963,
+            28.35631349782293
+          ],
+          [
+            96.7479674796748,
+            170.37282229965157
+          ],
+          [
+            29.0,
+            14.0
+          ],
+          [
+            137.0,
+            185.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          66,
+          70,
+          185,
+          266
+        ],
+        "centroid": [
+          123.43029405542627,
+          156.4025809181299
+        ],
+        "crownBandCentroid": [
+          124.22841051314143,
+          86.7008760951189
+        ],
+        "lowerBandCentroid": [
+          142.92727272727274,
+          250.7062937062937
+        ],
+        "fitPoints": [
+          [
+            123.43029405542627,
+            156.4025809181299
+          ],
+          [
+            124.22841051314143,
+            86.7008760951189
+          ],
+          [
+            142.92727272727274,
+            250.7062937062937
+          ],
+          [
+            66.0,
+            70.0
+          ],
+          [
+            185.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.03102826492238364,
+            5.702185066923562
+          ],
+          "length": 5.702269485973998
+        },
+        "crownBand": {
+          "delta": [
+            4.182403410999115,
+            -0.40431005447653945
+          ],
+          "length": 4.201900154987961
+        },
+        "lowerBand": {
+          "delta": [
+            -0.7918059834476594,
+            0.7776696011899276
+          ],
+          "length": 1.109831844937969
+        },
+        "bboxMin": {
+          "delta": [
+            -2.6660086093134794,
+            -0.4020704845054581
+          ],
+          "length": 2.6961570020019323
+        },
+        "bboxMax": {
+          "delta": [
+            3.9548720568442945,
+            2.4976572369109817
+          ],
+          "length": 4.677531898245229
+        }
+      }
+    },
+    {
+      "cell": 28,
+      "nativePhaseIndex": 28,
+      "paintedRect": [
+        648,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/28.png",
+      "frameSha256": "4ae7f11098a1bd830d74bd98cb3b6a52dbbf9661e3236300ac33e0c5abcc5837",
+      "actorAlpha128Component": {
+        "pixels": 9536,
+        "bbox": [
+          676,
+          644,
+          783,
+          815
+        ],
+        "centroid": [
+          728.4597315436241,
+          723.4796560402684
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/28.png",
+      "nativePngSha256": "6f7d5cd1876ca3ba2b7d962fc82a96915e6139a4b510a68426f378fcc1a3dc04",
+      "paintedDescriptors": {
+        "bbox": [
+          28,
+          14,
+          135,
+          185
+        ],
+        "centroid": [
+          80.45973154362416,
+          93.47965604026845
+        ],
+        "crownBandCentroid": [
+          84.8542108987969,
+          28.178343949044585
+        ],
+        "lowerBandCentroid": [
+          92.05010893246187,
+          170.49782135076254
+        ],
+        "fitPoints": [
+          [
+            80.45973154362416,
+            93.47965604026845
+          ],
+          [
+            84.8542108987969,
+            28.178343949044585
+          ],
+          [
+            92.05010893246187,
+            170.49782135076254
+          ],
+          [
+            28.0,
+            14.0
+          ],
+          [
+            135.0,
+            185.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          67,
+          70,
+          182,
+          267
+        ],
+        "centroid": [
+          123.22464616366926,
+          156.5409173140364
+        ],
+        "crownBandCentroid": [
+          124.23125393824827,
+          86.74921235034657
+        ],
+        "lowerBandCentroid": [
+          142.06451612903226,
+          251.74633431085044
+        ],
+        "fitPoints": [
+          [
+            123.22464616366926,
+            156.5409173140364
+          ],
+          [
+            124.23125393824827,
+            86.74921235034657
+          ],
+          [
+            142.06451612903226,
+            251.74633431085044
+          ],
+          [
+            67.0,
+            70.0
+          ],
+          [
+            182.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.03494370488900245,
+            5.504275042400991
+          ],
+          "length": 5.504385960750736
+        },
+        "crownBand": {
+          "delta": [
+            4.069914878550975,
+            -0.6596527120124875
+          ],
+          "length": 4.123026657580088
+        },
+        "lowerBand": {
+          "delta": [
+            -5.393393162484244,
+            -0.11697756926503189
+          ],
+          "length": 5.3946615794545405
+        },
+        "bboxMin": {
+          "delta": [
+            -4.829164911777902,
+            -0.4020704845054581
+          ],
+          "length": 4.84587395829249
+        },
+        "bboxMax": {
+          "delta": [
+            4.628559451915407,
+            1.4976572369109817
+          ],
+          "length": 4.864826800533324
+        }
+      }
+    },
+    {
+      "cell": 29,
+      "nativePhaseIndex": 29,
+      "paintedRect": [
+        810,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/29.png",
+      "frameSha256": "8d20c051a166562c10be2f0701f78aa756cb7f4547d3722ac111a40e51a728b2",
+      "actorAlpha128Component": {
+        "pixels": 9311,
+        "bbox": [
+          843,
+          644,
+          941,
+          815
+        ],
+        "centroid": [
+          890.2561486413919,
+          722.9224573085597
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/29.png",
+      "nativePngSha256": "1b7f74af952122a15d4c0585fddbee7f13c50dfdb32f2fca114068ccb432f8bc",
+      "paintedDescriptors": {
+        "bbox": [
+          33,
+          14,
+          131,
+          185
+        ],
+        "centroid": [
+          80.2561486413919,
+          92.92245730855977
+        ],
+        "crownBandCentroid": [
+          84.06200997861725,
+          28.169636493228797
+        ],
+        "lowerBandCentroid": [
+          91.00667408231368,
+          171.1023359288098
+        ],
+        "fitPoints": [
+          [
+            80.2561486413919,
+            92.92245730855977
+          ],
+          [
+            84.06200997861725,
+            28.169636493228797
+          ],
+          [
+            91.00667408231368,
+            171.1023359288098
+          ],
+          [
+            33.0,
+            14.0
+          ],
+          [
+            131.0,
+            185.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          68,
+          70,
+          179,
+          267
+        ],
+        "centroid": [
+          123.13010913759898,
+          156.61801840359513
+        ],
+        "crownBandCentroid": [
+          124.28300694883133,
+          86.7877447883765
+        ],
+        "lowerBandCentroid": [
+          139.7707100591716,
+          251.81656804733728
+        ],
+        "fitPoints": [
+          [
+            123.13010913759898,
+            156.61801840359513
+          ],
+          [
+            124.28300694883133,
+            86.7877447883765
+          ],
+          [
+            139.7707100591716,
+            251.81656804733728
+          ],
+          [
+            68.0,
+            70.0
+          ],
+          [
+            179.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.1772054146241544,
+            4.7790647363301275
+          ],
+          "length": 4.782348953496207
+        },
+        "crownBand": {
+          "delta": [
+            3.0967083748428337,
+            -0.7083132821529858
+          ],
+          "length": 3.1766823046216124
+        },
+        "lowerBand": {
+          "delta": [
+            -4.313264914784469,
+            0.5159336356354345
+          ],
+          "length": 4.344012170964841
+        },
+        "bboxMin": {
+          "delta": [
+            -0.013383399455790368,
+            -0.4020704845054581
+          ],
+          "length": 0.40229316411225174
+        },
+        "bboxMax": {
+          "delta": [
+            2.975934242057747,
+            1.4976572369109817
+          ],
+          "length": 3.331540456354035
+        }
+      }
+    },
+    {
+      "cell": 30,
+      "nativePhaseIndex": 30,
+      "paintedRect": [
+        972,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/30.png",
+      "frameSha256": "31dfb4c071f6a6c3dc9c2b299407beecdd1778e9dffa821f34d1f3163378c22e",
+      "actorAlpha128Component": {
+        "pixels": 9196,
+        "bbox": [
+          1005,
+          644,
+          1100,
+          815
+        ],
+        "centroid": [
+          1051.9450848194867,
+          723.2834928229665
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/30.png",
+      "nativePngSha256": "97e1d37607cbbb2b22432ef26d032019ccca001b54eee51f1a41fb2aaf746cb0",
+      "paintedDescriptors": {
+        "bbox": [
+          33,
+          14,
+          128,
+          185
+        ],
+        "centroid": [
+          79.94508481948674,
+          93.28349282296651
+        ],
+        "crownBandCentroid": [
+          83.4179211469534,
+          28.191397849462366
+        ],
+        "lowerBandCentroid": [
+          86.31217481789803,
+          170.67741935483872
+        ],
+        "fitPoints": [
+          [
+            79.94508481948674,
+            93.28349282296651
+          ],
+          [
+            83.4179211469534,
+            28.191397849462366
+          ],
+          [
+            86.31217481789803,
+            170.67741935483872
+          ],
+          [
+            33.0,
+            14.0
+          ],
+          [
+            128.0,
+            185.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          70,
+          70,
+          174,
+          267
+        ],
+        "centroid": [
+          123.14796028491259,
+          156.5866609108569
+        ],
+        "crownBandCentroid": [
+          124.47345132743362,
+          86.78318584070796
+        ],
+        "lowerBandCentroid": [
+          137.96884272997033,
+          251.81305637982197
+        ],
+        "fitPoints": [
+          [
+            123.14796028491259,
+            156.5866609108569
+          ],
+          [
+            124.47345132743362,
+            86.78318584070796
+          ],
+          [
+            137.96884272997033,
+            251.81305637982197
+          ],
+          [
+            70.0,
+            70.0
+          ],
+          [
+            174.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.5568724068554332,
+            5.230362963064039
+          ],
+          "length": 5.25992429630969
+        },
+        "crownBand": {
+          "delta": [
+            2.1570880123437917,
+            -0.6784424758312042
+          ],
+          "length": 2.2612635596076065
+        },
+        "lowerBand": {
+          "delta": [
+            -7.9718339919028836,
+            0.025200912114684115
+          ],
+          "length": 7.971873824919062
+        },
+        "bboxMin": {
+          "delta": [
+            -2.0133833994557904,
+            -0.4020704845054581
+          ],
+          "length": 2.0531374497862065
+        },
+        "bboxMax": {
+          "delta": [
+            4.4864653346644445,
+            1.4976572369109817
+          ],
+          "length": 4.7298359800755865
+        }
+      }
+    },
+    {
+      "cell": 31,
+      "nativePhaseIndex": 31,
+      "paintedRect": [
+        1134,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        960,
+        256,
+        320
+      ],
+      "frame": "frames/31.png",
+      "frameSha256": "e1b5125cdc39115bc5a58a5641902d0ef4902fc1fe23f46fb4960f31059ffb22",
+      "actorAlpha128Component": {
+        "pixels": 8881,
+        "bbox": [
+          1168,
+          644,
+          1261,
+          816
+        ],
+        "centroid": [
+          1212.6922643846415,
+          722.6644522013287
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/31.png",
+      "nativePngSha256": "1c78f063cc760db0ddc599d78095c22984699099d3fb31861cd1b48aad0b5a4b",
+      "paintedDescriptors": {
+        "bbox": [
+          34,
+          14,
+          127,
+          186
+        ],
+        "centroid": [
+          78.69226438464138,
+          92.66445220132869
+        ],
+        "crownBandCentroid": [
+          82.51378809869377,
+          28.102322206095792
+        ],
+        "lowerBandCentroid": [
+          87.36819637139808,
+          171.37459978655284
+        ],
+        "fitPoints": [
+          [
+            78.69226438464138,
+            92.66445220132869
+          ],
+          [
+            82.51378809869377,
+            28.102322206095792
+          ],
+          [
+            87.36819637139808,
+            171.37459978655284
+          ],
+          [
+            34.0,
+            14.0
+          ],
+          [
+            127.0,
+            186.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          73,
+          70,
+          169,
+          267
+        ],
+        "centroid": [
+          123.28792365909838,
+          155.93298234068223
+        ],
+        "crownBandCentroid": [
+          124.85874299937772,
+          86.65774735532047
+        ],
+        "lowerBandCentroid": [
+          135.70254110612856,
+          251.82810164424515
+        ],
+        "fitPoints": [
+          [
+            123.28792365909838,
+            155.93298234068223
+          ],
+          [
+            124.85874299937772,
+            86.65774735532047
+          ],
+          [
+            135.70254110612856,
+            251.82810164424515
+          ],
+          [
+            73.0,
+            70.0
+          ],
+          [
+            169.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.1540617656878283,
+            5.164000532699191
+          ],
+          "length": 5.595255453696077
+        },
+        "crownBand": {
+          "delta": [
+            0.7201482870501223,
+            -0.6566128864215983
+          ],
+          "length": 0.9745532504466486
+        },
+        "lowerBand": {
+          "delta": [
+            -4.477214242569261,
+            0.8210854607946487
+          ],
+          "length": 4.5518818864062585
+        },
+        "bboxMin": {
+          "delta": [
+            -3.850227096991361,
+            -0.4020704845054581
+          ],
+          "length": 3.871163826669827
+        },
+        "bboxMax": {
+          "delta": [
+            8.32330903220003,
+            2.660813539375397
+          ],
+          "length": 8.738272251242005
+        }
+      }
+    },
+    {
+      "cell": 32,
+      "nativePhaseIndex": 32,
+      "paintedRect": [
+        0,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/32.png",
+      "frameSha256": "418aba868548b031f223134578c589f3026c058b367495a3d3d15f82378c4c75",
+      "actorAlpha128Component": {
+        "pixels": 8716,
+        "bbox": [
+          36,
+          846,
+          117,
+          1018
+        ],
+        "centroid": [
+          79.20410738871041,
+          925.3560119320789
+        ]
+      },
+      "actorMarginPx": 12,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/32.png",
+      "nativePngSha256": "785451fb933cd8d5f96d8c7ef8198e0b08ab2820ca0018fe2737027c26a47a4c",
+      "paintedDescriptors": {
+        "bbox": [
+          36,
+          16,
+          117,
+          188
+        ],
+        "centroid": [
+          79.20410738871041,
+          95.35601193207893
+        ],
+        "crownBandCentroid": [
+          84.87586206896552,
+          30.75095785440613
+        ],
+        "lowerBandCentroid": [
+          77.94604651162791,
+          173.81953488372093
+        ],
+        "fitPoints": [
+          [
+            79.20410738871041,
+            95.35601193207893
+          ],
+          [
+            84.87586206896552,
+            30.75095785440613
+          ],
+          [
+            77.94604651162791,
+            173.81953488372093
+          ],
+          [
+            36.0,
+            16.0
+          ],
+          [
+            117.0,
+            188.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          78,
+          69,
+          163,
+          267
+        ],
+        "centroid": [
+          123.50248027057498,
+          154.52626832018038
+        ],
+        "crownBandCentroid": [
+          125.42558581380621,
+          85.89043698543382
+        ],
+        "lowerBandCentroid": [
+          133.60179640718562,
+          251.75299401197606
+        ],
+        "fitPoints": [
+          [
+            123.50248027057498,
+            154.52626832018038
+          ],
+          [
+            125.42558581380621,
+            85.89043698543382
+          ],
+          [
+            133.60179640718562,
+            251.75299401197606
+          ],
+          [
+            78.0,
+            69.0
+          ],
+          [
+            163.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.7732649611092057,
+            9.701419217482623
+          ],
+          "length": 9.862150042239207
+        },
+        "crownBand": {
+          "delta": [
+            2.900766698030395,
+            3.191474730729155
+          ],
+          "length": 4.312766906903837
+        },
+        "lowerBand": {
+          "delta": [
+            -13.335902535782267,
+            3.7400347604512945
+          ],
+          "length": 13.850420804194647
+        },
+        "bboxMin": {
+          "delta": [
+            -6.5239144920625165,
+            2.9242421204234006
+          ],
+          "length": 7.149311314987036
+        },
+        "bboxMax": {
+          "delta": [
+            2.691746007555821,
+            4.987126144304284
+          ],
+          "length": 5.66717952321929
+        }
+      }
+    },
+    {
+      "cell": 33,
+      "nativePhaseIndex": 33,
+      "paintedRect": [
+        162,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/33.png",
+      "frameSha256": "3e59eeb01dd5f0f96350c0684f74697441cd113b950437f055f2908f4c53f7db",
+      "actorAlpha128Component": {
+        "pixels": 8416,
+        "bbox": [
+          198,
+          847,
+          280,
+          1020
+        ],
+        "centroid": [
+          241.51378326996198,
+          923.5282794676806
+        ]
+      },
+      "actorMarginPx": 10,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/33.png",
+      "nativePngSha256": "ef37d2ccf032e700ede5e4ed5a4f8ce7b306fb228a4dca29b9019a940e0e766f",
+      "paintedDescriptors": {
+        "bbox": [
+          36,
+          17,
+          118,
+          190
+        ],
+        "centroid": [
+          79.51193728471316,
+          93.55208457061408
+        ],
+        "crownBandCentroid": [
+          85.66495976591075,
+          31.51792245793709
+        ],
+        "lowerBandCentroid": [
+          85.72727272727273,
+          175.76289926289925
+        ],
+        "fitPoints": [
+          [
+            79.51193728471316,
+            93.55208457061408
+          ],
+          [
+            85.66495976591075,
+            31.51792245793709
+          ],
+          [
+            85.72727272727273,
+            175.76289926289925
+          ],
+          [
+            36.0,
+            17.0
+          ],
+          [
+            118.0,
+            190.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          83,
+          69,
+          160,
+          267
+        ],
+        "centroid": [
+          123.57501439263098,
+          153.14323546344272
+        ],
+        "crownBandCentroid": [
+          125.73337438423646,
+          85.57758620689656
+        ],
+        "lowerBandCentroid": [
+          131.13757396449705,
+          251.63313609467457
+        ],
+        "fitPoints": [
+          [
+            123.57501439263098,
+            153.14323546344272
+          ],
+          [
+            125.73337438423646,
+            85.57758620689656
+          ],
+          [
+            131.13757396449705,
+            251.63313609467457
+          ],
+          [
+            83.0,
+            69.0
+          ],
+          [
+            160.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.4877447995426394,
+            8.986202594544437
+          ],
+          "length": 9.108524669712617
+        },
+        "crownBand": {
+          "delta": [
+            3.5108220870621523,
+            4.396425221630594
+          ],
+          "length": 5.626226662372665
+        },
+        "lowerBand": {
+          "delta": [
+            -1.8208977794650423,
+            6.120329203378901
+          ],
+          "length": 6.3854599114702255
+        },
+        "bboxMin": {
+          "delta": [
+            -11.523914492062517,
+            4.087398422887816
+          ],
+          "length": 12.227323136639281
+        },
+        "bboxMax": {
+          "delta": [
+            6.854902310020236,
+            7.313438749233114
+          ],
+          "length": 10.023775337601357
+        }
+      }
+    },
+    {
+      "cell": 34,
+      "nativePhaseIndex": 34,
+      "paintedRect": [
+        324,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/34.png",
+      "frameSha256": "db62e76a116e8584d8bfd0b3b8f7d86181ec89141b71676ea52d9bef01494584",
+      "actorAlpha128Component": {
+        "pixels": 8171,
+        "bbox": [
+          362,
+          847,
+          443,
+          1022
+        ],
+        "centroid": [
+          402.9013584628564,
+          922.8936482682658
+        ]
+      },
+      "actorMarginPx": 8,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/34.png",
+      "nativePngSha256": "9fbf36ae562cf426216a03b3ba1f90b1b1ee2f0c81c9cfe125c4a5e813a611ab",
+      "paintedDescriptors": {
+        "bbox": [
+          38,
+          17,
+          119,
+          192
+        ],
+        "centroid": [
+          78.90135846285645,
+          92.89364826826582
+        ],
+        "crownBandCentroid": [
+          86.11430575035062,
+          32.17321178120617
+        ],
+        "lowerBandCentroid": [
+          82.57769869513642,
+          177.16014234875445
+        ],
+        "fitPoints": [
+          [
+            78.90135846285645,
+            92.89364826826582
+          ],
+          [
+            86.11430575035062,
+            32.17321178120617
+          ],
+          [
+            82.57769869513642,
+            177.16014234875445
+          ],
+          [
+            38.0,
+            17.0
+          ],
+          [
+            119.0,
+            192.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          86,
+          68,
+          160,
+          267
+        ],
+        "centroid": [
+          123.41166822867854,
+          151.74425960637302
+        ],
+        "crownBandCentroid": [
+          126.10734114743985,
+          84.62615669339914
+        ],
+        "lowerBandCentroid": [
+          128.42606149341142,
+          251.4904831625183
+        ],
+        "fitPoints": [
+          [
+            123.41166822867854,
+            151.74425960637302
+          ],
+          [
+            126.10734114743985,
+            84.62615669339914
+          ],
+          [
+            128.42606149341142,
+            251.4904831625183
+          ],
+          [
+            86.0,
+            68.0
+          ],
+          [
+            160.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.03459724038413,
+            9.619314116766361
+          ],
+          "length": 9.832130491790643
+        },
+        "crownBand": {
+          "delta": [
+            3.6595149376470886,
+            6.110058641426079
+          ],
+          "length": 7.122139157621653
+        },
+        "lowerBand": {
+          "delta": [
+            -2.772832193937049,
+            7.888194236922487
+          ],
+          "length": 8.361351965749972
+        },
+        "bboxMin": {
+          "delta": [
+            -12.197601887133658,
+            5.087398422887816
+          ],
+          "length": 13.21601734677312
+        },
+        "bboxMax": {
+          "delta": [
+            8.018058612484651,
+            9.639751354161945
+          ],
+          "length": 12.538503502543929
+        }
+      }
+    },
+    {
+      "cell": 35,
+      "nativePhaseIndex": 35,
+      "paintedRect": [
+        486,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/35.png",
+      "frameSha256": "69ee2aa18f08e845aee60866c94684c20e699b295434ee545c8de7cbf7b06d5d",
+      "actorAlpha128Component": {
+        "pixels": 8154,
+        "bbox": [
+          523,
+          847,
+          603,
+          1016
+        ],
+        "centroid": [
+          565.2650233014472,
+          924.1535442727496
+        ]
+      },
+      "actorMarginPx": 14,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/35.png",
+      "nativePngSha256": "fa015fc19dd136a457e86ed45e37bc2ffdb11a56e96cec9cd2f51411222033da",
+      "paintedDescriptors": {
+        "bbox": [
+          37,
+          17,
+          117,
+          186
+        ],
+        "centroid": [
+          79.26502330144714,
+          94.15354427274957
+        ],
+        "crownBandCentroid": [
+          85.17867867867868,
+          31.566816816816818
+        ],
+        "lowerBandCentroid": [
+          78.99380530973451,
+          172.3362831858407
+        ],
+        "fitPoints": [
+          [
+            79.26502330144714,
+            94.15354427274957
+          ],
+          [
+            85.17867867867868,
+            31.566816816816818
+          ],
+          [
+            78.99380530973451,
+            172.3362831858407
+          ],
+          [
+            37.0,
+            17.0
+          ],
+          [
+            117.0,
+            186.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          67,
+          160,
+          267
+        ],
+        "centroid": [
+          123.2742202268431,
+          150.6540642722117
+        ],
+        "crownBandCentroid": [
+          126.33764633394948,
+          83.62168823166975
+        ],
+        "lowerBandCentroid": [
+          125.81988472622479,
+          251.38040345821327
+        ],
+        "fitPoints": [
+          [
+            123.2742202268431,
+            150.6540642722117
+          ],
+          [
+            126.33764633394948,
+            83.62168823166975
+          ],
+          [
+            125.81988472622479,
+            251.38040345821327
+          ],
+          [
+            87.0,
+            67.0
+          ],
+          [
+            160.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.4741501895572213,
+            12.17496542899272
+          ],
+          "length": 12.263886087963288
+        },
+        "crownBand": {
+          "delta": [
+            2.340929225965894,
+            6.4091949785433115
+          ],
+          "length": 6.823322498165104
+        },
+        "lowerBand": {
+          "delta": [
+            -4.335283605341203,
+            2.387371753683624
+          ],
+          "length": 4.949164356639073
+        },
+        "bboxMin": {
+          "delta": [
+            -14.360758189598087,
+            6.087398422887816
+          ],
+          "length": 15.597685576363103
+        },
+        "bboxMax": {
+          "delta": [
+            5.691746007555821,
+            2.660813539375397
+          ],
+          "length": 6.282985063315928
+        }
+      }
+    },
+    {
+      "cell": 36,
+      "nativePhaseIndex": 36,
+      "paintedRect": [
+        648,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/36.png",
+      "frameSha256": "5103a8ead1d7d73f56e2b4f91b63e4f832adfe833672bbeddf5680c0e35a3f38",
+      "actorAlpha128Component": {
+        "pixels": 8247,
+        "bbox": [
+          685,
+          847,
+          765,
+          1017
+        ],
+        "centroid": [
+          726.5091548441858,
+          924.6806111313205
+        ]
+      },
+      "actorMarginPx": 13,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/36.png",
+      "nativePngSha256": "d2c0efe5e3b44dd2ef09533f69a857463034a65d51789bafd91e9abd832406d3",
+      "paintedDescriptors": {
+        "bbox": [
+          37,
+          17,
+          117,
+          187
+        ],
+        "centroid": [
+          78.50915484418576,
+          94.68061113132048
+        ],
+        "crownBandCentroid": [
+          84.98273273273273,
+          31.62162162162162
+        ],
+        "lowerBandCentroid": [
+          77.31809872029251,
+          173.09506398537476
+        ],
+        "fitPoints": [
+          [
+            78.50915484418576,
+            94.68061113132048
+          ],
+          [
+            84.98273273273273,
+            31.62162162162162
+          ],
+          [
+            77.31809872029251,
+            173.09506398537476
+          ],
+          [
+            37.0,
+            17.0
+          ],
+          [
+            117.0,
+            187.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          66,
+          160,
+          267
+        ],
+        "centroid": [
+          123.19711079274117,
+          148.9610792741165
+        ],
+        "crownBandCentroid": [
+          126.27412670219064,
+          83.10242747187685
+        ],
+        "lowerBandCentroid": [
+          123.0464135021097,
+          250.69901547116737
+        ],
+        "fitPoints": [
+          [
+            123.19711079274117,
+            148.9610792741165
+          ],
+          [
+            126.27412670219064,
+            83.10242747187685
+          ],
+          [
+            123.0464135021097,
+            250.69901547116737
+          ],
+          [
+            87.0,
+            66.0
+          ],
+          [
+            160.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.2762339153529325,
+            14.481011565454764
+          ],
+          "length": 14.658817714817166
+        },
+        "crownBand": {
+          "delta": [
+            2.1765330957553317,
+            6.992202292450244
+          ],
+          "length": 7.323127010742388
+        },
+        "lowerBand": {
+          "delta": [
+            -3.5109210618167452,
+            3.9513404098965736
+          ],
+          "length": 5.285797738959564
+        },
+        "bboxMin": {
+          "delta": [
+            -14.360758189598087,
+            7.087398422887816
+          ],
+          "length": 16.01444948116735
+        },
+        "bboxMax": {
+          "delta": [
+            5.691746007555821,
+            3.823969841839812
+          ],
+          "length": 6.857019612472173
+        }
+      }
+    },
+    {
+      "cell": 37,
+      "nativePhaseIndex": 37,
+      "paintedRect": [
+        810,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/37.png",
+      "frameSha256": "f24083f77ade0102ee23b0df00f88168af7bea862d2b42e2565cb7b654ba7357",
+      "actorAlpha128Component": {
+        "pixels": 8175,
+        "bbox": [
+          849,
+          847,
+          927,
+          1019
+        ],
+        "centroid": [
+          890.1228134556575,
+          925.6293577981652
+        ]
+      },
+      "actorMarginPx": 11,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/37.png",
+      "nativePngSha256": "594896bc7e1d08c7fde7d1bb7ddb8b4e4bbbc826d2ae1483bdcb6f7d864ecfc0",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          17,
+          117,
+          189
+        ],
+        "centroid": [
+          80.1228134556575,
+          95.62935779816513
+        ],
+        "crownBandCentroid": [
+          85.4815668202765,
+          31.666666666666668
+        ],
+        "lowerBandCentroid": [
+          81.22211720226844,
+          175.05482041587902
+        ],
+        "fitPoints": [
+          [
+            80.1228134556575,
+            95.62935779816513
+          ],
+          [
+            85.4815668202765,
+            31.666666666666668
+          ],
+          [
+            81.22211720226844,
+            175.05482041587902
+          ],
+          [
+            39.0,
+            17.0
+          ],
+          [
+            117.0,
+            189.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          65,
+          160,
+          267
+        ],
+        "centroid": [
+          123.20635113760798,
+          146.22812994281543
+        ],
+        "crownBandCentroid": [
+          126.26378186129223,
+          82.11025489033788
+        ],
+        "lowerBandCentroid": [
+          120.68396226415095,
+          251.78773584905662
+        ],
+        "fitPoints": [
+          [
+            123.20635113760798,
+            146.22812994281543
+          ],
+          [
+            126.26378186129223,
+            82.11025489033788
+          ],
+          [
+            120.68396226415095,
+            251.78773584905662
+          ],
+          [
+            87.0,
+            65.0
+          ],
+          [
+            160.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.4085370762604015,
+            18.31750156173834
+          ],
+          "length": 18.322056817043382
+        },
+        "crownBand": {
+          "delta": [
+            2.767099949464395,
+            8.036769302028148
+          ],
+          "length": 8.499794288354739
+        },
+        "lowerBand": {
+          "delta": [
+            3.3925138783898916,
+            5.142123075443521
+          ],
+          "length": 6.1604042187243495
+        },
+        "bboxMin": {
+          "delta": [
+            -12.034445584669243,
+            8.087398422887816
+          ],
+          "length": 14.499444602497482
+        },
+        "bboxMax": {
+          "delta": [
+            5.691746007555821,
+            6.150282446768642
+          ],
+          "length": 8.379853625783573
+        }
+      }
+    },
+    {
+      "cell": 38,
+      "nativePhaseIndex": 38,
+      "paintedRect": [
+        972,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/38.png",
+      "frameSha256": "e03cd1a4d48ce72cb9cf08411e6b682038575c7dd6931e26ef9a52d4bb11d190",
+      "actorAlpha128Component": {
+        "pixels": 7537,
+        "bbox": [
+          1014,
+          848,
+          1089,
+          1022
+        ],
+        "centroid": [
+          1052.969351200743,
+          923.1650524081199
+        ]
+      },
+      "actorMarginPx": 8,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/38.png",
+      "nativePngSha256": "379167fb05a1a91100f680d689dfe2b32ae5d97652a59be67eaf925b5da73d87",
+      "paintedDescriptors": {
+        "bbox": [
+          42,
+          18,
+          117,
+          192
+        ],
+        "centroid": [
+          80.969351200743,
+          93.16505240811995
+        ],
+        "crownBandCentroid": [
+          85.74566473988439,
+          32.73916184971098
+        ],
+        "lowerBandCentroid": [
+          82.51200873362446,
+          177.52838427947597
+        ],
+        "fitPoints": [
+          [
+            80.969351200743,
+            93.16505240811995
+          ],
+          [
+            85.74566473988439,
+            32.73916184971098
+          ],
+          [
+            82.51200873362446,
+            177.52838427947597
+          ],
+          [
+            42.0,
+            18.0
+          ],
+          [
+            117.0,
+            192.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          64,
+          160,
+          267
+        ],
+        "centroid": [
+          123.17017711823839,
+          146.67951172809956
+        ],
+        "crownBandCentroid": [
+          126.13293413173653,
+          81.20958083832335
+        ],
+        "lowerBandCentroid": [
+          119.09912536443149,
+          251.61516034985422
+        ],
+        "fitPoints": [
+          [
+            123.17017711823839,
+            146.67951172809956
+          ],
+          [
+            126.13293413173653,
+            81.20958083832335
+          ],
+          [
+            119.09912536443149,
+            251.61516034985422
+          ],
+          [
+            87.0,
+            64.0
+          ],
+          [
+            160.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.6122926565794273,
+            14.999747430826119
+          ],
+          "length": 15.012239182942558
+        },
+        "crownBand": {
+          "delta": [
+            3.205134838679726,
+            10.18492288556341
+          ],
+          "length": 10.677337847937181
+        },
+        "lowerBand": {
+          "delta": [
+            6.4776962423016045,
+            8.191839972136933
+          ],
+          "length": 10.44350471521073
+        },
+        "bboxMin": {
+          "delta": [
+            -8.544976677275969,
+            10.250554725352245
+          ],
+          "length": 13.345055211299483
+        },
+        "bboxMax": {
+          "delta": [
+            5.691746007555821,
+            9.639751354161945
+          ],
+          "length": 11.194676359082234
+        }
+      }
+    },
+    {
+      "cell": 39,
+      "nativePhaseIndex": 39,
+      "paintedRect": [
+        1134,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        1280,
+        256,
+        320
+      ],
+      "frame": "frames/39.png",
+      "frameSha256": "ae0a9e1a3283bf2afa8ef0e1f9da9e9c5ed5afa80469853e7fcfb42da6a2cd0a",
+      "actorAlpha128Component": {
+        "pixels": 7641,
+        "bbox": [
+          1172,
+          847,
+          1252,
+          1020
+        ],
+        "centroid": [
+          1212.2779740871613,
+          921.6599921476246
+        ]
+      },
+      "actorMarginPx": 10,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/39.png",
+      "nativePngSha256": "6afc46b9c9e19e3379c9164d851297aa49f36d1bc2dd745e009a0057f22a13dd",
+      "paintedDescriptors": {
+        "bbox": [
+          38,
+          17,
+          118,
+          190
+        ],
+        "centroid": [
+          78.27797408716137,
+          91.65999214762466
+        ],
+        "crownBandCentroid": [
+          82.37957911145752,
+          31.279812938425565
+        ],
+        "lowerBandCentroid": [
+          74.70057306590257,
+          175.98567335243553
+        ],
+        "fitPoints": [
+          [
+            78.27797408716137,
+            91.65999214762466
+          ],
+          [
+            82.37957911145752,
+            31.279812938425565
+          ],
+          [
+            74.70057306590257,
+            175.98567335243553
+          ],
+          [
+            38.0,
+            17.0
+          ],
+          [
+            118.0,
+            190.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          64,
+          159,
+          267
+        ],
+        "centroid": [
+          123.19458908761602,
+          150.26341408195609
+        ],
+        "crownBandCentroid": [
+          125.73892498523331,
+          81.01890135853515
+        ],
+        "lowerBandCentroid": [
+          117.99755799755799,
+          250.12087912087912
+        ],
+        "fitPoints": [
+          [
+            123.19458908761602,
+            150.26341408195609
+          ],
+          [
+            125.73892498523331,
+            81.01890135853515
+          ],
+          [
+            117.99755799755799,
+            250.12087912087912
+          ],
+          [
+            87.0,
+            64.0
+          ],
+          [
+            159.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -2.542611564769203,
+            9.665224749385715
+          ],
+          "length": 9.994070393260008
+        },
+        "crownBand": {
+          "delta": [
+            -0.3161397281566849,
+            8.67815148169538
+          ],
+          "length": 8.68390796053083
+        },
+        "lowerBand": {
+          "delta": [
+            -1.506657019030996,
+            7.891707263444232
+          ],
+          "length": 8.034242895562333
+        },
+        "bboxMin": {
+          "delta": [
+            -13.197601887133658,
+            9.087398422887816
+          ],
+          "length": 16.023654566533125
+        },
+        "bboxMax": {
+          "delta": [
+            7.854902310020236,
+            7.313438749233114
+          ],
+          "length": 10.732468338585754
+        }
+      }
+    },
+    {
+      "cell": 40,
+      "nativePhaseIndex": 40,
+      "paintedRect": [
+        0,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/40.png",
+      "frameSha256": "cae5b01fff2a473503c4d1067bb47c4b7a2c94e420041f11f7286abe80ac546c",
+      "actorAlpha128Component": {
+        "pixels": 8024,
+        "bbox": [
+          40,
+          1039,
+          124,
+          1204
+        ],
+        "centroid": [
+          81.75186939182453,
+          1115.07926221336
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/40.png",
+      "nativePngSha256": "7b23b93beed08758b19ca4e4530da67d6602de54e754181b1698a24a91608d11",
+      "paintedDescriptors": {
+        "bbox": [
+          40,
+          9,
+          124,
+          174
+        ],
+        "centroid": [
+          81.74968851233491,
+          85.09705955644156
+        ],
+        "crownBandCentroid": [
+          86.7566909975669,
+          22.942416869424168
+        ],
+        "lowerBandCentroid": [
+          79.1856846473029,
+          159.9149377593361
+        ],
+        "fitPoints": [
+          [
+            81.74968851233491,
+            85.09705955644156
+          ],
+          [
+            86.7566909975669,
+            22.942416869424168
+          ],
+          [
+            79.1856846473029,
+            159.9149377593361
+          ],
+          [
+            40.0,
+            9.0
+          ],
+          [
+            124.0,
+            174.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          87,
+          63,
+          165,
+          267
+        ],
+        "centroid": [
+          123.3922645863092,
+          151.5245577409076
+        ],
+        "crownBandCentroid": [
+          125.54214675560947,
+          80.31473620375985
+        ],
+        "lowerBandCentroid": [
+          118.03745743473326,
+          249.69012485811578
+        ],
+        "fitPoints": [
+          [
+            123.3922645863092,
+            151.5245577409076
+          ],
+          [
+            125.54214675560947,
+            80.31473620375985
+          ],
+          [
+            118.03745743473326,
+            249.69012485811578
+          ],
+          [
+            87.0,
+            63.0
+          ],
+          [
+            165.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.2978594505348866,
+            0.7703646843504259
+          ],
+          "length": 1.5092716456082547
+        },
+        "crownBand": {
+          "delta": [
+            4.971903778387244,
+            -0.3153781473304065
+          ],
+          "length": 4.981896281272314
+        },
+        "lowerBand": {
+          "delta": [
+            3.670329346955711,
+            -10.37031586414534
+          ],
+          "length": 11.00067128121138
+        },
+        "bboxMin": {
+          "delta": [
+            -10.871289282204813,
+            0.7821480031724306
+          ],
+          "length": 10.899389256111915
+        },
+        "bboxMax": {
+          "delta": [
+            8.833840124806784,
+            -11.29706209019767
+          ],
+          "length": 14.340862708373848
+        }
+      }
+    },
+    {
+      "cell": 41,
+      "nativePhaseIndex": 41,
+      "paintedRect": [
+        162,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/41.png",
+      "frameSha256": "88b810991f6e2629eb757b05d37a4ebe14469c5af365d77298d2867b1572da75",
+      "actorAlpha128Component": {
+        "pixels": 8061,
+        "bbox": [
+          204,
+          1039,
+          289,
+          1203
+        ],
+        "centroid": [
+          244.41123930033496,
+          1115.3409006326758
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/41.png",
+      "nativePngSha256": "a6a2d08ea89abbc1bfe718e28d3596255c4f6437ac9c6fddd86c33814e4c1a40",
+      "paintedDescriptors": {
+        "bbox": [
+          42,
+          9,
+          127,
+          173
+        ],
+        "centroid": [
+          82.41123930033494,
+          85.34090063267584
+        ],
+        "crownBandCentroid": [
+          86.79547291835085,
+          22.855295068714632
+        ],
+        "lowerBandCentroid": [
+          80.67867867867868,
+          158.6036036036036
+        ],
+        "fitPoints": [
+          [
+            82.41123930033494,
+            85.34090063267584
+          ],
+          [
+            86.79547291835085,
+            22.855295068714632
+          ],
+          [
+            80.67867867867868,
+            158.6036036036036
+          ],
+          [
+            42.0,
+            9.0
+          ],
+          [
+            127.0,
+            173.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          86,
+          63,
+          170,
+          267
+        ],
+        "centroid": [
+          123.56598874945911,
+          152.20954132410213
+        ],
+        "crownBandCentroid": [
+          125.27472527472527,
+          80.34310134310134
+        ],
+        "lowerBandCentroid": [
+          118.95842450765865,
+          249.7155361050328
+        ],
+        "fitPoints": [
+          [
+            123.56598874945911,
+            152.20954132410213
+          ],
+          [
+            125.27472527472527,
+            80.34310134310134
+          ],
+          [
+            118.95842450765865,
+            249.7155361050328
+          ],
+          [
+            86.0,
+            63.0
+          ],
+          [
+            170.0,
+            267.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            1.893622255847518,
+            0.3690063857774817
+          ],
+          "length": 1.9292410322677678
+        },
+        "crownBand": {
+          "delta": [
+            5.284434694852948,
+            -0.4450795582492333
+          ],
+          "length": 5.303144902540086
+        },
+        "lowerBand": {
+          "delta": [
+            4.485947691166814,
+            -11.921013698939504
+          ],
+          "length": 12.737122685213807
+        },
+        "bboxMin": {
+          "delta": [
+            -7.544976677275969,
+            0.7821480031724306
+          ],
+          "length": 7.5854089250023256
+        },
+        "bboxMax": {
+          "delta": [
+            7.323309032200029,
+            -12.460218392662114
+          ],
+          "length": 14.45295463128345
+        }
+      }
+    },
+    {
+      "cell": 42,
+      "nativePhaseIndex": 42,
+      "paintedRect": [
+        324,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/42.png",
+      "frameSha256": "ee4d8b1508033cea220b94624f80798e8f793e473b1d102ca458961b4902183e",
+      "actorAlpha128Component": {
+        "pixels": 8050,
+        "bbox": [
+          365,
+          1039,
+          454,
+          1203
+        ],
+        "centroid": [
+          406.96012422360246,
+          1114.7932919254658
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/42.png",
+      "nativePngSha256": "ca2587804c5437433a2d4d44f77dedad130e782f05be3f44f9930bcf3cf45291",
+      "paintedDescriptors": {
+        "bbox": [
+          41,
+          9,
+          130,
+          173
+        ],
+        "centroid": [
+          82.96012422360248,
+          84.79329192546584
+        ],
+        "crownBandCentroid": [
+          86.54802259887006,
+          22.882970137207426
+        ],
+        "lowerBandCentroid": [
+          82.62101910828025,
+          157.66348195329087
+        ],
+        "fitPoints": [
+          [
+            82.96012422360248,
+            84.79329192546584
+          ],
+          [
+            86.54802259887006,
+            22.882970137207426
+          ],
+          [
+            82.62101910828025,
+            157.66348195329087
+          ],
+          [
+            41.0,
+            9.0
+          ],
+          [
+            130.0,
+            173.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          86,
+          64,
+          175,
+          266
+        ],
+        "centroid": [
+          123.9993590428373,
+          152.82662108749065
+        ],
+        "crownBandCentroid": [
+          124.95646988670245,
+          81.05187835420394
+        ],
+        "lowerBandCentroid": [
+          120.63937823834196,
+          249.20518134715027
+        ],
+        "fitPoints": [
+          [
+            123.9993590428373,
+            152.82662108749065
+          ],
+          [
+            124.95646988670245,
+            81.05187835420394
+          ],
+          [
+            120.63937823834196,
+            249.20518134715027
+          ],
+          [
+            86.0,
+            64.0
+          ],
+          [
+            175.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            2.0986909202956525,
+            -0.8850278966867222
+          ],
+          "length": 2.277669413423541
+        },
+        "crownBand": {
+          "delta": [
+            5.314866684224853,
+            -1.1216661390132998
+          ],
+          "length": 5.431937296995639
+        },
+        "lowerBand": {
+          "delta": [
+            5.064239472706021,
+            -12.50416736370147
+          ],
+          "length": 13.490764355527478
+        },
+        "bboxMin": {
+          "delta": [
+            -8.708132979740384,
+            -0.2178519968275694
+          ],
+          "length": 8.710857563142902
+        },
+        "bboxMax": {
+          "delta": [
+            5.812777939593332,
+            -11.460218392662114
+          ],
+          "length": 12.850097002845304
+        }
+      }
+    },
+    {
+      "cell": 43,
+      "nativePhaseIndex": 43,
+      "paintedRect": [
+        486,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/43.png",
+      "frameSha256": "00de9ac440e17728bfc70b9f73f1116b0b2d761a502f5f808cbb2149c3c15040",
+      "actorAlpha128Component": {
+        "pixels": 7910,
+        "bbox": [
+          526,
+          1039,
+          619,
+          1201
+        ],
+        "centroid": [
+          568.2537294563843,
+          1114.5413400758534
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/43.png",
+      "nativePngSha256": "20bd68d8a2193c7d06cd8b2485a7fce9e7e24d045e18437d4f8ec8f47d601222",
+      "paintedDescriptors": {
+        "bbox": [
+          40,
+          9,
+          133,
+          171
+        ],
+        "centroid": [
+          82.23509348155635,
+          84.54269833249116
+        ],
+        "crownBandCentroid": [
+          85.13415637860082,
+          22.906172839506173
+        ],
+        "lowerBandCentroid": [
+          84.38819875776397,
+          156.34368530020703
+        ],
+        "fitPoints": [
+          [
+            82.23509348155635,
+            84.54269833249116
+          ],
+          [
+            85.13415637860082,
+            22.906172839506173
+          ],
+          [
+            84.38819875776397,
+            156.34368530020703
+          ],
+          [
+            40.0,
+            9.0
+          ],
+          [
+            133.0,
+            171.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          85,
+          65,
+          178,
+          266
+        ],
+        "centroid": [
+          124.28994642294359,
+          153.85092971950834
+        ],
+        "crownBandCentroid": [
+          124.60366213821618,
+          81.90194920259894
+        ],
+        "lowerBandCentroid": [
+          121.89260385005066,
+          248.86220871327254
+        ],
+        "fitPoints": [
+          [
+            124.28994642294359,
+            153.85092971950834
+          ],
+          [
+            124.60366213821618,
+            81.90194920259894
+          ],
+          [
+            121.89260385005066,
+            248.86220871327254
+          ],
+          [
+            85.0,
+            65.0
+          ],
+          [
+            178.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            0.9647794630979547,
+            -2.200816045730136
+          ],
+          "length": 2.402996188003387
+        },
+        "crownBand": {
+          "delta": [
+            4.023127027763394,
+            -1.944748617995316
+          ],
+          "length": 4.468511862881759
+        },
+        "lowerBand": {
+          "delta": [
+            5.866520007881178,
+            -13.696324524829663
+          ],
+          "length": 14.899844378124245
+        },
+        "bboxMin": {
+          "delta": [
+            -8.871289282204813,
+            -1.2178519968275694
+          ],
+          "length": 8.954492560426798
+        },
+        "bboxMax": {
+          "delta": [
+            6.302246846986577,
+            -13.786530997590944
+          ],
+          "length": 15.158718688196842
+        }
+      }
+    },
+    {
+      "cell": 44,
+      "nativePhaseIndex": 44,
+      "paintedRect": [
+        648,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/44.png",
+      "frameSha256": "3f1df357acfb2cff9fa44a14c720a1f2a1d2794df5221a229cccbabad1744606",
+      "actorAlpha128Component": {
+        "pixels": 7990,
+        "bbox": [
+          687,
+          1039,
+          780,
+          1201
+        ],
+        "centroid": [
+          729.3137672090113,
+          1114.2650813516896
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/44.png",
+      "nativePngSha256": "1f60aee028e926ab141aee05ae4b6b92a6a833ef39fcc39a437d5275b32e6475",
+      "paintedDescriptors": {
+        "bbox": [
+          39,
+          9,
+          132,
+          171
+        ],
+        "centroid": [
+          81.30593093093093,
+          84.26388888888889
+        ],
+        "crownBandCentroid": [
+          83.91350040420372,
+          22.80032336297494
+        ],
+        "lowerBandCentroid": [
+          82.21080508474576,
+          155.59216101694915
+        ],
+        "fitPoints": [
+          [
+            81.30593093093093,
+            84.26388888888889
+          ],
+          [
+            83.91350040420372,
+            22.80032336297494
+          ],
+          [
+            82.21080508474576,
+            155.59216101694915
+          ],
+          [
+            39.0,
+            9.0
+          ],
+          [
+            132.0,
+            171.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          81,
+          65,
+          181,
+          266
+        ],
+        "centroid": [
+          124.5785655058043,
+          154.67205638474294
+        ],
+        "crownBandCentroid": [
+          124.56348246674727,
+          82.16686819830713
+        ],
+        "lowerBandCentroid": [
+          122.87298387096774,
+          248.1290322580645
+        ],
+        "fitPoints": [
+          [
+            124.5785655058043,
+            154.67205638474294
+          ],
+          [
+            124.56348246674727,
+            82.16686819830713
+          ],
+          [
+            122.87298387096774,
+            248.1290322580645
+          ],
+          [
+            81.0,
+            65.0
+          ],
+          [
+            181.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.40460089653663545,
+            -3.346241672477305
+          ],
+          "length": 3.3706134777072796
+        },
+        "crownBand": {
+          "delta": [
+            2.64349300947147,
+            -2.3327870994433653
+          ],
+          "length": 3.5256135554615056
+        },
+        "lowerBand": {
+          "delta": [
+            2.3534908132468075,
+            -13.837288276148087
+          ],
+          "length": 14.036006050342897
+        },
+        "bboxMin": {
+          "delta": [
+            -6.034445584669243,
+            -1.2178519968275694
+          ],
+          "length": 6.156110541609126
+        },
+        "bboxMax": {
+          "delta": [
+            2.139090544522162,
+            -13.786530997590944
+          ],
+          "length": 13.951492583419169
+        }
+      }
+    },
+    {
+      "cell": 45,
+      "nativePhaseIndex": 45,
+      "paintedRect": [
+        810,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/45.png",
+      "frameSha256": "c539ebc6866fe4188091d260bbf45ea72f64ffde1a274bc1789976b332f4d18c",
+      "actorAlpha128Component": {
+        "pixels": 8142,
+        "bbox": [
+          848,
+          1039,
+          945,
+          1203
+        ],
+        "centroid": [
+          891.6577008106117,
+          1115.0972733971996
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/45.png",
+      "nativePngSha256": "6379f899f90738f47c5a3218f79f21df2c7c5793ff395bc33b5bc5db0aff1fbb",
+      "paintedDescriptors": {
+        "bbox": [
+          38,
+          9,
+          135,
+          173
+        ],
+        "centroid": [
+          81.65770081061164,
+          85.0972733971997
+        ],
+        "crownBandCentroid": [
+          83.39823717948718,
+          22.81330128205128
+        ],
+        "lowerBandCentroid": [
+          85.08618899273105,
+          157.59605399792315
+        ],
+        "fitPoints": [
+          [
+            81.65770081061164,
+            85.0972733971997
+          ],
+          [
+            83.39823717948718,
+            22.81330128205128
+          ],
+          [
+            85.08618899273105,
+            157.59605399792315
+          ],
+          [
+            38.0,
+            9.0
+          ],
+          [
+            135.0,
+            173.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          77,
+          66,
+          184,
+          266
+        ],
+        "centroid": [
+          124.62990423231388,
+          155.20070023684482
+        ],
+        "crownBandCentroid": [
+          124.58008658008659,
+          82.45640074211502
+        ],
+        "lowerBandCentroid": [
+          122.54375,
+          247.73854166666666
+        ],
+        "fitPoints": [
+          [
+            124.62990423231388,
+            155.20070023684482
+          ],
+          [
+            124.58008658008659,
+            82.45640074211502
+          ],
+          [
+            122.54375,
+            247.73854166666666
+          ],
+          [
+            77.0,
+            66.0
+          ],
+          [
+            184.0,
+            266.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -0.046776270478432025,
+            -2.9055290813612658
+          ],
+          "length": 2.905905583826824
+        },
+        "crownBand": {
+          "delta": [
+            2.027557228874983,
+            -2.6072242948847446
+          ],
+          "length": 3.3028180149987754
+        },
+        "lowerBand": {
+          "delta": [
+            6.027245598792419,
+            -11.115956934466112
+          ],
+          "length": 12.64484828208974
+        },
+        "bboxMin": {
+          "delta": [
+            -3.197601887133658,
+            -2.2178519968275694
+          ],
+          "length": 3.891468271543887
+        },
+        "bboxMax": {
+          "delta": [
+            2.6285594519154074,
+            -11.460218392662114
+          ],
+          "length": 11.757802958025993
+        }
+      }
+    },
+    {
+      "cell": 46,
+      "nativePhaseIndex": 46,
+      "paintedRect": [
+        972,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/46.png",
+      "frameSha256": "c0ce85b682da3f454e96bacc1fe69f2ebbea6878aba493bc0d48fe48b3a273b4",
+      "actorAlpha128Component": {
+        "pixels": 8357,
+        "bbox": [
+          1009,
+          1039,
+          1107,
+          1203
+        ],
+        "centroid": [
+          1051.9569223405529,
+          1115.3618523393561
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/46.png",
+      "nativePngSha256": "7a669f1fc41b51e3ebe78ec762acd97e866b918a7c319eb8d7f7e5688fd3d12c",
+      "paintedDescriptors": {
+        "bbox": [
+          37,
+          9,
+          135,
+          173
+        ],
+        "centroid": [
+          79.95692234055284,
+          85.36185233935623
+        ],
+        "crownBandCentroid": [
+          82.2099358974359,
+          22.772435897435898
+        ],
+        "lowerBandCentroid": [
+          83.32471561530507,
+          157.77559462254396
+        ],
+        "fitPoints": [
+          [
+            79.95692234055284,
+            85.36185233935623
+          ],
+          [
+            82.2099358974359,
+            22.772435897435898
+          ],
+          [
+            83.32471561530507,
+            157.77559462254396
+          ],
+          [
+            37.0,
+            9.0
+          ],
+          [
+            135.0,
+            173.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          74,
+          66,
+          185,
+          265
+        ],
+        "centroid": [
+          124.55864545920986,
+          155.63006670087225
+        ],
+        "crownBandCentroid": [
+          124.67172675521822,
+          82.71663504111322
+        ],
+        "lowerBandCentroid": [
+          121.89909182643794,
+          246.7406659939455
+        ],
+        "fitPoints": [
+          [
+            124.55864545920986,
+            155.63006670087225
+          ],
+          [
+            124.67172675521822,
+            82.71663504111322
+          ],
+          [
+            121.89909182643794,
+            246.7406659939455
+          ],
+          [
+            74.0,
+            66.0
+          ],
+          [
+            185.0,
+            265.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -1.9537886939191083,
+            -3.027148881319931
+          ],
+          "length": 3.602904468642299
+        },
+        "crownBand": {
+          "delta": [
+            0.5537369282988465,
+            -2.9149914235509584
+          ],
+          "length": 2.9671197456687666
+        },
+        "lowerBand": {
+          "delta": [
+            4.623034911778163,
+            -9.909247452668865
+          ],
+          "length": 10.934607303133665
+        },
+        "bboxMin": {
+          "delta": [
+            -1.3607581895980871,
+            -2.2178519968275694
+          ],
+          "length": 2.6020242755190237
+        },
+        "bboxMax": {
+          "delta": [
+            1.6285594519154074,
+            -10.460218392662114
+          ],
+          "length": 10.586235152810927
+        }
+      }
+    },
+    {
+      "cell": 47,
+      "nativePhaseIndex": 47,
+      "paintedRect": [
+        1134,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        1600,
+        256,
+        320
+      ],
+      "frame": "frames/47.png",
+      "frameSha256": "8d60f539d4b2d1eae2a6652fae757117464cc0651243da3b7457cb0fd0ee0464",
+      "actorAlpha128Component": {
+        "pixels": 8341,
+        "bbox": [
+          1169,
+          1039,
+          1267,
+          1202
+        ],
+        "centroid": [
+          1212.9730248171682,
+          1115.1913439635534
+        ]
+      },
+      "actorMarginPx": 9,
+      "nativePng": "art/ruta-native-layered-walk48-v2/renders/base/e/walk/47.png",
+      "nativePngSha256": "2fc2c5682fc7ab281b591e51b6b71960bdc069d41ba12fade7cc01e3580c8980",
+      "paintedDescriptors": {
+        "bbox": [
+          35,
+          9,
+          133,
+          172
+        ],
+        "centroid": [
+          78.97302481716821,
+          85.19134396355354
+        ],
+        "crownBandCentroid": [
+          82.2900641025641,
+          22.737179487179485
+        ],
+        "lowerBandCentroid": [
+          81.62208713272543,
+          156.27355623100303
+        ],
+        "fitPoints": [
+          [
+            78.97302481716821,
+            85.19134396355354
+          ],
+          [
+            82.2900641025641,
+            22.737179487179485
+          ],
+          [
+            81.62208713272543,
+            156.27355623100303
+          ],
+          [
+            35.0,
+            9.0
+          ],
+          [
+            133.0,
+            172.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "nativeDescriptors": {
+        "bbox": [
+          72,
+          67,
+          186,
+          265
+        ],
+        "centroid": [
+          124.52281349328412,
+          155.90361939915923
+        ],
+        "crownBandCentroid": [
+          124.5731102850062,
+          83.48017348203221
+        ],
+        "lowerBandCentroid": [
+          121.10214504596527,
+          246.3493360572012
+        ],
+        "fitPoints": [
+          [
+            124.52281349328412,
+            155.90361939915923
+          ],
+          [
+            124.5731102850062,
+            83.48017348203221
+          ],
+          [
+            121.10214504596527,
+            246.3493360572012
+          ],
+          [
+            72.0,
+            67.0
+          ],
+          [
+            186.0,
+            265.0
+          ]
+        ],
+        "alphaThreshold": 128,
+        "crownAndLowerBandFraction": 0.15
+      },
+      "globalDiagnosticProxyResidualNativePx": {
+        "centroid": {
+          "delta": [
+            -3.0623833332973476,
+            -3.4990294715447874
+          ],
+          "length": 4.6498816030944665
+        },
+        "crownBand": {
+          "delta": [
+            0.7455550253109067,
+            -3.7195385802619683
+          ],
+          "length": 3.793523368298074
+        },
+        "lowerBand": {
+          "delta": [
+            3.4395586419828845,
+            -11.265022937588924
+          ],
+          "length": 11.77842542261247
+        },
+        "bboxMin": {
+          "delta": [
+            -1.6870707945269316,
+            -3.2178519968275694
+          ],
+          "length": 3.633287676365981
+        },
+        "bboxMax": {
+          "delta": [
+            -1.6977531530134229,
+            -11.623374695126529
+          ],
+          "length": 11.74671039363254
+        }
+      }
+    }
+  ],
+  "commonDiagnosticDisplayTransform": {
+    "paintedCellToNativeCanvasUniformScale": 1.1631563024644236,
+    "translation": [
+      29.60245861921824,
+      53.313741280992616
+    ],
+    "fit": "ONE common scalar and XY translation over all selected shape descriptors (5perpose), not per-frame registration; metadata/display only, atlas RGBA untouched",
+    "rmsNativePx": 7.699225510167854,
+    "maxNativePx": 18.322056817043382,
+    "perProxy": {
+      "centroid": {
+        "rmsNativePx": 6.735092432742034,
+        "maxNativePx": 18.322056817043382,
+        "maxSuccessiveDeltaMismatchNativePx": 9.688537206201481
+      },
+      "crownBand": {
+        "rmsNativePx": 5.054546870881968,
+        "maxNativePx": 10.677337847937181,
+        "maxSuccessiveDeltaMismatchNativePx": 10.432975573405034
+      },
+      "lowerBand": {
+        "rmsNativePx": 8.045433488469582,
+        "maxNativePx": 14.899844378124245,
+        "maxSuccessiveDeltaMismatchNativePx": 18.981640512511785
+      },
+      "bboxMin": {
+        "rmsNativePx": 9.084495676741756,
+        "maxNativePx": 16.023654566533125,
+        "maxSuccessiveDeltaMismatchNativePx": 8.624900861461157
+      },
+      "bboxMax": {
+        "rmsNativePx": 8.844398872532159,
+        "maxNativePx": 15.158718688196842,
+        "maxSuccessiveDeltaMismatchNativePx": 18.636229788765565
+      }
+    },
+    "uncertainty": "alpha128 shape descriptors, not semantic bones or physical support points; crown/lower15percent bands change membership, and artwork/proportions/heading differ. No exact joint correspondence or physical Root recovered.",
+    "poseCorrespondence": "intended row-major source phase mapping; hashes prove source inputs, not generated anatomical pose fidelity"
+  },
+  "noPerFrameOffsetScaleWarp": true,
+  "productionEnabled": false,
+  "assetLevelComparisonCalibration": {
+    "nativeAnchor": [
+      128.0,
+      258.42965602874756
+    ],
+    "nativeHeightPx": 186.55436028830434,
+    "paintedComparisonAnchor": [
+      84.59528712719275,
+      176.34424050591312
+    ],
+    "paintedComparisonNativeHeightPx": 160.38632116169126,
+    "scope": "ONE common diagnostic scalar/translation only; inferred drawn-origin metadata, NOT physical Root/joint/contact certification"
+  }
+}

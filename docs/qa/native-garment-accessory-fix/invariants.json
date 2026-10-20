@@ -1,0 +1,58 @@
+{
+  "status": "PASS-scoped-readback",
+  "donorSHA": "57d6668cb8ae2b81b5709b83a608f3ad435de4c39d711aa378b4e6ccf6d9a214",
+  "transferDataSHA": "9c31ae4b71657ab848ec521f87e8eb18cea4bf3fa4b00233f7c8ea17ff7a93c3",
+  "manifestSHA": "c3369dcd8ee07cd2b95af17d96a52ac2775b538cdb9acd1dba2f14b393a14c45",
+  "geometryRigActionsAndPantsV3Exact": true,
+  "actions": 50,
+  "paintedMaterialCount": 33,
+  "actualPaintedFaces": 1229,
+  "transferRows": [
+    {
+      "object": "Adventurer_Body",
+      "skinFacesPreserved": 1932,
+      "facesTransferred": 906
+    },
+    {
+      "object": "Adventurer_Feet",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 610
+    },
+    {
+      "object": "Ruta stock long trousers",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 706
+    },
+    {
+      "object": "ONE diagonal satchel strap",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 288
+    },
+    {
+      "object": "Cream shirt V inside vest",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 1
+    },
+    {
+      "object": "ONE rounded right hip satchel",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 218
+    },
+    {
+      "object": "Single rounded satchel flap",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 218
+    },
+    {
+      "object": "Cargo side pocket R",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 218
+    },
+    {
+      "object": "Cargo side pocket L",
+      "skinFacesPreserved": 0,
+      "facesTransferred": 218
+    }
+  ],
+  "limitations": "Transfer data/schema checked against donor, no target installer/import executed; -1 must preserve target and donor slot IDs must be remapped by name."
+}

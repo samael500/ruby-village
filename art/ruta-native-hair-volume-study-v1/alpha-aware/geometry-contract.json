@@ -1,0 +1,48 @@
+{
+  "sourceSha256": "b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7",
+  "originalHairWorldRestBounds": [
+    [
+      -0.38133999705314636,
+      -0.29894202947616577,
+      0.7707408666610718
+    ],
+    [
+      0.3323040008544922,
+      0.2635992169380188,
+      1.6265548467636108
+    ]
+  ],
+  "alphaSampling": "native original bilinearalpha>.5; base2subdivisions forUVspan>12px, boundary recursion maxdepth6, targetUVedge2px/world3mm; approximation not exactcontour",
+  "counts": {
+    "leaf": 416889,
+    "subdivided": 136750,
+    "opaqueLeaves": 194235,
+    "transparentLeaves": 93839,
+    "crossingLeaves": 128815,
+    "maxDepth": 6
+  },
+  "clippedMesh": {
+    "vertices": 286824,
+    "faces": 386425
+  },
+  "voxelMesh": {
+    "vertices": 527846,
+    "faces": 527874,
+    "boundaryEdges": 0,
+    "nonManifoldEdges": 0,
+    "bounds": [
+      [
+        -0.37599244713783264,
+        -0.29883548617362976,
+        0.8156664371490479
+      ],
+      [
+        0.33189845085144043,
+        0.26314759254455566,
+        1.6263965368270874
+      ]
+    ]
+  },
+  "noSmoothingOrDecimation": true,
+  "geometrySeconds": 34.87164431900601
+}

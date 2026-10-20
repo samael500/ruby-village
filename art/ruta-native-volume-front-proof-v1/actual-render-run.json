@@ -1,0 +1,31 @@
+{
+  "command": [
+    "/tmp/blender-4.5.3-linux-x64/blender",
+    "--background",
+    "--threads",
+    "4",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/tmp/ruby-combined-loop/art/ruta-native-volume-front-proof-v1/export-front.py",
+    "--",
+    "--source",
+    "/tmp/ruby-combined-loop/art/ruta-native-hair-volume-study-v1/alpha-aware/cache/alpha-volume-baked.blend",
+    "--out",
+    "/tmp/ruby-combined-loop/art/ruta-native-volume-front-proof-v1",
+    "--variants",
+    "front-proof",
+    "--directions",
+    "front-proof",
+    "--clips",
+    "walk",
+    "--frame-count",
+    "48"
+  ],
+  "seconds": 1150.0428926709865,
+  "exitCode": 0,
+  "renderedCount": 48,
+  "sourceSha256": "09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d",
+  "proofOnlyNotGameHeading": true
+}

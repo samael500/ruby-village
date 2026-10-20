@@ -1,0 +1,5 @@
+import bpy,json,hashlib,numpy as np
+from pathlib import Path
+R=Path(__file__).resolve().parents[2];P=R/'art/ruta-native-proportions-study-v2/b-neutral/ruta-proportion-proposal.blend';bpy.ops.wm.open_mainfile(filepath=str(P),use_scripts=False);m=json.loads((R/'art/ruta-b-contact-forward-v1/sample-source.json').read_text());assert hashlib.sha256(P.read_bytes()).hexdigest()==m['sourceSha256Before'];o=bpy.data.objects['Adventurer_Feet'];rig=bpy.data.objects['CharacterArmature'];ids=m['columnVertexIds'];out=R/'art/ruta-final-sole-compatibility-v1';np.savez_compressed(out/'b-rest-material-points.npz',positions=np.array([list(o.data.vertices[i].co)for i in ids]),vertex_ids=ids,foot_centers_x=np.array([rig.data.bones['Foot.'+s].head_local.x for s in ['L','R']]))
+def ah(a):return hashlib.sha256(repr([(f.data_path,f.array_index,[(tuple(k.co),k.interpolation)for k in f.keyframe_points])for l in a.layers for s in l.strips for b in s.channelbags for f in b.fcurves]).encode()).hexdigest()
+(out/'b-action-hash.json').write_text(json.dumps({'Walk_ProportionProposal':ah(bpy.data.actions['Walk_ProportionProposal'])},indent=2))

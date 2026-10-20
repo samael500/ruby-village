@@ -1,0 +1,2 @@
+import bpy,json
+bpy.ops.wm.open_mainfile(filepath='/home/mskorokhod/life/ruby-village-36-ready-walk/art/ready-character-adapted-v1/ruta-stock-adapted.blend');r=bpy.data.objects['CharacterArmature'];print(json.dumps({b.name:{'head':list(b.head_local),'tail':list(b.tail_local),'length':b.length}for b in r.data.bones if any(s in b.name for s in ['Head','Neck','Spine','Hips','Leg','Arm','Hand','Chest','Root'])},indent=2))

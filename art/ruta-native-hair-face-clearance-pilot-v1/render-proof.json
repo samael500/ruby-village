@@ -1,0 +1,132 @@
+{
+  "status": "DIAGNOSTICONLY, earcontactriskOPEN",
+  "views": [
+    {
+      "state": "baseline",
+      "sourceSha256": "159298a6225fa24c174af5562c7a14113e93bbbc5e463ac3e0968b0f15bb81f9",
+      "renderSha256": "e7a9f0c4c219580d9e2526d072c021d87841c31386fcae6d62a61ff778e5786c",
+      "yaw": 1.5707963267948966,
+      "action": "Walk_ProportionProposal",
+      "sourceFrame": 0,
+      "AA": 32,
+      "cameraMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6499999761581421,
+          -0.7599342465400696,
+          -8.0
+        ],
+        [
+          0.0,
+          0.7599342465400696,
+          0.6499999761581421,
+          7.692697525024414
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eyeGlobeProjectedBounds": [
+        {
+          "name": "Ellie ready eye.L",
+          "boundsPx": [
+            [
+              258.9261169433594,
+              174.67723846435547
+            ],
+            [
+              284.5088195800781,
+              221.3936996459961
+            ]
+          ]
+        },
+        {
+          "name": "Ellie ready eye.R",
+          "boundsPx": [
+            [
+              261.73126220703125,
+              192.8649139404297
+            ],
+            [
+              287.3390197753906,
+              239.6072769165039
+            ]
+          ]
+        }
+      ]
+    },
+    {
+      "state": "candidate",
+      "sourceSha256": "4294ef8eae02797b154d97df877142e2ebcc5cf38a43d0cff7ec182274fd1fe1",
+      "renderSha256": "7f1dae102ad4db6f738d02dbd0d10a9c1f6795eac0b77eaae5ab1adfae83a4e1",
+      "yaw": 1.5707963267948966,
+      "action": "Walk_ProportionProposal",
+      "sourceFrame": 0,
+      "AA": 32,
+      "cameraMatrix": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6499999761581421,
+          -0.7599342465400696,
+          -8.0
+        ],
+        [
+          0.0,
+          0.7599342465400696,
+          0.6499999761581421,
+          7.692697525024414
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "eyeGlobeProjectedBounds": [
+        {
+          "name": "Ellie ready eye.L",
+          "boundsPx": [
+            [
+              258.9261169433594,
+              174.67723846435547
+            ],
+            [
+              284.5088195800781,
+              221.3936996459961
+            ]
+          ]
+        },
+        {
+          "name": "Ellie ready eye.R",
+          "boundsPx": [
+            [
+              261.73126220703125,
+              192.8649139404297
+            ],
+            [
+              287.3390197753906,
+              239.6072769165039
+            ]
+          ]
+        }
+      ]
+    }
+  ],
+  "noFrontOrThreequarter": true
+}

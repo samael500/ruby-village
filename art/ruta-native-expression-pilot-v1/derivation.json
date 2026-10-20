@@ -1,0 +1,91 @@
+{
+  "sourceOriginalSha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "parentSha256": "09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d",
+  "nativePoseRecipe": [
+    "face_default",
+    "eyemask_content",
+    "mouth_smileclosed2",
+    "blend65%eyemask_relaxed",
+    "blend35%mouth_smileopen"
+  ],
+  "parts": [
+    {
+      "part": "head",
+      "vertices": 25239,
+      "explicitBaselineMappingMaxErrorMeters": 2.3490412246406348e-07,
+      "expressionChangedVertices": 16220,
+      "expressionDeltaMaxMeters": 0.03087156560375574
+    },
+    {
+      "part": "eye.L",
+      "vertices": 9986,
+      "explicitBaselineMappingMaxErrorMeters": 1.5054695434491682e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "eye.R",
+      "vertices": 9986,
+      "explicitBaselineMappingMaxErrorMeters": 1.5099270330683092e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "eye_highlights",
+      "vertices": 64,
+      "explicitBaselineMappingMaxErrorMeters": 1.4557633840711285e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "eyebrows",
+      "vertices": 3332,
+      "explicitBaselineMappingMaxErrorMeters": 1.5155213320325838e-07,
+      "expressionChangedVertices": 3332,
+      "expressionDeltaMaxMeters": 0.01470760755334964
+    },
+    {
+      "part": "eyelashes",
+      "vertices": 2244,
+      "explicitBaselineMappingMaxErrorMeters": 1.5156545063285864e-07,
+      "expressionChangedVertices": 2244,
+      "expressionDeltaMaxMeters": 0.02274662010666645
+    },
+    {
+      "part": "face_line1",
+      "vertices": 650,
+      "explicitBaselineMappingMaxErrorMeters": 1.5043190894969836e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "face_line2",
+      "vertices": 650,
+      "explicitBaselineMappingMaxErrorMeters": 1.4973639229657213e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "teeth_top",
+      "vertices": 10042,
+      "explicitBaselineMappingMaxErrorMeters": 1.7931966772557197e-07,
+      "expressionChangedVertices": 10042,
+      "expressionDeltaMaxMeters": 0.008138275679954168
+    },
+    {
+      "part": "teeth_btm",
+      "vertices": 10042,
+      "explicitBaselineMappingMaxErrorMeters": 2.3404090378607767e-07,
+      "expressionChangedVertices": 10042,
+      "expressionDeltaMaxMeters": 0.025869825335313172
+    },
+    {
+      "part": "tongue",
+      "vertices": 1933,
+      "explicitBaselineMappingMaxErrorMeters": 2.0567940917316768e-07,
+      "expressionChangedVertices": 1933,
+      "expressionDeltaMaxMeters": 0.03313286047022781
+    }
+  ],
+  "mapping": "historicaluniformHeadFit thenexistingup20RESTneckfield; no newheadscalefit"
+}

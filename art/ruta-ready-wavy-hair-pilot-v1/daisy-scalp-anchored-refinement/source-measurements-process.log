@@ -1,0 +1,133 @@
+{
+  "scope": "measurements, no source edits or renders",
+  "sourceFit": {
+    "X": 0.23,
+    "depth": 0.18,
+    "height": 0.12,
+    "note": "different axes chosen for broad stylized head; causation of short-looking hair not established from this ratio alone"
+  },
+  "sourceNormalMapStrength": 0.9,
+  "restBands": [
+    {
+      "restZRange": [
+        0,
+        1.18
+      ],
+      "vertexCount": 793,
+      "min": [
+        -0.38133999705314636,
+        -0.29894202947616577,
+        0.9276720285415649
+      ],
+      "max": [
+        0.3323040008544922,
+        0.2559800148010254,
+        1.1798999309539795
+      ]
+    },
+    {
+      "restZRange": [
+        1.18,
+        1.32
+      ],
+      "vertexCount": 835,
+      "min": [
+        -0.336558997631073,
+        -0.29642200469970703,
+        1.1800439357757568
+      ],
+      "max": [
+        0.3204360008239746,
+        0.25317201018333435,
+        1.3198679685592651
+      ]
+    },
+    {
+      "restZRange": [
+        1.32,
+        1.4
+      ],
+      "vertexCount": 1055,
+      "min": [
+        -0.30746400356292725,
+        -0.2221900224685669,
+        1.3200119733810425
+      ],
+      "max": [
+        0.2874999940395355,
+        0.24977001547813416,
+        1.3999559879302979
+      ]
+    },
+    {
+      "restZRange": [
+        1.4,
+        2
+      ],
+      "vertexCount": 2257,
+      "min": [
+        -0.29904600977897644,
+        -0.2269420325756073,
+        1.4000520706176758
+      ],
+      "max": [
+        0.2856139838695526,
+        0.22606399655342102,
+        1.6200000047683716
+      ]
+    }
+  ],
+  "hairRestMinMax": [
+    [
+      -0.38133999705314636,
+      -0.29894202947616577,
+      0.9276720285415649
+    ],
+    [
+      0.3323040008544922,
+      0.2559800148010254,
+      1.6200000047683716
+    ]
+  ],
+  "walk0ActualUsedGeometryProjectionMinMax": [
+    [
+      161.94482421875,
+      127.00965881347656
+    ],
+    [
+      340.196533203125,
+      350.18749237060547
+    ]
+  ],
+  "headPoseMatrixLocal": [
+    [
+      0.9989267587661743,
+      -0.04590146616101265,
+      -0.006168128922581673,
+      -5.960463678178485e-09
+    ],
+    [
+      0.04618041217327118,
+      0.9972813725471497,
+      0.05742089822888374,
+      -1.5497205652081902e-07
+    ],
+    [
+      0.003515656804665923,
+      -0.057644136250019073,
+      0.99833083152771,
+      4.988932872245222e-25
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "caution": "geometry bounds include alpha-invisible triangles; rendered visible end also depends on UV alpha, layering, head pose and camera"
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-ready-wavy-hair/art/ruta-ready-wavy-hair-pilot-v1/daisy-native-pilot/ruta-daisy-hair-pilot.blend"
+
+Blender quit

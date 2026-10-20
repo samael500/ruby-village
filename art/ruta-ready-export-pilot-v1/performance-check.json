@@ -1,0 +1,33 @@
+{
+  "status": "PERFORMANCE-AND-NUMERICAL-CONTRACT-CHECK-NOT-ART-NOT-RENDER-NOT-RUNTIME",
+  "baselineCommit": "ba9fb87",
+  "sourceSha256": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
+  "optimizedExporterSha256": "1da7adb3fee242ca49babe1f9b456cfbf1065014e1e5a081ed1db41c614d2297",
+  "timingMethod": "/usr/bin/time elapsed wallclock; separate serial local Blender4.5.3 --threads2 cold processes, same frozen source; one sample each, no universal benchmark",
+  "baselineDefaultE24Seconds": 42.01,
+  "optimizedDefaultE24Seconds": 3.1,
+  "speedupRatio": 13.551612903225806,
+  "additionalCalibratedNeIdle48Seconds": 5.39,
+  "default24": {
+    "sampledPointCount": 7625,
+    "maxReferenceProjectionErrorPx": 3.989757271938288e-05,
+    "baselineWholeGeometryBoundsMaxDifferencePx": 3.398471579885154e-05,
+    "nativeHeightPxDifference": 0.0,
+    "visibleRestHeightMetersDifference": 0.0,
+    "cameraAndAnchorExactlyEqual": true,
+    "loopSeamMeters": 0,
+    "containedGeometryFrames": 24
+  },
+  "calibratedNeIdle48": {
+    "sampledPointCount": 14136,
+    "maxReferenceProjectionErrorPx": 4.594035596028334e-05,
+    "durationSeconds": 2.0833333333333335,
+    "loopSeamMeters": 0.0
+  },
+  "implementation": "foreach_get vertex coordinates and polygon-loop vertex indices; np.unique used ids; float64 bulk world transform; single ORTHO inverse/view_frame matrix per camera; original Blender screen() retained for anchors and deterministic reference samples",
+  "validationCoverage": "Every render-visible object at REST, source endpoints and all requested phases, nine index quantiles plus all three world-axis extrema; frame corners/center/one-pixel-outside corners per camera. Sampled numerical equivalence, not all-vertex bitwise identity.",
+  "sourceUnchanged": true,
+  "renderedFrames": 0,
+  "packerChanged": false,
+  "runtimeChanged": false
+}

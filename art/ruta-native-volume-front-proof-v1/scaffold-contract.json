@@ -1,0 +1,51 @@
+{
+  "sourceCacheAbsolute": "/tmp/ruby-combined-loop/art/ruta-native-hair-volume-study-v1/alpha-aware/cache/alpha-volume-baked.blend",
+  "expectedSourceSha256": "09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d",
+  "preparedOnlyColorGateHold": false,
+  "proofYawRadians": 0,
+  "gameEYawRadians": 1.5707963267948966,
+  "sourceRange": [
+    0,
+    40
+  ],
+  "fps": 24,
+  "phaseCount": 48,
+  "originalExporterSHA256": "530dfd2d7f53b6f6a5fcbe5b7b954c6ffcfb2787dcaa0d9021a5321a7dd2160a",
+  "cameraVariantCopiedFrom": "base",
+  "cameraOrthoScale": 2.1,
+  "wholeCanvas": [
+    512,
+    640
+  ],
+  "command": [
+    "/tmp/blender-4.5.3-linux-x64/blender",
+    "--background",
+    "--threads",
+    "4",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/tmp/ruby-combined-loop/art/ruta-native-volume-front-proof-v1/export-front.py",
+    "--",
+    "--source",
+    "/tmp/ruby-combined-loop/art/ruta-native-hair-volume-study-v1/alpha-aware/cache/alpha-volume-baked.blend",
+    "--out",
+    "/tmp/ruby-combined-loop/art/ruta-native-volume-front-proof-v1",
+    "--variants",
+    "front-proof",
+    "--directions",
+    "front-proof",
+    "--clips",
+    "walk",
+    "--frame-count",
+    "48"
+  ],
+  "nativeColorAudit": {
+    "commit": "6afe4ee",
+    "status": "PASS independent10klinearRGBaudit, no gamma/lightingbake found; brighterappearance reflectsgeometry/normals"
+  },
+  "actual48Complete": true,
+  "artAndBrowserAcceptance": "PENDING independentreview",
+  "actualRenderSeconds": 1150.0428926709865
+}

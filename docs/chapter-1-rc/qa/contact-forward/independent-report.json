@@ -1,0 +1,58 @@
+{
+  "sourceShaMatchesMetadata": true,
+  "sourceGitFrozenBlobMatches": true,
+  "coldSampleArraysMaxAbsDifference": {
+    "positions": 0.0,
+    "ankles": 0.0,
+    "roots": 0.0,
+    "vertex_ids": 0.0,
+    "rest_area_weights": 0.0,
+    "sample_times": 0.0
+  },
+  "coldFitMaxVelocityDifference": 0.0,
+  "coldFitMaxDistanceDifference": 0.0,
+  "minimumVelocity": 0.656928097564189,
+  "maximumVelocity": 0.887807090102099,
+  "strictDistanceSampleIncrementsPositive": true,
+  "analyticIntegrationKnotMaxError": 2.0036056147532122e-16,
+  "periodicVelocityError": 0.0,
+  "multipleCycleDenseMinimumProgress": 0.00043795870418206206,
+  "supportThresholdIntervals": [
+    {
+      "side": "L",
+      "startSample": 22,
+      "endSampleExclusive": 175,
+      "startSeconds": 0.0763888888888889,
+      "durationSeconds": 0.53125,
+      "wraps": false
+    },
+    {
+      "side": "R",
+      "startSample": 262,
+      "endSampleExclusive": 415,
+      "startSeconds": 0.9097222222222223,
+      "durationSeconds": 0.53125,
+      "wraps": false
+    }
+  ],
+  "supportSwitchSamples": [
+    22,
+    175,
+    262,
+    415
+  ],
+  "largestSwitchVelocityDelta": 0.0017227246337828683,
+  "zeroSoftWeightFraction": 0.16458333333333333,
+  "neitherFootConfidentFraction": 0.3625,
+  "bothFeetConfidentFraction": 0.0,
+  "independentSameStrideUniformSpeed": 0.7667744747168613,
+  "independentSameStrideUniformResidual": {
+    "forwardRms": 0.07146463764175041,
+    "full3dRms": 0.10061738672694852
+  },
+  "independentCurveResidual": {
+    "forwardRms": 0.01234989650116753,
+    "full3dRms": 0.07189703764469837
+  },
+  "status": "technical-candidate-contract-not-no-slip-not-runtime"
+}

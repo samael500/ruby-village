@@ -1,0 +1,574 @@
+{
+  "status": "ALL80-TIMESTAMP-POSE-REPLAY-VERIFIED-NOT-ART-OR-NOSLIP",
+  "frameCount": 80,
+  "walkUniquePoseCount": 48,
+  "walkModulo40": true,
+  "walkLastSourceFrame": 4.166666666666664,
+  "stopFirstSourceFrame": 0.0,
+  "staticIdlePoseVelocityTarget": 0,
+  "RootBoneConstant": true,
+  "sourceFileUnchanged": true,
+  "cacheProvenance": "Initial actual render log records action timestamps; six wrap frames explicitly rerendered. Hashes sampled on corrected frozen source replay; no pixel-derived bone identity claim.",
+  "rows": [
+    {
+      "index": 0,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "1f983fe40db34c8a37179f137157fe1d91989b0b65a746065f227b79cb4d7a89",
+      "match": true
+    },
+    {
+      "index": 1,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "1f983fe40db34c8a37179f137157fe1d91989b0b65a746065f227b79cb4d7a89",
+      "match": true
+    },
+    {
+      "index": 2,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "1f983fe40db34c8a37179f137157fe1d91989b0b65a746065f227b79cb4d7a89",
+      "match": true
+    },
+    {
+      "index": 3,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "1f983fe40db34c8a37179f137157fe1d91989b0b65a746065f227b79cb4d7a89",
+      "match": true
+    },
+    {
+      "index": 4,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 0.0,
+      "poseHash": "1c82fd0e62397ddebbc9925d45b6aac1cadcbf3fd9b6c709c8fb2602e4d33d3c",
+      "match": true
+    },
+    {
+      "index": 5,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 0.8,
+      "poseHash": "63613e8a7f3e739e313104bdad617205d1f107c9840a3203cfbbe2b349266e16",
+      "match": true
+    },
+    {
+      "index": 6,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 1.6,
+      "poseHash": "a5f0d85f516b373d5b9818c5da78360e8124ac2cde862d0b91fc7788d0528b1d",
+      "match": true
+    },
+    {
+      "index": 7,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 2.4000000000000004,
+      "poseHash": "39ce3ebcfd905cb09201325bb2b1549511bddcd9b8c7a32c500297a071e596a5",
+      "match": true
+    },
+    {
+      "index": 8,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 3.2,
+      "poseHash": "2541ac057c9637961ec8741e19dc5d39b7e43115c59dcbe35bad05c7d07a3552",
+      "match": true
+    },
+    {
+      "index": 9,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 4.0,
+      "poseHash": "e1899ea18c4a89aab2b372692ce3a9fd6f23c532dd6bca5a65baed8f1f33f060",
+      "match": true
+    },
+    {
+      "index": 10,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 4.800000000000001,
+      "poseHash": "c3b39f4264c77c90d93be8632618d0cfd1fb64acddf8f7270eb71c747474beb9",
+      "match": true
+    },
+    {
+      "index": 11,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 5.6000000000000005,
+      "poseHash": "f95004d1caba3b6ce02200d1b2632c78e781a34418879258717918723436a718",
+      "match": true
+    },
+    {
+      "index": 12,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 6.4,
+      "poseHash": "5ac261ccae7fa305d3a5ca16d27c50711e029cdc7bc069effee8ee1e8b2eebe0",
+      "match": true
+    },
+    {
+      "index": 13,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 7.200000000000001,
+      "poseHash": "cdee1d77e38823e4197bef75dda824a01fd2cadc5e50b17c142af4498446e9f2",
+      "match": true
+    },
+    {
+      "index": 14,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 8.0,
+      "poseHash": "390d93a4566897170cc4e9e570aa12cc4d87e251ab46fa027c5f4f5daf49028b",
+      "match": true
+    },
+    {
+      "index": 15,
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "expectedSourceFrame": 8.8,
+      "poseHash": "70a7ad0f0baebb07ed60108ffef476c2f2f5d3097ad2230ce172b42dbd276d83",
+      "match": true
+    },
+    {
+      "index": 16,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 5.0,
+      "poseHash": "ed5d772b03c9d12e5492c09f23c5bb7d1ca5b8b1dd855f551364b73ceb2c25dc",
+      "match": true
+    },
+    {
+      "index": 17,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 5.833333333333333,
+      "poseHash": "23ad80e2571c1a09d360f9545b24813070d1fcf06735364a6cd0b40030d9dec0",
+      "match": true
+    },
+    {
+      "index": 18,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 6.666666666666667,
+      "poseHash": "9a471ec665ff6137ee934511fd0612ec9344c9898c3949d3e7fbd86e669966d2",
+      "match": true
+    },
+    {
+      "index": 19,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 7.5,
+      "poseHash": "3b29b2e00683e162af7c69e0e9f2b1e15a5790a3d7448a52a1f667564f8accd4",
+      "match": true
+    },
+    {
+      "index": 20,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 8.333333333333334,
+      "poseHash": "e5bfa1569b7cb8ba032be37ad41d0f7f046bb4c7473af14d8c20c85b9d637370",
+      "match": true
+    },
+    {
+      "index": 21,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 9.166666666666668,
+      "poseHash": "04dfcde9a805ae9bb65eb4b7bb48e86019c4c591a3f5859be227898db0f81b3f",
+      "match": true
+    },
+    {
+      "index": 22,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 10.0,
+      "poseHash": "501549837395d2630efb28c767a900c1c63c09928e53db89a0ab24d78d3a2f94",
+      "match": true
+    },
+    {
+      "index": 23,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 10.833333333333332,
+      "poseHash": "1b767d3ecde8ad9bbfc11ce590c5553c2af41c987f4c5c1aeb27ae8941516d56",
+      "match": true
+    },
+    {
+      "index": 24,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 11.666666666666668,
+      "poseHash": "7bfffa3aec7fb5e21fd0624b8e32f77fdd68022794733fd2d4d3774a6392c153",
+      "match": true
+    },
+    {
+      "index": 25,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 12.5,
+      "poseHash": "27c47ad9ae229e4e3cb42b839e2bbdfe798b8442db62866a8ae6ff1b853e6626",
+      "match": true
+    },
+    {
+      "index": 26,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 13.333333333333334,
+      "poseHash": "aeee82d763a4af67b88e41da8f1e76c534ebff0daf81ff0fa083e12eb83babc8",
+      "match": true
+    },
+    {
+      "index": 27,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 14.166666666666666,
+      "poseHash": "202205f834ef547544649f67b2a6544c19e5fee135398c26f34642678cedac62",
+      "match": true
+    },
+    {
+      "index": 28,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 15.0,
+      "poseHash": "653a5e707a77761476596fec0c2049576305e9cb0493577cdd8a3d5959600797",
+      "match": true
+    },
+    {
+      "index": 29,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 15.833333333333334,
+      "poseHash": "2839490ee7d54abde2d5e3227afddb3ae93ec645413d9367434e918a4ddfc3ec",
+      "match": true
+    },
+    {
+      "index": 30,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 16.666666666666664,
+      "poseHash": "e78a1f512d6ef8eaed8ccfde5f5b17b87444ffdc545b721bb25a2d88498a3d25",
+      "match": true
+    },
+    {
+      "index": 31,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 17.5,
+      "poseHash": "b948682124bafb72c9f9f5d8fcdfe539971c3af089fb9a5d538b5be32b4a7d34",
+      "match": true
+    },
+    {
+      "index": 32,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 18.333333333333336,
+      "poseHash": "56b3215672f6647a5410cb9a67cf7300730c944837e9a2eea9470adc5f601b19",
+      "match": true
+    },
+    {
+      "index": 33,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 19.166666666666664,
+      "poseHash": "75f204b6766f1fc012d5d1329608cf8771167248cfc63b8d2a243469b164964d",
+      "match": true
+    },
+    {
+      "index": 34,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 20.0,
+      "poseHash": "299fa2eb24b27c059e4002c473f9cde39f4f43bf1111621bcb1c02ccbb3ea093",
+      "match": true
+    },
+    {
+      "index": 35,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 20.833333333333336,
+      "poseHash": "4e7e6193b9a3b6573042a8824743f0055706b9abf8274f52c98f3142e1cd1c39",
+      "match": true
+    },
+    {
+      "index": 36,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 21.666666666666668,
+      "poseHash": "83af49beedb46e4f9b9f7f25d5c8499801065fc3c4c3eaedbf51a791027087e6",
+      "match": true
+    },
+    {
+      "index": 37,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 22.5,
+      "poseHash": "2ce88749d29a858fbf721458b1e471fae2c10be9c395bbfb838e2b9cd782c401",
+      "match": true
+    },
+    {
+      "index": 38,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 23.333333333333332,
+      "poseHash": "72687a9f5dd48a8accaf5c170d2ccf322463d2b59e3027aea628083fd1f4dab3",
+      "match": true
+    },
+    {
+      "index": 39,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 24.166666666666668,
+      "poseHash": "3d59e8753d06da745475f8d7ca151fd519f51ee666f69a84b835a50263c863d7",
+      "match": true
+    },
+    {
+      "index": 40,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 25.0,
+      "poseHash": "5bac293bf4a47d36d46ad915568d8ea172e4ef23a0fc56b8d4c3594ce87a88aa",
+      "match": true
+    },
+    {
+      "index": 41,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 25.833333333333332,
+      "poseHash": "b979c6bc422cf1fba8fb94f30621c379cd18b5a2c1d7c6239ca16b12722c7866",
+      "match": true
+    },
+    {
+      "index": 42,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 26.666666666666668,
+      "poseHash": "1abad258981490947b740ff96669dd18a73575d4f0a59f7f727de0938a72fdba",
+      "match": true
+    },
+    {
+      "index": 43,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 27.5,
+      "poseHash": "e5ce331e24618690b77f2deee1ff49572b27a271246505b20bb3753e7bcc1553",
+      "match": true
+    },
+    {
+      "index": 44,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 28.333333333333332,
+      "poseHash": "504d2d0c27aeb3a724f9208d1c2b9a5df4d45f701d6a01a37071d23226593ce2",
+      "match": true
+    },
+    {
+      "index": 45,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 29.166666666666668,
+      "poseHash": "ef82afa24c99c6b45cc851bd17ca7a115b25ac80d2c291618758c81ae529836b",
+      "match": true
+    },
+    {
+      "index": 46,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 30.0,
+      "poseHash": "78dc6c993e9d114d5719d2127648ca31acb75d42bdbfdf0f3e68d1937e38cae7",
+      "match": true
+    },
+    {
+      "index": 47,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 30.833333333333332,
+      "poseHash": "975ed05f022fe5c68457ac781dfbd2fdefab497832dce8667d07e8e7797b1735",
+      "match": true
+    },
+    {
+      "index": 48,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 31.666666666666668,
+      "poseHash": "d10fc40b5c6b2e657ba38335b86cc2d24927891436452744f6301a11fb786651",
+      "match": true
+    },
+    {
+      "index": 49,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 32.5,
+      "poseHash": "d6e559244199bc9ba98d0bba867d904041ffda027efe5cff982ed96253388c9f",
+      "match": true
+    },
+    {
+      "index": 50,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 33.33333333333333,
+      "poseHash": "3dcf36c2c86aed267e712559b75be02405778bf27a1ef623d167a64ee347255a",
+      "match": true
+    },
+    {
+      "index": 51,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 34.16666666666667,
+      "poseHash": "382ee68cfd3363f09c49c912a7c6b36bd5d536a5545cd355611a8255057ae9d2",
+      "match": true
+    },
+    {
+      "index": 52,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 35.0,
+      "poseHash": "8b84b3f77ac142872f56e094b90546d43afba68cf37d87206a66a96d9a5c87c5",
+      "match": true
+    },
+    {
+      "index": 53,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 35.83333333333333,
+      "poseHash": "d9b9d4b3df5f6a3fe3c3fa871728bd5c89de60a815e15a9bbd2de92f6998a395",
+      "match": true
+    },
+    {
+      "index": 54,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 36.66666666666667,
+      "poseHash": "f1743f8d4a4416dbfe02c50ffe2cfc751add51762b635ab3052d2c8f666edb97",
+      "match": true
+    },
+    {
+      "index": 55,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 37.5,
+      "poseHash": "dff6a2defe3ae058ccd450d4ce51d785acfb3f2b5e57662071f17fc4cdc81f71",
+      "match": true
+    },
+    {
+      "index": 56,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 38.333333333333336,
+      "poseHash": "d644106726e4983f7b85e2b3de5566ba977a755b6d21d06f12ed0bb333395e62",
+      "match": true
+    },
+    {
+      "index": 57,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 39.166666666666664,
+      "poseHash": "e6be12f60bd40c34f8d42e782f9a1717385d1c991c3df0fa18b30e7e418c8726",
+      "match": true
+    },
+    {
+      "index": 58,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 0.0,
+      "poseHash": "1c2ebea9929e7d22abbb2469edabd4e0adcd2451ba45d7d32a0456fe4798e702",
+      "match": true
+    },
+    {
+      "index": 59,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 0.8333333333333357,
+      "poseHash": "39644e1213a1e246060ea46caae87817c1fb338f3ffe328cc4367c4eb19281af",
+      "match": true
+    },
+    {
+      "index": 60,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 1.6666666666666643,
+      "poseHash": "aa16996ebf5fabd48a3f8bc07ac2b1e6ccbbf79bf1faaa567a586b0f680d08c1",
+      "match": true
+    },
+    {
+      "index": 61,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 2.5,
+      "poseHash": "3f974c47c36a2987e848f9093a2812001581496c09ab57ec15a93dacb55b30af",
+      "match": true
+    },
+    {
+      "index": 62,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 3.3333333333333357,
+      "poseHash": "68591a729d4a8e9ca10423058d580fcd9c04c04b45b3bd683b49df45bc1d85c0",
+      "match": true
+    },
+    {
+      "index": 63,
+      "action": "Walk_ProportionProposal",
+      "expectedSourceFrame": 4.166666666666664,
+      "poseHash": "b3455639a3425eb1024ecd0121f7fe35d98d683ee315b26d16225c60c92881e9",
+      "match": true
+    },
+    {
+      "index": 64,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 0.0,
+      "poseHash": "1ac8cbf3c4cd4c29e0563c259cce74081860e3b0fe1c6ee9de31d9a6af9c83a3",
+      "match": true
+    },
+    {
+      "index": 65,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 0.8409891471071929,
+      "poseHash": "99d94f3af3bceadab30613a4d14a5398c6e9caf19ede2af660cad9c4f697b0ac",
+      "match": true
+    },
+    {
+      "index": 66,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 1.6819782942143857,
+      "poseHash": "36987222dcb4c74e6f35192a374e453b7d73fdc09058c2b626b2642bf7f7545b",
+      "match": true
+    },
+    {
+      "index": 67,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 2.522967441321579,
+      "poseHash": "fde8f41f00c0ab42e906c7869ecfb85b9b0320f2a1e29518e16a40e6e3d07bb7",
+      "match": true
+    },
+    {
+      "index": 68,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 3.3639565884287714,
+      "poseHash": "70df1186cc7cf8257ae32cc3eb238a8d0c8a5a0bda1bc574ec14d221073cc811",
+      "match": true
+    },
+    {
+      "index": 69,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 4.204945735535964,
+      "poseHash": "ce9dea83a349554222896f01f318c4a93d1f75d84c4a631a369679365105a49e",
+      "match": true
+    },
+    {
+      "index": 70,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 5.045934882643158,
+      "poseHash": "83b06bb006f20e046360994af8613d4fd764d77ae158dc027fda71e6de575cb8",
+      "match": true
+    },
+    {
+      "index": 71,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 5.88692402975035,
+      "poseHash": "6a20b9faa5935efdc3de1174775481db2b2fc769fbb42c963a87e0185f8567d4",
+      "match": true
+    },
+    {
+      "index": 72,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 6.727913176857543,
+      "poseHash": "f3512f667d2f6441bd3ff278c2f3eeb05828b08b178f32932833b9d31e2d18c5",
+      "match": true
+    },
+    {
+      "index": 73,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 7.568902323964736,
+      "poseHash": "7694179851305743d5a00730a15bfe87eb8983851b6d55e5239439e4be1d3be7",
+      "match": true
+    },
+    {
+      "index": 74,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 8.409891471071928,
+      "poseHash": "cf0e98326344793fb8bf2b6cd04057383ee4c404d17efba00411fc4e03ddc8ee",
+      "match": true
+    },
+    {
+      "index": 75,
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "expectedSourceFrame": 9.25088061817912,
+      "poseHash": "1d072835a448b91175152eada75f0a07349554a9ed69857fac241f27ae82d83c",
+      "match": true
+    },
+    {
+      "index": 76,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "bae67ce34ae60ca7d83f2dbbb14d6dca81fd9af867422a47e5574c3cc3ac27e1",
+      "match": true
+    },
+    {
+      "index": 77,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "bae67ce34ae60ca7d83f2dbbb14d6dca81fd9af867422a47e5574c3cc3ac27e1",
+      "match": true
+    },
+    {
+      "index": 78,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "bae67ce34ae60ca7d83f2dbbb14d6dca81fd9af867422a47e5574c3cc3ac27e1",
+      "match": true
+    },
+    {
+      "index": 79,
+      "action": "Idle_Neutral_ProportionProposal",
+      "expectedSourceFrame": 0,
+      "poseHash": "bae67ce34ae60ca7d83f2dbbb14d6dca81fd9af867422a47e5574c3cc3ac27e1",
+      "match": true
+    }
+  ]
+}

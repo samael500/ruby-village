@@ -1,0 +1,1487 @@
+{
+  "scope": "read-only diagnostic; no new pivots or artwork; integer correlation is NOT exact semantic head tracking",
+  "sourceCommit": "50d4074",
+  "manifestSha256": "e55516008f2f0f9c2fe1cc2fa3e9f917d398a37a8917e45675582d2280b0e20d",
+  "pivotStepPx": {
+    "rmsVector": 2.344726898506178,
+    "maxVector": 11.930963822521717
+  },
+  "pivotSecondDifferencePx": {
+    "rmsVector": 2.834627525619117,
+    "maxVector": 11.154596016188675
+  },
+  "dominantPivotFrequencyHz": 0.6,
+  "pivotSpectralPowerFractionAbove6Hz": 0.019450982420929182,
+  "annotationNoiseModelNotMeasurement": {
+    "assumption": "independent uniform +/-1.5 raw px per axis; does not establish actual noise distribution",
+    "perAxisPositionRmsNativePx": 1.007322906506167,
+    "perAxisSecondDifferenceRmsNativePx": 2.4674271271573947,
+    "worstCaseAdjacentAnnotationErrorNativePx": 3.4894689073932708
+  },
+  "highestSecondDifferences": [
+    {
+      "phase": 40,
+      "vector": [
+        2.9078907561610805,
+        -10.768898905394423
+      ],
+      "length": 11.154596016188675
+    },
+    {
+      "phase": 39,
+      "vector": [
+        -2.3263126049288587,
+        9.560234321692946
+      ],
+      "length": 9.839197661472538
+    },
+    {
+      "phase": 35,
+      "vector": [
+        3.489468907393274,
+        -2.340007368112481
+      ],
+      "length": 4.201431629633536
+    },
+    {
+      "phase": 34,
+      "vector": [
+        -1.744734453696637,
+        3.3801206102741617
+      ],
+      "length": 3.8038551042220674
+    },
+    {
+      "phase": 7,
+      "vector": [
+        -3.489468907393274,
+        -0.2780628204345419
+      ],
+      "length": 3.5005302723690908
+    },
+    {
+      "phase": 31,
+      "vector": [
+        1.1631563024644294,
+        -3.2738442015956224
+      ],
+      "length": 3.4743328050553823
+    },
+    {
+      "phase": 19,
+      "vector": [
+        -2.3263126049288587,
+        -1.2962510900620714
+      ],
+      "length": 2.6630804014032323
+    },
+    {
+      "phase": 24,
+      "vector": [
+        -1.1631563024644294,
+        2.357163969064601
+      ],
+      "length": 2.6285270706270283
+    },
+    {
+      "phase": 3,
+      "vector": [
+        1.1631563024644151,
+        -2.3571544323214084
+      ],
+      "length": 2.6285185184386948
+    },
+    {
+      "phase": 11,
+      "vector": [
+        2.3263126049288587,
+        1.1766889410142198
+      ],
+      "length": 2.606976639664433
+    }
+  ],
+  "headTranslationProbes": [
+    {
+      "from": 0,
+      "to": 1,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.029240959942484206,
+        "rgbRmsNoTranslation": 0.029240959942484206,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04752260411965816,
+        "rgbRmsNoTranslation": 0.04752260411965816,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        0.09868621826171875
+      ]
+    },
+    {
+      "from": 1,
+      "to": 2,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.02657687184138584,
+        "rgbRmsNoTranslation": 0.02657687184138584,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05530267969883504,
+        "rgbRmsNoTranslation": 0.06337902207036365,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644151,
+        1.4019658880357042
+      ]
+    },
+    {
+      "from": 2,
+      "to": 3,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.025768709415302862,
+        "rgbRmsNoTranslation": 0.025768709415302862,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03867400529140189,
+        "rgbRmsNoTranslation": 0.03867400529140189,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        1.4701059179429308
+      ]
+    },
+    {
+      "from": 3,
+      "to": 4,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.030321854750228028,
+        "rgbRmsNoTranslation": 0.04557099755875616,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04809207065568987,
+        "rgbRmsNoTranslation": 0.0826298954079411,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -8.43769498715119e-15,
+        -0.8870485143784776
+      ]
+    },
+    {
+      "from": 4,
+      "to": 5,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -3,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.0421169841335216,
+        "rgbRmsNoTranslation": 0.1086819412194565,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -2,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.052125992354345764,
+        "rgbRmsNoTranslation": 0.12647121402228476,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -2.907890756161049,
+        -1.0159852819566026
+      ]
+    },
+    {
+      "from": 5,
+      "to": 6,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03466776012077091,
+        "rgbRmsNoTranslation": 0.04894611267584555,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.06319714674700301,
+        "rgbRmsNoTranslation": 0.08932309451008098,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.5815781512321991,
+        -0.05144119262694424
+      ]
+    },
+    {
+      "from": 6,
+      "to": 7,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03251679582301385,
+        "rgbRmsNoTranslation": 0.03251679582301385,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.06569473211195684,
+        "rgbRmsNoTranslation": 0.09847223504383455,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.1631563024644294,
+        -2.688928190256007
+      ]
+    },
+    {
+      "from": 7,
+      "to": 8,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          4,
+          3
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.06744025904132679,
+        "rgbRmsNoTranslation": 0.12080764809402637,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          2,
+          2
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.10110409592173202,
+        "rgbRmsNoTranslation": 0.16743593966485243,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        2.32631260492885,
+        0.5224778967027213
+      ]
+    },
+    {
+      "from": 8,
+      "to": 9,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03180386643485743,
+        "rgbRmsNoTranslation": 0.03180386643485743,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05881514526023521,
+        "rgbRmsNoTranslation": 0.05881514526023521,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644294,
+        -1.4665211596550876
+      ]
+    },
+    {
+      "from": 9,
+      "to": 10,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03410067914950956,
+        "rgbRmsNoTranslation": 0.03410067914950956,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03915955692534721,
+        "rgbRmsNoTranslation": 0.03915955692534721,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644151,
+        -0.4859744152960843
+      ]
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04390451699389448,
+        "rgbRmsNoTranslation": 0.05939639267818896,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          -1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.051100726914436866,
+        "rgbRmsNoTranslation": 0.08652367177211873,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -3.4894689073932823,
+        -1.1629962921142578
+      ]
+    },
+    {
+      "from": 11,
+      "to": 12,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.035525859061721926,
+        "rgbRmsNoTranslation": 0.06923925631734124,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04627106570608436,
+        "rgbRmsNoTranslation": 0.04627106570608436,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644236,
+        0.013692648899962023
+      ]
+    },
+    {
+      "from": 12,
+      "to": 13,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.027629888475506365,
+        "rgbRmsNoTranslation": 0.055846035457455125,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04045160172574506,
+        "rgbRmsNoTranslation": 0.08994482935499146,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644236,
+        -0.9525012969970703
+      ]
+    },
+    {
+      "from": 13,
+      "to": 14,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03992804956901459,
+        "rgbRmsNoTranslation": 0.04072987667123568,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05067780422148682,
+        "rgbRmsNoTranslation": 0.06927581337436976,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644236,
+        -0.06996345520019531
+      ]
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03801778625144338,
+        "rgbRmsNoTranslation": 0.07578556859827719,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.06135707412460448,
+        "rgbRmsNoTranslation": 0.08824237625081136,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.1631563024644236,
+        1.0931928472642283
+      ]
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          3,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05116742686532503,
+        "rgbRmsNoTranslation": 0.10437272203103681,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          3,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.09869064138450181,
+        "rgbRmsNoTranslation": 0.1549449398003506,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        3.4894689073932708,
+        -0.06996345520019531
+      ]
+    },
+    {
+      "from": 16,
+      "to": 17,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.02945718317609348,
+        "rgbRmsNoTranslation": 0.02945718317609348,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.030978531347948184,
+        "rgbRmsNoTranslation": 0.030978531347948184,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        -0.06996345520019531
+      ]
+    },
+    {
+      "from": 17,
+      "to": 18,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.026245595476322124,
+        "rgbRmsNoTranslation": 0.026245595476322124,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04364819911954625,
+        "rgbRmsNoTranslation": 0.04364819911954625,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        -0.06996345520019531
+      ]
+    },
+    {
+      "from": 18,
+      "to": 19,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03706221971390571,
+        "rgbRmsNoTranslation": 0.037323579937058204,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04295974152134167,
+        "rgbRmsNoTranslation": 0.04295974152134167,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        5.773159728050814e-15,
+        0.7896137237548828
+      ]
+    },
+    {
+      "from": 19,
+      "to": 20,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.022962175565327356,
+        "rgbRmsNoTranslation": 0.022962175565327356,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.033291700990204086,
+        "rgbRmsNoTranslation": 0.033291700990204086,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644294,
+        -0.5066373663071886
+      ]
+    },
+    {
+      "from": 20,
+      "to": 21,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03074547559406891,
+        "rgbRmsNoTranslation": 0.03074547559406891,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03272861214802511,
+        "rgbRmsNoTranslation": 0.03272861214802511,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.1631563024644294,
+        -0.6372144537095608
+      ]
+    },
+    {
+      "from": 21,
+      "to": 22,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.030464997622737182,
+        "rgbRmsNoTranslation": 0.052037052988844895,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05828909870235202,
+        "rgbRmsNoTranslation": 0.061810308994665074,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644236,
+        0.4358959197998047
+      ]
+    },
+    {
+      "from": 22,
+      "to": 23,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.0336022080078968,
+        "rgbRmsNoTranslation": 0.03582910744671314,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05061491783555714,
+        "rgbRmsNoTranslation": 0.07736986873032994,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        5.773159728050814e-15,
+        0.38803100585938344
+      ]
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          2,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04909664806124223,
+        "rgbRmsNoTranslation": 0.08404961322726621,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          2,
+          2
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05808601905228735,
+        "rgbRmsNoTranslation": 0.13683904565581598,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        2.326312604928847,
+        -0.816295416844318
+      ]
+    },
+    {
+      "from": 24,
+      "to": 25,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -2,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03561836613719452,
+        "rgbRmsNoTranslation": 0.06408553573290085,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04508040977583043,
+        "rgbRmsNoTranslation": 0.07172819456367076,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -3.4894689073932765,
+        0.3777122497558594
+      ]
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.02806565681170029,
+        "rgbRmsNoTranslation": 0.02806565681170029,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04433543624572702,
+        "rgbRmsNoTranslation": 0.04433543624572702,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        0.42540550231933594
+      ]
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03312416872467411,
+        "rgbRmsNoTranslation": 0.05144147957154725,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05114024072690172,
+        "rgbRmsNoTranslation": 0.05114024072690172,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.1631563024644294,
+        1.5936925726060251
+      ]
+    },
+    {
+      "from": 27,
+      "to": 28,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.033904459561426716,
+        "rgbRmsNoTranslation": 0.033904459561426716,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.034793285027687366,
+        "rgbRmsNoTranslation": 0.034793285027687366,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        0.3924274444580078
+      ]
+    },
+    {
+      "from": 28,
+      "to": 29,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.028683908051221972,
+        "rgbRmsNoTranslation": 0.03991096986645239,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.051351004734779646,
+        "rgbRmsNoTranslation": 0.051351004734779646,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -2.326312604928853,
+        1.4836862402085842
+      ]
+    },
+    {
+      "from": 29,
+      "to": 30,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.029333170537927427,
+        "rgbRmsNoTranslation": 0.029333170537927427,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.060378101102408877,
+        "rgbRmsNoTranslation": 0.060378101102408877,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644294,
+        0.23467063903808594
+      ]
+    },
+    {
+      "from": 30,
+      "to": 31,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          -1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03950681823537633,
+        "rgbRmsNoTranslation": 0.053623443906504586,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03455186846637415,
+        "rgbRmsNoTranslation": 0.06425863095382149,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        0.030031204223624375
+      ]
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          3,
+          3
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.042732917667567386,
+        "rgbRmsNoTranslation": 0.11535842715622967,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          2,
+          2
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.07405370130366348,
+        "rgbRmsNoTranslation": 0.12130467991465393,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        4.6526252098577,
+        1.4088122124856963
+      ]
+    },
+    {
+      "from": 32,
+      "to": 33,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03347552504703891,
+        "rgbRmsNoTranslation": 0.03347552504703891,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04089127787742249,
+        "rgbRmsNoTranslation": 0.06014948254454069,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.1631563024644294,
+        -2.0806566949075744
+      ]
+    },
+    {
+      "from": 33,
+      "to": 34,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03841087676420496,
+        "rgbRmsNoTranslation": 0.04140171335824776,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04169687112708173,
+        "rgbRmsNoTranslation": 0.0614907183436217,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        -1.796891959202716
+      ]
+    },
+    {
+      "from": 34,
+      "to": 35,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.034345180284279755,
+        "rgbRmsNoTranslation": 0.04446356733193601,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04140420330550205,
+        "rgbRmsNoTranslation": 0.05564964533791154,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -2.9078907561610605,
+        0.4200723486070217
+      ]
+    },
+    {
+      "from": 35,
+      "to": 36,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.02860873017803082,
+        "rgbRmsNoTranslation": 0.02860873017803082,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.048091864779864706,
+        "rgbRmsNoTranslation": 0.048091864779864706,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.744734453696637,
+        -1.9199350195054592
+      ]
+    },
+    {
+      "from": 36,
+      "to": 37,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03247154214613478,
+        "rgbRmsNoTranslation": 0.043792736083084094,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.030931129546551393,
+        "rgbRmsNoTranslation": 0.030931129546551393,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.1631563024644236,
+        -1.1940754809441216
+      ]
+    },
+    {
+      "from": 37,
+      "to": 38,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03522905674371001,
+        "rgbRmsNoTranslation": 0.06343531579681054,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          -1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.0482420685418354,
+        "rgbRmsNoTranslation": 0.06139658484729085,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        1.1631563024644236,
+        1.333958315390987
+      ]
+    },
+    {
+      "from": 38,
+      "to": 39,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -3,
+          -1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03692808389244506,
+        "rgbRmsNoTranslation": 0.12252551605929857,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -3,
+          -1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05121340949601548,
+        "rgbRmsNoTranslation": 0.12382242373339244,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -3.4894689073932708,
+        0.9785821752671406
+      ]
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          4,
+          -8
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04128761642971121,
+        "rgbRmsNoTranslation": 0.0959350466167142,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          3,
+          -9
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.06434821769018172,
+        "rgbRmsNoTranslation": 0.1994208894798712,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        2.3263126049288356,
+        2.3967223797091215
+      ]
+    },
+    {
+      "from": 40,
+      "to": 41,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.033845047820313924,
+        "rgbRmsNoTranslation": 0.033845047820313924,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.054155622000786094,
+        "rgbRmsNoTranslation": 0.06796576303215648,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.5815781512322218,
+        0.9330738940300876
+      ]
+    },
+    {
+      "from": 41,
+      "to": 42,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.03181013624252672,
+        "rgbRmsNoTranslation": 0.03181013624252672,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04673139951434335,
+        "rgbRmsNoTranslation": 0.05757484936134055,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.5815781512322076,
+        0.067072971814639
+      ]
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.033532932894024016,
+        "rgbRmsNoTranslation": 0.05736150800900589,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05480844025166485,
+        "rgbRmsNoTranslation": 0.11363280957730844,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644236,
+        1.9527414159898058
+      ]
+    },
+    {
+      "from": 43,
+      "to": 44,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.027482261928352427,
+        "rgbRmsNoTranslation": 0.05241607511618738,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.04470732957618429,
+        "rgbRmsNoTranslation": 0.0649081832226613,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.5815781512322133,
+        0.6565284729003906
+      ]
+    },
+    {
+      "from": 44,
+      "to": 45,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.030505624306685686,
+        "rgbRmsNoTranslation": 0.0363301830659618,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.05221914491705454,
+        "rgbRmsNoTranslation": 0.05767753024786693,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -0.581578151232216,
+        0.574951171875
+      ]
+    },
+    {
+      "from": 45,
+      "to": 46,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.029061948817146507,
+        "rgbRmsNoTranslation": 0.046571308665948795,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          -1,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.056809279920921996,
+        "rgbRmsNoTranslation": 0.07034000453169832,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        -1.1631563024644236,
+        -0.6413438634995714
+      ]
+    },
+    {
+      "from": 46,
+      "to": 47,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.024128195493766,
+        "rgbRmsNoTranslation": 0.024128195493766,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          0,
+          0
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.059569545558681145,
+        "rgbRmsNoTranslation": 0.059569545558681145,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        0.0,
+        1.0084237017693454
+      ]
+    },
+    {
+      "from": 47,
+      "to": 0,
+      "upperHead": {
+        "shiftNextMinusCurrentRawPx": [
+          4,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.052739914129325764,
+        "rgbRmsNoTranslation": 0.13611683813853642,
+        "boundaryMinimum": false
+      },
+      "lowerHead": {
+        "shiftNextMinusCurrentRawPx": [
+          4,
+          1
+        ],
+        "rgbRmsAfterBestIntegerTranslation": 0.08447877160862313,
+        "rgbRmsNoTranslation": 0.22212086247672186,
+        "boundaryMinimum": false
+      },
+      "candidateUpperHeadMotionNativePx": [
+        4.652625209857694,
+        -0.40845765257500055
+      ]
+    }
+  ],
+  "headProbeWindowDisagreementRawPx": [
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    2.23606797749979,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    1.0,
+    0.0,
+    1.4142135623730951,
+    1.4142135623730951,
+    1.0,
+    1.4142135623730951,
+    0.0,
+    0.0,
+    1.0,
+    1.0,
+    0.0,
+    1.4142135623730951,
+    1.0,
+    1.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "headRigidProbe": {
+    "definition": "integer best RGB translation fixed upper-head patch; not anatomical feature, not native-head-subtracted",
+    "rawLoopShiftSum": [
+      0,
+      3
+    ],
+    "correctedAdjacentMotionRmsNativePx": 2.12570799213932,
+    "correctedAdjacentMotionMaxNativePx": 4.861241939407279,
+    "worstCorrectedPairs": [
+      {
+        "from": 31,
+        "to": 32,
+        "motion": [
+          4.6526252098577,
+          1.4088122124856963
+        ],
+        "length": 4.861241939407279
+      },
+      {
+        "from": 47,
+        "to": 0,
+        "motion": [
+          4.652625209857694,
+          -0.40845765257500055
+        ],
+        "length": 4.670520206288635
+      },
+      {
+        "from": 10,
+        "to": 11,
+        "motion": [
+          -3.4894689073932823,
+          -1.1629962921142578
+        ],
+        "length": 3.6781725939841348
+      },
+      {
+        "from": 38,
+        "to": 39,
+        "motion": [
+          -3.4894689073932708,
+          0.9785821752671406
+        ],
+        "length": 3.624088344593017
+      },
+      {
+        "from": 24,
+        "to": 25,
+        "motion": [
+          -3.4894689073932765,
+          0.3777122497558594
+        ],
+        "length": 3.509851820131451
+      },
+      {
+        "from": 15,
+        "to": 16,
+        "motion": [
+          3.4894689073932708,
+          -0.06996345520019531
+        ],
+        "length": 3.4901702165837034
+      },
+      {
+        "from": 39,
+        "to": 40,
+        "motion": [
+          2.3263126049288356,
+          2.3967223797091215
+        ],
+        "length": 3.3400611523218164
+      },
+      {
+        "from": 4,
+        "to": 5,
+        "motion": [
+          -2.907890756161049,
+          -1.0159852819566026
+        ],
+        "length": 3.080268615383943
+      }
+    ],
+    "maxRgbResidualAfterRigidTranslation": 0.06744025904132679
+  }
+}

@@ -1,0 +1,4 @@
+from pathlib import Path
+import json,numpy as np
+O=Path(__file__).resolve().parent;j=json.loads((O/'iris-all48.json').read_text());k=json.loads((O/'head-projection.json').read_text());cv=np.array([[c['centerXY']for c in f['twoLargestSortedX']]for f in j['frames']]);ex=np.array([f['fixedReferenceHeadAttachedEyeRaysPixelXY']for f in k['frames']]);res=cv-ex;step=np.roll(res,-1,axis=0)-res
+print('RMSperEyeNativePx',np.sqrt(np.mean(np.sum(res*res,axis=2),axis=0)).tolist());print('maxResidualNativePx',np.linalg.norm(res,axis=2).max());print('adjacentResidualRMS',np.sqrt(np.mean(np.sum(step*step,axis=2))));print('worstAdjacentPhase',int(np.linalg.norm(step,axis=2).max(axis=1).argmax()));print('observedMidpointRange',np.ptp(cv.mean(axis=1),axis=0).tolist());print('expectedMidpointRange',np.ptp(ex.mean(axis=1),axis=0).tolist())

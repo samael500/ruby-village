@@ -1,0 +1,37 @@
+{
+  "name": "ellie",
+  "page": "https://studio.blender.org/characters/ellie/v1/",
+  "downloads": [
+    "https://studio.blender.org/download-source/files/01/01a02cb0fed8e700b38bdaf7b4ef75df/01a02cb0fed8e700b38bdaf7b4ef75df.blend"
+  ],
+  "licenseUrls": [
+    "https://creativecommons.org/licenses/by/4.0/"
+  ],
+  "thumbnailUrl": "https://studio.blender.org/files/public/thumbnail/01/a0/01a02cb0fed8e700b38bdaf7b4ef75df_m.webp",
+  "pageHttpStatus": 200,
+  "pageSha256": "579abc11609c1f55e5161fee7ffc2ef58ab7b0d45bbb6bc1346139257b8b0fe1",
+  "downloadProbe": {
+    "httpStatus": 200,
+    "contentType": "application/octet-stream",
+    "contentLength": "21851981",
+    "magicHex": "28b52ffd60f4893d5b009a6394144300",
+    "finalHost": "studio.blender.org"
+  },
+  "thumbnailProbe": {
+    "httpStatus": 200,
+    "contentType": "image/webp",
+    "contentLength": "162774",
+    "magicHex": "52494646ce7b02005745425056503820",
+    "finalHost": "studio.blender.org"
+  },
+  "downloadedSource": {
+    "localPath": "/tmp/ruta-head-source-research/ellie.blend",
+    "bytes": 21851981,
+    "sha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c"
+  },
+  "thumbnailSha256": "2a03790d70dd92aee1830e1e681b1b514128792ef8e87c248ff4032d2cffe962",
+  "license": "CC-BY-4.0",
+  "attribution": "Ellie (Sprite Fright), Blender Studio / Blender Foundation \u2014 CC BY 4.0",
+  "changes": "Original source unchanged; separate derived static facial geometry extraction and native Head binding for Ruby Village pilot will be recorded separately.",
+  "notEndorsedByLicensor": true
+}

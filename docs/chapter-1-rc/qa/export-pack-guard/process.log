@@ -1,0 +1,79 @@
+Info: Saved as "baseline.blend"
+READY_EXPORT base e walk contract
+READY_EXPORT_COMPLETE /tmp/ruta-ready-visibility-a4_6xh6l/baseline/dry-run-contract.json
+VISIBILITY_PROBE {"case": "baseline", "expectedPass": true, "actualPass": true, "error": null, "seconds": 0.5903275210002903, "fixtureSha256": "6b0c384f5326d1311f298ae14fb7baafddd4ce2d004866ebc1ddd5d54ed54292", "renderedFrames": 0}
+Info: Saved as "object_eye_supported.blend"
+READY_EXPORT base e walk contract
+READY_EXPORT_COMPLETE /tmp/ruta-ready-visibility-a4_6xh6l/object_eye_supported/dry-run-contract.json
+VISIBILITY_PROBE {"case": "object_eye_supported", "expectedPass": true, "actualPass": true, "error": null, "seconds": 0.5454748480115086, "fixtureSha256": "ca7a5aedc540243a1b6bffdb389f05ac9f8813a1e4395a1bc2692b62896c7b01", "renderedFrames": 0, "loadedObjectEyeHidden": true, "exactEyeVsBaselineGeometryAndHeight": true}
+Info: Saved as "object_monitor.blend"
+VISIBILITY_PROBE {"case": "object_monitor", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled Adventurer_Body", "seconds": 0.14396045898320153, "fixtureSha256": "1c76326edc26f1c47170625a2d789b1b162f5f73c298f54901875756ceece55e", "renderedFrames": 0}
+Info: Saved as "collection_monitor.blend"
+VISIBILITY_PROBE {"case": "collection_monitor", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: Adventurer_Body: collection viewport monitor QA disabled collection", "seconds": 0.1481163279968314, "fixtureSha256": "201e7d36f8a3d2af2a427d3c3f62dc27fdce9100f768ccd0e132b986700da57a", "renderedFrames": 0}
+Info: Saved as "collection_eye_explicitly_unsupported.blend"
+VISIBILITY_PROBE {"case": "collection_eye_explicitly_unsupported", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: Adventurer_Body: collection eye QA disabled collection", "seconds": 0.1439637879957445, "fixtureSha256": "c56840faf20c25421b3b3feea4fe4ace82acddb19189fd8c68bfb4fae1bc3b1e", "renderedFrames": 0}
+Info: Saved as "modifier_viewport_only_off.blend"
+VISIBILITY_PROBE {"case": "modifier_viewport_only_off", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: modifier viewport/render mismatch Adventurer_Body/Armature", "seconds": 0.16199143501580693, "fixtureSha256": "3c50f813003c46354cbe1457e789eb05f3b79e5a33461ba2dd3af266c2942dbc", "renderedFrames": 0}
+Info: Saved as "modifier_render_only_off.blend"
+VISIBILITY_PROBE {"case": "modifier_render_only_off", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: modifier viewport/render mismatch Adventurer_Body/Armature", "seconds": 0.1824192799977027, "fixtureSha256": "ec9dcf07aac4a6fa6549a587f747af125092d8abd003e4c9b262048d3dd7f3cb", "renderedFrames": 0}
+Info: Saved as "dependency_rig_monitor.blend"
+VISIBILITY_PROBE {"case": "dependency_rig_monitor", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled CharacterArmature", "seconds": 0.19633075001183897, "fixtureSha256": "ebc564a234f0d43bf9c97aa56014c526f7b91525a42e7a3272133d7fe05b76d5", "renderedFrames": 0}
+Info: Saved as "dependency_rig_collection_monitor.blend"
+VISIBILITY_PROBE {"case": "dependency_rig_collection_monitor", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: CharacterArmature: collection viewport monitor QA disabled collection", "seconds": 0.19172125298064202, "fixtureSha256": "6d6341ec02da887a315ade1b41812f5ab96f0417cc8d76d92dd63c3c21f1452c", "renderedFrames": 0}
+Info: Saved as "pose_bone_constraint_hidden_target.blend"
+VISIBILITY_PROBE {"case": "pose_bone_constraint_hidden_target", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled QA hidden dependency", "seconds": 0.20092166800168343, "fixtureSha256": "1b5bcc9ae44a444d5f2128fcb73a01dedffd56cbea1951b365826af7c389c145", "renderedFrames": 0}
+Info: Saved as "driver_hidden_target.blend"
+VISIBILITY_PROBE {"case": "driver_hidden_target", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: object viewport monitor disabled QA hidden dependency", "seconds": 0.19068329798756167, "fixtureSha256": "ce8fa419645d7b27464a9dc633ec3d48a40c5349315740b7a17e7777b73acb25", "renderedFrames": 0}
+Info: Saved as "subdivision_levels_mismatch.blend"
+VISIBILITY_PROBE {"case": "subdivision_levels_mismatch", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: subdivision viewport/render levels mismatch Adventurer_Body/QA differing subdivision", "seconds": 0.20316601399099454, "fixtureSha256": "b8e61412f8513679b800e409532f01250346f7db3b844c361b55675d0db9372a", "renderedFrames": 0}
+Info: Saved as "scene_simplify_unsupported.blend"
+VISIBILITY_PROBE {"case": "scene_simplify_unsupported", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: scene simplify unsupported for viewport/render congruence", "seconds": 0.18652426099288277, "fixtureSha256": "263cdb170636e008539f447aad53fc510a83c8399af2c3320215420cb72b4b5d", "renderedFrames": 0}
+Info: Saved as "unsupported_geometry_nodes.blend"
+VISIBILITY_PROBE {"case": "unsupported_geometry_nodes", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Evaluation visibility: unsupported geometry modifier Adventurer_Body/NODES", "seconds": 0.18220928800292313, "fixtureSha256": "1e1bff00148b5ba949536e90a6220c09b1e1dd5da5b9d28a558ee9c600ec076d", "renderedFrames": 0}
+Info: Saved as "unsupported_collection_instance.blend"
+VISIBILITY_PROBE {"case": "unsupported_collection_instance", "expectedPass": false, "actualPass": false, "error": "RuntimeError: Visible non-mesh geometry needs explicit support/reference definition: ['QA unsupported collection instance']", "seconds": 0.18275317098596133, "fixtureSha256": "64cc2886b9f4f315d1b24adee05cd2ad04fc74bdef33d22458a6cc07203b4ffe", "renderedFrames": 0}
+Info: Saved as "KNOWN_POLICY_GAP_VERTS.blend"
+READY_EXPORT base e walk contract
+READY_EXPORT_COMPLETE /tmp/ruta-ready-visibility-a4_6xh6l/KNOWN_POLICY_GAP_VERTS/dry-run-contract.json
+VISIBILITY_PROBE {"case": "KNOWN_POLICY_GAP_VERTS", "expectedPass": true, "actualPass": true, "error": null, "seconds": 0.767777886998374, "fixtureSha256": "be3265a8dc28f0cc068d97be649d26282b096338ddf63e335113962ffd239006", "renderedFrames": 0, "exactEyeVsBaselineGeometryAndHeight": true}
+Info: Saved as "KNOWN_POLICY_GAP_FACES.blend"
+READY_EXPORT base e walk contract
+READY_EXPORT_COMPLETE /tmp/ruta-ready-visibility-a4_6xh6l/KNOWN_POLICY_GAP_FACES/dry-run-contract.json
+VISIBILITY_PROBE {"case": "KNOWN_POLICY_GAP_FACES", "expectedPass": true, "actualPass": true, "error": null, "seconds": 0.775251829996705, "fixtureSha256": "ea7480c34b8f6b6bb8dfad6b98b9857db3ae6b4cafa8fecdc46b358ff2c13029", "renderedFrames": 0, "exactEyeVsBaselineGeometryAndHeight": true}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/baseline.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/object_eye_supported.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/object_monitor.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/collection_monitor.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/collection_eye_explicitly_unsupported.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/modifier_viewport_only_off.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/modifier_render_only_off.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/dependency_rig_monitor.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/dependency_rig_collection_monitor.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/pose_bone_constraint_hidden_target.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/driver_hidden_target.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/subdivision_levels_mismatch.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/scene_simplify_unsupported.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/unsupported_geometry_nodes.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/unsupported_collection_instance.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/KNOWN_POLICY_GAP_VERTS.blend"
+Read blend: "/tmp/ruby-export-pack-qa/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend"
+Read blend: "/tmp/ruta-ready-visibility-a4_6xh6l/KNOWN_POLICY_GAP_FACES.blend"
+
+Blender quit

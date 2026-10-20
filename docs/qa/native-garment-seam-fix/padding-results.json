@@ -1,0 +1,22 @@
+{
+  "status": "PASS-scoped-all-boundaries",
+  "rawSha256": "b61be8876856d1463b9a8dfa7afecf60c95333f45792180a0e717fd08a107179",
+  "sourceImageSize": [
+    1254,
+    1254
+  ],
+  "actualPaintedFaces": 648,
+  "allUVPolygonTexels": 109387,
+  "creamLikeInsideAllPolygons": 0,
+  "oliveLikeInsideAllPolygons": 0,
+  "actualBoundarySegments": 338,
+  "boundaryContinuousSamplesMaxSpacingTexels": 0.25,
+  "boundarySamplesIncludingEndpoints": 28504,
+  "boundarySampleCreamCount": 0,
+  "minDistanceToCreamBackgroundChebyshevTexels": {
+    "actualBoundarySegmentsQuarterTexelSamples": 7,
+    "rasterBoundarySegments": 7
+  },
+  "thresholds": "cream R>185 G>170 B>140 spread<75; olive G>.93R,G>1.25B,R<180",
+  "limits": "Actual bound UV extracted independently; raster/quartertexel samples, threshold semantic limits; no bitmap edits or erosion-only acceptance."
+}

@@ -1,0 +1,258 @@
+{
+  "status": "ONE-READY-MPFB-HAIR-ASSET-PILOT-ART-REVIEW-PENDING",
+  "sourceBlend": "/home/mskorokhod/life/ruby-village-36-uv-paint/art/ruta-native-uv-paint-pilot-v1/ruta-native-painted-hair-pilot.blend",
+  "sourceBlendSha256": "a60a9601d6a8daa3dfc271b5152d41a361f9397847e111d80c08b3ae05e6d754",
+  "sourceHairObjSha256": "1b58e2c8adc864c543dd91d99037260681a79cb370f927c293c3301821dd6703",
+  "outputBlendSha256": "4eda3cc6410a8a24a6e90528ff89bea674c33fdd7bb39ceeda80632c11c31ea8",
+  "hairAuthor": "Elvaerwyn",
+  "hairLicense": "CC-BY; official community attribution FAQ points to4.0; originalassetheaderunversioned preserved",
+  "mesh": {
+    "vertices": 4940,
+    "faces": 6639,
+    "sourceBoundaryEdges": 3145,
+    "geometry": "true fixed3D curved layered alpha surfaces, not closed solid hair, not camera-facing whole-hairstyle billboard",
+    "originalTopologyAndUVPreserved": true,
+    "fixedFitMatrix": [
+      [
+        0.23000000417232513,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        -0.18000000715255737,
+        0.04699999839067459
+      ],
+      [
+        0.0,
+        0.11999999731779099,
+        0.0,
+        0.6582959890365601
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "fixedHeadWeights": 1
+  },
+  "alpha": {
+    "surfaceRenderMethod": "BLENDED",
+    "coverage": "textureAlpha >.5 binary threshold +128offlineAA, no HASHED/DITHERED alpha material",
+    "normalMapStrength": 0.9,
+    "backfaceCull": false,
+    "tint": [
+      1.32,
+      0.92,
+      0.7
+    ],
+    "nativeImagesUnchanged": true
+  },
+  "originalHiddenHair": [
+    "Ellie ready Loose cap",
+    "Ellie ready Layered wave 1",
+    "Ellie ready Layered wave 2",
+    "Ellie ready Layered wave 3",
+    "Ellie ready Layered wave 4",
+    "Ellie ready Layered wave 5",
+    "Ellie ready Layered wave 6",
+    "Ellie ready Layered wave 7",
+    "Ellie ready Layered wave 8",
+    "Ellie ready Layered wave 9",
+    "Ellie ready Layered wave 10",
+    "Ellie ready Layered wave 11",
+    "Ellie ready Layered wave 12",
+    "Ellie ready Layered wave 13",
+    "Ellie ready Layered wave 14",
+    "Ellie ready Layered wave 15",
+    "Ellie ready Layered wave 16",
+    "Ellie ready Layered wave 17",
+    "Ellie ready Layered wave 18"
+  ],
+  "allExistingMeshGeometryWeightsUVMaterialsExact": {
+    "Adventurer_Body": "e888fc1674332a90f76cf78bc9bb3cc7833e3893fd0dcb8c91c6f2966c0c58df",
+    "Adventurer_Feet": "f3717552cbfcda330e49a36696344e013dd62eef0b4ce41848d5bc85f14167d5",
+    "Adventurer_Head": "336391edc0dfd90c93e5a971e78af6caa584e06ad01e0fe4cebdf62f6ad37832",
+    "Ruta stock long trousers": "28ff759b4c9d8cc7e36d8544488eeceec8a1cf8c9de05bbb80983469573f0e93",
+    "Ruta CC0 ginger waves": "090ff08ce2225f3eea9ff7858b7df3a017375fd0d32d844974f9d1ebc57fd29a",
+    "ONE diagonal satchel strap": "611265990366fae7b00de1687f636ce4e4165c864177f94b18bd4a050e444301",
+    "Ellie ready tongue": "3a1c9a1ee8b18af6fc96f2f5cb26b525c82f43e9fc967dfcf54fdb480e45dbb8",
+    "Ellie ready teeth_top": "6646536f2417657ec83c4c59ba95377311c9af79d37c7c7bad8afcf44011ae1a",
+    "Ellie ready teeth_btm": "5fe79b139b38e1008dcb774c5505204a736a2e4820af81128d69bee23bd08998",
+    "Ellie ready head": "fc014e833d881e7bc6128d48b5018618d565696731c271ecb05d9fb3829cdcba",
+    "Ellie ready hair_cut": "84d8dcf7dd729b5c854fcc414064f30b289e082584333d51ddcaf64dd83f46e0",
+    "Ellie ready face_line2": "038c16d44da6631c799e4a3b57c0d3c9295061c072655e1d8ac5bf5ed48b126e",
+    "Ellie ready face_line1": "79a01060a7adcde9a782fff1a51f4881b0d2b1cb8f627b0f564d93c844a4e6dc",
+    "Ellie ready eyelashes": "05576448a64f107fa9833876280a3536f99d87e9cc08e1b8568481b6802656ae",
+    "Ellie ready eyebrows": "0d931764085b550895377e5bdfc5161a7089f0430de3186e273d8e686dfe3343",
+    "Ellie ready eye_highlights": "c37cf3bc58d830a8440778d7aa4bef4c720b402a4c5fdaf668ed2bb5ffb42788",
+    "Ellie ready eye.R": "355ba69a13350948a47ef6a9316233f5e3b035c5676e2f2528243e86714fc0c3",
+    "Ellie ready eye.L": "82ca060c61ab3db9751fb8a082607c6b5c45ace1362c88865d391c318031d844",
+    "Ellie ready CC0 Cortu waves": "8b027c82b2c191a881278fb132fdf5e5051dadefd052b7fec2ee749bd041a5ee",
+    "Ellie ready Loose cap": "0b728202128574e0fb4b57486d5375b269e01f778c189df5887aafd8e3c408f7",
+    "Ellie ready Layered wave 1": "12af8e4c548debf554373f2c27e76e0ab82df1d4c5700363324716ee96dd238e",
+    "Ellie ready Layered wave 2": "97f210bcf2140ddc20f8616a289a8f9f8d67dd71b1395572cc4e128a0651fcdc",
+    "Ellie ready Layered wave 3": "93eb96a353dda7c617f6615a40a9d113043570e7325d7ec897f2288221b90018",
+    "Ellie ready Layered wave 4": "9035f4441058f4e60951485ce5599ed9554cf4acb5ab400cafc95ed3220b4e7b",
+    "Ellie ready Layered wave 5": "f551e1ed3bad38a12e3ce834a697649d225ab27224da417a1121e9d5b3bb7f7a",
+    "Ellie ready Layered wave 6": "244098f4389bb751870abb1e83c87b98b6a0688a13d3d44d2b46f31a0144d543",
+    "Ellie ready Layered wave 7": "5cffa3e5055898dfa55b83e37880b0cb9d1cd3ad3ff4a0833e4f8cf608e4229c",
+    "Ellie ready Layered wave 8": "faa4cb83c3b986178c8f9f3736157cac0bcbe16042c9648eb8aa3dc8ef88ceb7",
+    "Ellie ready Layered wave 9": "a8500e8559feb48c2c0b215b59a2ceb55bc8fe245ef670c99ee8266d320a7b23",
+    "Ellie ready Layered wave 10": "810f1cd34c4e5bf3528886f69542ac59a1655d91f9d9f19775031156cf4e93c9",
+    "Ellie ready Layered wave 11": "11307fc66f12bac07708365fedd558cf70fba56cf6810bfaf9431d647df8e38d",
+    "Ellie ready Layered wave 12": "e07acfe1439125f3d6a5453dc763ff061b5104090dc995ec8143dfe09b5e05bb",
+    "Ellie ready Layered wave 13": "5af2c2be11b0e784c8178cbf6c80a422869fe45324bfac4ff93baf77de1be4ca",
+    "Ellie ready Layered wave 14": "419a51e3b6d2782fff9fde618df51a3a3395b9cde13a4e5264649b1e8139c67e",
+    "Ellie ready Layered wave 15": "bb21f5c1363841731bbd3b23c979ab109791fe61a616b0d33060a079feab295f",
+    "Ellie ready Layered wave 16": "41ce516de6ba33de9682051fd87c3d8e943b2c83d8de5a75285c772f9a52f406",
+    "Ellie ready Layered wave 17": "e7a4a4f65aa6806635d93a0752b1483d2d88f7707299b74512b7d8a70b3319d2",
+    "Ellie ready Layered wave 18": "e85e4984dc42e63eaf06eaeef8b1accc3fdfc9c75c6169635187340db9a04c7b",
+    "Cream shirt V inside vest": "c64c978de28cd3c6d71495ceb046fceb706965a174863d51776d723ea7f8cb57",
+    "Vest brass button 1": "af1d8e8be1aa229451d223351d3e57cf82cb88caafac89deda54fc5fade76aeb",
+    "Vest brass button 2": "a905e3e40ac876be48e857e55796351c4daa0ce1549397775f73da05d7e90a4b",
+    "Vest brass button 3": "1035b14723d75c725ed7c731f8165394056d67e104e260eaf1b8588bf1ee992b",
+    "Left burgundy bow loop": "cbb8c6ce6d8541e57d14c7b03e64d4145dfaf93b95aef9439d3f4642b54b6c2d",
+    "Right burgundy bow loop": "6cb6f1e9deac52e52cd5379850113daaaa9f6ba5a1d827a942f8e5bd1d75a5db",
+    "Burgundy bow knot": "3821f7b5f2036fca11c1f317e77920d382dd54456d3c950a6ff0dfe7566543fc",
+    "Two burgundy bow tails": "6421d65972d2ab49bcdf86069a01de73da04929984c6c1541c27d2e8b0dc049f",
+    "ONE rounded right hip satchel": "233eb9b2723ede68b7552a7ed3344954e45b390f815ace896f670bbe221e63e0",
+    "Single rounded satchel flap": "2cf35b3c310e57a0809b68fe3a7f9fae71026bd20b31c9e2b71a59da46b23865",
+    "Satchel warm brass clasp": "3ec389fc46731df1e3f5d0d7ebc775404216e8f8d05fe061a1976013dbc9d7f5",
+    "Ankle boot lace R": "733aebde8dae09c1adf26c312a70369812ecc63fcede85fba34af11d998daf3d",
+    "Cream sock cuff R": "838e9fe101359ee2136927b4215c5d8090128b4e71b47b45e65050debbb3265f",
+    "Cargo side pocket R": "998802e6d5d6aa83f596069332976d6f0a76c8f462e32f400636bf38f3420860",
+    "Ankle boot lace L": "d5793177e3d20f2cebf70263fd8b504e5b948a8d0dcbdca06593a7b0ff5b91ce",
+    "Cream sock cuff L": "e93a53be7b08a9c334d28438f2d5774f710770be4e76a4fd2d51c499acb45331",
+    "Cargo side pocket L": "d95b3c4d418eb8293d8820b4ce9daef2f22581d0cc12b4d1351d0afe6490bcd1",
+    "Icosphere": "695f6beb59ad0eba638dc209588af09535cb1d78cc972f09b1ce5104099f2a72"
+  },
+  "actionCurveHashesExact": {
+    "Death": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Death.001": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Gun_Shoot": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "Gun_Shoot.001": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "HitRecieve": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve.001": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve_2": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "HitRecieve_2.001": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "Idle": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle.001": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle_Gun": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun.001": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun_Pointing": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Pointing.001": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Shoot": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Gun_Shoot.001": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Neutral": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral.001": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral_ProportionProposal": "caf23e4f0542ed8278dc2a93f150e426ef3cab5df25c4b7001457fb1abf8269b",
+    "Idle_Sword": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Idle_Sword.001": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Interact": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Interact.001": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Kick_Left": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Left.001": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Right": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Kick_Right.001": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Punch_Left": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Left.001": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Right": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Punch_Right.001": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Roll": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Roll.001": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Run": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run.001": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run_Back": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Back.001": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Left": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Left.001": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Right": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Right.001": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Shoot": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Run_Shoot.001": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Sword_Slash": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Sword_Slash.001": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Walk": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk.001": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk_ProportionProposal": "42dfb58c9b06fd26aebc86b8557bad156ec96447fe6e7560a4755e8f6ee759aa",
+    "Wave": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820",
+    "Wave.001": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820"
+  },
+  "boneRestFingerprint": "824add660f7229a2ed12287d82c6a1d15159c904a84f0b157ef86973e6aec2ec",
+  "cameraExact": {
+    "matrixWorld": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.6499999761581421,
+        -0.7599342465400696,
+        -8.0
+      ],
+      [
+        0.0,
+        0.7599342465400696,
+        0.6499999761581421,
+        7.692697525024414
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "orthoScale": 2.0999999046325684,
+    "canvas": [
+      512,
+      640
+    ],
+    "worldZPixelsPerMeter": 231.59903526306152,
+    "worldOriginAnchorPx": [
+      256.0,
+      516.8593120574951
+    ]
+  },
+  "globalScaleCameraHeadingBodyRigRootUnchanged": true,
+  "views": [
+    {
+      "file": "e-walk00.png",
+      "sha256": "6243e9562fc1f0e53ba8e98819610f8d260ca4c37ea78c7322e7796687eff6d1",
+      "yaw": 1.5707963267948966,
+      "sourceAction": "Walk_ProportionProposal",
+      "sourceFrame": 0,
+      "diagnosticOnly": false
+    },
+    {
+      "file": "front-diagnostic.png",
+      "sha256": "be4b807876cad6a647214c9367e18bc5322dcf5c4fa5cd7a7be3f5d51b7a5430",
+      "yaw": 0,
+      "sourceAction": "Idle_Neutral_ProportionProposal",
+      "sourceFrame": 0,
+      "diagnosticOnly": true
+    },
+    {
+      "file": "threequarter-diagnostic.png",
+      "sha256": "98e0136cdc03b23710c86e631f1cd012d9cfca33358bca138b1930580fffbdd0",
+      "yaw": 0.7853981633974483,
+      "sourceAction": "Idle_Neutral_ProportionProposal",
+      "sourceFrame": 0,
+      "diagnosticOnly": true
+    }
+  ],
+  "limitations": [
+    "One fixed hair-only anisotropic REST fit for broad cartoon head, not an accepted canonical match",
+    "Alpha layer sorting, surface intersections and fine-strand shimmer require actual motion review later",
+    "No48/fullgait/runtime/game acceptance",
+    "Original face and sourceE rear3q heading unchanged; no silentprofilecamerafix"
+  ]
+}

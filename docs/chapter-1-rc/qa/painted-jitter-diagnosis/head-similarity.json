@@ -1,0 +1,366 @@
+{
+  "scope": "diagnostic only; head fitting no pixel or pivot changes; cannot justify global scale/rotation without torso/limb correspondence",
+  "fixedTemplate": 0,
+  "headROI": [
+    55,
+    25,
+    102,
+    72
+  ],
+  "pivot": [
+    80,
+    48
+  ],
+  "rows": [
+    {
+      "phase": 0,
+      "graphTranslationMseUpperLower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "translationOnlyMseUpperLower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "headSimilarityMseUpperLower": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "headSimilarityParameters": {
+        "dx": 0.0,
+        "dy": 0.0,
+        "scale": 1.0,
+        "rotationDegrees": 0.0
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 8,
+      "graphTranslationMseUpperLower": [
+        0.007185889057898044,
+        0.002275924128222707,
+        0.012785051889089278
+      ],
+      "translationOnlyMseUpperLower": [
+        0.005819128820840175,
+        0.0016262955365394889,
+        0.010542947332854364
+      ],
+      "headSimilarityMseUpperLower": [
+        0.005774114012429485,
+        0.0016827743158233266,
+        0.010384617858869084
+      ],
+      "headSimilarityParameters": {
+        "dx": -2.7159237909547094,
+        "dy": 3.520195509520636,
+        "scale": 0.9962500000000001,
+        "rotationDegrees": 0.25
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 16,
+      "graphTranslationMseUpperLower": [
+        0.007947863378152809,
+        0.0016971847914253482,
+        0.014968651117246422
+      ],
+      "translationOnlyMseUpperLower": [
+        0.006705306394353634,
+        0.0016528963603694572,
+        0.012366256396176983
+      ],
+      "headSimilarityMseUpperLower": [
+        0.006586009631394143,
+        0.001565796010607879,
+        0.012225263574743916
+      ],
+      "headSimilarityParameters": {
+        "dx": -2.5125566370565635,
+        "dy": 4.540239512031739,
+        "scale": 1.0068749999999997,
+        "rotationDegrees": 0.6875
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 24,
+      "graphTranslationMseUpperLower": [
+        0.00857226119662946,
+        0.0023510670251377253,
+        0.015558248079282971
+      ],
+      "translationOnlyMseUpperLower": [
+        0.007085842321857113,
+        0.0037261806070118214,
+        0.010898878902966798
+      ],
+      "headSimilarityMseUpperLower": [
+        0.004701491488355259,
+        0.0010949059897070517,
+        0.008754206903530806
+      ],
+      "headSimilarityParameters": {
+        "dx": -2.6215741928908582,
+        "dy": 6.257157544531475,
+        "scale": 1.055,
+        "rotationDegrees": -0.4375
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 25,
+      "graphTranslationMseUpperLower": [
+        0.010888253510437285,
+        0.003282744888498558,
+        0.019442633356391268
+      ],
+      "translationOnlyMseUpperLower": [
+        0.007727532325925155,
+        0.007622484861623019,
+        0.008021983210276936
+      ],
+      "headSimilarityMseUpperLower": [
+        0.004282352072004255,
+        0.0016461361527652647,
+        0.007233711815322979
+      ],
+      "headSimilarityParameters": {
+        "dx": -4.162434303741589,
+        "dy": 6.459490735113806,
+        "scale": 1.0706250000000002,
+        "rotationDegrees": -1.25
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 26,
+      "graphTranslationMseUpperLower": [
+        0.01136207188338233,
+        0.0032353622855587124,
+        0.02046524591696565
+      ],
+      "translationOnlyMseUpperLower": [
+        0.007926120826360735,
+        0.007156347990841264,
+        0.008952867049988112
+      ],
+      "headSimilarityMseUpperLower": [
+        0.004374158692479621,
+        0.0020391863162616108,
+        0.00699113414865717
+      ],
+      "headSimilarityParameters": {
+        "dx": -3.8657287183339744,
+        "dy": 6.715064660810047,
+        "scale": 1.069375,
+        "rotationDegrees": -2.0
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 27,
+      "graphTranslationMseUpperLower": [
+        0.01092667555938356,
+        0.0029097848444176824,
+        0.019920349192635023
+      ],
+      "translationOnlyMseUpperLower": [
+        0.007411802924386485,
+        0.00649250150783241,
+        0.008609444812736164
+      ],
+      "headSimilarityMseUpperLower": [
+        0.004740095618212302,
+        0.001775855115595464,
+        0.00808611739937982
+      ],
+      "headSimilarityParameters": {
+        "dx": -3.8410018512603834,
+        "dy": 7.279453247316405,
+        "scale": 1.061875,
+        "rotationDegrees": -1.3125
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 28,
+      "graphTranslationMseUpperLower": [
+        0.011898844285277035,
+        0.003200685359550976,
+        0.021683373661934954
+      ],
+      "translationOnlyMseUpperLower": [
+        0.008168974609767952,
+        0.007241040520027879,
+        0.009413562113096118
+      ],
+      "headSimilarityMseUpperLower": [
+        0.005581301802066547,
+        0.0024937490812838516,
+        0.009091545603293623
+      ],
+      "headSimilarityParameters": {
+        "dx": -3.7510268354471306,
+        "dy": 7.217045081139097,
+        "scale": 1.0643749999999998,
+        "rotationDegrees": -1.75
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 29,
+      "graphTranslationMseUpperLower": [
+        0.015351346800757766,
+        0.004429817940993572,
+        0.02759583187827697
+      ],
+      "translationOnlyMseUpperLower": [
+        0.009186224686928042,
+        0.00895684582244471,
+        0.009759773999811283
+      ],
+      "headSimilarityMseUpperLower": [
+        0.0058077085277072355,
+        0.0030612661370042578,
+        0.008956924915391816
+      ],
+      "headSimilarityParameters": {
+        "dx": -4.1308286550809346,
+        "dy": 7.434181996100778,
+        "scale": 1.0706250000000002,
+        "rotationDegrees": -2.875
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 30,
+      "graphTranslationMseUpperLower": [
+        0.01565492758080701,
+        0.003904328333915881,
+        0.028859097206882577
+      ],
+      "translationOnlyMseUpperLower": [
+        0.008572952002421953,
+        0.011107807134919717,
+        0.006049908115174221
+      ],
+      "headSimilarityMseUpperLower": [
+        0.00429195219453728,
+        0.003236514281504857,
+        0.005516376952128233
+      ],
+      "headSimilarityParameters": {
+        "dx": -4.297709129795621,
+        "dy": 7.116750907163144,
+        "scale": 1.0781250000000002,
+        "rotationDegrees": -3.875
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 31,
+      "graphTranslationMseUpperLower": [
+        0.01518084903498478,
+        0.0038734066279058495,
+        0.027848734472263954
+      ],
+      "translationOnlyMseUpperLower": [
+        0.008967396127936197,
+        0.011178146088476552,
+        0.0068352681538136235
+      ],
+      "headSimilarityMseUpperLower": [
+        0.0039273801938355815,
+        0.001650261230926693,
+        0.006478197801872836
+      ],
+      "headSimilarityParameters": {
+        "dx": -5.074798734305958,
+        "dy": 7.041070725388685,
+        "scale": 1.0700000000000005,
+        "rotationDegrees": -3.3125
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 32,
+      "graphTranslationMseUpperLower": [
+        0.009199227293122373,
+        0.0037469294978650708,
+        0.015328396599901515
+      ],
+      "translationOnlyMseUpperLower": [
+        0.006391072192515053,
+        0.006183595528046701,
+        0.006808305746541317
+      ],
+      "headSimilarityMseUpperLower": [
+        0.0046323791353536335,
+        0.002134302661841627,
+        0.007467067628098072
+      ],
+      "headSimilarityParameters": {
+        "dx": -2.864187073122304,
+        "dy": 9.287711269002985,
+        "scale": 1.0593750000000004,
+        "rotationDegrees": -0.9375
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 40,
+      "graphTranslationMseUpperLower": [
+        0.004037110626114173,
+        0.0016289002158506023,
+        0.006737180013733878
+      ],
+      "translationOnlyMseUpperLower": [
+        0.003733907893518223,
+        0.0016702140354769612,
+        0.0060405373625594
+      ],
+      "headSimilarityMseUpperLower": [
+        0.0037169808610426464,
+        0.0016738640774878277,
+        0.005994033113382651
+      ],
+      "headSimilarityParameters": {
+        "dx": -1.6080461880712398,
+        "dy": -0.4033868548848417,
+        "scale": 0.9968750000000001,
+        "rotationDegrees": -0.1875
+      },
+      "notWholeActorEvidence": true
+    },
+    {
+      "phase": 47,
+      "graphTranslationMseUpperLower": [
+        0.004931140682859045,
+        0.002088177613640824,
+        0.008142869632673208
+      ],
+      "translationOnlyMseUpperLower": [
+        0.0036637751949138648,
+        0.0029412930813934694,
+        0.0045116286173664385
+      ],
+      "headSimilarityMseUpperLower": [
+        0.0033638111743732125,
+        0.0023107643902947725,
+        0.004555274219636696
+      ],
+      "headSimilarityParameters": {
+        "dx": -4.971424058954511,
+        "dy": -1.0959317495996377,
+        "scale": 1.0087499999999998,
+        "rotationDegrees": -1.3125
+      },
+      "notWholeActorEvidence": true
+    }
+  ]
+}

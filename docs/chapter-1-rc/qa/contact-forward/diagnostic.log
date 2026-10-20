@@ -1,0 +1,31 @@
+{
+  "sensitivity": [
+    [
+      0.0105,
+      1.264955336510615,
+      {
+        "forwardRmsMps": 0.011186781228505716,
+        "full3dRmsMps": 0.05762108547517232
+      },
+      0.4125,
+      0.0
+    ],
+    [
+      0.0245,
+      1.3061706466958154,
+      {
+        "forwardRmsMps": 0.03403490113411743,
+        "full3dRmsMps": 0.09075277846588113
+      },
+      0.022916666666666665,
+      0.0
+    ]
+  ],
+  "drift": {
+    "count": 222,
+    "curveForwardSpanMedianM": 0.0013376458949336811,
+    "curveForwardSpanMaxM": 0.004875090123429127,
+    "sameStrideUniformSpanMedianM": 0.01761976598004858,
+    "sameStrideUniformSpanMaxM": 0.02118068495742681
+  }
+}

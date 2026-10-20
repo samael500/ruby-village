@@ -1,0 +1,1563 @@
+{
+  "scope": "diagnostic translation-only image registration, NOT exact semantic correspondence or physical pivot; no raster/metadata changes",
+  "templatePhase": 0,
+  "upperWindow": [
+    55,
+    25,
+    102,
+    49
+  ],
+  "heldOutLowerWindow": [
+    55,
+    50,
+    102,
+    72
+  ],
+  "subpixelSearchResolutionRawPx": 0.03125,
+  "precisionIsNotAccuracy": true,
+  "graph": "unit weighted common-template edges + cyclic neighbour edges; fixed gauge phase0=0; lower patch held out",
+  "rows": [
+    {
+      "phase": 0,
+      "upperToTemplate0": {
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "rgbRms": 0.0
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          0.0,
+          0.0
+        ],
+        "rgbRms": 0.0
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.3125,
+          0.25
+        ],
+        "rgbRms": 0.025547302756313298
+      },
+      "cyclicGraphShift": [
+        0.0,
+        0.0
+      ],
+      "heldOutLowerMinusGraph": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "phase": 1,
+      "upperToTemplate0": {
+        "shift": [
+          -0.3125,
+          0.25
+        ],
+        "rgbRms": 0.025547302756313298
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -0.03125,
+          0.28125
+        ],
+        "rgbRms": 0.040583070457249334
+      },
+      "upperNextPair": {
+        "shift": [
+          0.15625,
+          -0.0625
+        ],
+        "rgbRms": 0.02550414969174191
+      },
+      "cyclicGraphShift": [
+        -0.3358317363636765,
+        0.2718353044676041
+      ],
+      "heldOutLowerMinusGraph": [
+        0.3045817363636765,
+        0.009414695532395878
+      ]
+    },
+    {
+      "phase": 2,
+      "upperToTemplate0": {
+        "shift": [
+          -0.21875,
+          0.25
+        ],
+        "rgbRms": 0.03368598891410349
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          0.625,
+          0.3125
+        ],
+        "rgbRms": 0.0570777378851718
+      },
+      "upperNextPair": {
+        "shift": [
+          0.21875,
+          -0.03125
+        ],
+        "rgbRms": 0.023776294409213715
+      },
+      "cyclicGraphShift": [
+        -0.22624520909104515,
+        0.2530059134028054
+      ],
+      "heldOutLowerMinusGraph": [
+        0.8512452090910452,
+        0.05949408659719457
+      ]
+    },
+    {
+      "phase": 3,
+      "upperToTemplate0": {
+        "shift": [
+          -0.15625,
+          0.3125
+        ],
+        "rgbRms": 0.03444488998616336
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          0.78125,
+          0.28125
+        ],
+        "rgbRms": 0.060864643496657184
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.71875,
+          -0.0625
+        ],
+        "rgbRms": 0.026957832145785572
+      },
+      "cyclicGraphShift": [
+        -0.06165389090945795,
+        0.2684324357407953
+      ],
+      "heldOutLowerMinusGraph": [
+        0.8429038909094579,
+        0.012817564259204717
+      ]
+    },
+    {
+      "phase": 4,
+      "upperToTemplate0": {
+        "shift": [
+          -0.75,
+          0.25
+        ],
+        "rgbRms": 0.03169414595875322
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -0.28125,
+          0.25
+        ],
+        "rgbRms": 0.05197223910204033
+      },
+      "upperNextPair": {
+        "shift": [
+          -3.28125,
+          0.4375
+        ],
+        "rgbRms": 0.03649108660573279
+      },
+      "cyclicGraphShift": [
+        -0.7399664636373428,
+        0.2085413938195875
+      ],
+      "heldOutLowerMinusGraph": [
+        0.45871646363734275,
+        0.0414586061804125
+      ]
+    },
+    {
+      "phase": 5,
+      "upperToTemplate0": {
+        "shift": [
+          -3.75,
+          0.5625
+        ],
+        "rgbRms": 0.05037961413740046
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.28125,
+          0.4375
+        ],
+        "rgbRms": 0.06673696889331975
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.59375,
+          1.0
+        ],
+        "rgbRms": 0.026327592227583366
+      },
+      "cyclicGraphShift": [
+        -3.970745500002557,
+        0.6071917457179693
+      ],
+      "heldOutLowerMinusGraph": [
+        1.689495500002557,
+        -0.1696917457179693
+      ]
+    },
+    {
+      "phase": 6,
+      "upperToTemplate0": {
+        "shift": [
+          -4.46875,
+          1.625
+        ],
+        "rgbRms": 0.05356129496184297
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.28125,
+          0.8125
+        ],
+        "rgbRms": 0.06797324745729336
+      },
+      "upperNextPair": {
+        "shift": [
+          0.1875,
+          -0.21875
+        ],
+        "rgbRms": 0.030110942547337764
+      },
+      "cyclicGraphShift": [
+        -4.734770036370303,
+        1.6130338433343252
+      ],
+      "heldOutLowerMinusGraph": [
+        1.4535200363703034,
+        -0.8005338433343252
+      ]
+    },
+    {
+      "phase": 7,
+      "upperToTemplate0": {
+        "shift": [
+          -4.5625,
+          1.46875
+        ],
+        "rgbRms": 0.04745926087256008
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -4.25,
+          1.15625
+        ],
+        "rgbRms": 0.07558886005275112
+      },
+      "upperNextPair": {
+        "shift": [
+          3.625,
+          2.53125
+        ],
+        "rgbRms": 0.06132184483556515
+      },
+      "cyclicGraphShift": [
+        -4.983564609108342,
+        1.388159784284992
+      ],
+      "heldOutLowerMinusGraph": [
+        0.7335646091083419,
+        -0.23190978428499198
+      ]
+    },
+    {
+      "phase": 8,
+      "upperToTemplate0": {
+        "shift": [
+          -2.78125,
+          3.75
+        ],
+        "rgbRms": 0.03904907159829597
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.4375,
+          3.40625
+        ],
+        "rgbRms": 0.09994481534004877
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.15625,
+          -0.1875
+        ],
+        "rgbRms": 0.028289205282428995
+      },
+      "cyclicGraphShift": [
+        -2.2159237909547094,
+        3.832695509520636
+      ],
+      "heldOutLowerMinusGraph": [
+        -1.2215762090452906,
+        -0.4264455095206361
+      ]
+    },
+    {
+      "phase": 9,
+      "upperToTemplate0": {
+        "shift": [
+          -2.8125,
+          3.625
+        ],
+        "rgbRms": 0.03665643733325161
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.53125,
+          3.25
+        ],
+        "rgbRms": 0.08953467657958926
+      },
+      "upperNextPair": {
+        "shift": [
+          0.3125,
+          0.25
+        ],
+        "rgbRms": 0.025546839951701192
+      },
+      "cyclicGraphShift": [
+        -2.6642067637558022,
+        3.6411767442769123
+      ],
+      "heldOutLowerMinusGraph": [
+        0.13295676375580223,
+        -0.3911767442769123
+      ]
+    },
+    {
+      "phase": 10,
+      "upperToTemplate0": {
+        "shift": [
+          -2.625,
+          3.875
+        ],
+        "rgbRms": 0.043858818456455305
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.5,
+          3.5
+        ],
+        "rgbRms": 0.0885714472740758
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.59375,
+          -0.5625
+        ],
+        "rgbRms": 0.036241260787411946
+      },
+      "cyclicGraphShift": [
+        -2.4954465003127146,
+        3.903334723310097
+      ],
+      "heldOutLowerMinusGraph": [
+        -0.004553499687285356,
+        -0.4033347233100968
+      ]
+    },
+    {
+      "phase": 11,
+      "upperToTemplate0": {
+        "shift": [
+          -3.21875,
+          3.4375
+        ],
+        "rgbRms": 0.04356378249629458
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.4375,
+          2.59375
+        ],
+        "rgbRms": 0.09631021904973035
+      },
+      "upperNextPair": {
+        "shift": [
+          -1.375,
+          0.03125
+        ],
+        "rgbRms": 0.030193499815030656
+      },
+      "cyclicGraphShift": [
+        -3.1033827371823395,
+        3.381327425653381
+      ],
+      "heldOutLowerMinusGraph": [
+        -0.3341172628176605,
+        -0.7875774256533812
+      ]
+    },
+    {
+      "phase": 12,
+      "upperToTemplate0": {
+        "shift": [
+          -4.375,
+          3.40625
+        ],
+        "rgbRms": 0.04439658277401587
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.5,
+          2.5625
+        ],
+        "rgbRms": 0.08699011827678665
+      },
+      "upperNextPair": {
+        "shift": [
+          -1.09375,
+          -0.03125
+        ],
+        "rgbRms": 0.02712784826239876
+      },
+      "cyclicGraphShift": [
+        -4.377201711234295,
+        3.3968975536500534
+      ],
+      "heldOutLowerMinusGraph": [
+        0.8772017112342949,
+        -0.8343975536500534
+      ]
+    },
+    {
+      "phase": 13,
+      "upperToTemplate0": {
+        "shift": [
+          -5.3125,
+          3.375
+        ],
+        "rgbRms": 0.04534061345119871
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -4.625,
+          2.46875
+        ],
+        "rgbRms": 0.09420263302589417
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.5,
+          -0.03125
+        ],
+        "rgbRms": 0.03030620350893448
+      },
+      "cyclicGraphShift": [
+        -5.371972396520523,
+        3.340615235296774
+      ],
+      "heldOutLowerMinusGraph": [
+        0.7469723965205226,
+        -0.8718652352967742
+      ]
+    },
+    {
+      "phase": 14,
+      "upperToTemplate0": {
+        "shift": [
+          -5.625,
+          3.25
+        ],
+        "rgbRms": 0.04341738825298521
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -5.5625,
+          2.65625
+        ],
+        "rgbRms": 0.0951532569936616
+      },
+      "upperNextPair": {
+        "shift": [
+          1.21875,
+          0.625
+        ],
+        "rgbRms": 0.034191606253107645
+      },
+      "cyclicGraphShift": [
+        -5.8324654783272685,
+        3.2499481522402665
+      ],
+      "heldOutLowerMinusGraph": [
+        0.26996547832726847,
+        -0.5936981522402665
+      ]
+    },
+    {
+      "phase": 15,
+      "upperToTemplate0": {
+        "shift": [
+          -4.4375,
+          3.71875
+        ],
+        "rgbRms": 0.042062291407180104
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -4.5,
+          3.25
+        ],
+        "rgbRms": 0.09255911269037585
+      },
+      "upperNextPair": {
+        "shift": [
+          3.25,
+          0.40625
+        ],
+        "rgbRms": 0.044497872589326574
+      },
+      "cyclicGraphShift": [
+        -4.781674038461274,
+        3.8154792214240008
+      ],
+      "heldOutLowerMinusGraph": [
+        0.2816740384612739,
+        -0.5654792214240008
+      ]
+    },
+    {
+      "phase": 16,
+      "upperToTemplate0": {
+        "shift": [
+          -2.40625,
+          4.3125
+        ],
+        "rgbRms": 0.03822045132684794
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.46875,
+          4.75
+        ],
+        "rgbRms": 0.1094787379170326
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.125,
+          0.09375
+        ],
+        "rgbRms": 0.028771181838741073
+      },
+      "cyclicGraphShift": [
+        -2.0438066370565635,
+        4.258989512031739
+      ],
+      "heldOutLowerMinusGraph": [
+        -1.4249433629434365,
+        0.49101048796826063
+      ]
+    },
+    {
+      "phase": 17,
+      "upperToTemplate0": {
+        "shift": [
+          -2.5,
+          4.34375
+        ],
+        "rgbRms": 0.044105618444569825
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.53125,
+          4.71875
+        ],
+        "rgbRms": 0.10938105751095628
+      },
+      "upperNextPair": {
+        "shift": [
+          0.0625,
+          0.03125
+        ],
+        "rgbRms": 0.02589467619990254
+      },
+      "cyclicGraphShift": [
+        -2.3184958727084264,
+        4.336489314671222
+      ],
+      "heldOutLowerMinusGraph": [
+        -1.2127541272915736,
+        0.3822606853287782
+      ]
+    },
+    {
+      "phase": 18,
+      "upperToTemplate0": {
+        "shift": [
+          -2.21875,
+          4.3125
+        ],
+        "rgbRms": 0.041274656584731714
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.59375,
+          4.59375
+        ],
+        "rgbRms": 0.10354951772524526
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.53125,
+          0.0625
+        ],
+        "rgbRms": 0.027152336006964893
+      },
+      "cyclicGraphShift": [
+        -2.224180981068721,
+        4.344228431981937
+      ],
+      "heldOutLowerMinusGraph": [
+        -0.369569018931279,
+        0.24952156801806336
+      ]
+    },
+    {
+      "phase": 19,
+      "upperToTemplate0": {
+        "shift": [
+          -2.71875,
+          4.4375
+        ],
+        "rgbRms": 0.03741854394687316
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.40625,
+          4.5
+        ],
+        "rgbRms": 0.10865762142729789
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.125,
+          0.03125
+        ],
+        "rgbRms": 0.022390894833815924
+      },
+      "cyclicGraphShift": [
+        -2.7290470704977188,
+        4.4149459812745775
+      ],
+      "heldOutLowerMinusGraph": [
+        -0.6772029295022812,
+        0.08505401872542251
+      ]
+    },
+    {
+      "phase": 20,
+      "upperToTemplate0": {
+        "shift": [
+          -2.8125,
+          4.40625
+        ],
+        "rgbRms": 0.0415033708024775
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.375,
+          4.4375
+        ],
+        "rgbRms": 0.11071700872256048
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.375,
+          -0.03125
+        ],
+        "rgbRms": 0.023746700050593473
+      },
+      "cyclicGraphShift": [
+        -2.83796023042442,
+        4.4318595118417745
+      ],
+      "heldOutLowerMinusGraph": [
+        -0.5370397695755802,
+        0.005640488158225487
+      ]
+    },
+    {
+      "phase": 21,
+      "upperToTemplate0": {
+        "shift": [
+          -3.1875,
+          4.40625
+        ],
+        "rgbRms": 0.04019592140151194
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.4375,
+          4.4375
+        ],
+        "rgbRms": 0.10875290359558108
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.78125,
+          -0.1875
+        ],
+        "rgbRms": 0.028301589695593304
+      },
+      "cyclicGraphShift": [
+        -3.22233362077553,
+        4.411882554250747
+      ],
+      "heldOutLowerMinusGraph": [
+        -0.21516637922447002,
+        0.025617445749253065
+      ]
+    },
+    {
+      "phase": 22,
+      "upperToTemplate0": {
+        "shift": [
+          -3.78125,
+          4.21875
+        ],
+        "rgbRms": 0.04091087974135231
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.65625,
+          4.375
+        ],
+        "rgbRms": 0.10153313522167919
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.625,
+          0.40625
+        ],
+        "rgbRms": 0.02477386545911522
+      },
+      "cyclicGraphShift": [
+        -4.047790631902174,
+        4.241288150910457
+      ],
+      "heldOutLowerMinusGraph": [
+        0.39154063190217414,
+        0.1337118490895426
+      ]
+    },
+    {
+      "phase": 23,
+      "upperToTemplate0": {
+        "shift": [
+          -4.46875,
+          4.5625
+        ],
+        "rgbRms": 0.042779067347508436
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -5.40625,
+          4.6875
+        ],
+        "rgbRms": 0.10958419588142504
+      },
+      "upperNextPair": {
+        "shift": [
+          2.4375,
+          0.75
+        ],
+        "rgbRms": 0.04562272278046574
+      },
+      "cyclicGraphShift": [
+        -4.983538274931006,
+        4.686981898480641
+      ],
+      "heldOutLowerMinusGraph": [
+        -0.4227117250689938,
+        0.0005181015193587157
+      ]
+    },
+    {
+      "phase": 24,
+      "upperToTemplate0": {
+        "shift": [
+          -3.65625,
+          5.59375
+        ],
+        "rgbRms": 0.04685065292807594
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.375,
+          6.84375
+        ],
+        "rgbRms": 0.09225885274229013
+      },
+      "upperNextPair": {
+        "shift": [
+          -1.84375,
+          0.40625
+        ],
+        "rgbRms": 0.026962785788031147
+      },
+      "cyclicGraphShift": [
+        -3.3715741928908582,
+        5.600907544531475
+      ],
+      "heldOutLowerMinusGraph": [
+        0.9965741928908582,
+        1.2428424554685247
+      ]
+    },
+    {
+      "phase": 25,
+      "upperToTemplate0": {
+        "shift": [
+          -6.34375,
+          6.34375
+        ],
+        "rgbRms": 0.056354115259009664
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.46875,
+          7.34375
+        ],
+        "rgbRms": 0.08176579620930444
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.09375,
+          0.25
+        ],
+        "rgbRms": 0.026202409094159673
+      },
+      "cyclicGraphShift": [
+        -5.756184303741589,
+        6.178240735113806
+      ],
+      "heldOutLowerMinusGraph": [
+        2.2874343037415894,
+        1.165509264886194
+      ]
+    },
+    {
+      "phase": 26,
+      "upperToTemplate0": {
+        "shift": [
+          -5.65625,
+          6.40625
+        ],
+        "rgbRms": 0.0566217284249267
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.625,
+          7.40625
+        ],
+        "rgbRms": 0.08063718025551717
+      },
+      "upperNextPair": {
+        "shift": [
+          0.28125,
+          0.78125
+        ],
+        "rgbRms": 0.03095229013331592
+      },
+      "cyclicGraphShift": [
+        -5.803228718333974,
+        6.433814660810047
+      ],
+      "heldOutLowerMinusGraph": [
+        3.1782287183339744,
+        0.9724353391899534
+      ]
+    },
+    {
+      "phase": 27,
+      "upperToTemplate0": {
+        "shift": [
+          -5.625,
+          7.25
+        ],
+        "rgbRms": 0.0539436101263954
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.625,
+          7.75
+        ],
+        "rgbRms": 0.0856647657125159
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.46875,
+          0.09375
+        ],
+        "rgbRms": 0.028615865520341302
+      },
+      "cyclicGraphShift": [
+        -5.622251851260383,
+        7.248203247316405
+      ],
+      "heldOutLowerMinusGraph": [
+        2.9972518512603834,
+        0.5017967526835951
+      ]
+    },
+    {
+      "phase": 28,
+      "upperToTemplate0": {
+        "shift": [
+          -6.40625,
+          7.40625
+        ],
+        "rgbRms": 0.055926914628537744
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.5625,
+          7.65625
+        ],
+        "rgbRms": 0.08974709657629078
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.84375,
+          0.1875
+        ],
+        "rgbRms": 0.025486028242680467
+      },
+      "cyclicGraphShift": [
+        -6.188526835447131,
+        7.373295081139097
+      ],
+      "heldOutLowerMinusGraph": [
+        3.6260268354471306,
+        0.28295491886090307
+      ]
+    },
+    {
+      "phase": 29,
+      "upperToTemplate0": {
+        "shift": [
+          -6.65625,
+          7.5
+        ],
+        "rgbRms": 0.06565040694931983
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.5,
+          7.75
+        ],
+        "rgbRms": 0.09046767907691013
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.1875,
+          -0.3125
+        ],
+        "rgbRms": 0.02347252248652516
+      },
+      "cyclicGraphShift": [
+        -6.9120786550809346,
+        7.559181996100778
+      ],
+      "heldOutLowerMinusGraph": [
+        4.4120786550809346,
+        0.19081800389922243
+      ]
+    },
+    {
+      "phase": 30,
+      "upperToTemplate0": {
+        "shift": [
+          -7.4375,
+          7.40625
+        ],
+        "rgbRms": 0.061787863611671705
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.40625,
+          7.5
+        ],
+        "rgbRms": 0.07596981567530944
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.46875,
+          -0.71875
+        ],
+        "rgbRms": 0.0352485836806599
+      },
+      "cyclicGraphShift": [
+        -7.235209129795621,
+        7.304250907163144
+      ],
+      "heldOutLowerMinusGraph": [
+        4.828959129795621,
+        0.1957490928368557
+      ]
+    },
+    {
+      "phase": 31,
+      "upperToTemplate0": {
+        "shift": [
+          -7.34375,
+          6.53125
+        ],
+        "rgbRms": 0.06104137589091808
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.46875,
+          7.53125
+        ],
+        "rgbRms": 0.08027418826843742
+      },
+      "upperNextPair": {
+        "shift": [
+          3.34375,
+          2.71875
+        ],
+        "rgbRms": 0.039477857419798465
+      },
+      "cyclicGraphShift": [
+        -7.637298734305958,
+        6.541070725388685
+      ],
+      "heldOutLowerMinusGraph": [
+        4.168548734305958,
+        0.9901792746113154
+      ]
+    },
+    {
+      "phase": 32,
+      "upperToTemplate0": {
+        "shift": [
+          -4.59375,
+          9.3125
+        ],
+        "rgbRms": 0.06107775509487232
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.21875,
+          9.65625
+        ],
+        "rgbRms": 0.07972929506943054
+      },
+      "upperNextPair": {
+        "shift": [
+          0.15625,
+          0.34375
+        ],
+        "rgbRms": 0.025788611864599287
+      },
+      "cyclicGraphShift": [
+        -4.520437073122304,
+        9.225211269002985
+      ],
+      "heldOutLowerMinusGraph": [
+        2.301687073122304,
+        0.43103873099701495
+      ]
+    },
+    {
+      "phase": 33,
+      "upperToTemplate0": {
+        "shift": [
+          -4.65625,
+          9.4375
+        ],
+        "rgbRms": 0.05556544412172909
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.5,
+          9.34375
+        ],
+        "rgbRms": 0.0975654718825385
+      },
+      "upperNextPair": {
+        "shift": [
+          0.28125,
+          0.40625
+        ],
+        "rgbRms": 0.029650223710807087
+      },
+      "cyclicGraphShift": [
+        -4.517762485060997,
+        9.447063081620337
+      ],
+      "heldOutLowerMinusGraph": [
+        1.017762485060997,
+        -0.10331308162033714
+      ]
+    },
+    {
+      "phase": 34,
+      "upperToTemplate0": {
+        "shift": [
+          -4.4375,
+          9.65625
+        ],
+        "rgbRms": 0.058827061660112784
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.4375,
+          9.71875
+        ],
+        "rgbRms": 0.08880780112469498
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.5625,
+          -0.1875
+        ],
+        "rgbRms": 0.02950058813119357
+      },
+      "cyclicGraphShift": [
+        -4.2516003820606585,
+        9.74097797585799
+      ],
+      "heldOutLowerMinusGraph": [
+        1.8141003820606585,
+        -0.022227975857990856
+      ]
+    },
+    {
+      "phase": 35,
+      "upperToTemplate0": {
+        "shift": [
+          -4.625,
+          9.53125
+        ],
+        "rgbRms": 0.050566988752518735
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.375,
+          8.75
+        ],
+        "rgbRms": 0.09750946930824742
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.25,
+          0.09375
+        ],
+        "rgbRms": 0.026805940487540796
+      },
+      "cyclicGraphShift": [
+        -4.643288661120908,
+        9.52587084595354
+      ],
+      "heldOutLowerMinusGraph": [
+        1.2682886611209083,
+        -0.7758708459535395
+      ]
+    },
+    {
+      "phase": 36,
+      "upperToTemplate0": {
+        "shift": [
+          -4.75,
+          9.59375
+        ],
+        "rgbRms": 0.05559133718203589
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.5625,
+          9.875
+        ],
+        "rgbRms": 0.08791308373211751
+      },
+      "upperNextPair": {
+        "shift": [
+          0.75,
+          -0.125
+        ],
+        "rgbRms": 0.028360002749109988
+      },
+      "cyclicGraphShift": [
+        -4.74076560130199,
+        9.586634562002516
+      ],
+      "heldOutLowerMinusGraph": [
+        2.17826560130199,
+        0.28836543799748426
+      ]
+    },
+    {
+      "phase": 37,
+      "upperToTemplate0": {
+        "shift": [
+          -3.78125,
+          9.4375
+        ],
+        "rgbRms": 0.04769177703175955
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.5,
+          9.78125
+        ],
+        "rgbRms": 0.08253179117924726
+      },
+      "upperNextPair": {
+        "shift": [
+          1.21875,
+          -0.21875
+        ],
+        "rgbRms": 0.03325399912915387
+      },
+      "cyclicGraphShift": [
+        -3.8290081427850713,
+        9.421532840054011
+      ],
+      "heldOutLowerMinusGraph": [
+        1.3290081427850713,
+        0.35971715994598874
+      ]
+    },
+    {
+      "phase": 38,
+      "upperToTemplate0": {
+        "shift": [
+          -2.46875,
+          9.1875
+        ],
+        "rgbRms": 0.043619023269393424
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -1.3125,
+          9.25
+        ],
+        "rgbRms": 0.07263617678532225
+      },
+      "upperNextPair": {
+        "shift": [
+          -3.3125,
+          -0.5
+        ],
+        "rgbRms": 0.030987020346095278
+      },
+      "cyclicGraphShift": [
+        -2.4962588270532886,
+        9.146713958159626
+      ],
+      "heldOutLowerMinusGraph": [
+        1.1837588270532886,
+        0.1032860418403736
+      ]
+    },
+    {
+      "phase": 39,
+      "upperToTemplate0": {
+        "shift": [
+          -5.5,
+          8.59375
+        ],
+        "rgbRms": 0.04511283545810669
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.46875,
+          8.8125
+        ],
+        "rgbRms": 0.0673728819310603
+      },
+      "upperNextPair": {
+        "shift": [
+          4.21875,
+          -8.53125
+        ],
+        "rgbRms": 0.034663985485549435
+      },
+      "cyclicGraphShift": [
+        -5.722268338374846,
+        8.54985903442493
+      ],
+      "heldOutLowerMinusGraph": [
+        2.253518338374846,
+        0.2626409655750699
+      ]
+    },
+    {
+      "phase": 40,
+      "upperToTemplate0": {
+        "shift": [
+          -1.71875,
+          -0.21875
+        ],
+        "rgbRms": 0.03974438718633265
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -1.53125,
+          -0.5
+        ],
+        "rgbRms": 0.07753570475070339
+      },
+      "upperNextPair": {
+        "shift": [
+          0.3125,
+          -0.34375
+        ],
+        "rgbRms": 0.029970276438501867
+      },
+      "cyclicGraphShift": [
+        -1.6392961880712398,
+        -0.12213685488484168
+      ],
+      "heldOutLowerMinusGraph": [
+        0.10804618807123978,
+        -0.37786314511515834
+      ]
+    },
+    {
+      "phase": 41,
+      "upperToTemplate0": {
+        "shift": [
+          -1.46875,
+          -0.53125
+        ],
+        "rgbRms": 0.0403640936529934
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -0.5625,
+          -0.75
+        ],
+        "rgbRms": 0.07783597099427891
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.40625,
+          0.0
+        ],
+        "rgbRms": 0.026186431708130602
+      },
+      "cyclicGraphShift": [
+        -1.3831202258387818,
+        -0.5100195990795888
+      ],
+      "heldOutLowerMinusGraph": [
+        0.8206202258387818,
+        -0.23998040092041117
+      ]
+    },
+    {
+      "phase": 42,
+      "upperToTemplate0": {
+        "shift": [
+          -1.78125,
+          -0.5625
+        ],
+        "rgbRms": 0.03930997054252912
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -1.375,
+          -0.875
+        ],
+        "rgbRms": 0.08161516460596847
+      },
+      "upperNextPair": {
+        "shift": [
+          -1.0625,
+          -0.28125
+        ],
+        "rgbRms": 0.02989891053628993
+      },
+      "cyclicGraphShift": [
+        -1.7600644894450357,
+        -0.5329219423540301
+      ],
+      "heldOutLowerMinusGraph": [
+        0.3850644894450357,
+        -0.3420780576459699
+      ]
+    },
+    {
+      "phase": 43,
+      "upperToTemplate0": {
+        "shift": [
+          -2.625,
+          -0.8125
+        ],
+        "rgbRms": 0.0359366499988986
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -2.59375,
+          -1.15625
+        ],
+        "rgbRms": 0.07446341346070287
+      },
+      "upperNextPair": {
+        "shift": [
+          -1.1875,
+          0.09375
+        ],
+        "rgbRms": 0.026254662552713012
+      },
+      "cyclicGraphShift": [
+        -2.772073242496334,
+        -0.8074962279824908
+      ],
+      "heldOutLowerMinusGraph": [
+        0.1783232424963339,
+        -0.34875377201750923
+      ]
+    },
+    {
+      "phase": 44,
+      "upperToTemplate0": {
+        "shift": [
+          -4.125,
+          -0.65625
+        ],
+        "rgbRms": 0.03950169316019877
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -3.46875,
+          -1.21875
+        ],
+        "rgbRms": 0.07990691189744475
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.65625,
+          0.15625
+        ],
+        "rgbRms": 0.023820081374785335
+      },
+      "cyclicGraphShift": [
+        -4.056155238044038,
+        -0.7020667415933292
+      ],
+      "heldOutLowerMinusGraph": [
+        0.5874052380440382,
+        -0.5166832584066708
+      ]
+    },
+    {
+      "phase": 45,
+      "upperToTemplate0": {
+        "shift": [
+          -4.8125,
+          -0.59375
+        ],
+        "rgbRms": 0.04254816676272052
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -4.28125,
+          -1.3125
+        ],
+        "rgbRms": 0.08532083910473924
+      },
+      "upperNextPair": {
+        "shift": [
+          -0.84375,
+          0.0
+        ],
+        "rgbRms": 0.02817479403805643
+      },
+      "cyclicGraphShift": [
+        -4.740142471635838,
+        -0.5799539967974369
+      ],
+      "heldOutLowerMinusGraph": [
+        0.4588924716358376,
+        -0.7325460032025631
+      ]
+    },
+    {
+      "phase": 46,
+      "upperToTemplate0": {
+        "shift": [
+          -5.71875,
+          -0.625
+        ],
+        "rgbRms": 0.044342495706097766
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -4.625,
+          -1.21875
+        ],
+        "rgbRms": 0.07968694462452111
+      },
+      "upperNextPair": {
+        "shift": [
+          0.09375,
+          -0.03125
+        ],
+        "rgbRms": 0.023641972588887603
+      },
+      "cyclicGraphShift": [
+        -5.539272176863472,
+        -0.6002952487989884
+      ],
+      "heldOutLowerMinusGraph": [
+        0.9142721768634718,
+        -0.6184547512010116
+      ]
+    },
+    {
+      "phase": 47,
+      "upperToTemplate0": {
+        "shift": [
+          -5.6875,
+          -0.59375
+        ],
+        "rgbRms": 0.04103744099636198
+      },
+      "lowerToTemplate0": {
+        "shift": [
+          -4.40625,
+          -1.3125
+        ],
+        "rgbRms": 0.06559770437927681
+      },
+      "upperNextPair": {
+        "shift": [
+          4.53125,
+          0.65625
+        ],
+        "rgbRms": 0.0452817584449165
+      },
+      "cyclicGraphShift": [
+        -5.221424058954511,
+        -0.6271817495996376
+      ],
+      "heldOutLowerMinusGraph": [
+        0.8151740589545113,
+        -0.6853182504003624
+      ]
+    }
+  ],
+  "rawPairLoopClosureError": [
+    3.28125,
+    0.4375
+  ],
+  "templateVsGraphRmsRawPx": 0.16370887337335766,
+  "lowerVsGraphRmsRawPx": 1.2655103329429076
+}

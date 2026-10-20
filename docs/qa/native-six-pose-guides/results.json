@@ -1,0 +1,214 @@
+{
+  "status": "PASS-scoped-technical-guide-readback",
+  "rootCheckpoint": "b37e0a9",
+  "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "commonContract": {
+    "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+    "frameSize": [
+      512,
+      640
+    ],
+    "deliveryUniformScale": 0.5,
+    "rootRestGroundNative": [
+      0.0,
+      -0.050602056086063385,
+      0.0
+    ],
+    "actorTransform": "Rz(contractYaw) @ T(-RootRestGround)",
+    "actionHashes": {
+      "walk": "4955d2ae2dd31bf52e908d8a0edad00e49e96f4768e5e84921d766f38857a87b"
+    },
+    "headingContractSha256": "c6d0b584393ad3065cc0123ca29459fd24c951aab224c7fae44bdcc671f21257",
+    "camera": {
+      "matrixWorld": [
+        [
+          1.0,
+          0.0,
+          0.0,
+          0.0
+        ],
+        [
+          0.0,
+          0.6499999761581421,
+          -0.7599342465400696,
+          -8.0
+        ],
+        [
+          0.0,
+          0.7599342465400696,
+          0.6499999761581421,
+          7.692697525024414
+        ],
+        [
+          0.0,
+          0.0,
+          0.0,
+          1.0
+        ]
+      ],
+      "orthoScale": 2.0999999046325684,
+      "canvas": [
+        512,
+        640
+      ],
+      "worldZPixelsPerMeter": 231.59903526306152,
+      "worldOriginAnchorPx": [
+        256.0,
+        516.8593120574951
+      ]
+    },
+    "nativeHeightPx": 373.1087205766087
+  },
+  "directions": [
+    {
+      "direction": "e",
+      "manifestSha256": "737324de8d44e3f44ef726d6284d7d1dfea2b608693d489efcfbe2ca778bc672",
+      "sourceContractSha256": "67de8014bd54ba3c5d6cbb6981400d92c718669903dabbf3607134b59874f9c5",
+      "atlasSha256": "e70075931c2a9b15dfa3ae9aeaf26144a70e72b3f0511cc8d19741217a48aa5e",
+      "PNGhashesVerified": 48,
+      "decodedAtlasSamplesExact": [
+        0,
+        11,
+        24,
+        47
+      ],
+      "nativeAlphaMinMarginsLTRB": [
+        131,
+        125,
+        137,
+        104
+      ],
+      "heading": {
+        "acceptedScreenAngleRadians": 0.0,
+        "nativeHeadingAfterCameraRadians": 0.0,
+        "stockForwardMinusYBlenderYawRadians": 1.5707963267948966,
+        "reprojectionErrorRadians": 3.9801020972288984e-17
+      }
+    },
+    {
+      "direction": "se",
+      "manifestSha256": "e65124183089ceddd00fb5d3d6a133396ede7b34878d0758ee6d63fa85937ac2",
+      "sourceContractSha256": "6c430ccb5b81639687e29fa30ff05bd054281230a9821e10372f91bb3259eab6",
+      "atlasSha256": "bf763ae9079fb0aed838ccbdf94cc02b14ecb8dedc6d933654d00c7b8ce0a826",
+      "PNGhashesVerified": 48,
+      "decodedAtlasSamplesExact": [
+        0,
+        11,
+        24,
+        47
+      ],
+      "nativeAlphaMinMarginsLTRB": [
+        164,
+        121,
+        175,
+        64
+      ],
+      "heading": {
+        "acceptedScreenAngleRadians": 0.8445215140369683,
+        "nativeHeadingAfterCameraRadians": 1.0471975511965976,
+        "stockForwardMinusYBlenderYawRadians": 0.5235987755982989,
+        "reprojectionErrorRadians": 1.1102230246251565e-16
+      }
+    },
+    {
+      "direction": "sw",
+      "manifestSha256": "2627df63ebae9440737647340027a97850cd591f2a4c6a64cc2d47c575793d7a",
+      "sourceContractSha256": "eeb00520313c8d5f7bad47a7fa3e4197f5e858e6aa25a012cfdb1a5d27ce3c55",
+      "atlasSha256": "0be6f62130772bc3c75724ebbe4b4c538ee098c0c8c34a7a081742391c765aec",
+      "PNGhashesVerified": 48,
+      "decodedAtlasSamplesExact": [
+        0,
+        11,
+        24,
+        47
+      ],
+      "nativeAlphaMinMarginsLTRB": [
+        172,
+        123,
+        167,
+        64
+      ],
+      "heading": {
+        "acceptedScreenAngleRadians": 2.2970711395528247,
+        "nativeHeadingAfterCameraRadians": 2.0943951023931953,
+        "stockForwardMinusYBlenderYawRadians": -0.5235987755982987,
+        "reprojectionErrorRadians": 0.0
+      }
+    },
+    {
+      "direction": "w",
+      "manifestSha256": "3d8c6199286ffb49f3e54be211749fd66d4943fc09c98f42c52f81545401690d",
+      "sourceContractSha256": "5562d2dda3f8d3f51d4afdb7630b54334ae691711f70aeaabfc8de7de85aac8c",
+      "atlasSha256": "48e02400791a28c66113ed63877e3e021acc1b6ba81b8479541c058be35c54df",
+      "PNGhashesVerified": 48,
+      "decodedAtlasSamplesExact": [
+        0,
+        11,
+        24,
+        47
+      ],
+      "nativeAlphaMinMarginsLTRB": [
+        137,
+        124,
+        131,
+        104
+      ],
+      "heading": {
+        "acceptedScreenAngleRadians": 3.141592653589793,
+        "nativeHeadingAfterCameraRadians": 3.141592653589793,
+        "stockForwardMinusYBlenderYawRadians": -1.5707963267948966,
+        "reprojectionErrorRadians": 0.0
+      }
+    },
+    {
+      "direction": "nw",
+      "manifestSha256": "1fa60efe2f951e8908c42c4767e9a2e43391d82cedb80efd50ddaa20aebcab8e",
+      "sourceContractSha256": "ebe4cbca59ed476a40fb4e52f698786945139947ca81907c092fbaf606b4458b",
+      "atlasSha256": "6a876d571874a830097f482d962688d4e6f516cd4788669688434b09c89ca244",
+      "PNGhashesVerified": 48,
+      "decodedAtlasSamplesExact": [
+        0,
+        11,
+        24,
+        47
+      ],
+      "nativeAlphaMinMarginsLTRB": [
+        175,
+        132,
+        164,
+        67
+      ],
+      "heading": {
+        "acceptedScreenAngleRadians": -2.297071139552825,
+        "nativeHeadingAfterCameraRadians": -2.0943951023931957,
+        "stockForwardMinusYBlenderYawRadians": 3.6651914291880923,
+        "reprojectionErrorRadians": 4.440892098500626e-16
+      }
+    },
+    {
+      "direction": "ne",
+      "manifestSha256": "ee84ffee04ef8e14b6b207f2491eae9fe498ecc12620053d14e124e05dedf219",
+      "sourceContractSha256": "bbae25b285c7755cafc2750a3d0ed098fe75d2122b786ccb46d9303fbbd81946",
+      "atlasSha256": "d01790a1c4cb65eece15399351ad513bb1d01087cd6db6fa34d0a9518a4dd2bb",
+      "PNGhashesVerified": 48,
+      "decodedAtlasSamplesExact": [
+        0,
+        11,
+        24,
+        47
+      ],
+      "nativeAlphaMinMarginsLTRB": [
+        167,
+        124,
+        172,
+        67
+      ],
+      "heading": {
+        "acceptedScreenAngleRadians": -0.8445215140369683,
+        "nativeHeadingAfterCameraRadians": -1.0471975511965976,
+        "stockForwardMinusYBlenderYawRadians": 2.617993877991494,
+        "reprojectionErrorRadians": 2.220446049250313e-16
+      }
+    }
+  ]
+}

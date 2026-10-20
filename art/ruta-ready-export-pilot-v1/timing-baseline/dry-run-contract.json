@@ -1,0 +1,779 @@
+{
+  "status": "DRY-RUN-NO-RENDERS",
+  "productionEnabled": false,
+  "source": "/tmp/ruby-ready-sprite-export/art/ruta-ellie-head-v1/color-handoff/ruta-b-ellie-blue-copper-temporary.blend",
+  "sourceSha256": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
+  "exporterSha256": "7416615b8924cc03da12cea3f5a1b722d2e44ae6c8d3311052499eb641043371",
+  "parameters": {
+    "variants": [
+      "base"
+    ],
+    "directions": [
+      "e"
+    ],
+    "clips": [
+      "walk"
+    ],
+    "frameCount": 24,
+    "contractOnly": true
+  },
+  "headingContract": "art/ready-character-walk-v1/heading-contract.json",
+  "headingContractSha256": "c6d0b584393ad3065cc0123ca29459fd24c951aab224c7fae44bdcc671f21257",
+  "frameSize": [
+    512,
+    640
+  ],
+  "phaseCount": 24,
+  "deliveryUniformScale": 0.5,
+  "noPerFrameCropScaleOrTranslation": true,
+  "rootRestGroundNative": [
+    0.0,
+    -0.050602056086063385,
+    0.0
+  ],
+  "actorTransform": "Rz(contractYaw) @ T(-RootRestGround)",
+  "cameraAngleAlreadyInHeadingYaw": true,
+  "frameGeneration": "sourceFrame = endExclusive * phaseIndex /frameCount; endpoint checked separately, not duplicated",
+  "renderEngine": "BLENDER_EEVEE_NEXT",
+  "renderVisibleMeshes": [
+    "Adventurer_Body",
+    "Adventurer_Feet",
+    "Ruta stock long trousers",
+    "ONE hip satchel",
+    "Satchel flap",
+    "Satchel buckle",
+    "ONE diagonal satchel strap",
+    "Ellie ready tongue",
+    "Ellie ready teeth_top",
+    "Ellie ready teeth_btm",
+    "Ellie ready head",
+    "Ellie ready hair_cut",
+    "Ellie ready face_line2",
+    "Ellie ready face_line1",
+    "Ellie ready eyelashes",
+    "Ellie ready eyebrows",
+    "Ellie ready eye_highlights",
+    "Ellie ready eye.R",
+    "Ellie ready eye.L"
+  ],
+  "excludedMeshes": [
+    "Adventurer_Head",
+    "Ruta CC0 ginger waves",
+    "Ellie ready CC0 Cortu waves",
+    "Icosphere"
+  ],
+  "geometryReference": "evaluated used mesh vertices in REST pose; render-visible collection filter, no bbox-bottom anchors",
+  "actionHashes": {
+    "walk": "4955d2ae2dd31bf52e908d8a0edad00e49e96f4768e5e84921d766f38857a87b"
+  },
+  "cameraVariants": {
+    "base": {
+      "gameCamera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "gate",
+        "garden",
+        "stream",
+        "mill",
+        "forest"
+      ],
+      "fixedRenderCamera": {
+        "matrixWorld": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6499999761581421,
+            -0.7599342465400696,
+            -8.0
+          ],
+          [
+            0.0,
+            0.7599342465400696,
+            0.6499999761581421,
+            7.692697525024414
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "orthoScale": 2.0999999046325684,
+        "canvas": [
+          512,
+          640
+        ],
+        "worldZPixelsPerMeter": 231.59903526306152,
+        "worldOriginAnchorPx": [
+          256.0,
+          516.8593120574951
+        ]
+      },
+      "directions": {
+        "e": {
+          "heading": {
+            "acceptedScreenAngleRadians": 0.0,
+            "nativeHeadingAfterCameraRadians": 0.0,
+            "stockForwardMinusYBlenderYawRadians": 1.5707963267948966,
+            "reprojectionErrorRadians": 3.9801020972288984e-17
+          },
+          "restGeometryBoundsWorld": {
+            "min": [
+              -0.28656667470932007,
+              -0.6329900026321411,
+              -0.00035552610643208027
+            ],
+            "max": [
+              0.16240675747394562,
+              0.6330931186676025,
+              1.6127954721450806
+            ]
+          },
+          "visibleRestHeightMeters": 1.6131509982515126,
+          "nativeHeightPx": 373.604214928695,
+          "rootGroundReferenceWorld": [
+            0.0,
+            -6.032234711739193e-09,
+            0.0
+          ],
+          "clips": {
+            "walk": {
+              "sourceAction": "Walk_ProportionProposal",
+              "sourceRange": [
+                0,
+                40
+              ],
+              "sourceFps": 24,
+              "durationSeconds": 1.6666666666666667,
+              "loopEndpointMaxUsedVertexErrorMeters": 0.0,
+              "frames": [
+                {
+                  "index": 0,
+                  "sourceFrame": 0.0,
+                  "timeSeconds": 0.0,
+                  "file": "renders/base/e/walk/00.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      142.15121459960938,
+                      140.43643951416016
+                    ],
+                    "max": [
+                      373.76165771484375,
+                      528.9242553710938
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 1,
+                  "sourceFrame": 1.6666666666666667,
+                  "timeSeconds": 0.06944444444444445,
+                  "file": "renders/base/e/walk/01.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      135.98388671875,
+                      141.43329620361328
+                    ],
+                    "max": [
+                      372.2326965332031,
+                      526.3737106323242
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 2,
+                  "sourceFrame": 3.3333333333333335,
+                  "timeSeconds": 0.1388888888888889,
+                  "file": "renders/base/e/walk/02.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      132.88685607910156,
+                      143.255615234375
+                    ],
+                    "max": [
+                      365.03985595703125,
+                      524.2620086669922
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 3,
+                  "sourceFrame": 5.0,
+                  "timeSeconds": 0.20833333333333334,
+                  "file": "renders/base/e/walk/03.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      139.27488708496094,
+                      144.07527923583984
+                    ],
+                    "max": [
+                      349.78192138671875,
+                      525.2312660217285
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 4,
+                  "sourceFrame": 6.666666666666667,
+                  "timeSeconds": 0.2777777777777778,
+                  "file": "renders/base/e/walk/04.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      155.75379943847656,
+                      142.7219009399414
+                    ],
+                    "max": [
+                      326.9603576660156,
+                      526.5154361724854
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 5,
+                  "sourceFrame": 8.333333333333334,
+                  "timeSeconds": 0.34722222222222227,
+                  "file": "renders/base/e/walk/05.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      173.6767120361328,
+                      139.52049255371094
+                    ],
+                    "max": [
+                      314.79815673828125,
+                      528.0220985412598
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 6,
+                  "sourceFrame": 10.0,
+                  "timeSeconds": 0.4166666666666667,
+                  "file": "renders/base/e/walk/06.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      173.7300262451172,
+                      135.77598571777344
+                    ],
+                    "max": [
+                      316.0585632324219,
+                      529.4022560119629
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 7,
+                  "sourceFrame": 11.666666666666666,
+                  "timeSeconds": 0.4861111111111111,
+                  "file": "renders/base/e/walk/07.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      173.4965362548828,
+                      133.5321044921875
+                    ],
+                    "max": [
+                      316.12939453125,
+                      530.8449745178223
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 8,
+                  "sourceFrame": 13.333333333333334,
+                  "timeSeconds": 0.5555555555555556,
+                  "file": "renders/base/e/walk/08.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      172.9853057861328,
+                      133.53195190429688
+                    ],
+                    "max": [
+                      325.6411437988281,
+                      532.0423030853271
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 9,
+                  "sourceFrame": 15.0,
+                  "timeSeconds": 0.625,
+                  "file": "renders/base/e/walk/09.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      172.4637451171875,
+                      136.08104705810547
+                    ],
+                    "max": [
+                      345.8402099609375,
+                      529.4471645355225
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 10,
+                  "sourceFrame": 16.666666666666668,
+                  "timeSeconds": 0.6944444444444445,
+                  "file": "renders/base/e/walk/10.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      152.74087524414062,
+                      139.4745635986328
+                    ],
+                    "max": [
+                      359.2605285644531,
+                      526.862268447876
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 11,
+                  "sourceFrame": 18.333333333333332,
+                  "timeSeconds": 0.7638888888888888,
+                  "file": "renders/base/e/walk/11.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      139.23504638671875,
+                      141.55338287353516
+                    ],
+                    "max": [
+                      369.15240478515625,
+                      526.2871074676514
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 12,
+                  "sourceFrame": 20.0,
+                  "timeSeconds": 0.8333333333333334,
+                  "file": "renders/base/e/walk/12.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      133.0157928466797,
+                      143.05221557617188
+                    ],
+                    "max": [
+                      373.7789001464844,
+                      525.7165145874023
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 13,
+                  "sourceFrame": 21.666666666666668,
+                  "timeSeconds": 0.9027777777777778,
+                  "file": "renders/base/e/walk/13.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      132.11697387695312,
+                      144.54845428466797
+                    ],
+                    "max": [
+                      372.9083251953125,
+                      528.4422779083252
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 14,
+                  "sourceFrame": 23.333333333333332,
+                  "timeSeconds": 0.9722222222222222,
+                  "file": "renders/base/e/walk/14.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      132.9077606201172,
+                      145.77117919921875
+                    ],
+                    "max": [
+                      365.03680419921875,
+                      532.1274089813232
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 15,
+                  "sourceFrame": 25.0,
+                  "timeSeconds": 1.0416666666666667,
+                  "file": "renders/base/e/walk/15.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      139.22900390625,
+                      146.02691650390625
+                    ],
+                    "max": [
+                      349.5028381347656,
+                      532.3673343658447
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 16,
+                  "sourceFrame": 26.666666666666668,
+                  "timeSeconds": 1.1111111111111112,
+                  "file": "renders/base/e/walk/16.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      155.71128845214844,
+                      144.4735336303711
+                    ],
+                    "max": [
+                      326.545166015625,
+                      532.664909362793
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 17,
+                  "sourceFrame": 28.333333333333332,
+                  "timeSeconds": 1.1805555555555556,
+                  "file": "renders/base/e/walk/17.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      173.64450073242188,
+                      141.0900115966797
+                    ],
+                    "max": [
+                      315.5467834472656,
+                      532.847728729248
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 18,
+                  "sourceFrame": 30.0,
+                  "timeSeconds": 1.25,
+                  "file": "renders/base/e/walk/18.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      173.7361602783203,
+                      137.02415466308594
+                    ],
+                    "max": [
+                      315.9075012207031,
+                      532.8118705749512
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 19,
+                  "sourceFrame": 31.666666666666668,
+                  "timeSeconds": 1.3194444444444444,
+                  "file": "renders/base/e/walk/19.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      173.54898071289062,
+                      134.09217834472656
+                    ],
+                    "max": [
+                      315.1846618652344,
+                      532.4473285675049
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 20,
+                  "sourceFrame": 33.333333333333336,
+                  "timeSeconds": 1.388888888888889,
+                  "file": "renders/base/e/walk/20.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      173.0691375732422,
+                      133.08284759521484
+                    ],
+                    "max": [
+                      330.722412109375,
+                      531.7802143096924
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 21,
+                  "sourceFrame": 35.0,
+                  "timeSeconds": 1.4583333333333333,
+                  "file": "renders/base/e/walk/21.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      172.55992126464844,
+                      134.43519592285156
+                    ],
+                    "max": [
+                      349.89337158203125,
+                      530.8364772796631
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 22,
+                  "sourceFrame": 36.666666666666664,
+                  "timeSeconds": 1.5277777777777777,
+                  "file": "renders/base/e/walk/22.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      161.37721252441406,
+                      137.00424194335938
+                    ],
+                    "max": [
+                      361.9588623046875,
+                      529.4948673248291
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                },
+                {
+                  "index": 23,
+                  "sourceFrame": 38.333333333333336,
+                  "timeSeconds": 1.5972222222222223,
+                  "file": "renders/base/e/walk/23.png",
+                  "worldOriginAnchorPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "poseRootPx": [
+                    256.0,
+                    516.8593120574951
+                  ],
+                  "projectedUsedGeometryBoundsPx": {
+                    "min": [
+                      147.4349365234375,
+                      139.15142059326172
+                    ],
+                    "max": [
+                      369.15277099609375,
+                      529.2960834503174
+                    ]
+                  },
+                  "geometryInsideCanvas": true
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  },
+  "renderedFrameCount": 0,
+  "sourceSha256After": "484b74b78a0eb1150294876c2a5130a9cae1590ca4ac64037c97f1200dd0b10c",
+  "sourceUnchanged": true,
+  "limitations": [
+    "No art/style/wardrobe approval follows from geometry containment/seam.",
+    "No no-slip, turn/start/stop, gameplay or performance acceptance.",
+    "REST height uses visible accessories/hair too; independent body landmark height is a different metric.",
+    "Raster alpha containment is checked by packer only after actual render, not by dry-run."
+  ]
+}

@@ -1,0 +1,13 @@
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-qa-retarget-b/art/ready-character-adapted-v1/ruta-stock-adapted.blend"
+Read blend: "/tmp/ruby-qa-retarget-b/art/ruta-native-proportions-study-v2/b-neutral/ruta-proportion-proposal.blend"
+Traceback (most recent call last):
+  File "/tmp/ruby-qa-retarget-b/docs/chapter-1-rc/qa/retarget-b-a6250cb/audit.py", line 41, in <module>
+    sc,rig=prepare(P,c['retargetedActions']['Walk']['action']);actions={a.name:actiondata(a)for a in bpy.data.actions};newmesh=restsnap(rig);bounds=usebounds(rig);boneErrors=[];contractOldErrors=[]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ruby-qa-retarget-b/docs/chapter-1-rc/qa/retarget-b-a6250cb/audit.py", line 23, in prepare
+    a=bpy.data.actions[action];rig.animation_data.action=a;rig.animation_data.action_slot=a.slots[0];p=rig.data.bones['Root'].head_local.copy();p.z=0;rig.matrix_world=Matrix.Rotation(math.pi/2,4,'Z')@Matrix.Translation(-p);bpy.context.view_layer.update();return sc,rig
+      ~~~~~~~~~~~~~~~~^^^^^^^^
+KeyError: 'bpy_prop_collection[key]: key "Walk_ProportionProposal" not found'
+
+Blender quit

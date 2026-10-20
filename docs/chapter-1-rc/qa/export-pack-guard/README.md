@@ -1,0 +1,13 @@
+# Independent guard regression review
+
+Reviewed1ffced9 (root24c7a21) and follow-up24129ad. Actual Blender4.5.3 scratch-fixture runs; no actual sprite renders or pack were run. Author inputs were read-only; mutated copies stayed in temporary fixture directories. This extends the previous exporter audit, without changing author scripts/runtime.
+
+Reproduced all17 author cases: baseline and loaded object-eye-hidden fixture accepted with exactly matching bounds/height; viewport monitor, collection monitor/eye, modifier visibility divergence, hidden rig/rig collection, hidden pose-bone constraint target, hidden driver target, mismatched subdivision levels, scene simplify, geometry nodes and collection instancing rejected. Opposite-report-mode source-hash conflicts reject before writing report/render directories. Results bind source/code/fixture hashes and actual caught errors in `results.json`.
+
+Found additional1ffced9 policy gap: only COLLECTION instance type was rejected although policy said instances unsupported. Actual VERTS and FACES fixtures were both accepted. These two known-gap probes were intentionally recorded as accepted by old code, not mislabeled passing intended policy. Sent the author;24129ad changes the checks to any instance_type!=NONE. Independently reran all19 cases against that follow-up: VERTS/FACES now reject, prior cases retain expected behaviour. See `results-followup.json` and the two preserved probe exporter copies.
+
+The conservative closure covers parents, modifier object pointers, object/pose-bone constraint targets and object/data/shape-key driver object targets. Object eye is supported; collection eye is explicitly rejected rather than pretended equivalent. Rechecks happen on each evaluated geometry readback; changed render-mesh membership rejects. Only ARMATURE/MASK/equal-level SUBSURF are allowed; other geometry/modifier/instance paths fail closed. This is a scoped supported pipeline, not universal Blender render/viewport equivalence or shader displacement proof.
+
+Independent inventory of frozen wardrobev1 SHA d33699efbf0a09dbedb3254c30ea645ee60ef2abd046ac73da21106cc659a3ae found all62 scene objects instance_typeNONE. Thus the discovered gap was not active in that source. That source's actual17-frame render was subsequently rejected for floating lace geometry; this inventory does not rescue its wardrobe. New wardrobev2 and actual export/pack/browser review remain separate.
+
+**Technical recommendation:** guard24129ad closes reproduced visibility/instancing cases and is suitable for the explicitly supported actor pipeline. Final source must still pass it, then actual render/alpha/packer tests. No actual-render, no-slip, visual-art or production acceptance follows from these regressions.

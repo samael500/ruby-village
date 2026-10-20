@@ -1,0 +1,10 @@
+LACE_DISTANCE 0.04206537827849388 PASS False
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-layered-style-v1/ruta-native-style.blend"
+Traceback (most recent call last):
+  File "/tmp/ruby-export-pack-qa/docs/chapter-1-rc/qa/lace-v2/reproduce-lace-check.py", line 25, in <module>
+    if not report['attachmentPass']:raise RuntimeError('Lace separates from evaluated boot surface')
+                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+RuntimeError: Lace separates from evaluated boot surface
+
+Blender quit

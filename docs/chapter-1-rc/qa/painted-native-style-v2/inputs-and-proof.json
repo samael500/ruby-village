@@ -1,0 +1,77 @@
+{
+  "reviewBaseCommit": "df4df44",
+  "status": "independent-of-imagegen-author-static-2D-review-not-loop-game-no-slip",
+  "inputs": [
+    {
+      "path": "art/ruta-native-painted-sprites-v2/painted-sheet-v1.png",
+      "sha256": "0576a082552b2d7172005527ec9a2ef00e2f800b97b479b50cab16504ad8f64c",
+      "bytes": 1399183
+    },
+    {
+      "path": "art/ruta-native-painted-sprites-v2/painted-sheet-v1-beige-review.jpg",
+      "sha256": "38cd92f435fe9638f064b2636004b1a43cb8a5631a1c85de3b6c4887b458d391",
+      "bytes": 243636
+    },
+    {
+      "path": "art/ruta-native-painted-sprites-v2/pose-source-12.png",
+      "sha256": "1b32c90929fa220a2c24d32dc7dd9c55c177172546c554b14db1a50c78aea902",
+      "bytes": 1332148
+    },
+    {
+      "path": "art/ruta-native-painted-sprites-v2/source-grid.json",
+      "sha256": "a11bfc36f4129e62e5e68afebccfaf4d8290fb6e572d79711cecb4875a1df6bc",
+      "bytes": 3166
+    },
+    {
+      "path": "art/ruta-native-painted-sprites-v2/prompt-v1.txt",
+      "sha256": "c417a3941547c34b95867e0bc82f86f174e93dead8f2eb838992a4777a9c70dd",
+      "bytes": 2729
+    },
+    {
+      "path": "public/assets/characters-v1/optimized/ruta-idle-pilot.webp",
+      "sha256": "f45a73140f952570f4e681d434be3df6c2bab0497edea1e30f818a231fbcb8ba",
+      "bytes": 47552
+    },
+    {
+      "path": "public/assets/characters-v1/ruta-idle-pilot.png",
+      "sha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1",
+      "bytes": 676343
+    }
+  ],
+  "proof": [
+    {
+      "cell": 0,
+      "nativePhase": 0,
+      "rawRect": [
+        0,
+        32,
+        324,
+        384
+      ],
+      "operation": "constant shared-grid crop only; original RGBA intact; beige QA composite; no actor shift/scale/warp"
+    },
+    {
+      "cell": 4,
+      "nativePhase": 16,
+      "rawRect": [
+        0,
+        416,
+        324,
+        384
+      ],
+      "operation": "constant shared-grid crop only; original RGBA intact; beige QA composite; no actor shift/scale/warp"
+    },
+    {
+      "cell": 10,
+      "nativePhase": 40,
+      "rawRect": [
+        648,
+        800,
+        324,
+        384
+      ],
+      "operation": "constant shared-grid crop only; original RGBA intact; beige QA composite; no actor shift/scale/warp"
+    }
+  ],
+  "referenceUncertainty": "Approved optimized idle and PNG are repository identity references; exact second imagegen call attachment path is not recorded in source-grid/prompt, must confirm with root if distinguishing bytes matters."
+}

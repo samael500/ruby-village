@@ -1,0 +1,9 @@
+# Image sampling diagnosis
+
+User status supersedes earlier pending-motion wording: Maksim accepted movement/registration of head+48, but explicitly rejected flickering, swimming, unclear image quality. This audit concerns image sampling and internal texture only, not pivot/FPS changes.
+
+Actual Chromium1280×800 at DPR1 and2: canvas backing256×320 in both, CSS320×400, smoothing enabled/quality low, image-rendering auto. At DPR2 the same backing is presented across640×800 device pixels. Painted raw162×200 first draws at188.431×232.631 into fractional, phase-dependent origins, then canvas is enlarged by compositor1.25 CSS. This confirms two filtering stages and lack of DPR-aware backing; it does not establish the sole cause of the user's experience.
+
+Controlled SAME raw frame0 browser experiment, offsets0/.25/.5/.75, same final320×400: emulated two-pass256→320 interior RGB squared-neighbor-gradient energy85.49–87.09; single-pass111.39–111.72. Alpha≥240 interior-neighbor threshold avoids transparent edge contamination. Interior sample set changes slightly with resampling; energy is a sharpness proxy, not quality/acceptance. Two-pass softens this exact frame and has greater phase-offset-dependent variation. This test explicitly emulates the second pass with canvas drawImage; compositor filtering can differ. It is not a direct measurement of browser compositor output. Comparison screenshot is displayed smaller for layout and is not the quantitative input.
+
+Separate existing actual-frame observations remain: hair/fringe/face contours and internal painted detail vary across raw phases. A new renderer can remove avoidable resampling but cannot restore stable detail absent from these input poses. Low input resolution is not asserted as the unique explanation. No new renderer acceptance is claimed; independent frozen-renderer A/B remains pending. Author assets/runtime unchanged.

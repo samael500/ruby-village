@@ -1,0 +1,22 @@
+{
+  "status": "temporary-ready-head-native-color-proof-HairLengthBLOCKED-NOT-accepted-Ruta",
+  "source": "art/ruta-ellie-head-v1/cc0-wave-hair-pilot/ruta-b-ellie-cc0-waves.blend",
+  "sourceSha256": "4d2623312e60665564b6baef5a5dd8fce7ea9b549dc8260c6e614cae01b70bd7",
+  "headGeometry": "unchanged ready Ellie geometry, authored native face_default/eyemask_content/mouth_smileclosed2; no new facial sculpt",
+  "visibleHair": "Ellie ready hair_cut, native geometry unchanged",
+  "hiddenRejectedHair": "Ellie ready CC0 Cortu waves retained in source but hidden;479cardfitnotaccepted",
+  "eyeColor": "native ellie.eyes_pupils ColorRamp.004 nonblack2stops blue; blackstop,allmaskpositions and entire whiteeye material unchanged",
+  "hairColor": "native ellie.hair_mesh Group.009 SH-Hair Base Color directly(.27,.075,.018,1), native strand/height masks unchanged",
+  "brows": "native Principled basecolor(.12,.035,.009,1); lashes stay native",
+  "actions": {
+    "Walk_ProportionProposal": "ad7b4fec0e98089821ebdff1c251a4cd714392e6c1563e603c4f0a2e04f880fd",
+    "Idle_Neutral_ProportionProposal": "3b87d66ba83c5f8cd7ffeb5928f4b9c25cd5a420f8879dc824b2704e28fb3eca"
+  },
+  "protection": "preserve native shaders/alpha/UV/normals for all ASCII-prefixed Ellie ready objects",
+  "limitations": [
+    "short cut not Ruta long waves; raw CC0479cardfittriangular/eyescovered",
+    "readyponyislands are tied-root design; one global scale cannot create free loose-wave silhouette",
+    "frown/gaze likeness remains for native facial-pose review; no claim approved friendly likeness",
+    "no physical/no-slip or runtime acceptance; no gait/camera/perframe adjustment"
+  ]
+}

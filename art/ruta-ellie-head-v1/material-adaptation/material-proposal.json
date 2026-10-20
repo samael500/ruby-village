@@ -1,0 +1,101 @@
+{
+  "status": "internal-color-study-not-approved-Ruta-hair",
+  "geometryWeightsAndActionsUnchanged": true,
+  "geometryWeightsSha256": "ef97e6c6f2190283a4ac063825f6acdee1611a381d8820045cfcc3920e3971ef",
+  "allActionCurvesSha256": "e2e0f501387381ad666504056aa73532213dcdc0b0db566365be97794f6a2456",
+  "edits": [
+    {
+      "material": "ellie.eyes_pupils",
+      "node": "ColorRamp.004",
+      "before": [
+        [
+          0.10327894985675812,
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          0.5016394853591919,
+          [
+            0.02810051292181015,
+            0.006686263717710972,
+            0.0026796995662152767,
+            1.0
+          ]
+        ],
+        [
+          0.7737705111503601,
+          [
+            0.10084733366966248,
+            0.031281888484954834,
+            0.007226436398923397,
+            1.0
+          ]
+        ]
+      ],
+      "after": [
+        [
+          0.10327894985675812,
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        [
+          0.5016394853591919,
+          [
+            0.004999999888241291,
+            0.06499999761581421,
+            0.2199999988079071,
+            1.0
+          ]
+        ],
+        [
+          0.7737705111503601,
+          [
+            0.02500000037252903,
+            0.3199999928474426,
+            0.6800000071525574,
+            1.0
+          ]
+        ]
+      ],
+      "mask": "native UV/depth-driven iris ramp, black pupil stop and all positions preserved; ellie.eyes white material unchanged"
+    },
+    {
+      "material": "ellie.hair_mesh",
+      "nativePalette": "45% Orange/55% Earth replaces Black input to original Mix.010; original strand masks/BSDF preserved"
+    },
+    {
+      "material": "ellie.eyebrows",
+      "before": [
+        0.00907206628471613,
+        0.0063349418342113495,
+        0.004655473865568638,
+        1.0
+      ],
+      "after": [
+        0.11999999731779099,
+        0.03500000014901161,
+        0.008999999612569809,
+        1.0
+      ],
+      "field": "native unlinked Principled Base Color; lashes unchanged"
+    }
+  ],
+  "views": [
+    "front-face-color.png",
+    "three-quarter-face-color.png"
+  ],
+  "limitations": [
+    "existing native short haircut remains short; no claimed waves",
+    "blue iris relies on original iris material mask, white and black stops not recolored",
+    "no new sculpt, face decals, primitive hair or imagegen",
+    "no gait/contact/no-slip claim"
+  ]
+}
