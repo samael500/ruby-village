@@ -1,0 +1,14 @@
+<!doctype html><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Combined Ruta native E48 study</title>
+<style>body{font:16px system-ui;background:#e5dfce;color:#27231d;margin:20px}canvas{display:block;background:#b5c4b0}button,input{font:inherit;margin:8px}#status{white-space:pre-wrap}</style>
+<h1>Combined Ruta · E48</h1><p>Native whole frames, 40/24-second cycle. Technical/art study; not gameplay acceptance.</p>
+<button id="pause">Pause</button><input id="phase" type="range" min="0" max="47" value="0"><label>View <select id="size"><option value="1">game size</option><option value="2">double size</option></select></label><canvas id="actor"></canvas><pre id="status">Waiting for actual source-contract.json and48 renders.</pre>
+<script type="module">
+const c=document.querySelector('#actor'),ctx=c.getContext('2d'),slider=document.querySelector('#phase'),button=document.querySelector('#pause'),size=document.querySelector('#size'),status=document.querySelector('#status');
+try{
+ const contract=await(await fetch('./source-contract.json')).json(),clip=contract.cameraVariants.base.directions.e.clips.walk; if(clip.frames.length!==48||contract.renderedFrameCount!==48)throw Error('Actual48 required');
+ const images=await Promise.all(clip.frames.map(async f=>{const i=new Image;i.src=f.file;await i.decode();if(i.width!==512||i.height!==640)throw Error('Whole512x640 required');return i}));
+ let paused=false,index=0,origin=performance.now(),held=0;const duration=40/24*1000;
+ function draw(t){if(!paused)index=Math.floor(((t-origin)%duration)/duration*48)%48;slider.value=index;const k=Number(size.value),w=256*k,h=320*k,dpr=devicePixelRatio||1;if(c.width!==Math.round(w*dpr)||c.height!==Math.round(h*dpr)){c.width=Math.round(w*dpr);c.height=Math.round(h*dpr);c.style.width=w+'px';c.style.height=h+'px'}ctx.setTransform(dpr,0,0,dpr,0,0);ctx.clearRect(0,0,w,h);ctx.drawImage(images[index],0,0,512,640,0,0,w,h);status.textContent=JSON.stringify({phaseIndex:index,sourceFrame:40*index/48,sourceSeconds:40*index/48/24,cycleSeconds:40/24,uniqueFrames:48,paused,dpr,singlePass:true,sourceSha256:contract.sourceSha256,rootAnchorFullPx:clip.frames[index].worldOriginAnchorPx});window.reviewState={index,paused,sourceFrame:40*index/48};requestAnimationFrame(draw)}
+ button.onclick=()=>{paused=!paused;if(!paused)origin=performance.now()-index/48*duration;button.textContent=paused?'Play':'Pause'};slider.oninput=()=>{paused=true;index=Number(slider.value);button.textContent='Play'};requestAnimationFrame(draw);
+}catch(e){status.textContent='NOT READY: '+e.message}
+</script>
