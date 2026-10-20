@@ -1,3 +1,26 @@
+# Актуальный кандидат для ревью: 8bb08fb, временная ходьба
+
+Последнее решение Максима: «сделай хоть какую анимацию походки — это мы исправим потом». Выбран существующий animated-v3; новые native-персонажи не включены. Художественные дефекты коленей/походки отложены, а не объявлены исправленными. PR #55, проверенный production commit **8bb08fbcb747ccc43cf8e24c8b627acb8d65b099**. Последующие коммиты только сохраняют доказательства/документацию.
+
+| Замечание #62 | Фактический статус | PR / commit | Доказательство |
+|---|---|---|---|
+| 1. Кролик и один стол | Текущая сцена активна, жители/диалоги/replay/reload проверены; итоговое художественное ревью остаётся Максиму | #55 / 8bb08fb | qa/final-temporary-walk/landscape/026-garden-result.jpg; qa/final-temporary-walk/desktop/REVIEW.md |
+| 2. Сюжетные камни | Увеличенный сюжетный вариант сохранён, шесть кадров пролога реально пройдены | #55 / 8bb08fb | qa/final-temporary-walk/landscape/prologue-0.jpg … prologue-5.jpg; full8 reports |
+| 3. Поле в сюжете | Технические слои скрыты, narrative assertions PASS | #55 / 8bb08fb | qa/final-temporary-walk/landscape/report.json; desktop report |
+| 4. Ходьба | ВРЕМЕННАЯ: шесть исходных направлений; реальные меняющиеся кадры, повороты, start/stop, pause/reduced PASS на проверенных маршрутах | #55 / 8bb08fb; #36 остаётся для замены | qa/final-temporary-walk/targeted/{gate,stream,mill}/actual-audio.mp4 |
+| 5. Invalid preview / #61 | Mouse/native touch: release→rotate→auto-place, compound/bridge, cancel/undo/reload и touchCancel PASS | #55/#64 / 8bb08fb | qa/final-temporary-walk/placement-save/README.md |
+| 6. Ручей/мельница/мост | Оба моста установлены; точная water-mask и dry/water/dry проверены в игре, оба реальных прохода записаны | #55/#70 / 8bb08fb | qa/final-temporary-walk/bridges/; targeted stream/mill AV |
+| 7. Карта | Текущая иллюстрация/рисованные дороги, навигация и финальный прогресс проверены | #55/#66 / 8bb08fb | qa/final-temporary-walk/landscape/119-forest-completed-map.jpg |
+| 8. Разные результаты | Восемь собственных мест, фактическая дорога и сюжетные состояния, actual UI PASS | #55 / 8bb08fb | release/temporary-walk-rc/eight-results.jpg |
+| 9. Жители и ориентация | Жители/реплики/прибытия/replay/reload пройдены в обеих последовательностях | #55/#67 / 8bb08fb | qa/final-temporary-walk/{desktop,landscape}/ |
+| Шапка / звук | Художественная шапка активна; прежнее шипение признано исчезнувшим Максимом; текущие actual WebAudio AV записаны | #55/#57/#58 / 8bb08fb | targeted/REVIEW.md; release/temporary-walk-rc/credits-review/ |
+
+**Итог независимой функциональной проверки:** 16 последовательных маршрутов (8 desktop +8 native-touch landscape), сохранения/reload/replay, финальная карта и миграция PASS; page/HTTP errors0 в полных проходах. 96 tests, TypeScript/build PASS. [Пакет и полные ограничения](release/temporary-walk-rc/README.md). Арт/физическое no-slip не сертифицированы этими проверками. Physical phone, family и human listening всех полных петель — NOT RUN; mouse OS pointercancel не воспроизведён. Встроенное оформление предъявлено для итогового ревью Максима. Main merge/deploy не выполнялись.
+
+Ниже — исторические checkpoint, не текущие блокеры временной ходьбы.
+
+---
+
 # Review fixes 1/2 — 2026-10-19
 
 | Finding | Fix / verified scope | Evidence |

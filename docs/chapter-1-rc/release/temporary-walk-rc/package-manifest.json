@@ -9,7 +9,17 @@
     "tests": 96,
     "fail": 0,
     "typescript": "PASS",
-    "viteBuild": "PASS"
+    "viteBuild": "PASS",
+    "independentBrowser": {
+      "desktopFull8": "PASS",
+      "landscapeNativeTouchFull8": "PASS",
+      "legacyMigration": "PASS",
+      "invalidReleaseRotatePlace": "PASS",
+      "pauseReducedMotion": "PASS",
+      "actualWebAudioVideos": "gate/stream/mill",
+      "bridgesCleanAndExactWaterOverlay": "PASS",
+      "creditsAndSourceArchive": "PASS"
+    }
   },
   "archive": {
     "path": "/home/mskorokhod/life/ruby-village-rc-8bb08fb.zip",
@@ -761,9 +771,9 @@
     }
   ],
   "limits": [
-    "Final browser QA pending; no functional pass inferred from build.",
     "Temporary knee/cut defects deferred by user.",
     "No physical-phone/family/human all-loop listening pass.",
-    "No main merge or publication."
+    "No main merge or publication.",
+    "Human final integrated art review remains required; no physical-device/family/all-loop-listening claim."
   ]
 }

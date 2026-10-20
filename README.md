@@ -8,6 +8,8 @@
 
 «Авторы и материалы» в главном меню открывает сведения об источниках звуков, лицензию музыки и загрузку её редактируемых исходников. При изменении музыки архив обновляется командой `python3 scripts/package-music-source.py`; он не загружается во время игры.
 
+[Проверенный кандидат 8bb08fb: сборка, результаты независимой приёмки, видео со звуком и ограничения](docs/chapter-1-rc/release/temporary-walk-rc/README.md).
+
 ## Запуск
 
 TypeScript + Vite + SVG, без серверной части и runtime-зависимостей. Node22.18+ (CI24).
@@ -84,7 +86,7 @@ node --experimental-strip-types scripts/solve-art-v6.ts
 - `src/chapter-1.story.json`, `src/story.ts` — согласованные реплики и события.
 - `src/main.ts`, `src/style.css`, `src/level-art.ts` — интерфейс и отрисовка.
 
-Исторические browser scripts для v4/v5 сохранены; их специфичные проверки относятся к соответствующим старым коммитам. Текущие точки входа art_browser/chapter_browser используют v6 проверки.
+Исторические browser scripts для v4/v5/v6/v8 сохранены; приведённые visual entry points относятся к соответствующим версиям. Актуальное прохождение production-кандидата и его воспроизводимые скрипты находятся в [итоговом отчёте](docs/chapter-1-rc/release/temporary-walk-rc/README.md).
 
 ## История оформления сцен v8
 
