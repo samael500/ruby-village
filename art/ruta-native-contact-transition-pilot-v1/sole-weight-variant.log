@@ -1,0 +1,50 @@
+{
+  "metrics": {
+    "originalWalk48MaximumSolePointDisplacementM": 0.00448369261881214,
+    "originalWalk48RmsSolePointDisplacementM": 0.0005973068801895779,
+    "upperBootUnselectedVertexMaxAbsDeltaM": 0.0,
+    "lacesSockCuffMaxAbsDeltaM": 0.0,
+    "changedSoleVertexCount": 56,
+    "totalFootVertices": 336,
+    "perFootOriginalWalk48MaximumSolePointDisplacementM": {
+      "L": 0.00448369261881214,
+      "R": 0.004483525554907863
+    }
+  },
+  "contact": {
+    "start": {
+      "supportSide": "R",
+      "supportIntervalSeconds": [
+        0,
+        0.2
+      ],
+      "maximumSupportSoleAxisSpanM": [
+        7.078051567077637e-07,
+        3.547966480255127e-05,
+        1.6829464584589005e-05
+      ],
+      "maximumSupportSoleEuclideanSpanBoundM": 3.9206908433338824e-05,
+      "allFeetMinimumSoleZM": -0.0005906514707021415,
+      "maximumDepthBelowInferredFloorM": 0
+    },
+    "stop": {
+      "supportSide": "L",
+      "supportIntervalSeconds": [
+        0,
+        0.42049457355359643
+      ],
+      "maximumSupportSoleAxisSpanM": [
+        0.0008442029356956482,
+        0.0006639733910560608,
+        0.00015826663002371788
+      ],
+      "maximumSupportSoleEuclideanSpanBoundM": 0.001085623113944528,
+      "allFeetMinimumSoleZM": -0.000748917693272233,
+      "maximumDepthBelowInferredFloorM": 0
+    }
+  }
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-layered-style-v2/ruta-native-style.blend"
+
+Blender quit

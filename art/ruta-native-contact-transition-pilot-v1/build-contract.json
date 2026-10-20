@@ -1,0 +1,1745 @@
+{
+  "status": "NUMERIC-PROTOTYPE-PENDING-JOIN-AND-SOLE-GATE",
+  "sourceSHA256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "originalActionHashes": {
+    "Death": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Death.001": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Gun_Shoot": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "Gun_Shoot.001": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "HitRecieve": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve.001": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve_2": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "HitRecieve_2.001": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "Idle": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle.001": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle_Gun": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun.001": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun_Pointing": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Pointing.001": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Shoot": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Gun_Shoot.001": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Neutral": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral.001": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral_ProportionProposal": "caf23e4f0542ed8278dc2a93f150e426ef3cab5df25c4b7001457fb1abf8269b",
+    "Idle_Sword": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Idle_Sword.001": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Interact": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Interact.001": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Kick_Left": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Left.001": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Right": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Kick_Right.001": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Punch_Left": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Left.001": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Right": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Punch_Right.001": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Roll": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Roll.001": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Run": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run.001": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run_Back": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Back.001": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Left": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Left.001": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Right": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Right.001": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Shoot": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Run_Shoot.001": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Sword_Slash": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Sword_Slash.001": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Walk": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk.001": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk_ProportionProposal": "42dfb58c9b06fd26aebc86b8557bad156ec96447fe6e7560a4755e8f6ee759aa",
+    "Wave": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820",
+    "Wave.001": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820"
+  },
+  "idleDelivery": "static Idle0 pose, zero tangents; original Idle action unchanged",
+  "RootBoneConstantInPlace": true,
+  "RootTravelExternalOnly": true,
+  "clips": {
+    "start": {
+      "action": "RutaContact_FirstStepL_PROTOTYPE",
+      "durationSeconds": 0.4,
+      "sampleCount": 81,
+      "rootDistanceMetadata": [
+        {
+          "timeSeconds": 0.0,
+          "sourceActionFrame": 0.0,
+          "rootXYZM": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.005000000000000001,
+          "sourceActionFrame": 0.12000000000000002,
+          "rootXYZM": [
+            0.0,
+            -2.3922420700546352e-05,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.010000000000000002,
+          "sourceActionFrame": 0.24000000000000005,
+          "rootXYZM": [
+            0.0,
+            -9.558601593598727e-05,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.015,
+          "sourceActionFrame": 0.36,
+          "rootXYZM": [
+            0.0,
+            -0.00021483528540702535,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.020000000000000004,
+          "sourceActionFrame": 0.4800000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.0003815147288143636,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.025,
+          "sourceActionFrame": 0.6000000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.0005954688458587043,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.03,
+          "sourceActionFrame": 0.72,
+          "rootXYZM": [
+            0.0,
+            -0.0008565421362407505,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.034999999999999996,
+          "sourceActionFrame": 0.8399999999999999,
+          "rootXYZM": [
+            0.0,
+            -0.0011645790996612044,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.04000000000000001,
+          "sourceActionFrame": 0.9600000000000002,
+          "rootXYZM": [
+            0.0,
+            -0.0015194242358207702,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.045000000000000005,
+          "sourceActionFrame": 1.08,
+          "rootXYZM": [
+            0.0,
+            -0.0019209220444201488,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.05,
+          "sourceActionFrame": 1.2000000000000002,
+          "rootXYZM": [
+            0.0,
+            -0.002368917025160044,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.05500000000000001,
+          "sourceActionFrame": 1.3200000000000003,
+          "rootXYZM": [
+            0.0,
+            -0.0028632536777411606,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.06,
+          "sourceActionFrame": 1.44,
+          "rootXYZM": [
+            0.0,
+            -0.0034037765018641933,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.065,
+          "sourceActionFrame": 1.56,
+          "rootXYZM": [
+            0.0,
+            -0.003990329997229856,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.06999999999999999,
+          "sourceActionFrame": 1.6799999999999997,
+          "rootXYZM": [
+            0.0,
+            -0.004622758663538842,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.07500000000000001,
+          "sourceActionFrame": 1.8000000000000003,
+          "rootXYZM": [
+            0.0,
+            -0.0053009070004918606,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.08000000000000002,
+          "sourceActionFrame": 1.9200000000000004,
+          "rootXYZM": [
+            0.0,
+            -0.006024619507789613,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.085,
+          "sourceActionFrame": 2.04,
+          "rootXYZM": [
+            0.0,
+            -0.006793740685132799,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.09000000000000001,
+          "sourceActionFrame": 2.16,
+          "rootXYZM": [
+            0.0,
+            -0.007608115032222121,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.095,
+          "sourceActionFrame": 2.2800000000000002,
+          "rootXYZM": [
+            0.0,
+            -0.008467587048758279,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.1,
+          "sourceActionFrame": 2.4000000000000004,
+          "rootXYZM": [
+            0.0,
+            -0.009372001234441993,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.10500000000000001,
+          "sourceActionFrame": 2.5200000000000005,
+          "rootXYZM": [
+            0.0,
+            -0.010321202088973953,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.11000000000000001,
+          "sourceActionFrame": 2.6400000000000006,
+          "rootXYZM": [
+            0.0,
+            -0.011315034112054858,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.11499999999999999,
+          "sourceActionFrame": 2.76,
+          "rootXYZM": [
+            0.0,
+            -0.012353341803385407,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.12,
+          "sourceActionFrame": 2.88,
+          "rootXYZM": [
+            0.0,
+            -0.013435969662666317,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.125,
+          "sourceActionFrame": 3.0,
+          "rootXYZM": [
+            0.0,
+            -0.014562762189598288,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.13,
+          "sourceActionFrame": 3.12,
+          "rootXYZM": [
+            0.0,
+            -0.01573356388388202,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.135,
+          "sourceActionFrame": 3.24,
+          "rootXYZM": [
+            0.0,
+            -0.016948219245218214,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.13999999999999999,
+          "sourceActionFrame": 3.3599999999999994,
+          "rootXYZM": [
+            0.0,
+            -0.018206572773307547,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.145,
+          "sourceActionFrame": 3.4799999999999995,
+          "rootXYZM": [
+            0.0,
+            -0.01950846896785078,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.15000000000000002,
+          "sourceActionFrame": 3.6000000000000005,
+          "rootXYZM": [
+            0.0,
+            -0.02085375232854858,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.15500000000000003,
+          "sourceActionFrame": 3.7200000000000006,
+          "rootXYZM": [
+            0.0,
+            -0.022242267355101642,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.16000000000000003,
+          "sourceActionFrame": 3.8400000000000007,
+          "rootXYZM": [
+            0.0,
+            -0.0236738585472107,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.165,
+          "sourceActionFrame": 3.96,
+          "rootXYZM": [
+            0.0,
+            -0.02514837040457641,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.17,
+          "sourceActionFrame": 4.08,
+          "rootXYZM": [
+            0.0,
+            -0.02666564742689952,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.17500000000000002,
+          "sourceActionFrame": 4.2,
+          "rootXYZM": [
+            0.0,
+            -0.02822553411388071,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.18000000000000002,
+          "sourceActionFrame": 4.32,
+          "rootXYZM": [
+            0.0,
+            -0.029827874965220692,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.18500000000000003,
+          "sourceActionFrame": 4.44,
+          "rootXYZM": [
+            0.0,
+            -0.03147251448062016,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.19,
+          "sourceActionFrame": 4.5600000000000005,
+          "rootXYZM": [
+            0.0,
+            -0.033159297159779805,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.195,
+          "sourceActionFrame": 4.68,
+          "rootXYZM": [
+            0.0,
+            -0.034888067502400366,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2,
+          "sourceActionFrame": 4.800000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.03665867000818252,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.205,
+          "sourceActionFrame": 4.92,
+          "rootXYZM": [
+            0.0,
+            -0.03847094917682696,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.21000000000000002,
+          "sourceActionFrame": 5.040000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.04032474950803446,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.215,
+          "sourceActionFrame": 5.16,
+          "rootXYZM": [
+            0.0,
+            -0.04221991550150559,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.22000000000000003,
+          "sourceActionFrame": 5.280000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.04415629165694119,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.225,
+          "sourceActionFrame": 5.4,
+          "rootXYZM": [
+            0.0,
+            -0.046133722474041856,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.22999999999999998,
+          "sourceActionFrame": 5.52,
+          "rootXYZM": [
+            0.0,
+            -0.04815205245250835,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.23500000000000001,
+          "sourceActionFrame": 5.640000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.05021112609204138,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.24,
+          "sourceActionFrame": 5.76,
+          "rootXYZM": [
+            0.0,
+            -0.0523107878923416,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.24500000000000002,
+          "sourceActionFrame": 5.880000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.05445088235310979,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.25,
+          "sourceActionFrame": 6.0,
+          "rootXYZM": [
+            0.0,
+            -0.05663125397404656,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.255,
+          "sourceActionFrame": 6.12,
+          "rootXYZM": [
+            0.0,
+            -0.05885174725485264,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.26,
+          "sourceActionFrame": 6.24,
+          "rootXYZM": [
+            0.0,
+            -0.061112206695228814,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.265,
+          "sourceActionFrame": 6.36,
+          "rootXYZM": [
+            0.0,
+            -0.06341247679487569,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.27,
+          "sourceActionFrame": 6.48,
+          "rootXYZM": [
+            0.0,
+            -0.06575240205349403,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.275,
+          "sourceActionFrame": 6.6000000000000005,
+          "rootXYZM": [
+            0.0,
+            -0.06813182697078446,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.27999999999999997,
+          "sourceActionFrame": 6.719999999999999,
+          "rootXYZM": [
+            0.0,
+            -0.07055059604644773,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.28500000000000003,
+          "sourceActionFrame": 6.840000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.07300855378018462,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.29,
+          "sourceActionFrame": 6.959999999999999,
+          "rootXYZM": [
+            0.0,
+            -0.07550554467169565,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.29500000000000004,
+          "sourceActionFrame": 7.080000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.07804141322068174,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.30000000000000004,
+          "sourceActionFrame": 7.200000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.0806160039268434,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.305,
+          "sourceActionFrame": 7.32,
+          "rootXYZM": [
+            0.0,
+            -0.08322916128988145,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.31000000000000005,
+          "sourceActionFrame": 7.440000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.08588072980949654,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.315,
+          "sourceActionFrame": 7.5600000000000005,
+          "rootXYZM": [
+            0.0,
+            -0.0885705539853894,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.32000000000000006,
+          "sourceActionFrame": 7.6800000000000015,
+          "rootXYZM": [
+            0.0,
+            -0.09129847831726075,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.325,
+          "sourceActionFrame": 7.800000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.09406434730481122,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.33,
+          "sourceActionFrame": 7.92,
+          "rootXYZM": [
+            0.0,
+            -0.09686800544774157,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.335,
+          "sourceActionFrame": 8.040000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.09970929724575256,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.34,
+          "sourceActionFrame": 8.16,
+          "rootXYZM": [
+            0.0,
+            -0.10258806719854477,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.34500000000000003,
+          "sourceActionFrame": 8.280000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.10550415980581898,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.35000000000000003,
+          "sourceActionFrame": 8.4,
+          "rootXYZM": [
+            0.0,
+            -0.1084574195672758,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.355,
+          "sourceActionFrame": 8.52,
+          "rootXYZM": [
+            0.0,
+            -0.11144769098261598,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.36000000000000004,
+          "sourceActionFrame": 8.64,
+          "rootXYZM": [
+            0.0,
+            -0.11447481855154039,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.365,
+          "sourceActionFrame": 8.76,
+          "rootXYZM": [
+            0.0,
+            -0.11753864677374945,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.37000000000000005,
+          "sourceActionFrame": 8.88,
+          "rootXYZM": [
+            0.0,
+            -0.12063902014894416,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.375,
+          "sourceActionFrame": 9.0,
+          "rootXYZM": [
+            0.0,
+            -0.12377578317682492,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.38,
+          "sourceActionFrame": 9.120000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.12694878035709256,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.385,
+          "sourceActionFrame": 9.24,
+          "rootXYZM": [
+            0.0,
+            -0.13015785618944792,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.39,
+          "sourceActionFrame": 9.36,
+          "rootXYZM": [
+            0.0,
+            -0.1334028551735915,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.395,
+          "sourceActionFrame": 9.48,
+          "rootXYZM": [
+            0.0,
+            -0.13668362180922414,
+            0.0
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.4,
+          "sourceActionFrame": 9.600000000000001,
+          "rootXYZM": [
+            0.0,
+            -0.14000000059604645,
+            0.0
+          ],
+          "walkJoinPhase": 0.125
+        }
+      ],
+      "maximumLowerLegTargetErrorM": 4.427764145135585e-06,
+      "rootHermite": {
+        "p0": [
+          0,
+          0,
+          0
+        ],
+        "p1": [
+          0.0,
+          -0.14000000059604645,
+          0.0
+        ],
+        "v0": [
+          0,
+          0,
+          0
+        ],
+        "v1": [
+          0.0,
+          -0.666826605796814,
+          0.0
+        ]
+      },
+      "contactDefinition": "actual sole geometry check follows; source foot motion inherited, not certified static support"
+    },
+    "stop": {
+      "action": "RutaContact_StopL_PROTOTYPE",
+      "durationSeconds": 0.42049457355359643,
+      "sampleCount": 81,
+      "rootDistanceMetadata": [
+        {
+          "timeSeconds": 0.0,
+          "sourceActionFrame": 0.0,
+          "rootXYZM": [
+            0.0,
+            0.0,
+            0.0
+          ],
+          "walkJoinPhase": 0.125
+        },
+        {
+          "timeSeconds": 0.005256182169419955,
+          "sourceActionFrame": 0.12614837206607893,
+          "rootXYZM": [
+            -9.853720934188462e-06,
+            -0.0034830561020037162,
+            -1.2716814853774853e-07
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.01051236433883991,
+          "sourceActionFrame": 0.25229674413215786,
+          "rootXYZM": [
+            -3.9083666226360956e-05,
+            -0.006922300177055467,
+            -5.043980345362798e-07
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.015768546508259866,
+          "sourceActionFrame": 0.3784451161982368,
+          "rootXYZM": [
+            -8.719300961092812e-05,
+            -0.01031773222516829,
+            -1.1252778185735223e-06
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.02102472867767982,
+          "sourceActionFrame": 0.5045934882643157,
+          "rootXYZM": [
+            -0.0001536849248223007,
+            -0.013669352246355222,
+            -1.9833956612274052e-06
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.026280910847099777,
+          "sourceActionFrame": 0.6307418603303947,
+          "rootXYZM": [
+            -0.00023806258559488924,
+            -0.0169771602406293,
+            -3.0723397230758565e-06
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.03153709301651973,
+          "sourceActionFrame": 0.7568902323964736,
+          "rootXYZM": [
+            -0.0003398291656631044,
+            -0.020241156208003555,
+            -4.385698164696804e-06
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.03679327518593969,
+          "sourceActionFrame": 0.8830386044625524,
+          "rootXYZM": [
+            -0.00045848783876135707,
+            -0.023461340148491026,
+            -5.917059146668179e-06
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.04204945735535964,
+          "sourceActionFrame": 1.0091869765286314,
+          "rootXYZM": [
+            -0.0005935417786240579,
+            -0.026637712062104756,
+            -7.66001082956791e-06
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.0473056395247796,
+          "sourceActionFrame": 1.1353353485947104,
+          "rootXYZM": [
+            -0.000744494158985617,
+            -0.029770271948857775,
+            -9.608141373973922e-06
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.052561821694199554,
+          "sourceActionFrame": 1.2614837206607894,
+          "rootXYZM": [
+            -0.0009108481535804458,
+            -0.032859019808763115,
+            -1.1755038940464146e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.057818003863619516,
+          "sourceActionFrame": 1.3876320927268684,
+          "rootXYZM": [
+            -0.0010921069361429548,
+            -0.035903955641833823,
+            -1.4094291689616516e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.06307418603303946,
+          "sourceActionFrame": 1.5137804647929471,
+          "rootXYZM": [
+            -0.0012877736804075537,
+            -0.03890507944808292,
+            -1.6619487782008942e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.06833036820245943,
+          "sourceActionFrame": 1.6399288368590264,
+          "rootXYZM": [
+            -0.0014973515601086548,
+            -0.04186239122752346,
+            -1.932421537821938e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.07358655037187938,
+          "sourceActionFrame": 1.766077208925105,
+          "rootXYZM": [
+            -0.001720343748980667,
+            -0.044775890980168466,
+            -2.220206263882573e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.07884273254129934,
+          "sourceActionFrame": 1.892225580991184,
+          "rootXYZM": [
+            -0.001956253420758003,
+            -0.047645578706030985,
+            -2.524661772440595e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.08409891471071929,
+          "sourceActionFrame": 2.018373953057263,
+          "rootXYZM": [
+            -0.002204583749175072,
+            -0.050471454405124044,
+            -2.8451468795537955e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.08935509688013923,
+          "sourceActionFrame": 2.144522325123342,
+          "rootXYZM": [
+            -0.0024648379079662843,
+            -0.053253518077460676,
+            -3.181020401279966e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.0946112790495592,
+          "sourceActionFrame": 2.270670697189421,
+          "rootXYZM": [
+            -0.0027365190708660524,
+            -0.05599176972305395,
+            -3.531641153676901e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.09986746121897914,
+          "sourceActionFrame": 2.3968190692554994,
+          "rootXYZM": [
+            -0.003019130411608784,
+            -0.05868620934191684,
+            -3.8963679528023924e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.10512364338839911,
+          "sourceActionFrame": 2.522967441321579,
+          "rootXYZM": [
+            -0.003312175103928894,
+            -0.06133683693406244,
+            -4.274559614714235e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.11037982555781907,
+          "sourceActionFrame": 2.649115813387658,
+          "rootXYZM": [
+            -0.0036151563215607897,
+            -0.06394365249950376,
+            -4.66557495547022e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.11563600772723903,
+          "sourceActionFrame": 2.7752641854537368,
+          "rootXYZM": [
+            -0.003927577238238883,
+            -0.06650665603825384,
+            -5.068772791128141e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.12089218989665897,
+          "sourceActionFrame": 2.9014125575198153,
+          "rootXYZM": [
+            -0.004248941027697582,
+            -0.0690258475503257,
+            -5.4835119377457876e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.12614837206607893,
+          "sourceActionFrame": 3.0275609295858943,
+          "rootXYZM": [
+            -0.004578750863671302,
+            -0.07150122703573242,
+            -5.909151211380958e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.13140455423549888,
+          "sourceActionFrame": 3.153709301651973,
+          "rootXYZM": [
+            -0.004916509919894452,
+            -0.073932794494487,
+            -6.345049428091443e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.13666073640491885,
+          "sourceActionFrame": 3.2798576737180527,
+          "rootXYZM": [
+            -0.005261721370101441,
+            -0.07632054992660249,
+            -6.790565403935034e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.1419169185743388,
+          "sourceActionFrame": 3.4060060457841312,
+          "rootXYZM": [
+            -0.005613888388026681,
+            -0.07866449333209193,
+            -7.245057954969526e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.14717310074375875,
+          "sourceActionFrame": 3.53215441785021,
+          "rootXYZM": [
+            -0.00597251414740458,
+            -0.08096462471096831,
+            -7.707885897252707e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.1524292829131787,
+          "sourceActionFrame": 3.6583027899162888,
+          "rootXYZM": [
+            -0.0063371018219695536,
+            -0.08322094406324473,
+            -8.178408046842377e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.15768546508259867,
+          "sourceActionFrame": 3.784451161982368,
+          "rootXYZM": [
+            -0.00670715458545601,
+            -0.08543345138893421,
+            -8.655983219796326e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.16294164725201862,
+          "sourceActionFrame": 3.9105995340484467,
+          "rootXYZM": [
+            -0.007082175611598358,
+            -0.08760214668804975,
+            -9.139970232172345e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.16819782942143857,
+          "sourceActionFrame": 4.036747906114526,
+          "rootXYZM": [
+            -0.007461668074131014,
+            -0.08972702996060444,
+            -9.629727900028231e-05
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.17345401159085852,
+          "sourceActionFrame": 4.162896278180605,
+          "rootXYZM": [
+            -0.007845135146788378,
+            -0.09180810120661127,
+            -0.00010124615039421767
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.17871019376027847,
+          "sourceActionFrame": 4.289044650246684,
+          "rootXYZM": [
+            -0.008232080003304873,
+            -0.09384536042608332,
+            -0.0001062399046641076
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.18396637592969844,
+          "sourceActionFrame": 4.415193022312763,
+          "rootXYZM": [
+            -0.008622005817414902,
+            -0.0958388076190336,
+            -0.00011127212997052993
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.1892225580991184,
+          "sourceActionFrame": 4.541341394378842,
+          "rootXYZM": [
+            -0.009014415762852878,
+            -0.09778844278547513,
+            -0.00011633641447406262
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.19447874026853837,
+          "sourceActionFrame": 4.667489766444921,
+          "rootXYZM": [
+            -0.009408813013353213,
+            -0.099694265925421,
+            -0.00012142634633528363
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.1997349224379583,
+          "sourceActionFrame": 4.793638138510999,
+          "rootXYZM": [
+            -0.00980470074265031,
+            -0.10155627703888412,
+            -0.00012653551371477078
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.20499110460737827,
+          "sourceActionFrame": 4.919786510577079,
+          "rootXYZM": [
+            -0.010201582124478591,
+            -0.1033744761258777,
+            -0.00013165750477310212
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.21024728677679821,
+          "sourceActionFrame": 5.045934882643158,
+          "rootXYZM": [
+            -0.01059896033257246,
+            -0.10514886318641467,
+            -0.00013678590767085552
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.21550346894621816,
+          "sourceActionFrame": 5.172083254709236,
+          "rootXYZM": [
+            -0.010996338540666327,
+            -0.10687943822050808,
+            -0.0001419143105686089
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.22075965111563814,
+          "sourceActionFrame": 5.298231626775316,
+          "rootXYZM": [
+            -0.011393219922494612,
+            -0.10856620122817104,
+            -0.0001470363016269403
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.22601583328505806,
+          "sourceActionFrame": 5.424379998841394,
+          "rootXYZM": [
+            -0.01178910765179171,
+            -0.11020915220941645,
+            -0.00015214546900642743
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.23127201545447806,
+          "sourceActionFrame": 5.5505283709074735,
+          "rootXYZM": [
+            -0.012183504902292044,
+            -0.11180829116425745,
+            -0.00015723540086764844
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.23652819762389798,
+          "sourceActionFrame": 5.676676742973552,
+          "rootXYZM": [
+            -0.012575914847730019,
+            -0.11336361809270701,
+            -0.0001622996853711811
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.24178437979331793,
+          "sourceActionFrame": 5.802825115039631,
+          "rootXYZM": [
+            -0.012965840661840046,
+            -0.11487513299477822,
+            -0.00016733191067760342
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2470405619627379,
+          "sourceActionFrame": 5.92897348710571,
+          "rootXYZM": [
+            -0.013352785518356544,
+            -0.1163428358704841,
+            -0.0001723256649474934
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.25229674413215786,
+          "sourceActionFrame": 6.055121859171789,
+          "rootXYZM": [
+            -0.013736252591013907,
+            -0.11776672671983765,
+            -0.00017727453634142873
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.25755292630157783,
+          "sourceActionFrame": 6.181270231237868,
+          "rootXYZM": [
+            -0.014115745053546564,
+            -0.11914680554285198,
+            -0.00018217211301998763
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.26280910847099775,
+          "sourceActionFrame": 6.307418603303946,
+          "rootXYZM": [
+            -0.01449076607968891,
+            -0.12048307233954009,
+            -0.00018701198314374778
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.26806529064041773,
+          "sourceActionFrame": 6.4335669753700255,
+          "rootXYZM": [
+            -0.014860818843175362,
+            -0.12177552710991497,
+            -0.00019178773487328723
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2733214728098377,
+          "sourceActionFrame": 6.559715347436105,
+          "rootXYZM": [
+            -0.01522540651774034,
+            -0.12302416985398976,
+            -0.00019649295636918398
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2785776549792576,
+          "sourceActionFrame": 6.6858637195021835,
+          "rootXYZM": [
+            -0.015584032277118241,
+            -0.12422900057177741,
+            -0.0002011212357920158
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2838338371486776,
+          "sourceActionFrame": 6.8120120915682625,
+          "rootXYZM": [
+            -0.015936199295043484,
+            -0.12539001926329102,
+            -0.00020566616130236076
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2890900193180975,
+          "sourceActionFrame": 6.938160463634341,
+          "rootXYZM": [
+            -0.01628141074525047,
+            -0.1265072259285435,
+            -0.00021012132106079662
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2943462014875175,
+          "sourceActionFrame": 7.06430883570042,
+          "rootXYZM": [
+            -0.016619169801473616,
+            -0.127580620567548,
+            -0.00021448030322790144
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.2996023836569375,
+          "sourceActionFrame": 7.190457207766499,
+          "rootXYZM": [
+            -0.01694897963744734,
+            -0.12861020318031754,
+            -0.0002187366959642532
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3048585658263574,
+          "sourceActionFrame": 7.3166055798325775,
+          "rootXYZM": [
+            -0.017270343426906035,
+            -0.1295959737668651,
+            -0.00022288408743042958
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3101147479957774,
+          "sourceActionFrame": 7.442753951898657,
+          "rootXYZM": [
+            -0.017582764343584134,
+            -0.13053793232720387,
+            -0.0002269160657870089
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.31537093016519735,
+          "sourceActionFrame": 7.568902323964736,
+          "rootXYZM": [
+            -0.017885745561216027,
+            -0.1314360788613467,
+            -0.0002308262191945687
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.32062711233461727,
+          "sourceActionFrame": 7.6950506960308145,
+          "rootXYZM": [
+            -0.018178790253536133,
+            -0.13229041336930675,
+            -0.00023460813581368707
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.32588329450403725,
+          "sourceActionFrame": 7.8211990680968935,
+          "rootXYZM": [
+            -0.018461401594278868,
+            -0.13310093585109695,
+            -0.00023825540380494203
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.33113947667345717,
+          "sourceActionFrame": 7.947347440162972,
+          "rootXYZM": [
+            -0.018733082757178637,
+            -0.13386764630673045,
+            -0.00024176161132891138
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.33639565884287714,
+          "sourceActionFrame": 8.073495812229051,
+          "rootXYZM": [
+            -0.01899333691596985,
+            -0.1345905447362202,
+            -0.00024512034654617314
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3416518410122971,
+          "sourceActionFrame": 8.199644184295131,
+          "rootXYZM": [
+            -0.019241667244386917,
+            -0.1352696311395793,
+            -0.0002483251976173051
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.34690802318171704,
+          "sourceActionFrame": 8.32579255636121,
+          "rootXYZM": [
+            -0.01947757691616425,
+            -0.13590490551682072,
+            -0.00025136975270288525
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.352164205351137,
+          "sourceActionFrame": 8.451940928427288,
+          "rootXYZM": [
+            -0.01970056910503627,
+            -0.1364963678679576,
+            -0.0002542475999634917
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.35742038752055694,
+          "sourceActionFrame": 8.578089300493367,
+          "rootXYZM": [
+            -0.019910146984737368,
+            -0.13704401819300285,
+            -0.00025695232755970214
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3626765696899769,
+          "sourceActionFrame": 8.704237672559445,
+          "rootXYZM": [
+            -0.020105813729001974,
+            -0.13754785649196957,
+            -0.00025947752365209465
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3679327518593969,
+          "sourceActionFrame": 8.830386044625525,
+          "rootXYZM": [
+            -0.020287072511564475,
+            -0.13800788276487075,
+            -0.0002618167764012469
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3731889340288168,
+          "sourceActionFrame": 8.956534416691603,
+          "rootXYZM": [
+            -0.020453426506159295,
+            -0.13842409701171943,
+            -0.000263963673967737
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3784451161982368,
+          "sourceActionFrame": 9.082682788757683,
+          "rootXYZM": [
+            -0.020604378886520863,
+            -0.13879649923252885,
+            -0.0002659118045121431
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3837012983676567,
+          "sourceActionFrame": 9.208831160823761,
+          "rootXYZM": [
+            -0.020739432826383554,
+            -0.13912508942731175,
+            -0.00026765475619504276
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.38895748053707674,
+          "sourceActionFrame": 9.334979532889841,
+          "rootXYZM": [
+            -0.020858091499481823,
+            -0.1394098675960814,
+            -0.00026918611717701433
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.39421366270649666,
+          "sourceActionFrame": 9.46112790495592,
+          "rootXYZM": [
+            -0.02095985807955003,
+            -0.13965083373885065,
+            -0.0002704994756186352
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.3994698448759166,
+          "sourceActionFrame": 9.587276277021997,
+          "rootXYZM": [
+            -0.021044235740322617,
+            -0.13984798785563257,
+            -0.0002715884196804836
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.40472602704533656,
+          "sourceActionFrame": 9.713424649088077,
+          "rootXYZM": [
+            -0.02111072765553399,
+            -0.14000132994644035,
+            -0.0002724465375231375
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.40998220921475653,
+          "sourceActionFrame": 9.839573021154157,
+          "rootXYZM": [
+            -0.021158836998918556,
+            -0.1401108600112869,
+            -0.0002730674173071747
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.4152383913841765,
+          "sourceActionFrame": 9.965721393220235,
+          "rootXYZM": [
+            -0.021188066944210736,
+            -0.1401765780501853,
+            -0.0002734446471931733
+          ],
+          "walkJoinPhase": null
+        },
+        {
+          "timeSeconds": 0.42049457355359643,
+          "sourceActionFrame": 10.091869765286315,
+          "rootXYZM": [
+            -0.02119792066514492,
+            -0.1401984840631485,
+            -0.00027357181534171104
+          ],
+          "walkJoinPhase": null
+        }
+      ],
+      "maximumLowerLegTargetErrorM": 2.885212685165415e-06,
+      "rootHermite": {
+        "p0": [
+          0,
+          0,
+          0
+        ],
+        "p1": [
+          -0.02119792066514492,
+          -0.1401984840631485,
+          -0.00027357181534171104
+        ],
+        "v0": [
+          0.0,
+          -0.666826605796814,
+          0.0
+        ],
+        "v1": [
+          0,
+          0,
+          0
+        ]
+      },
+      "contactDefinition": "actual sole geometry check follows; source foot motion inherited, not certified static support"
+    }
+  },
+  "reachFailures": [],
+  "noRuntimeSourceRigRestGeometryChanges": true
+}

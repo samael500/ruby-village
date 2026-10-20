@@ -1,0 +1,117 @@
+{
+  "scope": "author browser smoke, independent visual/contact QA pending",
+  "URL": "http://127.0.0.1:5370/art/ruta-native-contact-transition-pilot-v1/review.html",
+  "htmlSHA256": "ddd293fd7fe9447affd89fdf1065b63c20b37b254d3be36d505c893458180308",
+  "manifestSHA256": "43cc5c7ee2e2af7b66a21b06d0251b4faa4bccced6149cf877d3221d8a081e3c",
+  "frameCount": 80,
+  "uniqueRenderedFrames": 73,
+  "minimumAlphaMarginPx": 50,
+  "DPRRuns": [
+    {
+      "DPR": 1,
+      "fixedStartState": {
+        "frame": 10,
+        "segment": "start",
+        "action": "RutaContact_FirstStepL_PROTOTYPE",
+        "sourceFrame": 4.800000000000001,
+        "elapsedMs": 399.99999999999994,
+        "playing": false,
+        "mode": "fixed",
+        "root": [
+          0,
+          -0.036658670753240585,
+          0
+        ],
+        "rootProjectedDeltaPx": [
+          5.586090087890625,
+          0
+        ],
+        "backing": [
+          960,
+          450
+        ],
+        "DPR": 1,
+        "sourcePoseHash": "c3b39f4264c77c90d93be8632618d0cfd1fb64acddf8f7270eb71c747474beb9"
+      },
+      "routeStopState": {
+        "frame": 69,
+        "segment": "stop",
+        "action": "RutaContact_StopL_PROTOTYPE",
+        "sourceFrame": 4.204945735535964,
+        "elapsedMs": 2441.872738980668,
+        "playing": false,
+        "mode": "route",
+        "root": [
+          -0.007973754778504372,
+          -1.5102423429489136,
+          -0.00010290606587659568
+        ],
+        "rootProjectedDeltaPx": [
+          230.13217163085938,
+          0.8017158508300781
+        ],
+        "backing": [
+          960,
+          450
+        ],
+        "DPR": 1,
+        "sourcePoseHash": "ce9dea83a349554222896f01f318c4a93d1f75d84c4a631a369679365105a49e"
+      },
+      "actualPlaybackStopsAtFinalIdle": true,
+      "pageErrors": []
+    },
+    {
+      "DPR": 2,
+      "fixedStartState": {
+        "frame": 10,
+        "segment": "start",
+        "action": "RutaContact_FirstStepL_PROTOTYPE",
+        "sourceFrame": 4.800000000000001,
+        "elapsedMs": 399.99999999999994,
+        "playing": false,
+        "mode": "fixed",
+        "root": [
+          0,
+          -0.036658670753240585,
+          0
+        ],
+        "rootProjectedDeltaPx": [
+          5.586090087890625,
+          0
+        ],
+        "backing": [
+          1920,
+          900
+        ],
+        "DPR": 2,
+        "sourcePoseHash": "c3b39f4264c77c90d93be8632618d0cfd1fb64acddf8f7270eb71c747474beb9"
+      },
+      "routeStopState": {
+        "frame": 69,
+        "segment": "stop",
+        "action": "RutaContact_StopL_PROTOTYPE",
+        "sourceFrame": 4.204945735535964,
+        "elapsedMs": 2441.872738980668,
+        "playing": false,
+        "mode": "route",
+        "root": [
+          -0.007973754778504372,
+          -1.5102423429489136,
+          -0.00010290606587659568
+        ],
+        "rootProjectedDeltaPx": [
+          230.13217163085938,
+          0.8017158508300781
+        ],
+        "backing": [
+          1920,
+          900
+        ],
+        "DPR": 2,
+        "sourcePoseHash": "ce9dea83a349554222896f01f318c4a93d1f75d84c4a631a369679365105a49e"
+      },
+      "actualPlaybackStopsAtFinalIdle": true,
+      "pageErrors": []
+    }
+  ]
+}
