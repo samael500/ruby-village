@@ -101,3 +101,31 @@ Root generated one permanent hair RGB surface (`e769a7b`), using the actual acti
 `41253eb` + `7a42ce8` preserve the derivative Blend, five actual Eevee stills, material bindings and cold-open source invariants. Real painted strands now stay on one3Dsurface; the source rig, weights, mesh geometry and50actions are preserved. Research regression corrected: original palette UV stays active for unpainted materials; RutaPaint is separate; Eevee is required for original ShaderToRGB materials (Cycles made the body appear flat). The native head texture is unchanged. A separate head-skin generation produced no image due output moderation; it was not retried or routed elsewhere (`7b2bd95`).
 
 Root actual view rejects promotion as whole Ruta: cap/lock chunks and source heading/face still differ from approved illustration, clothes/bag lack painted detail. No48batch or game install. Two separate owners/worktrees now address bounded gaps: compact owns native3Dhair/face likeness proposal with stableUV/sourcegait preservation; NPC owns ONE garment/accessory UV paint target and five-pose material pilot. Root owns immutable generated bitmaps/integration. Neither direction changes runtime or approved gait.
+
+## Stable whole-actor texture source checkpoint (2026-10-20)
+
+User still rejects temporal image stability; appearance/movement acceptance is unchanged.
+A separate whole-actor source now combines fixed painted clothing/accessory textures,
+licensed Daisy native curved hair surfaces with one permanent painted RGB texture,
+and the native head/eyes with a local copper scalp material fix.
+No per-frame redraw, image warping, or new gait timing is used.
+
+Clothing UV filtering defects were reproduced independently: pale seams came from
+unpainted margins at UV boundaries, not the underlying body. New padded native UVs
+and immutable generated texture maps remove those seams in actual front/step renders.
+Independent trousers QA: `9b21f27`; accessories author proof: `ae030b5`, independent QA pending.
+
+`art/ruta-native-painted-combined-v1/assembly-contract.json` pins the two input Blends.
+Combined source SHA256 `b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7`.
+Geometry, weights, rig rest matrices, all50actions, nonpaint UVs, head/hair images and
+camera are preserved by checked material/UV-only transfer. Four actual renders saved.
+Root artistic gate remains **HOLD**: E-view hair reads as separate ribbons, unlike
+accepted illustrated Ruta. This source is a research pilot, not accepted final art.
+The E48 exporter/DPR review scaffold exists, but full render is intentionally gated
+on source review; no temporal stability PASS from stills.
+
+Runtime remains `e32cad4`; none of these prototypes is enabled in game.
+Remaining: source hair/art coherence, actual temporal-loop review, six directions,
+contact-aware starts/stops and in-game route/turn/bridge checks, independent #37,
+then final #49 resource/build/release-candidate checks. Physical phone and family test
+remain NOT RUN. No merge or publication.
