@@ -1,0 +1,27 @@
+{
+  "status": "FOOT-GEOMETRY-ACTIONS-EXACT-PIN-NOT-CONTACT-ACCEPTANCE",
+  "originalSourceSHA256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "garmentDonorSHA256": "57d6668cb8ae2b81b5709b83a608f3ad435de4c39d711aa378b4e6ccf6d9a214",
+  "actualFootData": {
+    "restPositionsTopologyWeights": "64eff24ffda1df0891577eff702d917d293312ea4b3a127fcf4781a1cd70fc69",
+    "counts": [
+      336,
+      610
+    ],
+    "modifiers": [
+      [
+        "ARMATURE",
+        true,
+        true,
+        "CharacterArmature"
+      ]
+    ],
+    "actions": {
+      "Walk_ProportionProposal": "42dfb58c9b06fd26aebc86b8557bad156ec96447fe6e7560a4755e8f6ee759aa",
+      "Idle_Neutral_ProportionProposal": "caf23e4f0542ed8278dc2a93f150e426ef3cab5df25c4b7001457fb1abf8269b"
+    }
+  },
+  "equal": true,
+  "scope": "positions topology weights bonegroupnames armature binding two source actions; UV/material changes intentionally allowed",
+  "originalSourceUnchangedByRead": true
+}
