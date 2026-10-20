@@ -12,7 +12,7 @@ for mat,fs in groups.items():
  inside=np.asarray(mask.filter(ImageFilter.MinFilter(7)))>0
  cream=(a[:,:,0]>185)&(a[:,:,1]>170)&(a[:,:,2]>140)&((a.max(axis=2).astype(int)-a.min(axis=2).astype(int))<75)
  green=(a[:,:,1].astype(float)>a[:,:,0]*.93)&(a[:,:,1].astype(float)>a[:,:,2]*1.25)&(a[:,:,0]<180)
- rows.append({'oliveLikeInteriorFraction':float(green[inside].mean())if inside.any()else None,'material':mat,'erodedInteriorTexels':int(inside.sum()),'creamLikeInteriorFraction':float(cream[inside].mean())if inside.any()else None})
+ rows.append({'oliveLikeInteriorFraction':float(green[inside].mean())if inside.any()else None,'backgroundLikeInteriorFraction':float((np.linalg.norm(a.astype(float)-np.array([230,225,211]),axis=2)[inside]<25).mean())if inside.any()else None,'material':mat,'erodedInteriorTexels':int(inside.sum()),'creamLikeInteriorFraction':float(cream[inside].mean())if inside.any()else None})
  if 'cargo' in mat.lower() or 'brown' in mat.lower():
   for f in fs:
    ps=[(round(u*(N-1)),round((1-v)*(N-1)))for u,v in f['uv']];od.line(ps+[ps[0]],fill=(0,255,255),width=1)
