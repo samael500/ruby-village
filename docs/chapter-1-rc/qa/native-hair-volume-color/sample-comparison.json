@@ -1,0 +1,43 @@
+{
+  "samples": 10000,
+  "metrics": {
+    "correctLinear": {
+      "meanAbsoluteRGB": [
+        0.039222718399567424,
+        0.013214741494565772,
+        0.004112884784656201
+      ],
+      "medianAbsoluteRGB": [
+        0.01928392735090223,
+        0.006603796714408354,
+        0.002264224170383222
+      ],
+      "meanLumaError": -0.002100297419606555
+    },
+    "wouldBeDoubleGamma": {
+      "meanAbsoluteRGB": [
+        0.25276435806734365,
+        0.253668703959529,
+        0.17112280601131596
+      ],
+      "medianAbsoluteRGB": [
+        0.25920138848132507,
+        0.25356822299031445,
+        0.1682498767237966
+      ],
+      "meanLumaError": -0.247394402684325
+    }
+  },
+  "sourceMeanLinear": [
+    0.4308207764345553,
+    0.1188224208343725,
+    0.03673462075378563
+  ],
+  "bakeMeanLinear": [
+    0.42582414671603447,
+    0.11741275221508661,
+    0.03632161597627904
+  ],
+  "bakeSHA256": "b1e3736fba154829675a8351acca1e1b5f74cabce410ee3ca270feeaba634fa1",
+  "limits": "Deterministic per-face centroids, unweighted, bilinear decoded-linear PNG samples. No per-pixel bake coverage guarantee; tiny UV chart pixels/bleed/UV interpolation may influence samples."
+}

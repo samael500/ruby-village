@@ -1,0 +1,677 @@
+{
+  "parent": {
+    "path": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-combined-v1/ruta-native-painted-combined.blend",
+    "sha256": "b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7",
+    "materials": [
+      {
+        "material": "Daisy stable painted RGB native alpha pilot",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Displacement": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Thickness": 0.0
+            }
+          },
+          {
+            "name": "Diffuse BSDF",
+            "type": "BSDF_DIFFUSE",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Roughness": 0.800000011920929,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0
+            }
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "daisyhair1.png",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "UVMap",
+            "operation": null,
+            "inputs": {}
+          },
+          {
+            "name": "Mix (Legacy)",
+            "type": "MIX_RGB",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Fac": 1.0,
+              "Color1": [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              "Color2": [
+                1.3200000524520874,
+                0.9200000166893005,
+                0.699999988079071,
+                1.0
+              ]
+            }
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "daisyhair1_normals.png",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP",
+            "image": null,
+            "uv": "UVMap",
+            "operation": null,
+            "inputs": {
+              "Strength": 0.25,
+              "Color": [
+                0.5,
+                0.5,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "uv": null,
+            "operation": "GREATER_THAN",
+            "inputs": {
+              "Value": 0.5
+            }
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Weight": 0.0
+            }
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Fac": 0.5
+            }
+          },
+          {
+            "name": "Fixed storybook RGB source",
+            "type": "TEX_IMAGE",
+            "image": "painted-daisy-rgb-v1.png",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Mix (Legacy)",
+            "Color1"
+          ],
+          [
+            "UV Map",
+            "UV",
+            "Image Texture.001",
+            "Vector"
+          ],
+          [
+            "Image Texture.001",
+            "Color",
+            "Normal Map",
+            "Color"
+          ],
+          [
+            "Normal Map",
+            "Normal",
+            "Diffuse BSDF",
+            "Normal"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "Mix Shader",
+            "Fac"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Diffuse BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "UV Map",
+            "UV",
+            "Fixed storybook RGB source",
+            "Vector"
+          ],
+          [
+            "Fixed storybook RGB source",
+            "Color",
+            "Diffuse BSDF",
+            "Color"
+          ]
+        ]
+      }
+    ],
+    "images": [
+      {
+        "name": "painted-daisy-rgb-v1.png",
+        "colorspace": "sRGB",
+        "isFloat": false,
+        "source": "FILE",
+        "size": [
+          1254,
+          1254
+        ],
+        "packedSHA": "ab0a4713e0bb9f8f98ee437cd787190557b47567a7e5199584bbc5d09244d0f7",
+        "filepath": "/tmp/ruby-ready-wavy-hair/art/ruta-ready-wavy-hair-pilot-v1/daisy-painted-material-pilot/inputs/painted-daisy-rgb-v1.png",
+        "alphaMode": "STRAIGHT"
+      }
+    ]
+  },
+  "volume": {
+    "path": "/tmp/ruby-combined-loop/art/ruta-native-hair-volume-study-v1/alpha-aware/cache/alpha-volume-baked.blend",
+    "sha256": "09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d",
+    "materials": [
+      {
+        "material": "Alpha volume fixed native RGB bake",
+        "nodes": [
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "NativeSourceUV",
+            "operation": null,
+            "inputs": {}
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "painted-daisy-rgb-v1.png",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "Emission",
+            "type": "EMISSION",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Strength": 1.0,
+              "Weight": 0.0
+            }
+          },
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Displacement": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Thickness": 0.0
+            }
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "Fixed native 3D volume RGB bake",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "Diffuse BSDF",
+            "type": "BSDF_DIFFUSE",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Roughness": 0.800000011920929,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0
+            }
+          },
+          {
+            "name": "UV Map.001",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "VolumeBakeUV",
+            "operation": null,
+            "inputs": {}
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Emission",
+            "Color"
+          ],
+          [
+            "UV Map.001",
+            "UV",
+            "Image Texture.001",
+            "Vector"
+          ],
+          [
+            "Image Texture.001",
+            "Color",
+            "Diffuse BSDF",
+            "Color"
+          ],
+          [
+            "Diffuse BSDF",
+            "BSDF",
+            "Material Output",
+            "Surface"
+          ]
+        ]
+      },
+      {
+        "material": "Daisy stable painted RGB native alpha pilot",
+        "nodes": [
+          {
+            "name": "Material Output",
+            "type": "OUTPUT_MATERIAL",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Displacement": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Thickness": 0.0
+            }
+          },
+          {
+            "name": "Diffuse BSDF",
+            "type": "BSDF_DIFFUSE",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Color": [
+                0.800000011920929,
+                0.800000011920929,
+                0.800000011920929,
+                1.0
+              ],
+              "Roughness": 0.800000011920929,
+              "Normal": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "Weight": 0.0
+            }
+          },
+          {
+            "name": "Image Texture",
+            "type": "TEX_IMAGE",
+            "image": "daisyhair1.png",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "UV Map",
+            "type": "UVMAP",
+            "image": null,
+            "uv": "UVMap",
+            "operation": null,
+            "inputs": {}
+          },
+          {
+            "name": "Mix (Legacy)",
+            "type": "MIX_RGB",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Fac": 1.0,
+              "Color1": [
+                0.5,
+                0.5,
+                0.5,
+                1.0
+              ],
+              "Color2": [
+                1.3200000524520874,
+                0.9200000166893005,
+                0.699999988079071,
+                1.0
+              ]
+            }
+          },
+          {
+            "name": "Image Texture.001",
+            "type": "TEX_IMAGE",
+            "image": "daisyhair1_normals.png",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          },
+          {
+            "name": "Normal Map",
+            "type": "NORMAL_MAP",
+            "image": null,
+            "uv": "UVMap",
+            "operation": null,
+            "inputs": {
+              "Strength": 0.25,
+              "Color": [
+                0.5,
+                0.5,
+                1.0,
+                1.0
+              ]
+            }
+          },
+          {
+            "name": "Math",
+            "type": "MATH",
+            "image": null,
+            "uv": null,
+            "operation": "GREATER_THAN",
+            "inputs": {
+              "Value": 0.5
+            }
+          },
+          {
+            "name": "Transparent BSDF",
+            "type": "BSDF_TRANSPARENT",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Color": [
+                1.0,
+                1.0,
+                1.0,
+                1.0
+              ],
+              "Weight": 0.0
+            }
+          },
+          {
+            "name": "Mix Shader",
+            "type": "MIX_SHADER",
+            "image": null,
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Fac": 0.5
+            }
+          },
+          {
+            "name": "Fixed storybook RGB source",
+            "type": "TEX_IMAGE",
+            "image": "painted-daisy-rgb-v1.png",
+            "uv": null,
+            "operation": null,
+            "inputs": {
+              "Vector": [
+                0.0,
+                0.0,
+                0.0
+              ]
+            }
+          }
+        ],
+        "links": [
+          [
+            "UV Map",
+            "UV",
+            "Image Texture",
+            "Vector"
+          ],
+          [
+            "Image Texture",
+            "Color",
+            "Mix (Legacy)",
+            "Color1"
+          ],
+          [
+            "UV Map",
+            "UV",
+            "Image Texture.001",
+            "Vector"
+          ],
+          [
+            "Image Texture.001",
+            "Color",
+            "Normal Map",
+            "Color"
+          ],
+          [
+            "Normal Map",
+            "Normal",
+            "Diffuse BSDF",
+            "Normal"
+          ],
+          [
+            "Image Texture",
+            "Alpha",
+            "Math",
+            "Value"
+          ],
+          [
+            "Math",
+            "Value",
+            "Mix Shader",
+            "Fac"
+          ],
+          [
+            "Transparent BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Diffuse BSDF",
+            "BSDF",
+            "Mix Shader",
+            "Shader"
+          ],
+          [
+            "Mix Shader",
+            "Shader",
+            "Material Output",
+            "Surface"
+          ],
+          [
+            "UV Map",
+            "UV",
+            "Fixed storybook RGB source",
+            "Vector"
+          ],
+          [
+            "Fixed storybook RGB source",
+            "Color",
+            "Diffuse BSDF",
+            "Color"
+          ]
+        ]
+      }
+    ],
+    "images": [
+      {
+        "name": "Fixed native 3D volume RGB bake",
+        "colorspace": "sRGB",
+        "isFloat": false,
+        "source": "FILE",
+        "size": [
+          2048,
+          2048
+        ],
+        "packedSHA": "b1e3736fba154829675a8351acca1e1b5f74cabce410ee3ca270feeaba634fa1",
+        "filepath": "/tmp/ruby-combined-loop/art/ruta-native-hair-volume-study-v1/alpha-aware/fixed-native-rgb-bake.png",
+        "alphaMode": "STRAIGHT"
+      },
+      {
+        "name": "painted-daisy-rgb-v1.png",
+        "colorspace": "sRGB",
+        "isFloat": false,
+        "source": "FILE",
+        "size": [
+          1254,
+          1254
+        ],
+        "packedSHA": "ab0a4713e0bb9f8f98ee437cd787190557b47567a7e5199584bbc5d09244d0f7",
+        "filepath": "/tmp/ruby-ready-wavy-hair/art/ruta-ready-wavy-hair-pilot-v1/daisy-painted-material-pilot/inputs/painted-daisy-rgb-v1.png",
+        "alphaMode": "STRAIGHT"
+      }
+    ],
+    "mesh": {
+      "vertices": 527846,
+      "faces": 527874,
+      "uvSamples": 10000
+    }
+  }
+}
