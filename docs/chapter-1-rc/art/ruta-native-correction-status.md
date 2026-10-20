@@ -194,3 +194,25 @@ Static Idle0 endpoints and source Walk's one-sided join derivatives are explicit
 New start/stop Actions remain under numerical contact review; identified mixed
 Foot/LowerLeg sole weights require an isolated variant and old-Walk regression
 checks before any claim of planted-foot stability.
+
+### Completed visible-face browser checkpoint
+
+`d150463` delivers all48 actual front-proof PNGs from frozen source09ac…;
+`1c19d6c` records independent desktop DPR1/DPR2 and844×390 landscape browser review.
+All48 draws observed in each context, no page/request/HTTP errors, fixed anchors,
+single-pass sampling and no overflow. Actual silent MP4 and paused/decoded frames
+are in `docs/chapter-1-rc/qa/native-volume-front-temporal/`.
+Root inspected the face-detail and decoded-video sheets as well.
+
+One phase0 ray intersection per eye defines fixed Head-local diagnostic points;
+actual native Head rotation/translation predicts the subsequent48 positions.
+Blue-region centroid residual RMS is0.227/0.248native pixels, maximum0.540;
+worst adjacent residual0.611native pixels. Main face movement follows the rig.
+This is evidence against large independent iris jumps in this proof, not a blanket
+flicker-free certificate: other facial details/hair/material shimmer remain open.
+No per-frame alignment or production registration is introduced.
+
+`b80d619` documents visible style gaps against the accepted Ruta: expression,
+hair crown, tonal treatment/accessories and clothing detail. New native appearance
+is not accepted. Game runtimee32cad4 is unchanged; six production directions,
+genuine transitions/in-game checks and final #37/#49 remain outstanding.
