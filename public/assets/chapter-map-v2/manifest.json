@@ -1,0 +1,453 @@
+{
+  "version": 2,
+  "status": "painted-paving-candidate-requires-art-and-runtime-review",
+  "file": "map-base.webp",
+  "nativeSize": [
+    1000,
+    400
+  ],
+  "viewBox": [
+    0,
+    0,
+    1000,
+    400
+  ],
+  "projection": "entire-image maps to viewBox; contain, never cover crop",
+  "nodes": [
+    {
+      "id": "gate",
+      "anchor": [
+        120,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "garden",
+      "anchor": [
+        365,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "well",
+      "anchor": [
+        610,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "bakery",
+      "anchor": [
+        855,
+        95
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "stream",
+      "anchor": [
+        855,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "mill",
+      "anchor": [
+        610,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "post",
+      "anchor": [
+        365,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    },
+    {
+      "id": "forest",
+      "anchor": [
+        120,
+        300
+      ],
+      "hitArea": [
+        190,
+        144
+      ],
+      "labelOffset": [
+        0,
+        60
+      ]
+    }
+  ],
+  "routes": [
+    {
+      "id": "garden",
+      "path": "M115 128 C160 166 218 171 270 165 S353 171 403 128",
+      "start": [
+        115.0,
+        128.0
+      ],
+      "end": [
+        403.0,
+        128.0
+      ]
+    },
+    {
+      "id": "well",
+      "path": "M403 128 C445 165 514 172 550 156 S583 146 601 128",
+      "start": [
+        403.0,
+        128.0
+      ],
+      "end": [
+        601.0,
+        128.0
+      ]
+    },
+    {
+      "id": "bakery",
+      "path": "M601 128 C650 167 721 169 767 160 S831 160 864 133",
+      "start": [
+        601.0,
+        128.0
+      ],
+      "end": [
+        864.0,
+        133.0
+      ]
+    },
+    {
+      "id": "stream",
+      "path": "M864 133 C935 147 977 173 975 217 S958 267 932 292",
+      "start": [
+        864.0,
+        133.0
+      ],
+      "end": [
+        932.0,
+        292.0
+      ]
+    },
+    {
+      "id": "mill",
+      "path": "M932 292 C927 266 912 255 886 249 L776 245 C738 259 691 303 626 324",
+      "start": [
+        932.0,
+        292.0
+      ],
+      "end": [
+        626.0,
+        324.0
+      ]
+    },
+    {
+      "id": "post",
+      "path": "M626 324 C570 352 510 363 459 349 S392 348 359 321",
+      "start": [
+        626.0,
+        324.0
+      ],
+      "end": [
+        359.0,
+        321.0
+      ]
+    },
+    {
+      "id": "forest",
+      "path": "M359 321 C308 354 252 367 206 349 S147 340 112 315",
+      "start": [
+        359.0,
+        321.0
+      ],
+      "end": [
+        112.0,
+        315.0
+      ]
+    }
+  ],
+  "source": "art/chapter-map-v2/generated-paving-01.png",
+  "millLinkSource": "art/chapter-map-v2/generated-mill-link-02.png",
+  "paintedMillCurve": "M932 292 C910 278 901 273 886 274 L835 270 C805 267 784 273 750 283 S720 302 696 308 S648 324 626 324",
+  "sourceSha256": "105890b4dd0da1c2ded3f950707f030324bc7a05497bd10b3c51bc614ba1e699",
+  "acceptedMapSha256": "32845a9e74697a05c391fe475e945461a482f229f16fd8a76c926eabb4b68cbd",
+  "checks": {
+    "outsideAllowedCorridorPixelsChanged": 66076,
+    "protectedLandmarkPixelsChanged": 0,
+    "endpointsChanged": 0,
+    "nativeSize": [
+      1000,
+      400
+    ],
+    "gameQa": "not-run",
+    "physicalPhone": "not-tested",
+    "progressPatchCount": 7,
+    "progressPatchAlphaExact": true,
+    "progressPatchOverlaps": 0,
+    "protectedLandmarkProgressPixelsChanged": 0,
+    "wideCorePixelExact": true,
+    "protectedLandmarkRingPixelsChanged": 0,
+    "pavingRingPixelsChanged": 0,
+    "corePavingPhaseOutsideAllowedCorridorPixelsChanged": 0,
+    "outsideAllowedCorridorReason": "recorded decorative32px ring/core foliage join; paving and accepted landmark pixels excluded",
+    "artBench15Cases": "PASS source-runtime art injection bench; not production integration"
+  },
+  "requirements": [
+    "https://github.com/samael500/ruby-village/issues/48",
+    "https://github.com/samael500/ruby-village/issues/62#issuecomment-6233677763"
+  ],
+  "layers": {
+    "base": "map-base.webp",
+    "completedRoads": {
+      "garden": {
+        "file": "completed-garden.webp",
+        "canvas": [
+          1000,
+          400
+        ],
+        "alphaBBox": [
+          119,
+          121,
+          404,
+          180
+        ],
+        "bytes": 16364,
+        "sha256": "96f08f5bc2abcf8756ba1c01e6afb1e808c5dbb14a19993dcb9dbb3c1a59f6b8",
+        "source": "art/chapter-map-v2/generated-charoite-03.png",
+        "overlapWithOtherRoutePixels": 0
+      },
+      "well": {
+        "file": "completed-well.webp",
+        "canvas": [
+          1000,
+          400
+        ],
+        "alphaBBox": [
+          404,
+          129,
+          603,
+          177
+        ],
+        "bytes": 11148,
+        "sha256": "a7564b6fee1f0c84e4892912c27c091fec4565ba180d364b7765c29185677db7",
+        "source": "art/chapter-map-v2/generated-charoite-03.png",
+        "overlapWithOtherRoutePixels": 0
+      },
+      "bakery": {
+        "file": "completed-bakery.webp",
+        "canvas": [
+          1000,
+          400
+        ],
+        "alphaBBox": [
+          603,
+          134,
+          870,
+          182
+        ],
+        "bytes": 12316,
+        "sha256": "6df286dd9cfa82c558c672ed92ff41b20beebe8d79e6762156fed8545888fb93",
+        "source": "art/chapter-map-v2/generated-charoite-03.png",
+        "overlapWithOtherRoutePixels": 0
+      },
+      "stream": {
+        "file": "completed-stream.webp",
+        "canvas": [
+          1000,
+          400
+        ],
+        "alphaBBox": [
+          869,
+          152,
+          986,
+          308
+        ],
+        "bytes": 13846,
+        "sha256": "ad9b888d47ca0d80ac87e77000c48be123a1893523a239dee7c047fa02a9fbfe",
+        "source": "art/chapter-map-v2/generated-charoite-03.png",
+        "overlapWithOtherRoutePixels": 0
+      },
+      "mill": {
+        "file": "completed-mill.webp",
+        "canvas": [
+          1000,
+          400
+        ],
+        "alphaBBox": [
+          617,
+          225,
+          933,
+          344
+        ],
+        "bytes": 38444,
+        "sha256": "f96f5570a15bd56df5631c4b7b77faf3a39baefb9a8c16c8ce120e7854b2786b",
+        "source": "art/chapter-map-v2/generated-charoite-03.png",
+        "overlapWithOtherRoutePixels": 0
+      },
+      "post": {
+        "file": "completed-post.webp",
+        "canvas": [
+          1000,
+          400
+        ],
+        "alphaBBox": [
+          350,
+          316,
+          629,
+          363
+        ],
+        "bytes": 16602,
+        "sha256": "9e0ba483242fb1e5a365646d721c2cbe9a902454fbed9ba603d5fc1d5c5b0d5e",
+        "source": "art/chapter-map-v2/generated-charoite-03.png",
+        "overlapWithOtherRoutePixels": 0
+      },
+      "forest": {
+        "file": "completed-forest.webp",
+        "canvas": [
+          1000,
+          400
+        ],
+        "alphaBBox": [
+          99,
+          310,
+          358,
+          361
+        ],
+        "bytes": 14272,
+        "sha256": "9b81f75bcab422717a018de62301f7cb172381611749a8a68092f17b33925313",
+        "source": "art/chapter-map-v2/generated-charoite-03.png",
+        "overlapWithOtherRoutePixels": 0
+      }
+    },
+    "buttons": "external accessible DOM; unchanged"
+  },
+  "wide": {
+    "file": "assets/chapter-map-v2/map-wide.webp",
+    "canvas": {
+      "width": 1400,
+      "height": 800
+    },
+    "originalRect": {
+      "x": 200,
+      "y": 200,
+      "width": 1000,
+      "height": 400
+    },
+    "source": "art/chapter-map-v2/generated-ring-04.png",
+    "sourceSize": [
+      1659,
+      948
+    ],
+    "sourceSha256": "c6b70621ce88a93e0b4e438def6df2f3e3c0f32392d36bed1fa002ff5df7c0f1",
+    "corePixelExact": true,
+    "opaque": true,
+    "registration": "same contain fit as native map; decorative32px foliage perimeter join, accepted landmarks and all painted paving excluded"
+  },
+  "charoiteSourceSha256": "e809779fee8b8cac3e4219afca5cccf8fc4c224bd341cc0543ee8d0a7575088e",
+  "completedState": "single painted source, spatially partitioned; no SVG paving shapes",
+  "gardenApproachRepair": {
+    "source": "art/chapter-map-v2/generated-garden-two-states-05.png",
+    "sourceSha256": "6936061cbc58825c28ca56528346d9c755e5f964c08698b462c6705447ce9c26",
+    "editBounds": [
+      368,
+      142,
+      411,
+      174
+    ],
+    "protectedLandmarkPixelsChanged": 0,
+    "endpointsChanged": 0
+  },
+  "files": {
+    "completed-bakery.webp": {
+      "sha256": "6df286dd9cfa82c558c672ed92ff41b20beebe8d79e6762156fed8545888fb93",
+      "bytes": 12316
+    },
+    "completed-post.webp": {
+      "sha256": "9e0ba483242fb1e5a365646d721c2cbe9a902454fbed9ba603d5fc1d5c5b0d5e",
+      "bytes": 16602
+    },
+    "completed-forest.webp": {
+      "sha256": "9b81f75bcab422717a018de62301f7cb172381611749a8a68092f17b33925313",
+      "bytes": 14272
+    },
+    "completed-mill.webp": {
+      "sha256": "f96f5570a15bd56df5631c4b7b77faf3a39baefb9a8c16c8ce120e7854b2786b",
+      "bytes": 38444
+    },
+    "map-wide.webp": {
+      "sha256": "5e80213c4303d5cc3a6467e5e96cf7e6b5eaa6f4b3bf5fae1305500d99ea1422",
+      "bytes": 2193246
+    },
+    "completed-stream.webp": {
+      "sha256": "ad9b888d47ca0d80ac87e77000c48be123a1893523a239dee7c047fa02a9fbfe",
+      "bytes": 13846
+    },
+    "completed-well.webp": {
+      "sha256": "a7564b6fee1f0c84e4892912c27c091fec4565ba180d364b7765c29185677db7",
+      "bytes": 11148
+    },
+    "map-base.webp": {
+      "sha256": "3368d372d229e5c1b82f83752cf0187bb7c0df19921ee259963931cd162c299c",
+      "bytes": 773840
+    },
+    "completed-garden.webp": {
+      "sha256": "96f08f5bc2abcf8756ba1c01e6afb1e808c5dbb14a19993dcb9dbb3c1a59f6b8",
+      "bytes": 16364
+    }
+  }
+}

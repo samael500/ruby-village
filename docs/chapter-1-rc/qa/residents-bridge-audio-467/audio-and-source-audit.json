@@ -1,0 +1,1065 @@
+{
+  "baseline": "467eab2",
+  "nativeAudioContext": "observed, not replaced with fake",
+  "beforeGesture": {
+    "contexts": 0,
+    "states": [],
+    "masterValues": [],
+    "activeLoops": [],
+    "masterTargets": []
+  },
+  "playing": {
+    "contexts": 1,
+    "states": [
+      "running"
+    ],
+    "masterValues": [
+      0.6999463438987732
+    ],
+    "activeLoops": [
+      {
+        "duration": 12,
+        "channels": 1
+      },
+      {
+        "duration": 106.66664583333333,
+        "channels": 2
+      }
+    ],
+    "masterTargets": [
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ]
+  },
+  "paused": {
+    "contexts": 1,
+    "states": [
+      "running"
+    ],
+    "masterValues": [
+      0.6999463438987732
+    ],
+    "activeLoops": [],
+    "masterTargets": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ]
+  },
+  "resumed": {
+    "contexts": 1,
+    "states": [
+      "running"
+    ],
+    "masterValues": [
+      0.6999463438987732
+    ],
+    "activeLoops": [
+      {
+        "duration": 12,
+        "channels": 1
+      },
+      {
+        "duration": 106.66664583333333,
+        "channels": 2
+      }
+    ],
+    "masterTargets": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ]
+  },
+  "muted": {
+    "contexts": 1,
+    "states": [
+      "running"
+    ],
+    "masterValues": [
+      0.18127760291099548
+    ],
+    "activeLoops": [],
+    "masterTargets": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0
+    ]
+  },
+  "unmuted": {
+    "contexts": 1,
+    "states": [
+      "running"
+    ],
+    "masterValues": [
+      0.6274591088294983
+    ],
+    "activeLoops": [],
+    "masterTargets": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0,
+      0.7
+    ]
+  },
+  "zeroVolumePreferences": {
+    "muted": false,
+    "music": 0,
+    "sfx": 0
+  },
+  "restored": {
+    "contexts": 1,
+    "states": [
+      "running"
+    ],
+    "masterValues": [
+      0.6996481418609619
+    ],
+    "activeLoops": [
+      {
+        "duration": 12,
+        "channels": 1
+      },
+      {
+        "duration": 106.66664583333333,
+        "channels": 2
+      }
+    ],
+    "masterTargets": [
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7,
+      0.7
+    ]
+  },
+  "httpErrors": [],
+  "subjectiveListening": "NOT RUN",
+  "unchangedAudioBytes": [
+    {
+      "file": "public/assets/audio/music/evening.ogg",
+      "before": "3999b85b0c82494a0a46a6b7de91629d8fc72b38a61f1bf3acbff7cf31516d1a",
+      "after": "3999b85b0c82494a0a46a6b7de91629d8fc72b38a61f1bf3acbff7cf31516d1a",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/music/day.ogg",
+      "before": "9c36ec7555348488ddd6bcf419ffe438338d967641920eb011babf8fbc9607e1",
+      "after": "9c36ec7555348488ddd6bcf419ffe438338d967641920eb011babf8fbc9607e1",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/music/manifest.json",
+      "before": "81e0af84251f2dc28d3a0fc8df97eb79c5cec24d4f5969521d963ed8b27520b1",
+      "after": "81e0af84251f2dc28d3a0fc8df97eb79c5cec24d4f5969521d963ed8b27520b1",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/music/ending.ogg",
+      "before": "451401a0e70e7f00f046c890cbca1aedd0fde3e93fe7a128a9024332185edb47",
+      "after": "451401a0e70e7f00f046c890cbca1aedd0fde3e93fe7a128a9024332185edb47",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-stone-0.ogg",
+      "before": "d6f5a157b3ed606bd83b4e5d014d110b6013b03166f4335d97195a69d85199b0",
+      "after": "d6f5a157b3ed606bd83b4e5d014d110b6013b03166f4335d97195a69d85199b0",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/select.ogg",
+      "before": "1c9feb2863bfdb75772bbc98bdc0a35b7548f99616250f368579356b6b644e6f",
+      "after": "1c9feb2863bfdb75772bbc98bdc0a35b7548f99616250f368579356b6b644e6f",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/paper.ogg",
+      "before": "3b755471bae2a457b7b33cd5b4087d658bed3461438c0ebc9597861a0ee113ea",
+      "after": "3b755471bae2a457b7b33cd5b4087d658bed3461438c0ebc9597861a0ee113ea",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/place.ogg",
+      "before": "138f7f4ff6c954676b753cbf0d5f323e06467c696f25849e9f29479d9dd902e1",
+      "after": "138f7f4ff6c954676b753cbf0d5f323e06467c696f25849e9f29479d9dd902e1",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/gate.ogg",
+      "before": "539ffad793a55a020562c9f4486163911a77d18cd192cd0469d65c4ffceedc08",
+      "after": "539ffad793a55a020562c9f4486163911a77d18cd192cd0469d65c4ffceedc08",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-stone-2.ogg",
+      "before": "c1c824ed0bac4f3d9b76c5e2b9bf22bff0909427dde56827f8acdb08202f760f",
+      "after": "c1c824ed0bac4f3d9b76c5e2b9bf22bff0909427dde56827f8acdb08202f760f",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/place-1.ogg",
+      "before": "8d3001bd3dc6b51cdb39d5c08d974424421456e198b31842637d9d7c408be4ce",
+      "after": "8d3001bd3dc6b51cdb39d5c08d974424421456e198b31842637d9d7c408be4ce",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/basket.ogg",
+      "before": "82c74cac6a74b04c45b3bd4c7c3a27d3c6521c73d35270f2ed5a0a99fe5b8f5d",
+      "after": "82c74cac6a74b04c45b3bd4c7c3a27d3c6521c73d35270f2ed5a0a99fe5b8f5d",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/return.ogg",
+      "before": "096797974e8ab7891936e4dfa6ab8ed3000cf22eb676e0748f152dc8bc6d0b13",
+      "after": "096797974e8ab7891936e4dfa6ab8ed3000cf22eb676e0748f152dc8bc6d0b13",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/rotate.ogg",
+      "before": "1176fd50694bd7dd57d6d5e09e1883edf793d60b22d28e9e97746c341d9f361d",
+      "after": "1176fd50694bd7dd57d6d5e09e1883edf793d60b22d28e9e97746c341d9f361d",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-stone-1.ogg",
+      "before": "25fe0ce953f59efa7468503be02da99472eb579fd7f591b122d018324f4edb1f",
+      "after": "25fe0ce953f59efa7468503be02da99472eb579fd7f591b122d018324f4edb1f",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-wood-0.ogg",
+      "before": "eb6d6cdc03d44e24d8f512f9a1b3ae4f145da9f075a99634d7276811b0a92915",
+      "after": "eb6d6cdc03d44e24d8f512f9a1b3ae4f145da9f075a99634d7276811b0a92915",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-earth-1.ogg",
+      "before": "8d00a09eae7fbc34b4922865b79e7c2231e82069d2fca1b65ef3a844d5bf0aca",
+      "after": "8d00a09eae7fbc34b4922865b79e7c2231e82069d2fca1b65ef3a844d5bf0aca",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-earth-2.ogg",
+      "before": "69ca24a95b92c626aea1bcb246cc3824aaa7ef6deab9491196623c66226ef166",
+      "after": "69ca24a95b92c626aea1bcb246cc3824aaa7ef6deab9491196623c66226ef166",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-earth-0.ogg",
+      "before": "7f5e652bbd46ae04cc48c0bffcd67c8f430ec466764215f2200005f1a8c84845",
+      "after": "7f5e652bbd46ae04cc48c0bffcd67c8f430ec466764215f2200005f1a8c84845",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-wood-2.ogg",
+      "before": "5f42dbe717652ca665a3c3f275e8aa3d184152cb76f9eb346b8826d82cb56b98",
+      "after": "5f42dbe717652ca665a3c3f275e8aa3d184152cb76f9eb346b8826d82cb56b98",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/modal.ogg",
+      "before": "93d1d935a63adf51097badfc4ece11ea0e304ac243305d22d656226c5f8ab678",
+      "after": "93d1d935a63adf51097badfc4ece11ea0e304ac243305d22d656226c5f8ab678",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/click.ogg",
+      "before": "90df243e2826f85e036963b621599b974ab1edca9df0a1b6819f9de09fd8c88e",
+      "after": "90df243e2826f85e036963b621599b974ab1edca9df0a1b6819f9de09fd8c88e",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/dialog.ogg",
+      "before": "34353d08dcd96e44e0f977e74cfff9672294dfa21ba8cf1aed26be285e5a4276",
+      "after": "34353d08dcd96e44e0f977e74cfff9672294dfa21ba8cf1aed26be285e5a4276",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/victory.ogg",
+      "before": "688d17c29fd9c12ecf9d68b4266426e2e701f1db0b01e36f46f7cda97e8694f3",
+      "after": "688d17c29fd9c12ecf9d68b4266426e2e701f1db0b01e36f46f7cda97e8694f3",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/chime.ogg",
+      "before": "db7b1488f298903d43ee0c1a8629316447bf32728e2eb076080c2d64a1b3e60c",
+      "after": "db7b1488f298903d43ee0c1a8629316447bf32728e2eb076080c2d64a1b3e60c",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/foot-wood-1.ogg",
+      "before": "da53928c630c1d145e271453836a7c238510d3c276b4f7867c3234b80144b374",
+      "after": "da53928c630c1d145e271453836a7c238510d3c276b4f7867c3234b80144b374",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/reject.ogg",
+      "before": "bd8d6ad4e9d12ecd5c188e0b9c00f8fb013e17e725f6c37ee0f2d94be6a6c7dc",
+      "after": "bd8d6ad4e9d12ecd5c188e0b9c00f8fb013e17e725f6c37ee0f2d94be6a6c7dc",
+      "equal": true
+    },
+    {
+      "file": "public/assets/audio/sfx/place-2.ogg",
+      "before": "2781231dd53672144cea9c091e27200644650834bb481584a3082e3f9409bceb",
+      "after": "2781231dd53672144cea9c091e27200644650834bb481584a3082e3f9409bceb",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/evening.mid",
+      "before": "76b499b96fee89d5e153dcaf9247943108a2a1bb7c2adffcaae22d73176b24dd",
+      "after": "76b499b96fee89d5e153dcaf9247943108a2a1bb7c2adffcaae22d73176b24dd",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/village-master.flac",
+      "before": "63cbb8b86719ab5622430906a3c96c3a99245c29b675f0f50ac365440dfb67a9",
+      "after": "63cbb8b86719ab5622430906a3c96c3a99245c29b675f0f50ac365440dfb67a9",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/day-master.flac",
+      "before": "8035487c2753715eaab9dbf0bd03883bab52bad525ae424bf8343503f8fdc07b",
+      "after": "8035487c2753715eaab9dbf0bd03883bab52bad525ae424bf8343503f8fdc07b",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/water-master.flac",
+      "before": "1df2e4b3811a4628069a9f4d5c51ac4e493fc5a84ccefa4c0bf42168d92fef52",
+      "after": "1df2e4b3811a4628069a9f4d5c51ac4e493fc5a84ccefa4c0bf42168d92fef52",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/ending-master.flac",
+      "before": "4768cea359092c3e86f838a61110465961d4ae0635040122750f7a0d61d7326f",
+      "after": "4768cea359092c3e86f838a61110465961d4ae0635040122750f7a0d61d7326f",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/ending.mid",
+      "before": "956617d3ea2665823c892a2320a29564367ed62cf4c539bb11c95f84dbdc7cf7",
+      "after": "956617d3ea2665823c892a2320a29564367ed62cf4c539bb11c95f84dbdc7cf7",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/TimGM6mb.sf2",
+      "before": "c5378b62028c920cb11e4803327983fee2f2cdff5dc89c708e39da417e51c854",
+      "after": "c5378b62028c920cb11e4803327983fee2f2cdff5dc89c708e39da417e51c854",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/evening-master.flac",
+      "before": "d91e041e77761dd7287ba0018b313be987052804c4d90fb3386916b765ea7b25",
+      "after": "d91e041e77761dd7287ba0018b313be987052804c4d90fb3386916b765ea7b25",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/day.mid",
+      "before": "d368b7913f533cadb855cf3f38e2aaaa65954ef29ef003f25cb67f9e1d1d69b5",
+      "after": "d368b7913f533cadb855cf3f38e2aaaa65954ef29ef003f25cb67f9e1d1d69b5",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/village.mid",
+      "before": "4be2a1580a633c339edcd03511b5f995fa027c246de87076dd052bfef76a763a",
+      "after": "4be2a1580a633c339edcd03511b5f995fa027c246de87076dd052bfef76a763a",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/water.mid",
+      "before": "91f0bfc4b1f446b8d59473e52139003abc8076476fdba37ce23bb32c6c898c46",
+      "after": "91f0bfc4b1f446b8d59473e52139003abc8076476fdba37ce23bb32c6c898c46",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/licenses/GPL-2.txt",
+      "before": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "after": "8177f97513213526df2cf6184d8ff986c675afb514d4e68a404010521b880643",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/licenses/debian-online-copyright.txt",
+      "before": "6ef01652619cf29b289a9403cd2ab59550fa3e2c30844c67292eea5421f993e9",
+      "after": "6ef01652619cf29b289a9403cd2ab59550fa3e2c30844c67292eea5421f993e9",
+      "equal": true
+    },
+    {
+      "file": "art/audio/music/licenses/TimGM6mb-copyright.txt",
+      "before": "6ef01652619cf29b289a9403cd2ab59550fa3e2c30844c67292eea5421f993e9",
+      "after": "6ef01652619cf29b289a9403cd2ab59550fa3e2c30844c67292eea5421f993e9",
+      "equal": true
+    }
+  ],
+  "audioModuleByteIdentical": true,
+  "oldAmbienceOriginalsArchivedIntact": [
+    {
+      "file": "art/audio/sfx/noise-review-before/original-bakery.wav",
+      "archivedOriginalMatchesBefore": true
+    },
+    {
+      "file": "art/audio/sfx/noise-review-before/original-forest.wav",
+      "archivedOriginalMatchesBefore": true
+    },
+    {
+      "file": "art/audio/sfx/noise-review-before/original-leaves.wav",
+      "archivedOriginalMatchesBefore": true
+    },
+    {
+      "file": "art/audio/sfx/noise-review-before/original-village.wav",
+      "archivedOriginalMatchesBefore": true
+    },
+    {
+      "file": "art/audio/sfx/noise-review-before/original-water.wav",
+      "archivedOriginalMatchesBefore": true
+    }
+  ],
+  "excludedSourcesStillPresent": [
+    {
+      "file": "assets/chapter-1/v9/bakery/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 674244,
+      "excludedBytes": 674244
+    },
+    {
+      "file": "assets/chapter-1/v9/forest/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 620288,
+      "excludedBytes": 620288
+    },
+    {
+      "file": "assets/chapter-1/v9/garden/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 855734,
+      "excludedBytes": 855734
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 582542,
+      "excludedBytes": 582542
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/foreground-fixed.webp",
+      "sourceExists": true,
+      "sourceBytes": 386108,
+      "excludedBytes": 386108
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/gate-closed.webp",
+      "sourceExists": true,
+      "sourceBytes": 19478,
+      "excludedBytes": 19478
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/gate-open.webp",
+      "sourceExists": true,
+      "sourceBytes": 7222,
+      "excludedBytes": 7222
+    },
+    {
+      "file": "assets/chapter-1/v9/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 10036,
+      "excludedBytes": 10036
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/background-exact-water.webp",
+      "sourceExists": true,
+      "sourceBytes": 716520,
+      "excludedBytes": 716520
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 804732,
+      "excludedBytes": 804732
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/dry-background.webp",
+      "sourceExists": true,
+      "sourceBytes": 716840,
+      "excludedBytes": 716840
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/water.webp",
+      "sourceExists": true,
+      "sourceBytes": 109348,
+      "excludedBytes": 109348
+    },
+    {
+      "file": "assets/chapter-1/v9/post/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 799884,
+      "excludedBytes": 799884
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/background-exact-water.webp",
+      "sourceExists": true,
+      "sourceBytes": 646596,
+      "excludedBytes": 646596
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 752168,
+      "excludedBytes": 752168
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/dry-background.webp",
+      "sourceExists": true,
+      "sourceBytes": 659846,
+      "excludedBytes": 659846
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/water.webp",
+      "sourceExists": true,
+      "sourceBytes": 109228,
+      "excludedBytes": 109228
+    },
+    {
+      "file": "assets/chapter-1/v9/well/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 789930,
+      "excludedBytes": 789930
+    },
+    {
+      "file": "assets/chapter-1-map-match/bakery/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 2473912,
+      "excludedBytes": 2473912
+    },
+    {
+      "file": "assets/chapter-1-map-match/bakery/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 2803,
+      "excludedBytes": 2803
+    },
+    {
+      "file": "assets/chapter-1-map-match/bakery/wide.webp",
+      "sourceExists": true,
+      "sourceBytes": 5439354,
+      "excludedBytes": 5439354
+    },
+    {
+      "file": "assets/chapter-1-map-match/forest/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 2308860,
+      "excludedBytes": 2308860
+    },
+    {
+      "file": "assets/chapter-1-map-match/forest/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 3400,
+      "excludedBytes": 3400
+    },
+    {
+      "file": "assets/chapter-1-map-match/forest/wide.webp",
+      "sourceExists": true,
+      "sourceBytes": 4930930,
+      "excludedBytes": 4930930
+    },
+    {
+      "file": "assets/chapter-1-map-match/gate/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 2273252,
+      "excludedBytes": 2273252
+    },
+    {
+      "file": "assets/chapter-1-map-match/gate/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 2871,
+      "excludedBytes": 2871
+    },
+    {
+      "file": "assets/chapter-1-map-match/gate/wide.webp",
+      "sourceExists": true,
+      "sourceBytes": 5234246,
+      "excludedBytes": 5234246
+    },
+    {
+      "file": "assets/chapter-1-map-match/post/background.webp",
+      "sourceExists": true,
+      "sourceBytes": 2651118,
+      "excludedBytes": 2651118
+    },
+    {
+      "file": "assets/chapter-1-map-match/post/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 2894,
+      "excludedBytes": 2894
+    },
+    {
+      "file": "assets/chapter-1-map-match/post/wide.webp",
+      "sourceExists": true,
+      "sourceBytes": 5487362,
+      "excludedBytes": 5487362
+    },
+    {
+      "file": "assets/characters-v1/delivery-manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 20294,
+      "excludedBytes": 20294
+    },
+    {
+      "file": "assets/characters-v1/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 1278,
+      "excludedBytes": 1278
+    },
+    {
+      "file": "assets/characters-v1/poses/basket-ground-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 202,
+      "excludedBytes": 202
+    },
+    {
+      "file": "assets/characters-v1/poses/basket-ground.png",
+      "sourceExists": true,
+      "sourceBytes": 1431589,
+      "excludedBytes": 1431589
+    },
+    {
+      "file": "assets/characters-v1/poses/rabbit-baking-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 202,
+      "excludedBytes": 202
+    },
+    {
+      "file": "assets/characters-v1/poses/rabbit-baking.png",
+      "sourceExists": true,
+      "sourceBytes": 1441584,
+      "excludedBytes": 1441584
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-adjust-satchel.png",
+      "sourceExists": true,
+      "sourceBytes": 551152,
+      "excludedBytes": 551152
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-basket.png",
+      "sourceExists": true,
+      "sourceBytes": 451882,
+      "excludedBytes": 451882
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-crouch-basket.png",
+      "sourceExists": true,
+      "sourceBytes": 419840,
+      "excludedBytes": 419840
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-poses-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 800,
+      "excludedBytes": 800
+    },
+    {
+      "file": "assets/characters-v1/poses/ruta-surprised.png",
+      "sourceExists": true,
+      "sourceBytes": 497282,
+      "excludedBytes": 497282
+    },
+    {
+      "file": "assets/characters-v1/poses-manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 5412,
+      "excludedBytes": 5412
+    },
+    {
+      "file": "assets/characters-v1/residents/baker-idle.png",
+      "sourceExists": true,
+      "sourceBytes": 843329,
+      "excludedBytes": 843329
+    },
+    {
+      "file": "assets/characters-v1/residents/baker-portrait.png",
+      "sourceExists": true,
+      "sourceBytes": 1253215,
+      "excludedBytes": 1253215
+    },
+    {
+      "file": "assets/characters-v1/residents/baker-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 394,
+      "excludedBytes": 394
+    },
+    {
+      "file": "assets/characters-v1/residents/hedgehog-idle.png",
+      "sourceExists": true,
+      "sourceBytes": 978288,
+      "excludedBytes": 978288
+    },
+    {
+      "file": "assets/characters-v1/residents/hedgehog-portrait.png",
+      "sourceExists": true,
+      "sourceBytes": 1351579,
+      "excludedBytes": 1351579
+    },
+    {
+      "file": "assets/characters-v1/residents/hedgehog-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 399,
+      "excludedBytes": 399
+    },
+    {
+      "file": "assets/characters-v1/residents/miller-idle.png",
+      "sourceExists": true,
+      "sourceBytes": 659886,
+      "excludedBytes": 659886
+    },
+    {
+      "file": "assets/characters-v1/residents/miller-portrait.png",
+      "sourceExists": true,
+      "sourceBytes": 1016492,
+      "excludedBytes": 1016492
+    },
+    {
+      "file": "assets/characters-v1/residents/miller-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 398,
+      "excludedBytes": 398
+    },
+    {
+      "file": "assets/characters-v1/residents/rabbit-idle.png",
+      "sourceExists": true,
+      "sourceBytes": 868830,
+      "excludedBytes": 868830
+    },
+    {
+      "file": "assets/characters-v1/residents/rabbit-portrait.png",
+      "sourceExists": true,
+      "sourceBytes": 1139464,
+      "excludedBytes": 1139464
+    },
+    {
+      "file": "assets/characters-v1/residents/rabbit-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 397,
+      "excludedBytes": 397
+    },
+    {
+      "file": "assets/characters-v1/residents/squirrel-idle.png",
+      "sourceExists": true,
+      "sourceBytes": 1038973,
+      "excludedBytes": 1038973
+    },
+    {
+      "file": "assets/characters-v1/residents/squirrel-portrait.png",
+      "sourceExists": true,
+      "sourceBytes": 1097196,
+      "excludedBytes": 1097196
+    },
+    {
+      "file": "assets/characters-v1/residents/squirrel-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 399,
+      "excludedBytes": 399
+    },
+    {
+      "file": "assets/characters-v1/residents/teacher-idle.png",
+      "sourceExists": true,
+      "sourceBytes": 749385,
+      "excludedBytes": 749385
+    },
+    {
+      "file": "assets/characters-v1/residents/teacher-portrait.png",
+      "sourceExists": true,
+      "sourceBytes": 1136599,
+      "excludedBytes": 1136599
+    },
+    {
+      "file": "assets/characters-v1/residents/teacher-source-v1-extraction.json",
+      "sourceExists": true,
+      "sourceBytes": 400,
+      "excludedBytes": 400
+    },
+    {
+      "file": "assets/characters-v1/residents-manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 7101,
+      "excludedBytes": 7101
+    },
+    {
+      "file": "assets/characters-v1/ruta-idle-pilot.png",
+      "sourceExists": true,
+      "sourceBytes": 676343,
+      "excludedBytes": 676343
+    },
+    {
+      "file": "assets/characters-v1/ruta-portrait-pilot.png",
+      "sourceExists": true,
+      "sourceBytes": 827013,
+      "excludedBytes": 827013
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+      "sourceExists": true,
+      "sourceBytes": 751850,
+      "excludedBytes": 751850
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-ne.webp",
+      "sourceExists": true,
+      "sourceBytes": 735438,
+      "excludedBytes": 735438
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-nw.webp",
+      "sourceExists": true,
+      "sourceBytes": 783874,
+      "excludedBytes": 783874
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-se.webp",
+      "sourceExists": true,
+      "sourceBytes": 851504,
+      "excludedBytes": 851504
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-sw.webp",
+      "sourceExists": true,
+      "sourceBytes": 821588,
+      "excludedBytes": 821588
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/base-w.webp",
+      "sourceExists": true,
+      "sourceBytes": 728310,
+      "excludedBytes": 728310
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-e.webp",
+      "sourceExists": true,
+      "sourceBytes": 751512,
+      "excludedBytes": 751512
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-ne.webp",
+      "sourceExists": true,
+      "sourceBytes": 744892,
+      "excludedBytes": 744892
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-nw.webp",
+      "sourceExists": true,
+      "sourceBytes": 781802,
+      "excludedBytes": 781802
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-se.webp",
+      "sourceExists": true,
+      "sourceBytes": 844118,
+      "excludedBytes": 844118
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-sw.webp",
+      "sourceExists": true,
+      "sourceBytes": 816520,
+      "excludedBytes": 816520
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/calibrated-1-w.webp",
+      "sourceExists": true,
+      "sourceBytes": 728060,
+      "excludedBytes": 728060
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v2/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 738669,
+      "excludedBytes": 738669
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-01.png",
+      "sourceExists": true,
+      "sourceBytes": 80208,
+      "excludedBytes": 80208
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-02.png",
+      "sourceExists": true,
+      "sourceBytes": 77936,
+      "excludedBytes": 77936
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-03.png",
+      "sourceExists": true,
+      "sourceBytes": 76547,
+      "excludedBytes": 76547
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-04.png",
+      "sourceExists": true,
+      "sourceBytes": 75588,
+      "excludedBytes": 75588
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-05.png",
+      "sourceExists": true,
+      "sourceBytes": 75574,
+      "excludedBytes": 75574
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-06.png",
+      "sourceExists": true,
+      "sourceBytes": 76517,
+      "excludedBytes": 76517
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-07.png",
+      "sourceExists": true,
+      "sourceBytes": 77781,
+      "excludedBytes": 77781
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-08.png",
+      "sourceExists": true,
+      "sourceBytes": 78563,
+      "excludedBytes": 78563
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-09.png",
+      "sourceExists": true,
+      "sourceBytes": 79338,
+      "excludedBytes": 79338
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-10.png",
+      "sourceExists": true,
+      "sourceBytes": 77604,
+      "excludedBytes": 77604
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-11.png",
+      "sourceExists": true,
+      "sourceBytes": 76965,
+      "excludedBytes": 76965
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-12.png",
+      "sourceExists": true,
+      "sourceBytes": 76767,
+      "excludedBytes": 76767
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-13.png",
+      "sourceExists": true,
+      "sourceBytes": 77383,
+      "excludedBytes": 77383
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-14.png",
+      "sourceExists": true,
+      "sourceBytes": 78056,
+      "excludedBytes": 78056
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-15.png",
+      "sourceExists": true,
+      "sourceBytes": 79435,
+      "excludedBytes": 79435
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/e-16.png",
+      "sourceExists": true,
+      "sourceBytes": 80039,
+      "excludedBytes": 80039
+    },
+    {
+      "file": "assets/characters-walk-v1/east-mesh-pilot/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 7215,
+      "excludedBytes": 7215
+    },
+    {
+      "file": "assets/characters-walk-v1/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 19011,
+      "excludedBytes": 19011
+    },
+    {
+      "file": "assets/level-1/garden-gate.png",
+      "sourceExists": true,
+      "sourceBytes": 1628319,
+      "excludedBytes": 1628319
+    },
+    {
+      "file": "assets/level-1/grass-ground.png",
+      "sourceExists": true,
+      "sourceBytes": 2910974,
+      "excludedBytes": 2910974
+    },
+    {
+      "file": "assets/level-1/manifest.json",
+      "sourceExists": true,
+      "sourceBytes": 771,
+      "excludedBytes": 771
+    },
+    {
+      "file": "assets/level-1/meadow.png",
+      "sourceExists": true,
+      "sourceBytes": 2435361,
+      "excludedBytes": 2435361
+    },
+    {
+      "file": "assets/level-1/ruta-house.png",
+      "sourceExists": true,
+      "sourceBytes": 1612283,
+      "excludedBytes": 1612283
+    },
+    {
+      "file": "assets/level-1/ruta-idle.png",
+      "sourceExists": true,
+      "sourceBytes": 842401,
+      "excludedBytes": 842401
+    }
+  ],
+  "exportKeptBytes": 64806028,
+  "exportRemovedBytes": 79318116
+}

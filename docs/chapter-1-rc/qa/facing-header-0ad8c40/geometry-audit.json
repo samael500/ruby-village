@@ -1,0 +1,271 @@
+{
+  "arrivalFacing": [
+    {
+      "scene": "garden",
+      "viewport": [
+        1280,
+        720
+      ],
+      "target": "rabbit",
+      "goalFeet": {
+        "x": 1266.32513273969,
+        "y": 378.9794452016419
+      },
+      "residentFeet": [
+        1450.0,
+        350.0
+      ],
+      "expectedNearestAuthoredDirection": "e",
+      "observed": "e",
+      "dot": 0.9877810607423244
+    },
+    {
+      "scene": "well",
+      "viewport": [
+        1280,
+        720
+      ],
+      "target": "teacher",
+      "goalFeet": {
+        "x": 1235.52665228256,
+        "y": 452.0903448374181
+      },
+      "residentFeet": [
+        1225.0,
+        405.0
+      ],
+      "expectedNearestAuthoredDirection": "nw",
+      "observed": "nw",
+      "dot": 0.898797230233382
+    },
+    {
+      "scene": "bakery",
+      "viewport": [
+        1280,
+        720
+      ],
+      "target": "baker",
+      "goalFeet": {
+        "x": 1242.32060107022,
+        "y": 456.8253981443193
+      },
+      "residentFeet": [
+        1290.0,
+        405.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9994539840232423
+    },
+    {
+      "scene": "stream",
+      "viewport": [
+        1280,
+        720
+      ],
+      "target": "squirrel",
+      "goalFeet": {
+        "x": 1282.449331672601,
+        "y": 398.2500343060966
+      },
+      "residentFeet": [
+        1400.0,
+        225.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9915460027305152
+    },
+    {
+      "scene": "mill",
+      "viewport": [
+        1280,
+        720
+      ],
+      "target": "miller",
+      "goalFeet": {
+        "x": 1356.9624385326056,
+        "y": 466.5000401852959
+      },
+      "residentFeet": [
+        1430.0,
+        398.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9958467893451802
+    },
+    {
+      "scene": "post",
+      "viewport": [
+        1280,
+        720
+      ],
+      "target": "hedgehog",
+      "goalFeet": {
+        "x": 1242.32060107022,
+        "y": 456.8253981443193
+      },
+      "residentFeet": [
+        1370.0,
+        405.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9177540250146058
+    },
+    {
+      "scene": "garden",
+      "viewport": [
+        844,
+        390
+      ],
+      "target": "rabbit",
+      "goalFeet": {
+        "x": 1266.3250263141545,
+        "y": 378.9794156600544
+      },
+      "residentFeet": [
+        1450.0,
+        350.0
+      ],
+      "expectedNearestAuthoredDirection": "e",
+      "observed": "e",
+      "dot": 0.9877810991008713
+    },
+    {
+      "scene": "well",
+      "viewport": [
+        844,
+        390
+      ],
+      "target": "teacher",
+      "goalFeet": {
+        "x": 1235.5265482577774,
+        "y": 452.09030959680894
+      },
+      "residentFeet": [
+        1225.0,
+        405.0
+      ],
+      "expectedNearestAuthoredDirection": "nw",
+      "observed": "nw",
+      "dot": 0.8987963777936707
+    },
+    {
+      "scene": "bakery",
+      "viewport": [
+        844,
+        390
+      ],
+      "target": "baker",
+      "goalFeet": {
+        "x": 1242.3204965158466,
+        "y": 456.825362534611
+      },
+      "residentFeet": [
+        1290.0,
+        405.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9994540314364119
+    },
+    {
+      "scene": "stream",
+      "viewport": [
+        844,
+        390
+      ],
+      "target": "squirrel",
+      "goalFeet": {
+        "x": 1282.4492239901783,
+        "y": 398.25000326235954
+      },
+      "residentFeet": [
+        1400.0,
+        225.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9915460687577138
+    },
+    {
+      "scene": "mill",
+      "viewport": [
+        844,
+        390
+      ],
+      "target": "miller",
+      "goalFeet": {
+        "x": 1356.9623250418585,
+        "y": 466.5000038214457
+      },
+      "residentFeet": [
+        1430.0,
+        398.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9958466946376958
+    },
+    {
+      "scene": "post",
+      "viewport": [
+        844,
+        390
+      ],
+      "target": "hedgehog",
+      "goalFeet": {
+        "x": 1242.3204965158466,
+        "y": 456.825362534611
+      },
+      "residentFeet": [
+        1370.0,
+        405.0
+      ],
+      "expectedNearestAuthoredDirection": "ne",
+      "observed": "ne",
+      "dot": 0.9177538165833887
+    }
+  ],
+  "authoredViews": [
+    [
+      "rabbit",
+      "conversation-left"
+    ],
+    [
+      "teacher",
+      "conversation-left"
+    ],
+    [
+      "teacher",
+      "conversation-front"
+    ],
+    [
+      "hedgehog",
+      "conversation-left"
+    ],
+    [
+      "squirrel",
+      "conversation-left"
+    ],
+    [
+      "squirrel",
+      "conversation-front"
+    ],
+    [
+      "baker",
+      "conversation-left"
+    ],
+    [
+      "miller",
+      "conversation-left"
+    ]
+  ],
+  "noAuthoredMirror": true,
+  "normalWalkSamples": 219,
+  "distinctResidentStatesWhileWalking": 1,
+  "noContinuousTracking": true,
+  "runtimeAncestorTransformsNoReflection": true
+}

@@ -1,0 +1,146 @@
+{
+  "internal60Joins": {
+    "previous60Exit": {
+      "soleMax": 2.9802322387695312e-08,
+      "bodyMatMax": 2.0563602447509766e-06
+    },
+    "next60Entry": {
+      "soleMax": 6.979950488564272e-08,
+      "bodyMatMax": 7.3909759521484375e-06
+    }
+  },
+  "samples": 513,
+  "sourceSha256": "02282b27a219a61a08d54c56be6010b3b4b5e8fe0ad42acbbfd0ddf2324689be",
+  "flatDriftMeters": {
+    "L": {
+      "toe": 2.7171169086336862e-05,
+      "heel": 2.7185170242492797e-05
+    },
+    "R": {
+      "toe": 2.8759330918708116e-05,
+      "heel": 2.8911008387423455e-05
+    },
+    "0:L": {
+      "toe": 2.7171169086336862e-05,
+      "heel": 2.7185170242492797e-05
+    },
+    "0:R": {
+      "toe": 2.8759330918708116e-05,
+      "heel": 2.8911008387423455e-05
+    },
+    "1:L": {
+      "toe": 2.7229378772650424e-05,
+      "heel": 2.7141919829718995e-05
+    },
+    "1:R": {
+      "toe": 2.9072677691962262e-05,
+      "heel": 2.907444216690158e-05
+    }
+  },
+  "joins": {
+    "entry": {
+      "soleMax": 2.0755751685354118e-07,
+      "bodyMatMax": 3.0100345611572266e-06
+    },
+    "exit": {
+      "soleMax": 1.621705129101662e-07,
+      "bodyMatMax": 9.59634780883789e-06
+    }
+  },
+  "maxAnkleError": 2.9896565712651125e-05,
+  "minBootZ": 0.00033968378556892276,
+  "maxAdjacentLegRotDegrees": {
+    "L": {
+      "upperQuat": 1.0241098129718378,
+      "lowerQuat": 1.209805367588148
+    },
+    "R": {
+      "upperQuat": 1.248646518963895,
+      "lowerQuat": 1.4622982512964786
+    }
+  },
+  "kneeFlexRange": {
+    "L": [
+      17.737627435351612,
+      53.419628489765415
+    ],
+    "R": [
+      9.318107886990248,
+      49.05049308149165
+    ]
+  },
+  "actualRootDelta": [
+    0.8025595545768738,
+    -0.46335798501968384,
+    0.0
+  ],
+  "actualExitYaw": 2.094395160675049,
+  "sixCompositions": [
+    {
+      "clip": 0,
+      "origin": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "entryRoot": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "exitRoot": [
+        0.8025595545768738,
+        -0.46335798501968384,
+        0.0
+      ],
+      "previousSoleSeam": 0,
+      "previousBodyMatrixSeam": 0
+    },
+    {
+      "clip": 1,
+      "origin": [
+        0.8025595545768738,
+        -0.46335798501968384,
+        0.0
+      ],
+      "entryRoot": [
+        0.8025595545768738,
+        -0.46335798501968384,
+        0.0
+      ],
+      "exitRoot": [
+        0.8025597333908081,
+        0.46335798501968384,
+        0.0
+      ],
+      "previousSoleSeam": 5.960464477539063e-08,
+      "previousBodyMatrixSeam": 8.016824722290039e-06
+    },
+    {
+      "clip": 2,
+      "origin": [
+        0.8025597333908081,
+        0.46335798501968384,
+        0.0
+      ],
+      "entryRoot": [
+        0.8025597333908081,
+        0.46335798501968384,
+        0.0
+      ],
+      "exitRoot": [
+        2.384185791015625e-07,
+        -1.7881393432617188e-07,
+        0.0
+      ],
+      "previousSoleSeam": 1.1924202686487638e-07,
+      "previousBodyMatrixSeam": 7.3909759521484375e-06
+    }
+  ],
+  "sixRootClosure": 2.980232238769531e-07,
+  "sixSoleClosure": 3.654014183045584e-07
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-qa-turn-variants/art/characters-mpfb-v1/motion/turn-variants-study/left120/mpfb-native-left120-technical.blend"
+
+Blender quit

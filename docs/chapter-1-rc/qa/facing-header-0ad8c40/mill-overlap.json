@@ -1,0 +1,36 @@
+{
+  "finding": "F1 real mill arrival Ruta obscures squirrel",
+  "viewport": [
+    1280,
+    720
+  ],
+  "rutaDirection": "ne",
+  "rutaNativeBox": {
+    "x": 1298.6766073695205,
+    "y": 311.07142857142856,
+    "width": 116.57142857142857,
+    "height": 174.85714285714286
+  },
+  "rutaFeet": [
+    1356.9623216552347,
+    466.5
+  ],
+  "squirrelNativeBox": {
+    "x": 1284.4070796460178,
+    "y": 313.4070796460177,
+    "width": 90.88053097345133,
+    "height": 92.0
+  },
+  "squirrelFeet": [
+    1330,
+    405
+  ],
+  "overlappingAlphaNativePixelsGt32": 1345,
+  "overlapBBox": [
+    1320,
+    330,
+    1349,
+    404
+  ],
+  "method": "actual recorded runtime image coordinates plus decoded authored sprite alpha; rounded to native scene pixels; breathing subpixel scale excluded"
+}

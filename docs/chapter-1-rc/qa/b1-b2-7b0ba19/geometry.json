@@ -1,0 +1,99 @@
+{
+  "acceptedLayoutHash": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e",
+  "scenes": [
+    {
+      "scene": "gate",
+      "nativeSize": [
+        1672,
+        941
+      ],
+      "wideSize": [
+        3272,
+        1200
+      ],
+      "wideExactCore": true,
+      "sourceManifestStatus": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "residentAlphaChecks": []
+    },
+    {
+      "scene": "bakery",
+      "nativeSize": [
+        1672,
+        941
+      ],
+      "wideSize": [
+        3272,
+        1200
+      ],
+      "wideExactCore": true,
+      "sourceManifestStatus": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "residentAlphaChecks": [
+        {
+          "actor": "baker",
+          "view": "conversation-left",
+          "feet": [
+            1360,
+            405
+          ],
+          "anyAlphaOverPlayableGroundWater": 0
+        },
+        {
+          "actor": "baker",
+          "view": "legacy-idle",
+          "feet": [
+            1360,
+            405
+          ],
+          "anyAlphaOverPlayableGroundWater": 0
+        }
+      ]
+    },
+    {
+      "scene": "post",
+      "nativeSize": [
+        1672,
+        941
+      ],
+      "wideSize": [
+        3272,
+        1200
+      ],
+      "wideExactCore": true,
+      "sourceManifestStatus": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "residentAlphaChecks": [
+        {
+          "actor": "hedgehog",
+          "view": "conversation-left",
+          "feet": [
+            1370,
+            405
+          ],
+          "anyAlphaOverPlayableGroundWater": 0
+        },
+        {
+          "actor": "hedgehog",
+          "view": "legacy-idle",
+          "feet": [
+            1370,
+            405
+          ],
+          "anyAlphaOverPlayableGroundWater": 0
+        }
+      ]
+    },
+    {
+      "scene": "forest",
+      "nativeSize": [
+        1672,
+        941
+      ],
+      "wideSize": [
+        3272,
+        1200
+      ],
+      "wideExactCore": true,
+      "sourceManifestStatus": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "residentAlphaChecks": []
+    }
+  ]
+}

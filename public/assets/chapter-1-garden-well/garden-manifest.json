@@ -1,0 +1,114 @@
+{
+  "candidate": "garden-native-v1",
+  "status": "native-and-wide-awaiting-actual-game",
+  "treeUniformTransform": {
+    "source": [
+      1374,
+      1145
+    ],
+    "target": [
+      588,
+      490
+    ],
+    "offset": [
+      580,
+      100
+    ],
+    "crownClipping": false,
+    "nativeAlphaErosionRadius": 2,
+    "postResampleDropAlphaAtMost": 2
+  },
+  "table": {
+    "sourceRect": [
+      1030,
+      375,
+      280,
+      155
+    ],
+    "targetRect": [
+      1215,
+      170,
+      168,
+      93
+    ],
+    "scale": 0.6,
+    "count": 1,
+    "backdropGreenRemoved": true
+  },
+  "rabbitFeet": [
+    1295,
+    265
+  ],
+  "fullFreeInteriorTolerancePx": 1,
+  "treeFullAlphaFreeOverlap": 0,
+  "treeGroundAlphaFreeOverlap": 0,
+  "tableAlphaFreeOverlap": 0,
+  "rabbitFullAlphaFreeOverlap": 0,
+  "schemaVersion": 1,
+  "canvas": [
+    1672,
+    941
+  ],
+  "background": "garden/background.webp",
+  "source": "art/chapter-1-v9/garden-well/outpaint/garden-native-painted-join-v1.png",
+  "sourceSha256": "7cb0f48dfb333d31826adcca722e9d33bb6fec257de169810b64849feb55771f",
+  "recommendedResidentFeet": {
+    "rabbit": [
+      1295,
+      265
+    ]
+  },
+  "mapMatched": "one dominant apple tree, one round table/chairs/apple bowl/basket; no cottage invented",
+  "wideStatus": "pending-painted-outpaint-after-native-approval",
+  "activation": "coordinator-only",
+  "wide": {
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    },
+    "file": "garden/wide.webp",
+    "registration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "baseRegistration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "joinBand": 48,
+    "paintedSeam": {
+      "method": "builtin painted edit constrained to decorative source-pixel perimeter",
+      "coreBand": 72,
+      "outerAdjacency": 192,
+      "freePolygonGuard": 6,
+      "completeFreePolygonChangedPixels": 0,
+      "coreInteriorChangedPixels": 0,
+      "nativePropsChangedPixels": 0,
+      "wideOriginalRectBitExact": true
+    },
+    "status": "source-candidate-awaiting-actual-game"
+  },
+  "sourceBeforeJoin": "art/chapter-1-v9/garden-well/garden-native-v1.png"
+}

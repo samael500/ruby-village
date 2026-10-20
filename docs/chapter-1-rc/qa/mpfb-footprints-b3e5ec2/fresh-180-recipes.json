@@ -1,0 +1,133 @@
+{
+  "status": "TECHNICAL NATIVE IDLE-BOUNDARY RECIPES; NO RUNTIME OR ROUTE CLEARANCE CERTIFICATE",
+  "footprintManifest": "../footprints-native-v1/manifest.json",
+  "headingBasis": "keys are relative base-grid heading change degrees modulo360, not screen angles",
+  "recipesByGridHeadingDeltaDegrees": {
+    "0": {
+      "clips": [],
+      "durationMs": 0,
+      "nativeYawRadians": 0,
+      "footprintStates": []
+    },
+    "60": {
+      "clips": [
+        "right60"
+      ],
+      "durationMs": 1200,
+      "nativeYawRadians": -1.0471975511965976,
+      "footprintStates": [
+        "pivot-right60"
+      ],
+      "nativeYawRadiansActual": -1.0471975803375244
+    },
+    "120": {
+      "clips": [
+        "right120"
+      ],
+      "durationMs": 2400,
+      "nativeYawRadians": -2.0943951023931953,
+      "footprintStates": [
+        "pivot-right120"
+      ],
+      "nativeYawRadiansActual": -2.094395160675049
+    },
+    "180": {
+      "alternatives": [
+        "left180",
+        "right180"
+      ],
+      "durationMs": 3600
+    },
+    "240": {
+      "clips": [
+        "left120"
+      ],
+      "durationMs": 2400,
+      "nativeYawRadians": 2.0943951023931953,
+      "footprintStates": [
+        "pivot-left120"
+      ],
+      "nativeYawRadiansActual": 2.094395160675049
+    },
+    "300": {
+      "clips": [
+        "left60"
+      ],
+      "durationMs": 1200,
+      "nativeYawRadians": 1.0471975511965976,
+      "footprintStates": [
+        "pivot-left60"
+      ],
+      "nativeYawRadiansActual": 1.0471975803375244
+    }
+  },
+  "actual180RecipeJoins": {
+    "left180": {
+      "nativeYawRadiansActual": 3.1415927410125732,
+      "rootDeltaMetersActual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "durationMs": 3600,
+      "clips": [
+        "left60",
+        "left120"
+      ],
+      "sources": [
+        "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+        "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4"
+      ],
+      "actualJoins": {
+        "internal60To120": {
+          "bodyWorldMatrixMaxElementError": 2.980232238769531e-07,
+          "actualSoleVertexWorldMaxErrorMeters": 7.514480524120749e-08
+        },
+        "exit180ToIdle": {
+          "bodyWorldMatrixMaxElementError": 3.039836883544922e-06,
+          "actualSoleVertexWorldMaxErrorMeters": 1.1002227236049145e-07
+        }
+      },
+      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim.",
+      "footprintStates": [
+        "pivot-left60",
+        "pivot-left120"
+      ]
+    },
+    "right180": {
+      "nativeYawRadiansActual": -3.1415927410125732,
+      "rootDeltaMetersActual": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "durationMs": 3600,
+      "clips": [
+        "right60",
+        "right120"
+      ],
+      "sources": [
+        "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+        "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7"
+      ],
+      "actualJoins": {
+        "internal60To120": {
+          "bodyWorldMatrixMaxElementError": 1.7881393432617188e-07,
+          "actualSoleVertexWorldMaxErrorMeters": 2.1155582166464156e-08
+        },
+        "exit180ToIdle": {
+          "bodyWorldMatrixMaxElementError": 3.3974647521972656e-06,
+          "actualSoleVertexWorldMaxErrorMeters": 1.0848209096909341e-07
+        }
+      },
+      "rasterStatus": "Not rendered as180. Actual source joins measured; source60/120 contact/BVH checks are separate. No complete360 loop claim.",
+      "footprintStates": [
+        "pivot-right60",
+        "pivot-right120"
+      ]
+    }
+  },
+  "entryExit": "flat idle at root0 before/after each complete pivot. Requires stop360+settle180 before and start360 after; plus heel-strike queue\u2264360ms.",
+  "rootBound": "Each root curve\u2264.03000001m about pivot origin, zero terminal root displacement; rigid placements preserve this. Body/bag swept clearance separately required.",
+  "appearance": "rejected generic technical mannequin; final shoes/source require renewed footprints and source checks"
+}

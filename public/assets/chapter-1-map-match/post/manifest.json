@@ -1,0 +1,105 @@
+{
+  "status": "map-match-candidate-requires-art-and-game-review",
+  "background": "assets/chapter-1-map-match/post/background.webp",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "camera": {
+    "radius": 68.83326050303945,
+    "origin": {
+      "x": 168.55028803684962,
+      "y": 291.0714285714285
+    },
+    "angle": 0.04494904935533156,
+    "groundScale": 0.65
+  },
+  "anchors": {
+    "start": {
+      "x": 378.91832705503657,
+      "y": 700.3035714285716
+    },
+    "goal": {
+      "x": 1231.192008768393,
+      "y": 456.5
+    }
+  },
+  "geometrySha256": "af90131fe51c742c4b2a67c396b27efb3e488cc3b3838de8dd3f8464213c543a",
+  "layoutAdjustmentsSha256": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e",
+  "source": "art/chapter-1-map-match/post/generated-core-01.png",
+  "sourceSha256": "68445e69dda61fe53cbab12e46b75156e6864120ccac1a540012689a7facb7f2",
+  "beforeSha256": "fffae497189a037e948e179fbf5090642e669f5144c7eba1a05934947cc1e6a8",
+  "mapReferenceSha256": "32845a9e74697a05c391fe475e945461a482f229f16fd8a76c926eabb4b68cbd",
+  "registration": {
+    "editableRectangle": [
+      1160,
+      55,
+      1585,
+      418
+    ],
+    "protectedFullFreePolygonsGuardPixels": 3,
+    "featherRadius": 8,
+    "wideCorePerimeterJoinPixels": 72
+  },
+  "checks": {
+    "fullFreePolygonPixelsChanged": 0,
+    "opaque": true,
+    "nativeSize": [
+      1672,
+      941
+    ],
+    "sourceGenerationNativeSize": [
+      1672,
+      941
+    ],
+    "gameQa": "not-run",
+    "artAcceptance": "pending",
+    "wideNativeCoreExact": true,
+    "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+    "physicalPhone": "not-tested"
+  },
+  "wide": {
+    "file": "assets/chapter-1-map-match/post/wide.webp",
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    },
+    "source": "art/chapter-1-map-match/post/generated-wide-01.png",
+    "sourceSize": [
+      2070,
+      760
+    ],
+    "sourceSha256": "199d752ad04ccc2239c021f4d2f29471ddab9f217d91b5add3b702e174e4c816",
+    "registration": "painted v8 ring reference at logical canvas, builtin seam repaint, protected72px foliage join inside core perimeter",
+    "corePixelExact": true,
+    "opaque": true,
+    "referenceRing": {
+      "file": "public/assets/chapter-1/v8/07-post-surroundings.jpg",
+      "nativeSize": [
+        2070,
+        760
+      ],
+      "logicalCanvas": [
+        3272,
+        1200
+      ],
+      "sha256": "f74e647da6dd9b183add1debd42faec231be4dfef796d137ee6c277877f02dd3"
+    }
+  },
+  "deliveryFiles": {
+    "background.webp": {
+      "sha256": "e99805904799c09d607dd548eae91c434eb91e9b95b427560d7a12a483f97bdb",
+      "bytes": 2651118
+    },
+    "wide.webp": {
+      "sha256": "06a976e393276884aa609a3001d96500069d27e75d3d3b086ef73feb2f0c0d0f",
+      "bytes": 5487362
+    }
+  }
+}

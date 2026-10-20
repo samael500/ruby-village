@@ -1,0 +1,52 @@
+{
+  "commit": "4ebab5c4412160ff0dc90ddbbb5f2542d642e74d",
+  "results": [
+    {
+      "check": "keyboard tray rotate cell place Enter",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "restart cancel confirm reload",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "reduced motion complete once",
+      "status": "pass",
+      "detail": {
+        "secondsToResultDialog": 0.129,
+        "replay": false
+      }
+    },
+    {
+      "check": "replay completion once",
+      "status": "pass",
+      "detail": {
+        "secondsToResultDialog": 0.078,
+        "replay": true
+      }
+    },
+    {
+      "check": "chapter reset cancel confirm",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "old letter and ending no chapter2",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "future-layout preserves completed",
+      "status": "pass",
+      "detail": null
+    },
+    {
+      "check": "invalid-placement preserves completed",
+      "status": "pass",
+      "detail": null
+    }
+  ],
+  "pageErrors": []
+}

@@ -1,0 +1,9 @@
+"""Register selected painted outer-ring candidate; exact core stays separate, runtime48px edge mask."""
+from pathlib import Path
+from PIL import Image
+import json,hashlib
+root=Path(__file__).resolve().parents[1]
+for name,prefix in [('gate','01-courtyard'),('bakery','04-bakery')]:
+ folder=root/'art/chapter-1-map-match'/name;out=root/'public/assets/chapter-1-map-match'/name;source=folder/('generated-wide-01.png' if name=='gate' else 'generated-wide-02.png');image=Image.open(source).convert('RGB');native=list(image.size);image=image.resize((4096,1600),Image.Resampling.LANCZOS).crop((412,200,3684,1400));image.save(folder/'wide-registered-candidate.png');image.save(out/'wide.webp','WEBP',lossless=True,method=6)
+ manifest=json.loads((out/'manifest.json').read_text());manifest['wide']={'file':f'assets/chapter-1-map-match/{name}/wide.webp','canvas':{'width':3272,'height':1200},'originalRect':{'x':800,'y':129,'width':1672,'height':941}};manifest['joinBand']=48;manifest['wideProvenance']={'method':'generated outer forest normalized to4096x1600 then cropped412,200..3684,1400; core registered at800,129; runtime-only48px decorative perimeter mask, exact separate core asset','source':str(source.relative_to(root)),'sourceSha256':hashlib.sha256(source.read_bytes()).hexdigest(),'sourceNativeSize':native,'deliverySize':[3272,1200],'opaque':True,'registrationCrop':[412,200,3684,1400],'gameQa':'not-run'};manifest['wideStatus']='generated-wide-candidate-visual-review-pending';(out/'manifest.json').write_text(json.dumps(manifest,indent=2)+'\n')
+contracts={name:json.loads((root/'public/assets/chapter-1-map-match'/name/'manifest.json').read_text())for name in ['gate','bakery']};(root/'docs/chapter-1-rc/art/map-match-gate-bakery/core-contracts.json').write_text(json.dumps(contracts,indent=2)+'\n');print('Opaque selected surroundings exported3272x1200; source core untouched; runtime joinBand48 required')

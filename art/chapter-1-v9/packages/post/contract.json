@@ -1,0 +1,62 @@
+{
+  "schemaVersion": 1,
+  "sceneId": "post",
+  "status": "awaiting-pilot-acceptance",
+  "canvas": {
+    "width": 1672,
+    "height": 941,
+    "origin": [
+      0,
+      0
+    ],
+    "crop": [
+      0,
+      0,
+      1672,
+      941
+    ]
+  },
+  "source": "docs/blender-chapter-1/layouts/engine/post.json",
+  "sourceSha256": "af90131fe51c742c4b2a67c396b27efb3e488cc3b3838de8dd3f8464213c543a",
+  "camera": {
+    "radius": 68.83326050303945,
+    "origin": {
+      "x": 168.55028803684962,
+      "y": 291.0714285714285
+    },
+    "angle": 0.04494904935533156,
+    "groundScale": 0.65
+  },
+  "start": {
+    "q": -1,
+    "r": 6,
+    "name": "Двор",
+    "pixel": {
+      "x": 378.91832705503657,
+      "y": 700.3035714285716
+    }
+  },
+  "goal": {
+    "q": 8,
+    "r": 2,
+    "name": "Почта",
+    "pixel": {
+      "x": 1231.192008768393,
+      "y": 456.5
+    }
+  },
+  "layers": {
+    "background": "opaque canvas; no characters/UI/grid/solution",
+    "foreground": "RGBA same canvas/crop; no free-hex occlusion",
+    "gateClosed": null,
+    "gateOpen": null,
+    "water": null,
+    "wheel": null
+  },
+  "rules": [
+    "Preserve every full free polygon, not only cell center",
+    "Blockers require meaningful decoration across their whole footprints",
+    "Shared transform for every image, geometry and character feet",
+    "No production activation until art acceptance and matching game data integration"
+  ]
+}

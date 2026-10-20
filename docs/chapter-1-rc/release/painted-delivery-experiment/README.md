@@ -1,0 +1,3 @@
+# Read-only painted delivery experiment
+
+Four completed map-matched scene candidates, background+wide each, were encoded to WebPq92 under /tmp only. Alpha is exact; size falls by about75%. report.json records native PSNR and source hashes. RGB is intentionally lossy: existing native full-polygon RGB protection audits describe the unmodified lossless source, not these delivery experiments. No public/runtime painting or manifest was changed, and no visual acceptance is claimed. Final source handoff comes first; then source/delivery browser comparisons and separate delivery metadata must precede any activation.

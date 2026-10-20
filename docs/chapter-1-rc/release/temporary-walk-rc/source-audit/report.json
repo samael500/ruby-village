@@ -1,0 +1,1294 @@
+{
+  "commit": "fbd4d19ad4778a1a334d1f225bf94d771b3cb46b",
+  "root": "/tmp/ruby-final-rc",
+  "files": [
+    {
+      "file": "assets/audio/music/day.ogg",
+      "bytes": 1206636,
+      "sha256": "9c36ec7555348488ddd6bcf419ffe438338d967641920eb011babf8fbc9607e1"
+    },
+    {
+      "file": "assets/audio/music/ending.ogg",
+      "bytes": 184084,
+      "sha256": "451401a0e70e7f00f046c890cbca1aedd0fde3e93fe7a128a9024332185edb47"
+    },
+    {
+      "file": "assets/audio/music/evening.ogg",
+      "bytes": 1232922,
+      "sha256": "3999b85b0c82494a0a46a6b7de91629d8fc72b38a61f1bf3acbff7cf31516d1a"
+    },
+    {
+      "file": "assets/audio/music/manifest.json",
+      "bytes": 482,
+      "sha256": "81e0af84251f2dc28d3a0fc8df97eb79c5cec24d4f5969521d963ed8b27520b1"
+    },
+    {
+      "file": "assets/audio/music/village.ogg",
+      "bytes": 1192327,
+      "sha256": "a7281baf8452d2f4c2f826c1cec3d68ebc253cbc8dbfb742ef3dec810c4a297e"
+    },
+    {
+      "file": "assets/audio/music/water.ogg",
+      "bytes": 1235917,
+      "sha256": "3b90d90c63fcc0a11477806a23046f975dc828035318b07587865379a7f51dd3"
+    },
+    {
+      "file": "assets/audio/sfx/bakery.ogg",
+      "bytes": 5406,
+      "sha256": "ff55aca10ec30d4b8a352d3237e0bdeab1af048a0bfb7ad59bbfaa91dfd0a825"
+    },
+    {
+      "file": "assets/audio/sfx/basket.ogg",
+      "bytes": 3911,
+      "sha256": "82c74cac6a74b04c45b3bd4c7c3a27d3c6521c73d35270f2ed5a0a99fe5b8f5d"
+    },
+    {
+      "file": "assets/audio/sfx/chime.ogg",
+      "bytes": 5343,
+      "sha256": "db7b1488f298903d43ee0c1a8629316447bf32728e2eb076080c2d64a1b3e60c"
+    },
+    {
+      "file": "assets/audio/sfx/click.ogg",
+      "bytes": 3815,
+      "sha256": "90df243e2826f85e036963b621599b974ab1edca9df0a1b6819f9de09fd8c88e"
+    },
+    {
+      "file": "assets/audio/sfx/dialog.ogg",
+      "bytes": 4225,
+      "sha256": "34353d08dcd96e44e0f977e74cfff9672294dfa21ba8cf1aed26be285e5a4276"
+    },
+    {
+      "file": "assets/audio/sfx/foot-earth-0.ogg",
+      "bytes": 4667,
+      "sha256": "7f5e652bbd46ae04cc48c0bffcd67c8f430ec466764215f2200005f1a8c84845"
+    },
+    {
+      "file": "assets/audio/sfx/foot-earth-1.ogg",
+      "bytes": 4646,
+      "sha256": "8d00a09eae7fbc34b4922865b79e7c2231e82069d2fca1b65ef3a844d5bf0aca"
+    },
+    {
+      "file": "assets/audio/sfx/foot-earth-2.ogg",
+      "bytes": 4675,
+      "sha256": "69ca24a95b92c626aea1bcb246cc3824aaa7ef6deab9491196623c66226ef166"
+    },
+    {
+      "file": "assets/audio/sfx/foot-stone-0.ogg",
+      "bytes": 4055,
+      "sha256": "d6f5a157b3ed606bd83b4e5d014d110b6013b03166f4335d97195a69d85199b0"
+    },
+    {
+      "file": "assets/audio/sfx/foot-stone-1.ogg",
+      "bytes": 4109,
+      "sha256": "25fe0ce953f59efa7468503be02da99472eb579fd7f591b122d018324f4edb1f"
+    },
+    {
+      "file": "assets/audio/sfx/foot-stone-2.ogg",
+      "bytes": 4124,
+      "sha256": "c1c824ed0bac4f3d9b76c5e2b9bf22bff0909427dde56827f8acdb08202f760f"
+    },
+    {
+      "file": "assets/audio/sfx/foot-wood-0.ogg",
+      "bytes": 4025,
+      "sha256": "eb6d6cdc03d44e24d8f512f9a1b3ae4f145da9f075a99634d7276811b0a92915"
+    },
+    {
+      "file": "assets/audio/sfx/foot-wood-1.ogg",
+      "bytes": 3957,
+      "sha256": "da53928c630c1d145e271453836a7c238510d3c276b4f7867c3234b80144b374"
+    },
+    {
+      "file": "assets/audio/sfx/foot-wood-2.ogg",
+      "bytes": 3937,
+      "sha256": "5f42dbe717652ca665a3c3f275e8aa3d184152cb76f9eb346b8826d82cb56b98"
+    },
+    {
+      "file": "assets/audio/sfx/forest.ogg",
+      "bytes": 6384,
+      "sha256": "5d7bffce4a3b37c6313f378b7074b34c76f54f02c1f4d9f2378412e1164a1077"
+    },
+    {
+      "file": "assets/audio/sfx/gate.ogg",
+      "bytes": 4121,
+      "sha256": "539ffad793a55a020562c9f4486163911a77d18cd192cd0469d65c4ffceedc08"
+    },
+    {
+      "file": "assets/audio/sfx/leaves.ogg",
+      "bytes": 6384,
+      "sha256": "ce20e7a231d0093f02ad6b3f192dfdb363573a2be3233ea40fe763da38380be9"
+    },
+    {
+      "file": "assets/audio/sfx/modal.ogg",
+      "bytes": 4568,
+      "sha256": "93d1d935a63adf51097badfc4ece11ea0e304ac243305d22d656226c5f8ab678"
+    },
+    {
+      "file": "assets/audio/sfx/paper.ogg",
+      "bytes": 5871,
+      "sha256": "3b755471bae2a457b7b33cd5b4087d658bed3461438c0ebc9597861a0ee113ea"
+    },
+    {
+      "file": "assets/audio/sfx/place-1.ogg",
+      "bytes": 3984,
+      "sha256": "8d3001bd3dc6b51cdb39d5c08d974424421456e198b31842637d9d7c408be4ce"
+    },
+    {
+      "file": "assets/audio/sfx/place-2.ogg",
+      "bytes": 4032,
+      "sha256": "2781231dd53672144cea9c091e27200644650834bb481584a3082e3f9409bceb"
+    },
+    {
+      "file": "assets/audio/sfx/place.ogg",
+      "bytes": 4054,
+      "sha256": "138f7f4ff6c954676b753cbf0d5f323e06467c696f25849e9f29479d9dd902e1"
+    },
+    {
+      "file": "assets/audio/sfx/reject.ogg",
+      "bytes": 3860,
+      "sha256": "bd8d6ad4e9d12ecd5c188e0b9c00f8fb013e17e725f6c37ee0f2d94be6a6c7dc"
+    },
+    {
+      "file": "assets/audio/sfx/return.ogg",
+      "bytes": 4066,
+      "sha256": "096797974e8ab7891936e4dfa6ab8ed3000cf22eb676e0748f152dc8bc6d0b13"
+    },
+    {
+      "file": "assets/audio/sfx/rotate.ogg",
+      "bytes": 4253,
+      "sha256": "1176fd50694bd7dd57d6d5e09e1883edf793d60b22d28e9e97746c341d9f361d"
+    },
+    {
+      "file": "assets/audio/sfx/select.ogg",
+      "bytes": 3862,
+      "sha256": "1c9feb2863bfdb75772bbc98bdc0a35b7548f99616250f368579356b6b644e6f"
+    },
+    {
+      "file": "assets/audio/sfx/victory.ogg",
+      "bytes": 8328,
+      "sha256": "688d17c29fd9c12ecf9d68b4266426e2e701f1db0b01e36f46f7cda97e8694f3"
+    },
+    {
+      "file": "assets/audio/sfx/village.ogg",
+      "bytes": 6384,
+      "sha256": "b01a95441435abb8e629918f0301ee476a18e97ed46bf6930c030e0b5e06174f"
+    },
+    {
+      "file": "assets/audio/sfx/water.ogg",
+      "bytes": 10246,
+      "sha256": "c945fcd4f99c881f06377d3c9383571a2dbb39e73cc122974139f3adea48cc38"
+    },
+    {
+      "file": "assets/bridge-v1/deck-v1.png",
+      "bytes": 1442323,
+      "sha256": "481c78e218f5a2057a3b194c3bc3fc2e2a971d8abd878029d640f63bf440fda7"
+    },
+    {
+      "file": "assets/bridge-v2/bridge-floor-v4.webp",
+      "bytes": 1290056,
+      "sha256": "1dcb6ecb45253e46c6d5d37cabe2b6bd3e804736aa6731bde2399bf8f785d3aa"
+    },
+    {
+      "file": "assets/chapter-1/v6/01-courtyard.png",
+      "bytes": 2989145,
+      "sha256": "950870c51135c14e406319deb1176a99891488d20d0318645f17b0efb1390c3c"
+    },
+    {
+      "file": "assets/chapter-1/v9/bakery/background.webp",
+      "bytes": 2473912,
+      "sha256": "b14a06ea1fd8dcd59c093d34da2fd9663b815a37b34338535a66d768a42e6290"
+    },
+    {
+      "file": "assets/chapter-1/v9/bakery/wide.webp",
+      "bytes": 5439354,
+      "sha256": "a500f9f4e443524e4e9db4e2467be57afb8c6d5cb8c560d1604e8a56b207ef3a"
+    },
+    {
+      "file": "assets/chapter-1/v9/forest/background.webp",
+      "bytes": 2308860,
+      "sha256": "960ff16ec428f7f5e0df0feb38493de6f31b7c2d48089664054b3fc9ce18459d"
+    },
+    {
+      "file": "assets/chapter-1/v9/forest/wide.webp",
+      "bytes": 4930930,
+      "sha256": "a6a3e61c09b7c6eed7b062f491c8018a6e0c5392106d751e4b4114000db66ce4"
+    },
+    {
+      "file": "assets/chapter-1/v9/garden/background.webp",
+      "bytes": 2708410,
+      "sha256": "179e83dd47301ffdb004f04b1d258d6f1b0709cf580bc02d71e2a7219e3d25a3"
+    },
+    {
+      "file": "assets/chapter-1/v9/garden/wide.webp",
+      "bytes": 6001932,
+      "sha256": "1e08d5541677df512dcde7aab3fb4c255748064f115931b1326164bd10ba0e17"
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/background.webp",
+      "bytes": 2273252,
+      "sha256": "f4741a9415bb6be155256a59de03ced3128080ef13bca4ef3826af44613fd6b3"
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/foreground-fixed.webp",
+      "bytes": 386108,
+      "sha256": "7f059986b462ebe7d6ef4364446ef748b12544f05e05d712e2be5eff44009dad"
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/gate-closed.webp",
+      "bytes": 19478,
+      "sha256": "c0ebc172a07cf03e95a016d93eb4784acb395dc3152a5ceb9481e84824d011f3"
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/gate-open.webp",
+      "bytes": 7222,
+      "sha256": "ff763ba17107b2d5697e8c5a751a09bbffb96d686cce9b36876e768c21a01d07"
+    },
+    {
+      "file": "assets/chapter-1/v9/gate/wide.webp",
+      "bytes": 5234246,
+      "sha256": "bd99f58d54e2d55dcf82dab72f7b0d6b460dd57a508f0c9e1e311e44c2af8fb7"
+    },
+    {
+      "file": "assets/chapter-1/v9/manifest.json",
+      "bytes": 40608,
+      "sha256": "cb5f085189e25755bddef2b070a235cda823ebb1778716c2199d688b21083e40"
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/background.webp",
+      "bytes": 2542188,
+      "sha256": "29703931694cab9bdc8dae82029a46a697f94db69035ec9fe0dd8741cf9165dd"
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/wheel-110.png",
+      "bytes": 24994,
+      "sha256": "351f2f746a41806343bb27aa8914472a558e66d12a467a474757a69e4ffadb29"
+    },
+    {
+      "file": "assets/chapter-1/v9/mill/wide.webp",
+      "bytes": 5703212,
+      "sha256": "fe2dbb3080261985302bb88cad4660e2f96170b3583a4addc6f8f565e5088e33"
+    },
+    {
+      "file": "assets/chapter-1/v9/post/background.webp",
+      "bytes": 2651118,
+      "sha256": "e99805904799c09d607dd548eae91c434eb91e9b95b427560d7a12a483f97bdb"
+    },
+    {
+      "file": "assets/chapter-1/v9/post/wide.webp",
+      "bytes": 5487362,
+      "sha256": "06a976e393276884aa609a3001d96500069d27e75d3d3b086ef73feb2f0c0d0f"
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/background-pilot.webp",
+      "bytes": 2373148,
+      "sha256": "6e0e46df6156aae7bf6677eb7a7c0a15933c843ee13458982db52a765be661f4"
+    },
+    {
+      "file": "assets/chapter-1/v9/stream/wide-pilot.webp",
+      "bytes": 5312084,
+      "sha256": "940a24f274cd8bbfe094178e5a40d7e6243127d4e2418efa9d20a664c9e4bb1e"
+    },
+    {
+      "file": "assets/chapter-1/v9/well/background.webp",
+      "bytes": 2563032,
+      "sha256": "173d810a5b4a2b45edc4b199131742e4ebae8303df7a9712f18081eec10c0cd2"
+    },
+    {
+      "file": "assets/chapter-1/v9/well/wide.webp",
+      "bytes": 6256072,
+      "sha256": "05e7a3ae714c1a00ab8b14b4e5a1b1d9c5fdc52689705c09ff2a7a5e241fcad6"
+    },
+    {
+      "file": "assets/chapter-map-v2/completed-bakery.webp",
+      "bytes": 12316,
+      "sha256": "6df286dd9cfa82c558c672ed92ff41b20beebe8d79e6762156fed8545888fb93"
+    },
+    {
+      "file": "assets/chapter-map-v2/completed-forest.webp",
+      "bytes": 14272,
+      "sha256": "9b81f75bcab422717a018de62301f7cb172381611749a8a68092f17b33925313"
+    },
+    {
+      "file": "assets/chapter-map-v2/completed-garden.webp",
+      "bytes": 16364,
+      "sha256": "96f08f5bc2abcf8756ba1c01e6afb1e808c5dbb14a19993dcb9dbb3c1a59f6b8"
+    },
+    {
+      "file": "assets/chapter-map-v2/completed-mill.webp",
+      "bytes": 38444,
+      "sha256": "f96f5570a15bd56df5631c4b7b77faf3a39baefb9a8c16c8ce120e7854b2786b"
+    },
+    {
+      "file": "assets/chapter-map-v2/completed-post.webp",
+      "bytes": 16602,
+      "sha256": "9e0ba483242fb1e5a365646d721c2cbe9a902454fbed9ba603d5fc1d5c5b0d5e"
+    },
+    {
+      "file": "assets/chapter-map-v2/completed-stream.webp",
+      "bytes": 13846,
+      "sha256": "ad9b888d47ca0d80ac87e77000c48be123a1893523a239dee7c047fa02a9fbfe"
+    },
+    {
+      "file": "assets/chapter-map-v2/completed-well.webp",
+      "bytes": 11148,
+      "sha256": "a7564b6fee1f0c84e4892912c27c091fec4565ba180d364b7765c29185677db7"
+    },
+    {
+      "file": "assets/chapter-map-v2/manifest.json",
+      "bytes": 10330,
+      "sha256": "8e11f04a6e8038b9a923c5b29baa738f45f75b4b8a999839be76d223aea1c09b"
+    },
+    {
+      "file": "assets/chapter-map-v2/map-base.webp",
+      "bytes": 773840,
+      "sha256": "3368d372d229e5c1b82f83752cf0187bb7c0df19921ee259963931cd162c299c"
+    },
+    {
+      "file": "assets/chapter-map-v2/map-wide.webp",
+      "bytes": 2193246,
+      "sha256": "5e80213c4303d5cc3a6467e5e96cf7e6b5eaa6f4b3bf5fae1305500d99ea1422"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/baker-conversation-left.png",
+      "bytes": 621999,
+      "sha256": "748cd0a7189d69d75bf040810c9c5084d9509406623d44a42624c31ded76909e"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/hedgehog-conversation-left.png",
+      "bytes": 843190,
+      "sha256": "b80f2d387ab259f811980185bbaed1efad8a9658933e162a4d4ddbb99d312340"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/miller-conversation-left.png",
+      "bytes": 512909,
+      "sha256": "19083ff20e81284df1ca70541904af1ffa849b6c0c09706e6ffdeb951c9bf3fb"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/rabbit-conversation-left.png",
+      "bytes": 638025,
+      "sha256": "6447848189e4514fb39682ea0da9fffcce30d3340a99967eac8e26848600a32d"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+      "bytes": 865761,
+      "sha256": "2c369dfe27a46135677b1e393fecad591305c5420251fa015c611d322bef3bad"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+      "bytes": 900723,
+      "sha256": "394e255d3668fb096eeb3073d093d4581e3c76177ae18ca6e2b2e38519b12cb1"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/teacher-conversation-front.png",
+      "bytes": 542751,
+      "sha256": "348f1164811dc7cfc07b8502f926a33554e2bc1876863bd986f68d4ceafb92bf"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents/teacher-conversation-left.png",
+      "bytes": 569800,
+      "sha256": "36faf1264436a15a7462c14236f95b16d6196cdb884c294d142ee62a0a560b24"
+    },
+    {
+      "file": "assets/characters-facing-v1/residents-facing-manifest.json",
+      "bytes": 12928,
+      "sha256": "ffd4f5a9ebabb798eb05e79dc80537138a67ff5e0e5c1d6a82d761896c7047c8"
+    },
+    {
+      "file": "assets/characters-v1/optimized/baker-idle.webp",
+      "bytes": 47288,
+      "sha256": "71e62ee236be65a5c0a32576c875768a1d360a5be64605d88979dd3abc8ca2f0"
+    },
+    {
+      "file": "assets/characters-v1/optimized/baker-portrait.webp",
+      "bytes": 44302,
+      "sha256": "250ae552c6c6474e4afc331ded42edc4b388f5e7a677ec74f6fa1f8744cbacb9"
+    },
+    {
+      "file": "assets/characters-v1/optimized/basket-ground.webp",
+      "bytes": 9050,
+      "sha256": "e0f29e273aaf8a9b84a1c2a996fb289a5baf90ae2f4f0b19539b392e848fd905"
+    },
+    {
+      "file": "assets/characters-v1/optimized/hedgehog-idle.webp",
+      "bytes": 90568,
+      "sha256": "2016f4db98bfee4bec3f129ab270b960bb8e0680fa64b2f0835f607a98165591"
+    },
+    {
+      "file": "assets/characters-v1/optimized/hedgehog-portrait.webp",
+      "bytes": 63064,
+      "sha256": "793a09da4e2d32f465f38a219c7c680e1e4a052e99d86635da4a417d26dab8de"
+    },
+    {
+      "file": "assets/characters-v1/optimized/miller-idle.webp",
+      "bytes": 40356,
+      "sha256": "f6ca6b7f3a67193aea8d28966efcde1fa62f0cafdc2a02a9ed447acf5c5ea2a5"
+    },
+    {
+      "file": "assets/characters-v1/optimized/miller-portrait.webp",
+      "bytes": 36188,
+      "sha256": "16394b3a7533943aafc56288528444ca994d98ea0710c23eb5796718266b8e36"
+    },
+    {
+      "file": "assets/characters-v1/optimized/rabbit-baking.webp",
+      "bytes": 71308,
+      "sha256": "5ab60f4ce23f079b60df5e778c53fcd18d90be2e5ee16dc3b2735c9abb9e077b"
+    },
+    {
+      "file": "assets/characters-v1/optimized/rabbit-idle.webp",
+      "bytes": 60002,
+      "sha256": "6cc8e05a55ca65fe61fb6a558f9c0c08a2f3248bcb7323cf887c2eb0cc3ff563"
+    },
+    {
+      "file": "assets/characters-v1/optimized/rabbit-portrait.webp",
+      "bytes": 42066,
+      "sha256": "bd1f8497388b3c1bf96117452d55d25380ba0310247d6ffdf2b0e3cb834fa4b3"
+    },
+    {
+      "file": "assets/characters-v1/optimized/ruta-adjust-satchel.webp",
+      "bytes": 56568,
+      "sha256": "7b97186cd95c0df3d728176cba09cd8f557c5ccd23160497b91b4f344490879e"
+    },
+    {
+      "file": "assets/characters-v1/optimized/ruta-basket.webp",
+      "bytes": 50518,
+      "sha256": "c0c003e7b97997a0a6847fa14e1087241fb252e90ee80a28228fbbfe340dd4c4"
+    },
+    {
+      "file": "assets/characters-v1/optimized/ruta-crouch-basket.webp",
+      "bytes": 79454,
+      "sha256": "cf6d5f3cb901861b27e1c8e443b4f83c58f9f02bd997a9c02591880bf8a46ef8"
+    },
+    {
+      "file": "assets/characters-v1/optimized/ruta-idle-pilot.webp",
+      "bytes": 47552,
+      "sha256": "f45a73140f952570f4e681d434be3df6c2bab0497edea1e30f818a231fbcb8ba"
+    },
+    {
+      "file": "assets/characters-v1/optimized/ruta-portrait-pilot.webp",
+      "bytes": 44514,
+      "sha256": "68c862d64ce52d332f5cf5b817cccb189aba5c66561c2e346637f180d91ba795"
+    },
+    {
+      "file": "assets/characters-v1/optimized/ruta-surprised.webp",
+      "bytes": 59632,
+      "sha256": "e313b86d89035a7252fe3ae575bf4cf65df0420abec063447db72100e4421780"
+    },
+    {
+      "file": "assets/characters-v1/optimized/squirrel-idle.webp",
+      "bytes": 80176,
+      "sha256": "93af2eff8044412ba4e05a8015b7cf5255efe04b3e2d1dfe367f418855dbae4b"
+    },
+    {
+      "file": "assets/characters-v1/optimized/squirrel-portrait.webp",
+      "bytes": 48424,
+      "sha256": "1a2655dd529e21a7160c78a356c9f28b7f715245699e137122cda4587e6f1969"
+    },
+    {
+      "file": "assets/characters-v1/optimized/teacher-idle.webp",
+      "bytes": 43810,
+      "sha256": "9d204ae1acc759f600e844cb60130c4de8430456b6b732836d258c2e175b5a1b"
+    },
+    {
+      "file": "assets/characters-v1/optimized/teacher-portrait.webp",
+      "bytes": 45066,
+      "sha256": "51d5e381e0889b339cfde0e11c088210ef15a8e1bcc50a2ef3a735683999b906"
+    },
+    {
+      "file": "assets/characters-v1/ruta-back-study.png",
+      "bytes": 433694,
+      "sha256": "f71147d41bb554802ed1b14538b853af4a136b8d0e48ca707dcfac90263d1c1b"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/base-e.webp",
+      "bytes": 449952,
+      "sha256": "e0437c4448ef483f912adb0fc324cf271009a091daf1ab574fdb053c8f95780a"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/base-ne.webp",
+      "bytes": 427530,
+      "sha256": "128c5a6a3b57f9f5ccb8410654a826d96d1c4411b9e3d4d0f2820e4517ef0e86"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/base-nw.webp",
+      "bytes": 431522,
+      "sha256": "894040e27afb12ed16963ede3c7ae602d36a6fa30b2122410f3f2fc49d2f855e"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/base-se.webp",
+      "bytes": 482042,
+      "sha256": "68bb48e8e29373524e3718e19f781a9a57787b5c60c4b23d1337dc32a70e1974"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/base-sw.webp",
+      "bytes": 477768,
+      "sha256": "f638bc24b4bfab841b7af797e4f71e106007dc65e99ff1edfd5c68b668e51a67"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/base-w.webp",
+      "bytes": 447854,
+      "sha256": "7fc853ded553239eb4524176ea2edefb91027da143d7191bd8db9924a62f7718"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/calibrated-1-e.webp",
+      "bytes": 449798,
+      "sha256": "1db7b0bc4cf98c3e66ed33cbad952a73b48af0bab4959ee2ae90dd8e8adc56f2"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp",
+      "bytes": 427428,
+      "sha256": "6f79e67d09d46ccfaa2505a26d924122bdd311158ea45f0cb8e21549e3e33277"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/calibrated-1-nw.webp",
+      "bytes": 431330,
+      "sha256": "0de2a9abdd2b9d2900f777fbd554863180d61ee82b3f63f18154fe11f2728f5b"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/calibrated-1-se.webp",
+      "bytes": 474858,
+      "sha256": "d36ffb3ada3db072e18390f19adb2bf61707878e7e0f1a36625ddc59824a6ce4"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/calibrated-1-sw.webp",
+      "bytes": 474004,
+      "sha256": "c8a0e5dcf7b44b85ba48dc5941d5b0d65f70a8917b5041bf705e641da2ea7b9d"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/calibrated-1-w.webp",
+      "bytes": 448752,
+      "sha256": "d274f42797814c896e677b20000711f07d7a67ae28586c8ee01feb9dffd4b826"
+    },
+    {
+      "file": "assets/characters-walk-v1/animated-v3/manifest.json",
+      "bytes": 738924,
+      "sha256": "e8a8696a2df1b987f1fcd05d50e15b890351e395d51c62081ee48f0dcda9e676"
+    },
+    {
+      "file": "assets/index-Booi3P-Q.js",
+      "bytes": 183896,
+      "sha256": "d6f9e80949b87752e1eee897a8ca2d49d08e591aa9c92f22c961ba0e2b7aca28"
+    },
+    {
+      "file": "assets/index-D45q4dot.css",
+      "bytes": 19136,
+      "sha256": "e33d995df8cb7430fa112f1da4bf8664fa80e488ec923c09f08d5717be79fab9"
+    },
+    {
+      "file": "assets/level-1/v4/charoite-texture.png",
+      "bytes": 3200814,
+      "sha256": "f599663fddcaff3a36c408714dcc9b1f3570e996f6fc64ccd5529b38f523e263"
+    },
+    {
+      "file": "assets/level-1/v4/courtyard-landscape.png",
+      "bytes": 2729471,
+      "sha256": "2c0db2d15763fbc9408d2d97fa34b1f4d1d3f5c45b8da691db999d869c5ddb70"
+    },
+    {
+      "file": "assets/level-1/v4/courtyard-portrait.png",
+      "bytes": 2683502,
+      "sha256": "ac66ae22c4ab2e093e6f3dc496b9a79753206f32d88971029af24533012dbae4"
+    },
+    {
+      "file": "assets/level-1/v4/ruta-idle.png",
+      "bytes": 842401,
+      "sha256": "1adabc00ed39b685e33be5a27951b11e38c93874122110b60ca512b6aa8e098e"
+    },
+    {
+      "file": "assets/level-1/v5/manifest.json",
+      "bytes": 2888,
+      "sha256": "580accd81e38d4f16a8250916f2fa52877f1f079d7279b4c47935f83e8a5e096"
+    },
+    {
+      "file": "assets/level-1/v5/tile-01.png",
+      "bytes": 456993,
+      "sha256": "ac92566d94ebe309b6784bc59385f5fcec12e7b35d901ae6d5bb151c1a2ce829"
+    },
+    {
+      "file": "assets/level-1/v5/tile-02.png",
+      "bytes": 452522,
+      "sha256": "d078e5b405992de734e10c8ffeb8f299fbaebee17dc3a1a8d48c7590fd81948e"
+    },
+    {
+      "file": "assets/level-1/v5/tile-03.png",
+      "bytes": 457577,
+      "sha256": "87fb8b5af7297233e59ea3cb6ea392dc7800113d945f4037afcb2bfd813d75ff"
+    },
+    {
+      "file": "assets/level-1/v5/tile-04.png",
+      "bytes": 455543,
+      "sha256": "8d2208aec74a37aec72aa11b84b9697f1c9a5462b70f324e2918cd2c0449e55e"
+    },
+    {
+      "file": "assets/level-1/v5/tile-05.png",
+      "bytes": 452974,
+      "sha256": "e60ae7f02a5cf22a4645d12a330305b50913fc0e402fb01c7a394d7a285c362a"
+    },
+    {
+      "file": "assets/level-1/v5/tile-06.png",
+      "bytes": 448999,
+      "sha256": "0d85b0768bdbee9aac33c6f20b07fc04796b956a361de2118f537623fc63e994"
+    },
+    {
+      "file": "assets/prologue/baker.svg",
+      "bytes": 431,
+      "sha256": "623b475d89675f955c44e37de02fed8d8c42b0e9afea6a7d25a3204e80b6bf49"
+    },
+    {
+      "file": "assets/prologue/basket.svg",
+      "bytes": 576,
+      "sha256": "bd888a90159266e23a13260bafbe5830db0739a77c76506a8531f1e3385675e7"
+    },
+    {
+      "file": "assets/prologue/hedgehog.svg",
+      "bytes": 545,
+      "sha256": "3e0bb056aeda28863b07aed85c789995b3dd4ef1853c25fc0d9e685fba958218"
+    },
+    {
+      "file": "assets/prologue/miller.svg",
+      "bytes": 431,
+      "sha256": "adcef52e91963b12669f905a3c13e70ddc22e888720c74b78f15d1db01911222"
+    },
+    {
+      "file": "assets/prologue/rabbit.svg",
+      "bytes": 538,
+      "sha256": "281c66f95126aae3dc1172f6d84bd187ff0a071be9a30e5bea2a57b6b2acb6f4"
+    },
+    {
+      "file": "assets/prologue/squirrel.svg",
+      "bytes": 565,
+      "sha256": "df8a81f5cfe73f630e43c60ed9d5164f93866b2742c2e58cab2c6a0b03e334cc"
+    },
+    {
+      "file": "assets/prologue/teacher.svg",
+      "bytes": 431,
+      "sha256": "568ef1bcda70f2c87df9db8bcb229fb6a24ddd79cbf0e5b2dd3e33e03fe1c4fb"
+    },
+    {
+      "file": "assets/road-v1/charoite.webp",
+      "bytes": 1572918,
+      "sha256": "5493fb04f05169f42edaecd3e4273b0e6e24ee1eaec94aade8487fb3ed3d7939"
+    },
+    {
+      "file": "assets/road-v1/manifest.json",
+      "bytes": 1075,
+      "sha256": "57f900f46e4ea0f2343fc362bb901b9089540fd25fba8558eb06a98111347c22"
+    },
+    {
+      "file": "assets/ui/v7/completion-gate.png",
+      "bytes": 314491,
+      "sha256": "8c028f9c2f46965fc38e971fce17549726109ef1bc03aa1edee4b8a42bbec004"
+    },
+    {
+      "file": "assets/ui/v7/leaves.png",
+      "bytes": 856743,
+      "sha256": "aad47efe2af6a425cbd410960b87233dabd6072ddb424f8b0e9ea91b175059d5"
+    },
+    {
+      "file": "assets/ui/v7/linen.png",
+      "bytes": 9383,
+      "sha256": "f5dac34c88f91a637614fab9bdd0e4ca7a8065efa77b92336bdff02ddedcecc0"
+    },
+    {
+      "file": "assets/ui/v7/paper.png",
+      "bytes": 24411,
+      "sha256": "b9810d4f3a0b26b0956b7759cfbc131f349d8c9df1a69407212c9d95d2084b8b"
+    },
+    {
+      "file": "assets/ui/v7/ruta-bust.png",
+      "bytes": 476258,
+      "sha256": "cfcef33a9d178d90ed0465ea22da2628ff13713540acebd26c4ed911ebcd8926"
+    },
+    {
+      "file": "assets/ui/v7/wood.png",
+      "bytes": 18144,
+      "sha256": "ef54c890ee16de21fa26d8cc1c8f13432046f43b6bfa479b75161b1b63982d7c"
+    },
+    {
+      "file": "assets/ui/v8/level-header-v1.webp",
+      "bytes": 1153016,
+      "sha256": "ba13b7c422506cfcd1b605686bdb72e90e1c9c44d89dd9c07564c5672f80832a"
+    },
+    {
+      "file": "export-assets.json",
+      "bytes": 12636,
+      "sha256": "e91e093d7457e9c4dcd4c46a25900156acc83b67c5aaef9a6c4201a2477e2159"
+    },
+    {
+      "file": "index.html",
+      "bytes": 725,
+      "sha256": "7b36f6329e222455d47adedabb0f42ab895dd24bd6f4c179e6ffc40eba253eb5"
+    }
+  ],
+  "distBytes": 108746595,
+  "fileCount": 143,
+  "forbiddenSourceOrLfs": [],
+  "temporaryUrls": [],
+  "publicDistByteMismatches": [],
+  "refs": {
+    "README.md": {
+      "sha256": "6790c3e5ee7f69cb05cec33bf7458661dd027e2b42b65452f3cfd183ee86db7c",
+      "bytes": 12951
+    },
+    "package.json": {
+      "sha256": "d5ceb994e4964dcd632ff5b0afb0ecef41e549f790b9e3e36d7f62a2ac51c92b",
+      "bytes": 343
+    },
+    "package-lock.json": {
+      "sha256": "335250bf294d4f1ed7222ab9e327b2433124cf6d497bdf2e83299daba00aba23",
+      "bytes": 35888
+    },
+    "vite.config.ts": {
+      "sha256": "65eac6d236a116827629b91f69ff8ae278d1d4d92b3f7c4cdf1d77d0c743e704",
+      "bytes": 507
+    },
+    "scripts/release-export.mjs": {
+      "sha256": "ff87f3493ffeca4a05d8d95abab9d26319f7d07e824f454b94723e363267cb27",
+      "bytes": 3215
+    },
+    "THIRD_PARTY_MUSIC.md": {
+      "sha256": "c0a164d4aae05cba6875baae43db43233be0544e047c45b66d04790e41c2b16d",
+      "bytes": 1984
+    },
+    "art/audio/sfx/THIRD_PARTY_NOTICES.md": {
+      "sha256": "8fe1ad6340c49bee9e7baf2ce83bb41ee278f23e5242e11dee9f80726ff45fef",
+      "bytes": 1514
+    },
+    "src/sound-manifest.json": {
+      "sha256": "8eab64afff6f8b743d8216be447ec794151909bfaa3eabb39f40ef041d9a1953",
+      "bytes": 10547
+    },
+    "public/assets/audio/music/manifest.json": {
+      "sha256": "81e0af84251f2dc28d3a0fc8df97eb79c5cec24d4f5969521d963ed8b27520b1",
+      "bytes": 482
+    },
+    ".github/workflows/pages.yml": {
+      "sha256": "f20441ffc43fb841d7970c734f62f9ae31befc9db74207c78e8015192fdd1eee",
+      "bytes": 942
+    },
+    "src/production-chapter.ts": {
+      "sha256": "e45544ecb298e1e360005d1b165fc7f5f6fc00f74b93e9bb94718c86be1ece75",
+      "bytes": 1408
+    },
+    "src/ruta-motion-view.ts": {
+      "sha256": "01bb1910dc3da32ba7d79d3d59e282d6022a6274259b417876fc8f00a5eff690",
+      "bytes": 2948
+    },
+    "src/main.ts": {
+      "sha256": "05b64838dc97040e2e4072dc2172ab74c31ceb88d5507cf22ac2b552801f89e5",
+      "bytes": 78367
+    }
+  },
+  "exportPolicyReport": {
+    "scope": "Generated export pruning only; source repository unchanged",
+    "layoutVersion": 2,
+    "motion": "characters-walk-v1/animated-v3",
+    "mapFolders": [
+      "chapter-map-v2",
+      "chapter-map-v2"
+    ],
+    "keptBytes": 108733959,
+    "removedBytes": 135185803,
+    "removed": [
+      {
+        "file": "assets/bridge-v2/bridge-floor-v3.webp",
+        "bytes": 1444820
+      },
+      {
+        "file": "assets/bridge-v2/bridge-painted-v2.webp",
+        "bytes": 1418660
+      },
+      {
+        "file": "assets/bridge-v2/deck-material-v1.webp",
+        "bytes": 1847508
+      },
+      {
+        "file": "assets/chapter-1/v6/02-orchard.png",
+        "bytes": 3118713
+      },
+      {
+        "file": "assets/chapter-1/v6/03-well.png",
+        "bytes": 3073766
+      },
+      {
+        "file": "assets/chapter-1/v6/04-bakery.png",
+        "bytes": 2994547
+      },
+      {
+        "file": "assets/chapter-1/v6/05-stream.png",
+        "bytes": 3024572
+      },
+      {
+        "file": "assets/chapter-1/v6/06-mill.png",
+        "bytes": 3233527
+      },
+      {
+        "file": "assets/chapter-1/v6/07-post.png",
+        "bytes": 2996340
+      },
+      {
+        "file": "assets/chapter-1/v6/08-edge.png",
+        "bytes": 2995273
+      },
+      {
+        "file": "assets/chapter-1/v6/manifest.json",
+        "bytes": 6343
+      },
+      {
+        "file": "assets/chapter-1/v8/01-courtyard-open.jpg",
+        "bytes": 655038
+      },
+      {
+        "file": "assets/chapter-1/v8/01-courtyard-surroundings.jpg",
+        "bytes": 840156
+      },
+      {
+        "file": "assets/chapter-1/v8/02-orchard-open.jpg",
+        "bytes": 738210
+      },
+      {
+        "file": "assets/chapter-1/v8/02-orchard-surroundings.jpg",
+        "bytes": 881749
+      },
+      {
+        "file": "assets/chapter-1/v8/03-well-open.jpg",
+        "bytes": 650511
+      },
+      {
+        "file": "assets/chapter-1/v8/03-well-surroundings.jpg",
+        "bytes": 898053
+      },
+      {
+        "file": "assets/chapter-1/v8/04-bakery-open.jpg",
+        "bytes": 726098
+      },
+      {
+        "file": "assets/chapter-1/v8/04-bakery-surroundings.jpg",
+        "bytes": 844869
+      },
+      {
+        "file": "assets/chapter-1/v8/05-stream-surroundings.jpg",
+        "bytes": 859098
+      },
+      {
+        "file": "assets/chapter-1/v8/06-mill-surroundings.jpg",
+        "bytes": 1014808
+      },
+      {
+        "file": "assets/chapter-1/v8/07-post-open.jpg",
+        "bytes": 726684
+      },
+      {
+        "file": "assets/chapter-1/v8/07-post-surroundings.jpg",
+        "bytes": 879918
+      },
+      {
+        "file": "assets/chapter-1/v8/08-edge-open.jpg",
+        "bytes": 745658
+      },
+      {
+        "file": "assets/chapter-1/v8/08-edge-surroundings.jpg",
+        "bytes": 809499
+      },
+      {
+        "file": "assets/chapter-1/v9/mill/background-exact-water.webp",
+        "bytes": 716520
+      },
+      {
+        "file": "assets/chapter-1/v9/mill/dry-background.webp",
+        "bytes": 716840
+      },
+      {
+        "file": "assets/chapter-1/v9/mill/water.webp",
+        "bytes": 109348
+      },
+      {
+        "file": "assets/chapter-1/v9/stream/background-exact-water.webp",
+        "bytes": 646596
+      },
+      {
+        "file": "assets/chapter-1/v9/stream/background.webp",
+        "bytes": 752168
+      },
+      {
+        "file": "assets/chapter-1/v9/stream/dry-background-pilot.webp",
+        "bytes": 2358662
+      },
+      {
+        "file": "assets/chapter-1/v9/stream/dry-background.webp",
+        "bytes": 659846
+      },
+      {
+        "file": "assets/chapter-1/v9/stream/water-mask-pilot.png",
+        "bytes": 6087
+      },
+      {
+        "file": "assets/chapter-1/v9/stream/water-pilot.png",
+        "bytes": 3339382
+      },
+      {
+        "file": "assets/chapter-1/v9/stream/water.webp",
+        "bytes": 109228
+      },
+      {
+        "file": "assets/chapter-1-garden-well/garden/background.webp",
+        "bytes": 2708410
+      },
+      {
+        "file": "assets/chapter-1-garden-well/garden/wide.webp",
+        "bytes": 6001932
+      },
+      {
+        "file": "assets/chapter-1-garden-well/garden-manifest.json",
+        "bytes": 2510
+      },
+      {
+        "file": "assets/chapter-1-garden-well/well/background.webp",
+        "bytes": 2563032
+      },
+      {
+        "file": "assets/chapter-1-garden-well/well/wide.webp",
+        "bytes": 6256072
+      },
+      {
+        "file": "assets/chapter-1-garden-well/well-manifest.json",
+        "bytes": 3105
+      },
+      {
+        "file": "assets/chapter-1-map-match/bakery/background.webp",
+        "bytes": 2473912
+      },
+      {
+        "file": "assets/chapter-1-map-match/bakery/manifest.json",
+        "bytes": 2803
+      },
+      {
+        "file": "assets/chapter-1-map-match/bakery/wide.webp",
+        "bytes": 5439354
+      },
+      {
+        "file": "assets/chapter-1-map-match/forest/background.webp",
+        "bytes": 2308860
+      },
+      {
+        "file": "assets/chapter-1-map-match/forest/manifest.json",
+        "bytes": 3400
+      },
+      {
+        "file": "assets/chapter-1-map-match/forest/wide.webp",
+        "bytes": 4930930
+      },
+      {
+        "file": "assets/chapter-1-map-match/gate/background.webp",
+        "bytes": 2273252
+      },
+      {
+        "file": "assets/chapter-1-map-match/gate/manifest.json",
+        "bytes": 2871
+      },
+      {
+        "file": "assets/chapter-1-map-match/gate/wide.webp",
+        "bytes": 5234246
+      },
+      {
+        "file": "assets/chapter-1-map-match/post/background.webp",
+        "bytes": 2651118
+      },
+      {
+        "file": "assets/chapter-1-map-match/post/manifest.json",
+        "bytes": 2894
+      },
+      {
+        "file": "assets/chapter-1-map-match/post/wide.webp",
+        "bytes": 5487362
+      },
+      {
+        "file": "assets/chapter-map-v1/chapter-map-candidate.webp",
+        "bytes": 751724
+      },
+      {
+        "file": "assets/chapter-map-v1/manifest.json",
+        "bytes": 2551
+      },
+      {
+        "file": "assets/characters-v1/delivery-manifest.json",
+        "bytes": 20294
+      },
+      {
+        "file": "assets/characters-v1/manifest.json",
+        "bytes": 1278
+      },
+      {
+        "file": "assets/characters-v1/poses/basket-ground-source-v1-extraction.json",
+        "bytes": 202
+      },
+      {
+        "file": "assets/characters-v1/poses/basket-ground.png",
+        "bytes": 1431589
+      },
+      {
+        "file": "assets/characters-v1/poses/rabbit-baking-source-v1-extraction.json",
+        "bytes": 202
+      },
+      {
+        "file": "assets/characters-v1/poses/rabbit-baking.png",
+        "bytes": 1441584
+      },
+      {
+        "file": "assets/characters-v1/poses/ruta-adjust-satchel.png",
+        "bytes": 551152
+      },
+      {
+        "file": "assets/characters-v1/poses/ruta-basket.png",
+        "bytes": 451882
+      },
+      {
+        "file": "assets/characters-v1/poses/ruta-crouch-basket.png",
+        "bytes": 419840
+      },
+      {
+        "file": "assets/characters-v1/poses/ruta-poses-source-v1-extraction.json",
+        "bytes": 800
+      },
+      {
+        "file": "assets/characters-v1/poses/ruta-surprised.png",
+        "bytes": 497282
+      },
+      {
+        "file": "assets/characters-v1/poses-manifest.json",
+        "bytes": 5412
+      },
+      {
+        "file": "assets/characters-v1/residents/baker-idle.png",
+        "bytes": 843329
+      },
+      {
+        "file": "assets/characters-v1/residents/baker-portrait.png",
+        "bytes": 1253215
+      },
+      {
+        "file": "assets/characters-v1/residents/baker-source-v1-extraction.json",
+        "bytes": 394
+      },
+      {
+        "file": "assets/characters-v1/residents/hedgehog-idle.png",
+        "bytes": 978288
+      },
+      {
+        "file": "assets/characters-v1/residents/hedgehog-portrait.png",
+        "bytes": 1351579
+      },
+      {
+        "file": "assets/characters-v1/residents/hedgehog-source-v1-extraction.json",
+        "bytes": 399
+      },
+      {
+        "file": "assets/characters-v1/residents/miller-idle.png",
+        "bytes": 659886
+      },
+      {
+        "file": "assets/characters-v1/residents/miller-portrait.png",
+        "bytes": 1016492
+      },
+      {
+        "file": "assets/characters-v1/residents/miller-source-v1-extraction.json",
+        "bytes": 398
+      },
+      {
+        "file": "assets/characters-v1/residents/rabbit-idle.png",
+        "bytes": 868830
+      },
+      {
+        "file": "assets/characters-v1/residents/rabbit-portrait.png",
+        "bytes": 1139464
+      },
+      {
+        "file": "assets/characters-v1/residents/rabbit-source-v1-extraction.json",
+        "bytes": 397
+      },
+      {
+        "file": "assets/characters-v1/residents/squirrel-idle.png",
+        "bytes": 1038973
+      },
+      {
+        "file": "assets/characters-v1/residents/squirrel-portrait.png",
+        "bytes": 1097196
+      },
+      {
+        "file": "assets/characters-v1/residents/squirrel-source-v1-extraction.json",
+        "bytes": 399
+      },
+      {
+        "file": "assets/characters-v1/residents/teacher-idle.png",
+        "bytes": 749385
+      },
+      {
+        "file": "assets/characters-v1/residents/teacher-portrait.png",
+        "bytes": 1136599
+      },
+      {
+        "file": "assets/characters-v1/residents/teacher-source-v1-extraction.json",
+        "bytes": 400
+      },
+      {
+        "file": "assets/characters-v1/residents-manifest.json",
+        "bytes": 7101
+      },
+      {
+        "file": "assets/characters-v1/ruta-idle-pilot.png",
+        "bytes": 676343
+      },
+      {
+        "file": "assets/characters-v1/ruta-portrait-pilot.png",
+        "bytes": 827013
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/base-e.webp",
+        "bytes": 751850
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/base-ne.webp",
+        "bytes": 735438
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/base-nw.webp",
+        "bytes": 783874
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/base-se.webp",
+        "bytes": 851504
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/base-sw.webp",
+        "bytes": 821588
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/base-w.webp",
+        "bytes": 728310
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/calibrated-1-e.webp",
+        "bytes": 751512
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/calibrated-1-ne.webp",
+        "bytes": 744892
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/calibrated-1-nw.webp",
+        "bytes": 781802
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/calibrated-1-se.webp",
+        "bytes": 844118
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/calibrated-1-sw.webp",
+        "bytes": 816520
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/calibrated-1-w.webp",
+        "bytes": 728060
+      },
+      {
+        "file": "assets/characters-walk-v1/animated-v2/manifest.json",
+        "bytes": 738669
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-01.png",
+        "bytes": 80208
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-02.png",
+        "bytes": 77936
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-03.png",
+        "bytes": 76547
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-04.png",
+        "bytes": 75588
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-05.png",
+        "bytes": 75574
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-06.png",
+        "bytes": 76517
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-07.png",
+        "bytes": 77781
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-08.png",
+        "bytes": 78563
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-09.png",
+        "bytes": 79338
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-10.png",
+        "bytes": 77604
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-11.png",
+        "bytes": 76965
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-12.png",
+        "bytes": 76767
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-13.png",
+        "bytes": 77383
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-14.png",
+        "bytes": 78056
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-15.png",
+        "bytes": 79435
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/e-16.png",
+        "bytes": 80039
+      },
+      {
+        "file": "assets/characters-walk-v1/east-mesh-pilot/manifest.json",
+        "bytes": 7215
+      },
+      {
+        "file": "assets/characters-walk-v1/manifest.json",
+        "bytes": 19011
+      },
+      {
+        "file": "assets/level-1/garden-gate.png",
+        "bytes": 1628319
+      },
+      {
+        "file": "assets/level-1/grass-ground.png",
+        "bytes": 2910974
+      },
+      {
+        "file": "assets/level-1/manifest.json",
+        "bytes": 771
+      },
+      {
+        "file": "assets/level-1/meadow.png",
+        "bytes": 2435361
+      },
+      {
+        "file": "assets/level-1/ruta-house.png",
+        "bytes": 1612283
+      },
+      {
+        "file": "assets/level-1/ruta-idle.png",
+        "bytes": 842401
+      }
+    ]
+  },
+  "scope": "Existing dist audit only; did NOT invoke mutating release-export, npm ci or build; no runtime/browser/license legal opinion."
+}

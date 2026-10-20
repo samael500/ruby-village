@@ -1,0 +1,20 @@
+{
+  "status": "actual game projection review pending",
+  "generator": "builtin image_gen",
+  "source": "art/bridge-v2/bridge-floor-generated-v3.png",
+  "sourceSha256": "d61eae8a4b3c9cac2dfe279e198bdb2ed1bdc366954c12443f7d3478e66127cd",
+  "delivery": "public/assets/bridge-v2/bridge-floor-v3.webp",
+  "registration": {
+    "sourcePixelRoot": [
+      920,
+      428
+    ],
+    "sourcePixelHexRadius": 330,
+    "method": "single uniform fit to three top/bottom hex vertex pairs; shared ground camera and exact logical three-cell clip are retained"
+  },
+  "previousCandidate": "bridge-painted-v2: craftsmanship liked, source board layout read as upright wall",
+  "correction": "horizontal staggered floorboards, broad top faces, restrained front timber depth; no precompression, separate layer camera, geometry/anchor adjustment or CSS shift",
+  "gameQa": "pending",
+  "artAcceptance": "pending",
+  "productionEnabled": false
+}

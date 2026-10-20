@@ -1,0 +1,129 @@
+{
+  "status": "material-only-study-not-approved-Ruta",
+  "source": "art/ready-character-walk-v1/adventurer-walk-pilot.blend",
+  "sourceSha256": "aca074baa09dedb72215a30409baa3015fa782fd63e400bd372658f006b23b9d",
+  "changes": {
+    "White": {
+      "oldDiffuse": [
+        0.45752230286598206,
+        0.45752230286598206,
+        0.45752230286598206,
+        1.0
+      ],
+      "newLinearRgb": [
+        0.84,
+        0.77,
+        0.63
+      ]
+    },
+    "Hair_Brown": {
+      "oldDiffuse": [
+        0.048171836882829666,
+        0.03433981165289879,
+        0.022173885256052017,
+        1.0
+      ],
+      "newLinearRgb": [
+        0.27,
+        0.075,
+        0.025
+      ]
+    },
+    "Green": {
+      "oldDiffuse": [
+        0.06071806326508522,
+        0.05050992593169212,
+        0.018883628770709038,
+        1.0
+      ],
+      "newLinearRgb": [
+        0.105,
+        0.135,
+        0.052
+      ]
+    },
+    "LightGreen": {
+      "oldDiffuse": [
+        0.09850181639194489,
+        0.08484306186437607,
+        0.03705023229122162,
+        1.0
+      ],
+      "newLinearRgb": [
+        0.18,
+        0.2,
+        0.09
+      ]
+    },
+    "Brown2": {
+      "oldDiffuse": [
+        0.10653223842382431,
+        0.07631582021713257,
+        0.032025814056396484,
+        1.0
+      ],
+      "newLinearRgb": [
+        0.21,
+        0.095,
+        0.04
+      ]
+    },
+    "Brown_02": {
+      "oldDiffuse": [
+        0.17885959148406982,
+        0.12677308917045593,
+        0.051317352801561356,
+        1.0
+      ],
+      "newLinearRgb": [
+        0.16,
+        0.075,
+        0.032
+      ]
+    },
+    "Brown": {
+      "oldDiffuse": [
+        0.03106195665895939,
+        0.018161438405513763,
+        0.01130784023553133,
+        1.0
+      ],
+      "newLinearRgb": [
+        0.14,
+        0.065,
+        0.025
+      ]
+    }
+  },
+  "geometryWeightsActionsEdited": false,
+  "bag": "stock backpack retained; no single-satchel claim",
+  "limitations": [
+    "stock short hair, shorts, short sleeves and backpack remain",
+    "palette cannot replace approved Ruta likeness/outfit",
+    "one E pose only; no new direction batch"
+  ],
+  "alphaEqualsStockFrame00": true,
+  "nativeSkeletonGeometryWeightsAndWalkUnchangedVerified": true,
+  "invariants": {
+    "boneRestSha256": "1dfeaec8a3fb309b5b0642dfb81903604d27c9478ebaec12d5cf6f899bb74ce0",
+    "walkActionSha256": "f909a000ac04e94cbba36ada73202df4bdbddc12dce783e2f811d7acc584a39e",
+    "meshes": {
+      "Adventurer_Body": {
+        "vertices": 8173,
+        "geometryWeightsSha256": "afd143aec30f913e272706ef4ed392fa036405f41ad39f29f2677989c28452f8"
+      },
+      "Adventurer_Feet": {
+        "vertices": 1568,
+        "geometryWeightsSha256": "2ba5b144e28bf986b59fa5c379b8a97bac3c3afdbba69bdb0edc4c50027799a4"
+      },
+      "Adventurer_Head": {
+        "vertices": 1302,
+        "geometryWeightsSha256": "ab4ccd46c384d9e256864fa337fcc13e3f1dc5d0d97e35d0b4841003af2ec957"
+      },
+      "Adventurer_Legs": {
+        "vertices": 2672,
+        "geometryWeightsSha256": "8767250c91f9722bbfe8bcc97609e5dba46fc60bf79eec5a938a7bc551af82f6"
+      }
+    }
+  }
+}

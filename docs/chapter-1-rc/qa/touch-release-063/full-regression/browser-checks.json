@@ -1,0 +1,101 @@
+{
+  "cases": [
+    {
+      "device": "Chromium mouse1280x720",
+      "mode": "drag",
+      "piece": "compound",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "Chromium mouse1280x720",
+      "mode": "drag",
+      "piece": "bridge",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "Chromium mouse1280x720",
+      "mode": "select",
+      "piece": "compound",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "Chromium mouse1280x720",
+      "mode": "select",
+      "piece": "bridge",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "mouse",
+      "cancelMovedPieceKeepsConfirmed": true,
+      "undoPendingDoesNotUndoConfirmed": true,
+      "switchSelectionDoesNotLosePiece": true,
+      "systemCancelRestoresSnapshot": true,
+      "pauseThenReloadConfirmedOnly": true
+    },
+    {
+      "device": "Chromium touch844x390",
+      "mode": "drag",
+      "piece": "compound",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "Chromium touch844x390",
+      "mode": "drag",
+      "piece": "bridge",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "Chromium touch844x390",
+      "mode": "select",
+      "piece": "compound",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "Chromium touch844x390",
+      "mode": "select",
+      "piece": "bridge",
+      "invalidPreserved": true,
+      "rotateWithoutCommit": true,
+      "validRepositionConfirmedExactlyOnce": true,
+      "captureReleased": true,
+      "trayVisible": true
+    },
+    {
+      "device": "touch",
+      "cancelMovedPieceKeepsConfirmed": true,
+      "undoPendingDoesNotUndoConfirmed": true,
+      "switchSelectionDoesNotLosePiece": true,
+      "systemCancelRestoresSnapshot": true,
+      "pauseThenReloadConfirmedOnly": true
+    }
+  ],
+  "scope": "actual production Chromium input with saved-state fixture setup; no physical phone claimed"
+}

@@ -1,0 +1,7 @@
+# Dry shoreline decoration and logical water
+
+The coordinator's earlier full-free-RGB-identical guard was stricter than the user's requirement to preserve playable cells and accepted geometry. It forced generated dry bank stones/earth to end on exact hex edges, producing the independently reproduced P1 cut lines. Logical geometry, accepted solutions and collision rules must remain unchanged; artistic dry ground pixels are not themselves colliders.
+
+If a completely contained natural bank cannot avoid that cut, permit only flat dry earth/grass/tiny pebbles within12 native pixels of the logical water perimeter on neighboring free ground. No visible water outside the logical water zone, no tall rocks, dense plants or foreground blockers in those playable cells. Free polygon cores inset18 native pixels retain the dry source pixels. Bridge endpoints remain dry; deck/road draw above ground decoration, with no bank foreground over the deck. Every valid piece placement remains identical.
+
+The new evidence must distinguish water leakage over ANY free ground (zero), free CORE source RGB changes (zero), boundary-only dry decoration changes (count and maximum depth≤12), and whole-object visual inspection. Do not cite older full-free RGB0 for a candidate using this relaxation. Logical full-water mask remains the authoritative unchanged overlay; visible body and dry bank are separate masks. This is a visual ground-treatment contract, not a change to the puzzle rules or an approval of unfinished source art.

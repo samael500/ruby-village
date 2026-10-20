@@ -1,0 +1,845 @@
+{
+  "scope": "actual game UI; title remains live text, painted lossless raster nine-slice; progress fixtures only; no physical phone",
+  "checks": [
+    {
+      "scene": "gate",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "До калитки",
+        "box": [
+          70,
+          8,
+          183.203125,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            231.203125,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            231.203125,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 98,
+        "client": 98
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "garden",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "В обход яблони",
+        "box": [
+          70,
+          8,
+          210.359375,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            258.359375,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            258.359375,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 125,
+        "client": 125
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "well",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "К колодцу",
+        "box": [
+          70,
+          8,
+          171.515625,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            219.515625,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            219.515625,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 87,
+        "client": 87
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "bakery",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "Тёплая пекарня",
+        "box": [
+          70,
+          8,
+          219.296875,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            267.296875,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            267.296875,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 134,
+        "client": 134
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "stream",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "Через ручей",
+        "box": [
+          70,
+          8,
+          186.21875,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            234.21875,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            234.21875,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 101,
+        "client": 101
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "mill",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "К мельнице",
+        "box": [
+          70,
+          8,
+          184.53125,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            232.53125,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            232.53125,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 100,
+        "client": 100
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "post",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "Почтовый двор",
+        "box": [
+          70,
+          8,
+          214.203125,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            262.203125,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            262.203125,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 129,
+        "client": 129
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "forest",
+      "viewport": [
+        1280,
+        720
+      ],
+      "dpr": 1,
+      "metrics": {
+        "title": "Тропинка за деревню",
+        "box": [
+          70,
+          8,
+          262.71875,
+          66.65625
+        ],
+        "font": "18px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            136,
+            24,
+            310.71875,
+            44
+          ],
+          [
+            136,
+            47.15625,
+            310.71875,
+            58.65625
+          ],
+          [
+            136,
+            45.15625,
+            211.390625,
+            59.15625
+          ]
+        ],
+        "scroll": 178,
+        "client": 178
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "gate",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "До калитки",
+        "box": [
+          70,
+          8,
+          158.625,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            210.625,
+            44.046875
+          ]
+        ],
+        "scroll": 87,
+        "client": 87
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "garden",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "В обход яблони",
+        "box": [
+          70,
+          8,
+          182.765625,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            234.765625,
+            44.046875
+          ]
+        ],
+        "scroll": 111,
+        "client": 111
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "well",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "К колодцу",
+        "box": [
+          70,
+          8,
+          148.234375,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            200.234375,
+            44.046875
+          ]
+        ],
+        "scroll": 76,
+        "client": 76
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "bakery",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Тёплая пекарня",
+        "box": [
+          70,
+          8,
+          190.703125,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            242.703125,
+            44.046875
+          ]
+        ],
+        "scroll": 119,
+        "client": 119
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "stream",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Через ручей",
+        "box": [
+          70,
+          8,
+          161.3125,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            213.3125,
+            44.046875
+          ]
+        ],
+        "scroll": 89,
+        "client": 89
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "mill",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "К мельнице",
+        "box": [
+          70,
+          8,
+          159.796875,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            211.796875,
+            44.046875
+          ]
+        ],
+        "scroll": 88,
+        "client": 88
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "post",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Почтовый двор",
+        "box": [
+          70,
+          8,
+          186.1875,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            238.1875,
+            44.046875
+          ]
+        ],
+        "scroll": 114,
+        "client": 114
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "forest",
+      "viewport": [
+        844,
+        390
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Тропинка за деревню",
+        "box": [
+          70,
+          8,
+          229.3125,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            281.3125,
+            44.046875
+          ]
+        ],
+        "scroll": 157,
+        "client": 157
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "gate",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "До калитки",
+        "box": [
+          70,
+          8,
+          158.625,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            210.625,
+            44.046875
+          ]
+        ],
+        "scroll": 87,
+        "client": 87
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "garden",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "В обход яблони",
+        "box": [
+          70,
+          8,
+          182.765625,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            234.765625,
+            44.046875
+          ]
+        ],
+        "scroll": 111,
+        "client": 111
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "well",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "К колодцу",
+        "box": [
+          70,
+          8,
+          148.234375,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            200.234375,
+            44.046875
+          ]
+        ],
+        "scroll": 76,
+        "client": 76
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "bakery",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Тёплая пекарня",
+        "box": [
+          70,
+          8,
+          190.703125,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            242.703125,
+            44.046875
+          ]
+        ],
+        "scroll": 119,
+        "client": 119
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "stream",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Через ручей",
+        "box": [
+          70,
+          8,
+          161.3125,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            213.3125,
+            44.046875
+          ]
+        ],
+        "scroll": 89,
+        "client": 89
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "mill",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "К мельнице",
+        "box": [
+          70,
+          8,
+          159.796875,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            211.796875,
+            44.046875
+          ]
+        ],
+        "scroll": 88,
+        "client": 88
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "post",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Почтовый двор",
+        "box": [
+          70,
+          8,
+          186.1875,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            238.1875,
+            44.046875
+          ]
+        ],
+        "scroll": 114,
+        "client": 114
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    },
+    {
+      "scene": "forest",
+      "viewport": [
+        740,
+        360
+      ],
+      "dpr": 2,
+      "metrics": {
+        "title": "Тропинка за деревню",
+        "box": [
+          70,
+          8,
+          229.3125,
+          56
+        ],
+        "font": "16px",
+        "borderImage": "url(\"http://127.0.0.1:5298/ruby-village/assets/ui/v8/level-header-v1.webp\")",
+        "textRects": [
+          [
+            126,
+            27.046875,
+            281.3125,
+            44.046875
+          ]
+        ],
+        "scroll": 157,
+        "client": 157
+      },
+      "pageErrors": [],
+      "httpErrors": []
+    }
+  ]
+}

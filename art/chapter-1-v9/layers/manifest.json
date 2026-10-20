@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "status": "style-approved-production-checks-pending",
+  "canvas": [
+    1672,
+    941
+  ],
+  "origin": [
+    0,
+    0
+  ],
+  "crop": [
+    0,
+    0,
+    1672,
+    941
+  ],
+  "source": "art/chapter-1-v9/candidates/gate-v2-closed.png",
+  "sourceSha256": "228c64333967eac8e57e8dfd9fcc30661568e7296f46dab415b31fe574d99d08",
+  "method": "unchanged source painting through registered SVG vector clip/masks; 2D affine gate animation",
+  "foregroundApertureCutout": [
+    1319,
+    717,
+    136,
+    224
+  ],
+  "runtimeContract": "Open gate before Ruta enters goal; fixed/open clear all full playable polygons",
+  "gate": {
+    "closedPath": "M1321 776 L1332 759 L1347 745 L1366 733 L1387 725 L1410 720 L1435 719 L1453 724 L1453 797 L1321 847 Z",
+    "hingePivot": [
+      1453,
+      760
+    ],
+    "openMatrix": [
+      0.19,
+      -0.22,
+      0,
+      1,
+      1176.93,
+      319.66
+    ],
+    "registration": "identical source coordinates; fixed point invariant at hinge x=1453"
+  },
+  "layers": {
+    "background": "../candidates/gate-v3-base.png",
+    "foreground": "foreground-fixed.svg",
+    "gateClosed": "gate-closed.svg",
+    "gateOpen": "gate-open.svg"
+  },
+  "notes": [
+    "Vector clip is explicitly authorized deterministic masking, not a procedurally generated illustration",
+    "Masks do not touch playable cells; frontier outside full grid",
+    "Original v3 fringe candidates retained as rejected extraction attempts"
+  ]
+}

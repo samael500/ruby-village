@@ -1,0 +1,1073 @@
+{
+  "schemaVersion": 1,
+  "version": "chapter-1-v9-integrated-review-2026-10-19",
+  "styleStatus": "accepted-by-Maksim-2026-10-17",
+  "activationStatus": "ordinary-integrated-review-build-not-published",
+  "canvas": {
+    "width": 1672,
+    "height": 941
+  },
+  "scenes": {
+    "gate": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "gate/background.webp",
+      "foreground": "gate/foreground-fixed.webp",
+      "wide": {
+        "file": "gate/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "seam72-candidate-actual-review",
+      "source": "art/chapter-1-v9/candidates/gate-v3-base.png",
+      "sourceSha256": "5646466d119a15f6d822a882a573cb9217359b454a8bee6f212daef5e24f38a4",
+      "geometrySha256": "ad438768d77c2a6f0dcd8ca1941533178291d8aefc4183c842962ac6a4a06092",
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 503.73066958946424,
+          "y": 426.5
+        },
+        "goal": {
+          "x": 1352.435565298214,
+          "y": 699.5
+        }
+      },
+      "semanticAnchors": {
+        "looseStoneFeet": {
+          "x": 685.5960043841964,
+          "y": 494.75,
+          "sourceCell": "3,3"
+        },
+        "basketGround": {
+          "x": 721.5960043841964,
+          "y": 506.75
+        }
+      },
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "residentPresentation": "portrait-only",
+      "gateClosed": "gate/gate-closed.webp",
+      "gateOpen": "gate/gate-open.webp",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/gate/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/gate/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2273252,
+          "sha256": "f4741a9415bb6be155256a59de03ced3128080ef13bca4ef3826af44613fd6b3"
+        },
+        "wide.webp": {
+          "bytes": 5234246,
+          "sha256": "bd99f58d54e2d55dcf82dab72f7b0d6b460dd57a508f0c9e1e311e44c2af8fb7"
+        }
+      },
+      "narrativeFocus": [
+        {
+          "top": 719,
+          "bottom": 876
+        }
+      ],
+      "narrativeFocusSource": "native alpha union of gate-open.webp/gate-closed.webp, not gameplay endpoints"
+    },
+    "garden": {
+      "status": "map-matched-source-candidate-awaiting-actual-game",
+      "background": "garden/background.webp",
+      "foreground": null,
+      "wide": {
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        },
+        "file": "garden/wide.webp"
+      },
+      "wideStatus": "painted-native-join-awaiting-actual-game",
+      "source": "art/chapter-1-v9/garden-well/outpaint/garden-native-painted-join-v1.png",
+      "sourceSha256": "7cb0f48dfb333d31826adcca722e9d33bb6fec257de169810b64849feb55771f",
+      "geometrySha256": "1343f2bca0299693d5ffc8ceb1a242a812532c30117bdbba4d000cbfa12ff79a",
+      "camera": {
+        "radius": 66,
+        "origin": {
+          "x": 180,
+          "y": 315
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 408.6307065990918,
+          "y": 701.1
+        },
+        "goal": {
+          "x": 1265.995856345686,
+          "y": 379.35
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1420,
+          "y": 265,
+          "status": "full-alpha-candidate-actual-composition-pending"
+        },
+        "tableFrontFeet": {
+          "x": 1299,
+          "y": 263,
+          "explanation": "single embedded source table bottom center; no separate table sprite"
+        }
+      },
+      "checks": {
+        "sourceGuardManifest": "public/assets/chapter-1-garden-well/garden-manifest.json",
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/art/garden-mill-polygon-visual/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-garden-well/garden-manifest.json",
+      "residentPresentation": "scene-sprite-and-portrait",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2708410,
+          "sha256": "179e83dd47301ffdb004f04b1d258d6f1b0709cf580bc02d71e2a7219e3d25a3"
+        },
+        "wide.webp": {
+          "bytes": 6001932,
+          "sha256": "1e08d5541677df512dcde7aab3fb4c255748064f115931b1326164bd10ba0e17"
+        }
+      }
+    },
+    "well": {
+      "status": "map-matched-source-candidate-awaiting-actual-game",
+      "background": "well/background.webp",
+      "foreground": null,
+      "wide": {
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        },
+        "file": "well/wide.webp"
+      },
+      "wideStatus": "painted-native-join-awaiting-actual-game",
+      "source": "art/chapter-1-v9/garden-well/outpaint/well-native-painted-join-v1.png",
+      "sourceSha256": "e3342e0aed29eb5514972ff518766eb03fdee0c1e9a70cf762ab922d87644400",
+      "geometrySha256": "89132596e3b2921118dc893577f2f323c96906cf23eea8e19da2f4b1cf6d0c01",
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 378.91832705503657,
+          "y": 700.3035714285716
+        },
+        "goal": {
+          "x": 1231.192008768393,
+          "y": 456.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1320,
+          "y": 405,
+          "status": "full-alpha-candidate-actual-composition-pending"
+        }
+      },
+      "checks": {
+        "sourceGuardManifest": "public/assets/chapter-1-garden-well/well-manifest.json",
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/well-arrival-8da5d6d/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "residentPresentation": "scene-sprite-and-portrait",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-garden-well/well-manifest.json",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2563032,
+          "sha256": "173d810a5b4a2b45edc4b199131742e4ebae8303df7a9712f18081eec10c0cd2"
+        },
+        "wide.webp": {
+          "bytes": 6256072,
+          "sha256": "05e7a3ae714c1a00ab8b14b4e5a1b1d9c5fdc52689705c09ff2a7a5e241fcad6"
+        }
+      }
+    },
+    "bakery": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "bakery/background.webp",
+      "foreground": null,
+      "wide": {
+        "file": "bakery/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "seam72-candidate-actual-review",
+      "source": "art/chapter-1-v9/candidates/bakery-v4.png",
+      "sourceSha256": "90e8c7a335d72c2ab3ad672b58dfe8166b1cce48ffce93085344d12a372ade45",
+      "geometrySha256": "1638f6dcf280934026a5f426791e5b17c1ae49741155f592e42585b765c3d09c",
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 378.91832705503657,
+          "y": 700.3035714285716
+        },
+        "goal": {
+          "x": 1231.192008768393,
+          "y": 456.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1360,
+          "y": 405,
+          "status": "full-alpha-idle-and-left0; arrival-B1-recheck-pending"
+        }
+      },
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/bakery/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/bakery/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2473912,
+          "sha256": "b14a06ea1fd8dcd59c093d34da2fd9663b815a37b34338535a66d768a42e6290"
+        },
+        "wide.webp": {
+          "bytes": 5439354,
+          "sha256": "a500f9f4e443524e4e9db4e2467be57afb8c6d5cb8c560d1604e8a56b207ef3a"
+        }
+      },
+      "residentAnchorCorrection": {
+        "sourceProposal": [
+          1290,
+          405
+        ],
+        "reason": "B1 actual accepted-layout arrival overlap277desktop/120native-touch pixels",
+        "verification": "full nonzero alpha of legacy idle and authored conversation-left outside playable ground/water; independent arrival repeat pending"
+      }
+    },
+    "stream": {
+      "status": "adaptive-water-and-whole-dry-shore-candidate-game-review-pending",
+      "background": "stream/background-pilot.webp",
+      "foreground": null,
+      "wide": {
+        "file": "stream/wide-pilot.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-registered-native-guard-passed-game-review-pending",
+      "source": "art/chapter-1-v9/candidates/stream-v4.png",
+      "sourceSha256": "66d15defd5ca0b0b3ff6f1ee5887f15205d4deaf0bdf640bb0f6985a0d677ce7",
+      "geometrySha256": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 330
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 443.1088913245535,
+          "y": 534.75
+        },
+        "goal": {
+          "x": 1291.8137870333032,
+          "y": 398.25
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1400,
+          "y": 225,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        }
+      },
+      "checks": {
+        "status": "exact-mask-checks-passed-native-art-review-pending",
+        "canvas": [
+          1672,
+          941
+        ],
+        "camera": {
+          "radius": 70,
+          "origin": {
+            "x": 140,
+            "y": 330
+          },
+          "angle": 0,
+          "groundScale": 0.65
+        },
+        "boardCells": 77,
+        "waterCells": [
+          "6,0",
+          "6,1",
+          "6,2",
+          "5,3",
+          "5,4",
+          "5,5",
+          "4,6"
+        ],
+        "rasterBoundaryTolerancePx": 1,
+        "bridgeCenterAndEndsAlpha": {
+          "6,1": 255,
+          "5,1": 0,
+          "7,1": 0
+        },
+        "rejectedOldBendAlpha": 0,
+        "acceptedNewBendAlpha": 255,
+        "logicalMaskErosionPx": 0,
+        "visibleWaterContour": "intrinsically adaptive water with6px dry-edge clearance; separate flat dryshore may extend12px onto ground, core18px protected",
+        "actualBodyMask": "adaptive-water-body-mask.png",
+        "adaptiveWholeBankProfile": "adaptive-channel-profile.json",
+        "actualBodyAudit": {
+          "bridgeCenterAndDryEndsAlpha": {
+            "6,1": 255,
+            "5,1": 0,
+            "7,1": 0
+          },
+          "waterCellCenterAlpha": {
+            "6,0": 255,
+            "6,1": 255,
+            "6,2": 255,
+            "5,3": 255,
+            "5,4": 255,
+            "5,5": 255,
+            "4,6": 255
+          },
+          "bridgeMiddleSharedWaterEdgeAlpha": {
+            "6,0": {
+              "point": [
+                898,
+                364
+              ],
+              "alpha": 255
+            },
+            "6,2": {
+              "point": [
+                958,
+                432
+              ],
+              "alpha": 255
+            }
+          },
+          "allWaterCellCentersInSameConnectedActualBody": {
+            "6,0": true,
+            "6,1": true,
+            "6,2": true,
+            "5,3": true,
+            "5,4": true,
+            "5,5": true,
+            "4,6": true
+          },
+          "waterLeakOverAnyFreePixels": 0,
+          "status": "raster-contact-and-connectivity-passed-art-game-review-pending"
+        },
+        "bankArtInwardFeatherPx": 1,
+        "entryExitFeather": "disabled within 6px of complete board perimeter",
+        "decorativeWater": "outside complete 77-cell union only; separate from logical layer",
+        "sourceSha256": {
+          "art/chapter-1-v9/packages/stream/geometry.json": "34777b2c46a70ee5f966b9b2f369353956d59620af53e759eb0210b5016f58f1",
+          "art/chapter-1-v9/candidates/stream-dry-v1.png": "bb565fdacecb05beb40b466e7e0167d2133433533f593e5520ff2717268f00dc",
+          "art/chapter-1-v9/candidates/stream-continuation-v1.png": "cafece9e25a9270cd0d28c6413b68099ffcfbf1015df23f00c4dcdbe72f3cc52",
+          "art/chapter-1-v9/candidates/stream-adaptive-channel-generated-v4.png": "f4b3eb4f71173eac6636f89600261d9e5ebcab64ecd93f0c8e7f24a2133716af"
+        },
+        "outputSha256": {
+          "adaptive-channel-edit-guide.png": "c2cc0aaaa7b7071b22d73c326babc13b942f57b14085e948bc9bda4e47f50b65",
+          "adaptive-source-bend-review.png": "01cc83d246faa95ce055e02c084fcbc12809a9209d5f54e1952b28be79fd5117",
+          "adaptive-source-support-review.png": "fa259b55bb2a8b11f1dd083808042a4be76c821f9a7c1ef3f8bcb6867f6bc261",
+          "adaptive-water-bank-mask.png": "a867557a8a7b06c9d147aa2aba4cd605e0ca14753a5742fbb9ff5cd5caa097ac",
+          "adaptive-water-body-mask.png": "7d5900e8c06633150abc3e3d9c9789546280fa471da38e7816f52efa7fafcfe7",
+          "bank-art-alpha.png": "50d9b66e3a96c9b2292c0fb9a8667ed0bf0fd142b870eaf061e5eef6d29721a5",
+          "bank-strip-edit-guide.png": "66711a1c5102f9895de62df3bb852f5e1d9cfbaf866e6958c531acf7ef1b7dc6",
+          "board-mask.png": "836a32cbe55275ce74532097da6ee8546bc8b26e9eb88134d1123c0b6799923c",
+          "bridge-review.png": "3236844efd75e5af30e0e2aa4d596fab70a5d10ab5b4278f8f8413dcef0a13e0",
+          "curved-channel-edit-guide.png": "0958447a384a78132f297d72a7572a6deaed184fb18eeb30b06f21611e754485",
+          "decorative-outside-board.png": "dc0305f3380a64a0f4c408d93b051bb9c60ff61c719401f5bd4fb38d3df5b49e",
+          "entry-review.png": "14026d4ea20609fd7760c272e0b8415a0dfd032cf8eb5a5a5219bdbcd11dde08",
+          "exit-review.png": "ad4f0c50f71082365953b784219d739fc67276cf1470efc945c7dd3383e7812c",
+          "free-core-mask18.png": "91c5262cf813afbffba9053a7052890e76dc5c861a5a8770b22c2164d9721056",
+          "free-mask.png": "c77ee0cb9a27dd06967d1fa51a0fa74598ed001d6b4c2ef5c60f7ac773c2df6e",
+          "geometry-overlay.png": "e4a453aeb69cd16f3cd73737f08f6f88cfc957854b2d919f30862826ea0ecdd9",
+          "logical-versus-visual-review.png": "6ab037437d6bb667c8ceaf816cd95e4a491a14addc5d70049507214fe0e35a73",
+          "logical-water-mask.png": "1c37082ce71f5f99864c39abcbbb297866a6bbebfe339d42252301199534c857",
+          "logical-water.png": "4bcf028b05e81ac6b8c56e45f6726cf7ab9519da532ed66485bddaf8db563f77",
+          "native-background.png": "59cc95b18c01ad12a380ebcbf5657e0ae0196f27c69ad5fa647de13043e94c3c",
+          "registered-wide-INCOMPLETE.png": "a45bfdf64fc85f149b44acaa8db5ec631ade6f868d3676552fbc0b5f55c31706",
+          "visual-water-and-bank-mask.png": "c6f87e50132c94c043eb35d26fd01ab0b7cc13cbc684d117df4dd846f13daecd",
+          "visual-water-body-mask.png": "94f5ed1c5fd0f7ea07f50ff67122145b538d9b6dc500887caec2e11af6aa1e2f",
+          "wide-opaque-edit-target.png": "cf33fd522c1afdb4f8109c52108bd57376cf13863b333a6eb09908d7e66b5c7a",
+          "wide-registered.png": "6f3dd4a39681323369b828ac3b18ace21f63765414075d14ea52ef35fd221201"
+        },
+        "wide": {
+          "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
+          "canvas": [
+            3272,
+            1200
+          ],
+          "originalRect": [
+            800,
+            129,
+            1672,
+            941
+          ],
+          "joinBandPx": 48,
+          "sourceAffine": {
+            "method": "single uniform source-level affine fit from native source comparison at1/4 scale; native core restored unchanged; visual join audit required",
+            "rgbMeanAbsoluteError": 38.72458855068037,
+            "scale": 0.975,
+            "sourceCoreXAtQuarter": 273,
+            "sourceCoreYAtQuarter": 80,
+            "translation": [
+              120,
+              9
+            ]
+          },
+          "source": "art/chapter-1-v9/candidates/stream-wide-generated-v2.png",
+          "fullBoardInteriorChangedRgbPixels": 0
+        },
+        "checks": {
+          "nativeBankVisualAudit": "pending",
+          "entryExitContinuityVisualAudit": "pending",
+          "actualGameplay": "not-run"
+        },
+        "freeCoreInsetPx": 18,
+        "freeCoreChangedRgbPixels": 0,
+        "dryBankBoundaryChangedRgbPixels": 1819,
+        "dryBankBoundaryChangedRgbMaxDepthPx": 7.083120000000008,
+        "allowedDryBankBoundaryDepthPx": 12,
+        "sourceCyanCandidateChangedFreePixels": 0,
+        "cyanDiagnosticRule": "blue>red+12,green>red+12,min(blue,green)>70; diagnostic only, no gameplay terrain inferred from colors",
+        "dryShoreSemanticAudit": "pending-flat-earth-and-tiny-pebbles-only-no-water-or-tall-obstacles; not established by pixel counts",
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/bridge-floor-v4-6f6fcbe/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "dryBackground": "stream/dry-background-pilot.webp",
+      "water": "stream/water-pilot.png",
+      "waterMask": "stream/water-mask-pilot.png",
+      "joinBand": 48,
+      "sourceManifest": "art/chapter-1-v9/layers/water/stream-pilot/manifest.json",
+      "deliveryFiles": {
+        "background-pilot.webp": {
+          "bytes": 2373148,
+          "sha256": "6e0e46df6156aae7bf6677eb7a7c0a15933c843ee13458982db52a765be661f4"
+        },
+        "water-pilot.png": {
+          "bytes": 3339382,
+          "sha256": "4bcf028b05e81ac6b8c56e45f6726cf7ab9519da532ed66485bddaf8db563f77"
+        },
+        "dry-background-pilot.webp": {
+          "bytes": 2358662,
+          "sha256": "976458d04b5ed03589593465be0232deca1bad0266fbe11c0f0b7db1272db7e6"
+        },
+        "wide-pilot.webp": {
+          "bytes": 5312084,
+          "sha256": "940a24f274cd8bbfe094178e5a40d7e6243127d4e2418efa9d20a664c9e4bb1e"
+        },
+        "water-mask-pilot.png": {
+          "bytes": 6087,
+          "sha256": "1c37082ce71f5f99864c39abcbbb297866a6bbebfe339d42252301199534c857"
+        }
+      }
+    },
+    "mill": {
+      "status": "adaptive-mill-source-checked-game-review-pending",
+      "background": "mill/background.webp",
+      "foreground": null,
+      "wide": {
+        "file": "mill/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "pending-outpaint",
+      "source": "art/chapter-1-v9/candidates/mill-v4.png",
+      "sourceSha256": "24062e298aa52fc9c35546d477a588e9c393126bd6b77327447dc042c3764c2a",
+      "geometrySha256": "7cd199e695fd57a3536b7ca7efeee600c24d16f9d0eaa1274cba314b0bcf23e1",
+      "camera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 330
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 382.4871130596428,
+          "y": 603
+        },
+        "goal": {
+          "x": 1352.435565298214,
+          "y": 466.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1430,
+          "y": 398,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        },
+        "secondResidentFeet": {
+          "x": 1530,
+          "y": 450,
+          "status": "same-as-independently-checked-legacy-F1-anchor; layout2-actual-check-pending"
+        }
+      },
+      "checks": {
+        "status": "exact-mask-checks-passed-native-art-review-pending",
+        "canvas": [
+          1672,
+          941
+        ],
+        "camera": {
+          "radius": 70,
+          "origin": {
+            "x": 140,
+            "y": 330
+          },
+          "angle": 0,
+          "groundScale": 0.65
+        },
+        "boardCells": 77,
+        "waterCells": [
+          "4,0",
+          "3,1",
+          "2,2",
+          "2,3",
+          "2,4",
+          "1,5",
+          "1,6"
+        ],
+        "rasterBoundaryTolerancePx": 1,
+        "bridgeCenterAndEndsAlpha": {
+          "2,3": 255,
+          "1,3": 0,
+          "3,3": 0
+        },
+        "rejectedOldBendAlpha": 0,
+        "acceptedNewBendAlpha": 255,
+        "logicalMaskErosionPx": 0,
+        "visibleWaterContour": "intrinsically adaptive water with6px dry-edge clearance; separate flat dryshore may extend12px onto ground, core18px protected",
+        "actualBodyMask": "adaptive-water-body-mask.png",
+        "adaptiveWholeBankProfile": "adaptive-channel-profile.json",
+        "actualBodyAudit": {
+          "bridgeCenterAndDryEndsAlpha": {
+            "2,3": 255,
+            "1,3": 0,
+            "3,3": 0
+          },
+          "waterCellCenterAlpha": {
+            "4,0": 255,
+            "3,1": 255,
+            "2,2": 255,
+            "2,3": 255,
+            "2,4": 255,
+            "1,5": 255,
+            "1,6": 255
+          },
+          "bridgeMiddleSharedWaterEdgeAlpha": {
+            "2,2": {
+              "point": [
+                534,
+                501
+              ],
+              "alpha": 255
+            },
+            "2,4": {
+              "point": [
+                595,
+                569
+              ],
+              "alpha": 255
+            }
+          },
+          "allWaterCellCentersInSameConnectedActualBody": {
+            "4,0": true,
+            "3,1": true,
+            "2,2": true,
+            "2,3": true,
+            "2,4": true,
+            "1,5": true,
+            "1,6": true
+          },
+          "waterLeakOverAnyFreePixels": 0,
+          "status": "raster-contact-and-connectivity-passed-art-game-review-pending"
+        },
+        "bankArtInwardFeatherPx": 1,
+        "entryExitFeather": "disabled within 6px of complete board perimeter",
+        "decorativeWater": "outside complete 77-cell union only; separate from logical layer",
+        "sourceSha256": {
+          "art/chapter-1-v9/packages/mill/geometry.json": "7cd199e695fd57a3536b7ca7efeee600c24d16f9d0eaa1274cba314b0bcf23e1",
+          "art/chapter-1-v9/layers/props/mill-dry-map.png": "c9dbe91702bcafb9fc46d879d02416aa0ef88fa7995b55a4dd1d9ee8fd5dd3c5",
+          "art/chapter-1-v9/candidates/mill-continuation-v1.png": "9527d1321e6bafaae8d2ab496f542a6c638470cd140c3ecf8cb35f9d214d5448",
+          "art/chapter-1-v9/candidates/mill-adaptive-channel-generated-v4.png": "44e1e2fd0f0a67e6c88cd7af42ac1a8f84bda0c271b9d63107aaba1eedfa0ec8",
+          "art/chapter-1-v9/candidates/mill-bankstrip-wheelclear-v2.png": "df1ae6bc9f3773c95a68623ae281978a5d464843520d15cd82fd57f9b050e327",
+          "art/chapter-1-v9/candidates/millwheel-v4.png": "1fc0bfe218b05b171b088dd07e9a1b49e1d7a0b7e3e19ffa2def80795bb5ba7a",
+          "art/chapter-1-v9/candidates/mill-local-bank-generated-v5.png": "2c30709754192f5f0bbffbd016bc149aa89be22367d8e8dd759ff71e92b4565a"
+        },
+        "outputSha256": {
+          "adaptive-channel-edit-guide.png": "117790b5feef3ac46331ff7ae2208e51e93be0ab99887f4f4343c10e6af7db25",
+          "adaptive-water-bank-mask.png": "751bc149782c19c14be1098aba3ada1cdb3a1b4c9c58a44630ef075125d615cc",
+          "adaptive-water-body-mask.png": "862bd3bf9db240de9433b0a0be162c82dd9a675814d3ffa927ada8b9b746c9e9",
+          "bank-art-alpha.png": "4e69d485599689ad1629a2d9d5aa63b25c0bf23be20a8f02cd8c626ba82436cb",
+          "bank-strip-edit-guide.png": "aea76c0031cde437f2f8c8f30447d7dbb2fe28a74a9af3eeb31abeeed0800d66",
+          "board-mask.png": "836a32cbe55275ce74532097da6ee8546bc8b26e9eb88134d1123c0b6799923c",
+          "bridge-review.png": "5ff804731b892b85e0e5dd0cb40b160acefdbd3dbb81985b0eb399029b11e440",
+          "curved-channel-edit-guide.png": "00edd8d62a96cf28fae40dc13e6e5d8f78b394d5f213d9b05f3409b40efaa7e8",
+          "cyan-diagnostic-review.png": "5d55cc5eff1aa2ecee2bbaefd7b22cc24b7eccecb64b4e74fe449aa8f50f0688",
+          "decorative-outside-board.png": "8f931b535aeda2d0d351d4d55ae8860e9aa41c1970cf7b7290024cf9a2611c6f",
+          "entry-review.png": "a9b73aebe7aefc7da5cba8252cab01733b3f1e7f74f983e30ae7bc9f122e77ce",
+          "exit-review.png": "f374f8261f10300e7dfc02d0c82cf938e39cbf3f8548d7b4a05cec2a499cd11b",
+          "feeder-race-wheel-review.png": "36c39f26388de0d3af86263eeb79ed064f787170f9a1de51ef6d8a5e066b8ea0",
+          "free-core-mask18.png": "55855efeceacc2786e222ef9fdc07c8f83da6858c989011c622597e9b93085b3",
+          "free-mask.png": "235b81b59bb7a9cc3d77623246bf09ce0c2b6a57eddc92bd2a1461cbd5f18855",
+          "free-water-fringe-guard.png": "eb81ca3642fdac6ea4e2fa75edad218f7a75ee3b8bc98c8e540694eafa164383",
+          "geometry-overlay.png": "6e34474a3f1696493bdee4f64d466dd224fcc6f7e59ed4c81a326442c3c75152",
+          "local-dry-bank-repair-guide-v5.png": "12a38879c447d003c1e2b00c86a3eab0f088ba22c5ef21c6319c5aaad88c6432",
+          "logical-versus-visual-review.png": "a178ee1731d5ebd22ec3a1f505249e01cfc82d530ce4b0b9155c652d4e2c7650",
+          "logical-water-mask.png": "15741e70e1395d633f540efd780a5a6547b89dc31a882cbf8970ab6a91ac2f8a",
+          "logical-water.png": "a8c81bb6aa064728882331885fabd3f16528fc0fc9a00933a7158cac82e500d1",
+          "native-background.png": "85e3cc2d3ffd34928061839b13ab346577e1bcbca446a437d18ae1af85de0afb",
+          "native-registration-reference.png": "9f256492ff559cbb17ff9d6963683cdf0101ff450343d409ac939d588eafe69e",
+          "native-with-wheel.png": "b9a191ee38fe113c999692138c2ec6a1a8ae9b5921e9ec7b32fd6fc89d34b48b",
+          "registered-wide-INCOMPLETE.png": "c2b5c0d66857bfd175d3c7ff274ef0cdd33413049081a3e41a013479fee8663a",
+          "visual-water-and-bank-mask.png": "44663921e33032083009dd0d05c5b3761b9abd3407180e5583f262de9752d73d",
+          "visual-water-body-mask.png": "830f82f90022a97a512efe66c1c8f233b1da59c817781ca9178c08030fa0d1e9",
+          "wheel-110.png": "351f2f746a41806343bb27aa8914472a558e66d12a467a474757a69e4ffadb29",
+          "wheel-native-clean-alpha.png": "b16dba6819a6cbcee9a15cc0cde58e180e446680ed9b53946afe1ab3f1dafebe",
+          "wheel-race-review.png": "ddf561d159b86d679c5f257a751da03e5594140153c9c7045a4d9a02dac5a57c",
+          "wide-bottom-creek-join-review.png": "1336935dcd5759b5e69f3e15608bab44036dd34430df90b02c386f146dac17aa",
+          "wide-mill-right-join-review.png": "c256511cb6b58ddb71baa66608c8b68bbff5ef894b9a6c6e54e6515f3240a5fc",
+          "wide-opaque-edit-target-v1.png": "e94dab1951f4af5147236d9aca4bcfb71ee1cc9cfd38a7695669248025f8829c",
+          "wide-registered.png": "3b6530b1fcb47e75092c50aabc7d83a6141c68cf7a6ca12f3de3a3dc9a03d585",
+          "wide-top-feeder-join-review.png": "4b68f8accaa274d4f5fb4a3b21eaab956cad37f8281e8e84e75d2f6ddf4f0782",
+          "wide-with-wheel-review.png": "aec77eb1dc3a1cbbda8dfbcd41ffce7da85423ecc74168859110695eda9e54dd"
+        },
+        "wide": {
+          "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
+          "canvas": [
+            3272,
+            1200
+          ],
+          "originalRect": [
+            800,
+            129,
+            1672,
+            941
+          ],
+          "joinBandPx": 48,
+          "sourceAffine": {
+            "method": "single uniform source-level affine fitted to nativecore at1/4 scale; exact native board and building restored bydeliverybuilder; join/art/game review pending",
+            "source": "art/chapter-1-v9/candidates/mill-wide-generated-v2.png",
+            "sourceSha256": "eb96fff7990288551a791fbee303be90e4cb9aea91c4de8748428600c6f2b5c6",
+            "sourceNativeSize": [
+              2007,
+              784
+            ],
+            "rgbMeanAbsoluteError": 31.198242220638637,
+            "scale": 0.925,
+            "sourceCoreXAtQuarter": 262,
+            "sourceCoreYAtQuarter": 71,
+            "translation": [
+              164,
+              45
+            ],
+            "registeredPaintSize": [
+              3789,
+              1480
+            ],
+            "coverage": "entire3272x1200crop covered by painted source; no blank fill/reflection/repeated edge strips"
+          },
+          "source": "art/chapter-1-v9/candidates/mill-wide-generated-v2.png",
+          "fullBoardInteriorChangedRgbPixels": 0,
+          "millBuildingNativeGuardRectangle": [
+            1210,
+            40,
+            462,
+            391
+          ],
+          "millBuildingChangedRgbPixels": 0,
+          "feederJoinPatch": {
+            "source": "art/chapter-1-v9/candidates/mill-feeder-join-generated-v3.png",
+            "sourceSha256": "405e920a79115caca99e979a64865f0e66b13b52c1fac9eac531f2f82513055e",
+            "sourceNativeSize": [
+              1458,
+              1079
+            ],
+            "deliveredWorldRect": [
+              1730,
+              45,
+              250,
+              185
+            ],
+            "edgeBlendPx": 16,
+            "nativeAndWideSameWorldPatch": true,
+            "outsideWhole77Board": true,
+            "status": "source-art-and-actual-game-join-review-pending"
+          }
+        },
+        "checks": {
+          "nativeBankVisualAudit": "pending",
+          "entryExitContinuityVisualAudit": "pending",
+          "actualGameplay": "not-run"
+        },
+        "freeCoreInsetPx": 18,
+        "freeCoreChangedRgbPixels": 0,
+        "dryBankBoundaryChangedRgbPixels": 1825,
+        "dryBankBoundaryChangedRgbMaxDepthPx": 7.381802015575448,
+        "allowedDryBankBoundaryDepthPx": 12,
+        "sourceCyanCandidateChangedFreePixels": 0,
+        "manuallyInspectedFreeFoamFringePixelsRestoredFromOriginalDryPlate": 3,
+        "sourceFringeGuard": "free-water-fringe-guard.png",
+        "cyanDiagnosticRule": "blue>red+12,green>red+12,min(blue,green)>70; diagnostic only, no gameplay terrain inferred from colors",
+        "dryShoreSemanticAudit": "pending-flat-earth-and-tiny-pebbles-only-no-water-or-tall-obstacles; not established by pixel counts",
+        "fullPolygonVisualAudit": "passed",
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/art/garden-mill-polygon-visual/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "dryBackground": "mill/dry-background.webp",
+      "water": "mill/water.webp",
+      "joinBand": 48,
+      "sourceManifest": "art/chapter-1-v9/layers/water/mill-pilot/manifest.json",
+      "wheel": {
+        "file": "mill/wheel-110.png",
+        "source": "art/chapter-1-v9/candidates/millwheel-v4.png",
+        "sourceSize": [
+          1254,
+          1254
+        ],
+        "sourcePivot": [
+          627,
+          627
+        ],
+        "size": [
+          110,
+          110
+        ],
+        "origin": [
+          1215,
+          108
+        ],
+        "pivot": [
+          55,
+          55
+        ],
+        "worldAxle": [
+          1270,
+          163
+        ],
+        "sourceAlphaErosionNativePx": 5,
+        "transform": "one uniform110/1254 scale; no CSS correction",
+        "layering": "separate background prop above millrace; never foreground over bridge/road",
+        "status": "race-contact-and-animation-game-review-pending"
+      },
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2542188,
+          "sha256": "29703931694cab9bdc8dae82029a46a697f94db69035ec9fe0dd8741cf9165dd"
+        },
+        "wide.webp": {
+          "bytes": 5703212,
+          "sha256": "fe2dbb3080261985302bb88cad4660e2f96170b3583a4addc6f8f565e5088e33"
+        },
+        "wheel-110.png": {
+          "bytes": 24994,
+          "sha256": "351f2f746a41806343bb27aa8914472a558e66d12a467a474757a69e4ffadb29"
+        }
+      }
+    },
+    "post": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "post/background.webp",
+      "foreground": null,
+      "wide": {
+        "file": "post/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-join-candidate-review-pending",
+      "source": "art/chapter-1-v9/candidates/post-v4.png",
+      "sourceSha256": "68445e69dda61fe53cbab12e46b75156e6864120ccac1a540012689a7facb7f2",
+      "geometrySha256": "af90131fe51c742c4b2a67c396b27efb3e488cc3b3838de8dd3f8464213c543a",
+      "camera": {
+        "radius": 68.83326050303945,
+        "origin": {
+          "x": 168.55028803684962,
+          "y": 291.0714285714285
+        },
+        "angle": 0.04494904935533156,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 378.91832705503657,
+          "y": 700.3035714285716
+        },
+        "goal": {
+          "x": 1231.192008768393,
+          "y": 456.5
+        }
+      },
+      "semanticAnchors": {
+        "residentFeet": {
+          "x": 1370,
+          "y": 405,
+          "status": "scene-illustration-candidate-foot-anchor-pending-review"
+        }
+      },
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "wideNativeCoreExact": true,
+        "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+        "physicalPhone": "not-tested",
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/post/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/post/generated-core-01.png",
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2651118,
+          "sha256": "e99805904799c09d607dd548eae91c434eb91e9b95b427560d7a12a483f97bdb"
+        },
+        "wide.webp": {
+          "bytes": 5487362,
+          "sha256": "06a976e393276884aa609a3001d96500069d27e75d3d3b086ef73feb2f0c0d0f"
+        }
+      }
+    },
+    "forest": {
+      "status": "map-matched-native-guard-passed-art-and-game-review-pending",
+      "background": "forest/background.webp",
+      "foreground": null,
+      "wide": {
+        "file": "forest/wide.webp",
+        "canvas": {
+          "width": 3272,
+          "height": 1200
+        },
+        "originalRect": {
+          "x": 800,
+          "y": 129,
+          "width": 1672,
+          "height": 941
+        }
+      },
+      "wideStatus": "painted-join-candidate-review-pending",
+      "source": "art/chapter-1-v9/candidates/forest-v4.png",
+      "sourceSha256": "d715d90f3722ec7737fe213e2dc3da6e51d1dfd16b8e0365f67e0a6e0b70a870",
+      "geometrySha256": "2e1f30594e7283f3468436cbec2a0328e18cee5a0ef0965aae458520a3fef161",
+      "camera": {
+        "radius": 66,
+        "origin": {
+          "x": 180,
+          "y": 250
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "anchors": {
+        "start": {
+          "x": 408.6307065990918,
+          "y": 636.1
+        },
+        "goal": {
+          "x": 1265.995856345686,
+          "y": 314.35
+        }
+      },
+      "semanticAnchors": {},
+      "checks": {
+        "fullFreePolygonPixelsChanged": 0,
+        "opaque": true,
+        "nativeSize": [
+          1672,
+          941
+        ],
+        "sourceGenerationNativeSize": [
+          1672,
+          941
+        ],
+        "gameQa": "full-chapter-repeat-pending",
+        "artAcceptance": "pending",
+        "wideNativeCoreExact": true,
+        "browserPreview": "12cases-6viewports-per-scene-zero-pageerrors",
+        "physicalPhone": "not-tested",
+        "fullPolygonVisualAudit": "passed",
+        "fullPolygonVisualAuditEvidence": "docs/chapter-1-rc/qa/four-scenes-36912d2/README.md",
+        "fullPolygonVisualAuditScope": "Static registered source polygons/obstacle clearance; existing scoped game evidence retained. Not final artistic acceptance or whole-chapter QA."
+      },
+      "residentPresentation": "portrait-only",
+      "joinBand": 48,
+      "sourceManifest": "public/assets/chapter-1-map-match/forest/manifest.json",
+      "mapMatchSource": "art/chapter-1-map-match/forest/generated-core-01.png",
+      "recommendedWholeSceneGrade": {
+        "status": "candidate-requires-artistic-review",
+        "scope": "background,wide,characters,road,scene-props together; excludes HUD",
+        "type": "svg-feColorMatrix",
+        "values": [
+          0.76,
+          0,
+          0,
+          0,
+          0.018,
+          0,
+          0.78,
+          0,
+          0,
+          0.026,
+          0,
+          0,
+          0.86,
+          0,
+          0.065,
+          0,
+          0,
+          0,
+          1,
+          0
+        ],
+        "note": "Apply once to scene group. Deliveries remain ungraded to avoid grading actors differently.",
+        "colorInterpolationFilters": "sRGB"
+      },
+      "deliveryFiles": {
+        "background.webp": {
+          "bytes": 2308860,
+          "sha256": "960ff16ec428f7f5e0df0feb38493de6f31b7c2d48089664054b3fc9ce18459d"
+        },
+        "wide.webp": {
+          "bytes": 4930930,
+          "sha256": "a6a3e61c09b7c6eed7b062f491c8018a6e0c5392106d751e4b4114000db66ce4"
+        }
+      }
+    }
+  }
+}

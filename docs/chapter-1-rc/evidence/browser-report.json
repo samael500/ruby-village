@@ -1,0 +1,21 @@
+{
+  "url": "http://127.0.0.1:5180/ruby-village/",
+  "input": "mouse clicks on tray, rotate, cells, placement and check; no layout injection",
+  "levels": 8,
+  "prologueFrames": [
+    "Это Рута. Она живёт в Рубиновой деревне, где друзья всегда помогают друг другу",
+    "Кролик сегодня печёт пирог. Я обещала принести ему яблоки!",
+    "Кролик живёт за калиткой, в яблоневом саду. Он уже ждёт Руту",
+    "Ой… Вчера здесь была дорожка! А теперь камни лежат в стороне",
+    "Попробую сложить их обратно. Тогда смогу дойти до Кролика",
+    "Начнём с дорожки до калитки. Поможешь мне?"
+  ],
+  "pageErrors": [],
+  "physicalPhone": "not-run",
+  "familyPlaytest": "not-run",
+  "buildScope": "Legacy layout1 scenes plus accepted Ruta appearance and full recommended music/effects; final scenery/poses/motion not yet integrated",
+  "durationSeconds": 123.567,
+  "video": "chapter-playthrough-with-audio.mp4",
+  "audioCapture": "Actual browser WebAudio master tapped to MediaStreamDestination, recorded with MediaRecorder; muxed with browser screencast; no soundtrack added after capture",
+  "latestAudioRaceRegression": "Subsequent b6cf21d covered by dedicated delayed-fetch mock test; this capture predates that fix"
+}

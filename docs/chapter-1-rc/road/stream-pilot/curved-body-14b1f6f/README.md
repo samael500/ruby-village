@@ -1,0 +1,1 @@
+Actual UI smoke from review14b1f6f: same accepted stream solution, two viewports, zero page errors. These are author captures of the curved-body/P2candidate with technical water overlay; independent full clean/mask/input/audio evidence and residualP1 findings live in qa/stream-road-14b1f6f. Not final art or RC. Production unchanged.

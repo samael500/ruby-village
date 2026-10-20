@@ -1,0 +1,263 @@
+{
+  "schemaVersion": 1,
+  "scene": "mill",
+  "activation": "inactive-source-handoff-for-root-game-review",
+  "canvas": [
+    1672,
+    941
+  ],
+  "camera": {
+    "radius": 70,
+    "origin": {
+      "x": 140,
+      "y": 330
+    },
+    "angle": 0,
+    "groundScale": 0.65
+  },
+  "anchors": {
+    "start": {
+      "x": 382.4871130596428,
+      "y": 603
+    },
+    "goal": {
+      "x": 1352.435565298214,
+      "y": 466.5
+    },
+    "residentFeet": {
+      "x": 1430,
+      "y": 398,
+      "status": "existing-native-anchor-game-review-pending"
+    },
+    "wheelAxle": {
+      "x": 1270,
+      "y": 163
+    }
+  },
+  "wheel": {
+    "file": "wheel-110.png",
+    "source": "art/chapter-1-v9/candidates/millwheel-v4.png",
+    "sourceSize": [
+      1254,
+      1254
+    ],
+    "sourcePivot": [
+      627,
+      627
+    ],
+    "size": [
+      110,
+      110
+    ],
+    "origin": [
+      1215,
+      108
+    ],
+    "pivot": [
+      55,
+      55
+    ],
+    "worldAxle": [
+      1270,
+      163
+    ],
+    "sourceAlphaErosionNativePx": 5,
+    "transform": "one uniform110/1254 scale; no CSS correction",
+    "layering": "separate background prop above millrace; never foreground over bridge/road",
+    "status": "race-contact-and-animation-game-review-pending"
+  },
+  "millrace": {
+    "feederTop": [
+      1056,
+      0
+    ],
+    "feederTopObservation": "source cyan range1034..1077 at nativeTOP afterjoin; decorative anchor only",
+    "upperFeederJunction": [
+      1050,
+      74
+    ],
+    "upperTroughHead": [
+      950,
+      80
+    ],
+    "branchToMainCreek": [
+      625,
+      285
+    ],
+    "branchToWheel": [
+      1270,
+      163
+    ],
+    "review": "feeder-race-wheel-review.png",
+    "status": "source-continuity-visual-and-game-review-pending"
+  },
+  "acceptedLayoutInputs": {
+    "src/levels.ts": "8325e4d7673699dc48ede3b1ebc2e4d39c7565fdac52db8266473d5d097167e2",
+    "src/hex.ts": "52f06ce865935942b5014d0faeaf9f00e28a9c49eb44ea8d28a4b133720d483d",
+    "src/projection.ts": "18bad50b251f62274351ce0840e33f7da61c351bc473852137ead7e668f44fd0",
+    "src/scene-camera.ts": "675e8fddbb021ec59cafabce2c99225c63b0d89c15fbc5f0a7cfc431658850fe",
+    "src/game.ts": "eb3e1eaccc1a609a80556eb01244730d7e6d8255c5f0a24792e5e414a8133ec5",
+    "src/chapter-1.logical.json": "6d310ccc6a055a47f00acaa1fa862877aaa451ce9f00456830efc0907cdd28cd",
+    "src/art-solutions.json": "ed36d0132a9ba50c0ff2d212a820588dee8d045f45fd53f6384697d1921c14d4",
+    "src/scene-v8.json": "a32f8e4d1bbe56d0c6b6d29a72aa5a8d646675db68489adcaacb8fd4052d8cbc",
+    "src/chapter-1.story.json": "fd25eba9dd7deea1d1ecf1b795d795d6ebe9ef02239029706ac512ac219d91a4",
+    "art/blender/chapter-layouts/layout-adjustments.json": "6baed82d3dea0e1b6472582751bcd0ccb9d41c872f50c9b865838b17e7b1cf6e"
+  },
+  "layoutChanges": [
+    {
+      "kind": "terrain",
+      "from": "1,4",
+      "to": "2,4",
+      "terrain": "water"
+    }
+  ],
+  "solution": [
+    {
+      "id": "mill-a",
+      "placement": {
+        "anchor": {
+          "q": 6,
+          "r": 2
+        },
+        "turns": 2
+      },
+      "cells": [
+        "6,2",
+        "5,3",
+        "4,3"
+      ]
+    },
+    {
+      "id": "mill-b",
+      "placement": null,
+      "cells": []
+    },
+    {
+      "id": "bridge",
+      "placement": {
+        "anchor": {
+          "q": 2,
+          "r": 3
+        },
+        "turns": 0
+      },
+      "cells": [
+        "2,3",
+        "1,3",
+        "3,3"
+      ]
+    },
+    {
+      "id": "mill-v6-a",
+      "placement": {
+        "anchor": {
+          "q": 7,
+          "r": 2
+        },
+        "turns": 0
+      },
+      "cells": [
+        "7,2",
+        "8,2",
+        "9,2"
+      ]
+    }
+  ],
+  "path": [
+    "0,4",
+    "1,3",
+    "2,3",
+    "3,3",
+    "4,3",
+    "5,3",
+    "6,2",
+    "7,2",
+    "8,2",
+    "9,2"
+  ],
+  "background": "background.webp",
+  "backgroundContent": "baked exact logical water plus guarded dry board and outside-board decorative continuation; do not stack logical-water.png again",
+  "dryBackground": "dry-background.webp",
+  "logicalWaterOverlay": "logical-water.png",
+  "logicalWaterMask": "logical-water-mask.png",
+  "logicalWaterMaskRole": "immutable full accepted77-board water polygons for rules/diagnostic truth, not visible shoreline",
+  "visualWaterBodyMask": "adaptive-water-body-mask.png",
+  "visualWaterBankMask": "adaptive-water-bank-mask.png",
+  "intrinsicWholeBankProfile": "adaptive-channel-profile.json",
+  "waterArtOverlay": "logical-water.png",
+  "waterArtOverlayRole": "separate painted curved water and banks; legacy filename is not the full logical mask",
+  "dryShoreGroundContract": {
+    "allowedFreeBoundaryDepthPx": 12,
+    "protectedCoreInsetPx": 18,
+    "content": "flat earth/tiny low pebbles only; never water, tall rocks or bushes",
+    "roadBridgeOrdering": "ground texture below road and bridge; no foreground cover of deck",
+    "freeCoreMask": "free-core-mask18.png"
+  },
+  "wide": {
+    "file": "wide.webp",
+    "status": "painted-registered-native-guard-passed-join-and-game-review-pending",
+    "canvas": [
+      3272,
+      1200
+    ],
+    "originalRect": [
+      800,
+      129,
+      1672,
+      941
+    ],
+    "joinBandPx": 48,
+    "sourceAffine": {
+      "method": "single uniform source-level affine fitted to nativecore at1/4 scale; exact native board and building restored bydeliverybuilder; join/art/game review pending",
+      "source": "art/chapter-1-v9/candidates/mill-wide-generated-v2.png",
+      "sourceSha256": "eb96fff7990288551a791fbee303be90e4cb9aea91c4de8748428600c6f2b5c6",
+      "sourceNativeSize": [
+        2007,
+        784
+      ],
+      "rgbMeanAbsoluteError": 31.198242220638637,
+      "scale": 0.925,
+      "sourceCoreXAtQuarter": 262,
+      "sourceCoreYAtQuarter": 71,
+      "translation": [
+        164,
+        45
+      ],
+      "registeredPaintSize": [
+        3789,
+        1480
+      ],
+      "coverage": "entire3272x1200crop covered by painted source; no blank fill/reflection/repeated edge strips"
+    },
+    "source": "art/chapter-1-v9/candidates/mill-wide-generated-v2.png",
+    "fullBoardInteriorChangedRgbPixels": 0,
+    "millBuildingNativeGuardRectangle": [
+      1210,
+      40,
+      462,
+      391
+    ],
+    "millBuildingChangedRgbPixels": 0,
+    "feederJoinPatch": {
+      "source": "art/chapter-1-v9/candidates/mill-feeder-join-generated-v3.png",
+      "sourceSha256": "405e920a79115caca99e979a64865f0e66b13b52c1fac9eac531f2f82513055e",
+      "sourceNativeSize": [
+        1458,
+        1079
+      ],
+      "deliveredWorldRect": [
+        1730,
+        45,
+        250,
+        185
+      ],
+      "edgeBlendPx": 16,
+      "nativeAndWideSameWorldPatch": true,
+      "outsideWhole77Board": true,
+      "status": "source-art-and-actual-game-join-review-pending"
+    }
+  },
+  "geometry": "art/chapter-1-v9/packages/mill/geometry.json",
+  "checks": "checks.json",
+  "status": "root-art-and-actual-game-review-pending"
+}

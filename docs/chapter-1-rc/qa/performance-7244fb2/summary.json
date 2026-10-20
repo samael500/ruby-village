@@ -1,0 +1,798 @@
+{
+  "samples": [
+    {
+      "source": "7244fb2",
+      "scene": "gate",
+      "viewport": [
+        1280,
+        720
+      ],
+      "menuGotoReturnMs": 82.9558520053979,
+      "menuRequestCountAtGotoReturn": 7,
+      "menuEncodedBytesAtGotoReturn": 958111,
+      "navToMotionReadyMs": 1243.75015401165,
+      "afterFinalEntryInputToMotionReadyMs": 300.0483810028527,
+      "coldReadyNetworkIdleMs": 1466.499524016399,
+      "coldRequestCount": 45,
+      "coldEncodedBytes": 31620216,
+      "estimatedVisibleRgbaPixelBytes": 38231264,
+      "phases": {
+        "drag": {
+          "rafIntervals": {
+            "count": 126,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.800000000000182,
+            "maxMs": 16.800000000000182,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 1942.6,
+          "lastTimestamp": 4042.6,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        },
+        "walk": {
+          "rafIntervals": {
+            "count": 1404,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "maxMs": 16.80000000000291,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 5509.2,
+          "lastTimestamp": 28908.2,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        }
+      },
+      "errors": [],
+      "categoryBudgets": {
+        "HTML/JS/CSS/other": {
+          "requests": 3,
+          "encodedBytes": 66773
+        },
+        "UI materials/header": {
+          "requests": 5,
+          "encodedBytes": 2063037
+        },
+        "legacy menu v6 PNG": {
+          "requests": 1,
+          "encodedBytes": 2989416
+        },
+        "painted gate scene (also used by prologue)": {
+          "requests": 4,
+          "encodedBytes": 7914166
+        },
+        "legacy inventory tile PNGs": {
+          "requests": 6,
+          "encodedBytes": 2726222
+        },
+        "audio": {
+          "requests": 8,
+          "encodedBytes": 2425260
+        },
+        "character poses/portraits": {
+          "requests": 8,
+          "encodedBytes": 409432
+        },
+        "painted garden/prologue scene": {
+          "requests": 2,
+          "encodedBytes": 8710886
+        },
+        "connected road material": {
+          "requests": 1,
+          "encodedBytes": 1573190
+        },
+        "Ruta runtime atlases/manifest": {
+          "requests": 7,
+          "encodedBytes": 2741834
+        }
+      },
+      "top10ColdRequests": [
+        {
+          "path": "assets/chapter-1/v9/garden/wide.webp",
+          "encodedBytes": 6002204,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/gate/wide.webp",
+          "encodedBytes": 5234518,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v6/01-courtyard.png",
+          "encodedBytes": 2989416,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/garden/background.webp",
+          "encodedBytes": 2708682,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/gate/background.webp",
+          "encodedBytes": 2273524,
+          "status": 200
+        },
+        {
+          "path": "assets/road-v1/charoite.webp",
+          "encodedBytes": 1573190,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/day.ogg",
+          "encodedBytes": 1206907,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/village.ogg",
+          "encodedBytes": 1192598,
+          "status": 200
+        },
+        {
+          "path": "assets/ui/v8/level-header-v1.webp",
+          "encodedBytes": 1153288,
+          "status": 200
+        },
+        {
+          "path": "assets/ui/v7/leaves.png",
+          "encodedBytes": 857012,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "source": "7244fb2",
+      "scene": "gate",
+      "viewport": [
+        844,
+        390
+      ],
+      "menuGotoReturnMs": 47.876169002847746,
+      "menuRequestCountAtGotoReturn": 7,
+      "menuEncodedBytesAtGotoReturn": 958111,
+      "navToMotionReadyMs": 1263.5831639927346,
+      "afterFinalEntryInputToMotionReadyMs": 213.93616998102516,
+      "coldReadyNetworkIdleMs": 1566.1862340057269,
+      "coldRequestCount": 45,
+      "coldEncodedBytes": 31620216,
+      "estimatedVisibleRgbaPixelBytes": 38231264,
+      "phases": {
+        "drag": {
+          "rafIntervals": {
+            "count": 131,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.700000000000273,
+            "maxMs": 16.800000000000182,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 2060.8,
+          "lastTimestamp": 4244,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        },
+        "walk": {
+          "rafIntervals": {
+            "count": 1407,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "maxMs": 16.80000000000291,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 6227.2,
+          "lastTimestamp": 29676.3,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        }
+      },
+      "errors": [],
+      "categoryBudgets": {
+        "HTML/JS/CSS/other": {
+          "requests": 3,
+          "encodedBytes": 66773
+        },
+        "UI materials/header": {
+          "requests": 5,
+          "encodedBytes": 2063037
+        },
+        "legacy menu v6 PNG": {
+          "requests": 1,
+          "encodedBytes": 2989416
+        },
+        "painted gate scene (also used by prologue)": {
+          "requests": 4,
+          "encodedBytes": 7914166
+        },
+        "legacy inventory tile PNGs": {
+          "requests": 6,
+          "encodedBytes": 2726222
+        },
+        "audio": {
+          "requests": 8,
+          "encodedBytes": 2425260
+        },
+        "character poses/portraits": {
+          "requests": 8,
+          "encodedBytes": 409432
+        },
+        "painted garden/prologue scene": {
+          "requests": 2,
+          "encodedBytes": 8710886
+        },
+        "connected road material": {
+          "requests": 1,
+          "encodedBytes": 1573190
+        },
+        "Ruta runtime atlases/manifest": {
+          "requests": 7,
+          "encodedBytes": 2741834
+        }
+      },
+      "top10ColdRequests": [
+        {
+          "path": "assets/chapter-1/v9/garden/wide.webp",
+          "encodedBytes": 6002204,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/gate/wide.webp",
+          "encodedBytes": 5234518,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v6/01-courtyard.png",
+          "encodedBytes": 2989416,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/garden/background.webp",
+          "encodedBytes": 2708682,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/gate/background.webp",
+          "encodedBytes": 2273524,
+          "status": 200
+        },
+        {
+          "path": "assets/road-v1/charoite.webp",
+          "encodedBytes": 1573190,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/day.ogg",
+          "encodedBytes": 1206907,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/village.ogg",
+          "encodedBytes": 1192598,
+          "status": 200
+        },
+        {
+          "path": "assets/ui/v8/level-header-v1.webp",
+          "encodedBytes": 1153288,
+          "status": 200
+        },
+        {
+          "path": "assets/ui/v7/leaves.png",
+          "encodedBytes": 857012,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "source": "7244fb2",
+      "scene": "mill",
+      "viewport": [
+        1280,
+        720
+      ],
+      "menuGotoReturnMs": 43.914387992117554,
+      "menuRequestCountAtGotoReturn": 14,
+      "menuEncodedBytesAtGotoReturn": 4072395,
+      "navToMotionReadyMs": 595.3568379918579,
+      "afterFinalEntryInputToMotionReadyMs": 416.9417679950129,
+      "coldReadyNetworkIdleMs": 777.182821999304,
+      "coldRequestCount": 46,
+      "coldEncodedBytes": 28417392,
+      "estimatedVisibleRgbaPixelBytes": 33799664,
+      "phases": {
+        "drag": {
+          "rafIntervals": {
+            "count": 126,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999955,
+            "maxMs": 16.800000000000182,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 1032.8,
+          "lastTimestamp": 3132.8,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        },
+        "walk": {
+          "rafIntervals": {
+            "count": 1314,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "maxMs": 16.80000000000291,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 3966,
+          "lastTimestamp": 25865.2,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        }
+      },
+      "errors": [],
+      "categoryBudgets": {
+        "HTML/JS/CSS/other": {
+          "requests": 3,
+          "encodedBytes": 66773
+        },
+        "UI materials/header": {
+          "requests": 5,
+          "encodedBytes": 2063037
+        },
+        "legacy menu v6 PNG": {
+          "requests": 1,
+          "encodedBytes": 2989416
+        },
+        "painted map": {
+          "requests": 9,
+          "encodedBytes": 3092496
+        },
+        "audio": {
+          "requests": 5,
+          "encodedBytes": 2444131
+        },
+        "resident facing images": {
+          "requests": 3,
+          "encodedBytes": 2280200
+        },
+        "painted mill scene": {
+          "requests": 3,
+          "encodedBytes": 8271205
+        },
+        "connected road material": {
+          "requests": 1,
+          "encodedBytes": 1573190
+        },
+        "character poses/portraits": {
+          "requests": 3,
+          "encodedBytes": 168888
+        },
+        "legacy inventory tile PNGs": {
+          "requests": 6,
+          "encodedBytes": 2726222
+        },
+        "Ruta runtime atlases/manifest": {
+          "requests": 7,
+          "encodedBytes": 2741834
+        }
+      },
+      "top10ColdRequests": [
+        {
+          "path": "assets/chapter-1/v9/mill/wide.webp",
+          "encodedBytes": 5703484,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v6/01-courtyard.png",
+          "encodedBytes": 2989416,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/mill/background.webp",
+          "encodedBytes": 2542460,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-map-v2/map-wide.webp",
+          "encodedBytes": 2193518,
+          "status": 200
+        },
+        {
+          "path": "assets/road-v1/charoite.webp",
+          "encodedBytes": 1573190,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/water.ogg",
+          "encodedBytes": 1236188,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/village.ogg",
+          "encodedBytes": 1192598,
+          "status": 200
+        },
+        {
+          "path": "assets/ui/v8/level-header-v1.webp",
+          "encodedBytes": 1153288,
+          "status": 200
+        },
+        {
+          "path": "assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+          "encodedBytes": 900992,
+          "status": 200
+        },
+        {
+          "path": "assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+          "encodedBytes": 866030,
+          "status": 200
+        }
+      ]
+    },
+    {
+      "source": "7244fb2",
+      "scene": "mill",
+      "viewport": [
+        844,
+        390
+      ],
+      "menuGotoReturnMs": 53.67866801680066,
+      "menuRequestCountAtGotoReturn": 14,
+      "menuEncodedBytesAtGotoReturn": 4072395,
+      "navToMotionReadyMs": 577.2436480037868,
+      "afterFinalEntryInputToMotionReadyMs": 329.7677240043413,
+      "coldReadyNetworkIdleMs": 869.9811270053033,
+      "coldRequestCount": 46,
+      "coldEncodedBytes": 28417392,
+      "estimatedVisibleRgbaPixelBytes": 33799664,
+      "phases": {
+        "drag": {
+          "rafIntervals": {
+            "count": 134,
+            "p50Ms": 16.699999999999818,
+            "p95Ms": 16.799999999999955,
+            "maxMs": 16.800000000000182,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 1210,
+          "lastTimestamp": 3443.3,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        },
+        "walk": {
+          "rafIntervals": {
+            "count": 1317,
+            "p50Ms": 16.69999999999891,
+            "p95Ms": 16.700000000000728,
+            "maxMs": 16.80000000000291,
+            "over50ms": 0,
+            "over100ms": 0
+          },
+          "firstTimestamp": 4526.5,
+          "lastTimestamp": 26475.6,
+          "longTasks": {
+            "count": 0,
+            "p50Ms": null,
+            "p95Ms": null,
+            "maxMs": null,
+            "over50ms": 0,
+            "over100ms": 0
+          }
+        }
+      },
+      "errors": [],
+      "categoryBudgets": {
+        "HTML/JS/CSS/other": {
+          "requests": 3,
+          "encodedBytes": 66773
+        },
+        "UI materials/header": {
+          "requests": 5,
+          "encodedBytes": 2063037
+        },
+        "legacy menu v6 PNG": {
+          "requests": 1,
+          "encodedBytes": 2989416
+        },
+        "painted map": {
+          "requests": 9,
+          "encodedBytes": 3092496
+        },
+        "audio": {
+          "requests": 5,
+          "encodedBytes": 2444131
+        },
+        "resident facing images": {
+          "requests": 3,
+          "encodedBytes": 2280200
+        },
+        "painted mill scene": {
+          "requests": 3,
+          "encodedBytes": 8271205
+        },
+        "Ruta runtime atlases/manifest": {
+          "requests": 7,
+          "encodedBytes": 2741834
+        },
+        "connected road material": {
+          "requests": 1,
+          "encodedBytes": 1573190
+        },
+        "character poses/portraits": {
+          "requests": 3,
+          "encodedBytes": 168888
+        },
+        "legacy inventory tile PNGs": {
+          "requests": 6,
+          "encodedBytes": 2726222
+        }
+      },
+      "top10ColdRequests": [
+        {
+          "path": "assets/chapter-1/v9/mill/wide.webp",
+          "encodedBytes": 5703484,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v6/01-courtyard.png",
+          "encodedBytes": 2989416,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-1/v9/mill/background.webp",
+          "encodedBytes": 2542460,
+          "status": 200
+        },
+        {
+          "path": "assets/chapter-map-v2/map-wide.webp",
+          "encodedBytes": 2193518,
+          "status": 200
+        },
+        {
+          "path": "assets/road-v1/charoite.webp",
+          "encodedBytes": 1573190,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/water.ogg",
+          "encodedBytes": 1236188,
+          "status": 200
+        },
+        {
+          "path": "assets/audio/music/village.ogg",
+          "encodedBytes": 1192598,
+          "status": 200
+        },
+        {
+          "path": "assets/ui/v8/level-header-v1.webp",
+          "encodedBytes": 1153288,
+          "status": 200
+        },
+        {
+          "path": "assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+          "encodedBytes": 900992,
+          "status": 200
+        },
+        {
+          "path": "assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+          "encodedBytes": 866030,
+          "status": 200
+        }
+      ]
+    }
+  ],
+  "requestPhaseSamples": [
+    {
+      "viewport": [
+        1280,
+        720
+      ],
+      "markers": [
+        {
+          "label": "menu-goto-load-return",
+          "performanceMs": 68
+        },
+        {
+          "label": "prologue-frame-0-ready",
+          "performanceMs": 342.80000001192093
+        },
+        {
+          "label": "prologue-frame-1-ready",
+          "performanceMs": 415.5
+        },
+        {
+          "label": "prologue-frame-2-ready",
+          "performanceMs": 592.7000000178814
+        },
+        {
+          "label": "prologue-frame-3-ready",
+          "performanceMs": 659.2000000178814
+        },
+        {
+          "label": "prologue-frame-4-ready",
+          "performanceMs": 726.3000000119209
+        },
+        {
+          "label": "prologue-frame-5-ready",
+          "performanceMs": 793.0999999940395
+        },
+        {
+          "label": "before-last-prologue-next",
+          "performanceMs": 794.8000000119209
+        },
+        {
+          "label": "gate-motion-ready",
+          "performanceMs": 1172.5999999940395
+        },
+        {
+          "label": "gate-network-idle",
+          "performanceMs": 1396.5
+        }
+      ],
+      "budgetsByRequestPhase": {
+        "menu": {
+          "requests": 7,
+          "encodedBytes": 3947527
+        },
+        "prologue": {
+          "requests": 26,
+          "encodedBytes": 20972410
+        },
+        "gate-entry": {
+          "requests": 12,
+          "encodedBytes": 6700279
+        }
+      },
+      "categoryBytesByRequestPhase": {
+        "menu": {
+          "HTML/JS/CSS/other": 66773,
+          "UI materials/header": 891338,
+          "legacy menu v6 PNG": 2989416
+        },
+        "prologue": {
+          "audio": 1211704,
+          "painted gate scene (also used by prologue)": 7914166,
+          "legacy inventory tile PNGs": 2726222,
+          "character poses/portraits": 409432,
+          "painted garden/prologue scene": 8710886
+        },
+        "gate-entry": {
+          "Ruta runtime atlases/manifest": 2741834,
+          "audio": 1213556,
+          "UI materials/header": 1171699,
+          "connected road material": 1573190
+        }
+      },
+      "totalBytes": 31620216,
+      "note": "Request initiation phase is exact; earlier requests can finish in later phases. See raw responsePhase/finishPhase."
+    },
+    {
+      "viewport": [
+        844,
+        390
+      ],
+      "markers": [
+        {
+          "label": "menu-goto-load-return",
+          "performanceMs": 50.5
+        },
+        {
+          "label": "prologue-frame-0-ready",
+          "performanceMs": 316.7999999821186
+        },
+        {
+          "label": "prologue-frame-1-ready",
+          "performanceMs": 417.09999999403954
+        },
+        {
+          "label": "prologue-frame-2-ready",
+          "performanceMs": 633.3999999761581
+        },
+        {
+          "label": "prologue-frame-3-ready",
+          "performanceMs": 734
+        },
+        {
+          "label": "prologue-frame-4-ready",
+          "performanceMs": 833.1999999880791
+        },
+        {
+          "label": "prologue-frame-5-ready",
+          "performanceMs": 933.0999999940395
+        },
+        {
+          "label": "before-last-prologue-next",
+          "performanceMs": 934.1999999880791
+        },
+        {
+          "label": "gate-motion-ready",
+          "performanceMs": 1320.2999999821186
+        },
+        {
+          "label": "gate-network-idle",
+          "performanceMs": 1552.2999999821186
+        }
+      ],
+      "budgetsByRequestPhase": {
+        "menu": {
+          "requests": 7,
+          "encodedBytes": 3947527
+        },
+        "prologue": {
+          "requests": 26,
+          "encodedBytes": 20972410
+        },
+        "gate-entry": {
+          "requests": 12,
+          "encodedBytes": 6700279
+        }
+      },
+      "categoryBytesByRequestPhase": {
+        "menu": {
+          "HTML/JS/CSS/other": 66773,
+          "UI materials/header": 891338,
+          "legacy menu v6 PNG": 2989416
+        },
+        "prologue": {
+          "audio": 1211704,
+          "painted gate scene (also used by prologue)": 7914166,
+          "legacy inventory tile PNGs": 2726222,
+          "character poses/portraits": 409432,
+          "painted garden/prologue scene": 8710886
+        },
+        "gate-entry": {
+          "Ruta runtime atlases/manifest": 2741834,
+          "audio": 1213556,
+          "UI materials/header": 1171699,
+          "connected road material": 1573190
+        }
+      },
+      "totalBytes": 31620216,
+      "note": "Request initiation phase is exact; earlier requests can finish in later phases. See raw responsePhase/finishPhase."
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "baseline": "063bb19",
+  "ownBuildMerge": "c9a6b2b (baseline with prior QA-only additions)",
+  "input": "native CDP touch + native mouse and keyboard; gate completed through actual UI",
+  "results": [
+    {
+      "trial": 1,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "drag",
+      "afterInvalidRelease": "valid-drop",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    },
+    {
+      "trial": 2,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "drag",
+      "afterInvalidRelease": "cancel",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    },
+    {
+      "trial": 3,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "drag",
+      "afterInvalidRelease": "valid-drop",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    },
+    {
+      "trial": 4,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "drag",
+      "afterInvalidRelease": "cancel",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    },
+    {
+      "trial": 5,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "drag",
+      "afterInvalidRelease": "valid-drop",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    },
+    {
+      "trial": 6,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "drag",
+      "afterInvalidRelease": "cancel",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    },
+    {
+      "trial": 7,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "select",
+      "afterInvalidRelease": "confirm-place",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    },
+    {
+      "trial": 8,
+      "nativeTouchRotations": [
+        "garden:1:true:false",
+        "garden:2:true:false",
+        "garden:3:true:false",
+        "garden:4:true:false",
+        "garden:5:true:false"
+      ],
+      "explicitInterTapDelayMs": 0,
+      "mode": "select",
+      "afterInvalidRelease": "cancel",
+      "mouseEnterSpaceAfterTouch": "PASS",
+      "pageErrors": []
+    }
+  ],
+  "physicalPhone": "NOT RUN"
+}

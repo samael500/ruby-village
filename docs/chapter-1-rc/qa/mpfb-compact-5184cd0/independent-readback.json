@@ -1,0 +1,466 @@
+{
+  "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+  "actualNativeDelta": [
+    0.0,
+    -0.5687545537948608,
+    0.0
+  ],
+  "records": [
+    {
+      "group": "base",
+      "direction": "e",
+      "frame": 1,
+      "anchor": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        128.47161483764648,
+        0.0
+      ],
+      "strideError": 0.0,
+      "angleError": 0.0,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "e",
+      "frame": 13,
+      "anchor": [
+        191.9999656677246,
+        308.72593688964844
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        128.47161483764648,
+        0.0
+      ],
+      "strideError": 0.0,
+      "angleError": 0.0,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "se",
+      "frame": 1,
+      "anchor": [
+        192.0000228881836,
+        308.7260456085205
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        64.23582458496094,
+        72.31879377365112
+      ],
+      "strideError": 0.0,
+      "angleError": -1.2994465503624042e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 0.9999999403953552,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "se",
+      "frame": 13,
+      "anchor": [
+        192.0000228881836,
+        308.7260456085205
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        64.23582458496094,
+        72.31878036260605
+      ],
+      "strideError": 0.0,
+      "angleError": -2.220189061485911e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 0.9999999403953552,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "sw",
+      "frame": 1,
+      "anchor": [
+        191.9999656677246,
+        308.7260456085205
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -64.23581314086914,
+        72.31879377365112
+      ],
+      "strideError": 0.0,
+      "angleError": 4.1487948632124017e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 0.9999999403953552,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "sw",
+      "frame": 13,
+      "anchor": [
+        191.9999771118164,
+        308.7260456085205
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -64.23582458496094,
+        72.31878036260605
+      ],
+      "strideError": 0.0,
+      "angleError": 2.220189063706357e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 0.9999999403953552,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "w",
+      "frame": 1,
+      "anchor": [
+        192.0000228881836,
+        308.72593688964844
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -128.4716091156006,
+        0.0
+      ],
+      "strideError": 0.0,
+      "angleError": 0.0,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "w",
+      "frame": 13,
+      "anchor": [
+        192.0000228881836,
+        308.72593688964844
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -128.4716091156006,
+        0.0
+      ],
+      "strideError": 0.0,
+      "angleError": 0.0,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "nw",
+      "frame": 1,
+      "anchor": [
+        192.0000457763672,
+        308.72596549987793
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -64.23581314086914,
+        -72.31878089904785
+      ],
+      "strideError": 0.0,
+      "angleError": -1.298792273729532e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "nw",
+      "frame": 13,
+      "anchor": [
+        192.0000457763672,
+        308.7259769439697
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -64.23580169677734,
+        -72.31878089904785
+      ],
+      "strideError": 0.0,
+      "angleError": -4.142250498162525e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "ne",
+      "frame": 1,
+      "anchor": [
+        191.9999542236328,
+        308.72596549987793
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        64.23580169677734,
+        -72.31878089904785
+      ],
+      "strideError": 0.0,
+      "angleError": 4.142250520366986e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "base",
+      "direction": "ne",
+      "frame": 13,
+      "anchor": [
+        191.9999542236328,
+        308.7259769439697
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        64.23580169677734,
+        -72.31878089904785
+      ],
+      "strideError": 0.0,
+      "angleError": 4.142250520366986e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "e",
+      "frame": 1,
+      "anchor": [
+        191.99993133544922,
+        308.72596549987793
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        128.34182739257812,
+        3.752260208129883
+      ],
+      "strideError": 0.0,
+      "angleError": -1.1851192197043225e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "e",
+      "frame": 13,
+      "anchor": [
+        191.99993133544922,
+        308.72596549987793
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        128.34182739257812,
+        3.752248764038086
+      ],
+      "strideError": 0.0,
+      "angleError": -2.076046078276772e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "se",
+      "frame": 1,
+      "anchor": [
+        192.0000228881836,
+        308.72586822509766
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        59.171607971191406,
+        74.12188678979874
+      ],
+      "strideError": 0.0,
+      "angleError": -1.1712405656449931e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 0.9999999403953552,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "se",
+      "frame": 13,
+      "anchor": [
+        192.0000228881836,
+        308.72585678100586
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        59.171607971191406,
+        74.12187132239342
+      ],
+      "strideError": 0.0,
+      "angleError": -2.1886918721847337e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 0.9999999403953552,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "sw",
+      "frame": 1,
+      "anchor": [
+        192.00006866455078,
+        308.72594833374023
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -69.1702766418457,
+        70.36959886550903
+      ],
+      "strideError": 0.0,
+      "angleError": 2.0395388533600567e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "sw",
+      "frame": 13,
+      "anchor": [
+        192.00006866455078,
+        308.72593688964844
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -69.1702766418457,
+        70.36958312988281
+      ],
+      "strideError": 0.0,
+      "angleError": 3.1574437198145233e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "w",
+      "frame": 1,
+      "anchor": [
+        192.0000228881836,
+        308.72583961486816
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -128.34183311462402,
+        -3.7522716522216797
+      ],
+      "strideError": 0.0,
+      "angleError": -3.072161769424042e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "w",
+      "frame": 13,
+      "anchor": [
+        192.0000228881836,
+        308.72582817077637
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -128.34184455871582,
+        -3.752277374267578
+      ],
+      "strideError": 0.0,
+      "angleError": 1.1219956963515187e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "nw",
+      "frame": 1,
+      "anchor": [
+        191.9999542236328,
+        308.72583961486816
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -59.171607971191406,
+        -74.12188911437988
+      ],
+      "strideError": 0.0,
+      "angleError": -1.0183288212672893e-07,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "nw",
+      "frame": 13,
+      "anchor": [
+        191.9999656677246,
+        308.72582817077637
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        -59.17159652709961,
+        -74.12187767028809
+      ],
+      "strideError": 0.0,
+      "angleError": -8.28127517671362e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "ne",
+      "frame": 1,
+      "anchor": [
+        192.00006866455078,
+        308.72593688964844
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        69.1702651977539,
+        -70.3696060180664
+      ],
+      "strideError": 0.0,
+      "angleError": 7.042819372138354e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    },
+    {
+      "group": "calibrated-1",
+      "direction": "ne",
+      "frame": 13,
+      "anchor": [
+        192.0000457763672,
+        308.72594833374023
+      ],
+      "anchorError": 0.0,
+      "stride": [
+        69.1702651977539,
+        -70.3696060180664
+      ],
+      "strideError": 0.0,
+      "angleError": 7.042819372138354e-08,
+      "soleWorldError": 0.0,
+      "cameraDeterminant": 1.0,
+      "ortho": 1.7000000476837158
+    }
+  ]
+}

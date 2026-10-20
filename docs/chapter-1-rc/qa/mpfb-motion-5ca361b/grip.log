@@ -1,0 +1,70 @@
+{
+  "sourceSha256": "97dc4462f6cc5d793b1d982955b3d417baeba8e9e3433f27039a602af73b685f",
+  "actualStrapMeshCount": 1,
+  "bagGeometryObjectTransformVisibilityModifierSignaturesUnchanged": true,
+  "currentSignatures": {
+    "Ruta ONE satchel": "3773b29fd7d981661b88f15a4316b7046037a4456fd9a342fa5b07bc40cc547a",
+    "Satchel flap": "14a26a07fb8b7102b91937c7b686c12077efede8d104f64aaf50b26f7983e3b5",
+    "Satchel buckle": "5cd2976addc29ff10dd4dad2b5a6bd5d7ae4f6e894bc7fa0d396b9b4013486a9",
+    "ONE diagonal satchel strap": "405193fb30e96ab69d7ac9013dea83c5c363ccb8f3ae542b01558ad0789fd2d7"
+  },
+  "baselineSignatures": {
+    "Ruta ONE satchel": "3773b29fd7d981661b88f15a4316b7046037a4456fd9a342fa5b07bc40cc547a",
+    "Satchel flap": "14a26a07fb8b7102b91937c7b686c12077efede8d104f64aaf50b26f7983e3b5",
+    "Satchel buckle": "5cd2976addc29ff10dd4dad2b5a6bd5d7ae4f6e894bc7fa0d396b9b4013486a9",
+    "ONE diagonal satchel strap": "405193fb30e96ab69d7ac9013dea83c5c363ccb8f3ae542b01558ad0789fd2d7"
+  },
+  "samples": 97,
+  "grip": {
+    "palm": {
+      "vertices": 289,
+      "polygons": 222,
+      "maxTriangleIntersections": 0,
+      "skinVertexToStrapSurfaceRangeM": [
+        0.0013072785222902894,
+        0.0014102784916758537
+      ],
+      "strapVertexToSkinSurfaceRangeM": [
+        0.005130197387188673,
+        0.0051368288695812225
+      ]
+    },
+    "fingers": {
+      "vertices": 1265,
+      "polygons": 1216,
+      "maxTriangleIntersections": 0,
+      "skinVertexToStrapSurfaceRangeM": [
+        0.0022082850337028503,
+        0.002314518438652158
+      ],
+      "strapVertexToSkinSurfaceRangeM": [
+        0.006848644930869341,
+        0.006871068850159645
+      ]
+    },
+    "thumb": {
+      "vertices": 224,
+      "polygons": 207,
+      "maxTriangleIntersections": 0,
+      "skinVertexToStrapSurfaceRangeM": [
+        0.0011184198083356023,
+        0.0017197704873979092
+      ],
+      "strapVertexToSkinSurfaceRangeM": [
+        0.006720248144119978,
+        0.006720610428601503
+      ]
+    }
+  },
+  "torsoVsPelvisRotationExcursionDegrees": 5.0419158717091825,
+  "worldHeadRotationExcursionDegrees": 0.34034837970258824,
+  "wristForeAftRangeM": {
+    "L": 0.11029545543715358,
+    "R": 0.0004945993423461914
+  },
+  "method": "Own fresh-reopen BVH actual evaluated triangles and two-sided vertex-to-surface gap samples; actual nonempty weighted palm/fingers/thumb;97quarterframes. These sampled distances are not a proof of exact global minimum or force/contact simulation. Source not saved."
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-qa-mpfb-5ca361b/art/characters-mpfb-v1/motion/pilot/mpfb-walk-technical.blend"
+
+Blender quit

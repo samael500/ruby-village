@@ -1,0 +1,16 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Edit target Image1 is a1254x1254 square painted charoite flagstone texture whose opposite edges were offset to the CENTER. Repair ONLY the visible central cross seam near x627 and y627 (roughly70px on either side). Repaint the severed stone shapes across that central horizontal/vertical cross so every angular stone and thin dark joint continues naturally across it. Preserve all original outer edges and all artwork farther than100px from central cross EXACTLY unchanged, no scaling/cropping/reframing. Dense irregular angular violet/lavender charoite stones, same painterly mineral swirls and warm muted highlights, fine dark-purple joints. Keep current stone-size variation and surface brushwork. Do NOT add raised bevels, border/frame, hexagons, road silhouette, background grass, neon, UI or text. This cross repair will be offset back into a perfectly seamless repeating tile, so do not change the OUTER EDGES. Output square exact1254x1254 composition. Local central seam repair only.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-06294f7a-5abd-4488-bd67-729e790e9ef7.png",
+  "nativeSize": [
+    1254,
+    1254
+  ],
+  "editTarget": "charoite-offset-edit-target.png",
+  "offset": [
+    627,
+    627
+  ],
+  "composition": "encode.py imports central cross only with64px outer-edge guard, restores offset; original generated-v1 retained rejected for seamless use",
+  "visualStatus": "root-review-pending"
+}

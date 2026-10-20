@@ -1,0 +1,586 @@
+TAP version 13
+# Subtest: arbitrary centers stop physically inside native goal polygon, without forcing exact center
+ok 1 - arbitrary centers stop physically inside native goal polygon, without forcing exact center
+  ---
+  duration_ms: 47.848975
+  type: 'test'
+  ...
+# Subtest: exact center or too narrow target reports a real retarget requirement; no hidden slide
+ok 2 - exact center or too narrow target reports a real retarget requirement; no hidden slide
+  ---
+  duration_ms: 0.972425
+  type: 'test'
+  ...
+# Subtest: soft start/stop, exact grounded endpoint and distance are independent of 30/60/144fps
+ok 3 - soft start/stop, exact grounded endpoint and distance are independent of 30/60/144fps
+  ---
+  duration_ms: 12.167443
+  type: 'test'
+  ...
+# Subtest: source ankle planting stays below .01 native pixel through planned start/walk/stop for all actual camera views
+ok 4 - source ankle planting stays below .01 native pixel through planned start/walk/stop for all actual camera views
+  ---
+  duration_ms: 20.593159
+  type: 'test'
+  ...
+# Subtest: multi-segment paths retain corners, source phase and a grounded final target; no corner shortcut
+ok 5 - multi-segment paths retain corners, source phase and a grounded final target; no corner shortcut
+  ---
+  duration_ms: 3.47088
+  type: 'test'
+  ...
+# Subtest: already grounded and boundary endpoints are valid without fabricated walking
+ok 6 - already grounded and boundary endpoints are valid without fabricated walking
+  ---
+  duration_ms: 1.097873
+  type: 'test'
+  ...
+# Subtest: gesture gate, persisted levels, one context, throttling, pause and disposal
+ok 7 - gesture gate, persisted levels, one context, throttling, pause and disposal
+  ---
+  duration_ms: 6.253145
+  type: 'test'
+  ...
+# Subtest: storage, fetch and device failure never reject gameplay operations
+ok 8 - storage, fetch and device failure never reject gameplay operations
+  ---
+  duration_ms: 1.723338
+  type: 'test'
+  ...
+# Subtest: in-flight loaded effects are discarded on pause instead of deferred
+ok 9 - in-flight loaded effects are discarded on pause instead of deferred
+  ---
+  duration_ms: 0.842239
+  type: 'test'
+  ...
+# Subtest: pause during a cue/scene switch never transfers old playback offset to the new file
+ok 10 - pause during a cue/scene switch never transfers old playback offset to the new file
+  ---
+  duration_ms: 6.553055
+  type: 'test'
+  ...
+# Subtest: UI preserves sparse migrated wins without opening a gap or mutating progress
+ok 11 - UI preserves sparse migrated wins without opening a gap or mutating progress
+  ---
+  duration_ms: 3.215483
+  type: 'test'
+  ...
+# Subtest: completed chapter keeps replay, map and letter without a chapter 2 launch
+ok 12 - completed chapter keeps replay, map and letter without a chapter 2 launch
+  ---
+  duration_ms: 0.711782
+  type: 'test'
+  ...
+# Subtest: learning follows actual input mode, rotation and first bridge
+ok 13 - learning follows actual input mode, rotation and first bridge
+  ---
+  duration_ms: 0.892646
+  type: 'test'
+  ...
+# Subtest: six staged frames keep Rabbit alone, narrator portrait absent, and gameplay handoff exact
+ok 14 - six staged frames keep Rabbit alone, narrator portrait absent, and gameplay handoff exact
+  ---
+  duration_ms: 1.708668
+  type: 'test'
+  ...
+# Subtest: gate: эталон соответствует набору, местности и соединяет цель
+ok 15 - gate: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 7.886527
+  type: 'test'
+  ...
+# Subtest: garden: эталон соответствует набору, местности и соединяет цель
+ok 16 - garden: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 4.259155
+  type: 'test'
+  ...
+# Subtest: well: эталон соответствует набору, местности и соединяет цель
+ok 17 - well: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 0.975244
+  type: 'test'
+  ...
+# Subtest: bakery: эталон соответствует набору, местности и соединяет цель
+ok 18 - bakery: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 0.856289
+  type: 'test'
+  ...
+# Subtest: stream: эталон соответствует набору, местности и соединяет цель
+ok 19 - stream: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 2.9333
+  type: 'test'
+  ...
+# Subtest: mill: эталон соответствует набору, местности и соединяет цель
+ok 20 - mill: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 1.075709
+  type: 'test'
+  ...
+# Subtest: post: эталон соответствует набору, местности и соединяет цель
+ok 21 - post: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 2.298088
+  type: 'test'
+  ...
+# Subtest: forest: эталон соответствует набору, местности и соединяет цель
+ok 22 - forest: эталон соответствует набору, местности и соединяет цель
+  ---
+  duration_ms: 1.066475
+  type: 'test'
+  ...
+# Subtest: До калитки: кратчайший путь требует все выданные одиночные камни
+ok 23 - До калитки: кратчайший путь требует все выданные одиночные камни
+  ---
+  duration_ms: 1.824444
+  type: 'test'
+  ...
+# Subtest: Яблоня и клумба: маршрут не пересекает закрытые клетки; можно не использовать весь набор
+ok 24 - Яблоня и клумба: маршрут не пересекает закрытые клетки; можно не использовать весь набор
+  ---
+  duration_ms: 2.591117
+  type: 'test'
+  ...
+# Subtest: Ручей и мельница: сухие клетки не соединяются, мост обязателен
+ok 25 - Ручей и мельница: сухие клетки не соединяются, мост обязателен
+  ---
+  duration_ms: 3.678994
+  type: 'test'
+  ...
+# Subtest: Оба русла пересекают середину второй секции моста, без изгиба у стыка
+ok 26 - Оба русла пересекают середину второй секции моста, без изгиба у стыка
+  ---
+  duration_ms: 0.410766
+  type: 'test'
+  ...
+# Subtest: Лесной указатель: фон без реки, маршрут из камня без моста
+ok 27 - Лесной указатель: фон без реки, маршрут из камня без моста
+  ---
+  duration_ms: 1.909478
+  type: 'test'
+  ...
+# Subtest: Вода, сухие концы моста, вращение и пересечения
+ok 28 - Вода, сухие концы моста, вращение и пересечения
+  ---
+  duration_ms: 1.920999
+  type: 'test'
+  ...
+# Subtest: Перенесённые старты с отрицательным q входят в реальное offset-поле
+ok 29 - Перенесённые старты с отрицательным q входят в реальное offset-поле
+  ---
+  duration_ms: 2.814237
+  type: 'test'
+  ...
+# Subtest: clock is frame-rate independent and emits every crossed contact
+ok 30 - clock is frame-rate independent and emits every crossed contact
+  ---
+  duration_ms: 4.91968
+  type: 'test'
+  ...
+# Subtest: pause and first resume discard hidden time; reduced motion has no footsteps
+ok 31 - pause and first resume discard hidden time; reduced motion has no footsteps
+  ---
+  duration_ms: 0.79997
+  type: 'test'
+  ...
+# Subtest: semantic foot contacts are preserved at exact duration across render rates
+ok 32 - semantic foot contacts are preserved at exact duration across render rates
+  ---
+  duration_ms: 3.977064
+  type: 'test'
+  ...
+# Subtest: projected directions and boundary hysteresis
+ok 33 - projected directions and boundary hysteresis
+  ---
+  duration_ms: 0.714646
+  type: 'test'
+  ...
+# Subtest: route follows segment lengths, handles duplicate points and clamps end
+ok 34 - route follows segment lengths, handles duplicate points and clamps end
+  ---
+  duration_ms: 1.139861
+  type: 'test'
+  ...
+# Subtest: route completion is frame-rate independent and fires once
+ok 35 - route completion is frame-rate independent and fires once
+  ---
+  duration_ms: 5.956888
+  type: 'test'
+  ...
+# Subtest: route pause discards resumed time and reduced motion completes without lost result
+ok 36 - route pause discards resumed time and reduced motion completes without lost result
+  ---
+  duration_ms: 0.640203
+  type: 'test'
+  ...
+# Subtest: landscape dialogue keeps actors and gate above the panel using one camera
+ok 37 - landscape dialogue keeps actors and gate above the panel using one camera
+  ---
+  duration_ms: 27.945306
+  type: 'test'
+  ...
+# Subtest: empty narrative focus preserves the original camera
+ok 38 - empty narrative focus preserves the original camera
+  ---
+  duration_ms: 0.447531
+  type: 'test'
+  ...
+# Subtest: one-a: шесть последовательных вращений возвращают исходную форму
+ok 39 - one-a: шесть последовательных вращений возвращают исходную форму
+  ---
+  duration_ms: 9.24438
+  type: 'test'
+  ...
+# Subtest: one-a: число, уникальность и опора сохраняются при каждом повороте
+ok 40 - one-a: число, уникальность и опора сохраняются при каждом повороте
+  ---
+  duration_ms: 1.463362
+  type: 'test'
+  ...
+# Subtest: one-b: шесть последовательных вращений возвращают исходную форму
+ok 41 - one-b: шесть последовательных вращений возвращают исходную форму
+  ---
+  duration_ms: 0.678907
+  type: 'test'
+  ...
+# Subtest: one-b: число, уникальность и опора сохраняются при каждом повороте
+ok 42 - one-b: число, уникальность и опора сохраняются при каждом повороте
+  ---
+  duration_ms: 0.405854
+  type: 'test'
+  ...
+# Subtest: line: шесть последовательных вращений возвращают исходную форму
+ok 43 - line: шесть последовательных вращений возвращают исходную форму
+  ---
+  duration_ms: 0.775738
+  type: 'test'
+  ...
+# Subtest: line: число, уникальность и опора сохраняются при каждом повороте
+ok 44 - line: число, уникальность и опора сохраняются при каждом повороте
+  ---
+  duration_ms: 0.487091
+  type: 'test'
+  ...
+# Subtest: bend: шесть последовательных вращений возвращают исходную форму
+ok 45 - bend: шесть последовательных вращений возвращают исходную форму
+  ---
+  duration_ms: 0.379125
+  type: 'test'
+  ...
+# Subtest: bend: число, уникальность и опора сохраняются при каждом повороте
+ok 46 - bend: число, уникальность и опора сохраняются при каждом повороте
+  ---
+  duration_ms: 1.122895
+  type: 'test'
+  ...
+# Subtest: cluster: шесть последовательных вращений возвращают исходную форму
+ok 47 - cluster: шесть последовательных вращений возвращают исходную форму
+  ---
+  duration_ms: 1.556151
+  type: 'test'
+  ...
+# Subtest: cluster: число, уникальность и опора сохраняются при каждом повороте
+ok 48 - cluster: число, уникальность и опора сохраняются при каждом повороте
+  ---
+  duration_ms: 2.92447
+  type: 'test'
+  ...
+# Subtest: проверка границы и пересечения; собственные клетки не мешают редактированию
+ok 49 - проверка границы и пересечения; собственные клетки не мешают редактированию
+  ---
+  duration_ms: 2.61068
+  type: 'test'
+  ...
+# Subtest: достижимость учитывает всех шестерых соседей
+ok 50 - достижимость учитывает всех шестерых соседей
+  ---
+  duration_ms: 1.000072
+  type: 'test'
+  ...
+# Subtest: поиск дороги не перепрыгивает пустые клетки; концы проходимы без плит
+ok 51 - поиск дороги не перепрыгивает пустые клетки; концы проходимы без плит
+  ---
+  duration_ms: 2.028182
+  type: 'test'
+  ...
+# Subtest: axial / пиксели: центры всех клеток и 3 размеров возвращаются в ту же клетку
+ok 52 - axial / пиксели: центры всех клеток и 3 размеров возвращаются в ту же клетку
+  ---
+  duration_ms: 2.642585
+  type: 'test'
+  ...
+# Subtest: transient atlas failure can retry; concurrent and successful loads are shared
+ok 53 - transient atlas failure can retry; concurrent and successful loads are shared
+  ---
+  duration_ms: 10.555846
+  type: 'test'
+  ...
+# Subtest: atomic activation rejects one missing, misaligned or failed scene
+ok 54 - atomic activation rejects one missing, misaligned or failed scene
+  ---
+  duration_ms: 4.433779
+  type: 'test'
+  ...
+# Subtest: wide crop cannot shift or shrink the immutable native center
+ok 55 - wide crop cannot shift or shrink the immutable native center
+  ---
+  duration_ms: 0.505781
+  type: 'test'
+  ...
+# Subtest: mill cannot activate while the squirrel has no separate grounded placement
+ok 56 - mill cannot activate while the squirrel has no separate grounded placement
+  ---
+  duration_ms: 0.349665
+  type: 'test'
+  ...
+# Subtest: invalid release preserves instance, position and rotation without confirming or changing progress/layout
+ok 57 - invalid release preserves instance, position and rotation without confirming or changing progress/layout
+  ---
+  duration_ms: 5.878127
+  type: 'test'
+  ...
+# Subtest: moving a confirmed piece keeps its old placement serializable; cancel restores the gesture snapshot
+ok 58 - moving a confirmed piece keeps its old placement serializable; cancel restores the gesture snapshot
+  ---
+  duration_ms: 2.674006
+  type: 'test'
+  ...
+# Subtest: bridge stays provisional on land, blocks overlap/water errors and confirms only its real valid orientation
+ok 59 - bridge stays provisional on land, blocks overlap/water errors and confirms only its real valid orientation
+  ---
+  duration_ms: 2.252459
+  type: 'test'
+  ...
+# Subtest: pointercancel/outside release and independent snapshots never lose a pending preview
+ok 60 - pointercancel/outside release and independent snapshots never lose a pending preview
+  ---
+  duration_ms: 0.472919
+  type: 'test'
+  ...
+# Subtest: ordinary production pairs all eight accepted layouts with checked painted scenes
+ok 61 - ordinary production pairs all eight accepted layouts with checked painted scenes
+  ---
+  duration_ms: 19.011232
+  type: 'test'
+  ...
+# Subtest: ordinary activation migrates old placement saves while retaining completed places
+ok 62 - ordinary activation migrates old placement saves while retaining completed places
+  ---
+  duration_ms: 4.839671
+  type: 'test'
+  ...
+# Subtest: Миграция трёх дорог сохраняет мельницу и не пропускает новые задания
+ok 63 - Миграция трёх дорог сохраняет мельницу и не пропускает новые задания
+  ---
+  duration_ms: 7.574295
+  type: 'test'
+  ...
+# Subtest: Прогресс: повреждения, порядок, повторы, песочница и сброс
+ok 64 - Прогресс: повреждения, порядок, повторы, песочница и сброс
+  ---
+  duration_ms: 7.797343
+  type: 'test'
+  ...
+# Subtest: Проекция и обратное попадание сохраняют клетки, включая шесть поворотов
+ok 65 - Проекция и обратное попадание сохраняют клетки, включая шесть поворотов
+  ---
+  duration_ms: 62.907292
+  type: 'test'
+  ...
+# Subtest: Калибровка сохраняет оба основания сцены при наклоне
+ok 66 - Калибровка сохраняет оба основания сцены при наклоне
+  ---
+  duration_ms: 0.921046
+  type: 'test'
+  ...
+# Subtest: Пролог: шесть кадров, цель яблоки/Кролик, персонажи и рассказчик
+ok 67 - Пролог: шесть кадров, цель яблоки/Кролик, персонажи и рассказчик
+  ---
+  duration_ms: 4.190732
+  type: 'test'
+  ...
+# Subtest: Кадр восстанавливается; просмотр не меняет пазл-сессию при последующих записях прогресса
+ok 68 - Кадр восстанавливается; просмотр не меняет пазл-сессию при последующих записях прогресса
+  ---
+  duration_ms: 7.040841
+  type: 'test'
+  ...
+# Subtest: Повреждённый кадр и отказ хранилища безопасны
+ok 69 - Повреждённый кадр и отказ хранилища безопасны
+  ---
+  duration_ms: 0.969736
+  type: 'test'
+  ...
+# Subtest: Старая сессия или прогресс имеют приоритет над прологом
+ok 70 - Старая сессия или прогресс имеют приоритет над прологом
+  ---
+  duration_ms: 0.49267
+  type: 'test'
+  ...
+# Subtest: both river bridges emit timber surface over all three cells, ordinary road stays stone
+ok 71 - both river bridges emit timber surface over all three cells, ordinary road stays stone
+  ---
+  duration_ms: 2.226884
+  type: 'test'
+  ...
+# Subtest: all eight accepted puzzle paths finish on actual goal ground with authored start/stop at 30/60/144fps
+ok 72 - all eight accepted puzzle paths finish on actual goal ground with authored start/stop at 30/60/144fps
+  ---
+  duration_ms: 114.605543
+  type: 'test'
+  ...
+# Subtest: route and source phase freeze together and discard first stale resumed delta
+ok 73 - route and source phase freeze together and discard first stale resumed delta
+  ---
+  duration_ms: 1.919133
+  type: 'test'
+  ...
+# Subtest: authored720ms cycle preserves ground endpoints and contacts at30/60/144fps without route-only speed scaling
+ok 74 - authored720ms cycle preserves ground endpoints and contacts at30/60/144fps without route-only speed scaling
+  ---
+  duration_ms: 18.015317
+  type: 'test'
+  ...
+# Subtest: cycle metadata cannot silently disagree with source frame timing
+ok 75 - cycle metadata cannot silently disagree with source frame timing
+  ---
+  duration_ms: 1.770628
+  type: 'test'
+  ...
+# Subtest: v4: единый fit изображения, клеток и ног Руты в обеих ориентациях
+ok 76 - v4: единый fit изображения, клеток и ног Руты в обеих ориентациях
+  ---
+  duration_ms: 5.248599
+  type: 'test'
+  ...
+# Subtest: v4: сетка не удваивает общие стороны и сохраняет края у blocked-клеток
+ok 77 - v4: сетка не удваивает общие стороны и сохраняет края у blocked-клеток
+  ---
+  duration_ms: 4.605034
+  type: 'test'
+  ...
+# Subtest: v4: Рута не закрывает обычные клетки вне старта
+ok 78 - v4: Рута не закрывает обычные клетки вне старта
+  ---
+  duration_ms: 0.933605
+  type: 'test'
+  ...
+# Subtest: Границы экземпляров: внутренний стык скрыт, разные фигуры разделены одной линией при шести поворотах
+ok 79 - Границы экземпляров: внутренний стык скрыт, разные фигуры разделены одной линией при шести поворотах
+  ---
+  duration_ms: 3.721917
+  type: 'test'
+  ...
+# Subtest: Все игровые раскладки соответствуют принятым макетам PR \#42
+ok 80 - Все игровые раскладки соответствуют принятым макетам PR \#42
+  ---
+  duration_ms: 18.515214
+  type: 'test'
+  ...
+# Subtest: Камера и обратная проекция определяют ту же клетку после изменения размера
+ok 81 - Камера и обратная проекция определяют ту же клетку после изменения размера
+  ---
+  duration_ms: 48.883637
+  type: 'test'
+  ...
+# Subtest: Фон покрывает viewport, исходный прямоугольник и контуры доступных гексов целиком видны
+ok 82 - Фон покрывает viewport, исходный прямоугольник и контуры доступных гексов целиком видны
+  ---
+  duration_ms: 39.002251
+  type: 'test'
+  ...
+# Subtest: Передняя маска не скрывает центры доступных клеток и подошвы в начале/конце
+ok 83 - Передняя маска не скрывает центры доступных клеток и подошвы в начале/конце
+  ---
+  duration_ms: 10.471449
+  type: 'test'
+  ...
+# Subtest: Заявленные опорные точки входа/цели совпадают с фактической общей камерой
+ok 84 - Заявленные опорные точки входа/цели совпадают с фактической общей камерой
+  ---
+  duration_ms: 1.018099
+  type: 'test'
+  ...
+# Subtest: Передние контуры не закрывают большую часть гекса; путь находится за их основаниями
+ok 85 - Передние контуры не закрывают большую часть гекса; путь находится за их основаниями
+  ---
+  duration_ms: 83.260936
+  type: 'test'
+  ...
+# Subtest: Полный указатель с обводкой и тенью не перекрывает ни один доступный гекс
+ok 86 - Полный указатель с обводкой и тенью не перекрывает ни один доступный гекс
+  ---
+  duration_ms: 30.698793
+  type: 'test'
+  ...
+# Subtest: Session roundtrip preserves progress identity, layout, mode and motion setting
+ok 87 - Session roundtrip preserves progress identity, layout, mode and motion setting
+  ---
+  duration_ms: 8.698594
+  type: 'test'
+  ...
+# Subtest: Session rejects locked level, invalid shape cells, overlap and broken storage
+ok 88 - Session rejects locked level, invalid shape cells, overlap and broken storage
+  ---
+  duration_ms: 3.825524
+  type: 'test'
+  ...
+# Subtest: Сохранения прежней разметки сохраняют дороги, настройки и завершённые уровни
+ok 89 - Сохранения прежней разметки сохраняют дороги, настройки и завершённые уровни
+  ---
+  duration_ms: 8.42729
+  type: 'test'
+  ...
+# Subtest: Из старого сохранения удаляется только плита, попавшая на перенесённое русло
+ok 90 - Из старого сохранения удаляется только плита, попавшая на перенесённое русло
+  ---
+  duration_ms: 0.888055
+  type: 'test'
+  ...
+# Subtest: Legacy migration is repeatable, persisted once, preserves unknown chapter state
+ok 91 - Legacy migration is repeatable, persisted once, preserves unknown chapter state
+  ---
+  duration_ms: 1.420897
+  type: 'test'
+  ...
+# Subtest: Unrecoverable session reports reset without erasing progress, and storage failure is explicit
+ok 92 - Unrecoverable session reports reset without erasing progress, and storage failure is explicit
+  ---
+  duration_ms: 0.456733
+  type: 'test'
+  ...
+# Subtest: Old completed courtyard stays complete and replay has exactly one eighth stone
+ok 93 - Old completed courtyard stays complete and replay has exactly one eighth stone
+  ---
+  duration_ms: 1.062052
+  type: 'test'
+  ...
+# Subtest: Материал остаётся с локальной клеткой фигуры при переносе и шести поворотах
+ok 94 - Материал остаётся с локальной клеткой фигуры при переносе и шести поворотах
+  ---
+  duration_ms: 8.260159
+  type: 'test'
+  ...
+# Subtest: Материал имеет шесть вариантов, повторяемый seed и безопасный индекс при отрицательных координатах
+ok 95 - Материал имеет шесть вариантов, повторяемый seed и безопасный индекс при отрицательных координатах
+  ---
+  duration_ms: 0.834502
+  type: 'test'
+  ...
+# Subtest: Сюжетный адаптер сопоставляет восемь сцен, порядок карты и engine IDs
+ok 96 - Сюжетный адаптер сопоставляет восемь сцен, порядок карты и engine IDs
+  ---
+  duration_ms: 2.632758
+  type: 'test'
+  ...
+1..96
+# tests 96
+# suites 0
+# pass 96
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 1076.002694

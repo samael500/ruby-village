@@ -1,0 +1,45 @@
+{
+  "method": "translation only by manually inspected gold waist-buckle center, a visible root landmark; no per-frame scale",
+  "targetRawWaistRoot": [
+    796,
+    630
+  ],
+  "sourceCanvas": [
+    1254,
+    1254
+  ],
+  "sourceScaleToNative": 0.188,
+  "nativeHeight": 224,
+  "sceneDisplayHeight": 136,
+  "note": "nativeHeight is export contract; measure every actual painted pose, guide is not acceptance",
+  "frames": [
+    {
+      "source": "key-0-tight.png",
+      "sourceWaistRoot": [
+        796,
+        630
+      ]
+    },
+    {
+      "source": "key-1-passing.png",
+      "sourceWaistRoot": [
+        817,
+        630
+      ]
+    },
+    {
+      "source": "key-2-raw.png",
+      "sourceWaistRoot": [
+        806,
+        630
+      ]
+    },
+    {
+      "source": "key-3-passing.png",
+      "sourceWaistRoot": [
+        787,
+        630
+      ]
+    }
+  ]
+}

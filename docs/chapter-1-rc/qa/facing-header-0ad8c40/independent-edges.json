@@ -1,0 +1,3979 @@
+[
+  {
+    "case": "delayed authored image",
+    "fallback": [
+      {
+        "id": "rabbit",
+        "view": "idle",
+        "reason": "encounter",
+        "anchor": "translate(1450 350)",
+        "href": "/ruby-village/assets/characters-v1/optimized/rabbit-idle.webp",
+        "opacity": "1",
+        "image": [
+          "-33.23096087598425",
+          "-107.55963302752293",
+          "55.8984375",
+          "108"
+        ],
+        "transforms": [
+          {
+            "attribute": "translate(1450 350)",
+            "css": "matrix(1, 0, 0, 1, 1450, 350)",
+            "opacity": "1"
+          },
+          {
+            "attribute": "translate(76.62486716259303 0) scale(0.4059511158342189)",
+            "css": "matrix(0.405951, 0, 0, 0.405951, 76.6249, 0)",
+            "opacity": "1"
+          }
+        ]
+      }
+    ],
+    "ready": [
+      {
+        "id": "rabbit",
+        "view": "conversation-left",
+        "reason": "encounter",
+        "anchor": "translate(1450 350)",
+        "href": "/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png",
+        "opacity": "1",
+        "image": [
+          "-33.247706422018354",
+          "-107.55963302752293",
+          "66.49541284403671",
+          "108"
+        ],
+        "transforms": [
+          {
+            "attribute": "translate(1450 350)",
+            "css": "matrix(1, 0, 0, 1, 1450, 350)",
+            "opacity": "1"
+          },
+          {
+            "attribute": "translate(76.62486716259303 0) scale(0.4059511158342189)",
+            "css": "matrix(0.405951, 0, 0, 0.405951, 76.6249, 0)",
+            "opacity": "1"
+          }
+        ]
+      }
+    ],
+    "noLoadDisappearance": true
+  },
+  {
+    "case": "normal motion mill real UI solve",
+    "pointerDoesNotTrack": true,
+    "anchorsStableResize": true,
+    "pages": [
+      {
+        "phase": "intro",
+        "speaker": "Рута",
+        "actors": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1430 398)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-43.802",
+              "-180.27599999999998",
+              "78.37299999999999",
+              "181"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1430 398)",
+                "css": "matrix(1, 0, 0, 1, 1430, 398)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1330 405)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-44.575221238938056",
+              "-91.59292035398231",
+              "90.88053097345133",
+              "92"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1330 405)",
+                "css": "matrix(1, 0, 0, 1, 1330, 405)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          }
+        ],
+        "ruta": [
+          {
+            "id": "ruta-idle",
+            "direction": "e",
+            "reason": "encounter",
+            "opacity": "1",
+            "frame": null
+          }
+        ]
+      },
+      {
+        "phase": "intro",
+        "speaker": "Мельник",
+        "actors": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1430 398)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-43.802",
+              "-180.27599999999998",
+              "78.37299999999999",
+              "181"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1430 398)",
+                "css": "matrix(1, 0, 0, 1, 1430, 398)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1330 405)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-44.575221238938056",
+              "-91.59292035398231",
+              "90.88053097345133",
+              "92"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1330 405)",
+                "css": "matrix(1, 0, 0, 1, 1330, 405)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          }
+        ],
+        "ruta": [
+          {
+            "id": "ruta-idle",
+            "direction": "e",
+            "reason": "encounter",
+            "opacity": "1",
+            "frame": null
+          }
+        ]
+      },
+      {
+        "phase": "landscape",
+        "speaker": null,
+        "actors": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "reason": "activity",
+            "anchor": "translate(1430 398)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-43.802",
+              "-180.27599999999998",
+              "78.37299999999999",
+              "181"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1430 398)",
+                "css": "matrix(1, 0, 0, 1, 1430, 398)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(140.59086078639746 0) scale(0.3294367693942614)",
+                "css": "matrix(0.329437, 0, 0, 0.329437, 140.591, 0)",
+                "opacity": "1"
+              }
+            ]
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "reason": "activity",
+            "anchor": "translate(1330 405)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+            "opacity": "1",
+            "image": [
+              "-45.5929203539823",
+              "-91.59292035398231",
+              "90.88053097345133",
+              "92"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1330 405)",
+                "css": "matrix(1, 0, 0, 1, 1330, 405)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(140.59086078639746 0) scale(0.3294367693942614)",
+                "css": "matrix(0.329437, 0, 0, 0.329437, 140.591, 0)",
+                "opacity": "1"
+              }
+            ]
+          }
+        ],
+        "ruta": [
+          {
+            "id": "ruta-idle",
+            "direction": null,
+            "reason": null,
+            "opacity": "1",
+            "frame": null
+          }
+        ]
+      },
+      {
+        "phase": "arrival",
+        "speaker": "Рута",
+        "actors": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1430 398)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-43.802",
+              "-180.27599999999998",
+              "78.37299999999999",
+              "181"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1430 398)",
+                "css": "matrix(1, 0, 0, 1, 1430, 398)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "reason": "encounter",
+            "anchor": "translate(1330 405)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+            "opacity": "1",
+            "image": [
+              "-45.5929203539823",
+              "-91.59292035398231",
+              "90.88053097345133",
+              "92"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1330 405)",
+                "css": "matrix(1, 0, 0, 1, 1330, 405)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          }
+        ],
+        "ruta": [
+          {
+            "id": "ruta-marker",
+            "direction": "ne",
+            "reason": null,
+            "opacity": "1",
+            "frame": "<svg x=\"984.0804935675862\" y=\"235.369667526947\" width=\"88.20282374373767\" height=\"132.3042356156065\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/base-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/base-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+          }
+        ]
+      },
+      {
+        "phase": "arrival",
+        "speaker": "Мельник",
+        "actors": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1430 398)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-43.802",
+              "-180.27599999999998",
+              "78.37299999999999",
+              "181"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1430 398)",
+                "css": "matrix(1, 0, 0, 1, 1430, 398)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "reason": "encounter",
+            "anchor": "translate(1330 405)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+            "opacity": "1",
+            "image": [
+              "-45.5929203539823",
+              "-91.59292035398231",
+              "90.88053097345133",
+              "92"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1330 405)",
+                "css": "matrix(1, 0, 0, 1, 1330, 405)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          }
+        ],
+        "ruta": [
+          {
+            "id": "ruta-marker",
+            "direction": "ne",
+            "reason": null,
+            "opacity": "1",
+            "frame": "<svg x=\"984.0804935675862\" y=\"235.369667526947\" width=\"88.20282374373767\" height=\"132.3042356156065\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/base-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/base-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+          }
+        ]
+      },
+      {
+        "phase": "arrival",
+        "speaker": "После победы",
+        "actors": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "reason": "encounter",
+            "anchor": "translate(1430 398)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/miller-conversation-left.png",
+            "opacity": "1",
+            "image": [
+              "-43.802",
+              "-180.27599999999998",
+              "78.37299999999999",
+              "181"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1430 398)",
+                "css": "matrix(1, 0, 0, 1, 1430, 398)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "reason": "encounter",
+            "anchor": "translate(1330 405)",
+            "href": "/ruby-village/assets/characters-facing-v1/residents/squirrel-conversation-front.png",
+            "opacity": "1",
+            "image": [
+              "-45.5929203539823",
+              "-91.59292035398231",
+              "90.88053097345133",
+              "92"
+            ],
+            "transforms": [
+              {
+                "attribute": "translate(1330 405)",
+                "css": "matrix(1, 0, 0, 1, 1330, 405)",
+                "opacity": "1"
+              },
+              {
+                "attribute": "translate(1.447396386822561 0) scale(0.7566418703506907)",
+                "css": "matrix(0.756642, 0, 0, 0.756642, 1.4474, 0)",
+                "opacity": "1"
+              }
+            ]
+          }
+        ],
+        "ruta": [
+          {
+            "id": "ruta-marker",
+            "direction": "ne",
+            "reason": null,
+            "opacity": "1",
+            "frame": "<svg x=\"984.0804935675862\" y=\"235.369667526947\" width=\"88.20282374373767\" height=\"132.3042356156065\" viewBox=\"0 432 144 216\" overflow=\"hidden\" data-motion-frame=\"assets/characters-walk-v1/animated-v3/base-ne.webp:0,432\" aria-label=\"Рута\"><image href=\"/ruby-village/assets/characters-walk-v1/animated-v3/base-ne.webp\" width=\"1152\" height=\"1728\"></image></svg>"
+          }
+        ]
+      }
+    ],
+    "walkSamples": [
+      {
+        "ms": "33",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "133",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "233",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "333",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "433",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "533",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "633",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "733",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "833",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "933",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1033",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1133",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1233",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1333",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1433",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1533",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1633",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1733",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1833",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "1933",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2033",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2133",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2233",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2333",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2433",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2533",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2633",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2733",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2833",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "2933",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3033",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3133",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "3933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "4933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "5933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "6933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "7933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "8933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "9933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "10933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "11933",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12033",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12133",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12233",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12333",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12433",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12533",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12633",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12733",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12833",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "12933",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13033",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13133",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13233",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13333",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13433",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13533",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13633",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13733",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13833",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "13933",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14033",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14133",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14233",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14333",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14433",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14533",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14633",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14733",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14833",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "14933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "15933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "16933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "17933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "18933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19133",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19733",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19833",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "19933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20033",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20132",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20233",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20433",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20533",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20633",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20732",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20832",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "20933",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21032",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21132",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21232",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21333",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21432",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21532",
+        "direction": "e",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21600",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21600",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      },
+      {
+        "ms": "21600",
+        "direction": "ne",
+        "residents": [
+          {
+            "id": "miller",
+            "view": "conversation-left",
+            "anchor": "translate(1430 398)"
+          },
+          {
+            "id": "squirrel",
+            "view": "conversation-front",
+            "anchor": "translate(1330 405)"
+          }
+        ]
+      }
+    ],
+    "pageErrors": [],
+    "gaitAcceptance": false
+  }
+]

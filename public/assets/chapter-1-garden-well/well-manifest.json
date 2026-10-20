@@ -1,0 +1,130 @@
+{
+  "candidate": "well-native-v1",
+  "status": "native-and-wide-awaiting-actual-game",
+  "source": "art/chapter-1-v9/garden-well/outpaint/well-native-painted-join-v1.png",
+  "sourceWholeSize": [
+    1593,
+    987
+  ],
+  "sourceAlphaCrop": [
+    42,
+    45,
+    1546,
+    918
+  ],
+  "uniformTargetSize": [
+    432,
+    251
+  ],
+  "offset": [
+    580,
+    365
+  ],
+  "nativeAlphaErosionRadius": 12,
+  "postResampleDropAlphaAtMost": 4,
+  "perimeterHardClip": false,
+  "strictAnyNonzeroAlpha": true,
+  "flowerFullAlphaFreeOverlap": 0,
+  "flowerOutsideInsetAcceptedUnion": 16,
+  "flowerOutsideAcceptedUnion": 3,
+  "flowerOutsideAcceptedUnionWith1pxTolerance": 0,
+  "flowerCellCenterAlphas": {
+    "4,1": 216,
+    "5,1": 251,
+    "6,1": 165,
+    "3,2": 251,
+    "4,2": 250,
+    "5,2": 251,
+    "6,2": 249,
+    "3,3": 250,
+    "4,3": 250,
+    "5,3": 251,
+    "2,4": 251,
+    "3,4": 251,
+    "4,4": 251,
+    "5,4": 251
+  },
+  "teacherProposedFeet": [
+    1320,
+    405
+  ],
+  "teacherFullAlphaFreeOverlap": 0,
+  "rasterTolerancePx": 1,
+  "schemaVersion": 1,
+  "canvas": [
+    1672,
+    941
+  ],
+  "background": "well/background.webp",
+  "sourceSha256": "e3342e0aed29eb5514972ff518766eb03fdee0c1e9a70cf762ab922d87644400",
+  "activation": "coordinator-only",
+  "recommendedResidentFeet": {
+    "teacher": [
+      1320,
+      405
+    ]
+  },
+  "npcStatus": "native full-alpha0, actual game composition pending",
+  "mapMatched": "original tile-roof stone well and warm cottages retained; naturally shaped daisies/roses/lavender cover all14 flower-cell centers",
+  "wide": {
+    "canvas": {
+      "width": 3272,
+      "height": 1200
+    },
+    "originalRect": {
+      "x": 800,
+      "y": 129,
+      "width": 1672,
+      "height": 941
+    },
+    "file": "well/wide.webp",
+    "registration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "baseRegistration": {
+      "sourceSize": [
+        2070,
+        760
+      ],
+      "uniformScale": 1.5806763285024155,
+      "scaledSize": [
+        3272,
+        1201
+      ],
+      "verticalCropStart": 0
+    },
+    "joinBand": 48,
+    "paintedSeam": {
+      "method": "builtin painted edit constrained to decorative source-pixel perimeter",
+      "coreBand": 72,
+      "outerAdjacency": 192,
+      "freePolygonGuard": 6,
+      "completeFreePolygonChangedPixels": 0,
+      "coreInteriorChangedPixels": 0,
+      "nativePropsChangedPixels": 0,
+      "wideOriginalRectBitExact": true
+    },
+    "status": "source-candidate-awaiting-actual-game"
+  },
+  "sourceBeforeJoin": "art/chapter-1-v9/garden-well/well-native-v1.png",
+  "sourceOriginalProposedFeet": [
+    1225,
+    405
+  ],
+  "coordinatorPlacementCorrection": {
+    "commit": "4929ac6",
+    "reason": "old source proposal clears free ground but Ruta hides teacher at accepted goal; keep both actors visible",
+    "independentQa": "docs/chapter-1-rc/qa/well-arrival-8da5d6d/README.md",
+    "fullAlphaGroundWaterOverlap": 0,
+    "arrivalResultPairwiseAlphaOverlap": 0
+  }
+}

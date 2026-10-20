@@ -1,0 +1,37 @@
+{
+  "canvas": [
+    1672,
+    941
+  ],
+  "waterCells": [
+    "6,0",
+    "6,1",
+    "6,2",
+    "5,3",
+    "5,4",
+    "5,5",
+    "4,6"
+  ],
+  "coarseRasterCandidatePixels": 46,
+  "analyticalBoundaryCheck": [
+    {
+      "convention": "pixel integer",
+      "coarseCandidateCount": 46,
+      "interiorBeyond1px": 0,
+      "maxFreeCellInteriorDistance": 0.45001046424634844
+    },
+    {
+      "convention": "pixel center",
+      "coarseCandidateCount": 46,
+      "interiorBeyond1px": 0,
+      "maxFreeCellInteriorDistance": 0.5515477614287647
+    }
+  ],
+  "boundaryExclusion": "1px MinFilter free interior; no erosion of water mask",
+  "bridgeEndMiddleEndMaskSamples": {
+    "5,1": 0,
+    "6,1": 255,
+    "7,1": 0
+  },
+  "artisticNaturalBankAcceptance": false
+}

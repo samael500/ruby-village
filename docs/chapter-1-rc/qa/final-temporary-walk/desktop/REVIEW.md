@@ -1,0 +1,5 @@
+Tested production 8bb08fbcb747ccc43cf8e24c8b627acb8d65b099 at http://127.0.0.1:5390/ruby-village/, Chromium desktop 1280×720, mouse. Served JS bytes checked against clean dist (served-freeze.json).
+
+PASS bounded full chapter: clean storage, eight ordinary scenes, actual tray/rotate/cell/place/check inputs, introductions, arrival conversations, results, next-scene progression and earned save reloads. No direct win injection or reduced-only shortcut. report.json and states-live.json record assertions; motion-summary.json records each scene's 32 changing atlas rectangles, 623–939 positions, start/walk/stop and direction changes. This is animated temporary walking, not a single static sliding sprite.
+
+actual-full-chapter-silent.mp4 is the actual full-run browser recording, explicitly SILENT. Targeted audiovisual recordings are separate. No runtime/source modifications. Physical phones, final character anatomy/style, no-slip and final resource/performance acceptance are outside this check. Landscape and placement/migration checks belong to separate independent QA outputs.

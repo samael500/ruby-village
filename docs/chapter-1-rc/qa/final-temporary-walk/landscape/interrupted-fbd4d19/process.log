@@ -1,0 +1,30 @@
+GAIT gate 16 1345
+COMPLETE gate 844
+GAIT garden 16 1560
+COMPLETE garden 844
+GAIT well 16 1318
+COMPLETE well 844
+GAIT bakery 16 1321
+COMPLETE bakery 844
+GAIT stream 16 1104
+COMPLETE stream 844
+Traceback (most recent call last):
+  File "/tmp/ruby-final-landscape-qa/docs/chapter-1-rc/qa/final-temporary-walk/landscape/review.py", line 65, in <module>
+    first=capture(sid,'first-placement');resume();after=capture(sid,'reload-first-placement');assert first['save']['session']['layout']==after['save']['session']['layout']
+                                         ^^^^^^^^
+  File "/tmp/ruby-final-landscape-qa/docs/chapter-1-rc/qa/final-temporary-walk/landscape/review.py", line 38, in resume
+    page.reload();tap(page.locator('#continue-game'));page.wait_for_load_state('networkidle');page.wait_for_selector('#app[data-motion="ready"]')
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ruby-final-landscape-qa/docs/chapter-1-rc/qa/final-temporary-walk/landscape/review.py", line 22, in tap
+    loc.scroll_into_view_if_needed();box=loc.bounding_box();assert box
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/ruby-rc-tools/lib/python3.12/site-packages/playwright/sync_api/_generated.py", line 13092, in scroll_into_view_if_needed
+    self._sync(
+  File "/tmp/ruby-rc-tools/lib/python3.12/site-packages/playwright/_impl/_sync_base.py", line 110, in _sync
+    wait_for_future(self._loop, self._dispatcher_fiber, task)
+  File "/tmp/ruby-rc-tools/lib/python3.12/site-packages/playwright/_impl/_greenlets.py", line 84, in wait_for_future
+    dispatcher_fiber.switch()
+KeyboardInterrupt
+Future exception was never retrieved
+future: <Future finished exception=TargetClosedError('Target page, context or browser has been closed')>
+playwright._impl._errors.TargetClosedError: Target page, context or browser has been closed

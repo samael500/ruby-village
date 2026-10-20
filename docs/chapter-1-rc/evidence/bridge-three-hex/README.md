@@ -1,0 +1,5 @@
+# Three-hex bridge runtime candidate
+
+The previous rectangular realistic deck is now clipped to the same three actual hex sections as the logical bridge, before the common camera projection. Visible shared section seams and outer contours preserve the tile footprint. No logical cells/solutions were changed; invisible hit cells remain interactive.
+
+Four real-input runs cover stream and mill at1280×720/844×390: actual UI solution placement, three bridge hit cells, installed art/water-overlay pairs, restored results and hidden technical layers. Only progress was seeded to open scenes. Reduced motion was enabled only for these focused appearance checks. The paired art capture temporarily hides technical water cell fill/landmark symbols; it does not alter painted water or game terrain. Current source is layout1 with its legacy background: final accepted-layout water/bank alignment remains pending and must repeat these checks. This is a reviewed candidate for shape restoration, not final artistic approval or real phone coverage.

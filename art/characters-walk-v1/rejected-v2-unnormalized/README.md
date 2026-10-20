@@ -1,0 +1,1 @@
+Rejected intermediate renders before common body registration and rounded knee caps. Source rig/phase were correct; image scale varied at turns and E/W cutout corners unfolded at bent knees. Full pre-fix source can be reproduced with exporter commit bb22826 and cleanup4ade673. These samples are not production art.

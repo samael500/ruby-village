@@ -1,0 +1,28 @@
+{
+  "sourceCommit": "24315eae4e74f5241956560574232a2cb993a524",
+  "sourceAppearanceCheckpoint": "25690fa",
+  "sourceBlendPath": "art/characters-mpfb-v1/motion/pilot/mpfb-walk-technical.blend",
+  "sourceBlendSha256": "a28bb5ee6acbbd91f2a66f817edd9051ffd7832aaca94873fad6f4fa4a2a3ba9",
+  "sourceUntouchedHashMatchesFreshOpen": true,
+  "reviewStatus": "Needs motion correction M1/M2 before six directions; evaluated contact/loop engineering baseline passes",
+  "findings": {
+    "M1": "Nearly straight rigid elbows; measured7.19776deg constant, actual upperarms swing16.04deg so not literally static",
+    "M2": {
+      "rightHandSatchelIntersectingFrames": 21,
+      "totalFrames": 24,
+      "trianglePairRangeIncludingClearFrames": [
+        0,
+        24
+      ]
+    }
+  },
+  "physicalPhone": "NOT RUN",
+  "familyPlaytest": "NOT RUN",
+  "gameIntegration": "NOT RUN; not integrated and rejected appearance",
+  "renderFloorMeasurement": {
+    "actualRenderSubdivisionLevel": 1,
+    "minimumWorldZ": 0.0003446785267442465,
+    "penetrationObservedAt97Samples": false,
+    "initialMeasurementCorrection": "viewport level0 minZ -.01975mm was initially mislabeled full subdivision; fresh corrected process evaluates renderlevel1, minZ +.34468mm. Source unchanged."
+  }
+}

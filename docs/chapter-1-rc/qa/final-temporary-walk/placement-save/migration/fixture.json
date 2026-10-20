@@ -1,0 +1,61 @@
+{
+  "version": 2,
+  "layoutVersion": 1,
+  "completed": [
+    "gate",
+    "garden",
+    "well",
+    "bakery"
+  ],
+  "introSeen": [
+    "gate",
+    "garden",
+    "well",
+    "bakery",
+    "stream"
+  ],
+  "letter": {
+    "qaRetained": true
+  },
+  "preferences": {
+    "mode": "select",
+    "reducedMotion": false
+  },
+  "session": {
+    "levelId": "stream",
+    "cols": 11,
+    "rows": 7,
+    "layout": {
+      "stream-v6-a": {
+        "anchor": {
+          "q": 4,
+          "r": 1
+        },
+        "turns": 2
+      },
+      "bridge": {
+        "anchor": {
+          "q": 6,
+          "r": 1
+        },
+        "turns": 0
+      },
+      "stream-a": {
+        "anchor": {
+          "q": 8,
+          "r": 1
+        },
+        "turns": 0
+      },
+      "stream-b": {
+        "anchor": {
+          "q": 6,
+          "r": 2
+        },
+        "turns": 0
+      }
+    },
+    "mode": "select",
+    "reducedMotion": false
+  }
+}

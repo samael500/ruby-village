@@ -1,0 +1,36 @@
+{
+  "actualRecordCount": 335,
+  "stateCounts": {
+    "idle": 7,
+    "start-L": 13,
+    "start-R": 13,
+    "stop-L": 13,
+    "stop-R": 13,
+    "settle": 7,
+    "walk": 25,
+    "pivot-left60": 41,
+    "pivot-right60": 41,
+    "pivot-left120": 81,
+    "pivot-right120": 81
+  },
+  "sourceShoeSignatures": {
+    "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf"
+  },
+  "maxHullReadbackError": 0.0,
+  "maxRootReadbackError": 0.0,
+  "maxOrientationRemovedRoundtripError": 8.026682371800855e-08,
+  "maxWrongDoubleYawDisplacementMeters": 0.32731474200763866,
+  "scope": "335 actual discrete records; not continuous swept volume; source/shoe hash invalidation required"
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-qa-pivot-footprints/art/characters-mpfb-v1/motion/transitions/mpfb-start-stop-technical.blend"
+Read blend: "/tmp/ruby-qa-pivot-footprints/art/characters-mpfb-v1/motion/pivot-study/mpfb-compact-pivot60-technical.blend"
+Read blend: "/tmp/ruby-qa-pivot-footprints/art/characters-mpfb-v1/motion/pivot-variants/right60/mpfb-compact-pivot-technical.blend"
+Read blend: "/tmp/ruby-qa-pivot-footprints/art/characters-mpfb-v1/motion/pivot-variants/left120/mpfb-compact-pivot-technical.blend"
+Read blend: "/tmp/ruby-qa-pivot-footprints/art/characters-mpfb-v1/motion/pivot-variants/right120/mpfb-compact-pivot-technical.blend"
+
+Blender quit

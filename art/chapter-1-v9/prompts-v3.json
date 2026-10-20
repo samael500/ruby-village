@@ -1,0 +1,32 @@
+{
+  "tool": "built-in image_gen",
+  "mode": "edit",
+  "date": "2026-10-17",
+  "status": "unaccepted candidates; do not activate in production",
+  "jobs": [
+    {
+      "output": "gate-v3-base.png",
+      "input": "gate-v2-closed.png",
+      "prompt": "Use case: precise-object-edit. Asset type: production game layered courtyard BASE illustration, exactly 1672x941. Edit target Image 1. Preserve every pixel position and overall composition, house, garden foliage left, back/top fence, right fence, lighting and painterly storybook materials. Only remove the FRONT bottom fence and entire gate, including the front fence from x80 y800 across bottom to x1540 y720, and replace their occupied pixels with natural calm painted grass, little path outside gate and edge foliage as appropriate. Preserve right vertical fence down to y695; remove diagonal/bottom front fence and gate. No characters, no UI, no text, no grid, no path hints. This image is the base plate underneath separate transparent foreground fence and animated gate. Keep exact crop and no zoom or reframing.",
+      "transparent_background": false
+    },
+    {
+      "output": "gate-v3-foreground-closed.png",
+      "input": "gate-v2-closed.png",
+      "prompt": "Use case: background-extraction. Asset type: exact-position transparent foreground layer for a 1672x941 game scene. Image 1 is edit target. Extract ONLY the lower FRONT wooden fence and CLOSED gate in their exact original positions, same size/crop/origin as source. Keep fence from bottom-left post at (108,820), along (1160,840), diagonally to gate left post (1310,770), closed gate to right post (1467,711), and short right rail to (1540,720). Include flowers/grass directly at fence feet but no large green base area. Everything else fully transparent: remove house, lawn, trees, back fence, right vertical fence above y700. Preserve original painted details and exact gate shape; do not invent or move objects. No text/UI/grid. Full canvas 1672x941 with true alpha, no checkerboard painting.",
+      "transparent_background": true
+    },
+    {
+      "output": "gate-v3-fixed-fence.png",
+      "input": "gate-v3-foreground-closed.png",
+      "prompt": "Use case: background-extraction. Edit target Image 1 transparent game layer. Keep EXACTLY same 1672x941 canvas and object positions, no scaling. Remove ONLY the CLOSED movable gate leaf (the wooden curved rectangular panel spanning x1318..1458 y717..846). Leave that area fully transparent. Keep all fixed fence rails, posts, flowers and stones exactly unchanged, including left/right gate posts. Preserve existing alpha everywhere else. True transparent background, no color fringe, no text.",
+      "transparent_background": true
+    },
+    {
+      "output": "gate-v3-gate-leaf.png",
+      "input": "gate-v2-closed.png",
+      "prompt": "Use case: background-extraction. Image 1 edit target. Extract ONLY the movable CLOSED wooden gate leaf: the curved-top wooden panel around x1320..1458 y718..847, including black metal leaf hinges and round handle. Remove both fixed posts and all fences, flowers, house, grass, background. True transparent alpha. Preserve exact original location, dimensions, proportions, warm wooden painted style. Keep 1672x941 full canvas with tiny gate leaf at lower right, DO NOT center/zoom/crop. Clean natural antialiased edge, no red/green outlines, no white matte, no checkerboard.",
+      "transparent_background": true
+    }
+  ]
+}

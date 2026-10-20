@@ -1,0 +1,20 @@
+{
+  "status": "actual game projection review pending",
+  "generator": "builtin image_gen",
+  "source": "art/bridge-v2/bridge-floor-generated-v4.png",
+  "sourceSha256": "582b4e70251ee53ce5ed6fe871a824b64ef192e7f8839555ea6d42164e236177",
+  "delivery": "public/assets/bridge-v2/bridge-floor-v4.webp",
+  "registration": {
+    "sourcePixelRoot": [
+      920,
+      428
+    ],
+    "sourcePixelHexRadius": 330,
+    "method": "single uniform fit to three top/bottom hex vertex pairs; shared ground camera and exact logical three-cell clip are retained"
+  },
+  "previousCandidate": "floor-v3: user wants distant edge inclined into map plane",
+  "correction": "Flatten distant zigzag coping, flush top plates and caps instead of upright posts. Same native registration and camera.",
+  "gameQa": "Coordinator actual tray/rotation/placement solves1280x720 and844x390 passed; no page errors. Independent review pending.",
+  "artAcceptance": "pending",
+  "productionEnabled": false
+}

@@ -1,0 +1,19 @@
+{
+  "status": "initial-candidates-require-correction-not-production-approved",
+  "sourceCommit": "uncommitted candidates in owner art/45-final-scenes; snapshots taken before correction",
+  "geometryCommit": "add7670 engine exports from accepted PR42",
+  "legend": "green full polygons = free; red = all non-ground including water",
+  "findings": [
+    "stream water artwork substantially shifted right into free cells; accepted water cells remain grass",
+    "garden table distant from accepted goal; owner correcting",
+    "well flower-bed boundary intrudes into some neighboring free polygons; inspect contour"
+  ],
+  "sourceHashes": {
+    "stream-v4.png": "66d15defd5ca0b0b3ff6f1ee5887f15205d4deaf0bdf640bb0f6985a0d677ce7",
+    "mill-v4.png": "24062e298aa52fc9c35546d477a588e9c393126bd6b77327447dc042c3764c2a",
+    "bakery-v4.png": "eccc47b183a016621c1c3c503800672aaad72e48eb13fd3ea7d1def3e33aa2a7",
+    "garden-v4.png": "d370c6c97261ed5bd1a21ec35361ae5714f08793a851407badb7c3da77d8bd1f",
+    "well-v4.png": "a462cb02f6bd172b57abd93c9b97fc4f54ab48e1536c3771ac96e39059ec15fc",
+    "post-v4.png": "83233707f34b22d78cf70e9e9cec6abaf45085687db33e7093d2f760b9a804da"
+  }
+}

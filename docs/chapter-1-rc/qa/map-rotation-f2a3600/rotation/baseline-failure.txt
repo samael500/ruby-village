@@ -1,0 +1,11 @@
+Initial run: scripts/qa/rotate-place.py copied to QA path
+  line 45: a=center(cell);touch_event('touchStart',a)
+  center line 23: r=loc.bounding_box();assert r
+AssertionError
+
+Reproduced after changing active gesture target to #placement-preview:
+  rotation.py line 48: a=center(q.locator('#placement-preview'));touch_event('touchStart',a)
+  center line 26: assert r
+AssertionError
+
+Case: stream, drag, native CDP touch, invalid released preview before separate active gesture. The gesture had not begun: failure-state events=[]. Existing DOM preview survives; coordinates partly negative at top-edge anchor. See failure.jpg and failure-state.json. Final corrected harness starts this separate gesture from the selected tray piece, verifies native pointercancel + lostpointercapture, and passes both matrices. This does not certify usability of re-grabbing an offboard/feedback-overlapped ghost itself.

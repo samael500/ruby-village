@@ -1,0 +1,22 @@
+{
+  "source": "6108ec2",
+  "input": "real mouse UI",
+  "firstView": "idle",
+  "afterNetworkRestoredAndReentry": "idle",
+  "expectedActivityView": "conversation-left",
+  "controlDimensions": [
+    604,
+    981
+  ],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png",
+      "networkRestored": false
+    },
+    {
+      "url": "http://127.0.0.1:5298/ruby-village/assets/characters-facing-v1/residents/rabbit-conversation-left.png?control=1",
+      "networkRestored": true
+    }
+  ],
+  "saveOrigin": "actual clean sequence garden reload-empty state, not fabricated completion"
+}

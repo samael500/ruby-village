@@ -1,0 +1,13 @@
+{
+  "tool": "built-in image_gen",
+  "prompt": "Use case: precise-object-edit. Image1 EDIT TARGET exact1672x941 native game scene. Image2 GUIDANCE ONLY: magenta15px band marks allowed water-side shoreline repair, do NOT copy magenta. Repair the cut-out angular banks inside that thin band: paint small naturally irregular gray/mossy river pebbles, exposed warm brown damp-earth edge, fine roots and grass tufts to make continuous natural hand-painted shore along BOTH sides of existing zigzag river, especially upper section near x810..985,y300..435 and lower join near x930..1070,y725. Existing grass looks abruptly pasted over river; replace that hard water-side edge with a believable low earthen bank and small pebbles, all on WATER side. Leave the grassy side of every boundary COMPLETELY unchanged and dry. River channel exact position/width/zigzag remains unchanged; no widening or moving, no smoothing away bends. Keep stream flowing through top entry y285 and bottom exit y785 uninterrupted: no horizontal cap/grass plug/pebble dam there; the magenta band across either end is guide artifact, ignore end caps. Everything outside narrow river edge stays pixel-identical: house, trees, every free lawn polygon, decorative river outside board, camera, light, colors, crops. Same painterly fairy-tale style, fine softly drawn stone/earth shore. No bridge, road, paving, furniture, characters, text/UI/grid, no visible magenta. Output exact native landscape1672x941 composition.",
+  "source": "/home/mskorokhod/.codex/generated_images/01a14b19-9619-7ec3-b417-0c6759d7992a/exec-6e5c7628-4b8d-473b-9457-0bc745cabfef.png",
+  "nativeSize": [
+    1672,
+    941
+  ],
+  "editTarget": "art/chapter-1-v9/candidates/stream-bank-edit-target-v1.png",
+  "guide": "art/chapter-1-v9/layers/water/stream-pilot/bank-strip-edit-guide.png",
+  "composition": "script imports only logicalwater side; complete77-board dryfree ground guarded by originalsource; decorative continuation only outside completeboard",
+  "status": "exactmask-checks-passed-art-game-review-pending"
+}

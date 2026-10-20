@@ -1,0 +1,9 @@
+# Actual invalid drop → rotation → automatic placement — `6108ec2`
+
+**PASS**: separate 1280×720 mouse and 844×390 native CDP touch contexts, actual settings control switched to drag mode. Both resume progress genuinely earned by the completed clean desktop playthrough; no fabricated completed places or board placements are injected. The stream board starts empty.
+
+For both the three-cell stone and bridge: inventory rotation never places anything; an invalid released drag retains an invalid preview while confirmed cells and persisted layout stay empty; rotation through the visible right-turn control immediately commits the now-valid figure at the **same anchor**, without another drag or confirm button. Each instance owns exactly three cells. Real reselect, cancel selection, undo and reload return to the empty persisted layout. Native `touchCancel` during a separate drag leaves confirmed cells/save unchanged. Mouse OS-generated pointer cancellation was **not** exercised here.
+
+`1280/report.json` and `844/report.json`, screenshots and actual silent WebM videos preserve evidence. Native dragging deliberately lifts vertically out of the horizontally scrollable tray before moving towards the field, consistent with the actual gesture contract. A preliminary diagonal gesture scrolled/cancelled rather than producing a board preview; its zero-placement outcome was not called a game defect. Other preliminary harness mistakes were selecting a deliberately hidden unused handle and counting empty `data-owner` attributes as owners. The final harness uses the visible tray chip and nonempty owners. Preliminary artifacts remain local outside successful directories.
+
+These recordings contain no sound. This test does not approve bridge art, a physical phone or a family test. Runtime files were not edited.

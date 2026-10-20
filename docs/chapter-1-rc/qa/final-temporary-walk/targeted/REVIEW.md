@@ -1,0 +1,7 @@
+Same frozen production 8bb08fb, Chromium desktop1280×720. PASS gate/stream/mill actual normal Check→animated walk/turn/stop→arrival→completion. Initial layouts are exact earned reload-solved saves from the clean full8 desktop input run, not fabricated victories. No navigation during each audiovisual capture. Decoded contacts visibly show the character progressing along the route and crossing the stream/mill bridge.
+
+Gate modal pause: observed route clock483ms before and after500ms paused; resume subsequently completed victory. UI “Меньше движения” enabled in a separate earned gate save: one idle rectangle, immediate completion without hang; this intentionally does not claim animated reduced motion.
+
+Each actual-audio.mp4 contains video plus captured WebAudio (av-validation.json: nonzero RMS/peaks). Audio captured through observational AudioContext/MediaRecorder routing; estimated alignment uses first running event and navigation clock, not hardware-sync calibration or per-foot sound timing. Fullchapter movie is silent; these clips have actual audio. Input WebM hashes are retained; duplicate silent captures were compressed to MP4/omitted from git. Audio originals retained.
+
+No page or HTTP errors in these four contexts. Pause/reduced and normal walk scopes passed; no claim of final art, physical phone, stable FPS, acoustic loudness or no-slip. Temporary animated-v3 character still has known imperfect anatomy; this check establishes working animation and actual victory, not new appearance approval.

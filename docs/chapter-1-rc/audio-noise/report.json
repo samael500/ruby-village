@@ -1,0 +1,162 @@
+{
+  "scope": "Objective decoded-stem and equal-RMS comparisons, no human listening claim. Music and SFX bytes unchanged. Final real browser mix capture follows integration.",
+  "ambiences": [
+    {
+      "scene": "leaves",
+      "before": {
+        "peakDbFS": -27.763,
+        "rmsDbFS": -43.463,
+        "quiet100msPercentile10DbFS": -44.564,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 6.738754018442705e-05
+      },
+      "after": {
+        "peakDbFS": -31.463,
+        "rmsDbFS": -49.973,
+        "quiet100msPercentile10DbFS": -180.0,
+        "nearSilentWindowsPercent": 90.0,
+        "loopEdgeDelta": 0.0
+      },
+      "beforeSha256": "5012b94ee033d5c97c1aadfb733b2a96b1632576253fc52566f9eb2e50566643",
+      "afterSha256": "ce20e7a231d0093f02ad6b3f192dfdb363573a2be3233ea40fe763da38380be9"
+    },
+    {
+      "scene": "village",
+      "before": {
+        "peakDbFS": -27.763,
+        "rmsDbFS": -43.463,
+        "quiet100msPercentile10DbFS": -44.564,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 6.738754018442705e-05
+      },
+      "after": {
+        "peakDbFS": -31.463,
+        "rmsDbFS": -49.973,
+        "quiet100msPercentile10DbFS": -180.0,
+        "nearSilentWindowsPercent": 90.0,
+        "loopEdgeDelta": 0.0
+      },
+      "beforeSha256": "1a11aa5f0d78e99ca904b3d443c094ee43a56a1097fae30fe320846bbe2afab8",
+      "afterSha256": "b01a95441435abb8e629918f0301ee476a18e97ed46bf6930c030e0b5e06174f"
+    },
+    {
+      "scene": "bakery",
+      "before": {
+        "peakDbFS": -36.326,
+        "rmsDbFS": -47.577,
+        "quiet100msPercentile10DbFS": -47.608,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 6.155030860099941e-05
+      },
+      "after": {
+        "peakDbFS": -54.319,
+        "rmsDbFS": -79.211,
+        "quiet100msPercentile10DbFS": -180.0,
+        "nearSilentWindowsPercent": 96.67,
+        "loopEdgeDelta": 0.0
+      },
+      "beforeSha256": "6a1618a341663e351abac96c5413ca84cea51f8600c03b6b8a7bb6845c6381f1",
+      "afterSha256": "ff55aca10ec30d4b8a352d3237e0bdeab1af048a0bfb7ad59bbfaa91dfd0a825"
+    },
+    {
+      "scene": "water",
+      "before": {
+        "peakDbFS": -26.982,
+        "rmsDbFS": -38.161,
+        "quiet100msPercentile10DbFS": -38.178,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 0.00014229948283173144
+      },
+      "after": {
+        "peakDbFS": -41.169,
+        "rmsDbFS": -57.818,
+        "quiet100msPercentile10DbFS": -180.0,
+        "nearSilentWindowsPercent": 76.67,
+        "loopEdgeDelta": 0.0
+      },
+      "beforeSha256": "caa82451727dac3927b1f903fc7bba9cee573bf61154fd54cf085ac82cb7416a",
+      "afterSha256": "c945fcd4f99c881f06377d3c9383571a2dbb39e73cc122974139f3adea48cc38"
+    },
+    {
+      "scene": "forest",
+      "before": {
+        "peakDbFS": -27.763,
+        "rmsDbFS": -43.463,
+        "quiet100msPercentile10DbFS": -44.564,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 6.738754018442705e-05
+      },
+      "after": {
+        "peakDbFS": -31.463,
+        "rmsDbFS": -49.973,
+        "quiet100msPercentile10DbFS": -180.0,
+        "nearSilentWindowsPercent": 90.0,
+        "loopEdgeDelta": 0.0
+      },
+      "beforeSha256": "573988d446ca85e49c1948ce28bf37f354956e0cad9f2b7f8b657269a3b6a7a9",
+      "afterSha256": "5d7bffce4a3b37c6313f378b7074b34c76f54f02c1f4d9f2378412e1164a1077"
+    }
+  ],
+  "mixes": [
+    {
+      "cue": "village",
+      "state": "before",
+      "musicExcerpt": "six seconds before loop edge through18 seconds after",
+      "sameMasterAndCueGain": true,
+      "comparisonRmsTargetDbFS": -24.437,
+      "normalizationGain": 6.396163190224979,
+      "metrics": {
+        "peakDbFS": -11.474,
+        "rmsDbFS": -24.437,
+        "quiet100msPercentile10DbFS": -31.934,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 0.10836943238973618
+      }
+    },
+    {
+      "cue": "village",
+      "state": "after",
+      "musicExcerpt": "six seconds before loop edge through18 seconds after",
+      "sameMasterAndCueGain": true,
+      "comparisonRmsTargetDbFS": -24.437,
+      "normalizationGain": 6.4311404972075605,
+      "metrics": {
+        "peakDbFS": -11.193,
+        "rmsDbFS": -24.437,
+        "quiet100msPercentile10DbFS": -32.164,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 0.10889303684234619
+      }
+    },
+    {
+      "cue": "water",
+      "state": "before",
+      "musicExcerpt": "six seconds before loop edge through18 seconds after",
+      "sameMasterAndCueGain": true,
+      "comparisonRmsTargetDbFS": -24.437,
+      "normalizationGain": 6.16984793567335,
+      "metrics": {
+        "peakDbFS": -11.497,
+        "rmsDbFS": -24.437,
+        "quiet100msPercentile10DbFS": -30.131,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 0.1331673264503479
+      }
+    },
+    {
+      "cue": "water",
+      "state": "after",
+      "musicExcerpt": "six seconds before loop edge through18 seconds after",
+      "sameMasterAndCueGain": true,
+      "comparisonRmsTargetDbFS": -24.437,
+      "normalizationGain": 6.3010558801549115,
+      "metrics": {
+        "peakDbFS": -12.089,
+        "rmsDbFS": -24.437,
+        "quiet100msPercentile10DbFS": -30.732,
+        "nearSilentWindowsPercent": 0.0,
+        "loopEdgeDelta": 0.1361420452594757
+      }
+    }
+  ]
+}

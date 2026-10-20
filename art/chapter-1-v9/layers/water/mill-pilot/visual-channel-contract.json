@@ -1,0 +1,77 @@
+{
+  "purpose": "artistic channel only; exact logical-water-mask.png remains unchanged gameplay truth",
+  "groundScale": 0.65,
+  "method": "smooth Catmull-Rom centerline through all accepted water-cell centers;66\u00b15px ground width;8px source-edit shoreline guidance;24px delivery art support to retain whole painted stones/earth and adjacent dry grass; clipped inside logical union",
+  "controlPoints": [
+    [
+      640,
+      260
+    ],
+    [
+      624.9742261192856,
+      330
+    ],
+    [
+      564.352447854375,
+      398.25
+    ],
+    [
+      503.73066958946424,
+      466.5
+    ],
+    [
+      564.352447854375,
+      534.75
+    ],
+    [
+      624.9742261192856,
+      603
+    ],
+    [
+      564.352447854375,
+      671.25
+    ],
+    [
+      624.9742261192856,
+      739.5
+    ],
+    [
+      650,
+      810
+    ]
+  ],
+  "waterCellCenters": {
+    "4,0": {
+      "x": 624.9742261192856,
+      "y": 330
+    },
+    "3,1": {
+      "x": 564.352447854375,
+      "y": 398.25
+    },
+    "2,2": {
+      "x": 503.73066958946424,
+      "y": 466.5
+    },
+    "2,3": {
+      "x": 564.352447854375,
+      "y": 534.75
+    },
+    "2,4": {
+      "x": 624.9742261192856,
+      "y": 603
+    },
+    "1,5": {
+      "x": 564.352447854375,
+      "y": 671.25
+    },
+    "1,6": {
+      "x": 624.9742261192856,
+      "y": 739.5
+    }
+  },
+  "logicalWaterMask": "logical-water-mask.png",
+  "actualVisualWaterBodyMask": "visual-water-body-mask.png",
+  "actualArtBankMask": "visual-water-and-bank-mask.png",
+  "status": "guide-only-native-art-and-game-review-pending"
+}

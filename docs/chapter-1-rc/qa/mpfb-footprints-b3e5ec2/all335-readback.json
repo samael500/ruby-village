@@ -1,0 +1,3045 @@
+{
+  "actualRecordCount": 335,
+  "stateCounts": {
+    "idle": 7,
+    "start-L": 13,
+    "start-R": 13,
+    "stop-L": 13,
+    "stop-R": 13,
+    "settle": 7,
+    "walk": 25,
+    "pivot-left60": 41,
+    "pivot-right60": 41,
+    "pivot-left120": 81,
+    "pivot-right120": 81
+  },
+  "sourceShoeSignatures": {
+    "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf",
+    "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7": "ae907b7f7ba9f6219235f8799c9ffefc0e3e4c130dfe9553c52c8d40b13c85bf"
+  },
+  "maxHullReadbackError": 0.0,
+  "maxRootReadbackError": 0.0,
+  "maxOrientationRemovedRoundtripError": 8.026682371800855e-08,
+  "maxWrongDoubleYawDisplacementMeters": 0.32731474200763866,
+  "scope": "335 actual discrete records; not continuous swept volume; source/shoe hash invalidation required",
+  "records": [
+    {
+      "state": "idle",
+      "frame": 1.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "idle",
+      "frame": 2.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "idle",
+      "frame": 3.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "idle",
+      "frame": 4.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "idle",
+      "frame": 5.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "idle",
+      "frame": 6.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "idle",
+      "frame": 7.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 1.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 2.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 3.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 4.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 5.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 6.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 7.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 8.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 9.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 10.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 11.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 12.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-L",
+      "frame": 13.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 1.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 2.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 3.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 4.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 5.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 6.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 7.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 8.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 9.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 10.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 11.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 12.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "start-R",
+      "frame": 13.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 1.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 2.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 3.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 4.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 5.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 6.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 7.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 8.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 9.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 10.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 11.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 12.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-L",
+      "frame": 13.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 1.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 2.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 3.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 4.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 5.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 6.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 7.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 8.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 9.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 10.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 11.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 12.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "stop-R",
+      "frame": 13.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "settle",
+      "frame": 1.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "settle",
+      "frame": 2.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "settle",
+      "frame": 3.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "settle",
+      "frame": 4.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "settle",
+      "frame": 5.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "settle",
+      "frame": 6.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "settle",
+      "frame": 7.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 1.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 2.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 3.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 4.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 5.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 6.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 7.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 8.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 9.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 10.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 11.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 12.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 13.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 14.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 15.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 16.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 17.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 18.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 19.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 20.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 21.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 22.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 23.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 24.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "walk",
+      "frame": 25.0,
+      "sourceSha256": "5b10e45b08695e51f1fed2e251e1981dfe3c405ae9ee63144fa0c43c3501ed8e",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 1.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 2.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 3.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 4.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 5.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 6.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.679882693323606e-09,
+      "doubleYawWouldDisplaceMaxMeters": 5.057621821307283e-07
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 7.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.334034009035846e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.00010199774195314711
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 8.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0005983956296348959
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 9.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.155189738369847e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.001749832616370178
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 10.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.24750175746099e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0037580184739736664
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 11.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.280032699210963e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.006774385079191866
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 12.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.705522537231445e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.010905914262341396
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 13.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.006850114687196e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.016238293322990153
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 14.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.018390663491007e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.022881815262806787
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 15.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.470348358154297e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.030894152862859302
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 16.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.566330713082575e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.04019096904990318
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 17.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.839941346661803e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.05046682766077234
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 18.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.817286627724617e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.06132789670809089
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 19.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.505137586015397e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.07260697364027434
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 20.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.075764607749913e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0844871630505136
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 21.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.450726114655054e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.09603418594209201
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 22.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10447280528000326
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 23.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.60887068199315e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10841609890427832
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 24.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7299440045842505e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.12035655312999728
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 25.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.006850114687196e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.13806151437295602
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 26.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1513849678671612
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 27.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16073355537860598
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 28.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16890531132513983
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 29.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.712160915387242e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17565390598487232
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 30.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.4241045484546706e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1798021955330895
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 31.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18109345342415734
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 32.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.817286627724617e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18102886253419326
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 33.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.53201124839352e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18100627114985154
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 34.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.81423485405856e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18117488093676892
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 35.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18107266743176179
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 36.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.785222030678812e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1809171347530415
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 37.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.53201124839352e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18022356200966758
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 38.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17631010132864836
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 39.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.0165816718429e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17046054597880722
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 40.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.514431838712321e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16639946713302073
+    },
+    {
+      "state": "pivot-left60",
+      "frame": 41.0,
+      "sourceSha256": "49518f554f8b6b12e0f40d97376eb4c5733b6fd8c6e7e30975a22d8e842de753",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725363057327527e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16551570232493623
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 1.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 2.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 3.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 4.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 5.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 6.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.679882693323606e-09,
+      "doubleYawWouldDisplaceMaxMeters": 5.057621821307283e-07
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 7.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.3333022460664214e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.00010199774195314711
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 8.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.007030606269836e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0005983956296348959
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 9.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.255826213861504e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.001749832616370178
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 10.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.169265196352898e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0037580184739736664
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 11.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0067743793062267355
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 12.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.674406255472048e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.010905914262341396
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 13.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.973229209836102e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.016238293322990153
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 14.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.078619089752704e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.022881819078565416
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 15.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.723421673470061e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.03089415097875965
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 16.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.667775365017976e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.04019096735270357
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 17.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.05046682766077234
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 18.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.061327889471034604
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 19.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.8714352419276774e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.07260699608735029
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 20.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.109930376282605e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0844871585723208
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 21.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.508562643358995e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.09603417139535582
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 22.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.3338039902137046e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10447280528000326
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 23.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.514431838712321e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10841607742862397
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 24.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.726454269838064e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.12035654249020607
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 25.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.005804691604036e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.13806151437295602
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 26.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1513849371070837
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 27.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.822069796952525e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16073354324699657
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 28.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16890530908512857
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 29.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.7706993203109864e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17565389910879986
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 30.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.4241045484546706e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17980222501290016
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 31.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.414284955677271e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1810934072999035
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 32.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18102883230961744
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 33.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.712160915387242e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18100623256047005
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 34.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.634573255449234e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18117487836653798
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 35.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1810726931485782
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 36.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.998001405968792e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1809171347530415
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 37.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.344397704933063e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18022353100408836
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 38.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17631011189324491
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 39.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.029517556127894e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17046056236950674
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 40.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.337203127736024e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1663994363500217
+    },
+    {
+      "state": "pivot-right60",
+      "frame": 41.0,
+      "sourceSha256": "d6849f30d21a18642231b68b989ca48c3c6a299d13cb152347d568b5dfee8874",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1655156910713501
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 1.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 2.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 3.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 4.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 5.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 6.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.679882693323606e-09,
+      "doubleYawWouldDisplaceMaxMeters": 5.057621821307283e-07
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 7.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.334034009035846e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.00010199774195314711
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 8.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0005983956296348959
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 9.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.155189738369847e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.001749832616370178
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 10.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.24750175746099e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0037580184739736664
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 11.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.280032699210963e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.006774385079191866
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 12.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.705522537231445e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.010905914262341396
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 13.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.006850114687196e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.016238293322990153
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 14.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.018390663491007e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.022881815262806787
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 15.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.470348358154297e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.030894152862859302
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 16.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.566330713082575e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.04019096904990318
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 17.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.839941346661803e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.05046682766077234
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 18.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.817286627724617e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.06132789670809089
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 19.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.470348358154297e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.07260698967390074
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 20.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.819089469244073e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.08448717131794585
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 21.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.450726114655054e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.09603418594209201
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 22.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10447280528000326
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 23.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.514431838712321e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10841609890427832
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 24.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7299440045842505e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.12035655312999728
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 25.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.006850114687196e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.13806151437295602
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 26.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1513849678671612
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 27.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16073355537860598
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 28.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16890531132513983
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 29.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.712160915387242e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17565390598487232
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 30.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.4241045484546706e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1798021955330895
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 31.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18109345342415734
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 32.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.817286627724617e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18102886253419326
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 33.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.53201124839352e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18100627114985154
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 34.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.81423485405856e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18117488093676892
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 35.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18107266743176179
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 36.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.785222030678812e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1809171347530415
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 37.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.53201124839352e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18022356200966758
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 38.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17631010132864836
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 39.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.0165816718429e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17046054597880722
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 40.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.514431838712321e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16639946713302073
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 41.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725363057327527e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16551570232493623
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 42.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.960037906741593e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1663994503422947
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 43.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.337203127736024e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17046815928908396
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 44.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.960037906741593e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17660531689509776
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 45.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.889317255061325e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18076198347042408
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 46.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.607929615994163e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.181407712483651
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 47.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18158386738330842
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 48.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.580174614733344e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18217688534471566
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 49.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.146728992462158e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18319293666888237
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 50.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.001471035963875e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18510268398249957
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 51.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.5472963212928556e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1881047618711283
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 52.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.7706993203109864e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.19229113626165864
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 53.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.514431838712321e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.19792797292655961
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 54.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.188917057900187e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.20554864131613695
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 55.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.344397704933063e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.21500932195373987
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 56.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.344397704933063e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2255485918407402
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 57.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.899854376154358e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2359433245749122
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 58.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.376669842237119e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2453792446863838
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 59.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.3726900748371916e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2542618663703197
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 60.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.7743341393680485e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2638822449242862
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 61.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.4868102187089264e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2718331708669993
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 62.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.27168285023859207
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 63.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.9775216028210935e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.26207906470309117
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 64.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2732188120892031
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 65.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.344647261052689e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2969520893834077
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 66.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 8.026682371800855e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3109481044439413
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 67.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.674193133312396e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.31750443695752767
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 68.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.842877388000488e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.32289552539279165
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 69.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.955043205642187e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3268343675829761
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 70.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.420049048816445e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.32731474200763866
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 71.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.8714352419276774e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.32405315185893374
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 72.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.7706993203109864e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.31977886868500466
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 73.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.012260442327338e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3168294925102382
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 74.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3152671962323974
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 75.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.960037906741593e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3140807108557481
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 76.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3134169833883991
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 77.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.31215626766584
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 78.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.075764607749913e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3053780091676545
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 79.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.24750175746099e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2952462427298317
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 80.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.006850114687196e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2882122861875039
+    },
+    {
+      "state": "pivot-left120",
+      "frame": 81.0,
+      "sourceSha256": "15a76ed4d620b21449853dd466be237e889688940d402442f881c8b457b219b4",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.960464477539063e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2866816935902426
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 1.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 2.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 3.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 4.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 5.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 0.0,
+      "doubleYawWouldDisplaceMaxMeters": 0.0
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 6.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.679882693323606e-09,
+      "doubleYawWouldDisplaceMaxMeters": 5.057621821307283e-07
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 7.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.3333022460664214e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.00010199774195314711
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 8.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.007030606269836e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0005983956296348959
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 9.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.255826213861504e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.001749832616370178
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 10.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.169265196352898e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0037580184739736664
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 11.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0067743793062267355
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 12.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.674406255472048e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.010905914262341396
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 13.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.973229209836102e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.016238293322990153
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 14.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.078619089752704e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.022881819078565416
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 15.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.723421673470061e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.03089415097875965
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 16.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.667775365017976e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.04019096735270357
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 17.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.05046682766077234
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 18.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.061327889471034604
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 19.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.485843546238652e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.07260698967390071
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 20.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.109930376282605e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.0844871585723208
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 21.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.508562643358995e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.09603417139535582
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 22.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.3338039902137046e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10447280528000326
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 23.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.514431838712321e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.10841607742862397
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 24.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7299440045842505e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.12035654249020607
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 25.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.005804691604036e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.13806151437295602
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 26.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1513849371070837
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 27.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.822069796952525e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16073354324699657
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 28.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.012260442327338e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16890530908512857
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 29.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.7706993203109864e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17565389910879986
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 30.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.4241045484546706e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17980222501290016
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 31.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.414284955677271e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1810934072999035
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 32.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18102883230961744
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 33.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.712160915387242e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18100623256047005
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 34.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.81423485405856e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18117487836653798
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 35.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.414284955677271e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18107270343530374
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 36.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.998001405968792e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1809171347530415
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 37.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.344397704933063e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18022353100408836
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 38.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7438704152110554e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17631011189324491
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 39.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.029517556127894e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17046056236950674
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 40.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.337203127736024e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1663994363500217
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 41.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1655156910713501
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 42.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.470348358154297e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.16639946153611224
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 43.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17046815928908396
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 44.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725363057327527e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.17660531162162918
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 45.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.889317255061325e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18076197831822022
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 46.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.012260442327338e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18140772275137926
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 47.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.012260442327338e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18158386738330842
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 48.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.537857940340133e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1821769262422189
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 49.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.188728972220465e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18319297225572054
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 50.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.889317255061325e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1851026537941966
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 51.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.842877388000488e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.18810471236027654
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 52.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.53201124839352e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.19229111931012766
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 53.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.332000937312528e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.1979279729265596
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 54.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.05288029062447e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2055486685016004
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 55.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2150094268921623
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 56.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.7706993203109864e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2255485918407402
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 57.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.712160915387242e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.23594329842451184
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 58.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.376669842237119e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.24537922096487313
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 59.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.998001405968792e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.25426185446606336
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 60.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.143906154658885e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2638822343363522
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 61.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.474227186092851e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.27183319998868977
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 62.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.515665622088476e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2716827902489871
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 63.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.471318380593435e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.262079034497541
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 64.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2732188091065854
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 65.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.012260442327338e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2969520878152716
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 66.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 8.026682371800855e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.31094804042354107
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 67.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.998001405968792e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3175043716925203
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 68.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.348388884190005e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.32289549546833807
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 69.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 7.955043205642187e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3268344379306074
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 70.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.705522537231445e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.32731474200763866
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 71.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.725290298461914e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.32405309806159893
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 72.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.360340502381185e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3197789160114299
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 73.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.7990655851310376e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3168294807522091
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 74.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.514431838712321e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.31526714896721253
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 75.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.2146848510894035e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3140806634120122
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 76.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 3.3527612686157227e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3134170309326001
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 77.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 5.600339315225522e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.3121563691052973
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 78.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.155189738369847e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.30537799086923273
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 79.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.144611985685931e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2952462174946895
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 80.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 4.726863481271833e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2882122861875039
+    },
+    {
+      "state": "pivot-right120",
+      "frame": 81.0,
+      "sourceSha256": "0e00ac53971cbf089ef66b1124637fdd47145e1a9c42b6fc3530410e9e5c3ef7",
+      "rootError": 0.0,
+      "hullMaxReadbackError": 0.0,
+      "orientationRemovedWorldRoundtripMaxError": 6.007030606269836e-08,
+      "doubleYawWouldDisplaceMaxMeters": 0.2866816935902426
+    }
+  ]
+}

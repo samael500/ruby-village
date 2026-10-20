@@ -1,0 +1,23 @@
+diff --git a/index.html b/index.html
+index d37987b..51bbbf8 100644
+--- a/index.html
++++ b/index.html
+@@ -1 +1 @@
+-<!doctype html><html lang="ru"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#eae6d7"><meta name="description" content="Рута возвращает исчезнувшие дороги. Первая глава из восьми гексагональных головоломок и свободная песочница."><title>Рубиновая деревня · первая глава</title></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
++<!doctype html><html lang="ru"><head><style>body::after{content:"НЕЗАВИСИМЫЙ ПИЛОТ4СЦЕН · НЕ RC";position:fixed;bottom:0;right:0;z-index:9999;font:10px sans-serif;background:#fff7cf;color:#493d24;padding:3px 6px;pointer-events:none}#map-open,#completion-map,#next-level{display:none!important}</style><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#eae6d7"><meta name="description" content="Рута возвращает исчезнувшие дороги. Первая глава из восьми гексагональных головоломок и свободная песочница."><title>Рубиновая деревня · первая глава</title></head><body><div id="app"></div><script type="module" src="/src/main.ts"></script></body></html>
+diff --git a/src/production-chapter.ts b/src/production-chapter.ts
+index 165ae24..412fe69 100644
+--- a/src/production-chapter.ts
++++ b/src/production-chapter.ts
+@@ -6,9 +6,9 @@ import paintedManifest from '../public/assets/chapter-1/v9/manifest.json' with {
+ import {paintedActivationBlockers} from './painted-activation.ts';
+ // Atomic integration gate: switch only when all matching scene layers pass art review.
+ // #44 remains exported/tested independently; legacy art retains matching gameplay.
+-export const PRODUCTION_LAYOUT_VERSION=1;
++export const PRODUCTION_LAYOUT_VERSION=2;
+ const paintedActive=PRODUCTION_LAYOUT_VERSION>=2;
+-if(paintedActive){const blockers=paintedActivationBlockers(paintedManifest,acceptedScenes);if(blockers.length)throw new Error(`Painted chapter activation blocked: ${blockers.join('; ')}`);}
++if(paintedActive){const blockers=paintedActivationBlockers(paintedManifest,Object.fromEntries(Object.entries(acceptedScenes).filter(([id])=>["gate","bakery","post","forest"].includes(id)))).filter(reason=>!reason.includes("full-polygon visual audit not passed"));if(blockers.length)throw new Error(`Painted chapter activation blocked: ${blockers.join('; ')}`);}
+ export const productionLevels:readonly Level[]=paintedActive?acceptedLevels:acceptedLevels.map(level=>{
+  const logical=legacy['chapter-1.logical.json'][level.id as keyof typeof legacy['chapter-1.logical.json']];
+  const solution=legacy['art-solutions.json'][level.id as keyof typeof legacy['art-solutions.json']];
