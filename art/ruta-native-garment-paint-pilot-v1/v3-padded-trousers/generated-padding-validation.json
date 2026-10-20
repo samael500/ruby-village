@@ -1,0 +1,16 @@
+{
+  "status": "SUITABLE-FOR-TWO-ACTUAL-RENDERS",
+  "rawSHA256": "b61be8876856d1463b9a8dfa7afecf60c95333f45792180a0e717fd08a107179",
+  "imageSize": [
+    1254,
+    1254
+  ],
+  "actualUVTexels": 109387,
+  "actualBoundaryTexels": 7962,
+  "nonerodedCreamLikeFraction": 0.0,
+  "nonerodedOliveLikeFraction": 0.0,
+  "boundaryCreamLikeFraction": 0.0,
+  "minimumBoundaryToBackgroundChebyshevPixels": 7,
+  "conservativeEuclideanDistanceLowerBoundPixels": 6,
+  "definition": "actual UV raster union, boundary=union minus1px erosion; background/cream R>185,G>170,B>140,spread<75. Min distance by square neighborhood dilation is Chebyshev pixel distance; no pixel edits."
+}
