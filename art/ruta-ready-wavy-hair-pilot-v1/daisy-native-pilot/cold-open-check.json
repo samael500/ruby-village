@@ -1,0 +1,25 @@
+{
+  "status": "COLD-OPEN-INVARIANTS-PASS-ART-LIKENESS-PENDING",
+  "sourceBlendSha256": "a60a9601d6a8daa3dfc271b5152d41a361f9397847e111d80c08b3ae05e6d754",
+  "outputBlendSha256": "4eda3cc6410a8a24a6e90528ff89bea674c33fdd7bb39ceeda80632c11c31ea8",
+  "sourceOutputUnchangedByCheck": true,
+  "allOriginalMeshCoordsTopologyUVWeightsMaterialsExact": true,
+  "allBonesAndActionCurvesExact": true,
+  "allOriginalFaceBodyEyesEarsNeckGeometryUnchanged": true,
+  "newHair": {
+    "vertices": 4940,
+    "faces": 6639,
+    "fixedHeadWeightAllVertices": 1,
+    "nativeUvMaxNumericReadbackError": 2.975463864185457e-08,
+    "nativePackedTextureAndNormalBytesExact": true,
+    "cameraFacingConstraints": 0,
+    "materialSurfaceRenderMethod": "BLENDED",
+    "alpha": "explicit deterministic >.5 threshold, nohashedmaterial",
+    "note": "curved3Dalphasurfaces,notclosedsolid; nativeassetnotwholehairstylebillboard"
+  },
+  "limitations": [
+    "Static3viewpilotonly, noactualmotion/alpha-sort/shimmeracceptance",
+    "Currentfitheavycurtainpanels/faceocclusion, loosewavecanonicalmatchnotestablished",
+    "No source/body/gait edits, no48/runtime/gamechecks"
+  ]
+}
