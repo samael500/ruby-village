@@ -1,0 +1,131 @@
+{
+  "scope": "technical source guides only, not final painted graphics/game/physicalphone acceptance",
+  "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "existingEReference": "art/ruta-native-layered-walk48-v2/",
+  "newActualPngCount": 240,
+  "sharedBaseCamera": {
+    "matrixWorld": [
+      [
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.6499999761581421,
+        -0.7599342465400696,
+        -8.0
+      ],
+      [
+        0.0,
+        0.7599342465400696,
+        0.6499999761581421,
+        7.692697525024414
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "orthoScale": 2.0999999046325684,
+    "canvas": [
+      512,
+      640
+    ],
+    "worldZPixelsPerMeter": 231.59903526306152,
+    "worldOriginAnchorPx": [
+      256.0,
+      516.8593120574951
+    ]
+  },
+  "rows": [
+    {
+      "direction": "se",
+      "actualPngCount": 48,
+      "sourceContractSha256": "6c430ccb5b81639687e29fa30ff05bd054281230a9821e10372f91bb3259eab6",
+      "nativeHeightPx": 373.1087205766087,
+      "sharedCameraExact": true,
+      "actualHeadYawFromContract": {
+        "acceptedScreenAngleRadians": 0.8445215140369683,
+        "nativeHeadingAfterCameraRadians": 1.0471975511965976,
+        "stockForwardMinusYBlenderYawRadians": 0.5235987755982989,
+        "reprojectionErrorRadians": 1.1102230246251565e-16
+      },
+      "minSourceAlphaMarginPx": 64,
+      "loopEndpointMaxUsedVertexErrorMeters": 0.0,
+      "projectionOracleMaxErrorPx": 4.3358577158869593e-05,
+      "actualLosslessAtlasByteReadback": true
+    },
+    {
+      "direction": "sw",
+      "actualPngCount": 48,
+      "sourceContractSha256": "eeb00520313c8d5f7bad47a7fa3e4197f5e858e6aa25a012cfdb1a5d27ce3c55",
+      "nativeHeightPx": 373.1087205766087,
+      "sharedCameraExact": true,
+      "actualHeadYawFromContract": {
+        "acceptedScreenAngleRadians": 2.2970711395528247,
+        "nativeHeadingAfterCameraRadians": 2.0943951023931953,
+        "stockForwardMinusYBlenderYawRadians": -0.5235987755982987,
+        "reprojectionErrorRadians": 0.0
+      },
+      "minSourceAlphaMarginPx": 64,
+      "loopEndpointMaxUsedVertexErrorMeters": 0.0,
+      "projectionOracleMaxErrorPx": 4.5196310566097964e-05,
+      "actualLosslessAtlasByteReadback": true
+    },
+    {
+      "direction": "w",
+      "actualPngCount": 48,
+      "sourceContractSha256": "5562d2dda3f8d3f51d4afdb7630b54334ae691711f70aeaabfc8de7de85aac8c",
+      "nativeHeightPx": 373.1087205766087,
+      "sharedCameraExact": true,
+      "actualHeadYawFromContract": {
+        "acceptedScreenAngleRadians": 3.141592653589793,
+        "nativeHeadingAfterCameraRadians": 3.141592653589793,
+        "stockForwardMinusYBlenderYawRadians": -1.5707963267948966,
+        "reprojectionErrorRadians": 0.0
+      },
+      "minSourceAlphaMarginPx": 104,
+      "loopEndpointMaxUsedVertexErrorMeters": 0.0,
+      "projectionOracleMaxErrorPx": 4.368782981600816e-05,
+      "actualLosslessAtlasByteReadback": true
+    },
+    {
+      "direction": "nw",
+      "actualPngCount": 48,
+      "sourceContractSha256": "ebe4cbca59ed476a40fb4e52f698786945139947ca81907c092fbaf606b4458b",
+      "nativeHeightPx": 373.1087205766087,
+      "sharedCameraExact": true,
+      "actualHeadYawFromContract": {
+        "acceptedScreenAngleRadians": -2.297071139552825,
+        "nativeHeadingAfterCameraRadians": -2.0943951023931957,
+        "stockForwardMinusYBlenderYawRadians": 3.6651914291880923,
+        "reprojectionErrorRadians": 4.440892098500626e-16
+      },
+      "minSourceAlphaMarginPx": 67,
+      "loopEndpointMaxUsedVertexErrorMeters": 0.0,
+      "projectionOracleMaxErrorPx": 4.2934415034778795e-05,
+      "actualLosslessAtlasByteReadback": true
+    },
+    {
+      "direction": "ne",
+      "actualPngCount": 48,
+      "sourceContractSha256": "bbae25b285c7755cafc2750a3d0ed098fe75d2122b786ccb46d9303fbbd81946",
+      "nativeHeightPx": 373.1087205766087,
+      "sharedCameraExact": true,
+      "actualHeadYawFromContract": {
+        "acceptedScreenAngleRadians": -0.8445215140369683,
+        "nativeHeadingAfterCameraRadians": -1.0471975511965976,
+        "stockForwardMinusYBlenderYawRadians": 2.617993877991494,
+        "reprojectionErrorRadians": 2.220446049250313e-16
+      },
+      "minSourceAlphaMarginPx": 67,
+      "loopEndpointMaxUsedVertexErrorMeters": 0.0,
+      "projectionOracleMaxErrorPx": 4.379320711223045e-05,
+      "actualLosslessAtlasByteReadback": true
+    }
+  ]
+}

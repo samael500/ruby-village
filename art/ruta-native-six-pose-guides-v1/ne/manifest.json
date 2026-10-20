@@ -1,0 +1,709 @@
+{
+  "schemaVersion": 1,
+  "status": "WHOLE-SPRITE-DELIVERY-CANDIDATE-NOT-ART-OR-GAME-ACCEPTANCE",
+  "productionEnabled": false,
+  "sourceContract": "source-contract.json",
+  "sourceContractSha256": "bbae25b285c7755cafc2750a3d0ed098fe75d2122b786ccb46d9303fbbd81946",
+  "sourceBlend": "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-layered-style-v2/ruta-native-style.blend",
+  "sourceSha256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "headingContractSha256": "c6d0b584393ad3065cc0123ca29459fd24c951aab224c7fae44bdcc671f21257",
+  "actionHashes": {
+    "walk": "4955d2ae2dd31bf52e908d8a0edad00e49e96f4768e5e84921d766f38857a87b"
+  },
+  "sourceFrameSize": [
+    512,
+    640
+  ],
+  "frameSize": [
+    256,
+    320
+  ],
+  "deliveryTransform": {
+    "wholeCanvasUniformScale": 0.5,
+    "resample": "Pillow LANCZOS RGBA",
+    "perFrameCrop": false,
+    "perFrameTranslate": false,
+    "perFrameScaleFit": false,
+    "perDirectionScaleFit": false
+  },
+  "cameraVariants": {
+    "base": {
+      "gameCamera": {
+        "radius": 70,
+        "origin": {
+          "x": 140,
+          "y": 290
+        },
+        "angle": 0,
+        "groundScale": 0.65
+      },
+      "scenes": [
+        "gate",
+        "garden",
+        "stream",
+        "mill",
+        "forest"
+      ],
+      "fixedRenderCamera": {
+        "matrixWorld": [
+          [
+            1.0,
+            0.0,
+            0.0,
+            0.0
+          ],
+          [
+            0.0,
+            0.6499999761581421,
+            -0.7599342465400696,
+            -8.0
+          ],
+          [
+            0.0,
+            0.7599342465400696,
+            0.6499999761581421,
+            7.692697525024414
+          ],
+          [
+            0.0,
+            0.0,
+            0.0,
+            1.0
+          ]
+        ],
+        "orthoScale": 2.0999999046325684,
+        "canvas": [
+          512,
+          640
+        ],
+        "worldZPixelsPerMeter": 231.59903526306152,
+        "worldOriginAnchorPx": [
+          256.0,
+          516.8593120574951
+        ]
+      },
+      "directions": {
+        "ne": {
+          "heading": {
+            "acceptedScreenAngleRadians": -0.8445215140369683,
+            "nativeHeadingAfterCameraRadians": -1.0471975511965976,
+            "stockForwardMinusYBlenderYawRadians": 2.617993877991494,
+            "reprojectionErrorRadians": 2.220446049250313e-16
+          },
+          "nativeHeightPx": 186.55436028830434,
+          "visibleRestHeightMeters": 1.6110115491319448,
+          "footAnchor": [
+            128.0,
+            258.42965602874756
+          ],
+          "clips": {
+            "walk": {
+              "atlas": "atlases/base-ne-walk.webp",
+              "frames": [
+                {
+                  "index": 0,
+                  "rect": [
+                    0,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 0.0,
+                  "sourcePng": "renders/base/ne/walk/00.png",
+                  "sourcePngSha256": "2488c800d4e3dc10018afc243f55392c2c10eb956c39c7ac5d9986211256ade3"
+                },
+                {
+                  "index": 1,
+                  "rect": [
+                    256,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 0.8333333333333334,
+                  "sourcePng": "renders/base/ne/walk/01.png",
+                  "sourcePngSha256": "dafab4feb20304b467defb348a16a10bc0a51df7f6cea136b5dc6222bb742bfb"
+                },
+                {
+                  "index": 2,
+                  "rect": [
+                    512,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 1.6666666666666667,
+                  "sourcePng": "renders/base/ne/walk/02.png",
+                  "sourcePngSha256": "b608b204e8aac42d61de252b7d6bc30e4e63cdef359b4cb6227cfa2bf68264a4"
+                },
+                {
+                  "index": 3,
+                  "rect": [
+                    768,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 2.5,
+                  "sourcePng": "renders/base/ne/walk/03.png",
+                  "sourcePngSha256": "aba7b31c123fd05140859e1b31a53af27790dae8eba88a3329aa225732adce7f"
+                },
+                {
+                  "index": 4,
+                  "rect": [
+                    1024,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 3.3333333333333335,
+                  "sourcePng": "renders/base/ne/walk/04.png",
+                  "sourcePngSha256": "1618cd0722e6fd4be164cad5fef432a9ea1cadd082729f9c32591ffa4e2e0257"
+                },
+                {
+                  "index": 5,
+                  "rect": [
+                    1280,
+                    0,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 4.166666666666667,
+                  "sourcePng": "renders/base/ne/walk/05.png",
+                  "sourcePngSha256": "19ba71e449ace54edce96a197b0c84f125a726720bfba1135d59dcc874391f6f"
+                },
+                {
+                  "index": 6,
+                  "rect": [
+                    0,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 5.0,
+                  "sourcePng": "renders/base/ne/walk/06.png",
+                  "sourcePngSha256": "8f52d0c2f2ae6dda160580af5886a82153204a334e43ce72a7422cf5c2f49338"
+                },
+                {
+                  "index": 7,
+                  "rect": [
+                    256,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 5.833333333333333,
+                  "sourcePng": "renders/base/ne/walk/07.png",
+                  "sourcePngSha256": "da486e139ea658c9206f1337a988ebdedc8155807745155664c9e38b3189b25a"
+                },
+                {
+                  "index": 8,
+                  "rect": [
+                    512,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 6.666666666666667,
+                  "sourcePng": "renders/base/ne/walk/08.png",
+                  "sourcePngSha256": "786137ad5a738f675473afbaa4540b15efd500e5c6c2ca8fcf301ac12fb24142"
+                },
+                {
+                  "index": 9,
+                  "rect": [
+                    768,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 7.5,
+                  "sourcePng": "renders/base/ne/walk/09.png",
+                  "sourcePngSha256": "d421a95ba217d6dcbb14117ef6df8bb74e3ad2fe92a3650e946772003b56d472"
+                },
+                {
+                  "index": 10,
+                  "rect": [
+                    1024,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 8.333333333333334,
+                  "sourcePng": "renders/base/ne/walk/10.png",
+                  "sourcePngSha256": "dd5e23fe90ca08cc83d0d92113008dafd63a78445b8ca739ee4f1cbf9b76f4c6"
+                },
+                {
+                  "index": 11,
+                  "rect": [
+                    1280,
+                    320,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 9.166666666666666,
+                  "sourcePng": "renders/base/ne/walk/11.png",
+                  "sourcePngSha256": "327bcac0506f07e1d87793651a69cc436fae04fadf2a899be9b62143b9ddfa8a"
+                },
+                {
+                  "index": 12,
+                  "rect": [
+                    0,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 10.0,
+                  "sourcePng": "renders/base/ne/walk/12.png",
+                  "sourcePngSha256": "3f916393562e315cd21405508169096d0f100321aae9b3d057b3a5c73fdcffda"
+                },
+                {
+                  "index": 13,
+                  "rect": [
+                    256,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 10.833333333333334,
+                  "sourcePng": "renders/base/ne/walk/13.png",
+                  "sourcePngSha256": "cafb866e272ff4baac88510318c21e519483b1bf89a31e77447eb2e26e3fb059"
+                },
+                {
+                  "index": 14,
+                  "rect": [
+                    512,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 11.666666666666666,
+                  "sourcePng": "renders/base/ne/walk/14.png",
+                  "sourcePngSha256": "88a7379ff1341f2cfcaeb91d3b9bf14fa5f41b3736200704735d4f7a3a3bea08"
+                },
+                {
+                  "index": 15,
+                  "rect": [
+                    768,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 12.5,
+                  "sourcePng": "renders/base/ne/walk/15.png",
+                  "sourcePngSha256": "abdee8c38d7e8b695cae208bd3b3db1e12ebe91d030dad9f9c21cdd89ed3d7ca"
+                },
+                {
+                  "index": 16,
+                  "rect": [
+                    1024,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 13.333333333333334,
+                  "sourcePng": "renders/base/ne/walk/16.png",
+                  "sourcePngSha256": "f49db58c88ac922fc09fb96f30c4d110b8139cec3d405e4fec8f2c53a700229c"
+                },
+                {
+                  "index": 17,
+                  "rect": [
+                    1280,
+                    640,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 14.166666666666666,
+                  "sourcePng": "renders/base/ne/walk/17.png",
+                  "sourcePngSha256": "bccdf870beaa90e0cc2077e41278ceeb0688d3f8779441bf3e27be4b4919c1cd"
+                },
+                {
+                  "index": 18,
+                  "rect": [
+                    0,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 15.0,
+                  "sourcePng": "renders/base/ne/walk/18.png",
+                  "sourcePngSha256": "af4e48038b85c145b003a42b7d159ef1dd32a29b0e531c3f6bcd91c5c1d85aa3"
+                },
+                {
+                  "index": 19,
+                  "rect": [
+                    256,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 15.833333333333334,
+                  "sourcePng": "renders/base/ne/walk/19.png",
+                  "sourcePngSha256": "3bb724712b9af48c4c23023c9042a8eab83f325d450441da388f313179e28793"
+                },
+                {
+                  "index": 20,
+                  "rect": [
+                    512,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 16.666666666666668,
+                  "sourcePng": "renders/base/ne/walk/20.png",
+                  "sourcePngSha256": "80ad93aa1ddf3f3cd45e5b593e7ce88b09884bdf1fd96fda44e3f4e4f60dc004"
+                },
+                {
+                  "index": 21,
+                  "rect": [
+                    768,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 17.5,
+                  "sourcePng": "renders/base/ne/walk/21.png",
+                  "sourcePngSha256": "66abd8a89d3ac10c8cc0e3e040f73aaa7909ed1d4bcbf97bec81db004908854c"
+                },
+                {
+                  "index": 22,
+                  "rect": [
+                    1024,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 18.333333333333332,
+                  "sourcePng": "renders/base/ne/walk/22.png",
+                  "sourcePngSha256": "371ebb4680e9904c1390fe6093e23b449dda9a6f10a63a258a464eb51423a853"
+                },
+                {
+                  "index": 23,
+                  "rect": [
+                    1280,
+                    960,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 19.166666666666668,
+                  "sourcePng": "renders/base/ne/walk/23.png",
+                  "sourcePngSha256": "438bacd18f47399fcd1ad8e81ef8aac3e81ea9a9d4f62732d410035133b4369e"
+                },
+                {
+                  "index": 24,
+                  "rect": [
+                    0,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 20.0,
+                  "sourcePng": "renders/base/ne/walk/24.png",
+                  "sourcePngSha256": "fdd3f4713d4ef9ff874fc4d86c3fcbe9951fc63c2c88e3749a8d6cf1df9b4afd"
+                },
+                {
+                  "index": 25,
+                  "rect": [
+                    256,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 20.833333333333332,
+                  "sourcePng": "renders/base/ne/walk/25.png",
+                  "sourcePngSha256": "8f5a1890ada7656d56b763532fde29f2240eb5638c94e07417db2015972e7007"
+                },
+                {
+                  "index": 26,
+                  "rect": [
+                    512,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 21.666666666666668,
+                  "sourcePng": "renders/base/ne/walk/26.png",
+                  "sourcePngSha256": "688efe0b20c1d0b3650d001c5b6d2b18f6d55b48ccb155b9d66a6e5212193bb1"
+                },
+                {
+                  "index": 27,
+                  "rect": [
+                    768,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 22.5,
+                  "sourcePng": "renders/base/ne/walk/27.png",
+                  "sourcePngSha256": "c86783c0241c15d57423913ed413d66dcb92b31204bb22a63edc55e5b406b653"
+                },
+                {
+                  "index": 28,
+                  "rect": [
+                    1024,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 23.333333333333332,
+                  "sourcePng": "renders/base/ne/walk/28.png",
+                  "sourcePngSha256": "3c46711a7b546ecc9a76bbb682ccc710c971ea850e34e11d2956e4fd3f8b50d5"
+                },
+                {
+                  "index": 29,
+                  "rect": [
+                    1280,
+                    1280,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 24.166666666666668,
+                  "sourcePng": "renders/base/ne/walk/29.png",
+                  "sourcePngSha256": "2afbc4ec213e48da294a321196956416e40f50067811c8a65c1c768bf4e36bc6"
+                },
+                {
+                  "index": 30,
+                  "rect": [
+                    0,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 25.0,
+                  "sourcePng": "renders/base/ne/walk/30.png",
+                  "sourcePngSha256": "0b808e3defa3f65c71f26ca1b25fe4169d4f0cde670c1178093a0c7202336d39"
+                },
+                {
+                  "index": 31,
+                  "rect": [
+                    256,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 25.833333333333332,
+                  "sourcePng": "renders/base/ne/walk/31.png",
+                  "sourcePngSha256": "21db25f56c2728c1eb14cf8bfd8f67430a5cdca6935b82dfc051cdfeab5e0592"
+                },
+                {
+                  "index": 32,
+                  "rect": [
+                    512,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 26.666666666666668,
+                  "sourcePng": "renders/base/ne/walk/32.png",
+                  "sourcePngSha256": "7316ed8a14e4f02d70d16bd0544cd06274a8978eea785c2b79d98332b877fa24"
+                },
+                {
+                  "index": 33,
+                  "rect": [
+                    768,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 27.5,
+                  "sourcePng": "renders/base/ne/walk/33.png",
+                  "sourcePngSha256": "cbbe7178893b37eb7836e410b4def376014a8f2229638c62e35e448a13a0b5da"
+                },
+                {
+                  "index": 34,
+                  "rect": [
+                    1024,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 28.333333333333332,
+                  "sourcePng": "renders/base/ne/walk/34.png",
+                  "sourcePngSha256": "f6f9cc0e61e690132daafdc6c8a4138b48bb628b9bc545783be673881c808f04"
+                },
+                {
+                  "index": 35,
+                  "rect": [
+                    1280,
+                    1600,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 29.166666666666668,
+                  "sourcePng": "renders/base/ne/walk/35.png",
+                  "sourcePngSha256": "e2369b8ccbf0e95484e3875e6be1879efe552d46ef17859cf7966bf0f7db9805"
+                },
+                {
+                  "index": 36,
+                  "rect": [
+                    0,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 30.0,
+                  "sourcePng": "renders/base/ne/walk/36.png",
+                  "sourcePngSha256": "0a416e709b230efeab7bb93bf0c12b3c0a340bcfe142a78405926b6fe251f822"
+                },
+                {
+                  "index": 37,
+                  "rect": [
+                    256,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 30.833333333333332,
+                  "sourcePng": "renders/base/ne/walk/37.png",
+                  "sourcePngSha256": "de56336f52a22f7f3d93eab9050158ff83bbc6ce0493454560a27c95bb272cf1"
+                },
+                {
+                  "index": 38,
+                  "rect": [
+                    512,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 31.666666666666668,
+                  "sourcePng": "renders/base/ne/walk/38.png",
+                  "sourcePngSha256": "05a9ffd4e9f70639200fe4f6bf391c83e8963c3c998b6157c88360ecaf42092d"
+                },
+                {
+                  "index": 39,
+                  "rect": [
+                    768,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 32.5,
+                  "sourcePng": "renders/base/ne/walk/39.png",
+                  "sourcePngSha256": "4aa168169ba01ac5ce93d86ad7cfe6cb6863fb87d1ced7145d21235a12fbbb1b"
+                },
+                {
+                  "index": 40,
+                  "rect": [
+                    1024,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 33.333333333333336,
+                  "sourcePng": "renders/base/ne/walk/40.png",
+                  "sourcePngSha256": "4979de8ae293aaa761a85eaff12f2636a3e125b0810ded2172b23a75ad998994"
+                },
+                {
+                  "index": 41,
+                  "rect": [
+                    1280,
+                    1920,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 34.166666666666664,
+                  "sourcePng": "renders/base/ne/walk/41.png",
+                  "sourcePngSha256": "99b5d4cb814c86b151949ff18e55deecdff2423d80ed101e5c22d08138a74586"
+                },
+                {
+                  "index": 42,
+                  "rect": [
+                    0,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 35.0,
+                  "sourcePng": "renders/base/ne/walk/42.png",
+                  "sourcePngSha256": "4c1b98a84a724471cc1a0cc7bc8152dc4dd0629c9c46b52ffb6355575e150b35"
+                },
+                {
+                  "index": 43,
+                  "rect": [
+                    256,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 35.833333333333336,
+                  "sourcePng": "renders/base/ne/walk/43.png",
+                  "sourcePngSha256": "856118ffd261a55719d49e0032879a976f98882707b43788f9e7f800acab2cc4"
+                },
+                {
+                  "index": 44,
+                  "rect": [
+                    512,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 36.666666666666664,
+                  "sourcePng": "renders/base/ne/walk/44.png",
+                  "sourcePngSha256": "8cbd8880472d27f747aab9801f9a3d0452859bbb700d06624f555b312ddb1edb"
+                },
+                {
+                  "index": 45,
+                  "rect": [
+                    768,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 37.5,
+                  "sourcePng": "renders/base/ne/walk/45.png",
+                  "sourcePngSha256": "b143bff5abf82a915d16cb6f2aafa6e703b6e351b7472ecf5b10099790d01f66"
+                },
+                {
+                  "index": 46,
+                  "rect": [
+                    1024,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 38.333333333333336,
+                  "sourcePng": "renders/base/ne/walk/46.png",
+                  "sourcePngSha256": "e4dbf875d299b5694cef8abf64e4973484c1b14924b8c08340666a203c69f821"
+                },
+                {
+                  "index": 47,
+                  "rect": [
+                    1280,
+                    2240,
+                    256,
+                    320
+                  ],
+                  "sourceFrame": 39.166666666666664,
+                  "sourcePng": "renders/base/ne/walk/47.png",
+                  "sourcePngSha256": "974cb46dd3f860b1597db3ccfe5879a863dbe98571039bc9f99db68d0af54d4a"
+                }
+              ],
+              "durationSeconds": 1.6666666666666667,
+              "loop": true,
+              "sourceAction": "Walk_ProportionProposal",
+              "loopEndpointMaxUsedVertexErrorMeters": 0.0
+            }
+          }
+        }
+      }
+    }
+  },
+  "files": [
+    {
+      "path": "atlases/base-ne-walk.webp",
+      "sha256": "d01790a1c4cb65eece15399351ad513bb1d01087cd6db6fa34d0a9518a4dd2bb",
+      "bytes": 899032,
+      "size": [
+        1536,
+        2560
+      ],
+      "decodedRGBABytes": 15728640
+    }
+  ],
+  "packedFrameCount": 48,
+  "limitations": [
+    "No art/style/wardrobe approval follows from geometry containment/seam.",
+    "No no-slip, turn/start/stop, gameplay or performance acceptance.",
+    "REST height uses visible accessories/hair too; independent body landmark height is a different metric.",
+    "Raster alpha containment is checked by packer only after actual render, not by dry-run."
+  ]
+}
