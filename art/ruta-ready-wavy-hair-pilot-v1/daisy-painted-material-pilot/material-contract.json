@@ -1,0 +1,143 @@
+{
+  "status": "FIXED-NATIVE-UV-PAINTED-RGB-MATERIAL-PILOT-ART-PENDING",
+  "sourceBlend": "/tmp/ruby-ready-wavy-hair/art/ruta-ready-wavy-hair-pilot-v1/daisy-scalp-anchored-refinement/ruta-daisy-scalp-anchored.blend",
+  "sourceBlendSha256": "421912859b4190f5c04fa681523782b6f7053adbb1cd46a4e2b18712130c0ff8",
+  "outputBlendSha256": "350c96cdacb9c413dac120cb57de695e94d1a9dd2b7c4cbfd8672ed7115ee5d8",
+  "rootRgbCommit": "0be2713",
+  "newRgbSha256": "ab0a4713e0bb9f8f98ee437cd787190557b47567a7e5199584bbc5d09244d0f7",
+  "newRgbNativeSize": [
+    1254,
+    1254
+  ],
+  "originalAlphaPackedSha256": "a434a5b22dfaf8e658742ce1e91a531e4e626a868731c37fb04c2fcb60d3ae9c",
+  "alphaSource": "ORIGINALdaisyhair1.png Alpha socket, separate image node, >.5, unchanged",
+  "newGeneratedAlphaConnected": false,
+  "newRgbMapping": "native UVMap \u2192 NEW RGB Color directly Diffuse Color; no previouswarmtint multiplier, no per-frame textures",
+  "diffuseRoughness": 0.800000011920929,
+  "normalStrength": 0.25,
+  "alphaMethod": "BLENDED",
+  "offlineAASamples": 128,
+  "cameraMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.6499999761581421,
+      -0.7599342465400696,
+      -8.0
+    ],
+    [
+      0.0,
+      0.7599342465400696,
+      0.6499999761581421,
+      7.692697525024414
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "cameraOrthoScale": 2.0999999046325684,
+  "actionsBefore": {
+    "Death": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Death.001": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Gun_Shoot": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "Gun_Shoot.001": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "HitRecieve": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve.001": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve_2": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "HitRecieve_2.001": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "Idle": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle.001": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle_Gun": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun.001": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun_Pointing": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Pointing.001": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Shoot": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Gun_Shoot.001": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Neutral": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral.001": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral_ProportionProposal": "caf23e4f0542ed8278dc2a93f150e426ef3cab5df25c4b7001457fb1abf8269b",
+    "Idle_Sword": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Idle_Sword.001": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Interact": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Interact.001": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Kick_Left": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Left.001": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Right": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Kick_Right.001": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Punch_Left": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Left.001": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Right": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Punch_Right.001": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Roll": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Roll.001": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Run": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run.001": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run_Back": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Back.001": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Left": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Left.001": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Right": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Right.001": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Shoot": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Run_Shoot.001": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Sword_Slash": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Sword_Slash.001": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Walk": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk.001": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk_ProportionProposal": "42dfb58c9b06fd26aebc86b8557bad156ec96447fe6e7560a4755e8f6ee759aa",
+    "Wave": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820",
+    "Wave.001": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820"
+  },
+  "views": [
+    {
+      "path": "e-walk00.png",
+      "sha256": "799ed082e0089f165b2b3f9645c472ea591dd05f528455949cecbb09a82be74f",
+      "yawRadians": 1.5707963267948966,
+      "action": "Walk_ProportionProposal",
+      "walkPhaseIndex": 0,
+      "sourceFrame": 0.0,
+      "diagnosticOnly": false
+    },
+    {
+      "path": "front-diagnostic.png",
+      "sha256": "96d8a88c5ae80073c102d29dc703909d29575de894d029c36614c389b6155649",
+      "yawRadians": 0,
+      "action": "Idle_Neutral_ProportionProposal",
+      "walkPhaseIndex": 0,
+      "sourceFrame": 0.0,
+      "diagnosticOnly": true
+    },
+    {
+      "path": "threequarter-diagnostic.png",
+      "sha256": "896a5d722ec44c691da4e475a6bd21f5240dbf5cc31330cb9e2fe6ed33c4514a",
+      "yawRadians": 0.7853981633974483,
+      "action": "Idle_Neutral_ProportionProposal",
+      "walkPhaseIndex": 0,
+      "sourceFrame": 0.0,
+      "diagnosticOnly": true
+    },
+    {
+      "path": "e-walk30.png",
+      "sha256": "8a94f8fe50d4ed0b8b685806e7c921ceeea9551101ca8295c76cb484c20e72fc",
+      "yawRadians": 1.5707963267948966,
+      "action": "Walk_ProportionProposal",
+      "walkPhaseIndex": 30,
+      "sourceFrame": 25.0,
+      "diagnosticOnly": false
+    }
+  ],
+  "limits": [
+    "Four actual stills only, not48cycle or gameplay/imagequalityacceptance",
+    "Originalshape/headings unchanged; E rear3q facevisibility notcamera-adjusted",
+    "Finealphaedges/sorting/material seams need independentactual review",
+    "No source texture pixel manipulation; generatedRGBalpha never used"
+  ]
+}
