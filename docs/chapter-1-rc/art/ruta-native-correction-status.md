@@ -1,6 +1,6 @@
 # Ruta correction checkpoint — 2026-10-20
 
-Latest user acceptance: ready gait accepted; painted pilot rejected because adult/long-limb proportions and visible frame jerks. Do not promote #77. Correct proportions on the source rig and render whole sprites from one native actor.
+Current acceptance: youthful painted appearance and head-registered E-pilot movement accepted. Image clarity/flicker remains rejected. Earlier checkpoints below are historical; do not promote rejected #77 or infer runtime acceptance.
 
 | Work | Actual status | Owner | Evidence / dependency |
 |---|---|---|---|
@@ -63,3 +63,11 @@ Current user motion verdict remains FAIL. Runtime still uses the previous set. N
 Maksim on head+48: «да хорошо -- движения нормально, но само изображение МЕРЦАЕТ, и плывёт -- картинка не чёткая и дребезжащая». Preserve the accepted gait, phase, head registration and appearance. The outstanding complaint is rendered-image clarity/flicker, not another invitation to tune gait speed or pivots. The pilot is still not game/release accepted.
 
 Actual Chromium baseline uses backing256×320 at CSS320×400 (and the same small backing atDPR2), ctx smoothing low. Source162×200 is first filtered to≈188×233 inside backing then compositor-upscaled. A same-frame controlled drawImage experiment shows lower gradient-energy proxy and stronger offset-dependent sharpness in two passes vs direct; this is evidence of a sampling contribution, not proof the compositor or all temporal art defects are solved. A separate DPR-aware single-pass renderer study is now assigned to NPC; stream independently checks it. Original pixels/clock/pivots stay frozen. Native transition inventory is complete, no new IK/actions/render were started; source five-direction pose batch continues independently.
+
+## Image-quality checkpoint: renderer audited; larger source pending full-loop QA
+
+Single-pass DPR-aware renderer `fb28719` was independently compared against the exact baseline (`6d8b991`, `docs/qa/painted-image-sampling/renderer-ab/`). Actual DPR1/2 browser recordings show moderately clearer detail, especially at DPR2, while the same internal hair/face changes remain. This is a verified sampling improvement, **not** a flicker fix or user acceptance. No gait, phase clock, raw source, registration or game runtime changed.
+
+Four larger painted sheets now cover consecutive phases0..47 (`b811d63`, `d05eb76`, `art/ruta-native-painted-production-v1/`). Actual outputs are1295×1214/1215, not the requested2048×1920. Exact accepted pose excerpts, canonical reference, prompts, ordered inputs, immutable raw RGBA and provenance are retained. Independent static identity review `5e9906e` (`docs/qa/painted-hires-identity/`) finds no major age/identity/bag/whole-pose regression. It explicitly observes changing internal detail and does **not** establish temporal stability.
+
+NPC owns lossless whole-frame packing and the separate full48 DPR preview; root owns source/provenance. One measured grid per source sheet, no per-frame resizing/warping, one global display scale. Full loop and quarter boundaries11/12,23/24,35/36,47/0 require independent actual browser review before recommending the larger source. Partial12-frame forward playback is not a full cycle. Existing accepted appearance/movement and unchanged runtime remain the comparison baseline.
