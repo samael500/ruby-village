@@ -1,0 +1,9 @@
+# v4 padded brown accessories: target checkpoint
+
+Only ankle boot brown surfaces (`Adventurer_Feet` Brown_02/Brown2), ONE diagonal satchel strap and ONE rounded satchel main/flap are painted candidates. `charts` and source-face IDs in padding-contract.json map every actual surface role. Cloth side pockets L/R are restored to their original uniform Cargo pocket cloth materials, excluded from leather generation. This avoids reinterpreting cloth as extra leather clothing.
+
+33paintable charts, a new `RutaPaintPaddedAccessories` UV layer; old layers retained. Small charts (<12faces) and UV-degenerate narrow charts(minspan≤.002) keep original uniform native material. Temporary UV packing uses one shared scalar and shelf chart translations, preserving all within-chart shape. Actual chart bbox spacing≥80px,16px technical brown bleed, residual gap≥48px, actual atlas border≥72px at2048².
+
+`accessories-padded-flat-target.png` freshly draws native UV polygons plus16px exterior segment/vertex cover. `accessories-actual-UV-wire-guide.png` shows real UV boundaries. No generated raster was edited or dilated. Imagegen input is flat target, not wireguide. One root-generated brown matte leather-only atlas requested, prompt in texture-request.txt. No skin/head/hair, cream, olive, brass, laces, socks, trouser charts in this target.
+
+Source is frozen padded trousers v3. Cold-open checks rest positions/topology/weights, rig,50actions and head/hair UV/material assignments. Additional exact check verifies all trouser UV layers, material slots and per-face material assignments unchanged. No generated v4 texture bound yet, no actual frame or48 batch. Previous raw/guard versions retained unchanged. After generation: all noneroded UV boundary coverage and MIN padding test, then actual front/E40 only.
