@@ -1,0 +1,58 @@
+{
+  "nativeEyelidWeightGroupNames": [
+    "DEF-Eyelid_Lower4.L",
+    "DEF-Eyelid_Lower3.L",
+    "DEF-Eyelid_Lower2.L",
+    "DEF-Eyelid_Lower1.L",
+    "DEF-Eyelid_Upper4.L",
+    "DEF-Eyelid_Upper3.L",
+    "DEF-Eyelid_Upper2.L",
+    "DEF-Eyelid_Upper1.L",
+    "DEF-Eyelid_Lower4.R",
+    "DEF-Eyelid_Lower3.R",
+    "DEF-Eyelid_Lower2.R",
+    "DEF-Eyelid_Lower1.R",
+    "DEF-Eyelid_Upper4.R",
+    "DEF-Eyelid_Upper3.R",
+    "DEF-Eyelid_Upper2.R",
+    "DEF-Eyelid_Upper1.R"
+  ],
+  "thresholdTotalWeight": 0.05,
+  "evaluatedVertexCount": 25239,
+  "eyelidRegionVertexCount": 1831,
+  "nativeExpressionDeltaMaxMeters": 0.0008221301866309767,
+  "nativeExpressionChangedCountAbove1eMinus7": 994,
+  "definition": "actual original evaluated head skinning-group region, not bitmap landmark",
+  "weightThresholdDetails": [
+    {
+      "threshold": 0.25,
+      "vertexCount": 1458,
+      "deltaMaxNativeMeters": 0.00015606025032309826
+    },
+    {
+      "threshold": 0.5,
+      "vertexCount": 1156,
+      "deltaMaxNativeMeters": 1.0408411094360092e-05
+    },
+    {
+      "threshold": 0.8,
+      "vertexCount": 826,
+      "deltaMaxNativeMeters": 1.4601047096138198e-06
+    },
+    {
+      "threshold": 0.95,
+      "vertexCount": 378,
+      "deltaMaxNativeMeters": 0.0
+    }
+  ],
+  "verifiedBoundaryEyelidRegionVertexCount": 128,
+  "rimDeltaMaxNativeMeters": 0.0,
+  "strictZeroRegionGuard": "FAILED, explicitly relaxedbyroot: smallbrowskininfluenceallowed, no longerclaimexactlidskinpreservation",
+  "anatomicalOpeningLimitation": "Openingboundary only if native meshboundary intersects eyelidgroups, not projectedfullskinbbox"
+}
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/tmp/ruby-combined-loop/art/ruta-ellie-head-v1/source/ellie-original.blend"
+scripts disabled for "/tmp/ruby-combined-loop/art/ruta-ellie-head-v1/source/ellie-original.blend", skipping 'cloudrig.py'
+scripts disabled for "/tmp/ruby-combined-loop/art/ruta-ellie-head-v1/source/ellie-original.blend", skipping 'rigged_particle_hair.py'
+
+Blender quit

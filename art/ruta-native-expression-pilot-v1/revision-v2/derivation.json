@@ -1,0 +1,741 @@
+{
+  "sourceOriginalSha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "parentSha256": "09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d",
+  "nativePoseRecipe": [
+    "face_default",
+    "eyemask_content",
+    "mouth_smileclosed2",
+    "blend65%eyemask_relaxed ONLY Eyebrow bonechannels",
+    "blend35%mouth_smileopen"
+  ],
+  "parts": [
+    {
+      "part": "head",
+      "vertices": 25239,
+      "explicitBaselineMappingMaxErrorMeters": 2.3490412246406348e-07,
+      "expressionChangedVertices": 15449,
+      "expressionDeltaMaxMeters": 0.03087156560375574
+    },
+    {
+      "part": "eye.L",
+      "vertices": 9986,
+      "explicitBaselineMappingMaxErrorMeters": 1.5054695434491682e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "eye.R",
+      "vertices": 9986,
+      "explicitBaselineMappingMaxErrorMeters": 1.5099270330683092e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "eye_highlights",
+      "vertices": 64,
+      "explicitBaselineMappingMaxErrorMeters": 1.4557633840711285e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "eyebrows",
+      "vertices": 3332,
+      "explicitBaselineMappingMaxErrorMeters": 1.5155213320325838e-07,
+      "expressionChangedVertices": 3332,
+      "expressionDeltaMaxMeters": 0.01470760755334964
+    },
+    {
+      "part": "eyelashes",
+      "vertices": 2244,
+      "explicitBaselineMappingMaxErrorMeters": 1.5156545063285864e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "face_line1",
+      "vertices": 650,
+      "explicitBaselineMappingMaxErrorMeters": 1.5043190894969836e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "face_line2",
+      "vertices": 650,
+      "explicitBaselineMappingMaxErrorMeters": 1.4973639229657213e-07,
+      "expressionChangedVertices": 0,
+      "expressionDeltaMaxMeters": 0.0
+    },
+    {
+      "part": "teeth_top",
+      "vertices": 10042,
+      "explicitBaselineMappingMaxErrorMeters": 1.7931966772557197e-07,
+      "expressionChangedVertices": 10042,
+      "expressionDeltaMaxMeters": 0.008138275679954168
+    },
+    {
+      "part": "teeth_btm",
+      "vertices": 10042,
+      "explicitBaselineMappingMaxErrorMeters": 2.3404090378607767e-07,
+      "expressionChangedVertices": 10042,
+      "expressionDeltaMaxMeters": 0.025869825335313172
+    },
+    {
+      "part": "tongue",
+      "vertices": 1933,
+      "explicitBaselineMappingMaxErrorMeters": 2.0567940917316768e-07,
+      "expressionChangedVertices": 1933,
+      "expressionDeltaMaxMeters": 0.03313286047022781
+    }
+  ],
+  "nativeBrowChannelAllowlist": [
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.L\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow1.R\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.L\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow2.R\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.L\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow3.R\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.L\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow4.R\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.L\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"Eyebrow5.R\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.L\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].location",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].location",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].location",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].rotation_euler",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].rotation_euler",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].rotation_euler",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].scale",
+      "index": 0,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].scale",
+      "index": 1,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    },
+    {
+      "path": "pose.bones[\"MSTR-Eyebrow.R\"].scale",
+      "index": 2,
+      "weight": 0.65,
+      "asset": "eyemask_relaxed"
+    }
+  ],
+  "mapping": "historicaluniformHeadFit thenexistingup20RESTneckfield; no newheadscalefit"
+}
