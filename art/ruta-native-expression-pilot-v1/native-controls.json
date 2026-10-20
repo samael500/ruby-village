@@ -1,0 +1,5905 @@
+{
+  "sourceSha256": "3dd235218725a9e68890073bbeacb4820f9b34db65d44f80c31bb88696a3c54c",
+  "actions": [
+    {
+      "name": "eyemask_angry",
+      "range": [
+        25.0,
+        25.0
+      ],
+      "curveCount": 1981
+    },
+    {
+      "name": "eyemask_closed",
+      "range": [
+        5.0,
+        5.0
+      ],
+      "curveCount": 1078
+    },
+    {
+      "name": "eyemask_concerned",
+      "range": [
+        45.0,
+        45.0
+      ],
+      "curveCount": 1981
+    },
+    {
+      "name": "eyemask_content",
+      "range": [
+        40.0,
+        40.0
+      ],
+      "curveCount": 1988
+    },
+    {
+      "name": "eyemask_relaxed",
+      "range": [
+        50.0,
+        50.0
+      ],
+      "curveCount": 1988
+    },
+    {
+      "name": "eyemask_scared",
+      "range": [
+        15.0,
+        15.0
+      ],
+      "curveCount": 1078
+    },
+    {
+      "name": "eyemask_squint",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "curveCount": 1078
+    },
+    {
+      "name": "face_angry",
+      "range": [
+        18.0,
+        18.0
+      ],
+      "curveCount": 2926
+    },
+    {
+      "name": "face_annoyed",
+      "range": [
+        60.0,
+        60.0
+      ],
+      "curveCount": 3297
+    },
+    {
+      "name": "face_awe",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "curveCount": 1546
+    },
+    {
+      "name": "face_awkward",
+      "range": [
+        290.0,
+        290.0
+      ],
+      "curveCount": 3297
+    },
+    {
+      "name": "face_default",
+      "range": [
+        1.0,
+        1.0
+      ],
+      "curveCount": 1438
+    },
+    {
+      "name": "face_excited",
+      "range": [
+        30.0,
+        30.0
+      ],
+      "curveCount": 3299
+    },
+    {
+      "name": "face_scared",
+      "range": [
+        158.0,
+        158.0
+      ],
+      "curveCount": 3297
+    },
+    {
+      "name": "face_scared2",
+      "range": [
+        210.0,
+        210.0
+      ],
+      "curveCount": 3298
+    },
+    {
+      "name": "face_squint",
+      "range": [
+        120.0,
+        120.0
+      ],
+      "curveCount": 3297
+    },
+    {
+      "name": "face_suspicious",
+      "range": [
+        249.0,
+        249.0
+      ],
+      "curveCount": 3302
+    },
+    {
+      "name": "face_wissle",
+      "range": [
+        110.0,
+        110.0
+      ],
+      "curveCount": 3302
+    },
+    {
+      "name": "Mouth_Aa",
+      "range": [
+        100.0,
+        100.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_Ee",
+      "range": [
+        95.0,
+        95.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_Eh",
+      "range": [
+        90.0,
+        90.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_Oo",
+      "range": [
+        120.0,
+        120.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_smileclosed",
+      "range": [
+        65.0,
+        65.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_smileclosed2",
+      "range": [
+        70.0,
+        70.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_smileopen",
+      "range": [
+        60.0,
+        60.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_squeeze",
+      "range": [
+        80.0,
+        80.0
+      ],
+      "curveCount": 1277
+    },
+    {
+      "name": "mouth_Uu",
+      "range": [
+        110.0,
+        110.0
+      ],
+      "curveCount": 1276
+    },
+    {
+      "name": "RIG.Ellie_Eyebrows_Down",
+      "range": [
+        1.0,
+        20.0
+      ],
+      "curveCount": 144
+    },
+    {
+      "name": "RIG.Ellie_Eyelid_Lower_Close-Open",
+      "range": [
+        5.0,
+        20.0
+      ],
+      "curveCount": 144
+    },
+    {
+      "name": "RIG.Ellie_Eyelid_Lower_Rotate",
+      "range": [
+        1.0,
+        40.0
+      ],
+      "curveCount": 54
+    },
+    {
+      "name": "RIG.Ellie_Eyelid_Upper_Close-Open",
+      "range": [
+        7.0,
+        20.0
+      ],
+      "curveCount": 180
+    },
+    {
+      "name": "RIG.Ellie_Eyelid_Upper_Rotate",
+      "range": [
+        1.0,
+        40.0
+      ],
+      "curveCount": 162
+    }
+  ],
+  "controls": [
+    {
+      "name": "ORG-STR-I-Lip_Bottom1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-I-Lip_Top1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Lower1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Eyelid_Upper1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-Eyelid_Upper.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-Eyelid_Lower.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Eyebrow.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "BrowRing3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-BrowRing3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "BrowRing1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-BrowRing1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "BrowRing2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-BrowRing2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Eyebrow_Detached.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "detach": "0.0",
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-Eyelid_Upper.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-Eyelid_Lower.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Eyebrow.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "BrowRing3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-BrowRing3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "BrowRing1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-BrowRing1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "BrowRing2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-BrowRing2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Eyebrow_Detached.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "detach": "0.0",
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-LipCorner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ROOT-LTC-LipCorner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "LTC-LipCorner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Mouth",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Lower2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Lower2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Lower2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Lower2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DSP-MSTR-Mouth",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Mouth_Lower",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Lip_Lower",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Bottom2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Lip_Lower_Center",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-Lip_Lower_Roll",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Bottom2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Lip_Upper",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Top1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "MSTR-Lip_Upper_Center",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-Lip_Upper_Roll",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Top1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-TIP-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-Lip_Corner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Lip_Corner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Corner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-Lip_Corner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Lip_Corner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Corner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-TIP-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-Lip_Bottom2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-I-Lip_Bottom1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-I-Lip_Top1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-TIP-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-Lip_Bottom2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CLONE-STR-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Bottom2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Bottom2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Bottom2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Bottom2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Bottom2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Bottom2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-I-Lip_Top1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Top1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Top1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Top1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Lip_Top1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TAN-Lip_Top1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Lip_Top1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-I-Lip_Bottom1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-TAN-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-Lips",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-Fannypack_Zipper_Slider",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Fannypack_Zipper_Slider",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "parents_Fannypack_Zipper_Slider": "1",
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Fannypack_Zipper_Slider",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-P-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-P-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-ACT-MouthCorner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-MouthCorner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-LipCorner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ROOT-LTC-LipCorner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "LTC-LipCorner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Upper2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Upper2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Upper1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Upper1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Upper",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Upper",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-P-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Lower1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Lower1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Lower1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-P-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-TIP-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-P-Eyelid_Upper1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "STR-Eyelid_Upper1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyelid_Upper1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-ACT-MouthCorner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ACT-MouthCorner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Upper2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Upper2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Upper1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Upper1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow5.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow5.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow3.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DT-Eyebrow2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DT-Eyebrow4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow4.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow_Mid",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow_Mid",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow5.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow5.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow3.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DT-Eyebrow2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DT-Eyebrow4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "Eyebrow4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-Eyebrow4.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-I-Lip_Bottom1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-Lip_Bottom1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-Lip_Bottom1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CTR-LipCorner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "Sharp": "0.0",
+        "HeadJaw": "0.5",
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-TIP-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-Lip_Bottom2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-Lip_Corner.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-TIP-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-Lip_Bottom2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-I-Lip_Top1",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-Lip_Top2.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "CTR-LipCorner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "Sharp": "0.0",
+        "HeadJaw": "0.5",
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-TIP-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ORG-STR-Lip_Bottom2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-Lip_Corner.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-TIP-Lip_Top2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "P-STR-Lip_Bottom2.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "ROOT-LTC-Lips",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "LTC-Lips",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Lower",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Lower",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Lower1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Lower1.L",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "OuterLip_Lower1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    },
+    {
+      "name": "DEF-OuterLip_Lower1.R",
+      "location": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "rotation": [
+        0.0,
+        -0.0,
+        0.0
+      ],
+      "custom": {
+        "bone_gizmo": "None",
+        "enable_bone_gizmo": "0"
+      }
+    }
+  ],
+  "changedAssetChannels": [
+    {
+      "from": "eyemask_content",
+      "to": "eyemask_relaxed",
+      "channels": [
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Lower.L\"].location",
+          "index": 1,
+          "fromValue": 0.003905672114342451,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Lower.L\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.01329258643090725,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Lower.R\"].location",
+          "index": 1,
+          "fromValue": 0.003905672114342451,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Lower.R\"].rotation_euler",
+          "index": 2,
+          "fromValue": -0.01329258643090725,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Upper.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.013293496333062649
+        },
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Upper.L\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.135358527302742,
+          "toValue": 0.18752454221248627
+        },
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Upper.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.013293496333062649
+        },
+        {
+          "path": "pose.bones[\"ACT-Eyelid_Upper.R\"].rotation_euler",
+          "index": 2,
+          "fromValue": -0.135358527302742,
+          "toValue": -0.18752454221248627
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.L\"].location",
+          "index": 0,
+          "fromValue": -0.0005953937070444226,
+          "toValue": 0.0010417315643280745
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.L\"].location",
+          "index": 1,
+          "fromValue": -0.005808321293443441,
+          "toValue": -0.001566688297316432
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.L\"].location",
+          "index": 2,
+          "fromValue": -8.294591680169106e-10,
+          "toValue": 0.00013870246766600758
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.L\"].rotation_euler",
+          "index": 2,
+          "fromValue": -0.3454446494579315,
+          "toValue": 0.08952493220567703
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.R\"].location",
+          "index": 0,
+          "fromValue": 0.0005953937070444226,
+          "toValue": -0.0005083013675175607
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.R\"].location",
+          "index": 1,
+          "fromValue": -0.005808321293443441,
+          "toValue": -0.0028142924420535564
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.R\"].location",
+          "index": 2,
+          "fromValue": -8.294591680169106e-10,
+          "toValue": 0.0001234490191563964
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.R\"].rotation_euler",
+          "index": 0,
+          "fromValue": 1.4901161193847656e-08,
+          "toValue": -0.09443888068199158
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.R\"].rotation_euler",
+          "index": 1,
+          "fromValue": -4.0978193283081055e-08,
+          "toValue": -0.06146298721432686
+        },
+        {
+          "path": "pose.bones[\"Eyebrow1.R\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.3454446494579315,
+          "toValue": 0.24468453228473663
+        },
+        {
+          "path": "pose.bones[\"Eyebrow2.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.004192809108644724
+        },
+        {
+          "path": "pose.bones[\"Eyebrow2.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 5.666176730301231e-05
+        },
+        {
+          "path": "pose.bones[\"Eyebrow2.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.001215239753946662
+        },
+        {
+          "path": "pose.bones[\"Eyebrow2.R\"].rotation_euler",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.01796885021030903
+        },
+        {
+          "path": "pose.bones[\"Eyebrow2.R\"].rotation_euler",
+          "index": 1,
+          "fromValue": -0.0,
+          "toValue": 0.010630059987306595
+        },
+        {
+          "path": "pose.bones[\"Eyebrow2.R\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.009460357949137688
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.0018078343709930778
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.0053464556112885475
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.0013386461650952697
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.0007366272620856762
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.0019232805352658033
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.0002045350702246651
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.R\"].rotation_euler",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 3.1941221095621586e-05
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.R\"].rotation_euler",
+          "index": 1,
+          "fromValue": -0.0,
+          "toValue": 0.00012803851859644055
+        },
+        {
+          "path": "pose.bones[\"Eyebrow3.R\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.03799843415617943
+        },
+        {
+          "path": "pose.bones[\"Eyebrow4.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.000704841164406389
+        },
+        {
+          "path": "pose.bones[\"Eyebrow4.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.0005155341932550073
+        },
+        {
+          "path": "pose.bones[\"Eyebrow4.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.00020480059902183712
+        },
+        {
+          "path": "pose.bones[\"Eyebrow5.L\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.07548053562641144
+        },
+        {
+          "path": "pose.bones[\"Eyelash1.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.004831793252378702
+        },
+        {
+          "path": "pose.bones[\"Eyelash1.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.002842721063643694
+        },
+        {
+          "path": "pose.bones[\"Eyelash1.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.0003033424145542085
+        },
+        {
+          "path": "pose.bones[\"Eyelash1.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.004831793252378702
+        },
+        {
+          "path": "pose.bones[\"Eyelash1.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.002842721063643694
+        },
+        {
+          "path": "pose.bones[\"Eyelash1.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.0003033424145542085
+        },
+        {
+          "path": "pose.bones[\"MSTR-EyeRing_Lower.L\"].location",
+          "index": 1,
+          "fromValue": 0.0009895453695207834,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"MSTR-EyeRing_Lower.R\"].location",
+          "index": 1,
+          "fromValue": 0.0009895453695207834,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.L\"].location",
+          "index": 0,
+          "fromValue": 0.003048407845199108,
+          "toValue": 0.0040738885290920734
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.L\"].location",
+          "index": 1,
+          "fromValue": 0.008531339466571808,
+          "toValue": 0.008749314583837986
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.L\"].location",
+          "index": 2,
+          "fromValue": -0.0019457814050838351,
+          "toValue": -0.0014412699965760112
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.L\"].rotation_euler",
+          "index": 0,
+          "fromValue": -0.02663935348391533,
+          "toValue": -0.02905641309916973
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.L\"].rotation_euler",
+          "index": 1,
+          "fromValue": 0.0330100879073143,
+          "toValue": 0.030903996899724007
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.L\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.2690991461277008,
+          "toValue": 0.19348692893981934
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.R\"].location",
+          "index": 0,
+          "fromValue": -0.003048407845199108,
+          "toValue": -0.0032676556147634983
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.R\"].location",
+          "index": 1,
+          "fromValue": 0.008531339466571808,
+          "toValue": -0.005280031822621822
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.R\"].location",
+          "index": 2,
+          "fromValue": -0.0019457814050838351,
+          "toValue": -0.0003731939650606364
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.R\"].rotation_euler",
+          "index": 0,
+          "fromValue": -0.02663935348391533,
+          "toValue": -0.026970136910676956
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.R\"].rotation_euler",
+          "index": 1,
+          "fromValue": -0.0330100879073143,
+          "toValue": -0.03273904696106911
+        },
+        {
+          "path": "pose.bones[\"MSTR-Eyebrow.R\"].rotation_euler",
+          "index": 2,
+          "fromValue": -0.2690991759300232,
+          "toValue": -0.2590148150920868
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Lower4.L\"].location",
+          "index": 0,
+          "fromValue": -0.0016382870962843299,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Lower4.L\"].location",
+          "index": 1,
+          "fromValue": 2.989341737702489e-05,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Lower4.L\"].location",
+          "index": 2,
+          "fromValue": -0.0009085471974685788,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Lower4.R\"].location",
+          "index": 0,
+          "fromValue": 0.0016382870962843299,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Lower4.R\"].location",
+          "index": 1,
+          "fromValue": 2.989341737702489e-05,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Lower4.R\"].location",
+          "index": 2,
+          "fromValue": -0.0009085471974685788,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper3.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.003100891364738345
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper3.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.017660783603787422
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper3.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.001389561453834176
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper3.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.0030501389410346746
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper3.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.02104070596396923
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper3.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.0021020318381488323
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper4.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.005352049134671688
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper4.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.004662519786506891
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper4.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.003726501017808914
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper4.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.005352049134671688
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper4.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.004662519786506891
+        },
+        {
+          "path": "pose.bones[\"STR-Eyelid_Upper4.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.003726501017808914
+        }
+      ]
+    },
+    {
+      "from": "mouth_smileclosed2",
+      "to": "mouth_smileopen",
+      "channels": [
+        {
+          "path": "pose.bones[\"ACT-MouthCorner.L\"].location",
+          "index": 0,
+          "fromValue": 0.0061846207827329636,
+          "toValue": 0.009292418137192726
+        },
+        {
+          "path": "pose.bones[\"ACT-MouthCorner.L\"].location",
+          "index": 1,
+          "fromValue": 0.0036408461164683104,
+          "toValue": -0.007402367889881134
+        },
+        {
+          "path": "pose.bones[\"ACT-MouthCorner.R\"].location",
+          "index": 0,
+          "fromValue": -0.0061846207827329636,
+          "toValue": -0.009292418137192726
+        },
+        {
+          "path": "pose.bones[\"ACT-MouthCorner.R\"].location",
+          "index": 1,
+          "fromValue": 0.0036408461164683104,
+          "toValue": -0.007402367889881134
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.007949166931211948
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.0011857254430651665
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.0077644772827625275
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.L\"].rotation_euler",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.09074129909276962
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.L\"].rotation_euler",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.0132552869617939
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.L\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.20873436331748962
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.007949166931211948
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.0011857254430651665
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.0077644772827625275
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.R\"].rotation_euler",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.09074130654335022
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.R\"].rotation_euler",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.0132552869617939
+        },
+        {
+          "path": "pose.bones[\"CTR-DEF-Gum_Upper1.R\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.20873437821865082
+        },
+        {
+          "path": "pose.bones[\"CTR-LipCorner.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -6.420211866497993e-05
+        },
+        {
+          "path": "pose.bones[\"CTR-LipCorner.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.009133931249380112
+        },
+        {
+          "path": "pose.bones[\"CTR-LipCorner.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.004404898267239332
+        },
+        {
+          "path": "pose.bones[\"CTR-LipCorner.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.00500293355435133
+        },
+        {
+          "path": "pose.bones[\"CTR-LipCorner.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.013568427413702011
+        },
+        {
+          "path": "pose.bones[\"CTR-LipCorner.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.0024308525025844574
+        },
+        {
+          "path": "pose.bones[\"CTR-LipCorner.R\"][\"Sharp\"]",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 1.1920928955078125e-07
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue1\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.0031566231045871973
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue1\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.00529430340975523
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue1\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.005239109043031931
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue2\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.002304381225258112
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue2\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.01938564144074917
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue2\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.003920267801731825
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue3\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.005081110633909702
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue3\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.005279653239995241
+        },
+        {
+          "path": "pose.bones[\"FK-Tongue3\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -4.072417505085468e-05
+        },
+        {
+          "path": "pose.bones[\"Jaw\"].location",
+          "index": 1,
+          "fromValue": -6.303643749561161e-05,
+          "toValue": -0.0020915325731039047
+        },
+        {
+          "path": "pose.bones[\"Jaw\"].location",
+          "index": 2,
+          "fromValue": -0.0009387885802425444,
+          "toValue": 0.0056914337910711765
+        },
+        {
+          "path": "pose.bones[\"Jaw\"].rotation_euler",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.352168470621109
+        },
+        {
+          "path": "pose.bones[\"Jaw\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 5.774735427621636e-07
+        },
+        {
+          "path": "pose.bones[\"MSTR-Mouth\"].location",
+          "index": 1,
+          "fromValue": -0.00031931305420584977,
+          "toValue": -7.275957614183426e-12
+        },
+        {
+          "path": "pose.bones[\"MSTR-Mouth\"].location",
+          "index": 2,
+          "fromValue": -0.0018399711698293686,
+          "toValue": -0.002352715702727437
+        },
+        {
+          "path": "pose.bones[\"STR-I-Teeth_Lower2\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.0013884217478334904
+        },
+        {
+          "path": "pose.bones[\"STR-I-Teeth_Lower2\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": -0.003301964607089758
+        },
+        {
+          "path": "pose.bones[\"STR-I-Teeth_Lower2\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 7.325713522732258e-05
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom1.L\"].location",
+          "index": 0,
+          "fromValue": -0.002272527664899826,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom1.L\"].location",
+          "index": 1,
+          "fromValue": -0.0013200461398810148,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom1.L\"].location",
+          "index": 2,
+          "fromValue": -0.0003816713870037347,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom1.R\"].location",
+          "index": 0,
+          "fromValue": 0.002272527664899826,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom1.R\"].location",
+          "index": 1,
+          "fromValue": -0.0013200461398810148,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom1.R\"].location",
+          "index": 2,
+          "fromValue": -0.0003816713870037347,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom2.L\"].location",
+          "index": 0,
+          "fromValue": 0.000540594570338726,
+          "toValue": -0.0005438986700028181
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom2.L\"].location",
+          "index": 1,
+          "fromValue": -0.0013401983305811882,
+          "toValue": 0.0027134844567626715
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom2.L\"].location",
+          "index": 2,
+          "fromValue": 0.00022117845946922898,
+          "toValue": -8.156948024407029e-05
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom2.R\"].location",
+          "index": 0,
+          "fromValue": -0.000540594570338726,
+          "toValue": 0.0005114133236929774
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom2.R\"].location",
+          "index": 1,
+          "fromValue": -0.0013401983305811882,
+          "toValue": 0.0021749865263700485
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Bottom2.R\"].location",
+          "index": 2,
+          "fromValue": 0.00022117845946922898,
+          "toValue": 0.0005287303938530385
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Top2.L\"].location",
+          "index": 0,
+          "fromValue": 0.0022446545772254467,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Top2.L\"].location",
+          "index": 1,
+          "fromValue": -0.0013497298350557685,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Top2.L\"].location",
+          "index": 2,
+          "fromValue": 0.00043856370029971004,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Top2.R\"].location",
+          "index": 0,
+          "fromValue": -0.0022446545772254467,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Top2.R\"].location",
+          "index": 1,
+          "fromValue": -0.0013497298350557685,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Lip_Top2.R\"].location",
+          "index": 2,
+          "fromValue": 0.00043856370029971004,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-TIP-Lip_Top2.L\"].location",
+          "index": 0,
+          "fromValue": -0.0005891978507861495,
+          "toValue": -0.002119033131748438
+        },
+        {
+          "path": "pose.bones[\"STR-TIP-Lip_Top2.L\"].location",
+          "index": 1,
+          "fromValue": -0.0013136473717167974,
+          "toValue": -0.002263486385345459
+        },
+        {
+          "path": "pose.bones[\"STR-TIP-Lip_Top2.L\"].location",
+          "index": 2,
+          "fromValue": -0.0002285725058754906,
+          "toValue": -0.0010939519852399826
+        },
+        {
+          "path": "pose.bones[\"STR-TIP-Lip_Top2.R\"].location",
+          "index": 0,
+          "fromValue": 0.0005891978507861495,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-TIP-Lip_Top2.R\"].location",
+          "index": 1,
+          "fromValue": -0.0013136473717167974,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-TIP-Lip_Top2.R\"].location",
+          "index": 2,
+          "fromValue": -0.0002285725058754906,
+          "toValue": 0.0
+        },
+        {
+          "path": "pose.bones[\"STR-Teeth_Lower1.R\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.009587034583091736
+        },
+        {
+          "path": "pose.bones[\"STR-Teeth_Lower1.R\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.0015174368163570762
+        },
+        {
+          "path": "pose.bones[\"STR-Teeth_Lower1.R\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": 0.0030325225088745356
+        },
+        {
+          "path": "pose.bones[\"STR-Teeth_Lower2.L\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": -0.0030980671290308237
+        },
+        {
+          "path": "pose.bones[\"STR-Teeth_Lower2.L\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.001078280620276928
+        },
+        {
+          "path": "pose.bones[\"STR-Teeth_Lower2.L\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.0024497320409864187
+        },
+        {
+          "path": "pose.bones[\"Teeth_Bottom_Root\"].location",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.001371435122564435
+        },
+        {
+          "path": "pose.bones[\"Teeth_Bottom_Root\"].location",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.0038528756704181433
+        },
+        {
+          "path": "pose.bones[\"Teeth_Bottom_Root\"].location",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.009252308867871761
+        },
+        {
+          "path": "pose.bones[\"Teeth_Bottom_Root\"].rotation_euler",
+          "index": 0,
+          "fromValue": 0.0,
+          "toValue": 0.2372177541255951
+        },
+        {
+          "path": "pose.bones[\"Teeth_Bottom_Root\"].rotation_euler",
+          "index": 1,
+          "fromValue": 0.0,
+          "toValue": 0.003773783566430211
+        },
+        {
+          "path": "pose.bones[\"Teeth_Bottom_Root\"].rotation_euler",
+          "index": 2,
+          "fromValue": 0.0,
+          "toValue": -0.00014471109898295254
+        }
+      ]
+    }
+  ]
+}

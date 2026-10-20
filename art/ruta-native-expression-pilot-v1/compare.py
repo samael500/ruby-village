@@ -1,0 +1,7 @@
+from pathlib import Path
+from PIL import Image,ImageDraw
+import hashlib,json
+O=Path(__file__).resolve().parent;a=Image.open(O/'baseline-front00.png').convert('RGBA');b=Image.open(O/'front-trial32.png').convert('RGBA');sheet=Image.new('RGBA',(1024,680),(229,224,209,255));sheet.alpha_composite(a,(0,40));sheet.alpha_composite(b,(512,40));d=ImageDraw.Draw(sheet);d.text((12,12),'Frozen09ac frontWalk0,128AA baseline',fill=(20,20,20));d.text((524,12),'Native pose expression trial,32AA only',fill=(20,20,20));sheet.convert('RGB').save(O/'front-before-after.jpg',quality=95);box=(185,185,325,280);close=Image.new('RGBA',(840,325),(229,224,209,255));d=ImageDraw.Draw(close)
+for i,im in enumerate([a,b]):
+ crop=im.crop(box).resize((420,285),Image.Resampling.NEAREST);close.alpha_composite(crop,(420*i,40));d.text((420*i+8,12),'Baseline128AA'if i==0 else'Trial32AA',fill=(20,20,20))
+close.convert('RGB').save(O/'face-common-crop-before-after.jpg',quality=95);(O/'comparison.json').write_text(json.dumps({'globalFullCanvasScale':1,'faceEvidenceCommonRect':box,'faceEvidenceCommonScale':3,'resample':'NEAREST diagnosticonly','baselineSHA256':hashlib.sha256((O/'baseline-front00.png').read_bytes()).hexdigest(),'trialSHA256':hashlib.sha256((O/'front-trial32.png').read_bytes()).hexdigest(),'AA128vs32Caveat':'Not an exact renderedpixel-diffcertificate; camera/action/frame/yaw fixed; no morphologyregistration'},indent=2)+'\n')
