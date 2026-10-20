@@ -1,0 +1,143 @@
+{
+  "shaderDistanceSpace": "linearRGB",
+  "thresholds": [
+    0.3,
+    0.6
+  ],
+  "rows": [
+    {
+      "texture": "mixed",
+      "material": "Adapted warm brown leather",
+      "measuredBorderMedianSRGBBytes": [
+        234.0,
+        227.0,
+        211.0
+      ],
+      "guardNonzeroInteriorFraction": 0.0,
+      "guardNonzeroWholeUVFraction": 0.0020365302615668554,
+      "interiorDistanceQuantiles": [
+        0.8319002102837051,
+        0.8919436507692972,
+        0.9514564490865146,
+        1.0949089924454682,
+        1.143355277180886
+      ],
+      "guardFullInteriorFraction": 0.0
+    },
+    {
+      "texture": "mixed",
+      "material": "Brown2",
+      "measuredBorderMedianSRGBBytes": [
+        234.0,
+        227.0,
+        211.0
+      ],
+      "guardNonzeroInteriorFraction": 0.0,
+      "guardNonzeroWholeUVFraction": 0.0037423148890670943,
+      "interiorDistanceQuantiles": [
+        0.8175488173543526,
+        0.8844387413105015,
+        0.9563716830868593,
+        1.046867044889807,
+        1.1294446130597815
+      ],
+      "guardFullInteriorFraction": 0.0
+    },
+    {
+      "texture": "mixed",
+      "material": "Brown_02",
+      "measuredBorderMedianSRGBBytes": [
+        234.0,
+        227.0,
+        211.0
+      ],
+      "guardNonzeroInteriorFraction": 0.0,
+      "guardNonzeroWholeUVFraction": 0.004077389171364057,
+      "interiorDistanceQuantiles": [
+        0.7025919220043635,
+        0.9237210559188438,
+        0.9861970054587549,
+        1.0583543213120454,
+        1.1272230942681492
+      ],
+      "guardFullInteriorFraction": 0.0
+    },
+    {
+      "texture": "mixed",
+      "material": "Cargo pocket cloth L",
+      "measuredBorderMedianSRGBBytes": [
+        234.0,
+        227.0,
+        211.0
+      ],
+      "guardNonzeroInteriorFraction": 0.0,
+      "guardNonzeroWholeUVFraction": 0.0002597627500216469,
+      "interiorDistanceQuantiles": [
+        0.863347363107649,
+        0.9162314336436894,
+        0.9882927734109913,
+        1.0708222956643074,
+        1.1595632069386923
+      ],
+      "guardFullInteriorFraction": 0.0
+    },
+    {
+      "texture": "mixed",
+      "material": "Cargo pocket cloth R",
+      "measuredBorderMedianSRGBBytes": [
+        234.0,
+        227.0,
+        211.0
+      ],
+      "guardNonzeroInteriorFraction": 0.0,
+      "guardNonzeroWholeUVFraction": 0.0007834261838440111,
+      "interiorDistanceQuantiles": [
+        0.7624988641705929,
+        0.8875472877635134,
+        0.9786254222700724,
+        1.0763566558581519,
+        1.1584326760061336
+      ],
+      "guardFullInteriorFraction": 0.0
+    },
+    {
+      "texture": "mixed",
+      "material": "Ruta satchel warm leather",
+      "measuredBorderMedianSRGBBytes": [
+        234.0,
+        227.0,
+        211.0
+      ],
+      "guardNonzeroInteriorFraction": 0.0,
+      "guardNonzeroWholeUVFraction": 0.003186235462800701,
+      "interiorDistanceQuantiles": [
+        0.7536461904092266,
+        0.8803858466582349,
+        0.9459745337438802,
+        1.046867044889807,
+        1.1487308652688561
+      ],
+      "guardFullInteriorFraction": 0.0
+    },
+    {
+      "texture": "trousers",
+      "material": "Ruta warm loose cargo cloth",
+      "measuredBorderMedianSRGBBytes": [
+        232.0,
+        225.0,
+        210.0
+      ],
+      "guardNonzeroInteriorFraction": 0.0,
+      "guardNonzeroWholeUVFraction": 0.00376402867749059,
+      "interiorDistanceQuantiles": [
+        0.8983536506994161,
+        0.9415931582176911,
+        0.9890641482378908,
+        1.0565044219515738,
+        1.130414191079027
+      ],
+      "guardFullInteriorFraction": 0.0
+    }
+  ],
+  "limitations": "Color proximity is a diagnostic, not semantic proof; strict brown-only assignment protects cream/brass. No PNG pixels modified."
+}
