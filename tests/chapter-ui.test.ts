@@ -28,3 +28,10 @@ test('six staged frames keep Rabbit alone, narrator portrait absent, and gamepla
  assert.equal(frames[5].staging.next,'К калитке');assert.ok(frames.every(f=>!f.showPuzzleUI));
  for(const i of [-1,6,NaN,1.5])assert.throws(()=>stagedPrologueFrame(i),RangeError);
 });
+
+test('legacy sandbox sessions do not reopen the technical mode from Continue',()=>{
+ const completed=['gate','garden'];
+ assert.equal(continueTarget(completed,'sandbox'),'well');
+ assert.equal(continueTarget([],'sandbox'),'gate');
+ assert.deepEqual(completed,['gate','garden']);
+});
