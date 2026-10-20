@@ -1,0 +1,63 @@
+{
+  "samples32vs128": [
+    {
+      "phase": 0,
+      "meanAbsForegroundRGBbytes": [
+        0.47929040478290696,
+        0.38772909928452415,
+        0.28456336371655394
+      ],
+      "p99AbsForegroundRGBbytes": 4.0,
+      "maxAbsForegroundRGBbytes": 35.0,
+      "alpha128MaskChangedPixels": 25,
+      "meanAbsAlphaBytes": 0.11471135940409684,
+      "meanAbsEdgeRGBbytes": [
+        0.8866132383496587,
+        0.7144553279905016,
+        0.5776194716533096
+      ],
+      "faceROIXYXY": [
+        205,
+        185,
+        310,
+        280
+      ],
+      "faceMeanAbsRGBbytes": [
+        0.505764411027569,
+        0.4982456140350877,
+        0.40531328320802007
+      ],
+      "faceP99AbsRGBbytes": 4.0
+    },
+    {
+      "phase": 23,
+      "meanAbsForegroundRGBbytes": [
+        0.44859171504785816,
+        0.3499725404048329,
+        0.25817903656048957
+      ],
+      "p99AbsForegroundRGBbytes": 4.0,
+      "maxAbsForegroundRGBbytes": 25.0,
+      "alpha128MaskChangedPixels": 32,
+      "meanAbsAlphaBytes": 0.12794209948219049,
+      "meanAbsEdgeRGBbytes": [
+        1.035232590145885,
+        0.7943848059454995,
+        0.6333608587943848
+      ],
+      "faceROIXYXY": [
+        205,
+        185,
+        310,
+        280
+      ],
+      "faceMeanAbsRGBbytes": [
+        0.5171929824561403,
+        0.49894736842105264,
+        0.40691729323308273
+      ],
+      "faceP99AbsRGBbytes": 5.0
+    }
+  ],
+  "limits": "Static raw-byte difference, no perceptual acceptance; same source/pose/camera but different sampling and concurrent timing environment. Face ROI includes hair/skin, not semantic stable-landmark claim."
+}
