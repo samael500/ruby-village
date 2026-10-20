@@ -1,0 +1,35 @@
+{
+  "coverage": [
+    {
+      "object": "Ruta stock long trousers",
+      "UVRasterPixels": 232284,
+      "BeigeLikePixelsInsideActualUVPolygons": 608,
+      "beigeLikeLinearDistanceBelow": 0.15,
+      "rawRGBA": "RGB",
+      "islandBoundarySegments": 420
+    },
+    {
+      "object": "Adventurer_Feet",
+      "UVRasterPixels": 77108,
+      "BeigeLikePixelsInsideActualUVPolygons": 125,
+      "beigeLikeLinearDistanceBelow": 0.15,
+      "rawRGBA": "RGB",
+      "islandBoundarySegments": 418
+    }
+  ],
+  "packedImages": [
+    {
+      "name": "painted-garment-uv-v1.png",
+      "packedSha256": "3cf73bc4c6e824fb359b840eb87dde51f024ddfa126cbcb8619a9df94fa4d927",
+      "externalSha256": "3cf73bc4c6e824fb359b840eb87dde51f024ddfa126cbcb8619a9df94fa4d927",
+      "alphaUsedInNodes": []
+    },
+    {
+      "name": "painted-trousers-uv-v1.png",
+      "packedSha256": "b54919b888d7ebfca35094532fb4367d1840d7db22ce25275d71af3d312b2e15",
+      "externalSha256": "b54919b888d7ebfca35094532fb4367d1840d7db22ce25275d71af3d312b2e15",
+      "alphaUsedInNodes": []
+    }
+  ],
+  "limits": "Rasterization/texel source coverage diagnostic, not shader filtered screen pixels or cleanup mask."
+}
