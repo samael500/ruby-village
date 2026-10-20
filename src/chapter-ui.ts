@@ -10,7 +10,6 @@ export function chapterMap(completed:readonly string[]) {
   connectionRestored:index>0&&completed.includes(levels[index-1].id)&&completed.includes(level.id)}));
 }
 export function continueTarget(completed:readonly string[],sessionLevel?:string):string {
- if(sessionLevel==='sandbox')return sessionLevel;
  if(sessionLevel&&available(sessionLevel,completed))return sessionLevel;
  return levels.find(level=>available(level.id,completed)&&!completed.includes(level.id))?.id??levels[0].id;
 }

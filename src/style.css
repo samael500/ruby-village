@@ -269,3 +269,20 @@ dialog h2{font-size:21px}
  .illustrated-level .brand h1{border-width:10px 16px 10px 56px;border-image-width:10px 16px 10px 56px;min-height:56px;padding:3px 2px 3px 0;font-size:16px}
  .illustrated-level .brand h1 small{font-size:9px;margin-top:2px}
 }
+
+/* Small restored-place pictures and readable progress remain outside the
+   ornament's pale edge, including short landscape screens. */
+#scene-event{top:60px;left:2px;width:48px;height:40px;filter:drop-shadow(0 1px 2px #35251c66)}
+.illustrated-level .brand h1 small{display:block;align-self:flex-start;background:#fff2d9;color:#503923;border:1px solid #b49a72;border-radius:4px;padding:2px 6px;margin-top:4px;font:600 12px/1.25 system-ui,sans-serif;text-shadow:none;white-space:nowrap}
+#map-extra .adventure-entry{display:flex;align-items:center;gap:12px;text-align:left;padding:6px 14px;min-height:68px}
+.adventure-miniature{display:block;width:64px;height:52px;flex:0 0 64px}
+.adventure-entry strong,.adventure-entry small{display:block}
+.adventure-entry strong{font:600 18px/1.2 Georgia,serif;color:#503923}
+.adventure-entry small{font:12px/1.35 system-ui,sans-serif;color:#705538;margin-top:3px}
+@media(max-height:480px){
+ #scene-event{top:56px;width:44px;height:36px}
+ .illustrated-level .brand h1 small{font-size:11px;margin-top:3px;padding:2px 5px}
+ #map-extra .adventure-entry{min-height:58px;padding:4px 10px;gap:10px}
+ .adventure-miniature{width:56px;height:46px;flex-basis:56px}
+ .adventure-entry strong{font-size:16px}
+}

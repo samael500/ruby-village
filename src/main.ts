@@ -1,4 +1,5 @@
 import './style.css';
+import {renderLevelMiniature,renderAdventureMiniature} from './ui-miniatures.ts';
 import {activateTouchRelease} from './touch-button.ts';
 import {restoredScene,narrativePresentation} from './scene-presentation.ts';
 import {renderMapTrails} from './map-trails.ts';
@@ -47,7 +48,7 @@ app.innerHTML = `
 <section id="chapter-map" aria-label="Карта первой главы">
 <div class="map-intro"><span class="ruta-small" aria-hidden="true">◆</span><p>Дороги исчезают… Поможем Руте вернуть их?</p></div>
 <div class="map-landscape"><img id="map-wide" loading="lazy" src="${import.meta.env.BASE_URL}${mapPaint.wide.file}" alt=""><div id="map-world"><img loading="lazy" id="map-background" src="${import.meta.env.BASE_URL}assets/chapter-map-v2/${mapPaint.layers.base}" alt=""><svg id="map-roads" viewBox="0 0 1000 400" preserveAspectRatio="none" aria-hidden="true"></svg><div id="map-places"></div></div></div>
-<div class="map-actions"><button id="home-menu">⌂ Меню</button><button id="map-more">Ещё…</button><span id="save-status" role="status"></span></div><dialog id="map-extra"><div class="dialog-heading"><h2>Приключение</h2><button id="map-extra-close" aria-label="Закрыть">✕</button></div><div class="pause-actions"><button id="sandbox-open">Песочница</button><button id="chapter-ending" hidden>✦ Письма через лес</button><button id="letter-open" hidden>✉ Приглашение</button><button id="reset-open">Начать главу заново</button></div></dialog>
+<div class="map-actions"><button id="home-menu">⌂ Меню</button><button id="map-more">Ещё…</button><span id="save-status" role="status"></span></div><dialog id="map-extra"><div class="dialog-heading"><h2>Приключение</h2><button id="map-extra-close" aria-label="Закрыть">✕</button></div><div class="pause-actions"><button id="chapter-ending" class="adventure-entry" hidden><span class="adventure-miniature" aria-hidden="true"></span><span><strong>Письма через лес</strong><small>Финал первой главы</small></span></button><button id="letter-open" class="adventure-entry" hidden><span class="adventure-miniature" aria-hidden="true"></span><span><strong>Приглашение</strong><small>Сюжетное письмо</small></span></button><button id="reset-open">Начать главу заново</button></div></dialog>
 </section>
 <main id="field"><svg id="board" role="group" aria-label="Гексагональное поле. Деревня слева, мельница справа"></svg></main>
 <footer id="game-controls">
@@ -347,25 +348,10 @@ function prototypeRuta(){
 
 }
 function victoryDecoration(){
- const labels:Record<string,[string,string]>={gate:['⚑','Калитка открыта'],garden:['◉','Яблоки на столе'],well:['✿','Цветы политы'],bakery:['♨','Хлеб готов'],stream:['➜','Переход готов'],mill:['▣','Мука на тележке'],post:['✉','Почта в пути'],forest:['♠','Яблоневый сад →']};
- const [,text]=labels[level.id],host=$('scene-event');host.hidden=false;host.setAttribute('role','img');host.setAttribute('aria-label',text);
- const badge=el('svg',{width:34,height:34,viewBox:'0 0 36 36','aria-hidden':'true'},host);
- const event=el('g',{'pointer-events':'none','data-victory-event':storyFor(level.id)!.mapEvent},badge);
- const sketch=el('g',{transform:'translate(2 4)',fill:'none',stroke:'#f2d49b','stroke-width':2,'stroke-linecap':'round'},event);
- const drawings:Record<string,string>={
-  gate:'M 0 25 V 0 M 25 25 V 0 M 0 5 L 16 0 V 21 L 0 25 M 5 4 V 23',
-  garden:'M 0 13 H 28 M 5 13 V 25 M 23 13 V 25 M 6 2 L 8 11 H 20 L 22 2 Z',
-  well:'M 2 6 L 5 24 H 17 L 20 6 Z M 5 6 Q 10 -3 17 6 M 20 10 L 29 6 M 26 17 V 25',
-  bakery:'M 0 12 L 4 25 H 25 L 29 12 Z M 4 12 Q 2 -1 10 3 Q 14 -3 19 3 Q 28 0 25 12',
-  stream:'M 0 23 V 7 H 29 V 23 M 0 13 H 29 M 6 8 V 18 M 14 8 V 18 M 22 8 V 18',
-  mill:'M 1 18 H 22 L 27 8 H 32 M 4 18 V 2 H 19 V 18 M 8 2 V 0 H 15 V 2',
-  post:'M 0 3 H 28 V 22 H 0 Z M 0 3 L 14 14 L 28 3 M 1 21 L 10 12 M 27 21 L 18 12',
-  forest:'M 13 26 V 0 M 0 2 H 26 L 32 9 L 26 16 H 0 Z'};
- el('path',{d:drawings[level.id]},sketch);
- if(level.id==='garden')for(const [x,y] of [[10,6],[16,6],[14,2]])el('circle',{cx:x,cy:y,r:3,fill:'#ac4950',stroke:'none'},sketch);
- if(level.id==='well')el('path',{d:'M 25 13 L 25 15 M 29 11 L 29 13',stroke:'#559eae'},sketch);
- if(level.id==='mill')for(const x of [6,20])el('circle',{cx:x,cy:23,r:3,fill:'#88603b'},sketch);
- if(level.id==='forest')el('circle',{cx:30,cy:8,r:3,fill:'#ab70cc',stroke:'none',class:phase==='won'&&firstVictory&&performance.now()-victoryAt<1200?'forest-glimmer':'',style:`animation-delay:-${Math.max(0,performance.now()-victoryAt)}ms`},sketch);
+ const labels:Record<string,string>={gate:'Калитка открыта',garden:'Яблоки на столе',well:'Цветы политы',bakery:'Хлеб готов',stream:'Переход готов',mill:'Мука на тележке',post:'Почта в пути',forest:'Яблоневый сад'};
+ const host=$('scene-event');host.hidden=false;host.setAttribute('role','img');host.setAttribute('aria-label',labels[level.id]);
+ host.dataset.victoryEvent=storyFor(level.id)!.mapEvent;
+ renderLevelMiniature(host,level.id);
 }
 function render() {
   app.classList.toggle('reduced-motion',reducedMotion);
@@ -641,7 +627,7 @@ function enterLevel(next:Level,resume:Session|null=null) {
   app.classList.toggle('prototype-level',false);
   sceneChrome(level.id!=='sandbox');
   document.querySelector('h1')!.textContent=level.id==='sandbox'?'Рубиновая деревня':level.name;
-  if(level.id!=='sandbox'){const note=document.createElement('small');note.textContent=`За калитку · ${levels.indexOf(level)+1}/8`;note.dataset.prototype='';document.querySelector('h1')!.append(note);}
+  if(level.id!=='sandbox'){const note=document.createElement('small');note.textContent=`Уровень ${levels.indexOf(level)+1} из ${levels.length}`;note.dataset.prototype='';document.querySelector('h1')!.append(note);}
   $('chapter-map').hidden=true;$('field').hidden=false;$('game-controls').hidden=false;
   $('size-setting').hidden=level.id!=='sandbox';
   if(level.id==='sandbox')($('size') as HTMLSelectElement).value=`${cols},${rows}`;
@@ -699,10 +685,11 @@ function showMap(){
  $('reset-open').toggleAttribute('disabled',completed.length===0);
 }
 new ResizeObserver(()=>{if(screen==='map')mapGeometry();}).observe($('chapter-map'));
+renderAdventureMiniature(document.querySelector('#chapter-ending .adventure-miniature')!,'ending');
+renderAdventureMiniature(document.querySelector('#letter-open .adventure-miniature')!,'letter');
 $('chapter-ending').onclick=()=>{($('map-extra') as HTMLDialogElement).close();showEnding();};
 $('letter-open').onclick=()=>{($('map-extra') as HTMLDialogElement).close();dialogPages('Старое приглашение',[{speaker:'Хранитель сада',text:invitation.text}],()=>{},'Закрыть');};
 $('story-replay').onclick=()=>{settings.close();readStory(level.id);};
-$('sandbox-open').onclick=()=>enterLevel(savedSession?.levelId==='sandbox'?sandbox(savedSession.cols,savedSession.rows):sandbox(...(($('size') as HTMLSelectElement).value.split(',').map(Number) as [number,number])));
 $('map-return').onclick=showMap;
 const resetDialog=$('reset-dialog') as HTMLDialogElement;
 $('map-more').onclick=()=>($('map-extra') as HTMLDialogElement).showModal();
@@ -796,7 +783,7 @@ function showMenu(){
  $('menu-progress').textContent=`Восстановлено дорог: ${completed.length} из 8`;
  $('menu-save-status').textContent=sessionRecovery.notice??(storageAvailable?'':'Не удалось сохранить. Можно играть до закрытия страницы.');
 }
-$('continue-game').onclick=()=>{if(shouldStartPrologue(prologueState,!!savedSession,completed.length>0||introSeen.length>0)){showPrologue(false,()=>enterLevel(levels[0]));return;}const target=continueTarget(completed,savedSession?.levelId);const next=target==='sandbox'&&savedSession?sandbox(savedSession.cols,savedSession.rows):levels.find(l=>l.id===target)??levels[0];enterLevel(next,savedSession?.levelId===next.id?savedSession:null);};
+$('continue-game').onclick=()=>{if(shouldStartPrologue(prologueState,!!savedSession,completed.length>0||introSeen.length>0)){showPrologue(false,()=>enterLevel(levels[0]));return;}const target=continueTarget(completed,savedSession?.levelId);const next=levels.find(l=>l.id===target)??levels[0];enterLevel(next,savedSession?.levelId===next.id?savedSession:null);};
 $('choose-level').onclick=showMap;
 $('home-menu').onclick=showMenu;
 $('main-settings').onclick=()=>{for(const id of ['clear','map-return','story-replay','metric','hint','size-setting'])$(id).hidden=true;settings.showModal();};
