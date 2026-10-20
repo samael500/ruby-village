@@ -1,0 +1,158 @@
+{
+  "url": "http://localhost:5311/art/ruta-native-painted-sprites-v2/packing/render-sampling-study/review.html",
+  "htmlSha": "f94eeb1131769d881e6aa2e2b3a145041b5b6de70e024185687ebb7e4ef6b5f4",
+  "runs": [
+    {
+      "dpr": 1,
+      "state": {
+        "ready": true,
+        "playing": false,
+        "frame": 45,
+        "frameCount": 48,
+        "cycleSeconds": 1.6666666666666667,
+        "fps": 28.799999999999997,
+        "fixedScale": 1.1631563024644236,
+        "pivots": "unchanged frozen head-pivot-trial",
+        "mode": "side-by-side",
+        "drawCount": 222,
+        "dpr": 1,
+        "cssSize": [
+          320,
+          400
+        ],
+        "baseline": {
+          "mode": "baseline-exact",
+          "css": [
+            320,
+            400
+          ],
+          "backing": [
+            256,
+            320
+          ],
+          "smoothing": "low",
+          "origin": [
+            29.84764658777303,
+            58.732075991909134
+          ],
+          "size": [
+            188.43132099923662,
+            232.6312604928847
+          ]
+        },
+        "direct": {
+          "mode": "single-pass",
+          "css": [
+            320,
+            400
+          ],
+          "backing": [
+            320,
+            400
+          ],
+          "smoothing": "high",
+          "origin": [
+            29.84764658777303,
+            58.732075991909134
+          ],
+          "size": [
+            188.43132099923662,
+            232.6312604928847
+          ],
+          "physicalOrigin": [
+            37.30955823471629,
+            73.41509498988641
+          ],
+          "logicalTransform": [
+            1.25,
+            1.25
+          ]
+        },
+        "sourceRect": [
+          810,
+          1030,
+          162,
+          200
+        ]
+      },
+      "errors": [],
+      "video": "/tmp/ruby-painted-native48-qa/docs/qa/painted-image-sampling/renderer-ab/dpr-1/video/page@8ce5efa5c7e261beeaf25494b46ed85c.webm"
+    },
+    {
+      "dpr": 2,
+      "state": {
+        "ready": true,
+        "playing": false,
+        "frame": 43,
+        "frameCount": 48,
+        "cycleSeconds": 1.6666666666666667,
+        "fps": 28.799999999999997,
+        "fixedScale": 1.1631563024644236,
+        "pivots": "unchanged frozen head-pivot-trial",
+        "mode": "side-by-side",
+        "drawCount": 221,
+        "dpr": 2,
+        "cssSize": [
+          320,
+          400
+        ],
+        "baseline": {
+          "mode": "baseline-exact",
+          "css": [
+            320,
+            400
+          ],
+          "backing": [
+            256,
+            320
+          ],
+          "smoothing": "low",
+          "origin": [
+            27.638285556404522,
+            57.91439911701306
+          ],
+          "size": [
+            188.43132099923662,
+            232.6312604928847
+          ]
+        },
+        "direct": {
+          "mode": "single-pass",
+          "css": [
+            320,
+            400
+          ],
+          "backing": [
+            640,
+            800
+          ],
+          "smoothing": "high",
+          "origin": [
+            27.638285556404522,
+            57.91439911701306
+          ],
+          "size": [
+            188.43132099923662,
+            232.6312604928847
+          ],
+          "physicalOrigin": [
+            69.0957138910113,
+            144.78599779253267
+          ],
+          "logicalTransform": [
+            2.5,
+            2.5
+          ]
+        },
+        "sourceRect": [
+          486,
+          1030,
+          162,
+          200
+        ]
+      },
+      "errors": [],
+      "video": "/tmp/ruby-painted-native48-qa/docs/qa/painted-image-sampling/renderer-ab/dpr-2/video/page@2c61ec47a94b8a5c5a3e3c0068d9a1cf.webm"
+    }
+  ]
+}
