@@ -143,3 +143,32 @@ E48 diagnostic batch of frozen combined source b14cfb5… with permanent texture
 fixed root/camera, original40/24s cycle and512×640 whole frames. This explicitly relaxes
 the earlier no48 research gate for a diagnostic only: it does not accept the hair,
 expand six directions, or enable runtime. Evidence and browser temporal QA follow completion.
+
+### Complete E48 diagnostic and independent browser review
+
+`e3d6278` records48actual native512×640renders, original40/24s cycle, sourceb14 unchanged.
+`7ba534a` independently checks48distinct actual draws in desktopDPR1/DPR2 and landscape
+844×390 CDPtouchDPR2; zero page/HTTP errors, constant full-frame/Root mapping. Actual
+MP4, WebM, decoded sequences and paused phases are in
+`docs/chapter-1-rc/qa/native-combined-temporal/`. Root also inspected the decoded sequence.
+No former large whole-image registration jump is seen at39/40 or47→0. Clothing/satchel
+read as fixed textures. **Overall flicker remains OPEN**: hair-card contours/crown stripes
+vary with pose, and the mostly occluded face cannot be certified stable. New source
+appearance is not accepted; this is a method diagnostic, not final Ruta or game footage.
+
+`53e447a` independently verifies native skin/UV/materials, all geometry/weights/rig/actions.
+Unused old paint UV on Feet is overwritten by the broader assembler scope; native UVMap,
+1932Skinfaces and1948preserved-material sentinel faces are exact. This warning must be
+narrowed to actual-used bindings before a future production assembly.
+
+`ebe9677` packs all48frames into one atlas2080×2604 using ONE global ROI[123,110,260,434].
+All retained RGBA bytes and reconstructed full-canvas alpha are exact; discarded RGB is
+fully transparent. Fixed Root anchor shifts globally from[256,516.859312] to[133,406.859312].
+Decodedmemory62,914,560→21,665,280bytes, PNG4,715,045bytes. No runtime install.
+
+Both crown-burial and smooth-cap replacements are rejected (bald patch / helmet seam).
+Raw solidification/voxel union is likewise not selected: it fills8.416%transparent source
+surface. Next native hair study must trim original-alpha contours in3D before solidification
+and transfer one fixed painted RGB surface. Scripts/provenance retained; no final-art claim.
+`f2ef8f7` independently progresses native contact-transition measurements; genuine start/stop
+animation/IK and full-sole/route constraints remain unresolved. Runtimee32cad4 unchanged.
