@@ -23,6 +23,9 @@ not claim implementation, accepted appearance, physical no-slip, or final #37/#4
 
 ## Motion and clock contract
 
+- Initial native Idle delivery is one actual Idle0 pose per heading (standing), with
+  zero pose velocity at Start entry/Stop completion. The original native Idle action
+  remains intact; its animated forward derivative is not the static delivery target.
 - Preserve the accepted Walk cycle40/24seconds. Native48 loop samples use source
   frame40*i/48, with phase5/40 at48-index6 and phase25/40 at48-index30.
 - Actor/root travel is external metadata: monotonic forward distance plus explicitly
@@ -33,8 +36,9 @@ not claim implementation, accepted appearance, physical no-slip, or final #37/#4
   distance curve; record the extraction, transforms and checks. Root/foot anchors
   are geometric source references, not the current silhouette bottom.
 - Clip metadata supplies source action/hash/range/FPS, duration, frame times, loop
-  flag, endpoint pose hashes, root curve, contact events and join phase. Non-loop
-  authoring endpoints need C0/C1 verification against next Idle/Walk state; avoid an
+  flag, endpoint pose hashes, root curve, contact events and join phase. Walk5 itself has a source one-sided derivative kink: Start exit matches outgoing
+  Walk-right velocity, while Stop entry matches incoming Walk-left velocity. Do not
+  use a central derivative there. Non-loop authoring endpoints need C0/C1 verification against next Idle/Walk state; avoid an
   extra held endpoint interval while the route continues moving.
 - Pause/dialog/hidden-tab stops both phase and travel clocks. Resume must discard
   suspended elapsed time, matching current CharacterPlayer semantics.
