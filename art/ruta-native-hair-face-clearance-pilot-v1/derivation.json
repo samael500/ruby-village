@@ -1,0 +1,75 @@
+{
+  "sourceSha256": "159298a6225fa24c174af5562c7a14113e93bbbc5e463ac3e0968b0f15bb81f9",
+  "outputSha256": "4294ef8eae02797b154d97df877142e2ebcc5cf38a43d0cff7ec182274fd1fe1",
+  "coordinateSystem": "native3D RESTZup/front\u2212Y, sourcecameraEunchanged",
+  "formula": "dx=sign(x)*12mm*w,dy=40mm*w; productcubicspatialweights onlycheeksidehair",
+  "region": {
+    "xAbsFadeIn": [
+      0.09,
+      0.135
+    ],
+    "xAbsFadeOut": [
+      0.23,
+      0.29
+    ],
+    "frontYFadeOut": [
+      -0.025,
+      0.09
+    ],
+    "zFadeIn": [
+      1.24,
+      1.31
+    ],
+    "zFadeOut": [
+      1.41,
+      1.48
+    ]
+  },
+  "changedVertices": 107726,
+  "sourceVertexCount": 527846,
+  "maxDeltaMeters": 0.0417612260356422,
+  "protectedCrownZAbove1p48AndLowerWavesZBelow1p24Count": 298536,
+  "protectedDeltaExact0": true,
+  "sourceBounds": [
+    [
+      -0.37599244713783264,
+      -0.29883548617362976,
+      0.8156664371490479
+    ],
+    [
+      0.33189845085144043,
+      0.26314759254455566,
+      1.6263965368270874
+    ]
+  ],
+  "candidateBounds": [
+    [
+      -0.37599244713783264,
+      -0.29883548617362976,
+      0.8156664371490479
+    ],
+    [
+      0.33189845085144043,
+      0.26314759254455566,
+      1.6263965368270874
+    ]
+  ],
+  "headIntersectionProbe": [
+    {
+      "state": "baseline",
+      "changedHairRegionHeadSurfaceTrianglePairCount": 2818,
+      "contactedHeadPolygonCount": 1007,
+      "earSideProxyContactedHeadPolygonCount": 910,
+      "earSideProxyDefinition": "absnativeX>.145,1.24<Z<1.48; notanatomicallyexactearmask"
+    },
+    {
+      "state": "candidate",
+      "changedHairRegionHeadSurfaceTrianglePairCount": 3214,
+      "contactedHeadPolygonCount": 1210,
+      "earSideProxyContactedHeadPolygonCount": 1114,
+      "earSideProxyDefinition": "absnativeX>.145,1.24<Z<1.48; notanatomicallyexactearmask"
+    }
+  ],
+  "collisionLimitations": "REST triangleintersectionpaircounts only; preexistingcontactspossible, nocertifiedallposepenetrationdepth/signedvolume/trueearmask",
+  "noOtherGeometryMaterialsOrActionsChanged": true
+}
