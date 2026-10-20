@@ -1,0 +1,2404 @@
+{
+  "status": "FIXED-REST-HEAD-PITCH-DIAGNOSTIC-NOT-ART-ACCEPTANCE",
+  "sourceSha256": "350c96cdacb9c413dac120cb57de695e94d1a9dd2b7c4cbfd8672ed7115ee5d8",
+  "blendSha256": "1707bece55ebe581f90619310d4647d49be771c971539dda42d4a2b43d1695fb",
+  "angleDegreesLocalX": -20,
+  "definition": "ONE common 3D REST coordinate field on all visible Ellie ready head/face/eyes/brows/ears/hair; smooth0below1.18/fullabove1.25. LowerhairdrapebasedonfixedRESTheight, no framefit.",
+  "changedObjects": [
+    {
+      "name": "Ellie ready tongue",
+      "vertices": 1933,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.04089826468847349
+    },
+    {
+      "name": "Ellie ready teeth_top",
+      "vertices": 10042,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.053680655676970376
+    },
+    {
+      "name": "Ellie ready teeth_btm",
+      "vertices": 10042,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.05004764683148462
+    },
+    {
+      "name": "Ellie ready head",
+      "vertices": 25239,
+      "protectedBelowNeckCount": 2946,
+      "protectedMaxDeltaMeters": 0.0,
+      "maxRestDisplacementMeters": 0.09924022339214984
+    },
+    {
+      "name": "Ellie ready face_line2",
+      "vertices": 650,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.05312475028850053
+    },
+    {
+      "name": "Ellie ready face_line1",
+      "vertices": 650,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.06372057217710314
+    },
+    {
+      "name": "Ellie ready eyelashes",
+      "vertices": 2244,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.060861370778493754
+    },
+    {
+      "name": "Ellie ready eyebrows",
+      "vertices": 3332,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.07315120113101359
+    },
+    {
+      "name": "Ellie ready eye_highlights",
+      "vertices": 64,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.05611156424065457
+    },
+    {
+      "name": "Ellie ready eye.R",
+      "vertices": 9986,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.06528848871799683
+    },
+    {
+      "name": "Ellie ready eye.L",
+      "vertices": 9986,
+      "protectedBelowNeckCount": 0,
+      "protectedMaxDeltaMeters": null,
+      "maxRestDisplacementMeters": 0.06528846538915774
+    },
+    {
+      "name": "Ellie ready Daisy CC-BY hair",
+      "vertices": 4940,
+      "protectedBelowNeckCount": 966,
+      "protectedMaxDeltaMeters": 0.0,
+      "maxRestDisplacementMeters": 0.1286648147288208
+    }
+  ],
+  "protectedNeckSeam": "sourceHeadverticesRESTz<=1.18exact0; notclaimallheadgeometryunchanged",
+  "before": {
+    "Adventurer_Body": {
+      "coordsSha256": "7631c0abb84d666b689a86a9cf827ca34331fd1cb599d9994e25fa875050b716",
+      "topology": "8727e0257b3751fc6742c18c5c1dbd551c3708dbccb03517086943f21afccff7",
+      "uv": {
+        "UVMap": "4057e9457c7b7bac34c3a23085f7ae171977a8cbd3504b4d1a2d9a69f0f479d4",
+        "RutaPaint": "4d8f853e9987f0c00e048e5519586de6aba92a524e2801bdfcc7a672f15ea716"
+      },
+      "weights": "404161fdcd3fc39a4bc9cade6fd10f730ad344948b56dba2fb935c23ff5293e1",
+      "materials": [
+        "Skin",
+        "White",
+        "Brown2",
+        "Ruta olive sleeveless vest",
+        "Gold",
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Adventurer_Feet": {
+      "coordsSha256": "1ae031da99a5976d259c913a9b1e1d44d230b48db0bd8151bd644be4a398e4e7",
+      "topology": "4b029d508320da4148c2c970806f6f364b97a92bcc8773742ea9133598f13c11",
+      "uv": {
+        "UVMap": "bd3ca8f859031536449b41a2af4b2b2f9854004cece23dff4417d81292e0d5fc",
+        "RutaPaint": "a1fe7d7a6f4d2ff23d59732f7b4e06f3978c6f434d5614f95047a4f253a2d238"
+      },
+      "weights": "89d9af0615caa6c564e76c0b05c57f93a6ddf8a72678a494ef8d2bd0112abdf4",
+      "materials": [
+        "Brown_02",
+        "Brown2"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Adventurer_Head": {
+      "coordsSha256": "c483451d6a930988e4aed56d6cc8caa163f00e5d220ebf50dd062507c82f04c1",
+      "topology": "f7c8f9c8c2e2f4b3350f75cf4985756c6bcc0e1e79ebd9778bda2f2480d5b327",
+      "uv": {
+        "UVMap": "55ecc6e1af2de98d63e14a413199b378c013252b5d30ed742aec47414350b24d"
+      },
+      "weights": "3c0a6eeb0c4aa48f775c7b401c0f6b7161926a1ddb424ed7c3c4e75f4b14bc5b",
+      "materials": [
+        "Skin",
+        "Hair_Brown",
+        "Brown"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ruta stock long trousers": {
+      "coordsSha256": "b4f10d60415aa621f1b6a757facaced1a86e6008a2ad2c51a2c56a9fe785e841",
+      "topology": "55a00564bdb36104d6418c9ea128133754085ba92437da5f262cbd3caf3f674d",
+      "uv": {
+        "UVMap": "5908476d120186393b5518ab4f58097e756965392b60248326882cb30f53e548",
+        "RutaPaint": "285a99d0541e1ac72885eca1b059f84436c8a6a069dc10b236ab854261405933"
+      },
+      "weights": "9e53c803881a11f3ab998eb718c0aad3dca3a739d1f178d7a76c6d64e9e41e13",
+      "materials": [
+        "Ruta warm loose cargo cloth"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ruta CC0 ginger waves": {
+      "coordsSha256": "f75704aa5e0fcbb67a3d3fad0a9e64305fa63aab397de3162191c01910a24875",
+      "topology": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+      "uv": {
+        "UVMap": "59209c6f852a0ec030eff3273706e60d62422bd1ae5ff02cf0f86bd1946ebcf6"
+      },
+      "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd",
+      "materials": [
+        "Copper native cap reference only"
+      ],
+      "modifiers": [
+        [
+          "Native stock armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "ONE diagonal satchel strap": {
+      "coordsSha256": "72c09afb3235b02c0b26e527502dd75f73f18562f537a5fa08245667096799f0",
+      "topology": "2eb7c621c0c312b8dc962579975c224d3dc78db19586fdd41ef22665c5627076",
+      "uv": {
+        "UVMap": "cf61bcbfa09adca3684b4755a8e2adc1a82414779631a8daac11ef77396c3e3e",
+        "RutaPaint": "515da10283295b2e795327ca8220f4016f8fe3cddde4dee54c3cf16062d456a3"
+      },
+      "weights": "9288cccd355af19e03b02ba01a7b5d2a7878a4e9eff2dfa53b159e93036be018",
+      "materials": [
+        "Adapted warm brown leather"
+      ],
+      "modifiers": [
+        [
+          "Native stock armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready tongue": {
+      "coordsSha256": "4d011b525d614ed31945ee52309ffb19412cc3b6558c94900d4ceb54156ef3db",
+      "topology": "8a8360fceb3d9b44298e730212368e5390a4f666a19b24e90a21e214a09c6a5f",
+      "uv": {
+        "UVMap": "91d3e6e515b921f57aae245f351923cf99f3141ec5607a5d44af9ce981ada1f2",
+        "Alignment": "2f2541185c44cbd9eeacbd815d1fa86c4e5a08318f6ad38b2ff94c9beb042c27"
+      },
+      "weights": "1d2ca2edd516ebbd5bb44314efcfc721e6fedde95666c3959cf4f3cfc5dae17e",
+      "materials": [
+        "ellie.tongue"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready teeth_top": {
+      "coordsSha256": "466c899452d60bed839db945499db2f96e8c2b9733ab8b1a295340efecb6c6d0",
+      "topology": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+      "uv": {
+        "UVMap": "482049da7de7dc198d5999ee6bcbc3ce3042c2790813026acd9a2df9df410c1c",
+        "Alignment": "ccb6a5b383c4dfb0abafcaffa06ab2c7f716e9174161d13ddb3bdcd0637ecfe9"
+      },
+      "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd",
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready teeth_btm": {
+      "coordsSha256": "02d4c640308ecadae326a59d74dc83200ea254924f93646d61ef6b3cdc2e6560",
+      "topology": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+      "uv": {
+        "UVMap": "3a6aca8448f7655fc0785effe8c262bfea280966bee5f6f07b6db4be2279d072",
+        "Alignment": "bcf3f4411899cb852d9bf11c38a1bf9251d8294874276dd5dfb7d1b2487f4fbe"
+      },
+      "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd",
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready head": {
+      "coordsSha256": "9b55e6b169f0768e2e2aff41b36bccedefd0965348e606ffdb56cadf77075e91",
+      "topology": "2a1ac9fa497231a5b52e4751d35d6328bdfb3496d448da95f449ea25863dd266",
+      "uv": {
+        "UVMap": "9a74ff2199dc4e7aa3b4f0b47395030cf64d62f54151182975ee38f7e4d9460b",
+        "UVMap-Mix": "9a74ff2199dc4e7aa3b4f0b47395030cf64d62f54151182975ee38f7e4d9460b",
+        "Baking": "de77503f0e5709f068769e9ebb38a547c7f7c472d0e563d3670fdc1065a9fe67",
+        "Baking-Mix": "de77503f0e5709f068769e9ebb38a547c7f7c472d0e563d3670fdc1065a9fe67",
+        "Full": "b4cdb88e71b1ed880b1192cc0aec2eea6567155de90c6d3367b5cf249d8995b2",
+        "Full-Mix": "b4cdb88e71b1ed880b1192cc0aec2eea6567155de90c6d3367b5cf249d8995b2"
+      },
+      "weights": "9164b776d65f4b0caaad2f8d797be547d14864949099887a8943457d36468b5e",
+      "materials": [
+        "ellie.head",
+        "ellie.head_lips",
+        "ellie.mouth_inner",
+        "ellie.head_hair"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready hair_cut": {
+      "coordsSha256": "3b9079ca1a6b4059ec2c5688b1ef65270e1df5e54a0754f10c2cc5f35b071189",
+      "topology": "c087f910055a89ce5b75d7173a284eef8a98e7edbf3755af0cb9d68ecb13bfb1",
+      "uv": {
+        "UVMap": "54c2ecae3fe795d19324e2f12bfa9f23d244549870aae8ba5baebbcb6921b57d",
+        "Alignment": "54c2ecae3fe795d19324e2f12bfa9f23d244549870aae8ba5baebbcb6921b57d"
+      },
+      "weights": "45a38f217cc9ef406107ecf6baec08b517d86d558c5aae4e13975e1f9f2e6c57",
+      "materials": [
+        "ellie.hair_mesh"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready face_line2": {
+      "coordsSha256": "231530a1eb41424aefcd4a3ef7f1cbe0da367103991cfd788cccfd2aed17a5b3",
+      "topology": "0a1ae08135254218f182e2cd00bc73f0ab7cddb19ec4a52f473269ff3c23d548",
+      "uv": {
+        "UVMap": "36712ef7a5967cb78e9e14efb70e2316d31028b86c8df39fadba3b066914891b"
+      },
+      "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8",
+      "materials": [
+        "ellie.face_lines"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready face_line1": {
+      "coordsSha256": "f143e8d848441939f920e4cc801642ea3f290bfdfaddffb4fa44f0bc1654ab72",
+      "topology": "e36b12e240f1c5dd8b76077298bac2b45b9a50d5c489351f5b1ab50fba8c850c",
+      "uv": {
+        "UVMap": "e8b358557fd47da83c3cf4808254ba9ae5774c39d93282c5f334e1ca755c8c81"
+      },
+      "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8",
+      "materials": [
+        "ellie.face_lines"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eyelashes": {
+      "coordsSha256": "a45a4a7393631faab19eaea3e3c4b8b1959163a9ec9ba03402a80ca4c8f04174",
+      "topology": "edf5e30eb0e3d87ff53dbb1f2d81ac39c897a49e829e51c3e788efbe7f23219c",
+      "uv": {},
+      "weights": "99a7ce31ff7e5b3b3c92764e7cb2685182340c3d3263400552828a786db293cb",
+      "materials": [
+        "ellie.eyelashes"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eyebrows": {
+      "coordsSha256": "07d4fe18fc541c841244101df78b15fffa9c5070e5d359699360bec9a13195f6",
+      "topology": "c59983431943c788de83b41f80983136d6ef2f187f5286c6dc9707ad9a9e561e",
+      "uv": {
+        "UVMap": "d165d2b841a3065a42d73c46743442c29a167387949ef5e99b4bd3df3a4c89a0"
+      },
+      "weights": "70e3124a1809920bd6a227416959d65a954417f245b0568a2c43e93a51380141",
+      "materials": [
+        "ellie.eyebrows"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eye_highlights": {
+      "coordsSha256": "c353383127eeef71535762a9885d0e260369d227ce81d1868c22b39086d394d4",
+      "topology": "d58b33dd1efaf57cef539d10e3f664f4d0839fbc6c56b85e89119f0da34f9035",
+      "uv": {
+        "UVMap": "8f2abda10f8b3d6297fa5d9fabd5f916765e853a1ededa6f87795fcb1217a9b2"
+      },
+      "weights": "458abebee3db32028540fd61e0eb75f272016c5d1e5e698c8abd55932e5d4eb9",
+      "materials": [
+        "ellie.highlights"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eye.R": {
+      "coordsSha256": "2e4b490350dc3c0a275fe3f310c7f9aba5a096c07601eb08bb6638af78e82936",
+      "topology": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+      "uv": {
+        "UVMap": "e6e26b54295e9c77eb463eae57c1257217173017fb5e6efe4c9e65966f8b43cd",
+        "Iris": "a848592e0df2fbd0c2f2fc2074fd038f217465bd710adf97ed2dde544e31926c",
+        "Blood Shot": "4a53143025c5fe6ea4df6ecc2bfff63bee00fc9a40a6a737330783fcf52bce27"
+      },
+      "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312",
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eye.L": {
+      "coordsSha256": "047f87fab425caa1e378208fa08de5f3afd8285fe782b3d56742d754e3a81d05",
+      "topology": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+      "uv": {
+        "UVMap": "3806b7b65544b7e0f04f2779c65a88aed53f5e148d0eab590375ebffff6dad6e",
+        "Iris": "d3ec5b25e84fefb396809fa9dd5c40dd7f645d0deea25b6e6a067291b62ce041"
+      },
+      "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312",
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready CC0 Cortu waves": {
+      "coordsSha256": "7d45fc8a497f8b3ada53781362e3a00fadc9aa9161154fa97df691ed1dee0fd4",
+      "topology": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+      "uv": {
+        "UVMap": "59209c6f852a0ec030eff3273706e60d62422bd1ae5ff02cf0f86bd1946ebcf6"
+      },
+      "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd",
+      "materials": [
+        "Copper native cap reference only.001"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready Loose cap": {
+      "coordsSha256": "26a177c0d2147cedd43ef0e30a3af9440b03723701966d694f271a0d2abc9a0f",
+      "topology": "dbe51f3a9f303c9a47aad5182db9c72608a6447c0ae2f3787ea35d747cfb22b8",
+      "uv": {
+        "UVMap": "1a84b9103c16b2850b343f90eae7c219f16848cc12b2091ddc95d28476b55365",
+        "Alignment": "a2f8e20c68bc22e5ec7d63317b578acbe010a3c93472ef911a277ca23acd1713"
+      },
+      "weights": "1d7029ae442cc7b53130411b1c1522fe7a9c9a5394f7cfd925bebd206f52bd1a",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 1": {
+      "coordsSha256": "bf0c686bc0262c09d7d5f383e078fa25df8f6465b17d95874e64dff0c0e071a6",
+      "topology": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+      "uv": {
+        "UVMap": "7f0105bd6a6c9e6a4aad232fe60466563918c507a0e66bee718ba5b63cb82cd3",
+        "Alignment": "161c1c885640b939017c278e5b2e9a4120073e329000b0649221eca3661b5a97"
+      },
+      "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 2": {
+      "coordsSha256": "3f621820f4fb8c8711f4102e8ec3d6eed67b9b95d794af17e228ab1972c06df4",
+      "topology": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+      "uv": {
+        "UVMap": "f43bbf9be2bdc1a9c6a150610ef095a4b1cb8cf567f2030ee0cc1afe44861ca1",
+        "Alignment": "25ea7ec865ea2f2cb9a28dac63b116d5a2ac155ff7f5ce84c17a0a6c55527227"
+      },
+      "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 3": {
+      "coordsSha256": "f573d48e88a045c66cd0fb69c5691ac18fb50aa9a5fe0619855386b8a3a63f5b",
+      "topology": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+      "uv": {
+        "UVMap": "3678c1057bf5be8fdf90c744b8e9a69dd9a114f2e38385b4bb9b814a6a72bb65",
+        "Alignment": "8f382bd8ca737d535ad5a422647c7c5d69c95c2934694bd550433b27bdf94233"
+      },
+      "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 4": {
+      "coordsSha256": "bd1639b16d5202512caa5e2febae9d2fb27211e8fd8fdbdae077d3e3794cf6ba",
+      "topology": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+      "uv": {
+        "UVMap": "f4dc1c4e3b45a14caa9e8d1e4e6fa8ec598d472549730a015fd15d7d3d6ece98",
+        "Alignment": "c2b7314ab9f7b00f837e7e56e89c1472b9b706df8d7b69fff73244c3aeda03b3"
+      },
+      "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 5": {
+      "coordsSha256": "f35938df5a9f86e41979ab0004b92959d4b08b2dd55d5ceae39714202a7f16da",
+      "topology": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+      "uv": {
+        "UVMap": "2ed463e7c9378e4e2afd907d7e12a9e7d534dad5d88cd24652d44fb99189859c",
+        "Alignment": "78566dedb0d77054536f5c1bd751b006019ae7f88ef966897faf79aa341b0b0b"
+      },
+      "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 6": {
+      "coordsSha256": "4aa1c40ffd51aed823ad61bd963700dd3ffa91166a7ebf37a379e603c1a34f35",
+      "topology": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+      "uv": {
+        "UVMap": "3538e4457bcdb51b9e2626e921d812d0a3aaffeb081266849ee2944ad5a2d722",
+        "Alignment": "6ba83a98bade5cdc33b83e47b93a6705299eaf3a56956fcb927275f41118e3f1"
+      },
+      "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 7": {
+      "coordsSha256": "9aaca8b58e30b305ff833090be94c2fee528501ff53aefba6ce8082759ec5c2e",
+      "topology": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+      "uv": {
+        "UVMap": "7f0105bd6a6c9e6a4aad232fe60466563918c507a0e66bee718ba5b63cb82cd3",
+        "Alignment": "161c1c885640b939017c278e5b2e9a4120073e329000b0649221eca3661b5a97"
+      },
+      "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 8": {
+      "coordsSha256": "9b695ea888790d55564e7f5adf8ba3c5d3b2590dcc7b9a87fc7d6480d7b13faa",
+      "topology": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+      "uv": {
+        "UVMap": "f43bbf9be2bdc1a9c6a150610ef095a4b1cb8cf567f2030ee0cc1afe44861ca1",
+        "Alignment": "25ea7ec865ea2f2cb9a28dac63b116d5a2ac155ff7f5ce84c17a0a6c55527227"
+      },
+      "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 9": {
+      "coordsSha256": "d01801b44605c00163ea1c972d69ec01ce0f4ad62c186e0990a4fe81f5ad528e",
+      "topology": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+      "uv": {
+        "UVMap": "3678c1057bf5be8fdf90c744b8e9a69dd9a114f2e38385b4bb9b814a6a72bb65",
+        "Alignment": "8f382bd8ca737d535ad5a422647c7c5d69c95c2934694bd550433b27bdf94233"
+      },
+      "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 10": {
+      "coordsSha256": "7d904a0f21b9f0f1f314ddef444e6ef09d368521f4de86a526ca378d68161ea6",
+      "topology": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+      "uv": {
+        "UVMap": "f4dc1c4e3b45a14caa9e8d1e4e6fa8ec598d472549730a015fd15d7d3d6ece98",
+        "Alignment": "c2b7314ab9f7b00f837e7e56e89c1472b9b706df8d7b69fff73244c3aeda03b3"
+      },
+      "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 11": {
+      "coordsSha256": "f4f7be6c7b3098a5ff1432baeeb23df7ba39983aeac17be8267d76de42086da9",
+      "topology": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+      "uv": {
+        "UVMap": "2ed463e7c9378e4e2afd907d7e12a9e7d534dad5d88cd24652d44fb99189859c",
+        "Alignment": "78566dedb0d77054536f5c1bd751b006019ae7f88ef966897faf79aa341b0b0b"
+      },
+      "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 12": {
+      "coordsSha256": "1b8968188c305e0dab428ae496cd3e263f49b952dfd0543edf513261e4ddef8b",
+      "topology": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+      "uv": {
+        "UVMap": "3538e4457bcdb51b9e2626e921d812d0a3aaffeb081266849ee2944ad5a2d722",
+        "Alignment": "6ba83a98bade5cdc33b83e47b93a6705299eaf3a56956fcb927275f41118e3f1"
+      },
+      "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 13": {
+      "coordsSha256": "7eb556c382a6ef7089c17a4462b1398dc7dfced6b2e3002fbf3c862b81ccf666",
+      "topology": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+      "uv": {
+        "UVMap": "7f0105bd6a6c9e6a4aad232fe60466563918c507a0e66bee718ba5b63cb82cd3",
+        "Alignment": "161c1c885640b939017c278e5b2e9a4120073e329000b0649221eca3661b5a97"
+      },
+      "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 14": {
+      "coordsSha256": "67ec61442573e44c9f47e0bf340d85546607ea2e773117101e6a145d53656851",
+      "topology": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+      "uv": {
+        "UVMap": "f43bbf9be2bdc1a9c6a150610ef095a4b1cb8cf567f2030ee0cc1afe44861ca1",
+        "Alignment": "25ea7ec865ea2f2cb9a28dac63b116d5a2ac155ff7f5ce84c17a0a6c55527227"
+      },
+      "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 15": {
+      "coordsSha256": "b89fae091ad2b7a5e7689394a56d3e757cf35e39242273f762fc8c3418d18d8c",
+      "topology": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+      "uv": {
+        "UVMap": "3678c1057bf5be8fdf90c744b8e9a69dd9a114f2e38385b4bb9b814a6a72bb65",
+        "Alignment": "8f382bd8ca737d535ad5a422647c7c5d69c95c2934694bd550433b27bdf94233"
+      },
+      "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 16": {
+      "coordsSha256": "c4a7e6d1bdff56705478addddb07c243e09f80e9b5ce78ed52413afef1e7e205",
+      "topology": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+      "uv": {
+        "UVMap": "f4dc1c4e3b45a14caa9e8d1e4e6fa8ec598d472549730a015fd15d7d3d6ece98",
+        "Alignment": "c2b7314ab9f7b00f837e7e56e89c1472b9b706df8d7b69fff73244c3aeda03b3"
+      },
+      "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 17": {
+      "coordsSha256": "c6b2bd2395acf10c8748a6e4b6c88025686303e7a51fffb762c96dde9cf3dbb5",
+      "topology": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+      "uv": {
+        "UVMap": "2ed463e7c9378e4e2afd907d7e12a9e7d534dad5d88cd24652d44fb99189859c",
+        "Alignment": "78566dedb0d77054536f5c1bd751b006019ae7f88ef966897faf79aa341b0b0b"
+      },
+      "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 18": {
+      "coordsSha256": "adf53d5ca4cedb51a8f75bec65f1677acb5cf232688757fc77478b72d7c65ec2",
+      "topology": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+      "uv": {
+        "UVMap": "3538e4457bcdb51b9e2626e921d812d0a3aaffeb081266849ee2944ad5a2d722",
+        "Alignment": "6ba83a98bade5cdc33b83e47b93a6705299eaf3a56956fcb927275f41118e3f1"
+      },
+      "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Cream shirt V inside vest": {
+      "coordsSha256": "6f8ce281b261a4ad8f908b56b83ad9b543d7a8a04b513ac00586e117c05542ce",
+      "topology": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+      "uv": {
+        "RutaPaint": "80dd713bbcb706e833c1a6f515b40947ebabf2d5da24265a10b40af9267f385f"
+      },
+      "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Vest brass button 1": {
+      "coordsSha256": "c56335341bd68ba43057dfd172fbfc1d0f89e06eac95c556cc16136a75e4b4ff",
+      "topology": "fb5e0fb21b9b1b6aac0b1ed67a7d4f91a626fa20008e11363de77c424ba6ed70",
+      "uv": {
+        "UVMap": "fb475157192a0e6c7fd5e8d038636d45d17414b11de1b58568e2da0075be1949",
+        "RutaPaint": "1192ff6c5ad21cfc6f07c82fd33b512a71e3da8109af430f076d4d6479b33e26"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Vest brass button 2": {
+      "coordsSha256": "11b96456ebd298f48a9da7a16cceb107d99b0041e284d96b91875e21a37b9b22",
+      "topology": "bac1ed0e888fcc6484d1821a8e1e1d9d215fe4d8290730de8d48dcf3717a4de3",
+      "uv": {
+        "UVMap": "02a2ea00e67b2b10e187884f6c1745384bdf19467c699c28f4160363c7ffa2cc",
+        "RutaPaint": "20fc965972aa46b2745c26db95a09133865e383a584e12f3cac708f71fdd93a7"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Vest brass button 3": {
+      "coordsSha256": "f517dfe37834d834ca99ca3656644369f9e3707a0116d6503fa33ccbf35ba84f",
+      "topology": "dc9d7b87cc3d1e5286c5ac7a69fba7ed5a7ada966e306ab5a148de7addcdd03e",
+      "uv": {
+        "UVMap": "073f10a2d253c013d78868486548ab5b89ed2e9c03216138404f5cab5f0253d5",
+        "RutaPaint": "3ec02e2fd33d9f6c5bb705718310b867c29184442ff70d30d2042926ee574658"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Left burgundy bow loop": {
+      "coordsSha256": "b2766dd749c7753fc4c7c3d49f60adfc3d9bdc9c1961c6f778e019e07972888c",
+      "topology": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+      "uv": {
+        "RutaPaint": "e18f6c4ada1f573fc897e9b1b3210afbb3639a3da8284f4248accab2b2e6f345"
+      },
+      "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Right burgundy bow loop": {
+      "coordsSha256": "4aa8c8a3f87007e219fb12d738333d56dc67a6c66abfcda3992bf418a5735f5b",
+      "topology": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+      "uv": {
+        "RutaPaint": "be502c454a6553def2ba53463c68f51337b0fbaf891951b0cf33c8efeb25bd62"
+      },
+      "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Burgundy bow knot": {
+      "coordsSha256": "905bfa669f718115400adb6948a9ea44b7f9ed1814189f6b4822781fc8a17d67",
+      "topology": "b7621f9d2d6c766fc89ae445c76c828543e744ec13664603552a3b0e5cd24a0a",
+      "uv": {
+        "UVMap": "c793bf6d0a71f252dee07865947f46068a685fd9d80c3011597432332c5f30d4",
+        "RutaPaint": "5eeba2284dfa90d623459a1492a9ac7c6e6266cff984d8361c5c340960bff79a"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Two burgundy bow tails": {
+      "coordsSha256": "0f65f3c43b2ff757d76769373c8e1338ee72a413faa77cc8c4b879c9722fe901",
+      "topology": "d42ef3a453691152af9df3974094032f222579d3757a55de4baf2ae3aef6da0c",
+      "uv": {
+        "RutaPaint": "5b8050665e2f1b6f3f3b5163e5c2afe92ba297a4ea141f9ad681934d92451535"
+      },
+      "weights": "82dafb5b123f5adad5764f3190285488d118ff735068f919f57e1f4da5a4c387",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "ONE rounded right hip satchel": {
+      "coordsSha256": "5891ba2abac6f50644a9c9122bfb7306369b89bdc140cc3fc55d040056be9550",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "ed09942ae184eb040ab2ba60eab8c34688eaeb581a9515a9e367643d4ab166f8",
+        "RutaPaint": "5a33c390c4e6abb1ba0628616297cb1c7cdafdcbce3d0ddb865d90698efc8b72"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Ruta satchel warm leather"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Single rounded satchel flap": {
+      "coordsSha256": "9403ba67199d02dfc7ebfa85c71aac631b28c57c61c2d32eaf168a921422cedc",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "34c80fdeabc0ebc205850ef31c55e24be6423a8b00e8d7c50d23abb07049a36b",
+        "RutaPaint": "2d6f0b7a4ef9d88ad42eeecade743a158121670b5754f14c6fdeb92386413e87"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Ruta satchel warm leather"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Satchel warm brass clasp": {
+      "coordsSha256": "ae056f7ebc2fee6f687399e9df556bfb7548245089297e5adb5a2e64b75d2403",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "6ef22518fbefd177f76950966ecf923266c3c336029efdcfbba4c4bf6d7dc3c4",
+        "RutaPaint": "d173f6d5fea475dc8f41126a810af6621ced6b3d8ce83a0b0f7b145464895dd2"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ankle boot lace R": {
+      "coordsSha256": "c4adafdbc70626ac32d58ea48ac37ab0f95522baa1d61697b2284fee035046b7",
+      "topology": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+      "uv": {
+        "UVMap": "57b66926d4f9f5635a0056be6541f24f8c17e307712fedbbbe249500bb33adcf",
+        "RutaPaint": "3128a152d135c1b3abfe565c0849e2a45e38feaac9fe0ab3ed9ac803080878d0"
+      },
+      "weights": "0c973a43d9c947835bef4ff657f2b534fe74d0f5be4aeb9158d00c9c048e0fed",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cream sock cuff R": {
+      "coordsSha256": "f9e77152056862faaf1a186d2ccc5f8a607d3c5945994f6b77f4074e2347952c",
+      "topology": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+      "uv": {
+        "RutaPaint": "df6b9b8057f3f83ec91798f2dfba386890d24ccf01e9767b5331b6b0c70d72e0"
+      },
+      "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cargo side pocket R": {
+      "coordsSha256": "6b2564c1c32cac75f8a8df132049a1cfca20a79085ef71fcefa41dd2d15e3eca",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "5c5dea655de3cf3c30ffcf328820b37434f359dbd6c6d5eb78b53acc2fdf35dd",
+        "RutaPaint": "acf66482c03786dd80c9fca8f50b900ae467abd35b83168c6eae1a04c53860eb"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Cargo pocket cloth R"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ankle boot lace L": {
+      "coordsSha256": "67c1637a5f90b9bdd7911be69566cc5835569a1be50ef879067082fb2052dfad",
+      "topology": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+      "uv": {
+        "UVMap": "57b66926d4f9f5635a0056be6541f24f8c17e307712fedbbbe249500bb33adcf",
+        "RutaPaint": "b7860b1aa3002a2f396730fd0457c62998b3c143e71ba43395e0b6c5d1211118"
+      },
+      "weights": "d910c262687aadaec5b09a756a42f3d47a88a6750b05bf0283b606cebc108211",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cream sock cuff L": {
+      "coordsSha256": "e8436a1617d1f2cd10c1175f7dadc40bb0a2986bb3ef35d396002f635dec374e",
+      "topology": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+      "uv": {
+        "RutaPaint": "2c342262abf99b7f7f8a9267e83896d70e61ae193167379c2db572340bdb5e03"
+      },
+      "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cargo side pocket L": {
+      "coordsSha256": "167b4a8bbcec8eea0efbceb0c49a3d3cbde9a198eacc1b8d4eda239575fb9c96",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "fe32d6cc7697de344cb95f29fc6d904ded6ef55a7feea1d2e4fe4b9a7ae4d2f1",
+        "RutaPaint": "e35669fd8a8a557e4c97e572d280765faf34d52678faa5c29ddba4845c958514"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Cargo pocket cloth L"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready Daisy CC-BY hair": {
+      "coordsSha256": "07414d82ac45442addd9a6a2ae89aeff881040c91f3d8ad5396edb3709517e36",
+      "topology": "389929b6f7c5176b1840857dc470e6604767f91e8ad2aac2acad1255fd081458",
+      "uv": {
+        "UVMap": "d5ab869f8e158224ab27d76045acce14a13921cc0a504bbddb2db5a77e81f953"
+      },
+      "weights": "15113832ea9f371b5d28ffd990dee784f3fec90e967a3c29f3ce431c862ec3bc",
+      "materials": [
+        "Daisy stable painted RGB native alpha pilot"
+      ],
+      "modifiers": [
+        [
+          "Fixed native Head attachment",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Icosphere": {
+      "coordsSha256": "8d4915897d9759468b9a91b405c71c2e7896e5949260a2858ba194b27c5f7717",
+      "topology": "547f3010843e1d60add13bd4c5af0ca871f0aa6056a21e6aa8d14a8ad844fd66",
+      "uv": {
+        "UVMap": "1bacff20108d66711917c05c3309fe3508669dc4a1804ffe849a514d52c67af0",
+        "RutaPaint": "b736048bb81f99665124eea00a2a4da6938539f1d9f3ac655d3ba96e18ffa19e"
+      },
+      "weights": "220acd169ab40af02c2a2a753ec26009708ea5760f0096f86e90322fbba65147",
+      "materials": [],
+      "modifiers": []
+    }
+  },
+  "after": {
+    "Adventurer_Body": {
+      "coordsSha256": "7631c0abb84d666b689a86a9cf827ca34331fd1cb599d9994e25fa875050b716",
+      "topology": "8727e0257b3751fc6742c18c5c1dbd551c3708dbccb03517086943f21afccff7",
+      "uv": {
+        "UVMap": "4057e9457c7b7bac34c3a23085f7ae171977a8cbd3504b4d1a2d9a69f0f479d4",
+        "RutaPaint": "4d8f853e9987f0c00e048e5519586de6aba92a524e2801bdfcc7a672f15ea716"
+      },
+      "weights": "404161fdcd3fc39a4bc9cade6fd10f730ad344948b56dba2fb935c23ff5293e1",
+      "materials": [
+        "Skin",
+        "White",
+        "Brown2",
+        "Ruta olive sleeveless vest",
+        "Gold",
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Adventurer_Feet": {
+      "coordsSha256": "1ae031da99a5976d259c913a9b1e1d44d230b48db0bd8151bd644be4a398e4e7",
+      "topology": "4b029d508320da4148c2c970806f6f364b97a92bcc8773742ea9133598f13c11",
+      "uv": {
+        "UVMap": "bd3ca8f859031536449b41a2af4b2b2f9854004cece23dff4417d81292e0d5fc",
+        "RutaPaint": "a1fe7d7a6f4d2ff23d59732f7b4e06f3978c6f434d5614f95047a4f253a2d238"
+      },
+      "weights": "89d9af0615caa6c564e76c0b05c57f93a6ddf8a72678a494ef8d2bd0112abdf4",
+      "materials": [
+        "Brown_02",
+        "Brown2"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Adventurer_Head": {
+      "coordsSha256": "c483451d6a930988e4aed56d6cc8caa163f00e5d220ebf50dd062507c82f04c1",
+      "topology": "f7c8f9c8c2e2f4b3350f75cf4985756c6bcc0e1e79ebd9778bda2f2480d5b327",
+      "uv": {
+        "UVMap": "55ecc6e1af2de98d63e14a413199b378c013252b5d30ed742aec47414350b24d"
+      },
+      "weights": "3c0a6eeb0c4aa48f775c7b401c0f6b7161926a1ddb424ed7c3c4e75f4b14bc5b",
+      "materials": [
+        "Skin",
+        "Hair_Brown",
+        "Brown"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ruta stock long trousers": {
+      "coordsSha256": "b4f10d60415aa621f1b6a757facaced1a86e6008a2ad2c51a2c56a9fe785e841",
+      "topology": "55a00564bdb36104d6418c9ea128133754085ba92437da5f262cbd3caf3f674d",
+      "uv": {
+        "UVMap": "5908476d120186393b5518ab4f58097e756965392b60248326882cb30f53e548",
+        "RutaPaint": "285a99d0541e1ac72885eca1b059f84436c8a6a069dc10b236ab854261405933"
+      },
+      "weights": "9e53c803881a11f3ab998eb718c0aad3dca3a739d1f178d7a76c6d64e9e41e13",
+      "materials": [
+        "Ruta warm loose cargo cloth"
+      ],
+      "modifiers": [
+        [
+          "Armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ruta CC0 ginger waves": {
+      "coordsSha256": "f75704aa5e0fcbb67a3d3fad0a9e64305fa63aab397de3162191c01910a24875",
+      "topology": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+      "uv": {
+        "UVMap": "59209c6f852a0ec030eff3273706e60d62422bd1ae5ff02cf0f86bd1946ebcf6"
+      },
+      "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd",
+      "materials": [
+        "Copper native cap reference only"
+      ],
+      "modifiers": [
+        [
+          "Native stock armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "ONE diagonal satchel strap": {
+      "coordsSha256": "72c09afb3235b02c0b26e527502dd75f73f18562f537a5fa08245667096799f0",
+      "topology": "2eb7c621c0c312b8dc962579975c224d3dc78db19586fdd41ef22665c5627076",
+      "uv": {
+        "UVMap": "cf61bcbfa09adca3684b4755a8e2adc1a82414779631a8daac11ef77396c3e3e",
+        "RutaPaint": "515da10283295b2e795327ca8220f4016f8fe3cddde4dee54c3cf16062d456a3"
+      },
+      "weights": "9288cccd355af19e03b02ba01a7b5d2a7878a4e9eff2dfa53b159e93036be018",
+      "materials": [
+        "Adapted warm brown leather"
+      ],
+      "modifiers": [
+        [
+          "Native stock armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready tongue": {
+      "coordsSha256": "5be1c1a9f92bc3ed7d607a6a5472957e5c52e5ee6780ac278e720b814484b90f",
+      "topology": "8a8360fceb3d9b44298e730212368e5390a4f666a19b24e90a21e214a09c6a5f",
+      "uv": {
+        "UVMap": "91d3e6e515b921f57aae245f351923cf99f3141ec5607a5d44af9ce981ada1f2",
+        "Alignment": "2f2541185c44cbd9eeacbd815d1fa86c4e5a08318f6ad38b2ff94c9beb042c27"
+      },
+      "weights": "1d2ca2edd516ebbd5bb44314efcfc721e6fedde95666c3959cf4f3cfc5dae17e",
+      "materials": [
+        "ellie.tongue"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready teeth_top": {
+      "coordsSha256": "eb6cba894ca2982e7fd0cda4fead28869a1e7593dc8fa1b91568fead436085e2",
+      "topology": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+      "uv": {
+        "UVMap": "482049da7de7dc198d5999ee6bcbc3ce3042c2790813026acd9a2df9df410c1c",
+        "Alignment": "ccb6a5b383c4dfb0abafcaffa06ab2c7f716e9174161d13ddb3bdcd0637ecfe9"
+      },
+      "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd",
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready teeth_btm": {
+      "coordsSha256": "4c74a148dc77845107f27d86a3c601511815e5d55d7bcf0d49ce300e0a8ea9f1",
+      "topology": "7e20bcc59e62344acd8066f63a6b61bd9b4c5475d7e14b47b179f04b22b74885",
+      "uv": {
+        "UVMap": "3a6aca8448f7655fc0785effe8c262bfea280966bee5f6f07b6db4be2279d072",
+        "Alignment": "bcf3f4411899cb852d9bf11c38a1bf9251d8294874276dd5dfb7d1b2487f4fbe"
+      },
+      "weights": "9e2b79023cb757412be8617216cc7a60387362cb32dbb341560eb31d8c0a8edd",
+      "materials": [
+        "ellie.teeth",
+        "ellie.gums"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready head": {
+      "coordsSha256": "23d1b0285a3a8a613b1874baf25c307310a616f4294d85ac59761f29ae880940",
+      "topology": "2a1ac9fa497231a5b52e4751d35d6328bdfb3496d448da95f449ea25863dd266",
+      "uv": {
+        "UVMap": "9a74ff2199dc4e7aa3b4f0b47395030cf64d62f54151182975ee38f7e4d9460b",
+        "UVMap-Mix": "9a74ff2199dc4e7aa3b4f0b47395030cf64d62f54151182975ee38f7e4d9460b",
+        "Baking": "de77503f0e5709f068769e9ebb38a547c7f7c472d0e563d3670fdc1065a9fe67",
+        "Baking-Mix": "de77503f0e5709f068769e9ebb38a547c7f7c472d0e563d3670fdc1065a9fe67",
+        "Full": "b4cdb88e71b1ed880b1192cc0aec2eea6567155de90c6d3367b5cf249d8995b2",
+        "Full-Mix": "b4cdb88e71b1ed880b1192cc0aec2eea6567155de90c6d3367b5cf249d8995b2"
+      },
+      "weights": "9164b776d65f4b0caaad2f8d797be547d14864949099887a8943457d36468b5e",
+      "materials": [
+        "ellie.head",
+        "ellie.head_lips",
+        "ellie.mouth_inner",
+        "ellie.head_hair"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready hair_cut": {
+      "coordsSha256": "3b9079ca1a6b4059ec2c5688b1ef65270e1df5e54a0754f10c2cc5f35b071189",
+      "topology": "c087f910055a89ce5b75d7173a284eef8a98e7edbf3755af0cb9d68ecb13bfb1",
+      "uv": {
+        "UVMap": "54c2ecae3fe795d19324e2f12bfa9f23d244549870aae8ba5baebbcb6921b57d",
+        "Alignment": "54c2ecae3fe795d19324e2f12bfa9f23d244549870aae8ba5baebbcb6921b57d"
+      },
+      "weights": "45a38f217cc9ef406107ecf6baec08b517d86d558c5aae4e13975e1f9f2e6c57",
+      "materials": [
+        "ellie.hair_mesh"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready face_line2": {
+      "coordsSha256": "da2d2043dfaf6127c569bc1619a6a75539e4bdf3ba42fad576a4b41bd4aa4f01",
+      "topology": "0a1ae08135254218f182e2cd00bc73f0ab7cddb19ec4a52f473269ff3c23d548",
+      "uv": {
+        "UVMap": "36712ef7a5967cb78e9e14efb70e2316d31028b86c8df39fadba3b066914891b"
+      },
+      "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8",
+      "materials": [
+        "ellie.face_lines"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready face_line1": {
+      "coordsSha256": "6b0b86f98bbfbd3475cf56f1adaad8fce4bf9be648f2b67014ccd88989f6ef90",
+      "topology": "e36b12e240f1c5dd8b76077298bac2b45b9a50d5c489351f5b1ab50fba8c850c",
+      "uv": {
+        "UVMap": "e8b358557fd47da83c3cf4808254ba9ae5774c39d93282c5f334e1ca755c8c81"
+      },
+      "weights": "56e03dc126eb2434d5b280140fe0d711a8506fd699911c2cb742f49a4e519da8",
+      "materials": [
+        "ellie.face_lines"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eyelashes": {
+      "coordsSha256": "c2d7b23671b45bb1ebf58860d79d37e5def5e685f5c7088f8a2fd4924c90898e",
+      "topology": "edf5e30eb0e3d87ff53dbb1f2d81ac39c897a49e829e51c3e788efbe7f23219c",
+      "uv": {},
+      "weights": "99a7ce31ff7e5b3b3c92764e7cb2685182340c3d3263400552828a786db293cb",
+      "materials": [
+        "ellie.eyelashes"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eyebrows": {
+      "coordsSha256": "36b06e6a8a88dcaf944b0c6de2ae1cb548221fe3aff28b686d84f444f362ece1",
+      "topology": "c59983431943c788de83b41f80983136d6ef2f187f5286c6dc9707ad9a9e561e",
+      "uv": {
+        "UVMap": "d165d2b841a3065a42d73c46743442c29a167387949ef5e99b4bd3df3a4c89a0"
+      },
+      "weights": "70e3124a1809920bd6a227416959d65a954417f245b0568a2c43e93a51380141",
+      "materials": [
+        "ellie.eyebrows"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eye_highlights": {
+      "coordsSha256": "2c0cf21bd9ef97ef99546c40b28b06517e430d517c10a439ea5bc63015fd8b4b",
+      "topology": "d58b33dd1efaf57cef539d10e3f664f4d0839fbc6c56b85e89119f0da34f9035",
+      "uv": {
+        "UVMap": "8f2abda10f8b3d6297fa5d9fabd5f916765e853a1ededa6f87795fcb1217a9b2"
+      },
+      "weights": "458abebee3db32028540fd61e0eb75f272016c5d1e5e698c8abd55932e5d4eb9",
+      "materials": [
+        "ellie.highlights"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eye.R": {
+      "coordsSha256": "7d2ac3d0184737d43af5788ded9c0883efab4ad09a11bc893a83491c23177f6d",
+      "topology": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+      "uv": {
+        "UVMap": "e6e26b54295e9c77eb463eae57c1257217173017fb5e6efe4c9e65966f8b43cd",
+        "Iris": "a848592e0df2fbd0c2f2fc2074fd038f217465bd710adf97ed2dde544e31926c",
+        "Blood Shot": "4a53143025c5fe6ea4df6ecc2bfff63bee00fc9a40a6a737330783fcf52bce27"
+      },
+      "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312",
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready eye.L": {
+      "coordsSha256": "be56c8f1324ea9e3e0ef82bb687c2cb1a9f8bcfecd3ea5c4a3776328ce367776",
+      "topology": "ae3799c5b7cf329c5af7bc3fec99e35015aa6c618e871a451e1215d2cdbb8d77",
+      "uv": {
+        "UVMap": "3806b7b65544b7e0f04f2779c65a88aed53f5e148d0eab590375ebffff6dad6e",
+        "Iris": "d3ec5b25e84fefb396809fa9dd5c40dd7f645d0deea25b6e6a067291b62ce041"
+      },
+      "weights": "dfbdb9d1eddabfd907caa5dc2a260a503fc6f59d52045ae16bfcfbb7c4179312",
+      "materials": [
+        "ellie.eyes",
+        "ellie.eyes_pupils"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready CC0 Cortu waves": {
+      "coordsSha256": "7d45fc8a497f8b3ada53781362e3a00fadc9aa9161154fa97df691ed1dee0fd4",
+      "topology": "9b5241f7a1bdb0496383635843e59169e40a4a70ed4cdc90aaf301148506d917",
+      "uv": {
+        "UVMap": "59209c6f852a0ec030eff3273706e60d62422bd1ae5ff02cf0f86bd1946ebcf6"
+      },
+      "weights": "c589dba729dd8088c965bdb7a647fcdecb5e4664b5a7bfea9d504f155fb5c9cd",
+      "materials": [
+        "Copper native cap reference only.001"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready Loose cap": {
+      "coordsSha256": "26a177c0d2147cedd43ef0e30a3af9440b03723701966d694f271a0d2abc9a0f",
+      "topology": "dbe51f3a9f303c9a47aad5182db9c72608a6447c0ae2f3787ea35d747cfb22b8",
+      "uv": {
+        "UVMap": "1a84b9103c16b2850b343f90eae7c219f16848cc12b2091ddc95d28476b55365",
+        "Alignment": "a2f8e20c68bc22e5ec7d63317b578acbe010a3c93472ef911a277ca23acd1713"
+      },
+      "weights": "1d7029ae442cc7b53130411b1c1522fe7a9c9a5394f7cfd925bebd206f52bd1a",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid native Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 1": {
+      "coordsSha256": "bf0c686bc0262c09d7d5f383e078fa25df8f6465b17d95874e64dff0c0e071a6",
+      "topology": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+      "uv": {
+        "UVMap": "7f0105bd6a6c9e6a4aad232fe60466563918c507a0e66bee718ba5b63cb82cd3",
+        "Alignment": "161c1c885640b939017c278e5b2e9a4120073e329000b0649221eca3661b5a97"
+      },
+      "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 2": {
+      "coordsSha256": "3f621820f4fb8c8711f4102e8ec3d6eed67b9b95d794af17e228ab1972c06df4",
+      "topology": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+      "uv": {
+        "UVMap": "f43bbf9be2bdc1a9c6a150610ef095a4b1cb8cf567f2030ee0cc1afe44861ca1",
+        "Alignment": "25ea7ec865ea2f2cb9a28dac63b116d5a2ac155ff7f5ce84c17a0a6c55527227"
+      },
+      "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 3": {
+      "coordsSha256": "f573d48e88a045c66cd0fb69c5691ac18fb50aa9a5fe0619855386b8a3a63f5b",
+      "topology": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+      "uv": {
+        "UVMap": "3678c1057bf5be8fdf90c744b8e9a69dd9a114f2e38385b4bb9b814a6a72bb65",
+        "Alignment": "8f382bd8ca737d535ad5a422647c7c5d69c95c2934694bd550433b27bdf94233"
+      },
+      "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 4": {
+      "coordsSha256": "bd1639b16d5202512caa5e2febae9d2fb27211e8fd8fdbdae077d3e3794cf6ba",
+      "topology": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+      "uv": {
+        "UVMap": "f4dc1c4e3b45a14caa9e8d1e4e6fa8ec598d472549730a015fd15d7d3d6ece98",
+        "Alignment": "c2b7314ab9f7b00f837e7e56e89c1472b9b706df8d7b69fff73244c3aeda03b3"
+      },
+      "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 5": {
+      "coordsSha256": "f35938df5a9f86e41979ab0004b92959d4b08b2dd55d5ceae39714202a7f16da",
+      "topology": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+      "uv": {
+        "UVMap": "2ed463e7c9378e4e2afd907d7e12a9e7d534dad5d88cd24652d44fb99189859c",
+        "Alignment": "78566dedb0d77054536f5c1bd751b006019ae7f88ef966897faf79aa341b0b0b"
+      },
+      "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 6": {
+      "coordsSha256": "4aa1c40ffd51aed823ad61bd963700dd3ffa91166a7ebf37a379e603c1a34f35",
+      "topology": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+      "uv": {
+        "UVMap": "3538e4457bcdb51b9e2626e921d812d0a3aaffeb081266849ee2944ad5a2d722",
+        "Alignment": "6ba83a98bade5cdc33b83e47b93a6705299eaf3a56956fcb927275f41118e3f1"
+      },
+      "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 7": {
+      "coordsSha256": "9aaca8b58e30b305ff833090be94c2fee528501ff53aefba6ce8082759ec5c2e",
+      "topology": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+      "uv": {
+        "UVMap": "7f0105bd6a6c9e6a4aad232fe60466563918c507a0e66bee718ba5b63cb82cd3",
+        "Alignment": "161c1c885640b939017c278e5b2e9a4120073e329000b0649221eca3661b5a97"
+      },
+      "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 8": {
+      "coordsSha256": "9b695ea888790d55564e7f5adf8ba3c5d3b2590dcc7b9a87fc7d6480d7b13faa",
+      "topology": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+      "uv": {
+        "UVMap": "f43bbf9be2bdc1a9c6a150610ef095a4b1cb8cf567f2030ee0cc1afe44861ca1",
+        "Alignment": "25ea7ec865ea2f2cb9a28dac63b116d5a2ac155ff7f5ce84c17a0a6c55527227"
+      },
+      "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 9": {
+      "coordsSha256": "d01801b44605c00163ea1c972d69ec01ce0f4ad62c186e0990a4fe81f5ad528e",
+      "topology": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+      "uv": {
+        "UVMap": "3678c1057bf5be8fdf90c744b8e9a69dd9a114f2e38385b4bb9b814a6a72bb65",
+        "Alignment": "8f382bd8ca737d535ad5a422647c7c5d69c95c2934694bd550433b27bdf94233"
+      },
+      "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 10": {
+      "coordsSha256": "7d904a0f21b9f0f1f314ddef444e6ef09d368521f4de86a526ca378d68161ea6",
+      "topology": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+      "uv": {
+        "UVMap": "f4dc1c4e3b45a14caa9e8d1e4e6fa8ec598d472549730a015fd15d7d3d6ece98",
+        "Alignment": "c2b7314ab9f7b00f837e7e56e89c1472b9b706df8d7b69fff73244c3aeda03b3"
+      },
+      "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 11": {
+      "coordsSha256": "f4f7be6c7b3098a5ff1432baeeb23df7ba39983aeac17be8267d76de42086da9",
+      "topology": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+      "uv": {
+        "UVMap": "2ed463e7c9378e4e2afd907d7e12a9e7d534dad5d88cd24652d44fb99189859c",
+        "Alignment": "78566dedb0d77054536f5c1bd751b006019ae7f88ef966897faf79aa341b0b0b"
+      },
+      "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 12": {
+      "coordsSha256": "1b8968188c305e0dab428ae496cd3e263f49b952dfd0543edf513261e4ddef8b",
+      "topology": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+      "uv": {
+        "UVMap": "3538e4457bcdb51b9e2626e921d812d0a3aaffeb081266849ee2944ad5a2d722",
+        "Alignment": "6ba83a98bade5cdc33b83e47b93a6705299eaf3a56956fcb927275f41118e3f1"
+      },
+      "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 13": {
+      "coordsSha256": "7eb556c382a6ef7089c17a4462b1398dc7dfced6b2e3002fbf3c862b81ccf666",
+      "topology": "9ee0deeaee8ce16a1a2d2c2e88d3e32d4fae1f55a533f40787dc08894d3bb12f",
+      "uv": {
+        "UVMap": "7f0105bd6a6c9e6a4aad232fe60466563918c507a0e66bee718ba5b63cb82cd3",
+        "Alignment": "161c1c885640b939017c278e5b2e9a4120073e329000b0649221eca3661b5a97"
+      },
+      "weights": "4d8c820bcaeff64777874ccd89a2a945282f950c778ea1b190936d129113aef9",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 14": {
+      "coordsSha256": "67ec61442573e44c9f47e0bf340d85546607ea2e773117101e6a145d53656851",
+      "topology": "199424f84721975e3adb67e31eef510e29a6fb611834bfd0fca18bfaa586f61c",
+      "uv": {
+        "UVMap": "f43bbf9be2bdc1a9c6a150610ef095a4b1cb8cf567f2030ee0cc1afe44861ca1",
+        "Alignment": "25ea7ec865ea2f2cb9a28dac63b116d5a2ac155ff7f5ce84c17a0a6c55527227"
+      },
+      "weights": "ef08b98ad27c77e43d3f01ab9993ef993e034e7c2af411fa674d4bd3d4c44906",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 15": {
+      "coordsSha256": "b89fae091ad2b7a5e7689394a56d3e757cf35e39242273f762fc8c3418d18d8c",
+      "topology": "bed9b8bc62f103e8a65a04d77573e68ee2a16ea4c11aed97183d292df7fff6eb",
+      "uv": {
+        "UVMap": "3678c1057bf5be8fdf90c744b8e9a69dd9a114f2e38385b4bb9b814a6a72bb65",
+        "Alignment": "8f382bd8ca737d535ad5a422647c7c5d69c95c2934694bd550433b27bdf94233"
+      },
+      "weights": "376b1e2e940706c1a12db6e22e066649e169036b4e1f14de3dda8b85519bbec4",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 16": {
+      "coordsSha256": "c4a7e6d1bdff56705478addddb07c243e09f80e9b5ce78ed52413afef1e7e205",
+      "topology": "a3f0c45b726ee9f3a639746c00a831807e219e1f04eee329c731f3921c1c1390",
+      "uv": {
+        "UVMap": "f4dc1c4e3b45a14caa9e8d1e4e6fa8ec598d472549730a015fd15d7d3d6ece98",
+        "Alignment": "c2b7314ab9f7b00f837e7e56e89c1472b9b706df8d7b69fff73244c3aeda03b3"
+      },
+      "weights": "f1f7b31450cfc045cab104f7dc345d8831ca71b761360db4575d2859eee10281",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 17": {
+      "coordsSha256": "c6b2bd2395acf10c8748a6e4b6c88025686303e7a51fffb762c96dde9cf3dbb5",
+      "topology": "96178a3d8ac0a9ac24b59ffb87a60d2dbfa57a95ec8f53a4c171b2e7d483c3c1",
+      "uv": {
+        "UVMap": "2ed463e7c9378e4e2afd907d7e12a9e7d534dad5d88cd24652d44fb99189859c",
+        "Alignment": "78566dedb0d77054536f5c1bd751b006019ae7f88ef966897faf79aa341b0b0b"
+      },
+      "weights": "baacca6c08f53538c7dd1a89fd2a3edceb666822995ba1064b99f15e19fd95cc",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Ellie ready Layered wave 18": {
+      "coordsSha256": "adf53d5ca4cedb51a8f75bec65f1677acb5cf232688757fc77478b72d7c65ec2",
+      "topology": "7cc95e31e698ba337fcb7e6133bbc3820a2364ecb00ce2b8654203099ed61cb8",
+      "uv": {
+        "UVMap": "3538e4457bcdb51b9e2626e921d812d0a3aaffeb081266849ee2944ad5a2d722",
+        "Alignment": "6ba83a98bade5cdc33b83e47b93a6705299eaf3a56956fcb927275f41118e3f1"
+      },
+      "weights": "de921637e6a038c7d178dde346a983c49b01b6c17156a393a9d8e3fd1825f512",
+      "materials": [
+        "Ellie ready Stable painted copper UV pilot"
+      ],
+      "modifiers": [
+        [
+          "Rigid Head binding",
+          "ARMATURE"
+        ],
+        [
+          "Native hair surface subdivision",
+          "SUBSURF"
+        ]
+      ]
+    },
+    "Cream shirt V inside vest": {
+      "coordsSha256": "6f8ce281b261a4ad8f908b56b83ad9b543d7a8a04b513ac00586e117c05542ce",
+      "topology": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+      "uv": {
+        "RutaPaint": "80dd713bbcb706e833c1a6f515b40947ebabf2d5da24265a10b40af9267f385f"
+      },
+      "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Vest brass button 1": {
+      "coordsSha256": "c56335341bd68ba43057dfd172fbfc1d0f89e06eac95c556cc16136a75e4b4ff",
+      "topology": "fb5e0fb21b9b1b6aac0b1ed67a7d4f91a626fa20008e11363de77c424ba6ed70",
+      "uv": {
+        "UVMap": "fb475157192a0e6c7fd5e8d038636d45d17414b11de1b58568e2da0075be1949",
+        "RutaPaint": "1192ff6c5ad21cfc6f07c82fd33b512a71e3da8109af430f076d4d6479b33e26"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Vest brass button 2": {
+      "coordsSha256": "11b96456ebd298f48a9da7a16cceb107d99b0041e284d96b91875e21a37b9b22",
+      "topology": "bac1ed0e888fcc6484d1821a8e1e1d9d215fe4d8290730de8d48dcf3717a4de3",
+      "uv": {
+        "UVMap": "02a2ea00e67b2b10e187884f6c1745384bdf19467c699c28f4160363c7ffa2cc",
+        "RutaPaint": "20fc965972aa46b2745c26db95a09133865e383a584e12f3cac708f71fdd93a7"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Vest brass button 3": {
+      "coordsSha256": "f517dfe37834d834ca99ca3656644369f9e3707a0116d6503fa33ccbf35ba84f",
+      "topology": "dc9d7b87cc3d1e5286c5ac7a69fba7ed5a7ada966e306ab5a148de7addcdd03e",
+      "uv": {
+        "UVMap": "073f10a2d253c013d78868486548ab5b89ed2e9c03216138404f5cab5f0253d5",
+        "RutaPaint": "3ec02e2fd33d9f6c5bb705718310b867c29184442ff70d30d2042926ee574658"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Left burgundy bow loop": {
+      "coordsSha256": "b2766dd749c7753fc4c7c3d49f60adfc3d9bdc9c1961c6f778e019e07972888c",
+      "topology": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+      "uv": {
+        "RutaPaint": "e18f6c4ada1f573fc897e9b1b3210afbb3639a3da8284f4248accab2b2e6f345"
+      },
+      "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Right burgundy bow loop": {
+      "coordsSha256": "4aa8c8a3f87007e219fb12d738333d56dc67a6c66abfcda3992bf418a5735f5b",
+      "topology": "f3e49bcac468b5dff9d7d3154cf1a5bb18d41916d251ddfa652c84823c5c1382",
+      "uv": {
+        "RutaPaint": "be502c454a6553def2ba53463c68f51337b0fbaf891951b0cf33c8efeb25bd62"
+      },
+      "weights": "1253c08e2a75af667e5c7b19824f0ab8627f1b844fef12e9211e9d2681710677",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Burgundy bow knot": {
+      "coordsSha256": "905bfa669f718115400adb6948a9ea44b7f9ed1814189f6b4822781fc8a17d67",
+      "topology": "b7621f9d2d6c766fc89ae445c76c828543e744ec13664603552a3b0e5cd24a0a",
+      "uv": {
+        "UVMap": "c793bf6d0a71f252dee07865947f46068a685fd9d80c3011597432332c5f30d4",
+        "RutaPaint": "5eeba2284dfa90d623459a1492a9ac7c6e6266cff984d8361c5c340960bff79a"
+      },
+      "weights": "a6c8057b51bc91f8a218f500e749825e2bbe29055957be205a14343b1c98d639",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Two burgundy bow tails": {
+      "coordsSha256": "0f65f3c43b2ff757d76769373c8e1338ee72a413faa77cc8c4b879c9722fe901",
+      "topology": "d42ef3a453691152af9df3974094032f222579d3757a55de4baf2ae3aef6da0c",
+      "uv": {
+        "RutaPaint": "5b8050665e2f1b6f3f3b5163e5c2afe92ba297a4ea141f9ad681934d92451535"
+      },
+      "weights": "82dafb5b123f5adad5764f3190285488d118ff735068f919f57e1f4da5a4c387",
+      "materials": [
+        "Ruta burgundy neck bow"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "ONE rounded right hip satchel": {
+      "coordsSha256": "5891ba2abac6f50644a9c9122bfb7306369b89bdc140cc3fc55d040056be9550",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "ed09942ae184eb040ab2ba60eab8c34688eaeb581a9515a9e367643d4ab166f8",
+        "RutaPaint": "5a33c390c4e6abb1ba0628616297cb1c7cdafdcbce3d0ddb865d90698efc8b72"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Ruta satchel warm leather"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Single rounded satchel flap": {
+      "coordsSha256": "9403ba67199d02dfc7ebfa85c71aac631b28c57c61c2d32eaf168a921422cedc",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "34c80fdeabc0ebc205850ef31c55e24be6423a8b00e8d7c50d23abb07049a36b",
+        "RutaPaint": "2d6f0b7a4ef9d88ad42eeecade743a158121670b5754f14c6fdeb92386413e87"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Ruta satchel warm leather"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Satchel warm brass clasp": {
+      "coordsSha256": "ae056f7ebc2fee6f687399e9df556bfb7548245089297e5adb5a2e64b75d2403",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "6ef22518fbefd177f76950966ecf923266c3c336029efdcfbba4c4bf6d7dc3c4",
+        "RutaPaint": "d173f6d5fea475dc8f41126a810af6621ced6b3d8ce83a0b0f7b145464895dd2"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Ruta warm brass detail"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ankle boot lace R": {
+      "coordsSha256": "c4adafdbc70626ac32d58ea48ac37ab0f95522baa1d61697b2284fee035046b7",
+      "topology": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+      "uv": {
+        "UVMap": "57b66926d4f9f5635a0056be6541f24f8c17e307712fedbbbe249500bb33adcf",
+        "RutaPaint": "3128a152d135c1b3abfe565c0849e2a45e38feaac9fe0ab3ed9ac803080878d0"
+      },
+      "weights": "0c973a43d9c947835bef4ff657f2b534fe74d0f5be4aeb9158d00c9c048e0fed",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cream sock cuff R": {
+      "coordsSha256": "f9e77152056862faaf1a186d2ccc5f8a607d3c5945994f6b77f4074e2347952c",
+      "topology": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+      "uv": {
+        "RutaPaint": "df6b9b8057f3f83ec91798f2dfba386890d24ccf01e9767b5331b6b0c70d72e0"
+      },
+      "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cargo side pocket R": {
+      "coordsSha256": "6b2564c1c32cac75f8a8df132049a1cfca20a79085ef71fcefa41dd2d15e3eca",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "5c5dea655de3cf3c30ffcf328820b37434f359dbd6c6d5eb78b53acc2fdf35dd",
+        "RutaPaint": "acf66482c03786dd80c9fca8f50b900ae467abd35b83168c6eae1a04c53860eb"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Cargo pocket cloth R"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ankle boot lace L": {
+      "coordsSha256": "67c1637a5f90b9bdd7911be69566cc5835569a1be50ef879067082fb2052dfad",
+      "topology": "aee11d00756459f2a418ca6f6e00a6d374ac89df46e3defad588e3cfba4a92e2",
+      "uv": {
+        "UVMap": "57b66926d4f9f5635a0056be6541f24f8c17e307712fedbbbe249500bb33adcf",
+        "RutaPaint": "b7860b1aa3002a2f396730fd0457c62998b3c143e71ba43395e0b6c5d1211118"
+      },
+      "weights": "d910c262687aadaec5b09a756a42f3d47a88a6750b05bf0283b606cebc108211",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cream sock cuff L": {
+      "coordsSha256": "e8436a1617d1f2cd10c1175f7dadc40bb0a2986bb3ef35d396002f635dec374e",
+      "topology": "837170652442abff3ac5b89439511eb325a192e5e1ecfc5b91ff3e6dc7d6b06e",
+      "uv": {
+        "RutaPaint": "2c342262abf99b7f7f8a9267e83896d70e61ae193167379c2db572340bdb5e03"
+      },
+      "weights": "3807f0934579d34e7ea680178053f7ea5b0f39dd74469fbf329878d6b9058834",
+      "materials": [
+        "Ruta cream shirt"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Cargo side pocket L": {
+      "coordsSha256": "167b4a8bbcec8eea0efbceb0c49a3d3cbde9a198eacc1b8d4eda239575fb9c96",
+      "topology": "53b42d6c91f906af22b21fac2793a3d0738408fa4881ab24bab5baacb11680cd",
+      "uv": {
+        "UVMap": "fe32d6cc7697de344cb95f29fc6d904ded6ef55a7feea1d2e4fe4b9a7ae4d2f1",
+        "RutaPaint": "e35669fd8a8a557e4c97e572d280765faf34d52678faa5c29ddba4845c958514"
+      },
+      "weights": "5619d656e4d9d9c97db81854dcc7bb01e93110d8cfe9d67fdd2c3e77d22630d9",
+      "materials": [
+        "Cargo pocket cloth L"
+      ],
+      "modifiers": [
+        [
+          "Same whole-body armature",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Ellie ready Daisy CC-BY hair": {
+      "coordsSha256": "0dc1d5bc8480fb84f389f81aafd8b129311b3c1fbf705ff3972416c67c3e8f31",
+      "topology": "389929b6f7c5176b1840857dc470e6604767f91e8ad2aac2acad1255fd081458",
+      "uv": {
+        "UVMap": "d5ab869f8e158224ab27d76045acce14a13921cc0a504bbddb2db5a77e81f953"
+      },
+      "weights": "15113832ea9f371b5d28ffd990dee784f3fec90e967a3c29f3ce431c862ec3bc",
+      "materials": [
+        "Daisy stable painted RGB native alpha pilot"
+      ],
+      "modifiers": [
+        [
+          "Fixed native Head attachment",
+          "ARMATURE"
+        ]
+      ]
+    },
+    "Icosphere": {
+      "coordsSha256": "8d4915897d9759468b9a91b405c71c2e7896e5949260a2858ba194b27c5f7717",
+      "topology": "547f3010843e1d60add13bd4c5af0ca871f0aa6056a21e6aa8d14a8ad844fd66",
+      "uv": {
+        "UVMap": "1bacff20108d66711917c05c3309fe3508669dc4a1804ffe849a514d52c67af0",
+        "RutaPaint": "b736048bb81f99665124eea00a2a4da6938539f1d9f3ac655d3ba96e18ffa19e"
+      },
+      "weights": "220acd169ab40af02c2a2a753ec26009708ea5760f0096f86e90322fbba65147",
+      "materials": [],
+      "modifiers": []
+    }
+  },
+  "actionsExact": {
+    "Death": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Death.001": "6a4005dc0b03346d9383aa09471b8c3331932f4dcaec4de55d2b77ad30a359e0",
+    "Gun_Shoot": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "Gun_Shoot.001": "86e4822e178774273786a45cdd2f0373493b2b120442090cecd107cb2a5abd5a",
+    "HitRecieve": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve.001": "a3555b30724a88ff6536493fd18bf8e7d91986ab836babd678e987173428ab46",
+    "HitRecieve_2": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "HitRecieve_2.001": "14ee303fa87ccb5ff49188c50ddc6e94d696ef711d762cf2fd05482ec67208e9",
+    "Idle": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle.001": "65934e92df5ac9c5433300082abb9a3ffa3a8acebdc62b9469a9a8827c5b9125",
+    "Idle_Gun": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun.001": "d9c8216d7a35e02874a364a36d2b4a06664ae04938f4bcbae159247755288a73",
+    "Idle_Gun_Pointing": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Pointing.001": "73d1b8b8b81a713e656c31348786be4ed42c00c35b656a68ba5db7b094ea5936",
+    "Idle_Gun_Shoot": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Gun_Shoot.001": "0d6c0298e51d1dabf6fe1303e77868db92f54e50e82d3d9d2301a7385b88dad7",
+    "Idle_Neutral": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral.001": "c95a3baeb6a26de0f69a24869c88f83efdd086c1f3cda8717b9313b8315db8f8",
+    "Idle_Neutral_ProportionProposal": "caf23e4f0542ed8278dc2a93f150e426ef3cab5df25c4b7001457fb1abf8269b",
+    "Idle_Sword": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Idle_Sword.001": "47dd662ea7a2caa2cd540f281f6a461290942ccf9c5c9f8859bacfe6e5873a63",
+    "Interact": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Interact.001": "24bd0a620b4047dceab3f69896f71481523c1d48d5ce5dd8ce97944be4eea853",
+    "Kick_Left": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Left.001": "3a285a0bb8e5d0a0de6f2308090b0e4a3d7098ac11b44358e8d7dd3acfb95a9a",
+    "Kick_Right": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Kick_Right.001": "a7254933515e6642f516a3a799fb1091c197e9022bae8fa66d9ff35eb2072983",
+    "Punch_Left": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Left.001": "b2ec87092ab98a361a58869fd2da96eaa014a5885ef8a639f1733e6136afb2da",
+    "Punch_Right": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Punch_Right.001": "ee39019f2f3e2472edbe3b638533b214fc549dfdeb51e820fe938c3b944da488",
+    "Roll": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Roll.001": "be49327ceb058cc691b4a4ab9d6ec85273ffdde0ca4899f2ecf010abfc5a8bc1",
+    "Run": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run.001": "962b17589368f0dca666fdef7910ebf19a8d68412324cd6869792128d084b31e",
+    "Run_Back": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Back.001": "3bfdcc00f4f24e13eac02e40992431505e86c87fa069af27a8e1f6f5cd51cf2c",
+    "Run_Left": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Left.001": "4f6abcf31281026582d122350be60fa4011d989b28035e50e57e9841946044c1",
+    "Run_Right": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Right.001": "ad8b734b25e86fdcf53b09382d71ee5b3f457172b7808d7d52367b07e9679b08",
+    "Run_Shoot": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Run_Shoot.001": "0bc6f82b2e2d2186ff97f6a85ae00dce06fd8b83dbc56fd6fe6a358832d88969",
+    "Sword_Slash": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Sword_Slash.001": "edabf9804329ca181c96eaa07fe22c0c3891e2a6d8271603cb54fff41a607f52",
+    "Walk": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk.001": "1bc6199ebe78dcea41e3e2033af0ea6c95a1b0a6c449d4391673143200800851",
+    "Walk_ProportionProposal": "42dfb58c9b06fd26aebc86b8557bad156ec96447fe6e7560a4755e8f6ee759aa",
+    "Wave": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820",
+    "Wave.001": "cda4f2bb58b7350fae9cbf658c143f31a1ac05aa36e700b6efc805e133dc3820"
+  },
+  "boneRestFingerprintExact": "824add660f7229a2ed12287d82c6a1d15159c904a84f0b157ef86973e6aec2ec",
+  "actualFrontCameraProxy": {
+    "toCamera": [
+      2.9688520953641273e-05,
+      -0.7796435356140137,
+      0.6262235641479492
+    ],
+    "baselineFaceForward": [
+      0.000246564915869385,
+      -0.9992721080780029,
+      0.038146715611219406
+    ],
+    "candidateFaceForward": [
+      5.046089427196421e-05,
+      -0.9259617924690247,
+      0.37761732935905457
+    ],
+    "baselineAngleDegrees": 36.58587413822745,
+    "candidateAngleDegrees": 16.58587472004161,
+    "limitation": "nativeface-forwardaxisproxy, not measurediris/pupilphysicalgazevector"
+  },
+  "cameraMatrix": [
+    [
+      1.0,
+      0.0,
+      0.0,
+      0.0
+    ],
+    [
+      0.0,
+      0.6499999761581421,
+      -0.7599342465400696,
+      -8.0
+    ],
+    [
+      0.0,
+      0.7599342465400696,
+      0.6499999761581421,
+      7.692697525024414
+    ],
+    [
+      0.0,
+      0.0,
+      0.0,
+      1.0
+    ]
+  ],
+  "cameraOrthoScale": 2.0999999046325684,
+  "globalActorScaleBodyYawRigFootRootUnchanged": true,
+  "paletteAlphaTextureMaterialUnchanged": true,
+  "render": "front Idle_Neutral_ProportionProposal frame0, existingbasecamera,512x640,128AA",
+  "limitations": [
+    "Notallframemotion orhead/body/clothintersectioncertificate",
+    "Commonneckblend isRESTsculpt, notruntime/perframewarp",
+    "No yaw/heading/camera cheat; Eback3qvisibilitynotclassifiedasautomaticbug",
+    "Worriedbrow/mouthexpressionmayremainindependentofgaze"
+  ],
+  "frontRenderSha256": "a5a2249c44f486b4ddcd74ed2108e0dcf24438cbaafffe534998238054300bd6"
+}

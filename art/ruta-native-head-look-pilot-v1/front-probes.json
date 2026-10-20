@@ -1,0 +1,54 @@
+{
+  "sourceSha256": "350c96cdacb9c413dac120cb57de695e94d1a9dd2b7c4cbfd8672ed7115ee5d8",
+  "rows": [
+    {
+      "angle": -10,
+      "folder": "pitch-up10",
+      "faceForwardProxyDegrees": {
+        "toCamera": [
+          2.9688520953641273e-05,
+          -0.7796435356140137,
+          0.6262235641479492
+        ],
+        "baselineFaceForward": [
+          0.000246564915869385,
+          -0.9992721080780029,
+          0.038146715611219406
+        ],
+        "candidateFaceForward": [
+          0.00015080395678523928,
+          -0.9774669408798218,
+          0.21108897030353546
+        ],
+        "baselineAngleDegrees": 36.58587413822745,
+        "candidateAngleDegrees": 26.585877844229113,
+        "limitation": "nativeface-forwardaxisproxy, not measurediris/pupilphysicalgazevector"
+      }
+    },
+    {
+      "angle": -20,
+      "folder": "pitch-up20",
+      "faceForwardProxyDegrees": {
+        "toCamera": [
+          2.9688520953641273e-05,
+          -0.7796435356140137,
+          0.6262235641479492
+        ],
+        "baselineFaceForward": [
+          0.000246564915869385,
+          -0.9992721080780029,
+          0.038146715611219406
+        ],
+        "candidateFaceForward": [
+          5.046089427196421e-05,
+          -0.9259617924690247,
+          0.37761732935905457
+        ],
+        "baselineAngleDegrees": 36.58587413822745,
+        "candidateAngleDegrees": 16.58587472004161,
+        "limitation": "nativeface-forwardaxisproxy, not measurediris/pupilphysicalgazevector"
+      }
+    }
+  ],
+  "chosenPendingActualVisualReview": true
+}
