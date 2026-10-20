@@ -1,0 +1,142 @@
+{
+  "scope": "Read-only static code/manifest accounting; no profiler/browser/build/global asset load. Not physical RSS/GPU/phone capacity or final native performance acceptance.",
+  "runtimeCommit": "e32cad43a8b4061dec2f95a09e3669ac4537f405",
+  "pins": [
+    {
+      "path": "src/image-decoder.ts",
+      "sha256": "76e57cd70f3b48a8d73787d9dacb4dd493278d0454c0e1beb6877f1d53a424c6"
+    },
+    {
+      "path": "src/ruta-motion-view.ts",
+      "sha256": "01bb1910dc3da32ba7d79d3d59e282d6022a6274259b417876fc8f00a5eff690"
+    },
+    {
+      "path": "src/main.ts",
+      "sha256": "05b64838dc97040e2e4072dc2172ab74c31ceb88d5507cf22ac2b552801f89e5"
+    },
+    {
+      "path": "src/ruta-journey.ts",
+      "sha256": "f9195fecd8b2bf88174c91d5287b374bc84c4562ba4f8adb60436fc04271a2fb"
+    },
+    {
+      "path": "src/character-animation.ts",
+      "sha256": "7249e5d835f278f8b0597ec109d00c84b9850ec06ada84c55f12f5f077e876dc"
+    },
+    {
+      "path": "src/resident-scene.ts",
+      "sha256": "9de088be8a274133d4a35762621673a06030f354bd10eeaa90271a9b98432b73"
+    },
+    {
+      "path": "src/prologue-scene.ts",
+      "sha256": "086b2b9e3addaf621c39eafdccb7ea94d7d00d99adb3f5fa29d271d35426945e"
+    },
+    {
+      "path": "src/character-assets.ts",
+      "sha256": "9d1e856338597d60e25d5eb4a44b266756d6580ce73810c43e768b79f151cb38"
+    },
+    {
+      "path": "scripts/character-paint-playback.ts",
+      "sha256": "138ea8c9895293bdbbb67bdf7c2b638e5110d5a1ed4140d41d4106a2761b83b2"
+    },
+    {
+      "path": "scripts/character-paint-route-planner.ts",
+      "sha256": "d455b5b29b548d2e8b1e6abfa2e134e491ce52ccc947ad935ef3fbde2c99dabb"
+    },
+    {
+      "path": "public/assets/characters-walk-v1/animated-v3/manifest.json",
+      "sha256": "e8a8696a2df1b987f1fcd05d50e15b890351e395d51c62081ee48f0dcda9e676"
+    }
+  ],
+  "currentMotionManifestGroups": [
+    {
+      "variant": "base",
+      "uniqueImageResources": 6,
+      "files": [
+        "assets/characters-walk-v1/animated-v3/base-e.webp",
+        "assets/characters-walk-v1/animated-v3/base-ne.webp",
+        "assets/characters-walk-v1/animated-v3/base-nw.webp",
+        "assets/characters-walk-v1/animated-v3/base-se.webp",
+        "assets/characters-walk-v1/animated-v3/base-sw.webp",
+        "assets/characters-walk-v1/animated-v3/base-w.webp"
+      ],
+      "manifestEncodedBytes": 2716668,
+      "RGBA8EquivalentBytes": 47775744,
+      "RGBA8EquivalentMiB": 45.5625
+    },
+    {
+      "variant": "calibrated-1",
+      "uniqueImageResources": 6,
+      "files": [
+        "assets/characters-walk-v1/animated-v3/calibrated-1-e.webp",
+        "assets/characters-walk-v1/animated-v3/calibrated-1-ne.webp",
+        "assets/characters-walk-v1/animated-v3/calibrated-1-nw.webp",
+        "assets/characters-walk-v1/animated-v3/calibrated-1-se.webp",
+        "assets/characters-walk-v1/animated-v3/calibrated-1-sw.webp",
+        "assets/characters-walk-v1/animated-v3/calibrated-1-w.webp"
+      ],
+      "manifestEncodedBytes": 2706170,
+      "RGBA8EquivalentBytes": 47775744,
+      "RGBA8EquivalentMiB": 45.5625
+    }
+  ],
+  "currentAllUniqueFiles": 12,
+  "currentAllRGBA8EquivalentBytes": 95551488,
+  "knownCropPNGSumEncodedBytes": 4715045,
+  "knownCropPNGSumEncodedMiB": 4.496617317199707,
+  "nativeAccountingModels": [
+    {
+      "label": "known E crop48",
+      "formula": "260*434*48*1*4",
+      "RGBA8EquivalentBytes": 21665280,
+      "MiB": 20.66162109375
+    },
+    {
+      "label": "known E whole48",
+      "formula": "512*640*48*1*4",
+      "RGBA8EquivalentBytes": 62914560,
+      "MiB": 60.0
+    },
+    {
+      "label": "illustrative six crop Walk48",
+      "formula": "260*434*48*6*4",
+      "RGBA8EquivalentBytes": 129991680,
+      "MiB": 123.9697265625
+    },
+    {
+      "label": "illustrative six whole Walk48",
+      "formula": "512*640*48*6*4",
+      "RGBA8EquivalentBytes": 377487360,
+      "MiB": 360.0
+    },
+    {
+      "label": "illustrative two crop Walk48 bundles",
+      "formula": "260*434*48*2*4",
+      "RGBA8EquivalentBytes": 43330560,
+      "MiB": 41.3232421875
+    },
+    {
+      "label": "illustrative two whole Walk48 bundles",
+      "formula": "512*640*48*2*4",
+      "RGBA8EquivalentBytes": 125829120,
+      "MiB": 120.0
+    },
+    {
+      "label": "illustrative two cameras six crop Walk48",
+      "formula": "260*434*48*12*4",
+      "RGBA8EquivalentBytes": 259983360,
+      "MiB": 247.939453125
+    },
+    {
+      "label": "illustrative two cameras six whole Walk48",
+      "formula": "512*640*48*12*4",
+      "RGBA8EquivalentBytes": 754974720,
+      "MiB": 720.0
+    }
+  ],
+  "unknowns": [
+    "final native six-heading deliveries and their per-file dimensions/encoded sizes",
+    "final native Idle/Start/Stop resources and camera variants",
+    "browser decoder/raster/GPU duplication and cache-release timing",
+    "target physical-device performance/memory"
+  ]
+}
