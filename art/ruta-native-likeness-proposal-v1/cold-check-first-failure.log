@@ -1,0 +1,12 @@
+Blender 4.5.3 LTS (hash 67807e1800cc built 2025-09-09 01:38:15)
+Read blend: "/home/mskorokhod/life/ruby-village-36-uv-paint/art/ruta-native-uv-paint-pilot-v1/ruta-native-painted-hair-pilot.blend"
+Read blend: "/tmp/ruby-native-likeness/art/ruta-native-likeness-proposal-v1/ruta-native-likeness-proposal.blend"
+Traceback (most recent call last):
+  File "/tmp/ruby-native-likeness/art/ruta-native-likeness-proposal-v1/cold-check.py", line 17, in <module>
+    p=a['evalHead'][frame];q=b['evalHead'][frame];assert len(p)==len(q);mask=p[:,2]<=1.15;drift=float(np.linalg.norm(q[mask]-p[mask],axis=1).max());evalrows.append({'frame':frame,'evaluatedLowNeckThresholdWorldZ':1.15,'vertexCount':int(mask.sum()),'maxDeltaVersusSourceMeters':drift});assert drift<1e-6
+                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^
+AssertionError
+
+Error: script failed, file: 'art/ruta-native-likeness-proposal-v1/cold-check.py', exiting.
+
+Blender quit
