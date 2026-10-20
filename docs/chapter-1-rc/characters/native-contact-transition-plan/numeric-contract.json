@@ -1,0 +1,160 @@
+{
+  "phaseQueueTravelUpperBoundMeters": 0.6492671182188282,
+  "phaseQueueTwoHalfCycleDistancesMeters": [
+    0.6492671182188282,
+    0.6284831780858612
+  ],
+  "status": "EVIDENCE-BACKED-FUTURE-CONTACT-TRANSITION-PLAN-NO-CLIPS-NO-RUNTIME",
+  "sourceSHA256": "bae05a2f29298aa1848130267bba802dab731951451af04a7e93f2f0e92f2706",
+  "action": "Walk_ProportionProposal",
+  "idleAction": "Idle_Neutral_ProportionProposal",
+  "durationSeconds": 1.6666666666666667,
+  "sourceRootXYStaticNormalization": true,
+  "sourceRootTrajectoryMaxAbsM": 0.0,
+  "sampleIntervalSeconds": 0.0034722222222222225,
+  "sampleCount": 481,
+  "contactDefinitions": {
+    "floorM": -0.001194837037473917,
+    "floorDefinition": "minimum evaluated candidate sole z across cycle, NOT calibrated ground",
+    "heightBandM": 0.0175,
+    "weight": "static rest surface area * max(0,1-max(0,z-floor)/heightBand)^2",
+    "contactConfidenceThreshold": 0.01,
+    "uncertainty": "heuristic height band; compare +/-7mm, no measured physical contacts; above-plane vertices deliberately soft weighted"
+  },
+  "landmarkDefinition": "uniform arithmetic mean of FIXED actual used native heel/toe material vertices; not changing contact centroid, not ankle/pixel bbox, not certified physical support point",
+  "contactEvents": [
+    {
+      "side": "L",
+      "softSupportWindowPhase": [
+        0.04583333333333333,
+        0.3625
+      ],
+      "softSupportWindowSourceFrames": [
+        1.8333333333333333,
+        14.5
+      ],
+      "peakPhase": 0.1375,
+      "peakSourceFrame": 5.5,
+      "peakConfidence": 0.5902089519467957,
+      "physicalContactCertified": false
+    },
+    {
+      "side": "R",
+      "softSupportWindowPhase": [
+        0.5458333333333333,
+        0.8604166666666667
+      ],
+      "softSupportWindowSourceFrames": [
+        21.833333333333332,
+        34.416666666666664
+      ],
+      "peakPhase": 0.6354166666666666,
+      "peakSourceFrame": 25.416666666666668,
+      "peakConfidence": 0.5914316791831081,
+      "physicalContactCertified": false
+    }
+  ],
+  "joinProposals": [
+    {
+      "supportSide": "L",
+      "sourceWalkFrame": 5.0,
+      "walkPhase": 0.125,
+      "native48PhaseIndex": 6,
+      "sourceTimeSeconds": 0.20833333333333334,
+      "supportConfidence": 0.5888897478437725,
+      "walkHeelVertexMeanNativeM": [
+        0.039840282406657934,
+        -0.12694460153579712,
+        0.0026741974215838127
+      ],
+      "idleHeelSameVertexMeanNativeM": [
+        0.0610382033046335,
+        0.01325388578698039,
+        0.002947769251477439
+      ],
+      "heelHeightDeltaWalkMinusIdleM": -0.00027357182989362627,
+      "supportMinSoleZNativeM": -0.0007077322225086391,
+      "oppositeFootMinSoleZNativeM": 0.038837701082229614,
+      "fittedForwardCurveSpeedMps": 0.6668266186550812,
+      "supportHeelVelocityWithCurveWorldMps": [
+        0.014635842293500899,
+        0.007145988003854353,
+        0.005035192589275539
+      ],
+      "naiveIdleSameHeelToWalkRequiredRootTranslationM": [
+        0.021197920897975564,
+        0.1401984873227775,
+        0.00027357182989362627
+      ],
+      "naiveStartWouldGoBackwardForwardAxisM": -0.1401984873227775,
+      "stopRootTranslationToSameHeelIdleM": [
+        -0.021197920897975564,
+        -0.1401984873227775,
+        -0.00027357182989362627
+      ],
+      "stopRequiredForwardAdvanceM": 0.1401984873227775,
+      "constantDecelerationRootDurationHypothesisSeconds": 0.42049457355359643,
+      "durationStatus": "distance/speed engineering hypothesis only; not authored clip, no joint velocity or contact validation"
+    },
+    {
+      "supportSide": "R",
+      "sourceWalkFrame": 25.0,
+      "walkPhase": 0.625,
+      "native48PhaseIndex": 30,
+      "sourceTimeSeconds": 1.0416666666666667,
+      "supportConfidence": 0.5897850150034356,
+      "walkHeelVertexMeanNativeM": [
+        -0.04015414835885167,
+        -0.12407007999718189,
+        0.0026785801001096843
+      ],
+      "idleHeelSameVertexMeanNativeM": [
+        -0.06103255948983133,
+        0.013248858507722616,
+        0.002948368066427065
+      ],
+      "heelHeightDeltaWalkMinusIdleM": -0.0002697879663173808,
+      "supportMinSoleZNativeM": -0.0006816555978730321,
+      "oppositeFootMinSoleZNativeM": 0.03866426646709442,
+      "fittedForwardCurveSpeedMps": 0.73184331580228,
+      "supportHeelVelocityWithCurveWorldMps": [
+        -0.02037784829735756,
+        0.008147574223812515,
+        0.004792379593709484
+      ],
+      "naiveIdleSameHeelToWalkRequiredRootTranslationM": [
+        -0.020878411130979657,
+        0.1373189385049045,
+        0.0002697879663173808
+      ],
+      "naiveStartWouldGoBackwardForwardAxisM": -0.1373189385049045,
+      "stopRootTranslationToSameHeelIdleM": [
+        0.020878411130979657,
+        -0.1373189385049045,
+        -0.0002697879663173808
+      ],
+      "stopRequiredForwardAdvanceM": 0.1373189385049045,
+      "constantDecelerationRootDurationHypothesisSeconds": 0.3752686826260597,
+      "durationStatus": "distance/speed engineering hypothesis only; not authored clip, no joint velocity or contact validation"
+    }
+  ],
+  "candidateDistanceStrideM": 1.2777502963046894,
+  "phaseQueueWorstCaseSeconds": 0.8333333333333334,
+  "inputHashes": {
+    "art/ruta-final-sole-compatibility-v1/final-samples/actual-sole-samples.npz": "638c78dab736d47f3d0a0c164675a8acf9cb455e55bf64957cfeafc25a7dfbb8",
+    "art/ruta-final-sole-compatibility-v1/final-samples/sample-source.json": "92c938e1d1a66d12e1c7a616ac8a1737faa434586f78958c56d3b22189c555ba",
+    "art/ruta-final-sole-compatibility-v1/final-samples/forward-distance-curve.json": "30e9a76480217570c887d506992c0461751669cf5ece862bba0a952351321bc0",
+    "art/ruta-native-transition-probe-v1/pose-contract-samples.json": "a6f410d7833e00b63ca7130fbc7d57abecdfa59e95c6083e9fa015f50f832b4e",
+    "art/ruta-native-transition-probe-v1/transition-contract.json": "03b9a37accf5a9382ab6743e9a9653e9cd60be1dd58a99e6180ff4f2f821ff4c"
+  },
+  "uncertainty": [
+    "17.5mm soft band and inferred minZ floor are uncalibrated physical ground labels",
+    "Frozen geometry/actions must match; material/UV-only edits keep measurement applicable, different soles require resampling",
+    "Start must author a genuine first swing/landing; direct idle-foot lock to source join would move root backward",
+    "Stop heel mean is a proxy; full sole distribution can pitch/roll, no exact no-slip proof",
+    "Stop lateral root offset ~21mm is real endpoint geometry mismatch, cannot silently snap route origin",
+    "Durations inferred from constant-deceleration area are not validated clips; source joint velocities and contact transfer unresolved"
+  ],
+  "implementationStarted": false,
+  "imageQualityGateRequired": true
+}
