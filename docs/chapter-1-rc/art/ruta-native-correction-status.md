@@ -216,3 +216,24 @@ No per-frame alignment or production registration is introduced.
 hair crown, tonal treatment/accessories and clothing detail. New native appearance
 is not accepted. Game runtimee32cad4 is unchanged; six production directions,
 genuine transitions/in-game checks and final #37/#49 remain outstanding.
+
+### Genuine transition prototype delivered, not runtime-enabled
+
+`474a975` provides two real native Actions (400ms FirstStepL /420.495ms StopL),
+external Hermite Root travel consumed once, and an80-entry technical review timeline:
+Idle4 +Start12 +Walk48 +Stop12 +Idle4. Static Idle entries share an actual still;
+this is not80distinct poses. All80 action/timestamp hashes are replay-verified.
+Walk retains its original duration with phase5 offset modulo40; an initial bad wrap
+was rejected and six samples rerendered before freezing. Independent browser review
+is pending. No final source/art/game/no-slip acceptance.
+
+The isolated sole-weight derivative changes56sole vertices only. Exact LBS diagnosis
+attributes the original support drift to mixed LowerLeg/Foot weights. Old Walk48's
+maximum sole geometry delta is4.484mm, explicitly not byte-identical deformation;
+upper boot/laces/cuffs are unchanged. Dense prototype checks find Start support span
+0.0392mm, Stop1.086mm. Endpoint source poses match and finite tangent checks pass;
+these checks do not establish continuous physical contact or arbitrary-route behaviour.
+
+Expression study `ea72c99` is not selected: its relaxed eyelids read sleepy. A bounded
+native-control revision preserves the baseline eyelid boundary while adjusting brows
+and smile; no full48 rerender or runtime installation is authorised by that still alone.
