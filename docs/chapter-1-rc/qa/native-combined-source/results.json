@@ -1,0 +1,18 @@
+{
+  "status": "PASS-scoped-independent-cold-open",
+  "headSourceSHA256": "f9376819c54d8136f8a56d6eaae875c9fbc0535a02f1509bb2d5cae07e622ceb",
+  "combinedSHA256": "b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7",
+  "meshRestTopologyWeightCountExact": 57,
+  "rigBonesRestHashesExact": {
+    "CharacterArmature": "015df77eb8c4316c17bcb288d8652a756be7320189b3c05517438b7682171a78"
+  },
+  "actionsExactIncludingHandles": 50,
+  "skinFacesGraphAndAssignmentPreserved": 1932,
+  "allMinusOneFacesGraphAndAssignmentPreserved": 1948,
+  "headHairObjectUVGraphsAndFacesExact": 33,
+  "nativePaletteAndNonPaintNamespaceUVLayersPreserved": true,
+  "scopeWarning": "Assembler copies PAINT_UVS referenced by all donor slots, including unused old RutaPaint on feet; broader than transfer manifest actually-used layers. Extra unused paint-layer overwrite is not native UVMap overwrite.",
+  "allNamedTransferredUVLoopsExact": true,
+  "allTransferredFaceMaterialNamesExact": true,
+  "limits": "No render, animation evaluation, target installer execution, new combined loop or visual/game/no-slip acceptance."
+}
