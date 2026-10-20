@@ -129,3 +129,17 @@ Remaining: source hair/art coherence, actual temporal-loop review, six direction
 contact-aware starts/stops and in-game route/turn/bridge checks, independent #37,
 then final #49 resource/build/release-candidate checks. Physical phone and family test
 remain NOT RUN. No merge or publication.
+
+### Diagnostic temporal batch separated from art acceptance
+
+Independent accessory QA `29ffc36` now passes actual front/E40 seams and all UV-boundary
+padding. Native hair diagnostic `22f7c8a` pins actual normal strength0.25: setting it0
+does not remove ribbon silhouettes; uniform diffuse removes painted stripe contrast
+but leaves visible card intersections. No shader-only fix claimed.
+
+A geometry-only crown burial candidate exposed a bald patch and is rejected; not used.
+To test the central temporal question independently of this art defect, root starts ONE
+E48 diagnostic batch of frozen combined source b14cfb5… with permanent textures,
+fixed root/camera, original40/24s cycle and512×640 whole frames. This explicitly relaxes
+the earlier no48 research gate for a diagnostic only: it does not accept the hair,
+expand six directions, or enable runtime. Evidence and browser temporal QA follow completion.
