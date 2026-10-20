@@ -1,0 +1,10 @@
+from pathlib import Path
+import bpy,json,hashlib,math
+from mathutils import Matrix,Vector
+O=Path(__file__).resolve().parent;S=O.parent/'ruta-head-look-chosen.blend';sha=lambda p:hashlib.sha256(Path(p).read_bytes()).hexdigest();assert sha(S)=='167d471c27f5e17b6267b141170de0987b0f6ea6421251b340f023b62112a1e9';bpy.ops.wm.open_mainfile(filepath=str(S));sc=bpy.context.scene;h=bpy.data.objects['Ellie ready head'];original=bpy.data.materials['ellie.head_hair'];original.use_fake_user=True;m=original.copy();m.name='Ellie copper scalp root material diagnostic';node=m.node_tree.nodes.get('Principled BSDF');old=list(node.inputs['Base Color'].default_value);new=[.32,.095,.035,1];node.inputs['Base Color'].default_value=new;slots=[]
+for i,s in enumerate(h.material_slots):
+ if s.material==original:s.material=m;slots.append(i)
+assert slots==[3];out=O/'ruta-copper-scalp.blend';bpy.ops.wm.save_as_mainfile(filepath=str(out),compress=True);r={'sourceSha256':sha(S),'outputSha256':sha(out),'originalMaterial':original.name,'newMaterial':m.name,'headSlotsChanged':slots,'assignedPolygonCount':sum(p.material_index==3 for p in h.data.polygons),'node':'Principled BSDF','onlyParameterChanged':'Base Color','oldLinearRGBA':old,'newLinearRGBA':new,'roughnessUnchanged':node.inputs['Roughness'].default_value,'alphaUnchanged':node.inputs['Alpha'].default_value,'noNewImage':True,'noGeometryOrAlphaEdits':True};rig=bpy.data.objects['CharacterArmature'];rig.animation_data.action=bpy.data.actions['Idle_Neutral_ProportionProposal'];rig.animation_data.action_slot=rig.animation_data.action.slots[0];rest=Vector((0,-.050602056086063385,0));sc.frame_set(0)
+for name,yaw in [('front',0),('threequarter',math.pi/4)]:
+ rig.matrix_world=Matrix.Rotation(yaw,4,'Z')@Matrix.Translation(-rest);bpy.context.view_layer.update();sc.render.filepath=str(O/(name+'.png'));bpy.ops.render.render(write_still=True)
+assert sha(S)==r['sourceSha256'];(O/'contract.json').write_text(json.dumps(r,indent=2)+'\n');print('COMPLETE',flush=True)
