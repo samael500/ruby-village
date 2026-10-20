@@ -1,0 +1,30 @@
+{
+  "command": [
+    "/tmp/blender-4.5.3-linux-x64/blender",
+    "--background",
+    "--threads",
+    "2",
+    "--disable-autoexec",
+    "--python-exit-code",
+    "1",
+    "--python",
+    "/home/mskorokhod/life/ruby-village-36-ruta-render-style/scripts/ruta-ready-sprite-export.py",
+    "--",
+    "--source",
+    "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-combined-v1/ruta-native-painted-combined.blend",
+    "--out",
+    "/home/mskorokhod/life/ruby-village-36-ruta-render-style/art/ruta-native-painted-combined-loop-v1",
+    "--variants",
+    "base",
+    "--directions",
+    "e",
+    "--clips",
+    "walk",
+    "--frame-count",
+    "48",
+    "--contract-only"
+  ],
+  "sourceSha256": "b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7",
+  "seconds": 3.2881040269858204,
+  "rendered": false
+}
