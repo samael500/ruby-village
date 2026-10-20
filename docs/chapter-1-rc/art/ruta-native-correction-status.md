@@ -260,3 +260,16 @@ A stability-only question for the frozen front48 proof is pending; no user respo
 or acceptance is inferred. Remaining source likeness/hair/image-quality gates stay
 OPEN. Route feasibility is being audited against actual integratione32cad4: its
 legacy stride/phase assumptions cannot simply consume this new native clip pair.
+
+### User review: stability confirmed, native likeness rejected
+
+Maksim's latest response to the fixed-texture front48 proof is:
+«да, тут не мигает, но очень не похоже».
+This confirms absence of the reported flicker in this bounded pilot, not in the
+previous painted48 set or a future sprite set. It explicitly rejects this source's
+likeness. The native actor is NOT accepted as final Ruta and remains outside runtime.
+The accepted illustrated Ruta remains the appearance reference; preserve the
+checked gait. No full48 expansion until a coherent static likeness is established.
+Next bounded work: one Keylth hair-fit trial and an independent identity-gap audit
+separating projection differences from facial/body/clothing geometry and materials.
+No new Start/Stop or route-controller implementation is prioritised ahead of likeness.
