@@ -4,6 +4,12 @@ from mathutils import Matrix,Vector
 O=Path(__file__).resolve().parent
 bpy.ops.wm.open_mainfile(filepath=str(O/'ruta-native-uv-derivative.blend'))
 print('LOADED',flush=True)
+# Keep original palette-coordinate binding for all unpainted materials. RutaPaint remains stored but inactive.
+for ob in bpy.data.objects:
+ if ob.type=='MESH' and 'RutaPaint' in ob.data.uv_layers:
+  original=next((u for u in ob.data.uv_layers if u.name!='RutaPaint'),None)
+  if original:ob.data.uv_layers.active=original;original.active_render=True
+
 sc=bpy.context.scene;rig=next(o for o in sc.objects if o.type=='ARMATURE' and 'Root' in o.data.bones)
 def actions():
  return {a.name:hashlib.sha256(str([(fc.data_path,fc.array_index,[(tuple(k.co),k.interpolation)for k in fc.keyframe_points])for fc in a.fcurves]).encode()).hexdigest()for a in bpy.data.actions}
@@ -22,7 +28,7 @@ for a in bpy.data.actions:a.use_fake_user=True
 contract=json.load(open(O.parent/'ruta-native-layered-walk48-v2/source-contract.json'));cam=contract['cameraVariants']['base']['fixedRenderCamera'];print('CAMERA',cam,flush=True)
 sc.camera.matrix_world=Matrix(cam['matrixWorld']);sc.camera.data.type='ORTHO';sc.camera.data.ortho_scale=2.1
 sc.render.resolution_x=512;sc.render.resolution_y=640;sc.render.resolution_percentage=100;sc.render.film_transparent=True;sc.render.image_settings.file_format='PNG';sc.render.image_settings.color_mode='RGBA'
-sc.render.engine='CYCLES';sc.cycles.samples=24
+sc.render.engine='BLENDER_EEVEE_NEXT';sc.eevee.taa_render_samples=32
 rest=Vector(contract['rootRestGroundNative']);out=O/'renders';out.mkdir(exist_ok=True)
 rows=[]
 for name,phase,yaw,action in [('e-00',0,math.pi/2,'Walk_ProportionProposal'),('e-30',30,math.pi/2,'Walk_ProportionProposal'),('e-40',40,math.pi/2,'Walk_ProportionProposal'),('front-neutral',0,0,'Idle_Neutral_ProportionProposal'),('threequarter-neutral',0,math.pi/4,'Idle_Neutral_ProportionProposal')]:
