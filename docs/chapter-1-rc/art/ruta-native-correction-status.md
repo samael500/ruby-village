@@ -87,3 +87,9 @@ Native guide batch completed separately in `b37e0a9`:240additional actual frames
 The larger source is substantially clearer at equal screen size; **flicker remains open**. Actual paused pairs/decoded sequences show lower face/fringe/shoulder-hair changes11/12 and satchel/local drawing changes35/36. No whole-actor zoom or gait failure is inferred from these local differences. Do not request appearance re-approval or present this as a finished image-quality correction. The frozen comparison is retained for inspection.
 
 Next bounded work is a separate stable-UV-textured whole-3D-actor pilot (NPC owner, new worktree/art directory), materially different from the failed grain/outline study. First texture/UV constraints and only actual poses0/30/40 plus a front/three-quarter view; no48/six-direction expansion or runtime install until likeness is demonstrated. UV texture cannot fix silhouette/heading differences; those remain explicit potential blockers. Integration game remains e32cad4.
+
+## User review of larger full48: improved, still rejected
+
+Maksim: «лучше уже меньше мерцает, но картинка всё ещё дергается. "неизменная разметка" -- очень прыгает, "хед" -- немного дрожит.» Image-quality improvement is acknowledged; stability is still **not accepted**. Keep baseline only for diagnosis, retain head as the closer comparison. Do not retime gait or claim closure from DPR/packing checks. Stable-texture pilot continues in isolation.
+
+Early derivative UV audit finds body/feet/trousers stock UVs are palette points (zero-area faces), despite UVMap existing. Genuine surface painting needs explicit derivative unwrap; native head/cap have usable area, repeated locks overlap across objects. No source geometry/rig/weights/Walk edits are authorized by this unwrap.
