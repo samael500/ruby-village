@@ -1,0 +1,14 @@
+
+> ruby-village@0.1.0 build
+> tsc --noEmit && vite build
+
+vite v7.3.7 building client environment for production...
+transforming...
+✓ 56 modules transformed.
+rendering chunks...
+Release exports: 109.0 MiB; 128.9 MiB of archived candidates excluded
+computing gzip size...
+dist/index.html                   0.73 kB │ gzip:  0.49 kB
+dist/assets/index-D45q4dot.css   19.14 kB │ gzip:  5.19 kB
+dist/assets/index-BtM_OEBa.js   184.02 kB │ gzip: 59.92 kB
+✓ built in 2.25s

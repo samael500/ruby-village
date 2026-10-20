@@ -18,4 +18,5 @@ Record tester/date, device/OS/browser, build commit and feedback. A desktop test
 | Physical landscape phone | NOT RUN |
 | Physical iOS/Safari audio interruptions | NOT RUN |
 | Human listening across every loop twice | NOT RUN |
-| Maksim art acceptance courtyard/Ruta | PENDING |
+| Maksim courtyard style / illustrated Ruta reference | Accepted in earlier pilot reviews; final integrated presentation still for review |
+| Temporary walking | User permits temporary animation; animated-v3 selected, artistic defects deferred |
