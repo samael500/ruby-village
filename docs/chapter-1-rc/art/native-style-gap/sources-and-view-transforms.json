@@ -1,0 +1,64 @@
+{
+  "purpose": "view-only mechanicalcomparison; no sprite/model edits",
+  "sourceNativeProofCommit": "ac1aa06",
+  "nativeYaw": 0,
+  "paintedV2Yaw": "illustratedprofile, differsfromnativefront; notangle-equivalentlikenessmeasurement",
+  "canonicalPose": "acceptedstatic3quarterportrait, notmatchingwalkframe",
+  "groupScales": {
+    "canonical": 0.45,
+    "native00and23": 1,
+    "painted00and23": 2.4
+  },
+  "panels": [
+    {
+      "label": "Canonical accepted appearance",
+      "source": "public/assets/characters-v1/ruta-idle-pilot.png",
+      "sourceSha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1",
+      "fixedViewingScale": 0.45,
+      "sourceRectXYWH": null,
+      "wholeCanvasNoPerFrameFit": true
+    },
+    {
+      "label": "Native front phase00",
+      "source": "art/ruta-native-volume-front-proof-v1/renders/front-proof/front-proof/walk/00.png",
+      "sourceSha256": "7b846fbfcb3b6d500d46a164e8912e30789406ae7e45d0e1984a43ce71e3c36d",
+      "fixedViewingScale": 1,
+      "sourceRectXYWH": null,
+      "wholeCanvasNoPerFrameFit": true
+    },
+    {
+      "label": "Native front phase23",
+      "source": "art/ruta-native-volume-front-proof-v1/renders/front-proof/front-proof/walk/23.png",
+      "sourceSha256": "c92c56b670cfdf92221e4a2481645aa41f918c2464e4535a496695d2969eaf75",
+      "fixedViewingScale": 1,
+      "sourceRectXYWH": null,
+      "wholeCanvasNoPerFrameFit": true
+    },
+    {
+      "label": "Painted v2 phase00 (profile)",
+      "source": "art/ruta-native-painted-sprites-v2/full48/painted-sheet-v1.png",
+      "sourceSha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+      "fixedViewingScale": 2.4,
+      "sourceRectXYWH": [
+        0,
+        30,
+        162,
+        200
+      ],
+      "wholeCanvasNoPerFrameFit": true
+    },
+    {
+      "label": "Painted v2 phase23 (profile)",
+      "source": "art/ruta-native-painted-sprites-v2/full48/painted-sheet-v1.png",
+      "sourceSha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+      "fixedViewingScale": 2.4,
+      "sourceRectXYWH": [
+        1134,
+        430,
+        162,
+        200
+      ],
+      "wholeCanvasNoPerFrameFit": true
+    }
+  ]
+}
