@@ -79,3 +79,11 @@ NPC owns lossless whole-frame packing and the separate full48 DPR preview; root 
 An important measured limit remains: held-out lower-face-vs-upper-head residual changes roughly(−3.267,−3.389)logicalpx at11/12 after rigid head registration. Larger source is visibly crisper on actual same-size screenshots, but whole-sprite translation cannot fix this internal disagreement. Do not call source flicker fixed. No game install or user re-approval of appearance.
 
 Native guide batch completed separately in `b37e0a9`:240additional actual frames forSE/SW/W/NW/NE, plus existingE48; fixed source/camera/Root/height, lossless atlas readback and source before/after SHA preserved. These are technical pose guides, not six-direction painted art. No further native camera/Idle/transition renders started. Read-only stable-UV fallback feasibility is saved in `9c7249c`; it is unproven for accepted likeness and not a selected replacement.
+
+## Independent larger-source temporal verdict
+
+`7b1e4e2` (author `b80237a`) verifies frozen `cd1d389`/author3cd0973: actual desktopDPR1/2 and landscape CDP-touch844×390,4.2s simultaneous recordings,48low+48high actual draw calls per context, equal phase/scale contracts, no request/page errors, full actors within landscape viewport. Evidence: `docs/qa/painted-hires-temporal/`.
+
+The larger source is substantially clearer at equal screen size; **flicker remains open**. Actual paused pairs/decoded sequences show lower face/fringe/shoulder-hair changes11/12 and satchel/local drawing changes35/36. No whole-actor zoom or gait failure is inferred from these local differences. Do not request appearance re-approval or present this as a finished image-quality correction. The frozen comparison is retained for inspection.
+
+Next bounded work is a separate stable-UV-textured whole-3D-actor pilot (NPC owner, new worktree/art directory), materially different from the failed grain/outline study. First texture/UV constraints and only actual poses0/30/40 plus a front/three-quarter view; no48/six-direction expansion or runtime install until likeness is demonstrated. UV texture cannot fix silhouette/heading differences; those remain explicit potential blockers. Integration game remains e32cad4.
