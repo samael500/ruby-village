@@ -237,3 +237,26 @@ these checks do not establish continuous physical contact or arbitrary-route beh
 Expression study `ea72c99` is not selected: its relaxed eyelids read sleepy. A bounded
 native-control revision preserves the baseline eyelid boundary while adjusting brows
 and smile; no full48 rerender or runtime installation is authorised by that still alone.
+
+### Bounded transition review and current art candidates
+
+`aaf8eb9` independently records desktop/landscape playback, all80 timeline entries
+and73unique PNGs. Actor/ground draw calls verify external displacement exactly once
+in both viewer modes; intervals are contiguous, playback ends paused at79, errors0.
+Selected join pairs show no conspicuous pose cut; mathematical bone endpoint checks
+remain author evidence, not independently rerun Blender proof. Actual silent video:
+`docs/chapter-1-rc/qa/native-contact-transitions/desktop/actual-browser.mp4`.
+Landscape stage fits; the lower diagnostic state/footer scrolls (442px document).
+This is not actual-game, physical-device, final art or no-slip acceptance.
+
+`975c1b2` preserves the baseline open-eye boundary through a native brow-only control
+allowlist while retaining the smile. `645bf9c` tests one fixed native hair material
+multiply(.72,.80,.88); image data, geometry/actions and alpha remain unchanged.
+These are static studies, not user-accepted final appearance or a replacement48 set.
+`03e46c8` is explicitly NOT SELECTED: a cheek-lock offset opens a little skin but
+does not expose the blue-eye proxy and increases ear-side contact counts.
+
+A stability-only question for the frozen front48 proof is pending; no user response
+or acceptance is inferred. Remaining source likeness/hair/image-quality gates stay
+OPEN. Route feasibility is being audited against actual integratione32cad4: its
+legacy stride/phase assumptions cannot simply consume this new native clip pair.
