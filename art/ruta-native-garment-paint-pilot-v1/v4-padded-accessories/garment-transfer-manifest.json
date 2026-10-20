@@ -1,0 +1,182 @@
+{
+  "donorBlend": "ruta-final-packed-garment-pilot.blend",
+  "donorSHA256": "57d6668cb8ae2b81b5709b83a608f3ad435de4c39d711aa378b4e6ccf6d9a214",
+  "textureSHA256": "ea1d604c7e46abf806ca3ab0934c57b6d203240112b4d98fe691cb0cc9581fb3",
+  "rawImageUnchanged": true,
+  "noBackgroundGuardOrContrastHack": true,
+  "transferScope": "Only specified garment objects: copy used material datablocks, named usedPaintUVLayers per loop, then polygon material indices with slot remap (-1 preserves target face material); NOT original source slot numbering directly; verify restVertexTopologySHA256 first. Do not copy rig/geometry/actions/head/hair. Keep target native palette UV and unrelated UVs.",
+  "objects": [
+    {
+      "object": "Adventurer_Body",
+      "restVertexTopologySHA256": "299f0382eeec17ff6b2e5b6d9f8419b56a9c4d7a276ece1d933890d0aca82612",
+      "vertexCount": 5742,
+      "polygonCount": 2854,
+      "loopCount": 8562,
+      "usedMaterialSlots": {
+        "2": "Ruta painted garment Brown2",
+        "3": "Ruta painted garment Ruta olive sleeveless vest",
+        "5": "Ruta painted garment Ruta cream shirt"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": [
+        "RutaPaint"
+      ]
+    },
+    {
+      "object": "Adventurer_Feet",
+      "restVertexTopologySHA256": "8a640beb75e9e01079901e51d59ea641e6d1c21bc407edc05e54d277c96ec4f7",
+      "vertexCount": 336,
+      "polygonCount": 610,
+      "loopCount": 1884,
+      "usedMaterialSlots": {
+        "6": "Brown_02",
+        "8": "Brown_02",
+        "9": "Brown_02",
+        "15": "Brown_02",
+        "17": "Brown_02",
+        "18": "Brown2",
+        "21": "Brown2",
+        "23": "Brown2",
+        "24": "Brown2",
+        "25": "Brown2",
+        "28": "Brown2",
+        "30": "Brown2",
+        "31": "Brown2",
+        "32": "Brown2",
+        "33": "Brown_02",
+        "34": "Ruta v4 padded accessory 0",
+        "35": "Ruta v4 padded accessory 1",
+        "36": "Ruta v4 padded accessory 2",
+        "37": "Ruta v4 padded accessory 3",
+        "38": "Ruta v4 padded accessory 4",
+        "39": "Ruta v4 padded accessory 5",
+        "40": "Ruta v4 padded accessory 6",
+        "41": "Ruta v4 padded accessory 7",
+        "42": "Ruta v4 padded accessory 8",
+        "43": "Ruta v4 padded accessory 9",
+        "44": "Ruta v4 padded accessory 10",
+        "45": "Ruta v4 padded accessory 11",
+        "46": "Ruta v4 padded accessory 12",
+        "47": "Ruta v4 padded accessory 13",
+        "48": "Ruta v4 padded accessory 14",
+        "49": "Ruta v4 padded accessory 15",
+        "50": "Ruta v4 padded accessory 16"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": [
+        "RutaPaintPaddedAccessories"
+      ]
+    },
+    {
+      "object": "Ruta stock long trousers",
+      "restVertexTopologySHA256": "f5b5760c4ef8edc04bce1331ff88b940c9e3c8df2f631ffed7696630c142df8d",
+      "vertexCount": 1426,
+      "polygonCount": 706,
+      "loopCount": 2118,
+      "usedMaterialSlots": {
+        "1": "Ruta warm loose cargo cloth",
+        "2": "Ruta v3 padded matte trousers"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": [
+        "RutaPaintPaddedTrousers"
+      ]
+    },
+    {
+      "object": "ONE diagonal satchel strap",
+      "restVertexTopologySHA256": "51ba3dd86eeb4dcdedeee5eb9682bfd1e0582c81dd7fc60ceed4506a2228963c",
+      "vertexCount": 296,
+      "polygonCount": 288,
+      "loopCount": 1152,
+      "usedMaterialSlots": {
+        "5": "Ruta v4 padded accessory 17",
+        "6": "Ruta v4 padded accessory 18",
+        "7": "Ruta v4 padded accessory 19",
+        "8": "Ruta v4 padded accessory 20"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": [
+        "RutaPaintPaddedAccessories"
+      ]
+    },
+    {
+      "object": "Cream shirt V inside vest",
+      "restVertexTopologySHA256": "29c81274d6c543e83dac4abd47e677722eb8be0f927676e5b60e947df456d898",
+      "vertexCount": 3,
+      "polygonCount": 1,
+      "loopCount": 3,
+      "usedMaterialSlots": {
+        "0": "Ruta painted garment Ruta cream shirt"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": [
+        "RutaPaint"
+      ]
+    },
+    {
+      "object": "ONE rounded right hip satchel",
+      "restVertexTopologySHA256": "06ee6ee90a2cf96d5c7ddaffab94a8897947bf72539ab92437e1b2be9f17244d",
+      "vertexCount": 216,
+      "polygonCount": 218,
+      "loopCount": 864,
+      "usedMaterialSlots": {
+        "4": "Ruta satchel warm leather",
+        "8": "Ruta v4 padded accessory 21",
+        "9": "Ruta v4 padded accessory 22",
+        "10": "Ruta v4 padded accessory 23",
+        "11": "Ruta v4 padded accessory 24",
+        "12": "Ruta v4 padded accessory 25",
+        "13": "Ruta v4 padded accessory 26"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": [
+        "RutaPaintPaddedAccessories"
+      ]
+    },
+    {
+      "object": "Single rounded satchel flap",
+      "restVertexTopologySHA256": "6d70ccef13801c23b4637ce3f4e043a705e23c307efd61864f05712629124d9c",
+      "vertexCount": 216,
+      "polygonCount": 218,
+      "loopCount": 864,
+      "usedMaterialSlots": {
+        "7": "Ruta satchel warm leather",
+        "8": "Ruta satchel warm leather",
+        "9": "Ruta v4 padded accessory 27",
+        "10": "Ruta v4 padded accessory 28",
+        "11": "Ruta v4 padded accessory 29",
+        "12": "Ruta v4 padded accessory 30",
+        "13": "Ruta v4 padded accessory 31",
+        "14": "Ruta v4 padded accessory 32"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": [
+        "RutaPaintPaddedAccessories"
+      ]
+    },
+    {
+      "object": "Cargo side pocket R",
+      "restVertexTopologySHA256": "75f91127047ec4bbc05e154d8c7ee9bfe4352cc992576e6c62b28c68a24d5d9b",
+      "vertexCount": 216,
+      "polygonCount": 218,
+      "loopCount": 864,
+      "usedMaterialSlots": {
+        "0": "Cargo pocket cloth R"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": []
+    },
+    {
+      "object": "Cargo side pocket L",
+      "restVertexTopologySHA256": "778da6cf70d3ffc64bf501ee120f8c206155dbea350da70e36c3b4ff737121b5",
+      "vertexCount": 216,
+      "polygonCount": 218,
+      "loopCount": 864,
+      "usedMaterialSlots": {
+        "0": "Cargo pocket cloth L"
+      },
+      "preserveOtherUVLayers": true,
+      "usedPaintUVLayerNames": []
+    }
+  ]
+}
