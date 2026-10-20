@@ -1,0 +1,4408 @@
+{
+  "status": "SEPARATE-HEAD-TRANSLATION-DIAGNOSTIC-NOT-FINAL-CORRECTION",
+  "baselineCommit": "1a16d10",
+  "semanticAuthorCommit": "6720968",
+  "baselineManifestSha256": "5d8a80644e99c6e8662abd5047709c11b5ec82f82294c65e64a4ab93a0206767",
+  "semanticInputSha256": "413df6733da92f585c94bd67e0d39b19eea4312cec95e47c08851260ce7e4fdb",
+  "nativeProjectionInputSha256": "579dfa8da8827f896c4ae932920e04aa84fb778d6f4075b0068c65c42d5edaa0",
+  "generatorSha256": "cd2f641439f2bd19d393ef562796b78d125afcccb6affd3f43770ea05b0d05ef",
+  "rawSha256": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+  "paintedAtlas": {
+    "path": "../full48/painted-fixed-grid.png",
+    "sha256": "a14e61a8b06f6df1d3fe6ab9e02d59b1e98292a1bc79650f338d2bdf4a171db5"
+  },
+  "nativeAtlas": {
+    "path": "../full48/native-matched48.png",
+    "sha256": "b44a06d118ecb597d6c9f0f78ffa1060bec5ff274b7cf211d33a651ccfaa211f",
+    "frameSize": [
+      256,
+      320
+    ]
+  },
+  "reference": {
+    "path": "../full48/approved-reference.png",
+    "sha256": "4cb13709fc57ae70cc2ccaef36e400746b8d0983db098bbbef814fe30f6de0d1"
+  },
+  "grid": {
+    "origin": [
+      0,
+      30
+    ],
+    "columnPitch": 162,
+    "rowPitch": 200,
+    "columns": 8,
+    "rows": 6,
+    "frameSize": [
+      162,
+      200
+    ],
+    "reason": "one shared nonoverlapping grid contains all alpha>128 actor components; intentionally not raw dimensions divided into equal rows",
+    "notUniquePhysicalRegistration": true,
+    "rightPaddingPixels": 1,
+    "bottomPaddingPixels": 15,
+    "rawUnassignedTopGutterPixels": 30
+  },
+  "frameCount": 48,
+  "cycleSeconds": 1.6666666666666667,
+  "fixedScale": 1.1631563024644236,
+  "baselineDisplayOrigin": [
+    29.60245861921824,
+    53.313741280992616
+  ],
+  "fixedNativeAnchor": [
+    128.0,
+    258.42965602874756
+  ],
+  "nativeHeightPx": 186.55436028830434,
+  "globalTargetBiasNativePx": [
+    -15.655435744238218,
+    -10.020854561845198
+  ],
+  "globalBiasDefinition": "componentwise median of baseline painted-clasp minus actual native-clasp across43 measured rows (including higher-uncertainty partials); preserves robust baseline style placement, ONE constant, not a new trajectory",
+  "nativePathDefinition": "target_i=actual projected native Hips-bound clasp_i/2 + constant bias; source path/tempo unchanged",
+  "pivotDefinition": "delta_i=nativeTarget_i-(fixedS*paintedManualClasp_i+fixedT); ONE full-frame translation, no per-frame scale or warp. Standard drawn-cel metadata candidate, NOT recovered physical Root.",
+  "measuredCount": 43,
+  "estimatedOccludedPhases": [
+    14,
+    15,
+    16,
+    17,
+    32
+  ],
+  "bowUsedForFit": false,
+  "rawFramesAndBaselineUnchanged": true,
+  "rawSha256After": "7ce011d665feedb9a22015f59a501c0bcc14e73c83fde0969234e1a18fa20ffb",
+  "baselineHtmlSha256": "3a3f6c7c7e1948e925fb04cced4520367dcec266bea62728e95421e02792efcc",
+  "noNewRasterFrames": true,
+  "noMeasuredPivotSmoothing": true,
+  "algebraicFittedClaspMaxResidualNativePx": 0.0,
+  "fitResidualNotIndependentValidation": true,
+  "fullFrameDestBoundsContained": true,
+  "translationRangeNativePx": {
+    "min": [
+      -2.3263126049288587,
+      -9.239219067189254
+    ],
+    "max": [
+      4.652625209857689,
+      11.889042359438434
+    ]
+  },
+  "maxAdjacentPivotStepNativePx": 11.930963822521717,
+  "allAdjacentPivotStepsNativePx": [
+    [
+      0.0,
+      0.09868621826171875
+    ],
+    [
+      -1.1631563024644151,
+      1.4019658880357042
+    ],
+    [
+      0.0,
+      1.4701059179429308
+    ],
+    [
+      1.1631563024644151,
+      -0.8870485143784776
+    ],
+    [
+      0.5815781512322218,
+      -1.0159852819566026
+    ],
+    [
+      1.7447344536966227,
+      -1.2145974950913683
+    ],
+    [
+      1.1631563024644294,
+      -2.688928190256007
+    ],
+    [
+      -2.3263126049288445,
+      -2.966991010690549
+    ],
+    [
+      -1.1631563024644294,
+      -1.4665211596550876
+    ],
+    [
+      -1.1631563024644151,
+      -0.4859744152960843
+    ],
+    [
+      -2.3263126049288587,
+      -1.1629962921142578
+    ],
+    [
+      0.0,
+      0.013692648899962023
+    ],
+    [
+      0.0,
+      -0.9525012969970703
+    ],
+    [
+      0.0,
+      -0.06996345520019531
+    ],
+    [
+      0.0,
+      -0.06996345520019531
+    ],
+    [
+      0.0,
+      -0.06996345520019531
+    ],
+    [
+      0.0,
+      -0.06996345520019531
+    ],
+    [
+      0.0,
+      -0.06996345520019531
+    ],
+    [
+      1.1631563024644294,
+      0.7896137237548828
+    ],
+    [
+      -1.1631563024644294,
+      -0.5066373663071886
+    ],
+    [
+      1.1631563024644294,
+      -0.6372144537095608
+    ],
+    [
+      0.0,
+      0.4358959197998047
+    ],
+    [
+      1.1631563024644294,
+      -0.7751252966050401
+    ],
+    [
+      0.0,
+      -1.9794517193087415
+    ],
+    [
+      -1.1631563024644294,
+      0.3777122497558594
+    ],
+    [
+      0.0,
+      0.42540550231933594
+    ],
+    [
+      1.1631563024644294,
+      0.43053627014160156
+    ],
+    [
+      0.0,
+      0.3924274444580078
+    ],
+    [
+      -1.1631563024644294,
+      1.4836862402085842
+    ],
+    [
+      -1.1631563024644294,
+      0.23467063903808594
+    ],
+    [
+      0.0,
+      1.193187506688048
+    ],
+    [
+      1.1631563024644294,
+      -2.0806566949075744
+    ],
+    [
+      1.1631563024644294,
+      -2.0806566949075744
+    ],
+    [
+      0.0,
+      -2.96004826166714
+    ],
+    [
+      -1.744734453696637,
+      0.4200723486070217
+    ],
+    [
+      1.744734453696637,
+      -1.9199350195054592
+    ],
+    [
+      0.0,
+      -1.1940754809441216
+    ],
+    [
+      0.0,
+      1.333958315390987
+    ],
+    [
+      0.0,
+      2.1417384777315647
+    ],
+    [
+      -2.3263126049288587,
+      11.70197279942451
+    ],
+    [
+      0.5815781512322218,
+      0.9330738940300876
+    ],
+    [
+      0.5815781512322076,
+      0.067072971814639
+    ],
+    [
+      0.0,
+      1.9527414159898058
+    ],
+    [
+      1.744734453696637,
+      0.6565284729003906
+    ],
+    [
+      0.5815781512322076,
+      0.574951171875
+    ],
+    [
+      0.0,
+      -0.6413438634995714
+    ],
+    [
+      0.0,
+      1.0084237017693454
+    ],
+    [
+      0.0,
+      -1.5716139550394246
+    ]
+  ],
+  "heldOutBowAnnotatedPhases": [
+    0,
+    7,
+    8,
+    15,
+    16,
+    23,
+    24,
+    31,
+    32,
+    39,
+    40,
+    47
+  ],
+  "heldOutBowTrajectoryCenteredRmsNativePx": {
+    "baseline": 4.413466959009754,
+    "candidate": 3.06094961181974,
+    "meaning": "descriptive variance after removal of each curve constant mean; not a fitted pivot/bias, not used for any correction or acceptance"
+  },
+  "boundaries": [
+    {
+      "from": 7,
+      "to": 8,
+      "pivotStepNativePx": [
+        -2.3263126049288445,
+        -2.966991010690549
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        1.1006105260972276,
+        3.7792523851764486
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        -1.2257020788316169,
+        0.8122613744858995
+      ],
+      "beforeLength": 3.9362535641162513,
+      "afterLength": 1.4704129102173544,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "pivotStepNativePx": [
+        0.0,
+        -0.06996345520019531
+      ],
+      "claspPivotsEstimated": [
+        true,
+        true
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        1.2469575719956651,
+        0.3679169573845229
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.2469575719956651,
+        0.2979535021843276
+      ],
+      "beforeLength": 1.30010233208329,
+      "afterLength": 1.2820606365617933,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 23,
+      "to": 24,
+      "pivotStepNativePx": [
+        0.0,
+        -1.9794517193087415
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        -0.0002288818359375,
+        0.8180215673569933
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        -0.0002288818359375,
+        -1.1614301519517483
+      ],
+      "beforeLength": 0.8180215993774778,
+      "afterLength": 1.161430174504501,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 31,
+      "to": 32,
+      "pivotStepNativePx": [
+        1.1631563024644294,
+        -2.0806566949075744
+      ],
+      "claspPivotsEstimated": [
+        false,
+        true
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        -0.0576629638671875,
+        2.8296619091280775
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.1054933385972419,
+        0.749005214220503
+      ],
+      "beforeLength": 2.830249377240865,
+      "afterLength": 1.3353367862125185,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "pivotStepNativePx": [
+        -2.3263126049288587,
+        11.70197279942451
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        3.5749181261432454,
+        -11.303022222642255
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.2486055212143867,
+        0.398950576782255
+      ],
+      "beforeLength": 11.854887218956248,
+      "afterLength": 1.310792626742287,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    },
+    {
+      "from": 47,
+      "to": 0,
+      "pivotStepNativePx": [
+        0.0,
+        -1.5716139550394246
+      ],
+      "claspPivotsEstimated": [
+        false,
+        false
+      ],
+      "heldOutBowBaselineMotionResidualNativePx": [
+        1.1631715612534776,
+        0.9900453405503526
+      ],
+      "heldOutBowCandidateMotionResidualNativePx": [
+        1.1631715612534776,
+        -0.5815686144890719
+      ],
+      "beforeLength": 1.5274677925423883,
+      "afterLength": 1.3004576633891591,
+      "bowUncertaintyMeaning": "manual +/-3.5rawpx per axis plus unknown systematic feature mismatch; no acceptance threshold inferred"
+    }
+  ],
+  "frames": [
+    {
+      "phase": 0,
+      "paintedRect": [
+        0,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/00.png",
+      "sourceFrameSha256": "b134dc5b25b6d79fab9e51acb4d71c195968c203bbf680fde6c913ac7e8d8a5d",
+      "translationNativeComparisonPx": [
+        1.1631563024644151,
+        8.91828433519808
+      ],
+      "displayOriginNativePx": [
+        30.765614921682655,
+        62.2320256161907
+      ],
+      "artistPivotPaintedPx": [
+        83.59528712719275,
+        168.67692673535402
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72,
+        111
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        201.3632297515869
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.34237518974172
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          99,
+          70
+        ],
+        "nativeComparisonPx": [
+          147.6795196533203,
+          132.7250099182129
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -2.9245870901241346,
+          2.0096725352893827
+        ],
+        "candidateErrorNativePx": [
+          -1.7614307876597195,
+          10.927956870487463
+        ]
+      },
+      "claspTranslationNativePx": [
+        1.1631563024644151,
+        8.91828433519808
+      ],
+      "headTranslationNativePx": [
+        -5.271474303060067,
+        5.843820888376756
+      ],
+      "nativeHeadEndpointPx": [
+        125.71659851074219,
+        116.58599853515625
+      ],
+      "headImageShiftRawPx": [
+        0.0,
+        0.0
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.0,
+        0.0
+      ]
+    },
+    {
+      "phase": 1,
+      "paintedRect": [
+        162,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/01.png",
+      "sourceFrameSha256": "169542d2612b9aa258988d5aac4a07e2052c6f6c5cd0f7b78f931adc18633357",
+      "translationNativeComparisonPx": [
+        1.1631563024644151,
+        9.0169705534598
+      ],
+      "displayOriginNativePx": [
+        30.765614921682655,
+        62.330711834452416
+      ],
+      "artistPivotPaintedPx": [
+        83.59528712719275,
+        168.5920832641433
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72,
+        111
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        201.46191596984863
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.44106140800343
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.6897735595703,
+          132.85932540893555
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        1.1631563024644151,
+        9.0169705534598
+      ],
+      "headTranslationNativePx": [
+        -4.862119338766868,
+        5.649513518389646
+      ],
+      "nativeHeadEndpointPx": [
+        125.7353286743164,
+        116.70787811279297
+      ],
+      "headImageShiftRawPx": [
+        -0.3358317363636765,
+        0.2718353044676041
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.3045817363636765,
+        0.009414695532395878
+      ]
+    },
+    {
+      "phase": 2,
+      "paintedRect": [
+        324,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/02.png",
+      "sourceFrameSha256": "fdca661d39f614298856824c9f7afa538768680dd6644867a859b75e97322a8e",
+      "translationNativeComparisonPx": [
+        0.0,
+        10.418936441495504
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        63.73267772248812
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        167.3867715746779
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        110
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        201.70072555541992
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.67987099357472
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.7161102294922,
+          133.1903839111328
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        10.418936441495504
+      ],
+      "headTranslationNativePx": [
+        -4.940986355465156,
+        5.970124912663
+      ],
+      "nativeHeadEndpointPx": [
+        125.78392791748047,
+        117.00658798217773
+      ],
+      "headImageShiftRawPx": [
+        -0.22624520909104515,
+        0.2530059134028054
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.8512452090910452,
+        0.05949408659719457
+      ]
+    },
+    {
+      "phase": 3,
+      "paintedRect": [
+        486,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/03.png",
+      "sourceFrameSha256": "7c67ecc69b160cd97921f2c4fa3c17eb5f671795a0f1b033918bf106a1954718",
+      "translationNativeComparisonPx": [
+        0.0,
+        11.889042359438434
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        65.20278364043105
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        166.12287787885376
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        109
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        202.00767517089844
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.98682060905324
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.7574005126953,
+          133.6449432373047
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        11.889042359438434
+      ],
+      "headTranslationNativePx": [
+        -5.05561141100384,
+        6.355242369066396
+      ],
+      "nativeHeadEndpointPx": [
+        125.86074829101562,
+        117.40964889526367
+      ],
+      "headImageShiftRawPx": [
+        -0.06165389090945795,
+        0.2684324357407953
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.8429038909094579,
+        0.012817564259204717
+      ]
+    },
+    {
+      "phase": 4,
+      "paintedRect": [
+        648,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/04.png",
+      "sourceFrameSha256": "c7c8c90b2a0ac3566af503cf5fc40f0e43eb9bd76d95003cf52f36fc43efaad8",
+      "translationNativeComparisonPx": [
+        1.1631563024644151,
+        11.001993845059957
+      ],
+      "displayOriginNativePx": [
+        30.765614921682655,
+        64.31573512605257
+      ],
+      "artistPivotPaintedPx": [
+        83.59528712719275,
+        166.8854998175382
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72,
+        110
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        202.28378295898438
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        192.26292839713918
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.8114471435547,
+          134.12151336669922
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        1.1631563024644151,
+        11.001993845059957
+      ],
+      "headTranslationNativePx": [
+        -4.165042478810949,
+        6.83271522311985
+      ],
+      "nativeHeadEndpointPx": [
+        125.96233367919922,
+        117.81745910644531
+      ],
+      "headImageShiftRawPx": [
+        -0.7399664636373428,
+        0.2085413938195875
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.45871646363734275,
+        0.0414586061804125
+      ]
+    },
+    {
+      "phase": 5,
+      "paintedRect": [
+        810,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/05.png",
+      "sourceFrameSha256": "505cc60b68e8a455218d472c599fe6167b9944e1025a35e4ff8d710d725871e1",
+      "translationNativeComparisonPx": [
+        1.744734453696637,
+        9.986008563103354
+      ],
+      "displayOriginNativePx": [
+        31.347193072914877,
+        63.29974984409597
+      ],
+      "artistPivotPaintedPx": [
+        83.09528712719275,
+        167.75897252262865
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        71.5,
+        111
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        202.4309539794922
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        192.410099417647
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.8750762939453,
+          134.51791763305664
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        1.744734453696637,
+        9.986008563103354
+      ],
+      "headTranslationNativePx": [
+        -0.28616980110531287,
+        6.682438081173337
+      ],
+      "nativeHeadEndpointPx": [
+        126.08330535888672,
+        118.13087463378906
+      ],
+      "headImageShiftRawPx": [
+        -3.970745500002557,
+        0.6071917457179693
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        1.689495500002557,
+        -0.1696917457179693
+      ]
+    },
+    {
+      "phase": 6,
+      "paintedRect": [
+        972,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/06.png",
+      "sourceFrameSha256": "3a82ed125b53a001b6da92d2455f977dc6bd7ba087ae614eca31400dbdbdbe18",
+      "translationNativeComparisonPx": [
+        3.4894689073932597,
+        8.771411068011986
+      ],
+      "displayOriginNativePx": [
+        33.0919275266115,
+        62.0851523490046
+      ],
+      "artistPivotPaintedPx": [
+        81.59528712719275,
+        168.80319804289448
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        70,
+        112
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        202.37951278686523
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        192.35865822502004
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.94424438476562,
+          134.75893020629883
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        3.4894689073932597,
+        8.771411068011986
+      ],
+      "headTranslationNativePx": [
+        0.7355210178661027,
+        5.660115290226524
+      ],
+      "nativeHeadEndpointPx": [
+        126.21631622314453,
+        118.27850341796875
+      ],
+      "headImageShiftRawPx": [
+        -4.734770036370303,
+        1.6130338433343252
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        1.4535200363703034,
+        -0.8005338433343252
+      ]
+    },
+    {
+      "phase": 7,
+      "paintedRect": [
+        1134,
+        30,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        0,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/07.png",
+      "sourceFrameSha256": "74431d2a784359169b382ab6c93ec963344af21554522e3df80e234b7f8430b5",
+      "translationNativeComparisonPx": [
+        4.652625209857689,
+        6.082482877755979
+      ],
+      "displayOriginNativePx": [
+        34.25508382907593,
+        59.396224158748595
+      ],
+      "artistPivotPaintedPx": [
+        80.59528712719275,
+        171.11494942536893
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        69,
+        114
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        202.0168972015381
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.9960426396929
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          97,
+          70
+        ],
+        "nativeComparisonPx": [
+          148.01344299316406,
+          134.72782135009766
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -5.584823034896715,
+          0.006861103404617097
+        ],
+        "candidateErrorNativePx": [
+          -0.9321978250390259,
+          6.089343981160596
+        ]
+      },
+      "claspTranslationNativePx": [
+        4.652625209857689,
+        6.082482877755979
+      ],
+      "headTranslationNativePx": [
+        1.1582087744152956,
+        5.792761275178716
+      ],
+      "nativeHeadEndpointPx": [
+        126.34961700439453,
+        118.14958572387695
+      ],
+      "headImageShiftRawPx": [
+        -4.983564609108342,
+        1.388159784284992
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.7335646091083419,
+        -0.23190978428499198
+      ]
+    },
+    {
+      "phase": 8,
+      "paintedRect": [
+        0,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/08.png",
+      "sourceFrameSha256": "58ac4b1023f915c291d06c4389ef7c92254c22ab42d00a05c68dbadc742b19b7",
+      "translationNativeComparisonPx": [
+        2.3263126049288445,
+        3.1154918670654297
+      ],
+      "displayOriginNativePx": [
+        31.928771224147084,
+        56.429233148058046
+      ],
+      "artistPivotPaintedPx": [
+        82.59528712719275,
+        173.66575966850158
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        71,
+        116
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        201.37621879577637
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.35536423393117
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          98,
+          73
+        ],
+        "nativeComparisonPx": [
+          148.07598876953125,
+          134.43803787231445
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -4.484212508799487,
+          3.7861134885810657
+        ],
+        "candidateErrorNativePx": [
+          -2.157899903870643,
+          6.901605355646495
+        ]
+      },
+      "claspTranslationNativePx": [
+        2.3263126049288445,
+        3.1154918670654297
+      ],
+      "headTranslationNativePx": [
+        -1.9400794416466454,
+        2.564767287964796
+      ],
+      "nativeHeadEndpointPx": [
+        126.47052764892578,
+        117.76496887207031
+      ],
+      "headImageShiftRawPx": [
+        -2.2159237909547094,
+        3.832695509520636
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -1.2215762090452906,
+        -0.4264455095206361
+      ]
+    },
+    {
+      "phase": 9,
+      "paintedRect": [
+        162,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/09.png",
+      "sourceFrameSha256": "f5e763c752dc7ab20c9221f18159b6ef016cffbdb6d1ed6e05f7ba29ec77f4fe",
+      "translationNativeComparisonPx": [
+        1.1631563024644151,
+        1.6489707074103421
+      ],
+      "displayOriginNativePx": [
+        30.765614921682655,
+        54.96271198840296
+      ],
+      "artistPivotPaintedPx": [
+        83.59528712719275,
+        174.92657144121682
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72,
+        116.5
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.49127578735352
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.47042122550832
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.12828063964844,
+          133.91422271728516
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        1.1631563024644151,
+        1.6489707074103421
+      ],
+      "headTranslationNativePx": [
+        -1.3173608053541601,
+        2.175713325850972
+      ],
+      "nativeHeadEndpointPx": [
+        126.57182312011719,
+        117.15314865112305
+      ],
+      "headImageShiftRawPx": [
+        -2.6642067637558022,
+        3.6411767442769123
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.13295676375580223,
+        -0.3911767442769123
+      ]
+    },
+    {
+      "phase": 10,
+      "paintedRect": [
+        324,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/10.png",
+      "sourceFrameSha256": "d72f21abd3af052f64bbd69adbeacf3a399131d8c3750dc2fb9aaebb02f5d1b5",
+      "translationNativeComparisonPx": [
+        0.0,
+        1.1629962921142578
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        54.476737573106874
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        175.34437807156087
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        116
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        199.4237232208252
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        189.40286865898
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.16775512695312,
+          133.2106590270996
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        1.1629962921142578
+      ],
+      "headTranslationNativePx": [
+        -1.4372164655749504,
+        1.088140255795234
+      ],
+      "nativeHeadEndpointPx": [
+        126.64826202392578,
+        116.3705062866211
+      ],
+      "headImageShiftRawPx": [
+        -2.4954465003127146,
+        3.903334723310097
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -0.004553499687285356,
+        -0.4033347233100968
+      ]
+    },
+    {
+      "phase": 11,
+      "paintedRect": [
+        486,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/11.png",
+      "sourceFrameSha256": "7eb70709e00a5cea0ea57cda89a8099b0a344e700044502f62873243d2620758",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        0.0
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        53.313741280992616
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        176.34424050591312
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        75,
+        116
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        198.26072692871094
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        188.23987236686574
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.19285583496094,
+          132.40758895874023
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        0.0
+      ],
+      "headTranslationNativePx": [
+        -0.6818433091479168,
+        0.8232383921025335
+      ],
+      "nativeHeadEndpointPx": [
+        126.6965103149414,
+        115.49842834472656
+      ],
+      "headImageShiftRawPx": [
+        -3.1033827371823395,
+        3.381327425653381
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -0.3341172628176605,
+        -0.7875774256533812
+      ]
+    },
+    {
+      "phase": 12,
+      "paintedRect": [
+        648,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/12.png",
+      "sourceFrameSha256": "a70aa62e4f3f2198abaf1d1c4a0395d729d04529c9539507061db961bb3fd84a",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        0.013692648899962023
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        53.32743392989258
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        176.33246852920547
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        75,
+        115
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.11126327514648
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.0904087133013
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.20289611816406,
+          131.6086769104004
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        0.013692648899962023
+      ],
+      "headTranslationNativePx": [
+        0.8184000931920377,
+        -0.052664001041739184
+      ],
+      "nativeHeadEndpointPx": [
+        126.71510314941406,
+        114.6406364440918
+      ],
+      "headImageShiftRawPx": [
+        -4.377201711234295,
+        3.3968975536500534
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.8772017112342949,
+        -0.8343975536500534
+      ]
+    },
+    {
+      "phase": 13,
+      "paintedRect": [
+        810,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/13.png",
+      "sourceFrameSha256": "2b67ae945442df1d23170398333fc66f4daada24ef7e3374b61094cfa7546af6",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -0.9388086480971083
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.37493263289551
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        177.1513621679873
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "partial",
+      "paintedClasp": [
+        75,
+        115
+      ],
+      "annotationUncertaintyRawPx": 2.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        196.1587619781494
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        186.13790741630422
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.18893432617188,
+          130.99809646606445
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -0.9388086480971083
+      ],
+      "headTranslationNativePx": [
+        1.9408745810903483,
+        -0.6462641143138441
+      ],
+      "nativeHeadEndpointPx": [
+        126.68050384521484,
+        113.98157119750977
+      ],
+      "headImageShiftRawPx": [
+        -5.371972396520523,
+        3.340615235296774
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.7469723965205226,
+        -0.8718652352967742
+      ]
+    },
+    {
+      "phase": 14,
+      "paintedRect": [
+        972,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/14.png",
+      "sourceFrameSha256": "033db4a448dc05b779e29722f28e2391fd8b2e97625bd2b72b4258832c935acf",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -1.0087721032973036
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.30496917769531
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        177.2115118271964
+      ],
+      "status": "estimated-occlusion-pivot",
+      "visibility": "occluded",
+      "paintedClasp": null,
+      "annotationUncertaintyRawPx": null,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": {
+        "fromMeasuredPhases": [
+          13,
+          18
+        ],
+        "fraction": 0.2,
+        "method": "linear cyclic phase interpolation of whole-cel translation only",
+        "uncertainty": null,
+        "uncertaintyMeaning": "unknown: hidden clasp was not measured, no physical point or upper bound invented"
+      },
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        195.46112060546875
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        185.44026604362355
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.1485595703125,
+          130.63854217529297
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -1.0087721032973036
+      ],
+      "headTranslationNativePx": [
+        2.38537452315388,
+        -0.9424154533556024
+      ],
+      "nativeHeadEndpointPx": [
+        126.5893783569336,
+        113.57995986938477
+      ],
+      "headImageShiftRawPx": [
+        -5.8324654783272685,
+        3.2499481522402665
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.26996547832726847,
+        -0.5936981522402665
+      ]
+    },
+    {
+      "phase": 15,
+      "paintedRect": [
+        1134,
+        230,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        320,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/15.png",
+      "sourceFrameSha256": "6ae4c40e96c0d2fa1e5241c2d3f8b211bb375b5c9f1b7247623f982fda997f6e",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -1.078735558497499
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.23500572249512
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        177.27166148640555
+      ],
+      "status": "estimated-occlusion-pivot",
+      "visibility": "occluded",
+      "paintedClasp": null,
+      "annotationUncertaintyRawPx": null,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": {
+        "fromMeasuredPhases": [
+          13,
+          18
+        ],
+        "fraction": 0.4,
+        "method": "linear cyclic phase interpolation of whole-cel translation only",
+        "uncertainty": null,
+        "uncertaintyMeaning": "unknown: hidden clasp was not measured, no physical point or upper bound invented"
+      },
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        195.04799842834473
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        185.02714386649953
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          98,
+          75
+        ],
+        "nativeComparisonPx": [
+          148.0836639404297,
+          130.55320739746094
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -4.491887679697925,
+          9.997256568363468
+        ],
+        "candidateErrorNativePx": [
+          -6.8182002846267835,
+          8.91852100986597
+        ]
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -1.078735558497499
+      ],
+      "headTranslationNativePx": [
+        1.02310993007152,
+        -1.722515675052044
+      ],
+      "nativeHeadEndpointPx": [
+        126.44934844970703,
+        113.45766067504883
+      ],
+      "headImageShiftRawPx": [
+        -4.781674038461274,
+        3.8154792214240008
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.2816740384612739,
+        -0.5654792214240008
+      ]
+    },
+    {
+      "phase": 16,
+      "paintedRect": [
+        0,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/16.png",
+      "sourceFrameSha256": "b528504b9424c8f0199207b7e6c9eb59a124253751e95c1d02c8a104e5aa47ae",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -1.1486990136976942
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.16504226729492
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        177.3318111456147
+      ],
+      "status": "estimated-occlusion-pivot",
+      "visibility": "occluded",
+      "paintedClasp": null,
+      "annotationUncertaintyRawPx": null,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": {
+        "fromMeasuredPhases": [
+          13,
+          18
+        ],
+        "fraction": 0.6,
+        "method": "linear cyclic phase interpolation of whole-cel translation only",
+        "uncertainty": null,
+        "uncertaintyMeaning": "unknown: hidden clasp was not measured, no physical point or upper bound invented"
+      },
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        194.95159149169922
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        184.93073692985402
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          99,
+          75.5
+        ],
+        "nativeComparisonPx": [
+          147.99986267089844,
+          130.7668685913086
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -3.2449301077022596,
+          10.365173525747991
+        ],
+        "candidateErrorNativePx": [
+          -5.571242712631118,
+          9.216474512050297
+        ]
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -1.1486990136976942
+      ],
+      "headTranslationNativePx": [
+        -2.334942595430357,
+        -2.0583528273290916
+      ],
+      "nativeHeadEndpointPx": [
+        126.27586364746094,
+        113.6376953125
+      ],
+      "headImageShiftRawPx": [
+        -2.0438066370565635,
+        4.258989512031739
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -1.4249433629434365,
+        0.49101048796826063
+      ]
+    },
+    {
+      "phase": 17,
+      "paintedRect": [
+        162,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/17.png",
+      "sourceFrameSha256": "b82a2615436978f9e14f832b2d7d7008f3c62c70c2b2edc57f2d51fb8fe8c5f4",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -1.2186624688978895
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.09507881209473
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        177.3919608048238
+      ],
+      "status": "estimated-occlusion-pivot",
+      "visibility": "occluded",
+      "paintedClasp": null,
+      "annotationUncertaintyRawPx": null,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": {
+        "fromMeasuredPhases": [
+          13,
+          18
+        ],
+        "fraction": 0.8,
+        "method": "linear cyclic phase interpolation of whole-cel translation only",
+        "uncertainty": null,
+        "uncertaintyMeaning": "unknown: hidden clasp was not measured, no physical point or upper bound invented"
+      },
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        195.1997470855713
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        185.1788925237261
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.90652465820312,
+          131.2992286682129
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -1.2186624688978895
+      ],
+      "headTranslationNativePx": [
+        -2.200670149586976,
+        -1.648295032253876
+      ],
+      "nativeHeadEndpointPx": [
+        126.09062957763672,
+        114.13789749145508
+      ],
+      "headImageShiftRawPx": [
+        -2.3184958727084264,
+        4.336489314671222
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -1.2127541272915736,
+        0.3822606853287782
+      ]
+    },
+    {
+      "phase": 18,
+      "paintedRect": [
+        324,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/18.png",
+      "sourceFrameSha256": "81e75d4710b2e40bdd5d138d22784ee51ccafed4e8d92f9113c09c83cf9fdebd",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -1.2886259240980849
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.02511535689453
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        177.45211046403296
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        75,
+        115
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        195.80894470214844
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        185.78809014030324
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.81626892089844,
+          132.1585464477539
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -1.2886259240980849
+      ],
+      "headTranslationNativePx": [
+        -2.481225771346761,
+        -0.8304993499777833
+      ],
+      "nativeHeadEndpointPx": [
+        125.9197769165039,
+        114.96469497680664
+      ],
+      "headImageShiftRawPx": [
+        -2.224180981068721,
+        4.344228431981937
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -0.369569018931279,
+        0.24952156801806336
+      ]
+    },
+    {
+      "phase": 19,
+      "paintedRect": [
+        486,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/19.png",
+      "sourceFrameSha256": "6834d68a8d0a1dfc1340480f3daf44a91089393107f07f124d8450a044fc5c15",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        -0.49901220034320204
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        52.814729080649414
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        176.77325610707175
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        115
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        196.59855842590332
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        186.57770386405812
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.7496337890625,
+          133.1467628479004
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        -0.49901220034320204
+      ],
+      "headTranslationNativePx": [
+        -2.0110988035815422,
+        0.04421911640865872
+      ],
+      "nativeHeadEndpointPx": [
+        125.80266571044922,
+        115.92166900634766
+      ],
+      "headImageShiftRawPx": [
+        -2.7290470704977188,
+        4.4149459812745775
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -0.6772029295022812,
+        0.08505401872542251
+      ]
+    },
+    {
+      "phase": 20,
+      "paintedRect": [
+        648,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/20.png",
+      "sourceFrameSha256": "a9b3bf8cc9fe28162cde6c819414fece4cbfa59f3ab7ad443b74909e296b435f",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -1.0056495666503906
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.308091714342225
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        177.20882728975266
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        75,
+        116
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.25507736206055
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.23422280021535
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.7103271484375,
+          133.95193099975586
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -1.0056495666503906
+      ],
+      "headTranslationNativePx": [
+        -1.9452144202110158,
+        0.8030113077285925
+      ],
+      "nativeHeadEndpointPx": [
+        125.74186706542969,
+        116.70013427734375
+      ],
+      "headImageShiftRawPx": [
+        -2.83796023042442,
+        4.4318595118417745
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -0.5370397695755802,
+        0.005640488158225487
+      ]
+    },
+    {
+      "phase": 21,
+      "paintedRect": [
+        810,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/21.png",
+      "sourceFrameSha256": "b0374322f0f09df6b256520ab884cf7e7aaa8144ec66fcd05b594ecaef177e5f",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        -1.6428640203599514
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        51.670877260632665
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        177.75665947048319
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        117
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.78101921081543
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.76016464897023
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.693115234375,
+          134.5641326904297
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        -1.6428640203599514
+      ],
+      "headTranslationNativePx": [
+        -1.5199710452674724,
+        1.4218172424503637
+      ],
+      "nativeHeadEndpointPx": [
+        125.72002410888672,
+        117.29570388793945
+      ],
+      "headImageShiftRawPx": [
+        -3.22233362077553,
+        4.411882554250747
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -0.21516637922447002,
+        0.025617445749253065
+      ]
+    },
+    {
+      "phase": 22,
+      "paintedRect": [
+        972,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/22.png",
+      "sourceFrameSha256": "85707b6d2e364d00bf070ceaf99f44710261d7be42d51fbdc100e5aa0a8e16f9",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        -1.2069681005601467
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        52.10677318043247
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        177.38190680923185
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        117
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        198.21691513061523
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        188.19606056877004
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.68887329101562,
+          135.03259658813477
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        -1.2069681005601467
+      ],
+      "headTranslationNativePx": [
+        -0.5631085306159767,
+        2.0826437269135134
+      ],
+      "nativeHeadEndpointPx": [
+        125.71675109863281,
+        117.75810241699219
+      ],
+      "headImageShiftRawPx": [
+        -4.047790631902174,
+        4.241288150910457
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.39154063190217414,
+        0.1337118490895426
+      ]
+    },
+    {
+      "phase": 23,
+      "paintedRect": [
+        1134,
+        430,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        640,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/23.png",
+      "sourceFrameSha256": "b48c72d8437af67f508a8ef8409a2a31dc8e89550d01c738dd88c27ae242624c",
+      "translationNativeComparisonPx": [
+        0.0,
+        -1.9820933971651868
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        51.33164788382743
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        178.04830503530238
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        118
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        198.6049461364746
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        188.5840915746294
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          98,
+          76
+        ],
+        "nativeComparisonPx": [
+          147.688720703125,
+          135.42160034179688
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -4.096944442393237,
+          6.292019926491946
+        ],
+        "candidateErrorNativePx": [
+          -4.096944442393237,
+          4.309926529326759
+        ]
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -1.9820933971651868
+      ],
+      "headTranslationNativePx": [
+        0.525052838475176,
+        1.9541133694914699
+      ],
+      "nativeHeadEndpointPx": [
+        125.71649169921875,
+        118.14798355102539
+      ],
+      "headImageShiftRawPx": [
+        -4.983538274931006,
+        4.686981898480641
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        -0.4227117250689938,
+        0.0005181015193587157
+      ]
+    },
+    {
+      "phase": 24,
+      "paintedRect": [
+        0,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/24.png",
+      "sourceFrameSha256": "d47f6c308725de809a115c443c002671144db4b7496ededeb58b3ca82286137b",
+      "translationNativeComparisonPx": [
+        0.0,
+        -3.9615451164739284
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        49.35219616451869
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        179.7500984358237
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        120
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        198.95180702209473
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        188.93095246024953
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          98,
+          77
+        ],
+        "nativeComparisonPx": [
+          147.68894958496094,
+          135.7667350769043
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -4.097173324229175,
+          7.110041493848939
+        ],
+        "candidateErrorNativePx": [
+          -4.097173324229175,
+          3.148496377375011
+        ]
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -3.9615451164739284
+      ],
+      "headTranslationNativePx": [
+        -1.3498065313726633,
+        1.2369917423504475
+      ],
+      "nativeHeadEndpointPx": [
+        125.71659851074219,
+        118.49390029907227
+      ],
+      "headImageShiftRawPx": [
+        -3.3715741928908582,
+        5.600907544531475
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.9965741928908582,
+        1.2428424554685247
+      ]
+    },
+    {
+      "phase": 25,
+      "paintedRect": [
+        162,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/25.png",
+      "sourceFrameSha256": "de10b95d85ed8ba6ab28093ede234e881d72785f2f6cde54dd998fd9b2bdcd87",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        -3.583832866718069
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        49.72990841427455
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        179.4253680028152
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        120
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        199.3295192718506
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        189.3086647100054
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.70350646972656,
+          136.08585357666016
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        -3.583832866718069
+      ],
+      "headTranslationNativePx": [
+        1.4457107045267215,
+        0.8916577662863086
+      ],
+      "nativeHeadEndpointPx": [
+        125.73844146728516,
+        118.82009506225586
+      ],
+      "headImageShiftRawPx": [
+        -5.756184303741589,
+        6.178240735113806
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        2.2874343037415894,
+        1.165509264886194
+      ]
+    },
+    {
+      "phase": 26,
+      "paintedRect": [
+        324,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/26.png",
+      "sourceFrameSha256": "7293ae5caca642e2502bbd2b6dc2ac08315d8628cda92356705e9c928aa1eb99",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        -3.158427364398733
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        50.15531391659388
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        179.0596342648661
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        120
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        199.75492477416992
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        189.73407021232472
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.73605346679688,
+          136.39503479003906
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        -3.158427364398733
+      ],
+      "headTranslationNativePx": [
+        1.5535999623438839,
+        0.9133321822460587
+      ],
+      "nativeHeadEndpointPx": [
+        125.79161071777344,
+        119.13904190063477
+      ],
+      "headImageShiftRawPx": [
+        -5.803228718333974,
+        6.433814660810047
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        3.1782287183339744,
+        0.9724353391899534
+      ]
+    },
+    {
+      "phase": 27,
+      "paintedRect": [
+        486,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/27.png",
+      "sourceFrameSha256": "b1b4dd989ed5c0496692b926e296b537ccfa6264c93abf0ffc23bfeed5fbbad5",
+      "translationNativeComparisonPx": [
+        0.0,
+        -2.7278910942571315
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        50.585850186735485
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        178.6894894535201
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        120
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.18546104431152
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.16460648246633
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.78321838378906,
+          136.66677474975586
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -2.7278910942571315
+      ],
+      "headTranslationNativePx": [
+        1.4243944069319703,
+        0.24685175743242205
+      ],
+      "nativeHeadEndpointPx": [
+        125.87290954589844,
+        119.4198226928711
+      ],
+      "headImageShiftRawPx": [
+        -5.622251851260383,
+        7.248203247316405
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        2.9972518512603834,
+        0.5017967526835951
+      ]
+    },
+    {
+      "phase": 28,
+      "paintedRect": [
+        648,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/28.png",
+      "sourceFrameSha256": "4ae7f11098a1bd830d74bd98cb3b6a52dbbf9661e3236300ac33e0c5abcc5837",
+      "translationNativeComparisonPx": [
+        0.0,
+        -2.3354636497991237
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        50.97827763119349
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        178.35210793082487
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        120
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.57788848876953
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.55703392692433
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.8414764404297,
+          136.86716079711914
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -2.3354636497991237
+      ],
+      "headTranslationNativePx": [
+        2.188071710044852,
+        0.3085647580034756
+      ],
+      "nativeHeadEndpointPx": [
+        125.97792053222656,
+        119.62703704833984
+      ],
+      "headImageShiftRawPx": [
+        -6.188526835447131,
+        7.373295081139097
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        3.6260268354471306,
+        0.28295491886090307
+      ]
+    },
+    {
+      "phase": 29,
+      "paintedRect": [
+        810,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/29.png",
+      "sourceFrameSha256": "8d20c051a166562c10be2f0701f78aa756cb7f4547d3722ac111a40e51a728b2",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        -0.8517774095905395
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        52.46196387140208
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        177.07653882883486
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        119
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.89841842651367
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.87756386466847
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.90701293945312,
+          136.96842193603516
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        -0.8517774095905395
+      ],
+      "headTranslationNativePx": [
+        3.1525698563208877,
+        0.19790189465997265
+      ],
+      "nativeHeadEndpointPx": [
+        126.10081481933594,
+        119.73258972167969
+      ],
+      "headImageShiftRawPx": [
+        -6.9120786550809346,
+        7.559181996100778
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        4.4120786550809346,
+        0.19081800389922243
+      ]
+    },
+    {
+      "phase": 30,
+      "paintedRect": [
+        972,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/30.png",
+      "sourceFrameSha256": "31dfb4c071f6a6c3dc9c2b299407beecdd1778e9dffa821f34d1f3163378c22e",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        -0.6171067705524536
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        52.69663451044016
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        176.87478551456326
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        75,
+        119
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        201.13308906555176
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.11223450370656
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.97560119628906,
+          136.96046829223633
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        -0.6171067705524536
+      ],
+      "headTranslationNativePx": [
+        3.6617218857535967,
+        0.4890669477936953
+      ],
+      "nativeHeadEndpointPx": [
+        126.23411560058594,
+        119.72723007202148
+      ],
+      "headImageShiftRawPx": [
+        -7.235209129795621,
+        7.304250907163144
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        4.828959129795621,
+        0.1957490928368557
+      ]
+    },
+    {
+      "phase": 31,
+      "paintedRect": [
+        1134,
+        630,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        960,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/31.png",
+      "sourceFrameSha256": "e1b5125cdc39115bc5a58a5641902d0ef4902fc1fe23f46fb4960f31059ffb22",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        0.5760807361355944
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        53.88982201712821
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        175.84896679685525
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "partial",
+      "paintedClasp": [
+        75,
+        118
+      ],
+      "annotationUncertaintyRawPx": 2.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        201.1631202697754
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.1422657079302
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          98,
+          78
+        ],
+        "nativeComparisonPx": [
+          148.04168701171875,
+          136.72304153442383
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -4.449910750986987,
+          7.316891338793823
+        ],
+        "candidateErrorNativePx": [
+          -6.776223355915846,
+          7.892972074929418
+        ]
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        0.5760807361355944
+      ],
+      "headTranslationNativePx": [
+        4.261273769078816,
+        1.1433434604570092
+      ],
+      "nativeHeadEndpointPx": [
+        126.36597442626953,
+        119.49380874633789
+      ],
+      "headImageShiftRawPx": [
+        -7.637298734305958,
+        6.541070725388685
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        4.168548734305958,
+        0.9901792746113154
+      ]
+    },
+    {
+      "phase": 32,
+      "paintedRect": [
+        0,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/32.png",
+      "sourceFrameSha256": "418aba868548b031f223134578c589f3026c058b367495a3d3d15f82378c4c75",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        -1.50457595877198
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        51.809165322220636
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        177.63776911903605
+      ],
+      "status": "estimated-occlusion-pivot",
+      "visibility": "occluded",
+      "paintedClasp": null,
+      "annotationUncertaintyRawPx": null,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": {
+        "fromMeasuredPhases": [
+          31,
+          33
+        ],
+        "fraction": 0.5,
+        "method": "linear cyclic phase interpolation of whole-cel translation only",
+        "uncertainty": null,
+        "uncertaintyMeaning": "unknown: hidden clasp was not measured, no physical point or upper bound invented"
+      },
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.94239234924316
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.92153778739797
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          98,
+          80
+        ],
+        "nativeComparisonPx": [
+          148.09934997558594,
+          136.2196922302246
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -4.507573714854175,
+          10.1465532479219
+        ],
+        "candidateErrorNativePx": [
+          -5.670730017318604,
+          8.64197728914992
+        ]
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        -1.50457595877198
+      ],
+      "headTranslationNativePx": [
+        0.7541473579867546,
+        -2.474546806647858
+      ],
+      "nativeHeadEndpointPx": [
+        126.48424530029297,
+        118.99799346923828
+      ],
+      "headImageShiftRawPx": [
+        -4.520437073122304,
+        9.225211269002985
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        2.301687073122304,
+        0.43103873099701495
+      ]
+    },
+    {
+      "phase": 33,
+      "paintedRect": [
+        162,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/33.png",
+      "sourceFrameSha256": "3e59eeb01dd5f0f96350c0684f74697441cd113b950437f055f2908f4c53f7db",
+      "translationNativeComparisonPx": [
+        0.0,
+        -3.5852326536795545
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        49.72850862731306
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        179.42657144121682
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "partial",
+      "paintedClasp": [
+        73,
+        121
+      ],
+      "annotationUncertaintyRawPx": 2.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.49127578735352
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.47042122550832
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.14561462402344,
+          135.47426223754883
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -3.5852326536795545
+      ],
+      "headTranslationNativePx": [
+        0.848845231917374,
+        -3.464921648275247
+      ],
+      "nativeHeadEndpointPx": [
+        126.5820541381836,
+        118.26566696166992
+      ],
+      "headImageShiftRawPx": [
+        -4.517762485060997,
+        9.447063081620337
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        1.017762485060997,
+        -0.10331308162033714
+      ]
+    },
+    {
+      "phase": 34,
+      "paintedRect": [
+        324,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/34.png",
+      "sourceFrameSha256": "db62e76a116e8584d8bfd0b3b8f7d86181ec89141b71676ea52d9bef01494584",
+      "translationNativeComparisonPx": [
+        0.0,
+        -6.545280915346694
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        46.76846036564592
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        181.97141279692764
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        123
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        199.85754013061523
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        189.83668556877004
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.17849731445312,
+          134.53819274902344
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -6.545280915346694
+      ],
+      "headTranslationNativePx": [
+        0.6117744993548762,
+        -4.722470541536563
+      ],
+      "nativeHeadEndpointPx": [
+        126.65457153320312,
+        117.3499870300293
+      ],
+      "headImageShiftRawPx": [
+        -4.2516003820606585,
+        9.74097797585799
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        1.8141003820606585,
+        -0.022227975857990856
+      ]
+    },
+    {
+      "phase": 35,
+      "paintedRect": [
+        486,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/35.png",
+      "sourceFrameSha256": "69ee2aa18f08e845aee60866c94684c20e699b295434ee545c8de7cbf7b06d5d",
+      "translationNativeComparisonPx": [
+        -1.744734453696637,
+        -6.125208566739673
+      ],
+      "displayOriginNativePx": [
+        27.857724165521603,
+        47.18853271425294
+      ],
+      "artistPivotPaintedPx": [
+        86.09528712719275,
+        181.6102641295327
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74.5,
+        122
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        199.1144561767578
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        189.09360161491261
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.19700622558594,
+          133.4878921508789
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.744734453696637,
+        -6.125208566739673
+      ],
+      "headTranslationNativePx": [
+        1.1116654543936875,
+        -5.493309197800354
+      ],
+      "nativeHeadEndpointPx": [
+        126.69886779785156,
+        116.32894515991211
+      ],
+      "headImageShiftRawPx": [
+        -4.643288661120908,
+        9.52587084595354
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        1.2682886611209083,
+        -0.7758708459535395
+      ]
+    },
+    {
+      "phase": 36,
+      "paintedRect": [
+        648,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/36.png",
+      "sourceFrameSha256": "5103a8ead1d7d73f56e2b4f91b63e4f832adfe833672bbeddf5680c0e35a3f38",
+      "translationNativeComparisonPx": [
+        0.0,
+        -8.045143586245132
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        45.268597694747484
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        183.26088925655787
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        123
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        198.3576774597168
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        188.3368228978716
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.20094299316406,
+          132.42225646972656
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -8.045143586245132
+      ],
+      "headTranslationNativePx": [
+        1.2399999849915107,
+        -6.590312122913957
+      ],
+      "nativeHeadEndpointPx": [
+        126.71382141113281,
+        115.30261993408203
+      ],
+      "headImageShiftRawPx": [
+        -4.74076560130199,
+        9.586634562002516
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        2.17826560130199,
+        0.28836543799748426
+      ]
+    },
+    {
+      "phase": 37,
+      "paintedRect": [
+        810,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/37.png",
+      "sourceFrameSha256": "f24083f77ade0102ee23b0df00f88168af7bea862d2b42e2565cb7b654ba7357",
+      "translationNativeComparisonPx": [
+        0.0,
+        -9.239219067189254
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        44.07452221380336
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        184.2874713920922
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        123.5
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.74518013000488
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.72432556815968
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.1814727783203,
+          131.4744758605957
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -9.239219067189254
+      ],
+      "headTranslationNativePx": [
+        0.14177908302517306,
+        -7.275901340897841
+      ],
+      "nativeHeadEndpointPx": [
+        126.67611694335938,
+        114.42499160766602
+      ],
+      "headImageShiftRawPx": [
+        -3.8290081427850713,
+        9.421532840054011
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        1.3290081427850713,
+        0.35971715994598874
+      ]
+    },
+    {
+      "phase": 38,
+      "paintedRect": [
+        972,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/38.png",
+      "sourceFrameSha256": "e03cd1a4d48ce72cb9cf08411e6b682038575c7dd6931e26ef9a52d4bb11d190",
+      "translationNativeComparisonPx": [
+        0.0,
+        -7.9052607517982665
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        45.40848052919435
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        183.1406278315452
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        122
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.33440399169922
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.31354942985402
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          148.13650512695312,
+          130.69175720214844
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -7.9052607517982665
+      ],
+      "headTranslationNativePx": [
+        -1.5018843955757415,
+        -7.631331001483819
+      ],
+      "nativeHeadEndpointPx": [
+        126.58264923095703,
+        113.74990463256836
+      ],
+      "headImageShiftRawPx": [
+        -2.4962588270532886,
+        9.146713958159626
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        1.1837588270532886,
+        0.1032860418403736
+      ]
+    },
+    {
+      "phase": 39,
+      "paintedRect": [
+        1134,
+        830,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        1280,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/39.png",
+      "sourceFrameSha256": "ae0a9e1a3283bf2afa8ef0e1f9da9e9c5ed5afa80469853e7fcfb42da6a2cd0a",
+      "translationNativeComparisonPx": [
+        0.0,
+        -5.763522274066702
+      ],
+      "displayOriginNativePx": [
+        29.60245861921824,
+        47.550219006925914
+      ],
+      "artistPivotPaintedPx": [
+        84.59528712719275,
+        181.2993116875379
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        73,
+        120
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.14982986450195
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.12897530265676
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          97,
+          79
+        ],
+        "nativeComparisonPx": [
+          148.0683135986328,
+          130.11175155639648
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -5.639693640365465,
+          15.091337619285582
+        ],
+        "candidateErrorNativePx": [
+          -5.639693640365465,
+          9.32781534521888
+        ]
+      },
+      "claspTranslationNativePx": [
+        0.0,
+        -5.763522274066702
+      ],
+      "headTranslationNativePx": [
+        2.109134365636697,
+        -7.377921851300508
+      ],
+      "nativeHeadEndpointPx": [
+        126.44131469726562,
+        113.30907821655273
+      ],
+      "headImageShiftRawPx": [
+        -5.722268338374846,
+        8.54985903442493
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        2.253518338374846,
+        0.2626409655750699
+      ]
+    },
+    {
+      "phase": 40,
+      "paintedRect": [
+        0,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        0,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/40.png",
+      "sourceFrameSha256": "cae5b01fff2a473503c4d1067bb47c4b7a2c94e420041f11f7286abe80ac546c",
+      "translationNativeComparisonPx": [
+        -2.3263126049288587,
+        5.938450525357808
+      ],
+      "displayOriginNativePx": [
+        27.27614601428938,
+        59.252191806350424
+      ],
+      "artistPivotPaintedPx": [
+        86.59528712719275,
+        171.23877831413736
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        75,
+        110
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.22023963928223
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.19938507743703
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          100,
+          69
+        ],
+        "nativeComparisonPx": [
+          147.9828643798828,
+          129.78321075439453
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -2.0647755142222195,
+          3.788315396643327
+        ],
+        "candidateErrorNativePx": [
+          -4.391088119151078,
+          9.726765922001135
+        ]
+      },
+      "claspTranslationNativePx": [
+        -2.3263126049288587,
+        5.938450525357808
+      ],
+      "headTranslationNativePx": [
+        -2.8136225551233185,
+        2.5399737334285395
+      ],
+      "nativeHeadEndpointPx": [
+        126.26769256591797,
+        113.14008712768555
+      ],
+      "headImageShiftRawPx": [
+        -1.6392961880712398,
+        -0.12213685488484168
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.10804618807123978,
+        -0.37786314511515834
+      ]
+    },
+    {
+      "phase": 41,
+      "paintedRect": [
+        162,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        256,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/41.png",
+      "sourceFrameSha256": "88b810991f6e2629eb757b05d37a4ebe14469c5af365d77298d2867b1572da75",
+      "translationNativeComparisonPx": [
+        -1.744734453696637,
+        6.871524419387896
+      ],
+      "displayOriginNativePx": [
+        27.857724165521603,
+        60.18526570038051
+      ],
+      "artistPivotPaintedPx": [
+        86.09528712719275,
+        170.43658699036328
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74.5,
+        109.5
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        197.57173538208008
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        187.55088082023488
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.8896026611328,
+          129.75698471069336
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.744734453696637,
+        6.871524419387896
+      ],
+      "headTranslationNativePx": [
+        -3.2958374886690462,
+        3.129100518567183
+      ],
+      "nativeHeadEndpointPx": [
+        126.08345031738281,
+        113.27804565429688
+      ],
+      "headImageShiftRawPx": [
+        -1.3831202258387818,
+        -0.5100195990795888
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.8206202258387818,
+        -0.23998040092041117
+      ]
+    },
+    {
+      "phase": 42,
+      "paintedRect": [
+        324,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        512,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/42.png",
+      "sourceFrameSha256": "ee4d8b1508033cea220b94624f80798e8f793e473b1d102ca458961b4902183e",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        6.938597391202535
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        60.25233867219515
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        170.37892236552094
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        110
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        198.22038650512695
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        188.19953194328176
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.80093383789062,
+          130.07591247558594
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        6.938597391202535
+      ],
+      "headTranslationNativePx": [
+        -3.0263605934612148,
+        3.625042654591569
+      ],
+      "nativeHeadEndpointPx": [
+        125.91448211669922,
+        113.74734878540039
+      ],
+      "headImageShiftRawPx": [
+        -1.7600644894450357,
+        -0.5329219423540301
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.3850644894450357,
+        -0.3420780576459699
+      ]
+    },
+    {
+      "phase": 43,
+      "paintedRect": [
+        486,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        768,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/43.png",
+      "sourceFrameSha256": "00de9ac440e17728bfc70b9f73f1116b0b2d761a502f5f808cbb2149c3c15040",
+      "translationNativeComparisonPx": [
+        -1.1631563024644294,
+        8.89133880719234
+      ],
+      "displayOriginNativePx": [
+        28.43930231675381,
+        62.20508008818496
+      ],
+      "artistPivotPaintedPx": [
+        85.59528712719275,
+        168.70009260562327
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        74,
+        109
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        199.00997161865234
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        188.98911705680715
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.73663330078125,
+          130.6265640258789
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        -1.1631563024644294,
+        8.89133880719234
+      ],
+      "headTranslationNativePx": [
+        -1.9641730628137162,
+        4.600657836020449
+      ],
+      "nativeHeadEndpointPx": [
+        125.79954528808594,
+        114.40359115600586
+      ],
+      "headImageShiftRawPx": [
+        -2.772073242496334,
+        -0.8074962279824908
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.1783232424963339,
+        -0.34875377201750923
+      ]
+    },
+    {
+      "phase": 44,
+      "paintedRect": [
+        648,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1024,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/44.png",
+      "sourceFrameSha256": "3f1df357acfb2cff9fa44a14c720a1f2a1d2794df5221a229cccbabad1744606",
+      "translationNativeComparisonPx": [
+        0.5815781512322076,
+        9.547867280092731
+      ],
+      "displayOriginNativePx": [
+        30.184036770450447,
+        62.86160856108535
+      ],
+      "artistPivotPaintedPx": [
+        84.09528712719275,
+        168.135655589283
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72.5,
+        109
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        199.66650009155273
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        189.64564552970754
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.6994171142578,
+          131.1302375793457
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        0.5815781512322076,
+        9.547867280092731
+      ],
+      "headTranslationNativePx": [
+        -0.5295449577488096,
+        5.039626595906621
+      ],
+      "nativeHeadEndpointPx": [
+        125.74058532714844,
+        114.96519088745117
+      ],
+      "headImageShiftRawPx": [
+        -4.056155238044038,
+        -0.7020667415933292
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.5874052380440382,
+        -0.5166832584066708
+      ]
+    },
+    {
+      "phase": 45,
+      "paintedRect": [
+        810,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1280,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/45.png",
+      "sourceFrameSha256": "c539ebc6866fe4188091d260bbf45ea72f64ffde1a274bc1789976b332f4d18c",
+      "translationNativeComparisonPx": [
+        1.1631563024644151,
+        10.122818451967731
+      ],
+      "displayOriginNativePx": [
+        30.765614921682655,
+        63.43655973296035
+      ],
+      "artistPivotPaintedPx": [
+        83.59528712719275,
+        167.6413530001496
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72,
+        109
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.24145126342773
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.22059670158254
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.68338012695312,
+          131.62790298461914
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        1.1631563024644151,
+        10.122818451967731
+      ],
+      "headTranslationNativePx": [
+        0.24518796855479152,
+        5.418334710916517
+      ],
+      "nativeHeadEndpointPx": [
+        125.71973419189453,
+        115.48593521118164
+      ],
+      "headImageShiftRawPx": [
+        -4.740142471635838,
+        -0.5799539967974369
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.4588924716358376,
+        -0.7325460032025631
+      ]
+    },
+    {
+      "phase": 46,
+      "paintedRect": [
+        972,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1536,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/46.png",
+      "sourceFrameSha256": "c0ce85b682da3f454e96bacc1fe69f2ebbea6878aba493bc0d48fe48b3a273b4",
+      "translationNativeComparisonPx": [
+        1.1631563024644151,
+        9.48147458846816
+      ],
+      "displayOriginNativePx": [
+        30.765614921682655,
+        62.795215869460776
+      ],
+      "artistPivotPaintedPx": [
+        83.59528712719275,
+        168.19273535705273
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72,
+        110
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        200.76326370239258
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        190.74240914054738
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": null,
+        "nativeComparisonPx": [
+          147.6795196533203,
+          132.1249008178711
+        ],
+        "annotationUncertaintyRawPx": null,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": null,
+        "candidateErrorNativePx": null
+      },
+      "claspTranslationNativePx": [
+        1.1631563024644151,
+        9.48147458846816
+      ],
+      "headTranslationNativePx": [
+        1.1717862929659137,
+        5.943303207544249
+      ],
+      "nativeHeadEndpointPx": [
+        125.7168197631836,
+        115.98724365234375
+      ],
+      "headImageShiftRawPx": [
+        -5.539272176863472,
+        -0.6002952487989884
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.9142721768634718,
+        -0.6184547512010116
+      ]
+    },
+    {
+      "phase": 47,
+      "paintedRect": [
+        1134,
+        1030,
+        162,
+        200
+      ],
+      "nativeRect": [
+        1792,
+        1600,
+        256,
+        320
+      ],
+      "sourceFrame": "frames/47.png",
+      "sourceFrameSha256": "8d60f539d4b2d1eae2a6652fae757117464cc0651243da3b7457cb0fd0ee0464",
+      "translationNativeComparisonPx": [
+        1.1631563024644151,
+        10.489898290237505
+      ],
+      "displayOriginNativePx": [
+        30.765614921682655,
+        63.80363957123012
+      ],
+      "artistPivotPaintedPx": [
+        83.59528712719275,
+        167.32576356690487
+      ],
+      "status": "measured-annotation-pivot",
+      "visibility": "visible",
+      "paintedClasp": [
+        72,
+        109.5
+      ],
+      "annotationUncertaintyRawPx": 1.5,
+      "totalPivotUncertainty": null,
+      "totalUncertaintyMeaning": "unknown systematic feature-definition/style and global-bias uncertainty; annotation interval is not total confidence",
+      "estimate": null,
+      "nativeClaspComparisonPx": [
+        130.16830444335938,
+        201.1901092529297
+      ],
+      "targetClaspComparisonPx": [
+        114.51286869912116,
+        191.1692546910845
+      ],
+      "bowCrossValidation": {
+        "paintedPoint": [
+          98,
+          69
+        ],
+        "nativeComparisonPx": [
+          147.67953491210938,
+          132.55189895629883
+        ],
+        "annotationUncertaintyRawPx": 3.5,
+        "usage": "HELD OUT; never used to choose scale, bias or pivots",
+        "baselineErrorNativePx": [
+          -4.087758651377612,
+          1.01962719473903
+        ],
+        "candidateErrorNativePx": [
+          -2.924602348913197,
+          11.509525484976535
+        ]
+      },
+      "claspTranslationNativePx": [
+        1.1631563024644151,
+        10.489898290237505
+      ],
+      "headTranslationNativePx": [
+        0.8019190341084945,
+        6.400563654054082
+      ],
+      "nativeHeadEndpointPx": [
+        125.71665954589844,
+        116.4132308959961
+      ],
+      "headImageShiftRawPx": [
+        -5.221424058954511,
+        -0.6271817495996376
+      ],
+      "headRegistrationTotalUncertainty": null,
+      "headLowerPatchResidualRawPx": [
+        0.8151740589545113,
+        -0.6853182504003624
+      ]
+    }
+  ],
+  "limitations": [
+    "43 painted clasp annotations uncertain; 5 null positions remain unmeasured. The native target path is unchanged, but painted clasp alignment on those five phases is not verified.",
+    "5occluded pivots estimated by short-run interpolation, uncertainty unknown.",
+    "12sparse bow annotations held out; no independent all48head/knee/foot fidelity proof.",
+    "Fit-point coincidence does not establish smoothness or absence of slow drift. Actual browser/video inspection required.",
+    "Underlying pose/silhouette/style errors remain; no artwork pixels changed.",
+    "Illustrated heading is closer to true profile than the native rear-three-quarter view; no heading fidelity certification.",
+    "Painted soles/contact are unverified; artist pivots are not physical Root or no-slip certification.",
+    "Head registration is diagnostic. Held-out lower-face disagreement reaches4.833raw pixels; internal head/pose redraw remains.",
+    "No smoothing/resampling of native time/path, no image scale/rotation/warp. Native bone endpoint and painted head patch are not the same anatomical feature.",
+    "Manual iris/chin held-out checks pending. Head stabilization does not certify body/sole contact or final smoothness."
+  ],
+  "headRegistration": {
+    "commonScaleUnchanged": true,
+    "imagePixelsUnchanged": true,
+    "nativeSourceHeadEndpoint": "actual posed Head bone head projected to exporter camera, not painted anatomical point",
+    "nativePathDefinition": "delta_i = nativeHead_i-nativeHead_0 - fixedS*imageHeadGraphShift_i + one constant median gauge",
+    "constantGaugeNativePx": [
+      -5.271474303060067,
+      5.843820888376756
+    ],
+    "gaugeDefinition": "coordinatewise median(claspTrialDelta - nativeHeadDelta + fixedS*headGraphShift) over all48; keeps median style placement, no new path",
+    "imageFit": "fixed phase0 upper head template plus cyclic neighbour constraints, translation only; lower-face held out",
+    "subpixelSearchResolutionRawPx": 0.03125,
+    "precisionNotAccuracy": true,
+    "totalUncertainty": null,
+    "sourceHeadTemplateSha256": "afe0d529063762f1772964d6e249f4ef1eb5ad9107515ce05be017375e50a221",
+    "sourceNativeHeadSha256": "ab9a00a4d5ca5944706240db8fb103d0e5e15c61627b1ff2d5ed6641d8365e14",
+    "claspManifestSha256": "e55516008f2f0f9c2fe1cc2fa3e9f917d398a37a8917e45675582d2280b0e20d",
+    "generatorSha256": "62e24140606f7a4665ea24a658ddf92ea0c02de3490a9d56c43c3b65b789318a"
+  }
+}

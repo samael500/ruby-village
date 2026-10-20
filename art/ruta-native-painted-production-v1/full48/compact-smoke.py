@@ -1,0 +1,8 @@
+from pathlib import Path
+import asyncio,json
+from playwright.async_api import async_playwright
+O=Path(__file__).resolve().parent
+async def main():
+ async with async_playwright()as p:
+  b=await p.chromium.launch();c=await b.new_context(viewport={'width':844,'height':390},device_scale_factor=2,is_mobile=True,has_touch=True);page=await c.new_page();errors=[];page.on('pageerror',lambda e:errors.append(str(e)));await page.goto('http://127.0.0.1:5365/art/ruta-native-painted-production-v1/full48/review.html');await page.wait_for_function('window.reviewState?.ready');await page.locator('#play').click();await page.locator('#frame').focus();await page.keyboard.press('Home');rects=await page.evaluate('[...document.querySelectorAll("canvas")].map(c=>({x:c.getBoundingClientRect().x,y:c.getBoundingClientRect().y,width:c.getBoundingClientRect().width,height:c.getBoundingClientRect().height,bottom:c.getBoundingClientRect().bottom,backing:[c.width,c.height]}))');assert all(r['y']>=0 and r['bottom']<=390 for r in rects),rects;assert rects[0]['width']==rects[1]['width']and rects[0]['height']==rects[1]['height'];await page.wait_for_timeout(150);count=await page.evaluate('reviewState.drawCount');await page.wait_for_timeout(150);assert count==await page.evaluate('reviewState.drawCount');assert not errors;await page.screenshot(path=str(O/'compact844x390-dpr2-phase00.png'));(O/'compact-smoke.json').write_text(json.dumps({'status':'AUTHOR-COMPACT-UI-SMOKE-NOT-MOTION-ACCEPTANCE','viewport':[844,390],'dpr':2,'canvasRects':rects,'bothFullCanvasBootRegionsWithinViewport':True,'sameAspectDisplayScale':True,'noPausedResizeObserverFeedback':True,'pageErrors':errors,'physicalDevice':'not tested'},indent=2)+'\n');await b.close()
+asyncio.run(main())

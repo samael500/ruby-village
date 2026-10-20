@@ -1,0 +1,268 @@
+{
+  "status": "AUTHOR-MEASURED-TRANSLATION-AND-HELDOUT-DIAGNOSTICS-NOT-TEMPORAL-PASS",
+  "scalePolicy": "one GLOBAL source-to-display S=.5127893376456061, no perquarter/frame scale or size normalization",
+  "actualAll48Contained": true,
+  "commonFrameSize": [
+    330,
+    426
+  ],
+  "rawPngPixelsUnchanged": true,
+  "quarterSourceGridOrigins": [
+    [
+      0,
+      -11
+    ],
+    [
+      0,
+      0
+    ],
+    [
+      0,
+      -20
+    ],
+    [
+      0,
+      11
+    ]
+  ],
+  "quarterMinimumAlpha16AllPixelMargins": [
+    7,
+    14,
+    11,
+    6
+  ],
+  "quarterActorAlpha128Count": [
+    12,
+    12,
+    12,
+    12
+  ],
+  "templateVsGraphRmsSourceRawPx": 0.3549775885008274,
+  "heldOutLowerVsGraphRmsSourceRawPx": 3.0975589546069093,
+  "heldOutLowerMaxNormSourceRawPx": 7.914171174225881,
+  "worstHeldOutPhases": [
+    {
+      "phase": 45,
+      "sourceRawPx": [
+        6.91278039299679,
+        3.8532548077108792
+      ],
+      "norm": 7.914171174225881
+    },
+    {
+      "phase": 9,
+      "sourceRawPx": [
+        5.820030535207396,
+        3.6549035735164797
+      ],
+      "norm": 6.87248685429445
+    },
+    {
+      "phase": 43,
+      "sourceRawPx": [
+        5.11130270185269,
+        3.967689303012184
+      ],
+      "norm": 6.470546631869978
+    },
+    {
+      "phase": 14,
+      "sourceRawPx": [
+        -1.956327621978284,
+        -6.113874960198317
+      ],
+      "norm": 6.419243319383927
+    },
+    {
+      "phase": 42,
+      "sourceRawPx": [
+        5.305047073941791,
+        3.5460865387956626
+      ],
+      "norm": 6.381085659773434
+    },
+    {
+      "phase": 33,
+      "sourceRawPx": [
+        4.162273628583588,
+        4.641275969040444
+      ],
+      "norm": 6.23425732385139
+    },
+    {
+      "phase": 46,
+      "sourceRawPx": [
+        5.209480147373879,
+        3.2027830528916166
+      ],
+      "norm": 6.115267998196998
+    },
+    {
+      "phase": 13,
+      "sourceRawPx": [
+        -2.133188173206104,
+        -5.6361176471026795
+      ],
+      "norm": 6.0263018439411615
+    }
+  ],
+  "seams": [
+    {
+      "phases": [
+        11,
+        12
+      ],
+      "upperNeighbourMatchShiftTrackingPx": [
+        -9.21875,
+        -0.40625
+      ],
+      "upperNeighbourMatchRgbRms": 0.07740302537309561,
+      "graphShiftDeltaSourceRawPx": [
+        -19.75328562207405,
+        0.5471616848831431
+      ],
+      "nativeHeadDeltaComparisonPx": [
+        0.01859283447265625,
+        -0.8577919006347656
+      ],
+      "wholeFrameTrialTranslationDeltaComparisonPx": [
+        10.147867084940483,
+        -1.1383705786110463
+      ],
+      "heldOutLowerMinusUpperGraphResidualBeforeSourceRawPx": [
+        3.2409774802859186,
+        1.5651837037733793
+      ],
+      "heldOutLowerMinusUpperGraphResidualAfterSourceRawPx": [
+        -3.1307368976400323,
+        -5.044477981109764
+      ],
+      "heldOutResidualChangeSourceRawPx": [
+        -6.371714377925951,
+        -6.609661684883143
+      ],
+      "heldOutResidualChangeComparisonPx": [
+        -3.2673471955236333,
+        -3.3893640374527676
+      ]
+    },
+    {
+      "phases": [
+        23,
+        24
+      ],
+      "upperNeighbourMatchShiftTrackingPx": [
+        4.625,
+        8.625
+      ],
+      "upperNeighbourMatchRgbRms": 0.07286530281869831,
+      "graphShiftDeltaSourceRawPx": [
+        9.914897999652316,
+        16.929931794744945
+      ],
+      "nativeHeadDeltaComparisonPx": [
+        0.0001068115234375,
+        0.345916748046875
+      ],
+      "wholeFrameTrialTranslationDeltaComparisonPx": [
+        -5.084147166542017,
+        -8.335571763365673
+      ],
+      "heldOutLowerMinusUpperGraphResidualBeforeSourceRawPx": [
+        0.9143768814341691,
+        -1.3861056284576296
+      ],
+      "heldOutLowerMinusUpperGraphResidualAfterSourceRawPx": [
+        -0.6880211182181473,
+        -2.1285374232025767
+      ],
+      "heldOutResidualChangeSourceRawPx": [
+        -1.6023979996523163,
+        -0.742431794744947
+      ],
+      "heldOutResidualChangeComparisonPx": [
+        -0.8216926088863554,
+        -0.38071110827429994
+      ]
+    },
+    {
+      "phases": [
+        35,
+        36
+      ],
+      "upperNeighbourMatchShiftTrackingPx": [
+        1.5625,
+        -4.6875
+      ],
+      "upperNeighbourMatchRgbRms": 0.04597167857375743,
+      "graphShiftDeltaSourceRawPx": [
+        3.270185572790444,
+        -9.0463189364967
+      ],
+      "nativeHeadDeltaComparisonPx": [
+        0.01495361328125,
+        -1.0263252258300781
+      ],
+      "wholeFrameTrialTranslationDeltaComparisonPx": [
+        -1.6619626805681786,
+        3.6125306697469677
+      ],
+      "heldOutLowerMinusUpperGraphResidualBeforeSourceRawPx": [
+        3.5578433820425985,
+        3.481046555706164
+      ],
+      "heldOutLowerMinusUpperGraphResidualAfterSourceRawPx": [
+        0.9126578092521545,
+        2.464865492202863
+      ],
+      "heldOutResidualChangeSourceRawPx": [
+        -2.645185572790444,
+        -1.0161810635033008
+      ],
+      "heldOutResidualChangeComparisonPx": [
+        -1.356422957820925,
+        -0.5210868144818652
+      ]
+    },
+    {
+      "phases": [
+        47,
+        0
+      ],
+      "upperNeighbourMatchShiftTrackingPx": [
+        8.5625,
+        4.5
+      ],
+      "upperNeighbourMatchRgbRms": 0.10944345731406961,
+      "graphShiftDeltaSourceRawPx": [
+        18.340660049124672,
+        9.880094350963889
+      ],
+      "nativeHeadDeltaComparisonPx": [
+        -6.103515625e-05,
+        0.17276763916015625
+      ],
+      "wholeFrameTrialTranslationDeltaComparisonPx": [
+        -9.40495595373012,
+        -4.893639398946711
+      ],
+      "heldOutLowerMinusUpperGraphResidualBeforeSourceRawPx": [
+        3.340660049124672,
+        2.7550943509638888
+      ],
+      "heldOutLowerMinusUpperGraphResidualAfterSourceRawPx": [
+        0.0,
+        0.0
+      ],
+      "heldOutResidualChangeSourceRawPx": [
+        -3.340660049124672,
+        -2.7550943509638888
+      ],
+      "heldOutResidualChangeComparisonPx": [
+        -1.7130548538897785,
+        -1.4127830073819234
+      ]
+    }
+  ],
+  "notMeasured": "No source body/quarter scale correction or physical stance inference. RGB head registration is texture correspondence with unknown accuracy. Local size/shape/redraw changes remain in images and must be judged independently; heldout residual is not an anatomy growth estimator."
+}
