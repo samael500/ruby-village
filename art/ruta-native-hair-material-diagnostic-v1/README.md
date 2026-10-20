@@ -1,0 +1,11 @@
+# Bounded actual hair material cause study
+
+Pinned combined source b14cfb5bfd8f15922c3c736c7b827b9d1ca6c5d1143d257012443fbf140a2db7, root fba0204. FOUR actual new Eevee128AA512×640 renders only: E Walk0 and front Idle0, each with native normal Strength0, then normal0 plus uniform copper Diffuse Color. Before images are exact actual combined baseline renders; source is read-only and SHA unchanged after both runs. No blend/source save, geometry, UV, hair-alpha, camera, action or gait changes.
+
+Actual baseline Normal Map Strength is **0.25**, not2. `diagnostic.json` reads the node value rather than inferring it from older summaries. Normal0 retains the painted RGB link. Uniform diagnostic disconnects only that RGB→DiffuseColor link and supplies linear[.32,.095,.035,1]; original separate alpha and lighting remain. Constant copper is explicitly NOT final illustration.
+
+Observed cause separation: normal0 does not remove crown card tops, crossing flat strips or broad ribbon silhouette. Uniform colour removes most drawn narrow streak contrast, but large planar overlapping facets and geometric cut/card tops remain very clear, including the E crown and long side strips. Therefore painted RGB streaks contribute surface striping, while alpha-cut card shape/mesh arrangement produces an independent structural ribbon effect. Normal strength0.25 is not the sole cause. This does not isolate alpha-mask shape from mesh topology, since neither was changed. E rear-threequarter face occlusion remains; this is not automatically a heading defect. Material-only adjustment cannot justify acceptance of this silhouette.
+
+Comparison JPG columns: baseline / normal0 / uniform+normal0. `pixel-comparison.json` records hashes and full-frame alpha equality. Original render files remain untouched. An initial script failed after the first two successful stills because it queried removed NodeLink RNA during report assembly; recovery captures link names before unlinking and reuses those unchanged two files, rendering only the remaining two. Both process logs retained; no hidden rerender batch.
+
+No48 loop, no runtime integration, no art acceptance. Any next geometry fit needs a separate source-derived proposal and actual proof.
