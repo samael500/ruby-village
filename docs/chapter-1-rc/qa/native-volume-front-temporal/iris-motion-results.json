@@ -1,0 +1,232 @@
+{
+  "validTwoEyes": 48,
+  "totalComponentCounts": [
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2,
+    2
+  ],
+  "eyeAreaRangePixels": [
+    [
+      36,
+      42
+    ],
+    [
+      37,
+      42
+    ]
+  ],
+  "interIrisDistanceRangeNativePixels": [
+    35.11506059291161,
+    35.87950333655186
+  ],
+  "cvMidpointRangeXY": [
+    15.485793029871957,
+    9.429316431322206
+  ],
+  "expectedMidpointRangeXY": [
+    15.399139404296875,
+    9.287796020507812
+  ],
+  "headAttachedReferenceResidualVectorRMSNativePxPerEye": [
+    0.22652389493184713,
+    0.24839208806147936
+  ],
+  "maxResidualVectorNativePx": 0.5397989143258953,
+  "adjacentResidualVectorRMSNativePx": 0.23335789809786397,
+  "worstAdjacentPairs": [
+    {
+      "from": 35,
+      "to": 36,
+      "residualDeltaPerEyeNativePx": [
+        [
+          -0.6062798099870577,
+          -0.07759344933890588
+        ],
+        [
+          -0.04077457319868927,
+          0.025888213905403745
+        ]
+      ],
+      "maxVectorPx": 0.6112249597147126
+    },
+    {
+      "from": 14,
+      "to": 15,
+      "residualDeltaPerEyeNativePx": [
+        [
+          -0.06349347088789159,
+          0.05209192499384585
+        ],
+        [
+          -0.5097442738739346,
+          -0.1372671721182428
+        ]
+      ],
+      "maxVectorPx": 0.5279029279030418
+    },
+    {
+      "from": 26,
+      "to": 27,
+      "residualDeltaPerEyeNativePx": [
+        [
+          0.2009210801662391,
+          0.03973895386047843
+        ],
+        [
+          0.5040152927115855,
+          0.08713278767140764
+        ]
+      ],
+      "maxVectorPx": 0.5114914837751806
+    },
+    {
+      "from": 42,
+      "to": 43,
+      "residualDeltaPerEyeNativePx": [
+        [
+          -0.4998515593700006,
+          0.026802219488672563
+        ],
+        [
+          -0.23748228491803047,
+          -0.07425857171779171
+        ]
+      ],
+      "maxVectorPx": 0.5005696159118532
+    },
+    {
+      "from": 39,
+      "to": 40,
+      "residualDeltaPerEyeNativePx": [
+        [
+          -0.06772460937497726,
+          -0.3209335327148324
+        ],
+        [
+          0.39582752232684015,
+          0.14566369111790323
+        ]
+      ],
+      "maxVectorPx": 0.4217787789131846
+    },
+    {
+      "from": 10,
+      "to": 11,
+      "residualDeltaPerEyeNativePx": [
+        [
+          -0.40463562011717613,
+          -0.06610310872397918
+        ],
+        [
+          0.061125493490521876,
+          0.16088891063270694
+        ]
+      ],
+      "maxVectorPx": 0.40999951957360375
+    },
+    {
+      "from": 15,
+      "to": 16,
+      "residualDeltaPerEyeNativePx": [
+        [
+          0.3642413799579458,
+          0.03858928191357336
+        ],
+        [
+          0.3642304762910271,
+          0.007655316798377498
+        ]
+      ],
+      "maxVectorPx": 0.36627983230349154
+    },
+    {
+      "from": 25,
+      "to": 26,
+      "residualDeltaPerEyeNativePx": [
+        [
+          -0.0848598270625871,
+          -0.009425711719103447
+        ],
+        [
+          -0.2761402619190676,
+          -0.214526054186706
+        ]
+      ],
+      "maxVectorPx": 0.34967824092678224
+    }
+  ],
+  "eyeAttachment": [
+    {
+      "object": "Ellie ready eye.L",
+      "parentType": "OBJECT",
+      "parentBone": "",
+      "modifiers": [
+        "ARMATURE"
+      ],
+      "vertexGroupWeights": {
+        "Head": [
+          1.0
+        ]
+      }
+    },
+    {
+      "object": "Ellie ready eye.R",
+      "parentType": "OBJECT",
+      "parentBone": "",
+      "modifiers": [
+        "ARMATURE"
+      ],
+      "vertexGroupWeights": {
+        "Head": [
+          1.0
+        ]
+      }
+    }
+  ],
+  "limits": "ONEphase0referenceeye-rayanchors, full sourceHead transform, no subsequent alignment. Residual includes threshold/AA/shading/occlusion and possible eye-relativeHead motion; not exact anatomical landmark or no-jitter guarantee."
+}
