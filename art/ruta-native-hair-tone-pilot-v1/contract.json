@@ -1,0 +1,24 @@
+{
+  "sourceExpressionV2Sha256": "48f4b2bb9ec8cabd5c8f33ed46d3a9be1d1da499a0b099de9ed80885f4121f7c",
+  "outputSha256": "159298a6225fa24c174af5562c7a14113e93bbbc5e463ac3e0968b0f15bb81f9",
+  "object": "Daisy alpha-aware volume candidate",
+  "oldMaterial": "Alpha volume fixed native RGB bake",
+  "newMaterial": "Native hair subdued chestnut tone study",
+  "onlyNativeNodeAdjustment": {
+    "type": "ShaderNodeMixRGB",
+    "blend": "MULTIPLY",
+    "factor": 1,
+    "linearRGBMultiplier": [
+      0.72,
+      0.8,
+      0.88
+    ],
+    "oldColorLink": [
+      "Image Texture.001",
+      "Color"
+    ]
+  },
+  "reason": "bounded artistic chestnut tonal choice; NOT gamma/colorspace bug correction",
+  "fixedRGBImagesUnchanged": true,
+  "alphaGeometryCameraActionsExpressionUnchanged": true
+}
