@@ -172,3 +172,25 @@ surface. Next native hair study must trim original-alpha contours in3D before so
 and transfer one fixed painted RGB surface. Scripts/provenance retained; no final-art claim.
 `f2ef8f7` independently progresses native contact-transition measurements; genuine start/stop
 animation/IK and full-sole/route constraints remain unresolved. Runtimee32cad4 unchanged.
+
+### Latest user feedback and visible-face proof
+
+The user reports that the larger painted-frame comparison flickers less, but still
+jumps: fixed-layout mode jumps substantially; head registration still trembles.
+This does not pass image-stability acceptance. Accepted gait timing is unchanged.
+
+`48a3c0e` replaces alpha-card intersections in a separate study with alpha-trimmed,
+opaque native volume geometry and one fixed RGB bake. Source SHA256 is
+`09acadc1f01d1abb940723c80b8fdbd357553aa9cf8be09f7e7d225ea4b1715d`.
+`6afe4ee` independently rules out global texture brightening/double-gamma; local
+transfer differences and changed geometry/normals remain. This is not art approval.
+Front-facing48 rendering is in progress to expose face/eyes through the whole cycle.
+The proof uses yaw0, not the production E heading; it is not game footage.
+No temporal PASS is inferred from the rendered still or a partially completed batch.
+
+The shared integration contract is
+`docs/chapter-1-rc/characters/native-animation-integration-contract.md`.
+Static Idle0 endpoints and source Walk's one-sided join derivatives are explicit.
+New start/stop Actions remain under numerical contact review; identified mixed
+Foot/LowerLeg sole weights require an isolated variant and old-Walk regression
+checks before any claim of planted-foot stability.
